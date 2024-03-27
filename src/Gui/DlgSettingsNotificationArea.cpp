@@ -40,38 +40,13 @@ DlgSettingsNotificationArea::DlgSettingsNotificationArea(QWidget* parent)
 {
     ui->setupUi(this);
 
+    adaptUiToAreaEnabledState(ui->NotificationAreaEnabled->isChecked());
     connect(ui->NotificationAreaEnabled, &QCheckBox::stateChanged, [this](int state) {
-        if (state == Qt::CheckState::Checked) {
-            ui->NonIntrusiveNotificationsEnabled->setEnabled(true);
-            ui->maxDuration->setEnabled(true);
-            ui->maxDuration->setEnabled(true);
-            ui->minDuration->setEnabled(true);
-            ui->maxNotifications->setEnabled(true);
-            ui->maxWidgetMessages->setEnabled(true);
-            ui->autoRemoveUserNotifications->setEnabled(true);
-            ui->hideNonIntrusiveNotificationsWhenWindowDeactivated->setEnabled(true);
-            ui->preventNonIntrusiveNotificationsWhenWindowNotActive->setEnabled(true);
-            ui->errorSubscriptionEnabled->setEnabled(true);
-            ui->warningSubscriptionEnabled->setEnabled(true);
-            QMessageBox::information(this,
-                                     tr("Notification Area"),
-                                     tr("Activation of the Notification Area only takes effect "
-                                        "after an application restart."));
-        }
-        else {
-            ui->NonIntrusiveNotificationsEnabled->setEnabled(false);
-            ui->maxDuration->setEnabled(false);
-            ui->maxDuration->setEnabled(false);
-            ui->minDuration->setEnabled(false);
-            ui->maxNotifications->setEnabled(false);
-            ui->maxWidgetMessages->setEnabled(false);
-            ui->autoRemoveUserNotifications->setEnabled(false);
-            ui->hideNonIntrusiveNotificationsWhenWindowDeactivated->setEnabled(false);
-            ui->preventNonIntrusiveNotificationsWhenWindowNotActive->setEnabled(false);
-            ui->errorSubscriptionEnabled->setEnabled(false);
-            ui->warningSubscriptionEnabled->setEnabled(false);
-            // N.B: Deactivation is handled by the Notification Area itself, as it listens to all
-            // its configuration parameters.
+        bool enabled = state == Qt::CheckState::Checked;
+        this->adaptUiToAreaEnabledState(enabled);
+
+        if (enabled) {
+            this->requireRestart();
         }
     });
 }
@@ -91,8 +66,8 @@ void DlgSettingsNotificationArea::saveSettings()
     ui->notificationWidth->onSave();
     ui->hideNonIntrusiveNotificationsWhenWindowDeactivated->onSave();
     ui->preventNonIntrusiveNotificationsWhenWindowNotActive->onSave();
-    ui->errorSubscriptionEnabled->onSave();
-    ui->warningSubscriptionEnabled->onSave();
+    ui->developerErrorSubscriptionEnabled->onSave();
+    ui->developerWarningSubscriptionEnabled->onSave();
 }
 
 void DlgSettingsNotificationArea::loadSettings()
@@ -107,8 +82,23 @@ void DlgSettingsNotificationArea::loadSettings()
     ui->notificationWidth->onRestore();
     ui->hideNonIntrusiveNotificationsWhenWindowDeactivated->onRestore();
     ui->preventNonIntrusiveNotificationsWhenWindowNotActive->onRestore();
-    ui->errorSubscriptionEnabled->onRestore();
-    ui->warningSubscriptionEnabled->onRestore();
+    ui->developerErrorSubscriptionEnabled->onRestore();
+    ui->developerWarningSubscriptionEnabled->onRestore();
+}
+
+void DlgSettingsNotificationArea::adaptUiToAreaEnabledState(bool enabled)
+{
+    ui->NonIntrusiveNotificationsEnabled->setEnabled(enabled);
+    ui->maxDuration->setEnabled(enabled);
+    ui->maxDuration->setEnabled(enabled);
+    ui->minDuration->setEnabled(enabled);
+    ui->maxNotifications->setEnabled(enabled);
+    ui->maxWidgetMessages->setEnabled(enabled);
+    ui->autoRemoveUserNotifications->setEnabled(enabled);
+    ui->hideNonIntrusiveNotificationsWhenWindowDeactivated->setEnabled(enabled);
+    ui->preventNonIntrusiveNotificationsWhenWindowNotActive->setEnabled(enabled);
+    ui->developerErrorSubscriptionEnabled->setEnabled(enabled);
+    ui->developerWarningSubscriptionEnabled->setEnabled(enabled);
 }
 
 void DlgSettingsNotificationArea::changeEvent(QEvent* e)

@@ -47,24 +47,24 @@
       <translation>&lt;пусты&gt;</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2273"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2539"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2272"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2538"/>
       <source>Angle</source>
       <translation>Вугал</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2277"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2543"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2276"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2542"/>
       <source>Axis</source>
       <translation>Вось</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2548"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2547"/>
       <source>Position</source>
       <translation type="unfinished">Position</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2787"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2786"/>
       <source>Enum</source>
       <translation>Пералічэнне</translation>
     </message>
@@ -194,8 +194,8 @@
     </message>
     <message>
       <location filename="../Transform.cpp" line="105"/>
-      <location filename="../ViewProviderAnnotation.cpp" line="416"/>
       <location filename="../ViewProviderDragger.cpp" line="222"/>
+      <location filename="../ViewProviderAnnotation.cpp" line="416"/>
       <source>Transform</source>
       <translation>Пераўтварыць</translation>
     </message>
@@ -712,47 +712,47 @@ while doing a left or right click and move the mouse up or down</source>
   <context>
     <name>Gui::Dialog::AboutDialog</name>
     <message>
-      <location filename="../Splashscreen.cpp" line="418"/>
-      <location filename="../Splashscreen.cpp" line="427"/>
+      <location filename="../Splashscreen.cpp" line="474"/>
+      <location filename="../Splashscreen.cpp" line="483"/>
       <source>Credits</source>
       <extracomment>Header for the Credits tab of the About screen</extracomment>
       <translation>Падзякі</translation>
     </message>
     <message>
-      <location filename="../Splashscreen.cpp" line="429"/>
+      <location filename="../Splashscreen.cpp" line="485"/>
       <source>FreeCAD would not be possible without the contributions of</source>
       <translation>FreeCAD не існаваў бы без удзелу</translation>
     </message>
     <message>
-      <location filename="../Splashscreen.cpp" line="432"/>
+      <location filename="../Splashscreen.cpp" line="488"/>
       <source>Individuals</source>
       <extracomment>Header for the list of individual people in the Credits list.</extracomment>
       <translation>Удзельнікі</translation>
     </message>
     <message>
-      <location filename="../Splashscreen.cpp" line="445"/>
+      <location filename="../Splashscreen.cpp" line="501"/>
       <source>Organizations</source>
       <extracomment>Header for the list of companies/organizations in the Credits list.</extracomment>
       <translation>Установы</translation>
     </message>
     <message>
-      <location filename="../Splashscreen.cpp" line="472"/>
-      <location filename="../Splashscreen.cpp" line="712"/>
+      <location filename="../Splashscreen.cpp" line="528"/>
+      <location filename="../Splashscreen.cpp" line="768"/>
       <source>License</source>
       <translation>Ліцэнзія</translation>
     </message>
     <message>
-      <location filename="../Splashscreen.cpp" line="511"/>
+      <location filename="../Splashscreen.cpp" line="567"/>
       <source>Libraries</source>
       <translation>Бібліятэкі</translation>
     </message>
     <message>
-      <location filename="../Splashscreen.cpp" line="673"/>
+      <location filename="../Splashscreen.cpp" line="729"/>
       <source>This software uses open source components whose copyright and other proprietary rights belong to their respective owners:</source>
       <translation>Гэтае праграмнае забеспячэнне ўжывае кампаненты з адкрытым зыходным кодам, аўтарскія правы на якія і іншыя правы ўласнасці належаць іх адпаведным уладальнікам:</translation>
     </message>
     <message>
-      <location filename="../Splashscreen.cpp" line="699"/>
+      <location filename="../Splashscreen.cpp" line="755"/>
       <source>Collection</source>
       <translation>Калекцыя</translation>
     </message>
@@ -2335,7 +2335,7 @@ display the splash screen</source>
     <name>Gui::Dialog::DlgMacroExecuteImp</name>
     <message>
       <location filename="../DlgMacroExecuteImp.cpp" line="96"/>
-      <location filename="../DlgMacroExecuteImp.cpp" line="654"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="653"/>
       <source>Macros</source>
       <translation>Макрас</translation>
     </message>
@@ -2356,8 +2356,8 @@ display the splash screen</source>
     </message>
     <message>
       <location filename="../DlgMacroExecuteImp.cpp" line="405"/>
-      <location filename="../DlgMacroExecuteImp.cpp" line="735"/>
-      <location filename="../DlgMacroExecuteImp.cpp" line="869"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="733"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="867"/>
       <source>Existing file</source>
       <translation>Існуючы файл</translation>
     </message>
@@ -2435,53 +2435,53 @@ Note: your changes will be applied when you next switch workbenches
       <translation>Пакрокавыя інструкцыі: Пстрыкніце кнопку з стрэлкай управа (-&gt;), потым Зачыніць.</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="635"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="634"/>
       <source>Walkthrough instructions: Click New, then right arrow (-&gt;) button, then Close.</source>
       <translation>Пакрокавыя інструкцыі: Пстрыкніце Новы, потым кнопку з правай стрэлкай (-&gt;), потым Зачыніць.</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="721"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="719"/>
       <source>Renaming Macro File</source>
       <translation>Пераназваць файл макраса</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="722"/>
-      <location filename="../DlgMacroExecuteImp.cpp" line="856"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="720"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="854"/>
       <source>Enter new name:</source>
       <translation>Увядзіце новую назву:</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="736"/>
-      <location filename="../DlgMacroExecuteImp.cpp" line="870"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="734"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="868"/>
       <source>'%1'
  already exists.</source>
       <translation>'%1'
  ужо існуе.</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="739"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="737"/>
       <source>Rename Failed</source>
       <translation>Пераназваць не атрымалася</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="740"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="738"/>
       <source>Failed to rename to '%1'.
 Perhaps a file permission error?</source>
       <translation>Не атрымалася пераназваць у '%1'.
 Магчыма, памылка дазволу файла?</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="855"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="853"/>
       <source>Duplicate Macro</source>
       <translation>Паўтарыць макрас</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="873"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="871"/>
       <source>Duplicate Failed</source>
       <translation>Памылка паўтору</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="874"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="872"/>
       <source>Failed to duplicate to '%1'.
 Perhaps a file permission error?</source>
       <translation>Не атрымалася паўтарыць у '%1'.
@@ -2863,42 +2863,42 @@ Specify another directory, please.</source>
   <context>
     <name>Gui::Dialog::DlgPreferencesImp</name>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="364"/>
+      <location filename="../DlgPreferencesImp.cpp" line="363"/>
       <source>Clear user settings</source>
       <translation>Ачысціць карыстальніцкія налады</translation>
     </message>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="365"/>
+      <location filename="../DlgPreferencesImp.cpp" line="364"/>
       <source>Do you want to clear all your user settings?</source>
       <translation>Ці жадаеце вы ачысціць усе свае карыстальніцкія налады?</translation>
     </message>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="366"/>
+      <location filename="../DlgPreferencesImp.cpp" line="365"/>
       <source>If you agree all your settings will be cleared.</source>
       <translation>Калі вы згодныя, усе вашыя налады будуць вычышчаныя.</translation>
     </message>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="457"/>
+      <location filename="../DlgPreferencesImp.cpp" line="456"/>
       <source>Wrong parameter</source>
       <translation>Няправільная налада</translation>
     </message>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="493"/>
+      <location filename="../DlgPreferencesImp.cpp" line="492"/>
       <source>Restart required</source>
       <translation>Патрабуецца перазапуск</translation>
     </message>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="494"/>
+      <location filename="../DlgPreferencesImp.cpp" line="493"/>
       <source>You must restart FreeCAD for changes to take effect.</source>
       <translation>Вы павінны перазапусціць FreeCAD, каб змены былі ўжытыя.</translation>
     </message>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="499"/>
+      <location filename="../DlgPreferencesImp.cpp" line="498"/>
       <source>Restart now</source>
       <translation>Перазапусціць зараз</translation>
     </message>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="500"/>
+      <location filename="../DlgPreferencesImp.cpp" line="499"/>
       <source>Restart later</source>
       <translation>Перазапусціць пазней</translation>
     </message>
@@ -3467,7 +3467,7 @@ issues ranging from graphical anomalies to GPU crash bugs. Remember to
 report this setting as enabled when seeking support on the FreeCAD forums</source>
       <translation>Калі птушка, будуць ужывацца аб'екты буфера вяршыняў (VBO).
 VBO - функцыя OpenGL, якая забяспечвае метады загрузкі дадзеных вяршыняў (становішча, вектар нармалі, колер і гэтак далей) на графічную карту.
-VBO забяспечваюць значны прырост прадукцыйнасці, паколькі дадзеныя захоўваюцца ў графічнай памяці, а не ў сістэмнай, і таму яны могуць быць візуалізаваныя непасрэдна графічным працэсарам.
+VBO забяспечваюць значны прырост эфектыўнасці, паколькі дадзеныя захоўваюцца ў графічнай памяці, а не ў сістэмнай, і таму яны могуць быць візуалізаваныя непасрэдна графічным працэсарам.
 
 Заўвага: часам гэтая функцыя можа прывесці да мноства розных праблем, пачынаючы ад графічных анамалій і заканчваючы збоямі графічнага працэсара.
 Не забудзьцеся паведаміць аб гэтай уключанай наладзе пры звароце па падтрымку на форумах FreeCAD</translation>
@@ -4068,32 +4068,32 @@ get date suffix according to the specified format</source>
 атрымаюць суфікс даты ў адпаведнасці з паказаным фарматам</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="515"/>
+      <location filename="../DlgSettingsDocument.ui" line="518"/>
       <source>Use date and FCBak extension</source>
       <translation>Ужываць дату і пашырэнне FCBak</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="528"/>
+      <location filename="../DlgSettingsDocument.ui" line="531"/>
       <source>Date format</source>
       <translation>Фармат даты</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="553"/>
+      <location filename="../DlgSettingsDocument.ui" line="556"/>
       <source>Document objects</source>
       <translation>Аб'екты дакументу</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="559"/>
+      <location filename="../DlgSettingsDocument.ui" line="562"/>
       <source>Allow objects to have same label</source>
       <translation>Дазволіць аб'ектам мець аднолькавыя надпісы</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="562"/>
+      <location filename="../DlgSettingsDocument.ui" line="565"/>
       <source>Allow duplicate object labels in one document</source>
       <translation>Дазволіць паўторныя надпісы аб'ектаў у адным дакуменце</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="575"/>
+      <location filename="../DlgSettingsDocument.ui" line="578"/>
       <source>Enable partial loading of external linked documents.
 Then only referenced objects and their dependencies will be loaded
 when a linked document is auto-opened together with the main document.
@@ -4105,22 +4105,22 @@ icon in the tree view to fully reload it.</source>
 па гузіку дакумента ў праглядзе дрэва, цалкам перазагрузіць яго.</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="582"/>
+      <location filename="../DlgSettingsDocument.ui" line="585"/>
       <source>Disable partial loading of external linked objects</source>
       <translation>Адключыць частковую загрузку вонкавых звязаных аб'ектаў</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="598"/>
+      <location filename="../DlgSettingsDocument.ui" line="601"/>
       <source>Authoring and License</source>
       <translation>Аўтарства і Ліцэнзія</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="604"/>
+      <location filename="../DlgSettingsDocument.ui" line="607"/>
       <source>Author name</source>
       <translation>Імя аўтара</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="611"/>
+      <location filename="../DlgSettingsDocument.ui" line="614"/>
       <source>All documents that will be created will get the specified author name.
 Keep blank for anonymous.
 You can also use the form: John Doe &lt;john@doe.com&gt;</source>
@@ -4129,32 +4129,32 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
 Вы таксама можаце ўжываць выгляд: John Doe &lt;john@doe.com &gt;</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="626"/>
+      <location filename="../DlgSettingsDocument.ui" line="629"/>
       <source>The field 'Last modified by' will be set to specified author when saving the file</source>
       <translation>Пры захаванні файла поле 'Аўтар апошняга змянення' будзе запоўнена на названага аўтара</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="629"/>
+      <location filename="../DlgSettingsDocument.ui" line="632"/>
       <source>Set on save</source>
       <translation>Задаць пры захаванні</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="642"/>
+      <location filename="../DlgSettingsDocument.ui" line="645"/>
       <source>Company</source>
       <translation>Арганізацыя</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="649"/>
+      <location filename="../DlgSettingsDocument.ui" line="652"/>
       <source>Default company name to use for new files</source>
       <translation>Першапачатковая назва арганізацыі, якое ўжываецца для новых файлаў</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="662"/>
+      <location filename="../DlgSettingsDocument.ui" line="665"/>
       <source>Default license</source>
       <translation>Першапачатковая ліцэнзія</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="672"/>
+      <location filename="../DlgSettingsDocument.ui" line="675"/>
       <source>Default license for new documents</source>
       <translation>Першапачатковая ліцэнзія для новых дакументаў</translation>
     </message>
@@ -4224,12 +4224,12 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
       <translation>Іншы</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="688"/>
+      <location filename="../DlgSettingsDocument.ui" line="691"/>
       <source>License URL</source>
       <translation>URL-адрас ліцэнзіі</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="695"/>
+      <location filename="../DlgSettingsDocument.ui" line="698"/>
       <source>URL describing more about the license</source>
       <translation>URL-адрас, які апісвае дадатковую інфармацыю аб ліцэнзіі</translation>
     </message>
@@ -4639,7 +4639,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     <name>Gui::Dialog::DlgSettingsNavigation</name>
     <message>
       <location filename="../DlgSettingsNavigation.ui" line="14"/>
-      <location filename="../DlgSettingsNavigation.ui" line="234"/>
+      <location filename="../DlgSettingsNavigation.ui" line="238"/>
       <source>Navigation</source>
       <translation>Навігацыя</translation>
     </message>
@@ -4709,55 +4709,59 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
       <translation>Назва шрыфту куба навігацыі</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="165"/>
+      <location filename="../DlgSettingsNavigation.ui" line="162"/>
+      <source>Default</source>
+      <translation>Першапачаткова</translation>
+    </message>
+    <message>
+      <location filename="../DlgSettingsNavigation.ui" line="170"/>
       <source>Cube size</source>
       <translation>Памер куба</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="172"/>
+      <location filename="../DlgSettingsNavigation.ui" line="177"/>
       <source>Size of the navigation cube</source>
       <translation>Памер куба навігацыі</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="200"/>
+      <location filename="../DlgSettingsNavigation.ui" line="205"/>
       <source>Color</source>
       <translation>Колер</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="207"/>
-      <source>color for all elements
-around the cube</source>
-      <translation>колер для ўсіх элементаў вакол куба</translation>
+      <location filename="../DlgSettingsNavigation.ui" line="212"/>
+      <source>Base color for all elements</source>
+      <translation>Асноўны колер для ўсіх элементаў</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="240"/>
+      <location filename="../DlgSettingsNavigation.ui" line="244"/>
       <source>3D Navigation</source>
       <translation>Трохмерная навігацыя</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="277"/>
+      <location filename="../DlgSettingsNavigation.ui" line="281"/>
       <source>List the mouse button configs for each chosen navigation setting.
 Select a set and then press the button to view said configurations.</source>
       <translation>Спіс налад кнопак мышы для кожнай абранай налады навігацыі.
 Абярыце набор, потым націсніце кнопку, каб праглядзець названыя наладкі.</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="281"/>
+      <location filename="../DlgSettingsNavigation.ui" line="285"/>
       <source>Mouse...</source>
       <translation>Дэталі стылю навігацыі...</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="302"/>
+      <location filename="../DlgSettingsNavigation.ui" line="306"/>
       <source>Navigation settings set</source>
       <translation>Набор налад навігацыі</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="312"/>
+      <location filename="../DlgSettingsNavigation.ui" line="316"/>
       <source>Orbit style</source>
       <translation>Стыль арбіты</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="331"/>
+      <location filename="../DlgSettingsNavigation.ui" line="335"/>
       <source>Rotation orbit style.
 Trackball: moving the mouse horizontally will rotate the part around the y-axis
 Turntable: the part will be rotated around the z-axis (with constrained axes).
@@ -4768,116 +4772,116 @@ Free Turntable: the part will be rotated around the z-axis.</source>
 Свабодны паваротны круг: дэталь будзе круціцца вакол восі z.</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="341"/>
+      <location filename="../DlgSettingsNavigation.ui" line="345"/>
       <source>Turntable</source>
       <translation>Паваротны круг</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="346"/>
+      <location filename="../DlgSettingsNavigation.ui" line="350"/>
       <source>Trackball</source>
       <translation>Трэкбол</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="351"/>
+      <location filename="../DlgSettingsNavigation.ui" line="355"/>
       <source>Free Turntable</source>
       <translation>Свабодны паваротны круг</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="359"/>
+      <location filename="../DlgSettingsNavigation.ui" line="363"/>
       <source>Rotation mode</source>
       <translation>Рэжым вярчэння</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="378"/>
+      <location filename="../DlgSettingsNavigation.ui" line="382"/>
       <source>Rotations in 3D will use current cursor position as center for rotation</source>
       <translation>Вярчэнне ў трохмерным прадстаўленні будзе ўжываць бягучае становішча курсора ў якасці цэнтру для вярчэння</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="385"/>
+      <location filename="../DlgSettingsNavigation.ui" line="389"/>
       <source>Window center</source>
       <translation>Цэнтр акна</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="390"/>
+      <location filename="../DlgSettingsNavigation.ui" line="394"/>
       <source>Drag at cursor</source>
       <translation>Перанесці да паказальніка</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="395"/>
+      <location filename="../DlgSettingsNavigation.ui" line="399"/>
       <source>Object center</source>
       <translation>Цэнтр аб'екту</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="403"/>
+      <location filename="../DlgSettingsNavigation.ui" line="407"/>
       <source>Default camera orientation</source>
       <translation>Першапачатковая арыентацыя камеры</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="422"/>
+      <location filename="../DlgSettingsNavigation.ui" line="426"/>
       <source>Default camera orientation when creating a new document or selecting the home view</source>
       <translation>Першапачатковая арыентацыя камеры пры стварэнні новага дакументу ці выбару пачатковага выгляду</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="429"/>
+      <location filename="../DlgSettingsNavigation.ui" line="433"/>
       <source>Camera zoom</source>
       <translation>Маштаб камеры</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="448"/>
+      <location filename="../DlgSettingsNavigation.ui" line="452"/>
       <source>Sets camera zoom for new documents.
 The value is the diameter of the sphere to fit on the screen.</source>
       <translation>Задаць маштаб камеры для новых дакументаў.
 Значэнне - дыяметр сферы, які павінен змясціцца на экране.</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="452"/>
+      <location filename="../DlgSettingsNavigation.ui" line="456"/>
       <source>mm</source>
       <translation>мм</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="477"/>
+      <location filename="../DlgSettingsNavigation.ui" line="481"/>
       <source>Enable animated rotations</source>
       <translation>Уключыць анімаванае вярчэнне</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="480"/>
+      <location filename="../DlgSettingsNavigation.ui" line="484"/>
       <source>Enable animation</source>
       <translation>Уключыць анімацыю</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="496"/>
+      <location filename="../DlgSettingsNavigation.ui" line="500"/>
       <source>Zoom operations will be performed at position of mouse pointer</source>
       <translation>Аперацыі маштабавання будуць выконвацца ў становішчы паказальніка мышы</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="499"/>
+      <location filename="../DlgSettingsNavigation.ui" line="503"/>
       <source>Zoom at cursor</source>
       <translation>Маштаб на паказальніку</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="515"/>
+      <location filename="../DlgSettingsNavigation.ui" line="519"/>
       <source> Zoom step</source>
       <translation> Крок маштабавання</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="533"/>
+      <location filename="../DlgSettingsNavigation.ui" line="537"/>
       <source>How much will be zoomed.
 Zoom step of '1' means a factor of 7.5 for every zoom step.</source>
       <translation>Наколькі будзе маштабавана.
 Крок маштабавання '1' азначае каэфіцыент 7.5 для кожнага кроку маштабавання.</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="577"/>
+      <location filename="../DlgSettingsNavigation.ui" line="581"/>
       <source>Direction of zoom operations will be inverted</source>
       <translation>Напрамак аперацый маштабавання будзе інвертаваны</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="580"/>
+      <location filename="../DlgSettingsNavigation.ui" line="584"/>
       <source>Invert zoom</source>
       <translation>Інвертаваць маштаб</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="596"/>
+      <location filename="../DlgSettingsNavigation.ui" line="600"/>
       <source>Prevents view tilting when pinch-zooming.
 Affects only gesture navigation style.
 Mouse tilting is not disabled by this setting.</source>
@@ -4886,57 +4890,57 @@ Mouse tilting is not disabled by this setting.</source>
 Нахіл мышы гэтай наладай не адключаны.</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="601"/>
+      <location filename="../DlgSettingsNavigation.ui" line="605"/>
       <source>Disable touchscreen tilt gesture</source>
       <translation>Адключыць жэст нахілу для сэнсарнага экрану</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="147"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="150"/>
       <source>Isometric</source>
       <translation>Ізаметрычны</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="148"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="151"/>
       <source>Dimetric</source>
       <translation>Дыметрычны</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="149"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="152"/>
       <source>Trimetric</source>
       <translation>Трыметрычны</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="150"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="153"/>
       <source>Top</source>
       <translation>Зверху</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="151"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="154"/>
       <source>Front</source>
       <translation>Спераду</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="152"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="155"/>
       <source>Left</source>
       <translation>Злева</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="153"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="156"/>
       <source>Right</source>
       <translation>Справа</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="154"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="157"/>
       <source>Rear</source>
       <translation>Ззаду</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="155"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="158"/>
       <source>Bottom</source>
       <translation>Знізу</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="156"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="159"/>
       <source>Custom</source>
       <translation>Карыстальніцкі</translation>
     </message>
@@ -6186,82 +6190,82 @@ originally selected prior to opening this dialog</source>
   <context>
     <name>Gui::DockWnd::ReportOutput</name>
     <message>
-      <location filename="../ReportView.cpp" line="580"/>
+      <location filename="../ReportView.cpp" line="586"/>
       <source>Options</source>
       <translation>Налады</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="585"/>
+      <location filename="../ReportView.cpp" line="591"/>
       <source>Display message types</source>
       <translation>Адлюстраваць тыпы паведамленняў</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="588"/>
-      <location filename="../ReportView.cpp" line="612"/>
+      <location filename="../ReportView.cpp" line="594"/>
+      <location filename="../ReportView.cpp" line="618"/>
       <source>Normal messages</source>
       <translation>Звычайныя паведамленні</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="592"/>
-      <location filename="../ReportView.cpp" line="616"/>
+      <location filename="../ReportView.cpp" line="598"/>
+      <location filename="../ReportView.cpp" line="622"/>
       <source>Log messages</source>
       <translation>Паведамленні часопісу</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="596"/>
-      <location filename="../ReportView.cpp" line="620"/>
+      <location filename="../ReportView.cpp" line="602"/>
+      <location filename="../ReportView.cpp" line="626"/>
       <source>Warnings</source>
       <translation>Папярэджанні</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="600"/>
-      <location filename="../ReportView.cpp" line="624"/>
+      <location filename="../ReportView.cpp" line="606"/>
+      <location filename="../ReportView.cpp" line="630"/>
       <source>Errors</source>
       <translation>Памылкі</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="604"/>
-      <location filename="../ReportView.cpp" line="628"/>
+      <location filename="../ReportView.cpp" line="610"/>
+      <location filename="../ReportView.cpp" line="634"/>
       <source>Critical messages</source>
       <translation>Крытычныя паведамленні</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="609"/>
+      <location filename="../ReportView.cpp" line="615"/>
       <source>Show Report view on</source>
       <translation>Паказаць прагляд справаздачы на</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="634"/>
+      <location filename="../ReportView.cpp" line="640"/>
       <source>Redirect Python output</source>
       <translation>Перанакіраваць вывад з Python</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="638"/>
+      <location filename="../ReportView.cpp" line="644"/>
       <source>Redirect Python errors</source>
       <translation>Перанакіраваць вывад памылак з Python</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="643"/>
+      <location filename="../ReportView.cpp" line="649"/>
       <source>Go to end</source>
       <translation>Перайсці да канца</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="660"/>
+      <location filename="../ReportView.cpp" line="666"/>
       <source>Clear</source>
       <translation>Ачысціць</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="662"/>
+      <location filename="../ReportView.cpp" line="668"/>
       <source>Save As...</source>
       <translation>Захаваць як...</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="670"/>
+      <location filename="../ReportView.cpp" line="676"/>
       <source>Save Report Output</source>
       <translation>Захаваць вывад справаздачы</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="671"/>
+      <location filename="../ReportView.cpp" line="677"/>
       <source>Plain Text Files</source>
       <translation>Тэкставыя файлы</translation>
     </message>
@@ -6805,62 +6809,62 @@ Do you want to save your changes?</source>
     <name>Gui::MainWindow</name>
     <message>
       <location filename="../MainWindow.cpp" line="166"/>
-      <location filename="../MainWindow.cpp" line="2066"/>
+      <location filename="../MainWindow.cpp" line="2065"/>
       <source>Dimension</source>
       <translation>Вымярэнне</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="460"/>
+      <location filename="../MainWindow.cpp" line="449"/>
       <source>Ready</source>
       <translation>Гатовы</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="872"/>
+      <location filename="../MainWindow.cpp" line="861"/>
       <source>Help addon needed!</source>
       <translation>Неабходны дадатак даведкі!</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="873"/>
+      <location filename="../MainWindow.cpp" line="862"/>
       <source>The Help system of %1 is now handled by the "Help" addon. It can easily be installed via the Addons Manager</source>
       <translation>Даведачная сістэма %1 цяпер апрацоўваецца дадаткам "Даведка". Яго можна лёгка ўсталяваць праз Кіраванне дадаткамі</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="875"/>
+      <location filename="../MainWindow.cpp" line="864"/>
       <source>Open Addon Manager</source>
       <translation>Адчыніць Кіраванне дадаткамі</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1070"/>
+      <location filename="../MainWindow.cpp" line="1059"/>
       <source>Close All</source>
       <translation>Зачыніць усё</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1274"/>
-      <location filename="../MainWindow.cpp" line="1275"/>
-      <location filename="../MainWindow.cpp" line="1276"/>
+      <location filename="../MainWindow.cpp" line="1264"/>
+      <location filename="../MainWindow.cpp" line="1265"/>
+      <location filename="../MainWindow.cpp" line="1266"/>
       <source>Toggles this toolbar</source>
       <translation>Пераключае панэль інструментаў</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1289"/>
-      <location filename="../MainWindow.cpp" line="1290"/>
-      <location filename="../MainWindow.cpp" line="1291"/>
+      <location filename="../MainWindow.cpp" line="1279"/>
+      <location filename="../MainWindow.cpp" line="1280"/>
+      <location filename="../MainWindow.cpp" line="1281"/>
       <source>Toggles this dockable window</source>
       <translation>Пераключае ўбудаванае акно</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1857"/>
-      <location filename="../MainWindow.cpp" line="1949"/>
+      <location filename="../MainWindow.cpp" line="1856"/>
+      <location filename="../MainWindow.cpp" line="1948"/>
       <source>Unsaved document</source>
       <translation>Незахаваны дакумент</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1858"/>
+      <location filename="../MainWindow.cpp" line="1857"/>
       <source>The exported object contains external link. Please save the documentat least once before exporting.</source>
       <translation>Аб'ект, які экспартуецца, утрымлівае знешні спасылак. Калі ласка, захавайце дакумент хаця б адзін раз перад экспартаваннем.</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1950"/>
+      <location filename="../MainWindow.cpp" line="1949"/>
       <source>To link to external objects, the document must be saved at least once.
 Do you want to save the document now?</source>
       <translation>Каб стварыць спасылак на знешнія аб'екты, дакумент павінен быць захаваны хаця б адзін раз.
@@ -7098,17 +7102,17 @@ How do you want to proceed?</source>
   <context>
     <name>Gui::ProgressBar</name>
     <message>
-      <location filename="../ProgressBar.cpp" line="298"/>
+      <location filename="../ProgressBar.cpp" line="297"/>
       <source>Remaining: %1</source>
       <translation>Засталося: %1</translation>
     </message>
     <message>
-      <location filename="../ProgressBar.cpp" line="489"/>
+      <location filename="../ProgressBar.cpp" line="484"/>
       <source>Aborting</source>
       <translation>Перапынена</translation>
     </message>
     <message>
-      <location filename="../ProgressBar.cpp" line="490"/>
+      <location filename="../ProgressBar.cpp" line="485"/>
       <source>Do you really want to abort the operation?</source>
       <translation>Ці сапраўды вы жадаеце перарваць аперацыю?</translation>
     </message>
@@ -7121,12 +7125,12 @@ How do you want to proceed?</source>
       <translation>Засталося: %1</translation>
     </message>
     <message>
-      <location filename="../ProgressDialog.cpp" line="320"/>
+      <location filename="../ProgressDialog.cpp" line="317"/>
       <source>Aborting</source>
       <translation>Перапынена</translation>
     </message>
     <message>
-      <location filename="../ProgressDialog.cpp" line="321"/>
+      <location filename="../ProgressDialog.cpp" line="318"/>
       <source>Do you really want to abort the operation?</source>
       <translation>Ці сапраўды вы жадаеце перарваць аперацыю?</translation>
     </message>
@@ -7134,7 +7138,7 @@ How do you want to proceed?</source>
   <context>
     <name>Gui::PropertyEditor::LinkLabel</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4313"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4312"/>
       <source>Change the linked object</source>
       <translation>Змяніць звязаны аб'ект</translation>
     </message>
@@ -7142,12 +7146,12 @@ How do you want to proceed?</source>
   <context>
     <name>Gui::PropertyEditor::LinkSelection</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4282"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4281"/>
       <source>Error</source>
       <translation>Памылка</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4282"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4281"/>
       <source>Object not found</source>
       <translation>Аб'ект не знойдзены</translation>
     </message>
@@ -7363,17 +7367,17 @@ Do you want to exit without saving your data?</source>
   <context>
     <name>Gui::RecentFilesAction</name>
     <message>
-      <location filename="../Action.cpp" line="980"/>
+      <location filename="../Action.cpp" line="857"/>
       <source>Open file %1</source>
       <translation>Адчыніць файл %1</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="1024"/>
+      <location filename="../Action.cpp" line="901"/>
       <source>File not found</source>
       <translation>Файл не знойдзены</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="1024"/>
+      <location filename="../Action.cpp" line="901"/>
       <source>The file '%1' cannot be opened.</source>
       <translation>Не атрымалася адчыніць файл '%1'.</translation>
     </message>
@@ -7381,22 +7385,22 @@ Do you want to exit without saving your data?</source>
   <context>
     <name>Gui::RecentMacrosAction</name>
     <message>
-      <location filename="../Action.cpp" line="1147"/>
+      <location filename="../Action.cpp" line="1024"/>
       <source>none</source>
       <translation>адсутнічае</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="1162"/>
+      <location filename="../Action.cpp" line="1039"/>
       <source>Run macro %1 (Shift+click to edit) keyboard shortcut: %2</source>
       <translation>Запусціць макрас %1 (&lt;Shift+пстрычка&gt; каб змяніць) спалучэнне клавіш: %2</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="1219"/>
+      <location filename="../Action.cpp" line="1097"/>
       <source>File not found</source>
       <translation>Файл не знойдзены</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="1219"/>
+      <location filename="../Action.cpp" line="1097"/>
       <source>The file '%1' cannot be opened.</source>
       <translation>Не атрымалася адчыніць файл '%1'.</translation>
     </message>
@@ -7991,7 +7995,7 @@ Do you want to specify another directory?</source>
   <context>
     <name>Gui::TreeDockWidget</name>
     <message>
-      <location filename="../Tree.cpp" line="3140"/>
+      <location filename="../Tree.cpp" line="3159"/>
       <source>Tree view</source>
       <translation>Прагляд дрэва</translation>
     </message>
@@ -7999,7 +8003,7 @@ Do you want to specify another directory?</source>
   <context>
     <name>Gui::TreePanel</name>
     <message>
-      <location filename="../Tree.cpp" line="3066"/>
+      <location filename="../Tree.cpp" line="3085"/>
       <source>Search</source>
       <translation>Пошук</translation>
     </message>
@@ -8007,173 +8011,184 @@ Do you want to specify another directory?</source>
   <context>
     <name>Gui::TreeWidget</name>
     <message>
-      <location filename="../Tree.cpp" line="461"/>
+      <location filename="../Tree.cpp" line="460"/>
       <source>Search...</source>
       <translation>Пошук...</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="462"/>
+      <location filename="../Tree.cpp" line="461"/>
       <source>Search for objects</source>
       <translation>Пошук аб'ектаў</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="888"/>
+      <location filename="../Tree.cpp" line="887"/>
       <source>Activate document</source>
       <translation>Задзейнічаць дакумент</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="895"/>
+      <location filename="../Tree.cpp" line="894"/>
       <source>Activate document %1</source>
       <translation>Задзейнічаць дакумент %1</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="932"/>
+      <location filename="../Tree.cpp" line="906"/>
+      <source>Tree settings</source>
+      <translation>Налады дрэва</translation>
+    </message>
+    <message>
+      <location filename="../Tree.cpp" line="910"/>
+      <source>Show description column</source>
+      <translation>Паказаць слупок апісання</translation>
+    </message>
+    <message>
+      <location filename="../Tree.cpp" line="911"/>
+      <source>Show an extra tree view column for item description. The item's description can be set by pressing F2 (or your OS's edit button) or by editing the 'label2' property.</source>
+      <translation>Паказаць дадатковы слупок прагляду дрэва для апісання элемента.
+Апісанне элемента можна задаць, калі націснуць клавішу &lt;F2&gt; (ці кнопку змены ў вашай аперацыйнай сістэме), альбо змяніць уласцівасць 'label2'.</translation>
+    </message>
+    <message>
+      <location filename="../Tree.cpp" line="952"/>
       <source>Group</source>
       <translation>Суполка</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2770"/>
+      <location filename="../Tree.cpp" line="2790"/>
       <source>Labels &amp; Attributes</source>
       <translation>Надпісы і атрыбуты</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2771"/>
+      <location filename="../Tree.cpp" line="2791"/>
       <source>Description</source>
       <translation>Апісанне</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2772"/>
-      <source>Application</source>
-      <translation>Праграма</translation>
-    </message>
-    <message>
-      <location filename="../Tree.cpp" line="2774"/>
+      <location filename="../Tree.cpp" line="2793"/>
       <source>Show items hidden in tree view</source>
       <translation>Паказаць схаваныя элементы ў праглядзе дрэва</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2775"/>
+      <location filename="../Tree.cpp" line="2794"/>
       <source>Show items that are marked as 'hidden' in the tree view</source>
       <translation>Паказвае элементы, якія пазначаныя як 'схаваныя' у праглядзе дрэва</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2777"/>
+      <location filename="../Tree.cpp" line="2796"/>
       <source>Toggle visibility in tree view</source>
       <translation>Пераключыць бачнасць у праглядзе дрэва</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2778"/>
+      <location filename="../Tree.cpp" line="2797"/>
       <source>Toggles the visibility of selected items in the tree view</source>
       <translation>Пераключае бачнасць абраных элементаў у праглядзе дрэва</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2780"/>
+      <location filename="../Tree.cpp" line="2799"/>
       <source>Create group...</source>
       <translation>Стварыць суполку...</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2781"/>
+      <location filename="../Tree.cpp" line="2800"/>
       <source>Create a group</source>
       <translation>Стварыць суполку</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2783"/>
-      <location filename="../Tree.cpp" line="4921"/>
+      <location filename="../Tree.cpp" line="2802"/>
+      <location filename="../Tree.cpp" line="4940"/>
       <source>Rename</source>
       <translation>Пераназваць</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2784"/>
+      <location filename="../Tree.cpp" line="2803"/>
       <source>Rename object</source>
       <translation>Пераназваць аб'ект</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2786"/>
+      <location filename="../Tree.cpp" line="2805"/>
       <source>Finish editing</source>
       <translation>Скончыць змену</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2787"/>
+      <location filename="../Tree.cpp" line="2806"/>
       <source>Finish editing object</source>
       <translation>Скончыць змену аб'екта</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2789"/>
+      <location filename="../Tree.cpp" line="2808"/>
       <source>Add dependent objects to selection</source>
       <translation>Дадаць залежныя аб'екты да выдзялення</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2790"/>
+      <location filename="../Tree.cpp" line="2809"/>
       <source>Adds all dependent objects to the selection</source>
       <translation>Дадаць усе залежныя аб'екты да выдзялення</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2792"/>
+      <location filename="../Tree.cpp" line="2811"/>
       <source>Close document</source>
       <translation>Зачыніць дакумент</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2793"/>
+      <location filename="../Tree.cpp" line="2812"/>
       <source>Close the document</source>
       <translation>Закрыць дакумент</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2795"/>
+      <location filename="../Tree.cpp" line="2814"/>
       <source>Reload document</source>
       <translation>Перазагрузіць дакумент</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2796"/>
+      <location filename="../Tree.cpp" line="2815"/>
       <source>Reload a partially loaded document</source>
       <translation>Перазагрузіць часткова загружаныя дакументы</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2798"/>
+      <location filename="../Tree.cpp" line="2817"/>
       <source>Skip recomputes</source>
       <translation>Прапусціць вылічэнні</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2799"/>
+      <location filename="../Tree.cpp" line="2818"/>
       <source>Enable or disable recomputations of document</source>
       <translation>Уключае ці адключае паўторныя вылічэнні дакумента</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2801"/>
+      <location filename="../Tree.cpp" line="2820"/>
       <source>Allow partial recomputes</source>
       <translation>Дазволіць частковыя вылічэнні</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2803"/>
+      <location filename="../Tree.cpp" line="2822"/>
       <source>Enable or disable recomputating editing object when 'skip recomputation' is enabled</source>
       <translation>Уключае ці адключае паўторныя вылічэнні аб'екта змены, калі ўключана налада 'Прапусціць вылічэнні'</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2805"/>
+      <location filename="../Tree.cpp" line="2824"/>
       <source>Mark to recompute</source>
       <translation>Адзначыць для пераліку</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2806"/>
+      <location filename="../Tree.cpp" line="2825"/>
       <source>Mark this object to be recomputed</source>
       <translation>Адзначыць аб'ект да пералічэння</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2809"/>
+      <location filename="../Tree.cpp" line="2828"/>
       <source>Recompute object</source>
       <translation>Вылічыць аб'ект</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2810"/>
+      <location filename="../Tree.cpp" line="2829"/>
       <source>Recompute the selected object</source>
       <translation>Вылічыць абраны аб'ект</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="4892"/>
+      <location filename="../Tree.cpp" line="4911"/>
       <source> (but must be executed)</source>
       <translation> (але павінен быць выкананы)</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="4894"/>
+      <location filename="../Tree.cpp" line="4913"/>
       <source>%1, Internal name: %2</source>
       <translation>%1, унутраная назва: %2</translation>
     </message>
@@ -8217,8 +8232,7 @@ Do you want to specify another directory?</source>
   <context>
     <name>Gui::WorkbenchGroup</name>
     <message>
-      <location filename="../Action.cpp" line="794"/>
-      <location filename="../Action.cpp" line="862"/>
+      <location filename="../Action.cpp" line="722"/>
       <source>Select the '%1' workbench</source>
       <translation>Абраць варштат '%1'</translation>
     </message>
@@ -8390,37 +8404,37 @@ Do you want to specify another directory?</source>
   <context>
     <name>QDockWidget</name>
     <message>
-      <location filename="../MainWindow.cpp" line="510"/>
+      <location filename="../MainWindow.cpp" line="499"/>
       <source>Tree view</source>
       <translation>Прагляд дрэва</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="538"/>
+      <location filename="../MainWindow.cpp" line="527"/>
       <source>Property view</source>
       <translation>Выгляд уласцівасці</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="556"/>
+      <location filename="../MainWindow.cpp" line="545"/>
       <source>Selection view</source>
       <translation>Выгляд абранага</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="578"/>
+      <location filename="../MainWindow.cpp" line="567"/>
       <source>Combo View</source>
       <translation>Камбінаваны Прагляд</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="612"/>
+      <location filename="../MainWindow.cpp" line="601"/>
       <source>DAG View</source>
       <translation>Выгляд DAG</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="630"/>
+      <location filename="../MainWindow.cpp" line="619"/>
       <source>Report view</source>
       <translation>Прагляд справаздачы</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="650"/>
+      <location filename="../MainWindow.cpp" line="639"/>
       <source>Python console</source>
       <translation>Кансоль Python</translation>
     </message>
@@ -8541,8 +8555,8 @@ Do you want to specify another directory?</source>
       <translation>Экспарт у PDF...</translation>
     </message>
     <message>
+      <location filename="../MainWindow.cpp" line="692"/>
       <location filename="../CommandDoc.cpp" line="1189"/>
-      <location filename="../MainWindow.cpp" line="703"/>
       <source>Unsaved document</source>
       <translation>Незахаваны дакумент</translation>
     </message>
@@ -8811,40 +8825,40 @@ Do you want to continue?</source>
       <translation>Змяніць значэнне</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="531"/>
-      <location filename="../NotificationArea.cpp" line="988"/>
+      <location filename="../NotificationArea.cpp" line="553"/>
+      <location filename="../NotificationArea.cpp" line="1020"/>
       <source>Type</source>
       <translation>Тып</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="531"/>
-      <location filename="../NotificationArea.cpp" line="989"/>
+      <location filename="../NotificationArea.cpp" line="553"/>
+      <location filename="../NotificationArea.cpp" line="1021"/>
       <source>Notifier</source>
       <translation>Апавяшчальнік</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="531"/>
-      <location filename="../NotificationArea.cpp" line="990"/>
+      <location filename="../NotificationArea.cpp" line="553"/>
+      <location filename="../NotificationArea.cpp" line="1022"/>
       <source>Message</source>
       <translation>Паведамленне</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="931"/>
+      <location filename="../NotificationArea.cpp" line="963"/>
       <source>Notifier: </source>
       <translation>Апавяшчальнік: </translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="933"/>
+      <location filename="../NotificationArea.cpp" line="965"/>
       <source>Do you want to skip confirmation of further critical message notifications while loading the file?</source>
       <translation>Ці жадаеце вы прапускаць пацверджанні далейшых апавяшчэнняў аб крытычных паведамленнях пры загрузцы файла?</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="937"/>
+      <location filename="../NotificationArea.cpp" line="969"/>
       <source>Critical Message</source>
       <translation>Крытычнае паведамленне</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="1003"/>
+      <location filename="../NotificationArea.cpp" line="1035"/>
       <source>Too many opened non-intrusive notifications. Notifications are being omitted!</source>
       <translation>Зашмат адчыненых ненадакучлівых апавяшчэнняў. Апавяшчэнні прапускаюцца!</translation>
     </message>
@@ -9107,7 +9121,7 @@ Please open a browser window and type in: http://localhost:%1.</source>
       <translation>Не атрымалася знайсці файл %1 ні ў %2, ні ў %3</translation>
     </message>
     <message>
-      <location filename="../NavigationStyle.cpp" line="1729"/>
+      <location filename="../NavigationStyle.cpp" line="1732"/>
       <source>Navigation styles</source>
       <translation>Стылі навігацыі</translation>
     </message>
@@ -9128,32 +9142,32 @@ Please open a browser window and type in: http://localhost:%1.</source>
       <translation type="unfinished">Do you want to close this dialog?</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="705"/>
+      <location filename="../MainWindow.cpp" line="694"/>
       <source>Do you want to save your changes to document '%1' before closing?</source>
       <translation>Ці жадаеце вы захаваць свае змены ў дакуменце '%1' перад закрыццём?</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="708"/>
+      <location filename="../MainWindow.cpp" line="697"/>
       <source>Do you want to save your changes to document before closing?</source>
       <translation>Ці жадаеце вы захаваць свае змены ў дакуменце перад закрыццём?</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="710"/>
+      <location filename="../MainWindow.cpp" line="699"/>
       <source>If you don't save, your changes will be lost.</source>
       <translation>Калі вы не захаваеце, вашыя змены будуць незваротна страчаныя.</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="715"/>
+      <location filename="../MainWindow.cpp" line="704"/>
       <source>Apply answer to all</source>
       <translation>Прымяніць адказ да ўсіх</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="805"/>
+      <location filename="../MainWindow.cpp" line="794"/>
       <source>%1 Document(s) not saved</source>
       <translation>%1 дакументы не захаваныя</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="806"/>
+      <location filename="../MainWindow.cpp" line="795"/>
       <source>Some documents could not be saved. Do you want to cancel closing?</source>
       <translation>Некаторыя дакументы не атрымалася захаваць. Ці жадаеце вы адмяніць закрыццё?</translation>
     </message>
@@ -9183,12 +9197,12 @@ Please open a browser window and type in: http://localhost:%1.</source>
       <translation>%1 не пусты, ці выдаліць таксама і яго змест?</translation>
     </message>
     <message>
-      <location filename="../SoFCCSysDragger.cpp" line="294"/>
+      <location filename="../SoFCCSysDragger.cpp" line="298"/>
       <source>Translation:</source>
       <translation>Перанос:</translation>
     </message>
     <message>
-      <location filename="../SoFCCSysDragger.cpp" line="579"/>
+      <location filename="../SoFCCSysDragger.cpp" line="587"/>
       <source>Rotation:</source>
       <translation>Вярчэнне:</translation>
     </message>
@@ -9283,8 +9297,8 @@ underscore, and must not start with a digit.</source>
       <translation>Не атрымалася дадаць уласцівасць да '%1': %2</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2059"/>
-      <location filename="../Tree.cpp" line="2255"/>
+      <location filename="../Tree.cpp" line="2079"/>
+      <location filename="../Tree.cpp" line="2275"/>
       <source>Drag &amp; drop failed</source>
       <translation>Не атрымалася перамясціць</translation>
     </message>
@@ -9390,7 +9404,7 @@ the current copy will be lost.
       <translation>Змяніць %1</translation>
     </message>
     <message>
-      <location filename="../ViewProviderImagePlane.cpp" line="146"/>
+      <location filename="../ViewProviderImagePlane.cpp" line="147"/>
       <source>Change image...</source>
       <translation>Змяніць выяву...</translation>
     </message>
@@ -10332,8 +10346,8 @@ the current copy will be lost.
       <translation>Стварыць новы пусты дакумент</translation>
     </message>
     <message>
+      <location filename="../MainWindow.cpp" line="2053"/>
       <location filename="../DocumentRecovery.cpp" line="393"/>
-      <location filename="../MainWindow.cpp" line="2054"/>
       <source>Unnamed</source>
       <translation>Без назвы</translation>
     </message>
@@ -12235,28 +12249,28 @@ Do you still want to proceed?</source>
     </message>
     <message>
       <location filename="../DlgSettingsNotificationArea.ui" line="67"/>
-      <source>Additional data Sources</source>
+      <source>Additional data sources</source>
       <translation>Дадатковыя крыніцы дадзеных</translation>
     </message>
     <message>
       <location filename="../DlgSettingsNotificationArea.ui" line="73"/>
-      <source>Errors will appear in the notification area</source>
-      <translation>Памылкі з'явяцца ў вобласці апавяшчэнняў</translation>
+      <source>Errors intended for developers will appear in the notification area</source>
+      <translation>Памылкі, якія прызначаныя для распрацоўшчыкаў, будуць адлюстроўвацца ў вобласці апавяшчэнняў</translation>
     </message>
     <message>
       <location filename="../DlgSettingsNotificationArea.ui" line="76"/>
-      <source>Errors</source>
-      <translation>Памылкі</translation>
+      <source>Debug errors</source>
+      <translation>Памылкі адладкі</translation>
     </message>
     <message>
       <location filename="../DlgSettingsNotificationArea.ui" line="92"/>
-      <source>Warnings will appear in the notification area</source>
-      <translation>Папярэджанні з'явяцца ў вобласці апавяшчэнняў</translation>
+      <source>Warnings intended for developers will appear in the notification area</source>
+      <translation>Папярэджанні, якія прызначаныя для распрацоўшчыкаў, будуць адлюстроўвацца ў вобласці апавяшчэнняў</translation>
     </message>
     <message>
       <location filename="../DlgSettingsNotificationArea.ui" line="95"/>
-      <source>Warnings</source>
-      <translation>Папярэджанні</translation>
+      <source>Debug warnings</source>
+      <translation>Папярэджанні адладкі</translation>
     </message>
     <message>
       <location filename="../DlgSettingsNotificationArea.ui" line="114"/>
@@ -12606,17 +12620,17 @@ after FreeCAD launches</source>
   <context>
     <name>Gui::Dialog::DlgSettingsWorkbenchesImp</name>
     <message>
-      <location filename="../DlgSettingsWorkbenchesImp.cpp" line="469"/>
+      <location filename="../DlgSettingsWorkbenchesImp.cpp" line="475"/>
       <source>Toolbar</source>
       <translation>Панэль інструментаў</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsWorkbenchesImp.cpp" line="470"/>
+      <location filename="../DlgSettingsWorkbenchesImp.cpp" line="476"/>
       <source>Left corner</source>
       <translation>Левы кут</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsWorkbenchesImp.cpp" line="471"/>
+      <location filename="../DlgSettingsWorkbenchesImp.cpp" line="477"/>
       <source>Right corner</source>
       <translation>Правы кут</translation>
     </message>
@@ -12624,17 +12638,17 @@ after FreeCAD launches</source>
   <context>
     <name>NotificationsAction</name>
     <message>
-      <location filename="../NotificationArea.cpp" line="552"/>
+      <location filename="../NotificationArea.cpp" line="574"/>
       <source>Delete</source>
       <translation>Выдаліць</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="563"/>
+      <location filename="../NotificationArea.cpp" line="585"/>
       <source>Delete user notifications</source>
       <translation>Выдаліць карыстальніцкія апавяшчэнні</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="570"/>
+      <location filename="../NotificationArea.cpp" line="592"/>
       <source>Delete All</source>
       <translation>Выдаліць усё</translation>
     </message>
@@ -12642,12 +12656,12 @@ after FreeCAD launches</source>
   <context>
     <name>Gui::NotificationArea</name>
     <message>
-      <location filename="../NotificationArea.cpp" line="839"/>
+      <location filename="../NotificationArea.cpp" line="861"/>
       <source>Delete user notifications</source>
       <translation>Выдаліць карыстальніцкія апавяшчэнні</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="849"/>
+      <location filename="../NotificationArea.cpp" line="871"/>
       <source>Delete All</source>
       <translation>Выдаліць усё</translation>
     </message>
@@ -12699,18 +12713,18 @@ after FreeCAD launches</source>
     <message>
       <location filename="../TaskView/TaskImage.cpp" line="450"/>
       <source>Enter desired distance between the points</source>
-      <translation>Увядзіце жаданую адлегласць паміж кропкамі</translation>
+      <translation>Увядзіце патрэбную адлегласць паміж кропкамі</translation>
     </message>
   </context>
   <context>
     <name>NaviCubeDraggableCmd</name>
     <message>
-      <location filename="../NaviCube.cpp" line="1377"/>
+      <location filename="../NaviCube.cpp" line="1092"/>
       <source>Movable navigation cube</source>
       <translation>Рухомы куб навігацыі</translation>
     </message>
     <message>
-      <location filename="../NaviCube.cpp" line="1378"/>
+      <location filename="../NaviCube.cpp" line="1093"/>
       <source>Drag and place NaviCube</source>
       <translation>Перацягнуць у Куб навігацыі</translation>
     </message>
@@ -12718,34 +12732,43 @@ after FreeCAD launches</source>
   <context>
     <name>NaviCubeSettings</name>
     <message>
-      <location filename="../View3DSettings.cpp" line="543"/>
+      <location filename="../View3DSettings.cpp" line="533"/>
       <source>FRONT</source>
       <translation>Спераду</translation>
     </message>
     <message>
-      <location filename="../View3DSettings.cpp" line="545"/>
+      <location filename="../View3DSettings.cpp" line="535"/>
       <source>TOP</source>
       <translation>Зверху</translation>
     </message>
     <message>
-      <location filename="../View3DSettings.cpp" line="547"/>
+      <location filename="../View3DSettings.cpp" line="537"/>
       <source>RIGHT</source>
       <translation>Справа</translation>
     </message>
     <message>
-      <location filename="../View3DSettings.cpp" line="549"/>
+      <location filename="../View3DSettings.cpp" line="539"/>
       <source>REAR</source>
       <translation>Сзаду</translation>
     </message>
     <message>
-      <location filename="../View3DSettings.cpp" line="551"/>
+      <location filename="../View3DSettings.cpp" line="541"/>
       <source>BOTTOM</source>
       <translation>Знізу</translation>
     </message>
     <message>
-      <location filename="../View3DSettings.cpp" line="553"/>
+      <location filename="../View3DSettings.cpp" line="543"/>
       <source>LEFT</source>
       <translation>Злева</translation>
+    </message>
+  </context>
+  <context>
+    <name>Gui::ExpLineEdit</name>
+    <message>
+      <location filename="../Widgets.cpp" line="1600"/>
+      <location filename="../Widgets.cpp" line="1667"/>
+      <source>An error occurred -- see Report View for information</source>
+      <translation>Адбылася памылка - інфармацыю глядзіце ў Праглядзе справаздачы</translation>
     </message>
   </context>
 </TS>

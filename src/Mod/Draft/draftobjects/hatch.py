@@ -67,17 +67,17 @@ class Hatch(DraftObject):
 
         self.setProperties(obj)
 
-    def __getstate__(self):
+    def dumps(self):
 
         return None
 
-    def __setstate__(self,state):
+    def loads(self,state):
 
         return None
 
     def execute(self,obj):
 
-        if self.props_changed_placement_only() \
+        if self.props_changed_placement_only(obj) \
                 or not obj.Base \
                 or not obj.File \
                 or not obj.Pattern \

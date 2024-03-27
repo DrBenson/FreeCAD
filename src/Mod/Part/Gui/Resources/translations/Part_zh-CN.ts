@@ -1150,14 +1150,14 @@
   <context>
     <name>CmdBoxSelection</name>
     <message>
-      <location filename="../../Command.cpp" line="2393"/>
+      <location filename="../../Command.cpp" line="2326"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2394"/>
-      <location filename="../../Command.cpp" line="2395"/>
-      <location filename="../../Command.cpp" line="2397"/>
+      <location filename="../../Command.cpp" line="2327"/>
+      <location filename="../../Command.cpp" line="2328"/>
+      <location filename="../../Command.cpp" line="2330"/>
       <source>Box selection</source>
       <translation>框选</translation>
     </message>
@@ -1165,17 +1165,17 @@
   <context>
     <name>CmdCheckGeometry</name>
     <message>
-      <location filename="../../Command.cpp" line="2102"/>
+      <location filename="../../Command.cpp" line="2035"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2103"/>
+      <location filename="../../Command.cpp" line="2036"/>
       <source>Check Geometry</source>
       <translation>检查几何</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2104"/>
+      <location filename="../../Command.cpp" line="2037"/>
       <source>Analyzes Geometry For Errors</source>
       <translation>分析几何错误</translation>
     </message>
@@ -1183,17 +1183,17 @@
   <context>
     <name>CmdColorPerFace</name>
     <message>
-      <location filename="../../Command.cpp" line="2135"/>
+      <location filename="../../Command.cpp" line="2068"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2136"/>
+      <location filename="../../Command.cpp" line="2069"/>
       <source>Color per face</source>
       <translation>逐面着色</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2137"/>
+      <location filename="../../Command.cpp" line="2070"/>
       <source>Set the color of each individual face of the selected object.</source>
       <translation>设置选中对象的每个面的颜色。</translation>
     </message>
@@ -1201,17 +1201,17 @@
   <context>
     <name>CmdMeasureAngular</name>
     <message>
-      <location filename="../../Command.cpp" line="2205"/>
+      <location filename="../../Command.cpp" line="2138"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2206"/>
+      <location filename="../../Command.cpp" line="2139"/>
       <source>Measure Angular</source>
       <translation>角度测量</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2207"/>
+      <location filename="../../Command.cpp" line="2140"/>
       <source>Measure the angle between two edges.</source>
       <translation>测量两个边之间的角度。</translation>
     </message>
@@ -1219,17 +1219,17 @@
   <context>
     <name>CmdMeasureClearAll</name>
     <message>
-      <location filename="../../Command.cpp" line="2264"/>
+      <location filename="../../Command.cpp" line="2197"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2265"/>
+      <location filename="../../Command.cpp" line="2198"/>
       <source>Clear All</source>
       <translation>清除所有</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2266"/>
+      <location filename="../../Command.cpp" line="2199"/>
       <source>Clear all dimensions from the screen.</source>
       <translation>清除屏幕上的所有尺寸。</translation>
     </message>
@@ -1237,17 +1237,17 @@
   <context>
     <name>CmdMeasureLinear</name>
     <message>
-      <location filename="../../Command.cpp" line="2174"/>
+      <location filename="../../Command.cpp" line="2107"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2175"/>
+      <location filename="../../Command.cpp" line="2108"/>
       <source>Measure Linear</source>
       <translation>线性测量</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2176"/>
+      <location filename="../../Command.cpp" line="2109"/>
       <source>Measure the linear distance between two points;
 if edges or faces are picked, it will measure
 between two vertices of them.</source>
@@ -1258,17 +1258,17 @@ between two vertices of them.</source>
   <context>
     <name>CmdMeasureRefresh</name>
     <message>
-      <location filename="../../Command.cpp" line="2234"/>
+      <location filename="../../Command.cpp" line="2167"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2235"/>
+      <location filename="../../Command.cpp" line="2168"/>
       <source>Refresh</source>
       <translation>刷新</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2236"/>
+      <location filename="../../Command.cpp" line="2169"/>
       <source>Recalculate the dimensions
 if the measured points have moved.</source>
       <translation>如果测量点移动，则重新计算尺寸。</translation>
@@ -1277,79 +1277,78 @@ if the measured points have moved.</source>
   <context>
     <name>CmdMeasureToggle3d</name>
     <message>
-      <location filename="../../Command.cpp" line="2330"/>
+      <location filename="../../Command.cpp" line="2263"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2331"/>
+      <location filename="../../Command.cpp" line="2264"/>
       <source>Toggle 3D</source>
       <translation>切换3D</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2332"/>
+      <location filename="../../Command.cpp" line="2265"/>
       <source>Toggle on and off all direct dimensions,
 including angular.</source>
-      <translation type="unfinished">Toggle on and off all direct dimensions,
-including angular.</translation>
+      <translation>切换显示或关闭所有直接尺寸，
+包括角度。</translation>
     </message>
   </context>
   <context>
     <name>CmdMeasureToggleAll</name>
     <message>
-      <location filename="../../Command.cpp" line="2293"/>
+      <location filename="../../Command.cpp" line="2226"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2294"/>
+      <location filename="../../Command.cpp" line="2227"/>
       <source>Toggle All</source>
       <translation>切换所有</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2295"/>
+      <location filename="../../Command.cpp" line="2228"/>
       <source>Toggle on and off all currently visible dimensions,
 direct, orthogonal, and angular.</source>
-      <translation type="unfinished">Toggle on and off all currently visible dimensions,
-direct, orthogonal, and angular.</translation>
+      <translation>切换显示或关闭所有当前可见尺寸，
+包括直接、正交和角度。</translation>
     </message>
   </context>
   <context>
     <name>CmdMeasureToggleDelta</name>
     <message>
-      <location filename="../../Command.cpp" line="2361"/>
+      <location filename="../../Command.cpp" line="2294"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2362"/>
+      <location filename="../../Command.cpp" line="2295"/>
       <source>Toggle Delta</source>
       <translation>切换增量</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2363"/>
+      <location filename="../../Command.cpp" line="2296"/>
       <source>Toggle on and off all orthogonal dimensions,
 meaning that a direct dimension will be decomposed
 into its X, Y, and Z components.</source>
-      <translation type="unfinished">Toggle on and off all orthogonal dimensions,
-meaning that a direct dimension will be decomposed
-into its X, Y, and Z components.</translation>
+      <translation>切换显示或关闭所有正交尺寸，
+意即所有直接尺寸都将被分解成相应的X、Y和Z分量。</translation>
     </message>
   </context>
   <context>
     <name>CmdPartBoolean</name>
     <message>
-      <location filename="../../Command.cpp" line="1314"/>
+      <location filename="../../Command.cpp" line="1247"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1315"/>
+      <location filename="../../Command.cpp" line="1248"/>
       <source>Boolean...</source>
       <translation>布尔运算...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1316"/>
+      <location filename="../../Command.cpp" line="1249"/>
       <source>Run a boolean operation with two shapes selected</source>
       <translation>对所选的两个形状进行布尔运算</translation>
     </message>
@@ -1413,17 +1412,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartBuilder</name>
     <message>
-      <location filename="../../Command.cpp" line="1576"/>
+      <location filename="../../Command.cpp" line="1509"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1577"/>
+      <location filename="../../Command.cpp" line="1510"/>
       <source>Shape builder...</source>
       <translation>形体构建器...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1578"/>
+      <location filename="../../Command.cpp" line="1511"/>
       <source>Advanced utility to create shapes</source>
       <translation>创建形体高级工具</translation>
     </message>
@@ -1431,17 +1430,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartChamfer</name>
     <message>
-      <location filename="../../Command.cpp" line="1481"/>
+      <location filename="../../Command.cpp" line="1414"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1482"/>
+      <location filename="../../Command.cpp" line="1415"/>
       <source>Chamfer...</source>
       <translation>倒角...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1483"/>
+      <location filename="../../Command.cpp" line="1416"/>
       <source>Chamfer the selected edges of a shape</source>
       <translation>给所选形状的边缘倒角</translation>
     </message>
@@ -1449,17 +1448,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartCommon</name>
     <message>
-      <location filename="../../Command.cpp" line="377"/>
+      <location filename="../../Command.cpp" line="358"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="378"/>
+      <location filename="../../Command.cpp" line="359"/>
       <source>Intersection</source>
       <translation>交集</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="379"/>
+      <location filename="../../Command.cpp" line="360"/>
       <source>Make an intersection of two shapes</source>
       <translation>两形体求交集</translation>
     </message>
@@ -1467,17 +1466,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartCompCompoundTools</name>
     <message>
-      <location filename="../../Command.cpp" line="802"/>
+      <location filename="../../Command.cpp" line="735"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="803"/>
+      <location filename="../../Command.cpp" line="736"/>
       <source>Compound tools</source>
       <translation>复合体工具</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="804"/>
+      <location filename="../../Command.cpp" line="737"/>
       <source>Compound tools: working with lists of shapes.</source>
       <translation>复合工具：使用形状列表。</translation>
     </message>
@@ -1485,17 +1484,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartCompJoinFeatures</name>
     <message>
-      <location filename="../../Command.cpp" line="578"/>
+      <location filename="../../Command.cpp" line="511"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="579"/>
+      <location filename="../../Command.cpp" line="512"/>
       <source>Join objects...</source>
       <translation>合并目标</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="580"/>
+      <location filename="../../Command.cpp" line="513"/>
       <source>Join walled objects</source>
       <translation>组合墙面物件</translation>
     </message>
@@ -1503,17 +1502,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartCompOffset</name>
     <message>
-      <location filename="../../Command.cpp" line="1775"/>
+      <location filename="../../Command.cpp" line="1708"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1776"/>
+      <location filename="../../Command.cpp" line="1709"/>
       <source>Offset:</source>
       <translation>偏移:</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1777"/>
+      <location filename="../../Command.cpp" line="1710"/>
       <source>Tools to offset shapes (construct parallel shapes)</source>
       <translation>用于偏移形状的工具 (构造并行形状)</translation>
     </message>
@@ -1521,35 +1520,35 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartCompSplitFeatures</name>
     <message>
-      <location filename="../../Command.cpp" line="684"/>
+      <location filename="../../Command.cpp" line="617"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="685"/>
+      <location filename="../../Command.cpp" line="618"/>
       <source>Split objects...</source>
       <translation>拆分目标</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="686"/>
+      <location filename="../../Command.cpp" line="619"/>
       <source>Shape splitting and Compsolid creation tools.</source>
-      <translation type="unfinished">Shape splitting and Compsolid creation tools.</translation>
+      <translation>形状分割和复合体（Compsolid）创建工具。</translation>
     </message>
   </context>
   <context>
     <name>CmdPartCompound</name>
     <message>
-      <location filename="../../Command.cpp" line="909"/>
+      <location filename="../../Command.cpp" line="842"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="910"/>
+      <location filename="../../Command.cpp" line="843"/>
       <source>Make compound</source>
       <translation>组合</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="911"/>
+      <location filename="../../Command.cpp" line="844"/>
       <source>Make a compound of several shapes</source>
       <translation>组合多个造型</translation>
     </message>
@@ -1577,17 +1576,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartCrossSections</name>
     <message>
-      <location filename="../../Command.cpp" line="1537"/>
+      <location filename="../../Command.cpp" line="1470"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1538"/>
+      <location filename="../../Command.cpp" line="1471"/>
       <source>Cross-sections...</source>
       <translation>横截面...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1539"/>
+      <location filename="../../Command.cpp" line="1472"/>
       <source>Cross-sections</source>
       <translation>横截面</translation>
     </message>
@@ -1640,7 +1639,7 @@ into its X, Y, and Z components.</translation>
     <message>
       <location filename="../../CommandSimple.cpp" line="413"/>
       <source>Defeaturing</source>
-      <translation type="unfinished">Defeaturing</translation>
+      <translation>清除特征</translation>
     </message>
     <message>
       <location filename="../../CommandSimple.cpp" line="414"/>
@@ -1669,17 +1668,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartExport</name>
     <message>
-      <location filename="../../Command.cpp" line="1077"/>
+      <location filename="../../Command.cpp" line="1010"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1078"/>
+      <location filename="../../Command.cpp" line="1011"/>
       <source>Export CAD...</source>
       <translation>导出CAD...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1079"/>
+      <location filename="../../Command.cpp" line="1012"/>
       <source>Exports to a CAD file</source>
       <translation>导出至CAD文件</translation>
     </message>
@@ -1687,17 +1686,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartExtrude</name>
     <message>
-      <location filename="../../Command.cpp" line="1345"/>
+      <location filename="../../Command.cpp" line="1278"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1346"/>
+      <location filename="../../Command.cpp" line="1279"/>
       <source>Extrude...</source>
       <translation>拉伸...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1347"/>
+      <location filename="../../Command.cpp" line="1280"/>
       <source>Extrude a selected sketch</source>
       <translation>拉伸选定的草图</translation>
     </message>
@@ -1705,17 +1704,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartFillet</name>
     <message>
-      <location filename="../../Command.cpp" line="1453"/>
+      <location filename="../../Command.cpp" line="1386"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1454"/>
+      <location filename="../../Command.cpp" line="1387"/>
       <source>Fillet...</source>
       <translation>圆角...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1455"/>
+      <location filename="../../Command.cpp" line="1388"/>
       <source>Fillet the selected edges of a shape</source>
       <translation>给选定形体的边倒圆角</translation>
     </message>
@@ -1723,17 +1722,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartFuse</name>
     <message>
-      <location filename="../../Command.cpp" line="477"/>
+      <location filename="../../Command.cpp" line="434"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="478"/>
+      <location filename="../../Command.cpp" line="435"/>
       <source>Union</source>
       <translation>并集</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="479"/>
+      <location filename="../../Command.cpp" line="436"/>
       <source>Make a union of several shapes</source>
       <translation>多形体求合集</translation>
     </message>
@@ -1741,17 +1740,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartImport</name>
     <message>
-      <location filename="../../Command.cpp" line="1014"/>
+      <location filename="../../Command.cpp" line="947"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1015"/>
+      <location filename="../../Command.cpp" line="948"/>
       <source>Import CAD...</source>
       <translation>导入CAD文件 ...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1016"/>
+      <location filename="../../Command.cpp" line="949"/>
       <source>Imports a CAD file</source>
       <translation>导入CAD文件</translation>
     </message>
@@ -1759,17 +1758,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartImportCurveNet</name>
     <message>
-      <location filename="../../Command.cpp" line="1125"/>
+      <location filename="../../Command.cpp" line="1058"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1126"/>
+      <location filename="../../Command.cpp" line="1059"/>
       <source>Import curve network...</source>
       <translation>导入曲线网络...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1127"/>
+      <location filename="../../Command.cpp" line="1060"/>
       <source>Import a curve network</source>
       <translation>导入曲线网络</translation>
     </message>
@@ -1777,17 +1776,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartLoft</name>
     <message>
-      <location filename="../../Command.cpp" line="1605"/>
+      <location filename="../../Command.cpp" line="1538"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1606"/>
+      <location filename="../../Command.cpp" line="1539"/>
       <source>Loft...</source>
       <translation>放样...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1607"/>
+      <location filename="../../Command.cpp" line="1540"/>
       <source>Utility to loft</source>
       <translation>放样工具</translation>
     </message>
@@ -1795,17 +1794,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartMakeFace</name>
     <message>
-      <location filename="../../Command.cpp" line="1373"/>
+      <location filename="../../Command.cpp" line="1306"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1374"/>
+      <location filename="../../Command.cpp" line="1307"/>
       <source>Make face from wires</source>
       <translation>用线生成面</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1375"/>
+      <location filename="../../Command.cpp" line="1308"/>
       <source>Make face from set of wires (e.g. from a sketch)</source>
       <translation>从一组线做面（如草图）</translation>
     </message>
@@ -1813,17 +1812,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartMakeSolid</name>
     <message>
-      <location filename="../../Command.cpp" line="1173"/>
+      <location filename="../../Command.cpp" line="1106"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1174"/>
+      <location filename="../../Command.cpp" line="1107"/>
       <source>Convert to solid</source>
       <translation>转化成实体</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1175"/>
+      <location filename="../../Command.cpp" line="1108"/>
       <source>Create solid from a shell or compound</source>
       <translation>从命令行或程序集创建实体</translation>
     </message>
@@ -1831,17 +1830,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartMirror</name>
     <message>
-      <location filename="../../Command.cpp" line="1509"/>
+      <location filename="../../Command.cpp" line="1442"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1510"/>
+      <location filename="../../Command.cpp" line="1443"/>
       <source>Mirroring...</source>
       <translation>镜像...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1511"/>
+      <location filename="../../Command.cpp" line="1444"/>
       <source>Mirroring a selected shape</source>
       <translation>镜像选定的形状</translation>
     </message>
@@ -1849,17 +1848,17 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartOffset</name>
     <message>
-      <location filename="../../Command.cpp" line="1663"/>
+      <location filename="../../Command.cpp" line="1596"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1664"/>
+      <location filename="../../Command.cpp" line="1597"/>
       <source>3D Offset...</source>
       <translation>3D偏移量...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1665"/>
+      <location filename="../../Command.cpp" line="1598"/>
       <source>Utility to offset in 3D</source>
       <translation>3D 偏移工具</translation>
     </message>
@@ -1867,19 +1866,19 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartOffset2D</name>
     <message>
-      <location filename="../../Command.cpp" line="1720"/>
+      <location filename="../../Command.cpp" line="1653"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1721"/>
+      <location filename="../../Command.cpp" line="1654"/>
       <source>2D Offset...</source>
       <translation>2D偏移量...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1722"/>
+      <location filename="../../Command.cpp" line="1655"/>
       <source>Utility to offset planar shapes</source>
-      <translation type="unfinished">Utility to offset planar shapes</translation>
+      <translation>偏移平面形状的工具</translation>
     </message>
   </context>
   <context>
@@ -1910,12 +1909,12 @@ into its X, Y, and Z components.</translation>
     <message>
       <location filename="../../CommandSimple.cpp" line="135"/>
       <source>Create points object from geometry</source>
-      <translation type="unfinished">Create points object from geometry</translation>
+      <translation>通过几何体创建点对象</translation>
     </message>
     <message>
       <location filename="../../CommandSimple.cpp" line="136"/>
       <source>Create selectable points object from selected geometric object</source>
-      <translation type="unfinished">Create selectable points object from selected geometric object</translation>
+      <translation>从所选几何对象中创建可选点对象</translation>
     </message>
   </context>
   <context>
@@ -1939,25 +1938,24 @@ into its X, Y, and Z components.</translation>
   <context>
     <name>CmdPartProjectionOnSurface</name>
     <message>
-      <location filename="../../Command.cpp" line="2423"/>
+      <location filename="../../Command.cpp" line="2356"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2424"/>
+      <location filename="../../Command.cpp" line="2357"/>
       <source>Create projection on surface...</source>
       <translation>在表面创建投影...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2425"/>
+      <location filename="../../Command.cpp" line="2358"/>
       <source>Project edges, wires, or faces of one object
 onto a face of another object.
 The camera view determines the direction
 of projection.</source>
-      <translation type="unfinished">Project edges, wires, or faces of one object
-onto a face of another object.
-The camera view determines the direction
-of projection.</translation>
+      <translation>投影一个物体的边、线或面
+到另一个物体的一个面上。
+相机视图决定投影的方向。</translation>
     </message>
   </context>
   <context>
@@ -1981,17 +1979,17 @@ of projection.</translation>
   <context>
     <name>CmdPartReverseShape</name>
     <message>
-      <location filename="../../Command.cpp" line="1252"/>
+      <location filename="../../Command.cpp" line="1185"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1253"/>
+      <location filename="../../Command.cpp" line="1186"/>
       <source>Reverse shapes</source>
       <translation>形状翻转</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1254"/>
+      <location filename="../../Command.cpp" line="1187"/>
       <source>Reverse orientation of shapes</source>
       <translation>翻转形状</translation>
     </message>
@@ -1999,17 +1997,17 @@ of projection.</translation>
   <context>
     <name>CmdPartRevolve</name>
     <message>
-      <location filename="../../Command.cpp" line="1425"/>
+      <location filename="../../Command.cpp" line="1358"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1426"/>
+      <location filename="../../Command.cpp" line="1359"/>
       <source>Revolve...</source>
       <translation>旋转...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1427"/>
+      <location filename="../../Command.cpp" line="1360"/>
       <source>Revolve a selected shape</source>
       <translation>旋转所选的形状</translation>
     </message>
@@ -2017,17 +2015,17 @@ of projection.</translation>
   <context>
     <name>CmdPartRuledSurface</name>
     <message>
-      <location filename="../../Command.cpp" line="1997"/>
+      <location filename="../../Command.cpp" line="1930"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1998"/>
+      <location filename="../../Command.cpp" line="1931"/>
       <source>Create ruled surface</source>
       <translation>创建直纹曲面</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1999"/>
+      <location filename="../../Command.cpp" line="1932"/>
       <source>Create a ruled surface from either two Edges or two wires</source>
       <translation>从两条边或两条线创建一个直纹面</translation>
     </message>
@@ -2035,17 +2033,17 @@ of projection.</translation>
   <context>
     <name>CmdPartSection</name>
     <message>
-      <location filename="../../Command.cpp" line="966"/>
+      <location filename="../../Command.cpp" line="899"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="967"/>
+      <location filename="../../Command.cpp" line="900"/>
       <source>Section</source>
       <translation>截面</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="968"/>
+      <location filename="../../Command.cpp" line="901"/>
       <source>Make a section of two shapes</source>
       <translation>创建两形体的交线</translation>
     </message>
@@ -2053,12 +2051,12 @@ of projection.</translation>
   <context>
     <name>CmdPartSectionCut</name>
     <message>
-      <location filename="../../Command.cpp" line="2457"/>
+      <location filename="../../Command.cpp" line="2390"/>
       <source>Persistent section cut</source>
       <translation>永久截面切割</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2458"/>
+      <location filename="../../Command.cpp" line="2391"/>
       <source>Creates a persistent section cut of visible part objects</source>
       <translation>创建可视零件对象的永久截面切割</translation>
     </message>
@@ -2140,17 +2138,17 @@ of projection.</translation>
   <context>
     <name>CmdPartSweep</name>
     <message>
-      <location filename="../../Command.cpp" line="1634"/>
+      <location filename="../../Command.cpp" line="1567"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1635"/>
+      <location filename="../../Command.cpp" line="1568"/>
       <source>Sweep...</source>
       <translation>扫掠...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1636"/>
+      <location filename="../../Command.cpp" line="1569"/>
       <source>Utility to sweep</source>
       <translation>扫掠程序</translation>
     </message>
@@ -2158,27 +2156,27 @@ of projection.</translation>
   <context>
     <name>CmdPartThickness</name>
     <message>
-      <location filename="../../Command.cpp" line="1867"/>
+      <location filename="../../Command.cpp" line="1800"/>
       <source>Part</source>
       <translation>零件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1868"/>
+      <location filename="../../Command.cpp" line="1801"/>
       <source>Thickness...</source>
       <translation>厚度...</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1869"/>
+      <location filename="../../Command.cpp" line="1802"/>
       <source>Utility to apply a thickness</source>
       <translation>抽壳程序</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1918"/>
+      <location filename="../../Command.cpp" line="1851"/>
       <source>Wrong selection</source>
       <translation>选择错误</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1919"/>
+      <location filename="../../Command.cpp" line="1852"/>
       <source>Selected shape is not a solid</source>
       <translation>所选形体并非实体</translation>
     </message>
@@ -2218,7 +2216,7 @@ of projection.</translation>
     <message>
       <location filename="../../CommandSimple.cpp" line="298"/>
       <source>Create a non-parametric copy with transformed placement</source>
-      <translation type="unfinished">Create a non-parametric copy with transformed placement</translation>
+      <translation>使用转换后的位置创建非参数化副本</translation>
     </message>
   </context>
   <context>
@@ -2227,82 +2225,82 @@ of projection.</translation>
       <location filename="../../Command.cpp" line="141"/>
       <location filename="../../Command.cpp" line="182"/>
       <source>Part Box Create</source>
-      <translation type="unfinished">Part Box Create</translation>
+      <translation>零件 立方体 创建</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="334"/>
+      <location filename="../../Command.cpp" line="335"/>
       <source>Part Cut</source>
-      <translation type="unfinished">Part Cut</translation>
+      <translation>零件 切割</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="435"/>
+      <location filename="../../Command.cpp" line="411"/>
       <source>Common</source>
       <translation>交集</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="535"/>
+      <location filename="../../Command.cpp" line="487"/>
       <source>Fusion</source>
-      <translation type="unfinished">Fusion</translation>
+      <translation>融合</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="944"/>
+      <location filename="../../Command.cpp" line="877"/>
       <source>Compound</source>
       <translation>组合</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="989"/>
+      <location filename="../../Command.cpp" line="922"/>
       <source>Section</source>
       <translation>截面</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1041"/>
+      <location filename="../../Command.cpp" line="974"/>
       <source>Import Part</source>
       <translation>导入部件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1148"/>
+      <location filename="../../Command.cpp" line="1081"/>
       <source>Part Import Curve Net</source>
-      <translation type="unfinished">Part Import Curve Net</translation>
+      <translation>零件 导入 曲线 网线</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1265"/>
+      <location filename="../../Command.cpp" line="1198"/>
       <source>Reverse</source>
       <translation>反转</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1387"/>
+      <location filename="../../Command.cpp" line="1320"/>
       <source>Make face</source>
-      <translation type="unfinished">Make face</translation>
+      <translation>造面</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1687"/>
+      <location filename="../../Command.cpp" line="1620"/>
       <source>Make Offset</source>
-      <translation type="unfinished">Make Offset</translation>
+      <translation>创造偏移</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1745"/>
+      <location filename="../../Command.cpp" line="1678"/>
       <source>Make 2D Offset</source>
-      <translation type="unfinished">Make 2D Offset</translation>
+      <translation>设置二维偏移</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1925"/>
+      <location filename="../../Command.cpp" line="1858"/>
       <source>Make Thickness</source>
-      <translation type="unfinished">Make Thickness</translation>
+      <translation>创造壁厚</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2077"/>
+      <location filename="../../Command.cpp" line="2010"/>
       <source>Create ruled surface</source>
       <translation>创建直纹曲面</translation>
     </message>
     <message>
       <location filename="../../CommandSimple.cpp" line="70"/>
       <source>Create Part Cylinder</source>
-      <translation type="unfinished">Create Part Cylinder</translation>
+      <translation>创造 零件 圆柱</translation>
     </message>
     <message>
       <location filename="../../CommandSimple.cpp" line="181"/>
       <source>Points from geometry</source>
-      <translation type="unfinished">Points from geometry</translation>
+      <translation>几何体的点</translation>
     </message>
     <message>
       <location filename="../../CommandSimple.cpp" line="369"/>
@@ -2312,12 +2310,12 @@ of projection.</translation>
     <message>
       <location filename="../../CommandSimple.cpp" line="426"/>
       <source>Defeaturing</source>
-      <translation type="unfinished">Defeaturing</translation>
+      <translation>清除特征</translation>
     </message>
     <message>
       <location filename="../../ShapeFromMesh.cpp" line="76"/>
       <source>Convert mesh</source>
-      <translation type="unfinished">Convert mesh</translation>
+      <translation>转换网格</translation>
     </message>
     <message>
       <location filename="../../TaskAttacher.cpp" line="1077"/>
@@ -2327,7 +2325,7 @@ of projection.</translation>
     <message>
       <location filename="../../TaskFaceColors.cpp" line="419"/>
       <source>Change face colors</source>
-      <translation type="unfinished">Change face colors</translation>
+      <translation>更改面的颜色</translation>
     </message>
     <message>
       <location filename="../../TaskLoft.cpp" line="203"/>
@@ -2368,7 +2366,7 @@ of projection.</translation>
     <message>
       <location filename="../../ViewProviderMirror.cpp" line="198"/>
       <source>Edit Mirror</source>
-      <translation type="unfinished">Edit Mirror</translation>
+      <translation>编辑镜像</translation>
     </message>
   </context>
   <context>
@@ -2423,7 +2421,7 @@ of projection.</translation>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="190"/>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="222"/>
       <source>Note: The placement is expressed in local space of object being attached.</source>
-      <translation type="unfinished">Note: The placement is expressed in local space of object being attached.</translation>
+      <translation>注：置放以被附加物体的本地空间来表达。</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="171"/>
@@ -2444,8 +2442,8 @@ of projection.</translation>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="254"/>
       <source>Rotation around the x-axis
 Note: The placement is expressed in local space of object being attached.</source>
-      <translation type="unfinished">Rotation around the x-axis
-Note: The placement is expressed in local space of object being attached.</translation>
+      <translation>绕x轴旋转
+注：置放以被附加物体的本地空间来表达。</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="280"/>
@@ -2456,8 +2454,8 @@ Note: The placement is expressed in local space of object being attached.</trans
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="299"/>
       <source>Rotation around the y-axis
 Note: The placement is expressed in local space of object being attached.</source>
-      <translation type="unfinished">Rotation around the y-axis
-Note: The placement is expressed in local space of object being attached.</translation>
+      <translation>绕y轴旋转
+注：置放以被附加物体的本地空间来表达。</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="325"/>
@@ -2468,8 +2466,8 @@ Note: The placement is expressed in local space of object being attached.</trans
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="344"/>
       <source>Rotation around the z-axis
 Note: The placement is expressed in local space of object being attached.</source>
-      <translation type="unfinished">Rotation around the z-axis
-Note: The placement is expressed in local space of object being attached.</translation>
+      <translation>绕z轴旋转
+注：置放以被附加物体的本地空间来表达。</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="367"/>
@@ -2602,32 +2600,32 @@ Note: The placement is expressed in local space of object being attached.</trans
       <translation>切换选择</translation>
     </message>
     <message>
-      <location filename="../../DlgBooleanOperation.cpp" line="384"/>
+      <location filename="../../DlgBooleanOperation.cpp" line="385"/>
       <source>Select a shape on the left side, first</source>
       <translation>线选择左侧形状</translation>
     </message>
     <message>
-      <location filename="../../DlgBooleanOperation.cpp" line="389"/>
+      <location filename="../../DlgBooleanOperation.cpp" line="390"/>
       <source>Select a shape on the right side, first</source>
       <translation>先选择右侧形状</translation>
     </message>
     <message>
-      <location filename="../../DlgBooleanOperation.cpp" line="394"/>
+      <location filename="../../DlgBooleanOperation.cpp" line="395"/>
       <source>Cannot perform a boolean operation with the same shape</source>
       <translation>不能对同一形状作布尔操作</translation>
     </message>
     <message>
-      <location filename="../../DlgBooleanOperation.cpp" line="404"/>
+      <location filename="../../DlgBooleanOperation.cpp" line="405"/>
       <source>No active document available</source>
       <translation>无可用活动文档</translation>
     </message>
     <message>
-      <location filename="../../DlgBooleanOperation.cpp" line="414"/>
+      <location filename="../../DlgBooleanOperation.cpp" line="415"/>
       <source>One of the selected objects doesn't exist anymore</source>
       <translation>所选对象之一已不存在</translation>
     </message>
     <message>
-      <location filename="../../DlgBooleanOperation.cpp" line="421"/>
+      <location filename="../../DlgBooleanOperation.cpp" line="422"/>
       <source>Performing union on non-solids is not possible</source>
       <translation>无法对非实体执行并集操作</translation>
     </message>
@@ -2637,7 +2635,7 @@ Note: The placement is expressed in local space of object being attached.</trans
       <translation>无法对非实体进行交集操作</translation>
     </message>
     <message>
-      <location filename="../../DlgBooleanOperation.cpp" line="439"/>
+      <location filename="../../DlgBooleanOperation.cpp" line="438"/>
       <source>Performing difference on non-solids is not possible</source>
       <translation>无法对非实体进行差集操作</translation>
     </message>
@@ -2660,7 +2658,7 @@ Note: The placement is expressed in local space of object being attached.</trans
     <message>
       <location filename="../../DlgExportHeaderStep.ui" line="20"/>
       <source>If not empty, field contents will be used in the STEP file header.</source>
-      <translation type="unfinished">If not empty, field contents will be used in the STEP file header.</translation>
+      <translation>如果非空，字段内容将被用于STEP文件头。</translation>
     </message>
     <message>
       <location filename="../../DlgExportHeaderStep.ui" line="23"/>
@@ -2736,20 +2734,20 @@ Note: The placement is expressed in local space of object being attached.</trans
 a single object. Please note that when import back the STEP file, the
 placement will be encoded into the shape geometry, instead of keeping
 it inside the Placement property.</source>
-      <translation type="unfinished">Check this option to keep the placement information when exporting
-a single object. Please note that when import back the STEP file, the
-placement will be encoded into the shape geometry, instead of keeping
-it inside the Placement property.</translation>
+      <translation>勾选此选项以保留导出
+单个物体时的位置信息。 请注意，当导入STEP文件时，
+位置将被编入形状的几何代码中，而不会将其
+保留在位置属性中。</translation>
     </message>
     <message>
       <location filename="../../DlgExportStep.ui" line="94"/>
       <source>Export single object placement</source>
-      <translation type="unfinished">Export single object placement</translation>
+      <translation>导出单个物体位置</translation>
     </message>
     <message>
       <location filename="../../DlgExportStep.ui" line="107"/>
       <source>Use legacy export function</source>
-      <translation type="unfinished">Use legacy export function</translation>
+      <translation>使用旧版导出函数</translation>
     </message>
     <message>
       <location filename="../../DlgExportStep.ui" line="120"/>
@@ -2761,9 +2759,9 @@ it inside the Placement property.</translation>
       <source>This parameter indicates whether parametric curves (curves in parametric space of surface)
 should be written into the STEP file. This parameter can be set to off in order to minimize
 the size of the resulting STEP file.</source>
-      <translation type="unfinished">This parameter indicates whether parametric curves (curves in parametric space of surface)
-should be written into the STEP file. This parameter can be set to off in order to minimize
-the size of the resulting STEP file.</translation>
+      <translation>此参数表示是否应将参数曲线(表面参数空间的曲线)
+写入STEP文件。 此参数可以设置为关闭，以最小化
+导出STEP文件的尺寸。</translation>
     </message>
   </context>
   <context>
@@ -2858,8 +2856,8 @@ the size of the resulting STEP file.</translation>
       <location filename="../../DlgExtrusion.ui" line="204"/>
       <source>Length to extrude along direction (can be negative).
 If both lengths are zero, magnitude of direction is used.</source>
-      <translation type="unfinished">Length to extrude along direction (can be negative).
-If both lengths are zero, magnitude of direction is used.</translation>
+      <translation>沿方向拉伸的长度 (可以为负数)。
+如果两个长度均为零，则使用方向的大小值。</translation>
     </message>
     <message>
       <location filename="../../DlgExtrusion.ui" line="224"/>
@@ -2869,7 +2867,7 @@ If both lengths are zero, magnitude of direction is used.</translation>
     <message>
       <location filename="../../DlgExtrusion.ui" line="243"/>
       <source>Length to extrude against the direction (can be negative).</source>
-      <translation type="unfinished">Length to extrude against the direction (can be negative).</translation>
+      <translation>根据方向拉伸的长度 (可以为负数)。</translation>
     </message>
     <message>
       <location filename="../../DlgExtrusion.ui" line="262"/>
@@ -2884,22 +2882,22 @@ If both lengths are zero, magnitude of direction is used.</translation>
     <message>
       <location filename="../../DlgExtrusion.ui" line="277"/>
       <source>Taper angle along</source>
-      <translation type="unfinished">Taper angle along</translation>
+      <translation>同向锥度</translation>
     </message>
     <message>
       <location filename="../../DlgExtrusion.ui" line="290"/>
       <source>Taper (draft) angle along extrusion direction</source>
-      <translation type="unfinished">Taper (draft) angle along extrusion direction</translation>
+      <translation>沿拉伸方向的(拔模) 锥度</translation>
     </message>
     <message>
       <location filename="../../DlgExtrusion.ui" line="306"/>
       <source>Taper angle against</source>
-      <translation type="unfinished">Taper angle against</translation>
+      <translation>逆向锥度</translation>
     </message>
     <message>
       <location filename="../../DlgExtrusion.ui" line="319"/>
       <source>Taper (draft) angle against extrusion direction</source>
-      <translation type="unfinished">Taper (draft) angle against extrusion direction</translation>
+      <translation>逆拉伸方向的(拔模) 锥度</translation>
     </message>
     <message>
       <location filename="../../DlgExtrusion.ui" line="337"/>
@@ -2914,7 +2912,7 @@ If both lengths are zero, magnitude of direction is used.</translation>
     <message>
       <location filename="../../DlgExtrusion.ui" line="360"/>
       <source>Select shape(s) that should be extruded</source>
-      <translation type="unfinished">Select shape(s) that should be extruded</translation>
+      <translation>选择要拉伸的形状</translation>
     </message>
     <message>
       <location filename="../../DlgExtrusion.ui" line="373"/>
@@ -2936,7 +2934,7 @@ If both lengths are zero, magnitude of direction is used.</translation>
       <location filename="../../DlgExtrusion.cpp" line="506"/>
       <source>Creating Extrusion failed.
 %1</source>
-      <translation type="unfinished">Creating Extrusion failed.
+      <translation>创建拉伸失败。
 %1</translation>
     </message>
     <message>
@@ -2959,8 +2957,7 @@ If both lengths are zero, magnitude of direction is used.</translation>
       <source>Extrusion direction link is invalid.
 
 %1</source>
-      <translation type="unfinished">Extrusion direction link is invalid.
-
+      <translation>拉伸方向链接无效。
 %1</translation>
     </message>
     <message>
@@ -2980,7 +2977,7 @@ If both lengths are zero, magnitude of direction is used.</translation>
     <message>
       <location filename="../../DlgExtrusion.cpp" line="691"/>
       <source>Extrusion direction vector is zero-length. It must be non-zero.</source>
-      <translation type="unfinished">Extrusion direction vector is zero-length. It must be non-zero.</translation>
+      <translation>拉伸方向矢量为零长度。它必须为非零。</translation>
     </message>
     <message>
       <location filename="../../DlgExtrusion.cpp" line="702"/>
@@ -3064,12 +3061,12 @@ If both lengths are zero, magnitude of direction is used.</translation>
     <message>
       <location filename="../../DlgFilletEdges.cpp" line="265"/>
       <source>Chamfer Parameter</source>
-      <translation type="unfinished">Chamfer Parameter</translation>
+      <translation>倒角参数</translation>
     </message>
     <message>
       <location filename="../../DlgFilletEdges.cpp" line="266"/>
       <source>Chamfer type</source>
-      <translation type="unfinished">Chamfer type</translation>
+      <translation>倒角类型</translation>
     </message>
     <message>
       <location filename="../../DlgFilletEdges.cpp" line="267"/>
@@ -3104,12 +3101,12 @@ If both lengths are zero, magnitude of direction is used.</translation>
     <message>
       <location filename="../../DlgFilletEdges.cpp" line="273"/>
       <source>Size2</source>
-      <translation type="unfinished">Size2</translation>
+      <translation>尺寸2</translation>
     </message>
     <message>
       <location filename="../../DlgFilletEdges.cpp" line="277"/>
       <source>Fillet type</source>
-      <translation type="unfinished">Fillet type</translation>
+      <translation>圆角类型</translation>
     </message>
     <message>
       <location filename="../../DlgFilletEdges.cpp" line="278"/>
@@ -3207,7 +3204,7 @@ Please check one or more edge entities first.</source>
     <message>
       <location filename="../../DlgImportExportIges.ui" line="71"/>
       <source>Solids and shells will be exported as trimmed surface</source>
-      <translation type="unfinished">Solids and shells will be exported as trimmed surface</translation>
+      <translation>实体和壳体将导出为修剪后的表面</translation>
     </message>
     <message>
       <location filename="../../DlgImportExportIges.ui" line="74"/>
@@ -3217,7 +3214,7 @@ Please check one or more edge entities first.</source>
     <message>
       <location filename="../../DlgImportExportIges.ui" line="84"/>
       <source>Solids will be exported as manifold solid B-Rep object, shells as shell</source>
-      <translation type="unfinished">Solids will be exported as manifold solid B-Rep object, shells as shell</translation>
+      <translation>实体将被导出为多肢端边界表达(B-Rep) 物体，壳体导出为壳体。</translation>
     </message>
     <message>
       <location filename="../../DlgImportExportIges.ui" line="87"/>
@@ -3242,7 +3239,7 @@ Please check one or more edge entities first.</source>
     <message>
       <location filename="../../DlgImportExportIges.ui" line="119"/>
       <source>If not empty, field contents will be used in the IGES file header</source>
-      <translation type="unfinished">If not empty, field contents will be used in the IGES file header</translation>
+      <translation>如果非空，字段内容将被用于 IGES文件头。</translation>
     </message>
     <message>
       <location filename="../../DlgImportExportIges.ui" line="122"/>
@@ -3289,8 +3286,7 @@ Please check one or more edge entities first.</source>
       <location filename="../../DlgImportStep.ui" line="26"/>
       <source>If checked, no Compound merge will be done
 during file reading (slower but higher details).</source>
-      <translation type="unfinished">If checked, no Compound merge will be done
-during file reading (slower but higher details).</translation>
+      <translation>如选此项, 则在文件读取时不会进行复合合并 (较慢但细节更优)。</translation>
     </message>
     <message>
       <location filename="../../DlgImportStep.ui" line="30"/>
@@ -3300,58 +3296,58 @@ during file reading (slower but higher details).</translation>
     <message>
       <location filename="../../DlgImportStep.ui" line="43"/>
       <source>Select this to use App::LinkGroup as group container, or else use App::Part.</source>
-      <translation type="unfinished">Select this to use App::LinkGroup as group container, or else use App::Part.</translation>
+      <translation>选择此选项以使用 App::LinkGroup 作为组容器，或使用 App::part 。</translation>
     </message>
     <message>
       <location filename="../../DlgImportStep.ui" line="46"/>
       <source>Use LinkGroup</source>
-      <translation type="unfinished">Use LinkGroup</translation>
+      <translation>使用 LinkGroup</translation>
     </message>
     <message>
       <location filename="../../DlgImportStep.ui" line="59"/>
-      <source>Select this to not import any invisible objects.</source>
-      <translation type="unfinished">Select this to not import any invisible objects.</translation>
+      <source>Select this to import invisible objects.</source>
+      <translation>选择此选项以导入不可见对象。</translation>
     </message>
     <message>
       <location filename="../../DlgImportStep.ui" line="62"/>
       <source>Import invisible objects</source>
-      <translation type="unfinished">Import invisible objects</translation>
+      <translation>导入隐藏物体</translation>
     </message>
     <message>
       <location filename="../../DlgImportStep.ui" line="75"/>
       <source>Reduce number of objects using Link array</source>
-      <translation type="unfinished">Reduce number of objects using Link array</translation>
+      <translation>使用链接阵列来减少物体的数量</translation>
     </message>
     <message>
       <location filename="../../DlgImportStep.ui" line="78"/>
       <source>Reduce number of objects</source>
-      <translation type="unfinished">Reduce number of objects</translation>
+      <translation>减少物体的数量</translation>
     </message>
     <message>
       <location filename="../../DlgImportStep.ui" line="91"/>
       <source>Expand compound shape with multiple solids</source>
-      <translation type="unfinished">Expand compound shape with multiple solids</translation>
+      <translation>用多个实体来展开复合体形状</translation>
     </message>
     <message>
       <location filename="../../DlgImportStep.ui" line="94"/>
       <source>Expand compound shape</source>
-      <translation type="unfinished">Expand compound shape</translation>
+      <translation>展开复合体形状</translation>
     </message>
     <message>
       <location filename="../../DlgImportStep.ui" line="107"/>
       <location filename="../../DlgImportStep.ui" line="110"/>
       <source>Show progress bar when importing</source>
-      <translation type="unfinished">Show progress bar when importing</translation>
+      <translation>导入时显示进度条</translation>
     </message>
     <message>
       <location filename="../../DlgImportStep.ui" line="123"/>
       <source>Do not use instance name. Useful for some legacy STEP file with non-meaningful auto generated instance names.</source>
-      <translation type="unfinished">Do not use instance name. Useful for some legacy STEP file with non-meaningful auto generated instance names.</translation>
+      <translation>不使用实例名称。这对于某些旧版STEP文件有用，因为其包含一些无意义的自动生成实例名称。</translation>
     </message>
     <message>
       <location filename="../../DlgImportStep.ui" line="126"/>
       <source>Ignore instance names</source>
-      <translation type="unfinished">Ignore instance names</translation>
+      <translation>忽略实例名称</translation>
     </message>
     <message>
       <location filename="../../DlgImportStep.ui" line="141"/>
@@ -3366,22 +3362,22 @@ during file reading (slower but higher details).</translation>
     <message>
       <location filename="../../DlgImportStep.ui" line="166"/>
       <source>Assembly per document</source>
-      <translation type="unfinished">Assembly per document</translation>
+      <translation>每个文件一个装配。</translation>
     </message>
     <message>
       <location filename="../../DlgImportStep.ui" line="171"/>
       <source>Assembly per document in sub-directory</source>
-      <translation type="unfinished">Assembly per document in sub-directory</translation>
+      <translation>子目录中的每个文档一个装配</translation>
     </message>
     <message>
       <location filename="../../DlgImportStep.ui" line="176"/>
       <source>Object per document</source>
-      <translation type="unfinished">Object per document</translation>
+      <translation>每个文件一个物体</translation>
     </message>
     <message>
       <location filename="../../DlgImportStep.ui" line="181"/>
       <source>Object per document in sub-directory</source>
-      <translation type="unfinished">Object per document in sub-directory</translation>
+      <translation>子目录中的每个文件一个物体</translation>
     </message>
   </context>
   <context>
@@ -3901,12 +3897,12 @@ during file reading (slower but higher details).</translation>
     <message>
       <location filename="../../DlgProjectionOnSurface.ui" line="14"/>
       <source>Projection on surface</source>
-      <translation type="unfinished">Projection on surface</translation>
+      <translation>表面投影</translation>
     </message>
     <message>
       <location filename="../../DlgProjectionOnSurface.ui" line="20"/>
       <source>Select projection surface</source>
-      <translation type="unfinished">Select projection surface</translation>
+      <translation>选择投影面</translation>
     </message>
     <message>
       <location filename="../../DlgProjectionOnSurface.ui" line="31"/>
@@ -3916,12 +3912,12 @@ during file reading (slower but higher details).</translation>
     <message>
       <location filename="../../DlgProjectionOnSurface.ui" line="38"/>
       <source>Add wire</source>
-      <translation type="unfinished">Add wire</translation>
+      <translation>添加线</translation>
     </message>
     <message>
       <location filename="../../DlgProjectionOnSurface.ui" line="45"/>
       <source>Add edge</source>
-      <translation type="unfinished">Add edge</translation>
+      <translation>添加边缘</translation>
     </message>
     <message>
       <location filename="../../DlgProjectionOnSurface.ui" line="56"/>
@@ -3931,22 +3927,22 @@ during file reading (slower but higher details).</translation>
     <message>
       <location filename="../../DlgProjectionOnSurface.ui" line="66"/>
       <source>Show faces</source>
-      <translation type="unfinished">Show faces</translation>
+      <translation>显示表面</translation>
     </message>
     <message>
       <location filename="../../DlgProjectionOnSurface.ui" line="76"/>
       <source>Show Edges</source>
-      <translation type="unfinished">Show Edges</translation>
+      <translation>显示边缘</translation>
     </message>
     <message>
       <location filename="../../DlgProjectionOnSurface.ui" line="92"/>
       <source>Extrude height</source>
-      <translation type="unfinished">Extrude height</translation>
+      <translation>拉伸高度</translation>
     </message>
     <message>
       <location filename="../../DlgProjectionOnSurface.ui" line="116"/>
       <source>Solid depth</source>
-      <translation type="unfinished">Solid depth</translation>
+      <translation>实体深度</translation>
     </message>
     <message>
       <location filename="../../DlgProjectionOnSurface.ui" line="141"/>
@@ -3956,7 +3952,7 @@ during file reading (slower but higher details).</translation>
     <message>
       <location filename="../../DlgProjectionOnSurface.ui" line="147"/>
       <source>Get current camera direction</source>
-      <translation type="unfinished">Get current camera direction</translation>
+      <translation>获取当前相机方向</translation>
     </message>
     <message>
       <location filename="../../DlgProjectionOnSurface.ui" line="156"/>
@@ -3976,12 +3972,12 @@ during file reading (slower but higher details).</translation>
     <message>
       <location filename="../../DlgProjectionOnSurface.cpp" line="135"/>
       <source>Projection Object</source>
-      <translation type="unfinished">Projection Object</translation>
+      <translation>投影物体</translation>
     </message>
     <message>
       <location filename="../../DlgProjectionOnSurface.cpp" line="165"/>
       <source>Have no active document!!!</source>
-      <translation type="unfinished">Have no active document!!!</translation>
+      <translation>没有在用的文件！！</translation>
     </message>
     <message>
       <location filename="../../DlgProjectionOnSurface.cpp" line="172"/>
@@ -5703,88 +5699,88 @@ in the 3D view for the sweep path.</source>
     <message>
       <location filename="../../../BasicShapes/ViewProviderShapes.py" line="47"/>
       <location filename="../../../BasicShapes/ViewProviderShapes.py" line="54"/>
-      <location filename="../../ViewProvider.cpp" line="53"/>
       <location filename="../../ViewProviderPrimitive.cpp" line="56"/>
+      <location filename="../../ViewProvider.cpp" line="53"/>
       <source>Edit %1</source>
       <translation>编辑 %1</translation>
     </message>
     <message>
-      <location filename="../../AppPartGui.cpp" line="227"/>
+      <location filename="../../AppPartGui.cpp" line="228"/>
       <source>Part and Part Design workbench</source>
       <translation type="unfinished">Part and Part Design workbench</translation>
     </message>
     <message>
-      <location filename="../../AppPartGui.cpp" line="228"/>
       <location filename="../../AppPartGui.cpp" line="229"/>
       <location filename="../../AppPartGui.cpp" line="230"/>
       <location filename="../../AppPartGui.cpp" line="231"/>
+      <location filename="../../AppPartGui.cpp" line="232"/>
       <source>Part/Part Design</source>
       <translation type="unfinished">Part/Part Design</translation>
     </message>
     <message>
-      <location filename="../../AppPartGui.cpp" line="232"/>
       <location filename="../../AppPartGui.cpp" line="233"/>
+      <location filename="../../AppPartGui.cpp" line="234"/>
       <source>Import-Export</source>
       <translation>Import-Export</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="313"/>
-      <location filename="../../Command.cpp" line="408"/>
-      <location filename="../../Command.cpp" line="508"/>
-      <location filename="../../Command.cpp" line="923"/>
-      <location filename="../../Command.cpp" line="980"/>
-      <location filename="../../Command.cpp" line="2072"/>
+      <location filename="../../Command.cpp" line="389"/>
+      <location filename="../../Command.cpp" line="465"/>
+      <location filename="../../Command.cpp" line="856"/>
+      <location filename="../../Command.cpp" line="913"/>
+      <location filename="../../Command.cpp" line="2005"/>
       <source>Wrong selection</source>
       <translation>选择错误</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="314"/>
-      <location filename="../../Command.cpp" line="981"/>
+      <location filename="../../Command.cpp" line="914"/>
       <source>Select two shapes please.</source>
       <translation>请选择两个形状.</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="323"/>
-      <location filename="../../Command.cpp" line="423"/>
-      <location filename="../../Command.cpp" line="523"/>
+      <location filename="../../Command.cpp" line="324"/>
+      <location filename="../../Command.cpp" line="400"/>
+      <location filename="../../Command.cpp" line="476"/>
       <source>Non-solids selected</source>
       <translation>没有实体被选中</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="324"/>
-      <location filename="../../Command.cpp" line="424"/>
-      <location filename="../../Command.cpp" line="524"/>
+      <location filename="../../Command.cpp" line="325"/>
+      <location filename="../../Command.cpp" line="401"/>
+      <location filename="../../Command.cpp" line="477"/>
       <source>The use of non-solids for boolean operations may lead to unexpected results.
 Do you want to continue?</source>
       <translation>非实体布尔运算可能导致意外的结果。你想要继续吗？</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="409"/>
+      <location filename="../../Command.cpp" line="390"/>
       <source>Select two shapes or more, please. Or, select one compound containing two or more shapes to compute common between.</source>
       <translation>请选择两个或多个形状。或者, 选择一个包含两个或多个要计算公用的形状的组合。</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="509"/>
+      <location filename="../../Command.cpp" line="466"/>
       <source>Select two shapes or more, please. Or, select one compound containing two or more shapes to be fused.</source>
       <translation>请选择两个或多个形状。或者, 选择一个包含两个或多个要计算公用的形状的组合。</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="924"/>
+      <location filename="../../Command.cpp" line="857"/>
       <source>Select one shape or more, please.</source>
       <translation>请选择一个或多个形状。</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1138"/>
+      <location filename="../../Command.cpp" line="1071"/>
       <source>All CAD Files</source>
       <translation>所有CAD 文档</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="1143"/>
+      <location filename="../../Command.cpp" line="1076"/>
       <source>All Files</source>
       <translation>所有文件</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="2073"/>
+      <location filename="../../Command.cpp" line="2006"/>
       <source>You have to select either two edges or two wires.</source>
       <translation>你必须选择二条边或者二个线框.</translation>
     </message>
@@ -5795,20 +5791,20 @@ Do you want to continue?</source>
       <translation>没有参照被选中</translation>
     </message>
     <message>
-      <location filename="../../TaskAttacher.cpp" line="75"/>
       <location filename="../../TaskCheckGeometry.cpp" line="81"/>
+      <location filename="../../TaskAttacher.cpp" line="75"/>
       <source>Face</source>
       <translation>面</translation>
     </message>
     <message>
-      <location filename="../../TaskAttacher.cpp" line="78"/>
       <location filename="../../TaskCheckGeometry.cpp" line="83"/>
+      <location filename="../../TaskAttacher.cpp" line="78"/>
       <source>Edge</source>
       <translation>边</translation>
     </message>
     <message>
-      <location filename="../../TaskAttacher.cpp" line="81"/>
       <location filename="../../TaskCheckGeometry.cpp" line="84"/>
+      <location filename="../../TaskAttacher.cpp" line="81"/>
       <source>Vertex</source>
       <translation>顶点</translation>
     </message>
@@ -6024,63 +6020,63 @@ Do you want to continue?</source>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="159"/>
-      <source>Boolean Op Check Unknown</source>
-      <translation type="unfinished">Boolean Op Check Unknown</translation>
+      <source>Boolean operation: Unknown check</source>
+      <translation type="unfinished">Boolean operation: Unknown check</translation>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="160"/>
-      <source>Boolean Op Bad Type</source>
-      <translation type="unfinished">Boolean Op Bad Type</translation>
+      <source>Boolean operation: Bad type</source>
+      <translation type="unfinished">Boolean operation: Bad type</translation>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="161"/>
-      <source>Boolean Op Self Intersect</source>
-      <translation type="unfinished">Boolean Op Self Intersect</translation>
+      <source>Boolean operation: Self-intersection found</source>
+      <translation type="unfinished">Boolean operation: Self-intersection found</translation>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="162"/>
-      <source>Boolean Op Too Small Edge</source>
-      <translation type="unfinished">Boolean Op Too Small Edge</translation>
+      <source>Boolean operation: Edge too small</source>
+      <translation type="unfinished">Boolean operation: Edge too small</translation>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="163"/>
-      <source>Boolean Op Non-Recoverable Face</source>
-      <translation type="unfinished">Boolean Op Non-Recoverable Face</translation>
+      <source>Boolean operation: Non-recoverable face</source>
+      <translation type="unfinished">Boolean operation: Non-recoverable face</translation>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="164"/>
-      <source>Boolean Op Incompatibility Of Vertex</source>
-      <translation type="unfinished">Boolean Op Incompatibility Of Vertex</translation>
+      <source>Boolean operation: Incompatibility of vertex</source>
+      <translation type="unfinished">Boolean operation: Incompatibility of vertex</translation>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="165"/>
-      <source>Boolean Op Incompatibility Of Edge</source>
-      <translation type="unfinished">Boolean Op Incompatibility Of Edge</translation>
+      <source>Boolean operation: Incompatibility of edge</source>
+      <translation type="unfinished">Boolean operation: Incompatibility of edge</translation>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="166"/>
-      <source>Boolean Op Incompatibility Of Face</source>
-      <translation type="unfinished">Boolean Op Incompatibility Of Face</translation>
+      <source>Boolean operation: Incompatibility of face</source>
+      <translation type="unfinished">Boolean operation: Incompatibility of face</translation>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="167"/>
-      <source>Boolean Op Operation Aborted</source>
-      <translation type="unfinished">Boolean Op Operation Aborted</translation>
+      <source>Boolean operation: Aborted</source>
+      <translation type="unfinished">Boolean operation: Aborted</translation>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="168"/>
-      <source>Boolean Op GeomAbs_C0</source>
-      <translation type="unfinished">Boolean Op GeomAbs_C0</translation>
+      <source>Boolean operation: GeomAbs_C0</source>
+      <translation type="unfinished">Boolean operation: GeomAbs_C0</translation>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="169"/>
-      <source>Boolean Op Invalid Curve On Surface</source>
-      <translation type="unfinished">Boolean Op Invalid Curve On Surface</translation>
+      <source>Boolean operation: Invalid curve on surface</source>
+      <translation type="unfinished">Boolean operation: Invalid curve on surface</translation>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="170"/>
-      <source>Boolean Op Not Valid</source>
-      <translation type="unfinished">Boolean Op Not Valid</translation>
+      <source>Boolean operation: Not valid</source>
+      <translation type="unfinished">Boolean operation: Not valid</translation>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="699"/>
@@ -6587,7 +6583,7 @@ It will create a 'Compound Filter' for each shape.</translation>
     <message>
       <location filename="../../../BasicShapes/ShapeContent.py" line="47"/>
       <source>Wires</source>
-      <translation type="unfinished">Wires</translation>
+      <translation>线框</translation>
     </message>
     <message>
       <location filename="../../../BasicShapes/ShapeContent.py" line="53"/>

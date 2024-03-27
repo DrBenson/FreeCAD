@@ -6,12 +6,13 @@
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
     <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
     <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
-    <extra-po-header-project_id_version>FreeCAD OpenSCAD Language Translations v0.21_pre</extra-po-header-project_id_version>
+    <extra-po-header-project_id_version>FreeCAD OpenSCAD Language Translations v0.22_dev</extra-po-header-project_id_version>
     <extra-po-header-x_generator>Poedit 3.2.2</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
 # DrBenson &lt;Benson.Dr@GMail.com&gt;, 2023
-#</extra-po-header_comment>
+#
+    </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>Gui::Dialog::DlgSettingsOpenSCAD</name>
@@ -129,6 +130,11 @@
     </message>
     <message>
         <location filename="../ui/openscadprefs-base.ui" line="289"/>
+        <source>angle (fa)</source>
+        <translation>角度 (fa)</translation>
+    </message>
+    <message>
+        <location filename="../ui/openscadprefs-base.ui" line="289"/>
         <source>angular (fa)</source>
         <translation>角 (fa)</translation>
     </message>
@@ -178,6 +184,18 @@
 <context>
     <name>OpenSCAD</name>
     <message>
+        <location filename="../../importCSG.py" line="549"/>
+        <location filename="../../importCSG.py" line="1385"/>
+        <source>Unsupported Function</source>
+        <translation>此功能尚未支援</translation>
+    </message>
+    <message>
+        <location filename="../../importCSG.py" line="550"/>
+        <location filename="../../importCSG.py" line="1432"/>
+        <source>Press OK</source>
+        <translation>按確定</translation>
+    </message>
+    <message>
         <location filename="../../InitGui.py" line="130"/>
         <source>It looks like you may be using a Snap version of OpenSCAD.</source>
         <translation>看起來您可能正在使用 OpenSCAD 的 Snap 版本.</translation>
@@ -209,6 +227,18 @@
         <translation>請先選擇3個物件</translation>
     </message>
     <message>
+        <location filename="../../OpenSCADCommands.py" line="340"/>
+        <location filename="../../OpenSCADCommands.py" line="363"/>
+        <source>Add</source>
+        <translation>新增</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="344"/>
+        <location filename="../../OpenSCADCommands.py" line="366"/>
+        <source>Refresh</source>
+        <translation>重新整理</translation>
+    </message>
+    <message>
         <location filename="../../OpenSCADCommands.py" line="333"/>
         <source>Clear code</source>
         <translation type="unfinished"></translation>
@@ -224,16 +254,16 @@
         <translation>儲存...</translation>
     </message>
     <message>
-        <location filename="../../OpenSCADCommands.py" line="340"/>
-        <location filename="../../OpenSCADCommands.py" line="363"/>
-        <source>Add</source>
-        <translation>新增</translation>
+        <location filename="../../OpenSCADCommands.py" line="345"/>
+        <location filename="../../OpenSCADCommands.py" line="368"/>
+        <source>as Mesh</source>
+        <translation>當作網格</translation>
     </message>
     <message>
-        <location filename="../../OpenSCADCommands.py" line="341"/>
-        <location filename="../../OpenSCADCommands.py" line="367"/>
-        <source>Clear</source>
-        <translation>清除</translation>
+        <location filename="../../OpenSCADCommands.py" line="358"/>
+        <location filename="../../OpenSCADCommands.py" line="369"/>
+        <source>Add OpenSCAD Element</source>
+        <translation>加入OpenSCAD元素</translation>
     </message>
     <message>
         <location filename="../../OpenSCADCommands.py" line="342"/>
@@ -248,22 +278,10 @@
         <translation>儲存</translation>
     </message>
     <message>
-        <location filename="../../OpenSCADCommands.py" line="344"/>
-        <location filename="../../OpenSCADCommands.py" line="366"/>
-        <source>Refresh</source>
-        <translation>重新整理</translation>
-    </message>
-    <message>
-        <location filename="../../OpenSCADCommands.py" line="345"/>
-        <location filename="../../OpenSCADCommands.py" line="368"/>
-        <source>as Mesh</source>
-        <translation>當作網格</translation>
-    </message>
-    <message>
-        <location filename="../../OpenSCADCommands.py" line="358"/>
-        <location filename="../../OpenSCADCommands.py" line="369"/>
-        <source>Add OpenSCAD Element</source>
-        <translation>加入OpenSCAD元素</translation>
+        <location filename="../../OpenSCADCommands.py" line="341"/>
+        <location filename="../../OpenSCADCommands.py" line="367"/>
+        <source>Clear</source>
+        <translation>清除</translation>
     </message>
     <message>
         <location filename="../../OpenSCADCommands.py" line="424"/>
@@ -299,11 +317,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../OpenSCADUtils.py" line="665"/>
-        <source>Error: either all shapes must be 2D or all shapes must be 3D</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../OpenSCADUtils.py" line="710"/>
         <source>OpenSCAD file contains both 2D and 3D shapes. That is not supported in this importer, all shapes must have the same dimensionality.</source>
         <translation>OpenSCAD 檔案同時包含 2D 與 3D 形狀。目前不支援匯入這樣的格式，所有形狀必須為相同維度。</translation>
@@ -314,14 +327,18 @@
         <translation>錯誤：所有形狀必須為 2D 或兩者均為 3D</translation>
     </message>
     <message>
-        <location filename="../../importCSG.py" line="549"/>
-        <location filename="../../importCSG.py" line="1385"/>
-        <source>Unsupported Function</source>
-        <translation>此功能尚未支援</translation>
+        <location filename="../../OpenSCADUtils.py" line="665"/>
+        <source>Error: either all shapes must be 2D or all shapes must be 3D</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>OpenSCAD_AddOpenSCADElement</name>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="530"/>
+        <source>Add OpenSCAD Element...</source>
+        <translation>加入OpenSCAD元素...</translation>
+    </message>
     <message>
         <location filename="../../OpenSCADCommands.py" line="520"/>
         <source>Add an OpenSCAD element by entering OpenSCAD code and executing the OpenSCAD binary</source>
@@ -410,6 +427,11 @@
         <source>Create Feature that allows to increase the tolerance</source>
         <translation>建立允許增加容忍度之特徵</translation>
     </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="269"/>
+        <source>Create Feature that allows increasing the tolerance</source>
+        <translation>建立允許增加容忍度之特徵</translation>
+    </message>
 </context>
 <context>
     <name>OpenSCAD_MeshBoolean</name>
@@ -489,11 +511,6 @@
 <context>
     <name>OpenSCAD_ReplaceObject</name>
     <message>
-        <location filename="../../OpenSCADCommands.py" line="305"/>
-        <source>Replace an object in the Tree view. Please select old, new, and parent object</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../OpenSCADCommands.py" line="311"/>
         <source>Replace Object</source>
         <translation>取代物件</translation>
@@ -502,6 +519,11 @@
         <location filename="../../OpenSCADCommands.py" line="314"/>
         <source>Replace an object in the Feature Tree. Please select old, new, and parent object</source>
         <translation>取代特徵樹中的物件。 請選擇原始物件、新物件和父物件</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="305"/>
+        <source>Replace an object in the Tree view. Please select old, new, and parent object</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -543,7 +565,7 @@
     <message>
         <location filename="../../InitGui.py" line="152"/>
         <source>OpenSCAD Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>OpenSCAD 工具</translation>
     </message>
     <message>
         <location filename="../../InitGui.py" line="152"/>

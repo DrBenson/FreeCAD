@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+    <extra-po-header-language>zh_TW</extra-po-header-language>
+    <extra-po-header-language_team></extra-po-header-language_team>
+    <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
+    <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
+    <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
+    <extra-po-header-project_id_version>FreeCAD Robot Language Translations v0.22_dev</extra-po-header-project_id_version>
+    <extra-po-header-x_generator>Poedit 3.2.2</extra-po-header-x_generator>
+    <extra-po-header_comment>#
+# Translators:
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2023
+#
+    </extra-po-header_comment>
+    <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>CmdRobotAddToolShape</name>
     <message>
@@ -371,11 +384,6 @@
         <translation>錯誤的選取</translation>
     </message>
     <message>
-        <location filename="../../CommandInsertRobot.cpp" line="230"/>
-        <source>Select one robot and one shape or VRML object.</source>
-        <translation>選取一個機器人和一造型或VRML物件.</translation>
-    </message>
-    <message>
         <location filename="../../Command.cpp" line="72"/>
         <source>Select one Robot to set home position</source>
         <translation>選擇要設置起始位置之機器人</translation>
@@ -384,6 +392,15 @@
         <location filename="../../Command.cpp" line="121"/>
         <source>Select one Robot</source>
         <translation>選取一機器人</translation>
+    </message>
+    <message>
+        <location filename="../../CommandTrajectory.cpp" line="105"/>
+        <location filename="../../Command.cpp" line="221"/>
+        <location filename="../../Command.cpp" line="250"/>
+        <location filename="../../CommandExport.cpp" line="62"/>
+        <location filename="../../CommandExport.cpp" line="124"/>
+        <source>Select one Robot and one Trajectory object.</source>
+        <translation>選取一個機器人和一軌跡物體.</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="226"/>
@@ -396,13 +413,27 @@
         <translation>軌跡中至少需要兩個航路點才能進行模擬.</translation>
     </message>
     <message>
-        <location filename="../../CommandTrajectory.cpp" line="105"/>
-        <location filename="../../Command.cpp" line="221"/>
-        <location filename="../../Command.cpp" line="250"/>
-        <location filename="../../CommandExport.cpp" line="62"/>
-        <location filename="../../CommandExport.cpp" line="124"/>
-        <source>Select one Robot and one Trajectory object.</source>
-        <translation>選取一個機器人和一軌跡物體.</translation>
+        <location filename="../../CommandExport.cpp" line="84"/>
+        <location filename="../../CommandExport.cpp" line="146"/>
+        <source>KRL file</source>
+        <translation>KRL 檔</translation>
+    </message>
+    <message>
+        <location filename="../../CommandExport.cpp" line="85"/>
+        <location filename="../../CommandExport.cpp" line="147"/>
+        <source>All Files</source>
+        <translation>所有檔案</translation>
+    </message>
+    <message>
+        <location filename="../../CommandExport.cpp" line="86"/>
+        <location filename="../../CommandExport.cpp" line="148"/>
+        <source>Export program</source>
+        <translation>匯出程式</translation>
+    </message>
+    <message>
+        <location filename="../../CommandInsertRobot.cpp" line="230"/>
+        <source>Select one robot and one shape or VRML object.</source>
+        <translation>選取一個機器人和一造型或VRML物件.</translation>
     </message>
     <message>
         <location filename="../../CommandTrajectory.cpp" line="161"/>
@@ -454,24 +485,6 @@
         <location filename="../../CommandTrajectory.cpp" line="407"/>
         <source>Select the Trajectory which you want to dress up.</source>
         <translation>選取您想要修改的軌跡.</translation>
-    </message>
-    <message>
-        <location filename="../../CommandExport.cpp" line="84"/>
-        <location filename="../../CommandExport.cpp" line="146"/>
-        <source>KRL file</source>
-        <translation>KRL 檔</translation>
-    </message>
-    <message>
-        <location filename="../../CommandExport.cpp" line="85"/>
-        <location filename="../../CommandExport.cpp" line="147"/>
-        <source>All Files</source>
-        <translation>所有檔案</translation>
-    </message>
-    <message>
-        <location filename="../../CommandExport.cpp" line="86"/>
-        <location filename="../../CommandExport.cpp" line="148"/>
-        <source>Export program</source>
-        <translation>匯出程式</translation>
     </message>
     <message>
         <location filename="../../ViewProviderTrajectory.cpp" line="149"/>
@@ -550,6 +563,31 @@
 <context>
     <name>RobotGui::TaskEdge2TracParameter</name>
     <message>
+        <location filename="../../TaskEdge2TracParameter.ui" line="29"/>
+        <source>Hide / Show</source>
+        <translation>隱藏/顯示</translation>
+    </message>
+    <message>
+        <location filename="../../TaskEdge2TracParameter.ui" line="47"/>
+        <source>Edges: 0</source>
+        <translation>邊： 0</translation>
+    </message>
+    <message>
+        <location filename="../../TaskEdge2TracParameter.ui" line="61"/>
+        <source>Cluster: 0</source>
+        <translation>群組：0</translation>
+    </message>
+    <message>
+        <location filename="../../TaskEdge2TracParameter.ui" line="72"/>
+        <source>Sizing Value:</source>
+        <translation>尺寸值：</translation>
+    </message>
+    <message>
+        <location filename="../../TaskEdge2TracParameter.ui" line="103"/>
+        <source>Use orientation of edge</source>
+        <translation>使用邊之方向</translation>
+    </message>
+    <message>
         <location filename="../../TaskEdge2TracParameter.cpp" line="42"/>
         <source>TaskEdge2TracParameter</source>
         <translation>任務邊緣到軌道參數</translation>
@@ -611,6 +649,116 @@
 <context>
     <name>RobotGui::TaskRobotControl</name>
     <message>
+        <location filename="../../TaskRobotControl.ui" line="37"/>
+        <source>X+</source>
+        <translation>X+</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="56"/>
+        <source>Y+</source>
+        <translation>Y+</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="75"/>
+        <source>Z+</source>
+        <translation>Z+</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="94"/>
+        <source>A+</source>
+        <translation>A+</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="113"/>
+        <source>B+</source>
+        <translation>B+</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="132"/>
+        <source>C+</source>
+        <translation>C+</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="151"/>
+        <source>X-</source>
+        <translation>X-</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="170"/>
+        <source>Y-</source>
+        <translation>Y-</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="189"/>
+        <source>Z-</source>
+        <translation>Z-</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="208"/>
+        <source>A-</source>
+        <translation>A-</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="227"/>
+        <source>B-</source>
+        <translation>B-</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="246"/>
+        <source>C-</source>
+        <translation>C-</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="258"/>
+        <source>Tool 0</source>
+        <translation>工具0</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="263"/>
+        <source>Tool</source>
+        <translation>工具</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="268"/>
+        <source>Base 0</source>
+        <translation>基礎0</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="273"/>
+        <source>Base</source>
+        <translation>基礎</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="278"/>
+        <source>World</source>
+        <translation>世界</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="287"/>
+        <source>50mm / 5°</source>
+        <translation>50mm / 5°</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="292"/>
+        <source>20mm / 2°</source>
+        <translation>20mm / 2°</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="297"/>
+        <source>10mm / 1°</source>
+        <translation>10mm / 1°</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="302"/>
+        <source>5mm / 0.5°</source>
+        <translation>5mm / 0.5°</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotControl.ui" line="307"/>
+        <source>1mm / 0.1°</source>
+        <translation>1mm / 0.1°</translation>
+    </message>
+    <message>
         <location filename="../../TaskRobotControl.cpp" line="35"/>
         <source>TaskRobotControl</source>
         <translation>任務機器人控制</translation>
@@ -618,6 +766,11 @@
 </context>
 <context>
     <name>RobotGui::TaskRobotMessages</name>
+    <message>
+        <location filename="../../TaskRobotMessages.ui" line="20"/>
+        <source>clear</source>
+        <translation>清除</translation>
+    </message>
     <message>
         <location filename="../../TaskRobotMessages.cpp" line="35"/>
         <source>TaskRobotMessages</source>
@@ -719,6 +872,67 @@
 </context>
 <context>
     <name>RobotGui::TaskTrajectoryDressUpParameter</name>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="20"/>
+        <source>Speed &amp; Acceleration:</source>
+        <translation>速度 &amp; 加速度：</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="29"/>
+        <source>Speed:</source>
+        <translation>速度：</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="55"/>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="92"/>
+        <source>Use</source>
+        <translation>使用</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="66"/>
+        <source>Accel:</source>
+        <translation>加速：</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="102"/>
+        <source>Don&apos;t change Cont</source>
+        <translation>不要改變內容</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="107"/>
+        <source>Continues</source>
+        <translation>繼續</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="112"/>
+        <source>Discontinues</source>
+        <translation>中止</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="127"/>
+        <source>Position and Orientation:</source>
+        <translation>位置和方向：</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="159"/>
+        <source>Don&apos;t change Position &amp; Orientation</source>
+        <translation>不要更改位置和方向</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="164"/>
+        <source>Use Orientation</source>
+        <translation>使用定向</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="169"/>
+        <source>Add Position</source>
+        <translation>增加位置</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="174"/>
+        <source>Add Orientation</source>
+        <translation>增加方向</translation>
+    </message>
     <message>
         <location filename="../../TaskTrajectoryDressUpParameter.cpp" line="41"/>
         <source>Dress Up Parameter</source>

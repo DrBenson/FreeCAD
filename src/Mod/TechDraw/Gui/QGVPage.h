@@ -97,8 +97,6 @@ public:
 
     TechDraw::DrawPage* getDrawPage();
 
-    void setExporting(bool enable);
-
     void makeGrid(int width, int height, double step);
     void showGrid(bool state) { m_showGrid = state; }
     void updateViewport() { viewport()->repaint(); }
@@ -123,6 +121,9 @@ public:
     void centerOnPage();
 
     TechDraw::DrawView* getBalloonParent() { return m_balloonParent; }
+
+    void zoomIn();
+    void zoomOut();
 
 public Q_SLOTS:
     void setHighQualityAntialiasing(bool highQualityAntialiasing);

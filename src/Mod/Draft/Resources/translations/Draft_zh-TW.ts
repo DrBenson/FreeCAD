@@ -11,29 +11,30 @@
     <extra-po-header_comment>#
 # Translators:
 # DrBenson &lt;Benson.Dr@GMail.com&gt;, 2023
-#</extra-po-header_comment>
+#
+    </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>App::Property</name>
     <message>
         <location filename="../../draftobjects/wire.py" line="49"/>
         <source>The vertices of the wire</source>
-        <translation type="unfinished"></translation>
+        <translation>線的頂點</translation>
     </message>
     <message>
         <location filename="../../draftobjects/wire.py" line="53"/>
         <source>If the wire is closed or not</source>
-        <translation type="unfinished"></translation>
+        <translation>線是否閉合</translation>
     </message>
     <message>
         <location filename="../../draftobjects/wire.py" line="57"/>
         <source>The base object is the wire, it&apos;s formed from 2 objects</source>
-        <translation type="unfinished"></translation>
+        <translation>基礎物件是線段，它由 2 個物件組成</translation>
     </message>
     <message>
         <location filename="../../draftobjects/wire.py" line="61"/>
         <source>The tool object is the wire, it&apos;s formed from 2 objects</source>
-        <translation type="unfinished"></translation>
+        <translation>工具物件是線段，它由 2 個物件組成</translation>
     </message>
     <message>
         <location filename="../../draftobjects/wire.py" line="65"/>
@@ -53,12 +54,12 @@
     <message>
         <location filename="../../draftobjects/wire.py" line="85"/>
         <source>Create a face if this object is closed</source>
-        <translation type="unfinished"></translation>
+        <translation>如果該物件閉合則建立一個面</translation>
     </message>
     <message>
         <location filename="../../draftobjects/wire.py" line="89"/>
         <source>The number of subdivisions of each edge</source>
-        <translation type="unfinished"></translation>
+        <translation>每個邊緣的細分數</translation>
     </message>
     <message>
         <location filename="../../draftobjects/rectangle.py" line="46"/>
@@ -842,12 +843,12 @@ the &apos;First Angle&apos; and &apos;Last Angle&apos; properties.</source>
     <message>
         <location filename="../../draftobjects/ellipse.py" line="52"/>
         <source>Minor radius of the ellipse</source>
-        <translation type="unfinished"></translation>
+        <translation>橢圓的短半徑</translation>
     </message>
     <message>
         <location filename="../../draftobjects/ellipse.py" line="55"/>
         <source>Major radius of the ellipse</source>
-        <translation type="unfinished"></translation>
+        <translation>橢圓的主半徑</translation>
     </message>
     <message>
         <location filename="../../draftobjects/ellipse.py" line="61"/>
@@ -1072,7 +1073,7 @@ Write &apos;$dim&apos; so that it is replaced by the dimension length.</source>
     <message>
         <location filename="../../draftviewproviders/view_dimension.py" line="196"/>
         <source>The number of decimals to show</source>
-        <translation type="unfinished"></translation>
+        <translation>要顯示的小數位數</translation>
     </message>
     <message>
         <location filename="../../draftviewproviders/view_dimension.py" line="205"/>
@@ -1254,19 +1255,188 @@ beyond the dimension line</source>
         <translation>系統單位文字的字體大小</translation>
     </message>
     <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="219"/>
+        <source>Line spacing in system units</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="331"/>
+        <source>Line and arrows</source>
+        <translation>尺寸線與箭頭</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="340"/>
+        <source>Show lines</source>
+        <translation>顯示線段</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="363"/>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="373"/>
+        <source>The width of the dimension lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="376"/>
+        <source>px</source>
+        <translation>px</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="386"/>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="396"/>
+        <source>The color of dimension lines, arrows and texts</source>
+        <translation>尺寸線、箭頭和文字的顏色</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="389"/>
+        <source>Line / text color</source>
+        <translation>線條/文字顏色</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="410"/>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="432"/>
+        <source>The type of arrows or markers to use at the end of dimension lines</source>
+        <translation>於尺寸線尾端使用的箭頭或標記類型</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="464"/>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="474"/>
+        <source>The size of the dimension arrows or markers in system units</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="484"/>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="494"/>
+        <source>The distance that the dimension line is additionally extended</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="524"/>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="534"/>
+        <source>The distance that the extension lines are additionally extended beyond the dimension line</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="199"/>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="209"/>
+        <source>The font size in system units</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="202"/>
         <source>Font size</source>
         <translation>字體大小</translation>
     </message>
     <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="219"/>
-        <source>Line spacing in system units</source>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="219"/>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="229"/>
+        <source>The line spacing for multi-line texts and labels (relative to the font size)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="222"/>
         <source>Line spacing</source>
         <translation>行距</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="236"/>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="246"/>
+        <source>The color of texts, dimension texts and label texts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="239"/>
+        <source>Text color</source>
+        <translation>文字顏色</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="256"/>
+        <source>Lines and arrows</source>
+        <translation>線和箭頭</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="337"/>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="347"/>
+        <source>If it is checked it will display the dimension line</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="265"/>
+        <source>Show line</source>
+        <translation>顯示線</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="288"/>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="298"/>
+        <source>The width of the lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="366"/>
+        <source>Line width</source>
+        <translation>線寬</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="301"/>
+        <source> px</source>
+        <translation> px</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="308"/>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="330"/>
+        <source>The type of arrows or markers to use for dimensions and labels</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="413"/>
+        <source>Arrow type</source>
+        <translation>箭頭樣式</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="436"/>
+        <source>Dot</source>
+        <translation>點</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="441"/>
+        <source>Circle</source>
+        <translation>圓</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="446"/>
+        <source>Arrow</source>
+        <translation>箭頭</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="451"/>
+        <source>Tick</source>
+        <translation>鉤號</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="456"/>
+        <source>Tick-2</source>
+        <translation>鉤號-2</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="362"/>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="372"/>
+        <source>The size of the arrows or markers in system units</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="467"/>
+        <source>Arrow size</source>
+        <translation>箭頭尺寸</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="382"/>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="392"/>
+        <source>The color of lines and arrows</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="385"/>
+        <source>Line and arrow color</source>
+        <translation>線和箭頭顏色</translation>
     </message>
     <message>
         <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="239"/>
@@ -1282,7 +1452,7 @@ beyond the dimension line</source>
     <message>
         <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="248"/>
         <source>Scale multiplier</source>
-        <translation type="unfinished"></translation>
+        <translation>縮放比率</translation>
     </message>
     <message>
         <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="268"/>
@@ -1318,99 +1488,14 @@ beyond the dimension line</source>
         <translation>小數位數</translation>
     </message>
     <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="331"/>
-        <source>Line and arrows</source>
-        <translation>尺寸線與箭頭</translation>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="485"/>
+        <source>Dimension details</source>
+        <translation>尺寸細節</translation>
     </message>
     <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="337"/>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="347"/>
-        <source>If it is checked it will display the dimension line</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="340"/>
-        <source>Show lines</source>
-        <translation>顯示線段</translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="363"/>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="373"/>
-        <source>The width of the dimension lines</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="366"/>
-        <source>Line width</source>
-        <translation>線寬</translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="376"/>
-        <source>px</source>
-        <translation>px</translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="386"/>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="396"/>
-        <source>The color of dimension lines, arrows and texts</source>
-        <translation>尺寸線、箭頭和文字的顏色</translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="389"/>
-        <source>Line / text color</source>
-        <translation>線條/文字顏色</translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="410"/>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="432"/>
-        <source>The type of arrows or markers to use at the end of dimension lines</source>
-        <translation>於尺寸線尾端使用的箭頭或標記類型</translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="413"/>
-        <source>Arrow type</source>
-        <translation>箭頭樣式</translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="436"/>
-        <source>Dot</source>
-        <translation>點</translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="441"/>
-        <source>Circle</source>
-        <translation>圓</translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="446"/>
-        <source>Arrow</source>
-        <translation>箭頭</translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="451"/>
-        <source>Tick</source>
-        <translation>鉤號</translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="456"/>
-        <source>Tick-2</source>
-        <translation>鉤號-2</translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="464"/>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="474"/>
-        <source>The size of the dimension arrows or markers in system units</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="467"/>
-        <source>Arrow size</source>
-        <translation>箭頭尺寸</translation>
-    </message>
-    <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="484"/>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="494"/>
-        <source>The distance that the dimension line is additionally extended</source>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="491"/>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="501"/>
+        <source>The distance the dimension line is additionally extended</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1430,15 +1515,61 @@ beyond the dimension line</source>
         <translation>延伸線</translation>
     </message>
     <message>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="524"/>
-        <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="534"/>
-        <source>The distance that the extension lines are additionally extended beyond the dimension line</source>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="531"/>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="541"/>
+        <source>The distance the extension lines are additionally extended beyond the dimension line</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="527"/>
         <source>Extension overshoot</source>
+        <translation>延伸超調</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="551"/>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="561"/>
+        <source>The distance between the dimension text and the dimension line</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="554"/>
+        <source>Text spacing</source>
+        <translation>文字間距</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialogLayers.ui" line="14"/>
+        <source>Layers manager</source>
+        <translation>圖層管理</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialogLayers.ui" line="29"/>
+        <source>New</source>
+        <translation>新增</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialogLayers.ui" line="43"/>
+        <source>Select all</source>
+        <translation>全選</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialogLayers.ui" line="50"/>
+        <source>Toggle on/off</source>
+        <translation>切換 開啟/關閉</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialogLayers.ui" line="57"/>
+        <source>Isolate</source>
+        <translation>隔離</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialogLayers.ui" line="77"/>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/dialogLayers.ui" line="84"/>
+        <source>OK</source>
+        <translation>確定</translation>
     </message>
 </context>
 <context>
@@ -1492,18 +1623,18 @@ from menu Tools -&gt; Addon Manager</source>
     <message>
         <location filename="../../draftutils/init_draft_statusbar.py" line="334"/>
         <source>Toggles Constrain to Working Plane On/Off</source>
-        <translation type="unfinished"></translation>
+        <translation>開啟/關閉對工作平面的約束</translation>
     </message>
     <message>
         <location filename="../../draftobjects/bspline.py" line="106"/>
         <source>_BSpline.createGeometry: Closed with same first/last Point. Geometry not updated.</source>
-        <translation type="unfinished"></translation>
+        <translation>_BSpline.createGeometry: 以相同的第一個/最後一個點閉合. 幾何未更新.</translation>
     </message>
     <message>
         <location filename="../../draftobjects/pointarray.py" line="244"/>
         <location filename="../../draftobjects/pointarray.py" line="306"/>
         <source>Point object doesn&apos;t have a discrete point, it cannot be used for an array.</source>
-        <translation type="unfinished"></translation>
+        <translation>點物件沒有離散點，不能用於陣列.</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_lineslope.py" line="88"/>
@@ -1519,12 +1650,12 @@ from menu Tools -&gt; Addon Manager</source>
     <message>
         <location filename="../../draftguitools/gui_hatch.py" line="49"/>
         <source>You must choose a base object before using this command</source>
-        <translation type="unfinished"></translation>
+        <translation>使用此命令之前必須選擇基礎對象</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_fillets.py" line="89"/>
         <source>Delete original objects</source>
-        <translation type="unfinished"></translation>
+        <translation>刪除原有物件</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_fillets.py" line="95"/>
@@ -1539,7 +1670,7 @@ from menu Tools -&gt; Addon Manager</source>
     <message>
         <location filename="../../draftguitools/gui_setstyle.py" line="275"/>
         <source>Name of this new style:</source>
-        <translation type="unfinished"></translation>
+        <translation>此新樣式名稱:</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_setstyle.py" line="282"/>
@@ -1549,17 +1680,17 @@ from menu Tools -&gt; Addon Manager</source>
     <message>
         <location filename="../../draftguitools/gui_setstyle.py" line="283"/>
         <source>Name exists. Overwrite?</source>
-        <translation type="unfinished"></translation>
+        <translation>名稱存在. 覆蓋它?</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_setstyle.py" line="318"/>
         <source>Error: json module not found. Unable to save style</source>
-        <translation type="unfinished"></translation>
+        <translation>錯誤: 找不到 json 模組. 無法儲存樣式</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_offset.py" line="329"/>
         <source>Offset direction is not defined. Please move the mouse on either side of the object first to indicate a direction</source>
-        <translation type="unfinished"></translation>
+        <translation>未定義偏移方向. 請先將滑鼠移到物體的兩側以指示方向</translation>
     </message>
     <message>
         <location filename="../../drafttaskpanels/task_polararray.py" line="144"/>
@@ -1598,12 +1729,12 @@ from menu Tools -&gt; Addon Manager</source>
     <message>
         <location filename="../../drafttaskpanels/task_scale.py" line="155"/>
         <source>Uniform scaling</source>
-        <translation type="unfinished"></translation>
+        <translation>統一縮放</translation>
     </message>
     <message>
         <location filename="../../drafttaskpanels/task_scale.py" line="156"/>
         <source>Working plane orientation</source>
-        <translation type="unfinished"></translation>
+        <translation>工作平面方向</translation>
     </message>
     <message>
         <location filename="../../drafttaskpanels/task_scale.py" line="157"/>
@@ -1613,12 +1744,12 @@ from menu Tools -&gt; Addon Manager</source>
     <message>
         <location filename="../../drafttaskpanels/task_scale.py" line="158"/>
         <source>Modify subelements</source>
-        <translation type="unfinished"></translation>
+        <translation>修改子元素</translation>
     </message>
     <message>
         <location filename="../../drafttaskpanels/task_scale.py" line="159"/>
         <source>Pick from/to points</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇 從/到 端點</translation>
     </message>
     <message>
         <location filename="../../drafttaskpanels/task_scale.py" line="160"/>
@@ -1633,7 +1764,7 @@ from menu Tools -&gt; Addon Manager</source>
     <message>
         <location filename="../../draftviewproviders/view_wpproxy.py" line="119"/>
         <source>Writing objects shown/hidden state</source>
-        <translation type="unfinished"></translation>
+        <translation>寫入物件的顯示/隱藏狀態</translation>
     </message>
 </context>
 <context>
@@ -1646,7 +1777,7 @@ from menu Tools -&gt; Addon Manager</source>
     <message>
         <location filename="../ui/TaskPanel_CircularArray.ui" line="44"/>
         <source>(Placeholder for the icon)</source>
-        <translation type="unfinished"></translation>
+        <translation>(圖示佔位符)</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_CircularArray.ui" line="53"/>
@@ -1657,7 +1788,7 @@ from menu Tools -&gt; Addon Manager</source>
     <message>
         <location filename="../ui/TaskPanel_CircularArray.ui" line="56"/>
         <source>Radial distance</source>
-        <translation type="unfinished"></translation>
+        <translation>徑向距離</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_CircularArray.ui" line="76"/>
@@ -1669,7 +1800,7 @@ It cannot be zero.</source>
     <message>
         <location filename="../ui/TaskPanel_CircularArray.ui" line="80"/>
         <source>Tangential distance</source>
-        <translation type="unfinished"></translation>
+        <translation>切向距離</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_CircularArray.ui" line="101"/>
@@ -1681,7 +1812,7 @@ It must be at least 2.</source>
     <message>
         <location filename="../ui/TaskPanel_CircularArray.ui" line="105"/>
         <source>Number of circular layers</source>
-        <translation type="unfinished"></translation>
+        <translation>圓形層數</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_CircularArray.ui" line="126"/>
@@ -1703,7 +1834,7 @@ Change the direction of the axis itself in the property editor.</source>
     <message>
         <location filename="../ui/TaskPanel_CircularArray.ui" line="155"/>
         <source>Center of rotation</source>
-        <translation type="unfinished"></translation>
+        <translation>旋轉中心</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_CircularArray.ui" line="163"/>
@@ -1763,7 +1894,7 @@ A Link array is more efficient when creating multiple copies, but it cannot be f
     <message>
         <location filename="../ui/TaskPanel_OrthoArray.ui" line="44"/>
         <source>(Placeholder for the icon)</source>
-        <translation type="unfinished"></translation>
+        <translation>(圖示佔位符)</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_OrthoArray.ui" line="51"/>
@@ -1817,7 +1948,7 @@ Negative values will result in copies produced in the negative direction.</sourc
         <location filename="../ui/TaskPanel_OrthoArray.ui" line="288"/>
         <location filename="../ui/TaskPanel_OrthoArray.ui" line="379"/>
         <source>Reset the distances.</source>
-        <translation type="unfinished"></translation>
+        <translation>重置距離.</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_OrthoArray.ui" line="200"/>
@@ -1891,7 +2022,7 @@ A Link array is more efficient when creating multiple copies, but it cannot be f
     <message>
         <location filename="../ui/TaskPanel_PolarArray.ui" line="44"/>
         <source>(Placeholder for the icon)</source>
-        <translation type="unfinished"></translation>
+        <translation>(圖示佔位符)</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_PolarArray.ui" line="53"/>
@@ -1927,7 +2058,7 @@ Change the direction of the axis itself in the property editor.</source>
     <message>
         <location filename="../ui/TaskPanel_PolarArray.ui" line="117"/>
         <source>Center of rotation</source>
-        <translation type="unfinished"></translation>
+        <translation>旋轉中心</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_PolarArray.ui" line="125"/>
@@ -1994,7 +2125,7 @@ A Link array is more efficient when creating multiple copies, but it cannot be f
         <location filename="../ui/TaskShapeString.ui" line="70"/>
         <location filename="../ui/TaskShapeString.ui" line="87"/>
         <source>Enter coordinates or select point with mouse.</source>
-        <translation type="unfinished"></translation>
+        <translation>輸入座標或用滑鼠選擇點.</translation>
     </message>
     <message>
         <location filename="../ui/TaskShapeString.ui" line="63"/>
@@ -2009,7 +2140,7 @@ A Link array is more efficient when creating multiple copies, but it cannot be f
     <message>
         <location filename="../ui/TaskShapeString.ui" line="114"/>
         <source>Reset 3d point selection</source>
-        <translation type="unfinished"></translation>
+        <translation>重置 3d 點選擇</translation>
     </message>
     <message>
         <location filename="../ui/TaskShapeString.ui" line="120"/>
@@ -2024,7 +2155,7 @@ A Link array is more efficient when creating multiple copies, but it cannot be f
     <message>
         <location filename="../ui/TaskShapeString.ui" line="138"/>
         <source>Text to be made into ShapeString</source>
-        <translation type="unfinished"></translation>
+        <translation>要製作為​​形狀字串的文字</translation>
     </message>
     <message>
         <location filename="../ui/TaskShapeString.ui" line="149"/>
@@ -2034,12 +2165,22 @@ A Link array is more efficient when creating multiple copies, but it cannot be f
     <message>
         <location filename="../ui/TaskShapeString.ui" line="156"/>
         <source>Height of the result</source>
-        <translation type="unfinished"></translation>
+        <translation>結果的高度</translation>
     </message>
     <message>
         <location filename="../ui/TaskShapeString.ui" line="176"/>
         <source>Font file</source>
-        <translation>Font file</translation>
+        <translation>字型檔</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskShapeString.ui" line="183"/>
+        <source>Font files (*.ttf *.otf *.pfb *.TTF *.OTF *.PFB)</source>
+        <translation>字型檔 (*.ttf *.otf *.pfb *.TTF *.OTF *.PFB)</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/TaskShapeString.ui" line="183"/>
+        <source>Font files (*.ttf *.otf *.pfb)</source>
+        <translation>字型檔(*.ttf *.otf *.pfb)</translation>
     </message>
 </context>
 <context>
@@ -2248,7 +2389,7 @@ CTRL to snap, SHIFT to constrain.</source>
     <message>
         <location filename="../../draftguitools/gui_beziers.py" line="478"/>
         <source>Create various types of Bézier curves.</source>
-        <translation type="unfinished"></translation>
+        <translation>建立各種類型的B-雲形線曲線.</translation>
     </message>
 </context>
 <context>
@@ -2466,7 +2607,7 @@ If other objects are selected they are ignored.</source>
     <message>
         <location filename="../../draftguitools/gui_hatch.py" line="38"/>
         <source>Hatch</source>
-        <translation type="unfinished"></translation>
+        <translation>填充</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_hatch.py" line="42"/>
@@ -3258,7 +3399,7 @@ convert closed edges into filled faces and parametric polygons, and merge faces 
     <message>
         <location filename="../../draftguitools/gui_wire2spline.py" line="64"/>
         <source>Wire to B-spline</source>
-        <translation type="unfinished"></translation>
+        <translation>線段到B-雲形線</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_wire2spline.py" line="67"/>
@@ -3271,7 +3412,7 @@ convert closed edges into filled faces and parametric polygons, and merge faces 
     <message>
         <location filename="../../draftguitools/gui_planeproxy.py" line="50"/>
         <source>Create working plane proxy</source>
-        <translation type="unfinished"></translation>
+        <translation>建立工作平面代理</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_planeproxy.py" line="52"/>
@@ -3284,175 +3425,54 @@ Then you can use it to save a different camera position and objects&apos; states
 <context>
     <name>Form</name>
     <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="14"/>
-        <source>Working plane setup</source>
-        <translation type="unfinished"></translation>
+        <location filename="../../Resources/ui/dialogHatch.ui" line="14"/>
+        <source>Hatch</source>
+        <translation>填充</translation>
     </message>
     <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="20"/>
-        <source>Select a face or working plane proxy or 3 vertices.
-Or choose one of the options below</source>
-        <translation type="unfinished"></translation>
+        <location filename="../ui/dialogHatch.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
     <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="31"/>
-        <source>Sets the working plane to the XY plane (ground plane)</source>
-        <translation type="unfinished"></translation>
+        <location filename="../ui/dialogHatch.ui" line="20"/>
+        <source>PAT file:</source>
+        <translation>PAT 檔案:</translation>
     </message>
     <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="34"/>
-        <source>Top (XY)</source>
-        <translation>XY （上）</translation>
+        <location filename="../ui/dialogHatch.ui" line="44"/>
+        <source>Scale</source>
+        <translation>縮放</translation>
     </message>
     <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="41"/>
-        <source>Sets the working plane to the XZ plane (front plane)</source>
-        <translation type="unfinished"></translation>
+        <location filename="../ui/dialogHatch.ui" line="71"/>
+        <source>°</source>
+        <translation>°</translation>
     </message>
     <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="44"/>
-        <source>Front (XZ)</source>
-        <translation>XZ (正面)</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialogHatch.ui" line="27"/>
+        <source>Pattern files (*.pat *.PAT)</source>
+        <translation>圖樣檔 (*.pat *.PAT)</translation>
     </message>
     <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="51"/>
-        <source>Sets the working plane to the YZ plane (side plane)</source>
-        <translation type="unfinished"></translation>
+        <location filename="../ui/dialogHatch.ui" line="27"/>
+        <source>pattern files (*.pat)</source>
+        <translation>圖樣檔 (*.pat)</translation>
     </message>
     <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="54"/>
-        <source>Side (YZ)</source>
-        <translation>YZ（側面）</translation>
+        <location filename="../ui/dialogHatch.ui" line="34"/>
+        <source>Pattern:</source>
+        <translation>圖樣:</translation>
     </message>
     <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="61"/>
-        <source>Sets the working plane facing the current view</source>
-        <translation type="unfinished"></translation>
+        <location filename="../../Resources/ui/dialogHatch.ui" line="44"/>
+        <source>Scale:</source>
+        <translation>縮放:</translation>
     </message>
     <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="64"/>
-        <source>Align to view</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="71"/>
-        <source>The working plane will align to the current
-view each time a command is started</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="78"/>
-        <source>Automatic</source>
-        <translation>自動</translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="87"/>
-        <source>Offset</source>
-        <translation>偏移複製</translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="94"/>
-        <source>An optional offset to give to the working plane
-above its base position. Use this together with one
-of the buttons above</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="106"/>
-        <location filename="../ui/TaskSelectPlane.ui" line="118"/>
-        <source>If this is selected, the working plane will be
-centered on the current view when pressing one
-of the buttons above</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="111"/>
-        <source>Center plane on view</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="135"/>
-        <source>Or select a single vertex to move the current
-working plane without changing its orientation.
-Then, press the button below</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="147"/>
-        <source>Moves the working plane without changing its
-orientation. If no point is selected, the plane
-will be moved to the center of the view</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="152"/>
-        <source>Move working plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="161"/>
-        <location filename="../ui/TaskSelectPlane.ui" line="171"/>
-        <source>The spacing between the smaller grid lines</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="164"/>
-        <source>Grid spacing</source>
-        <translation>網格間距</translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="181"/>
-        <location filename="../ui/TaskSelectPlane.ui" line="191"/>
-        <source>The number of squares between each main line of the grid</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="184"/>
-        <source>Main line every</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="198"/>
-        <source>Grid extension</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="205"/>
-        <source> lines</source>
-        <translation> 線段</translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="218"/>
-        <location filename="../ui/TaskSelectPlane.ui" line="230"/>
-        <source>The distance at which a point can be snapped to
-when approaching the mouse. You can also change this
-value by using the [ and ] keys while drawing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="223"/>
-        <source>Snapping radius</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="241"/>
-        <source>Centers the view on the current working plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="244"/>
-        <source>Center view</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="251"/>
-        <source>Resets the working plane to its previous position</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskSelectPlane.ui" line="254"/>
-        <source>Previous</source>
-        <translation>前一個</translation>
+        <location filename="../ui/dialogHatch.ui" line="64"/>
+        <source>Rotation:</source>
+        <translation>旋轉：</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="14"/>
@@ -3472,12 +3492,12 @@ value by using the [ and ] keys while drawing</source>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="40"/>
         <source>Save current style as a preset...</source>
-        <translation type="unfinished"></translation>
+        <translation>將目前樣式儲存為預設...</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="57"/>
         <source>Lines and faces</source>
-        <translation type="unfinished"></translation>
+        <translation>線和面</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="66"/>
@@ -3487,7 +3507,7 @@ value by using the [ and ] keys while drawing</source>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="73"/>
         <source>The color of lines</source>
-        <translation type="unfinished"></translation>
+        <translation>線條顏色</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="80"/>
@@ -3537,7 +3557,7 @@ value by using the [ and ] keys while drawing</source>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="135"/>
         <source>The display mode for faces</source>
-        <translation type="unfinished"></translation>
+        <translation>面部顯示模式</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="139"/>
@@ -3555,9 +3575,123 @@ value by using the [ and ] keys while drawing</source>
         <translation>上色</translation>
     </message>
     <message>
+        <location filename="../ui/TaskPanel_SetStyle.ui" line="186"/>
+        <source> %</source>
+        <translation> %</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskPanel_SetStyle.ui" line="397"/>
+        <source>Texts/dims</source>
+        <translation>文字/變暗</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="22"/>
+        <source>Fill the values below from a stored style preset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="40"/>
+        <source>Save the current style as a preset...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="56"/>
+        <source>Shapes</source>
+        <translation>造型</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="118"/>
+        <source>Point color</source>
+        <translation>點顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="129"/>
+        <source>Point size</source>
+        <translation>點大小</translation>
+    </message>
+    <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="154"/>
         <source>Points</source>
         <translation>點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="221"/>
+        <source>The color for texts, dimension texts and label texts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="228"/>
+        <source>Font name</source>
+        <translation>字體名稱</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="241"/>
+        <source>The font for texts, dimensions and labels</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="248"/>
+        <source>Font size</source>
+        <translation>字體大小</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="255"/>
+        <source>The height for texts, dimension texts and label texts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="272"/>
+        <source>The line spacing for multi-line texts and labels (relative to the font size)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="279"/>
+        <source>Scale multiplier</source>
+        <translation>規模乘數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="286"/>
+        <source>The annotation scale multiplier is the inverse of the scale set in the 
+Annotation scale widget. If the scale is 1:100 the multiplier is 100.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="303"/>
+        <source>Line and arrow color</source>
+        <translation>線條和箭頭顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="328"/>
+        <source>Arrow type</source>
+        <translation>箭頭樣式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="433"/>
+        <source>The length of extension lines. Use 0 for full extension lines. A negative value
+defines the gap between the ends of the extension lines and the measured points.
+A positive value defines the maximum length of the extension lines. Only used
+for linear dimensions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="453"/>
+        <source>The length of extension lines above the dimension line</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="470"/>
+        <source>The space between the dimension line and the dimension text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="485"/>
+        <source>Apply the above style to selected object(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="499"/>
+        <source>Apply the above style to all annotations (texts, dimensions and labels)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="162"/>
@@ -3577,12 +3711,7 @@ value by using the [ and ] keys while drawing</source>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="183"/>
         <source>The transparency of faces</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskPanel_SetStyle.ui" line="186"/>
-        <source> %</source>
-        <translation> %</translation>
+        <translation>面透明度</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="199"/>
@@ -3590,39 +3719,9 @@ value by using the [ and ] keys while drawing</source>
         <translation>註記</translation>
     </message>
     <message>
-        <location filename="../ui/TaskPanel_SetStyle.ui" line="205"/>
-        <source>Text font</source>
-        <translation>文字字體</translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskPanel_SetStyle.ui" line="218"/>
-        <source>The font to use for texts and dimensions</source>
-        <translation>文字與尺寸使用的字體</translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskPanel_SetStyle.ui" line="225"/>
-        <source>Text size</source>
-        <translation>字體大小</translation>
-    </message>
-    <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="232"/>
         <source>The size of texts and dimension texts</source>
         <translation>文字與尺寸文字的大小</translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskPanel_SetStyle.ui" line="242"/>
-        <source>Text spacing</source>
-        <translation>文字間距</translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskPanel_SetStyle.ui" line="249"/>
-        <source>The space between the text and the dimension line</source>
-        <translation>文字與尺寸線的間距</translation>
-    </message>
-    <message>
-        <location filename="../ui/TaskPanel_SetStyle.ui" line="259"/>
-        <source>Text color</source>
-        <translation>文字顏色</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="266"/>
@@ -3630,9 +3729,29 @@ value by using the [ and ] keys while drawing</source>
         <translation>文字與尺寸文字的顏色</translation>
     </message>
     <message>
+        <location filename="../ui/TaskPanel_SetStyle.ui" line="205"/>
+        <source>Text font</source>
+        <translation>文字字體</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskPanel_SetStyle.ui" line="225"/>
+        <source>Text size</source>
+        <translation>字體大小</translation>
+    </message>
+    <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="273"/>
         <source>Line spacing</source>
         <translation>行距</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskPanel_SetStyle.ui" line="259"/>
+        <source>Text color</source>
+        <translation>文字顏色</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskPanel_SetStyle.ui" line="218"/>
+        <source>The font to use for texts and dimensions</source>
+        <translation>文字與尺寸使用的字體</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="280"/>
@@ -3640,9 +3759,19 @@ value by using the [ and ] keys while drawing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../Resources/ui/TaskPanel_SetStyle.ui" line="272"/>
+        <source>Dimensions</source>
+        <translation>尺寸標註</translation>
+    </message>
+    <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="287"/>
         <source>Arrow style</source>
         <translation>箭頭樣式</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskPanel_SetStyle.ui" line="249"/>
+        <source>The space between the text and the dimension line</source>
+        <translation>文字與尺寸線的間距</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="294"/>
@@ -3675,9 +3804,19 @@ value by using the [ and ] keys while drawing</source>
         <translation>鉤號-2</translation>
     </message>
     <message>
-        <location filename="../ui/TaskPanel_SetStyle.ui" line="326"/>
-        <source>Arrow size</source>
-        <translation>箭頭尺寸</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="385"/>
+        <source>If checked, a unit symbol is added to dimension texts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="402"/>
+        <source>The unit override for dimensions. Leave blank to use the current FreeCAD unit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/TaskPanel_SetStyle.ui" line="327"/>
+        <source>Ext lines</source>
+        <translation>延伸線</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="333"/>
@@ -3685,14 +3824,49 @@ value by using the [ and ] keys while drawing</source>
         <translation>尺寸箭頭的大小</translation>
     </message>
     <message>
+        <location filename="../ui/TaskPanel_SetStyle.ui" line="350"/>
+        <source>If the unit suffix is shown on dimension texts or not</source>
+        <translation>單位後綴是否顯示於尺寸文字上</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskPanel_SetStyle.ui" line="242"/>
+        <source>Text spacing</source>
+        <translation>文字間距</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/TaskPanel_SetStyle.ui" line="364"/>
+        <source>The distance the dimension line is extended past the extension lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskPanel_SetStyle.ui" line="326"/>
+        <source>Arrow size</source>
+        <translation>箭頭尺寸</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/TaskPanel_SetStyle.ui" line="381"/>
+        <source>Dim overshoot</source>
+        <translation>尺寸超越量</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/TaskPanel_SetStyle.ui" line="388"/>
+        <source>Length of the extension lines beyond the dimension line</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/TaskPanel_SetStyle.ui" line="398"/>
+        <source>Length of the extension lines</source>
+        <translation>延伸線長度</translation>
+    </message>
+    <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="343"/>
         <source>Show unit</source>
         <translation>顯示單位</translation>
     </message>
     <message>
-        <location filename="../ui/TaskPanel_SetStyle.ui" line="350"/>
-        <source>If the unit suffix is shown on dimension texts or not</source>
-        <translation>單位後綴是否顯示於尺寸文字上</translation>
+        <location filename="../../Resources/ui/TaskPanel_SetStyle.ui" line="415"/>
+        <source>Ext overshoot</source>
+        <translation>延伸超越量</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_SetStyle.ui" line="363"/>
@@ -3715,976 +3889,708 @@ value by using the [ and ] keys while drawing</source>
         <translation>已選取</translation>
     </message>
     <message>
-        <location filename="../ui/TaskPanel_SetStyle.ui" line="397"/>
-        <source>Texts/dims</source>
+        <location filename="../../Resources/ui/TaskPanel_SetStyle.ui" line="455"/>
+        <source>Apply above style to all annotations (texts, dimensions and labels)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/dialogHatch.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
+        <location filename="../ui/TaskSelectPlane.ui" line="14"/>
+        <source>Working plane setup</source>
+        <translation>工作平面設定</translation>
     </message>
     <message>
-        <location filename="../ui/dialogHatch.ui" line="20"/>
-        <source>PAT file:</source>
-        <translation>PAT 檔案:</translation>
+        <location filename="../../Resources/ui/TaskSelectPlane.ui" line="20"/>
+        <source>Select 3 vertices, one or more shapes or a WP Proxy. Then confirm by clicking in the 3D view.
+Or choose one of the options below.</source>
+        <translation>選擇 3 個頂點、一個或多個形狀或 WP 代理程式. 然後透過點擊 3D 檢視進行確認.
+或選擇以下選項之一.</translation>
     </message>
     <message>
-        <location filename="../ui/dialogHatch.ui" line="27"/>
-        <source>pattern files (*.pat)</source>
-        <translation>圖樣檔 (*.pat)</translation>
+        <location filename="../ui/TaskSelectPlane.ui" line="20"/>
+        <source>Select a face or working plane proxy or 3 vertices.
+Or choose one of the options below</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/dialogHatch.ui" line="34"/>
-        <source>Pattern:</source>
-        <translation>圖樣:</translation>
+        <location filename="../ui/TaskSelectPlane.ui" line="31"/>
+        <source>Sets the working plane to the XY plane (ground plane)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/dialogHatch.ui" line="44"/>
-        <source>Scale</source>
-        <translation>縮放</translation>
+        <location filename="../ui/TaskSelectPlane.ui" line="34"/>
+        <source>Top (XY)</source>
+        <translation>XY （上）</translation>
     </message>
     <message>
-        <location filename="../ui/dialogHatch.ui" line="64"/>
-        <source>Rotation:</source>
-        <translation>旋轉：</translation>
+        <location filename="../ui/TaskSelectPlane.ui" line="41"/>
+        <source>Sets the working plane to the XZ plane (front plane)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/dialogHatch.ui" line="71"/>
-        <source>°</source>
-        <translation>°</translation>
+        <location filename="../ui/TaskSelectPlane.ui" line="44"/>
+        <source>Front (XZ)</source>
+        <translation>XZ (正面)</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="51"/>
+        <source>Sets the working plane to the YZ plane (side plane)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="54"/>
+        <source>Side (YZ)</source>
+        <translation>YZ（側面）</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="61"/>
+        <source>Sets the working plane facing the current view</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="64"/>
+        <source>Align to view</source>
+        <translation>對齊檢視</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="71"/>
+        <source>The working plane will align to the current
+view each time a command is started</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="78"/>
+        <source>Automatic</source>
+        <translation>自動</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="87"/>
+        <source>Offset</source>
+        <translation>偏移複製</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="94"/>
+        <source>An optional offset to give to the working plane
+above its base position. Use this together with one
+of the buttons above</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="106"/>
+        <location filename="../ui/TaskSelectPlane.ui" line="118"/>
+        <source>If this is selected, the working plane will be
+centered on the current view when pressing one
+of the buttons above</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="111"/>
+        <source>Center plane on view</source>
+        <translation>視野中心平面</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/TaskSelectPlane.ui" line="135"/>
+        <source>Or select a single vertex to move the current working plane without changing its orientation. Then press the button below.</source>
+        <translation>或選擇單一頂點來移動目前工作平面而不改變其方向. 然後按下下面的按鈕.</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/TaskSelectPlane.ui" line="264"/>
+        <source>Resets the working plane to its next position</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/TaskSelectPlane.ui" line="267"/>
+        <source>Next</source>
+        <translation>下一個</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="135"/>
+        <source>Or select a single vertex to move the current
+working plane without changing its orientation.
+Then, press the button below</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="147"/>
+        <source>Moves the working plane without changing its
+orientation. If no point is selected, the plane
+will be moved to the center of the view</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="152"/>
+        <source>Move working plane</source>
+        <translation>移動工作平面</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="161"/>
+        <location filename="../ui/TaskSelectPlane.ui" line="171"/>
+        <source>The spacing between the smaller grid lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="164"/>
+        <source>Grid spacing</source>
+        <translation>網格間距</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="181"/>
+        <location filename="../ui/TaskSelectPlane.ui" line="191"/>
+        <source>The number of squares between each main line of the grid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="184"/>
+        <source>Main line every</source>
+        <translation>主線每個</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="198"/>
+        <source>Grid extension</source>
+        <translation>網格延伸</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="205"/>
+        <source> lines</source>
+        <translation> 線段</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="218"/>
+        <location filename="../ui/TaskSelectPlane.ui" line="230"/>
+        <source>The distance at which a point can be snapped to
+when approaching the mouse. You can also change this
+value by using the [ and ] keys while drawing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="223"/>
+        <source>Snapping radius</source>
+        <translation>捕捉半徑</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="241"/>
+        <source>Centers the view on the current working plane</source>
+        <translation>將檢視置於目前工作平面的中心</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="244"/>
+        <source>Center view</source>
+        <translation>中間視角</translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="251"/>
+        <source>Resets the working plane to its previous position</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/TaskSelectPlane.ui" line="254"/>
+        <source>Previous</source>
+        <translation>前一個</translation>
     </message>
 </context>
 <context>
     <name>Gui::Dialog::DlgSettingsDraft</name>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="14"/>
-        <source>General settings</source>
-        <translation>一般設定</translation>
+        <location filename="../ui/preferences-draftinterface.ui" line="14"/>
+        <source>User interface settings</source>
+        <translation>使用者介面設定</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="32"/>
-        <source>General Draft Settings</source>
-        <translation>一般底圖設定</translation>
+        <location filename="../ui/preferences-draftinterface.ui" line="26"/>
+        <source>In-Command Shortcuts</source>
+        <translation>命令內快捷鍵</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="40"/>
-        <source>Default working plane</source>
-        <translation>預設工作平面</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="14"/>
+        <source>Interface</source>
+        <translation>介面</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="67"/>
-        <source>None</source>
-        <translation>無</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="20"/>
+        <source>In-command shortcuts</source>
+        <translation>命令內快捷鍵</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="72"/>
-        <source>XY (Top)</source>
-        <translation>XY （上）</translation>
+        <location filename="../ui/preferences-draftinterface.ui" line="37"/>
+        <source>Relative</source>
+        <translation>相對關係</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="77"/>
-        <source>XZ (Front)</source>
-        <translation>XZ (正面)</translation>
+        <location filename="../ui/preferences-draftinterface.ui" line="59"/>
+        <source>R</source>
+        <translation>R</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="82"/>
-        <source>YZ (Side)</source>
-        <translation>YZ（側面）</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="183"/>
+        <source>F</source>
+        <translation>F</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="94"/>
-        <source>Internal precision level</source>
-        <translation>內部精度等級</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="202"/>
+        <source>Select edge</source>
+        <translation>選擇邊緣</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="120"/>
-        <source>The number of decimals in internal coordinates operations (for ex. 3 = 0.001). Values between 6 and 8 are usually considered the best trade-off among FreeCAD users.</source>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="234"/>
+        <source>Subelement mode</source>
+        <translation>子元素模式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="247"/>
+        <source>B</source>
+        <translation>B</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="279"/>
+        <source>C</source>
+        <translation>C</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="81"/>
+        <source>Continue</source>
+        <translation>繼續</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="439"/>
+        <source>N</source>
+        <translation>N</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="458"/>
+        <source>Cycle snap</source>
+        <translation>循環捕捉</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="490"/>
+        <source>Add hold</source>
+        <translation>新增保留</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="522"/>
+        <source>Set working plane</source>
+        <translation>設定工作平面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="586"/>
+        <source>Increase radius</source>
+        <translation>增加半徑</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="618"/>
+        <source>Decrease radius</source>
+        <translation>減少半徑</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="749"/>
+        <source>UI options</source>
+        <translation>使用者介面選項</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="755"/>
+        <source>If checked, the Draft snap toolbar will only be visible during commands</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="143"/>
-        <source>Tolerance</source>
-        <translation>公差</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="758"/>
+        <source>Only show the Draft snap toolbar during commands</source>
+        <translation>僅在指令期間顯示草稿捕捉工具列</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="169"/>
-        <source>This is the value used by functions that use a tolerance.
-Values with differences below this value will be treated as same. This value will be obsoleted soon so the precision level above controls both.</source>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="774"/>
+        <source>If checked, the Snap widget is displayed in the Draft statusbar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="194"/>
-        <source>If this option is checked, the layers drop-down list will also show groups, allowing you to automatically add objects to groups too.</source>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="777"/>
+        <source>Show the Snap widget in the Draft Workbench</source>
+        <translation>在草稿工作台中顯示捕捉小工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="793"/>
+        <source>If checked, the Annotation scale widget is displayed in the Draft statusbar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="197"/>
-        <source>Show groups in layers list drop-down button</source>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="796"/>
+        <source>Show the Annotation scale widget in the Draft Workbench</source>
+        <translation>在草稿工作台中顯示註釋比例小工具</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="103"/>
+        <source>T</source>
+        <translation>T</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="125"/>
+        <source>Close</source>
+        <translation>關閉</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="147"/>
+        <source>O</source>
+        <translation>O</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="169"/>
+        <source>Copy</source>
+        <translation>複製</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="191"/>
+        <source>P</source>
+        <translation>P</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="213"/>
+        <source>Subelement Mode</source>
+        <translation>子元素模式</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="235"/>
+        <source>D</source>
+        <translation>D</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="257"/>
+        <source>Fill</source>
+        <translation>填充</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="279"/>
+        <source>L</source>
+        <translation>L</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="301"/>
+        <source>Exit</source>
+        <translation>結束離開</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="323"/>
+        <source>A</source>
+        <translation>A</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="345"/>
+        <source>Select Edge</source>
+        <translation>選擇邊緣</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="367"/>
+        <source>E</source>
+        <translation>E</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="389"/>
+        <source>Add Hold</source>
+        <translation>新增保留</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="411"/>
+        <source>Q</source>
+        <translation>Q</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="433"/>
+        <source>Length</source>
+        <translation>間距</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="455"/>
+        <source>H</source>
+        <translation>H</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="477"/>
+        <source>Wipe</source>
+        <translation>擦拭</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="499"/>
+        <source>W</source>
+        <translation>W</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="521"/>
+        <source>Set WP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="216"/>
-        <source>Draft tools options</source>
-        <translation>底圖工具選項</translation>
+        <location filename="../ui/preferences-draftinterface.ui" line="543"/>
+        <source>U</source>
+        <translation>U</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="230"/>
-        <source>When drawing lines, set focus on Length instead of X coordinate.
-This allows to point the direction and type the distance.</source>
+        <location filename="../ui/preferences-draftinterface.ui" line="565"/>
+        <source>Cycle Snap</source>
+        <translation>循環捕捉</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="587"/>
+        <source>`</source>
+        <translation>`</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="609"/>
+        <source>Global</source>
+        <translation>全局的</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="631"/>
+        <source>G</source>
+        <translation>G</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="719"/>
+        <source>[</source>
+        <translation>[</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="763"/>
+        <source>]</source>
+        <translation>]</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="928"/>
+        <source>Enable draft statusbar customization</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="234"/>
-        <source>Set focus on Length instead of X coordinate</source>
+        <location filename="../../Resources/ui/preferences-draftinterface.ui" line="674"/>
+        <source>Undo</source>
+        <translation>復原</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="653"/>
+        <source>Snap</source>
+        <translation>貼齊</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="675"/>
+        <source>S</source>
+        <translation>S</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="697"/>
+        <source>Increase Radius</source>
+        <translation>增加半徑</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="741"/>
+        <source>Decrease Radius</source>
+        <translation>減少半徑</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="785"/>
+        <source>Restrict X</source>
+        <translation>限定 X</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="807"/>
+        <source>X</source>
+        <translation>X</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="829"/>
+        <source>Restrict Y</source>
+        <translation>限定 Y</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="851"/>
+        <source>Y</source>
+        <translation>Y</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="873"/>
+        <source>Restrict Z</source>
+        <translation>限定 Z</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="895"/>
+        <source>Z</source>
+        <translation>Z</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="931"/>
+        <source>Draft Statusbar</source>
+        <translation>草稿狀態列</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="951"/>
+        <source>Enable snap statusbar widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="247"/>
-        <source>Normally, after copying objects, the copies get selected.
-If this option is checked, the base objects will be selected instead.</source>
+        <location filename="../ui/preferences-draftinterface.ui" line="954"/>
+        <source>Draft snap widget</source>
+        <translation>草稿捕捉小部件</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftinterface.ui" line="970"/>
+        <source>Enable draft statusbar annotation scale widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draft.ui" line="251"/>
-        <source>Select base objects after copying</source>
-        <translation>複製後選定原始物體</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draft.ui" line="264"/>
-        <source>If this option is set, when creating Draft objects on top of an existing face of another object, the &quot;Support&quot; property of the Draft object will be set to the base object. This was the standard behaviour before FreeCAD 0.19</source>
+        <location filename="../ui/preferences-draftinterface.ui" line="973"/>
+        <source>Annotation scale widget</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draft.ui" line="267"/>
-        <source>Set the Support property when possible</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draft.ui" line="280"/>
-        <source>If this is checked, objects will appear as filled by default.
-Otherwise, they will appear as wireframe</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draft.ui" line="284"/>
-        <source>Fill objects with faces whenever possible</source>
-        <translation>當可行時將物體以面填滿</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draft.ui" line="300"/>
-        <source>If this is checked, copy mode will be kept across command,
-otherwise commands will always start in no-copy mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draft.ui" line="304"/>
-        <source>Global copy mode</source>
-        <translation>全球複製模式</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draft.ui" line="320"/>
-        <source>Force Draft Tools to create Part primitives instead of Draft objects.
-Note that this is not fully supported, and many object will be not editable with Draft Modifiers.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draft.ui" line="324"/>
-        <source>Use Part Primitives when available</source>
-        <translation>當許可時使用零件圖元</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draft.ui" line="341"/>
-        <source>Prefix labels of Clones with:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draft.ui" line="372"/>
-        <source>Construction Geometry</source>
-        <translation>建構用幾何圖元</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draft.ui" line="380"/>
-        <source>Construction group name</source>
-        <translation>建構群組名稱</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draft.ui" line="387"/>
-        <source>This is the default group name for construction geometry</source>
-        <translation>這是建構幾何的預設組名稱</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draft.ui" line="390"/>
-        <source>Construction</source>
-        <translation>建構</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draft.ui" line="407"/>
-        <source>Construction geometry color</source>
-        <translation>輔助用幾何色彩</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draft.ui" line="427"/>
-        <source>This is the default color for objects being drawn while in construction mode.</source>
-        <translation>這是建構模式中繪製物體的預設顏色。</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="14"/>
-        <source>Visual settings</source>
-        <translation>視覺設定</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="26"/>
-        <source>Visual Settings</source>
-        <translation>視覺設定</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="34"/>
-        <source>Snap symbols style</source>
-        <translation>鎖點符號樣式</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="54"/>
-        <source>Draft classic style</source>
-        <translation>底圖經典風格</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="59"/>
-        <source>Bitsnpieces style</source>
-        <translation>Bitsnpieces 樣式</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="80"/>
-        <source>Color</source>
-        <translation>顏色</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="87"/>
-        <source>The default color for snap symbols</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="111"/>
-        <source>Check this if you want to use the color/linewidth from the toolbar as default</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="114"/>
-        <source>Save current color and linewidth across sessions</source>
-        <translation>儲存目前色彩及線寬橫跨工作階段</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="131"/>
-        <source>If checked, a widget indicating the current working plane orientation appears during drawing operations</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="134"/>
-        <source>Show Working Plane tracker</source>
-        <translation>顯示工作平面追蹤器</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="151"/>
-        <source>Default template sheet</source>
-        <translation>預設範本表</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="177"/>
-        <source>The default template to use when creating a new drawing sheet</source>
-        <translation>建立新圖面時使用的預設模板</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="194"/>
-        <source>Alternate SVG patterns location</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="220"/>
-        <source>Here you can specify a directory with custom SVG files containing &lt;pattern&gt; definitions to be added to the standard patterns</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="237"/>
-        <source>SVG pattern resolution</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="257"/>
-        <source>The resolution to draw the patterns in. Default value is 128. Higher values give better resolutions, lower values make drawing faster</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="280"/>
-        <source>SVG pattern default size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="300"/>
-        <source>The default size for SVG patterns</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="326"/>
-        <source>Check this if you want to preserve colors of faces while doing downgrade and upgrade (splitFaces and makeShell only)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="329"/>
-        <source>Preserve colors of faces during downgrade/upgrade</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="346"/>
-        <source>Check this if you want the face names to derive from the originating object name and vice versa while doing downgrade/upgrade (splitFaces and makeShell only)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="349"/>
-        <source>Preserve names of faces during downgrade/upgrade</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="367"/>
-        <source>Drawing view line definitions</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="375"/>
-        <source>Dashed line definition</source>
-        <translation>虛線(Dash)設定</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="395"/>
-        <location filename="../ui/preferences-draftvisual.ui" line="438"/>
-        <location filename="../ui/preferences-draftvisual.ui" line="481"/>
-        <source>An SVG linestyle definition</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="398"/>
-        <source>0.09,0.05</source>
-        <translation>0.09,0.05</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="418"/>
-        <source>Dashdot line definition</source>
-        <translation>虛線(Dashdot)設定</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="441"/>
-        <source>0.09,0.05,0.02,0.05</source>
-        <translation>0.09,0.05,0.02,0.05</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="461"/>
-        <source>Dotted line definition</source>
-        <translation>虛線(Dot)設定</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftvisual.ui" line="484"/>
-        <source>0.02,0.02</source>
-        <translation>0.02,0.02</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="14"/>
-        <source>Texts and dimensions</source>
-        <translation>文字和尺寸</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="26"/>
-        <source>Text settings</source>
-        <translation>文字設定</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="34"/>
-        <source>Font family</source>
-        <translation>字型家族</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="47"/>
-        <source>This is the default font name for all Draft texts and dimensions.
-It can be a font name such as &quot;Arial&quot;, a default style such as &quot;sans&quot;, &quot;serif&quot;
-or &quot;mono&quot;, or a family such as &quot;Arial,Helvetica,sans&quot; or a name with a style
-such as &quot;Arial:Bold&quot;</source>
-        <translation>這是所有底圖文字和標註的預設字體名稱。如&quot;Arial&quot;、預設樣式如&quot;san&quot;、&quot;serif&quot;或&quot;mono&quot;或一個家族&quot;&quot;Arial,Helvetica,sans&quot;或名稱的樣式如&quot;arial：粗體&quot;</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="59"/>
-        <source>Internal font</source>
-        <translation>內部字型</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="76"/>
-        <source>Font size</source>
-        <translation>字體大小</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="89"/>
-        <source>Default height for texts and dimensions</source>
-        <translation>預設文字和標註高度</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="116"/>
-        <source>Dimension settings</source>
-        <translation>尺寸設定</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="124"/>
-        <source>Display mode</source>
-        <translation>顯示模式</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="144"/>
-        <source>text above (2D)</source>
-        <translation>文字在上(2D)</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="149"/>
-        <source> text inside (3D)</source>
-        <translation> 文字在內(3D)</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="161"/>
-        <source>Number of decimals</source>
-        <translation>小數位數</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="201"/>
-        <source>Extension lines size</source>
-        <translation>延伸線大小</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="208"/>
-        <source>The default size of dimensions extension lines</source>
-        <translation>標註延長線預設大小</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="237"/>
-        <source>Extension line overshoot</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="244"/>
-        <source>The default length of extension line above dimension line</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="273"/>
-        <source>Dimension line overshoot</source>
-        <translation>尺寸線超越量</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="280"/>
-        <source>The default distance the dimension line is extended past extension lines</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="309"/>
-        <source>Arrows style</source>
-        <translation>箭頭樣式</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="323"/>
-        <source>Dot</source>
-        <translation>點</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="328"/>
-        <source>Circle</source>
-        <translation>圓</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="333"/>
-        <source>Arrow</source>
-        <translation>箭頭</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="338"/>
-        <source>Tick</source>
-        <translation>鉤號</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="343"/>
-        <source>Tick-2</source>
-        <translation>鉤號-2</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="355"/>
-        <source>Arrows size</source>
-        <translation>箭頭尺寸</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="362"/>
-        <source>The default size of arrows</source>
-        <translation>箭頭預設尺寸</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="388"/>
-        <source>Text orientation</source>
-        <translation>文字方向</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="395"/>
-        <source>This is the orientation of the dimension texts when those dimensions are vertical. Default is left, which is the ISO standard.</source>
-        <translation>當尺度為垂直時,此為尺度文字方向,預設為左且為ISO標準.</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="405"/>
-        <source>Left (ISO standard)</source>
-        <translation>左側(ISO標準)</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="410"/>
-        <source>Right</source>
-        <translation>右視圖</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="422"/>
-        <source>Text spacing</source>
-        <translation>文字間距</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="429"/>
-        <source>The space between the dimension line and the dimension text</source>
-        <translation>標註線與文字間的距離</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="455"/>
-        <source>Show the unit suffix in dimensions</source>
-        <translation>於標註中顯示單位</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="475"/>
-        <source>Override unit</source>
-        <translation>覆蓋單位</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="495"/>
-        <source>By leaving this field blank, the dimension measurements will be shown in the current unit defined in FreeCAD. By indicating a unit here such as m or cm, you can force new dimensions to be shown in that unit.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="513"/>
-        <source>ShapeString settings</source>
-        <translation>字串造型產生器設定</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="521"/>
-        <source>Default ShapeString font file</source>
-        <translation>預設字串造型產生器字型檔</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-drafttexts.ui" line="534"/>
-        <source>Select a font file</source>
-        <translation>選擇一個字型檔</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="14"/>
-        <source>DXF</source>
-        <translation>DXF</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="35"/>
-        <source>This preferences dialog will be shown when importing/ exporting DXF files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="38"/>
-        <source>Show this dialog when importing and exporting</source>
-        <translation>當匯入及匯出時顯示此對話窗</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="51"/>
-        <source>Python importer is used, otherwise the newer C++ is used.
-Note: C++ importer is faster, but is not as featureful yet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="55"/>
-        <source>Use legacy python importer</source>
-        <translation>使用舊有python匯入器</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="71"/>
-        <source>Python exporter is used, otherwise the newer C++ is used.
-Note: C++ exporter is faster, but is not as featureful yet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="75"/>
-        <source>Use legacy python exporter</source>
-        <translation>使用傳統python匯出器</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="88"/>
-        <source>Automatic update (legacy importer only)</source>
-        <translation>自動更新(僅適用於舊的匯入器)</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="96"/>
-        <source>Allow FreeCAD to download the Python converter for DXF import and export.
-You can also do this manually by installing the &quot;dxf_library&quot; workbench
-from the Addon Manager.</source>
-        <translation>允許 FreeCAD 下載用於 DXF 匯入和匯出的 Python 轉換器。
-您也可以通過附加元件管理器安裝「dxf_library」工作台手動執行此操作。</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="101"/>
-        <source>Allow FreeCAD to automatically download and update the DXF libraries</source>
-        <translation>允許FreeCAD自動下載並更新DXF函式庫</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="140"/>
-        <source>Note: Not all the options below are used by the new importer yet</source>
-        <translation>請注意：並非下列所有選項皆可被新的匯入功能所使用</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="149"/>
-        <source>Import</source>
-        <translation>匯入</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="156"/>
-        <source>If unchecked, texts and mtexts won&apos;t be imported</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="159"/>
-        <source>texts and dimensions</source>
-        <translation>文字和尺寸</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="172"/>
-        <source>If unchecked, points won&apos;t be imported</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="175"/>
-        <source>points</source>
-        <translation>點</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="188"/>
-        <source>If checked, paper space objects will be imported too</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="191"/>
-        <source>layouts</source>
-        <translation>配置</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="204"/>
-        <source>If you want the non-named blocks (beginning with a *) to be imported too</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="207"/>
-        <source>*blocks</source>
-        <translation>*塊</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="224"/>
-        <source>Create</source>
-        <translation>建立</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="231"/>
-        <source>Only standard Part objects will be created (fastest)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="234"/>
-        <source>simple Part shapes</source>
-        <translation>簡單零件造型</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="250"/>
-        <source>Parametric Draft objects will be created whenever possible</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="253"/>
-        <source>Draft objects</source>
-        <translation>底圖物體</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="266"/>
-        <source>Sketches will be created whenever possible</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="269"/>
-        <source>Sketches</source>
-        <translation>草圖</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="289"/>
-        <source>Scale factor to apply to imported files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="309"/>
-        <source>Scale factor to apply to DXF files on import.
-The factor is the conversion between the unit of your DXF file and millimeters.
-Example: for files in millimeters: 1, in centimeters: 10,
-                             in meters: 1000, in inches: 25.4, in feet: 304.8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="338"/>
-        <source>Colors will be retrieved from the DXF objects whenever possible.
-Otherwise default colors will be applied. </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="342"/>
-        <source>Get original colors from the DXF file</source>
-        <translation>從DXF檔中取得原始色彩</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="359"/>
-        <source>FreeCAD will try to join coincident objects into wires.
-Note that this can take a while!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="363"/>
-        <source>Join geometry</source>
-        <translation>加入幾何形</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="380"/>
-        <source>Objects from the same layers will be joined into Draft Blocks,
-turning the display faster, but making them less easily editable </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="384"/>
-        <source>Group layers into blocks</source>
-        <translation>將圖層作為圖塊</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="401"/>
-        <source>Imported texts will get the standard Draft Text size,
-instead of the size they have in the DXF document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="405"/>
-        <source>Use standard font size for texts</source>
-        <translation>文字採用標準尺寸</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="422"/>
-        <source>If this is checked, DXF layers will be imported as Draft Layers</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="425"/>
-        <source>Use Layers</source>
-        <translation>使用圖層</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="445"/>
-        <source>Hatches will be converted into simple wires</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="448"/>
-        <source>Import hatch boundaries as wires</source>
-        <translation>匯入剖面線邊界為線條</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="465"/>
-        <source>If polylines have a width defined, they will be rendered
-as closed wires with correct width</source>
-        <translation>若勾選, 當聚合線具有寬度設定時, 其會以正確寬度的封閉線條算繪</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="469"/>
-        <source>Render polylines with width</source>
-        <translation>算繪帶有寬度之聚合線</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="486"/>
-        <source>Ellipse export is poorly supported. Use this to export them as polylines instead.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="489"/>
-        <source>Treat ellipses and splines as polylines</source>
-        <translation>將橢圓及spline當作聚合線</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="518"/>
-        <source>Max Spline Segment:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="528"/>
-        <source>Maximum length of each of the polyline segments.
-If it is set to &apos;0&apos; the whole spline is treated as a straight segment.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="535"/>
-        <location filename="../ui/preferences-drafttexts.ui" line="92"/>
-        <location filename="../ui/preferences-drafttexts.ui" line="211"/>
-        <location filename="../ui/preferences-drafttexts.ui" line="247"/>
-        <location filename="../ui/preferences-drafttexts.ui" line="283"/>
-        <location filename="../ui/preferences-drafttexts.ui" line="365"/>
-        <location filename="../ui/preferences-drafttexts.ui" line="432"/>
-        <location filename="../ui/preferences-svg.ui" line="209"/>
-        <source>mm</source>
-        <translation>mm</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="559"/>
-        <location filename="../ui/preferences-svg.ui" line="107"/>
-        <source>Export options</source>
-        <translation>匯出選項</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="567"/>
-        <source>All objects containing faces will be exported as 3D polyfaces</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="570"/>
-        <source>Export 3D objects as polyface meshes</source>
-        <translation>以聚合面網格匯出3D物體</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="587"/>
-        <source>Drawing Views will be exported as blocks.
-This might fail for post DXF R12 templates.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="591"/>
-        <source>Export Drawing Views as blocks</source>
-        <translation>將視圖以圖塊形式匯出</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="611"/>
-        <source>Exported objects will be projected to reflect the current view direction</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-dxf.ui" line="614"/>
-        <source>Project exported objects along current view direction</source>
-        <translation>匯出沿目前視圖方向投影物體</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="14"/>
-        <source>SVG</source>
-        <translation>SVG</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="40"/>
-        <source>Import style</source>
-        <translation>匯入樣式</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="47"/>
-        <source>Method chosen for importing SVG object color to FreeCAD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="60"/>
-        <source>None (fastest)</source>
-        <translation>無（最快）</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="65"/>
-        <source>Use default color and linewidth</source>
-        <translation>使用預設顏色和線寬</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="70"/>
-        <source>Original color and linewidth</source>
-        <translation>原有的顏色和線寬</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="82"/>
-        <source>If checked, no units conversion will occur.
-One unit in the SVG file will translate as one millimeter. </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="86"/>
-        <source>Disable units scaling</source>
-        <translation>停止單位縮放</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="121"/>
-        <source>Export style</source>
-        <translation>匯出格式</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="128"/>
-        <source>Style of SVG file to write when exporting a sketch</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="141"/>
-        <source>Translated (for print &amp; display)</source>
-        <translation>轉換(用於列印和顯示)</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="146"/>
-        <source>Raw (for CAM)</source>
-        <translation>原始檔(用於CAM)</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="158"/>
-        <source>All white lines will appear in black in the SVG for better readability against white backgrounds</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="161"/>
-        <source>Translate white line color to black</source>
-        <translation>轉換白線色彩為黑色</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="181"/>
-        <source>Max segment length for discretized arcs</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-svg.ui" line="204"/>
-        <source>Versions of Open CASCADE older than version 6.8 don&apos;t support arc projection.
-In this case arcs will be discretized into small line segments.
-This value is the maximum segment length. </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-oca.ui" line="14"/>
-        <source>OCA</source>
-        <translation>OCA</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-oca.ui" line="26"/>
-        <location filename="../ui/preferences-dxf.ui" line="119"/>
-        <location filename="../ui/preferences-svg.ui" line="26"/>
-        <source>Import options</source>
-        <translation>匯入選項</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-oca.ui" line="46"/>
-        <source>Check this if you want the areas (3D faces) to be imported too.</source>
-        <translation>如果你想要一併匯入（3D 面）的面域，請勾選此。</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-oca.ui" line="49"/>
-        <source>Import OCA areas</source>
-        <translation>匯入OCA區域</translation>
     </message>
     <message>
         <location filename="../ui/preferences-draftsnap.ui" line="14"/>
         <source>Grid and snapping</source>
         <translation>格線與鎖點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="26"/>
+        <source>If checked, the grid will always be visible in new views.
+Use Draft ToggleGrid to change this for the active view.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="49"/>
+        <source>If checked, the grid will be visible during commands in new views.
+Use Draft ToggleGrid to change this for the active view.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="53"/>
+        <source>Show the grid during commands</source>
+        <translation>在命令期間顯示網格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="69"/>
+        <source>If checked, an additional border is displayed around the grid,
+showing the main square size in the bottom left corner</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="92"/>
+        <source>If checked, the outline of a human figure is displayed at the bottom left
+corner of the grid. Only effective if the BIM workbench is installed and
+&quot;Show grid border&quot; is enabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="113"/>
+        <source>If checked, the two main axes of the grid are colored red, green or blue
+if they match the X, Y or Z axis of the global coordinate system</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="146"/>
+        <source>The number of squares between main grid lines.
+These lines are thicker than normal grid lines.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="177"/>
+        <source>The distance between grid lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="209"/>
+        <source>The number of horizontal and vertical lines in the grid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="231"/>
+        <source>Grid transparency</source>
+        <translation>網格透明度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="241"/>
+        <source> %</source>
+        <translation> %</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="257"/>
+        <source>Grid color</source>
+        <translation>網格顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="287"/>
+        <source>Snapping and modifier keys</source>
+        <translation>捕捉與修改鍵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="357"/>
+        <source>If checked, snapping is activated without the need to press the Snap modifier key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="360"/>
+        <source>Always snap</source>
+        <translation>總是捕捉</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="468"/>
+        <source>The Alt modifier key. The function of this key depends on the command.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="337"/>
+        <source>The color for snap symbols</source>
+        <translation>捕捉符號的顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="379"/>
+        <source>Snap modifier</source>
+        <translation>捕捉修改器</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="426"/>
+        <source>Constrain modifier</source>
+        <translation>約束修改器</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="461"/>
+        <source>Alt modifier</source>
+        <translation>Alt 修改鍵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="330"/>
+        <source>Snap symbol color</source>
+        <translation>捕捉符號顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="300"/>
+        <source>The style for snap symbols</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="293"/>
+        <source>Snap symbol style</source>
+        <translation>捕捉符號樣式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="395"/>
+        <source>The Snap modifier key</source>
+        <translation>捕捉修改鍵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="433"/>
+        <source>The Constrain modifier key</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="511"/>
+        <source>Mouse delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="518"/>
+        <source>This is a delay during which the mouse is inactive, after entering
+numbers manually in any of the coordinate fields. Setting this
+to 0 disables the delay. If a delay of 1 is set, after entering a numeric
+value, the mouse will not update the field anymore during one
+second, to avoid moving the mouse accidentally and modifying the
+entered value. If you use a very large value, e.g. 3600, the mouse
+movement will be disabled until the command finishes.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="527"/>
+        <source> seconds</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/preferences-draftsnap.ui" line="35"/>
@@ -4800,7 +4706,7 @@ This value is the maximum segment length. </source>
     <message>
         <location filename="../ui/preferences-draftsnap.ui" line="322"/>
         <source>Show grid border</source>
-        <translation type="unfinished"></translation>
+        <translation>顯示網格邊框</translation>
     </message>
     <message>
         <location filename="../ui/preferences-draftsnap.ui" line="338"/>
@@ -4810,7 +4716,7 @@ This value is the maximum segment length. </source>
     <message>
         <location filename="../ui/preferences-draftsnap.ui" line="341"/>
         <source>Show human figure</source>
-        <translation type="unfinished"></translation>
+        <translation>顯示人物形象</translation>
     </message>
     <message>
         <location filename="../ui/preferences-draftsnap.ui" line="357"/>
@@ -4820,7 +4726,7 @@ This value is the maximum segment length. </source>
     <message>
         <location filename="../ui/preferences-draftsnap.ui" line="360"/>
         <source>Use colored axes</source>
-        <translation type="unfinished"></translation>
+        <translation>使用彩色軸</translation>
     </message>
     <message>
         <location filename="../ui/preferences-draftsnap.ui" line="381"/>
@@ -4903,6 +4809,904 @@ This value is the maximum segment length. </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="14"/>
+        <source>Texts and dimensions</source>
+        <translation>文字和尺寸</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="26"/>
+        <source>Text settings</source>
+        <translation>文字設定</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="34"/>
+        <source>Font family</source>
+        <translation>字型家族</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="47"/>
+        <source>This is the default font name for all Draft texts and dimensions.
+It can be a font name such as &quot;Arial&quot;, a default style such as &quot;sans&quot;, &quot;serif&quot;
+or &quot;mono&quot;, or a family such as &quot;Arial,Helvetica,sans&quot; or a name with a style
+such as &quot;Arial:Bold&quot;</source>
+        <translation>這是所有底圖文字和標註的預設字體名稱。如&quot;Arial&quot;、預設樣式如&quot;san&quot;、&quot;serif&quot;或&quot;mono&quot;或一個家族&quot;&quot;Arial,Helvetica,sans&quot;或名稱的樣式如&quot;arial：粗體&quot;</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="144"/>
+        <source>text above (2D)</source>
+        <translation>文字在上(2D)</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="149"/>
+        <source> text inside (3D)</source>
+        <translation> 文字在內(3D)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="20"/>
+        <source>Texts</source>
+        <translation>文字</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="26"/>
+        <source>Font name or family</source>
+        <translation>字體名稱或系列</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="33"/>
+        <source>The default font for texts, dimensions and labels. It can be a font name such
+as &quot;Arial&quot;, a style such as &quot;sans&quot;, &quot;serif&quot; or &quot;mono&quot;, or a family such as
+&quot;Arial,Helvetica,sans&quot;, or a name with a style such as &quot;Arial:Bold&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="59"/>
+        <source>Internal font</source>
+        <translation>內部字型</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="76"/>
+        <source>Font size</source>
+        <translation>字體大小</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="67"/>
+        <source>The default height for texts, dimension texts and label texts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="99"/>
+        <source>Line spacing factor</source>
+        <translation>行距係數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="106"/>
+        <source>The default line spacing for multi-line texts and labels (relative to the font size)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="125"/>
+        <source>Scale multiplier</source>
+        <translation>縮放比率</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="132"/>
+        <source>The default annotation scale multiplier. This is the inverse of the scale set
+in the Annotation scale widget. If the scale is 1:100 the multiplier is 100.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="152"/>
+        <source>Text color</source>
+        <translation>文字顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="159"/>
+        <source>The default color for texts, dimension texts and label texts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="182"/>
+        <source>Lines and arrows</source>
+        <translation>線和箭頭</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="188"/>
+        <source>If checked, the dimension line is displayed by default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="191"/>
+        <source>Show dimension line</source>
+        <translation>顯示尺寸線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="207"/>
+        <source>Line width</source>
+        <translation>線寬</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="214"/>
+        <source>The default line width</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="243"/>
+        <source>Arrow type</source>
+        <translation>箭頭樣式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="256"/>
+        <source>The default symbol displayed at the ends of dimension lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="294"/>
+        <source>Arrow size</source>
+        <translation>箭頭尺寸</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="301"/>
+        <source>The default arrow size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="326"/>
+        <source>Line and arrow color</source>
+        <translation>線和箭頭顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="333"/>
+        <source>The default color for lines and arrows</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="356"/>
+        <source>Units</source>
+        <translation>單位</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="362"/>
+        <source>If checked, a unit symbol is added to dimension texts by default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="365"/>
+        <source>Show unit</source>
+        <translation>顯示單位</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="381"/>
+        <source>Unit override</source>
+        <translation>單位覆蓋</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="394"/>
+        <source>The default unit override for dimensions. Enter a unit such as m
+or cm, leave blank to use the current unit defined in FreeCAD.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="422"/>
+        <source>The default number of decimal places for dimension texts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="457"/>
+        <source>The optional string inserted between the feet and inches values in dimensions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="473"/>
+        <source>Dimension details</source>
+        <translation>尺寸細節</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="492"/>
+        <source>The default distance the dimension line is extended past the extension lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="521"/>
+        <source>Extension line length</source>
+        <translation>延伸線長度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="528"/>
+        <source>The default length of extension lines. Use 0 for full extension lines. A negative
+value defines the gap between the ends of the extension lines and the measured
+points. A positive value defines the maximum length of the extension lines. Only
+used for linear dimensions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="560"/>
+        <source>The default length of extension lines above the dimension line</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="589"/>
+        <source>The default space between the dimension line and the dimension text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="617"/>
+        <source>ShapeStrings</source>
+        <translation>字串造型</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="630"/>
+        <source>Font files (*.ttf *.otf *.pfb *.TTF *.OTF *.PFB)</source>
+        <translation>字型檔 (*.ttf *.otf *.pfb *.TTF *.OTF *.PFB)</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="89"/>
+        <source>Default height for texts and dimensions</source>
+        <translation>預設文字和標註高度</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="535"/>
+        <location filename="../ui/preferences-drafttexts.ui" line="92"/>
+        <location filename="../ui/preferences-drafttexts.ui" line="211"/>
+        <location filename="../ui/preferences-drafttexts.ui" line="247"/>
+        <location filename="../ui/preferences-drafttexts.ui" line="283"/>
+        <location filename="../ui/preferences-drafttexts.ui" line="365"/>
+        <location filename="../ui/preferences-drafttexts.ui" line="432"/>
+        <location filename="../ui/preferences-svg.ui" line="209"/>
+        <source>mm</source>
+        <translation>mm</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="116"/>
+        <source>Dimension settings</source>
+        <translation>尺寸設定</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="124"/>
+        <source>Display mode</source>
+        <translation>顯示模式</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/preferences-drafttexts.ui" line="153"/>
+        <source>World</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/preferences-drafttexts.ui" line="158"/>
+        <source>Screen</source>
+        <translation>螢幕</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="161"/>
+        <source>Number of decimals</source>
+        <translation>小數位數</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="201"/>
+        <source>Extension lines size</source>
+        <translation>延伸線大小</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="208"/>
+        <source>The default size of dimensions extension lines</source>
+        <translation>標註延長線預設大小</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="237"/>
+        <source>Extension line overshoot</source>
+        <translation>延長線過衝</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="244"/>
+        <source>The default length of extension line above dimension line</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="273"/>
+        <source>Dimension line overshoot</source>
+        <translation>尺寸線超越量</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="280"/>
+        <source>The default distance the dimension line is extended past extension lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="309"/>
+        <source>Arrows style</source>
+        <translation>箭頭樣式</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="323"/>
+        <source>Dot</source>
+        <translation>點</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="328"/>
+        <source>Circle</source>
+        <translation>圓</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="333"/>
+        <source>Arrow</source>
+        <translation>箭頭</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="338"/>
+        <source>Tick</source>
+        <translation>鉤號</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="343"/>
+        <source>Tick-2</source>
+        <translation>鉤號-2</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="355"/>
+        <source>Arrows size</source>
+        <translation>箭頭尺寸</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="362"/>
+        <source>The default size of arrows</source>
+        <translation>箭頭預設尺寸</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="388"/>
+        <source>Text orientation</source>
+        <translation>文字方向</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="395"/>
+        <source>This is the orientation of the dimension texts when those dimensions are vertical. Default is left, which is the ISO standard.</source>
+        <translation>當尺度為垂直時,此為尺度文字方向,預設為左且為ISO標準.</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="405"/>
+        <source>Left (ISO standard)</source>
+        <translation>左側(ISO標準)</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="410"/>
+        <source>Right</source>
+        <translation>右視圖</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="422"/>
+        <source>Text spacing</source>
+        <translation>文字間距</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="429"/>
+        <source>The space between the dimension line and the dimension text</source>
+        <translation>標註線與文字間的距離</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="455"/>
+        <source>Show the unit suffix in dimensions</source>
+        <translation>於標註中顯示單位</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="475"/>
+        <source>Override unit</source>
+        <translation>覆蓋單位</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="495"/>
+        <source>By leaving this field blank, the dimension measurements will be shown in the current unit defined in FreeCAD. By indicating a unit here such as m or cm, you can force new dimensions to be shown in that unit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/preferences-drafttexts.ui" line="521"/>
+        <source>Feet separator</source>
+        <translation>英吋分離器</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/preferences-drafttexts.ui" line="541"/>
+        <source>Optional string to appear between the feet and inches values in dimensions</source>
+        <translation>顯示在尺寸中的英尺和英寸值之間的可選字串</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="513"/>
+        <source>ShapeString settings</source>
+        <translation>字串造型設定</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="521"/>
+        <source>Default ShapeString font file</source>
+        <translation>預設字串造型字型檔</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/preferences-drafttexts.ui" line="580"/>
+        <source>Font files (*.ttf *.otf *.pfb)</source>
+        <translation>字型檔(*.ttf *.otf *.pfb)</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-drafttexts.ui" line="534"/>
+        <source>Select a font file</source>
+        <translation>選擇一個字型檔</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="14"/>
+        <source>General settings</source>
+        <translation>一般設定</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="32"/>
+        <source>General Draft Settings</source>
+        <translation>一般底圖設定</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="14"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="20"/>
+        <source>General</source>
+        <translation>一般設定</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="39"/>
+        <source>The number of decimals used in internal coordinate operations (for example 3 = 0.001).
+Values between 6 and 8 are usually considered the best trade-off.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="40"/>
+        <source>Default working plane</source>
+        <translation>預設工作平面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="73"/>
+        <source>The default working plane for new views. If set to &quot;Automatic&quot; the working plane
+will automatically align with the current view whenever a command is started.
+Additionally it will align to preselected planar faces, or when points on planar
+faces are picked during commands.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="112"/>
+        <source>If checked, a widget indicating the current working
+plane orientation appears when picking points</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="116"/>
+        <source>Show working plane tracker</source>
+        <translation>顯示工作平面追蹤器</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="129"/>
+        <source>If checked, the layers drop-down list also includes groups.
+Objects can then automatically be added to groups as well.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="133"/>
+        <source>Include groups in layer list</source>
+        <translation>在圖層清單中包含群組</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="149"/>
+        <source>Command options</source>
+        <translation>命令選項</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="155"/>
+        <source>If checked, instructions are displayed in the Report view when using Draft commands</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="158"/>
+        <source>Show prompts in the Report view</source>
+        <translation>在報表檢視中顯示提示</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="171"/>
+        <source>If checked, Length input, instead of the X coordinate, will have the initial focus.
+This allows to indicate a direction and then type a distance.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="188"/>
+        <source>If checked, base objects, instead of created copies, are selected after copying</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="204"/>
+        <source>If checked, Draft commands will create Part primitives instead of Draft objects.
+Note that this is not fully supported, and many objects will not be editable with
+Draft modification commands.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="209"/>
+        <source>Create Part primitives if possible</source>
+        <translation>如果可能的話建立零件基元</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="222"/>
+        <source>If checked, Draft Downgrade and Draft Upgrade will keep face colors.
+Only for the splitFaces and makeShell options.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="226"/>
+        <source>Keep face colors during downgrade/upgrade</source>
+        <translation>降級/升級期間保留面顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="239"/>
+        <source>If checked, Draft Downgrade and Draft Upgrade will keep face names.
+Only for the splitFaces and makeShell options.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="243"/>
+        <source>Keep face names during downgrade/upgrade</source>
+        <translation>降級/升級期間保留面名稱</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="256"/>
+        <source>Max. number of editable objects</source>
+        <translation>最大限度可編輯物件的數量</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="263"/>
+        <source>The maximum number of objects Draft Edit is allowed to process at the same time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="295"/>
+        <source>Edit node pick radius</source>
+        <translation>編輯節點拾取半徑</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="302"/>
+        <source>The pick radius of edit nodes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="305"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="217"/>
+        <source> px</source>
+        <translation> px</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="324"/>
+        <source>Label prefix for clones</source>
+        <translation>複製的標籤前綴</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="337"/>
+        <source>The default prefix added to the label of new clones</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="353"/>
+        <source>Construction group label</source>
+        <translation>建構群組標籤</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="366"/>
+        <source>The default label for the construction geometry group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="389"/>
+        <source>The default color for Draft objects in construction mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="67"/>
+        <source>None</source>
+        <translation>無</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="72"/>
+        <source>XY (Top)</source>
+        <translation>XY （上）</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="77"/>
+        <source>XZ (Front)</source>
+        <translation>XZ (正面)</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="82"/>
+        <source>YZ (Side)</source>
+        <translation>YZ（側面）</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="94"/>
+        <source>Internal precision level</source>
+        <translation>內部精度等級</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="120"/>
+        <source>The number of decimals in internal coordinates operations (for ex. 3 = 0.001). Values between 6 and 8 are usually considered the best trade-off among FreeCAD users.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="143"/>
+        <source>Tolerance</source>
+        <translation>公差</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="169"/>
+        <source>This is the value used by functions that use a tolerance.
+Values with differences below this value will be treated as same. This value will be obsoleted soon so the precision level above controls both.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="194"/>
+        <source>If this option is checked, the layers drop-down list will also show groups, allowing you to automatically add objects to groups too.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="197"/>
+        <source>Show groups in layers list drop-down button</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="216"/>
+        <source>Draft tools options</source>
+        <translation>底圖工具選項</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="230"/>
+        <source>When drawing lines, set focus on Length instead of X coordinate.
+This allows to point the direction and type the distance.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="234"/>
+        <source>Set focus on Length instead of X coordinate</source>
+        <translation>將焦點設定在長度而不是 X 座標上</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="247"/>
+        <source>Normally, after copying objects, the copies get selected.
+If this option is checked, the base objects will be selected instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="251"/>
+        <source>Select base objects after copying</source>
+        <translation>複製後選定原始物體</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="264"/>
+        <source>If this option is set, when creating Draft objects on top of an existing face of another object, the &quot;Support&quot; property of the Draft object will be set to the base object. This was the standard behaviour before FreeCAD 0.19</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="267"/>
+        <source>Set the Support property when possible</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="280"/>
+        <source>If this is checked, objects will appear as filled by default.
+Otherwise, they will appear as wireframe</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="284"/>
+        <source>Fill objects with faces whenever possible</source>
+        <translation>當可行時將物體以面填滿</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="300"/>
+        <source>If this is checked, copy mode will be kept across command,
+otherwise commands will always start in no-copy mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="304"/>
+        <source>Global copy mode</source>
+        <translation>全球複製模式</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="320"/>
+        <source>Force Draft Tools to create Part primitives instead of Draft objects.
+Note that this is not fully supported, and many object will be not editable with Draft Modifiers.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="324"/>
+        <source>Use Part Primitives when available</source>
+        <translation>當許可時使用零件圖元</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="341"/>
+        <source>Prefix labels of Clones with:</source>
+        <translation>複製的前綴標籤為:</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="372"/>
+        <source>Construction Geometry</source>
+        <translation>建構用幾何圖元</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="380"/>
+        <source>Construction group name</source>
+        <translation>建構群組名稱</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="387"/>
+        <source>This is the default group name for construction geometry</source>
+        <translation>這是建構幾何的預設組名稱</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="390"/>
+        <source>Construction</source>
+        <translation>建構</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="407"/>
+        <source>Construction geometry color</source>
+        <translation>輔助用幾何色彩</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draft.ui" line="427"/>
+        <source>This is the default color for objects being drawn while in construction mode.</source>
+        <translation>這是建構模式中繪製物體的預設顏色。</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="14"/>
+        <source>Visual settings</source>
+        <translation>視覺設定</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="26"/>
+        <source>Visual Settings</source>
+        <translation>視覺設定</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="34"/>
+        <source>Snap symbols style</source>
+        <translation>鎖點符號樣式</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="54"/>
+        <source>Draft classic style</source>
+        <translation>底圖經典風格</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="59"/>
+        <source>Bitsnpieces style</source>
+        <translation>Bitsnpieces 樣式</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="80"/>
+        <source>Color</source>
+        <translation>顏色</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="87"/>
+        <source>The default color for snap symbols</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="111"/>
+        <source>Check this if you want to use the color/linewidth from the toolbar as default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="114"/>
+        <source>Save current color and linewidth across sessions</source>
+        <translation>儲存目前色彩及線寬橫跨工作階段</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="131"/>
+        <source>If checked, a widget indicating the current working plane orientation appears during drawing operations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="134"/>
+        <source>Show Working Plane tracker</source>
+        <translation>顯示工作平面追蹤器</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="151"/>
+        <source>Default template sheet</source>
+        <translation>預設範本表</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="177"/>
+        <source>The default template to use when creating a new drawing sheet</source>
+        <translation>建立新圖面時使用的預設模板</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="194"/>
+        <source>Alternate SVG patterns location</source>
+        <translation>備用 SVG 圖案位置</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="220"/>
+        <source>Here you can specify a directory with custom SVG files containing &lt;pattern&gt; definitions to be added to the standard patterns</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="237"/>
+        <source>SVG pattern resolution</source>
+        <translation>SVG 圖案分辨率</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="257"/>
+        <source>The resolution to draw the patterns in. Default value is 128. Higher values give better resolutions, lower values make drawing faster</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="280"/>
+        <source>SVG pattern default size</source>
+        <translation>SVG 圖案預設大小</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="300"/>
+        <source>The default size for SVG patterns</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="326"/>
+        <source>Check this if you want to preserve colors of faces while doing downgrade and upgrade (splitFaces and makeShell only)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="329"/>
+        <source>Preserve colors of faces during downgrade/upgrade</source>
+        <translation>在降級/升級期間保留表面顏色</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="346"/>
+        <source>Check this if you want the face names to derive from the originating object name and vice versa while doing downgrade/upgrade (splitFaces and makeShell only)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="349"/>
+        <source>Preserve names of faces during downgrade/upgrade</source>
+        <translation>在降級/升級期間保留表面名稱</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="367"/>
+        <source>Drawing view line definitions</source>
+        <translation>工程圖線段定義</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="375"/>
+        <source>Dashed line definition</source>
+        <translation>虛線(Dash)設定</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="395"/>
+        <location filename="../ui/preferences-draftvisual.ui" line="438"/>
+        <location filename="../ui/preferences-draftvisual.ui" line="481"/>
+        <source>An SVG linestyle definition</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="398"/>
+        <source>0.09,0.05</source>
+        <translation>0.09,0.05</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="418"/>
+        <source>Dashdot line definition</source>
+        <translation>虛線(Dashdot)設定</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="441"/>
+        <source>0.09,0.05,0.02,0.05</source>
+        <translation>0.09,0.05,0.02,0.05</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="461"/>
+        <source>Dotted line definition</source>
+        <translation>虛線(Dot)設定</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-draftvisual.ui" line="484"/>
+        <source>0.02,0.02</source>
+        <translation>0.02,0.02</translation>
+    </message>
+    <message>
         <location filename="../ui/preferences-dwg.ui" line="14"/>
         <source>DWG</source>
         <translation>DWG</translation>
@@ -4915,7 +5719,7 @@ This value is the maximum segment length. </source>
     <message>
         <location filename="../ui/preferences-dwg.ui" line="34"/>
         <source>Conversion method:</source>
-        <translation type="unfinished"></translation>
+        <translation>轉換方法:</translation>
     </message>
     <message>
         <location filename="../ui/preferences-dwg.ui" line="41"/>
@@ -4958,243 +5762,491 @@ This value is the maximum segment length. </source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意：&lt;/span&gt;DXF選項也套用至DWG檔。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="14"/>
-        <source>User interface settings</source>
-        <translation>使用者介面設定</translation>
+        <location filename="../ui/preferences-dxf.ui" line="14"/>
+        <source>DXF</source>
+        <translation>DXF</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="26"/>
-        <source>In-Command Shortcuts</source>
+        <location filename="../ui/preferences-dxf.ui" line="35"/>
+        <source>This preferences dialog will be shown when importing/ exporting DXF files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="37"/>
-        <source>Relative</source>
-        <translation>相對關係</translation>
+        <location filename="../ui/preferences-dxf.ui" line="38"/>
+        <source>Show this dialog when importing and exporting</source>
+        <translation>當匯入及匯出時顯示此對話窗</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="59"/>
-        <source>R</source>
-        <translation>R</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="81"/>
-        <source>Continue</source>
-        <translation>繼續</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="103"/>
-        <source>T</source>
-        <translation>T</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="125"/>
-        <source>Close</source>
-        <translation>關閉</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="147"/>
-        <source>O</source>
-        <translation>O</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="169"/>
-        <source>Copy</source>
-        <translation>複製</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="191"/>
-        <source>P</source>
-        <translation>P</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="213"/>
-        <source>Subelement Mode</source>
+        <location filename="../ui/preferences-dxf.ui" line="51"/>
+        <source>Python importer is used, otherwise the newer C++ is used.
+Note: C++ importer is faster, but is not as featureful yet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="235"/>
-        <source>D</source>
-        <translation>D</translation>
+        <location filename="../ui/preferences-dxf.ui" line="55"/>
+        <source>Use legacy python importer</source>
+        <translation>使用舊有python匯入器</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="257"/>
-        <source>Fill</source>
+        <location filename="../ui/preferences-dxf.ui" line="71"/>
+        <source>Python exporter is used, otherwise the newer C++ is used.
+Note: C++ exporter is faster, but is not as featureful yet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="279"/>
-        <source>L</source>
-        <translation>L</translation>
+        <location filename="../ui/preferences-dxf.ui" line="75"/>
+        <source>Use legacy python exporter</source>
+        <translation>使用傳統python匯出器</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="301"/>
-        <source>Exit</source>
-        <translation>結束離開</translation>
+        <location filename="../ui/preferences-dxf.ui" line="88"/>
+        <source>Automatic update (legacy importer only)</source>
+        <translation>自動更新(僅適用於舊的匯入器)</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="323"/>
-        <source>A</source>
-        <translation>A</translation>
+        <location filename="../ui/preferences-dxf.ui" line="96"/>
+        <source>Allow FreeCAD to download the Python converter for DXF import and export.
+You can also do this manually by installing the &quot;dxf_library&quot; workbench
+from the Addon Manager.</source>
+        <translation>允許 FreeCAD 下載用於 DXF 匯入和匯出的 Python 轉換器。
+您也可以通過附加元件管理器安裝「dxf_library」工作台手動執行此操作。</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="345"/>
-        <source>Select Edge</source>
-        <translation>選擇邊緣</translation>
+        <location filename="../ui/preferences-dxf.ui" line="101"/>
+        <source>Allow FreeCAD to automatically download and update the DXF libraries</source>
+        <translation>允許FreeCAD自動下載並更新DXF函式庫</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="367"/>
-        <source>E</source>
-        <translation>E</translation>
+        <location filename="../ui/preferences-oca.ui" line="26"/>
+        <location filename="../ui/preferences-dxf.ui" line="119"/>
+        <location filename="../ui/preferences-svg.ui" line="26"/>
+        <source>Import options</source>
+        <translation>匯入選項</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="389"/>
-        <source>Add Hold</source>
+        <location filename="../ui/preferences-dxf.ui" line="140"/>
+        <source>Note: Not all the options below are used by the new importer yet</source>
+        <translation>請注意：並非下列所有選項皆可被新的匯入功能所使用</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="149"/>
+        <source>Import</source>
+        <translation>匯入</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="156"/>
+        <source>If unchecked, texts and mtexts won&apos;t be imported</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="411"/>
-        <source>Q</source>
-        <translation>Q</translation>
+        <location filename="../ui/preferences-dxf.ui" line="159"/>
+        <source>texts and dimensions</source>
+        <translation>文字和尺寸</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="433"/>
-        <source>Length</source>
-        <translation>間距</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="455"/>
-        <source>H</source>
-        <translation>H</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="477"/>
-        <source>Wipe</source>
+        <location filename="../ui/preferences-dxf.ui" line="172"/>
+        <source>If unchecked, points won&apos;t be imported</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="499"/>
-        <source>W</source>
-        <translation>W</translation>
+        <location filename="../ui/preferences-dxf.ui" line="175"/>
+        <source>points</source>
+        <translation>點</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="521"/>
-        <source>Set WP</source>
+        <location filename="../ui/preferences-dxf.ui" line="188"/>
+        <source>If checked, paper space objects will be imported too</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="543"/>
-        <source>U</source>
-        <translation>U</translation>
+        <location filename="../ui/preferences-dxf.ui" line="191"/>
+        <source>layouts</source>
+        <translation>配置</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="565"/>
-        <source>Cycle Snap</source>
+        <location filename="../ui/preferences-dxf.ui" line="204"/>
+        <source>If you want the non-named blocks (beginning with a *) to be imported too</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="587"/>
-        <source>`</source>
-        <translation>`</translation>
+        <location filename="../ui/preferences-dxf.ui" line="207"/>
+        <source>*blocks</source>
+        <translation>*塊</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="609"/>
-        <source>Global</source>
-        <translation>全局的</translation>
+        <location filename="../ui/preferences-dxf.ui" line="224"/>
+        <source>Create</source>
+        <translation>建立</translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="631"/>
-        <source>G</source>
-        <translation>G</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="653"/>
-        <source>Snap</source>
-        <translation>貼齊</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="675"/>
-        <source>S</source>
-        <translation>S</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="697"/>
-        <source>Increase Radius</source>
-        <translation>增加半徑</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="719"/>
-        <source>[</source>
-        <translation>[</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="741"/>
-        <source>Decrease Radius</source>
-        <translation>減少半徑</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="763"/>
-        <source>]</source>
-        <translation>]</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="785"/>
-        <source>Restrict X</source>
-        <translation>限定 X</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="807"/>
-        <source>X</source>
-        <translation>X</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="829"/>
-        <source>Restrict Y</source>
-        <translation>限定 Y</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="851"/>
-        <source>Y</source>
-        <translation>Y</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="873"/>
-        <source>Restrict Z</source>
-        <translation>限定 Z</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="895"/>
-        <source>Z</source>
-        <translation>Z</translation>
-    </message>
-    <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="928"/>
-        <source>Enable draft statusbar customization</source>
+        <location filename="../ui/preferences-dxf.ui" line="231"/>
+        <source>Only standard Part objects will be created (fastest)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="931"/>
-        <source>Draft Statusbar</source>
+        <location filename="../ui/preferences-dxf.ui" line="234"/>
+        <source>simple Part shapes</source>
+        <translation>簡單零件造型</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="250"/>
+        <source>Parametric Draft objects will be created whenever possible</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="951"/>
-        <source>Enable snap statusbar widget</source>
+        <location filename="../ui/preferences-dxf.ui" line="253"/>
+        <source>Draft objects</source>
+        <translation>底圖物體</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="266"/>
+        <source>Sketches will be created whenever possible</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="954"/>
-        <source>Draft snap widget</source>
+        <location filename="../ui/preferences-dxf.ui" line="269"/>
+        <source>Sketches</source>
+        <translation>草圖</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="289"/>
+        <source>Scale factor to apply to imported files</source>
+        <translation>套用於導入檔案的比例因子</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="309"/>
+        <source>Scale factor to apply to DXF files on import.
+The factor is the conversion between the unit of your DXF file and millimeters.
+Example: for files in millimeters: 1, in centimeters: 10,
+                             in meters: 1000, in inches: 25.4, in feet: 304.8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="970"/>
-        <source>Enable draft statusbar annotation scale widget</source>
+        <location filename="../ui/preferences-dxf.ui" line="342"/>
+        <source>Get original colors from the DXF file</source>
+        <translation>從DXF檔中取得原始色彩</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="448"/>
+        <source>Import hatch boundaries as wires</source>
+        <translation>匯入剖面線邊界為線條</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="469"/>
+        <source>Render polylines with width</source>
+        <translation>算繪帶有寬度之聚合線</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="570"/>
+        <source>Export 3D objects as polyface meshes</source>
+        <translation>以聚合面網格匯出3D物體</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="587"/>
+        <source>Drawing Views will be exported as blocks.
+This might fail for post DXF R12 templates.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/preferences-draftinterface.ui" line="973"/>
-        <source>Annotation scale widget</source>
+        <location filename="../ui/preferences-dxf.ui" line="591"/>
+        <source>Export Drawing Views as blocks</source>
+        <translation>將視圖以圖塊形式匯出</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="614"/>
+        <source>Project exported objects along current view direction</source>
+        <translation>匯出沿目前視圖方向投影物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="338"/>
+        <source>Colors will set as specified in the DXF file whenever possible.
+Otherwise default colors will be applied.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="342"/>
+        <source>Use colors from the DXF file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="380"/>
+        <source>Objects from the same layers will be joined into Draft Blocks,
+turning the display faster, but making them less easily editable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="338"/>
+        <source>Colors will be retrieved from the DXF objects whenever possible.
+Otherwise default colors will be applied. </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/preferences-dxf.ui" line="342"/>
+        <source>Get original colors from the DXF file (legacy importer only)</source>
+        <translation>從DXF檔中取得原始色彩(僅傳統輸入)</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="359"/>
+        <source>FreeCAD will try to join coincident objects into wires.
+Note that this can take a while!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="363"/>
+        <source>Join geometry</source>
+        <translation>加入幾何形</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="380"/>
+        <source>Objects from the same layers will be joined into Draft Blocks,
+turning the display faster, but making them less easily editable </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="384"/>
+        <source>Group layers into blocks</source>
+        <translation>將圖層作為圖塊</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="401"/>
+        <source>Imported texts will get the standard Draft Text size,
+instead of the size they have in the DXF document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="405"/>
+        <source>Use standard font size for texts</source>
+        <translation>文字採用標準尺寸</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="422"/>
+        <source>If this is checked, DXF layers will be imported as Draft Layers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="425"/>
+        <source>Use Layers</source>
+        <translation>使用圖層</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="445"/>
+        <source>Hatches will be converted into simple wires</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/preferences-dxf.ui" line="448"/>
+        <source>Import hatch boundaries as wires (legacy importer only)</source>
+        <translation>匯入剖面線邊界為線條(僅傳統輸入)</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="465"/>
+        <source>If polylines have a width defined, they will be rendered
+as closed wires with correct width</source>
+        <translation>若勾選, 當聚合線具有寬度設定時, 其會以正確寬度的封閉線條算繪</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/preferences-dxf.ui" line="469"/>
+        <source>Render polylines with width (legacy importer only)</source>
+        <translation>渲染具有寬度的折線(僅傳統輸入)</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="486"/>
+        <source>Ellipse export is poorly supported. Use this to export them as polylines instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="489"/>
+        <source>Treat ellipses and splines as polylines</source>
+        <translation>將橢圓及spline當作聚合線</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="518"/>
+        <source>Max Spline Segment:</source>
+        <translation>最大Spline線段長度:</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="528"/>
+        <source>Maximum length of each of the polyline segments.
+If it is set to &apos;0&apos; the whole spline is treated as a straight segment.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="559"/>
+        <location filename="../ui/preferences-svg.ui" line="107"/>
+        <source>Export options</source>
+        <translation>匯出選項</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="567"/>
+        <source>All objects containing faces will be exported as 3D polyfaces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/preferences-dxf.ui" line="570"/>
+        <source>Export 3D objects as polyface meshes (legacy exporter only)</source>
+        <translation>以聚合面網格匯出3D物體(僅傳統輸出)</translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/preferences-dxf.ui" line="587"/>
+        <source>TechDraw Views will be exported as blocks.
+This might fail for post DXF R12 templates.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/preferences-dxf.ui" line="591"/>
+        <source>Export TechDraw Views as blocks</source>
+        <translation>將 工程圖 視圖匯出為區塊</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-dxf.ui" line="611"/>
+        <source>Exported objects will be projected to reflect the current view direction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Resources/ui/preferences-dxf.ui" line="614"/>
+        <source>Project exported objects along current view direction (legacy exporter only)</source>
+        <translation>匯出沿目前視圖方向投影物體(僅傳統輸出)</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-oca.ui" line="14"/>
+        <source>OCA</source>
+        <translation>OCA</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-oca.ui" line="46"/>
+        <source>Check this if you want the areas (3D faces) to be imported too.</source>
+        <translation>如果你想要一併匯入（3D 面）的面域，請勾選此。</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-oca.ui" line="49"/>
+        <source>Import OCA areas</source>
+        <translation>匯入OCA區域</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="14"/>
+        <source>SVG</source>
+        <translation>SVG</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="40"/>
+        <source>Import style</source>
+        <translation>匯入樣式</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="47"/>
+        <source>Method chosen for importing SVG object color to FreeCAD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="60"/>
+        <source>None (fastest)</source>
+        <translation>無（最快）</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="65"/>
+        <source>Use default color and linewidth</source>
+        <translation>使用預設顏色和線寬</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="70"/>
+        <source>Original color and linewidth</source>
+        <translation>原有的顏色和線寬</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="82"/>
+        <source>If checked, no units conversion will occur.
+One unit in the SVG file will translate as one millimeter.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="82"/>
+        <source>If checked, no units conversion will occur.
+One unit in the SVG file will translate as one millimeter. </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="86"/>
+        <source>Disable units scaling</source>
+        <translation>停止單位縮放</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="121"/>
+        <source>Export style</source>
+        <translation>匯出格式</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="128"/>
+        <source>Style of SVG file to write when exporting a sketch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="141"/>
+        <source>Translated (for print &amp; display)</source>
+        <translation>轉換(用於列印和顯示)</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="146"/>
+        <source>Raw (for CAM)</source>
+        <translation>原始檔(用於CAM)</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="158"/>
+        <source>All white lines will appear in black in the SVG for better readability against white backgrounds</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="161"/>
+        <source>Translate white line color to black</source>
+        <translation>轉換白線色彩為黑色</translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="181"/>
+        <source>Max segment length for discretized arcs</source>
+        <translation>離散圓弧的最大線段長度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="204"/>
+        <source>Versions of OpenCASCADE older than version 6.8 don&apos;t support arc projection.
+In this case arcs will be discretized into small line segments.
+This value is the maximum segment length.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/preferences-svg.ui" line="204"/>
+        <source>Versions of Open CASCADE older than version 6.8 don&apos;t support arc projection.
+In this case arcs will be discretized into small line segments.
+This value is the maximum segment length. </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftvisual.ui" line="14"/>
+        <source>Visual</source>
+        <translation>視覺</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftvisual.ui" line="20"/>
+        <source>SVG patterns</source>
+        <translation>SVG 圖案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftvisual.ui" line="26"/>
+        <source>SVG pattern size</source>
+        <translation>SVG 圖案大小</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftvisual.ui" line="39"/>
+        <source>The default size for SVG patterns. A higher value results in a denser pattern.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftvisual.ui" line="65"/>
+        <source>Additional SVG pattern location</source>
+        <translation>附加 SVG 圖案位置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftvisual.ui" line="75"/>
+        <source>An optional directory with custom SVG files containing
+pattern definitions to be added to the standard patterns</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5220,6 +6272,26 @@ This value is the maximum segment length. </source>
     </message>
 </context>
 <context>
+    <name>QObject</name>
+    <message>
+        <location filename="../../InitGui.py" line="135"/>
+        <location filename="../../InitGui.py" line="136"/>
+        <location filename="../../InitGui.py" line="137"/>
+        <location filename="../../InitGui.py" line="138"/>
+        <location filename="../../InitGui.py" line="139"/>
+        <source>Draft</source>
+        <translation>底圖繪製</translation>
+    </message>
+    <message>
+        <location filename="../../InitGui.py" line="181"/>
+        <location filename="../../InitGui.py" line="182"/>
+        <location filename="../../InitGui.py" line="183"/>
+        <location filename="../../InitGui.py" line="184"/>
+        <source>Import-Export</source>
+        <translation>匯入-匯出</translation>
+    </message>
+</context>
+<context>
     <name>Workbench</name>
     <message>
         <location filename="../../InitGui.py" line="104"/>
@@ -5240,6 +6312,11 @@ This value is the maximum segment length. </source>
         <location filename="../../InitGui.py" line="113"/>
         <source>Draft utility tools</source>
         <translation>底圖實用工具</translation>
+    </message>
+    <message>
+        <location filename="../../InitGui.py" line="115"/>
+        <source>Draft snap</source>
+        <translation>底圖貼齊</translation>
     </message>
     <message>
         <location filename="../../InitGui.py" line="118"/>
@@ -5289,27 +6366,6 @@ This value is the maximum segment length. </source>
 <context>
     <name>draft</name>
     <message>
-        <source>The Draft workbench is used for 2D drafting on a grid</source>
-        <translation>製圖工作台用於在網格上進行平面繪圖</translation>
-    </message>
-    <message>
-        <location filename="../../importDXF.py" line="146"/>
-        <source>The DXF import/export libraries needed by FreeCAD to handle
-the DXF format were not found on this system.
-Please either enable FreeCAD to download these libraries:
-  1 - Load Draft workbench
-  2 - Menu Edit &gt; Preferences &gt; Import-Export &gt; DXF &gt; Enable downloads
-Or download these libraries manually, as explained on
-https://github.com/yorikvanhavre/Draft-dxf-importer
-To enabled FreeCAD to download these libraries, answer Yes.</source>
-        <translation>此系統並無FreeCAD所需用來匯入/匯出DXF格式之函式庫，可啟動FreeCAD來下載這些函式庫：
-1-載入底圖模組
-2-選單&gt;編輯&gt;偏好選項&gt;匯入-匯出&gt;DXF&gt;啟動下載
-或是手動下載這些函式庫，參照於
-https://github.com/yorikvanhavre/Draft-dxf-importer
-之說明啟動FreeCAD來下載這些函式庫，並回答確定。</translation>
-    </message>
-    <message>
         <location filename="../../DraftGui.py" line="57"/>
         <location filename="../../DraftGui.py" line="751"/>
         <source>Relative</source>
@@ -5348,12 +6404,12 @@ https://github.com/yorikvanhavre/Draft-dxf-importer
     <message>
         <location filename="../../DraftGui.py" line="81"/>
         <source>Subelement mode</source>
-        <translation type="unfinished"></translation>
+        <translation>子元素模式</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="86"/>
         <source>Fill</source>
-        <translation type="unfinished"></translation>
+        <translation>填充</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="91"/>
@@ -5368,12 +6424,12 @@ https://github.com/yorikvanhavre/Draft-dxf-importer
     <message>
         <location filename="../../DraftGui.py" line="101"/>
         <source>Increase snap radius</source>
-        <translation type="unfinished"></translation>
+        <translation>增加捕捉半徑</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="106"/>
         <source>Decrease snap radius</source>
-        <translation type="unfinished"></translation>
+        <translation>減少捕捉半徑</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="111"/>
@@ -5399,28 +6455,28 @@ https://github.com/yorikvanhavre/Draft-dxf-importer
     <message>
         <location filename="../../DraftGui.py" line="131"/>
         <source>Add custom snap point</source>
-        <translation type="unfinished"></translation>
+        <translation>新增自訂捕捉點</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="136"/>
         <source>Length mode</source>
-        <translation type="unfinished"></translation>
+        <translation>長度模式</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="141"/>
         <location filename="../../DraftGui.py" line="792"/>
         <source>Wipe</source>
-        <translation type="unfinished"></translation>
+        <translation>擦拭</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="146"/>
         <source>Set Working Plane</source>
-        <translation type="unfinished"></translation>
+        <translation>設定工作平面</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="151"/>
         <source>Cycle snap object</source>
-        <translation type="unfinished"></translation>
+        <translation>循環貼齊物體</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="156"/>
@@ -5433,30 +6489,14 @@ https://github.com/yorikvanhavre/Draft-dxf-importer
         <translation>底圖指令列</translation>
     </message>
     <message>
-        <location filename="../../DraftGui.py" line="659"/>
-        <location filename="../../WorkingPlane.py" line="821"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="374"/>
-        <source>Top</source>
-        <translation>上視圖</translation>
+        <location filename="../../DraftGui.py" line="657"/>
+        <source>&amp;Undo</source>
+        <translation>復原(&amp;U)</translation>
     </message>
     <message>
-        <location filename="../../DraftGui.py" line="661"/>
-        <location filename="../../WorkingPlane.py" line="832"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="386"/>
-        <source>Front</source>
-        <translation>前視圖</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="663"/>
-        <location filename="../../WorkingPlane.py" line="843"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="398"/>
-        <source>Side</source>
-        <translation>側面</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="665"/>
-        <source>Auto</source>
-        <translation>自動</translation>
+        <location filename="../../DraftGui.py" line="155"/>
+        <source>Undo last segment</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="694"/>
@@ -5573,7 +6613,7 @@ Uncheck to use working plane coordinate system</source>
     <message>
         <location filename="../../DraftGui.py" line="761"/>
         <source>Filled</source>
-        <translation type="unfinished"></translation>
+        <translation>圓角</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="765"/>
@@ -5612,58 +6652,8 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation>復原(&amp;U) (CTRL+Z)</translation>
     </message>
     <message>
-        <location filename="../../DraftGui.py" line="789"/>
-        <source>Undo the last segment</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="791"/>
-        <source>Finishes and closes the current line</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="793"/>
-        <source>Wipes the existing segments of this line and starts again from the last point</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="794"/>
-        <source>Set WP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="795"/>
-        <source>Reorients the working plane on the last segment</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="797"/>
-        <source>Selects an existing edge to be measured by this dimension</source>
-        <translation>選擇一條現有的邊按此尺寸測量</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="798"/>
-        <source>Sides</source>
-        <translation>側面</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="799"/>
-        <source>Number of sides</source>
-        <translation>邊數</translation>
-    </message>
-    <message>
         <location filename="../../DraftGui.py" line="802"/>
         <source>If checked, objects will be copied instead of moved. Preferences -&gt; Draft -&gt; Global copy mode to keep this mode in next commands</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="803"/>
-        <source>Modify subelements</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="804"/>
-        <source>If checked, subelements will be modified instead of entire objects</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5707,103 +6697,12 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation>選取字型檔</translation>
     </message>
     <message>
-        <location filename="../../DraftGui.py" line="813"/>
-        <source>Create text</source>
-        <translation>建立文字</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="814"/>
-        <source>Press this button to create the text object, or finish your text with two blank lines</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../DraftGui.py" line="836"/>
         <location filename="../../draftguitools/gui_selectplane.py" line="272"/>
         <location filename="../../draftguitools/gui_selectplane.py" line="327"/>
         <location filename="../../draftguitools/gui_selectplane.py" line="530"/>
         <location filename="../../draftguitools/gui_selectplane.py" line="541"/>
         <source>Current working plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="837"/>
-        <source>Change default style for new objects</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="838"/>
-        <source>Toggle construction mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="839"/>
-        <location filename="../../DraftGui.py" line="2050"/>
-        <location filename="../../DraftGui.py" line="2065"/>
-        <source>Autogroup off</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="950"/>
-        <source>Line</source>
-        <translation>線</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="958"/>
-        <source>DWire</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="976"/>
-        <source>Circle</source>
-        <translation>圓</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="981"/>
-        <source>Arc</source>
-        <translation>弧</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="986"/>
-        <location filename="../../draftguitools/gui_rotate.py" line="286"/>
-        <source>Rotate</source>
-        <translation>旋轉</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="990"/>
-        <source>Point</source>
-        <translation>點</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1018"/>
-        <source>Label</source>
-        <translation>標籤</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1036"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="527"/>
-        <location filename="../../draftguitools/gui_offset.py" line="243"/>
-        <location filename="../../draftguitools/gui_offset.py" line="260"/>
-        <location filename="../../draftguitools/gui_offset.py" line="324"/>
-        <source>Offset</source>
-        <translation>偏移複製</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1042"/>
-        <location filename="../../DraftGui.py" line="1100"/>
-        <location filename="../../draftguitools/gui_trimex.py" line="215"/>
-        <source>Distance</source>
-        <translation>距離</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1043"/>
-        <location filename="../../DraftGui.py" line="1101"/>
-        <location filename="../../draftguitools/gui_trimex.py" line="217"/>
-        <source>Offset distance</source>
-        <translation>偏移距離</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1097"/>
-        <source>Trimex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5902,9 +6801,200 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation>請輸入字型檔。</translation>
     </message>
     <message>
+        <location filename="../../DraftGui.py" line="654"/>
+        <source>If checked, an OCC-style offset will be performed instead of the classic offset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="565"/>
+        <source>OCC-style offset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="567"/>
+        <source>Undo</source>
+        <translation>復原</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="789"/>
+        <source>Undo the last segment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="791"/>
+        <source>Finishes and closes the current line</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="793"/>
+        <source>Wipes the existing segments of this line and starts again from the last point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="794"/>
+        <source>Set WP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="795"/>
+        <source>Reorients the working plane on the last segment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="797"/>
+        <source>Selects an existing edge to be measured by this dimension</source>
+        <translation>選擇一條現有的邊按此尺寸測量</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="798"/>
+        <source>Sides</source>
+        <translation>側面</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="799"/>
+        <source>Number of sides</source>
+        <translation>邊數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="581"/>
+        <source>If checked, objects will be copied instead of moved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="803"/>
+        <source>Modify subelements</source>
+        <translation>修改子元素</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="804"/>
+        <source>If checked, subelements will be modified instead of entire objects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="813"/>
+        <source>Create text</source>
+        <translation>建立文字</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="814"/>
+        <source>Press this button to create the text object, or finish your text with two blank lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="837"/>
+        <source>Change default style for new objects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="838"/>
+        <source>Toggle construction mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="839"/>
+        <location filename="../../DraftGui.py" line="2050"/>
+        <location filename="../../DraftGui.py" line="2065"/>
+        <source>Autogroup off</source>
+        <translation>關閉自動群組</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="950"/>
+        <source>Line</source>
+        <translation>線</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="958"/>
+        <source>DWire</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="976"/>
+        <source>Circle</source>
+        <translation>圓</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="981"/>
+        <source>Arc</source>
+        <translation>弧</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="986"/>
+        <location filename="../../draftguitools/gui_rotate.py" line="286"/>
+        <source>Rotate</source>
+        <translation>旋轉</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="990"/>
+        <source>Point</source>
+        <translation>點</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1018"/>
+        <source>Label</source>
+        <translation>標籤</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="848"/>
+        <source>Label type</source>
+        <translation>標籤樣式</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1036"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="527"/>
+        <location filename="../../draftguitools/gui_offset.py" line="243"/>
+        <location filename="../../draftguitools/gui_offset.py" line="260"/>
+        <location filename="../../draftguitools/gui_offset.py" line="324"/>
+        <source>Offset</source>
+        <translation>偏移複製</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1042"/>
+        <location filename="../../DraftGui.py" line="1100"/>
+        <location filename="../../draftguitools/gui_trimex.py" line="215"/>
+        <source>Distance</source>
+        <translation>距離</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1043"/>
+        <location filename="../../DraftGui.py" line="1101"/>
+        <location filename="../../draftguitools/gui_trimex.py" line="217"/>
+        <source>Offset distance</source>
+        <translation>偏移距離</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1097"/>
+        <source>Trimex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="965"/>
+        <location filename="../../DraftGui.py" line="966"/>
+        <location filename="../../DraftGui.py" line="967"/>
+        <location filename="../../DraftGui.py" line="969"/>
+        <location filename="../../DraftGui.py" line="970"/>
+        <location filename="../../DraftGui.py" line="971"/>
+        <source>Local {}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="973"/>
+        <location filename="../../DraftGui.py" line="974"/>
+        <location filename="../../DraftGui.py" line="975"/>
+        <location filename="../../DraftGui.py" line="977"/>
+        <location filename="../../DraftGui.py" line="978"/>
+        <location filename="../../DraftGui.py" line="979"/>
+        <source>Global {}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../DraftGui.py" line="2058"/>
         <source>Autogroup:</source>
         <translation>自動群組:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="1611"/>
+        <source>Modify objects</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="2394"/>
@@ -5927,21 +7017,113 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation>面連接器</translation>
     </message>
     <message>
-        <location filename="../../InitGui.py" line="46"/>
-        <source>Draft</source>
-        <translation>製圖</translation>
+        <location filename="../../WorkingPlane.py" line="713"/>
+        <location filename="../../draftmake/make_sketch.py" line="127"/>
+        <location filename="../../draftmake/make_sketch.py" line="139"/>
+        <source>All Shapes must be coplanar</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../importDWG.py" line="209"/>
-        <location filename="../../importDWG.py" line="281"/>
-        <source>LibreDWG error</source>
-        <translation>LibreDWG 錯誤</translation>
+        <location filename="../../WorkingPlane.py" line="721"/>
+        <source>Selected Shapes must define a plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="659"/>
+        <location filename="../../WorkingPlane.py" line="821"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="374"/>
+        <source>Top</source>
+        <translation>上視圖</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="661"/>
+        <location filename="../../WorkingPlane.py" line="832"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="386"/>
+        <source>Front</source>
+        <translation>前視圖</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="663"/>
+        <location filename="../../WorkingPlane.py" line="843"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="398"/>
+        <source>Side</source>
+        <translation>側面</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="665"/>
+        <source>Auto</source>
+        <translation>自動</translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="1198"/>
+        <location filename="../../WorkingPlane.py" line="1657"/>
+        <source>Current working plane:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="1264"/>
+        <location filename="../../WorkingPlane.py" line="1289"/>
+        <source>Selected shapes do not define a plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
+        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
+        <source>Working plane aligned to global placement of</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
+        <source>Dir</source>
+        <translation>方向</translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="539"/>
+        <source>Custom</source>
+        <translation>自訂</translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="1616"/>
+        <source>No previous working plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="1626"/>
+        <source>No next working plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="1661"/>
+        <source>Axes:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="1668"/>
+        <source>Position:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="284"/>
+        <source>Error during DWG conversion.
+Try moving the DWG file to a directory path without spaces and non-english characters,
+or try saving to a lower DWG version.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../importDWG.py" line="218"/>
         <location filename="../../importDWG.py" line="290"/>
         <source>Converting:</source>
         <translation>轉換中:</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="209"/>
+        <location filename="../../importDWG.py" line="281"/>
+        <source>LibreDWG error</source>
+        <translation>LibreDWG 錯誤</translation>
     </message>
     <message>
         <location filename="../../importDWG.py" line="223"/>
@@ -5966,16 +7148,57 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation>QCAD 錯誤</translation>
     </message>
     <message>
-        <location filename="../../WorkingPlane.py" line="713"/>
-        <location filename="../../draftmake/make_sketch.py" line="127"/>
-        <location filename="../../draftmake/make_sketch.py" line="139"/>
-        <source>All Shapes must be coplanar</source>
+        <location filename="../../importDWG.py" line="302"/>
+        <location filename="../../importDWG.py" line="382"/>
+        <source>LibreDWG converter not found</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../WorkingPlane.py" line="721"/>
-        <source>Selected Shapes must define a plane</source>
+        <location filename="../../importDWG.py" line="321"/>
+        <location filename="../../importDWG.py" line="396"/>
+        <source>ODA converter not found</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="339"/>
+        <location filename="../../importDWG.py" line="407"/>
+        <source>QCAD converter not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="344"/>
+        <location filename="../../importDWG.py" line="412"/>
+        <source>No suitable external DWG converter has been found.
+Please set one manually under menu Edit -&gt; Preferences -&gt; Import/Export -&gt; DWG
+For more information see:
+https://wiki.freecad.org/Import_Export_Preferences</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importDXF.py" line="146"/>
+        <source>The DXF import/export libraries needed by FreeCAD to handle
+the DXF format were not found on this system.
+Please either enable FreeCAD to download these libraries:
+  1 - Load Draft workbench
+  2 - Menu Edit &gt; Preferences &gt; Import-Export &gt; DXF &gt; Enable downloads
+Or download these libraries manually, as explained on
+https://github.com/yorikvanhavre/Draft-dxf-importer
+To enabled FreeCAD to download these libraries, answer Yes.</source>
+        <translation>此系統並無FreeCAD所需用來匯入/匯出DXF格式之函式庫，可啟動FreeCAD來下載這些函式庫：
+1-載入底圖模組
+2-選單&gt;編輯&gt;偏好選項&gt;匯入-匯出&gt;DXF&gt;啟動下載
+或是手動下載這些函式庫，參照於
+https://github.com/yorikvanhavre/Draft-dxf-importer
+之說明啟動FreeCAD來下載這些函式庫，並回答確定。</translation>
+    </message>
+    <message>
+        <location filename="../../InitGui.py" line="46"/>
+        <source>Draft</source>
+        <translation>製圖</translation>
+    </message>
+    <message>
+        <source>The Draft workbench is used for 2D drafting on a grid</source>
+        <translation>製圖工作台用於在網格上進行平面繪圖</translation>
     </message>
     <message>
         <location filename="../../draftutils/gui_utils.py" line="81"/>
@@ -6176,7 +7399,7 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <location filename="../../draftutils/utils.py" line="1056"/>
         <location filename="../../draftutils/utils.py" line="1059"/>
         <source>Please use </source>
-        <translation type="unfinished"></translation>
+        <translation>請使用 </translation>
     </message>
     <message>
         <location filename="../../draftutils/utils.py" line="1059"/>
@@ -6859,7 +8082,7 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <location filename="../../draftmake/make_fillet.py" line="144"/>
         <location filename="../../draftmake/make_fillet.py" line="145"/>
         <source>Segment</source>
-        <translation type="unfinished"></translation>
+        <translation>分割</translation>
     </message>
     <message>
         <location filename="../../draftmake/make_fillet.py" line="165"/>
@@ -6959,26 +8182,6 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <location filename="../../draftguitools/gui_grid.py" line="51"/>
         <source>Toggle grid</source>
         <translation>切換格線</translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
-        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
-        <source>Working plane aligned to global placement of</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
-        <source>Dir</source>
-        <translation>方向</translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="539"/>
-        <source>Custom</source>
-        <translation>自訂</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_facebinders.py" line="71"/>
@@ -7432,7 +8635,7 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
     <message>
         <location filename="../../draftguitools/gui_fillets.py" line="76"/>
         <source>Fillet radius</source>
-        <translation type="unfinished"></translation>
+        <translation>圓角半徑</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_fillets.py" line="79"/>
@@ -8058,19 +9261,19 @@ The final angle will be the base angle plus this amount.</source>
 <context>
     <name>importOCA</name>
     <message>
-        <location filename="../../importOCA.py" line="360"/>
-        <source>OCA error: couldn&apos;t determine character encoding</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../importOCA.py" line="445"/>
         <source>OCA: found no data to export</source>
-        <translation type="unfinished"></translation>
+        <translation>OCA：找不到要匯出的資料</translation>
     </message>
     <message>
         <location filename="../../importOCA.py" line="490"/>
         <source>successfully exported</source>
         <translation>成功匯出</translation>
+    </message>
+    <message>
+        <location filename="../../importOCA.py" line="360"/>
+        <source>OCA error: couldn&apos;t determine character encoding</source>
+        <translation>OCA錯誤: 無法定義字元編碼</translation>
     </message>
 </context>
 </TS>

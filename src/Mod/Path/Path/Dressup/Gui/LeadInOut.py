@@ -137,10 +137,10 @@ class ObjectDressup:
         self.wire = None
         self.rapids = None
 
-    def __getstate__(self):
+    def dumps(self):
         return None
 
-    def __setstate__(self, state):
+    def loads(self, state):
         return None
 
     def setup(self, obj):
@@ -282,7 +282,7 @@ class ObjectDressup:
                 t = p0.sub(leadstart)
                 t = p0.add(t)
                 leadstart = t
-                offsetvector = self.multiply(offsetvector, -1)
+                offsetvector = offsetvector.multiply(-1)
         elif obj.StyleOn == "Tangent":
             # This is wrong.  please fix
             leadstart = (p0.add(off_v)).sub(offsetvector)
@@ -290,7 +290,7 @@ class ObjectDressup:
                 t = p0.sub(leadstart)
                 t = p0.add(t)
                 leadstart = t
-                offsetvector = self.multiply(offsetvector, -1)
+                offsetvector = offsetvector.multiply(-1)
         else:  # perpendicular
             leadstart = p0.add(off_v)
 
@@ -660,10 +660,10 @@ class ViewProviderDressup:
             arg1.Object.Base = None
         return True
 
-    def __getstate__(self):
+    def dumps(self):
         return None
 
-    def __setstate__(self, state):
+    def loads(self, state):
         return None
 
     def clearTaskPanel(self):

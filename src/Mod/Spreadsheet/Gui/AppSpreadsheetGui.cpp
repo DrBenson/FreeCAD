@@ -109,7 +109,9 @@ PyMOD_INIT_FUNC(SpreadsheetGui)
     // instantiating the commands
     CreateSpreadsheetCommands();
 
+#if defined(Q_OS_WIN32)
     QAccessible::installFactory(SpreadsheetGui::SheetTableViewAccessibleInterface::ifactory);
+#endif
 
     SpreadsheetGui::ViewProviderSheet::init();
     SpreadsheetGui::ViewProviderSheetPython::init();
@@ -118,7 +120,7 @@ PyMOD_INIT_FUNC(SpreadsheetGui)
     SpreadsheetGui::SheetViewPy::init_type();
 
     // register preference page
-    new Gui::PrefPageProducer<SpreadsheetGui::DlgSettingsImp> ("Spreadsheet");
+    new Gui::PrefPageProducer<SpreadsheetGui::DlgSettingsImp> (QT_TRANSLATE_NOOP("QObject","Spreadsheet"));
 
     // add resources and reloads the translators
     loadSpreadsheetResource();

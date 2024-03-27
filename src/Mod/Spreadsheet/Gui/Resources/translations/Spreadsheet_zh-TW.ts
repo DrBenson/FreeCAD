@@ -6,12 +6,13 @@
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
     <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
     <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
-    <extra-po-header-project_id_version>FreeCAD Spreadsheet Language Translations v0.21_pre</extra-po-header-project_id_version>
+    <extra-po-header-project_id_version>FreeCAD Spreadsheet Language Translations v0.22_dev</extra-po-header-project_id_version>
     <extra-po-header-x_generator>Poedit 3.2.2</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
 # DrBenson &lt;Benson.Dr@GMail.com&gt;, 2023
-#</extra-po-header_comment>
+#
+    </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>CmdCreateSpreadsheet</name>
@@ -406,16 +407,6 @@
         <translation>綁定試算表儲存格</translation>
     </message>
     <message>
-        <location filename="../../DlgBindSheet.ui" line="69"/>
-        <source>To cells:</source>
-        <translation>到儲存格:</translation>
-    </message>
-    <message>
-        <location filename="../../DlgBindSheet.ui" line="117"/>
-        <source>Sheet:</source>
-        <translation>工作表:</translation>
-    </message>
-    <message>
         <location filename="../../DlgBindSheet.ui" line="22"/>
         <source>First cell in range</source>
         <translation>範圍內的第一個儲存格</translation>
@@ -441,6 +432,11 @@
         <translation>結束儲存格位址</translation>
     </message>
     <message>
+        <location filename="../../DlgBindSheet.ui" line="69"/>
+        <source>To cells:</source>
+        <translation>到儲存格:</translation>
+    </message>
+    <message>
         <location filename="../../DlgBindSheet.ui" line="82"/>
         <source>Start cell address to bind to.
 Type &apos;=&apos; if you want to use an expression.
@@ -462,6 +458,11 @@ The expression must evaluate to a string of some cell address.</source>
         <location filename="../../DlgBindSheet.ui" line="110"/>
         <source>Which spread sheet to bind to</source>
         <translation>要綁定到哪個試算表</translation>
+    </message>
+    <message>
+        <location filename="../../DlgBindSheet.ui" line="117"/>
+        <source>Sheet:</source>
+        <translation>工作表:</translation>
     </message>
     <message>
         <location filename="../../DlgBindSheet.ui" line="126"/>
@@ -673,7 +674,7 @@ switch the design configuration. The property will be created if not exist.</sou
     <message>
         <location filename="../../PropertiesDialog.ui" line="263"/>
         <source>A&amp;lias</source>
-        <translation>別名(&amp;L):</translation>
+        <translation>別名(&amp;L)</translation>
     </message>
     <message>
         <location filename="../../PropertiesDialog.ui" line="269"/>
@@ -682,12 +683,25 @@ switch the design configuration. The property will be created if not exist.</sou
     </message>
 </context>
 <context>
+    <name>Py</name>
+    <message>
+        <location filename="../../AppSpreadsheetGui.cpp" line="80"/>
+        <source>Unnamed</source>
+        <translation>未命名</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
-        <location filename="../../Command.cpp" line="196"/>
-        <location filename="../../Command.cpp" line="252"/>
-        <source>All (*)</source>
-        <translation>全部(*)</translation>
+        <location filename="../../AppSpreadsheetGui.cpp" line="121"/>
+        <source>Spreadsheet</source>
+        <translation>試算表</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="194"/>
+        <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="254"/>
+        <source>CSV (*.csv *.CSV);;All (*)</source>
+        <translation>CSV (*.csv *.CSV);;全部 (*)</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="198"/>
@@ -698,6 +712,23 @@ switch the design configuration. The property will be created if not exist.</sou
         <location filename="../../Command.cpp" line="254"/>
         <source>Export file</source>
         <translation>匯出檔案</translation>
+    </message>
+    <message>
+        <location filename="../../SheetTableView.cpp" line="677"/>
+        <source>Copy &amp; Paste failed</source>
+        <translation>複製及貼上失敗</translation>
+    </message>
+    <message>
+        <location filename="../../SpreadsheetView.cpp" line="434"/>
+        <source>Alias contains invalid characters!</source>
+        <translation>別名包含無效字元!</translation>
+    </message>
+    <message>
+        <location filename="../../SpreadsheetView.cpp" line="440"/>
+        <source>Refer to cell by alias, for example
+Spreadsheet.my_alias_name instead of Spreadsheet.B1</source>
+        <translation>參照儲存格使用別名,例如
+Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
     </message>
     <message>
         <location filename="../../ViewProviderSpreadsheet.cpp" line="141"/>
@@ -727,21 +758,10 @@ switch the design configuration. The property will be created if not exist.</sou
         <translation>設定試算表儲存格的背景顏色</translation>
     </message>
     <message>
-        <location filename="../../SheetTableView.cpp" line="677"/>
-        <source>Copy &amp; Paste failed</source>
-        <translation>複製及貼上失敗</translation>
-    </message>
-    <message>
-        <location filename="../../SpreadsheetView.cpp" line="434"/>
-        <source>Alias contains invalid characters!</source>
-        <translation>別名包含無效字元!</translation>
-    </message>
-    <message>
-        <location filename="../../SpreadsheetView.cpp" line="440"/>
-        <source>Refer to cell by alias, for example
-Spreadsheet.my_alias_name instead of Spreadsheet.B1</source>
-        <translation>參照儲存格使用別名,例如
-Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
+        <location filename="../../Command.cpp" line="196"/>
+        <location filename="../../Command.cpp" line="252"/>
+        <source>All (*)</source>
+        <translation>全部(*)</translation>
     </message>
 </context>
 <context>
@@ -858,11 +878,6 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
 <context>
     <name>Sheet</name>
     <message>
-        <location filename="../../Sheet.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../Sheet.ui" line="22"/>
         <source>&amp;Content:</source>
         <translation>內容(&amp;C):</translation>
@@ -878,6 +893,11 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
 Spreadsheet.my_alias_name instead of Spreadsheet.B1</source>
         <translation>參照儲存格使用別名,例如
 Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
+    </message>
+    <message>
+        <location filename="../../Sheet.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -969,6 +989,13 @@ Do you want to continue?</source>
 </translation>
     </message>
     <message>
+        <location filename="../../DlgBindSheet.cpp" line="276"/>
+        <source>Error:
+</source>
+        <translation>錯誤:
+</translation>
+    </message>
+    <message>
         <location filename="../../DlgBindSheet.cpp" line="240"/>
         <source>Unbind cells</source>
         <translation>解除綁定儲存格</translation>
@@ -983,13 +1010,56 @@ Do you want to continue?</source>
     </message>
     <message>
         <location filename="../../DlgSettings.ui" line="26"/>
-        <source>Import/Export Settings</source>
-        <translation>匯入/匯出 設定</translation>
+        <source>Display Settings</source>
+        <translation>顯示設定</translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettings.ui" line="32"/>
+        <source>If checked, use the custom presentation to display cell string.</source>
+        <translation>如果選中，則使用自定義範例文稿顯示單元格字串.</translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettings.ui" line="35"/>
+        <source>Show alias in cell with format</source>
+        <translation>使用格式在單元格中顯示別名</translation>
     </message>
     <message>
         <location filename="../../DlgSettings.ui" line="38"/>
         <source>Delimiter Character: </source>
         <translation>分隔字元: </translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettings.ui" line="64"/>
+        <source>The format of the custom cell string presentation.
+Defaults to: %V = %A
+
+%A - alias name
+%V - cell value</source>
+        <translation>自定義單元格字串呈現的格式.
+預設為: %V = %A
+
+%A - 別名
+%V - 單元格值</translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettings.ui" line="98"/>
+        <source>Quote Character: </source>
+        <translation>引用字元: </translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettings.ui" line="130"/>
+        <source>Escape Character: </source>
+        <translation>跳脫字元: </translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettings.ui" line="26"/>
+        <source>Import/Export Settings</source>
+        <translation>匯入/匯出 設定</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="96"/>
+        <source>Delimiter Character:</source>
+        <translation>分隔字元:</translation>
     </message>
     <message>
         <location filename="../../DlgSettings.ui" line="58"/>
@@ -999,22 +1069,12 @@ Do you want to continue?</source>
     <message>
         <location filename="../../DlgSettings.ui" line="74"/>
         <source>tab</source>
-        <translation>分頁</translation>
+        <translation>tab</translation>
     </message>
     <message>
-        <location filename="../../DlgSettings.ui" line="79"/>
-        <source>;</source>
-        <translation>;</translation>
-    </message>
-    <message>
-        <location filename="../../DlgSettings.ui" line="84"/>
-        <source>,</source>
-        <translation>,</translation>
-    </message>
-    <message>
-        <location filename="../../DlgSettings.ui" line="98"/>
-        <source>Quote Character: </source>
-        <translation>引用字元: </translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="156"/>
+        <source>Quote Character:</source>
+        <translation>引用字元:</translation>
     </message>
     <message>
         <location filename="../../DlgSettings.ui" line="105"/>
@@ -1022,24 +1082,14 @@ Do you want to continue?</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;用於分隔字串的字元，通常是單引號 (&apos;) 或雙引號 (&amp;quot;). 必須是單個字元.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../../DlgSettings.ui" line="111"/>
-        <source>&quot;</source>
-        <translation>&quot;</translation>
-    </message>
-    <message>
-        <location filename="../../DlgSettings.ui" line="130"/>
-        <source>Escape Character: </source>
-        <translation>跳脫字元: </translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="188"/>
+        <source>Escape Character:</source>
+        <translation>跳脫字元:</translation>
     </message>
     <message>
         <location filename="../../DlgSettings.ui" line="137"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Escape character, typically the backslash (\), used to indicate special unprintable characters, e.g. \t = tab. Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;跳脫字元，通常是反斜線 (\)，用於指示特殊的無法列印字元，例如 \t = 定位字元. 必須是單個字元.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../../DlgSettings.ui" line="140"/>
-        <source>\</source>
-        <translation>\</translation>
     </message>
 </context>
 <context>

@@ -36,11 +36,11 @@
 #endif
 
 #include <App/AutoTransaction.h>
-#include <App/ComplexGeoData.h>
 #include <App/Document.h>
 #include <App/DocumentObject.h>
 #include <App/DocumentObjectGroup.h>
 #include <App/Transactions.h>
+#include <App/ElementNamingUtils.h>
 #include <Base/Console.h>
 #include <Base/Exception.h>
 #include <Base/Matrix.h>
@@ -408,7 +408,7 @@ bool Document::setEdit(Gui::ViewProvider* p, int ModNum, const char *subname)
     d->_editSubname.clear();
 
     if (subname) {
-        const char *element = Data::ComplexGeoData::findElementName(subname);
+        const char *element = Data::findElementName(subname);
         if (element) {
             d->_editSubname = std::string(subname,element-subname);
             d->_editSubElement = element;
@@ -671,10 +671,11 @@ void Document::slotNewObject(const App::DocumentObject& Obj)
             }
             else if (cName!=Obj.getViewProviderName() && !pcProvider->allowOverride(Obj)) {
                 FC_WARN("View provider type '" << cName << "' does not support " << Obj.getFullName());
+                delete pcProvider;
                 pcProvider = nullptr;
                 cName = Obj.getViewProviderName();
             }
-             else {
+            else {
                 break;
             }
         }
@@ -1350,7 +1351,7 @@ void Document::Save (Base::Writer &writer) const
         writer.addFile("GuiDocument.xml", this);
 
         ParameterGrp::handle hGrp = App::GetApplication().GetParameterGroupByPath("User parameter:BaseApp/Preferences/Document");
-        if (hGrp->GetBool("SaveThumbnail", false)) {
+        if (hGrp->GetBool("SaveThumbnail", true)) {
             int size = hGrp->GetInt("ThumbnailSize", 128);
             size = Base::clamp<int>(size, 64, 512);
             std::list<MDIView*> mdi = getMDIViews();

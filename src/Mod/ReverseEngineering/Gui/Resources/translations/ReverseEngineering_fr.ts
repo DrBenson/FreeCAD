@@ -142,7 +142,7 @@
     <message>
       <location filename="../../Command.cpp" line="375"/>
       <source>Create mesh segments</source>
-      <translation>Diviser un maillage</translation>
+      <translation>Segmenter le maillage</translation>
     </message>
   </context>
   <context>
@@ -470,7 +470,7 @@
     <message>
       <location filename="../../SegmentationManual.ui" line="61"/>
       <source>All</source>
-      <translation>Tous</translation>
+      <translation>Tout</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="81"/>
@@ -480,12 +480,12 @@
     <message>
       <location filename="../../SegmentationManual.ui" line="88"/>
       <source>&lt; faces than</source>
-      <translation>&lt; de faces que</translation>
+      <translation>des faces &lt; à</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="98"/>
       <source>Pick triangle</source>
-      <translation>Choisissez un triangle</translation>
+      <translation>Choisir un triangle</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="105"/>

@@ -622,7 +622,10 @@ void NavigationStyle::reorientCamera(SoCamera * cam, const SbRotation & rot)
 
     // Set new orientation value by accumulating the new rotation.
     cam->orientation = rot * cam->orientation.getValue();
-
+    // Fix issue with near clipping in orthogonal view
+    if (cam->getTypeId().isDerivedFrom(SoOrthographicCamera::getClassTypeId())) {
+        cam->focalDistance = static_cast<SoOrthographicCamera*>(cam)->height;
+    }
     // Reposition camera so we are still pointing at the same old focal point.
     cam->orientation.getValue().multVec(SbVec3f(0, 0, -1), direction);
     cam->position = focalpoint - cam->focalDistance.getValue() * direction;
@@ -1075,8 +1078,9 @@ void NavigationStyle::saveCursorPosition(const SoEvent * const ev)
         if (!cam) // no camera
             return;
 
+        // Get the bounding box center of the physical object group
         SoGetBoundingBoxAction action(viewer->getSoRenderManager()->getViewportRegion());
-        action.apply(viewer->getSceneGraph());
+        action.apply(viewer->objectGroup);
         SbBox3f boundingBox = action.getBoundingBox();
         SbVec3f boundingBoxCenter = boundingBox.getCenter();
         setRotationCenter(boundingBoxCenter);

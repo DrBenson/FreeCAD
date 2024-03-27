@@ -71,7 +71,7 @@
 #endif
 
 #include <App/Document.h>
-#include <App/ComplexGeoData.h>
+#include <App/ElementNamingUtils.h>
 #include <Base/Tools.h>
 
 #include "SoFCUnifiedSelection.h"
@@ -288,7 +288,7 @@ SoFCUnifiedSelection::getPickedList(SoHandleEventAction* action, bool singlePick
         int cur_prio = getPriority(info.pp);
         const SbVec3f& cur_pt = info.pp->getPoint();
 
-        if ((cur_prio > picked_prio) && picked_pt.equals(cur_pt, 0.01f)) {
+        if ((cur_prio > picked_prio) && picked_pt.equals(cur_pt, 0.2F)) {
             itPicked = it;
             picked_prio = cur_prio;
         }
@@ -624,7 +624,7 @@ bool SoFCUnifiedSelection::setSelection(const std::vector<PickedInfo> &infos, bo
             objectName << ", " << subName);
     std::string newElement;
     if(subSelected) {
-        newElement = Data::ComplexGeoData::newElementName(subSelected);
+        newElement = Data::newElementName(subSelected);
         subSelected = newElement.c_str();
         std::string nextsub;
         const char *next = strrchr(subSelected,'.');
@@ -1565,7 +1565,7 @@ bool SoFCSelectionRoot::doActionPrivate(Stack &stack, SoAction *action) {
                     touch();
                 }
                 // applied to a node means clear all visibility setting, so
-                // return true to propgate the action
+                // return true to propagate the action
                 return selAction->getType()==SoSelectionElementAction::Color ||
                        action->getWhatAppliedTo()==SoAction::NODE;
 

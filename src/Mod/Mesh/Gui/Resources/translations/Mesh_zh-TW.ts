@@ -6,8 +6,13 @@
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
     <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
     <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
-    <extra-po-header-project_id_version></extra-po-header-project_id_version>
+    <extra-po-header-project_id_version>FreeCAD Mesh Language Translations v0.22_dev</extra-po-header-project_id_version>
     <extra-po-header-x_generator>Poedit 3.2.2</extra-po-header-x_generator>
+    <extra-po-header_comment>#
+# Translators:
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2023
+#
+    </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>CmdMeshAddFacet</name>
@@ -596,14 +601,6 @@
 <context>
     <name>Command</name>
     <message>
-        <source>Mesh Create</source>
-        <translation>建立網格</translation>
-    </message>
-    <message>
-        <source>Segment by tool mesh</source>
-        <translation>由工具網格分段</translation>
-    </message>
-    <message>
         <source>Mesh union</source>
         <translation>網格合併</translation>
     </message>
@@ -622,10 +619,6 @@
     <message>
         <source>Mesh VertexCurvature</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Mesh Smoothing</source>
-        <translation>網格平滑化</translation>
     </message>
     <message>
         <source>Harmonize mesh normals</source>
@@ -685,15 +678,19 @@
     </message>
     <message>
         <source>Remove folds</source>
-        <translation type="unfinished"></translation>
+        <translation>移除折疊</translation>
     </message>
     <message>
         <source>Repair mesh</source>
         <translation>修復網格</translation>
     </message>
     <message>
+        <source>Mesh Smoothing</source>
+        <translation>網格平滑化</translation>
+    </message>
+    <message>
         <source>Delete selection</source>
-        <translation type="unfinished"></translation>
+        <translation>刪除選定</translation>
     </message>
     <message>
         <source>Cut</source>
@@ -705,11 +702,11 @@
     </message>
     <message>
         <source>Split</source>
-        <translation>分割</translation>
+        <translation>拆分</translation>
     </message>
     <message>
         <source>Segment</source>
-        <translation type="unfinished"></translation>
+        <translation>分割</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -717,7 +714,15 @@
     </message>
     <message>
         <source>Fill hole</source>
-        <translation type="unfinished"></translation>
+        <translation>填充孔</translation>
+    </message>
+    <message>
+        <source>Mesh Create</source>
+        <translation>建立網格</translation>
+    </message>
+    <message>
+        <source>Segment by tool mesh</source>
+        <translation>由工具網格分段</translation>
     </message>
 </context>
 <context>
@@ -725,12 +730,12 @@
     <message>
         <location filename="../../DlgDecimating.ui" line="14"/>
         <source>Decimating</source>
-        <translation type="unfinished"></translation>
+        <translation>十進制</translation>
     </message>
     <message>
         <location filename="../../DlgDecimating.ui" line="20"/>
         <source>Reduction</source>
-        <translation type="unfinished"></translation>
+        <translation>減少</translation>
     </message>
     <message>
         <location filename="../../DlgDecimating.ui" line="28"/>
@@ -740,7 +745,7 @@
     <message>
         <location filename="../../DlgDecimating.ui" line="57"/>
         <source>Full</source>
-        <translation type="unfinished"></translation>
+        <translation>飽滿</translation>
     </message>
     <message>
         <location filename="../../DlgDecimating.ui" line="66"/>
@@ -896,25 +901,16 @@
         <translation>沒有資訊</translation>
     </message>
     <message>
-        <source>Flipped normals found</source>
-        <translation>發現被翻轉之法線</translation>
-    </message>
-    <message>
-        <source>Orientation</source>
-        <translation>定位</translation>
-    </message>
-    <message>
-        <source>Check failed due to folds on the surface.
-Please run the command to repair folds first</source>
-        <translation>檢查顯示面有重疊所產生之錯誤,請先執行修復重疊指令</translation>
-    </message>
-    <message>
         <source>No flipped normals</source>
         <translation>無旋轉法線</translation>
     </message>
     <message>
         <source>%1 flipped normals</source>
         <translation>%1無旋轉法線</translation>
+    </message>
+    <message>
+        <source>Orientation</source>
+        <translation>定位</translation>
     </message>
     <message>
         <source>No non-manifolds</source>
@@ -1011,6 +1007,15 @@ Please run the command to repair folds first</source>
     <message>
         <source>Mesh repair</source>
         <translation>修復網格</translation>
+    </message>
+    <message>
+        <source>Flipped normals found</source>
+        <translation>發現被翻轉之法線</translation>
+    </message>
+    <message>
+        <source>Check failed due to folds on the surface.
+Please run the command to repair folds first</source>
+        <translation>檢查顯示面有重疊所產生之錯誤,請先執行修復重疊指令</translation>
     </message>
 </context>
 <context>
@@ -1153,6 +1158,11 @@ Please run the command to repair folds first</source>
     </message>
     <message>
         <location filename="../../DlgRegularSolid.ui" line="825"/>
+        <source>Close</source>
+        <translation>關閉</translation>
+    </message>
+    <message>
+        <location filename="../../DlgRegularSolid.ui" line="825"/>
         <source>Cl&amp;ose</source>
         <translation>&amp;關閉</translation>
     </message>
@@ -1166,7 +1176,7 @@ Please run the command to repair folds first</source>
     <name>MeshGui::DlgRegularSolidImp</name>
     <message>
         <source>Create %1</source>
-        <translation>創建%1</translation>
+        <translation>建立%1</translation>
     </message>
     <message>
         <source>No active document</source>
@@ -1213,6 +1223,16 @@ Please run the command to repair folds first</source>
     <message>
         <location filename="../../DlgSettingsImportExport.ui" line="66"/>
         <source>Export AMF files using compression</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettingsImportExport.ui" line="82"/>
+        <source>Always export mesh as model type in 3MF format even if not a solid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettingsImportExport.ui" line="85"/>
+        <source>Export 3MF files as model type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1422,7 +1442,7 @@ to a smoother appearance.
     </message>
     <message>
         <source>Parallelograms</source>
-        <translation type="unfinished"></translation>
+        <translation>平行四邊形</translation>
     </message>
     <message>
         <source>Time:</source>
@@ -1434,7 +1454,7 @@ to a smoother appearance.
     </message>
     <message>
         <source>Failed to start</source>
-        <translation type="unfinished"></translation>
+        <translation>無法啟動</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1471,7 +1491,7 @@ to a smoother appearance.
     <name>MeshGui::ParametersDialog</name>
     <message>
         <source>Surface fit</source>
-        <translation type="unfinished"></translation>
+        <translation>表面貼合</translation>
     </message>
     <message>
         <source>Parameters</source>
@@ -1503,7 +1523,7 @@ to a smoother appearance.
     </message>
     <message>
         <source>Before fitting the surface select an area.</source>
-        <translation type="unfinished"></translation>
+        <translation>在擬合曲面之前選擇一個區域.</translation>
     </message>
 </context>
 <context>
@@ -1521,7 +1541,7 @@ to a smoother appearance.
     <message>
         <location filename="../../RemeshGmsh.ui" line="32"/>
         <source>Meshing:</source>
-        <translation type="unfinished"></translation>
+        <translation>建立網格:</translation>
     </message>
     <message>
         <location filename="../../RemeshGmsh.ui" line="42"/>
@@ -1893,6 +1913,11 @@ Please visit http://www.openscad.org/index.html to install it.</source>
 <context>
     <name>QObject</name>
     <message>
+        <location filename="../../AppMeshGui.cpp" line="157"/>
+        <source>Display</source>
+        <translation>顯示</translation>
+    </message>
+    <message>
         <source>Import-Export</source>
         <translation>匯入-匯出</translation>
     </message>
@@ -1922,7 +1947,7 @@ Please visit http://www.openscad.org/index.html to install it.</source>
     </message>
     <message>
         <source>Inventor V2.1 ASCII</source>
-        <translation type="unfinished"></translation>
+        <translation>發明者 V2.1 ASCII</translation>
     </message>
     <message>
         <source>Stanford Polygon</source>
@@ -2045,6 +2070,10 @@ Please visit http://www.openscad.org/index.html to install it.</source>
         <translation>顯示顏色</translation>
     </message>
     <message>
+        <source>Leave info mode</source>
+        <translation>離開訊息模式</translation>
+    </message>
+    <message>
         <source>Index: %1</source>
         <translation>索引：%1</translation>
     </message>
@@ -2067,10 +2096,6 @@ Please visit http://www.openscad.org/index.html to install it.</source>
     <message>
         <source>Annotation</source>
         <translation>注釋</translation>
-    </message>
-    <message>
-        <source>Leave info mode</source>
-        <translation>離開訊息模式</translation>
     </message>
 </context>
 <context>

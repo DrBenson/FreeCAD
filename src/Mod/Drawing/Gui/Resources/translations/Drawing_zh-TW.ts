@@ -11,7 +11,8 @@
     <extra-po-header_comment>#
 # Translators:
 # DrBenson &lt;Benson.Dr@GMail.com&gt;, 2023
-#</extra-po-header_comment>
+#
+    </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>CmdDrawingAnnotation</name>
@@ -644,6 +645,11 @@ Do you want to continue?</source>
 </context>
 <context>
     <name>Drawing_NewPage</name>
+    <message>
+        <location filename="../../Command.cpp" line="106"/>
+        <source>Page</source>
+        <translation>頁</translation>
+    </message>
     <message>
         <location filename="../../Command.cpp" line="217"/>
         <source>Landscape</source>

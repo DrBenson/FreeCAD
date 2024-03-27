@@ -47,24 +47,24 @@
       <translation>&lt;boş&gt;</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2273"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2539"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2272"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2538"/>
       <source>Angle</source>
       <translation>Açı</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2277"/>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2543"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2276"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2542"/>
       <source>Axis</source>
       <translation>Eksen</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2548"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2547"/>
       <source>Position</source>
       <translation type="unfinished">Position</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="2787"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="2786"/>
       <source>Enum</source>
       <translation>Numaralandırma</translation>
     </message>
@@ -194,8 +194,8 @@
     </message>
     <message>
       <location filename="../Transform.cpp" line="105"/>
-      <location filename="../ViewProviderAnnotation.cpp" line="416"/>
       <location filename="../ViewProviderDragger.cpp" line="222"/>
+      <location filename="../ViewProviderAnnotation.cpp" line="416"/>
       <source>Transform</source>
       <translation>Dönüştür</translation>
     </message>
@@ -711,47 +711,47 @@ while doing a left or right click and move the mouse up or down</source>
   <context>
     <name>Gui::Dialog::AboutDialog</name>
     <message>
-      <location filename="../Splashscreen.cpp" line="418"/>
-      <location filename="../Splashscreen.cpp" line="427"/>
+      <location filename="../Splashscreen.cpp" line="474"/>
+      <location filename="../Splashscreen.cpp" line="483"/>
       <source>Credits</source>
       <extracomment>Header for the Credits tab of the About screen</extracomment>
       <translation>Katkıda Bulunanlar</translation>
     </message>
     <message>
-      <location filename="../Splashscreen.cpp" line="429"/>
+      <location filename="../Splashscreen.cpp" line="485"/>
       <source>FreeCAD would not be possible without the contributions of</source>
       <translation>FreeCAD, bu katkılar olmadan ortaya çıkamazdı:</translation>
     </message>
     <message>
-      <location filename="../Splashscreen.cpp" line="432"/>
+      <location filename="../Splashscreen.cpp" line="488"/>
       <source>Individuals</source>
       <extracomment>Header for the list of individual people in the Credits list.</extracomment>
       <translation>Kişiler</translation>
     </message>
     <message>
-      <location filename="../Splashscreen.cpp" line="445"/>
+      <location filename="../Splashscreen.cpp" line="501"/>
       <source>Organizations</source>
       <extracomment>Header for the list of companies/organizations in the Credits list.</extracomment>
       <translation>Kuruluşlar</translation>
     </message>
     <message>
-      <location filename="../Splashscreen.cpp" line="472"/>
-      <location filename="../Splashscreen.cpp" line="712"/>
+      <location filename="../Splashscreen.cpp" line="528"/>
+      <location filename="../Splashscreen.cpp" line="768"/>
       <source>License</source>
       <translation>Lisans</translation>
     </message>
     <message>
-      <location filename="../Splashscreen.cpp" line="511"/>
+      <location filename="../Splashscreen.cpp" line="567"/>
       <source>Libraries</source>
       <translation>Kütüphaneler</translation>
     </message>
     <message>
-      <location filename="../Splashscreen.cpp" line="673"/>
+      <location filename="../Splashscreen.cpp" line="729"/>
       <source>This software uses open source components whose copyright and other proprietary rights belong to their respective owners:</source>
       <translation>Bu yazılım telif hakkı ve diğer fikri mülkiyet hakları ilgili sahiplerine ait açık kaynak bileşenleri kullanır:</translation>
     </message>
     <message>
-      <location filename="../Splashscreen.cpp" line="699"/>
+      <location filename="../Splashscreen.cpp" line="755"/>
       <source>Collection</source>
       <translation>Koleksiyon</translation>
     </message>
@@ -2337,7 +2337,7 @@ karşılama ekranını gösterecektir</translation>
     <name>Gui::Dialog::DlgMacroExecuteImp</name>
     <message>
       <location filename="../DlgMacroExecuteImp.cpp" line="96"/>
-      <location filename="../DlgMacroExecuteImp.cpp" line="654"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="653"/>
       <source>Macros</source>
       <translation>Makrolar</translation>
     </message>
@@ -2358,8 +2358,8 @@ karşılama ekranını gösterecektir</translation>
     </message>
     <message>
       <location filename="../DlgMacroExecuteImp.cpp" line="405"/>
-      <location filename="../DlgMacroExecuteImp.cpp" line="735"/>
-      <location filename="../DlgMacroExecuteImp.cpp" line="869"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="733"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="867"/>
       <source>Existing file</source>
       <translation>Varolan dosya</translation>
     </message>
@@ -2437,53 +2437,53 @@ Not: Değişiklikleriniz, sonraki tezgah geçişinizde uygulanacak
       <translation>Gidişat talimatları: Sağ ok düğmesine (-&gt;) ardından Kapat' a tıklayın.</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="635"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="634"/>
       <source>Walkthrough instructions: Click New, then right arrow (-&gt;) button, then Close.</source>
       <translation>Gidişat Talimatları: Yeni' ye, sonra sağ oka (-&gt;), ardından Kapat' a tıklayın.</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="721"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="719"/>
       <source>Renaming Macro File</source>
       <translation>Makro dosya yeniden adlandırma</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="722"/>
-      <location filename="../DlgMacroExecuteImp.cpp" line="856"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="720"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="854"/>
       <source>Enter new name:</source>
       <translation>Yeni adı gir:</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="736"/>
-      <location filename="../DlgMacroExecuteImp.cpp" line="870"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="734"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="868"/>
       <source>'%1'
  already exists.</source>
       <translation>'%1' 
 zaten mevcut.</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="739"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="737"/>
       <source>Rename Failed</source>
       <translation>Yeniden adlandırma başarısız oldu</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="740"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="738"/>
       <source>Failed to rename to '%1'.
 Perhaps a file permission error?</source>
       <translation>'%1' yeniden adlandıramadı.
 Belki de bir dosya yetki hatası?</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="855"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="853"/>
       <source>Duplicate Macro</source>
       <translation>Makroyu Kopyala</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="873"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="871"/>
       <source>Duplicate Failed</source>
       <translation>Kopyalama Başarısız</translation>
     </message>
     <message>
-      <location filename="../DlgMacroExecuteImp.cpp" line="874"/>
+      <location filename="../DlgMacroExecuteImp.cpp" line="872"/>
       <source>Failed to duplicate to '%1'.
 Perhaps a file permission error?</source>
       <translation>'%1'olarak çoğaltılamadı. 
@@ -2865,42 +2865,42 @@ Lütfen başka bir dizin belirtin.</translation>
   <context>
     <name>Gui::Dialog::DlgPreferencesImp</name>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="364"/>
+      <location filename="../DlgPreferencesImp.cpp" line="363"/>
       <source>Clear user settings</source>
       <translation>Açık kullanıcı ayarları</translation>
     </message>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="365"/>
+      <location filename="../DlgPreferencesImp.cpp" line="364"/>
       <source>Do you want to clear all your user settings?</source>
       <translation>Tüm kullanıcı ayarlarınızı temizlemek istiyor musunuz?</translation>
     </message>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="366"/>
+      <location filename="../DlgPreferencesImp.cpp" line="365"/>
       <source>If you agree all your settings will be cleared.</source>
       <translation>Kabul ederseniz tüm ayarları temizlenir.</translation>
     </message>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="457"/>
+      <location filename="../DlgPreferencesImp.cpp" line="456"/>
       <source>Wrong parameter</source>
       <translation>Yanlış parametre</translation>
     </message>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="493"/>
+      <location filename="../DlgPreferencesImp.cpp" line="492"/>
       <source>Restart required</source>
       <translation type="unfinished">Restart required</translation>
     </message>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="494"/>
+      <location filename="../DlgPreferencesImp.cpp" line="493"/>
       <source>You must restart FreeCAD for changes to take effect.</source>
       <translation type="unfinished">You must restart FreeCAD for changes to take effect.</translation>
     </message>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="499"/>
+      <location filename="../DlgPreferencesImp.cpp" line="498"/>
       <source>Restart now</source>
       <translation type="unfinished">Restart now</translation>
     </message>
     <message>
-      <location filename="../DlgPreferencesImp.cpp" line="500"/>
+      <location filename="../DlgPreferencesImp.cpp" line="499"/>
       <source>Restart later</source>
       <translation type="unfinished">Restart later</translation>
     </message>
@@ -4081,32 +4081,32 @@ get date suffix according to the specified format</source>
 belirtilen biçime göre tarih son eki alacaktır</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="515"/>
+      <location filename="../DlgSettingsDocument.ui" line="518"/>
       <source>Use date and FCBak extension</source>
       <translation>Tarih ve FCBak uzantısı kullan</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="528"/>
+      <location filename="../DlgSettingsDocument.ui" line="531"/>
       <source>Date format</source>
       <translation>Tarih biçimi</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="553"/>
+      <location filename="../DlgSettingsDocument.ui" line="556"/>
       <source>Document objects</source>
       <translation>Döküman nesneleri</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="559"/>
+      <location filename="../DlgSettingsDocument.ui" line="562"/>
       <source>Allow objects to have same label</source>
       <translation type="unfinished">Allow objects to have same label</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="562"/>
+      <location filename="../DlgSettingsDocument.ui" line="565"/>
       <source>Allow duplicate object labels in one document</source>
       <translation>Bir dökümanda nesne etiketlerini ikilemeye izin ver</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="575"/>
+      <location filename="../DlgSettingsDocument.ui" line="578"/>
       <source>Enable partial loading of external linked documents.
 Then only referenced objects and their dependencies will be loaded
 when a linked document is auto-opened together with the main document.
@@ -4119,22 +4119,22 @@ Kısmi yüklenen belge düzenlenemez. Belgeyi tam olarak yeniden
 yüklemek için simgesine çift tıklayın.</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="582"/>
+      <location filename="../DlgSettingsDocument.ui" line="585"/>
       <source>Disable partial loading of external linked objects</source>
       <translation>Dış bağlantılı nesnelerin kısmi yüklenmesini geçersizleştir</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="598"/>
+      <location filename="../DlgSettingsDocument.ui" line="601"/>
       <source>Authoring and License</source>
       <translation>Yazarlık ve Lisans</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="604"/>
+      <location filename="../DlgSettingsDocument.ui" line="607"/>
       <source>Author name</source>
       <translation>Yazar Adı</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="611"/>
+      <location filename="../DlgSettingsDocument.ui" line="614"/>
       <source>All documents that will be created will get the specified author name.
 Keep blank for anonymous.
 You can also use the form: John Doe &lt;john@doe.com&gt;</source>
@@ -4143,32 +4143,32 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
 Ayrıca formu da kullanabilirsiniz: John Doe &lt;john@doe.com&gt;</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="626"/>
+      <location filename="../DlgSettingsDocument.ui" line="629"/>
       <source>The field 'Last modified by' will be set to specified author when saving the file</source>
       <translation>Dosya kaydedilirken 'tarafından son olarak değiştirildi' alanı, belirlenen yazar adına ayarlanacak</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="629"/>
+      <location filename="../DlgSettingsDocument.ui" line="632"/>
       <source>Set on save</source>
       <translation>Üzerinde ayarlama Kaydet</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="642"/>
+      <location filename="../DlgSettingsDocument.ui" line="645"/>
       <source>Company</source>
       <translation>Şirket</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="649"/>
+      <location filename="../DlgSettingsDocument.ui" line="652"/>
       <source>Default company name to use for new files</source>
       <translation>Yeni dosyalar için kullanılacak varsayılan şirket adı</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="662"/>
+      <location filename="../DlgSettingsDocument.ui" line="665"/>
       <source>Default license</source>
       <translation>Varsayılan Lisans</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="672"/>
+      <location filename="../DlgSettingsDocument.ui" line="675"/>
       <source>Default license for new documents</source>
       <translation>Yeni belgeler için varsayılan lisans</translation>
     </message>
@@ -4238,12 +4238,12 @@ Ayrıca formu da kullanabilirsiniz: John Doe &lt;john@doe.com&gt;</translation>
       <translation>Diğer</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="688"/>
+      <location filename="../DlgSettingsDocument.ui" line="691"/>
       <source>License URL</source>
       <translation>Lisans URL (Automatic Translation)</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsDocument.ui" line="695"/>
+      <location filename="../DlgSettingsDocument.ui" line="698"/>
       <source>URL describing more about the license</source>
       <translation>Lisans hakkında daha fazlasını anlatan URL</translation>
     </message>
@@ -4653,7 +4653,7 @@ Ayrıca formu da kullanabilirsiniz: John Doe &lt;john@doe.com&gt;</translation>
     <name>Gui::Dialog::DlgSettingsNavigation</name>
     <message>
       <location filename="../DlgSettingsNavigation.ui" line="14"/>
-      <location filename="../DlgSettingsNavigation.ui" line="234"/>
+      <location filename="../DlgSettingsNavigation.ui" line="238"/>
       <source>Navigation</source>
       <translation>Gezinme</translation>
     </message>
@@ -4723,56 +4723,59 @@ Ayrıca formu da kullanabilirsiniz: John Doe &lt;john@doe.com&gt;</translation>
       <translation type="unfinished">Font name of the navigation cube</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="165"/>
+      <location filename="../DlgSettingsNavigation.ui" line="162"/>
+      <source>Default</source>
+      <translation>Varsayılan</translation>
+    </message>
+    <message>
+      <location filename="../DlgSettingsNavigation.ui" line="170"/>
       <source>Cube size</source>
       <translation>Küp boyutu</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="172"/>
+      <location filename="../DlgSettingsNavigation.ui" line="177"/>
       <source>Size of the navigation cube</source>
       <translation>Gezinme küpü boyutu</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="200"/>
+      <location filename="../DlgSettingsNavigation.ui" line="205"/>
       <source>Color</source>
       <translation>Renk</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="207"/>
-      <source>color for all elements
-around the cube</source>
-      <translation type="unfinished">color for all elements
-around the cube</translation>
+      <location filename="../DlgSettingsNavigation.ui" line="212"/>
+      <source>Base color for all elements</source>
+      <translation type="unfinished">Base color for all elements</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="240"/>
+      <location filename="../DlgSettingsNavigation.ui" line="244"/>
       <source>3D Navigation</source>
       <translation>3D Gezinme</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="277"/>
+      <location filename="../DlgSettingsNavigation.ui" line="281"/>
       <source>List the mouse button configs for each chosen navigation setting.
 Select a set and then press the button to view said configurations.</source>
       <translation>Seçilen her gezinti ayarı için fare düğmesi yapılandırmalarını listele.
 Bahsedilen yapılandırmaları görmek için bir ayar seçin ve sonra düğmeye basın.</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="281"/>
+      <location filename="../DlgSettingsNavigation.ui" line="285"/>
       <source>Mouse...</source>
       <translation>Fare...</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="302"/>
+      <location filename="../DlgSettingsNavigation.ui" line="306"/>
       <source>Navigation settings set</source>
       <translation>Gezinti ayarları ayarı</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="312"/>
+      <location filename="../DlgSettingsNavigation.ui" line="316"/>
       <source>Orbit style</source>
       <translation>Yörünge stili</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="331"/>
+      <location filename="../DlgSettingsNavigation.ui" line="335"/>
       <source>Rotation orbit style.
 Trackball: moving the mouse horizontally will rotate the part around the y-axis
 Turntable: the part will be rotated around the z-axis (with constrained axes).
@@ -4783,116 +4786,116 @@ Turntable: the part will be rotated around the z-axis (with constrained axes).
 Free Turntable: the part will be rotated around the z-axis.</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="341"/>
+      <location filename="../DlgSettingsNavigation.ui" line="345"/>
       <source>Turntable</source>
       <translation>Döner tabla</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="346"/>
+      <location filename="../DlgSettingsNavigation.ui" line="350"/>
       <source>Trackball</source>
       <translation>Trackball</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="351"/>
+      <location filename="../DlgSettingsNavigation.ui" line="355"/>
       <source>Free Turntable</source>
       <translation type="unfinished">Free Turntable</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="359"/>
+      <location filename="../DlgSettingsNavigation.ui" line="363"/>
       <source>Rotation mode</source>
       <translation>Döndürme modu</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="378"/>
+      <location filename="../DlgSettingsNavigation.ui" line="382"/>
       <source>Rotations in 3D will use current cursor position as center for rotation</source>
       <translation>3B' daki dönüşler, dönüş merkezi olarak geçerli imleç konumunu kullanacak</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="385"/>
+      <location filename="../DlgSettingsNavigation.ui" line="389"/>
       <source>Window center</source>
       <translation>Pencere merkezi</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="390"/>
+      <location filename="../DlgSettingsNavigation.ui" line="394"/>
       <source>Drag at cursor</source>
       <translation>İmleç ile sürükle</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="395"/>
+      <location filename="../DlgSettingsNavigation.ui" line="399"/>
       <source>Object center</source>
       <translation>Nesne merkezi</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="403"/>
+      <location filename="../DlgSettingsNavigation.ui" line="407"/>
       <source>Default camera orientation</source>
       <translation>Varsayılan kamera yönü</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="422"/>
+      <location filename="../DlgSettingsNavigation.ui" line="426"/>
       <source>Default camera orientation when creating a new document or selecting the home view</source>
       <translation>Yeni bir belge oluştururken veya ev görünümünü seçerkenki varsayılan kamera yönlendirmesi</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="429"/>
+      <location filename="../DlgSettingsNavigation.ui" line="433"/>
       <source>Camera zoom</source>
       <translation>Kamera yakınlaştırma</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="448"/>
+      <location filename="../DlgSettingsNavigation.ui" line="452"/>
       <source>Sets camera zoom for new documents.
 The value is the diameter of the sphere to fit on the screen.</source>
       <translation>Yeni belgeler için kamera yakınlaştırılmasını ayarlar.
 Değeri, ekrana sığdırılacak kürenin çapıdır.</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="452"/>
+      <location filename="../DlgSettingsNavigation.ui" line="456"/>
       <source>mm</source>
       <translation>mm</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="477"/>
+      <location filename="../DlgSettingsNavigation.ui" line="481"/>
       <source>Enable animated rotations</source>
       <translation>Hareketli dönüşleri etkinleştir</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="480"/>
+      <location filename="../DlgSettingsNavigation.ui" line="484"/>
       <source>Enable animation</source>
       <translation>Animasyonu etkinleştir</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="496"/>
+      <location filename="../DlgSettingsNavigation.ui" line="500"/>
       <source>Zoom operations will be performed at position of mouse pointer</source>
       <translation>Yakınlaştırma işlemleri, fare işaretçisi konumunda yapılacak</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="499"/>
+      <location filename="../DlgSettingsNavigation.ui" line="503"/>
       <source>Zoom at cursor</source>
       <translation>İmlece yaklaş</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="515"/>
+      <location filename="../DlgSettingsNavigation.ui" line="519"/>
       <source> Zoom step</source>
       <translation> Yakınlaştırma adımı</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="533"/>
+      <location filename="../DlgSettingsNavigation.ui" line="537"/>
       <source>How much will be zoomed.
 Zoom step of '1' means a factor of 7.5 for every zoom step.</source>
       <translation>Yakınlaştırma miktarı.
 1 yakınlaştırma adımı, adım başına 7.5 katsayı anlamına gelir.</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="577"/>
+      <location filename="../DlgSettingsNavigation.ui" line="581"/>
       <source>Direction of zoom operations will be inverted</source>
       <translation>Yakınlaştırma işlemlerinin yönü ters çevrilecek</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="580"/>
+      <location filename="../DlgSettingsNavigation.ui" line="584"/>
       <source>Invert zoom</source>
       <translation>Zoomu tersine çevir</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="596"/>
+      <location filename="../DlgSettingsNavigation.ui" line="600"/>
       <source>Prevents view tilting when pinch-zooming.
 Affects only gesture navigation style.
 Mouse tilting is not disabled by this setting.</source>
@@ -4901,57 +4904,57 @@ Yalnızca hareketle gezinme stilini etkiler.
 Bu ayarla fareyi eğme devre dışı bırakılmaz.</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.ui" line="601"/>
+      <location filename="../DlgSettingsNavigation.ui" line="605"/>
       <source>Disable touchscreen tilt gesture</source>
       <translation>DokunmatikEkran eğim hareketini devre dışı bırak</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="147"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="150"/>
       <source>Isometric</source>
       <translation>İzometrik</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="148"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="151"/>
       <source>Dimetric</source>
       <translation>Dimetrik</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="149"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="152"/>
       <source>Trimetric</source>
       <translation>Trimetrik</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="150"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="153"/>
       <source>Top</source>
       <translation>üst</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="151"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="154"/>
       <source>Front</source>
       <translation>Ön</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="152"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="155"/>
       <source>Left</source>
       <translation>Sol</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="153"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="156"/>
       <source>Right</source>
       <translation>Sağ</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="154"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="157"/>
       <source>Rear</source>
       <translation>Arka</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="155"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="158"/>
       <source>Bottom</source>
       <translation>Alt</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsNavigation.cpp" line="156"/>
+      <location filename="../DlgSettingsNavigation.cpp" line="159"/>
       <source>Custom</source>
       <translation>Özel</translation>
     </message>
@@ -6197,82 +6200,82 @@ kutusunu açmadan önce seçilen nesnelerle devam et</translation>
   <context>
     <name>Gui::DockWnd::ReportOutput</name>
     <message>
-      <location filename="../ReportView.cpp" line="580"/>
+      <location filename="../ReportView.cpp" line="586"/>
       <source>Options</source>
       <translation>Seçenekler</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="585"/>
+      <location filename="../ReportView.cpp" line="591"/>
       <source>Display message types</source>
       <translation>Mesaj türlerini görüntüle</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="588"/>
-      <location filename="../ReportView.cpp" line="612"/>
+      <location filename="../ReportView.cpp" line="594"/>
+      <location filename="../ReportView.cpp" line="618"/>
       <source>Normal messages</source>
       <translation>Normal mesajlar</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="592"/>
-      <location filename="../ReportView.cpp" line="616"/>
+      <location filename="../ReportView.cpp" line="598"/>
+      <location filename="../ReportView.cpp" line="622"/>
       <source>Log messages</source>
       <translation>Günlük mesajları</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="596"/>
-      <location filename="../ReportView.cpp" line="620"/>
+      <location filename="../ReportView.cpp" line="602"/>
+      <location filename="../ReportView.cpp" line="626"/>
       <source>Warnings</source>
       <translation>Uyarılar</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="600"/>
-      <location filename="../ReportView.cpp" line="624"/>
+      <location filename="../ReportView.cpp" line="606"/>
+      <location filename="../ReportView.cpp" line="630"/>
       <source>Errors</source>
       <translation>Hatalar</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="604"/>
-      <location filename="../ReportView.cpp" line="628"/>
+      <location filename="../ReportView.cpp" line="610"/>
+      <location filename="../ReportView.cpp" line="634"/>
       <source>Critical messages</source>
       <translation type="unfinished">Critical messages</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="609"/>
+      <location filename="../ReportView.cpp" line="615"/>
       <source>Show Report view on</source>
       <translation type="unfinished">Show Report view on</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="634"/>
+      <location filename="../ReportView.cpp" line="640"/>
       <source>Redirect Python output</source>
       <translation>Python çıktısını yeniden yönlendir</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="638"/>
+      <location filename="../ReportView.cpp" line="644"/>
       <source>Redirect Python errors</source>
       <translation>Python hatalarını yeniden yönlendir</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="643"/>
+      <location filename="../ReportView.cpp" line="649"/>
       <source>Go to end</source>
       <translation>Sona git</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="660"/>
+      <location filename="../ReportView.cpp" line="666"/>
       <source>Clear</source>
       <translation>Temizle</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="662"/>
+      <location filename="../ReportView.cpp" line="668"/>
       <source>Save As...</source>
       <translation>Farklı Kaydet...</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="670"/>
+      <location filename="../ReportView.cpp" line="676"/>
       <source>Save Report Output</source>
       <translation>Rapor çıktısını kaydet</translation>
     </message>
     <message>
-      <location filename="../ReportView.cpp" line="671"/>
+      <location filename="../ReportView.cpp" line="677"/>
       <source>Plain Text Files</source>
       <translation>Yalın Yazı Düzenleyicisi</translation>
     </message>
@@ -6815,62 +6818,62 @@ Do you want to save your changes?</source>
     <name>Gui::MainWindow</name>
     <message>
       <location filename="../MainWindow.cpp" line="166"/>
-      <location filename="../MainWindow.cpp" line="2066"/>
+      <location filename="../MainWindow.cpp" line="2065"/>
       <source>Dimension</source>
       <translation>Boyut</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="460"/>
+      <location filename="../MainWindow.cpp" line="449"/>
       <source>Ready</source>
       <translation>Hazır</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="872"/>
+      <location filename="../MainWindow.cpp" line="861"/>
       <source>Help addon needed!</source>
       <translation>Yardım eklentisi gerekli!</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="873"/>
+      <location filename="../MainWindow.cpp" line="862"/>
       <source>The Help system of %1 is now handled by the "Help" addon. It can easily be installed via the Addons Manager</source>
       <translation type="unfinished">The Help system of %1 is now handled by the "Help" addon. It can easily be installed via the Addons Manager</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="875"/>
+      <location filename="../MainWindow.cpp" line="864"/>
       <source>Open Addon Manager</source>
       <translation>Eklenti Yöneticisini Aç</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1070"/>
+      <location filename="../MainWindow.cpp" line="1059"/>
       <source>Close All</source>
       <translation>Tümünü Kapat</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1274"/>
-      <location filename="../MainWindow.cpp" line="1275"/>
-      <location filename="../MainWindow.cpp" line="1276"/>
+      <location filename="../MainWindow.cpp" line="1264"/>
+      <location filename="../MainWindow.cpp" line="1265"/>
+      <location filename="../MainWindow.cpp" line="1266"/>
       <source>Toggles this toolbar</source>
       <translation>Bu araç çubuğunu değiştirir</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1289"/>
-      <location filename="../MainWindow.cpp" line="1290"/>
-      <location filename="../MainWindow.cpp" line="1291"/>
+      <location filename="../MainWindow.cpp" line="1279"/>
+      <location filename="../MainWindow.cpp" line="1280"/>
+      <location filename="../MainWindow.cpp" line="1281"/>
       <source>Toggles this dockable window</source>
       <translation>Bu yapışabilir pencere arasında geçiş yapar</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1857"/>
-      <location filename="../MainWindow.cpp" line="1949"/>
+      <location filename="../MainWindow.cpp" line="1856"/>
+      <location filename="../MainWindow.cpp" line="1948"/>
       <source>Unsaved document</source>
       <translation>Kaydedilmemiş belge</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1858"/>
+      <location filename="../MainWindow.cpp" line="1857"/>
       <source>The exported object contains external link. Please save the documentat least once before exporting.</source>
       <translation>Dışa aktarılan nesne dış bağlantı içeriyor. Lüften dışa aktarmadan önce belgeyi en az bir defa kaydedin.</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="1950"/>
+      <location filename="../MainWindow.cpp" line="1949"/>
       <source>To link to external objects, the document must be saved at least once.
 Do you want to save the document now?</source>
       <translation>Harici nesneleri bağlamak için belge, en az bir defa kaydedilmelidir. Belgeyi şimdi kaydetmek istiyor musunuz?</translation>
@@ -7108,17 +7111,17 @@ sağ görünümde %2 nokta seçili.</translation>
   <context>
     <name>Gui::ProgressBar</name>
     <message>
-      <location filename="../ProgressBar.cpp" line="298"/>
+      <location filename="../ProgressBar.cpp" line="297"/>
       <source>Remaining: %1</source>
       <translation>Kalan: %1</translation>
     </message>
     <message>
-      <location filename="../ProgressBar.cpp" line="489"/>
+      <location filename="../ProgressBar.cpp" line="484"/>
       <source>Aborting</source>
       <translation>İptal ediliyor</translation>
     </message>
     <message>
-      <location filename="../ProgressBar.cpp" line="490"/>
+      <location filename="../ProgressBar.cpp" line="485"/>
       <source>Do you really want to abort the operation?</source>
       <translation>Bu işlemi iptal etmek istediğinizden emin misiniz?</translation>
     </message>
@@ -7131,12 +7134,12 @@ sağ görünümde %2 nokta seçili.</translation>
       <translation>Kalan: %1</translation>
     </message>
     <message>
-      <location filename="../ProgressDialog.cpp" line="320"/>
+      <location filename="../ProgressDialog.cpp" line="317"/>
       <source>Aborting</source>
       <translation>İptal ediliyor</translation>
     </message>
     <message>
-      <location filename="../ProgressDialog.cpp" line="321"/>
+      <location filename="../ProgressDialog.cpp" line="318"/>
       <source>Do you really want to abort the operation?</source>
       <translation>Bu işlemi iptal etmek istediğinizden emin misiniz?</translation>
     </message>
@@ -7144,7 +7147,7 @@ sağ görünümde %2 nokta seçili.</translation>
   <context>
     <name>Gui::PropertyEditor::LinkLabel</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4313"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4312"/>
       <source>Change the linked object</source>
       <translation>Bağlı nesneyi değiştir</translation>
     </message>
@@ -7152,12 +7155,12 @@ sağ görünümde %2 nokta seçili.</translation>
   <context>
     <name>Gui::PropertyEditor::LinkSelection</name>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4282"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4281"/>
       <source>Error</source>
       <translation>Hata</translation>
     </message>
     <message>
-      <location filename="../propertyeditor/PropertyItem.cpp" line="4282"/>
+      <location filename="../propertyeditor/PropertyItem.cpp" line="4281"/>
       <source>Object not found</source>
       <translation>Nesne bulunamadı</translation>
     </message>
@@ -7372,17 +7375,17 @@ Do you want to exit without saving your data?</source>
   <context>
     <name>Gui::RecentFilesAction</name>
     <message>
-      <location filename="../Action.cpp" line="980"/>
+      <location filename="../Action.cpp" line="857"/>
       <source>Open file %1</source>
       <translation>Dosyayı aç %1</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="1024"/>
+      <location filename="../Action.cpp" line="901"/>
       <source>File not found</source>
       <translation>Dosya bulunamadı</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="1024"/>
+      <location filename="../Action.cpp" line="901"/>
       <source>The file '%1' cannot be opened.</source>
       <translation>'%1' Dosyası açılamıyor.</translation>
     </message>
@@ -7390,22 +7393,22 @@ Do you want to exit without saving your data?</source>
   <context>
     <name>Gui::RecentMacrosAction</name>
     <message>
-      <location filename="../Action.cpp" line="1147"/>
+      <location filename="../Action.cpp" line="1024"/>
       <source>none</source>
       <translation>hiçbiri</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="1162"/>
+      <location filename="../Action.cpp" line="1039"/>
       <source>Run macro %1 (Shift+click to edit) keyboard shortcut: %2</source>
       <translation type="unfinished">Run macro %1 (Shift+click to edit) keyboard shortcut: %2</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="1219"/>
+      <location filename="../Action.cpp" line="1097"/>
       <source>File not found</source>
       <translation>Dosya bulunamadı</translation>
     </message>
     <message>
-      <location filename="../Action.cpp" line="1219"/>
+      <location filename="../Action.cpp" line="1097"/>
       <source>The file '%1' cannot be opened.</source>
       <translation>'%1' Dosyası açılamıyor.</translation>
     </message>
@@ -8000,7 +8003,7 @@ Başka bir dizin belirlemek ister misiniz?</translation>
   <context>
     <name>Gui::TreeDockWidget</name>
     <message>
-      <location filename="../Tree.cpp" line="3140"/>
+      <location filename="../Tree.cpp" line="3159"/>
       <source>Tree view</source>
       <translation>Unsur Ağacı</translation>
     </message>
@@ -8008,7 +8011,7 @@ Başka bir dizin belirlemek ister misiniz?</translation>
   <context>
     <name>Gui::TreePanel</name>
     <message>
-      <location filename="../Tree.cpp" line="3066"/>
+      <location filename="../Tree.cpp" line="3085"/>
       <source>Search</source>
       <translation>Ara</translation>
     </message>
@@ -8016,173 +8019,183 @@ Başka bir dizin belirlemek ister misiniz?</translation>
   <context>
     <name>Gui::TreeWidget</name>
     <message>
-      <location filename="../Tree.cpp" line="461"/>
+      <location filename="../Tree.cpp" line="460"/>
       <source>Search...</source>
       <translation>Ara...</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="462"/>
+      <location filename="../Tree.cpp" line="461"/>
       <source>Search for objects</source>
       <translation>Nesneleri ara</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="888"/>
+      <location filename="../Tree.cpp" line="887"/>
       <source>Activate document</source>
       <translation>Belgeyi etkinleştir</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="895"/>
+      <location filename="../Tree.cpp" line="894"/>
       <source>Activate document %1</source>
       <translation>%1 Belgesini etkinleştir</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="932"/>
+      <location filename="../Tree.cpp" line="906"/>
+      <source>Tree settings</source>
+      <translation type="unfinished">Tree settings</translation>
+    </message>
+    <message>
+      <location filename="../Tree.cpp" line="910"/>
+      <source>Show description column</source>
+      <translation type="unfinished">Show description column</translation>
+    </message>
+    <message>
+      <location filename="../Tree.cpp" line="911"/>
+      <source>Show an extra tree view column for item description. The item's description can be set by pressing F2 (or your OS's edit button) or by editing the 'label2' property.</source>
+      <translation type="unfinished">Show an extra tree view column for item description. The item's description can be set by pressing F2 (or your OS's edit button) or by editing the 'label2' property.</translation>
+    </message>
+    <message>
+      <location filename="../Tree.cpp" line="952"/>
       <source>Group</source>
       <translation>Grup</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2770"/>
+      <location filename="../Tree.cpp" line="2790"/>
       <source>Labels &amp; Attributes</source>
       <translation>Etiketler &amp; öznitelikleri</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2771"/>
+      <location filename="../Tree.cpp" line="2791"/>
       <source>Description</source>
       <translation>Açıklama</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2772"/>
-      <source>Application</source>
-      <translation>Uygulama</translation>
-    </message>
-    <message>
-      <location filename="../Tree.cpp" line="2774"/>
+      <location filename="../Tree.cpp" line="2793"/>
       <source>Show items hidden in tree view</source>
       <translation type="unfinished">Show items hidden in tree view</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2775"/>
+      <location filename="../Tree.cpp" line="2794"/>
       <source>Show items that are marked as 'hidden' in the tree view</source>
       <translation type="unfinished">Show items that are marked as 'hidden' in the tree view</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2777"/>
+      <location filename="../Tree.cpp" line="2796"/>
       <source>Toggle visibility in tree view</source>
       <translation type="unfinished">Toggle visibility in tree view</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2778"/>
+      <location filename="../Tree.cpp" line="2797"/>
       <source>Toggles the visibility of selected items in the tree view</source>
       <translation type="unfinished">Toggles the visibility of selected items in the tree view</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2780"/>
+      <location filename="../Tree.cpp" line="2799"/>
       <source>Create group...</source>
       <translation>Grup Oluştur...</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2781"/>
+      <location filename="../Tree.cpp" line="2800"/>
       <source>Create a group</source>
       <translation>Bir Grup oluşturma</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2783"/>
-      <location filename="../Tree.cpp" line="4921"/>
+      <location filename="../Tree.cpp" line="2802"/>
+      <location filename="../Tree.cpp" line="4940"/>
       <source>Rename</source>
       <translation>Yeniden Adlandır</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2784"/>
+      <location filename="../Tree.cpp" line="2803"/>
       <source>Rename object</source>
       <translation>Nesneyi yeniden adlandır</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2786"/>
+      <location filename="../Tree.cpp" line="2805"/>
       <source>Finish editing</source>
       <translation>Düzenlemeyi tamamla</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2787"/>
+      <location filename="../Tree.cpp" line="2806"/>
       <source>Finish editing object</source>
       <translation>Nesneyi düzenlemeyi tamamla</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2789"/>
+      <location filename="../Tree.cpp" line="2808"/>
       <source>Add dependent objects to selection</source>
       <translation>Seçilecek bağıntılı nesneler ekle</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2790"/>
+      <location filename="../Tree.cpp" line="2809"/>
       <source>Adds all dependent objects to the selection</source>
       <translation>Seçilecek tüm bağıntılı nesneleri ekler</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2792"/>
+      <location filename="../Tree.cpp" line="2811"/>
       <source>Close document</source>
       <translation>Belgeyi kapat</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2793"/>
+      <location filename="../Tree.cpp" line="2812"/>
       <source>Close the document</source>
       <translation>Belgeyi kapat</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2795"/>
+      <location filename="../Tree.cpp" line="2814"/>
       <source>Reload document</source>
       <translation>Belgeyi tekrar yükle</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2796"/>
+      <location filename="../Tree.cpp" line="2815"/>
       <source>Reload a partially loaded document</source>
       <translation>Kısmi yüklenen belgeyi tekrar yükle</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2798"/>
+      <location filename="../Tree.cpp" line="2817"/>
       <source>Skip recomputes</source>
       <translation>Yeniden hesaplamayı atla</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2799"/>
+      <location filename="../Tree.cpp" line="2818"/>
       <source>Enable or disable recomputations of document</source>
       <translation>Dokümanın yeniden hesaplanmasını etkinleştirir veya devre dışı bırakır</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2801"/>
+      <location filename="../Tree.cpp" line="2820"/>
       <source>Allow partial recomputes</source>
       <translation>Kısmi yeniden hesaplamalara izin ver</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2803"/>
+      <location filename="../Tree.cpp" line="2822"/>
       <source>Enable or disable recomputating editing object when 'skip recomputation' is enabled</source>
       <translation>'Tekrar hesaplamayı atla' etkin ise tekrar hesaplama düzenleme nesnesini etkinleştir veya geçersizleştir</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2805"/>
+      <location filename="../Tree.cpp" line="2824"/>
       <source>Mark to recompute</source>
       <translation>Yeniden hesaplamak için işaretle</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2806"/>
+      <location filename="../Tree.cpp" line="2825"/>
       <source>Mark this object to be recomputed</source>
       <translation>Bu nesneyi yeniden hesaplanacak şekilde işaretleyin</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2809"/>
+      <location filename="../Tree.cpp" line="2828"/>
       <source>Recompute object</source>
       <translation>Nesneyi yeniden hesapla</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2810"/>
+      <location filename="../Tree.cpp" line="2829"/>
       <source>Recompute the selected object</source>
       <translation>Seçili Nesneyi yeniden hesapla</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="4892"/>
+      <location filename="../Tree.cpp" line="4911"/>
       <source> (but must be executed)</source>
       <translation> (ama çalıştırılmalı)</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="4894"/>
+      <location filename="../Tree.cpp" line="4913"/>
       <source>%1, Internal name: %2</source>
       <translation>%1, Dahili adı: %2</translation>
     </message>
@@ -8226,8 +8239,7 @@ Başka bir dizin belirlemek ister misiniz?</translation>
   <context>
     <name>Gui::WorkbenchGroup</name>
     <message>
-      <location filename="../Action.cpp" line="794"/>
-      <location filename="../Action.cpp" line="862"/>
+      <location filename="../Action.cpp" line="722"/>
       <source>Select the '%1' workbench</source>
       <translation>'%1' tezgahını seçin</translation>
     </message>
@@ -8399,37 +8411,37 @@ Başka bir dizin belirlemek ister misiniz?</translation>
   <context>
     <name>QDockWidget</name>
     <message>
-      <location filename="../MainWindow.cpp" line="510"/>
+      <location filename="../MainWindow.cpp" line="499"/>
       <source>Tree view</source>
       <translation>Unsur Ağacı</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="538"/>
+      <location filename="../MainWindow.cpp" line="527"/>
       <source>Property view</source>
       <translation>Özellik görünümü</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="556"/>
+      <location filename="../MainWindow.cpp" line="545"/>
       <source>Selection view</source>
       <translation>Seçim görünümü</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="578"/>
+      <location filename="../MainWindow.cpp" line="567"/>
       <source>Combo View</source>
       <translation>Birleşik görünüm</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="612"/>
+      <location filename="../MainWindow.cpp" line="601"/>
       <source>DAG View</source>
       <translation>DAG görünümü</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="630"/>
+      <location filename="../MainWindow.cpp" line="619"/>
       <source>Report view</source>
       <translation>Rapor Görünümü</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="650"/>
+      <location filename="../MainWindow.cpp" line="639"/>
       <source>Python console</source>
       <translation>Python konsolu</translation>
     </message>
@@ -8550,8 +8562,8 @@ Başka bir dizin belirlemek ister misiniz?</translation>
       <translation>PDF dışa aktarılıyor...</translation>
     </message>
     <message>
+      <location filename="../MainWindow.cpp" line="692"/>
       <location filename="../CommandDoc.cpp" line="1189"/>
-      <location filename="../MainWindow.cpp" line="703"/>
       <source>Unsaved document</source>
       <translation>Kaydedilmemiş belge</translation>
     </message>
@@ -8817,40 +8829,40 @@ Do you want to continue?</source>
       <translation>Değeri değiştir</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="531"/>
-      <location filename="../NotificationArea.cpp" line="988"/>
+      <location filename="../NotificationArea.cpp" line="553"/>
+      <location filename="../NotificationArea.cpp" line="1020"/>
       <source>Type</source>
       <translation>Türü</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="531"/>
-      <location filename="../NotificationArea.cpp" line="989"/>
+      <location filename="../NotificationArea.cpp" line="553"/>
+      <location filename="../NotificationArea.cpp" line="1021"/>
       <source>Notifier</source>
       <translation type="unfinished">Notifier</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="531"/>
-      <location filename="../NotificationArea.cpp" line="990"/>
+      <location filename="../NotificationArea.cpp" line="553"/>
+      <location filename="../NotificationArea.cpp" line="1022"/>
       <source>Message</source>
       <translation type="unfinished">Message</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="931"/>
+      <location filename="../NotificationArea.cpp" line="963"/>
       <source>Notifier: </source>
       <translation type="unfinished">Notifier: </translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="933"/>
+      <location filename="../NotificationArea.cpp" line="965"/>
       <source>Do you want to skip confirmation of further critical message notifications while loading the file?</source>
       <translation type="unfinished">Do you want to skip confirmation of further critical message notifications while loading the file?</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="937"/>
+      <location filename="../NotificationArea.cpp" line="969"/>
       <source>Critical Message</source>
       <translation type="unfinished">Critical Message</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="1003"/>
+      <location filename="../NotificationArea.cpp" line="1035"/>
       <source>Too many opened non-intrusive notifications. Notifications are being omitted!</source>
       <translation type="unfinished">Too many opened non-intrusive notifications. Notifications are being omitted!</translation>
     </message>
@@ -9111,7 +9123,7 @@ Please open a browser window and type in: http://localhost:%1.</source>
       <translation>%1 Dosyası %2 veya %3 içinde bulunamıyor</translation>
     </message>
     <message>
-      <location filename="../NavigationStyle.cpp" line="1729"/>
+      <location filename="../NavigationStyle.cpp" line="1732"/>
       <source>Navigation styles</source>
       <translation>Gezinme şekilleri</translation>
     </message>
@@ -9132,32 +9144,32 @@ Please open a browser window and type in: http://localhost:%1.</source>
       <translation>Bu pencereyi kapatmak ister misiniz?</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="705"/>
+      <location filename="../MainWindow.cpp" line="694"/>
       <source>Do you want to save your changes to document '%1' before closing?</source>
       <translation>Kapatmadan önce değişiklikleri kaydetmek istiyor musunuz?</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="708"/>
+      <location filename="../MainWindow.cpp" line="697"/>
       <source>Do you want to save your changes to document before closing?</source>
       <translation>Kapatmadan önce değişikliklerinizi belgeye kaydetmek istiyor musunuz?</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="710"/>
+      <location filename="../MainWindow.cpp" line="699"/>
       <source>If you don't save, your changes will be lost.</source>
       <translation>Kaydetmezseniz, yaptığınız değişiklikler kaybolacak.</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="715"/>
+      <location filename="../MainWindow.cpp" line="704"/>
       <source>Apply answer to all</source>
       <translation>Cevabı tümüne uygula</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="805"/>
+      <location filename="../MainWindow.cpp" line="794"/>
       <source>%1 Document(s) not saved</source>
       <translation>%1 belge kaydedilmedi</translation>
     </message>
     <message>
-      <location filename="../MainWindow.cpp" line="806"/>
+      <location filename="../MainWindow.cpp" line="795"/>
       <source>Some documents could not be saved. Do you want to cancel closing?</source>
       <translation>Bazı belgeler kaydedilemedi. Kapatmaktan vazgeçmek ister misiniz?</translation>
     </message>
@@ -9187,12 +9199,12 @@ Please open a browser window and type in: http://localhost:%1.</source>
       <translation>%1 boş değil, içerik de silinsin mi?</translation>
     </message>
     <message>
-      <location filename="../SoFCCSysDragger.cpp" line="294"/>
+      <location filename="../SoFCCSysDragger.cpp" line="298"/>
       <source>Translation:</source>
       <translation>Ötele:</translation>
     </message>
     <message>
-      <location filename="../SoFCCSysDragger.cpp" line="579"/>
+      <location filename="../SoFCCSysDragger.cpp" line="587"/>
       <source>Rotation:</source>
       <translation>Döndürme:</translation>
     </message>
@@ -9288,8 +9300,8 @@ bir rakam ile başlamamalıdır.</translation>
       <translation>'%1' e özellik ekleme başarısız: %2</translation>
     </message>
     <message>
-      <location filename="../Tree.cpp" line="2059"/>
-      <location filename="../Tree.cpp" line="2255"/>
+      <location filename="../Tree.cpp" line="2079"/>
+      <location filename="../Tree.cpp" line="2275"/>
       <source>Drag &amp; drop failed</source>
       <translation>Sürükle ve bırak başarısız</translation>
     </message>
@@ -9397,7 +9409,7 @@ the current copy will be lost.
       <translation>%1'i düzenle</translation>
     </message>
     <message>
-      <location filename="../ViewProviderImagePlane.cpp" line="146"/>
+      <location filename="../ViewProviderImagePlane.cpp" line="147"/>
       <source>Change image...</source>
       <translation type="unfinished">Change image...</translation>
     </message>
@@ -10339,8 +10351,8 @@ the current copy will be lost.
       <translation>Yeni, boş bir belge oluştur</translation>
     </message>
     <message>
+      <location filename="../MainWindow.cpp" line="2053"/>
       <location filename="../DocumentRecovery.cpp" line="393"/>
-      <location filename="../MainWindow.cpp" line="2054"/>
       <source>Unnamed</source>
       <translation>Adsız</translation>
     </message>
@@ -12241,28 +12253,28 @@ Hala ilerlemek istiyor musunuz?</translation>
     </message>
     <message>
       <location filename="../DlgSettingsNotificationArea.ui" line="67"/>
-      <source>Additional data Sources</source>
-      <translation type="unfinished">Additional data Sources</translation>
+      <source>Additional data sources</source>
+      <translation type="unfinished">Additional data sources</translation>
     </message>
     <message>
       <location filename="../DlgSettingsNotificationArea.ui" line="73"/>
-      <source>Errors will appear in the notification area</source>
-      <translation type="unfinished">Errors will appear in the notification area</translation>
+      <source>Errors intended for developers will appear in the notification area</source>
+      <translation type="unfinished">Errors intended for developers will appear in the notification area</translation>
     </message>
     <message>
       <location filename="../DlgSettingsNotificationArea.ui" line="76"/>
-      <source>Errors</source>
-      <translation>Hatalar</translation>
+      <source>Debug errors</source>
+      <translation type="unfinished">Debug errors</translation>
     </message>
     <message>
       <location filename="../DlgSettingsNotificationArea.ui" line="92"/>
-      <source>Warnings will appear in the notification area</source>
-      <translation type="unfinished">Warnings will appear in the notification area</translation>
+      <source>Warnings intended for developers will appear in the notification area</source>
+      <translation type="unfinished">Warnings intended for developers will appear in the notification area</translation>
     </message>
     <message>
       <location filename="../DlgSettingsNotificationArea.ui" line="95"/>
-      <source>Warnings</source>
-      <translation>Uyarılar</translation>
+      <source>Debug warnings</source>
+      <translation type="unfinished">Debug warnings</translation>
     </message>
     <message>
       <location filename="../DlgSettingsNotificationArea.ui" line="114"/>
@@ -12613,17 +12625,17 @@ etkinleştirilip gösterileceğini seçin</translation>
   <context>
     <name>Gui::Dialog::DlgSettingsWorkbenchesImp</name>
     <message>
-      <location filename="../DlgSettingsWorkbenchesImp.cpp" line="469"/>
+      <location filename="../DlgSettingsWorkbenchesImp.cpp" line="475"/>
       <source>Toolbar</source>
       <translation>Araç çubuğu</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsWorkbenchesImp.cpp" line="470"/>
+      <location filename="../DlgSettingsWorkbenchesImp.cpp" line="476"/>
       <source>Left corner</source>
       <translation type="unfinished">Left corner</translation>
     </message>
     <message>
-      <location filename="../DlgSettingsWorkbenchesImp.cpp" line="471"/>
+      <location filename="../DlgSettingsWorkbenchesImp.cpp" line="477"/>
       <source>Right corner</source>
       <translation type="unfinished">Right corner</translation>
     </message>
@@ -12631,17 +12643,17 @@ etkinleştirilip gösterileceğini seçin</translation>
   <context>
     <name>NotificationsAction</name>
     <message>
-      <location filename="../NotificationArea.cpp" line="552"/>
+      <location filename="../NotificationArea.cpp" line="574"/>
       <source>Delete</source>
       <translation>Sil</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="563"/>
+      <location filename="../NotificationArea.cpp" line="585"/>
       <source>Delete user notifications</source>
       <translation type="unfinished">Delete user notifications</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="570"/>
+      <location filename="../NotificationArea.cpp" line="592"/>
       <source>Delete All</source>
       <translation type="unfinished">Delete All</translation>
     </message>
@@ -12649,12 +12661,12 @@ etkinleştirilip gösterileceğini seçin</translation>
   <context>
     <name>Gui::NotificationArea</name>
     <message>
-      <location filename="../NotificationArea.cpp" line="839"/>
+      <location filename="../NotificationArea.cpp" line="861"/>
       <source>Delete user notifications</source>
       <translation type="unfinished">Delete user notifications</translation>
     </message>
     <message>
-      <location filename="../NotificationArea.cpp" line="849"/>
+      <location filename="../NotificationArea.cpp" line="871"/>
       <source>Delete All</source>
       <translation type="unfinished">Delete All</translation>
     </message>
@@ -12712,12 +12724,12 @@ etkinleştirilip gösterileceğini seçin</translation>
   <context>
     <name>NaviCubeDraggableCmd</name>
     <message>
-      <location filename="../NaviCube.cpp" line="1377"/>
+      <location filename="../NaviCube.cpp" line="1092"/>
       <source>Movable navigation cube</source>
       <translation type="unfinished">Movable navigation cube</translation>
     </message>
     <message>
-      <location filename="../NaviCube.cpp" line="1378"/>
+      <location filename="../NaviCube.cpp" line="1093"/>
       <source>Drag and place NaviCube</source>
       <translation type="unfinished">Drag and place NaviCube</translation>
     </message>
@@ -12725,34 +12737,43 @@ etkinleştirilip gösterileceğini seçin</translation>
   <context>
     <name>NaviCubeSettings</name>
     <message>
-      <location filename="../View3DSettings.cpp" line="543"/>
+      <location filename="../View3DSettings.cpp" line="533"/>
       <source>FRONT</source>
       <translation type="unfinished">FRONT</translation>
     </message>
     <message>
-      <location filename="../View3DSettings.cpp" line="545"/>
+      <location filename="../View3DSettings.cpp" line="535"/>
       <source>TOP</source>
       <translation type="unfinished">TOP</translation>
     </message>
     <message>
-      <location filename="../View3DSettings.cpp" line="547"/>
+      <location filename="../View3DSettings.cpp" line="537"/>
       <source>RIGHT</source>
       <translation type="unfinished">RIGHT</translation>
     </message>
     <message>
-      <location filename="../View3DSettings.cpp" line="549"/>
+      <location filename="../View3DSettings.cpp" line="539"/>
       <source>REAR</source>
       <translation type="unfinished">REAR</translation>
     </message>
     <message>
-      <location filename="../View3DSettings.cpp" line="551"/>
+      <location filename="../View3DSettings.cpp" line="541"/>
       <source>BOTTOM</source>
       <translation type="unfinished">BOTTOM</translation>
     </message>
     <message>
-      <location filename="../View3DSettings.cpp" line="553"/>
+      <location filename="../View3DSettings.cpp" line="543"/>
       <source>LEFT</source>
       <translation type="unfinished">LEFT</translation>
+    </message>
+  </context>
+  <context>
+    <name>Gui::ExpLineEdit</name>
+    <message>
+      <location filename="../Widgets.cpp" line="1600"/>
+      <location filename="../Widgets.cpp" line="1667"/>
+      <source>An error occurred -- see Report View for information</source>
+      <translation type="unfinished">An error occurred -- see Report View for information</translation>
     </message>
   </context>
 </TS>

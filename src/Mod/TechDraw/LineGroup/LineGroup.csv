@@ -29,6 +29,7 @@
 ;
 ;Format of this file: *GroupName,thin,graphic,thick,extra
 
+*FC 0.10mm,0.10,0.10,0.10,0.30
 *FC 0.25mm,0.13,0.18,0.25,0.50
 *FC 0.35mm,0.18,0.25,0.35,0.70
 *FC 0.50mm,0.25,0.35,0.50,1.0

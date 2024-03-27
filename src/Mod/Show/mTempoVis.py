@@ -450,14 +450,12 @@ class TempoVis(object):
         toggle = {False: 0, True: 1, None: -1}[enable]
 
         if reverted:
-            skNorm = pla.Rotation.multVec(App.Vector(0,0,1))
-            skInvNorm = skNorm.negative()
-            pla = pla * App.Rotation(skNorm, skInvNorm)
+            pla = pla * App.Rotation(0, 1, 0, 0)
 
         if enable: # clip plane shall be disabled so new placement can be applied
             self.modify(ClipPlane(doc, 0))
 
-        self.modify(ClipPlane(doc, toggle, pla, 0.02))
+        self.modify(ClipPlane(doc, toggle, pla, 0.001))
         sketch.ViewObject.SectionView = enable if enable is not None else not sketch.ViewObject.SectionView
 
     def activateWorkbench(self, wb_name):
@@ -535,8 +533,8 @@ class TempoVis(object):
 
         return [obj for obj in doc_obj_or_list if is3DObject(obj)]
 
-    def __getstate__(self):
+    def dumps(self):
         return None
 
-    def __setstate__(self, state):
+    def loads(self, state):
         self._init_attrs()

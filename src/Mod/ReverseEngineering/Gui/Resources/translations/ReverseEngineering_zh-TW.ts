@@ -6,12 +6,13 @@
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
     <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
     <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
-    <extra-po-header-project_id_version>FreeCAD Language Translations v0.1.3</extra-po-header-project_id_version>
+    <extra-po-header-project_id_version>FreeCAD ReverseEngineering Language Translations v0.22_dev</extra-po-header-project_id_version>
     <extra-po-header-x_generator>Poedit 3.2.2</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
 # DrBenson &lt;Benson.Dr@GMail.com&gt;, 2023
-#</extra-po-header_comment>
+#
+    </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>CmdApproxCylinder</name>
@@ -44,6 +45,11 @@
         <translation>平面...</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/ReverseEngineering/Gui/Command.cpp" line="107"/>
+        <source>Plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../Command.cpp" line="106"/>
         <source>Approximate a plane</source>
         <translation>模擬平面</translation>
@@ -59,12 +65,12 @@
     <message>
         <location filename="../../Command.cpp" line="319"/>
         <source>Polynomial surface</source>
-        <translation type="unfinished">Polynomial surface</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="320"/>
         <source>Approximate a polynomial surface</source>
-        <translation type="unfinished">Approximate a polynomial surface</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -82,7 +88,7 @@
     <message>
         <location filename="../../Command.cpp" line="273"/>
         <source>Approximate a sphere</source>
-        <translation type="unfinished">Approximate a sphere</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -95,12 +101,12 @@
     <message>
         <location filename="../../Command.cpp" line="69"/>
         <source>Approximate B-spline surface...</source>
-        <translation type="unfinished">Approximate B-spline surface...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="70"/>
         <source>Approximate a B-spline surface</source>
-        <translation type="unfinished">Approximate a B-spline surface</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -113,12 +119,12 @@
     <message>
         <location filename="../../Command.cpp" line="485"/>
         <source>Wire from mesh boundary...</source>
-        <translation type="unfinished">Wire from mesh boundary...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="486"/>
         <source>Create wire from mesh boundaries</source>
-        <translation type="unfinished">Create wire from mesh boundaries</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -131,12 +137,12 @@
     <message>
         <location filename="../../Command.cpp" line="551"/>
         <source>Poisson...</source>
-        <translation type="unfinished">Poisson...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="552"/>
         <source>Poisson surface reconstruction</source>
-        <translation type="unfinished">Poisson surface reconstruction</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -149,7 +155,7 @@
     <message>
         <location filename="../../Command.cpp" line="374"/>
         <source>Mesh segmentation...</source>
-        <translation type="unfinished">Mesh segmentation...</translation>
+        <translation>網格分割...</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="375"/>
@@ -167,12 +173,12 @@
     <message>
         <location filename="../../Command.cpp" line="435"/>
         <source>From components</source>
-        <translation type="unfinished">From components</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="436"/>
         <source>Create mesh segments from components</source>
-        <translation type="unfinished">Create mesh segments from components</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -185,12 +191,12 @@
     <message>
         <location filename="../../Command.cpp" line="406"/>
         <source>Manual segmentation...</source>
-        <translation type="unfinished">Manual segmentation...</translation>
+        <translation>手動分割...</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="407"/>
         <source>Create mesh segments manually</source>
-        <translation type="unfinished">Create mesh segments manually</translation>
+        <translation>手動建立網格分割</translation>
     </message>
 </context>
 <context>
@@ -203,13 +209,13 @@
     <message>
         <location filename="../../Command.cpp" line="585"/>
         <source>Structured point clouds</source>
-        <translation type="unfinished">Structured point clouds</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="586"/>
         <location filename="../../Command.cpp" line="587"/>
         <source>Triangulation of structured point clouds</source>
-        <translation type="unfinished">Triangulation of structured point clouds</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -232,12 +238,12 @@
     <message>
         <location filename="../../Command.cpp" line="329"/>
         <source>Fit polynomial surface</source>
-        <translation type="unfinished">Fit polynomial surface</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="595"/>
         <source>View triangulation</source>
-        <translation type="unfinished">View triangulation</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../FitBSplineSurface.cpp" line="148"/>
@@ -252,12 +258,12 @@
     <message>
         <location filename="../../Poisson.cpp" line="91"/>
         <source>Poisson reconstruction</source>
-        <translation type="unfinished">Poisson reconstruction</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../SegmentationManual.cpp" line="230"/>
         <source>Segmentation</source>
-        <translation type="unfinished">Segmentation</translation>
+        <translation>分割</translation>
     </message>
 </context>
 <context>
@@ -307,12 +313,12 @@
     <message>
         <location filename="../../FitBSplineSurface.ui" line="218"/>
         <source>User-defined u/v directions</source>
-        <translation type="unfinished">User-defined u/v directions</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../FitBSplineSurface.ui" line="231"/>
         <source>Create placement</source>
-        <translation type="unfinished">Create placement</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../FitBSplineSurface.ui" line="238"/>
@@ -356,7 +362,7 @@
     <message>
         <location filename="../../FitBSplineSurface.cpp" line="200"/>
         <source>Please select a single placement object to get local orientation.</source>
-        <translation type="unfinished">Please select a single placement object to get local orientation.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -364,7 +370,7 @@
     <message>
         <location filename="../../Poisson.ui" line="14"/>
         <source>Poisson</source>
-        <translation type="unfinished">Poisson</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Poisson.ui" line="20"/>
@@ -374,17 +380,17 @@
     <message>
         <location filename="../../Poisson.ui" line="26"/>
         <source>Octree depth</source>
-        <translation type="unfinished">Octree depth</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Poisson.ui" line="46"/>
         <source>Solver divide</source>
-        <translation type="unfinished">Solver divide</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Poisson.ui" line="66"/>
         <source>Samples per node</source>
-        <translation type="unfinished">Samples per node</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Poisson.cpp" line="98"/>
@@ -403,12 +409,12 @@
     <message>
         <location filename="../../Command.cpp" line="84"/>
         <source>Please select a point cloud or mesh.</source>
-        <translation type="unfinished">Please select a point cloud or mesh.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="564"/>
         <source>Please select a single point cloud.</source>
-        <translation type="unfinished">Please select a single point cloud.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -416,7 +422,7 @@
     <message>
         <location filename="../../Command.cpp" line="617"/>
         <source>View triangulation failed</source>
-        <translation type="unfinished">View triangulation failed</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -439,12 +445,12 @@
     <message>
         <location filename="../../Segmentation.ui" line="46"/>
         <source>Curvature tolerance</source>
-        <translation type="unfinished">Curvature tolerance</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Segmentation.ui" line="63"/>
         <source>Distance to plane</source>
-        <translation type="unfinished">Distance to plane</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Segmentation.ui" line="80"/>
@@ -454,12 +460,12 @@
     <message>
         <location filename="../../Segmentation.ui" line="100"/>
         <source>Create mesh from unused triangles</source>
-        <translation type="unfinished">Create mesh from unused triangles</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Segmentation.ui" line="107"/>
         <source>Create compound</source>
-        <translation type="unfinished">Create compound</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -467,7 +473,7 @@
     <message>
         <location filename="../../SegmentationManual.ui" line="14"/>
         <source>Manual segmentation</source>
-        <translation type="unfinished">Manual segmentation</translation>
+        <translation>手動分割</translation>
     </message>
     <message>
         <location filename="../../SegmentationManual.ui" line="20"/>
@@ -563,17 +569,17 @@
     <message>
         <location filename="../../SegmentationManual.ui" line="310"/>
         <source>Segmentation</source>
-        <translation type="unfinished">Segmentation</translation>
+        <translation>分割</translation>
     </message>
     <message>
         <location filename="../../SegmentationManual.ui" line="316"/>
         <source>Cut segment from mesh</source>
-        <translation type="unfinished">Cut segment from mesh</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../SegmentationManual.ui" line="326"/>
         <source>Hide segment</source>
-        <translation type="unfinished">Hide segment</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

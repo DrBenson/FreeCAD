@@ -1797,7 +1797,7 @@ Specify another file please.</source>
 <context>
     <name>FemGui::TaskDlgFemConstraintTemperature</name>
     <message>
-        <location filename="../../TaskFemConstraintTemperature.cpp" line="380"/>
+        <location filename="../../TaskFemConstraintTemperature.cpp" line="379"/>
         <source>Input error</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3580,19 +3580,19 @@ Note: for 2D only setting for x is possible,
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../AppFemGui.cpp" line="172"/>
         <location filename="../../AppFemGui.cpp" line="173"/>
         <location filename="../../AppFemGui.cpp" line="174"/>
         <location filename="../../AppFemGui.cpp" line="175"/>
         <location filename="../../AppFemGui.cpp" line="176"/>
         <location filename="../../AppFemGui.cpp" line="177"/>
         <location filename="../../AppFemGui.cpp" line="178"/>
+        <location filename="../../AppFemGui.cpp" line="179"/>
         <source>FEM</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../AppFemGui.cpp" line="181"/>
         <location filename="../../AppFemGui.cpp" line="182"/>
+        <location filename="../../AppFemGui.cpp" line="183"/>
         <source>Import-Export</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3647,7 +3647,7 @@ Note: for 2D only setting for x is possible,
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../TaskFemConstraintTemperature.cpp" line="339"/>
+        <location filename="../../TaskFemConstraintTemperature.cpp" line="338"/>
         <source>Constraint temperature</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5303,107 +5303,119 @@ used for the Elmer solver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Workbench.cpp" line="51"/>
+        <location filename="../../Workbench.cpp" line="53"/>
         <source>Fluid Constraints</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Workbench.cpp" line="52"/>
+        <location filename="../../Workbench.cpp" line="54"/>
         <source>&amp;Fluid Constraints</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Workbench.cpp" line="53"/>
-        <source>Geometrical Constraints</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Workbench.cpp" line="54"/>
-        <source>&amp;Geometrical Constraints</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
+        <location filename="../../Workbench.cpp" line="51"/>
         <location filename="../../Workbench.cpp" line="55"/>
-        <source>Mechanical Constraints</source>
+        <source>Electromagnetic Constraints</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../Workbench.cpp" line="52"/>
         <location filename="../../Workbench.cpp" line="56"/>
-        <source>&amp;Mechanical Constraints</source>
+        <source>&amp;Electromagnetic Constraints</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="57"/>
-        <source>Thermal Constraints</source>
+        <source>Geometrical Constraints</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="58"/>
-        <source>&amp;Thermal Constraints</source>
+        <source>&amp;Geometrical Constraints</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="59"/>
-        <source>Constraints without solver</source>
+        <source>Mechanical Constraints</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="60"/>
-        <source>&amp;Constraints without solver</source>
+        <source>&amp;Mechanical Constraints</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="61"/>
-        <source>Overwrite Constants</source>
+        <source>Thermal Constraints</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="62"/>
-        <source>&amp;Overwrite Constants</source>
+        <source>&amp;Thermal Constraints</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Workbench.cpp" line="63"/>
+        <source>Constraints without solver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="64"/>
-        <source>Mesh</source>
+        <source>&amp;Constraints without solver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="65"/>
-        <source>M&amp;esh</source>
+        <source>Overwrite Constants</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Workbench.cpp" line="67"/>
-        <source>Solve</source>
+        <location filename="../../Workbench.cpp" line="66"/>
+        <source>&amp;Overwrite Constants</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="68"/>
-        <source>&amp;Solve</source>
+        <source>Mesh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Workbench.cpp" line="70"/>
-        <source>Results</source>
+        <location filename="../../Workbench.cpp" line="69"/>
+        <source>M&amp;esh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="71"/>
-        <source>&amp;Results</source>
+        <source>Solve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="72"/>
-        <source>Filter functions</source>
+        <source>&amp;Solve</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Workbench.cpp" line="73"/>
-        <source>&amp;Filter functions</source>
+        <location filename="../../Workbench.cpp" line="74"/>
+        <source>Results</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="75"/>
+        <source>&amp;Results</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Workbench.cpp" line="76"/>
+        <source>Filter functions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Workbench.cpp" line="77"/>
+        <source>&amp;Filter functions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Workbench.cpp" line="79"/>
         <source>Utilities</source>
         <translation type="unfinished"></translation>
     </message>

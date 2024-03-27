@@ -55,16 +55,16 @@ else:
 
 ISRENDERING = False # flag to prevent concurrent runs of the coin renderer
 
-def makeSectionPlane(objectslist=None,name="Section"):
+def makeSectionPlane(objectslist=None,name=None):
 
-    """makeSectionPlane([objectslist]) : Creates a Section plane objects including the
+    """makeSectionPlane([objectslist],[name]) : Creates a Section plane objects including the
     given objects. If no object is given, the whole document will be considered."""
 
     if not FreeCAD.ActiveDocument:
         FreeCAD.Console.PrintError("No active document. Aborting\n")
         return
-    obj = FreeCAD.ActiveDocument.addObject("App::FeaturePython",name)
-    obj.Label = translate("Arch",name)
+    obj = FreeCAD.ActiveDocument.addObject("App::FeaturePython","Section")
+    obj.Label = name if name else translate("Arch","Section")
     _SectionPlane(obj)
     if FreeCAD.GuiUp:
         _ViewProviderSectionPlane(obj.ViewObject)
@@ -223,6 +223,8 @@ def getFillForObject(o, defaultFill, source):
                 return material.SectionColor
             elif hasattr(material, 'Color') and material.Color:
                 return material.Color
+        elif hasattr(o,"ViewObject") and hasattr(o.ViewObject,"ShapeColor"):
+            return o.ViewObject.ShapeColor
     return defaultFill
 
 
@@ -368,7 +370,7 @@ def getSVG(source,
     # reading cached version
     svgcache = update_svg_cache(source, renderMode, showHidden, showFill, fillSpaces, joinArch, allOn, objs)
     should_update_svg_cache = False
-    if not svgcache:
+    if showFill or not svgcache:
         should_update_svg_cache = True
 
     # generating SVG
@@ -900,11 +902,11 @@ class _SectionPlane:
 
         return obj.Shape.Faces[0].normalAt(0,0)
 
-    def __getstate__(self):
+    def dumps(self):
 
         return None
 
-    def __setstate__(self,state):
+    def loads(self,state):
 
         return None
 
@@ -1150,11 +1152,11 @@ class _ViewProviderSectionPlane:
                 self.txtfont.size = vobj.FontSize.Value
         return
 
-    def __getstate__(self):
+    def dumps(self):
 
         return None
 
-    def __setstate__(self,state):
+    def loads(self,state):
 
         return None
 

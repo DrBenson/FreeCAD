@@ -76,7 +76,6 @@
 #include "Rez.h"
 #include "ViewProviderPage.h"
 
-
 using namespace TechDrawGui;
 using namespace TechDraw;
 namespace bp = boost::placeholders;
@@ -194,11 +193,20 @@ bool MDIViewPage::onMsg(const char* pMsg, const char**)
     else if (strcmp("Undo", pMsg) == 0) {
         doc->undo(1);
         Gui::Command::updateActive();
+        fixSceneDependencies();    // check QGraphicsScene item parenting
         return true;
     }
     else if (strcmp("Redo", pMsg) == 0) {
         doc->redo(1);
         Gui::Command::updateActive();
+        return true;
+    }
+    else if (strcmp("ZoomIn", pMsg) == 0) {
+        zoomIn();
+        return true;
+    }
+    else if (strcmp("ZoomOut", pMsg) == 0) {
+        zoomOut();
         return true;
     }
 
@@ -234,15 +242,41 @@ bool MDIViewPage::onHasMsg(const char* pMsg) const
     else if (strcmp("PrintAll", pMsg) == 0) {
         return true;
     }
+    else if (strcmp("ZoomIn", pMsg) == 0) {
+        return true;
+    }
+    else if (strcmp("ZoomOut", pMsg) == 0) {
+        return true;
+    }
     return false;
 }
 
-//called by ViewProvider when Page feature Label changes
+// handle a zoomIn message from the menu
+void MDIViewPage::zoomIn()
+{
+    m_vpPage->getQGVPage()->zoomIn();
+}
+
+// handle a zoomOut message from the menu
+void MDIViewPage::zoomOut()
+{
+    m_vpPage->getQGVPage()->zoomOut();
+}
+
+// called by ViewProvider when Page feature Label changes
 void MDIViewPage::setTabText(std::string tabText)
 {
     if (!isPassive() && !tabText.empty()) {
         QString cap = QString::fromLatin1("%1 [*]").arg(QString::fromUtf8(tabText.c_str()));
         setWindowTitle(cap);
+    }
+}
+
+// advise the page to check QGraphicsScene parent/child relationships after undo
+void MDIViewPage::fixSceneDependencies()
+{
+    if (getViewProviderPage()) {
+        getViewProviderPage()->fixSceneDependencies();
     }
 }
 
@@ -280,7 +314,9 @@ void MDIViewPage::printPdf()
 
     Gui::WaitCursor wc;
     std::string utf8Content = fn.toUtf8().constData();
+    m_scene->setExportingPdf(true);
     printPdf(utf8Content);
+    m_scene->setExportingPdf(false);
 }
 
 void MDIViewPage::printPdf(std::string file)
@@ -293,6 +329,8 @@ void MDIViewPage::printPdf(std::string file)
 
     QString filename = QString::fromUtf8(file.data(), file.size());
     QPrinter printer(QPrinter::HighResolution);
+    // setPdfVersion sets the printied PDF Version to comply with PDF/A-1b, more details under: https://www.kdab.com/creating-pdfa-documents-qt/
+//    printer.setPdfVersion(QPagedPaintDevice::PdfVersion_A1b);
     printer.setFullPage(true);
     printer.setOutputFileName(filename);
 
@@ -507,6 +545,8 @@ void MDIViewPage::printAllPdf(QPrinter* printer, App::Document* doc)
     QString outputFile = printer->outputFileName();
     QString documentName = QString::fromUtf8(doc->getName());
     QPdfWriter pdfWriter(outputFile);
+    // setPdfVersion sets the printied PDF Version to comply with PDF/A-1b, more details under: https://www.kdab.com/creating-pdfa-documents-qt/
+    pdfWriter.setPdfVersion(QPagedPaintDevice::PdfVersion_A1b);
     pdfWriter.setTitle(documentName);
     pdfWriter.setResolution(printer->resolution());
     QPainter painter(&pdfWriter);
