@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <RCC>
     <qresource>
         <file>icons/list.svg</file>
@@ -9,5 +10,6 @@
         <file>icons/preview-vector.svg</file>
         <file>icons/table.svg</file>
         <file>images/default_image.png</file>
+        <file>translations/Material_zh-TW.ts</file>
     </qresource>
 </RCC>
