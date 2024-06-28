@@ -1324,11 +1324,6 @@
         <translation>ºC</translation>
     </message>
     <message>
-        <location filename="../../TaskPanelConstraintTemperature.ui" line="26"/>
-        <source>Select the vertices, lines and surfaces: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../TaskPanelConstraintTemperature.ui" line="81"/>
         <source>Add</source>
         <translation>新增</translation>
@@ -1342,6 +1337,11 @@
         <location filename="../../TaskPanelInitialTemperature.ui" line="26"/>
         <source>Insert component&apos;s
  initial temperature:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskPanelConstraintTemperature.ui" line="26"/>
+        <source>Select the vertices, lines and surfaces: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4083,6 +4083,11 @@ Specify another file please.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../TaskFemConstraintTransform.cpp" line="141"/>
+        <source>Constraint update error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskFemConstraintTransform.cpp" line="231"/>
         <location filename="../../TaskFemConstraintTransform.cpp" line="236"/>
         <location filename="../../TaskFemConstraintTransform.cpp" line="242"/>
@@ -4148,11 +4153,6 @@ Specify another file please.</source>
     <message>
         <location filename="../../TaskFemConstraintTransform.cpp" line="360"/>
         <source>Only transformable faces can be selected! Apply displacement boundary condition to surface first then apply local coordinate system to surface</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskFemConstraintTransform.cpp" line="141"/>
-        <source>Constraint update error</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5000,6 +5000,11 @@ Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../ui/ElementGeometry1D.ui" line="0"/>
+        <source>Diameter:   </source>
+        <translation>直徑:   </translation>
+    </message>
+    <message>
         <location filename="../ui/ElementGeometry1D.ui" line="14"/>
         <source>Beam section parameter</source>
         <translation type="unfinished"></translation>
@@ -5196,11 +5201,6 @@ Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/ElementGeometry1D.ui" line="0"/>
-        <source>Diameter:   </source>
-        <translation>直徑:   </translation>
-    </message>
-    <message>
         <location filename="../../BoxWidget.ui" line="0"/>
         <location filename="../ui/ElementGeometry1D.ui" line="0"/>
         <source>Height:     </source>
@@ -5320,6 +5320,11 @@ Note: has no effect if a solid was selected</source>
 <context>
     <name>PlaneWidget</name>
     <message>
+        <location filename="../../PlaneWidget.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../PlaneWidget.ui" line="29"/>
         <source>Origin</source>
         <translation>原點</translation>
@@ -5340,11 +5345,6 @@ Note: has no effect if a solid was selected</source>
         <location filename="../../PlaneWidget.ui" line="115"/>
         <source>Normal</source>
         <translation>垂直</translation>
-    </message>
-    <message>
-        <location filename="../../PlaneWidget.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -5412,18 +5412,18 @@ Note: has no effect if a solid was selected</source>
         <translation>群組</translation>
     </message>
     <message>
-        <location filename="../../TaskFemConstraint.cpp" line="95"/>
-        <source>Ok</source>
-        <translation>確認</translation>
-    </message>
-    <message>
-        <location filename="../../TaskFemConstraint.cpp" line="96"/>
-        <source>Cancel</source>
-        <translation>取消</translation>
+        <location filename="../../TaskFemConstraintContact.cpp" line="405"/>
+        <source>Constraint Contact</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../TaskFemConstraintContact.cpp" line="457"/>
         <source>Contact constraint</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskFemConstraintDisplacement.cpp" line="550"/>
+        <source>Constraint displacement</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5432,8 +5432,18 @@ Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../TaskFemConstraintFixed.cpp" line="258"/>
+        <source>Constraint fixed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskFemConstraintFixed.cpp" line="278"/>
         <source>Fixed boundary condition</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskFemConstraintFluidBoundary.cpp" line="886"/>
+        <source>Constraint fluid boundary</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5442,8 +5452,18 @@ Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../TaskFemConstraintForce.cpp" line="413"/>
+        <source>Constraint force</source>
+        <translation>力量拘束</translation>
+    </message>
+    <message>
         <location filename="../../TaskFemConstraintForce.cpp" line="437"/>
         <source>Force load</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskFemConstraintHeatflux.cpp" line="393"/>
+        <source>Constraint heat flux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5457,8 +5477,18 @@ Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../TaskFemConstraintPlaneRotation.cpp" line="267"/>
+        <source>Constraint planerotation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskFemConstraintPlaneRotation.cpp" line="296"/>
         <source>Plane multi-point constraint</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskFemConstraintPressure.cpp" line="275"/>
+        <source>Constraint pressure</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5484,6 +5514,11 @@ Note: has no effect if a solid was selected</source>
     <message>
         <location filename="../../TaskFemConstraintTemperature.cpp" line="334"/>
         <source>Constraint temperature</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskFemConstraintTransform.cpp" line="487"/>
+        <source>Constraint transform</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5551,49 +5586,14 @@ Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../TaskFemConstraintContact.cpp" line="405"/>
-        <source>Constraint Contact</source>
-        <translation type="unfinished"></translation>
+        <location filename="../../TaskFemConstraint.cpp" line="95"/>
+        <source>Ok</source>
+        <translation>確認</translation>
     </message>
     <message>
-        <location filename="../../TaskFemConstraintDisplacement.cpp" line="550"/>
-        <source>Constraint displacement</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskFemConstraintFixed.cpp" line="258"/>
-        <source>Constraint fixed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskFemConstraintFluidBoundary.cpp" line="886"/>
-        <source>Constraint fluid boundary</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskFemConstraintForce.cpp" line="413"/>
-        <source>Constraint force</source>
-        <translation>力量拘束</translation>
-    </message>
-    <message>
-        <location filename="../../TaskFemConstraintHeatflux.cpp" line="393"/>
-        <source>Constraint heat flux</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskFemConstraintPlaneRotation.cpp" line="267"/>
-        <source>Constraint planerotation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskFemConstraintPressure.cpp" line="275"/>
-        <source>Constraint pressure</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskFemConstraintTransform.cpp" line="487"/>
-        <source>Constraint transform</source>
-        <translation type="unfinished"></translation>
+        <location filename="../../TaskFemConstraint.cpp" line="96"/>
+        <source>Cancel</source>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
@@ -5948,18 +5948,18 @@ For possible variables, see the description box below.</source>
 <context>
     <name>Std_Delete</name>
     <message>
+        <location filename="../../ViewProviderAnalysis.cpp" line="222"/>
+        <source>The analysis is not empty, therefore the
+following referencing objects might be lost:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../ViewProviderAnalysis.cpp" line="230"/>
         <location filename="../../ViewProviderFemPostFunction.cpp" line="153"/>
         <location filename="../../ViewProviderSolver.cpp" line="74"/>
         <location filename="../../ViewProviderFemPostObject.cpp" line="684"/>
         <source>Object dependencies</source>
         <translation>物件相依</translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderAnalysis.cpp" line="222"/>
-        <source>The analysis is not empty, therefore the
-following referencing objects might be lost:</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../ViewProviderFemPostFunction.cpp" line="145"/>
@@ -5987,14 +5987,14 @@ following referencing objects might be lost:</source>
         <translation>網格：</translation>
     </message>
     <message>
-        <location filename="../../TaskAnalysisInfo.ui" line="48"/>
-        <source>Analysis features</source>
-        <translation>分析特徵</translation>
-    </message>
-    <message>
         <location filename="../../TaskAnalysisInfo.ui" line="0"/>
         <source>Constraints</source>
         <translation>約束條件</translation>
+    </message>
+    <message>
+        <location filename="../../TaskAnalysisInfo.ui" line="48"/>
+        <source>Analysis features</source>
+        <translation>分析特徵</translation>
     </message>
     <message>
         <source>Form</source>
@@ -7278,6 +7278,11 @@ used for the Elmer solver</source>
 <context>
     <name>TaskPostDisplay</name>
     <message>
+        <location filename="../../TaskPostDisplay.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../TaskPostDisplay.ui" line="28"/>
         <source>Mode</source>
         <translation>模式</translation>
@@ -7351,14 +7356,14 @@ used for the Elmer solver</source>
         <source>Transparency</source>
         <translation>透明度</translation>
     </message>
-    <message>
-        <location filename="../../TaskPostDisplay.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
 </context>
 <context>
     <name>TaskPostScalarClip</name>
+    <message>
+        <location filename="../../TaskPostScalarClip.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
     <message>
         <location filename="../../TaskPostScalarClip.ui" line="28"/>
         <source>Scalar</source>
@@ -7413,11 +7418,6 @@ used for the Elmer solver</source>
         <location filename="../../TaskPostScalarClip.ui" line="209"/>
         <source>Clip inside out</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskPostScalarClip.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>

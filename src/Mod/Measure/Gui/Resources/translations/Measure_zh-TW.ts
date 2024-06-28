@@ -48,6 +48,16 @@
         <translation>距離因子</translation>
     </message>
     <message>
+        <location filename="DlgPrefsMeasureAppearanceImp.ui" line="158"/>
+        <source>Mirror</source>
+        <translation>鏡像</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="51"/>
+        <source>Default property values</source>
+        <translation>預設屬性質</translation>
+    </message>
+    <message>
         <location filename="DlgPrefsMeasureAppearanceImp.ui" line="128"/>
         <source>Text size</source>
         <translation>字體大小</translation>
@@ -58,9 +68,9 @@
         <translation>線條顏色</translation>
     </message>
     <message>
-        <location filename="DlgPrefsMeasureAppearanceImp.ui" line="158"/>
-        <source>Mirror</source>
-        <translation>鏡像</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="76"/>
+        <source> px</source>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="109"/>

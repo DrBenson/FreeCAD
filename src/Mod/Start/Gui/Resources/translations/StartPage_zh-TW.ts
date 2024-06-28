@@ -547,16 +547,16 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <translation>亮色</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="141"/>
-        <source>Dark</source>
-        <comment>Visual theme name</comment>
-        <translation>暗色</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="139"/>
         <source>Classic</source>
         <comment>Visual theme name</comment>
         <translation>經典</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="141"/>
+        <source>Dark</source>
+        <comment>Visual theme name</comment>
+        <translation>暗色</translation>
     </message>
 </context>
 <context>

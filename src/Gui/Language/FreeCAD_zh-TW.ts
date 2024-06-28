@@ -17,6 +17,11 @@
 <context>
     <name>Angle</name>
     <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgLocationAngle.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgLocationAngle.ui" line="22"/>
         <source>A:</source>
         <translation>A:</translation>
@@ -35,11 +40,6 @@
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgLocationAngle.ui" line="86"/>
         <source>Angle Snap</source>
         <translation>角度貼齊</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgLocationAngle.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -1416,6 +1416,11 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <translation>匯入所有連結</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="768"/>
+        <source>Insert measurement</source>
+        <translation>插入尺寸</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="799"/>
         <source>Insert text document</source>
         <translation>插入文字文件</translation>
@@ -1498,11 +1503,6 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/homeBenson/sources/FreeCAD-0.22.0-git/src/Gui/home/DrBenson/sources/FreeCAD-0.22.0-git/src/Gui/Benson/sources/FreeCAD-0.22.0-git/src/Gui/CommandFeat.cpp" line="147"/>
         <source>Toggle freeze</source>
         <translation>切換凍結檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="768"/>
-        <source>Insert measurement</source>
-        <translation>插入尺寸</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/ViewProviderMeasureDistance.cpp" line="272"/>
@@ -1717,6 +1717,11 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
 <context>
     <name>DownloadItem</name>
     <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DownloadItem.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DownloadItem.ui" line="29"/>
         <source>Ico</source>
         <translation>Ico</translation>
@@ -1725,11 +1730,6 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DownloadItem.ui" line="44"/>
         <source>Filename</source>
         <translation>檔案名稱</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DownloadItem.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -2311,16 +2311,6 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>Gui::Dialog::ButtonModel</name>
     <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgCustomizeSpaceball.cpp" line="286"/>
-        <source>Button %1</source>
-        <translation>按鈕 %1</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgCustomizeSpaceball.cpp" line="288"/>
-        <source>Out Of Range</source>
-        <translation>超出範圍</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgCustomizeSpaceball.cpp" line="285"/>
         <source> &quot;</source>
         <translation> &quot;</translation>
@@ -2329,6 +2319,16 @@ p, li { white-space: pre-wrap; }
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgCustomizeSpaceball.cpp" line="285"/>
         <source>&quot;</source>
         <translation>&quot;</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgCustomizeSpaceball.cpp" line="286"/>
+        <source>Button %1</source>
+        <translation>按鈕 %1</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgCustomizeSpaceball.cpp" line="288"/>
+        <source>Out Of Range</source>
+        <translation>超出範圍</translation>
     </message>
 </context>
 <context>
@@ -4914,6 +4914,16 @@ Specify another directory, please.</source>
         <translation>重置頁面的使用者設定 &apos;%1&apos;</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgPreferencesImp.cpp" line="386"/>
+        <source>Reset tab &apos;%1&apos;...</source>
+        <translation>重設分頁 &apos;%1&apos;...</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgPreferencesImp.cpp" line="388"/>
+        <source>Resets the user settings for the tab &apos;%1&apos;</source>
+        <translation>重置分頁欄的使用者設定 &apos;%1&apos;</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgPreferencesImp.cpp" line="393"/>
         <source>Reset group &apos;%1&apos;...</source>
         <translation>重置群組 &apos;%1&apos;...</translation>
@@ -4986,16 +4996,6 @@ msgstr &quot; &quot;
         <translation>錯誤的參數</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgPreferencesImp.cpp" line="386"/>
-        <source>Reset tab &apos;%1&apos;...</source>
-        <translation>重設分頁 &apos;%1&apos;...</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgPreferencesImp.cpp" line="388"/>
-        <source>Resets the user settings for the tab &apos;%1&apos;</source>
-        <translation>重置分頁欄的使用者設定 &apos;%1&apos;</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgPreferencesImp.cpp" line="492"/>
         <source>Restart required</source>
         <translation>需要重新啟動</translation>
@@ -5022,6 +5022,11 @@ msgstr &quot; &quot;
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/homeBenson/sources/FreeCAD-0.22.0-git/src/Gui/home/DrBenson/sources/FreeCAD-0.22.0-git/src/Gui/Benson/sources/FreeCAD-0.22.0-git/src/Gui/DlgProjectInformation.ui" line="14"/>
         <source>Document information</source>
         <translation>文件資訊</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectInformation.ui" line="14"/>
+        <source>Project information</source>
+        <translation>專案資訊</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectInformation.ui" line="26"/>
@@ -5061,11 +5066,6 @@ msgstr &quot; &quot;
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/homeBenson/sources/FreeCAD-0.22.0-git/src/Gui/home/DrBenson/sources/FreeCAD-0.22.0-git/src/Gui/Benson/sources/FreeCAD-0.22.0-git/src/Gui/DlgProjectInformation.ui" line="152"/>
         <source>Unit system for this file</source>
         <translation>此文件的單位系統</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectInformation.ui" line="14"/>
-        <source>Project information</source>
-        <translation>專案資訊</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectInformation.ui" line="133"/>
@@ -5134,22 +5134,6 @@ msgstr &quot; &quot;
         <translation>解開文件</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectUtility.ui" line="14"/>
-        <source>Project utility</source>
-        <translatorcomment>msgctxt &quot;Gui::Dialog::DlgProjectInformation|&quot;
-msgid &quot;&quot;
-msgstr &quot; &quot;
-
-
-</translatorcomment>
-        <translation>專案工具</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectUtility.ui" line="22"/>
-        <source>Extract project</source>
-        <translation>提取專案</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectUtility.ui" line="28"/>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectUtility.ui" line="78"/>
         <source>Source</source>
@@ -5190,6 +5174,11 @@ msgstr &quot; &quot;
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/homeBenson/sources/FreeCAD-0.22.0-git/src/Gui/home/DrBenson/sources/FreeCAD-0.22.0-git/src/Gui/Benson/sources/FreeCAD-0.22.0-git/src/Gui/DlgProjectUtility.ui" line="137"/>
         <source>Load document file after creation</source>
         <translation>建立後載入文件檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectUtility.cpp" line="106"/>
+        <source>Failed to extract project</source>
+        <translation>專案提取失敗</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectUtility.cpp" line="116"/>
@@ -5236,9 +5225,20 @@ msgstr &quot; &quot;
         <translation>建立文件失敗</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectUtility.cpp" line="106"/>
-        <source>Failed to extract project</source>
-        <translation>專案提取失敗</translation>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectUtility.ui" line="14"/>
+        <source>Project utility</source>
+        <translatorcomment>msgctxt &quot;Gui::Dialog::DlgProjectInformation|&quot;
+msgid &quot;&quot;
+msgstr &quot; &quot;
+
+
+</translatorcomment>
+        <translation>專案工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectUtility.ui" line="22"/>
+        <source>Extract project</source>
+        <translation>提取專案</translation>
     </message>
 </context>
 <context>
@@ -8276,16 +8276,6 @@ Mouse tilting is not disabled by this setting.</source>
         <translation>控制台</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsPythonConsole.ui" line="14"/>
-        <source>Python console</source>
-        <translation>Python 控制台</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsPythonConsole.ui" line="20"/>
-        <source>Settings</source>
-        <translation>設定</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsPythonConsole.ui" line="26"/>
         <source>Words will be wrapped when they exceed available
 horizontal space in Python console</source>
@@ -8322,6 +8312,11 @@ horizontal space in Python console</source>
         <translation>Python 分析器間隔(毫秒):</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsPythonConsole.ui" line="84"/>
+        <source>Python profiler interval (milliseconds): </source>
+        <translation>Python 分析器間隔(毫秒): </translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsPythonConsole.ui" line="91"/>
         <source>The interval at which the profiler runs when there&apos;s Python code running (to keep the GUI responding). Set to 0 to disable.</source>
         <translation>當 Python 程式碼執行時檢查器執行的時間間隔(以保持 GUI 回應). 設定為 0 禁用.</translation>
@@ -8342,9 +8337,14 @@ horizontal space in Python console</source>
         <translation>用於使用 pip 安裝套件並使用 debugpy 進行偵錯. 如果需要且未指定則自動偵測.</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsPythonConsole.ui" line="84"/>
-        <source>Python profiler interval (milliseconds): </source>
-        <translation>Python 分析器間隔(毫秒): </translation>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsPythonConsole.ui" line="14"/>
+        <source>Python console</source>
+        <translation>Python 控制台</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsPythonConsole.ui" line="20"/>
+        <source>Settings</source>
+        <translation>設定</translation>
     </message>
 </context>
 <context>
@@ -11913,6 +11913,11 @@ Do you want to specify another directory?</source>
         <translation>平移</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/TaskCSysDragger.cpp" line="74"/>
+        <source>Increments</source>
+        <translation>增加量</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/TaskCSysDragger.cpp" line="79"/>
         <source>Translation Increment:</source>
         <translation>平移增量:</translation>
@@ -11921,11 +11926,6 @@ Do you want to specify another directory?</source>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/TaskCSysDragger.cpp" line="90"/>
         <source>Rotation Increment:</source>
         <translation>旋轉增量:</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/TaskCSysDragger.cpp" line="74"/>
-        <source>Increments</source>
-        <translation>增加量</translation>
     </message>
 </context>
 <context>
@@ -12639,6 +12639,16 @@ Do you want to specify another directory?</source>
         <translation>搜尋物體</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="915"/>
+        <source>Show description column</source>
+        <translation>顯示說明欄</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="916"/>
+        <source>Show an extra tree view column for item description. The item&apos;s description can be set by pressing F2 (or your OS&apos;s edit button) or by editing the &apos;label2&apos; property.</source>
+        <translation>為項目描述顯示一個額外的樹狀檢視列。此項目描述可以藉由按 F2 來設定 (或者您 OS 的編輯按鍵) 或藉由編輯其 &apos;label2&apos; 屬性。</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="937"/>
         <source>Activate document</source>
         <translation>啟動檔案</translation>
@@ -12679,9 +12689,9 @@ Do you want to specify another directory?</source>
         <translation>樹狀設定</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="915"/>
-        <source>Show description column</source>
-        <translation>顯示說明欄</translation>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="1111"/>
+        <source>Show description</source>
+        <translation>顯示內容描述</translation>
     </message>
     <message>
         <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="1112"/>
@@ -12689,9 +12699,9 @@ Do you want to specify another directory?</source>
         <translation>顯示內部名稱</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="916"/>
-        <source>Show an extra tree view column for item description. The item&apos;s description can be set by pressing F2 (or your OS&apos;s edit button) or by editing the &apos;label2&apos; property.</source>
-        <translation>為項目描述顯示一個額外的樹狀檢視列。此項目描述可以藉由按 F2 來設定 (或者您 OS 的編輯按鍵) 或藉由編輯其 &apos;label2&apos; 屬性。</translation>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="1113"/>
+        <source>Show a description column for items. An item&apos;s description can be set by pressing F2 (or your OS&apos;s edit button) or by editing the &apos;label2&apos; property.</source>
+        <translation>顯示項目的描述說明. 可以通過按 F2(或作業系統的編輯按鈕)或編輯「label2」屬性來設定描述說明.</translation>
     </message>
     <message>
         <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="1128"/>
@@ -12897,15 +12907,15 @@ Do you want to specify another directory?</source>
 <context>
     <name>Gui::WorkbenchTabWidget</name>
     <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/homeBenson/sources/FreeCAD-0.22.0-git/src/Gui/home/DrBenson/sources/FreeCAD-0.22.0-git/src/Gui/Benson/sources/FreeCAD-0.22.0-git/src/Gui/WorkbenchSelector.cpp" line="240"/>
-        <source>Preferences</source>
-        <translation>偏好設定</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/homeBenson/sources/FreeCAD-0.22.0-git/src/Gui/home/DrBenson/sources/FreeCAD-0.22.0-git/src/Gui/Benson/sources/FreeCAD-0.22.0-git/src/Gui/WorkbenchSelector.cpp" line="197"/>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/homeBenson/sources/FreeCAD-0.22.0-git/src/Gui/home/DrBenson/sources/FreeCAD-0.22.0-git/src/Gui/Benson/sources/FreeCAD-0.22.0-git/src/Gui/WorkbenchSelector.cpp" line="203"/>
         <source>More</source>
         <translation>更多</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/homeBenson/sources/FreeCAD-0.22.0-git/src/Gui/home/DrBenson/sources/FreeCAD-0.22.0-git/src/Gui/Benson/sources/FreeCAD-0.22.0-git/src/Gui/WorkbenchSelector.cpp" line="240"/>
+        <source>Preferences</source>
+        <translation>偏好設定</translation>
     </message>
 </context>
 <context>
@@ -13194,6 +13204,11 @@ the region are non-opaque.</source>
 <context>
     <name>Position</name>
     <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgLocationPos.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgLocationPos.ui" line="22"/>
         <source>X:</source>
         <translation>X:</translation>
@@ -13288,11 +13303,6 @@ the region are non-opaque.</source>
         <source>5 m</source>
         <translation>5 m</translation>
     </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgLocationPos.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
 </context>
 <context>
     <name>PropertyListDialog</name>
@@ -13311,16 +13321,6 @@ the region are non-opaque.</source>
 </context>
 <context>
     <name>QDockWidget</name>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="344"/>
-        <source>Toolbox</source>
-        <translation>工具箱</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="411"/>
-        <source>Combo View</source>
-        <translation>複合檢視</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="519"/>
         <source>Tasks</source>
@@ -13365,6 +13365,16 @@ the region are non-opaque.</source>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="457"/>
         <source>DAG View</source>
         <translation>DAG 視景</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="344"/>
+        <source>Toolbox</source>
+        <translation>工具箱</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="411"/>
+        <source>Combo View</source>
+        <translation>複合檢視</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgDisplayPropertiesImp.cpp" line="52"/>
@@ -13835,6 +13845,26 @@ underscore, and must not start with a digit.</source>
         <translation>變更值</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="190"/>
+        <source>Too many message notifications. Notification temporarily stopped. Look at the report view for more information.</source>
+        <translation>通知訊息過多. 暫時停止通知. 檢視報告視窗以獲取更多資訊.</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="209"/>
+        <source>Warning</source>
+        <translation>警告</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="213"/>
+        <source>Information</source>
+        <translation>資訊</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="217"/>
+        <source>Critical</source>
+        <translation>關鍵</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="1061"/>
         <source>Identical physical path detected. It may cause unwanted overwrite of existing document!
 
@@ -14118,13 +14148,6 @@ Choose &apos;Abort&apos; to abort</source>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/NotificationArea.cpp" line="1037"/>
         <source>Too many opened non-intrusive notifications. Notifications are being omitted!</source>
         <translation>太多已開啟之非侵入通知。通知已被忽略!</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/OnlineDocumentation.cpp" line="419"/>
-        <source>Unable to open your browser.
-
-Please open a browser window and type in: http://localhost:%1.</source>
-        <translation>無法打開您的流覽器. 請打開流覽器視窗，並輸入: http://localhost:%1.</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/OnlineDocumentation.cpp" line="424"/>
@@ -14607,14 +14630,14 @@ the current copy will be lost.
         <translation>已抑制</translation>
     </message>
     <message>
-        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/ToolBarManager.cpp" line="951"/>
-        <source>Undock from toolbar area</source>
-        <translation>從工具列取消停靠</translation>
-    </message>
-    <message>
         <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/ToolBarManager.cpp" line="835"/>
         <source>Undock from status bar</source>
         <translation>從狀態列取消停靠</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/ToolBarManager.cpp" line="951"/>
+        <source>Undock from toolbar area</source>
+        <translation>從工具列取消停靠</translation>
     </message>
     <message>
         <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/DlgAddPropertyVarSet.cpp" line="318"/>
@@ -14624,24 +14647,11 @@ underscore, and must not start with a digit.</source>
 下底線，且不得以數字開頭.</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="190"/>
-        <source>Too many message notifications. Notification temporarily stopped. Look at the report view for more information.</source>
-        <translation>通知訊息過多. 暫時停止通知. 檢視報告視窗以獲取更多資訊.</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="209"/>
-        <source>Warning</source>
-        <translation>警告</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="213"/>
-        <source>Information</source>
-        <translation>資訊</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="217"/>
-        <source>Critical</source>
-        <translation>關鍵</translation>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/OnlineDocumentation.cpp" line="419"/>
+        <source>Unable to open your browser.
+
+Please open a browser window and type in: http://localhost:%1.</source>
+        <translation>無法打開您的流覽器. 請打開流覽器視窗，並輸入: http://localhost:%1.</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/homeBenson/sources/FreeCAD-0.22.0-git/src/Gui/home/DrBenson/sources/FreeCAD-0.22.0-git/src/Gui/Benson/sources/FreeCAD-0.22.0-git/src/Gui/ViewProviderSuppressibleExtension.cpp" line="113"/>
@@ -15878,6 +15888,16 @@ This makes the docked windows stay transparent at all times.</source>
         <translation>合併文件</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="523"/>
+        <source>%1 document (*.FCStd)</source>
+        <translation>%1 文件（*.FCStd）</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/homeBenson/sources/FreeCAD-0.22.0-git/src/Gui/home/DrBenson/sources/FreeCAD-0.22.0-git/src/Gui/Benson/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="543"/>
+        <source>Cannot merge document with itself.</source>
+        <translation>無法將文件與其自身合併.</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="509"/>
         <source>Merge project...</source>
         <translation>合併專案...</translation>
@@ -15891,19 +15911,9 @@ This makes the docked windows stay transparent at all times.</source>
         <translation>合併專案</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="523"/>
-        <source>%1 document (*.FCStd)</source>
-        <translation>%1 文件（*.FCStd）</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="532"/>
         <source>Cannot merge project with itself.</source>
         <translation>不能合併專案本身.</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/homeBenson/sources/FreeCAD-0.22.0-git/src/Gui/home/DrBenson/sources/FreeCAD-0.22.0-git/src/Gui/Benson/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="543"/>
-        <source>Cannot merge document with itself.</source>
-        <translation>無法將文件與其自身合併.</translation>
     </message>
 </context>
 <context>
@@ -16198,6 +16208,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdRecentFiles</name>
     <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="133"/>
+        <source>Recent files</source>
+        <translation>最近使用的檔案</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="137"/>
         <source>Open Recent</source>
         <translation>開啟最近使用的檔案</translation>
@@ -16207,11 +16222,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="136"/>
         <source>Recent file list</source>
         <translation>最近檔案清單</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="133"/>
-        <source>Recent files</source>
-        <translation>最近使用的檔案</translation>
     </message>
 </context>
 <context>
@@ -17654,6 +17664,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdViewScreenShot</name>
     <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1804"/>
+        <source>Save picture...</source>
+        <translation>儲存圖片...</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1811"/>
         <source>Save image...</source>
         <translation>儲存影像...</translation>
@@ -17663,11 +17678,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1807"/>
         <source>Creates a screenshot of the active view</source>
         <translation>建立目前檢視畫面的螢幕截圖</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1804"/>
-        <source>Save picture...</source>
-        <translation>儲存圖片...</translation>
     </message>
 </context>
 <context>

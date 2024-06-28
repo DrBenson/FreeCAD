@@ -2738,11 +2738,6 @@ of projection.</source>
 <context>
     <name>PartDesignGui::TaskDatumParameters</name>
     <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="20"/>
         <source>Selection accepted</source>
         <translation>接受選擇</translation>
@@ -2839,6 +2834,11 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="367"/>
         <source>Flip sides</source>
         <translation>翻面</translation>
+    </message>
+    <message>
+        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -3017,6 +3017,11 @@ Note: The placement is expressed in local space of object being attached.</sourc
 <context>
     <name>PartGui::DlgExportHeaderStep</name>
     <message>
+        <location filename="../../DlgExportHeaderStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
+    </message>
+    <message>
         <location filename="../../DlgExportHeaderStep.ui" line="20"/>
         <source>If not empty, field contents will be used in the STEP file header.</source>
         <translation>如果不為空，則欄位內容將用於STEP文件標題.</translation>
@@ -3041,14 +3046,14 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <source>Product</source>
         <translation>產品</translation>
     </message>
-    <message>
-        <location filename="../../DlgExportHeaderStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
-    </message>
 </context>
 <context>
     <name>PartGui::DlgExportStep</name>
+    <message>
+        <location filename="../../DlgExportStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
+    </message>
     <message>
         <location filename="../../DlgExportStep.ui" line="20"/>
         <source>Export</source>
@@ -3121,11 +3126,6 @@ it inside the Placement property.</source>
 should be written into the STEP file. This parameter can be set to off in order to minimize
 the size of the resulting STEP file.</source>
         <translation>此參數指示是否將參數曲線（曲面參數空間中的曲線）寫入STEP檔案。為了最小化生成的STEP檔案大小，可以將此參數設置為關閉。</translation>
-    </message>
-    <message>
-        <location filename="../../DlgExportStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
     </message>
 </context>
 <context>
@@ -3861,6 +3861,13 @@ the size of the resulting STEP file.</source>
         <translation>匯入</translation>
     </message>
     <message>
+        <location filename="../../DlgImportStep.ui" line="26"/>
+        <source>If checked, no Compound merge will be done
+during file reading (slower but higher details).</source>
+        <translation>如果選中，則在檔案讀取期間
+不會進行複合合併(速度較慢但細節更高).</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgImportStep.ui" line="26"/>
         <source>If checked, this Dialog will be shown during Import</source>
         <translation>如果選中，此對話框將在匯入期間顯示</translation>
@@ -3871,11 +3878,9 @@ the size of the resulting STEP file.</source>
         <translation>當匯入時顯示此對話框</translation>
     </message>
     <message>
-        <location filename="../../DlgImportStep.ui" line="26"/>
-        <source>If checked, no Compound merge will be done
-during file reading (slower but higher details).</source>
-        <translation>如果選中，則在檔案讀取期間
-不會進行複合合併(速度較慢但細節更高).</translation>
+        <location filename="../../DlgImportStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
     </message>
     <message>
         <location filename="../../DlgImportStep.ui" line="30"/>
@@ -3972,11 +3977,6 @@ during file reading (slower but higher details).</source>
         <location filename="../../DlgImportStep.ui" line="181"/>
         <source>Object per document in sub-directory</source>
         <translation>依據子目錄中每個文件的物體</translation>
-    </message>
-    <message>
-        <location filename="../../DlgImportStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
     </message>
 </context>
 <context>
@@ -4122,14 +4122,14 @@ during file reading (slower but higher details).</source>
 <context>
     <name>PartGui::DlgPartImportStepImp</name>
     <message>
-        <location filename="../../DlgPartImportStepImp.cpp" line="73"/>
-        <source>All Files</source>
-        <translation>所有檔案</translation>
-    </message>
-    <message>
         <location filename="../../DlgPartImportStepImp.cpp" line="72"/>
         <source>STEP</source>
         <translation>STEP</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPartImportStepImp.cpp" line="73"/>
+        <source>All Files</source>
+        <translation>所有檔案</translation>
     </message>
 </context>
 <context>
@@ -5665,11 +5665,6 @@ only created cuts will be visible</source>
 <context>
     <name>PartGui::TaskAttacher</name>
     <message>
-        <location filename="../../TaskAttacher.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../TaskAttacher.ui" line="20"/>
         <source>Selection accepted</source>
         <translation>接受選擇</translation>
@@ -5851,6 +5846,11 @@ of object being attached.</source>
         <location filename="../../TaskAttacher.cpp" line="842"/>
         <source>%1 (add more references)</source>
         <translation>%1 (增加更多參考)</translation>
+    </message>
+    <message>
+        <location filename="../../TaskAttacher.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -6263,6 +6263,14 @@ by dragging a selection rectangle in the 3D view</source>
         <location filename="../../TaskFaceColors.ui" line="101"/>
         <source>Box selection</source>
         <translation>框選</translation>
+    </message>
+</context>
+<context>
+    <name>PartGui::TaskImportStep</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgImportStep.cpp" line="149"/>
+        <source>Don&apos;t show this dialog again</source>
+        <translation>不再顯示此對話框</translation>
     </message>
 </context>
 <context>

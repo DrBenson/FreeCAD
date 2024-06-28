@@ -627,6 +627,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/AddonManager.py" line="936"/>
+        <source>Temporary installation of macro failed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/addonmanager_readme_controller.py" line="82"/>
         <source>Loading info for {} from the FreeCAD Macro Recipes wiki...</source>
         <translation type="unfinished"></translation>

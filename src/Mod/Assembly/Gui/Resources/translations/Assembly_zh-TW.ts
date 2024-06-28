@@ -1201,6 +1201,11 @@ Press ESC to cancel.</source>
         <translation>插入組件</translation>
     </message>
     <message>
+        <location filename="../panels/TaskAssemblyInsertLink.ui" line="14"/>
+        <source>Insert Link</source>
+        <translation>插入連結</translation>
+    </message>
+    <message>
         <location filename="../panels/TaskAssemblyInsertLink.ui" line="20"/>
         <source>Search parts...</source>
         <translation>搜尋零件...</translation>
@@ -1235,11 +1240,6 @@ Press ESC to cancel.</source>
         <source>Insert as part</source>
         <translation>插入成為零件</translation>
     </message>
-    <message>
-        <location filename="../panels/TaskAssemblyInsertLink.ui" line="14"/>
-        <source>Insert Link</source>
-        <translation>插入連結</translation>
-    </message>
 </context>
 <context>
     <name>UtilsAssembly</name>
@@ -1251,6 +1251,16 @@ Press ESC to cancel.</source>
 </context>
 <context>
     <name>Workbench</name>
+    <message>
+        <location filename="../../../InitGui.py" line="70"/>
+        <source>Assembly workbench</source>
+        <translation>零件組合工作台</translation>
+    </message>
+    <message>
+        <location filename="../../../InitGui.py" line="71"/>
+        <source>Initializing Assembly workbench...</source>
+        <translation>初始化零件組合工作台...</translation>
+    </message>
     <message>
         <location filename="../../../InitGui.py" line="91"/>
         <source>Assembly</source>
@@ -1270,16 +1280,6 @@ Press ESC to cancel.</source>
         <location filename="../../../InitGui.py" line="110"/>
         <source>Assembly workbench loaded</source>
         <translation>零件組合工作台已載入</translation>
-    </message>
-    <message>
-        <location filename="../../../InitGui.py" line="70"/>
-        <source>Assembly workbench</source>
-        <translation>零件組合工作台</translation>
-    </message>
-    <message>
-        <location filename="../../../InitGui.py" line="71"/>
-        <source>Initializing Assembly workbench...</source>
-        <translation>初始化零件組合工作台...</translation>
     </message>
 </context>
 </TS>

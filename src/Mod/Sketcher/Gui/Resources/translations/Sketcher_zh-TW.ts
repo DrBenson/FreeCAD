@@ -1960,14 +1960,14 @@ into driving or reference mode</source>
         <translation>移動/矩陣 平移</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2636"/>
-        <source>Translate selected geometries. Enable creation of i * j copies.</source>
-        <translation>移動選取的幾何圖形. 允許建立 i * j 個備份.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2635"/>
         <source>Array transform</source>
         <translation>平移矩陣</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2636"/>
+        <source>Translate selected geometries. Enable creation of i * j copies.</source>
+        <translation>移動選取的幾何圖形. 允許建立 i * j 個備份.</translation>
     </message>
 </context>
 <context>
@@ -2413,15 +2413,6 @@ invalid constraints, degenerated geometry, etc.</source>
         <translation>新增拋物線的圓弧草圖</translation>
     </message>
     <message>
-        <source>Add Pole circle</source>
-        <translation>增加極點圓圈</translation>
-    </message>
-    <message>
-        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="111"/>
-        <source>Add Knot Point</source>
-        <translation>增加結點</translation>
-    </message>
-    <message>
         <location filename="../../DrawSketchHandlerCarbonCopy.h" line="151"/>
         <source>Create a carbon copy</source>
         <translation>建立複製體</translation>
@@ -2536,6 +2527,21 @@ invalid constraints, degenerated geometry, etc.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerSymmetry.h" line="131"/>
         <source>Symmetry geometries</source>
         <translation>幾何對稱</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="456"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="686"/>
+        <source>Add sketch bSpline</source>
+        <translation>新增草圖B雲形線</translation>
+    </message>
+    <message>
+        <source>Add Pole circle</source>
+        <translation>增加極點圓圈</translation>
+    </message>
+    <message>
+        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="111"/>
+        <source>Add Knot Point</source>
+        <translation>增加結點</translation>
     </message>
     <message>
         <source>Create symmetric geometry</source>
@@ -2858,27 +2864,6 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
         <translation>無法建立拋物線弧</translation>
     </message>
     <message>
-        <location filename="../../DrawSketchHandlerBSpline.h" line="129"/>
-        <source>Error adding B-Spline pole</source>
-        <translation>新增 B 雲形線極點時出錯</translation>
-    </message>
-    <message>
-        <location filename="../../DrawSketchHandlerBSpline.h" line="206"/>
-        <source>Error creating B-spline pole</source>
-        <translation>建立 B 雲形線極點時出錯</translation>
-    </message>
-    <message>
-        <location filename="../../DrawSketchHandlerBSpline.h" line="306"/>
-        <source>Error deleting last pole</source>
-        <translation>刪除最後極點時出錯</translation>
-    </message>
-    <message>
-        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="614"/>
-        <location filename="../../DrawSketchHandlerBSpline.h" line="518"/>
-        <source>Error creating B-spline</source>
-        <translation>建立 B 雲形線時出錯</translation>
-    </message>
-    <message>
         <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="124"/>
         <source>Cannot add knot point</source>
         <translation>無法新增結點</translation>
@@ -2892,6 +2877,22 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
         <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="304"/>
         <source>Error removing knot</source>
         <translation>解結時出錯</translation>
+    </message>
+    <message>
+        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="614"/>
+        <location filename="../../DrawSketchHandlerBSpline.h" line="518"/>
+        <source>Error creating B-spline</source>
+        <translation>建立 B 雲形線時出錯</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="600"/>
+        <source>Error deleting last pole/knot</source>
+        <translation>刪除最後極點時出錯</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="670"/>
+        <source>Error adding B-Spline pole/knot</source>
+        <translation>新增 B 雲形線極點時出錯</translation>
     </message>
     <message>
         <location filename="../../DrawSketchHandlerCarbonCopy.h" line="172"/>
@@ -3033,6 +3034,21 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerSymmetry.h" line="148"/>
         <source>Failed to create symmetry</source>
         <translation>建立對稱失敗</translation>
+    </message>
+    <message>
+        <location filename="../../DrawSketchHandlerBSpline.h" line="129"/>
+        <source>Error adding B-Spline pole</source>
+        <translation>新增 B 雲形線極點時出錯</translation>
+    </message>
+    <message>
+        <location filename="../../DrawSketchHandlerBSpline.h" line="206"/>
+        <source>Error creating B-spline pole</source>
+        <translation>建立 B 雲形線極點時出錯</translation>
+    </message>
+    <message>
+        <location filename="../../DrawSketchHandlerBSpline.h" line="306"/>
+        <source>Error deleting last pole</source>
+        <translation>刪除最後極點時出錯</translation>
     </message>
     <message>
         <location filename="../../DrawSketchHandlerEllipse.h" line="800"/>
@@ -3575,24 +3591,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation>從草圖中選取拘束.</translation>
     </message>
     <message>
-        <source>B-Spline Degree</source>
-        <translation>B雲形線多項式次數</translation>
-    </message>
-    <message>
-        <source>Define B-Spline Degree, between 1 and %1:</source>
-        <translation>定義 B雲形線多項式次數，介於  1 及 %1 之間：</translation>
-    </message>
-    <message>
-        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="240"/>
-        <source>Set knot multiplicity</source>
-        <translation>設定結點多重性</translation>
-    </message>
-    <message>
-        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="241"/>
-        <source>Set knot multiplicity at the last point provided, between 1 and %1:Note that multiplicity may be ignored under certain circumstances.Please refer to documentation for details</source>
-        <translation>在提供的最後一個點處設定結重數，介於 1 和 %1 之間: 請注意，在某些情況下，重數可能會被忽略. 詳細資訊請參閱說明文件</translation>
-    </message>
-    <message>
         <location filename="../../DrawSketchHandlerFillet.h" line="286"/>
         <source>Value Error</source>
         <translation>值錯誤</translation>
@@ -3679,6 +3677,29 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerSymmetry.h" line="191"/>
         <source>Symmetry parameters</source>
         <translation>對稱參數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="447"/>
+        <source>BSpline parameters</source>
+        <translation>B雲形線屬性參數</translation>
+    </message>
+    <message>
+        <source>B-Spline Degree</source>
+        <translation>B雲形線多項式次數</translation>
+    </message>
+    <message>
+        <source>Define B-Spline Degree, between 1 and %1:</source>
+        <translation>定義 B雲形線多項式次數，介於  1 及 %1 之間：</translation>
+    </message>
+    <message>
+        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="240"/>
+        <source>Set knot multiplicity</source>
+        <translation>設定結點多重性</translation>
+    </message>
+    <message>
+        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="241"/>
+        <source>Set knot multiplicity at the last point provided, between 1 and %1:Note that multiplicity may be ignored under certain circumstances.Please refer to documentation for details</source>
+        <translation>在提供的最後一個點處設定結重數，介於 1 和 %1 之間: 請注意，在某些情況下，重數可能會被忽略. 詳細資訊請參閱說明文件</translation>
     </message>
     <message>
         <source>A symmetric construction requires at least two geometric elements, the last geometric element being the reference for the symmetry construction.</source>
@@ -4725,11 +4746,6 @@ reflected on copies</source>
 &apos;高級求解器控制&apos; 可調整求解器設定</translation>
     </message>
     <message>
-        <location filename="../../SketcherSettings.ui" line="20"/>
-        <source>Task Panel Widgets</source>
-        <translation>工作面板小工具</translation>
-    </message>
-    <message>
         <location filename="../../SketcherSettings.ui" line="30"/>
         <source>Show section &apos;Advanced solver control&apos;</source>
         <translation>顯示“進階解算器控制”部分</translation>
@@ -4792,6 +4808,16 @@ Requires to re-enter edit mode to take effect.</source>
     <message>
         <source>Esc can leave sketch edit mode</source>
         <translation>Esc 鍵可離開草圖編輯模式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettings.ui" line="146"/>
+        <source>Disables the shaded view when entering the sketch edit mode.</source>
+        <translation>進入草圖編輯模式時停用著色檢視.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettings.ui" line="149"/>
+        <source>Disable shading in edit mode</source>
+        <translation>在編輯模式下停用著色</translation>
     </message>
     <message>
         <source>Notifies about automatic constraint substitutions</source>
@@ -4937,6 +4963,26 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
         <translation>全部</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="224"/>
+        <source>None</source>
+        <translation>無</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="225"/>
+        <source>Dimensions only</source>
+        <translation>只有尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="226"/>
+        <source>Position and dimensions</source>
+        <translation>位置及尺寸標註</translation>
+    </message>
+    <message>
+        <location filename="../../SketcherSettings.ui" line="20"/>
+        <source>Task Panel Widgets</source>
+        <translation>工作面板小工具</translation>
+    </message>
+    <message>
         <source>Sketcher</source>
         <translation>草圖</translation>
     </message>
@@ -5047,6 +5093,16 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="352"/>
         <source>Construction geometry</source>
         <translation>構造幾何</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="871"/>
+        <source>Color of edges</source>
+        <translation>邊線色彩</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="911"/>
+        <source>Color of vertices</source>
+        <translation>頂點色彩</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="306"/>
@@ -5214,6 +5270,11 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
         <translation>錯誤之草圖</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="731"/>
+        <source>Color of dimensional driving constraints</source>
+        <translation>尺寸主動拘束之色彩</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="751"/>
         <source>Reference constraint</source>
         <translation>被動參考拘束</translation>
@@ -5232,11 +5293,6 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="785"/>
         <source>Color of expression dependent constraints in edit mode</source>
         <translation>編輯模式下相依拘束表示式之色彩</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="731"/>
-        <source>Color of dimensional driving constraints</source>
-        <translation>尺寸主動拘束之色彩</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="805"/>
@@ -5274,16 +5330,6 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="852"/>
         <source>Color of edges outside edit mode</source>
         <translation>編輯模式之外的邊緣顏色</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="871"/>
-        <source>Color of edges</source>
-        <translation>邊線色彩</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="911"/>
-        <source>Color of vertices</source>
-        <translation>頂點色彩</translation>
     </message>
 </context>
 <context>
@@ -6911,6 +6957,16 @@ This is done by analyzing the sketch geometries and constraints.</source>
         <source>Create a B-spline by control points</source>
         <translation>以控制點建立 B雲形線</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="839"/>
+        <source>By control points</source>
+        <translation>從控制點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="840"/>
+        <source>By knots</source>
+        <translation>從結點</translation>
+    </message>
 </context>
 <context>
     <name>Sketcher_CreateBSplineByInterpolation</name>
@@ -7547,6 +7603,24 @@ Eigen Sparse QR 算法針對稀疏矩陣進行了優化；通常更快</translat
     </message>
 </context>
 <context>
+    <name>TaskSketcherTool_c1_bspline</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="837"/>
+        <source>Press F to undo last point.</source>
+        <translation>按 F 復原最後的點.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="845"/>
+        <source>Periodic (R)</source>
+        <translation>週期 (R)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="848"/>
+        <source>Create a periodic bspline.</source>
+        <translation>建立週期性B雲形線.</translation>
+    </message>
+</context>
+<context>
     <name>TaskSketcherTool_c1_fillet</name>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerFillet.h" line="432"/>
@@ -7689,14 +7763,14 @@ Eigen Sparse QR 算法針對稀疏矩陣進行了優化；通常更快</translat
 <context>
     <name>TaskSketcherTool_p4_rotate</name>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerRotate.h" line="512"/>
-        <source>Copies (+&apos;U&apos;/ -&apos;J&apos;)</source>
-        <translation>複製品 (+&apos;U&apos;/ -&apos;J&apos;)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerRotate.h" line="511"/>
         <source>Copies &apos;U&apos;/&apos;J&apos;</source>
         <translation>複製品 &apos;U&apos;/&apos;J&apos;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerRotate.h" line="512"/>
+        <source>Copies (+&apos;U&apos;/ -&apos;J&apos;)</source>
+        <translation>複製品 (+&apos;U&apos;/ -&apos;J&apos;)</translation>
     </message>
 </context>
 <context>
@@ -7718,6 +7792,11 @@ Eigen Sparse QR 算法針對稀疏矩陣進行了優化；通常更快</translat
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerPolygon.h" line="307"/>
         <source>Sides (+&apos;U&apos;/ -&apos;J&apos;)</source>
         <translation>側面 (+&apos;U&apos;/ -&apos;J&apos;)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="880"/>
+        <source>Degree (+&apos;U&apos;/ -&apos;J&apos;)</source>
+        <translation>度 (+&apos;U&apos;/-&apos;J&apos;)</translation>
     </message>
 </context>
 <context>

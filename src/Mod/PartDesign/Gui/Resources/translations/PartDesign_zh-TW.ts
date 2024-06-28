@@ -2397,11 +2397,6 @@ If zero, it is equal to Radius2</source>
 <context>
     <name>PartDesignGui::TaskBooleanParameters</name>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskBooleanParameters.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskBooleanParameters.ui" line="22"/>
         <source>Add body</source>
         <translation>加入布林運算實體</translation>
@@ -2435,6 +2430,11 @@ If zero, it is equal to Radius2</source>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskBooleanParameters.cpp" line="81"/>
         <source>Remove</source>
         <translation>移除</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskBooleanParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -2484,11 +2484,6 @@ If zero, it is equal to Radius2</source>
 </context>
 <context>
     <name>PartDesignGui::TaskChamferParameters</name>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskChamferParameters.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskChamferParameters.ui" line="22"/>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskChamferParameters.ui" line="36"/>
@@ -2556,19 +2551,24 @@ click again to end selection</source>
         <translation>角度</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskChamferParameters.cpp" line="323"/>
+        <source>Empty chamfer created !
+</source>
+        <translation>建立空倒角!
+</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskChamferParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskChamferParameters.cpp" line="180"/>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskChamferParameters.cpp" line="182"/>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskChamferParameters.cpp" line="257"/>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskChamferParameters.cpp" line="259"/>
         <source>There must be at least one item</source>
         <translation>至少必須有一個項目</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskChamferParameters.cpp" line="323"/>
-        <source>Empty chamfer created !
-</source>
-        <translation>建立空倒角!
-</translation>
     </message>
 </context>
 <context>
@@ -2621,11 +2621,6 @@ click again to end selection</source>
 <context>
     <name>PartDesignGui::TaskDraftParameters</name>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskDraftParameters.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskDraftParameters.ui" line="22"/>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskDraftParameters.ui" line="36"/>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskDraftParameters.cpp" line="137"/>
@@ -2672,6 +2667,11 @@ click again to end selection</source>
 </source>
         <translation>已建立空草稿!
 </translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskDraftParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -2777,11 +2777,6 @@ click again to end selection</source>
 <context>
     <name>PartDesignGui::TaskFeaturePick</name>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskFeaturePick.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskFeaturePick.ui" line="23"/>
         <source>Allow used features</source>
         <translation>允許已使用過的特徵</translation>
@@ -2871,14 +2866,14 @@ click again to end selection</source>
         <source>Select attachment</source>
         <translation>選擇附加依賴</translation>
     </message>
-</context>
-<context>
-    <name>PartDesignGui::TaskFilletParameters</name>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskFilletParameters.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskFeaturePick.ui" line="14"/>
         <source>Form</source>
         <translation>格式</translation>
     </message>
+</context>
+<context>
+    <name>PartDesignGui::TaskFilletParameters</name>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskFilletParameters.ui" line="22"/>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskFilletParameters.ui" line="36"/>
@@ -2922,14 +2917,14 @@ click again to end selection</source>
         <translation>建立空圓角!
 </translation>
     </message>
-</context>
-<context>
-    <name>PartDesignGui::TaskHelixParameters</name>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHelixParameters.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskFilletParameters.ui" line="14"/>
         <source>Form</source>
         <translation>格式</translation>
     </message>
+</context>
+<context>
+    <name>PartDesignGui::TaskHelixParameters</name>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHelixParameters.ui" line="22"/>
         <source>Status:</source>
@@ -3082,6 +3077,11 @@ click again to end selection</source>
         <source>Error: unsupported mode</source>
         <translation>錯誤: 不支援的模式</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHelixParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
 </context>
 <context>
     <name>PartDesignGui::TaskHoleParameters</name>
@@ -3154,11 +3154,6 @@ click again to end selection</source>
 <context>
     <name>PartDesignGui::TaskLinearPatternParameters</name>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskLinearPatternParameters.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskLinearPatternParameters.ui" line="56"/>
         <source>Direction</source>
         <translation>方向</translation>
@@ -3200,21 +3195,6 @@ click again to end selection</source>
         <translation>長度</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskLinearPatternParameters.ui" line="101"/>
-        <source>Occurrences</source>
-        <translation>出現次數</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskLinearPatternParameters.cpp" line="105"/>
-        <source>Remove</source>
-        <translation>移除</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskLinearPatternParameters.cpp" line="333"/>
-        <source>Error</source>
-        <translation>錯誤</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskLinearPatternParameters.ui" line="22"/>
         <source>Add feature</source>
         <translation>加入特徵</translation>
@@ -3229,14 +3209,29 @@ click again to end selection</source>
         <source>List can be reordered by dragging</source>
         <translation>清單可以通過拖曳來重新排序</translation>
     </message>
-</context>
-<context>
-    <name>PartDesignGui::TaskLoftParameters</name>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskLoftParameters.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskLinearPatternParameters.ui" line="101"/>
+        <source>Occurrences</source>
+        <translation>出現次數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskLinearPatternParameters.cpp" line="333"/>
+        <source>Error</source>
+        <translation>錯誤</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskLinearPatternParameters.ui" line="14"/>
         <source>Form</source>
         <translation>格式</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskLinearPatternParameters.cpp" line="105"/>
+        <source>Remove</source>
+        <translation>移除</translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::TaskLoftParameters</name>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskLoftParameters.ui" line="20"/>
         <source>Ruled surface</source>
@@ -3287,9 +3282,24 @@ click again to end selection</source>
         <source>Remove</source>
         <translation>移除</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskLoftParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
 </context>
 <context>
     <name>PartDesignGui::TaskMirroredParameters</name>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMirroredParameters.ui" line="56"/>
+        <source>Plane</source>
+        <translation>平面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMirroredParameters.cpp" line="245"/>
+        <source>Error</source>
+        <translation>錯誤</translation>
+    </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMirroredParameters.ui" line="14"/>
         <source>Form</source>
@@ -3311,11 +3321,6 @@ click again to end selection</source>
         <translation>清單可以通過拖曳來重新排序</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMirroredParameters.ui" line="56"/>
-        <source>Plane</source>
-        <translation>平面</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMirroredParameters.ui" line="70"/>
         <source>OK</source>
         <translation>確定</translation>
@@ -3330,53 +3335,18 @@ click again to end selection</source>
         <source>Remove</source>
         <translation>移除</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMirroredParameters.cpp" line="245"/>
-        <source>Error</source>
-        <translation>錯誤</translation>
-    </message>
 </context>
 <context>
     <name>PartDesignGui::TaskMultiTransformParameters</name>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.ui" line="22"/>
-        <source>Add feature</source>
-        <translation>加入特徵</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.ui" line="32"/>
-        <source>Remove feature</source>
-        <translation>移除特徵</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.ui" line="44"/>
-        <source>List can be reordered by dragging</source>
-        <translation>清單可以通過拖曳來重新排序</translation>
-    </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.ui" line="54"/>
         <source>Transformations</source>
         <translation>排列形式</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.ui" line="71"/>
-        <source>Update view</source>
-        <translation>更新檢視</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.ui" line="52"/>
         <source>OK</source>
         <translation>確定</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.cpp" line="73"/>
-        <source>Remove</source>
-        <translation>移除</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.cpp" line="86"/>
@@ -3422,6 +3392,36 @@ click again to end selection</source>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.cpp" line="141"/>
         <source>Right-click to add</source>
         <translation>按滑鼠右鍵增加</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.ui" line="22"/>
+        <source>Add feature</source>
+        <translation>加入特徵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.ui" line="32"/>
+        <source>Remove feature</source>
+        <translation>移除特徵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.ui" line="44"/>
+        <source>List can be reordered by dragging</source>
+        <translation>清單可以通過拖曳來重新排序</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.ui" line="71"/>
+        <source>Update view</source>
+        <translation>更新檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.cpp" line="73"/>
+        <source>Remove</source>
+        <translation>移除</translation>
     </message>
 </context>
 <context>
@@ -3547,6 +3547,11 @@ click again to end selection</source>
         <translation>方向</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPadPocketParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPadPocketParameters.ui" line="85"/>
         <source>Direction/edge:</source>
         <translation>方向/邊:</translation>
@@ -3646,19 +3651,9 @@ measured along the specified direction</source>
         <source>Update view</source>
         <translation>更新檢視</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPadPocketParameters.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
 </context>
 <context>
     <name>PartDesignGui::TaskPipeOrientation</name>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPipeOrientation.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPipeOrientation.ui" line="22"/>
         <source>Orientation mode</source>
@@ -3744,14 +3739,14 @@ measured along the specified direction</source>
         <source>Remove</source>
         <translation>移除</translation>
     </message>
-</context>
-<context>
-    <name>PartDesignGui::TaskPipeParameters</name>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPipeParameters.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPipeOrientation.ui" line="14"/>
         <source>Form</source>
         <translation>格式</translation>
     </message>
+</context>
+<context>
+    <name>PartDesignGui::TaskPipeParameters</name>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPipeParameters.ui" line="20"/>
         <source>Profile</source>
@@ -3819,14 +3814,14 @@ measured along the specified direction</source>
         <source>No active body</source>
         <translation>沒有啟用中的實體</translation>
     </message>
-</context>
-<context>
-    <name>PartDesignGui::TaskPipeScaling</name>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPipeScaling.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPipeParameters.ui" line="14"/>
         <source>Form</source>
         <translation>格式</translation>
     </message>
+</context>
+<context>
+    <name>PartDesignGui::TaskPipeScaling</name>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPipeScaling.ui" line="22"/>
         <source>Transform mode</source>
@@ -3866,6 +3861,11 @@ measured along the specified direction</source>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPipeParameters.cpp" line="825"/>
         <source>Remove</source>
         <translation>移除</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPipeScaling.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -3959,26 +3959,6 @@ measured along the specified direction</source>
         <translation>角度</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPolarPatternParameters.ui" line="159"/>
-        <source>Offset</source>
-        <translation>偏移複製</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPolarPatternParameters.ui" line="107"/>
-        <source>Occurrences</source>
-        <translation>產生次數</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPolarPatternParameters.cpp" line="112"/>
-        <source>Remove</source>
-        <translation>移除</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPolarPatternParameters.cpp" line="333"/>
-        <source>Error</source>
-        <translation>錯誤</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPolarPatternParameters.ui" line="14"/>
         <source>Form</source>
         <translation>格式</translation>
@@ -3997,6 +3977,26 @@ measured along the specified direction</source>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPolarPatternParameters.ui" line="44"/>
         <source>List can be reordered by dragging</source>
         <translation>清單可以通過拖曳來重新排序</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPolarPatternParameters.ui" line="159"/>
+        <source>Offset</source>
+        <translation>偏移複製</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPolarPatternParameters.ui" line="107"/>
+        <source>Occurrences</source>
+        <translation>產生次數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPolarPatternParameters.cpp" line="333"/>
+        <source>Error</source>
+        <translation>錯誤</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskPolarPatternParameters.cpp" line="112"/>
+        <source>Remove</source>
+        <translation>移除</translation>
     </message>
 </context>
 <context>
@@ -4024,6 +4024,11 @@ measured along the specified direction</source>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskRevolutionParameters.ui" line="22"/>
         <source>Axis:</source>
         <translation>軸座標:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskRevolutionParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskRevolutionParameters.ui" line="30"/>
@@ -4126,14 +4131,19 @@ measured along the specified direction</source>
         <source>No face selected</source>
         <translation>無選定之面</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskRevolutionParameters.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
 </context>
 <context>
     <name>PartDesignGui::TaskScaledParameters</name>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskScaledParameters.ui" line="53"/>
+        <source>Factor</source>
+        <translation>比例因子</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskScaledParameters.ui" line="67"/>
+        <source>Occurrences</source>
+        <translation>產生次數</translation>
+    </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskScaledParameters.ui" line="14"/>
         <source>Form</source>
@@ -4148,16 +4158,6 @@ measured along the specified direction</source>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskScaledParameters.ui" line="32"/>
         <source>Remove feature</source>
         <translation>移除特徵</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskScaledParameters.ui" line="53"/>
-        <source>Factor</source>
-        <translation>比例因子</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskScaledParameters.ui" line="67"/>
-        <source>Occurrences</source>
-        <translation>產生次數</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskScaledParameters.ui" line="81"/>
@@ -4177,11 +4177,6 @@ measured along the specified direction</source>
 </context>
 <context>
     <name>PartDesignGui::TaskShapeBinder</name>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskShapeBinder.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskShapeBinder.ui" line="22"/>
         <source>Object</source>
@@ -4206,6 +4201,11 @@ measured along the specified direction</source>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskShapeBinder.cpp" line="130"/>
         <source>Remove</source>
         <translation>移除</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskShapeBinder.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -4397,14 +4397,14 @@ click again to end selection</source>
 <context>
     <name>PartDesignGui::ViewProviderBody</name>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/ViewProviderBody.cpp" line="136"/>
-        <source>Active body</source>
-        <translation>啟用實體</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/ViewProviderBody.cpp" line="133"/>
         <source>Toggle active body</source>
         <translation>切換啟用中的實體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/ViewProviderBody.cpp" line="136"/>
+        <source>Active body</source>
+        <translation>啟用實體</translation>
     </message>
 </context>
 <context>
@@ -5661,41 +5661,9 @@ Although you will be able to migrate any moment later with &apos;Part Design -&g
         <translation>輪廓特徵</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="62"/>
-        <source>Whether the hole gets a thread</source>
-        <translation>孔是否有螺紋</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="65"/>
-        <source>Threaded</source>
-        <translation>螺紋</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="78"/>
-        <source>Whether the hole gets a modelled thread</source>
-        <translation>孔是否有建模螺紋</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="81"/>
-        <source>Model Thread</source>
-        <translation>建模螺紋</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="91"/>
-        <source>Live update of changes to the thread
-Note that the calculation can take some time</source>
-        <translation>螺紋修改的即時更新
-請注意計算會需要一些時間</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="95"/>
         <source>Update view</source>
         <translation>更新檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="108"/>
-        <source>Customize thread clearance</source>
-        <translation>自訂螺紋間隙</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="111"/>
@@ -5703,35 +5671,15 @@ Note that the calculation can take some time</source>
         <translation>自訂螺紋</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="210"/>
+        <source>Size</source>
+        <translation>尺寸</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="124"/>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="233"/>
         <source>Clearance</source>
         <translation>間隙</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="137"/>
-        <source>Custom Thread clearance value</source>
-        <translation>自訂螺紋間隙值</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="159"/>
-        <source>Direction</source>
-        <translation>方向</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="178"/>
-        <source>Right hand</source>
-        <translation>右手</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="194"/>
-        <source>Left hand</source>
-        <translation>左手</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="210"/>
-        <source>Size</source>
-        <translation>尺寸</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="246"/>
@@ -5758,16 +5706,6 @@ Only available for holes without thread</source>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="588"/>
         <source>Wide</source>
         <translation>寬</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="275"/>
-        <source>Class</source>
-        <translation>類別 (Class)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="288"/>
-        <source>Tolerance class for threaded holes according to hole profile</source>
-        <translation>根據孔輪廓的螺紋孔公差等級</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="301"/>
@@ -5803,16 +5741,6 @@ Only available for holes without thread</source>
         <translation>螺紋深度</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="399"/>
-        <source>Hole depth</source>
-        <translation>孔深</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="409"/>
-        <source>Tapped (DIN76)</source>
-        <translation>攻牙(DIN76)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="433"/>
         <source>&lt;b&gt;Hole cut&lt;/b&gt;</source>
         <translation>&lt;b&gt;開孔&lt;/b&gt;</translation>
@@ -5824,19 +5752,132 @@ Only available for holes without thread</source>
         <translation>類型</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="593"/>
+        <source>&lt;b&gt;Drill point&lt;/b&gt;</source>
+        <translation>&lt;b&gt;鑽孔點&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="687"/>
+        <source>&lt;b&gt;Misc&lt;/b&gt;</source>
+        <translation>&lt;b&gt;雜項&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="738"/>
+        <source>Reverses the hole direction</source>
+        <translation>反轉孔之方向</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="741"/>
+        <source>Reversed</source>
+        <translation>反轉</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="700"/>
+        <source>Tapered</source>
+        <translation>錐</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="713"/>
+        <source>Taper angle for the hole
+90 degree: straight hole
+under 90: smaller hole radius at the bottom
+over 90: larger hole radius at the bottom</source>
+        <translation>孔錐角
+90度: 直孔
+低於90: 底部的孔半徑較小
+超過90: 底部孔半徑較大</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="62"/>
+        <source>Whether the hole gets a thread</source>
+        <translation>孔是否有螺紋</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="65"/>
+        <source>Threaded</source>
+        <translation>螺紋</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="275"/>
+        <source>Class</source>
+        <translation>類別 (Class)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="288"/>
+        <source>Tolerance class for threaded holes according to hole profile</source>
+        <translation>根據孔輪廓的螺紋孔公差等級</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="399"/>
+        <source>Hole depth</source>
+        <translation>孔深</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="409"/>
+        <source>Tapped (DIN76)</source>
+        <translation>攻牙(DIN76)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="159"/>
+        <source>Direction</source>
+        <translation>方向</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="194"/>
+        <source>Left hand</source>
+        <translation>左手</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="178"/>
+        <source>Right hand</source>
+        <translation>右手</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="78"/>
+        <source>Whether the hole gets a modelled thread</source>
+        <translation>孔是否有建模螺紋</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="81"/>
+        <source>Model Thread</source>
+        <translation>建模螺紋</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="91"/>
+        <source>Live update of changes to the thread
+Note that the calculation can take some time</source>
+        <translation>螺紋修改的即時更新
+請注意計算會需要一些時間</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="470"/>
+        <source>Update thread view</source>
+        <translation>更新螺紋檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="108"/>
+        <source>Customize thread clearance</source>
+        <translation>自訂螺紋間隙</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="486"/>
+        <source>Custom Clearance</source>
+        <translation>自訂間隙</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="137"/>
+        <source>Custom Thread clearance value</source>
+        <translation>自訂螺紋間隙值</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="530"/>
+        <source>Hole Cut Type</source>
+        <translation>開孔類型</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="459"/>
         <source>Cut type for screw heads</source>
         <translation>螺絲頭的切割類型</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="472"/>
-        <source>Check to override the values predefined by the &apos;Type&apos;</source>
-        <translation>選取覆蓋「類型」預定義的值</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="475"/>
-        <source>Custom values</source>
-        <translation>自訂值</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="539"/>
@@ -5851,9 +5892,19 @@ the screw&apos;s top below the surface</source>
         <translation>埋頭角</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="593"/>
-        <source>&lt;b&gt;Drill point&lt;/b&gt;</source>
-        <translation>&lt;b&gt;鑽孔點&lt;/b&gt;</translation>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="472"/>
+        <source>Check to override the values predefined by the &apos;Type&apos;</source>
+        <translation>選取覆蓋「類型」預定義的值</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="475"/>
+        <source>Custom values</source>
+        <translation>自訂值</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="692"/>
+        <source>Drill Point</source>
+        <translation>鑽孔點</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="625"/>
@@ -5877,37 +5928,6 @@ account for the depth of blind holes</source>
         <translation>考慮深度</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="687"/>
-        <source>&lt;b&gt;Misc&lt;/b&gt;</source>
-        <translation>&lt;b&gt;雜項&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="700"/>
-        <source>Tapered</source>
-        <translation>錐</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="713"/>
-        <source>Taper angle for the hole
-90 degree: straight hole
-under 90: smaller hole radius at the bottom
-over 90: larger hole radius at the bottom</source>
-        <translation>孔錐角
-90度: 直孔
-低於90: 底部的孔半徑較小
-超過90: 底部孔半徑較大</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="738"/>
-        <source>Reverses the hole direction</source>
-        <translation>反轉孔之方向</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="741"/>
-        <source>Reversed</source>
-        <translation>反轉</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="597"/>
         <source>Normal</source>
         <translation>正常</translation>
@@ -5921,14 +5941,14 @@ over 90: larger hole radius at the bottom</source>
 <context>
     <name>TaskTransformedMessages</name>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskTransformedMessages.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskTransformedMessages.ui" line="25"/>
         <source>No message</source>
         <translation>無訊息</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/PartDesign/Gui/TaskTransformedMessages.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
