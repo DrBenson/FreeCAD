@@ -4,6 +4,12 @@ set(Web_Scripts
     Init.py
 )
 
+if(BUILD_GUI)
+    if(QtWebEngineWidgets_FOUND)
+        add_subdirectory(Gui)
+    endif()
+endif(BUILD_GUI)
+
 add_custom_target(WebScripts ALL
     SOURCES ${Web_Scripts}
 )
@@ -20,3 +26,4 @@ INSTALL(
     DESTINATION
         Mod/Web
 )
+
