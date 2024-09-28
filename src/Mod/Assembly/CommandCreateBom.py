@@ -66,7 +66,7 @@ class CommandCreateBom:
     def GetResources(self):
         return {
             "Pixmap": "Assembly_BillOfMaterials",
-            "MenuText": QT_TRANSLATE_NOOP("Assembly_CreateBom", "Create Bill of Materials")+"\t&O",
+            "MenuText": QT_TRANSLATE_NOOP("Assembly_CreateBom", "Create Bill of Materials"+"\t&O"),
             "ToolTip": "<p>"
             + QT_TRANSLATE_NOOP(
                 "Assembly_CreateBom",
@@ -105,13 +105,11 @@ class TaskAssemblyCreateBom(QtCore.QObject):
         self.form.columnList.setEditTriggers(
             QtWidgets.QAbstractItemView.DoubleClicked | QtWidgets.QAbstractItemView.EditKeyPressed
         )
-        self.form.columnList.setSelectionMode(
-            QtWidgets.QAbstractItemView.SingleSelection)
+        self.form.columnList.setSelectionMode(QtWidgets.QAbstractItemView.SingleSelection)
         self.form.columnList.setDragEnabled(True)
         self.form.columnList.setAcceptDrops(True)
         self.form.columnList.setDropIndicatorShown(True)
-        self.form.columnList.setDragDropMode(
-            QtWidgets.QAbstractItemView.InternalMove)
+        self.form.columnList.setDragDropMode(QtWidgets.QAbstractItemView.InternalMove)
 
         self.form.columnList.installEventFilter(self)
 
@@ -135,8 +133,7 @@ class TaskAssemblyCreateBom(QtCore.QObject):
             self.bomObj = bomObj
             self.form.CheckBox_onlyParts.setChecked(bomObj.onlyParts)
             self.form.CheckBox_detailParts.setChecked(bomObj.detailParts)
-            self.form.CheckBox_detailSubAssemblies.setChecked(
-                bomObj.detailSubAssemblies)
+            self.form.CheckBox_detailSubAssemblies.setChecked(bomObj.detailSubAssemblies)
 
         else:
             App.setActiveTransaction("Create Bill Of Materials")
@@ -146,10 +143,8 @@ class TaskAssemblyCreateBom(QtCore.QObject):
                 self.addColItem(name)
 
             self.createBomObject()
-            self.form.CheckBox_onlyParts.setChecked(
-                pref.GetBool("BOMOnlyParts", False))
-            self.form.CheckBox_detailParts.setChecked(
-                pref.GetBool("BOMDetailParts", True))
+            self.form.CheckBox_onlyParts.setChecked(pref.GetBool("BOMOnlyParts", False))
+            self.form.CheckBox_detailParts.setChecked(pref.GetBool("BOMDetailParts", True))
             self.form.CheckBox_detailSubAssemblies.setChecked(
                 pref.GetBool("BOMDetailSubAssemblies", True)
             )
@@ -159,8 +154,7 @@ class TaskAssemblyCreateBom(QtCore.QObject):
 
         self.form.CheckBox_onlyParts.stateChanged.connect(self.onIncludeSolids)
         self.form.CheckBox_detailParts.stateChanged.connect(self.onDetailParts)
-        self.form.CheckBox_detailSubAssemblies.stateChanged.connect(
-            self.onDetailSubAssemblies)
+        self.form.CheckBox_detailSubAssemblies.stateChanged.connect(self.onDetailSubAssemblies)
 
         self.updateColumnList()
 
@@ -182,10 +176,8 @@ class TaskAssemblyCreateBom(QtCore.QObject):
     def deactivate(self):
         pref = Preferences.preferences()
         pref.SetBool("BOMOnlyParts", self.form.CheckBox_onlyParts.isChecked())
-        pref.SetBool("BOMDetailParts",
-                     self.form.CheckBox_detailParts.isChecked())
-        pref.SetBool("BOMDetailSubAssemblies",
-                     self.form.CheckBox_detailSubAssemblies.isChecked())
+        pref.SetBool("BOMDetailParts", self.form.CheckBox_detailParts.isChecked())
+        pref.SetBool("BOMDetailSubAssemblies", self.form.CheckBox_detailSubAssemblies.isChecked())
 
         if Gui.Control.activeDialog():
             Gui.Control.closeDialog()
@@ -257,8 +249,7 @@ class TaskAssemblyCreateBom(QtCore.QObject):
 
         # Show the menu below the button
         menu.exec_(
-            self.form.btnAddColumn.mapToGlobal(
-                QtCore.QPoint(0, self.form.btnAddColumn.height()))
+            self.form.btnAddColumn.mapToGlobal(QtCore.QPoint(0, self.form.btnAddColumn.height()))
         )
 
     def isCustomColumn(self, name):
@@ -299,8 +290,7 @@ class TaskAssemblyCreateBom(QtCore.QObject):
             QtWidgets.QMessageBox.warning(
                 self.form,
                 translate("Assembly", "Duplicate Name"),
-                translate(
-                    "Assembly", "This name is already used. Please choose a different name."),
+                translate("Assembly", "This name is already used. Please choose a different name."),
             )
 
             # Revert the change
@@ -318,8 +308,7 @@ class TaskAssemblyCreateBom(QtCore.QObject):
                 font.setBold(True)
                 item.setFont(font)
                 # Use a single-shot timer to defer changing the flags (else FC crashes)
-                QtCore.QTimer.singleShot(
-                    0, lambda: self.makeItemNonEditable(item))
+                QtCore.QTimer.singleShot(0, lambda: self.makeItemNonEditable(item))
 
             self.updateColumnList()
 
@@ -334,13 +323,16 @@ class TaskAssemblyCreateBom(QtCore.QObject):
 
     def createBomObject(self):
         assembly = UtilsAssembly.activeAssembly()
+        Gui.addModule("UtilsAssembly")
         if assembly is not None:
-            bom_group = UtilsAssembly.getBomGroup(assembly)
-            self.bomObj = bom_group.newObject(
-                "Assembly::BomObject", "Bill of Materials")
+            commands = (
+                "bom_group = UtilsAssembly.getBomGroup(assembly)\n"
+                'bomObj = bom_group.newObject("Assembly::BomObject", "Bill of Materials")'
+            )
         else:
-            self.bomObj = App.activeDocument().addObject(
-                "Assembly::BomObject", "Bill of Materials")
+            commands = 'bomObj = App.activeDocument().addObject("Assembly::BomObject", "Bill of Materials")'
+        Gui.doCommand(commands)
+        self.bomObj = Gui.doCommandEval("bomObj")
 
     def export(self):
         self.bomObj.recompute()
@@ -376,8 +368,7 @@ class TaskAssemblyCreateBom(QtCore.QObject):
         layout = QtWidgets.QVBoxLayout()
         layout.setContentsMargins(10, 10, 10, 10)
 
-        options_title = QtWidgets.QLabel(
-            "<b>" + translate("Assembly", "Options:") + "</b>")
+        options_title = QtWidgets.QLabel("<b>" + translate("Assembly", "Options:") + "</b>")
         options_text = QtWidgets.QLabel(
             " - "
             + translate(
@@ -398,8 +389,7 @@ class TaskAssemblyCreateBom(QtCore.QObject):
             )
             + "\n"
         )
-        columns_title = QtWidgets.QLabel(
-            "<b>" + translate("Assembly", "Columns:") + "</b>")
+        columns_title = QtWidgets.QLabel("<b>" + translate("Assembly", "Columns:") + "</b>")
         columns_text = QtWidgets.QLabel(
             " - "
             + translate(
