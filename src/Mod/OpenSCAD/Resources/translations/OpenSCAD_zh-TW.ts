@@ -449,16 +449,6 @@
 <context>
     <name>OpenSCAD_Minkowski</name>
     <message>
-        <location filename="../../OpenSCADCommands.py" line="580"/>
-        <source>Minkowski sum</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../OpenSCADCommands.py" line="583"/>
-        <source>Use OpenSCAD to create a Minkowski sum</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../OpenSCADCommands.py" line="570"/>
         <source>Minkowski</source>
         <translation>Minkowski</translation>
@@ -467,6 +457,16 @@
         <location filename="../../OpenSCADCommands.py" line="573"/>
         <source>Perform Minkowski</source>
         <translation>執行 Minkowski</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="580"/>
+        <source>Minkowski sum</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="583"/>
+        <source>Use OpenSCAD to create a Minkowski sum</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
