@@ -81,7 +81,7 @@
     <message>
         <location filename="../../DlgStartPreferences.ui" line="579"/>
         <source>If this is selected, the &apos;New File&apos; icon shows a gradient icon instead of the normal icon</source>
-        <translation type="unfinished"></translation>
+        <translation>如果選擇此選項，「新檔案」圖示將顯示漸層圖示而不是普通圖示</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="601"/>
@@ -91,7 +91,7 @@
     <message>
         <location filename="../../DlgStartPreferences.ui" line="607"/>
         <source>Choose which workbench to switch to after the program launches</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇程式啟動後要切換到的工作台</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="633"/>
@@ -101,7 +101,7 @@
     <message>
         <location filename="../../DlgStartPreferences.ui" line="33"/>
         <source>Workbench to switch to after loading a file from the Start page, only used if Start is the start up workbench</source>
-        <translation type="unfinished"></translation>
+        <translation>從「開始」頁面載入檔案後切換到的工作台，僅在「開始」是啟動工作台時使用</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="640"/>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../../DlgStartPreferences.ui" line="614"/>
         <source>If checked, will automatically close the Start page when FreeCAD launches</source>
-        <translation type="unfinished"></translation>
+        <translation>如果選中，將在 FreeCAD 啟動時自動關閉起始頁</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="647"/>
@@ -121,7 +121,7 @@
     <message>
         <location filename="../../DlgStartPreferences.ui" line="654"/>
         <source>If application is started by opening a file, apply the two settings above</source>
-        <translation type="unfinished"></translation>
+        <translation>如果應用程式是透過開啟檔案啟動的，則套用上面的兩個設定</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="42"/>
@@ -131,7 +131,7 @@
     <message>
         <location filename="../../DlgStartPreferences.ui" line="122"/>
         <source>The size of file thumbnail icons in recent files and examples sections</source>
-        <translation type="unfinished"></translation>
+        <translation>最近文件和範例部分中文件縮圖圖示的大小</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="554"/>
@@ -146,7 +146,7 @@
     <message>
         <location filename="../../DlgStartPreferences.ui" line="163"/>
         <source>Displays help tips in the Start workbench Documents tab</source>
-        <translation type="unfinished"></translation>
+        <translation>在「啟動工作台文件」分頁中顯示幫助提示</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="153"/>
@@ -181,7 +181,7 @@
     <message>
         <location filename="../../DlgStartPreferences.ui" line="134"/>
         <source>Shows a notepad next to the file thumbnails, where you can keep notes across sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>在文件縮圖旁邊顯示記事本，您可以在其中跨工作階段保存筆記</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="297"/>
@@ -192,7 +192,8 @@
         <location filename="../../DlgStartPreferences.ui" line="110"/>
         <source>An optional custom folder to be displayed at the bottom of the first page.
 By using &quot;;;&quot; to separate paths, you can add several folders here</source>
-        <translation type="unfinished"></translation>
+        <translation>顯示在第一頁底部的可選自訂資料夾.
+透過使用&quot;;;&quot;分隔目錄路徑，您可以在此處新增多個資料夾</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="62"/>
@@ -262,7 +263,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
         <location filename="../../DlgStartPreferences.ui" line="479"/>
         <source>The down gradient for the background color (currently unsupported)</source>
-        <translation type="unfinished"></translation>
+        <translation>背景顏色向下漸層 (目前尚未支援)</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="437"/>
@@ -307,7 +308,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
         <location filename="../../DlgStartPreferences.ui" line="319"/>
         <source>If this is checked and a style sheet is specified in General preferences, it will be used and override the colors below</source>
-        <translation type="unfinished"></translation>
+        <translation>如果選取此項目並在一般偏好設定中指定樣式表，則將使用該樣式表並覆蓋下方的顏色</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="279"/>
@@ -657,7 +658,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
         <location filename="TranslationTexts.py" line="52"/>
         <source>This section contains documentation useful for FreeCAD users in general: a list of all the workbenches, detailed instructions on how to install and use the FreeCAD application, tutorials, and all you need to get started.</source>
-        <translation type="unfinished"></translation>
+        <translation>本節包含一般對 FreeCAD 使用者有用的文件: 所有工作台的清單、有關如何安裝和使用 FreeCAD 應用程式的詳細說明、教學課程以及入門所需的所有內容.</translation>
     </message>
     <message>
         <location filename="TranslationTexts.py" line="53"/>
@@ -667,7 +668,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
         <location filename="TranslationTexts.py" line="54"/>
         <source>This section gathers documentation for advanced users and people interested in writing python scripts. You will also find there a repository of macros, instructions on how to install and use them, and more information about customizing FreeCAD to your specific needs.</source>
-        <translation type="unfinished"></translation>
+        <translation>本節為進階使用者和對編寫 Python 腳本感興趣的人收集文件. 您還可以找到巨集儲存庫、有關如何安裝和使用它們的說明，以及有關根據您的特定需求自訂 FreeCAD 的更多信息.</translation>
     </message>
     <message>
         <location filename="TranslationTexts.py" line="55"/>
@@ -677,7 +678,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
         <location filename="TranslationTexts.py" line="56"/>
         <source>This section contains material for developers: How to compile FreeCAD yourself, how the FreeCAD source code is structured + how to navigate in it, how to develop new workbenches and/or embed FreeCAD in your own application.</source>
-        <translation type="unfinished"></translation>
+        <translation>本節包含開發人員的材料: 如何自行編譯 FreeCAD、FreeCAD 原始碼的結構 + 如何在其中導航、如何開發新工作台和/或將 FreeCAD 嵌入到您自己的應用程式中.</translation>
     </message>
     <message>
         <location filename="TranslationTexts.py" line="57"/>
@@ -687,7 +688,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
         <location filename="TranslationTexts.py" line="58"/>
         <source>The FreeCAD manual is another, more linear way to present the information contained in this wiki. It is made to be read like a book, and will gently introduce you to many other pages from the hubs above. &lt;a href=&quot;https://www.gitbook.com/book/yorikvanhavre/a-freecad-manual/details&quot;&gt;e-book versions&lt;/a&gt; are also available.</source>
-        <translation type="unfinished"></translation>
+        <translation>FreeCAD 手冊是另一種更線性的方式來呈現本 wiki 中包含的資訊. 它被設計成像一本書一樣閱讀，並且會從上面的中心輕輕地向您介紹許多其他頁面. 另提供&lt;a href=&quot;https://www.gitbook.com/book/yorikvanhavre/a-freecad-manual/details&quot;&gt;電子書版本&lt;/a&gt;.</translation>
     </message>
     <message>
         <location filename="TranslationTexts.py" line="59"/>
@@ -697,7 +698,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
         <location filename="TranslationTexts.py" line="60"/>
         <source>These are the help pages of all the workbenches currently installed on this computer.</source>
-        <translation type="unfinished"></translation>
+        <translation>這些是目前安裝在該電腦上的所有工作台的說明頁面.</translation>
     </message>
     <message>
         <location filename="TranslationTexts.py" line="61"/>
@@ -707,17 +708,17 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
         <location filename="TranslationTexts.py" line="62"/>
         <source>The &lt;a href=&quot;http://forum.freecadweb.org&quot;&gt;FreeCAD forum&lt;/a&gt; is a great place to get help from other FreeCAD users and developers. The forum has many sections for different types of issues and discussion subjects. If in doubt, post in the more general &lt;a href=&quot;https://forum.freecadweb.org/viewforum.php?f=3&quot;&gt;Help on using FreeCAD&lt;/a&gt; section.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;a href=&quot;http://forum.freecadweb.org&quot;&gt;FreeCAD 論壇&lt;/a&gt; 是從其他 FreeCAD 使用者和開發人員那裡獲取幫助的好地方. 該論壇有許多針對不同類型問題和討論主題的部分. 如有疑問，請在更一般的&lt;a href=&quot;https://forum.freecadweb.org/viewforum.php?f=3&quot;&gt;有關使用 FreeCAD 的幫助&lt;/a&gt;部分中發帖.</translation>
     </message>
     <message>
         <location filename="TranslationTexts.py" line="63"/>
         <source>If it is the first time you are posting on the forum, be sure to &lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=2264&quot;&gt;read the guidelines&lt;/a&gt; first!</source>
-        <translation type="unfinished"></translation>
+        <translation>如果您是第一次在論壇上發帖，請務必先&lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=2264&quot;&gt;閱讀指南&lt;/a&gt;!</translation>
     </message>
     <message>
         <location filename="TranslationTexts.py" line="64"/>
         <source>FreeCAD also maintains a public &lt;a href=&quot;https://www.freecadweb.org/tracker&quot;&gt;bug tracker&lt;/a&gt; where anybody can submit bugs and propose new features. To avoid causing extra work and give the best chances to see your bug solved, make sure you read the &lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=5236&quot;&gt;bug submission guide&lt;/a&gt; before posting.</source>
-        <translation type="unfinished"></translation>
+        <translation>FreeCAD 還維護一個公共&lt;a href=&quot;https://www.freecadweb.org/tracker&quot;&gt;錯誤追蹤器&lt;/a&gt;，任何人都可以提交錯誤並提出新功能 .為了避免造成額外的工作並提供最好的機會解決您的錯誤，發文前請務必閱讀&lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=5236&quot;&gt;錯誤提交指南&lt; /a&gt; .</translation>
     </message>
     <message>
         <location filename="TranslationTexts.py" line="65"/>
@@ -727,17 +728,17 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
         <location filename="TranslationTexts.py" line="66"/>
         <source>Below is a list of available extra workbenches that can be added to your FreeCAD installation. Browse and install them from menu Tools -&gt; Addons manager. You can learn more about any of them by clicking the links below.</source>
-        <translation type="unfinished"></translation>
+        <translation>以下是可以新增到您的 FreeCAD 安裝中的可用額外工作台的清單。從選單&quot;工具&quot;-&gt;&quot;附加元件管理員&quot;瀏覽並安裝它們. 您可以通過點擊下面的連結了解有關其中任何一個的更多信息.</translation>
     </message>
     <message>
         <location filename="TranslationTexts.py" line="67"/>
         <source>If not bundled with your FreeCAD version, install the FreeCAD documentation package to get documentation hubs, workbench help and individual command documentation without an internet connection.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果未與您的 FreeCAD 版本捆綁在一起，請安裝 FreeCAD 說明套件以獲取說明中心、工作台幫助和單獨的命令說明，而無需 Internet 連接.</translation>
     </message>
     <message>
         <location filename="TranslationTexts.py" line="68"/>
         <source>Cannot fetch information from GitHub. &lt;a href=&quot;EnableDownload.py&quot;&gt;Authorize FreeCAD to access the internet&lt;/a&gt; and reload the Start page.</source>
-        <translation type="unfinished"></translation>
+        <translation>無法從 GitHub 取得資訊. &lt;a href=&quot;EnableDownload.py&quot;&gt;授權 FreeCAD 存取網際網路&lt;/a&gt;並重新載入起始頁.</translation>
     </message>
     <message>
         <location filename="TranslationTexts.py" line="69"/>
@@ -747,7 +748,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
         <location filename="TranslationTexts.py" line="70"/>
         <source>Below are the latest changes added to the &lt;a href=&quot;http://github.com/FreeCAD/FreeCAD/&quot;&gt;FreeCAD source code&lt;/a&gt;. These changes might not reflect yet in the FreeCAD version that you are currently running. Check the &lt;a href=&quot;https://www.freecadweb.org/wiki/Downloads&quot;&gt;available options&lt;/a&gt; if you wish to obtain a development version.</source>
-        <translation type="unfinished"></translation>
+        <translation>以下是 &lt;a href=&quot;http://github.com/FreeCAD/FreeCAD/&quot;&gt;FreeCAD 原始碼&lt;/a&gt; 中新增的最新變更. 這些變更可能尚未反映在您目前正在執行的 FreeCAD 版本中. 如果您想取得開發版本，請檢視&lt;a href=&quot;https://www.freecadweb.org/wiki/Downloads&quot;&gt;可用選項&lt;/a&gt;.</translation>
     </message>
     <message>
         <location filename="TranslationTexts.py" line="71"/>
@@ -757,7 +758,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
         <location filename="TranslationTexts.py" line="72"/>
         <source>You can configure a custom folder to display here in menu Edit -&gt; Preferences -&gt; Start -&gt; Show additional folder</source>
-        <translation type="unfinished"></translation>
+        <translation>您可以自訂資料夾參數設定以在功能表選單“編輯”-&gt;“偏好設定”-&gt;“開始”-&gt;“顯示其他資料夾”中顯示</translation>
     </message>
     <message>
         <location filename="TranslationTexts.py" line="73"/>
@@ -787,7 +788,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
         <location filename="TranslationTexts.py" line="78"/>
         <source>The latest posts on the &lt;a href=&quot;https://forum.freecadweb.org&quot;&gt;FreeCAD forum&lt;/a&gt;:</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;a href=&quot;https://forum.freecadweb.org&quot;&gt;FreeCAD 論壇&lt;/a&gt; 上的最新帖子:</translation>
     </message>
     <message>
         <location filename="TranslationTexts.py" line="79"/>
@@ -887,12 +888,12 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
         <location filename="../../../StartPage/TranslationTexts.py" line="98"/>
         <source>The &lt;a href=&quot;http://forum.freecad.org&quot;&gt;FreeCAD forum&lt;/a&gt; is a great place to get help from other FreeCAD users and developers. The forum has many sections for different types of issues and discussion subjects. If in doubt, post in the more general &lt;a href=&quot;https://forum.freecad.org/viewforum.php?f=3&quot;&gt;Help on using FreeCAD&lt;/a&gt; section.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;a href=&quot;http://forum.freecad.org&quot;&gt;FreeCAD 論壇&lt;/a&gt; 是獲得其他 FreeCAD 使用者和開發人員協助的好地方. 該論壇有許多針對不同類型問題和討論主題的部分. 如果有疑問，請在更一般的&lt;a href=&quot;https://forum.freecad.org/viewforum.php?f=3&quot;&gt;有關使用 FreeCAD 的幫助&lt;/a&gt;部分中發文.</translation>
     </message>
     <message>
         <location filename="../../../StartPage/TranslationTexts.py" line="102"/>
         <source>If it is the first time you are posting on the forum, be sure to &lt;a href=&quot;https://forum.freecad.org/viewtopic.php?f=3&amp;t=2264&quot;&gt;read the guidelines&lt;/a&gt; first!</source>
-        <translation type="unfinished"></translation>
+        <translation>如果您是第一次在論壇上發帖，請務必先&lt;a href=&quot;https://forum.freecad.org/viewtopic.php?f=3&amp;t=2264&quot;&gt;閱讀指南&lt;/a&gt; !</translation>
     </message>
     <message>
         <location filename="../../../StartPage/TranslationTexts.py" line="106"/>
