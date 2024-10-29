@@ -1324,11 +1324,6 @@
         <translation>ºC</translation>
     </message>
     <message>
-        <location filename="../../TaskPanelConstraintTemperature.ui" line="26"/>
-        <source>Select the vertices, lines and surfaces: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../TaskPanelConstraintTemperature.ui" line="81"/>
         <source>Add</source>
         <translation>新增</translation>
@@ -1342,6 +1337,11 @@
         <location filename="../../TaskPanelInitialTemperature.ui" line="26"/>
         <source>Insert component&apos;s
  initial temperature:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskPanelConstraintTemperature.ui" line="26"/>
+        <source>Select the vertices, lines and surfaces: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2589,11 +2589,6 @@ Specify another file please.</source>
 <context>
     <name>FemGui::DlgSettingsFemElmerImp</name>
     <message>
-        <location filename="../../DlgSettingsFemElmer.ui" line="0"/>
-        <source>Multi-CPU core support:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../DlgSettingsFemElmer.ui" line="14"/>
         <source>Elmer</source>
         <translation type="unfinished"></translation>
@@ -2717,6 +2712,11 @@ Therefore an executable with the suffix &apos;_mpi.exe&apos; is required.</sourc
         <location filename="../../DlgSettingsFemElmerImp.cpp" line="126"/>
         <source>Wrong Elmer setting: You use more than one CPU core.
 Therefore an executable with the suffix &apos;_mpi&apos; is required.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettingsFemElmer.ui" line="0"/>
+        <source>Multi-CPU core support:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3633,11 +3633,6 @@ Specify another file please.</source>
 <context>
     <name>FemGui::TaskFemConstraintDisplacement</name>
     <message>
-        <location filename="../../TaskFemConstraintDisplacement.cpp" line="345"/>
-        <source>Only one type of selection (vertex,face or edge) per analysis feature allowed!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../TaskFemConstraintDisplacement.cpp" line="373"/>
         <location filename="../../TaskFemConstraintDisplacement.cpp" line="382"/>
         <location filename="../../TaskFemConstraintDisplacement.cpp" line="408"/>
@@ -3666,6 +3661,11 @@ Specify another file please.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintDisplacement.cpp" line="364"/>
         <source>Only one type of selection (vertex, face or edge) per analysis feature allowed!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskFemConstraintDisplacement.cpp" line="345"/>
+        <source>Only one type of selection (vertex,face or edge) per analysis feature allowed!</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4123,11 +4123,6 @@ Specify another file please.</source>
 <context>
     <name>FemGui::TaskFemConstraintTransform</name>
     <message>
-        <location filename="../../TaskFemConstraintTransform.cpp" line="141"/>
-        <source>Constraint update error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../TaskFemConstraintTransform.cpp" line="162"/>
         <source>Analysis feature update error</source>
         <translation type="unfinished"></translation>
@@ -4203,6 +4198,11 @@ Specify another file please.</source>
     <message>
         <location filename="../../TaskFemConstraintTransform.cpp" line="360"/>
         <source>Only transformable faces can be selected! Apply displacement boundary condition to surface first then apply local coordinate system to surface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskFemConstraintTransform.cpp" line="141"/>
+        <source>Constraint update error</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4654,11 +4654,6 @@ Specify another file please.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/ElementFluid1D.ui" line="0"/>
-        <source>Head Loss[mm]</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../ui/ElementFluid1D.ui" line="26"/>
         <source>Fluid Section Parameter</source>
         <translation type="unfinished"></translation>
@@ -5081,6 +5076,11 @@ Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../ui/ElementGeometry1D.ui" line="0"/>
+        <source>Diameter:   </source>
+        <translation>直徑:   </translation>
+    </message>
+    <message>
         <location filename="../ui/ElementGeometry1D.ui" line="14"/>
         <source>Beam section parameter</source>
         <translation type="unfinished"></translation>
@@ -5289,9 +5289,9 @@ Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/ElementGeometry1D.ui" line="0"/>
-        <source>Diameter:   </source>
-        <translation>直徑:   </translation>
+        <location filename="../ui/ElementFluid1D.ui" line="0"/>
+        <source>Head Loss[mm]</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>0 1/s</source>
@@ -5504,6 +5504,11 @@ Note: has no effect if a solid was selected</source>
 <context>
     <name>PlaneWidget</name>
     <message>
+        <location filename="../../PlaneWidget.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../PlaneWidget.ui" line="29"/>
         <source>Origin</source>
         <translation>原點</translation>
@@ -5524,11 +5529,6 @@ Note: has no effect if a solid was selected</source>
         <location filename="../../PlaneWidget.ui" line="115"/>
         <source>Normal</source>
         <translation>垂直</translation>
-    </message>
-    <message>
-        <location filename="../../PlaneWidget.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -6132,18 +6132,18 @@ For possible variables, see the description box below.</source>
 <context>
     <name>Std_Delete</name>
     <message>
+        <location filename="../../ViewProviderAnalysis.cpp" line="222"/>
+        <source>The analysis is not empty, therefore the
+following referencing objects might be lost:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../ViewProviderAnalysis.cpp" line="230"/>
         <location filename="../../ViewProviderFemPostFunction.cpp" line="153"/>
         <location filename="../../ViewProviderSolver.cpp" line="74"/>
         <location filename="../../ViewProviderFemPostObject.cpp" line="684"/>
         <source>Object dependencies</source>
         <translation>物件相依</translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderAnalysis.cpp" line="222"/>
-        <source>The analysis is not empty, therefore the
-following referencing objects might be lost:</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../ViewProviderFemPostFunction.cpp" line="145"/>
@@ -6171,14 +6171,14 @@ following referencing objects might be lost:</source>
         <translation>網格:</translation>
     </message>
     <message>
-        <location filename="../../TaskAnalysisInfo.ui" line="48"/>
-        <source>Analysis features</source>
-        <translation>分析特徵</translation>
-    </message>
-    <message>
         <location filename="../../TaskAnalysisInfo.ui" line="0"/>
         <source>Constraints</source>
         <translation>約束條件</translation>
+    </message>
+    <message>
+        <location filename="../../TaskAnalysisInfo.ui" line="48"/>
+        <source>Analysis features</source>
+        <translation>分析特徵</translation>
     </message>
     <message>
         <source>Form</source>
@@ -7499,6 +7499,11 @@ used for the Elmer solver</source>
 <context>
     <name>TaskPostDisplay</name>
     <message>
+        <location filename="../../TaskPostDisplay.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../TaskPostDisplay.ui" line="28"/>
         <source>Mode</source>
         <translation>模式</translation>
@@ -7572,14 +7577,14 @@ used for the Elmer solver</source>
         <source>Transparency</source>
         <translation>透明度</translation>
     </message>
-    <message>
-        <location filename="../../TaskPostDisplay.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
 </context>
 <context>
     <name>TaskPostScalarClip</name>
+    <message>
+        <location filename="../../TaskPostScalarClip.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
     <message>
         <location filename="../../TaskPostScalarClip.ui" line="28"/>
         <source>Scalar</source>
@@ -7634,11 +7639,6 @@ used for the Elmer solver</source>
         <location filename="../../TaskPostScalarClip.ui" line="209"/>
         <source>Clip inside out</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskPostScalarClip.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>

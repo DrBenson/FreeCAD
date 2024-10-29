@@ -329,7 +329,7 @@
     <message>
         <location filename="../../OpenSCADUtils.py" line="665"/>
         <source>Error: either all shapes must be 2D or all shapes must be 3D</source>
-        <translation type="unfinished"></translation>
+        <translation>錯誤: 所有形狀必須是 2D 或 3D</translation>
     </message>
 </context>
 <context>
@@ -412,7 +412,7 @@
     <message>
         <location filename="../../OpenSCADCommands.py" line="564"/>
         <source>Use OpenSCAD to create a hull</source>
-        <translation type="unfinished"></translation>
+        <translation>使用OpenSCAD建立船體</translation>
     </message>
 </context>
 <context>
@@ -449,16 +449,6 @@
 <context>
     <name>OpenSCAD_Minkowski</name>
     <message>
-        <location filename="../../OpenSCADCommands.py" line="580"/>
-        <source>Minkowski sum</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../OpenSCADCommands.py" line="583"/>
-        <source>Use OpenSCAD to create a Minkowski sum</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../OpenSCADCommands.py" line="570"/>
         <source>Minkowski</source>
         <translation>Minkowski</translation>
@@ -467,6 +457,16 @@
         <location filename="../../OpenSCADCommands.py" line="573"/>
         <source>Perform Minkowski</source>
         <translation>執行 Minkowski</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="580"/>
+        <source>Minkowski sum</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="583"/>
+        <source>Use OpenSCAD to create a Minkowski sum</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -523,7 +523,7 @@
     <message>
         <location filename="../../OpenSCADCommands.py" line="305"/>
         <source>Replace an object in the Tree view. Please select old, new, and parent object</source>
-        <translation type="unfinished"></translation>
+        <translation>替換樹狀檢視中的物體. 請選擇舊物體、新物體和父系物體</translation>
     </message>
 </context>
 <context>
@@ -575,7 +575,7 @@
     <message>
         <location filename="../../InitGui.py" line="156"/>
         <source>Frequently-used Part WB tools</source>
-        <translation type="unfinished"></translation>
+        <translation>常用的零件工作台工具</translation>
     </message>
 </context>
 </TS>
