@@ -56,11 +56,6 @@
 <context>
     <name>AddonsInstaller</name>
     <message>
-        <location filename="../../AddonManager.py" line="125"/>
-        <source>Addon Manager</source>
-        <translation>附加元件管理員</translation>
-    </message>
-    <message>
         <location filename="../../AddonManager.py" line="363"/>
         <source>Previous cache process was interrupted, restarting...
 </source>
@@ -444,11 +439,152 @@
         <translation>取消安裝 &apos;{}&apos;</translation>
     </message>
     <message>
+        <location filename="../../package_details.py" line="63"/>
+        <source>Addon Manager Warning: Could not import QtWebEngineWidgets -- README data will display as text-only</source>
+        <translation>附加元件管理員警告: 無法匯入 QtWebEngineWidgets - 描述文件資料將顯示為純文字</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="187"/>
+        <source>Version {version} installed on {date}</source>
+        <translation>版本 {version} 已於 {date} 安裝</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="192"/>
+        <source>Version {version} installed</source>
+        <translation>版本 {version} 已安裝</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="196"/>
+        <source>Installed on {date}</source>
+        <translation>安裝於 {date}</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="210"/>
+        <source>On branch {}, update available to version</source>
+        <translation>在分支 {} 上，有可用版本更新</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="219"/>
+        <source>Update available to version</source>
+        <translation>有可用版本更新</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="230"/>
+        <source>An update is available</source>
+        <translation>有可用更新</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="248"/>
+        <source>Git tag &apos;{}&apos; checked out, no updates possible</source>
+        <translation>Git 標記「{}」已簽出，無法更新</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="256"/>
+        <source>This is the latest version available for branch {}</source>
+        <translation>這是分支可用的最新版本 {}</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="264"/>
+        <source>Updated, please restart FreeCAD to use</source>
+        <translation>已更新，請重啟 FreeCAD 以使用</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="271"/>
+        <source>Update check in progress</source>
+        <translation>正在檢查更新</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="276"/>
+        <source>Automatic update checks disabled</source>
+        <translation>自動更新已停用</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="298"/>
+        <source>Installation location</source>
+        <translation>安裝位置</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="345"/>
+        <source>WARNING: This addon is obsolete</source>
+        <translation>警告：此附加元件已過時</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="355"/>
+        <source>WARNING: This addon is Python 2 Only</source>
+        <translation>警告：此附加元件僅適用於 Python 2</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="365"/>
+        <source>WARNING: This addon requires FreeCAD </source>
+        <translation>警告：此附加元件需要 FreeCAD </translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="379"/>
+        <source>WARNING: This addon is currently installed, but disabled. Use the &apos;enable&apos; button to re-enable.</source>
+        <translation>警告: 此附加元件目前已安裝，但已停用. 使用&quot;啟用&quot;按鈕重新啟用.</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="517"/>
+        <location filename="../../package_details.py" line="530"/>
+        <source>No URL or wiki page provided by this macro</source>
+        <translation>此巨集未提供 URL 或 wiki 頁面</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="633"/>
+        <source>Could not load README data from URL {}</source>
+        <translation>無法從 URL 載入 README 資料 {}</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="658"/>
+        <source>This Addon will be enabled next time you restart fci.</source>
+        <translation>該附加元件將在您下次重新啟動 fci 時啟用.</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="675"/>
+        <source>This Addon will be disabled next time you restart fci.</source>
+        <translation>下次重新啟動 fci 時，此附加元件將被停用.</translation>
+    </message>
+    <message>
         <location filename="../../package_details.py" line="685"/>
         <location filename="../../addonmanager_installer_gui.py" line="485"/>
         <location filename="../../AddonManagerTest/gui/test_installer_gui.py" line="55"/>
         <source>Success</source>
         <translation>成功</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="708"/>
+        <source>Changed to git ref &apos;{}&apos; -- please restart to use Addon.</source>
+        <translation>更改為 git ref &apos;{}&apos; -- 請重新啟動以使用附加元件.</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="753"/>
+        <source>Page JavaScript reported</source>
+        <translation>JavaScript 報告頁面</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="899"/>
+        <source>QtWebEngine Python bindings not installed -- using fallback README display.</source>
+        <translation>QtWebEngine Python 綁定未安裝 -- 使用回退描述文件顯示.</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="911"/>
+        <source>Install</source>
+        <translation>安裝</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="914"/>
+        <source>Uninstall</source>
+        <translation>解除安裝</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="920"/>
+        <source>Check for Update</source>
+        <translation>檢查更新</translation>
+    </message>
+    <message>
+        <location filename="../../package_details.py" line="925"/>
+        <source>Run Macro</source>
+        <translation>執行巨集</translation>
     </message>
     <message>
         <location filename="../../addonmanager_installer_gui.py" line="486"/>
@@ -1078,155 +1214,19 @@
         <translation>正在從 {} 載入 {} 頁面...</translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/addonmanager_readme_viewer.py" line="60"/>
+        <source>Loading README data...</source>
+        <translation>載入 README 資料...</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/addonmanager_readme_viewer.py" line="84"/>
         <source>Failed to download data from {} -- received response code {}.</source>
         <translation>無法從 {} 下載資料 -- 收到回應碼 {}.</translation>
     </message>
     <message>
-        <location filename="../../package_details.py" line="63"/>
-        <source>Addon Manager Warning: Could not import QtWebEngineWidgets -- README data will display as text-only</source>
-        <translation>附加元件管理員警告: 無法匯入 QtWebEngineWidgets - 描述文件資料將顯示為純文字</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="187"/>
-        <source>Version {version} installed on {date}</source>
-        <translation>版本 {version} 已於 {date} 安裝</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="192"/>
-        <source>Version {version} installed</source>
-        <translation>版本 {version} 已安裝</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="196"/>
-        <source>Installed on {date}</source>
-        <translation>安裝於 {date}</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="210"/>
-        <source>On branch {}, update available to version</source>
-        <translation>在分支 {} 上，有可用版本更新</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="219"/>
-        <source>Update available to version</source>
-        <translation>有可用版本更新</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="230"/>
-        <source>An update is available</source>
-        <translation>有可用更新</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="248"/>
-        <source>Git tag &apos;{}&apos; checked out, no updates possible</source>
-        <translation>Git 標記「{}」已簽出，無法更新</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="256"/>
-        <source>This is the latest version available for branch {}</source>
-        <translation>這是分支可用的最新版本 {}</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="264"/>
-        <source>Updated, please restart FreeCAD to use</source>
-        <translation>已更新，請重啟 FreeCAD 以使用</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="271"/>
-        <source>Update check in progress</source>
-        <translation>正在檢查更新</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="276"/>
-        <source>Automatic update checks disabled</source>
-        <translation>自動更新已停用</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="298"/>
-        <source>Installation location</source>
-        <translation>安裝位置</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="345"/>
-        <source>WARNING: This addon is obsolete</source>
-        <translation>警告：此附加元件已過時</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="355"/>
-        <source>WARNING: This addon is Python 2 Only</source>
-        <translation>警告：此附加元件僅適用於 Python 2</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="365"/>
-        <source>WARNING: This addon requires FreeCAD </source>
-        <translation>警告：此附加元件需要 FreeCAD </translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="379"/>
-        <source>WARNING: This addon is currently installed, but disabled. Use the &apos;enable&apos; button to re-enable.</source>
-        <translation>警告: 此附加元件目前已安裝，但已停用. 使用&quot;啟用&quot;按鈕重新啟用.</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="517"/>
-        <location filename="../../package_details.py" line="530"/>
-        <source>No URL or wiki page provided by this macro</source>
-        <translation>此巨集未提供 URL 或 wiki 頁面</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="633"/>
-        <source>Could not load README data from URL {}</source>
-        <translation>無法從 URL 載入 README 資料 {}</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="658"/>
-        <source>This Addon will be enabled next time you restart fci.</source>
-        <translation>該附加元件將在您下次重新啟動 fci 時啟用.</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="675"/>
-        <source>This Addon will be disabled next time you restart fci.</source>
-        <translation>下次重新啟動 fci 時，此附加元件將被停用.</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="708"/>
-        <source>Changed to git ref &apos;{}&apos; -- please restart to use Addon.</source>
-        <translation>更改為 git ref &apos;{}&apos; -- 請重新啟動以使用附加元件.</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="753"/>
-        <source>Page JavaScript reported</source>
-        <translation>JavaScript 報告頁面</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="899"/>
-        <source>QtWebEngine Python bindings not installed -- using fallback README display.</source>
-        <translation>QtWebEngine Python 綁定未安裝 -- 使用回退描述文件顯示.</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="911"/>
-        <source>Install</source>
-        <translation>安裝</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="914"/>
-        <source>Uninstall</source>
-        <translation>解除安裝</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="920"/>
-        <source>Check for Update</source>
-        <translation>檢查更新</translation>
-    </message>
-    <message>
-        <location filename="../../package_details.py" line="925"/>
-        <source>Run Macro</source>
-        <translation>執行巨集</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/addonmanager_readme_viewer.py" line="60"/>
-        <source>Loading README data...</source>
-        <translation>載入 README 資料...</translation>
+        <location filename="../../AddonManager.py" line="125"/>
+        <source>Addon Manager</source>
+        <translation>附加元件管理員</translation>
     </message>
     <message>
         <source>This addon requires Python packages that are not installed, and cannot be installed automatically. To use this workbench you must install the following Python packages manually:</source>
@@ -1873,6 +1873,26 @@ Do you want the Addon Manager to install them automatically? Choose &quot;Ignore
         <translation>提示：常見標籤包括「Assembly」、「FEM」、「Mesh」、「NURBS」等.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="17"/>
+        <source>Add-on Manager: Warning!</source>
+        <translation>附加元件管理員: 警告!</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="62"/>
+        <source>The Add-on Manager provides access to an extensive library of useful third-party FreeCAD extensions. No guarantees can be made regarding their safety or functionality.</source>
+        <translation>附加元件管理員提供對有用的第三方 FreeCAD 擴充功能的廣泛函式庫的存取. 無法保證其安全性或功能性.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="96"/>
+        <source>Continue</source>
+        <translation>繼續</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="103"/>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
         <location filename="../../first_run.ui" line="17"/>
         <source>Welcome to the Addon Manager</source>
         <translation>歡迎使用附加元件管理員</translation>
@@ -1959,11 +1979,6 @@ Do you want the Addon Manager to install them automatically? Choose &quot;Ignore
 <context>
     <name>ExpandedView</name>
     <message>
-        <location filename="../../expanded_view.py" line="129"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../expanded_view.py" line="131"/>
         <source>Icon</source>
         <translation>圖示</translation>
@@ -2002,9 +2017,20 @@ Do you want the Addon Manager to install them automatically? Choose &quot;Ignore
         <source>UpdateAvailable</source>
         <translation>有可用更新</translation>
     </message>
+    <message>
+        <location filename="../../expanded_view.py" line="129"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
 </context>
 <context>
     <name>Form</name>
+    <message>
+        <location filename="../../developer_mode_licenses_table.ui" line="14"/>
+        <location filename="../../developer_mode_people_table.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
     <message>
         <location filename="../../developer_mode_licenses_table.ui" line="38"/>
         <source>Licenses</source>
@@ -2039,12 +2065,6 @@ Do you want the Addon Manager to install them automatically? Choose &quot;Ignore
         <location filename="../../developer_mode_people_table.ui" line="67"/>
         <source>Email</source>
         <translation>電子郵件</translation>
-    </message>
-    <message>
-        <location filename="../../developer_mode_licenses_table.ui" line="14"/>
-        <location filename="../../developer_mode_people_table.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -2216,6 +2236,11 @@ installed addons will be checked for available updates</source>
         <translation>啟動供新附加元件程式開發人員使用的附加元件管理員選項.</translation>
     </message>
     <message>
+        <location filename="../../AddonManagerOptions.ui" line="383"/>
+        <source>Addon developer mode</source>
+        <translation>附加元件開發者模式</translation>
+    </message>
+    <message>
         <location filename="../../AddonManagerOptions.ui" line="276"/>
         <source>Path to Python executable (optional):</source>
         <translation>Python 執行程式的路徑(可選):</translation>
@@ -2229,11 +2254,6 @@ installed addons will be checked for available updates</source>
         <location filename="../../AddonManagerOptions.ui" line="308"/>
         <source>Path to git executable (optional):</source>
         <translation>用於 git 執行程式的路徑(可選):</translation>
-    </message>
-    <message>
-        <location filename="../../AddonManagerOptions.ui" line="383"/>
-        <source>Addon developer mode</source>
-        <translation>附加元件開發者模式</translation>
     </message>
     <message>
         <source>If this option is selected, when launching the Addon Manager,

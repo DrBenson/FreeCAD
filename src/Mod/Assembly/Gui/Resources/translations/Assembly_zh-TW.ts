@@ -365,14 +365,14 @@
         <translation>索引</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="48"/>
-        <source>Name</source>
-        <translation>名稱</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="49"/>
         <source>Description</source>
         <translation>描述</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="48"/>
+        <source>Name</source>
+        <translation>名稱</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="49"/>
@@ -518,6 +518,14 @@
         <location filename="../../../UtilsAssembly.py" line="68"/>
         <source>getObject() in UtilsAssembly.py the object name is too short, at minimum it should be something like &apos;Assembly.Box.edge16&apos;. It shouldn&apos;t be shorter</source>
         <translation>UtilsAssembly.py 中的 getObject() 物件名稱太短，至少應該類似於&quot;Assembly.Box.edge16&quot;. 不應該更短</translation>
+    </message>
+</context>
+<context>
+    <name>Assembly::AssemblyLink</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/App/AssemblyLink.cpp" line="512"/>
+        <source>Joints</source>
+        <translation>接點</translation>
     </message>
 </context>
 <context>
@@ -1176,6 +1184,14 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
     </message>
 </context>
 <context>
+    <name>Command</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/ViewProviderAssemblyLink.cpp" line="139"/>
+        <source>Toggle Rigid</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CommandInsertLink</name>
     <message>
         <location filename="../../../CommandInsertLink.py" line="168"/>
@@ -1201,6 +1217,26 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <translation>啟用零件</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/ViewProviderAssemblyLink.cpp" line="127"/>
+        <source>Turn flexible</source>
+        <translation>翻轉活動方式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/ViewProviderAssemblyLink.cpp" line="128"/>
+        <source>Your sub-assembly is currently rigid. This will make it flexible instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/ViewProviderAssemblyLink.cpp" line="132"/>
+        <source>Turn rigid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/ViewProviderAssemblyLink.cpp" line="133"/>
+        <source>Your sub-assembly is currently flexible. This will make it rigid instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../InitGui.py" line="76"/>
         <source>Assembly</source>
         <translation>零件組合</translation>
@@ -1224,6 +1260,16 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <translation>半徑 2</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="87"/>
+        <source>Attachement offsets</source>
+        <translation>附加依賴偏移</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="94"/>
+        <source>Simple</source>
+        <translation>簡易</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="52"/>
         <source>Offset</source>
         <translation>偏移</translation>
@@ -1232,6 +1278,31 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="76"/>
         <source>Rotation</source>
         <translation>旋轉</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="149"/>
+        <source>Advanced</source>
+        <translation>進階選項</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="157"/>
+        <source>Offset1</source>
+        <translation>偏移1</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="164"/>
+        <source>By clicking this button, you can set the attachement offset of the first marker (coordinate system) of the joint.</source>
+        <translation>透過點擊此按鈕，您可以設定接點第一個標記(座標系統)的附加依賴偏移.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="178"/>
+        <source>Offset2</source>
+        <translation>偏移2</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="185"/>
+        <source>By clicking this button, you can set the attachement offset of the second marker (coordinate system) of the joint.</source>
+        <translation>透過點擊此按鈕，您可以設定接點第二個標記(座標系統)的附加依賴偏移.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="104"/>
@@ -1391,14 +1462,14 @@ Press ESC to cancel.</source>
         <translation>只有零件</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="77"/>
-        <source>Columns of the bill of materials</source>
-        <translation>物料清單的列</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="80"/>
         <source>Columns</source>
         <translation>欄位</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="77"/>
+        <source>Columns of the bill of materials</source>
+        <translation>物料清單的列</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="89"/>
@@ -1422,11 +1493,6 @@ Press ESC to cancel.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyInsertLink.ui" line="14"/>
         <source>Insert Component</source>
         <translation>插入組件</translation>
-    </message>
-    <message>
-        <location filename="../panels/TaskAssemblyInsertLink.ui" line="14"/>
-        <source>Insert Link</source>
-        <translation>插入連結</translation>
     </message>
     <message>
         <location filename="../panels/TaskAssemblyInsertLink.ui" line="20"/>
@@ -1463,6 +1529,27 @@ Press ESC to cancel.</source>
         <source>Insert as part</source>
         <translation>插入成為零件</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyInsertLink.ui" line="74"/>
+        <source>If checked, the inserted sub-assemblies will not be flexible.
+Rigid means that the sub-assembly will be considered as a solid.
+Flexible means that the sub-assembly joints will be taken into account in the main assembly.
+You can change this property of sub-assemblies at any time by right clicking them.</source>
+        <translation>如果選中，插入的子零件組合將不會活動.
+剛性意味著子零件組合將被視為實體.
+靈活意味著在主零件組合中將考慮子零件組合接點.
+您可以隨時透過右鍵點擊子零件組合來變更其屬性.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyInsertLink.ui" line="80"/>
+        <source>Rigid sub-assemblies</source>
+        <translation>死板的子零件組合</translation>
+    </message>
+    <message>
+        <location filename="../panels/TaskAssemblyInsertLink.ui" line="14"/>
+        <source>Insert Link</source>
+        <translation>插入連結</translation>
+    </message>
 </context>
 <context>
     <name>UtilsAssembly</name>
@@ -1474,16 +1561,6 @@ Press ESC to cancel.</source>
 </context>
 <context>
     <name>Workbench</name>
-    <message>
-        <location filename="../../../InitGui.py" line="70"/>
-        <source>Assembly workbench</source>
-        <translation>零件組合工作台</translation>
-    </message>
-    <message>
-        <location filename="../../../InitGui.py" line="71"/>
-        <source>Initializing Assembly workbench...</source>
-        <translation>初始化零件組合工作台...</translation>
-    </message>
     <message>
         <location filename="../../../InitGui.py" line="91"/>
         <source>Assembly</source>
@@ -1503,6 +1580,16 @@ Press ESC to cancel.</source>
         <location filename="../../../InitGui.py" line="110"/>
         <source>Assembly workbench loaded</source>
         <translation>零件組合工作台已載入</translation>
+    </message>
+    <message>
+        <location filename="../../../InitGui.py" line="70"/>
+        <source>Assembly workbench</source>
+        <translation>零件組合工作台</translation>
+    </message>
+    <message>
+        <location filename="../../../InitGui.py" line="71"/>
+        <source>Initializing Assembly workbench...</source>
+        <translation>初始化零件組合工作台...</translation>
     </message>
 </context>
 </TS>
