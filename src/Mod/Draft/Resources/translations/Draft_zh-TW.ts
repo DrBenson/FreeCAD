@@ -1431,7 +1431,7 @@ beyond the dimension line</source>
         <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="382"/>
         <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="392"/>
         <source>The color of lines and arrows</source>
-        <translation type="unfinished"></translation>
+        <translation>尺寸和箭頭的顏色</translation>
     </message>
     <message>
         <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="385"/>
@@ -2140,7 +2140,7 @@ A Link array is more efficient when creating multiple copies, but it cannot be f
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskShapeString.ui" line="114"/>
         <source>Reset 3D point selection</source>
-        <translation type="unfinished"></translation>
+        <translation>重置 3D 點選擇</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskShapeString.ui" line="183"/>
@@ -3435,6 +3435,11 @@ Then you can use it to save a different camera position and objects&apos; states
         <translation>填充</translation>
     </message>
     <message>
+        <location filename="../ui/dialogHatch.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../ui/dialogHatch.ui" line="20"/>
         <source>PAT file:</source>
         <translation>PAT 檔案:</translation>
@@ -4225,11 +4230,6 @@ value by using the [ and ] keys while drawing</source>
         <source>Previous</source>
         <translation>前一個</translation>
     </message>
-    <message>
-        <location filename="../ui/dialogHatch.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
 </context>
 <context>
     <name>Gui::Dialog::DlgSettingsDraft</name>
@@ -4614,6 +4614,12 @@ Use Draft ToggleGrid to change this for the active view.</source>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="69"/>
         <source>If checked, an additional border is displayed around the grid,
 showing the main square size in the bottom left corner</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="92"/>
+        <source>If checked, the outline of a human figure is displayed at the bottom left
+corner of the grid. Only effective if &quot;Show grid border&quot; is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7292,6 +7298,21 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
+        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
+        <source>Working plane aligned to global placement of</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
+        <source>Dir</source>
+        <translation>方向</translation>
+    </message>
+    <message>
         <location filename="../../draftguitools/gui_selectplane.py" line="539"/>
         <source>Custom</source>
         <translation>自訂</translation>
@@ -7315,29 +7336,6 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <location filename="../../WorkingPlane.py" line="1668"/>
         <source>Position:</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="209"/>
-        <location filename="../../importDWG.py" line="281"/>
-        <source>LibreDWG error</source>
-        <translation>LibreDWG 錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="226"/>
-        <source>Error during DWG conversion. Try moving the DWG file to a directory path without spaces and non-english characters, or try saving to a lower DWG version.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="229"/>
-        <location filename="../../importDWG.py" line="296"/>
-        <source>ODA File Converter not found</source>
-        <translation>沒找到 ODA 檔案轉換</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="242"/>
-        <location filename="../../importDWG.py" line="306"/>
-        <source>QCAD error</source>
-        <translation>QCAD 錯誤</translation>
     </message>
     <message>
         <location filename="../../importDWG.py" line="284"/>
@@ -7402,19 +7400,27 @@ To enabled FreeCAD to download these libraries, answer Yes.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
-        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
+        <location filename="../../importDWG.py" line="209"/>
+        <location filename="../../importDWG.py" line="281"/>
+        <source>LibreDWG error</source>
+        <translation>LibreDWG 錯誤</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="226"/>
+        <source>Error during DWG conversion. Try moving the DWG file to a directory path without spaces and non-english characters, or try saving to a lower DWG version.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
-        <source>Working plane aligned to global placement of</source>
-        <translation type="unfinished"></translation>
+        <location filename="../../importDWG.py" line="229"/>
+        <location filename="../../importDWG.py" line="296"/>
+        <source>ODA File Converter not found</source>
+        <translation>沒找到 ODA 檔案轉換</translation>
     </message>
     <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
-        <source>Dir</source>
-        <translation>方向</translation>
+        <location filename="../../importDWG.py" line="242"/>
+        <location filename="../../importDWG.py" line="306"/>
+        <source>QCAD error</source>
+        <translation>QCAD 錯誤</translation>
     </message>
     <message>
         <location filename="../../importDXF.py" line="146"/>
@@ -9498,11 +9504,6 @@ The final angle will be the base angle plus this amount.</source>
 <context>
     <name>importOCA</name>
     <message>
-        <location filename="../../importOCA.py" line="360"/>
-        <source>OCA error: couldn&apos;t determine character encoding</source>
-        <translation>OCA錯誤: 無法定義字元編碼</translation>
-    </message>
-    <message>
         <location filename="../../importOCA.py" line="445"/>
         <source>OCA: found no data to export</source>
         <translation>OCA：找不到要匯出的資料</translation>
@@ -9511,6 +9512,11 @@ The final angle will be the base angle plus this amount.</source>
         <location filename="../../importOCA.py" line="490"/>
         <source>successfully exported</source>
         <translation>成功匯出</translation>
+    </message>
+    <message>
+        <location filename="../../importOCA.py" line="360"/>
+        <source>OCA error: couldn&apos;t determine character encoding</source>
+        <translation>OCA錯誤: 無法定義字元編碼</translation>
     </message>
 </context>
 </TS>

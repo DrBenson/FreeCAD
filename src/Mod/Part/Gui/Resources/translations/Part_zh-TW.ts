@@ -2764,11 +2764,6 @@ of projection.</source>
 <context>
     <name>PartDesignGui::TaskDatumParameters</name>
     <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="20"/>
         <source>Selection accepted</source>
         <translation>接受選擇</translation>
@@ -2865,6 +2860,11 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="367"/>
         <source>Flip sides</source>
         <translation>翻面</translation>
+    </message>
+    <message>
+        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -3043,6 +3043,11 @@ Note: The placement is expressed in local space of object being attached.</sourc
 <context>
     <name>PartGui::DlgExportHeaderStep</name>
     <message>
+        <location filename="../../DlgExportHeaderStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
+    </message>
+    <message>
         <location filename="../../DlgExportHeaderStep.ui" line="20"/>
         <source>If not empty, field contents will be used in the STEP file header.</source>
         <translation>如果不為空，則欄位內容將用於STEP文件標題.</translation>
@@ -3067,11 +3072,6 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <source>Product</source>
         <translation>產品</translation>
     </message>
-    <message>
-        <location filename="../../DlgExportHeaderStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
-    </message>
 </context>
 <context>
     <name>PartGui::DlgExportStep</name>
@@ -3079,6 +3079,11 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgExportStep.ui" line="14"/>
         <source>STEP Export Settings</source>
         <translation>STEP 匯出設定</translation>
+    </message>
+    <message>
+        <location filename="../../DlgExportStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
     </message>
     <message>
         <location filename="../../DlgExportStep.ui" line="20"/>
@@ -3110,11 +3115,6 @@ it inside the Placement property.</source>
         <location filename="../../DlgExportStep.ui" line="26"/>
         <source>Units for export of STEP</source>
         <translation>匯出STEP檔所用之單位</translation>
-    </message>
-    <message>
-        <location filename="../../DlgExportStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
     </message>
     <message>
         <location filename="../../DlgExportStep.ui" line="47"/>
@@ -3486,11 +3486,6 @@ If both lengths are zero, magnitude of direction is used.</source>
         <translation>倒角參數</translation>
     </message>
     <message>
-        <location filename="../../DlgFilletEdges.cpp" line="266"/>
-        <source>Chamfer Parameter</source>
-        <translation>倒角參數</translation>
-    </message>
-    <message>
         <location filename="../../DlgFilletEdges.cpp" line="268"/>
         <source>Chamfer type</source>
         <translation>倒角類型</translation>
@@ -3611,6 +3606,11 @@ Please select a valid shape in the drop-down box first.</source>
         <source>No edge entity is checked to fillet.
 Please check one or more edge entities first.</source>
         <translation>未選擇實體之邊產生圓角,請先選擇1或多個實體之邊.</translation>
+    </message>
+    <message>
+        <location filename="../../DlgFilletEdges.cpp" line="266"/>
+        <source>Chamfer Parameter</source>
+        <translation>倒角參數</translation>
     </message>
 </context>
 <context>
@@ -3962,6 +3962,11 @@ during file reading (slower but higher details).</source>
         <translation>當匯入時顯示此對話框</translation>
     </message>
     <message>
+        <location filename="../../DlgImportStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
+    </message>
+    <message>
         <location filename="../../DlgImportStep.ui" line="30"/>
         <source>Enable STEP Compound merge</source>
         <translation>啟用 STEP 複合合併</translation>
@@ -4061,11 +4066,6 @@ during file reading (slower but higher details).</source>
         <location filename="../../DlgImportStep.ui" line="181"/>
         <source>Object per document in sub-directory</source>
         <translation>依據子目錄中每個文件的物體</translation>
-    </message>
-    <message>
-        <location filename="../../DlgImportStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
     </message>
 </context>
 <context>
@@ -4203,27 +4203,27 @@ during file reading (slower but higher details).</source>
         <translation>STEP 匯入檔案</translation>
     </message>
     <message>
-        <location filename="../../DlgPartImportStep.ui" line="20"/>
-        <source>File Name</source>
-        <translation>檔案名稱</translation>
-    </message>
-    <message>
         <location filename="../../DlgPartImportStep.ui" line="14"/>
         <source>Step input file</source>
         <translation>STEP輸入檔</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPartImportStep.ui" line="20"/>
+        <source>File Name</source>
+        <translation>檔案名稱</translation>
     </message>
 </context>
 <context>
     <name>PartGui::DlgPartImportStepImp</name>
     <message>
-        <location filename="../../DlgPartImportStepImp.cpp" line="73"/>
-        <source>All Files</source>
-        <translation>所有檔案</translation>
-    </message>
-    <message>
         <location filename="../../DlgPartImportStepImp.cpp" line="72"/>
         <source>STEP</source>
         <translation>STEP</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPartImportStepImp.cpp" line="73"/>
+        <source>All Files</source>
+        <translation>所有檔案</translation>
     </message>
 </context>
 <context>
@@ -4936,6 +4936,21 @@ during file reading (slower but higher details).</source>
         <source>Setting a too small deviation causes the tessellation to take longerand thus freezes or slows down the GUI.</source>
         <translation>設定太小的偏差會導致曲面細分花費更長的時間，從而凍結或減慢 GUI.</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgSettings3DViewPartImp.cpp" line="84"/>
+        <source>Setting a too small deviation causes the tessellation to take longer and thus freezes or slows down the GUI.</source>
+        <translation>設定太小的偏差會導致曲面細分花費更長的時間，從而凍結或減慢 GUI 圖形使用者介面.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgSettings3DViewPartImp.cpp" line="104"/>
+        <source>Angle Deflection</source>
+        <translation>角度偏轉</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgSettings3DViewPartImp.cpp" line="105"/>
+        <source>Setting a too small angle deviation causes the tessellation to take longer and thus freezes or slows down the GUI.</source>
+        <translation>設定太小的角度偏差會導致曲面細分花費更長的時間，從而凍結或減慢 GUI 圖形使用者介面.</translation>
+    </message>
 </context>
 <context>
     <name>PartGui::DlgSettingsGeneral</name>
@@ -5475,6 +5490,11 @@ the sketch plane&apos;s normal vector will be used</source>
         <translation>持續截面切割</translation>
     </message>
     <message>
+        <location filename="../../SectionCutting.ui" line="20"/>
+        <source>Permanent Section Cutting</source>
+        <translation>永久斷面切割</translation>
+    </message>
+    <message>
         <location filename="../../SectionCutting.ui" line="32"/>
         <source>Cutting X</source>
         <translation>切割 X</translation>
@@ -5586,11 +5606,6 @@ only created cuts will be visible</source>
         <location filename="../../SectionCutting.cpp" line="520"/>
         <source>Sliders are disabled for assemblies</source>
         <translation>組件中的滑桿被禁用</translation>
-    </message>
-    <message>
-        <location filename="../../SectionCutting.ui" line="20"/>
-        <source>Permanent Section Cutting</source>
-        <translation>永久斷面切割</translation>
     </message>
 </context>
 <context>
@@ -5780,11 +5795,6 @@ only created cuts will be visible</source>
 <context>
     <name>PartGui::TaskAttacher</name>
     <message>
-        <location filename="../../TaskAttacher.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../TaskAttacher.ui" line="20"/>
         <source>Selection accepted</source>
         <translation>接受選擇</translation>
@@ -5966,6 +5976,11 @@ of object being attached.</source>
         <location filename="../../TaskAttacher.cpp" line="842"/>
         <source>%1 (add more references)</source>
         <translation>%1 (增加更多參考)</translation>
+    </message>
+    <message>
+        <location filename="../../TaskAttacher.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -6244,6 +6259,22 @@ Individual boolean operation checks:</source>
         <translation>檢查幾何</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/TaskCheckGeometry.cpp" line="456"/>
+        <source>Null shape</source>
+        <translation>空造型</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/TaskCheckGeometry.cpp" line="457"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/TaskCheckGeometry.cpp" line="468"/>
+        <source>Skipped</source>
+        <translation>已略過</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/TaskCheckGeometry.cpp" line="467"/>
+        <source>Infinite shape</source>
+        <translation>無限形狀</translation>
+    </message>
+    <message>
         <location filename="../../TaskCheckGeometry.cpp" line="459"/>
         <source>Invalid</source>
         <translation>無效</translation>
@@ -6252,6 +6283,11 @@ Individual boolean operation checks:</source>
         <location filename="../../TaskCheckGeometry.cpp" line="478"/>
         <source>Checking</source>
         <translation>檢查中</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/TaskCheckGeometry.cpp" line="542"/>
+        <source>No errors</source>
+        <translation>無錯誤</translation>
     </message>
     <message>
         <location filename="../../TaskCheckGeometry.cpp" line="501"/>
@@ -6264,6 +6300,11 @@ Individual boolean operation checks:</source>
         <translation>
             <numerusform>%n 無效形狀。</numerusform>
         </translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/TaskCheckGeometry.cpp" line="555"/>
+        <source>To Report view.</source>
+        <translation>到報表檢視.</translation>
     </message>
     <message>
         <location filename="../../TaskCheckGeometry.cpp" line="590"/>

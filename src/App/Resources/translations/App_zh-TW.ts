@@ -68,14 +68,14 @@ that reference the same configurable object</source>
 <context>
     <name>Notifications</name>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Document.cpp" line="1082"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Document.cpp" line="1163"/>
         <source>
 It is recommended that the user right-click the root of the document and select Mark to recompute.
 The user should then click the Refresh button in the main toolbar.
 </source>
         <translation>
-建議使用者右鍵點擊檔案根目錄，選擇標記重新計算.
-然後使用者應該點擊主工具列中的“重新整理”按鈕.
+建議使用者右鍵點選文件根目錄，選擇「標記重新計算」.
+然後，使用者需要點擊主工具列中的「重新整理」按鈕.
 </translation>
     </message>
 </context>
