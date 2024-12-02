@@ -294,6 +294,11 @@
     <name>ReenGui::FitBSplineCurve</name>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/ReverseEngineering/Gui/FitBSplineCurve.ui" line="14"/>
+        <source>Fit B-spline curve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/ReverseEngineering/Gui/FitBSplineCurve.ui" line="14"/>
         <source>Fit B-spline surface</source>
         <translation>最適化B-雲形線曲面</translation>
     </message>
