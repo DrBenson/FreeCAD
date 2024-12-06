@@ -75,7 +75,7 @@ The user should then click the Refresh button in the main toolbar.
 </source>
         <translation>
 建議使用者右鍵點選文件根目錄，選擇「標記重新計算」.
-然後，使用者需要點擊主工具列中的「重新整理」按鈕.
+然後應該點擊主工具列中的“重新整理”按鈕.
 </translation>
     </message>
 </context>

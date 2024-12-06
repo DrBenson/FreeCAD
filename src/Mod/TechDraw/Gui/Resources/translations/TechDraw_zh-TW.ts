@@ -2361,9 +2361,25 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>繪圖建立頁面</translation>
     </message>
     <message>
+        <location filename="../../Command.cpp" line="1189"/>
+        <source>ClipGroupAdd</source>
+        <translation>增加裁剪群組</translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="1260"/>
+        <source>ClipGroupRemove</source>
+        <translation>移除裁剪群組</translation>
+    </message>
+    <message>
         <location filename="../../Command.cpp" line="1500"/>
         <source>Create spreadsheet view</source>
         <translation>建立試算表檢視</translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="1620"/>
+        <location filename="../../MDIViewPage.cpp" line="734"/>
+        <source>Save page to dxf</source>
+        <translation>儲存頁面為 DXF 格式</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="359"/>
@@ -2401,14 +2417,14 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>建立裁剪</translation>
     </message>
     <message>
-        <location filename="../../Command.cpp" line="1189"/>
-        <source>ClipGroupAdd</source>
-        <translation>增加裁剪群組</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1420"/>
+        <source>Add clip group</source>
+        <translation>新增裁剪組</translation>
     </message>
     <message>
-        <location filename="../../Command.cpp" line="1260"/>
-        <source>ClipGroupRemove</source>
-        <translation>移除裁剪群組</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1491"/>
+        <source>Remove clip group</source>
+        <translation>移除裁剪組</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="1380"/>
@@ -2423,12 +2439,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1822"/>
         <source>Save page to DXF</source>
-        <translation>儲存頁面為 DXF 格式</translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="1620"/>
-        <location filename="../../MDIViewPage.cpp" line="734"/>
-        <source>Save page to dxf</source>
         <translation>儲存頁面為 DXF 格式</translation>
     </message>
     <message>
@@ -3680,14 +3690,14 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>預設屬性質</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="132"/>
-        <source>Text size</source>
-        <translation>字體大小</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="59"/>
         <source>Distance Factor</source>
         <translation>距離因子</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="132"/>
+        <source>Text size</source>
+        <translation>字體大小</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="155"/>
@@ -3700,6 +3710,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation> px</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="162"/>
+        <source>Mirror</source>
+        <translation>鏡像</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="175"/>
         <source>Background color</source>
         <translation>背景顏色</translation>
@@ -3708,11 +3723,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="66"/>
         <source>Text color</source>
         <translation>文字顏色</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="162"/>
-        <source>Mirror</source>
-        <translation>鏡像</translation>
     </message>
 </context>
 <context>
@@ -4173,6 +4183,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>無法附加焊接線。未選擇基本檢視。</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="123"/>
+        <source>Can not attach leader. No base View selected.</source>
+        <translation>無法附加引導. 無基礎檢視選擇.</translation>
+    </message>
+    <message>
         <location filename="../../CommandAnnotate.cpp" line="125"/>
         <location filename="../../CommandAnnotate.cpp" line="719"/>
         <location filename="../../CommandAnnotate.cpp" line="899"/>
@@ -4500,9 +4515,21 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>選取邊為橢圓，其半徑為近似值。是否繼續?</translation>
     </message>
     <message>
+        <location filename="../../CommandCreateDims.cpp" line="223"/>
+        <location filename="../../CommandCreateDims.cpp" line="349"/>
+        <source>BSpline Curve Warning</source>
+        <translation>BSpline 曲線警告</translation>
+    </message>
+    <message>
         <location filename="../../CommandCreateDims.cpp" line="224"/>
         <source>Selected edge is a BSpline.  Radius will be approximate. Continue?</source>
         <translation>選取邊為 B 雲形線。半徑將會是近似值。是否繼續 ?</translation>
+    </message>
+    <message>
+        <location filename="../../CommandCreateDims.cpp" line="234"/>
+        <location filename="../../CommandCreateDims.cpp" line="360"/>
+        <source>BSpline Curve Error</source>
+        <translation>B 雲形線曲線錯誤</translation>
     </message>
     <message>
         <location filename="../../CommandCreateDims.cpp" line="235"/>
@@ -4612,6 +4639,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>無法從選擇中製作3D範圍尺寸標注</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2523"/>
+        <source>Selection contains both 2d and 3d geometry</source>
+        <translation>選擇包含 2d 和 3d 幾何體</translation>
+    </message>
+    <message>
         <location filename="../../CommandCreateDims.cpp" line="1219"/>
         <source>There is no Dimension in your selection</source>
         <translation>您的選擇中沒有尺寸標注</translation>
@@ -4648,10 +4680,9 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>選取邊為橢圓，其結果為近似值。是否繼續?</translation>
     </message>
     <message>
-        <location filename="../../CommandCreateDims.cpp" line="223"/>
-        <location filename="../../CommandCreateDims.cpp" line="349"/>
-        <source>BSpline Curve Warning</source>
-        <translation>BSpline 曲線警告</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2443"/>
+        <source>B-spline Curve Warning</source>
+        <translation>B-雲形曲線警告</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2461"/>
@@ -4659,20 +4690,14 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>選取邊為 B 雲形線。結果將會是近似值。是否繼續 ?</translation>
     </message>
     <message>
-        <location filename="../../CommandCreateDims.cpp" line="234"/>
-        <location filename="../../CommandCreateDims.cpp" line="360"/>
-        <source>BSpline Curve Error</source>
-        <translation>B 雲形線曲線錯誤</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2454"/>
+        <source>B-spline Curve Error</source>
+        <translation>B-雲形曲線錯誤</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2472"/>
         <source>Selected edge is a B-spline and a radius/diameter can not be calculated.</source>
         <translation>選取邊為 B 雲形線而半徑/直徑無法被計算出來.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2523"/>
-        <source>Selection contains both 2d and 3d geometry</source>
-        <translation>選擇包含 2d 和 3d 幾何體</translation>
     </message>
     <message>
         <location filename="../../CommandDecorate.cpp" line="106"/>
@@ -4683,6 +4708,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../CommandDecorate.cpp" line="107"/>
         <source>Some Faces in selection are already hatched.  Replace?</source>
         <translation>某些選擇中的面已被填充，是否更換?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="111"/>
+        <source>Some Faces in selection are already hatched. Replace?</source>
+        <translation>選擇中的一些面已經鑲嵌. 取代它?</translation>
     </message>
     <message>
         <location filename="../../CommandDecorate.cpp" line="310"/>
@@ -4918,6 +4948,12 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskDimension.cpp" line="161"/>
         <source>Missing Dimension</source>
         <translation>缺少標註</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskDimension.cpp" line="147"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskDimension.cpp" line="162"/>
+        <source>Dimension not found. Was it deleted? Can not continue.</source>
+        <translation>沒有找到尺寸. 被刪了嗎? 無法繼續.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskDimension.cpp" line="147"/>
@@ -5597,6 +5633,11 @@ This directory will be used for the symbol selection.</source>
         <location filename="../../DlgPageChooser.ui" line="29"/>
         <source>FreeCAD could not determine which Page to use.  Please select a Page.</source>
         <translation>FreeCAD 無法確定使用哪個頁面。請選擇一個頁面。</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPageChooser.ui" line="29"/>
+        <source>FreeCAD could not determine which Page to use. Please select a Page.</source>
+        <translation>FreeCAD 無法確定要使用哪個頁面. 請選擇一個頁面.</translation>
     </message>
     <message>
         <location filename="../../DlgPageChooser.ui" line="39"/>
@@ -6676,9 +6717,21 @@ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
 通常不使用間隙. 如果使用間隙，建議值為6.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="486"/>
-        <source>Controls the size of the gap between the dimension point and the start of the extension line for ISO dimensions.</source>
-        <translation>控制 ISO 標註的標註點和延長線起點間的間隙大小。</translation>
+        <location filename="../../DlgPrefsTechDrawDimensions.ui" line="573"/>
+        <source>Controls the size of spacing between dimension line and dimension text for ISO dimensions.</source>
+        <translation>控制 ISO 尺寸的尺寸線和尺寸文字之間的間距大小.</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawDimensions.ui" line="583"/>
+        <source>Controls the size of spacing between dimension line and dimension text.
+ Value * linewidth is the line spacing.</source>
+        <translation>控制尺寸線和尺寸文字之間的間距大小.
+ 值*線寬 即為行距.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="405"/>
+        <source>Controls the gap size between the dimension point and the start of the extension line for ISO dimensions.</source>
+        <translation>控制 ISO 尺寸的尺寸點與尺寸界線起點之間的間隙大小.</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawDimensions.ui" line="489"/>
@@ -6691,14 +6744,62 @@ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
         <translation>對於自動尺寸標注格式保留空白. 使用 %f、%g 或 %w 說明字元來覆蓋.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="517"/>
-        <source>Controls the size of the gap between the dimension point and the start of the extension line for ASME dimensions.</source>
-        <translation>控制 ASME 標註的標註點和延長線起點間的間隙大小。</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="433"/>
+        <source>Controls the gap size between the dimension point and the start of the extension line for ASME dimensions.</source>
+        <translation>控制 ASME 尺寸的尺寸點與尺寸界線起點之間的間隙大小.</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawDimensions.ui" line="520"/>
         <source>Extension Gap Factor - ASME</source>
         <translation>延伸間隙比例 - ASME</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="443"/>
+        <source>Controls the gap size between the dimension point and the start of the extension line for ISO dimensions.
+ Value * linewidth is the gap.
+ Normally, no gap is used. If using a gap, the recommended value is 8.</source>
+        <translation>控制 ISO 尺寸的尺寸點與尺寸界線起點之間的間隙大小.
+ 值*線寬即為間隙.
+ 通常不使用間隙. 如果使用間隙，建議值為 8.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="461"/>
+        <source>Controls the gap size between the dimension point and the start of the extension line for ASME dimensions. Value * linewidth is the gap.
+ Normally, no gap is used. If using a gap, the recommended value is 6.</source>
+        <translation>控制 ASME 尺寸的尺寸點與尺寸界線起點之間的間隙大小. 值*線寬即為間隙.
+ 通常不使用間隙. 如果使用間隙，建議值為 6.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="483"/>
+        <source>Controls the gap size between dimension line and dimension text for ISO dimensions.</source>
+        <translation>控制 ISO 尺寸的尺寸線和尺寸文字之間的間隙大小.</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawDimensions.ui" line="576"/>
+        <source>Line Spacing - ISO</source>
+        <translation>線條間距 - ISO</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="486"/>
+        <source>Controls the size of the gap between the dimension point and the start of the extension line for ISO dimensions.</source>
+        <translation>控制 ISO 標註的標註點和延長線起點間的間隙大小。</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="493"/>
+        <source>Controls the gap size between dimension line and dimension text.
+ Value * linewidth is the line spacing.</source>
+        <translation>控制尺寸線和尺寸文字之間的間隙大小.
+ 值*線寬為行距.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="517"/>
+        <source>Controls the size of the gap between the dimension point and the start of the extension line for ASME dimensions.</source>
+        <translation>控制 ASME 標註的標註點和延長線起點間的間隙大小。</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawDimensions.ui" line="614"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; Items in &lt;span style=&quot; font-style:italic;&quot;&gt;italics&lt;/span&gt; are default values for new objects. They have no effect on existing objects.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意：&lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="527"/>
@@ -6720,32 +6821,10 @@ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="548"/>
-        <source>Controls the size of the gap between the dimension point and the start of the extension line for ASME dimensions. Value * linewidth is the gap.
- Normally, no gap is used. If using a gap, the recommended value is 6.</source>
-        <translation>控制 ASME 尺寸的尺寸點與尺寸界線起點之間的間隙大小. 值*線寬 即為間隙.
- 通常不使用間隙. 如果使用間隙，建議值為6.</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawDimensions.ui" line="573"/>
-        <source>Controls the size of spacing between dimension line and dimension text for ISO dimensions.</source>
-        <translation>控制 ISO 尺寸的尺寸線和尺寸文字之間的間距大小.</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawDimensions.ui" line="576"/>
-        <source>Line Spacing - ISO</source>
-        <translation>線條間距 - ISO</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawDimensions.ui" line="583"/>
-        <source>Controls the size of spacing between dimension line and dimension text.
- Value * linewidth is the line spacing.</source>
-        <translation>控制尺寸線和尺寸文字之間的間距大小.
- 值*線寬 即為行距.</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawDimensions.ui" line="614"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; Items in &lt;span style=&quot; font-style:italic;&quot;&gt;italics&lt;/span&gt; are default values for new objects. They have no effect on existing objects.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意：&lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>Controls the size of gap between dimension point and start of extension line for ASME dimensions. Value * linewidth is the gap.
+ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
+        <translation>控制 ASME 尺寸的尺寸點和延伸線起點之間的間隙大小. 值 * 線寬是間隙.
+ 通常，不使用間隙. 如需使用間隙，建議值為 6.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="630"/>
@@ -6759,10 +6838,10 @@ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="548"/>
-        <source>Controls the size of gap between dimension point and start of extension line for ASME dimensions. Value * linewidth is the gap.
- Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
-        <translation>控制 ASME 尺寸的尺寸點和延伸線起點之間的間隙大小. 值 * 線寬是間隙.
- 通常，不使用間隙. 如需使用間隙，建議值為 6.</translation>
+        <source>Controls the size of the gap between the dimension point and the start of the extension line for ASME dimensions. Value * linewidth is the gap.
+ Normally, no gap is used. If using a gap, the recommended value is 6.</source>
+        <translation>控制 ASME 尺寸的尺寸點與尺寸界線起點之間的間隙大小. 值*線寬 即為間隙.
+ 通常不使用間隙. 如果使用間隙，建議值為6.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="643"/>
@@ -6984,16 +7063,6 @@ for ProjectionGroups</source>
         <translation>用於繪製剖面線的標準. 這會影響箭頭和符號的位置.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="451"/>
-        <source>ANSI</source>
-        <translation>ANSI</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="456"/>
-        <source>ISO</source>
-        <translation>ISO</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="469"/>
         <source>Section Line Convention</source>
         <translation>剖面線約束</translation>
@@ -7007,6 +7076,16 @@ for ProjectionGroups</source>
         <location filename="../../DlgPrefsTechDrawGeneral.ui" line="712"/>
         <source>PAT File</source>
         <translation>PAT 檔</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="451"/>
+        <source>ANSI</source>
+        <translation>ANSI</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="456"/>
+        <source>ISO</source>
+        <translation>ISO</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="538"/>
@@ -7149,6 +7228,16 @@ for ProjectionGroups</source>
         <translation>使用3D相機方向</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1024"/>
+        <source>If checked, the 3d camera direction (or normal of a selected face) will be used as the view direction.  If not checked, Views will be created as Front Views.</source>
+        <translation>如果選中，3D 相機方向(或所選面的法線)將用作檢視方向. 如果未選取，檢視將建立為正面檢視.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1027"/>
+        <source>Use 3d Camera Direction</source>
+        <translation>使用3D相機方向</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1045"/>
         <source>If checked, view labels will be displayed even when frames are suppressed.</source>
         <translation>如果選中，即使禁止顯示幀，也會顯示檢視標籤.</translation>
@@ -7187,16 +7276,6 @@ for ProjectionGroups</source>
         <location filename="../../DlgPrefsTechDrawGeneral.ui" line="879"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; Items in &lt;span style=&quot; font-style:italic;&quot;&gt;italics&lt;/span&gt; are default values for new objects. They have no effect on existing objects.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意：&lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1024"/>
-        <source>If checked, the 3d camera direction (or normal of a selected face) will be used as the view direction.  If not checked, Views will be created as Front Views.</source>
-        <translation>如果選中，3D 相機方向(或所選面的法線)將用作檢視方向. 如果未選取，檢視將建立為正面檢視.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1027"/>
-        <source>Use 3d Camera Direction</source>
-        <translation>使用3D相機方向</translation>
     </message>
 </context>
 <context>
@@ -7474,6 +7553,33 @@ Do you want to continue?</source>
         <translation>印表機與圖面使用之方向不同，您要繼續嗎？</translation>
     </message>
     <message>
+        <location filename="../../MDIViewPage.cpp" line="419"/>
+        <source>Opening file failed</source>
+        <translation>開啟檔案失敗</translation>
+    </message>
+    <message>
+        <location filename="../../MDIViewPage.cpp" line="420"/>
+        <source>Can not open file %1 for writing.</source>
+        <translation>無法開啟要寫入的檔案 %1 。</translation>
+    </message>
+    <message>
+        <location filename="../../MDIViewPage.cpp" line="538"/>
+        <source>PDF (*.pdf)</source>
+        <translation>PDF (*.pdf)</translation>
+    </message>
+    <message>
+        <location filename="../../MDIViewPage.cpp" line="720"/>
+        <source>DXF (*.dxf)</source>
+        <translation>DXF (*.dxf)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/MDIViewPage.cpp" line="394"/>
+        <source>The printer uses a different orientation than the drawing.
+Do you want to continue?</source>
+        <translation>印表機使用與圖不同的方向.
+你想繼續嗎?</translation>
+    </message>
+    <message>
         <location filename="../../MDIViewPage.cpp" line="405"/>
         <source>Different paper size</source>
         <translation>紙張尺寸不同</translation>
@@ -7485,34 +7591,14 @@ Do you want to continue?</source>
         <translation>印表機與圖面之紙張尺寸不同，您要繼續嗎？</translation>
     </message>
     <message>
-        <location filename="../../MDIViewPage.cpp" line="419"/>
-        <source>Opening file failed</source>
-        <translation>開啟檔案失敗</translation>
-    </message>
-    <message>
-        <location filename="../../MDIViewPage.cpp" line="420"/>
-        <source>Can not open file %1 for writing.</source>
-        <translation>無法開啟要寫入的檔案 %1 。</translation>
-    </message>
-    <message>
         <location filename="../../MDIViewPage.cpp" line="719"/>
         <source>Save DXF file</source>
         <translation>儲存DXF檔</translation>
     </message>
     <message>
-        <location filename="../../MDIViewPage.cpp" line="720"/>
-        <source>DXF (*.dxf)</source>
-        <translation>DXF (*.dxf)</translation>
-    </message>
-    <message>
         <location filename="../../MDIViewPage.cpp" line="537"/>
         <source>Save PDF file</source>
         <translation>儲存 PDF 檔案</translation>
-    </message>
-    <message>
-        <location filename="../../MDIViewPage.cpp" line="538"/>
-        <source>PDF (*.pdf)</source>
-        <translation>PDF (*.pdf)</translation>
     </message>
     <message>
         <location filename="../../MDIViewPage.cpp" line="1228"/>
@@ -7792,6 +7878,11 @@ Do you want to continue?</source>
         <translation>對齊</translation>
     </message>
     <message>
+        <location filename="../../TaskCenterLine.ui" line="256"/>
+        <source>mm</source>
+        <translation>mm</translation>
+    </message>
+    <message>
         <location filename="../../TaskCenterLine.ui" line="266"/>
         <source>Color</source>
         <translation>色彩</translation>
@@ -7870,11 +7961,6 @@ Do you want to continue?</source>
         <location filename="../../TaskCenterLine.ui" line="250"/>
         <source>Make the line a little longer.</source>
         <translation>讓線稍微長一點.</translation>
-    </message>
-    <message>
-        <location filename="../../TaskCenterLine.ui" line="256"/>
-        <source>mm</source>
-        <translation>mm</translation>
     </message>
 </context>
 <context>
@@ -8141,6 +8227,21 @@ Do you want to continue?</source>
         <translation>3d 的點</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="101"/>
+        <source>X:</source>
+        <translation>X:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="118"/>
+        <source>Y:</source>
+        <translation>Y:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="135"/>
+        <source>Z:</source>
+        <translation>Z:</translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="207"/>
         <source>Start angle (conventional) of arc in degrees. </source>
         <translation>弧的起始角度(慣用)，以度為單位. </translation>
@@ -8169,21 +8270,6 @@ Do you want to continue?</source>
         <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="90"/>
         <source>Circle Center</source>
         <translation>圓心</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="101"/>
-        <source>X:</source>
-        <translation>X:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="118"/>
-        <source>Y:</source>
-        <translation>Y:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="135"/>
-        <source>Z:</source>
-        <translation>Z:</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="156"/>
@@ -8261,18 +8347,6 @@ Do you want to continue?</source>
         <translation>3d 的點</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticLine.ui" line="61"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticLine.ui" line="140"/>
-        <source>2D Point</source>
-        <translation>2D 的點</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticLine.ui" line="77"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticLine.ui" line="156"/>
-        <source>3D Point</source>
-        <translation>3D 的點</translation>
-    </message>
-    <message>
         <location filename="../../TaskCosmeticLine.ui" line="88"/>
         <location filename="../../TaskCosmeticLine.ui" line="161"/>
         <source>X:</source>
@@ -8289,6 +8363,18 @@ Do you want to continue?</source>
         <location filename="../../TaskCosmeticLine.ui" line="189"/>
         <source>Z:</source>
         <translation>Z：</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticLine.ui" line="61"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticLine.ui" line="140"/>
+        <source>2D Point</source>
+        <translation>2D 的點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticLine.ui" line="77"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticLine.ui" line="156"/>
+        <source>3D Point</source>
+        <translation>3D 的點</translation>
     </message>
 </context>
 <context>
@@ -9116,6 +9202,11 @@ be used instead of the dimension value</source>
         <translation>放大/縮小圖樣 (只針對 SVG)</translation>
     </message>
     <message>
+        <location filename="../../TaskHatch.ui" line="107"/>
+        <source>Svg Line Color</source>
+        <translation>SVG 線條顏色</translation>
+    </message>
+    <message>
         <location filename="../../TaskHatch.ui" line="133"/>
         <source>Color of pattern lines (Svg Only)</source>
         <translation>圖樣線之顏色 (只針對 SVG)</translation>
@@ -9151,9 +9242,9 @@ be used instead of the dimension value</source>
         <translation>放大/縮小圖樣 (只針對 SVG)</translation>
     </message>
     <message>
-        <location filename="../../TaskHatch.ui" line="107"/>
-        <source>Svg Line Color</source>
-        <translation>SVG 線條顏色</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskHatch.ui" line="107"/>
+        <source>SVG Line Color</source>
+        <translation>SVG線條色彩</translation>
     </message>
     <message>
         <location filename="../../TaskHatch.ui" line="114"/>
@@ -9405,6 +9496,11 @@ You can pick further points to get line segments.</source>
         <location filename="../../TaskLineDecor.ui" line="34"/>
         <source>View</source>
         <translation>檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskLineDecor.ui" line="99"/>
+        <source>The use of the Qt line style is being phased out. Please use a standard line style instead.</source>
+        <translation>Qt 線條樣式的使用正逐步被淘汰. 請使用標準線條樣式.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskLineDecor.ui" line="99"/>
@@ -10234,16 +10330,6 @@ using the given X/Y Spacing</source>
         <translation>孔配合</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskHoleShaftFit.ui" line="37"/>
-        <source>Shaft fit</source>
-        <translation>寬鬆配合</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskHoleShaftFit.ui" line="47"/>
-        <source>Hole fit</source>
-        <translation>孔配合</translation>
-    </message>
-    <message>
         <location filename="../../TaskHoleShaftFit.ui" line="62"/>
         <source>c11</source>
         <translation>c11</translation>
@@ -10296,14 +10382,24 @@ using the given X/Y Spacing</source>
         <translation>s6</translation>
     </message>
     <message>
-        <location filename="../../TaskHoleShaftFit.ui" line="145"/>
-        <source>loose fit</source>
-        <translation>寬鬆配合</translation>
-    </message>
-    <message>
         <location filename="../../TaskHoleShaftFit.ui" line="152"/>
         <source>             H11/</source>
         <translation>             H11/</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskHoleShaftFit.ui" line="37"/>
+        <source>Shaft fit</source>
+        <translation>寬鬆配合</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskHoleShaftFit.ui" line="47"/>
+        <source>Hole fit</source>
+        <translation>孔配合</translation>
+    </message>
+    <message>
+        <location filename="../../TaskHoleShaftFit.ui" line="145"/>
+        <source>loose fit</source>
+        <translation>寬鬆配合</translation>
     </message>
     <message>
         <location filename="../../TaskSurfaceFinishSymbols.ui" line="26"/>

@@ -241,6 +241,51 @@
         <source>The type of the move</source>
         <translation>移動的類型</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="107"/>
+        <source>Simulation start time.</source>
+        <translation>模擬開始時間.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="118"/>
+        <source>Simulation end time.</source>
+        <translation>模擬結束時間.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="129"/>
+        <source>Simulation time step for output.</source>
+        <translation>輸出的模擬時間步進長度.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="140"/>
+        <source>Integration global error tolerance.</source>
+        <translation>整合全局容許誤差.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="151"/>
+        <source>Frames Per Second.</source>
+        <translation>每秒影格數量.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="203"/>
+        <source>The number of decimals to use for calculated texts</source>
+        <translation>用於計算文字的小數位數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="299"/>
+        <source>The joint that is moved by the motion</source>
+        <translation>因運動而移動的連結</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="310"/>
+        <source>This is the formula of the motion. For example &apos;1.0*time&apos;.</source>
+        <translation>這是運動的公式. 例如&quot;1.0*時間&quot;.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="318"/>
+        <source>The type of the motion</source>
+        <translation>移動類型</translation>
+    </message>
 </context>
 <context>
     <name>Assembly</name>
@@ -365,14 +410,14 @@
         <translation>索引</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="49"/>
-        <source>Description</source>
-        <translation>描述</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="48"/>
         <source>Name</source>
         <translation>名稱</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="49"/>
+        <source>Description</source>
+        <translation>描述</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="49"/>
@@ -458,6 +503,170 @@
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="422"/>
         <source>The exported file format can be customized in the Spreadsheet workbench preferences.</source>
         <translation>匯出的文件格式可以在電子表格工作台偏好設定中自訂.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="467"/>
+        <source>Enter your formula...</source>
+        <translation>輸入您的公式...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="520"/>
+        <source>In capital are variables that you need to replace with actual values. More details about each example in it&apos;s tooltip.</source>
+        <translation>大寫的是您需要用實際值替換的變數. 有關每個範例的更多詳細信息，請參閱工具提示.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="523"/>
+        <source> - Linear: C + VEL*time</source>
+        <translation> - 線性: C + VEL*時間</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="525"/>
+        <source> - Quadratic: C + VEL*time + ACC*time^2</source>
+        <translation> - 次要: C + VEL*時間 + ACC*時間^2</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="528"/>
+        <source> - Harmonic: C + AMP*sin(VEL*time - PHASE)</source>
+        <translation> - 和諧：C + AMP*sin(VEL*時間 - 相位)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="531"/>
+        <source> - Exponential: C*exp(time/TIMEC)</source>
+        <translation> - 指數: C*exp(時間/TIMEC)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="537"/>
+        <source> - Smooth Step: L1 + (L2 - L1)*((1/2) + (1/pi)*arctan(SLOPE*(time - T0)))</source>
+        <translation> - 平滑步驟: L1 + (L2 - L1)*((1/2) + (1/pi)*arctan(SLOPE*(時間 - T0)))</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="544"/>
+        <source> - Smooth Square Impulse: (H/pi)*(arctan(SLOPE*(time - T1)) - arctan(SLOPE*(time - T2)))</source>
+        <translation> - 平滑平方脈衝: (H/pi)*(arctan(SLOPE*(時間 - T1)) - arctan(SLOPE*(時間 - T2)))</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="551"/>
+        <source> - Smooth Ramp Top Impulse: ((1/pi)*(arctan(1000*(time - T1)) - arctan(1000*(time - T2))))*(((H2 - H1)/(T2 - T1))*(time - T1) + H1)</source>
+        <translation> - 平滑斜坡頂部脈衝: ((1/pi)*(arctan(1000*(時間- T1)) - arctan(1000*(時間- T2))))*((H2 - H1)/(T2 - T1 ) ))*(時間 - T1) + H1)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="561"/>
+        <source>C is a constant offset.
+VEL is a velocity or slope or gradient of the straight line.</source>
+        <translation>C 是常數偏移.
+VEL 是直線的速度或斜率或梯度.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="569"/>
+        <source>C is a constant offset.
+VEL is the velocity or slope or gradient of the straight line.
+ACC is the acceleration or coefficient of the second order. The function is a parabola.</source>
+        <translation>C 是常數偏移.
+VEL 是直線的速度或斜率或坡度.
+ACC 是二階加速度或係數。函數是拋物線.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="578"/>
+        <source>C is a constant offset.
+AMP is the amplitude of the sine wave.
+VEL is the angular velocity in radians per second.
+PHASE is the phase of the sine wave.</source>
+        <translation>C 是常數偏移.
+AMP 是正弦波的振幅.
+VEL 是以弧度每秒為單位的角速度.
+PHASE 是正弦波的相位.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="585"/>
+        <source>C is a constant.
+TIMEC is the time constant of the exponential function.</source>
+        <translation>C是常數.
+TIMEC 是指數函數的時間常數.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="593"/>
+        <source>L1 is step level before time = T0.
+L2 is step level after time = T0.
+SLOPE defines the steepness of the transition between L1 and L2 about time = T0. Higher values gives sharper cornered steps. SLOPE = 1000 or greater are suitable.</source>
+        <translation>L1 是時間 = T0 之前的步進等級.
+L2 是時間 = T0 後的步進等級.
+SLOPE 定義了 L1 和 L2 之間關於時間 = T0 的過渡的陡度.
+數值越高，階梯的角落越尖銳.
+SLOPE = 1000 或更大是合適的.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="602"/>
+        <source>H is the height of the impulse.
+T1 is the start of the impulse.
+T2 is the end of the impulse.
+SLOPE defines the steepness of the transition between 0 and H about time = T1 and T2. Higher values gives sharper cornered impulses. SLOPE = 1000 or greater are suitable.</source>
+        <translation>H是衝量的高度.
+T1 是脈衝的開始.
+T2 是脈衝的結束.
+SLOPE 定義了 0 和 H 之間關於時間 = T1 和 T2 的過渡的陡度.
+值越高，拐角脈衝越尖銳.
+SLOPE = 1000 或更大是合適的.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="613"/>
+        <source>This is similar to the square impulse but the top has a sloping ramp. It is good for building a smooth piecewise linear function by adding a series of these.
+T1 is the start of the impulse.
+T2 is the end of the impulse.
+H1 is the height at T1 at the beginning of the ramp.
+H2 is the height at T2 at the end of the ramp.
+SLOPE defines the steepness of the transition between 0 and H1 and H2 to 0 about time = T1 and T2 respectively. Higher values gives sharper cornered impulses. SLOPE = 1000 or greater are suitable.</source>
+        <translation>這與方形脈衝類似，但頂部有一個傾斜的斜坡. 透過增加一系列這些函數，可以很好地建立平滑的分段線性函數。
+T1 是脈衝的開始.
+T2 是脈衝的結束.
+H1 是坡道起點處 T1 處的高度.
+H2 是坡道末端 T2 處的高度.
+SLOPE 分別定義了時間 = T1 和 T2 時從 0 到 H1 以及從 H2 到 0 的過渡的陡度. 值越高，拐角脈衝越尖銳. SLOPE = 1000 或更大是合適的.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="651"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="668"/>
+        <source>Help</source>
+        <translation>求助說明</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="666"/>
+        <source>Hide help</source>
+        <translation>隱藏求助說明</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertNewPart.py" line="84"/>
+        <source>Part name</source>
+        <translation>零件名稱</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertNewPart.py" line="89"/>
+        <source>Part</source>
+        <translation>零件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertNewPart.py" line="94"/>
+        <source>Create part in new file</source>
+        <translation>建立零件於新文件檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertNewPart.py" line="101"/>
+        <source>Joint new part origin</source>
+        <translation>連結新零件原點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertNewPart.py" line="135"/>
+        <source>Save Document</source>
+        <translation>儲存文件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertNewPart.py" line="137"/>
+        <source>Save</source>
+        <translation>儲存</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertNewPart.py" line="140"/>
+        <source>Don&apos;t link</source>
+        <translation>不要連結</translation>
     </message>
     <message>
         <location filename="../../../CommandCreateAssembly.py" line="45"/>
@@ -1079,6 +1288,20 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
     </message>
 </context>
 <context>
+    <name>Assembly_CreateSimulation</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="67"/>
+        <source>Create Simulation</source>
+        <translation>建立模擬</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="74"/>
+        <source>Create a simulation of the current assembly.</source>
+        <translatorcomment>建立目前零件組合的模擬.</translatorcomment>
+        <translation></translation>
+    </message>
+</context>
+<context>
     <name>Assembly_CreateView</name>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateView.py" line="55"/>
@@ -1120,17 +1343,15 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
     </message>
 </context>
 <context>
+    <name>Assembly_Insert</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="74"/>
+        <source>Insert</source>
+        <translation>插入</translation>
+    </message>
+</context>
+<context>
     <name>Assembly_InsertLink</name>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="53"/>
-        <source>Insert Component</source>
-        <translation>插入組件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="59"/>
-        <source>Insert a Link into the currently active assembly. This will create dynamic links to parts/bodies/primitives/assemblies. To insert external objects, make sure that the file is &lt;b&gt;open in the current session&lt;/b&gt;</source>
-        <translation>將連結插入目前活動的零件組合中. 這將建立到零件/實體/基元/組合件的動態連結. 若要插入外部對象，請確保檔案&lt;b&gt;在目前作業階段中開啟&lt;/b&gt;</translation>
-    </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="60"/>
         <source>Insert a component into the active assembly. This will create dynamic links to parts, bodies, primitives, and assemblies. To insert external components, make sure that the file is &lt;b&gt;open in the current session&lt;/b&gt;</source>
@@ -1152,9 +1373,19 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <translation>點擊檢視時按 Shift 鍵可新增多個接點.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="59"/>
+        <source>Insert a Link into the currently active assembly. This will create dynamic links to parts/bodies/primitives/assemblies. To insert external objects, make sure that the file is &lt;b&gt;open in the current session&lt;/b&gt;</source>
+        <translation>將連結插入目前活動的零件組合中. 這將建立到零件/實體/基元/組合件的動態連結. 若要插入外部對象，請確保檔案&lt;b&gt;在目前作業階段中開啟&lt;/b&gt;</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="71"/>
         <source>Press shift to add several instances of the component while clicking on the view.</source>
         <translation>按一下檢視時按 Shift 鍵可新增元件的多個實例.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="53"/>
+        <source>Insert Component</source>
+        <translation>插入組件</translation>
     </message>
     <message>
         <location filename="../../../CommandInsertLink.py" line="55"/>
@@ -1165,6 +1396,19 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <location filename="../../../CommandInsertLink.py" line="57"/>
         <source>&lt;p&gt;Insert a Link into the assembly. This will create dynamic links to parts/bodies/primitives/assemblies.To insert external objects, make sure that the file is &lt;b&gt;open in the current session&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Press shift to add several links while clicking on the view.</source>
         <translation>&lt;p&gt;將連結插入到程式集中. 這將建立到零件/實體/基元/零件組合件的動態連結. 若要插入外部物體，請確保檔案&lt;b&gt;在目前作業階段中開啟&lt;/b&gt;&lt;/p&gt;&lt;p&gt;按Shift 鍵新增多個連結點擊檢視內容.</translation>
+    </message>
+</context>
+<context>
+    <name>Assembly_InsertNewPart</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertNewPart.py" line="54"/>
+        <source>Insert a new part</source>
+        <translation>插入新零件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertNewPart.py" line="61"/>
+        <source>Insert a new part into the active assembly. The new part&apos;s origin can be positioned in the assembly.</source>
+        <translation>將新零件插入活動零件組合體中. 新零件的原點可以定位在零件組合中.</translation>
     </message>
 </context>
 <context>
@@ -1295,9 +1539,9 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <translation>偏移1</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="164"/>
-        <source>By clicking this button, you can set the attachement offset of the first marker (coordinate system) of the joint.</source>
-        <translation>透過點擊此按鈕，您可以設定接點第一個標記(座標系統)的附加依賴偏移.</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="144"/>
+        <source>By clicking this button, you can set the attachment offset of the first marker (coordinate system) of the joint.</source>
+        <translation>透過點擊此按鈕，您可以設定連結第一個標記(座標系統)的附加依賴偏移.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="178"/>
@@ -1305,9 +1549,9 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <translation>偏移2</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="185"/>
-        <source>By clicking this button, you can set the attachement offset of the second marker (coordinate system) of the joint.</source>
-        <translation>透過點擊此按鈕，您可以設定接點第二個標記(座標系統)的附加依賴偏移.</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="164"/>
+        <source>By clicking this button, you can set the attachement offset of the first marker (coordinate system) of the joint.</source>
+        <translation>透過點擊此按鈕，您可以設定接點第一個標記(座標系統)的附加依賴偏移.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="149"/>
@@ -1315,9 +1559,19 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <translation>進階選項</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="165"/>
+        <source>By clicking this button, you can set the attachment offset of the second marker (coordinate system) of the joint.</source>
+        <translation>透過點擊此按鈕，您可以設定連結第二個標記(座標系統)的附加依賴偏移.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="177"/>
         <source>Show advanced offsets</source>
         <translation>顯示進階偏移</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="185"/>
+        <source>By clicking this button, you can set the attachement offset of the second marker (coordinate system) of the joint.</source>
+        <translation>透過點擊此按鈕，您可以設定接點第二個標記(座標系統)的附加依賴偏移.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="104"/>
@@ -1378,6 +1632,128 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="232"/>
         <source>Reverse rotation</source>
         <translation>反向旋轉</translation>
+    </message>
+</context>
+<context>
+    <name>TaskAssemblyCreateSimulation</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="14"/>
+        <source>Create Simulation</source>
+        <translation>建立模擬</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="20"/>
+        <source>Motions</source>
+        <translation>移動動作</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="50"/>
+        <source>Add a prescribed motion</source>
+        <translation>加入規定的動作</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="70"/>
+        <source>Delete selected motions</source>
+        <translation>刪除選定的動作</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="89"/>
+        <source>Simulation settings</source>
+        <translation>模擬設定</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="95"/>
+        <source>Start</source>
+        <translation>開始</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="98"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="105"/>
+        <source>Start time of the simulation</source>
+        <translation>模擬開始時間</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="112"/>
+        <source>End</source>
+        <translation>結束</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="115"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="122"/>
+        <source>End time of the simulation</source>
+        <translation>模擬結束時間</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="129"/>
+        <source>Step</source>
+        <translation>步進</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="132"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="139"/>
+        <source>Time Step</source>
+        <translation>步進時間</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="146"/>
+        <source>Tolerance</source>
+        <translation>公差</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="149"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="156"/>
+        <source>Global Error Tolerance</source>
+        <translation>全局容許誤差</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="166"/>
+        <source>Generate</source>
+        <translation>一般</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="173"/>
+        <source>Animation player</source>
+        <translation>動畫播放</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="181"/>
+        <source>Frame</source>
+        <translation>影格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="201"/>
+        <source>0.00 s</source>
+        <translation>0.00 秒</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="212"/>
+        <source>Frames Per Second</source>
+        <translation>每秒影格數量</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="232"/>
+        <source>Step backward</source>
+        <translation>後退一步</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="252"/>
+        <source>Play backward</source>
+        <translation>往後播放</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="272"/>
+        <source>Stop</source>
+        <translation>停止</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="292"/>
+        <source>Play forward</source>
+        <translation>往前播放</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateSimulation.ui" line="312"/>
+        <source>Step forward</source>
+        <translation>向前播放一個影格</translation>
     </message>
 </context>
 <context>
@@ -1477,14 +1853,14 @@ Press ESC to cancel.</source>
         <translation>只有零件</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="80"/>
-        <source>Columns</source>
-        <translation>欄位</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="77"/>
         <source>Columns of the bill of materials</source>
         <translation>物料清單的列</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="80"/>
+        <source>Columns</source>
+        <translation>欄位</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="89"/>
@@ -1508,6 +1884,11 @@ Press ESC to cancel.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyInsertLink.ui" line="14"/>
         <source>Insert Component</source>
         <translation>插入組件</translation>
+    </message>
+    <message>
+        <location filename="../panels/TaskAssemblyInsertLink.ui" line="14"/>
+        <source>Insert Link</source>
+        <translation>插入連結</translation>
     </message>
     <message>
         <location filename="../panels/TaskAssemblyInsertLink.ui" line="20"/>
@@ -1573,11 +1954,6 @@ You can change this property of sub-assemblies at any time by right clicking the
         <source>Rigid sub-assemblies</source>
         <translation>剛性的子零件組合</translation>
     </message>
-    <message>
-        <location filename="../panels/TaskAssemblyInsertLink.ui" line="14"/>
-        <source>Insert Link</source>
-        <translation>插入連結</translation>
-    </message>
 </context>
 <context>
     <name>UtilsAssembly</name>
@@ -1589,6 +1965,16 @@ You can change this property of sub-assemblies at any time by right clicking the
 </context>
 <context>
     <name>Workbench</name>
+    <message>
+        <location filename="../../../InitGui.py" line="70"/>
+        <source>Assembly workbench</source>
+        <translation>零件組合工作台</translation>
+    </message>
+    <message>
+        <location filename="../../../InitGui.py" line="71"/>
+        <source>Initializing Assembly workbench...</source>
+        <translation>初始化零件組合工作台...</translation>
+    </message>
     <message>
         <location filename="../../../InitGui.py" line="91"/>
         <source>Assembly</source>
@@ -1608,16 +1994,6 @@ You can change this property of sub-assemblies at any time by right clicking the
         <location filename="../../../InitGui.py" line="110"/>
         <source>Assembly workbench loaded</source>
         <translation>零件組合工作台已載入</translation>
-    </message>
-    <message>
-        <location filename="../../../InitGui.py" line="70"/>
-        <source>Assembly workbench</source>
-        <translation>零件組合工作台</translation>
-    </message>
-    <message>
-        <location filename="../../../InitGui.py" line="71"/>
-        <source>Initializing Assembly workbench...</source>
-        <translation>初始化零件組合工作台...</translation>
     </message>
 </context>
 </TS>

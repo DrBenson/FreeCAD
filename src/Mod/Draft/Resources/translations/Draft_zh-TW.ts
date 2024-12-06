@@ -1365,6 +1365,26 @@ beyond the dimension line</source>
         <translation>顯示線</translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="164"/>
+        <source>Annotations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="208"/>
+        <source>Texts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="266"/>
+        <source>Line spacing factor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="309"/>
+        <source>Show dimension line</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="288"/>
         <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="298"/>
         <source>The width of the lines</source>
@@ -1442,6 +1462,26 @@ beyond the dimension line</source>
         <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="239"/>
         <source>Units</source>
         <translation>單位</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="495"/>
+        <source>Number of decimals</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="521"/>
+        <source>Dimension line overshoot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="541"/>
+        <source>Extension line length</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="561"/>
+        <source>Extension line overshoot</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="245"/>
@@ -3435,6 +3475,11 @@ Then you can use it to save a different camera position and objects&apos; states
         <translation>填充</translation>
     </message>
     <message>
+        <location filename="../ui/dialogHatch.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../ui/dialogHatch.ui" line="20"/>
         <source>PAT file:</source>
         <translation>PAT 檔案:</translation>
@@ -3550,6 +3595,17 @@ Then you can use it to save a different camera position and objects&apos; states
         <translation>注釋</translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="279"/>
+        <source>Scale multiplier</source>
+        <translation>縮放比率</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="349"/>
+        <source>The annotation scale multiplier is the inverse of the scale set in the
+Annotation scale widget. If the scale is 1:100 the multiplier is 100.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="285"/>
         <source>Texts</source>
         <translation>文字</translation>
@@ -3582,17 +3638,6 @@ Then you can use it to save a different camera position and objects&apos; states
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="272"/>
         <source>The line spacing for multi-line texts and labels (relative to the font size)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="279"/>
-        <source>Scale multiplier</source>
-        <translation>縮放比率</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="349"/>
-        <source>The annotation scale multiplier is the inverse of the scale set in the
-Annotation scale widget. If the scale is 1:100 the multiplier is 100.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4224,11 +4269,6 @@ value by using the [ and ] keys while drawing</source>
         <location filename="../ui/TaskSelectPlane.ui" line="254"/>
         <source>Previous</source>
         <translation>前一個</translation>
-    </message>
-    <message>
-        <location filename="../ui/dialogHatch.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -5015,6 +5055,22 @@ such as &quot;Arial:Bold&quot;</source>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="20"/>
+        <source>Annotations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="125"/>
+        <source>Scale multiplier</source>
+        <translation>縮放比率</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="132"/>
+        <source>The default annotation scale multiplier. This is the inverse of the scale set
+in the Annotation scale widget. If the scale is 1:100 the multiplier is 100.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="20"/>
         <source>Texts</source>
         <translation>文字</translation>
     </message>
@@ -5053,17 +5109,6 @@ as &quot;Arial&quot;, a style such as &quot;sans&quot;, &quot;serif&quot; or &qu
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="106"/>
         <source>The default line spacing for multi-line texts and labels (relative to the font size)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="125"/>
-        <source>Scale multiplier</source>
-        <translation>縮放比率</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="132"/>
-        <source>The default annotation scale multiplier. This is the inverse of the scale set
-in the Annotation scale widget. If the scale is 1:100 the multiplier is 100.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7298,6 +7343,21 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
+        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
+        <source>Working plane aligned to global placement of</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
+        <source>Dir</source>
+        <translation>方向</translation>
+    </message>
+    <message>
         <location filename="../../draftguitools/gui_selectplane.py" line="539"/>
         <source>Custom</source>
         <translation>自訂</translation>
@@ -7323,28 +7383,10 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../importDWG.py" line="284"/>
-        <source>Error during DWG conversion.
-Try moving the DWG file to a directory path without spaces and non-english characters,
-or try saving to a lower DWG version.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="218"/>
-        <location filename="../../importDWG.py" line="290"/>
-        <source>Converting:</source>
-        <translation>轉換中:</translation>
-    </message>
-    <message>
         <location filename="../../importDWG.py" line="209"/>
         <location filename="../../importDWG.py" line="281"/>
         <source>LibreDWG error</source>
         <translation>LibreDWG 錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="223"/>
-        <source>Conversion successful</source>
-        <translation>轉換成功</translation>
     </message>
     <message>
         <location filename="../../importDWG.py" line="226"/>
@@ -7362,6 +7404,24 @@ or try saving to a lower DWG version.</source>
         <location filename="../../importDWG.py" line="306"/>
         <source>QCAD error</source>
         <translation>QCAD 錯誤</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="284"/>
+        <source>Error during DWG conversion.
+Try moving the DWG file to a directory path without spaces and non-english characters,
+or try saving to a lower DWG version.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="218"/>
+        <location filename="../../importDWG.py" line="290"/>
+        <source>Converting:</source>
+        <translation>轉換中:</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="223"/>
+        <source>Conversion successful</source>
+        <translation>轉換成功</translation>
     </message>
     <message>
         <location filename="../../importDWG.py" line="302"/>
@@ -7406,21 +7466,6 @@ Or download these libraries manually, as explained on
 https://github.com/yorikvanhavre/Draft-dxf-importer
 To enabled FreeCAD to download these libraries, answer Yes.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
-        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
-        <source>Working plane aligned to global placement of</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
-        <source>Dir</source>
-        <translation>方向</translation>
     </message>
     <message>
         <location filename="../../importDXF.py" line="146"/>
@@ -9504,11 +9549,6 @@ The final angle will be the base angle plus this amount.</source>
 <context>
     <name>importOCA</name>
     <message>
-        <location filename="../../importOCA.py" line="360"/>
-        <source>OCA error: couldn&apos;t determine character encoding</source>
-        <translation>OCA錯誤: 無法定義字元編碼</translation>
-    </message>
-    <message>
         <location filename="../../importOCA.py" line="445"/>
         <source>OCA: found no data to export</source>
         <translation>OCA：找不到要匯出的資料</translation>
@@ -9517,6 +9557,11 @@ The final angle will be the base angle plus this amount.</source>
         <location filename="../../importOCA.py" line="490"/>
         <source>successfully exported</source>
         <translation>成功匯出</translation>
+    </message>
+    <message>
+        <location filename="../../importOCA.py" line="360"/>
+        <source>OCA error: couldn&apos;t determine character encoding</source>
+        <translation>OCA錯誤: 無法定義字元編碼</translation>
     </message>
 </context>
 </TS>

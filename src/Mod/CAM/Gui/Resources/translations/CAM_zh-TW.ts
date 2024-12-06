@@ -1403,20 +1403,10 @@ Reset deletes all current items from the list and fills the list with all circul
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="99"/>
-        <source>Climb</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDeburrEdit.ui" line="141"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDeburrEdit.ui" line="148"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpHelixEdit.ui" line="98"/>
         <source>CW</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="104"/>
-        <source>Conventional</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1573,6 +1563,16 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpHelixEdit.ui" line="94"/>
         <source>The direction for the helix, clockwise or counterclockwise.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="99"/>
+        <source>Climb</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="104"/>
+        <source>Conventional</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
