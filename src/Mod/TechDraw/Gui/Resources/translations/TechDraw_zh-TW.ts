@@ -3311,6 +3311,31 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>顯示 Delta:</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="89"/>
+        <source>Auto Save</source>
+        <translation>自動儲存</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="92"/>
+        <source>Auto saving of the last measurement when starting a new measurement. Use SHIFT to temporarily invert the behaviour.</source>
+        <translation>開始新測量時自動儲存最後一次測量. 使用 SHIFT 暫時反轉行為.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="96"/>
+        <source>Additive Selection</source>
+        <translation>附加選擇</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="101"/>
+        <source>If checked, new selection will be added to the measurement. If unchecked, CTRL must be pressed to add a selection to the current measurement otherwise a new measurement will be started</source>
+        <translation>如果選中，新的選擇將會新增到測量中. 如果未選中，則必須按下 CTRL 才能將選擇新增至目前測量，否則將開始新的測量</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="110"/>
+        <source>Settings</source>
+        <translation>設定</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="77"/>
         <source>Mode:</source>
         <translation>模式:</translation>
@@ -3690,14 +3715,19 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>預設屬性質</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="59"/>
-        <source>Distance Factor</source>
-        <translation>距離因子</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="132"/>
         <source>Text size</source>
         <translation>字體大小</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="162"/>
+        <source>Mirror</source>
+        <translation>鏡像</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="59"/>
+        <source>Distance Factor</source>
+        <translation>距離因子</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="155"/>
@@ -3708,11 +3738,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="76"/>
         <source> px</source>
         <translation> px</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="162"/>
-        <source>Mirror</source>
-        <translation>鏡像</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="175"/>
@@ -4639,11 +4664,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>無法從選擇中製作3D範圍尺寸標注</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2523"/>
-        <source>Selection contains both 2d and 3d geometry</source>
-        <translation>選擇包含 2d 和 3d 幾何體</translation>
-    </message>
-    <message>
         <location filename="../../CommandCreateDims.cpp" line="1219"/>
         <source>There is no Dimension in your selection</source>
         <translation>您的選擇中沒有尺寸標注</translation>
@@ -4698,6 +4718,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2472"/>
         <source>Selected edge is a B-spline and a radius/diameter can not be calculated.</source>
         <translation>選取邊為 B 雲形線而半徑/直徑無法被計算出來.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2523"/>
+        <source>Selection contains both 2d and 3d geometry</source>
+        <translation>選擇包含 2d 和 3d 幾何體</translation>
     </message>
     <message>
         <location filename="../../CommandDecorate.cpp" line="106"/>
@@ -5700,35 +5725,14 @@ Only change unless you know what you are doing!</source>
         <translation>顯示鬆散 2D 幾何</translation>
     </message>
     <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="567"/>
-        <source>Overlap Edges Scrub Passes</source>
-        <translation>重疊邊緣磨砂掠過</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="444"/>
+        <source>If this box is checked, double clicking on a page in the tree will automatically switch to TechDraw and the page will be made visible.</source>
+        <translation>如果勾選此框，連續點擊二下樹狀檢視中的頁面將自動切換到 TechDraw 並且該頁面將為可見.</translation>
     </message>
     <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="343"/>
-        <source>Include edges with unexpected geometry (zero length etc.) in results</source>
-        <translation>在結果中包括具有意外幾何形狀 (零長度等) 的邊</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="346"/>
-        <source>Allow Crazy Edges</source>
-        <translation>允許瘋狂邊</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="298"/>
-        <source>Limit of 64x64 pixel SVG tiles used to hatch a single face.
-For large scalings you might get an error about too many SVG tiles.
-Then you need to increase the tile limit.</source>
-        <translation>限制在 64x64 像素 SVG 磁磚以使用來填充單一面。
-針對更大尺度您可能會得到一個太多 SVG 磁磚的錯誤訊息。
-如此一來您必須增加磁磚限制.</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="155"/>
-        <source>Selection area around center marks
-Each unit is approx. 0.1 mm wide</source>
-        <translation>中心標誌周圍的選擇區域
-每個單位大約是 0.1 mm 寬</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="447"/>
+        <source>Switch Workbench on Click</source>
+        <translation>點擊以切換工作台</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="442"/>
@@ -5741,6 +5745,11 @@ Each unit is approx. 0.1 mm wide</source>
         <translation>剖面除錯</translation>
     </message>
     <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="523"/>
+        <source>Edge Fuzz</source>
+        <translation>邊緣模糊尺寸</translation>
+    </message>
+    <message>
         <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="530"/>
         <source>If checked, FreeCAD will use the new face finder algorithm.  If not checked, FreeCAD will use the original face finder.</source>
         <translation>如果選中，FreeCAD 將使用新的表面尋找演算法. 如果未選中，FreeCAD 將使用原始表面尋找器.</translation>
@@ -5751,77 +5760,14 @@ Each unit is approx. 0.1 mm wide</source>
         <translation>使用新的平面尋找演算法</translation>
     </message>
     <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="213"/>
-        <source>Max SVG Hatch Tiles</source>
-        <translation>最大 SVG 填充磁磚</translation>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="289"/>
+        <source>Dump intermediate results during Detail view processing</source>
+        <translation>在詳細檢視處理期間傾印中間結果</translation>
     </message>
     <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="220"/>
-        <source>Issue progress messages while building View geometry</source>
-        <translation>在構建檢視幾何時發出進度訊息</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="223"/>
-        <source>Report Progress</source>
-        <translation>進度報告</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="523"/>
-        <source>Edge Fuzz</source>
-        <translation>邊緣模糊尺寸</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="323"/>
-        <source>Mark Fuzz</source>
-        <translation>標誌模糊尺寸</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="371"/>
-        <source>Highlights border of section cut in section views</source>
-        <translation>在剖面檢視中強調剖面切割的邊界</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="374"/>
-        <source>Show Section Edges</source>
-        <translation>顯示選擇邊</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="184"/>
-        <source>Maximum hatch line segments to use
-when hatching a face with a PAT pattern</source>
-        <translation>當使用 PAT 樣式來填充一個面時，所使用的最大填充線段值</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="115"/>
-        <source>If checked, system will attempt to automatically correct dimension references when the model changes.</source>
-        <translation>如果選中，系統將在模型變更時嘗試自動修正尺寸參考.</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="121"/>
-        <source>Auto Correct Dimension Refs</source>
-        <translation>自動更正尺寸參考</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="254"/>
-        <source>Size of selection area around edges
-Each unit is approx. 0.1 mm wide</source>
-        <translation>邊緣周圍選擇區域的大小
-每個單元約略是 0.1 mm 寬</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="99"/>
-        <source>Perform a fuse operation on input shape(s) before Section view processing</source>
-        <translation>在剖面檢視處理之前對輸入形狀執行融合操作</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="102"/>
-        <source>Fuse Before Section</source>
-        <translation>剖面前先融合</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="574"/>
-        <source>The number of times FreeCAD should try to remove overlapping edges returned by the Hidden Line Removal algorithm. A value of 0 indicates no scrubbing, 1 indicates a single pass and 2 indicates a second pass should be performed. Values above 2 are generally not productive. Each pass adds to the time required to produce the drawing.</source>
-        <translation>FreeCAD 應嘗試刪除隱藏線刪除演算法傳回的重疊邊緣的次數. 值 0 表示不進行擦洗，1 表示一遍，2 表示應執行第二遍. 高於 2 的值通常沒有生產力. 每一次都會增加產生繪製圖紙的所需時間.</translation>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="292"/>
+        <source>Debug Detail</source>
+        <translation>除錯細節</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="464"/>
@@ -5838,14 +5784,116 @@ can be a performance penalty in complex models.</source>
         <translation>偵測面</translation>
     </message>
     <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="289"/>
-        <source>Dump intermediate results during Detail view processing</source>
-        <translation>在詳細檢視處理期間傾印中間結果</translation>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="115"/>
+        <source>If checked, system will attempt to automatically correct dimension references when the model changes.</source>
+        <translation>如果選中，系統將在模型變更時嘗試自動修正尺寸參考.</translation>
     </message>
     <message>
-        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="292"/>
-        <source>Debug Detail</source>
-        <translation>除錯細節</translation>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="121"/>
+        <source>Auto Correct Dimension Refs</source>
+        <translation>自動更正尺寸參考</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="173"/>
+        <source>If checked, input shapes will be checked for errors before use.and invalid shapes will be skipped by the shape extractor. Checking for errors is slower, but can prevent crashes from some geometry problems.
+</source>
+        <translation>如果選中，則在使用前檢查輸入形狀是否有錯誤. 檢查錯誤速度較慢，但可以防止某些幾何問題導致的崩潰.
+</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="177"/>
+        <source>Validate Shapes</source>
+        <translation>驗證形狀</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="343"/>
+        <source>Include edges with unexpected geometry (zero length etc.) in results</source>
+        <translation>在結果中包括具有意外幾何形狀 (零長度等) 的邊</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="346"/>
+        <source>Allow Crazy Edges</source>
+        <translation>允許瘋狂邊</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="220"/>
+        <source>Issue progress messages while building View geometry</source>
+        <translation>在構建檢視幾何時發出進度訊息</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="223"/>
+        <source>Report Progress</source>
+        <translation>進度報告</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="574"/>
+        <source>The number of times FreeCAD should try to remove overlapping edges returned by the Hidden Line Removal algorithm. A value of 0 indicates no scrubbing, 1 indicates a single pass and 2 indicates a second pass should be performed. Values above 2 are generally not productive. Each pass adds to the time required to produce the drawing.</source>
+        <translation>FreeCAD 應嘗試刪除隱藏線刪除演算法傳回的重疊邊緣的次數. 值 0 表示不進行擦洗，1 表示一遍，2 表示應執行第二遍. 高於 2 的值通常沒有生產力. 每一次都會增加產生繪製圖紙的所需時間.</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="567"/>
+        <source>Overlap Edges Scrub Passes</source>
+        <translation>重疊邊緣磨砂掠過</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="323"/>
+        <source>Mark Fuzz</source>
+        <translation>標誌模糊尺寸</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="184"/>
+        <source>Maximum hatch line segments to use
+when hatching a face with a PAT pattern</source>
+        <translation>當使用 PAT 樣式來填充一個面時，所使用的最大填充線段值</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="213"/>
+        <source>Max SVG Hatch Tiles</source>
+        <translation>最大 SVG 填充磁磚</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="308"/>
+        <source>If checked, shapes which fail validation will be saved as brep files for later analysis.</source>
+        <translation>如果選中，驗證失敗的形狀將保存為 brep 檔案以供以後分析.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="311"/>
+        <source>Debug Bad Shape</source>
+        <translation>不良形狀除錯</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="99"/>
+        <source>Perform a fuse operation on input shape(s) before Section view processing</source>
+        <translation>在剖面檢視處理之前對輸入形狀執行融合操作</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="102"/>
+        <source>Fuse Before Section</source>
+        <translation>剖面前先融合</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="155"/>
+        <source>Selection area around center marks
+Each unit is approx. 0.1 mm wide</source>
+        <translation>中心標誌周圍的選擇區域
+每個單位大約是 0.1 mm 寬</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="254"/>
+        <source>Size of selection area around edges
+Each unit is approx. 0.1 mm wide</source>
+        <translation>邊緣周圍選擇區域的大小
+每個單元約略是 0.1 mm 寬</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="371"/>
+        <source>Highlights border of section cut in section views</source>
+        <translation>在剖面檢視中強調剖面切割的邊界</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="374"/>
+        <source>Show Section Edges</source>
+        <translation>顯示選擇邊</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="330"/>
@@ -5853,14 +5901,13 @@ can be a performance penalty in complex models.</source>
         <translation>最大 PAT 填充片段</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="444"/>
-        <source>If this box is checked, double clicking on a page in the tree will automatically switch to TechDraw and the page will be made visible.</source>
-        <translation>如果勾選此框，連續點擊二下樹狀檢視中的頁面將自動切換到 TechDraw 並且該頁面將為可見.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="447"/>
-        <source>Switch Workbench on Click</source>
-        <translation>點擊以切換工作台</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="298"/>
+        <source>Limit of 64x64 pixel SVG tiles used to hatch a single face.
+For large scalings you might get an error about too many SVG tiles.
+Then you need to increase the tile limit.</source>
+        <translation>限制在 64x64 像素 SVG 磁磚以使用來填充單一面。
+針對更大尺度您可能會得到一個太多 SVG 磁磚的錯誤訊息。
+如此一來您必須增加磁磚限制.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="449"/>
@@ -6821,10 +6868,10 @@ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="548"/>
-        <source>Controls the size of gap between dimension point and start of extension line for ASME dimensions. Value * linewidth is the gap.
- Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
-        <translation>控制 ASME 尺寸的尺寸點和延伸線起點之間的間隙大小. 值 * 線寬是間隙.
- 通常，不使用間隙. 如需使用間隙，建議值為 6.</translation>
+        <source>Controls the size of the gap between the dimension point and the start of the extension line for ASME dimensions. Value * linewidth is the gap.
+ Normally, no gap is used. If using a gap, the recommended value is 6.</source>
+        <translation>控制 ASME 尺寸的尺寸點與尺寸界線起點之間的間隙大小. 值*線寬 即為間隙.
+ 通常不使用間隙. 如果使用間隙，建議值為6.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="630"/>
@@ -6838,10 +6885,10 @@ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="548"/>
-        <source>Controls the size of the gap between the dimension point and the start of the extension line for ASME dimensions. Value * linewidth is the gap.
- Normally, no gap is used. If using a gap, the recommended value is 6.</source>
-        <translation>控制 ASME 尺寸的尺寸點與尺寸界線起點之間的間隙大小. 值*線寬 即為間隙.
- 通常不使用間隙. 如果使用間隙，建議值為6.</translation>
+        <source>Controls the size of gap between dimension point and start of extension line for ASME dimensions. Value * linewidth is the gap.
+ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
+        <translation>控制 ASME 尺寸的尺寸點和延伸線起點之間的間隙大小. 值 * 線寬是間隙.
+ 通常，不使用間隙. 如需使用間隙，建議值為 6.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="643"/>
@@ -7063,6 +7110,16 @@ for ProjectionGroups</source>
         <translation>用於繪製剖面線的標準. 這會影響箭頭和符號的位置.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="451"/>
+        <source>ANSI</source>
+        <translation>ANSI</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="456"/>
+        <source>ISO</source>
+        <translation>ISO</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="469"/>
         <source>Section Line Convention</source>
         <translation>剖面線約束</translation>
@@ -7076,16 +7133,6 @@ for ProjectionGroups</source>
         <location filename="../../DlgPrefsTechDrawGeneral.ui" line="712"/>
         <source>PAT File</source>
         <translation>PAT 檔</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="451"/>
-        <source>ANSI</source>
-        <translation>ANSI</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="456"/>
-        <source>ISO</source>
-        <translation>ISO</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="538"/>
@@ -7228,16 +7275,6 @@ for ProjectionGroups</source>
         <translation>使用3D相機方向</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1024"/>
-        <source>If checked, the 3d camera direction (or normal of a selected face) will be used as the view direction.  If not checked, Views will be created as Front Views.</source>
-        <translation>如果選中，3D 相機方向(或所選面的法線)將用作檢視方向. 如果未選取，檢視將建立為正面檢視.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1027"/>
-        <source>Use 3d Camera Direction</source>
-        <translation>使用3D相機方向</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1045"/>
         <source>If checked, view labels will be displayed even when frames are suppressed.</source>
         <translation>如果選中，即使禁止顯示幀，也會顯示檢視標籤.</translation>
@@ -7276,6 +7313,16 @@ for ProjectionGroups</source>
         <location filename="../../DlgPrefsTechDrawGeneral.ui" line="879"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; Items in &lt;span style=&quot; font-style:italic;&quot;&gt;italics&lt;/span&gt; are default values for new objects. They have no effect on existing objects.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意：&lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1024"/>
+        <source>If checked, the 3d camera direction (or normal of a selected face) will be used as the view direction.  If not checked, Views will be created as Front Views.</source>
+        <translation>如果選中，3D 相機方向(或所選面的法線)將用作檢視方向. 如果未選取，檢視將建立為正面檢視.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1027"/>
+        <source>Use 3d Camera Direction</source>
+        <translation>使用3D相機方向</translation>
     </message>
 </context>
 <context>

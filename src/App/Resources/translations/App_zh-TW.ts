@@ -15,6 +15,44 @@
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
+    <name>App::LocalCoordinateSystem</name>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="210"/>
+        <source>X-axis</source>
+        <translation>X 軸</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="211"/>
+        <source>Y-axis</source>
+        <translation>Y 軸</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="212"/>
+        <source>Z-axis</source>
+        <translation>Z 軸</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="213"/>
+        <source>XY-plane</source>
+        <translation>XY 平面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="214"/>
+        <source>XZ-plane</source>
+        <translation>XZ 平面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="215"/>
+        <source>YZ-plane</source>
+        <translation>YZ 平面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="216"/>
+        <source>Origin</source>
+        <translation>原點</translation>
+    </message>
+</context>
+<context>
     <name>App::Origin</name>
     <message>
         <location filename="../../Origin.cpp" line="140"/>
@@ -75,7 +113,7 @@ The user should then click the Refresh button in the main toolbar.
 </source>
         <translation>
 建議使用者右鍵點選文件根目錄，選擇「標記重新計算」.
-然後應該點擊主工具列中的“重新整理”按鈕.
+然後使用者應該點擊主工具列中的“重新整理”按鈕.
 </translation>
     </message>
 </context>

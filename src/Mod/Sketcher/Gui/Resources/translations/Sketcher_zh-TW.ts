@@ -2019,14 +2019,14 @@ into driving or reference mode</source>
         <translation>移動/矩陣 平移</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2635"/>
-        <source>Array transform</source>
-        <translation>平移矩陣</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2636"/>
         <source>Translate selected geometries. Enable creation of i * j copies.</source>
         <translation>移動選取的幾何圖形. 允許建立 i * j 個備份.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2635"/>
+        <source>Array transform</source>
+        <translation>平移矩陣</translation>
     </message>
 </context>
 <context>
@@ -2540,6 +2540,14 @@ invalid constraints, degenerated geometry, etc.</source>
         <translation>重新命名草圖拘束</translation>
     </message>
     <message>
+        <source>Drag Constraint</source>
+        <translation>拖動拘束</translation>
+    </message>
+    <message>
+        <source>Modify sketch constraints</source>
+        <translation>修改草圖拘束</translation>
+    </message>
+    <message>
         <source>Drag Point</source>
         <translation>拖曳點</translation>
     </message>
@@ -2548,12 +2556,9 @@ invalid constraints, degenerated geometry, etc.</source>
         <translation>拖曳曲線</translation>
     </message>
     <message>
-        <source>Drag Constraint</source>
-        <translation>拖動拘束</translation>
-    </message>
-    <message>
-        <source>Modify sketch constraints</source>
-        <translation>修改草圖拘束</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/ViewProviderSketch.cpp" line="1672"/>
+        <source>Drag geometries</source>
+        <translation>拖曳幾何圖形</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerOffset.h" line="360"/>
@@ -2949,6 +2954,11 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
         <translation>選擇無效</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2327"/>
+        <source>Selection has no valid geometries. BSplines, Points are not supported yet.</source>
+        <translation>選擇沒有有效的幾何圖形. 尚不支援B-雲形線、點.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="127"/>
         <source>Selection has no valid geometries.</source>
         <translation>選擇沒有有效的幾何圖形.</translation>
@@ -3001,11 +3011,6 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
         <translation>無法刪除所有約束</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2327"/>
-        <source>Selection has no valid geometries. BSplines, Points are not supported yet.</source>
-        <translation>選擇沒有有效的幾何圖形. 尚不支援B-雲形線、點.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2372"/>
         <source>Selection has no valid geometries. B-splines and points are not supported yet.</source>
         <translation>選擇沒有有效的幾何圖形. 尚不支援B-雲形線、點.</translation>
@@ -3036,21 +3041,6 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
         <location filename="../../DrawSketchHandlerArcOfParabola.h" line="260"/>
         <source>Cannot create arc of parabola</source>
         <translation>無法建立拋物線弧</translation>
-    </message>
-    <message>
-        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="124"/>
-        <source>Cannot add knot point</source>
-        <translation>無法新增結點</translation>
-    </message>
-    <message>
-        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="195"/>
-        <source>Cannot add internal alignment points</source>
-        <translation>無法新增內部對齊點</translation>
-    </message>
-    <message>
-        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="304"/>
-        <source>Error removing knot</source>
-        <translation>解結時出錯</translation>
     </message>
     <message>
         <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="614"/>
@@ -3213,6 +3203,21 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerSymmetry.h" line="148"/>
         <source>Failed to create symmetry</source>
         <translation>建立對稱失敗</translation>
+    </message>
+    <message>
+        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="124"/>
+        <source>Cannot add knot point</source>
+        <translation>無法新增結點</translation>
+    </message>
+    <message>
+        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="195"/>
+        <source>Cannot add internal alignment points</source>
+        <translation>無法新增內部對齊點</translation>
+    </message>
+    <message>
+        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="304"/>
+        <source>Error removing knot</source>
+        <translation>解結時出錯</translation>
     </message>
     <message>
         <location filename="../../DrawSketchHandlerBSpline.h" line="129"/>
@@ -4968,6 +4973,11 @@ reflected on copies</source>
 &apos;高級求解器控制&apos; 可調整求解器設定</translation>
     </message>
     <message>
+        <location filename="../../SketcherSettings.ui" line="20"/>
+        <source>Task Panel Widgets</source>
+        <translation>工作面板小工具</translation>
+    </message>
+    <message>
         <location filename="../../SketcherSettings.ui" line="30"/>
         <source>Show section &apos;Advanced solver control&apos;</source>
         <translation>顯示“進階解算器控制”部分</translation>
@@ -5200,11 +5210,6 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
         <translation>位置及尺寸標註</translation>
     </message>
     <message>
-        <location filename="../../SketcherSettings.ui" line="20"/>
-        <source>Task Panel Widgets</source>
-        <translation>工作面板小工具</translation>
-    </message>
-    <message>
         <source>Sketcher</source>
         <translation>草圖</translation>
     </message>
@@ -5315,16 +5320,6 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="352"/>
         <source>Construction geometry</source>
         <translation>構造幾何</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="871"/>
-        <source>Color of edges</source>
-        <translation>邊線色彩</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="911"/>
-        <source>Color of vertices</source>
-        <translation>頂點色彩</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="306"/>
@@ -5492,11 +5487,6 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
         <translation>錯誤之草圖</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="731"/>
-        <source>Color of dimensional driving constraints</source>
-        <translation>尺寸主動拘束之色彩</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="751"/>
         <source>Reference constraint</source>
         <translation>被動參考拘束</translation>
@@ -5515,6 +5505,11 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="785"/>
         <source>Color of expression dependent constraints in edit mode</source>
         <translation>編輯模式下相依拘束表示式之色彩</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="731"/>
+        <source>Color of dimensional driving constraints</source>
+        <translation>尺寸主動拘束之色彩</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="805"/>
@@ -5552,6 +5547,16 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="852"/>
         <source>Color of edges outside edit mode</source>
         <translation>編輯模式之外的邊緣顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="871"/>
+        <source>Color of edges</source>
+        <translation>邊線色彩</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="911"/>
+        <source>Color of vertices</source>
+        <translation>頂點色彩</translation>
     </message>
 </context>
 <context>

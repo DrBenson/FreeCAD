@@ -4988,6 +4988,16 @@ Specify another directory, please.</source>
         <translation>重置頁面的使用者設定 &apos;%1&apos;</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgPreferencesImp.cpp" line="386"/>
+        <source>Reset tab &apos;%1&apos;...</source>
+        <translation>重設分頁 &apos;%1&apos;...</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgPreferencesImp.cpp" line="388"/>
+        <source>Resets the user settings for the tab &apos;%1&apos;</source>
+        <translation>重置分頁欄的使用者設定 &apos;%1&apos;</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgPreferencesImp.cpp" line="393"/>
         <source>Reset group &apos;%1&apos;...</source>
         <translation>重置群組 &apos;%1&apos;...</translation>
@@ -5079,16 +5089,6 @@ msgstr &quot; &quot;
         <source>Restart later</source>
         <translation>稍後重新啟動</translation>
     </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgPreferencesImp.cpp" line="386"/>
-        <source>Reset tab &apos;%1&apos;...</source>
-        <translation>重設分頁 &apos;%1&apos;...</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgPreferencesImp.cpp" line="388"/>
-        <source>Resets the user settings for the tab &apos;%1&apos;</source>
-        <translation>重置分頁欄的使用者設定 &apos;%1&apos;</translation>
-    </message>
 </context>
 <context>
     <name>Gui::Dialog::DlgProjectInformation</name>
@@ -5096,6 +5096,11 @@ msgstr &quot; &quot;
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/homeBenson/sources/FreeCAD-0.22.0-git/src/Gui/home/DrBenson/sources/FreeCAD-0.22.0-git/src/Gui/Benson/sources/FreeCAD-0.22.0-git/src/Gui/DlgProjectInformation.ui" line="14"/>
         <source>Document information</source>
         <translation>文件資訊</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectInformation.ui" line="14"/>
+        <source>Project information</source>
+        <translation>專案資訊</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectInformation.ui" line="26"/>
@@ -5188,11 +5193,6 @@ msgstr &quot; &quot;
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectInformation.ui" line="300"/>
         <source>&amp;Comment:</source>
         <translation>註釋(&amp;C):</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgProjectInformation.ui" line="14"/>
-        <source>Project information</source>
-        <translation>專案資訊</translation>
     </message>
 </context>
 <context>
@@ -8170,6 +8170,16 @@ Mouse tilting is not disabled by this setting.</source>
         <translation>禁用觸控螢幕傾斜手勢</translation>
     </message>
     <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNavigation.ui" line="727"/>
+        <source>Space mouse</source>
+        <translation>太空滑鼠</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNavigation.ui" line="733"/>
+        <source>Enable support of legacy space mouse devices</source>
+        <translation>啟用對傳統太空滑鼠設備的支援</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/homeBenson/sources/FreeCAD-0.22.0-git/src/Gui/home/DrBenson/sources/FreeCAD-0.22.0-git/src/Gui/Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNavigation.ui" line="695"/>
         <source>Animations</source>
         <translation>動畫</translation>
@@ -8288,11 +8298,6 @@ Mouse tilting is not disabled by this setting.</source>
         <translation>其他資料來源</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="67"/>
-        <source>Additional data sources</source>
-        <translation>其他資料來源</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="73"/>
         <source>Errors intended for developers will appear in the notification area</source>
         <translation>供開發人員使用的錯誤將顯示在通知區域中</translation>
@@ -8301,11 +8306,6 @@ Mouse tilting is not disabled by this setting.</source>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="73"/>
         <source>Errors will appear in the notification area</source>
         <translation>錯誤將出現在通知區域</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="76"/>
-        <source>Debug errors</source>
-        <translation>調試錯誤</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="76"/>
@@ -8321,11 +8321,6 @@ Mouse tilting is not disabled by this setting.</source>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="92"/>
         <source>Warnings will appear in the notification area</source>
         <translation>警告將出現在通知區域</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="95"/>
-        <source>Debug warnings</source>
-        <translation>調試警告</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="95"/>
@@ -8384,19 +8379,9 @@ Mouse tilting is not disabled by this setting.</source>
         <translation>通知的寬度(以像素為單位)</translation>
     </message>
     <message>
-        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="214"/>
-        <source> px</source>
-        <translation> px</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="233"/>
         <source>Any open non-intrusive notifications will disappear when another window is activated</source>
         <translation>當另一個視窗被啟用時，任何打開的非侵入式通知都會消失</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="236"/>
-        <source>Hide when other window is activated</source>
-        <translation>其他視窗作用中時隱藏</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="252"/>
@@ -8431,6 +8416,161 @@ Mouse tilting is not disabled by this setting.</source>
     <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="309"/>
         <source>Auto-remove User Notifications</source>
+        <translation>自動刪除使用者通知</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="20"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If checked, show the notification area in the status bar: a button with the current notification count, which can expand the detailed notification list. Optionally, with additional pop-up notifications.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;如果選中，則在狀態列中顯示通知區域：具有目前通知計數的按鈕，可以展開詳細的通知清單. (可選)附加彈出通知.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="23"/>
+        <source>Enable notification area</source>
+        <translation>啟用通知區域</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="32"/>
+        <source>If checked, non-intrusive pop-up notifications will appear above the status bar, around the notification area. Pop-up notifications can be manually dismissed by clicking on them, and also automatically dismissed by specifying a maximum and minimum duration for them to be displayed.
+
+Additionally, pop-up notifications can be disabled. In this case the user can still use the notification area as a quick-access location to view notifications, without the distracton of an additional pop-up.</source>
+        <translation>如果選中，非侵入式彈出通知將出現在狀態列上方、通知區域周圍. 彈出通知可以透過點擊手動關閉，也可以透過指定顯示的最大和最短持續時間自動關閉.
+
+此外，可以停用彈出通知. 在這種情況下，使用者仍然可以使用通知區域作為快速存取位置來檢視通知，而不會受到額外彈出視窗的干擾.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="37"/>
+        <source>Enable pop-up notifications</source>
+        <translation>啟用彈出通知</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="49"/>
+        <source>Minimum duration:</source>
+        <translation>最短持續時間:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="59"/>
+        <source>Maximum duration:</source>
+        <translation>最長持續時間:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="66"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Maximum amount of time the notification will be shown (unless mouse buttons are clicked). It also controls when user notifications will be removed if the &amp;quot;Auto-remove user notifications&amp;quot; setting is checked.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;通知顯示的最長時間(除非按一下滑鼠按鈕). 如果啟用了“自動刪除使用者通知”，它還可以控制何時刪除使用者通知. 設定已選取.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="69"/>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="94"/>
+        <source> s</source>
+        <translation> 秒</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="91"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Minimum amount of time the notification will be shown (unless the notification bubble is dismissed by clicking on it).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;通知顯示的最短時間(除非透過點擊通知氣泡來消除).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="110"/>
+        <source>Maximum concurrent notification count:</source>
+        <translation>最大同時通知數量:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="117"/>
+        <source>Maximum number of notifications that will be simultaneously present on the notification bubble.</source>
+        <translation>通知泡泡上同時顯示的最大通知數.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="133"/>
+        <source>Notification bubble width:</source>
+        <translation>通知泡泡寬度:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="140"/>
+        <source>Width of the pop-up notification bubble in pixels.</source>
+        <translation>彈出通知泡泡的寬度(以像素為單位).</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="214"/>
+        <source> px</source>
+        <translation> px</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="168"/>
+        <source>Any open pop-up notifications will disappear when another window is activated.</source>
+        <translation>當另一個視窗被啟動時，任何開啟的彈出通知都會消失.</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="236"/>
+        <source>Hide when other window is activated</source>
+        <translation>其他視窗作用中時隱藏</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="187"/>
+        <source>Prevent pop-up notifications from appearing when the FreeCAD window is not the active window.</source>
+        <translation>當 FreeCAD 視窗不是活動視窗時防止出現彈出通知.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="190"/>
+        <source>Do not show when window is inactive</source>
+        <translation>視窗處於非活動狀態時不顯示</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="209"/>
+        <source>Additional notification sources to show in the notification area.</source>
+        <translation>在通知區域中顯示的其他通知來源.</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="67"/>
+        <source>Additional data sources</source>
+        <translation>其他資料來源</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="218"/>
+        <source>Errors intended for developers will appear in the notification area.</source>
+        <translation>供開發人員使用的錯誤將顯示在通知區域中.</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="76"/>
+        <source>Debug errors</source>
+        <translation>調試錯誤</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="237"/>
+        <source>Warnings intended for developers will appear in the notification area.</source>
+        <translation>針對開發人員的警告將出現在通知區域中.</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgSettingsNotificationArea.ui" line="95"/>
+        <source>Debug warnings</source>
+        <translation>調試警告</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="259"/>
+        <source>Controls the amount of notifications to show in the list.</source>
+        <translation>控制清單中顯示的通知數量.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="262"/>
+        <source>Notifications list</source>
+        <translation>通知列表</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="268"/>
+        <source>Limits the number of notifications that will be kept in the list. If 0, there is no limit.</source>
+        <translation>限制清單中保留的通知數量. 如果為0，則沒有限制.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="287"/>
+        <source>Maximum notification count:</source>
+        <translation>最多通知訊息數:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="294"/>
+        <source>Removes the user notifications from the notifications list after the maximum duration for pop-up notifications has lapsed.</source>
+        <translation>彈出通知的最大持續時間過後，從通知清單中刪除使用者通知.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNotificationArea.ui" line="297"/>
+        <source>Auto-remove user notifications</source>
         <translation>自動刪除使用者通知</translation>
     </message>
     <message>
@@ -13417,6 +13557,24 @@ Do you want to specify another directory?</source>
         <source>Table</source>
         <translation>表格</translation>
     </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/VectorListEditor.cpp" line="326"/>
+        <source>Copy table</source>
+        <translation>複製表格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/VectorListEditor.cpp" line="330"/>
+        <source>Paste table</source>
+        <translation>貼上表格</translation>
+    </message>
+</context>
+<context>
+    <name>Gui::VectorTableModel</name>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/VectorListEditor.cpp" line="203"/>
+        <source>Unsupported format.  Must be 3 values per row separated by tabs, semicolons, or commas:</source>
+        <translation>不支援的格式. 每行必須有 3 個值，以定位標記、分號或逗號分隔:</translation>
+    </message>
 </context>
 <context>
     <name>Gui::View3DInventor</name>
@@ -13878,16 +14036,6 @@ the region are non-opaque.</source>
         <translation>選擇檢視</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="344"/>
-        <source>Toolbox</source>
-        <translation>工具箱</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="411"/>
-        <source>Combo View</source>
-        <translation>複合檢視</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="421"/>
         <source>Report view</source>
         <translation>報表檢視</translation>
@@ -13921,6 +14069,16 @@ the region are non-opaque.</source>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="457"/>
         <source>DAG View</source>
         <translation>DAG 檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="344"/>
+        <source>Toolbox</source>
+        <translation>工具箱</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="411"/>
+        <source>Combo View</source>
+        <translation>複合檢視</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/DlgDisplayPropertiesImp.cpp" line="52"/>
@@ -14759,13 +14917,6 @@ Choose &apos;Abort&apos; to abort</source>
         <translation>無瀏覽器</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/OnlineDocumentation.cpp" line="419"/>
-        <source>Unable to open your browser.
-
-Please open a browser window and type in: http://localhost:%1.</source>
-        <translation>無法打開您的流覽器. 請打開流覽器視窗，並輸入: http://localhost:%1.</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/OnlineDocumentation.cpp" line="459"/>
         <source>Unable to open your system browser.</source>
         <translation>無法打開您的系統瀏覽器.</translation>
@@ -15277,6 +15428,13 @@ underscore, and must not start with a digit.</source>
         <location filename="../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Gui/SplashScreen.cpp" line="190"/>
         <source>Please do not use it in a production environment.</source>
         <translation>請不要在生產環境中使用.</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/OnlineDocumentation.cpp" line="419"/>
+        <source>Unable to open your browser.
+
+Please open a browser window and type in: http://localhost:%1.</source>
+        <translation>無法打開您的流覽器. 請打開流覽器視窗，並輸入: http://localhost:%1.</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="530"/>

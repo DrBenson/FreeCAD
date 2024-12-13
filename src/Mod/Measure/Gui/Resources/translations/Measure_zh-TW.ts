@@ -43,6 +43,31 @@
         <translation>顯示 Delta:</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="89"/>
+        <source>Auto Save</source>
+        <translation>自動儲存</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="92"/>
+        <source>Auto saving of the last measurement when starting a new measurement. Use SHIFT to temporarily invert the behaviour.</source>
+        <translation>開始新測量時自動儲存最後一次測量. 使用 SHIFT 暫時反轉行為.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="96"/>
+        <source>Additive Selection</source>
+        <translation>附加選擇</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="101"/>
+        <source>If checked, new selection will be added to the measurement. If unchecked, CTRL must be pressed to add a selection to the current measurement otherwise a new measurement will be started</source>
+        <translation>如果選中，新的選擇將會新增到測量中. 如果未選中，則必須按下 CTRL 才能將選擇新增至目前測量，否則將開始新的測量</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="110"/>
+        <source>Settings</source>
+        <translation>設定</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="77"/>
         <source>Mode:</source>
         <translation>模式:</translation>

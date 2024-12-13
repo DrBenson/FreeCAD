@@ -316,6 +316,16 @@
         <translation>所有檔案</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Points/Gui/Command.cpp" line="117"/>
+        <source>Points not at Origin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Points/Gui/Command.cpp" line="118"/>
+        <source>The Bounding Box of the imported points does not contain the origin.  Do you want to translate it to the origin?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../Gui/Command.cpp" line="227"/>
         <source>Distance</source>
         <translation>距離</translation>
