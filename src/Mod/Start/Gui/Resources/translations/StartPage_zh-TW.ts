@@ -24,6 +24,11 @@
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/Manipulator.cpp" line="48"/>
+        <source>&amp;Start Page</source>
+        <translation>開始頁面(&amp;S)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/Manipulator.cpp" line="48"/>
         <source>Start Page</source>
         <translation>開始頁面</translation>
     </message>

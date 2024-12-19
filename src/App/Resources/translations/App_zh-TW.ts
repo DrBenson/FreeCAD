@@ -17,37 +17,37 @@
 <context>
     <name>App::LocalCoordinateSystem</name>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="210"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="209"/>
         <source>X-axis</source>
         <translation>X 軸</translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="211"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="210"/>
         <source>Y-axis</source>
         <translation>Y 軸</translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="212"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="211"/>
         <source>Z-axis</source>
         <translation>Z 軸</translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="213"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="212"/>
         <source>XY-plane</source>
         <translation>XY 平面</translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="214"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="213"/>
         <source>XZ-plane</source>
         <translation>XZ 平面</translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="215"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="214"/>
         <source>YZ-plane</source>
         <translation>YZ 平面</translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="216"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="215"/>
         <source>Origin</source>
         <translation>原點</translation>
     </message>
@@ -113,7 +113,7 @@ The user should then click the Refresh button in the main toolbar.
 </source>
         <translation>
 建議使用者右鍵點選文件根目錄，選擇「標記重新計算」.
-然後使用者應該點擊主工具列中的“重新整理”按鈕.
+然後點擊主工具列中的“重新整理”按鈕.
 </translation>
     </message>
 </context>

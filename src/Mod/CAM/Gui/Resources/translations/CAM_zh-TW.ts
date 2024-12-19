@@ -1876,6 +1876,31 @@ The latter can be used to face of the entire stock area to ensure uniform height
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="121"/>
+        <source>Number of Passes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="131"/>
+        <source>The number of passes to do. If more than one, requires a non-zero value for Pass Stepover.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="138"/>
+        <source>Pass Stepover</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="147"/>
+        <source>If checked the profile operation is offset by the tool radius. The offset direction is determined by the Cut Side</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="151"/>
+        <source>If doing multiple passes, the extra offset of each additional pass.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="127"/>
         <source>Check if this operation should use a starting point</source>
         <translation type="unfinished"></translation>
@@ -1893,11 +1918,6 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="147"/>
         <source>If checked, the profile operation is offset by the tool radius. The offset direction is determined by the Cut Side</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="147"/>
-        <source>If checked the profile operation is offset by the tool radius. The offset direction is determined by the Cut Side</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
