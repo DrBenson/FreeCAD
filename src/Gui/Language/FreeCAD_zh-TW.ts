@@ -1350,6 +1350,26 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <source>Next Balloon Index</source>
         <translation>下一個索引</translation>
     </message>
+    <message>
+        <source>Material Name</source>
+        <translation>材質名稱</translation>
+    </message>
+    <message>
+        <source>Density</source>
+        <translation>密度</translation>
+    </message>
+    <message>
+        <source>Mass</source>
+        <translation>重量</translation>
+    </message>
+    <message>
+        <source>Volume</source>
+        <translation>體積</translation>
+    </message>
+    <message>
+        <source>Physical Properties</source>
+        <translation>物理特性</translation>
+    </message>
 </context>
 <context>
     <name>App::PropertyString</name>
