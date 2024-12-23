@@ -392,8 +392,44 @@
         <translation>參考軸</translation>
     </message>
     <message>
+        <source>Source</source>
+        <translation>來源</translation>
+    </message>
+    <message>
+        <source>XSource</source>
+        <translation>擴展來源</translation>
+    </message>
+    <message>
+        <source>Lock Position</source>
+        <translation>鎖定位置</translation>
+    </message>
+    <message>
+        <source>Anchor</source>
+        <translation>錨定</translation>
+    </message>
+    <message>
+        <source>Caption</source>
+        <translation>標題</translation>
+    </message>
+    <message>
         <source>Offset</source>
         <translation>偏移</translation>
+    </message>
+    <message>
+        <source>Distribute</source>
+        <translation>工程圖更新</translation>
+    </message>
+    <message>
+        <source>Auto Distribute</source>
+        <translation>自動更新工程圖</translation>
+    </message>
+    <message>
+        <source>Collection</source>
+        <translation>收集</translation>
+    </message>
+    <message>
+        <source>Orientation</source>
+        <translation>紙張定位方向</translation>
     </message>
     <message>
         <source>Part Design</source>
@@ -940,6 +976,10 @@
         <translation>項目</translation>
     </message>
     <message>
+        <source>Scale Type</source>
+        <translation>縮放類型</translation>
+    </message>
+    <message>
         <source>Scale Vector</source>
         <translation>尺度向量</translation>
     </message>
@@ -1014,6 +1054,10 @@
     <message>
         <source>Hole Cut Countersink Angle</source>
         <translation>開孔切割埋頭孔角度</translation>
+    </message>
+    <message>
+        <source>Rotation</source>
+        <translation>旋轉</translation>
     </message>
     <message>
         <source>Rotate</source>
