@@ -128,6 +128,10 @@
         <translation>標籤</translation>
     </message>
     <message>
+        <source>Label2</source>
+        <translation>標籤2</translation>
+    </message>
+    <message>
         <source>Last Modified By</source>
         <translation>最後修改</translation>
     </message>
@@ -293,6 +297,10 @@
     </message>
     <message>
         <source>diameter</source>
+        <translation>直徑</translation>
+    </message>
+    <message>
+        <source>Diameter</source>
         <translation>直徑</translation>
     </message>
     <message>
@@ -932,8 +940,120 @@
         <translation>項目</translation>
     </message>
     <message>
+        <source>Scale Vector</source>
+        <translation>尺度向量</translation>
+    </message>
+    <message>
+        <source>Animation Hint List</source>
+        <translation>動畫提示列表</translation>
+    </message>
+    <message>
+        <source>Model Thread</source>
+        <translation>建模螺紋</translation>
+    </message>
+    <message>
+        <source>Thread Size</source>
+        <translation>螺紋大小</translation>
+    </message>
+    <message>
+        <source>Thread Class</source>
+        <translation>螺紋類別</translation>
+    </message>
+    <message>
+        <source>Thread Fit</source>
+        <translation>螺紋配合</translation>
+    </message>
+    <message>
+        <source>Thread Direction</source>
+        <translation>螺紋方向</translation>
+    </message>
+    <message>
+        <source>Thread Depth Type</source>
+        <translation>螺紋深度類型</translation>
+    </message>
+    <message>
+        <source>Thread Depth</source>
+        <translation>螺紋深度</translation>
+    </message>
+    <message>
+        <source>Thread Type</source>
+        <translation>螺紋類型</translation>
+    </message>
+    <message>
+        <source>Use Custom Thread Clearance</source>
+        <translation>使用自訂螺紋間隙</translation>
+    </message>
+    <message>
+        <source>Custom Thread Clearance</source>
+        <translation>自訂螺紋間隙</translation>
+    </message>
+    <message>
+        <source>Threaded</source>
+        <translation>螺紋</translation>
+    </message>
+    <message>
+        <source>Hole</source>
+        <translation>開孔</translation>
+    </message>
+    <message>
+        <source>Hole Cut Type</source>
+        <translation>開孔類型</translation>
+    </message>
+    <message>
+        <source>Hole Cut Custom Values</source>
+        <translation>開孔切割自訂值</translation>
+    </message>
+    <message>
+        <source>Hole Cut Diameter</source>
+        <translation>開孔直徑</translation>
+    </message>
+    <message>
+        <source>Hole Cut Depth</source>
+        <translation>開孔深度</translation>
+    </message>
+    <message>
+        <source>Hole Cut Countersink Angle</source>
+        <translation>開孔切割埋頭孔角度</translation>
+    </message>
+    <message>
+        <source>Rotate</source>
+        <translation>旋轉</translation>
+    </message>
+    <message>
+        <source>Proxy</source>
+        <translation>代理</translation>
+    </message>
+    <message>
         <source>Slice</source>
         <translation>切片</translation>
+    </message>
+    <message>
+        <source>Element List</source>
+        <translation>元素列表</translation>
+    </message>
+    <message>
+        <source>Placement List</source>
+        <translation>放置位置列表</translation>
+    </message>
+    <message>
+        <source>Visibility List</source>
+        <translation>可見性列表</translation>
+    </message>
+    <message>
+        <source>Originals</source>
+        <translation>原件</translation>
+    </message>
+    <message>
+        <source>Origin Features</source>
+        <translation>原始特徵</translation>
+    </message>
+    <message>
+        <source>Part</source>
+        <translation>零件</translation>
+    </message>
+    <message>
+        <source>Origin</source>
+        <translation>原點</translation>
     </message>
     <message>
         <source>Cutout</source>
@@ -1070,12 +1190,56 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <translation>輔助曲線</translation>
     </message>
     <message>
+        <source>Attacher Type</source>
+        <translation>附加類型</translation>
+    </message>
+    <message>
+        <source>Map Path Parameter</source>
+        <translation>地圖路徑參數</translation>
+    </message>
+    <message>
+        <source>External geo</source>
+        <translation>外部幾何圖</translation>
+    </message>
+    <message>
+        <source>External Types</source>
+        <translation>外部類型</translation>
+    </message>
+    <message>
+        <source>Internal Shape</source>
+        <translation>內部形狀</translation>
+    </message>
+    <message>
         <source>Binormal</source>
         <translation>次法線</translation>
     </message>
     <message>
+        <source>Fulle Constrained</source>
+        <translation>完全約束</translation>
+    </message>
+    <message>
+        <source>Geometry</source>
+        <translation>幾何圖</translation>
+    </message>
+    <message>
+        <source>Exports</source>
+        <translation>匯出</translation>
+    </message>
+    <message>
+        <source>Cache</source>
+        <translation>快取</translation>
+    </message>
+    <message>
+        <source>Context</source>
+        <translation>情境</translation>
+    </message>
+    <message>
         <source>Transition</source>
         <translation>轉換</translation>
+    </message>
+    <message>
+        <source>Transform Mode</source>
+        <translation>轉換模式</translation>
     </message>
     <message>
         <source>Transformation</source>
@@ -1355,12 +1519,32 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <translation>材質名稱</translation>
     </message>
     <message>
+        <source>Expression Engine</source>
+        <translation>表達式引擎</translation>
+    </message>
+    <message>
         <source>Density</source>
         <translation>密度</translation>
     </message>
     <message>
+        <source>Occurrences</source>
+        <translation>產生次數</translation>
+    </message>
+    <message>
         <source>Mass</source>
         <translation>重量</translation>
+    </message>
+    <message>
+        <source>Add Sub Shape</source>
+        <translation>新增子形狀</translation>
+    </message>
+    <message>
+        <source>Suppressed Shape</source>
+        <translation>抑制形狀</translation>
+    </message>
+    <message>
+        <source>Shape</source>
+        <translation>形狀</translation>
     </message>
     <message>
         <source>Volume</source>
@@ -1369,6 +1553,38 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
     <message>
         <source>Physical Properties</source>
         <translation>物理特性</translation>
+    </message>
+    <message>
+        <source>Experimental</source>
+        <translation>實驗性內容</translation>
+    </message>
+    <message>
+        <source>Depth</source>
+        <translation>深度</translation>
+    </message>
+    <message>
+        <source>Depth Type</source>
+        <translation>深度類型</translation>
+    </message>
+    <message>
+        <source>Drill Point</source>
+        <translation>鑽孔點</translation>
+    </message>
+    <message>
+        <source>Drill Point Angle</source>
+        <translation>鑽孔點角度</translation>
+    </message>
+    <message>
+        <source>Drill For Depth</source>
+        <translation>鑽孔深度</translation>
+    </message>
+    <message>
+        <source>Tapered</source>
+        <translation>錐</translation>
+    </message>
+    <message>
+        <source>Tapered Angle</source>
+        <translation>錐角</translation>
     </message>
 </context>
 <context>
