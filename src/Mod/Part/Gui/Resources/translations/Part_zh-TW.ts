@@ -2365,14 +2365,14 @@ of projection.</source>
         <translation>持續截面切割(&amp;n)</translation>
     </message>
     <message>
-        <location filename="../../Command.cpp" line="2539"/>
-        <source>Creates a persistent section cut of visible part objects</source>
-        <translation>建立可見零件物件的持久剖面切割</translation>
-    </message>
-    <message>
         <location filename="../../Command.cpp" line="2538"/>
         <source>Persistent section cut</source>
         <translation>持續截面切割</translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="2539"/>
+        <source>Creates a persistent section cut of visible part objects</source>
+        <translation>建立可見零件物件的持久剖面切割</translation>
     </message>
 </context>
 <context>
@@ -2884,6 +2884,11 @@ of projection.</source>
 <context>
     <name>PartDesignGui::TaskDatumParameters</name>
     <message>
+        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="20"/>
         <source>Selection accepted</source>
         <translation>接受選擇</translation>
@@ -2980,11 +2985,6 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="367"/>
         <source>Flip sides</source>
         <translation>翻面</translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -3163,11 +3163,6 @@ Note: The placement is expressed in local space of object being attached.</sourc
 <context>
     <name>PartGui::DlgExportHeaderStep</name>
     <message>
-        <location filename="../../DlgExportHeaderStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
-    </message>
-    <message>
         <location filename="../../DlgExportHeaderStep.ui" line="20"/>
         <source>If not empty, field contents will be used in the STEP file header.</source>
         <translation>如果不為空，則欄位內容將用於STEP文件標題.</translation>
@@ -3191,6 +3186,11 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <location filename="../../DlgExportHeaderStep.ui" line="49"/>
         <source>Product</source>
         <translation>產品</translation>
+    </message>
+    <message>
+        <location filename="../../DlgExportHeaderStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
     </message>
 </context>
 <context>
@@ -3230,6 +3230,11 @@ it inside the Placement property.</source>
         <location filename="../../DlgExportStep.ui" line="26"/>
         <source>Units for export of STEP</source>
         <translation>匯出STEP檔所用之單位</translation>
+    </message>
+    <message>
+        <location filename="../../DlgExportStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
     </message>
     <message>
         <location filename="../../DlgExportStep.ui" line="47"/>
@@ -3288,11 +3293,6 @@ it inside the Placement property.</source>
 should be written into the STEP file. This parameter can be set to off in order to minimize
 the size of the resulting STEP file.</source>
         <translation>此參數指示是否將參數曲線（曲面參數空間中的曲線）寫入STEP檔案。為了最小化生成的STEP檔案大小，可以將此參數設置為關閉。</translation>
-    </message>
-    <message>
-        <location filename="../../DlgExportStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
     </message>
 </context>
 <context>
@@ -3605,6 +3605,11 @@ If both lengths are zero, magnitude of direction is used.</source>
         <translation>倒角參數</translation>
     </message>
     <message>
+        <location filename="../../DlgFilletEdges.cpp" line="266"/>
+        <source>Chamfer Parameter</source>
+        <translation>倒角參數</translation>
+    </message>
+    <message>
         <location filename="../../DlgFilletEdges.cpp" line="268"/>
         <source>Chamfer type</source>
         <translation>倒角類型</translation>
@@ -3628,11 +3633,6 @@ If both lengths are zero, magnitude of direction is used.</source>
         <location filename="../../DlgFilletEdges.cpp" line="267"/>
         <source>Length:</source>
         <translation>長度：</translation>
-    </message>
-    <message>
-        <location filename="../../DlgFilletEdges.cpp" line="266"/>
-        <source>Chamfer Parameter</source>
-        <translation>倒角參數</translation>
     </message>
     <message>
         <location filename="../../DlgFilletEdges.cpp" line="270"/>
@@ -4052,11 +4052,6 @@ the size of the resulting STEP file.</source>
         <translation>STEP 匯入設定</translation>
     </message>
     <message>
-        <location filename="../../DlgImportStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
-    </message>
-    <message>
         <location filename="../../DlgImportStep.ui" line="20"/>
         <source>Import</source>
         <translation>匯入</translation>
@@ -4185,6 +4180,11 @@ during file reading (slower but higher details).</source>
         <location filename="../../DlgImportStep.ui" line="181"/>
         <source>Object per document in sub-directory</source>
         <translation>依據子目錄中每個文件的物體</translation>
+    </message>
+    <message>
+        <location filename="../../DlgImportStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
     </message>
 </context>
 <context>
@@ -4322,27 +4322,27 @@ during file reading (slower but higher details).</source>
         <translation>STEP 匯入檔案</translation>
     </message>
     <message>
-        <location filename="../../DlgPartImportStep.ui" line="14"/>
-        <source>Step input file</source>
-        <translation>STEP輸入檔</translation>
-    </message>
-    <message>
         <location filename="../../DlgPartImportStep.ui" line="20"/>
         <source>File Name</source>
         <translation>檔案名稱</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPartImportStep.ui" line="14"/>
+        <source>Step input file</source>
+        <translation>STEP輸入檔</translation>
     </message>
 </context>
 <context>
     <name>PartGui::DlgPartImportStepImp</name>
     <message>
-        <location filename="../../DlgPartImportStepImp.cpp" line="72"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
-    </message>
-    <message>
         <location filename="../../DlgPartImportStepImp.cpp" line="73"/>
         <source>All Files</source>
         <translation>所有檔案</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPartImportStepImp.cpp" line="72"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
     </message>
 </context>
 <context>
@@ -5609,11 +5609,6 @@ the sketch plane&apos;s normal vector will be used</source>
         <translation>持續截面切割</translation>
     </message>
     <message>
-        <location filename="../../SectionCutting.ui" line="20"/>
-        <source>Permanent Section Cutting</source>
-        <translation>永久斷面切割</translation>
-    </message>
-    <message>
         <location filename="../../SectionCutting.ui" line="32"/>
         <source>Cutting X</source>
         <translation>切割 X</translation>
@@ -5725,6 +5720,11 @@ only created cuts will be visible</source>
         <location filename="../../SectionCutting.cpp" line="520"/>
         <source>Sliders are disabled for assemblies</source>
         <translation>組件中的滑桿被禁用</translation>
+    </message>
+    <message>
+        <location filename="../../SectionCutting.ui" line="20"/>
+        <source>Permanent Section Cutting</source>
+        <translation>永久斷面切割</translation>
     </message>
 </context>
 <context>
@@ -5914,6 +5914,11 @@ only created cuts will be visible</source>
 <context>
     <name>PartGui::TaskAttacher</name>
     <message>
+        <location filename="../../TaskAttacher.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../TaskAttacher.ui" line="20"/>
         <source>Selection accepted</source>
         <translation>接受選擇</translation>
@@ -6095,11 +6100,6 @@ of object being attached.</source>
         <location filename="../../TaskAttacher.cpp" line="842"/>
         <source>%1 (add more references)</source>
         <translation>%1 (增加更多參考)</translation>
-    </message>
-    <message>
-        <location filename="../../TaskAttacher.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>

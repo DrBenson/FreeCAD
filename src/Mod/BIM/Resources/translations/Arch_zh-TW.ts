@@ -3423,16 +3423,6 @@ Floor creation aborted.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ArchMaterial.py" line="123"/>
-        <source>Create material</source>
-        <translation>建立材質</translation>
-    </message>
-    <message>
-        <location filename="../../ArchMaterial.py" line="157"/>
-        <source>Create multi-material</source>
-        <translation>建立多重材質</translation>
-    </message>
-    <message>
         <location filename="../../ArchMaterial.py" line="826"/>
         <location filename="../../ArchMaterial.py" line="845"/>
         <location filename="../../ArchWindow.py" line="1739"/>
@@ -3458,16 +3448,6 @@ Floor creation aborted.</source>
     <message>
         <source>depends on the object</source>
         <translation>相依於物件</translation>
-    </message>
-    <message>
-        <location filename="../../ArchStructure.py" line="432"/>
-        <source>Drawing mode</source>
-        <translation>繪圖模式</translation>
-    </message>
-    <message>
-        <location filename="../../ArchStructure.py" line="489"/>
-        <source>Switch L/W</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../ArchStructure.py" line="835"/>
@@ -4314,6 +4294,26 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     </message>
     <message>
         <source>Press to retrieve the selected edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ArchMaterial.py" line="123"/>
+        <source>Create material</source>
+        <translation>建立材質</translation>
+    </message>
+    <message>
+        <location filename="../../ArchMaterial.py" line="157"/>
+        <source>Create multi-material</source>
+        <translation>建立多重材質</translation>
+    </message>
+    <message>
+        <location filename="../../ArchStructure.py" line="432"/>
+        <source>Drawing mode</source>
+        <translation>繪圖模式</translation>
+    </message>
+    <message>
+        <location filename="../../ArchStructure.py" line="489"/>
+        <source>Switch L/W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6674,6 +6674,14 @@ Leave blank to use all objects from the document</source>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogConvertDocument.ui" line="40"/>
+        <source>If this is checked, you won&apos;t be asked again when creating a new FreeCAD document,
+and that document won&apos;t be turned into an IFC document automatically.
+You can still turn a FreeCAD document into an IFC document manually, using
+Utils -&gt; Make IFC project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogConvertDocument.ui" line="40"/>
         <source>If this is checked, you won&apos;t be asked again when creating a new FreeCAD document, 
 and that document won&apos;t be turned into an IFC document automatically.
 You can still turn a FreeCAD document into an IFC document manually, using
@@ -7891,24 +7899,9 @@ a certain property.</source>
         <translation>自訂屬性</translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="26"/>
-        <source>People</source>
-        <translation>開發者</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="57"/>
-        <source>Kind</source>
-        <translation>類別</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="62"/>
         <source>Name</source>
         <translation>名稱</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="67"/>
-        <source>Email</source>
-        <translation>電子郵件</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogCustomProperties.ui" line="30"/>
@@ -8630,6 +8623,21 @@ p, li { white-space: pre-wrap; }
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferencesNativeIFC.ui" line="290"/>
         <source>Check this to ask the above question every time a project is created</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="26"/>
+        <source>People</source>
+        <translation>開發者</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="57"/>
+        <source>Kind</source>
+        <translation>類別</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="67"/>
+        <source>Email</source>
+        <translation>電子郵件</translation>
     </message>
     <message>
         <source>Multimaterial definition</source>
@@ -9745,6 +9753,119 @@ are placed in a &apos;Group&apos; instead.
     <message>
         <source>Replace &apos;Project&apos;, &apos;Site&apos;, &apos;Building&apos;, and &apos;Storey&apos; with &apos;Group&apos;</source>
         <translation>以 &apos;群組&apos; 取代 &apos;專案&apos;、&apos;基地&apos;、&apos;建築物&apos; 以及 &apos;樓層&apos;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="14"/>
+        <source>SH3D import</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="45"/>
+        <source>Shows verbose debug messages during import of SH3D files in the Report
+                    view panel. Log level message must be allowed for this setting to have an effect.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="71"/>
+        <source>Whether to import the model&apos;s doors and windows</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="74"/>
+        <source>Doors and Windows</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="87"/>
+        <source>Whether to import the model&apos;s furnitures</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="90"/>
+        <source>Furnitures</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="103"/>
+        <source>Whether to create Arch::Equipment for each furniture defined in the model (NOTE: this can negatively impact the import process speed)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="106"/>
+        <source>Create Arch::Equipment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="119"/>
+        <source>Whether to join the different Arch::Wall together</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="122"/>
+        <source>Join Arch::Wall</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="135"/>
+        <source>Whether to import the model&apos;s lights. Note that you also need to import
+                    the model&apos;s furnitures.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="139"/>
+        <source>Lights (requires Render)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="152"/>
+        <source>Whether to import the model&apos;s cameras</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="155"/>
+        <source>Cameras (requires Render)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="168"/>
+        <source>Merge imported element with existing FC object</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="171"/>
+        <source>Merge into existing document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="186"/>
+        <source>Default Floor Color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="202"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="242"/>
+        <source>This color might be used when a room does not define its own color.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="226"/>
+        <source>Default Ceiling Color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="264"/>
+        <source>Create a default Render project with the newly Site</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="267"/>
+        <source>Create Render Project (requires Render)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="280"/>
+        <source>Fit view while importing.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Scaling factor for patterns used by object that have
