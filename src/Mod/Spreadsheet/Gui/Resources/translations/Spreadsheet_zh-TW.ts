@@ -469,14 +469,14 @@
         <translation>設定文字顏色</translation>
     </message>
     <message>
-        <location filename="../../Workbench.cpp" line="131"/>
-        <source>Set foreground color</source>
-        <translation>設定前景顏色</translation>
-    </message>
-    <message>
         <location filename="../../Workbench.cpp" line="158"/>
         <source>Set background color</source>
         <translation>設定背景顏色</translation>
+    </message>
+    <message>
+        <location filename="../../Workbench.cpp" line="131"/>
+        <source>Set foreground color</source>
+        <translation>設定前景顏色</translation>
     </message>
 </context>
 <context>
@@ -789,12 +789,6 @@ switch the design configuration. The property will be created if not exist.</sou
         <translation>CSV (*.csv *.CSV);;全部 (*)</translation>
     </message>
     <message>
-        <location filename="../../Command.cpp" line="196"/>
-        <location filename="../../Command.cpp" line="252"/>
-        <source>All (*)</source>
-        <translation>全部(*)</translation>
-    </message>
-    <message>
         <location filename="../../Command.cpp" line="198"/>
         <source>Import file</source>
         <translation>匯入檔案</translation>
@@ -838,17 +832,6 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
         <translation>設定試算表儲存格文字顏色</translation>
     </message>
     <message>
-        <location filename="../../Workbench.cpp" line="90"/>
-        <location filename="../../Workbench.cpp" line="92"/>
-        <source>Set cell(s) foreground color</source>
-        <translation>設定儲存格的前景顏色</translation>
-    </message>
-    <message>
-        <location filename="../../Workbench.cpp" line="91"/>
-        <source>Sets the Spreadsheet cell(s) foreground color</source>
-        <translation>設定試算表儲存格的前景顏色</translation>
-    </message>
-    <message>
         <location filename="../../Workbench.cpp" line="105"/>
         <location filename="../../Workbench.cpp" line="107"/>
         <source>Set cell(s) background color</source>
@@ -858,6 +841,23 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
         <location filename="../../Workbench.cpp" line="106"/>
         <source>Sets the Spreadsheet cell(s) background color</source>
         <translation>設定試算表儲存格的背景顏色</translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="196"/>
+        <location filename="../../Command.cpp" line="252"/>
+        <source>All (*)</source>
+        <translation>全部(*)</translation>
+    </message>
+    <message>
+        <location filename="../../Workbench.cpp" line="90"/>
+        <location filename="../../Workbench.cpp" line="92"/>
+        <source>Set cell(s) foreground color</source>
+        <translation>設定儲存格的前景顏色</translation>
+    </message>
+    <message>
+        <location filename="../../Workbench.cpp" line="91"/>
+        <source>Sets the Spreadsheet cell(s) foreground color</source>
+        <translation>設定試算表儲存格的前景顏色</translation>
     </message>
 </context>
 <context>
@@ -974,11 +974,6 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
 <context>
     <name>Sheet</name>
     <message>
-        <location filename="../../Sheet.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../Sheet.ui" line="22"/>
         <source>&amp;Content:</source>
         <translation>內容(&amp;C):</translation>
@@ -1009,6 +1004,11 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Sheet.ui" line="197"/>
         <source>+</source>
         <translation>+</translation>
+    </message>
+    <message>
+        <location filename="../../Sheet.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>

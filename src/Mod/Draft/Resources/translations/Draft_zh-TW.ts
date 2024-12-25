@@ -654,7 +654,7 @@ set True for fusion or False for compound</source>
     <message>
         <location filename="../../draftobjects/polygon.py" line="48"/>
         <source>Number of faces</source>
-        <translation>面的數量</translation>
+        <translation>平面數量</translation>
     </message>
     <message>
         <location filename="../../draftobjects/polygon.py" line="52"/>
@@ -1319,7 +1319,7 @@ beyond the dimension line</source>
         <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="199"/>
         <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="209"/>
         <source>The font size in system units</source>
-        <translation type="unfinished"></translation>
+        <translation>系統單位文字的字體大小</translation>
     </message>
     <message>
         <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="202"/>
@@ -1367,28 +1367,28 @@ beyond the dimension line</source>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="164"/>
         <source>Annotations</source>
-        <translation type="unfinished"></translation>
+        <translation>註解</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="208"/>
         <source>Texts</source>
-        <translation type="unfinished"></translation>
+        <translation>文字</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="266"/>
         <source>Line spacing factor</source>
-        <translation type="unfinished"></translation>
+        <translation>行距係數</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="309"/>
         <source>Show dimension line</source>
-        <translation type="unfinished"></translation>
+        <translation>顯示尺寸線</translation>
     </message>
     <message>
         <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="288"/>
         <location filename="../../Resources/ui/dialog_AnnotationStyleEditor.ui" line="298"/>
         <source>The width of the lines</source>
-        <translation type="unfinished"></translation>
+        <translation>線寬</translation>
     </message>
     <message>
         <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="366"/>
@@ -1466,22 +1466,22 @@ beyond the dimension line</source>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="495"/>
         <source>Number of decimals</source>
-        <translation type="unfinished"></translation>
+        <translation>小數位數</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="521"/>
         <source>Dimension line overshoot</source>
-        <translation type="unfinished"></translation>
+        <translation>尺寸線超越量</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="541"/>
         <source>Extension line length</source>
-        <translation type="unfinished"></translation>
+        <translation>延伸線長度</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialog_AnnotationStyleEditor.ui" line="561"/>
         <source>Extension line overshoot</source>
-        <translation type="unfinished"></translation>
+        <translation>延長線超越量</translation>
     </message>
     <message>
         <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="245"/>
@@ -3303,7 +3303,7 @@ It works best when choosing a point on a straight segment and not a corner verte
     <message>
         <location filename="../../draftguitools/gui_stretch.py" line="64"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">伸展</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_stretch.py" line="67"/>
@@ -3473,6 +3473,11 @@ Then you can use it to save a different camera position and objects&apos; states
         <location filename="../../Resources/ui/dialogHatch.ui" line="14"/>
         <source>Hatch</source>
         <translation>填充</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialogHatch.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
     <message>
         <location filename="../ui/dialogHatch.ui" line="20"/>
@@ -3702,7 +3707,7 @@ for linear dimensions.</source>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="470"/>
         <source>The space between the dimension line and the dimension text</source>
-        <translation type="unfinished"></translation>
+        <translation>標註線與文字間的距離</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="485"/>
@@ -4264,11 +4269,6 @@ value by using the [ and ] keys while drawing</source>
         <location filename="../ui/TaskSelectPlane.ui" line="254"/>
         <source>Previous</source>
         <translation>前一個</translation>
-    </message>
-    <message>
-        <location filename="../ui/dialogHatch.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -5056,7 +5056,7 @@ such as &quot;Arial:Bold&quot;</source>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="20"/>
         <source>Annotations</source>
-        <translation type="unfinished"></translation>
+        <translation>註解</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="125"/>
@@ -6143,12 +6143,12 @@ This might fail for post DXF R12 templates.</source>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="58"/>
         <source>Use legacy Python importer</source>
-        <translation type="unfinished"></translation>
+        <translation>使用傳統python匯入器</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="78"/>
         <source>Use legacy Python exporter</source>
-        <translation type="unfinished"></translation>
+        <translation>使用傳統python匯出器</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="91"/>
@@ -6168,7 +6168,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="248"/>
         <source>Simple Part shapes</source>
-        <translation type="unfinished"></translation>
+        <translation>簡單零件造型</translation>
     </message>
     <message>
         <location filename="../ui/preferences-dxf.ui" line="250"/>
@@ -6223,7 +6223,7 @@ turning the display faster, but making them less easily editable.</source>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="451"/>
         <source>Use layers</source>
-        <translation type="unfinished"></translation>
+        <translation>使用圖層</translation>
     </message>
     <message>
         <location filename="../ui/preferences-dxf.ui" line="448"/>
@@ -7343,6 +7343,21 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
+        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
+        <source>Working plane aligned to global placement of</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
+        <source>Dir</source>
+        <translation>方向</translation>
+    </message>
+    <message>
         <location filename="../../draftguitools/gui_selectplane.py" line="539"/>
         <source>Custom</source>
         <translation>自訂</translation>
@@ -7365,30 +7380,7 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
     <message>
         <location filename="../../WorkingPlane.py" line="1668"/>
         <source>Position:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="209"/>
-        <location filename="../../importDWG.py" line="281"/>
-        <source>LibreDWG error</source>
-        <translation>LibreDWG 錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="226"/>
-        <source>Error during DWG conversion. Try moving the DWG file to a directory path without spaces and non-english characters, or try saving to a lower DWG version.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="229"/>
-        <location filename="../../importDWG.py" line="296"/>
-        <source>ODA File Converter not found</source>
-        <translation>沒找到 ODA 檔案轉換</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="242"/>
-        <location filename="../../importDWG.py" line="306"/>
-        <source>QCAD error</source>
-        <translation>QCAD 錯誤</translation>
+        <translation>位置:</translation>
     </message>
     <message>
         <location filename="../../importDWG.py" line="284"/>
@@ -7453,19 +7445,27 @@ To enabled FreeCAD to download these libraries, answer Yes.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
-        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
+        <location filename="../../importDWG.py" line="209"/>
+        <location filename="../../importDWG.py" line="281"/>
+        <source>LibreDWG error</source>
+        <translation>LibreDWG 錯誤</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="226"/>
+        <source>Error during DWG conversion. Try moving the DWG file to a directory path without spaces and non-english characters, or try saving to a lower DWG version.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
-        <source>Working plane aligned to global placement of</source>
-        <translation type="unfinished"></translation>
+        <location filename="../../importDWG.py" line="229"/>
+        <location filename="../../importDWG.py" line="296"/>
+        <source>ODA File Converter not found</source>
+        <translation>沒找到 ODA 檔案轉換</translation>
     </message>
     <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
-        <source>Dir</source>
-        <translation>方向</translation>
+        <location filename="../../importDWG.py" line="242"/>
+        <location filename="../../importDWG.py" line="306"/>
+        <source>QCAD error</source>
+        <translation>QCAD 錯誤</translation>
     </message>
     <message>
         <location filename="../../importDXF.py" line="146"/>
@@ -8826,7 +8826,7 @@ https://github.com/yorikvanhavre/Draft-dxf-importer
     <message>
         <location filename="../../draftguitools/gui_stretch.py" line="477"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation>拉伸</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_patharray.py" line="102"/>
@@ -9549,11 +9549,6 @@ The final angle will be the base angle plus this amount.</source>
 <context>
     <name>importOCA</name>
     <message>
-        <location filename="../../importOCA.py" line="360"/>
-        <source>OCA error: couldn&apos;t determine character encoding</source>
-        <translation>OCA錯誤: 無法定義字元編碼</translation>
-    </message>
-    <message>
         <location filename="../../importOCA.py" line="445"/>
         <source>OCA: found no data to export</source>
         <translation>OCA：找不到要匯出的資料</translation>
@@ -9562,6 +9557,11 @@ The final angle will be the base angle plus this amount.</source>
         <location filename="../../importOCA.py" line="490"/>
         <source>successfully exported</source>
         <translation>成功匯出</translation>
+    </message>
+    <message>
+        <location filename="../../importOCA.py" line="360"/>
+        <source>OCA error: couldn&apos;t determine character encoding</source>
+        <translation>OCA錯誤: 無法定義字元編碼</translation>
     </message>
 </context>
 </TS>
