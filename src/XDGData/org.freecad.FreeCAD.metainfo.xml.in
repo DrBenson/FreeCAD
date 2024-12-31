@@ -6,7 +6,9 @@
   <developer_name>The FreeCAD Team</developer_name>
   <launchable type="desktop-id">org.freecad.FreeCAD.desktop</launchable>
   <name>FreeCAD</name>
+  <name xml:lang="zh_TW">FreeCAD 3D繪圖軟體</name>
   <summary>An open source parametric 3D CAD modeler</summary>
+  <summary xml:lang="zh_TW">開放原始碼的參數化3D建模工具</summary>
   <description>
     <p>
       FreeCAD is an open-source parametric 3D modeler built to help you design real-world objects of
