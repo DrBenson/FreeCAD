@@ -371,6 +371,11 @@
         <source>Insert a View of a Section Plane from BIM Workbench</source>
         <translation>從 BIM 工作台插入剖面檢視</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1664"/>
+        <source>Insert a View of a BIM Workbench section plane</source>
+        <translation>插入 BIM 工作台剖面的檢視</translation>
+    </message>
 </context>
 <context>
     <name>CmdTechDrawAreaDimension</name>
@@ -2329,6 +2334,15 @@ Without a selection, a file browser lets you select a SVG or image file.</source
 無需選擇，文件瀏覽器可讓您選擇 SVG 或圖像檔案.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="305"/>
+        <source>Insert a View in current page.
+Selected objects, spreadsheets or BIM section planes will be added.
+Without a selection, a file browser lets you select a SVG or image file.</source>
+        <translation>在目前頁面中插入檢視.
+將會新增選定的物體、電子表格或 BIM 剖面.
+無需選擇，文件瀏覽器可讓您選擇 SVG 或圖像檔案.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="425"/>
         <source>If you want to insert a view from existing objects, please select them before invoking this tool. Without a selection, a file browser will open, to insert a SVG or image file.</source>
         <translation>如果您想從現有物件插入視圖，請在呼叫此工具之前選擇它們. 如果沒有選擇，將開啟檔案瀏覽器以插入 SVG 或圖片文件.</translation>
@@ -2371,6 +2385,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>移除裁剪群組</translation>
     </message>
     <message>
+        <location filename="../../Command.cpp" line="1452"/>
+        <source>Create ArchView</source>
+        <translation>建立建築檢視</translation>
+    </message>
+    <message>
         <location filename="../../Command.cpp" line="1500"/>
         <source>Create spreadsheet view</source>
         <translation>建立試算表檢視</translation>
@@ -2385,6 +2404,12 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="359"/>
         <source>Create BIM View</source>
         <translation>建立BIM檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="365"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1709"/>
+        <source>Create BIM view</source>
+        <translation>建立 BIM 檢視</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="1319"/>
@@ -2430,11 +2455,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../Command.cpp" line="1380"/>
         <source>Create DraftView</source>
         <translation>建立草圖檢視</translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="1452"/>
-        <source>Create ArchView</source>
-        <translation>建立建築檢視</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1822"/>
@@ -3221,6 +3241,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
 <context>
     <name>DrawViewArch</name>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/App/DrawView.cpp" line="68"/>
+        <source>BIM</source>
+        <translation>BIM建築</translation>
+    </message>
+    <message>
         <location filename="../../../App/DrawView.cpp" line="66"/>
         <source>Arch</source>
         <translation>架構</translation>
@@ -3715,19 +3740,14 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>預設屬性質</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="59"/>
-        <source>Distance Factor</source>
-        <translation>距離因子</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="132"/>
         <source>Text size</source>
         <translation>字體大小</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="162"/>
-        <source>Mirror</source>
-        <translation>鏡像</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="59"/>
+        <source>Distance Factor</source>
+        <translation>距離因子</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="155"/>
@@ -3748,6 +3768,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="66"/>
         <source>Text color</source>
         <translation>文字顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="162"/>
+        <source>Mirror</source>
+        <translation>鏡像</translation>
     </message>
 </context>
 <context>
@@ -4149,6 +4174,16 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1638"/>
         <source>No BIM Sections in selection.</source>
         <translation>沒有選擇 BIM 剖面圖.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1691"/>
+        <source>Please select only 1 BIM section plane.</source>
+        <translation>請選擇只有 1 個 BIM 平面.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1697"/>
+        <source>No BIM section plane in selection.</source>
+        <translation>選擇中沒有 BIM 剖面.</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="1489"/>
@@ -4664,11 +4699,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>無法從選擇中製作3D範圍尺寸標注</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2523"/>
-        <source>Selection contains both 2d and 3d geometry</source>
-        <translation>選擇包含 2d 和 3d 幾何體</translation>
-    </message>
-    <message>
         <location filename="../../CommandCreateDims.cpp" line="1219"/>
         <source>There is no Dimension in your selection</source>
         <translation>您的選擇中沒有尺寸標注</translation>
@@ -4723,6 +4753,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2472"/>
         <source>Selected edge is a B-spline and a radius/diameter can not be calculated.</source>
         <translation>選取邊為 B 雲形線而半徑/直徑無法被計算出來.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2523"/>
+        <source>Selection contains both 2d and 3d geometry</source>
+        <translation>選擇包含 2d 和 3d 幾何體</translation>
     </message>
     <message>
         <location filename="../../CommandDecorate.cpp" line="106"/>
@@ -4867,6 +4902,16 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../MDIViewPage.cpp" line="695"/>
         <source>Export page as SVG</source>
         <translation>匯出頁面為 SVG 檔</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/MDIViewPage.cpp" line="513"/>
+        <source>Export page as DXF</source>
+        <translation>匯出頁面為 DXF</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/MDIViewPage.cpp" line="537"/>
+        <source>Export page as PDF</source>
+        <translation>匯出頁面為 PDF</translation>
     </message>
     <message>
         <location filename="../../QGIRichAnno.cpp" line="323"/>
@@ -5740,13 +5785,9 @@ Only change unless you know what you are doing!</source>
         <translation>如果勾選此框，連續點擊二下樹狀檢視中的頁面將自動切換到 TechDraw 並且該頁面將為可見.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="298"/>
-        <source>Limit of 64x64 pixel SVG tiles used to hatch a single face.
-For large scalings you might get an error about too many SVG tiles.
-Then you need to increase the tile limit.</source>
-        <translation>限制在 64x64 像素 SVG 磁磚以使用來填充單一面。
-針對更大尺度您可能會得到一個太多 SVG 磁磚的錯誤訊息。
-如此一來您必須增加磁磚限制.</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="444"/>
+        <source>If this box is checked, double clicking on a page in the tree will automatically switch to TechDraw and the page will be made visible.</source>
+        <translation>如果勾選此框，連續點擊二下樹狀檢視中的頁面將自動切換到 TechDraw 並且該頁面將為可見.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="447"/>
@@ -5873,6 +5914,15 @@ when hatching a face with a PAT pattern</source>
         <translation>當使用 PAT 樣式來填充一個面時，所使用的最大填充線段值</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="298"/>
+        <source>Limit of 64x64 pixel SVG tiles used to hatch a single face.
+For large scalings you might get an error about too many SVG tiles.
+Then you need to increase the tile limit.</source>
+        <translation>限制在 64x64 像素 SVG 磁磚以使用來填充單一面。
+針對更大尺度您可能會得到一個太多 SVG 磁磚的錯誤訊息。
+如此一來您必須增加磁磚限制.</translation>
+    </message>
+    <message>
         <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="213"/>
         <source>Max SVG Hatch Tiles</source>
         <translation>最大 SVG 填充磁磚</translation>
@@ -5925,11 +5975,6 @@ Each unit is approx. 0.1 mm wide</source>
         <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="374"/>
         <source>Show Section Edges</source>
         <translation>顯示選擇邊</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="444"/>
-        <source>If this box is checked, double clicking on a page in the tree will automatically switch to TechDraw and the page will be made visible.</source>
-        <translation>如果勾選此框，連續點擊二下樹狀檢視中的頁面將自動切換到 TechDraw 並且該頁面將為可見.</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="330"/>
@@ -6935,10 +6980,10 @@ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="548"/>
-        <source>Controls the size of gap between dimension point and start of extension line for ASME dimensions. Value * linewidth is the gap.
- Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
-        <translation>控制 ASME 尺寸的尺寸點和延伸線起點之間的間隙大小. 值 * 線寬是間隙.
- 通常，不使用間隙. 如需使用間隙，建議值為 6.</translation>
+        <source>Controls the size of the gap between the dimension point and the start of the extension line for ASME dimensions. Value * linewidth is the gap.
+ Normally, no gap is used. If using a gap, the recommended value is 6.</source>
+        <translation>控制 ASME 尺寸的尺寸點與尺寸界線起點之間的間隙大小. 值*線寬 即為間隙.
+ 通常不使用間隙. 如果使用間隙，建議值為6.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="630"/>
@@ -6952,10 +6997,10 @@ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="548"/>
-        <source>Controls the size of the gap between the dimension point and the start of the extension line for ASME dimensions. Value * linewidth is the gap.
- Normally, no gap is used. If using a gap, the recommended value is 6.</source>
-        <translation>控制 ASME 尺寸的尺寸點與尺寸界線起點之間的間隙大小. 值*線寬 即為間隙.
- 通常不使用間隙. 如果使用間隙，建議值為6.</translation>
+        <source>Controls the size of gap between dimension point and start of extension line for ASME dimensions. Value * linewidth is the gap.
+ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
+        <translation>控制 ASME 尺寸的尺寸點和延伸線起點之間的間隙大小. 值 * 線寬是間隙.
+ 通常，不使用間隙. 如需使用間隙，建議值為 6.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="643"/>
@@ -7177,6 +7222,16 @@ for ProjectionGroups</source>
         <translation>用於繪製剖面線的標準. 這會影響箭頭和符號的位置.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="451"/>
+        <source>ANSI</source>
+        <translation>ANSI</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="456"/>
+        <source>ISO</source>
+        <translation>ISO</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="469"/>
         <source>Section Line Convention</source>
         <translation>剖面線約束</translation>
@@ -7190,16 +7245,6 @@ for ProjectionGroups</source>
         <location filename="../../DlgPrefsTechDrawGeneral.ui" line="712"/>
         <source>PAT File</source>
         <translation>PAT 檔</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="451"/>
-        <source>ANSI</source>
-        <translation>ANSI</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="456"/>
-        <source>ISO</source>
-        <translation>ISO</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="538"/>
@@ -7342,16 +7387,6 @@ for ProjectionGroups</source>
         <translation>使用3D相機方向</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1024"/>
-        <source>If checked, the 3d camera direction (or normal of a selected face) will be used as the view direction.  If not checked, Views will be created as Front Views.</source>
-        <translation>如果選中，3D 相機方向(或所選面的法線)將用作檢視方向. 如果未選取，檢視將建立為正面檢視.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1027"/>
-        <source>Use 3d Camera Direction</source>
-        <translation>使用3D相機方向</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1045"/>
         <source>If checked, view labels will be displayed even when frames are suppressed.</source>
         <translation>如果選中，即使禁止顯示幀，也會顯示檢視標籤.</translation>
@@ -7390,6 +7425,16 @@ for ProjectionGroups</source>
         <location filename="../../DlgPrefsTechDrawGeneral.ui" line="879"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; Items in &lt;span style=&quot; font-style:italic;&quot;&gt;italics&lt;/span&gt; are default values for new objects. They have no effect on existing objects.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意：&lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1024"/>
+        <source>If checked, the 3d camera direction (or normal of a selected face) will be used as the view direction.  If not checked, Views will be created as Front Views.</source>
+        <translation>如果選中，3D 相機方向(或所選面的法線)將用作檢視方向. 如果未選取，檢視將建立為正面檢視.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1027"/>
+        <source>Use 3d Camera Direction</source>
+        <translation>使用3D相機方向</translation>
     </message>
 </context>
 <context>
@@ -7520,14 +7565,9 @@ Fast, but result is a collection of short straight lines.</source>
         <translation>頁面縮放</translation>
     </message>
     <message>
-        <location filename="../../DlgPrefsTechDrawScale.ui" line="79"/>
-        <source>Default scale for new pages</source>
-        <translation>新頁面預設縮放值</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawScale.ui" line="106"/>
-        <source>View Scale Type</source>
-        <translation>檢視縮放類別</translation>
+        <location filename="../../DlgPrefsTechDrawScale.ui" line="161"/>
+        <source>View Custom Scale</source>
+        <translation>檢視自訂縮放</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawScale.ui" line="128"/>
@@ -7550,14 +7590,29 @@ Fast, but result is a collection of short straight lines.</source>
         <translation>自訂</translation>
     </message>
     <message>
-        <location filename="../../DlgPrefsTechDrawScale.ui" line="161"/>
-        <source>View Custom Scale</source>
-        <translation>檢視自訂縮放</translation>
+        <location filename="../../DlgPrefsTechDrawScale.ui" line="79"/>
+        <source>Default scale for new pages</source>
+        <translation>新頁面預設縮放值</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawScale.ui" line="196"/>
         <source>Default scale for views if &apos;View Scale Type&apos; is &apos;Custom&apos;</source>
         <translation>檢視預設縮放如果檢視縮放類別是自訂</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawScale.ui" line="106"/>
+        <source>View Scale Type</source>
+        <translation>檢視縮放類別</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawScale.ui" line="226"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If checked, Svg symbols, spreadsheet views and Draft views will use the original (incorrect) scaling method as used in v1.0 and earlier.  If unchecked, a more accurate method will be used.  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;如果選中，Svg 符號、電子表格檢視和草稿檢視將使用 v1.0 及更早版本中使用的原始(不正確)縮放方法. 如果未選中，將使用更準確的方法.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawScale.ui" line="229"/>
+        <source>Legacy Symbol Scaling</source>
+        <translation>傳統符號縮放</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawScale.ui" line="238"/>
@@ -7677,9 +7732,19 @@ Do you want to continue?</source>
         <translation>無法開啟要寫入的檔案 %1 。</translation>
     </message>
     <message>
+        <location filename="../../MDIViewPage.cpp" line="537"/>
+        <source>Save PDF file</source>
+        <translation>儲存 PDF 檔案</translation>
+    </message>
+    <message>
         <location filename="../../MDIViewPage.cpp" line="538"/>
         <source>PDF (*.pdf)</source>
         <translation>PDF (*.pdf)</translation>
+    </message>
+    <message>
+        <location filename="../../MDIViewPage.cpp" line="719"/>
+        <source>Save DXF file</source>
+        <translation>儲存DXF檔</translation>
     </message>
     <message>
         <location filename="../../MDIViewPage.cpp" line="720"/>
@@ -7703,16 +7768,6 @@ Do you want to continue?</source>
         <source>The printer uses a different paper size than the drawing.
 Do you want to continue?</source>
         <translation>印表機與圖面之紙張尺寸不同，您要繼續嗎？</translation>
-    </message>
-    <message>
-        <location filename="../../MDIViewPage.cpp" line="719"/>
-        <source>Save DXF file</source>
-        <translation>儲存DXF檔</translation>
-    </message>
-    <message>
-        <location filename="../../MDIViewPage.cpp" line="537"/>
-        <source>Save PDF file</source>
-        <translation>儲存 PDF 檔案</translation>
     </message>
     <message>
         <location filename="../../MDIViewPage.cpp" line="1228"/>
@@ -8381,6 +8436,11 @@ Do you want to continue?</source>
         <translation>3D 的點</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="212"/>
+        <source>Check this box to make an arc from atart angle to end angle in a clockwise direction.</source>
+        <translation>選中此框可沿順時針方向從角度起點到角度端點畫一個弧形.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="90"/>
         <source>Circle Center</source>
         <translation>圓心</translation>
@@ -8396,14 +8456,19 @@ Do you want to continue?</source>
         <translation>弧的起始角度(慣用)，以度為單位.</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="220"/>
-        <source>Arc of Circle</source>
-        <translation>圓弧</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="200"/>
         <source>End Angle:</source>
         <translation>終點角度:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="212"/>
+        <source>Check this box to make an arc from start angle to end angle in a clockwise direction.</source>
+        <translation>選中此框可沿順時針方向從角度起點到角度端點畫一個弧形.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="215"/>
+        <source>Clockwise Angle</source>
+        <translation>順時針角度</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="187"/>
@@ -8416,19 +8481,14 @@ Do you want to continue?</source>
         <translation>起始角度:</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="212"/>
-        <source>Check this box to make an arc from start angle to end angle in a clockwise direction.</source>
-        <translation>選中此框可沿順時針方向從角度起點到角度端點畫一個弧形.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="212"/>
-        <source>Check this box to make an arc from atart angle to end angle in a clockwise direction.</source>
-        <translation>選中此框可沿順時針方向從角度起點到角度端點畫一個弧形.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="215"/>
-        <source>Clockwise Angle</source>
-        <translation>順時針角度</translation>
+        <source>Select to enter angles and create a circular arc.</source>
+        <translation>選擇輸入角度並建立圓弧.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="220"/>
+        <source>Arc of Circle</source>
+        <translation>圓弧</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticCircle.cpp" line="182"/>
