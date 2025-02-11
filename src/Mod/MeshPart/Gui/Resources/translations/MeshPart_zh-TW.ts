@@ -396,7 +396,8 @@
         <location filename="../../Command.cpp" line="314"/>
         <source>Creates an approximated curve on top of a mesh.
 This command only works with a &apos;mesh&apos; object.</source>
-        <translation type="unfinished"></translation>
+        <translation>在網格頂部建立一條近似曲線.
+此命令僅適用於“網格”物體.</translation>
     </message>
 </context>
 <context>
@@ -2606,7 +2607,7 @@ Select a different shape, please.</source>
     <message>
         <location filename="../../Command.cpp" line="206"/>
         <source>Please select a plane at which you section the mesh.</source>
-        <translation type="unfinished"></translation>
+        <translation>請選擇一個平面來剖析網格.</translation>
     </message>
 </context>
 <context>

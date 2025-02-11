@@ -118,7 +118,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/InitGui.py" line="153"/>
         <source>Drilling Operations</source>
-        <translation type="unfinished"></translation>
+        <translation>鑽孔操作</translation>
     </message>
 </context>
 <context>

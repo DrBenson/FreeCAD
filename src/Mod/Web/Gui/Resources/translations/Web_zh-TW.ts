@@ -253,6 +253,11 @@ so that self intersection is avoided.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Arch/Resources/ui/ArchMaterial.ui" line="14"/>
+        <source>Arch material</source>
+        <translation type="unfinished">建築材質</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Arch/Resources/ui/ArchMaterial.ui" line="26"/>
         <source>Choose a preset card</source>
         <translation type="unfinished">選擇預設卡</translation>
@@ -356,11 +361,6 @@ so that self intersection is avoided.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/ArchMaterial.ui" line="268"/>
         <source>Parent</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Arch/Resources/ui/ArchMaterial.ui" line="14"/>
-        <source>Arch material</source>
-        <translation type="unfinished">建築材質</translation>
     </message>
 </context>
 <context>
@@ -2023,11 +2023,6 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="665"/>
-        <source>&lt;b&gt;IfcOpenShell&lt;/b&gt; is missing on your system. IfcOpenShell is needed to import or export IFC files to/from FreeCAD. Check &lt;a href=&quot;https://www.freecadweb.org/wiki/Arch_IFC&quot;&gt;this wiki page&lt;/a&gt; to know more, or &lt;a href=&quot;#install&quot;&gt;download and install it&lt;/a&gt; directly.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="642"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Tip: You are currently using FreeCAD version %1. Consider using the &lt;a href=&quot;https://github.com/FreeCAD/FreeCAD/releases&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;latest development version %2&lt;/span&gt;&lt;/a&gt;, which brings all the latest improvements to FreeCAD.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
@@ -2035,6 +2030,11 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="655"/>
         <source>MissingWorkbenches</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="665"/>
+        <source>&lt;b&gt;IfcOpenShell&lt;/b&gt; is missing on your system. IfcOpenShell is needed to import or export IFC files to/from FreeCAD. Check &lt;a href=&quot;https://www.freecadweb.org/wiki/Arch_IFC&quot;&gt;this wiki page&lt;/a&gt; to know more, or &lt;a href=&quot;#install&quot;&gt;download and install it&lt;/a&gt; directly.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2626,6 +2626,11 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="2084"/>
+        <source>Appearance per face</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="2085"/>
         <source>Set the appearance of each individual face of the selected object.</source>
         <translation type="unfinished"></translation>
@@ -2639,11 +2644,6 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="2098"/>
         <source>Set the color of each individual face of the selected object.</source>
         <translation type="unfinished">設定所選物體的每個表面顏色.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="2084"/>
-        <source>Appearance per face</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2659,14 +2659,14 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="961"/>
-        <source>Create spreadsheet</source>
-        <translation type="unfinished">建立試算表</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="962"/>
         <source>Create a new spreadsheet</source>
         <translation type="unfinished">建立一個新的試算表</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="961"/>
+        <source>Create spreadsheet</source>
+        <translation type="unfinished">建立試算表</translation>
     </message>
 </context>
 <context>
@@ -5173,14 +5173,14 @@ This command only works with a &apos;mesh&apos; object.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/CommandBody.cpp" line="611"/>
-        <source>Duplicate selected object</source>
-        <translation type="unfinished">複製選定物體</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/CommandBody.cpp" line="612"/>
         <source>Duplicates the selected object and adds it to the active body</source>
         <translation type="unfinished">複製已選物體加至已啟用之實體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/CommandBody.cpp" line="611"/>
+        <source>Duplicate selected object</source>
+        <translation type="unfinished">複製選定物體</translation>
     </message>
 </context>
 <context>
@@ -9388,14 +9388,14 @@ invalid constraints, degenerated geometry, etc.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="527"/>
-        <source>Align bottom</source>
-        <translation type="unfinished">向下對齊</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="528"/>
         <source>Bottom-align contents of selected cells</source>
         <translation type="unfinished">所選儲存格之內容向下對齊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="527"/>
+        <source>Align bottom</source>
+        <translation type="unfinished">向下對齊</translation>
     </message>
 </context>
 <context>
@@ -9411,14 +9411,14 @@ invalid constraints, degenerated geometry, etc.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="356"/>
-        <source>Align center</source>
-        <translation type="unfinished">水平置中對齊</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="357"/>
         <source>Center-align contents of selected cells</source>
         <translation type="unfinished">所選單元之儲存格水平置中對齊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="356"/>
+        <source>Align center</source>
+        <translation type="unfinished">水平置中對齊</translation>
     </message>
 </context>
 <context>
@@ -9434,14 +9434,14 @@ invalid constraints, degenerated geometry, etc.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="299"/>
-        <source>Align left</source>
-        <translation type="unfinished">向左對齊</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="300"/>
         <source>Left-align contents of selected cells</source>
         <translation type="unfinished">所選儲存格之內容向左對齊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="299"/>
+        <source>Align left</source>
+        <translation type="unfinished">向左對齊</translation>
     </message>
 </context>
 <context>
@@ -9457,14 +9457,14 @@ invalid constraints, degenerated geometry, etc.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="413"/>
-        <source>Align right</source>
-        <translation type="unfinished">向右對齊</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="414"/>
         <source>Right-align contents of selected cells</source>
         <translation type="unfinished">所選儲存格之內容以向右對齊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="413"/>
+        <source>Align right</source>
+        <translation type="unfinished">向右對齊</translation>
     </message>
 </context>
 <context>
@@ -9480,14 +9480,14 @@ invalid constraints, degenerated geometry, etc.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="470"/>
-        <source>Align top</source>
-        <translation type="unfinished">向上對齊</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="471"/>
         <source>Top-align contents of selected cells</source>
         <translation type="unfinished">所選儲存格之內容向上對齊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="470"/>
+        <source>Align top</source>
+        <translation type="unfinished">向上對齊</translation>
     </message>
 </context>
 <context>
@@ -9503,14 +9503,14 @@ invalid constraints, degenerated geometry, etc.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="584"/>
-        <source>Vertically center-align</source>
-        <translation type="unfinished">垂直置中對齊</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="585"/>
         <source>Vertically center-align contents of selected cells</source>
         <translation type="unfinished">所選儲存格之內容垂直置中對齊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="584"/>
+        <source>Vertically center-align</source>
+        <translation type="unfinished">垂直置中對齊</translation>
     </message>
 </context>
 <context>
@@ -9636,14 +9636,14 @@ invalid constraints, degenerated geometry, etc.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="641"/>
-        <source>Bold text</source>
-        <translation type="unfinished">粗體</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="642"/>
         <source>Set text in selected cells bold</source>
         <translation type="unfinished">設定選取的儲存格為粗體字</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="641"/>
+        <source>Bold text</source>
+        <translation type="unfinished">粗體</translation>
     </message>
 </context>
 <context>
@@ -9659,14 +9659,14 @@ invalid constraints, degenerated geometry, etc.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="724"/>
-        <source>Italic text</source>
-        <translation type="unfinished">斜體</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="725"/>
         <source>Set text in selected cells italic</source>
         <translation type="unfinished">設定選取的儲存格為斜體字</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="724"/>
+        <source>Italic text</source>
+        <translation type="unfinished">斜體</translation>
     </message>
 </context>
 <context>
@@ -9682,14 +9682,14 @@ invalid constraints, degenerated geometry, etc.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="807"/>
-        <source>Underline text</source>
-        <translation type="unfinished">文字加上底線</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="808"/>
         <source>Underline text in selected cells</source>
         <translation type="unfinished">設定選取的儲存格中文字下底線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="807"/>
+        <source>Underline text</source>
+        <translation type="unfinished">文字加上底線</translation>
     </message>
 </context>
 <context>
@@ -9897,6 +9897,32 @@ and non-boundary vertices.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="651"/>
         <source>Insert Active View (3D View)</source>
         <translation type="unfinished">插入活動檢視(3D 檢視)</translation>
+    </message>
+</context>
+<context>
+    <name>CmdTechDrawAlignVertexesHorizontally</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAlign.cpp" line="154"/>
+        <source>TechDraw</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAlign.cpp" line="155"/>
+        <source>Align vertexes/edge horizontally by view rotation</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>CmdTechDrawAlignVertexesVertically</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAlign.cpp" line="121"/>
+        <source>TechDraw</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAlign.cpp" line="122"/>
+        <source>Align vertexes/edge vertically by view rotation</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -14256,15 +14282,15 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation type="unfinished">編輯銲接符號</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="117"/>
+        <source>Add Pole circle</source>
+        <translation type="unfinished">增加極點圓圈</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="456"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="686"/>
         <source>Add sketch bSpline</source>
         <translation type="unfinished">新增草圖B雲形線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="117"/>
-        <source>Add Pole circle</source>
-        <translation type="unfinished">增加極點圓圈</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="560"/>
@@ -15297,12 +15323,22 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="20"/>
+        <source>This screen allows you to create and configure a new BIM project in FreeCAD.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="20"/>
         <source>This screen allows you to configure a new BIM project in FreeCAD.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="27"/>
         <source>Warning! You are editing the current document. Click &quot;Create new document&quot; to create a new one.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="38"/>
+        <source>Fill this dialog with preset values</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -15327,7 +15363,17 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="56"/>
+        <source>The settings below can be saved as a preset. Presets are stored as .txt files in your FreeCAD user folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="56"/>
         <source>Loads the contents of a FCStd file into the active document, applying all the BIM settings stored in it if any</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="579"/>
+        <source>Save preset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -15341,8 +15387,49 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="87"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="90"/>
+        <source>Create a new BIM project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="88"/>
         <source>Create new document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="102"/>
+        <source>A new BIM project will be created, either as a new FreeCAD document or as a Native IFC project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="114"/>
+        <source>This will create a new FreeCAD docment that allows you to build a BIM model, but with no specific IFC structure yet. This is the most flexible option when you start working ona BIM project. You can convert this project to IFC anytime later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="117"/>
+        <source>Create a new document witout IFC support yet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="127"/>
+        <source>This will create an IFC project. All the BIM objects you will add to that IFC project will immediately become IFC objects. This is less flexible, but allows you to stick more strictly to the IFC standard.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="130"/>
+        <source>Create a Native IFC project in the current dopcument</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="140"/>
+        <source>The new IFC project will be created as a new FreeCAD document.  In that mode, the IFC project is the FreeCAD document, anything you create in that document becomes part of the IFC project. This is extremely restrictive as no non-IFC object can be added to the document.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="143"/>
+        <source>Create a locked Native IFC project as a new document</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -15354,6 +15441,11 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="101"/>
         <source>Project</source>
         <translation type="unfinished">專案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="161"/>
+        <source>A name for this BIM or IFC project</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="107"/>
@@ -15371,11 +15463,6 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="120"/>
-        <source>Add a human figure</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="130"/>
         <source>Create Site</source>
         <translation type="unfinished">建立地點</translation>
@@ -15383,6 +15470,16 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="132"/>
         <source>A name for your project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="176"/>
+        <source>Create a new site</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="224"/>
+        <source>Create site</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -15398,6 +15495,11 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="149"/>
         <source>Native IFC project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="203"/>
+        <source>The East longitude of this site</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -15436,6 +15538,11 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="236"/>
+        <source>A name for this site</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="184"/>
         <source>Default Site</source>
         <translation type="unfinished"></translation>
@@ -15443,6 +15550,11 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="195"/>
         <source>Create a new document or use the current one?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="253"/>
+        <source>The difference between the up direction of this site and the true North direction</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -15461,8 +15573,13 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="224"/>
-        <source>Create site</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="273"/>
+        <source>The elevation of this site</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="283"/>
+        <source>The physical (postal) address of this site</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -15473,6 +15590,11 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="232"/>
         <source>Latitude</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="304"/>
+        <source>The North latitude of this site</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -15488,6 +15610,16 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="260"/>
         <source>Create Building</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="328"/>
+        <source>Create a new building</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="376"/>
+        <source>Create building</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -15546,6 +15678,11 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="407"/>
+        <source>The main use of this building</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="346"/>
         <source>Distance between V axes</source>
         <translation type="unfinished"></translation>
@@ -15556,18 +15693,48 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="478"/>
+        <source>Number of vertical axes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="363"/>
         <source>Main use</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="373"/>
-        <source>Add a building object</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="495"/>
+        <source>Number of horizontal axes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="376"/>
-        <source>Create building</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="457"/>
+        <source>An estimate building width. Keep 0 if you don&apos;t want to specify this now</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSpaces.ui" line="92"/>
+        <source>0</source>
+        <translation type="unfinished">0</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="470"/>
+        <source>The line width of axes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="480"/>
+        <source>Distance between vertical axes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="493"/>
+        <source>An estimate building length. Keep 0 if you don&apos;t want to specify this now</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="506"/>
+        <source>Distance between horizontal axes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -15580,18 +15747,43 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <translation type="unfinished">0 </translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="418"/>
-        <source>A name for your building</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="424"/>
         <source>Axes line width</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="526"/>
+        <source>The color of axes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="442"/>
         <source>Axes color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="552"/>
+        <source>Add a human figure to the document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="120"/>
+        <source>Add a human figure</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="373"/>
+        <source>Add a building object</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="418"/>
+        <source>A name for your building</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="564"/>
+        <source>A human figure will be added to the document, which helps giving a sense of scale</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -15605,23 +15797,28 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="583"/>
+        <source>BIM projects are typically organized into levels, that represents the different storeys of a building. Although it is not mandatory to work with levels in FreeCAD, you can set up default levels here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="595"/>
+        <source>The number of levels to create</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="472"/>
         <source>Level height</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="478"/>
-        <source>Number of vertical axes</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="615"/>
+        <source>The vertical distance between each level</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="489"/>
         <source>Number of levels</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="495"/>
-        <source>Number of horizontal axes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -15655,6 +15852,26 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="541"/>
+        <source>The estimated length of your building</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="554"/>
+        <source>Distance between the horizontal axes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="567"/>
+        <source>The above settings can be saved as a preset. Presets are stored as .txt files in your FreeCAD user folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="574"/>
+        <source>The color for axes and rectangle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="588"/>
         <source>Line color</source>
         <translation type="unfinished">線條顏色</translation>
@@ -15685,8 +15902,18 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="637"/>
+        <source>Default groups to be added to each level. Defautl groups such as walls, windows,... are useful to organize the different building elements inside a level</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="642"/>
         <source>A list of the levels of the building. Double-click to rename or change level</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="647"/>
+        <source>A list of grouls to add under each level</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -15695,13 +15922,8 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="678"/>
-        <source>Delete a selected level</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="701"/>
-        <source>A list of default groups. Double-click to rename</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="665"/>
+        <source>Add a new group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -15710,8 +15932,13 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <translation type="unfinished">新增</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="541"/>
-        <source>The estimated length of your building</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="678"/>
+        <source>Delete a selected level</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="679"/>
+        <source>Delete a selected group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -15720,23 +15947,13 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <translation type="unfinished">刪除</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="554"/>
-        <source>Distance between the horizontal axes</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="701"/>
+        <source>A list of default groups. Double-click to rename</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="567"/>
-        <source>The above settings can be saved as a preset. Presets are stored as .txt files in your FreeCAD user folder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="574"/>
-        <source>The color for axes and rectangle</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="579"/>
-        <source>Save preset</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="717"/>
+        <source>Accept the values fo this form</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -16383,11 +16600,6 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSpaces.ui" line="169"/>
         <source>Electric consumption</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSpaces.ui" line="92"/>
-        <source>0</source>
-        <translation type="unfinished">0</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSpaces.ui" line="102"/>
@@ -18608,11 +18820,6 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed.</sou
         <translation type="unfinished">無法旋轉草圖!</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureGroove.cpp" line="214"/>
-        <source>Cut out of base feature failed</source>
-        <translation type="unfinished">切割基礎特徵失敗</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureGroove.cpp" line="238"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureGroove.cpp" line="363"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="208"/>
@@ -18620,6 +18827,11 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed.</sou
 Intersecting sketch entities in a sketch are not allowed.</source>
         <translation type="unfinished">無法從草圖建立表面.
 草圖中不允許有相交的草圖實體.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureGroove.cpp" line="214"/>
+        <source>Cut out of base feature failed</source>
+        <translation type="unfinished">切割基礎特徵失敗</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureHelix.cpp" line="128"/>
@@ -18839,11 +19051,6 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed for m
         <translation type="unfinished">拉伸成形: 無法獲取截面形狀</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="442"/>
-        <source>Loft: Creating a face from sketch failed</source>
-        <translation type="unfinished">拉伸成形: 從草圖建立表面失敗</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="184"/>
         <source>Loft: A section doesn&apos;t contain any wires nor is a single vertex</source>
         <translation type="unfinished">拉伸成形: 截面不包含任何線，也不包含單個頂點</translation>
@@ -18864,14 +19071,39 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed for m
         <translation type="unfinished">拉伸成形: 所有拉伸成形部分都需要具有相同數量的內部線條</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="475"/>
-        <source>Loft: Failed to create shell</source>
-        <translation type="unfinished">拉伸成形: 無法建立外殼</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="234"/>
         <source>Loft could not be built</source>
         <translation type="unfinished">拉伸成形無法建立</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="267"/>
+        <source>Loft: Result is not a solid</source>
+        <translation type="unfinished">拉伸成形: 產生形狀不是固體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="280"/>
+        <source>Loft: There is nothing to subtract from</source>
+        <translation type="unfinished">拉伸成形: 沒有什麼可減掉的</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="290"/>
+        <source>Loft: Adding the loft failed</source>
+        <translation type="unfinished">拉伸成形: 增加拉伸成形失敗</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="308"/>
+        <source>Loft: Subtracting the loft failed</source>
+        <translation type="unfinished">拉伸成形: 減去拉伸成形失敗</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="442"/>
+        <source>Loft: Creating a face from sketch failed</source>
+        <translation type="unfinished">拉伸成形: 從草圖建立表面失敗</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="475"/>
+        <source>Loft: Failed to create shell</source>
+        <translation type="unfinished">拉伸成形: 無法建立外殼</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="515"/>
@@ -18886,30 +19118,10 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed for m
         <translation type="unfinished">布林運算失敗</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="267"/>
-        <source>Loft: Result is not a solid</source>
-        <translation type="unfinished">拉伸成形: 產生形狀不是固體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="280"/>
-        <source>Loft: There is nothing to subtract from</source>
-        <translation type="unfinished">拉伸成形: 沒有什麼可減掉的</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="332"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="539"/>
         <source>Loft: A fatal error occurred when making the loft</source>
         <translation type="unfinished">拉伸成形: 在建立拉伸成形時發生致命錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="290"/>
-        <source>Loft: Adding the loft failed</source>
-        <translation type="unfinished">拉伸成形: 增加拉伸成形失敗</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureLoft.cpp" line="308"/>
-        <source>Loft: Subtracting the loft failed</source>
-        <translation type="unfinished">拉伸成形: 減去拉伸成形失敗</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeaturePipe.cpp" line="177"/>
@@ -19628,9 +19840,32 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed for m
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="358"/>
+        <source>Spooles equation solver</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="358"/>
+        <source>Spooles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="368"/>
+        <source>Iterative Cholesky</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="454"/>
         <source>Time Initial Step</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="502"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="541"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="596"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="651"/>
+        <source>s</source>
+        <translation type="unfinished">秒</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="509"/>
@@ -19703,21 +19938,6 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed for m
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="358"/>
-        <source>Spooles equation solver</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="358"/>
-        <source>Spooles</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="368"/>
-        <source>Iterative Cholesky</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="399"/>
         <source>Time incrementation control parameter</source>
         <translation type="unfinished"></translation>
@@ -19736,14 +19956,6 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed for m
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="383"/>
         <source>Use non-linear geometry</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="502"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="541"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="596"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="651"/>
-        <source>s</source>
-        <translation type="unfinished">秒</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="658"/>
@@ -19786,15 +19998,15 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed for m
         <translation type="unfinished">特徵模式數量</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="820"/>
-        <source>Low frequency limit</source>
-        <translation type="unfinished">低頻限制</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="813"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="861"/>
         <source>Hz</source>
         <translation type="unfinished">Hz</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="820"/>
+        <source>Low frequency limit</source>
+        <translation type="unfinished">低頻限制</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="816"/>
@@ -20925,13 +21137,13 @@ Specify another file please.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintFluidBoundary.cpp" line="511"/>
-        <source>Length Scale[m]</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintFluidBoundary.cpp" line="512"/>
+        <source>Length Scale [m]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintFluidBoundary.cpp" line="512"/>
-        <source>Length Scale [m]</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintFluidBoundary.cpp" line="511"/>
+        <source>Length Scale[m]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -21541,94 +21753,15 @@ Specify another file please.</source>
         <translation type="unfinished">材質說明</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="99"/>
-        <source>Editing material</source>
-        <translation type="unfinished">編輯材質</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="107"/>
-        <source>Use FreeCAD material editor</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="107"/>
-        <source>use FreeCAD material editor</source>
-        <translation type="unfinished">使用FreeCAD材質編輯器</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="123"/>
-        <source>use this task panel</source>
-        <translation type="unfinished">使用此工作面板</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="155"/>
-        <source>Density</source>
-        <translation type="unfinished">密度</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="177"/>
-        <source>0 kg/m^3</source>
-        <translation type="unfinished">0 kg/m^3</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="213"/>
         <source>Mechanical Properties</source>
         <translation type="unfinished">機械力學屬性</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="224"/>
-        <source>Young&apos;s Modulus:</source>
-        <translation type="unfinished">楊氏模數(Young&apos;s Modulus):</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="246"/>
-        <source>0 Pa</source>
-        <translation type="unfinished">0 Pa</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="271"/>
-        <source>Poisson Ratio:</source>
-        <translation type="unfinished">泊松比(Poisson Ratio):</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="323"/>
-        <source>Fluidic Properties</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="334"/>
-        <source>Kinematic viscosity:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="356"/>
-        <source>0 m^2/s</source>
-        <translation type="unfinished">0 m^2/s</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="392"/>
-        <source>Thermal Properties</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="392"/>
-        <source>Thermal  Properties</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="403"/>
-        <source>Thermal Conductivity:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="425"/>
-        <source>0 W/m/K</source>
-        <translation type="unfinished">0 W/m/K</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="450"/>
-        <source>Expansion Coefficient:</source>
-        <translation type="unfinished"></translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="472"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="566"/>
+        <source>0 m/m/K</source>
+        <translation type="unfinished">0 m/m/K</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="497"/>
@@ -21646,20 +21779,99 @@ Specify another file please.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="99"/>
+        <source>Editing material</source>
+        <translation type="unfinished">編輯材質</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="224"/>
+        <source>Young&apos;s Modulus:</source>
+        <translation type="unfinished">楊氏模數(Young&apos;s Modulus):</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="107"/>
+        <source>Use FreeCAD material editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="107"/>
+        <source>use FreeCAD material editor</source>
+        <translation type="unfinished">使用FreeCAD材質編輯器</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="123"/>
+        <source>use this task panel</source>
+        <translation type="unfinished">使用此工作面板</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="271"/>
+        <source>Poisson Ratio:</source>
+        <translation type="unfinished">泊松比(Poisson Ratio):</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="155"/>
+        <source>Density</source>
+        <translation type="unfinished">密度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="177"/>
+        <source>0 kg/m^3</source>
+        <translation type="unfinished">0 kg/m^3</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="323"/>
+        <source>Fluidic Properties</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="334"/>
+        <source>Kinematic viscosity:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="246"/>
+        <source>0 Pa</source>
+        <translation type="unfinished">0 Pa</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="392"/>
+        <source>Thermal Properties</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="403"/>
+        <source>Thermal Conductivity:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="450"/>
+        <source>Expansion Coefficient:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="343"/>
         <source>Expansion Reference Temperature:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="472"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="566"/>
-        <source>0 m/m/K</source>
-        <translation type="unfinished">0 m/m/K</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="356"/>
+        <source>0 m^2/s</source>
+        <translation type="unfinished">0 m^2/s</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="497"/>
         <source>Specific Heat Capacity:</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="392"/>
+        <source>Thermal  Properties</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="425"/>
+        <source>0 W/m/K</source>
+        <translation type="unfinished">0 W/m/K</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="123"/>
@@ -21768,6 +21980,11 @@ Specify another file please.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/ArchMultiMaterial.ui" line="14"/>
         <source>Multi-material definition</source>
         <translation type="unfinished">多重材質設定</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Arch/Resources/ui/ArchMultiMaterial.ui" line="14"/>
+        <source>Multimaterial definition</source>
+        <translation type="unfinished">多重材質的定義</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Arch/Resources/ui/ArchMultiMaterial.ui" line="21"/>
@@ -24716,18 +24933,8 @@ value by using the [ and ] keys while drawing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ConstraintCentrif.ui" line="92"/>
-        <source>1/s</source>
-        <translation type="unfinished">1/s</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ConstraintCentrif.ui" line="43"/>
         <source>Rotation frequency f&lt;sub&gt;rot&lt;/sub&gt; [rps]</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ConstraintCentrif.ui" line="47"/>
-        <source>Revolutions per second</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -24739,6 +24946,16 @@ value by using the [ and ] keys while drawing</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ConstraintCentrif.ui" line="80"/>
         <source>0 1/s</source>
         <translation type="unfinished">0 1/s</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ConstraintCentrif.ui" line="92"/>
+        <source>1/s</source>
+        <translation type="unfinished">1/s</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ConstraintCentrif.ui" line="47"/>
+        <source>Revolutions per second</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ConstraintSectionPrint.ui" line="14"/>
@@ -24994,6 +25211,24 @@ Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="392"/>
+        <source>Imaginary part of potential y-component
+Note: has no effect if a solid was selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="447"/>
+        <source>Real part of potential z-component
+Note: has no effect if a solid was selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="492"/>
+        <source>Imaginary part of potential z-component
+Note: has no effect if a solid was selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="544"/>
         <source>Whether the boundary condition defines a farfield potential</source>
         <translation type="unfinished"></translation>
@@ -25022,12 +25257,6 @@ Note: has no effect if a solid was selected</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="391"/>
         <source>Electric Infinity</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="392"/>
-        <source>Imaginary part of potential y-component
-Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -25066,12 +25295,6 @@ Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="447"/>
-        <source>Real part of potential z-component
-Note: has no effect if a solid was selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="448"/>
         <source>Enabled by &apos;Calculate Capacity Matrix&apos; in Electrostatic equation</source>
         <translation type="unfinished"></translation>
@@ -25079,12 +25302,6 @@ Note: has no effect if a solid was selected</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="602"/>
         <source>Counter of the body (or face) with a capacitance</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="492"/>
-        <source>Imaginary part of potential z-component
-Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -26126,11 +26343,6 @@ p, li { white-space: pre-wrap; }
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpTappingEdit.ui" line="103"/>
         <source>ToolController</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Arch/Resources/ui/ArchMultiMaterial.ui" line="14"/>
-        <source>Multimaterial definition</source>
-        <translation type="unfinished">多重材質的定義</translation>
     </message>
 </context>
 <context>
@@ -27663,6 +27875,11 @@ are placed in a &apos;Group&apos; instead.
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="264"/>
+        <source>Create a default Render project with the newly Site</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="267"/>
         <source>Create Render Project (requires Render)</source>
         <translation type="unfinished"></translation>
@@ -27681,11 +27898,6 @@ are placed in a &apos;Group&apos; instead.
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="226"/>
         <source>Default Ceiling Color</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="264"/>
-        <source>Create a default Render project with the newly Site</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -28880,14 +29092,14 @@ Note: C++ importer is faster, but is not as featureful yet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="55"/>
-        <source>Use legacy python importer</source>
-        <translation type="unfinished">使用舊有python匯入器</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="58"/>
         <source>Use legacy Python importer</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="55"/>
+        <source>Use legacy python importer</source>
+        <translation type="unfinished">使用舊有python匯入器</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="71"/>
@@ -28896,24 +29108,24 @@ Note: C++ exporter is faster, but is not as featureful yet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="78"/>
+        <source>Use legacy Python exporter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="75"/>
         <source>Use legacy python exporter</source>
         <translation type="unfinished">使用傳統python匯出器</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="78"/>
-        <source>Use legacy Python exporter</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="91"/>
+        <source>Automatic update (legacy importer/exporter only)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="88"/>
         <source>Automatic update (legacy importer only)</source>
         <translation type="unfinished">自動更新(僅適用於舊的匯入器)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="91"/>
-        <source>Automatic update (legacy importer/exporter only)</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="96"/>
@@ -28937,14 +29149,14 @@ from the Addon Manager.</source>
         <translation type="unfinished">匯入選項</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="140"/>
-        <source>Note: Not all the options below are used by the new importer yet</source>
-        <translation type="unfinished">請注意：並非下列所有選項皆可被新的匯入功能所使用</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="148"/>
         <source>Some options are not yet available for the new importer</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="140"/>
+        <source>Note: Not all the options below are used by the new importer yet</source>
+        <translation type="unfinished">請注意：並非下列所有選項皆可被新的匯入功能所使用</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="149"/>
@@ -28977,14 +29189,14 @@ from the Addon Manager.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="191"/>
-        <source>layouts</source>
-        <translation type="unfinished">配置</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="199"/>
         <source>Layouts</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="191"/>
+        <source>layouts</source>
+        <translation type="unfinished">配置</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="204"/>
@@ -29104,14 +29316,14 @@ instead of the size they have in the DXF document</source>
         <translation type="unfinished">使用圖層</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="448"/>
-        <source>Import hatch boundaries as wires (legacy importer only)</source>
-        <translation type="unfinished">匯入剖面線邊界為線條(僅傳統輸入)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="451"/>
         <source>Use layers</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="448"/>
+        <source>Import hatch boundaries as wires (legacy importer only)</source>
+        <translation type="unfinished">匯入剖面線邊界為線條(僅傳統輸入)</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="445"/>
@@ -29183,14 +29395,14 @@ If it is set to &apos;0&apos; the whole spline is treated as a straight segment.
         <translation type="unfinished">以聚合面網格匯出3D物體(僅傳統輸出)</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="614"/>
-        <source>Project exported objects along current view direction (legacy exporter only)</source>
-        <translation type="unfinished">匯出沿目前視圖方向投影物體(僅傳統輸出)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="617"/>
         <source>Export 3D objects as polyface meshes</source>
         <translation type="unfinished">以聚合面網格匯出3D物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="614"/>
+        <source>Project exported objects along current view direction (legacy exporter only)</source>
+        <translation type="unfinished">匯出沿目前視圖方向投影物體(僅傳統輸出)</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="587"/>
@@ -31023,16 +31235,6 @@ If unchecked, they will be sorted by their name.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/DlgSettingsMaterial.ui" line="237"/>
-        <source>Material Selector</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/DlgSettingsMaterial.ui" line="243"/>
-        <source>Show favorites</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/DlgSettingsMaterial.ui" line="212"/>
         <source>Testing</source>
         <translation type="unfinished"></translation>
@@ -31040,6 +31242,16 @@ If unchecked, they will be sorted by their name.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/DlgSettingsMaterial.ui" line="218"/>
         <source>Use legacy editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/DlgSettingsMaterial.ui" line="237"/>
+        <source>Material Selector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/DlgSettingsMaterial.ui" line="243"/>
+        <source>Show favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -31625,14 +31837,14 @@ If unchecked, they will be sorted by their name.</source>
         <translation type="unfinished">預設屬性質</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="132"/>
-        <source>Text size</source>
-        <translation type="unfinished">字體大小</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="59"/>
         <source>Distance Factor</source>
         <translation type="unfinished">距離因子</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="132"/>
+        <source>Text size</source>
+        <translation type="unfinished">字體大小</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="155"/>
@@ -31645,6 +31857,11 @@ If unchecked, they will be sorted by their name.</source>
         <translation type="unfinished"> px</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="162"/>
+        <source>Mirror</source>
+        <translation type="unfinished">鏡像</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="175"/>
         <source>Background color</source>
         <translation type="unfinished">背景顏色</translation>
@@ -31653,11 +31870,6 @@ If unchecked, they will be sorted by their name.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="66"/>
         <source>Text color</source>
         <translation type="unfinished">文字顏色</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="162"/>
-        <source>Mirror</source>
-        <translation type="unfinished">鏡像</translation>
     </message>
 </context>
 <context>
@@ -43947,6 +44159,12 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
         <translation type="unfinished">不正確的選取</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAlign.cpp" line="54"/>
+        <source>You must select 2 vertexes or 1 edge
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="188"/>
         <source>Can not make 2d radius dimension from selection</source>
         <translation type="unfinished">無法從選擇中製作2d半徑尺寸標注</translation>
@@ -44086,6 +44304,11 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2523"/>
+        <source>Selection contains both 2d and 3d geometry</source>
+        <translation type="unfinished">選擇包含 2d 和 3d 幾何體</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1193"/>
         <source>There is no Dimension in your selection</source>
         <translation type="unfinished">您的選擇中沒有尺寸標注</translation>
@@ -44140,11 +44363,6 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2472"/>
         <source>Selected edge is a B-spline and a radius/diameter can not be calculated.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2523"/>
-        <source>Selection contains both 2d and 3d geometry</source>
-        <translation type="unfinished">選擇包含 2d 和 3d 幾何體</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="107"/>
@@ -44390,14 +44608,14 @@ thick: %4</source>
         <translation type="unfinished">匯出頁面為 PDF 檔</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/MDIViewPage.cpp" line="496"/>
-        <source>SVG (*.svg)</source>
-        <translation type="unfinished">SVG (*.svg)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/MDIViewPage.cpp" line="499"/>
         <source>Export page as SVG</source>
         <translation type="unfinished">匯出頁面為 SVG 檔</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/MDIViewPage.cpp" line="496"/>
+        <source>SVG (*.svg)</source>
+        <translation type="unfinished">SVG (*.svg)</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/MDIViewPage.cpp" line="513"/>
@@ -44563,13 +44781,13 @@ thick: %4</source>
         <translation type="unfinished">無法使用來自不同檢視的引用</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskDimRepair.cpp" line="139"/>
-        <source>Can not make a dimension from selection</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskDimRepair.cpp" line="150"/>
+        <source>Can not make dimension from selection</source>
         <translation type="unfinished">無法從選擇中建立尺寸標注</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskDimRepair.cpp" line="150"/>
-        <source>Can not make dimension from selection</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskDimRepair.cpp" line="139"/>
+        <source>Can not make a dimension from selection</source>
         <translation type="unfinished">無法從選擇中建立尺寸標注</translation>
     </message>
     <message>
@@ -50876,14 +51094,14 @@ Press ESC to cancel.</source>
         <translation type="unfinished">只有零件</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="80"/>
-        <source>Columns</source>
-        <translation type="unfinished">行</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="77"/>
         <source>Columns of the bill of materials</source>
         <translation type="unfinished">物料清單的列</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="80"/>
+        <source>Columns</source>
+        <translation type="unfinished">行</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="89"/>
@@ -51380,6 +51598,13 @@ for the Elmer solver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintDisplacement.ui" line="130"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintDisplacement.ui" line="163"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintDisplacement.ui" line="210"/>
+        <source>Formula</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintDisplacement.ui" line="119"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintDisplacement.ui" line="170"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintDisplacement.ui" line="199"/>
@@ -51388,13 +51613,6 @@ for the Elmer solver</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintDisplacement.ui" line="327"/>
         <source>Fixed</source>
         <translation type="unfinished">固定</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintDisplacement.ui" line="130"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintDisplacement.ui" line="163"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintDisplacement.ui" line="210"/>
-        <source>Formula</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintDisplacement.ui" line="147"/>
@@ -52129,14 +52347,14 @@ over 90: larger hole radius at the bottom</source>
         <translation type="unfinished">反轉孔之方向</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="95"/>
-        <source>Update view</source>
-        <translation type="unfinished">更新檢視</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="745"/>
         <source>Reversed</source>
         <translation type="unfinished">反轉</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="95"/>
+        <source>Update view</source>
+        <translation type="unfinished">更新檢視</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="704"/>
@@ -52219,14 +52437,14 @@ the screw&apos;s top below the surface</source>
         <translation type="unfinished">鑽孔點</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="385"/>
-        <source>Thread Depth</source>
-        <translation type="unfinished">螺紋深度</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="629"/>
         <source>Flat</source>
         <translation type="unfinished">平</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="385"/>
+        <source>Thread Depth</source>
+        <translation type="unfinished">螺紋深度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="645"/>
@@ -52240,6 +52458,11 @@ account for the depth of blind holes</source>
         <translation type="unfinished">鑽尖尺寸將不會用來考慮作盲孔深度</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="684"/>
+        <source>Take into account for depth</source>
+        <translation type="unfinished">考慮深度</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="433"/>
         <source>&lt;b&gt;Hole cut&lt;/b&gt;</source>
         <translation type="unfinished">&lt;b&gt;開孔&lt;/b&gt;</translation>
@@ -52249,11 +52472,6 @@ account for the depth of blind holes</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="613"/>
         <source>Type</source>
         <translation type="unfinished">類型</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="684"/>
-        <source>Take into account for depth</source>
-        <translation type="unfinished">考慮深度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="275"/>
@@ -54732,16 +54950,6 @@ if you are planning to use a drawing as a 1:1 cutting guide.
         <translation type="unfinished">隱藏線式樣</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="967"/>
-        <source>Break Line Style</source>
-        <translation type="unfinished">斷線樣式</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="974"/>
-        <source>Style of line to be used in BrokenView.</source>
-        <translation type="unfinished">要在 斷面檢視 中使用的線條樣式.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="843"/>
         <source>Shape of line end caps.  The default (round) should almost
 always be the right choice.   Flat or square caps are useful 
@@ -54751,6 +54959,16 @@ if you are planning to use a drawing as a 1:1 cutting guide.
 如果您打算使用繪圖作為 1:1 切割指南，
 平頭或方形帽非常有用.
 </translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="967"/>
+        <source>Break Line Style</source>
+        <translation type="unfinished">斷線樣式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="974"/>
+        <source>Style of line to be used in BrokenView.</source>
+        <translation type="unfinished">要在 斷面檢視 中使用的線條樣式.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="885"/>
@@ -55107,6 +55325,13 @@ Multiplier of &apos;Font Size&apos;</source>
         <translation type="unfinished">備用小數</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="583"/>
+        <source>Controls the size of spacing between dimension line and dimension text.
+ Value * linewidth is the line spacing.</source>
+        <translation type="unfinished">控制尺寸線和尺寸文字之間的間距大小.
+ 值*線寬 即為行距.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="405"/>
         <source>Controls the gap size between the dimension point and the start of the extension line for ISO dimensions.</source>
         <translation type="unfinished"></translation>
@@ -55150,6 +55375,11 @@ Multiplier of &apos;Font Size&apos;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="573"/>
+        <source>Controls the size of spacing between dimension line and dimension text for ISO dimensions.</source>
+        <translation type="unfinished">控制 ISO 尺寸的尺寸線和尺寸文字之間的間距大小.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="576"/>
         <source>Line Spacing - ISO</source>
         <translation type="unfinished">線條間距 - ISO</translation>
@@ -55181,6 +55411,11 @@ Multiplier of &apos;Font Size&apos;</source>
         <translation type="unfinished">控制 ASME 標註的標註點和延長線起點間的間隙大小。</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="614"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; Items in &lt;span style=&quot; font-style:italic;&quot;&gt;italics&lt;/span&gt; are default values for new objects. They have no effect on existing objects.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意: &lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值.  它們對現有物件沒有影響.  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="527"/>
         <source>Controls the size of the gap between the dimension point and the start of the extension line for ISO dimensions.
  Value * linewidth is the gap.
@@ -55206,6 +55441,16 @@ Normally, no gap is used. If using a gap, the recommended value 8.</source>
 通常不使用間隙. 如果使用間隙，建議值為8.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="630"/>
+        <source>Tools</source>
+        <translation type="unfinished">工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="636"/>
+        <source>Dimensioning tools:</source>
+        <translation type="unfinished">標註工具:</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="548"/>
         <source>Controls the size of the gap between the dimension point and the start of the extension line for ASME dimensions. Value * linewidth is the gap.
  Normally, no gap is used. If using a gap, the recommended value is 6.</source>
@@ -55225,33 +55470,6 @@ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
         <translation type="unfinished">控制 ASME 尺寸的尺寸點與尺寸界線起點之間的間隙大小.
 值*線寬 即為間隙.
 通常不使用間隙. 如果使用間隙，建議值為6.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="573"/>
-        <source>Controls the size of spacing between dimension line and dimension text for ISO dimensions.</source>
-        <translation type="unfinished">控制 ISO 尺寸的尺寸線和尺寸文字之間的間距大小.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="583"/>
-        <source>Controls the size of spacing between dimension line and dimension text.
- Value * linewidth is the line spacing.</source>
-        <translation type="unfinished">控制尺寸線和尺寸文字之間的間距大小.
- 值*線寬 即為行距.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="614"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; Items in &lt;span style=&quot; font-style:italic;&quot;&gt;italics&lt;/span&gt; are default values for new objects. They have no effect on existing objects.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意: &lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值.  它們對現有物件沒有影響.  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="630"/>
-        <source>Tools</source>
-        <translation type="unfinished">工具</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="636"/>
-        <source>Dimensioning tools:</source>
-        <translation type="unfinished">標註工具:</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="643"/>
@@ -55428,6 +55646,16 @@ for ProjectionGroups</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1024"/>
+        <source>If checked, the 3d camera direction (or normal of a selected face) will be used as the view direction.  If not checked, Views will be created as Front Views.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1027"/>
+        <source>Use 3d Camera Direction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="418"/>
         <source>Page</source>
         <translation type="unfinished">頁</translation>
@@ -55568,14 +55796,14 @@ for ProjectionGroups</source>
         <translation type="unfinished">設定新頁面的顯示網格 (ShowGrid) 屬性為真.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="689"/>
-        <source>Alternate directory to search for Svg symbol files.</source>
-        <translation type="unfinished">用於搜索 Svg 符號檔的備用目錄.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="821"/>
         <source>Show Grid</source>
         <translation type="unfinished">顯示網格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="689"/>
+        <source>Alternate directory to search for Svg symbol files.</source>
+        <translation type="unfinished">用於搜索 Svg 符號檔的備用目錄.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="842"/>
@@ -55615,16 +55843,6 @@ for ProjectionGroups</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="853"/>
         <source>Use 3D Camera Direction</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1024"/>
-        <source>If checked, the 3d camera direction (or normal of a selected face) will be used as the view direction.  If not checked, Views will be created as Front Views.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1027"/>
-        <source>Use 3d Camera Direction</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -55953,12 +56171,6 @@ Do you want to continue?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/MDIViewPage.cpp" line="406"/>
-        <source>The printer uses a different orientation  than the drawing.
-Do you want to continue?</source>
-        <translation type="unfinished">印表機與圖面使用之方向不同，您要繼續嗎？</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/MDIViewPage.cpp" line="415"/>
         <source>Different paper size</source>
         <translation type="unfinished">紙張尺寸不同</translation>
@@ -55968,6 +56180,12 @@ Do you want to continue?</source>
         <source>The printer uses a different paper size than the drawing.
 Do you want to continue?</source>
         <translation type="unfinished">印表機與圖面之紙張尺寸不同，您要繼續嗎？</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/MDIViewPage.cpp" line="406"/>
+        <source>The printer uses a different orientation  than the drawing.
+Do you want to continue?</source>
+        <translation type="unfinished">印表機與圖面使用之方向不同，您要繼續嗎？</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/MDIViewPage.cpp" line="430"/>
