@@ -99,7 +99,7 @@
     <message>
         <location filename="../../UnitTest.ui" line="259"/>
         <source>Failures and errors</source>
-        <translation>失敗與錯誤</translation>
+        <translation>失敗及錯誤</translation>
     </message>
     <message>
         <location filename="../../UnitTest.ui" line="275"/>

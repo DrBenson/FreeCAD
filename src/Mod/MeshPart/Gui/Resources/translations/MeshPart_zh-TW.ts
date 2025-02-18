@@ -1842,7 +1842,7 @@ to a smoother appearance.
     <message>
         <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="14"/>
         <source>Remove components</source>
-        <translation>刪除元件...</translation>
+        <translation>刪除元件</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="20"/>

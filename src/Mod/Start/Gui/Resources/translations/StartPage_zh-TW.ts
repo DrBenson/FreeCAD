@@ -512,6 +512,11 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <translation>最近使用的檔案</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="575"/>
+        <source>Custom Folder</source>
+        <translation>自訂資料夾</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="484"/>
         <source>Open first start setup</source>
         <translation>打開首次啟動設定頁面</translation>
