@@ -3428,16 +3428,6 @@ Floor creation aborted.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ArchMaterial.py" line="123"/>
-        <source>Create material</source>
-        <translation>建立材質</translation>
-    </message>
-    <message>
-        <location filename="../../ArchMaterial.py" line="157"/>
-        <source>Create multi-material</source>
-        <translation>建立多重材質</translation>
-    </message>
-    <message>
         <location filename="../../ArchMaterial.py" line="826"/>
         <location filename="../../ArchMaterial.py" line="845"/>
         <location filename="../../ArchWindow.py" line="1739"/>
@@ -3463,16 +3453,6 @@ Floor creation aborted.</source>
     <message>
         <source>depends on the object</source>
         <translation>相依於物件</translation>
-    </message>
-    <message>
-        <location filename="../../ArchStructure.py" line="432"/>
-        <source>Drawing mode</source>
-        <translation>繪圖模式</translation>
-    </message>
-    <message>
-        <location filename="../../ArchStructure.py" line="489"/>
-        <source>Switch L/W</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../ArchStructure.py" line="835"/>
@@ -4330,6 +4310,26 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     </message>
     <message>
         <source>Press to retrieve the selected edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ArchMaterial.py" line="123"/>
+        <source>Create material</source>
+        <translation>建立材質</translation>
+    </message>
+    <message>
+        <location filename="../../ArchMaterial.py" line="157"/>
+        <source>Create multi-material</source>
+        <translation>建立多重材質</translation>
+    </message>
+    <message>
+        <location filename="../../ArchStructure.py" line="432"/>
+        <source>Drawing mode</source>
+        <translation>繪圖模式</translation>
+    </message>
+    <message>
+        <location filename="../../ArchStructure.py" line="489"/>
+        <source>Switch L/W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8167,24 +8167,9 @@ a certain property.</source>
         <translation>自訂屬性</translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="26"/>
-        <source>People</source>
-        <translation>開發者</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="57"/>
-        <source>Kind</source>
-        <translation>類別</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="62"/>
         <source>Name</source>
         <translation>名稱</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="67"/>
-        <source>Email</source>
-        <translation>電子郵件</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogCustomProperties.ui" line="30"/>
@@ -8574,6 +8559,11 @@ a certain property.</source>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogPreflight.ui" line="415"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;When exporting a model to IFC, all BIM objects that are an extrusion of a rectangular profile will use an IfcRectangleProfileDef entity as their extrusion profile. However, Revit won&apos;t import these correctly. If you are going to use the IFC file in Revit, we recommend you to disable this behavior by checking the option under menu &lt;span style=&quot; font-weight:600;&quot;&gt;Edit -&amp;gt; Preferences -&amp;gt; BIM -&amp;gt; Native IFC -&amp;gt; Disable IfcRectangularProfileDef&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;When that option is checked, all extrusion profiles will be exported as generic IfcArbitraryProfileDef entities, regardless of if they are rectangular or not, which will contain a little less information, but will open correctly in Revit.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogPreflight.ui" line="415"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;When exporting a model to IFC, all BIM objects that are an extrusion of a rectangular profile will use an IfcRectangleProfileDef entity as their extrusion profile. However, Revit won&apos;t import these correctly. If you are going to use the IFC file in Revit, we recommend you to disable this behavior by checking the option under menu &lt;span style=&quot; font-weight:600;&quot;&gt;Edit -&amp;gt; Preferences -&amp;gt; BIM -&amp;gt; NativeIFC -&amp;gt; Disable IfcRectangularProfileDef&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;When that option is checked, all extrusion profiles will be exported as generic IfcArbitraryProfileDef entities, regardless of if they are rectangular or not, which will contain a little less information, but will open correctly in Revit.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8743,6 +8733,11 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferencesNativeIFC.ui" line="14"/>
+        <source>Native IFC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferencesNativeIFC.ui" line="14"/>
         <source>NativeIFC</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8906,6 +8901,21 @@ p, li { white-space: pre-wrap; }
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferencesNativeIFC.ui" line="290"/>
         <source>Check this to ask the above question every time a project is created</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="26"/>
+        <source>People</source>
+        <translation>開發者</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="57"/>
+        <source>Kind</source>
+        <translation>類別</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="67"/>
+        <source>Email</source>
+        <translation>電子郵件</translation>
     </message>
     <message>
         <source>Multimaterial definition</source>
@@ -9783,6 +9793,12 @@ unit to work with when opening the file.</source>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-ifc-export.ui" line="366"/>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-ifc.ui" line="473"/>
+        <source>Check also native-IFC-specific preferences under BIM -&gt; Native IFC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-ifc-export.ui" line="366"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-ifc.ui" line="473"/>
         <source>Check also NativeIFC-specific preferences under BIM -&gt; NativeIFC</source>
         <translation>並且檢查 BIM -&gt; NativeIFC 下的 NativeIFC 特定偏好設定</translation>
     </message>
@@ -10032,6 +10048,16 @@ are placed in a &apos;Group&apos; instead.
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="48"/>
+        <source>DEBUG: keep the construction geometries in the ActiveDocument. Useful when debugging a failed import</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="51"/>
+        <source>Debug Geometry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="168"/>
         <source>Merge imported element with existing FC object</source>
         <translation type="unfinished"></translation>
@@ -10108,11 +10134,6 @@ are placed in a &apos;Group&apos; instead.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="264"/>
-        <source>Create a default Render project with the newly Site</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="267"/>
         <source>Create Render Project (requires Render)</source>
         <translation type="unfinished"></translation>
@@ -10132,6 +10153,11 @@ are placed in a &apos;Group&apos; instead.
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="226"/>
         <source>Default Ceiling Color</source>
         <translation>預設天花板顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="264"/>
+        <source>Create a default Render project with the newly Site</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="296"/>
@@ -10181,6 +10207,16 @@ are placed in a &apos;Group&apos; instead.
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="409"/>
         <source>Decorate surfaces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="426"/>
+        <source>Default furniture Color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="442"/>
+        <source>This color is used when a furniture does not define its own color.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
