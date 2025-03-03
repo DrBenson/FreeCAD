@@ -29,7 +29,8 @@ Models:
     ThermalExpansionCoefficient: "0 µm/m/K"
 AppearanceModels:
   BasicRendering:
-    UUID: 'f006c7e4-35b7-43d5-bbf9-c5d572309e6e'AmbientColor: "(0.866667,0.866667,0.933333,1)"
+    UUID: 'f006c7e4-35b7-43d5-bbf9-c5d572309e6e'
+    AmbientColor: "(0.866667,0.866667,0.933333,1)"
     DiffuseColor: "(0.898039,0.898039,0.898039,1)"
     EmissiveColor: "(0.0588235,0.0588235,0.0588235,1)"
     Shininess: "0.1500"
