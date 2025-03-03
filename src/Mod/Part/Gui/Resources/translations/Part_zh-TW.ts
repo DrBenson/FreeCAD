@@ -1352,11 +1352,6 @@
         <translation>設定所選物體的每個表面顏色.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="2084"/>
-        <source>Appearance per face</source>
-        <translation>每個面的外觀</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="2087"/>
         <source>Appearance per &amp;face</source>
         <translation>每個面的外觀(&amp;f)</translation>
@@ -1365,6 +1360,11 @@
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="2085"/>
         <source>Set the appearance of each individual face of the selected object.</source>
         <translation>設定所選物件的每個單獨面的外觀.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="2084"/>
+        <source>Appearance per face</source>
+        <translation>每個面的外觀</translation>
     </message>
 </context>
 <context>
@@ -2439,14 +2439,14 @@ of projection.</source>
         <translation>持續截面切割(&amp;n)</translation>
     </message>
     <message>
-        <location filename="../../Command.cpp" line="2539"/>
-        <source>Creates a persistent section cut of visible part objects</source>
-        <translation>建立可見零件物件的持久剖面切割</translation>
-    </message>
-    <message>
         <location filename="../../Command.cpp" line="2538"/>
         <source>Persistent section cut</source>
         <translation>持續截面切割</translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="2539"/>
+        <source>Creates a persistent section cut of visible part objects</source>
+        <translation>建立可見零件物件的持久剖面切割</translation>
     </message>
 </context>
 <context>
@@ -2958,6 +2958,11 @@ of projection.</source>
 <context>
     <name>PartDesignGui::TaskDatumParameters</name>
     <message>
+        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="20"/>
         <source>Selection accepted</source>
         <translation>接受選擇</translation>
@@ -3054,11 +3059,6 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="367"/>
         <source>Flip sides</source>
         <translation>翻面</translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -3237,11 +3237,6 @@ Note: The placement is expressed in local space of object being attached.</sourc
 <context>
     <name>PartGui::DlgExportHeaderStep</name>
     <message>
-        <location filename="../../DlgExportHeaderStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
-    </message>
-    <message>
         <location filename="../../DlgExportHeaderStep.ui" line="20"/>
         <source>If not empty, field contents will be used in the STEP file header.</source>
         <translation>如果不為空，則欄位內容將用於STEP文件標題.</translation>
@@ -3266,6 +3261,11 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <source>Product</source>
         <translation>產品</translation>
     </message>
+    <message>
+        <location filename="../../DlgExportHeaderStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
+    </message>
 </context>
 <context>
     <name>PartGui::DlgExportStep</name>
@@ -3273,11 +3273,6 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgExportStep.ui" line="14"/>
         <source>STEP Export Settings</source>
         <translation>STEP 匯出設定</translation>
-    </message>
-    <message>
-        <location filename="../../DlgExportStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
     </message>
     <message>
         <location filename="../../DlgExportStep.ui" line="20"/>
@@ -3367,6 +3362,11 @@ it inside the Placement property.</source>
 should be written into the STEP file. This parameter can be set to off in order to minimize
 the size of the resulting STEP file.</source>
         <translation>此參數指示是否將參數曲線（曲面參數空間中的曲線）寫入STEP檔案。為了最小化生成的STEP檔案大小，可以將此參數設置為關閉。</translation>
+    </message>
+    <message>
+        <location filename="../../DlgExportStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
     </message>
 </context>
 <context>
@@ -3704,6 +3704,11 @@ If both lengths are zero, magnitude of direction is used.</source>
         <translation>長度：</translation>
     </message>
     <message>
+        <location filename="../../DlgFilletEdges.cpp" line="266"/>
+        <source>Chamfer Parameter</source>
+        <translation>倒角參數</translation>
+    </message>
+    <message>
         <location filename="../../DlgFilletEdges.cpp" line="270"/>
         <source>Equal distance</source>
         <translation>同等距離</translation>
@@ -3799,11 +3804,6 @@ Please select a valid shape in the drop-down box first.</source>
         <source>No edge entity is checked to fillet.
 Please check one or more edge entities first.</source>
         <translation>未選擇實體之邊產生圓角,請先選擇1或多個實體之邊.</translation>
-    </message>
-    <message>
-        <location filename="../../DlgFilletEdges.cpp" line="266"/>
-        <source>Chamfer Parameter</source>
-        <translation>倒角參數</translation>
     </message>
 </context>
 <context>
@@ -4126,6 +4126,11 @@ the size of the resulting STEP file.</source>
         <translation>STEP 匯入設定</translation>
     </message>
     <message>
+        <location filename="../../DlgImportStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
+    </message>
+    <message>
         <location filename="../../DlgImportStep.ui" line="20"/>
         <source>Import</source>
         <translation>匯入</translation>
@@ -4153,11 +4158,6 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgImportStep.ui" line="29"/>
         <source>Show this Dialog when importing</source>
         <translation>當匯入時顯示此對話框</translation>
-    </message>
-    <message>
-        <location filename="../../DlgImportStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
     </message>
     <message>
         <location filename="../../DlgImportStep.ui" line="30"/>
@@ -4396,27 +4396,27 @@ during file reading (slower but higher details).</source>
         <translation>STEP 匯入檔案</translation>
     </message>
     <message>
-        <location filename="../../DlgPartImportStep.ui" line="14"/>
-        <source>Step input file</source>
-        <translation>STEP輸入檔</translation>
-    </message>
-    <message>
         <location filename="../../DlgPartImportStep.ui" line="20"/>
         <source>File Name</source>
         <translation>檔案名稱</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPartImportStep.ui" line="14"/>
+        <source>Step input file</source>
+        <translation>STEP輸入檔</translation>
     </message>
 </context>
 <context>
     <name>PartGui::DlgPartImportStepImp</name>
     <message>
-        <location filename="../../DlgPartImportStepImp.cpp" line="72"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
-    </message>
-    <message>
         <location filename="../../DlgPartImportStepImp.cpp" line="73"/>
         <source>All Files</source>
         <translation>所有檔案</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPartImportStepImp.cpp" line="72"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
     </message>
 </context>
 <context>
@@ -5683,11 +5683,6 @@ the sketch plane&apos;s normal vector will be used</source>
         <translation>持續截面切割</translation>
     </message>
     <message>
-        <location filename="../../SectionCutting.ui" line="20"/>
-        <source>Permanent Section Cutting</source>
-        <translation>永久斷面切割</translation>
-    </message>
-    <message>
         <location filename="../../SectionCutting.ui" line="32"/>
         <source>Cutting X</source>
         <translation>切割 X</translation>
@@ -5807,6 +5802,11 @@ only created cuts will be visible</source>
         <location filename="../../SectionCutting.cpp" line="520"/>
         <source>Sliders are disabled for assemblies</source>
         <translation>組件中的滑桿被禁用</translation>
+    </message>
+    <message>
+        <location filename="../../SectionCutting.ui" line="20"/>
+        <source>Permanent Section Cutting</source>
+        <translation>永久斷面切割</translation>
     </message>
 </context>
 <context>
@@ -5996,6 +5996,11 @@ only created cuts will be visible</source>
 <context>
     <name>PartGui::TaskAttacher</name>
     <message>
+        <location filename="../../TaskAttacher.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../TaskAttacher.ui" line="20"/>
         <source>Selection accepted</source>
         <translation>接受選擇</translation>
@@ -6177,11 +6182,6 @@ of object being attached.</source>
         <location filename="../../TaskAttacher.cpp" line="842"/>
         <source>%1 (add more references)</source>
         <translation>%1 (增加更多參考)</translation>
-    </message>
-    <message>
-        <location filename="../../TaskAttacher.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>

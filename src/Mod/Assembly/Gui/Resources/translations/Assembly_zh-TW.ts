@@ -415,14 +415,14 @@
         <translation>索引</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="48"/>
-        <source>Name</source>
-        <translation>名稱</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="49"/>
         <source>Description</source>
         <translation>描述</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="48"/>
+        <source>Name</source>
+        <translation>名稱</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="49"/>
@@ -1383,14 +1383,14 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <translation>透過右鍵點擊清單中的項目來刪除物體.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="70"/>
-        <source>Press shift to add several links while clicking on the view.</source>
-        <translation>點擊檢視時按 Shift 鍵可新增多個接點.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="71"/>
         <source>Press shift to add several instances of the component while clicking on the view.</source>
         <translation>按一下檢視時按 Shift 鍵可新增元件的多個實例.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="70"/>
+        <source>Press shift to add several links while clicking on the view.</source>
+        <translation>點擊檢視時按 Shift 鍵可新增多個接點.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="59"/>
@@ -1873,14 +1873,14 @@ Press ESC to cancel.</source>
         <translation>只有零件</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="77"/>
-        <source>Columns of the bill of materials</source>
-        <translation>物料清單的列</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="80"/>
         <source>Columns</source>
         <translation>欄位</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="77"/>
+        <source>Columns of the bill of materials</source>
+        <translation>物料清單的列</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateBom.ui" line="89"/>
@@ -1904,11 +1904,6 @@ Press ESC to cancel.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyInsertLink.ui" line="14"/>
         <source>Insert Component</source>
         <translation>插入組件</translation>
-    </message>
-    <message>
-        <location filename="../panels/TaskAssemblyInsertLink.ui" line="14"/>
-        <source>Insert Link</source>
-        <translation>插入連結</translation>
     </message>
     <message>
         <location filename="../panels/TaskAssemblyInsertLink.ui" line="20"/>
@@ -1974,6 +1969,11 @@ You can change this property of sub-assemblies at any time by right clicking the
         <source>Rigid sub-assemblies</source>
         <translation>剛性的子零件組合</translation>
     </message>
+    <message>
+        <location filename="../panels/TaskAssemblyInsertLink.ui" line="14"/>
+        <source>Insert Link</source>
+        <translation>插入連結</translation>
+    </message>
 </context>
 <context>
     <name>UtilsAssembly</name>
@@ -1985,16 +1985,6 @@ You can change this property of sub-assemblies at any time by right clicking the
 </context>
 <context>
     <name>Workbench</name>
-    <message>
-        <location filename="../../../InitGui.py" line="70"/>
-        <source>Assembly workbench</source>
-        <translation>零件組合工作台</translation>
-    </message>
-    <message>
-        <location filename="../../../InitGui.py" line="71"/>
-        <source>Initializing Assembly workbench...</source>
-        <translation>初始化零件組合工作台...</translation>
-    </message>
     <message>
         <location filename="../../../InitGui.py" line="91"/>
         <source>Assembly</source>
@@ -2014,6 +2004,16 @@ You can change this property of sub-assemblies at any time by right clicking the
         <location filename="../../../InitGui.py" line="110"/>
         <source>Assembly workbench loaded</source>
         <translation>零件組合工作台已載入</translation>
+    </message>
+    <message>
+        <location filename="../../../InitGui.py" line="70"/>
+        <source>Assembly workbench</source>
+        <translation>零件組合工作台</translation>
+    </message>
+    <message>
+        <location filename="../../../InitGui.py" line="71"/>
+        <source>Initializing Assembly workbench...</source>
+        <translation>初始化零件組合工作台...</translation>
     </message>
 </context>
 </TS>
