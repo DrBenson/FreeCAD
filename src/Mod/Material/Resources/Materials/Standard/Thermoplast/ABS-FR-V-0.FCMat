@@ -26,6 +26,7 @@ Models:
   Costs:
     UUID: '881df808-8726-4c2e-be38-688bb6cce466'
     ProductURL: "https://en.wikipedia.org/wiki/Acrylonitrile_butadiene_styrene"
+    SpecificPrice: '11.52'
 AppearanceModels:
   Basic Rendering:
     UUID: "f006c7e4-35b7-43d5-bbf9-c5d572309e6e"

@@ -920,6 +920,18 @@ If unchecked, they will be sorted by their name.</source>
         <translation>來源頁面網址</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/MaterialsEditor.ui" line="209"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/MaterialsEditor.ui" line="253"/>
+        <source>+</source>
+        <translation>+</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/MaterialsEditor.ui" line="216"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/MaterialsEditor.ui" line="260"/>
+        <source>-</source>
+        <translation>-</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/MaterialsEditor.ui" line="77"/>
         <source>Description</source>
         <translation>描述</translation>
@@ -945,19 +957,14 @@ If unchecked, they will be sorted by their name.</source>
         <translation>版權聲明</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/MaterialsEditor.ui" line="188"/>
-        <source>&amp;New</source>
-        <translation>新增(&amp;N)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/MaterialsEditor.ui" line="195"/>
-        <source>Inherit New</source>
-        <translation>繼承新增</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/MaterialsEditor.ui" line="178"/>
         <source>*</source>
         <translation>*</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/MaterialsEditor.ui" line="188"/>
+        <source>&amp;New</source>
+        <translation>新增(&amp;N)</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/MaterialsEditor.ui" line="188"/>
@@ -965,16 +972,9 @@ If unchecked, they will be sorted by their name.</source>
         <translation>屬性</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/MaterialsEditor.ui" line="209"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/MaterialsEditor.ui" line="253"/>
-        <source>+</source>
-        <translation>+</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/MaterialsEditor.ui" line="216"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/MaterialsEditor.ui" line="260"/>
-        <source>-</source>
-        <translation>-</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/MaterialsEditor.ui" line="195"/>
+        <source>Inherit New</source>
+        <translation>繼承新增</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="202"/>

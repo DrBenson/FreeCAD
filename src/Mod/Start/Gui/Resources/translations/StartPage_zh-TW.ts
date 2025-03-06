@@ -322,8 +322,23 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="26"/>
+        <source>Show only FreeCAD files in additional folder</source>
+        <translation>僅顯示附加資料夾中的 FreeCAD 文件</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="55"/>
+        <source>Show examples folder contents</source>
+        <translation>顯示範例的資料夾內容</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="26"/>
         <source>Show additional folder contents</source>
-        <translation type="unfinished"></translation>
+        <translation>顯示其他資料夾內容</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="55"/>
+        <source>An optional custom folder to be displayed on the Start page.</source>
+        <translation>要顯示在起始頁上的可選自訂資料夾.</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="69"/>
@@ -331,14 +346,9 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <translation>如果你要範例顯示在第一頁</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="55"/>
-        <source>An optional custom folder to be displayed on the Start page.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="55"/>
-        <source>Show examples folder contents</source>
-        <translation>顯示範例的資料夾內容</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="85"/>
+        <source>If the additional folder contents should include only .FCStd files</source>
+        <translation>如果附加資料夾內容應僅包含 .FCStd 文件</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="601"/>
