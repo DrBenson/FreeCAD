@@ -3475,11 +3475,6 @@ Then you can use it to save a different camera position and objects&apos; states
         <translation>填充</translation>
     </message>
     <message>
-        <location filename="../ui/dialogHatch.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../ui/dialogHatch.ui" line="20"/>
         <source>PAT file:</source>
         <translation>PAT 檔案:</translation>
@@ -4269,6 +4264,11 @@ value by using the [ and ] keys while drawing</source>
         <location filename="../ui/TaskSelectPlane.ui" line="254"/>
         <source>Previous</source>
         <translation>前一個</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialogHatch.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -6977,259 +6977,6 @@ Not available if the &apos;Use Part Primitives&apos; preference is enabled</sour
         <translation>標籤樣式</translation>
     </message>
     <message>
-        <location filename="../../DraftGui.py" line="1036"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="527"/>
-        <location filename="../../draftguitools/gui_offset.py" line="243"/>
-        <location filename="../../draftguitools/gui_offset.py" line="260"/>
-        <location filename="../../draftguitools/gui_offset.py" line="324"/>
-        <source>Offset</source>
-        <translation>偏移複製</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1042"/>
-        <location filename="../../DraftGui.py" line="1100"/>
-        <location filename="../../draftguitools/gui_trimex.py" line="215"/>
-        <source>Distance</source>
-        <translation>距離</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1043"/>
-        <location filename="../../DraftGui.py" line="1101"/>
-        <location filename="../../draftguitools/gui_trimex.py" line="217"/>
-        <source>Offset distance</source>
-        <translation>偏移距離</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1097"/>
-        <source>Trimex</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="965"/>
-        <location filename="../../DraftGui.py" line="966"/>
-        <location filename="../../DraftGui.py" line="967"/>
-        <location filename="../../DraftGui.py" line="969"/>
-        <location filename="../../DraftGui.py" line="970"/>
-        <location filename="../../DraftGui.py" line="971"/>
-        <source>Local {}</source>
-        <translation>區域 {}</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="973"/>
-        <location filename="../../DraftGui.py" line="974"/>
-        <location filename="../../DraftGui.py" line="975"/>
-        <location filename="../../DraftGui.py" line="977"/>
-        <location filename="../../DraftGui.py" line="978"/>
-        <location filename="../../DraftGui.py" line="979"/>
-        <source>Global {}</source>
-        <translation>全局 {}</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="2058"/>
-        <source>Autogroup:</source>
-        <translation>自動群組:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="1611"/>
-        <source>Modify objects</source>
-        <translation>修改物體</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="2394"/>
-        <source>Faces</source>
-        <translation>面</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="2395"/>
-        <source>Remove</source>
-        <translation>移除</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="2396"/>
-        <source>Add</source>
-        <translation>新增</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="2397"/>
-        <source>Facebinder elements</source>
-        <translation>面連接器</translation>
-    </message>
-    <message>
-        <location filename="../../WorkingPlane.py" line="713"/>
-        <location filename="../../draftmake/make_sketch.py" line="127"/>
-        <location filename="../../draftmake/make_sketch.py" line="139"/>
-        <source>All Shapes must be coplanar</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../WorkingPlane.py" line="721"/>
-        <source>Selected Shapes must define a plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="659"/>
-        <location filename="../../WorkingPlane.py" line="821"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="374"/>
-        <source>Top</source>
-        <translation>上視圖</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="661"/>
-        <location filename="../../WorkingPlane.py" line="832"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="386"/>
-        <source>Front</source>
-        <translation>前視圖</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="663"/>
-        <location filename="../../WorkingPlane.py" line="843"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="398"/>
-        <source>Side</source>
-        <translation>側面</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="665"/>
-        <source>Auto</source>
-        <translation>自動</translation>
-    </message>
-    <message>
-        <location filename="../../WorkingPlane.py" line="1198"/>
-        <location filename="../../WorkingPlane.py" line="1657"/>
-        <source>Current working plane:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../WorkingPlane.py" line="1264"/>
-        <location filename="../../WorkingPlane.py" line="1289"/>
-        <source>Selected shapes do not define a plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
-        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
-        <source>Working plane aligned to global placement of</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
-        <source>Dir</source>
-        <translation>方向</translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="539"/>
-        <source>Custom</source>
-        <translation>自訂</translation>
-    </message>
-    <message>
-        <location filename="../../WorkingPlane.py" line="1616"/>
-        <source>No previous working plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../WorkingPlane.py" line="1626"/>
-        <source>No next working plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../WorkingPlane.py" line="1661"/>
-        <source>Axes:</source>
-        <translation>軸:</translation>
-    </message>
-    <message>
-        <location filename="../../WorkingPlane.py" line="1668"/>
-        <source>Position:</source>
-        <translation>位置:</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="209"/>
-        <location filename="../../importDWG.py" line="281"/>
-        <source>LibreDWG error</source>
-        <translation>LibreDWG 錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="226"/>
-        <source>Error during DWG conversion. Try moving the DWG file to a directory path without spaces and non-english characters, or try saving to a lower DWG version.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="229"/>
-        <location filename="../../importDWG.py" line="296"/>
-        <source>ODA File Converter not found</source>
-        <translation>沒找到 ODA 檔案轉換</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="242"/>
-        <location filename="../../importDWG.py" line="306"/>
-        <source>QCAD error</source>
-        <translation>QCAD 錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="284"/>
-        <source>Error during DWG conversion.
-Try moving the DWG file to a directory path without spaces and non-english characters,
-or try saving to a lower DWG version.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="218"/>
-        <location filename="../../importDWG.py" line="290"/>
-        <source>Converting:</source>
-        <translation>轉換中:</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="223"/>
-        <source>Conversion successful</source>
-        <translation>轉換成功</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="302"/>
-        <location filename="../../importDWG.py" line="382"/>
-        <source>LibreDWG converter not found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="321"/>
-        <location filename="../../importDWG.py" line="396"/>
-        <source>ODA converter not found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="339"/>
-        <location filename="../../importDWG.py" line="407"/>
-        <source>QCAD converter not found</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="344"/>
-        <location filename="../../importDWG.py" line="412"/>
-        <source>No suitable external DWG converter has been found.
-Please set one manually under menu Edit -&gt; Preferences -&gt; Import/Export -&gt; DWG
-For more information see:
-https://wiki.freecad.org/Import_Export_Preferences</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../InitGui.py" line="46"/>
-        <source>Draft</source>
-        <translation>製圖</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/importDXF.py" line="143"/>
-        <source>The DXF import/export libraries needed by FreeCAD to handle
-the DXF format were not found on this system.
-Please either allow FreeCAD to download these libraries:
-  1 - Load Draft workbench
-  2 - Menu Edit &gt; Preferences &gt; Import-Export &gt; DXF &gt; Enable downloads
-Or download these libraries manually, as explained on
-https://github.com/yorikvanhavre/Draft-dxf-importer
-To enabled FreeCAD to download these libraries, answer Yes.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../DraftGui.py" line="81"/>
         <source>Subelement mode</source>
         <translation>子元素模式</translation>
@@ -7415,6 +7162,54 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../DraftGui.py" line="1036"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="527"/>
+        <location filename="../../draftguitools/gui_offset.py" line="243"/>
+        <location filename="../../draftguitools/gui_offset.py" line="260"/>
+        <location filename="../../draftguitools/gui_offset.py" line="324"/>
+        <source>Offset</source>
+        <translation>偏移複製</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1042"/>
+        <location filename="../../DraftGui.py" line="1100"/>
+        <location filename="../../draftguitools/gui_trimex.py" line="215"/>
+        <source>Distance</source>
+        <translation>距離</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1043"/>
+        <location filename="../../DraftGui.py" line="1101"/>
+        <location filename="../../draftguitools/gui_trimex.py" line="217"/>
+        <source>Offset distance</source>
+        <translation>偏移距離</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1097"/>
+        <source>Trimex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="965"/>
+        <location filename="../../DraftGui.py" line="966"/>
+        <location filename="../../DraftGui.py" line="967"/>
+        <location filename="../../DraftGui.py" line="969"/>
+        <location filename="../../DraftGui.py" line="970"/>
+        <location filename="../../DraftGui.py" line="971"/>
+        <source>Local {}</source>
+        <translation>區域 {}</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="973"/>
+        <location filename="../../DraftGui.py" line="974"/>
+        <location filename="../../DraftGui.py" line="975"/>
+        <location filename="../../DraftGui.py" line="977"/>
+        <location filename="../../DraftGui.py" line="978"/>
+        <location filename="../../DraftGui.py" line="979"/>
+        <source>Global {}</source>
+        <translation>全局 {}</translation>
+    </message>
+    <message>
         <location filename="../../DraftGui.py" line="1197"/>
         <source>Pick Object</source>
         <translation>選取物體</translation>
@@ -7508,6 +7303,211 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <location filename="../../DraftGui.py" line="1567"/>
         <source>Please enter a font file.</source>
         <translation>請輸入字型檔。</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="2058"/>
+        <source>Autogroup:</source>
+        <translation>自動群組:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="1611"/>
+        <source>Modify objects</source>
+        <translation>修改物體</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="2394"/>
+        <source>Faces</source>
+        <translation>面</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="2395"/>
+        <source>Remove</source>
+        <translation>移除</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="2396"/>
+        <source>Add</source>
+        <translation>新增</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="2397"/>
+        <source>Facebinder elements</source>
+        <translation>面連接器</translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="713"/>
+        <location filename="../../draftmake/make_sketch.py" line="127"/>
+        <location filename="../../draftmake/make_sketch.py" line="139"/>
+        <source>All Shapes must be coplanar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="721"/>
+        <source>Selected Shapes must define a plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="659"/>
+        <location filename="../../WorkingPlane.py" line="821"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="374"/>
+        <source>Top</source>
+        <translation>上視圖</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="661"/>
+        <location filename="../../WorkingPlane.py" line="832"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="386"/>
+        <source>Front</source>
+        <translation>前視圖</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="663"/>
+        <location filename="../../WorkingPlane.py" line="843"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="398"/>
+        <source>Side</source>
+        <translation>側面</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="665"/>
+        <source>Auto</source>
+        <translation>自動</translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="1198"/>
+        <location filename="../../WorkingPlane.py" line="1657"/>
+        <source>Current working plane:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="1264"/>
+        <location filename="../../WorkingPlane.py" line="1289"/>
+        <source>Selected shapes do not define a plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="539"/>
+        <source>Custom</source>
+        <translation>自訂</translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="1616"/>
+        <source>No previous working plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="1626"/>
+        <source>No next working plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="1661"/>
+        <source>Axes:</source>
+        <translation>軸:</translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="1668"/>
+        <source>Position:</source>
+        <translation>位置:</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="284"/>
+        <source>Error during DWG conversion.
+Try moving the DWG file to a directory path without spaces and non-english characters,
+or try saving to a lower DWG version.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="218"/>
+        <location filename="../../importDWG.py" line="290"/>
+        <source>Converting:</source>
+        <translation>轉換中:</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="223"/>
+        <source>Conversion successful</source>
+        <translation>轉換成功</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="302"/>
+        <location filename="../../importDWG.py" line="382"/>
+        <source>LibreDWG converter not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="321"/>
+        <location filename="../../importDWG.py" line="396"/>
+        <source>ODA converter not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="339"/>
+        <location filename="../../importDWG.py" line="407"/>
+        <source>QCAD converter not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="344"/>
+        <location filename="../../importDWG.py" line="412"/>
+        <source>No suitable external DWG converter has been found.
+Please set one manually under menu Edit -&gt; Preferences -&gt; Import/Export -&gt; DWG
+For more information see:
+https://wiki.freecad.org/Import_Export_Preferences</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../InitGui.py" line="46"/>
+        <source>Draft</source>
+        <translation>製圖</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/importDXF.py" line="143"/>
+        <source>The DXF import/export libraries needed by FreeCAD to handle
+the DXF format were not found on this system.
+Please either allow FreeCAD to download these libraries:
+  1 - Load Draft workbench
+  2 - Menu Edit &gt; Preferences &gt; Import-Export &gt; DXF &gt; Enable downloads
+Or download these libraries manually, as explained on
+https://github.com/yorikvanhavre/Draft-dxf-importer
+To enabled FreeCAD to download these libraries, answer Yes.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
+        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
+        <source>Working plane aligned to global placement of</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
+        <source>Dir</source>
+        <translation>方向</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="209"/>
+        <location filename="../../importDWG.py" line="281"/>
+        <source>LibreDWG error</source>
+        <translation>LibreDWG 錯誤</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="226"/>
+        <source>Error during DWG conversion. Try moving the DWG file to a directory path without spaces and non-english characters, or try saving to a lower DWG version.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="229"/>
+        <location filename="../../importDWG.py" line="296"/>
+        <source>ODA File Converter not found</source>
+        <translation>沒找到 ODA 檔案轉換</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="242"/>
+        <location filename="../../importDWG.py" line="306"/>
+        <source>QCAD error</source>
+        <translation>QCAD 錯誤</translation>
     </message>
     <message>
         <location filename="../../importDXF.py" line="146"/>
@@ -9591,6 +9591,11 @@ The final angle will be the base angle plus this amount.</source>
 <context>
     <name>importOCA</name>
     <message>
+        <location filename="../../importOCA.py" line="360"/>
+        <source>OCA error: couldn&apos;t determine character encoding</source>
+        <translation>OCA錯誤: 無法定義字元編碼</translation>
+    </message>
+    <message>
         <location filename="../../importOCA.py" line="445"/>
         <source>OCA: found no data to export</source>
         <translation>OCA：找不到要匯出的資料</translation>
@@ -9599,11 +9604,6 @@ The final angle will be the base angle plus this amount.</source>
         <location filename="../../importOCA.py" line="490"/>
         <source>successfully exported</source>
         <translation>成功匯出</translation>
-    </message>
-    <message>
-        <location filename="../../importOCA.py" line="360"/>
-        <source>OCA error: couldn&apos;t determine character encoding</source>
-        <translation>OCA錯誤: 無法定義字元編碼</translation>
     </message>
 </context>
 </TS>

@@ -336,6 +336,13 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <translation>顯示其他資料夾內容</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="47"/>
+        <source>An optional custom folder to be displayed on the Start page.
+By using &quot;;;&quot; to separate paths, you can add several folders here.</source>
+        <translation>要顯示在起始頁上的可選自訂資料夾.
+透過使用 &quot;;;&quot; 來分隔路徑，您可以在此處新增多個資料夾.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="55"/>
         <source>An optional custom folder to be displayed on the Start page.</source>
         <translation>要顯示在起始頁上的可選自訂資料夾.</translation>
