@@ -2266,7 +2266,9 @@ to a smoother appearance.
         <source>Press &apos;Start&apos;, then pick points on the mesh; when enough points have been set, right-click and choose &apos;Create&apos;. Repeat this process to create more splines. Close this task panel to complete the operation.
 
 This command only works with a &apos;mesh&apos; object, not a regular face or surface. To convert an object to a mesh use the tools of the Mesh Workbench.</source>
-        <translation type="unfinished"></translation>
+        <translation>按下&apos;開始&apos;，然後在網格上選取點; 設定足夠的點後，右鍵點擊並選擇&quot;建立&quot;. 重複此過程以建立更多聚合線. 關閉該任務面板即可完成操作.
+
+此指令僅適用於&apos;網格&apos;物體，不適用於常規表面或曲面. 若要將物件轉換為網格，請使用網格工作台的工具.</translation>
     </message>
     <message>
         <location filename="../../TaskCurveOnMesh.ui" line="38"/>
@@ -2276,7 +2278,7 @@ This command only works with a &apos;mesh&apos; object, not a regular face or su
     <message>
         <location filename="../../TaskCurveOnMesh.ui" line="44"/>
         <source>Snap tolerance to vertices</source>
-        <translation type="unfinished"></translation>
+        <translation>頂點的捕捉公差</translation>
     </message>
     <message>
         <location filename="../../TaskCurveOnMesh.ui" line="51"/>

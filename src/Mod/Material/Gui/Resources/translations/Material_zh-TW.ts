@@ -1111,7 +1111,7 @@ If unchecked, they will be sorted by their name.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/ModelSelect.ui" line="63"/>
         <source>DOI</source>
-        <translation type="unfinished"></translation>
+        <translation>數位物件標識(DOI)</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/Gui/ModelSelect.ui" line="87"/>

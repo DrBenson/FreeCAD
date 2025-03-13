@@ -3303,7 +3303,7 @@ It works best when choosing a point on a straight segment and not a corner verte
     <message>
         <location filename="../../draftguitools/gui_stretch.py" line="64"/>
         <source>Stretch</source>
-        <translation type="unfinished">伸展</translation>
+        <translation>拉伸</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_stretch.py" line="67"/>
@@ -3473,6 +3473,11 @@ Then you can use it to save a different camera position and objects&apos; states
         <location filename="../../Resources/ui/dialogHatch.ui" line="14"/>
         <source>Hatch</source>
         <translation>填充</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialogHatch.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
     <message>
         <location filename="../ui/dialogHatch.ui" line="20"/>
@@ -4265,11 +4270,6 @@ value by using the [ and ] keys while drawing</source>
         <source>Previous</source>
         <translation>前一個</translation>
     </message>
-    <message>
-        <location filename="../ui/dialogHatch.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
 </context>
 <context>
     <name>Gui::Dialog::DlgSettingsDraft</name>
@@ -4306,7 +4306,7 @@ value by using the [ and ] keys while drawing</source>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="170"/>
         <source>Make face</source>
-        <translation type="unfinished"></translation>
+        <translation>建立表面外觀</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="183"/>
@@ -6779,7 +6779,7 @@ Uncheck to use working plane coordinate system</source>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="539"/>
         <source>Make face</source>
-        <translation type="unfinished"></translation>
+        <translation>建立表面外觀</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="542"/>
@@ -6845,136 +6845,6 @@ Not available if the &apos;Use Part Primitives&apos; preference is enabled</sour
         <location filename="../../DraftGui.py" line="792"/>
         <source>Wipe</source>
         <translation>擦拭</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="793"/>
-        <source>Wipes the existing segments of this line and starts again from the last point</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="794"/>
-        <source>Set WP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="795"/>
-        <source>Reorients the working plane on the last segment</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="126"/>
-        <location filename="../../DraftGui.py" line="796"/>
-        <source>Select edge</source>
-        <translation>選擇邊緣</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="797"/>
-        <source>Selects an existing edge to be measured by this dimension</source>
-        <translation>選擇一條現有的邊按此尺寸測量</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="798"/>
-        <source>Sides</source>
-        <translation>側面</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="799"/>
-        <source>Number of sides</source>
-        <translation>邊數</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="76"/>
-        <location filename="../../DraftGui.py" line="801"/>
-        <location filename="../../draftguitools/gui_move.py" line="207"/>
-        <location filename="../../draftguitools/gui_scale.py" line="203"/>
-        <location filename="../../draftguitools/gui_scale.py" line="227"/>
-        <location filename="../../draftguitools/gui_scale.py" line="356"/>
-        <location filename="../../draftguitools/gui_rotate.py" line="283"/>
-        <source>Copy</source>
-        <translation>複製</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="581"/>
-        <source>If checked, objects will be copied instead of moved</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="803"/>
-        <source>Modify subelements</source>
-        <translation>修改子元素</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="804"/>
-        <source>If checked, subelements will be modified instead of entire objects</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="813"/>
-        <source>Create text</source>
-        <translation>建立文字</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="814"/>
-        <source>Press this button to create the text object, or finish your text with two blank lines</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="837"/>
-        <source>Change default style for new objects</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="838"/>
-        <source>Toggle construction mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="839"/>
-        <location filename="../../DraftGui.py" line="2050"/>
-        <location filename="../../DraftGui.py" line="2065"/>
-        <source>Autogroup off</source>
-        <translation>關閉自動群組</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="950"/>
-        <source>Line</source>
-        <translation>線</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="958"/>
-        <source>DWire</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="976"/>
-        <source>Circle</source>
-        <translation>圓</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="981"/>
-        <source>Arc</source>
-        <translation>弧</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="986"/>
-        <location filename="../../draftguitools/gui_rotate.py" line="286"/>
-        <source>Rotate</source>
-        <translation>旋轉</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="990"/>
-        <source>Point</source>
-        <translation>點</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1018"/>
-        <source>Label</source>
-        <translation>標籤</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="848"/>
-        <source>Label type</source>
-        <translation>標籤樣式</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="81"/>
@@ -7108,106 +6978,24 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation>復原(&amp;U) (CTRL+Z)</translation>
     </message>
     <message>
+        <location filename="../../DraftGui.py" line="793"/>
+        <source>Wipes the existing segments of this line and starts again from the last point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="794"/>
+        <source>Set WP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="795"/>
+        <source>Reorients the working plane on the last segment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../DraftGui.py" line="802"/>
         <source>If checked, objects will be copied instead of moved. Preferences -&gt; Draft -&gt; Global copy mode to keep this mode in next commands</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="805"/>
-        <source>Text string to draw</source>
-        <translation>要繪製之文字字串</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="806"/>
-        <source>String</source>
-        <translation>字串</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="807"/>
-        <source>Height of text</source>
-        <translation>字高</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="808"/>
-        <source>Height</source>
-        <translation>高度</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="809"/>
-        <source>Intercharacter spacing</source>
-        <translation>字元間距</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="810"/>
-        <source>Tracking</source>
-        <translation>追蹤</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="811"/>
-        <source>Full path to font file:</source>
-        <translation>字型檔完整路徑：</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="812"/>
-        <source>Open a FileChooser for font file</source>
-        <translation>選取字型檔</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="836"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="272"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="327"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="530"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="541"/>
-        <source>Current working plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1036"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="527"/>
-        <location filename="../../draftguitools/gui_offset.py" line="243"/>
-        <location filename="../../draftguitools/gui_offset.py" line="260"/>
-        <location filename="../../draftguitools/gui_offset.py" line="324"/>
-        <source>Offset</source>
-        <translation>偏移複製</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1042"/>
-        <location filename="../../DraftGui.py" line="1100"/>
-        <location filename="../../draftguitools/gui_trimex.py" line="215"/>
-        <source>Distance</source>
-        <translation>距離</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1043"/>
-        <location filename="../../DraftGui.py" line="1101"/>
-        <location filename="../../draftguitools/gui_trimex.py" line="217"/>
-        <source>Offset distance</source>
-        <translation>偏移距離</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1097"/>
-        <source>Trimex</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="965"/>
-        <location filename="../../DraftGui.py" line="966"/>
-        <location filename="../../DraftGui.py" line="967"/>
-        <location filename="../../DraftGui.py" line="969"/>
-        <location filename="../../DraftGui.py" line="970"/>
-        <location filename="../../DraftGui.py" line="971"/>
-        <source>Local {}</source>
-        <translation>區域 {}</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="973"/>
-        <location filename="../../DraftGui.py" line="974"/>
-        <location filename="../../DraftGui.py" line="975"/>
-        <location filename="../../DraftGui.py" line="977"/>
-        <location filename="../../DraftGui.py" line="978"/>
-        <location filename="../../DraftGui.py" line="979"/>
-        <source>Global {}</source>
-        <translation>全局 {}</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="1197"/>
@@ -7305,6 +7093,218 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation>請輸入字型檔。</translation>
     </message>
     <message>
+        <location filename="../../DraftGui.py" line="126"/>
+        <location filename="../../DraftGui.py" line="796"/>
+        <source>Select edge</source>
+        <translation>選擇邊緣</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="797"/>
+        <source>Selects an existing edge to be measured by this dimension</source>
+        <translation>選擇一條現有的邊按此尺寸測量</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="798"/>
+        <source>Sides</source>
+        <translation>側面</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="799"/>
+        <source>Number of sides</source>
+        <translation>邊數</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="76"/>
+        <location filename="../../DraftGui.py" line="801"/>
+        <location filename="../../draftguitools/gui_move.py" line="207"/>
+        <location filename="../../draftguitools/gui_scale.py" line="203"/>
+        <location filename="../../draftguitools/gui_scale.py" line="227"/>
+        <location filename="../../draftguitools/gui_scale.py" line="356"/>
+        <location filename="../../draftguitools/gui_rotate.py" line="283"/>
+        <source>Copy</source>
+        <translation>複製</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="581"/>
+        <source>If checked, objects will be copied instead of moved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="803"/>
+        <source>Modify subelements</source>
+        <translation>修改子元素</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="804"/>
+        <source>If checked, subelements will be modified instead of entire objects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="805"/>
+        <source>Text string to draw</source>
+        <translation>要繪製之文字字串</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="806"/>
+        <source>String</source>
+        <translation>字串</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="807"/>
+        <source>Height of text</source>
+        <translation>字高</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="808"/>
+        <source>Height</source>
+        <translation>高度</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="809"/>
+        <source>Intercharacter spacing</source>
+        <translation>字元間距</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="810"/>
+        <source>Tracking</source>
+        <translation>追蹤</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="811"/>
+        <source>Full path to font file:</source>
+        <translation>字型檔完整路徑：</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="812"/>
+        <source>Open a FileChooser for font file</source>
+        <translation>選取字型檔</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="813"/>
+        <source>Create text</source>
+        <translation>建立文字</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="814"/>
+        <source>Press this button to create the text object, or finish your text with two blank lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="836"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="272"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="327"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="530"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="541"/>
+        <source>Current working plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="837"/>
+        <source>Change default style for new objects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="838"/>
+        <source>Toggle construction mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="839"/>
+        <location filename="../../DraftGui.py" line="2050"/>
+        <location filename="../../DraftGui.py" line="2065"/>
+        <source>Autogroup off</source>
+        <translation>關閉自動群組</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="950"/>
+        <source>Line</source>
+        <translation>線</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="958"/>
+        <source>DWire</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="976"/>
+        <source>Circle</source>
+        <translation>圓</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="981"/>
+        <source>Arc</source>
+        <translation>弧</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="986"/>
+        <location filename="../../draftguitools/gui_rotate.py" line="286"/>
+        <source>Rotate</source>
+        <translation>旋轉</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="990"/>
+        <source>Point</source>
+        <translation>點</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1018"/>
+        <source>Label</source>
+        <translation>標籤</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="848"/>
+        <source>Label type</source>
+        <translation>標籤樣式</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1036"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="527"/>
+        <location filename="../../draftguitools/gui_offset.py" line="243"/>
+        <location filename="../../draftguitools/gui_offset.py" line="260"/>
+        <location filename="../../draftguitools/gui_offset.py" line="324"/>
+        <source>Offset</source>
+        <translation>偏移複製</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1042"/>
+        <location filename="../../DraftGui.py" line="1100"/>
+        <location filename="../../draftguitools/gui_trimex.py" line="215"/>
+        <source>Distance</source>
+        <translation>距離</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1043"/>
+        <location filename="../../DraftGui.py" line="1101"/>
+        <location filename="../../draftguitools/gui_trimex.py" line="217"/>
+        <source>Offset distance</source>
+        <translation>偏移距離</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1097"/>
+        <source>Trimex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="965"/>
+        <location filename="../../DraftGui.py" line="966"/>
+        <location filename="../../DraftGui.py" line="967"/>
+        <location filename="../../DraftGui.py" line="969"/>
+        <location filename="../../DraftGui.py" line="970"/>
+        <location filename="../../DraftGui.py" line="971"/>
+        <source>Local {}</source>
+        <translation>區域 {}</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="973"/>
+        <location filename="../../DraftGui.py" line="974"/>
+        <location filename="../../DraftGui.py" line="975"/>
+        <location filename="../../DraftGui.py" line="977"/>
+        <location filename="../../DraftGui.py" line="978"/>
+        <location filename="../../DraftGui.py" line="979"/>
+        <source>Global {}</source>
+        <translation>全局 {}</translation>
+    </message>
+    <message>
         <location filename="../../DraftGui.py" line="2058"/>
         <source>Autogroup:</source>
         <translation>自動群組:</translation>
@@ -7385,6 +7385,21 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
+        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
+        <source>Working plane aligned to global placement of</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
+        <source>Dir</source>
+        <translation>方向</translation>
+    </message>
+    <message>
         <location filename="../../draftguitools/gui_selectplane.py" line="539"/>
         <source>Custom</source>
         <translation>自訂</translation>
@@ -7423,9 +7438,32 @@ or try saving to a lower DWG version.</source>
         <translation>轉換中:</translation>
     </message>
     <message>
+        <location filename="../../importDWG.py" line="209"/>
+        <location filename="../../importDWG.py" line="281"/>
+        <source>LibreDWG error</source>
+        <translation>LibreDWG 錯誤</translation>
+    </message>
+    <message>
         <location filename="../../importDWG.py" line="223"/>
         <source>Conversion successful</source>
         <translation>轉換成功</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="226"/>
+        <source>Error during DWG conversion. Try moving the DWG file to a directory path without spaces and non-english characters, or try saving to a lower DWG version.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="229"/>
+        <location filename="../../importDWG.py" line="296"/>
+        <source>ODA File Converter not found</source>
+        <translation>沒找到 ODA 檔案轉換</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="242"/>
+        <location filename="../../importDWG.py" line="306"/>
+        <source>QCAD error</source>
+        <translation>QCAD 錯誤</translation>
     </message>
     <message>
         <location filename="../../importDWG.py" line="302"/>
@@ -7470,44 +7508,6 @@ Or download these libraries manually, as explained on
 https://github.com/yorikvanhavre/Draft-dxf-importer
 To enabled FreeCAD to download these libraries, answer Yes.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
-        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
-        <source>Working plane aligned to global placement of</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
-        <source>Dir</source>
-        <translation>方向</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="209"/>
-        <location filename="../../importDWG.py" line="281"/>
-        <source>LibreDWG error</source>
-        <translation>LibreDWG 錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="226"/>
-        <source>Error during DWG conversion. Try moving the DWG file to a directory path without spaces and non-english characters, or try saving to a lower DWG version.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="229"/>
-        <location filename="../../importDWG.py" line="296"/>
-        <source>ODA File Converter not found</source>
-        <translation>沒找到 ODA 檔案轉換</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="242"/>
-        <location filename="../../importDWG.py" line="306"/>
-        <source>QCAD error</source>
-        <translation>QCAD 錯誤</translation>
     </message>
     <message>
         <location filename="../../importDXF.py" line="146"/>
@@ -9591,11 +9591,6 @@ The final angle will be the base angle plus this amount.</source>
 <context>
     <name>importOCA</name>
     <message>
-        <location filename="../../importOCA.py" line="360"/>
-        <source>OCA error: couldn&apos;t determine character encoding</source>
-        <translation>OCA錯誤: 無法定義字元編碼</translation>
-    </message>
-    <message>
         <location filename="../../importOCA.py" line="445"/>
         <source>OCA: found no data to export</source>
         <translation>OCA：找不到要匯出的資料</translation>
@@ -9604,6 +9599,11 @@ The final angle will be the base angle plus this amount.</source>
         <location filename="../../importOCA.py" line="490"/>
         <source>successfully exported</source>
         <translation>成功匯出</translation>
+    </message>
+    <message>
+        <location filename="../../importOCA.py" line="360"/>
+        <source>OCA error: couldn&apos;t determine character encoding</source>
+        <translation>OCA錯誤: 無法定義字元編碼</translation>
     </message>
 </context>
 </TS>
