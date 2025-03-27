@@ -2351,7 +2351,7 @@ A step over of 100% results in no overlap between two different cycles.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpThreadMillingEdit.ui" line="144"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/SetupGlobal.ui" line="24"/>
         <source>Operation</source>
-        <translation type="unfinished"></translation>
+        <translation>操作</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpThreadMillingEdit.ui" line="150"/>
@@ -2361,7 +2361,7 @@ A step over of 100% results in no overlap between two different cycles.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpThreadMillingEdit.ui" line="177"/>
         <source>Lead In/Out</source>
-        <translation type="unfinished"></translation>
+        <translation>導入/導出</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpVcarveEdit.ui" line="66"/>
@@ -2636,22 +2636,22 @@ Default: &quot;5mm&quot;</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolEditor.ui" line="196"/>
         <source>D = </source>
-        <translation type="unfinished"></translation>
+        <translation>D = </translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolEditor.ui" line="213"/>
         <source>d =</source>
-        <translation type="unfinished"></translation>
+        <translation>d =</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolEditor.ui" line="230"/>
         <source>H =</source>
-        <translation type="unfinished"></translation>
+        <translation>H =</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolEditor.ui" line="267"/>
         <source>S = </source>
-        <translation type="unfinished"></translation>
+        <translation>S = </translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolEditor.ui" line="308"/>
@@ -3449,7 +3449,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DragKnifeEdit.ui" line="44"/>
         <source>Distance the point trails behind the spindle</source>
-        <translation type="unfinished">點的軌跡距離在紡錘後方</translation>
+        <translation>點的軌跡距離在紡錘後方</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DragKnifeEdit.ui" line="63"/>
