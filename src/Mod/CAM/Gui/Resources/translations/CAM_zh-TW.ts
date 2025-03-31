@@ -90,7 +90,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressUpLeadInOutEdit.ui" line="185"/>
         <source>Rapid Plunge</source>
-        <translation type="unfinished"></translation>
+        <translation>快速鑽進</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressUpLeadInOutEdit.ui" line="192"/>
@@ -110,7 +110,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressUpLeadInOutEdit.ui" line="205"/>
         <source>Keep Tool Down</source>
-        <translation type="unfinished"></translation>
+        <translation>保持工具向下</translation>
     </message>
 </context>
 <context>
@@ -126,7 +126,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/InitGui.py" line="141"/>
         <source>Engraving Operations</source>
-        <translation type="unfinished"></translation>
+        <translation>雕刻作業</translation>
     </message>
 </context>
 <context>
@@ -135,7 +135,7 @@
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/PathCommands.py" line="151"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/PathCommands.py" line="155"/>
         <source>Toggle the Active State of the Operation</source>
-        <translation type="unfinished"></translation>
+        <translation>切換操作的啟用狀態</translation>
     </message>
 </context>
 <context>
@@ -144,7 +144,7 @@
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/PathCommands.py" line="194"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/PathCommands.py" line="197"/>
         <source>Copy the operation in the job</source>
-        <translation type="unfinished"></translation>
+        <translation>複製作業中的操作</translation>
     </message>
 </context>
 <context>
@@ -152,22 +152,22 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/PathCommands.py" line="59"/>
         <source>Finish Selecting Loop</source>
-        <translation type="unfinished"></translation>
+        <translation>完成選擇循環</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/PathCommands.py" line="63"/>
         <source>Complete the selection of edges that form a loop</source>
-        <translation type="unfinished"></translation>
+        <translation>完成形成循環的邊的選擇</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/PathCommands.py" line="120"/>
         <source>Feature Completion</source>
-        <translation type="unfinished"></translation>
+        <translation>功能完成</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/PathCommands.py" line="121"/>
         <source>Closed loop detection failed.</source>
-        <translation type="unfinished"></translation>
+        <translation>循環封閉檢測失敗.</translation>
     </message>
 </context>
 <context>
@@ -190,7 +190,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Command.cpp" line="48"/>
         <source>Creates a feature area from selected objects</source>
-        <translation type="unfinished"></translation>
+        <translation>從選定的物件建立特徵區域</translation>
     </message>
 </context>
 <context>
@@ -208,12 +208,12 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Command.cpp" line="129"/>
         <source>Area workplane</source>
-        <translation type="unfinished"></translation>
+        <translation>區域工作平面</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Command.cpp" line="130"/>
         <source>Select a workplane for a FeatureArea</source>
-        <translation type="unfinished"></translation>
+        <translation>為特徵區域選擇工作平面</translation>
     </message>
 </context>
 <context>
@@ -236,7 +236,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Command.cpp" line="220"/>
         <source>Creates a compound from selected toolpaths</source>
-        <translation type="unfinished"></translation>
+        <translation>從選定的刀具路徑建立合成</translation>
     </message>
 </context>
 <context>
@@ -254,12 +254,12 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Command.cpp" line="271"/>
         <source>From Shape</source>
-        <translation type="unfinished"></translation>
+        <translation>從形狀</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Command.cpp" line="272"/>
         <source>Creates a toolpath from a selected shape</source>
-        <translation type="unfinished"></translation>
+        <translation>從選定的形狀建立刀具路徑</translation>
     </message>
 </context>
 <context>
