@@ -2357,7 +2357,7 @@ This command only works with a &apos;mesh&apos; object, not a regular face or su
     <message>
         <location filename="../../Tessellation.ui" line="48"/>
         <source>Maximal linear deflection of a mesh section from the surface of the object</source>
-        <translation type="unfinished"></translation>
+        <translation>網格部分相對於物體表面的最大線性偏差</translation>
     </message>
     <message>
         <location filename="../../Tessellation.ui" line="67"/>
@@ -2367,13 +2367,14 @@ This command only works with a &apos;mesh&apos; object, not a regular face or su
     <message>
         <location filename="../../Tessellation.ui" line="74"/>
         <source>Maximal angular deflection of a mesh section to the next section</source>
-        <translation type="unfinished"></translation>
+        <translation>網格部分到下一部分的最大角度偏差</translation>
     </message>
     <message>
         <location filename="../../Tessellation.ui" line="98"/>
         <source>The maximal linear deviation of a mesh segment will be the specified
 Surface deviation multiplied by the length of the current mesh segment (edge)</source>
-        <translation type="unfinished"></translation>
+        <translation>網格段的最大線性偏差將被指定
+表面偏差乘以目前網格段(邊)的長度</translation>
     </message>
     <message>
         <location filename="../../Tessellation.ui" line="102"/>
@@ -2383,7 +2384,7 @@ Surface deviation multiplied by the length of the current mesh segment (edge)</s
     <message>
         <location filename="../../Tessellation.ui" line="109"/>
         <source>Mesh will get face colors of the object</source>
-        <translation type="unfinished"></translation>
+        <translation>網格 將取得物體的面顏色</translation>
     </message>
     <message>
         <location filename="../../Tessellation.ui" line="112"/>
@@ -2395,7 +2396,8 @@ Surface deviation multiplied by the length of the current mesh segment (edge)</s
         <source>Mesh segments will be grouped according to the color of the object faces.
 These groups will be exported for mesh output formats supporting
 this feature (e.g. the format OBJ).</source>
-        <translation type="unfinished"></translation>
+        <translation>網格段將根據物件面的顏色進行分組.
+這些分組將匯出為支援此功能的網格輸出格式(例如 OBJ 格式).</translation>
     </message>
     <message>
         <location filename="../../Tessellation.ui" line="124"/>
@@ -2421,7 +2423,8 @@ this feature (e.g. the format OBJ).</source>
         <location filename="../../Tessellation.ui" line="162"/>
         <source>If this number is smaller the mesh becomes finer.
 The smallest value is 0.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果該數字較小，則網格會變得更細.
+最小值為0.</translation>
     </message>
     <message>
         <location filename="../../Tessellation.ui" line="183"/>
@@ -2482,7 +2485,8 @@ The smallest value is 0.</source>
         <location filename="../../Tessellation.ui" line="279"/>
         <source>If this parameter is smaller, the mesh becomes finer.
 A value in the range of 0.1-1.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果此參數越小，網格越細.
+範圍內的值為0.1-1.</translation>
     </message>
     <message>
         <location filename="../../Tessellation.ui" line="302"/>
@@ -2494,7 +2498,8 @@ A value in the range of 0.1-1.</source>
         <location filename="../../Tessellation.ui" line="345"/>
         <source>If this parameter is larger, the mesh becomes finer.
 A value in the range of 0.2-10.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果此參數越大，網格越細.
+範圍內的值為0.2-10.</translation>
     </message>
     <message>
         <location filename="../../Tessellation.ui" line="335"/>
@@ -2504,7 +2509,7 @@ A value in the range of 0.2-10.</source>
     <message>
         <location filename="../../Tessellation.ui" line="370"/>
         <source>Whether optimization of surface shape will be done</source>
-        <translation type="unfinished"></translation>
+        <translation>是否會進行表面形狀的最佳化</translation>
     </message>
     <message>
         <location filename="../../Tessellation.ui" line="373"/>
@@ -2514,7 +2519,7 @@ A value in the range of 0.2-10.</source>
     <message>
         <location filename="../../Tessellation.ui" line="383"/>
         <source>Whether second order elements will be generated</source>
-        <translation type="unfinished"></translation>
+        <translation>是否產生二階元素</translation>
     </message>
     <message>
         <location filename="../../Tessellation.ui" line="386"/>
@@ -2524,7 +2529,7 @@ A value in the range of 0.2-10.</source>
     <message>
         <location filename="../../Tessellation.ui" line="393"/>
         <source>Whether meshes will be arranged preferably using quadrilateral faces</source>
-        <translation type="unfinished"></translation>
+        <translation>是否優先使用四邊形面來排列網格</translation>
     </message>
     <message>
         <location filename="../../Tessellation.ui" line="396"/>
@@ -2551,13 +2556,15 @@ A value in the range of 0.2-10.</source>
         <location filename="../../Tessellation.cpp" line="248"/>
         <source>You have selected a body without tip.
 Either set the tip of the body or select a different shape, please.</source>
-        <translation type="unfinished"></translation>
+        <translation>您選擇了不帶尖端的實體.
+請設定實體的特徵或選擇不同的形狀.</translation>
     </message>
     <message>
         <location filename="../../Tessellation.cpp" line="252"/>
         <source>You have selected a shape without faces.
 Select a different shape, please.</source>
-        <translation type="unfinished"></translation>
+        <translation>您選擇了一個沒有面的形狀.
+請選擇不同的形狀.</translation>
     </message>
     <message>
         <location filename="../../Tessellation.cpp" line="256"/>

@@ -3221,7 +3221,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/TaskDlgPathCompound.cpp" line="49"/>
         <source>Compound paths</source>
-        <translation type="unfinished"></translation>
+        <translation>複合路徑</translation>
     </message>
 </context>
 <context>
@@ -3923,7 +3923,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/InitGui.py" line="185"/>
         <source>Project Setup</source>
-        <translation type="unfinished">專案設定</translation>
+        <translation>專案設定</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/InitGui.py" line="186"/>
