@@ -2438,6 +2438,54 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <source>row Heights</source>
         <translation>行高</translation>
     </message>
+    <message>
+        <source>Rotation Vector</source>
+        <translation>旋轉向量</translation>
+    </message>
+    <message>
+        <source>HLR Parameters</source>
+        <translation>HLR 參數</translation>
+    </message>
+    <message>
+        <source>Coarse View</source>
+        <translation>粗糙檢視</translation>
+    </message>
+    <message>
+        <source>Smooth Visible</source>
+        <translation>光滑可見</translation>
+    </message>
+    <message>
+        <source>Seam Visible</source>
+        <translation>接縫可見</translation>
+    </message>
+    <message>
+        <source>Iso Visible</source>
+        <translation>Iso 可見</translation>
+    </message>
+    <message>
+        <source>Hard Hidden</source>
+        <translation>硬隱藏</translation>
+    </message>
+    <message>
+        <source>Smooth Hidden</source>
+        <translation>平滑隱藏</translation>
+    </message>
+    <message>
+        <source>Seam Hidden</source>
+        <translation>接縫隱藏</translation>
+    </message>
+    <message>
+        <source>Iso Hidden</source>
+        <translation>Iso 隱藏</translation>
+    </message>
+    <message>
+        <source>Iso Count</source>
+        <translation>Iso 計數</translation>
+    </message>
+    <message>
+        <source>Scrub Count</source>
+        <translation>磨砂計數</translation>
+    </message>
 </context>
 <context>
     <name>App::PropertyString</name>
