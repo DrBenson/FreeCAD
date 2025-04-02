@@ -49,7 +49,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressUpLeadInOutEdit.ui" line="68"/>
         <source>length or radius of the Lead-in</source>
-        <translation type="unfinished"></translation>
+        <translation>引入的長度或半徑</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressUpLeadInOutEdit.ui" line="81"/>
@@ -60,7 +60,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressUpLeadInOutEdit.ui" line="88"/>
         <source>extends the leadin distance</source>
-        <translation type="unfinished"></translation>
+        <translation>延長引入距離</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressUpLeadInOutEdit.ui" line="102"/>
@@ -75,17 +75,17 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressUpLeadInOutEdit.ui" line="142"/>
         <source>length or radius of the Lead-out</source>
-        <translation type="unfinished"></translation>
+        <translation>引出的長度或半徑</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressUpLeadInOutEdit.ui" line="162"/>
         <source>Extends the leadout distance</source>
-        <translation type="unfinished"></translation>
+        <translation>延伸引出距離</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressUpLeadInOutEdit.ui" line="182"/>
         <source>Plunge at rapid speed</source>
-        <translation type="unfinished"></translation>
+        <translation>快速鑽進</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressUpLeadInOutEdit.ui" line="185"/>
@@ -95,7 +95,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressUpLeadInOutEdit.ui" line="192"/>
         <source>Apply Lead In/Out on all layers</source>
-        <translation type="unfinished"></translation>
+        <translation>在所有層上套用引入/引出</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressUpLeadInOutEdit.ui" line="195"/>
@@ -105,7 +105,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressUpLeadInOutEdit.ui" line="202"/>
         <source>Keep the tool down in the path</source>
-        <translation type="unfinished"></translation>
+        <translation>將工具保持在路徑下方</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressUpLeadInOutEdit.ui" line="205"/>
@@ -267,27 +267,27 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Command.cpp" line="97"/>
         <source>Create Path Area View</source>
-        <translation type="unfinished"></translation>
+        <translation>建立路徑區域檢視</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Command.cpp" line="106"/>
         <source>Create Path Area</source>
-        <translation type="unfinished"></translation>
+        <translation>建立路徑區域</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Command.cpp" line="194"/>
         <source>Select Workplane for Path Area</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇路徑區域的工作平面</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Command.cpp" line="245"/>
         <source>Create Path Compound</source>
-        <translation type="unfinished"></translation>
+        <translation>建立路徑複合</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Command.cpp" line="315"/>
         <source>Create Path Shape</source>
-        <translation type="unfinished"></translation>
+        <translation>建立路徑形狀</translation>
     </message>
 </context>
 <context>
@@ -295,7 +295,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobCreate.ui" line="14"/>
         <source>Create Job</source>
-        <translation type="unfinished"></translation>
+        <translation>建立工作</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobCreate.ui" line="23"/>
@@ -305,7 +305,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobCreate.ui" line="32"/>
         <source>Select a template to be used for the job. In case there are no templates you can create one through the popup menu of an existing job. Name the file job_*.json and place it in the macro or the path directory (see preferences) in order to be selectable from this list.</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇要用於作業的範本. 如果沒有模板，您可以透過現有作業的彈出式功能表建立一個模板. 將檔案命名為 job_*.json 並將其放置在巨集或路徑目錄中(請參閱偏好設定)，以便從此清單中進行選擇.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobCreate.ui" line="42"/>
@@ -335,37 +335,37 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="14"/>
         <source>Job Template Export</source>
-        <translation type="unfinished"></translation>
+        <translation>作業模板匯出</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="20"/>
         <source>If enabled, include all post processing settings in the template.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果啟用，則在模板中包含所有後處理設定.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="20"/>
         <source>If enabled include all post processing settings in the template.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果啟用，則在模板中包含所有後處理設定.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="23"/>
         <source>Post Processing</source>
-        <translation type="unfinished"></translation>
+        <translation>後處理</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="38"/>
         <source>Hint about the current post processing configuration.</source>
-        <translation type="unfinished"></translation>
+        <translation>有關目前後處理設定的提示.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="48"/>
         <source>If enabled, tool controller definitions are stored in the template.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果啟用，工具控制器定義將儲存在模板中.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="48"/>
         <source>If enabled tool controller definitions are stored in the template.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果啟用，工具控制器定義將儲存在模板中.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="51"/>
@@ -375,61 +375,65 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="60"/>
         <source>Check all tool controllers which should be included in the template.</source>
-        <translation type="unfinished"></translation>
+        <translation>檢查模板中應包含的所有工具控制器.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="70"/>
         <source>Enable to include values of the SetupSheet in the template.
 
 Any values of the SetupSheet that are changed from their default are preselected. If this field not selected the current SetupSheet was not modified.</source>
-        <translation type="unfinished"></translation>
+        <translation>啟用以在模板中包含 設定表 的值.
+
+任何與預設值不同的 設定表 值都會預先選取. 如果未選擇此欄位，則不會修改目前的 設定表.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="75"/>
         <source>Setup Sheet</source>
-        <translation type="unfinished"></translation>
+        <translation>設定表</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="84"/>
         <source>Enable to include the default heights for operations in the template.</source>
-        <translation type="unfinished"></translation>
+        <translation>允許在模板中包含操作的預設高度.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="87"/>
         <source>Operation Heights</source>
-        <translation type="unfinished"></translation>
+        <translation>操作高度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="97"/>
         <source>Operation Depths</source>
-        <translation type="unfinished"></translation>
+        <translation>操作深度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="107"/>
         <source>Enable to include the default rapid tool speeds in the template.</source>
-        <translation type="unfinished"></translation>
+        <translation>啟用以在模板中包含預設的快速工具速度.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="110"/>
         <source>Tool Rapid Speeds</source>
-        <translation type="unfinished"></translation>
+        <translation>工具快速速度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="120"/>
         <source>Enable to include the default coolant mode in the template.</source>
-        <translation type="unfinished"></translation>
+        <translation>啟用以在模板中包含預設冷卻液模式.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="123"/>
         <source>Coolant Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>冷卻液模式</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="133"/>
         <source>Enable all operations for which the configuration values should be exported.
 
 Note that only operations which currently have configuration values set are listed.</source>
-        <translation type="unfinished"></translation>
+        <translation>啟用應該匯出參數設定值的所有操作.
+
+請注意，僅列出目前已設定的參數設定值操作.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="145"/>
@@ -438,7 +442,11 @@ Note that only operations which currently have configuration values set are list
 This option is most useful if stock is a box or cylinder, or if the machine has a standard placement for machining.
 
 Note that this option is disabled if a stock object from an existing solid is used in the job - they cannot be stored in a template.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果啟用，庫存的建立將包含在模板中. 如果模板不包含庫存定義，則將使用預設的庫存建立演算法(從基礎物件的邊界框建立).
+
+如果庫存是立方體或圓柱體，或者機器具有標準的加工位置，則此選項最有用.
+
+請注意，如果作業中使用了現有實體中的庫存物體，則此選項將被停用 - 它們無法儲存在範本中.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="145"/>
@@ -447,12 +455,16 @@ Note that this option is disabled if a stock object from an existing solid is us
 This option is most useful if stock is a box or cylinder, or if the machine has a standard placement for machining.
 
 Note that this option is disabled if a stock object from an existing solid is used in the job - they cannot be stored in a template.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果啟用，庫存的建立將包含在模板中。如果模板不包含庫存定義，則將使用預設的庫存建立演算法(從基礎物件的邊界框建立).
+
+如果庫存是立方體或圓柱體，或者機器具有標準的加工位置，則此選項最有用.
+
+請注意，如果作業中使用了現有實體中的庫存物體，則此選項將被停用 - 它們無法儲存在範本中.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="152"/>
         <source>Stock</source>
-        <translation type="unfinished"></translation>
+        <translation>庫存</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="161"/>
@@ -461,7 +473,11 @@ Note that this option is disabled if a stock object from an existing solid is us
 For Box and Cylinder stocks this means the actual size of the stock solid being created.
 
 For stock from the Base object&apos;s bounding box it means the extra material in all directions. A stock object created from such a template will get its basic size from the new job&apos;s Base object and apply the stored extra settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果啟用，庫存物件的目前尺寸設定將包含在模板中.
+
+對於立方體和圓柱體庫存，這意味著所建立的庫存實體的實際尺寸.
+
+對於來自基礎物體邊界框的庫存，這意味著所有方向上的額外材料. 從此類模板建立的庫存物件將從新作業的基礎物件取得其基本尺寸並套用儲存的額外設定.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="161"/>
@@ -470,7 +486,11 @@ For stock from the Base object&apos;s bounding box it means the extra material i
 For Box and Cylinder stocks this means the actual size of the stock solid being created.
 
 For stock from the Base object&apos;s bounding box it means the extra material in all directions. A stock object created from such a template will get its basic size from the new job&apos;s Base object and apply the stored extra settings.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果啟用，庫存物件的目前尺寸設定將包含在模板中.
+
+對於立方體和圓柱體庫存，這意味著所建立的庫存實體的實際尺寸.
+
+對於來自基礎物體邊界框的庫存，這意味著所有方向上的額外材料. 從此類模板建立的庫存物件將從新作業的基礎物體取得其基本尺寸並套用儲存的額外設定.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="168"/>
@@ -480,17 +500,17 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="184"/>
         <source>Hint about the current stock extent setting.</source>
-        <translation type="unfinished"></translation>
+        <translation>關於目前庫存範圍設定的提示.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="191"/>
         <source>If enabled, the current placement of the stock solid is stored in the template.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果啟用，庫存實體的目前位置將儲存在模板中.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="191"/>
         <source>If enabled the current placement of the stock solid is stored in the template.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果啟用，庫存實體的目前位置將儲存在模板中.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="194"/>
@@ -500,7 +520,7 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="210"/>
         <source>Hint about the current stock placement.</source>
-        <translation type="unfinished"></translation>
+        <translation>關於目前庫存位置的提示.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgJobTemplateExport.ui" line="248"/>
@@ -510,52 +530,52 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgSelectPostProcessor.ui" line="14"/>
         <source>Post Processor</source>
-        <translation type="unfinished"></translation>
+        <translation>後處理</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgSelectPostProcessor.ui" line="42"/>
         <source>Select one of the post processors. FreeCAD comes with several post processors pre-installed, please make sure at least one of them is enabled in your preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇後處理器之一.  FreeCAD 預先安裝了多個後處理器，請確保您的偏好設定中至少啟用了其中一個.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgToolControllerEdit.ui" line="14"/>
         <source>Tool Controller Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>工具控制器編輯</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgToolControllerEdit.ui" line="29"/>
         <source>Controller</source>
-        <translation type="unfinished"></translation>
+        <translation>控制器</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgToolControllerEdit.ui" line="35"/>
         <source>Controller Name /  Tool Number</source>
-        <translation type="unfinished"></translation>
+        <translation>控制器名稱/工具編號</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgToolControllerEdit.ui" line="67"/>
         <source>Horiz. Feed</source>
-        <translation type="unfinished"></translation>
+        <translation>水平供料</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgToolControllerEdit.ui" line="96"/>
         <source>Vert. Feed</source>
-        <translation type="unfinished"></translation>
+        <translation>垂直供料</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgToolControllerEdit.ui" line="125"/>
         <source>Horiz Rapid</source>
-        <translation type="unfinished"></translation>
+        <translation>水平速度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgToolControllerEdit.ui" line="154"/>
         <source>Vert Rapid</source>
-        <translation type="unfinished"></translation>
+        <translation>垂直速度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgToolControllerEdit.ui" line="186"/>
         <source>Spindle</source>
-        <translation type="unfinished"></translation>
+        <translation>主軸</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgToolControllerEdit.ui" line="196"/>
@@ -575,7 +595,7 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgToolControllerEdit.ui" line="293"/>
         <source>Any modifications only affect this ToolController!</source>
-        <translation type="unfinished"></translation>
+        <translation>任何修改僅影響該工具控制器!</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgToolEdit.ui" line="14"/>
@@ -595,12 +615,12 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PropertyCreate.ui" line="27"/>
         <source>Name of property. Can only contain letters, numbers, and underscores. MixedCase names will display with spaces &quot;Mixed Case&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation>屬性名稱. 只能包含字母、數字和底線. 混合大小寫名稱將顯示帶有空格 &quot;混合大小寫&quot;</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PropertyCreate.ui" line="34"/>
         <source>The category group the property belongs to.</source>
-        <translation type="unfinished"></translation>
+        <translation>屬性所屬類別組.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PropertyCreate.ui" line="44"/>
@@ -610,7 +630,7 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PropertyCreate.ui" line="51"/>
         <source>The type of the property value.</source>
-        <translation type="unfinished"></translation>
+        <translation>屬性值類型.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PropertyCreate.ui" line="58"/>
@@ -620,57 +640,57 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PropertyCreate.ui" line="65"/>
         <source>val1,val2,val3,...</source>
-        <translation type="unfinished"></translation>
+        <translation>值1,值2,值3,...</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PropertyCreate.ui" line="72"/>
         <source>ToolTip to be displayed when user hovers mouse over property.</source>
-        <translation type="unfinished"></translation>
+        <translation>當使用者將滑鼠懸停在屬性上時顯示工具提示.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PropertyCreate.ui" line="82"/>
         <source>Enums</source>
-        <translation type="unfinished"></translation>
+        <translation>列舉</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PropertyCreate.ui" line="89"/>
         <source>ToolTip</source>
-        <translation type="unfinished"></translation>
+        <translation>工具提示</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PropertyCreate.ui" line="117"/>
         <source>Check if you want to create several properties in a batch.</source>
-        <translation type="unfinished"></translation>
+        <translation>勾選是否要批量建立多個屬性.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PropertyCreate.ui" line="120"/>
         <source>Create another</source>
-        <translation type="unfinished"></translation>
+        <translation>建立另一個</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitLibraryEdit.ui" line="14"/>
         <source>Library Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>元件庫管理</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitLibraryEdit.ui" line="35"/>
         <source>Create Toolbit</source>
-        <translation type="unfinished"></translation>
+        <translation>建立工具位</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitLibraryEdit.ui" line="52"/>
         <source>Add existing Tool Bit to this library.</source>
-        <translation type="unfinished"></translation>
+        <translation>將現有的工具位新增至此庫中.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitLibraryEdit.ui" line="55"/>
         <source>Add Existing</source>
-        <translation type="unfinished"></translation>
+        <translation>新增現有的</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitLibraryEdit.ui" line="72"/>
         <source>Delete selected Tool Bit(s) from the library.</source>
-        <translation type="unfinished"></translation>
+        <translation>從庫中刪除選定的工具位.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitLibraryEdit.ui" line="75"/>
@@ -680,27 +700,27 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitLibraryEdit.ui" line="99"/>
         <source>Select a working path for the tool library editor.</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇工具庫編輯器的工作路徑.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitLibraryEdit.ui" line="119"/>
         <source>Add New Tool Table</source>
-        <translation type="unfinished"></translation>
+        <translation>新增工具表</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitLibraryEdit.ui" line="139"/>
         <source>Save the selected library with a new name or export to another format</source>
-        <translation type="unfinished"></translation>
+        <translation>使用新名稱儲存選定的庫或匯出為其他格式</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitLibraryEdit.ui" line="190"/>
         <source>Table of Tool Bits of the library.</source>
-        <translation type="unfinished"></translation>
+        <translation>庫工具位表.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitLibraryEdit.ui" line="269"/>
         <source>Save the current Library</source>
-        <translation type="unfinished"></translation>
+        <translation>儲存目前庫</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitLibraryEdit.ui" line="272"/>
@@ -713,17 +733,17 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgTCChooser.ui" line="23"/>
         <source>Choose a Tool Controller</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇工具控制器</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgTCChooser.ui" line="29"/>
         <source>Tool Controller</source>
-        <translation type="unfinished"></translation>
+        <translation>工具控制器</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgToolCopy.ui" line="23"/>
         <source>Copy Selected Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>複製選取的工具</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DlgToolCopy.ui" line="29"/>
@@ -733,12 +753,12 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgJobChooser.ui" line="17"/>
         <source>Choose a CAM Job</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇 CAM 工作</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgJobChooser.ui" line="17"/>
         <source>Choose a Path Job</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇路徑工作</translation>
     </message>
 </context>
 <context>
@@ -746,17 +766,17 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgProcessorChooser.ui" line="14"/>
         <source>Choose a processor</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇處理器</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgProcessorChooser.ui" line="20"/>
         <source>Processor</source>
-        <translation type="unfinished"></translation>
+        <translation>處理器</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgProcessorChooser.ui" line="33"/>
         <source>Arguments</source>
-        <translation type="unfinished"></translation>
+        <translation>爭議點</translation>
     </message>
 </context>
 <context>
@@ -764,7 +784,7 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathDressupHoldingTags.ui" line="20"/>
         <source>Tag Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>標籤參數</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathDressupHoldingTags.ui" line="26"/>
@@ -815,17 +835,17 @@ If the radius is bigger than that which the tag shape itself supports, the resul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathDressupHoldingTags.ui" line="103"/>
         <source>Tag Generation</source>
-        <translation type="unfinished"></translation>
+        <translation>標籤產生</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathDressupHoldingTags.ui" line="109"/>
         <source>Initial # Tags</source>
-        <translation type="unfinished"></translation>
+        <translation>初始 # 標籤</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathDressupHoldingTags.ui" line="109"/>
         <source>Initial # Tags </source>
-        <translation type="unfinished"></translation>
+        <translation>初始 # 標籤 </translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathDressupHoldingTags.ui" line="116"/>
@@ -835,7 +855,7 @@ If the radius is bigger than that which the tag shape itself supports, the resul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressupPathBoundary.ui" line="20"/>
         <source>Boundary Body</source>
-        <translation type="unfinished"></translation>
+        <translation>邊界主體</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressupPathBoundary.ui" line="38"/>
@@ -845,7 +865,7 @@ If the radius is bigger than that which the tag shape itself supports, the resul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressupPathBoundary.ui" line="45"/>
         <source>Create Box</source>
-        <translation type="unfinished"></translation>
+        <translation>建立立方體</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressupPathBoundary.ui" line="50"/>
@@ -855,12 +875,12 @@ If the radius is bigger than that which the tag shape itself supports, the resul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressupPathBoundary.ui" line="55"/>
         <source>Extend Model&apos;s Bounding Box</source>
-        <translation type="unfinished"></translation>
+        <translation>延伸模型的邊界框</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressupPathBoundary.ui" line="60"/>
         <source>Use Existing Solid</source>
-        <translation type="unfinished"></translation>
+        <translation>使用現有的實體</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressupPathBoundary.ui" line="87"/>
@@ -951,7 +971,7 @@ If the radius is bigger than that which the tag shape itself supports, the resul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressupPathBoundary.ui" line="230"/>
         <source>Width of the Box</source>
-        <translation type="unfinished"></translation>
+        <translation>立方體寬度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/DressupPathBoundary.ui" line="244"/>
@@ -996,7 +1016,7 @@ If the radius is bigger than that which the tag shape itself supports, the resul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseGeometryEdit.ui" line="69"/>
         <source>Add selected features to the list of base geometries for this operation</source>
-        <translation type="unfinished"></translation>
+        <translation>將選定的要素新增至此操作的基本幾何圖形清單中</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseGeometryEdit.ui" line="72"/>
@@ -1033,7 +1053,7 @@ If the radius is bigger than that which the tag shape itself supports, the resul
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseGeometryEdit.ui" line="99"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="76"/>
         <source>All objects will be processed using the same operation properties.</source>
-        <translation type="unfinished"></translation>
+        <translation>所有物體都將使用相同的操作屬性進行處理.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="22"/>
@@ -1042,7 +1062,11 @@ If the radius is bigger than that which the tag shape itself supports, the resul
 You can add feature for processing by selecting them and then pressing Add. If a feature is accidentally added to the list it can be removed through Remove and will no longer be processed.
 
 Reset deletes all current items from the list and fills the list with all circular holes eligible for the operation from the model. You can again refine the list afterwards by enabling/disabling, removing and adding features.</source>
-        <translation type="unfinished"></translation>
+        <translation>孔特徵表和相關孔的確定半徑.
+
+您可以透過選擇它們然後按新增來新增要處理的功能. 如果某個功能意外新增到清​​單中，則可以透過「刪除」將其刪除，並且將不再對其進行處理.
+
+重置將從清單中刪除所有當前項目，並用適合模型操作的所有圓孔填充清單. 之後您可以透過啟用/停用、刪除和新增功能來再次細化清單.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="33"/>
@@ -1058,12 +1082,12 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="46"/>
         <source>Add selected items from 3D view to the list of base geometries</source>
-        <translation type="unfinished"></translation>
+        <translation>將 3D 檢視中的選取項目新增至基本幾何圖形清單中</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="46"/>
         <source>Add selected items from 3d view to the list of base geometries</source>
-        <translation type="unfinished"></translation>
+        <translation>將 3D 檢視中的選取項目新增至基本幾何圖形清單中</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="56"/>
@@ -1118,25 +1142,25 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseLocationEdit.ui" line="70"/>
         <source>All locations will be processed using the same operation properties.</source>
-        <translation type="unfinished"></translation>
+        <translation>所有位置將使用相同的操作屬性進行處理.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDepthsEdit.ui" line="39"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/SetupGlobal.ui" line="36"/>
         <source>Start Depth</source>
-        <translation type="unfinished"></translation>
+        <translation>起始深度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDepthsEdit.ui" line="46"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDiametersEdit.ui" line="27"/>
         <source>Start Depth of the operation. The highest point in Z-axis the operation needs to process.</source>
-        <translation type="unfinished"></translation>
+        <translation>開始操作的深度. 操作需要處理的Z軸最高點.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDepthsEdit.ui" line="59"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDiametersEdit.ui" line="43"/>
         <source>Transfer the Z value of the selected feature as the Start Depth for the operation.</source>
-        <translation type="unfinished"></translation>
+        <translation>將所選特徵的 Z 值傳輸為操作的起始深度.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDepthsEdit.ui" line="85"/>
@@ -1148,29 +1172,29 @@ Reset deletes all current items from the list and fills the list with all circul
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDepthsEdit.ui" line="92"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDiametersEdit.ui" line="64"/>
         <source>The depth of the operation which corresponds to the lowest value in Z-axis the operation needs to process.</source>
-        <translation type="unfinished"></translation>
+        <translation>操作的深度，對應於操作需要處理的 Z 軸最低值.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDepthsEdit.ui" line="105"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDiametersEdit.ui" line="80"/>
         <source>Transfer the Z value of the selected feature as the Final Depth for the operation.</source>
-        <translation type="unfinished"></translation>
+        <translation>將所選特徵的 Z 值傳輸為操作的最終深度.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDepthsEdit.ui" line="131"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/SetupGlobal.ui" line="68"/>
         <source>Step Down</source>
-        <translation type="unfinished"></translation>
+        <translation>下調</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDepthsEdit.ui" line="138"/>
         <source>The depth in Z-axis the operation moves downwards between layers. This value depends on the tool being used, the material to be cut, available cooling and many other factors. Please consult the tool manufacturers data sheets for the proper value.</source>
-        <translation type="unfinished"></translation>
+        <translation>操作在層之間向下移動的 Z 軸深度. 該值取決於所使用的刀具、要切割的材料、可用的冷卻和許多其他因素. 請查閱工具製造商資料表以了解正確的值.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDepthsEdit.ui" line="163"/>
         <source>Finish Step Down</source>
-        <translation type="unfinished"></translation>
+        <translation>最終下調</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDepthsEdit.ui" line="170"/>
@@ -1180,32 +1204,32 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDiametersEdit.ui" line="20"/>
         <source>Min Diameter</source>
-        <translation type="unfinished"></translation>
+        <translation>最小直徑</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageDiametersEdit.ui" line="57"/>
         <source>Max Diameter</source>
-        <translation type="unfinished"></translation>
+        <translation>最大直徑</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageHeightsEdit.ui" line="24"/>
         <source>Safe Height</source>
-        <translation type="unfinished"></translation>
+        <translation>安全高度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageHeightsEdit.ui" line="31"/>
         <source>The height above which it is safe to move the tool bit with rapid movements. Below this height all lateral and downward movements are performed with feed rate speeds.</source>
-        <translation type="unfinished"></translation>
+        <translation>在該高度以上，快速移動刀頭是安全的. 低於此高度時，所有橫向和向下運動均以進料速率速度進行.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageHeightsEdit.ui" line="47"/>
         <source>Clearance Height</source>
-        <translation type="unfinished"></translation>
+        <translation>淨空高度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageHeightsEdit.ui" line="54"/>
         <source>The height where lateral movement of the toolbit is not obstructed by any fixtures or the part / stock material itself.</source>
-        <translation type="unfinished"></translation>
+        <translation>工具頭的橫向移動不受任何固定裝置或零件/庫存材料本身阻礙的高度.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="23"/>
@@ -1224,20 +1248,20 @@ Reset deletes all current items from the list and fills the list with all circul
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="29"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/SetupGlobal.ui" line="180"/>
         <source>Tool Controller</source>
-        <translation type="unfinished"></translation>
+        <translation>工具控制</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="33"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpHelixEdit.ui" line="43"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/SetupGlobal.ui" line="249"/>
         <source>Coolant</source>
-        <translation type="unfinished"></translation>
+        <translation>冷卻液</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="55"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="237"/>
         <source>Use Outline</source>
-        <translation type="unfinished"></translation>
+        <translation>使用輪廓</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="62"/>
@@ -1252,33 +1276,33 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="76"/>
         <source>Type of adaptive operation</source>
-        <translation type="unfinished"></translation>
+        <translation>自適應操作類型</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="83"/>
         <source>Cut Region</source>
-        <translation type="unfinished"></translation>
+        <translation>切割區域</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="90"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="178"/>
         <source>Step Over Percent</source>
-        <translation type="unfinished"></translation>
+        <translation>步驟百分比</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="97"/>
         <source>Force Clearing Inside-out</source>
-        <translation type="unfinished"></translation>
+        <translation>由內而外強制清除</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="104"/>
         <source>Lift Distance</source>
-        <translation type="unfinished"></translation>
+        <translation>提升距離</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="111"/>
         <source>Stock to Leave</source>
-        <translation type="unfinished"></translation>
+        <translation>庫存待出</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="118"/>
@@ -1293,12 +1317,12 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="132"/>
         <source>Finishing Profile</source>
-        <translation type="unfinished"></translation>
+        <translation>精加工輪廓</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="148"/>
         <source>Accuracy vs Performance</source>
-        <translation type="unfinished"></translation>
+        <translation>準確性與性能</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="155"/>
@@ -1338,17 +1362,17 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="237"/>
         <source>The amount by which the tool is laterally displaced on each cycle of the pattern, specified in percent of the tool diameter. A step over of 100% results in no overlap between two different cycles.</source>
-        <translation type="unfinished"></translation>
+        <translation>刀具在圖案的每個循環中橫向位移的量，以刀具直徑的百分比指定. 超過 100% 的步進會導致兩個不同週期之間沒有重疊.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="256"/>
         <source>Angle of the helix ramp entry</source>
-        <translation type="unfinished"></translation>
+        <translation>螺旋坡度入口角度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="266"/>
         <source>Angle of the helix entry cone</source>
-        <translation type="unfinished"></translation>
+        <translation>螺旋入口錐角</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="279"/>
@@ -1369,7 +1393,7 @@ Reset deletes all current items from the list and fills the list with all circul
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="50"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="36"/>
         <source>The tool and its settings to be used for this operation.</source>
-        <translation type="unfinished"></translation>
+        <translation>用於此操作的工具及其設定.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpCustomEdit.ui" line="49"/>
@@ -1385,7 +1409,7 @@ Reset deletes all current items from the list and fills the list with all circul
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/SetupGlobal.ui" line="255"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/SetupGlobal.ui" line="261"/>
         <source>Coolant Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>冷卻液模式</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpCustomEdit.ui" line="62"/>
@@ -1408,25 +1432,25 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDeburrEdit.ui" line="138"/>
         <source>The direction in which the profile is performed, clockwise or counterclockwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>執行輪廓的方向，順時針或逆時針.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDeburrEdit.ui" line="141"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDeburrEdit.ui" line="148"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpHelixEdit.ui" line="98"/>
         <source>CW</source>
-        <translation type="unfinished"></translation>
+        <translation>順時針</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDeburrEdit.ui" line="153"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpHelixEdit.ui" line="103"/>
         <source>CCW</source>
-        <translation type="unfinished"></translation>
+        <translation>逆時針</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDeburrEdit.ui" line="195"/>
         <source>Width of chamfer cut.</source>
-        <translation type="unfinished"></translation>
+        <translation>倒角切割寬度.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDeburrEdit.ui" line="198"/>
@@ -1451,7 +1475,7 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDeburrEdit.ui" line="282"/>
         <source>Join:</source>
-        <translation type="unfinished"></translation>
+        <translation>加入:</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDeburrEdit.ui" line="289"/>
@@ -1476,12 +1500,12 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="66"/>
         <source>Keep Tool Down</source>
-        <translation type="unfinished"></translation>
+        <translation>保持工具向下</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="78"/>
         <source>Peck</source>
-        <translation type="unfinished"></translation>
+        <translation>鑿</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="88"/>
@@ -1491,7 +1515,7 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="95"/>
         <source>Extend Depth</source>
-        <translation type="unfinished"></translation>
+        <translation>延伸深度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="110"/>
@@ -1501,17 +1525,17 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="115"/>
         <source>Drill Tip</source>
-        <translation type="unfinished"></translation>
+        <translation>鑽頭</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="120"/>
         <source>2x Drill Tip</source>
-        <translation type="unfinished"></translation>
+        <translation>2x 鑽頭</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="135"/>
         <source>Dwell</source>
-        <translation type="unfinished"></translation>
+        <translation>間歇</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="145"/>
@@ -1521,17 +1545,17 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="155"/>
         <source>Retract</source>
-        <translation type="unfinished"></translation>
+        <translation>縮回</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="169"/>
         <source>Chip Break</source>
-        <translation type="unfinished"></translation>
+        <translation>斷屑</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="176"/>
         <source>Feed retract</source>
-        <translation type="unfinished"></translation>
+        <translation>進料縮回</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="179"/>
@@ -1541,7 +1565,7 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpEngraveEdit.ui" line="63"/>
         <source>Start at Vertex</source>
-        <translation type="unfinished"></translation>
+        <translation>從頂點開始</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpEngraveEdit.ui" line="70"/>
@@ -1551,7 +1575,7 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpHelixEdit.ui" line="63"/>
         <source>Start from</source>
-        <translation type="unfinished"></translation>
+        <translation>開始於</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpHelixEdit.ui" line="70"/>
@@ -1571,22 +1595,22 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpHelixEdit.ui" line="94"/>
         <source>The direction for the helix, clockwise or counterclockwise.</source>
-        <translation type="unfinished"></translation>
+        <translation>螺旋方向，順時針或逆時針.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="99"/>
         <source>Climb</source>
-        <translation type="unfinished"></translation>
+        <translation>爬升</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="104"/>
         <source>Conventional</source>
-        <translation type="unfinished"></translation>
+        <translation>慣用</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpHelixEdit.ui" line="111"/>
         <source>Step over percent</source>
-        <translation type="unfinished"></translation>
+        <translation>步驟百分比</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpHelixEdit.ui" line="118"/>
@@ -1597,7 +1621,7 @@ Reset deletes all current items from the list and fills the list with all circul
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpHelixEdit.ui" line="137"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="101"/>
         <source>Extra Offset</source>
-        <translation type="unfinished"></translation>
+        <translation>額外偏移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketExtEdit.ui" line="22"/>
@@ -1622,7 +1646,7 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketExtEdit.ui" line="68"/>
         <source>Extend Corners</source>
-        <translation type="unfinished"></translation>
+        <translation>延伸角</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketExtEdit.ui" line="78"/>
@@ -1637,7 +1661,7 @@ Reset deletes all current items from the list and fills the list with all circul
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketExtEdit.ui" line="101"/>
         <source>Tree of existing edges and their potential extensions</source>
-        <translation type="unfinished"></translation>
+        <translation>現有邊緣的樹及其潛在的擴展</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketExtEdit.ui" line="126"/>
@@ -1673,12 +1697,12 @@ Reset deletes all current items from the list and fills the list with all circul
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpVcarveEdit.ui" line="36"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpVcarveEdit.ui" line="50"/>
         <source>The tool and its settings to be used for this operation</source>
-        <translation type="unfinished"></translation>
+        <translation>用於此操作的工具及其設定</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="63"/>
         <source>Boundary Shape</source>
-        <translation type="unfinished"></translation>
+        <translation>邊界造型</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="70"/>
@@ -1690,12 +1714,12 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="88"/>
         <source>Cut Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>切割模式</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="95"/>
         <source>The cutting mode assumes that the cut on one side of the tool bit represents the resulting part and the other side is either already milled away or will be removed later on. Climb mode is when the tool bit is moved into the cut on each rotation, whereas in conventional mode the tool bit&apos;s rotation and the tool&apos;s lateral movement are in the same direction</source>
-        <translation type="unfinished"></translation>
+        <translation>切削模式假設刀頭一側的切削代表最終的零件，而另一側要么已經銑掉，要么稍後將被移除. 爬升模式是指刀頭在每次旋轉時移動到切削中，而在傳統模式下，刀頭的旋轉和刀具的橫向移動方向相同</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="112"/>
@@ -1720,7 +1744,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="141"/>
         <source>ZigZagOffset</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">之字形偏移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="146"/>
@@ -1745,12 +1769,12 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="171"/>
         <source>Angle in which the pattern is applied</source>
-        <translation type="unfinished"></translation>
+        <translation>套用圖案的角度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="185"/>
         <source>The amount by which the tool is laterally displaced on each cycle of the pattern, specified in percent of the tool diameter. A step over of 100% results in no overlap between two different cycles</source>
-        <translation type="unfinished"></translation>
+        <translation>刀具在圖案的每個循環中橫向位移的量，以刀具直徑的百分比指定. 超過 100% 的步進會導致兩個不同週期之間沒有重疊</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="204"/>
@@ -1760,7 +1784,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="211"/>
         <source>The amount of material that should be left by this operation in relation to the target shape</source>
-        <translation type="unfinished"></translation>
+        <translation>此操作應留下的與目標形狀相關的材料量</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="224"/>
@@ -1772,7 +1796,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="130"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="257"/>
         <source>Use Start Point</source>
-        <translation type="unfinished"></translation>
+        <translation>使用起點</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="234"/>
@@ -1782,7 +1806,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="244"/>
         <source>Clear Edges</source>
-        <translation type="unfinished"></translation>
+        <translation>清晰的邊緣</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="251"/>
@@ -1792,12 +1816,12 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="258"/>
         <source>Check to skip machining regions that have already been cleared by previous operations</source>
-        <translation type="unfinished"></translation>
+        <translation>檢查以跳過先前操作已清除的加工區域</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpPocketFullEdit.ui" line="261"/>
         <source>Use Rest Machining</source>
-        <translation type="unfinished"></translation>
+        <translation>使用殘料加工</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProbeEdit.ui" line="52"/>
@@ -1852,7 +1876,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="63"/>
         <source>Cut Side</source>
-        <translation type="unfinished"></translation>
+        <translation>切邊</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="70"/>
@@ -1868,27 +1892,27 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="89"/>
         <source>The direction in which the profile is performed, clockwise or counterclockwise</source>
-        <translation type="unfinished"></translation>
+        <translation>執行輪廓的方向，順時針或逆時針</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="114"/>
         <source>The amount of extra material left by this operation in relation to the target shape</source>
-        <translation type="unfinished"></translation>
+        <translation>此操作相對於目標形狀留下的額外材料量</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="121"/>
         <source>Number of Passes</source>
-        <translation type="unfinished"></translation>
+        <translation>通過次數</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="131"/>
         <source>The number of passes to do. If more than one, requires a non-zero value for Pass Stepover.</source>
-        <translation type="unfinished"></translation>
+        <translation>要操作的次數. 如果超過 1，則跨越一步需要非零值.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="138"/>
         <source>Pass Stepover</source>
-        <translation type="unfinished"></translation>
+        <translation>通過步驟</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="147"/>
@@ -1903,12 +1927,12 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="127"/>
         <source>Check if this operation should use a starting point</source>
-        <translation type="unfinished"></translation>
+        <translation>檢查此操作是否應使用起點</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="137"/>
         <source>Check if this profile operation should also process holes in the base geometry. Found holes are automatically offset on the opposite cut side and performed in the opposite direction as perimeters. Note that this does not include cylindrical holes, the assumption being that they will get drilled</source>
-        <translation type="unfinished"></translation>
+        <translation>檢查此輪廓操作是否也應在基礎幾何體中加工孔. 找到的孔會自動在相反的切割側偏移，並在與週長相反的方向上執行. 請注意，這不包括圓柱形孔，假設它們將被鑽孔</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="140"/>
@@ -1923,12 +1947,12 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="150"/>
         <source>Use Compensation</source>
-        <translation type="unfinished"></translation>
+        <translation>使用補償</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="157"/>
         <source>Check if you want this profile operation to also be applied to cylindrical holes, which normally get drilled. This can be useful if no drill of adequate size is available or the number of holes don&apos;t warrant a tool change. Note that the cut side and direction is reversed in respect to the specified values</source>
-        <translation type="unfinished"></translation>
+        <translation>檢查您是否希望將此輪廓操作也套用於通常鑽孔的圓柱孔. 如果沒有足夠尺寸的鑽頭可用，或者孔的數量不足以保證更換工具，則這可能很有用. 請注意，切割邊和方向相對於指定值是相反的</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="160"/>
@@ -1938,7 +1962,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="167"/>
         <source>Check if this profile operation should also process the outside perimeter of the base geometry shapes</source>
-        <translation type="unfinished"></translation>
+        <translation>檢查此輪廓操作是否還應處理基本幾何形狀的外周長</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="170"/>
@@ -1948,12 +1972,12 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="42"/>
         <source> The tool and its settings to be used for this operation </source>
-        <translation type="unfinished"></translation>
+        <translation> 用於此操作的工具及其設定 </translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="71"/>
         <source>Start Feature Reference</source>
-        <translation type="unfinished"></translation>
+        <translation>啟動特徵參考</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="90"/>
@@ -1975,7 +1999,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="102"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="174"/>
         <source>Center of Bounding Box</source>
-        <translation type="unfinished"></translation>
+        <translation>邊界框中心</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="107"/>
@@ -1997,7 +2021,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="122"/>
         <source>Short Edge</source>
-        <translation type="unfinished"></translation>
+        <translation>短邊</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="127"/>
@@ -2053,7 +2077,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="275"/>
         <source>Extend Path Start</source>
-        <translation type="unfinished"></translation>
+        <translation>延伸起始路徑</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="291"/>
@@ -2068,7 +2092,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="301"/>
         <source>Extend Path End</source>
-        <translation type="unfinished"></translation>
+        <translation>延伸末端路徑</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="317"/>
@@ -2085,7 +2109,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="91"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="98"/>
         <source>Layer Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>圖層模式</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="357"/>
@@ -2100,7 +2124,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="361"/>
         <source>Single-pass</source>
-        <translation type="unfinished"></translation>
+        <translation>單次通過</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="366"/>
@@ -2115,7 +2139,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="381"/>
         <source>Choose the path orientation with regard to the feature(s) selected</source>
-        <translation type="unfinished"></translation>
+        <translation>根據所選要素選擇路徑方向</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="381"/>
@@ -2125,7 +2149,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="385"/>
         <source>Start to End</source>
-        <translation type="unfinished"></translation>
+        <translation>開始到結束</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSlotEdit.ui" line="390"/>
@@ -2162,7 +2186,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="77"/>
         <source>Scan Type</source>
-        <translation type="unfinished"></translation>
+        <translation>掃描類型</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="84"/>
@@ -2179,7 +2203,7 @@ The latter can be used to face of the entire stock area to ensure uniform height
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="105"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="117"/>
         <source>Cut Pattern</source>
-        <translation type="unfinished"></translation>
+        <translation>切割圖案</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="112"/>
@@ -2200,27 +2224,27 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="133"/>
         <source>Avoid Last X Faces</source>
-        <translation type="unfinished"></translation>
+        <translation>回避最後 X 個平面</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="140"/>
         <source>Avoid cutting the last &apos;N&apos; faces in the Base Geometry list of selected faces.</source>
-        <translation type="unfinished"></translation>
+        <translation>避免切割選取面的「基本幾何體」清單中的最後 &apos;N&apos; 個面.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="147"/>
         <source>Bounding box extra offset X, Y</source>
-        <translation type="unfinished"></translation>
+        <translation>邊界框額外偏移 X、Y</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="162"/>
         <source>Additional offset to the selected bounding box along the X axis.</source>
-        <translation type="unfinished"></translation>
+        <translation>沿 X 軸對所選邊界框的附加偏移.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="172"/>
         <source>Additional offset to the selected bounding box along the Y axis.</source>
-        <translation type="unfinished"></translation>
+        <translation>沿 Y 軸對選取邊界框的附加偏移.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="184"/>
@@ -2255,7 +2279,9 @@ The latter can be used to face of the entire stock area to ensure uniform height
         <source>The amount by which the tool is laterally displaced on each cycle of the pattern, specified in percent of the tool diameter.
 
 A step over of 100% results in no overlap between two different cycles.</source>
-        <translation type="unfinished"></translation>
+        <translation>刀具在圖案的每個循環中橫向位移的量，以刀具直徑的百分比指定.
+
+超過 100% 的步長會導致兩個不同週期之間沒有重疊.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="237"/>
@@ -2294,7 +2320,7 @@ A step over of 100% results in no overlap between two different cycles.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="277"/>
         <source>Boundary Enforcement</source>
-        <translation type="unfinished"></translation>
+        <translation>邊界強制執行</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="287"/>
@@ -2325,7 +2351,7 @@ A step over of 100% results in no overlap between two different cycles.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpThreadMillingEdit.ui" line="65"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>適配</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpThreadMillingEdit.ui" line="85"/>
@@ -2356,7 +2382,7 @@ A step over of 100% results in no overlap between two different cycles.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpThreadMillingEdit.ui" line="150"/>
         <source>Passes</source>
-        <translation type="unfinished"></translation>
+        <translation>通過</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpThreadMillingEdit.ui" line="177"/>
@@ -2371,17 +2397,17 @@ A step over of 100% results in no overlap between two different cycles.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpVcarveEdit.ui" line="72"/>
         <source>This value is used in discretizing arcs into segments. Smaller values will result in larger G-code. Larger values may cause unwanted segments in the medial line path.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">該值用於將弧離散成線段. 較小的值將導致較大的 G-代碼. 較大的值可能會導致中間線路徑中出現不必要的段.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpVcarveEdit.ui" line="73"/>
         <source>This value is used in discretizing arcs into segments. Smaller values will result in larger gcode. Larger values may cause unwanted segments in the medial line path.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">該值用於將弧離散成線段. 較小的值將導致較大的 gcode. 較大的值可能會導致中間線路徑中出現不必要的段.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpVcarveEdit.ui" line="98"/>
         <source>Filter Colinear lines</source>
-        <translation type="unfinished"></translation>
+        <translation>篩選共線線</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpVcarveEdit.ui" line="105"/>
@@ -2391,7 +2417,7 @@ A step over of 100% results in no overlap between two different cycles.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpVcarveEdit.ui" line="117"/>
         <source>Finishing pass Z offset</source>
-        <translation type="unfinished"></translation>
+        <translation>精加工通過路徑 Z 偏移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpVcarveEdit.ui" line="124"/>
@@ -2401,17 +2427,17 @@ A step over of 100% results in no overlap between two different cycles.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpVcarveEdit.ui" line="140"/>
         <source>After carving, travel again the path to remove artifacts and imperfections</source>
-        <translation type="unfinished"></translation>
+        <translation>雕刻後再次走上去除偽影和瑕疵的路徑</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpVcarveEdit.ui" line="140"/>
         <source>After carving travel again the path to remove artifacts and imperfections</source>
-        <translation type="unfinished"></translation>
+        <translation>雕刻後再次走上去除偽影和瑕疵的路徑</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpVcarveEdit.ui" line="146"/>
         <source>Finishing pass</source>
-        <translation type="unfinished"></translation>
+        <translation>精加工通過</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpVcarveEdit.ui" line="153"/>
@@ -2426,7 +2452,7 @@ A step over of 100% results in no overlap between two different cycles.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="59"/>
         <source>Algorithm</source>
-        <translation type="unfinished"></translation>
+        <translation>演算法</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="66"/>
@@ -2436,7 +2462,7 @@ A step over of 100% results in no overlap between two different cycles.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="142"/>
         <source>Boundary Adjustment</source>
-        <translation type="unfinished"></translation>
+        <translation>邊界調整</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PointEdit.ui" line="14"/>
@@ -2476,12 +2502,12 @@ A step over of 100% results in no overlap between two different cycles.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/SetupGlobal.ui" line="14"/>
         <source>Setup Global</source>
-        <translation type="unfinished"></translation>
+        <translation>全域設定</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/SetupGlobal.ui" line="30"/>
         <source>Depths</source>
-        <translation type="unfinished"></translation>
+        <translation>深度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/SetupGlobal.ui" line="43"/>
@@ -2541,7 +2567,7 @@ Default: 3 mm</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/SetupGlobal.ui" line="138"/>
         <source>Safe</source>
-        <translation type="unfinished"></translation>
+        <translation>安全</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/SetupGlobal.ui" line="145"/>
@@ -2611,17 +2637,17 @@ Default: &quot;5mm&quot;</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolEditor.ui" line="87"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolEditor.ui" line="184"/>
         <source>Tool Parameter</source>
-        <translation type="unfinished"></translation>
+        <translation>刀具參數</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolEditor.ui" line="103"/>
         <source>Flat Radius</source>
-        <translation type="unfinished"></translation>
+        <translation>平半徑</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolEditor.ui" line="110"/>
         <source>Corner Radius</source>
-        <translation type="unfinished"></translation>
+        <translation>轉角半徑</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolEditor.ui" line="117"/>
@@ -2671,13 +2697,13 @@ Default: &quot;5mm&quot;</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpTappingEdit.ui" line="50"/>
         <source>2x Tap Tip</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">2x 敲擊尖</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpTappingEdit.ui" line="89"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpTappingEdit.ui" line="110"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The tool and its settings to be used for this operation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;用於此操作的工具及其設定.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpTappingEdit.ui" line="103"/>
@@ -2690,7 +2716,7 @@ Default: &quot;5mm&quot;</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="14"/>
         <source>Job Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>工作偏好設定</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="32"/>
@@ -2712,7 +2738,9 @@ Default: &quot;5mm&quot;</source>
         <source>Path to look for templates, post processors, tool tables and other external files.
 
 If left empty the macro directory is used.</source>
-        <translation type="unfinished"></translation>
+        <translation>尋找模板、後處理、工具表和其他外部檔案的路徑.
+
+如果留空，則使用巨集目錄.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="67"/>
@@ -2726,7 +2754,11 @@ If left empty the macro directory is used.</source>
 This can be helpful when almost all jobs will be processed by the same machine with a similar setup.
 
 If left empty no template will be preselected.</source>
-        <translation type="unfinished"></translation>
+        <translation>建立新作業時要選擇的預設模板.
+
+當幾乎所有作業都由具有相似設定的同一台機器處理時，這會很有幫助.
+
+如果留空，則不會預先選擇模板.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="95"/>
@@ -2736,23 +2768,23 @@ If left empty no template will be preselected.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="103"/>
         <source>Default Geometry Tolerance</source>
-        <translation type="unfinished"></translation>
+        <translation>預設幾何公差</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="110"/>
         <source>Default value for new Jobs, used for computing Paths.  Smaller increases accuracy, but slows down computation</source>
-        <translation type="unfinished"></translation>
+        <translation>新作業的預設值，用於計算路徑.  較小可以提高準確性，但會減慢計算速度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="117"/>
         <source>Default Curve Accuracy</source>
-        <translation type="unfinished"></translation>
+        <translation>預設曲線精度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="154"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="279"/>
         <source>Post Processor</source>
-        <translation type="unfinished"></translation>
+        <translation>後處理</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="166"/>
@@ -2791,7 +2823,30 @@ if %S is included, you can specify where the number occurs.  Without it, the num
 The following example stores all files with the same name as the document in the directory /home/freecad (please remove quotes):
 &amp;quot;/home/cnc/%d.g-code&amp;quot;
 See the file save policy below on how to deal with name conflicts.</source>
-        <translation type="unfinished"></translation>
+        <translation>輸入路徑和可選的檔案名稱(見下文)以用作後處理導出的預設值.
+在後處理時解析名稱之前執行以下替換:
+替換允許以下內容:
+%D ...活動文件的目錄
+%d ...活動文件的名稱(包含副檔名)
+%M ...使用者巨集目錄
+%j ...活動作業對象的名稱
+
+如果輸出被拆分，則可以使用以下內容. 如果輸出未拆分這些將被忽略.
+%T ... 刀具編號
+%t ... 工具控制器標籤
+
+%W ... 工作座標系
+%O ... 操作標籤
+
+拆分輸出時，始終會新增序號.
+
+如果包含 %S，您可以指定該數字出現的位置.  如果沒有它，數字將增加到字串的末尾.
+
+%S ... 序號
+
+以下範例儲存與目錄 /home/freecad 中的文件同名的所有檔案(請刪除引號):
+&amp;quot;/home/cnc/%d.g-code&amp;quot;
+有關如何處理名稱衝突的信息，請參閱下面的檔案保存策略.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="188"/>
@@ -2820,67 +2875,90 @@ if %S is included, you can specify where the number occurs.  Without it, the num
 The following example store all files with the same name as the document the directory /home/freecad (please remove quotes):
 &amp;quot;/home/cnc/%d.g-code&amp;quot;
 See the file save policy below on how to deal with name conflicts.</source>
-        <translation type="unfinished"></translation>
+        <translation>輸入路徑和可選的檔案名稱(見下文)以用作後處理器導出的預設值.
+在後處理時解析名稱之前執行以下替換:
+替換允許以下內容:
+%D ...活動文件的目錄
+%d ...活動文件的名稱(包含附副檔名)
+%M ...使用者巨集目錄
+%j ...活動作業對象的名稱
+
+如果輸出被拆分，則可以使用以下內容. 如果輸出未拆分這些將被忽略.
+%T ... 刀具編號
+%t ... 工具控制器標籤
+
+%W ... 工作座標系
+%O ... 操作標籤
+
+拆分輸出時，始終會新增序號.
+
+如果包含 %S，您可以指定該數字出現的位置.  如果沒有它，數字將增加到字串的末尾.
+
+%S ... 序號
+
+以下範例將與文件同名的所有檔案儲存在目錄 /home/freecad 中(請刪除引號):
+&amp;quot;/home/cnc/%d.g-code&amp;quot;
+有關如何處理名稱衝突的信息，請參閱下面的文件保存策略.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="230"/>
         <source>File Save Policy</source>
-        <translation type="unfinished"></translation>
+        <translation>檔案儲存策略</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="247"/>
         <source>Choose how to deal with potential file name conflicts. Always open a dialog, only open a dialog if the output file already exists, overwrite any existing file or add a unique (3 digit) sequential ID to the file name.</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇如何處理潛在的檔案名稱衝突. 始終開啟對話框，僅在輸出檔案已存在時才開啟對話框，覆蓋任何現有檔案或向檔案名稱新增唯一的(3 位數字)順序 ID.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="251"/>
         <source>Open File Dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>開啟檔案對話框</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="256"/>
         <source>Open File Dialog on conflict</source>
-        <translation type="unfinished"></translation>
+        <translation>衝突時開啟檔案對話框</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="261"/>
         <source>Overwrite existing file</source>
-        <translation type="unfinished"></translation>
+        <translation>覆蓋現有檔案</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="266"/>
         <source>Append Unique ID on conflict</source>
-        <translation type="unfinished"></translation>
+        <translation>在衝突時附加唯一 ID</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="288"/>
         <source>Post Processors Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>後處理選擇</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="288"/>
         <source>Post Processors Selection </source>
-        <translation type="unfinished"></translation>
+        <translation>後處理選擇 </translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="298"/>
         <source>It doesn&apos;t seem there are any post processor scripts installed. Please add some into your macro directory and make sure the file name ends with &amp;quot;_post.py&amp;quot;.</source>
-        <translation type="unfinished"></translation>
+        <translation>似乎沒有安裝任何後處理器腳本. 請將一些內容加入您的巨集目錄中，並確保檔案名稱以&amp;quot;_post.py&amp;quot;結尾.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="305"/>
         <source>Default Post Processor</source>
-        <translation type="unfinished"></translation>
+        <translation>預設後處理</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="312"/>
         <source>Select one of the post processors as the default.</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇其中一個後處理作為預設值.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="315"/>
         <source>DefaultPostProcessor</source>
-        <translation type="unfinished"></translation>
+        <translation>預設後處理</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="318"/>
@@ -2890,12 +2968,12 @@ See the file save policy below on how to deal with name conflicts.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="325"/>
         <source>Default Arguments</source>
-        <translation type="unfinished"></translation>
+        <translation>預設參數</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="332"/>
         <source>Optional arguments passed to the default Post Processor specified above. See the Post Processor&apos;s documentation for supported arguments.</source>
-        <translation type="unfinished"></translation>
+        <translation>傳遞給上面指定的預設後處理器的可選參數. 有關支援的參數，請參閱後處理器的文件.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="370"/>
@@ -2920,22 +2998,22 @@ See the file save policy below on how to deal with name conflicts.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="405"/>
         <source>Extend Model&apos;s Bounding Box</source>
-        <translation type="unfinished"></translation>
+        <translation>延伸模型的邊界框</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="429"/>
         <source>Ext. X</source>
-        <translation type="unfinished"></translation>
+        <translation>延伸. X</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="449"/>
         <source>Ext. Y</source>
-        <translation type="unfinished"></translation>
+        <translation>延伸. Y</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="462"/>
         <source>Ext. Z</source>
-        <translation type="unfinished"></translation>
+        <translation>延伸. Z</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="481"/>
@@ -2988,19 +3066,23 @@ See the file save policy below on how to deal with name conflicts.</source>
         <source>References to Tool Bits and their shapes can either be stored with an absolute path or with a relative path to the search path.
 Generally it is recommended to use relative paths due to their flexibility and robustness to layout changes.
 Should multiple tools or tool shapes with the same name exist in different directories it can be required to use absolute paths.</source>
-        <translation type="unfinished"></translation>
+        <translation>對工具位及其形狀的參考可以使用絕對路徑或搜尋路徑的相對路徑來儲存.
+通常，建議使用相對路徑，因為它們對佈局變更具有靈活性和穩健性.
+如果不同目錄中存在多個具有相同名稱的工具或工具形狀，則可能需要使用絕對路徑.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="653"/>
         <source>References to Tool Bits and their shapes can either be stored with an absolute path or with a relative path to the search path.
 Generally it is recommended to use relative paths due to their flexibility and robustness to layout changes.
 Should multiple tools or tool shapes with the same name exist in different directories it can be required to use absolute paths. </source>
-        <translation type="unfinished"></translation>
+        <translation>對工具位及其形狀的參考可以使用絕對路徑或搜尋路徑的相對路徑來儲存.
+通常，建議使用相對路徑，因為它們對佈局變更具有靈活性和穩健性.
+如果不同目錄中存在多個具有相同名稱的工具或工具形狀，則可能需要使用絕對路徑. </translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/PathJob.ui" line="658"/>
         <source>Store Absolute Paths</source>
-        <translation type="unfinished"></translation>
+        <translation>儲存絕對路徑</translation>
     </message>
 </context>
 <context>
@@ -3037,12 +3119,12 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="57"/>
         <source>Path highlight color</source>
-        <translation type="unfinished"></translation>
+        <translation>路徑高亮顏色</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="70"/>
         <source>Default normal path color</source>
-        <translation type="unfinished"></translation>
+        <translation>預設法線路徑顏色</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="77"/>
@@ -3057,7 +3139,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="103"/>
         <source>Bounding box normal color</source>
-        <translation type="unfinished"></translation>
+        <translation>邊界框正常顏色</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="110"/>
@@ -3067,42 +3149,42 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="156"/>
         <source>Probe path color</source>
-        <translation type="unfinished"></translation>
+        <translation>探測路徑顏色</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="169"/>
         <source>Rapid path color</source>
-        <translation type="unfinished"></translation>
+        <translation>快速路徑顏色</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="202"/>
         <source>Bounding box selection color</source>
-        <translation type="unfinished"></translation>
+        <translation>邊界框選擇顏色</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="215"/>
         <source>Default path marker color</source>
-        <translation type="unfinished"></translation>
+        <translation>預設路徑標記顏色</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="248"/>
         <source>Default pathline width</source>
-        <translation type="unfinished"></translation>
+        <translation>預設路徑線條寬度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="304"/>
         <source>UI Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>UI 使用者界面設定</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="313"/>
         <source>Path Selection Style</source>
-        <translation type="unfinished"></translation>
+        <translation>路徑選擇風格</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="326"/>
         <source>Default path shape selection behavior in 3D viewer</source>
-        <translation type="unfinished"></translation>
+        <translation>3D 檢視器中的預設路徑形狀選擇行為</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="336"/>
@@ -3122,7 +3204,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="354"/>
         <source>Task Panel Layout</source>
-        <translation type="unfinished"></translation>
+        <translation>任務面板佈局</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="368"/>
@@ -3132,17 +3214,17 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="373"/>
         <source>Classic - reversed</source>
-        <translation type="unfinished"></translation>
+        <translation>經典 - 反轉</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="378"/>
         <source>Multi Panel</source>
-        <translation type="unfinished"></translation>
+        <translation>多功能面板</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="383"/>
         <source>Multi Panel - reversed</source>
-        <translation type="unfinished"></translation>
+        <translation>多功能面板 - 反轉</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/Advanced.ui" line="14"/>
@@ -3157,63 +3239,63 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/Advanced.ui" line="26"/>
         <source>Suppress all warnings about setting speed rates for accurate cycle time calculation</source>
-        <translation type="unfinished"></translation>
+        <translation>抑制所有有關設定速度速率的警告，以實現準確的周期時間計算</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/Advanced.ui" line="29"/>
         <source>Suppress all missing speeds warning</source>
-        <translation type="unfinished"></translation>
+        <translation>抑制所有丟失的速度警告</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/Advanced.ui" line="45"/>
         <source>Suppress warning about setting the rapid speed rates for accurate cycle time calculation. Ignored if all speed warnings are already suppressed.</source>
-        <translation type="unfinished"></translation>
+        <translation>抑制有關設定快速速率的警告，以實現精確的周期時間計算. 如果所有速度警告已被抑制，則忽略.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/Advanced.ui" line="48"/>
         <source>Suppress missing rapid speeds warning</source>
-        <translation type="unfinished"></translation>
+        <translation>禁止丟失快速速度警告</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/Advanced.ui" line="64"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/Advanced.ui" line="83"/>
         <source>Suppress warning whenever a Path selection mode is activated</source>
-        <translation type="unfinished"></translation>
+        <translation>每當啟動路徑選擇模式時抑制警告</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/Advanced.ui" line="67"/>
         <source>Suppress feed rate warning</source>
-        <translation type="unfinished"></translation>
+        <translation>抑制進料速率警告</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/Advanced.ui" line="86"/>
         <source>Suppress selection mode warning</source>
-        <translation type="unfinished"></translation>
+        <translation>抑制選擇模式警告</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/Advanced.ui" line="111"/>
         <source>OpenCAMLib</source>
-        <translation type="unfinished"></translation>
+        <translation>OpenCAMLib</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/Advanced.ui" line="117"/>
         <source>If OpenCAMLib is installed with Python bindings it can be used by some additional 3D operations. NOTE: Enabling OpenCAMLib here requires a restart of FreeCAD to take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>如果 OpenCAMLib 與 Python 綁定一起安裝，則某些附加 3D 操作可以使用它. 注意：此處啟用OpenCAMLib需要重新啟動FreeCAD才能生效.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/Advanced.ui" line="127"/>
         <source>Enable OCL dependent features</source>
-        <translation type="unfinished"></translation>
+        <translation>啟用 OCL 相關功能</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/Advanced.ui" line="140"/>
         <source>Suppress warning if openCAMlib cannot be found</source>
-        <translation type="unfinished"></translation>
+        <translation>如果無法找到 openCAMlib，則抑制警告</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/preferences/Advanced.ui" line="143"/>
         <source>Suppress openCAMlib warning</source>
-        <translation type="unfinished"></translation>
+        <translation>抑制 openCAMlib 警告</translation>
     </message>
 </context>
 <context>
@@ -3244,7 +3326,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/TaskDlgPathCompound.ui" line="20"/>
         <source>Reorder children by dragging and dropping them to their correct location</source>
-        <translation type="unfinished"></translation>
+        <translation>透過將子項拖曳到正確的位置來重新排序</translation>
     </message>
 </context>
 <context>
@@ -3694,22 +3776,22 @@ Should multiple tools or tool shapes with the same name exist in different direc
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathCamoticsSim.ui" line="14"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathSimulator.ui" line="14"/>
         <source>Path Simulator</source>
-        <translation type="unfinished"></translation>
+        <translation>路徑模擬器</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathSimulator.ui" line="229"/>
         <source>Accuracy:</source>
-        <translation type="unfinished"></translation>
+        <translation>準確性:</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathSimulator.ui" line="278"/>
         <source>Job:</source>
-        <translation type="unfinished"></translation>
+        <translation>作業:</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathSimulator.ui" line="55"/>
         <source>Activate / resume simulation</source>
-        <translation type="unfinished"></translation>
+        <translation>啟動/恢復 模擬</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathSimulator.ui" line="58"/>
@@ -3724,27 +3806,27 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathCamoticsSim.ui" line="68"/>
         <source>Launch CAMotics</source>
-        <translation type="unfinished"></translation>
+        <translation>啟動 CAM電腦輔助製造</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathCamoticsSim.ui" line="68"/>
         <source>Launch Camotics</source>
-        <translation type="unfinished"></translation>
+        <translation>啟動 CAM電腦輔助製造</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathCamoticsSim.ui" line="75"/>
         <source>Make CAMotics File</source>
-        <translation type="unfinished"></translation>
+        <translation>製作 CAM電腦輔助製造 檔案</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathCamoticsSim.ui" line="75"/>
         <source>Make Camotics File</source>
-        <translation type="unfinished"></translation>
+        <translation>製作 CAM電腦輔助製造 檔案</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathSimulator.ui" line="35"/>
         <source>Stop running simulation</source>
-        <translation type="unfinished"></translation>
+        <translation>停止執行模擬</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathSimulator.ui" line="38"/>
@@ -3754,7 +3836,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathSimulator.ui" line="75"/>
         <source>Pause simulation</source>
-        <translation type="unfinished"></translation>
+        <translation>暫停模擬</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathSimulator.ui" line="78"/>
@@ -3764,7 +3846,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathSimulator.ui" line="95"/>
         <source>Single step simulation</source>
-        <translation type="unfinished"></translation>
+        <translation>單步模擬</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathSimulator.ui" line="98"/>
@@ -3774,7 +3856,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathSimulator.ui" line="115"/>
         <source>Run simulation till end without animation</source>
-        <translation type="unfinished"></translation>
+        <translation>在沒有動畫的情況下運行模擬直到結束</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathSimulator.ui" line="118"/>
@@ -3794,7 +3876,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/TaskPathSimulator.ui" line="300"/>
         <source>* Note: Volumetric simulation, inaccuracies are inherent.</source>
-        <translation type="unfinished"></translation>
+        <translation>* 注意：體積模擬，誤差是內在的.</translation>
     </message>
 </context>
 <context>
@@ -3822,7 +3904,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="55"/>
         <source>Display name of the Tool Bit (initial value taken from the shape file).</source>
-        <translation type="unfinished"></translation>
+        <translation>工具位的顯示名稱(從形狀檔中取得的初始值).</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="61"/>
@@ -3837,7 +3919,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="96"/>
         <source>The file which defines the type and shape of the Tool Bit.</source>
-        <translation type="unfinished"></translation>
+        <translation>定義刀頭類型和形狀的檔案.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="99"/>
@@ -3847,7 +3929,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="106"/>
         <source>Change file defining type and shape of Tool Bit.</source>
-        <translation type="unfinished"></translation>
+        <translation>變更定義刀頭類型與形狀的檔案.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="122"/>
@@ -3857,12 +3939,12 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="131"/>
         <source>Point/Tip Angle</source>
-        <translation type="unfinished"></translation>
+        <translation>點/頂點 角度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="148"/>
         <source>Cutting Edge Height</source>
-        <translation type="unfinished"></translation>
+        <translation>切割刃高度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="155"/>
@@ -4021,7 +4103,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="118"/>
         <source>Template Export</source>
-        <translation type="unfinished"></translation>
+        <translation>模板導出</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="128"/>
@@ -4094,12 +4176,12 @@ See the file save policy below on how to deal with name conflicts.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="179"/>
         <source>Processor</source>
-        <translation type="unfinished"></translation>
+        <translation>處理器</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="189"/>
         <source>Arguments</source>
-        <translation type="unfinished"></translation>
+        <translation>爭議點</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="196"/>
@@ -4130,7 +4212,7 @@ Ordering by operation will do each operation in all coordinate systems before mo
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="235"/>
         <source>Order By</source>
-        <translation type="unfinished"></translation>
+        <translation>排序依據</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="254"/>
@@ -4203,7 +4285,7 @@ If &lt;span style=&quot; font-style:italic;&quot;&gt;order by&lt;/span&gt; is se
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="493"/>
         <source>Use Existing Solid</source>
-        <translation type="unfinished"></translation>
+        <translation>使用現有的實體</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="501"/>
@@ -4218,17 +4300,17 @@ If &lt;span style=&quot; font-style:italic;&quot;&gt;order by&lt;/span&gt; is se
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="535"/>
         <source>Ext. X</source>
-        <translation type="unfinished"></translation>
+        <translation>延伸. X</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="555"/>
         <source>Ext. Y</source>
-        <translation type="unfinished"></translation>
+        <translation>延伸. Y</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="568"/>
         <source>Ext. Z</source>
-        <translation type="unfinished"></translation>
+        <translation>延伸. Z</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="587"/>
@@ -4415,7 +4497,7 @@ Default: 3 mm</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="1132"/>
         <source>Safe</source>
-        <translation type="unfinished"></translation>
+        <translation>安全</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="1139"/>
@@ -4434,12 +4516,12 @@ Default: &quot;5mm&quot;</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="1160"/>
         <source>Coolant</source>
-        <translation type="unfinished"></translation>
+        <translation>冷卻液</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="1166"/>
         <source>Coolant Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>冷卻液模式</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="1197"/>
@@ -4466,12 +4548,12 @@ Default: &quot;5mm&quot;</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="1247"/>
         <source>Horizontal Feed</source>
-        <translation type="unfinished"></translation>
+        <translation>水平進料</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="1259"/>
         <source>Vertical Feed</source>
-        <translation type="unfinished"></translation>
+        <translation>垂直進料</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PathEdit.ui" line="1268"/>

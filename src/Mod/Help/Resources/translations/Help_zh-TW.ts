@@ -123,13 +123,6 @@ the default location ($USERAPPDATADIR/Mod/offline-documentation).</source>
 ($USERAPPDATADIR/Mod/offline-documentation)搜尋說明文件.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Help/dlgPreferencesHelp.ui" line="211"/>
-        <source>The documentation will open in a dockable dialog inside the FreeCAD window,
-which allows you to keep it open whlle working in the 3D view. This requires the PySide QtWebengineWidgets component</source>
-        <translation>該文件將在 FreeCAD 視窗內的可停靠對話方塊中打開，
-這允許您在 3D 檢視中工作時保持其開啟狀態. 這需要 PySide QtWebengineWidgets 元件</translation>
-    </message>
-    <message>
         <location filename="../../dlgPreferencesHelp.ui" line="48"/>
         <source>Custom location</source>
         <translation>自訂位置</translation>
@@ -202,6 +195,13 @@ custom stylesheet below and can look nicer than the wiki option. The &apos;Markd
         <location filename="../../dlgPreferencesHelp.ui" line="156"/>
         <source>In a FreeCAD tab</source>
         <translation>在 FreeCAD 分頁</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Help/dlgPreferencesHelp.ui" line="211"/>
+        <source>The documentation will open in a dockable dialog inside the FreeCAD window,
+which allows you to keep it open whlle working in the 3D view. This requires the PySide QtWebengineWidgets component</source>
+        <translation>該文件將在 FreeCAD 視窗內的可停靠對話方塊中打開，
+這允許您在 3D 檢視中工作時保持其開啟狀態. 這需要 PySide QtWebengineWidgets 元件</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Help/dlgPreferencesHelp.ui" line="211"/>
