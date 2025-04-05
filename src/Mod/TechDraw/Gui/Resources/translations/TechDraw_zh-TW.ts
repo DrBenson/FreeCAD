@@ -893,7 +893,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
     <message>
         <location filename="../../CommandExtensionDims.cpp" line="2050"/>
         <source>Create a horizontal size and angle dimension for a chamfer:&lt;br&gt;- Select two vertexes&lt;br&gt;- Click this tool</source>
-        <translation>建立一個倒角的水平尺寸與角度標註：&lt;br&gt;- 選擇兩個頂點&lt;br&gt;- 點擊此工具</translation>
+        <translation>建立一個倒角的水平尺寸與角度標註: &lt;br&gt;- 選擇兩個頂點&lt;br&gt;- 點擊此工具</translation>
     </message>
 </context>
 <context>
@@ -911,7 +911,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
     <message>
         <location filename="../../CommandExtensionPack.cpp" line="750"/>
         <source>Change the attributes of cosmetic lines and centerlines:&lt;br&gt;- Specify the line attributes (optional)&lt;br&gt;- Select one or more lines&lt;br&gt;- Click this tool</source>
-        <translation>改變裝飾線及中心線之屬性：&lt;br&gt;- 指定線屬性 (可選)&lt;br&gt;- 選擇一或多條線&lt;br&gt;- 點選此工具</translation>
+        <translation>改變裝飾線及中心線之屬性: &lt;br&gt;- 指定線屬性 (可選)&lt;br&gt;- 選擇一或多條線&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -967,7 +967,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
     <message>
         <location filename="../../CommandExtensionDims.cpp" line="1428"/>
         <source>Create a sequence of aligned horizontal dimensions:&lt;br&gt;- Select three or more vertexes&lt;br&gt;- Click this tool</source>
-        <translation>建立一系列的對齊水平標註：&lt;br&gt;- 選擇三個或更多的點&lt;br&gt;- 點選此工具</translation>
+        <translation>建立一系列的對齊水平標註: &lt;br&gt;- 選擇三個或更多的點&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1005,7 +1005,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <location filename="../../CommandExtensionDims.cpp" line="1235"/>
         <location filename="../../CommandExtensionDims.cpp" line="1502"/>
         <source>Create a sequence of aligned horizontal dimensions:&lt;br&gt;- Select three or more vertexes&lt;br&gt;- Click this tool</source>
-        <translation>建立一系列的對齊水平標註：&lt;br&gt;- 選擇三個或更多的點&lt;br&gt;- 點選此工具</translation>
+        <translation>建立一系列的對齊水平標註: &lt;br&gt;- 選擇三個或更多的點&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1025,7 +1025,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <location filename="../../CommandExtensionDims.cpp" line="1948"/>
         <location filename="../../CommandExtensionDims.cpp" line="2117"/>
         <source>Create a horizontal size and angle dimension for a chamfer:&lt;br&gt;- Select two vertexes&lt;br&gt;- Click this tool</source>
-        <translation>建立一個倒角的水平尺寸與角度標註：&lt;br&gt;- 選擇兩個頂點&lt;br&gt;- 點擊此工具</translation>
+        <translation>建立一個倒角的水平尺寸與角度標註: &lt;br&gt;- 選擇兩個頂點&lt;br&gt;- 點擊此工具</translation>
     </message>
 </context>
 <context>
@@ -1083,7 +1083,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <location filename="../../CommandExtensionDims.cpp" line="1394"/>
         <location filename="../../CommandExtensionDims.cpp" line="1516"/>
         <source>Create a sequence of aligned oblique dimensions:&lt;br&gt;- Select three or more vertexes&lt;br&gt;- The first two vertexes define the direction&lt;br&gt;- Click this tool</source>
-        <translation>建立一系列的對齊傾斜標註：&lt;br&gt;- 選擇三個或更多的點&lt;br&gt;前二個點定義其方向&lt;br&gt;- 點選此工具</translation>
+        <translation>建立一系列的對齊傾斜標註: &lt;br&gt;- 選擇三個或更多的點&lt;br&gt;前二個點定義其方向&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1123,7 +1123,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <location filename="../../CommandExtensionDims.cpp" line="1302"/>
         <location filename="../../CommandExtensionDims.cpp" line="1509"/>
         <source>Create a sequence of aligned vertical dimensions:&lt;br&gt;- Select three or more vertexes&lt;br&gt;- Click this tool</source>
-        <translation>建立一系列的對齊垂直標註：&lt;br&gt;- 選擇三個或更多的點&lt;br&gt;- 點選此工具</translation>
+        <translation>建立一系列的對齊垂直標註: &lt;br&gt;- 選擇三個或更多的點&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1143,7 +1143,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <location filename="../../CommandExtensionDims.cpp" line="2017"/>
         <location filename="../../CommandExtensionDims.cpp" line="2124"/>
         <source>Create a vertical size and angle dimension for a chamfer:&lt;br&gt;- Select two vertexes&lt;br&gt;- Click this tool</source>
-        <translation>建立一個倒角的垂直尺寸與角度標註：&lt;br&gt;- 選擇兩個頂點&lt;br&gt;- 點擊此工具</translation>
+        <translation>建立一個倒角的垂直尺寸與角度標註: &lt;br&gt;- 選擇兩個頂點&lt;br&gt;- 點擊此工具</translation>
     </message>
 </context>
 <context>
@@ -1201,7 +1201,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <location filename="../../CommandExtensionDims.cpp" line="430"/>
         <location filename="../../CommandExtensionDims.cpp" line="537"/>
         <source>Decrease the number of decimal places of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</source>
-        <translation>減少標註文字的小數位數：&lt;br&gt;- 選擇一個以上的標註&lt;br&gt;- 點選此工具</translation>
+        <translation>減少標註文字的小數位數: &lt;br&gt;- 選擇一個以上的標註&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1343,7 +1343,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <location filename="../../CommandExtensionDims.cpp" line="397"/>
         <location filename="../../CommandExtensionDims.cpp" line="530"/>
         <source>Increase the number of decimal places of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</source>
-        <translation>增加標註文字的小數位數：&lt;br&gt;- 選擇一個以上的標註&lt;br&gt;- 點選此工具</translation>
+        <translation>增加標註文字的小數位數: &lt;br&gt;- 選擇一個以上的標註&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1361,7 +1361,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
     <message>
         <location filename="../../CommandExtensionDims.cpp" line="463"/>
         <source>Increase the number of decimal places of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</source>
-        <translation>增加標註文字的小數位數：&lt;br&gt;- 選擇一個以上的標註&lt;br&gt;- 點選此工具</translation>
+        <translation>增加標註文字的小數位數: &lt;br&gt;- 選擇一個以上的標註&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1381,7 +1381,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <location filename="../../CommandExtensionDims.cpp" line="130"/>
         <location filename="../../CommandExtensionDims.cpp" line="328"/>
         <source>Insert a &apos;⌀&apos; symbol at the beginning of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</source>
-        <translation>插入一個 &apos;⌀&apos; 符號在標註文字開頭：&lt;br&gt;- 選擇一個以上標註&lt;br&gt;- 點選此工具</translation>
+        <translation>插入一個 &apos;⌀&apos; 符號在標註文字開頭: &lt;br&gt;- 選擇一個以上標註&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1399,7 +1399,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
     <message>
         <location filename="../../CommandExtensionDims.cpp" line="254"/>
         <source>Insert a &apos;⌀&apos; symbol at the beginning of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</source>
-        <translation>插入一個 &apos;⌀&apos; 符號在標註文字開頭：&lt;br&gt;- 選擇一個以上標註&lt;br&gt;- 點選此工具</translation>
+        <translation>插入一個 &apos;⌀&apos; 符號在標註文字開頭: &lt;br&gt;- 選擇一個以上標註&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1439,7 +1439,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <location filename="../../CommandExtensionDims.cpp" line="163"/>
         <location filename="../../CommandExtensionDims.cpp" line="335"/>
         <source>Insert a &apos;□&apos; symbol at the beginning of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</source>
-        <translation>插入一個 &apos;□&apos; 符號在標註文字開頭：&lt;br&gt;- 選擇一個以上標註&lt;br&gt;- 點選此工具</translation>
+        <translation>插入一個 &apos;□&apos; 符號在標註文字開頭: &lt;br&gt;- 選擇一個以上標註&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1515,7 +1515,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
     <message>
         <location filename="../../CommandExtensionPack.cpp" line="1409"/>
         <source>Lock or unlock the position of a view:&lt;br&gt;- Select a single view&lt;br&gt;- Click this tool</source>
-        <translation>鎖定或解鎖一個檢視的位置：&lt;br&gt;-選擇單一檢視&lt;br&gt;- 點選此工具</translation>
+        <translation>鎖定或解鎖一個檢視的位置: &lt;br&gt;-選擇單一檢視&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1533,7 +1533,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
     <message>
         <location filename="../../CommandExtensionDims.cpp" line="754"/>
         <source>Align horizontal dimensions to create a chain dimension:&lt;br&gt;- Select two or more horizontal dimensions&lt;br&gt;- The first dimension defines the position&lt;br&gt;- Click this tool</source>
-        <translation>對齊水平標註以建立鏈標註：&lt;br&gt;- 選擇二個或更多的水平標註&lt;br&gt;- 第一個標註定義其位置&lt;br&gt;- 點選此工具</translation>
+        <translation>對齊水平標註以建立鏈標註: &lt;br&gt;- 選擇二個或更多的水平標註&lt;br&gt;- 第一個標註定義其位置&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1553,7 +1553,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <location filename="../../CommandExtensionDims.cpp" line="590"/>
         <location filename="../../CommandExtensionDims.cpp" line="829"/>
         <source>Align horizontal dimensions to create a chain dimension:&lt;br&gt;- Select two or more horizontal dimensions&lt;br&gt;- The first dimension defines the position&lt;br&gt;- Click this tool</source>
-        <translation>對齊水平標註以建立鏈標註：&lt;br&gt;- 選擇二個或更多的水平標註&lt;br&gt;- 第一個標註定義其位置&lt;br&gt;- 點選此工具</translation>
+        <translation>對齊水平標註以建立鏈標註: &lt;br&gt;- 選擇二個或更多的水平標註&lt;br&gt;- 第一個標註定義其位置&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1573,7 +1573,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <location filename="../../CommandExtensionDims.cpp" line="719"/>
         <location filename="../../CommandExtensionDims.cpp" line="845"/>
         <source>Align oblique dimensions to create a chain dimension:&lt;br&gt;- Select two or more parallel oblique dimensions&lt;br&gt;- The first dimension defines the position&lt;br&gt;- Click this tool</source>
-        <translation>對齊傾斜標註以建立鏈標註：&lt;br&gt;- 選擇二個或更多的平行傾斜標註&lt;br&gt;- 第一個標註定義其位置&lt;br&gt;- 點選此工具</translation>
+        <translation>對齊傾斜標註以建立鏈標註: &lt;br&gt;- 選擇二個或更多的平行傾斜標註&lt;br&gt;- 第一個標註定義其位置&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1593,7 +1593,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <location filename="../../CommandExtensionDims.cpp" line="652"/>
         <location filename="../../CommandExtensionDims.cpp" line="837"/>
         <source>Align vertical dimensions to create a chain dimension:&lt;br&gt;- Select two or more vertical dimensions&lt;br&gt;- The first dimension defines the position&lt;br&gt;- Click this tool</source>
-        <translation>對齊垂直標註以建立鏈標註：&lt;br&gt;- 選擇二個或更多的垂直標註&lt;br&gt;- 第一個標註定義其位置&lt;br&gt;- 點選此工具</translation>
+        <translation>對齊垂直標註以建立鏈標註: &lt;br&gt;- 選擇二個或更多的垂直標註&lt;br&gt;- 第一個標註定義其位置&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1611,7 +1611,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
     <message>
         <location filename="../../CommandExtensionPack.cpp" line="1453"/>
         <source>Orthogonally align a section view with its source view:&lt;br&gt;- Select a single section view&lt;br&gt;- Click this tool</source>
-        <translation>將剖面檢視與其來源檢視正交對齊：&lt;br&gt;-選擇單一檢視&lt;br&gt;- 點選此工具</translation>
+        <translation>將剖面檢視與其來源檢視正交對齊: &lt;br&gt;-選擇單一檢視&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -1629,7 +1629,7 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
     <message>
         <location filename="../../CommandExtensionDims.cpp" line="221"/>
         <source>Remove prefix symbols at the beginning of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</source>
-        <translation>移除標註文字的前置符號：&lt;br&gt;- 選擇一個以上的標註&lt;br&gt;- 點選此工具</translation>
+        <translation>移除標註文字的前置符號: &lt;br&gt;- 選擇一個以上的標註&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -3766,6 +3766,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>預設屬性質</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="59"/>
+        <source>Distance Factor</source>
+        <translation>距離因子</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="132"/>
         <source>Text size</source>
         <translation>字體大小</translation>
@@ -3774,11 +3779,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="162"/>
         <source>Mirror</source>
         <translation>鏡像</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="59"/>
-        <source>Distance Factor</source>
-        <translation>距離因子</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/DlgPrefsMeasureAppearanceImp.ui" line="155"/>
@@ -4732,6 +4732,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>無法從選擇中製作3D範圍尺寸標注</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2523"/>
+        <source>Selection contains both 2d and 3d geometry</source>
+        <translation>選擇包含 2d 和 3d 幾何體</translation>
+    </message>
+    <message>
         <location filename="../../CommandCreateDims.cpp" line="1219"/>
         <source>There is no Dimension in your selection</source>
         <translation>您的選擇中沒有尺寸標注</translation>
@@ -4786,11 +4791,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2472"/>
         <source>Selected edge is a B-spline and a radius/diameter can not be calculated.</source>
         <translation>選取邊為 B 雲形線而半徑/直徑無法被計算出來.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2523"/>
-        <source>Selection contains both 2d and 3d geometry</source>
-        <translation>選擇包含 2d 和 3d 幾何體</translation>
     </message>
     <message>
         <location filename="../../CommandDecorate.cpp" line="106"/>
@@ -4884,10 +4884,10 @@ Without a selection, a file browser lets you select a SVG or image file.</source
  thin: %2
  graphic: %3
  thick: %4</source>
-        <translation>%1 定義這些線的寬度：
- 細：%2
- 繪圖：%3
- 粗：%4</translation>
+        <translation>%1 定義這些線的寬度:
+ 細: %2
+ 繪圖: %3
+ 粗: %4</translation>
     </message>
     <message>
         <location filename="../../DrawGuiUtil.cpp" line="109"/>
@@ -4934,7 +4934,7 @@ Without a selection, a file browser lets you select a SVG or image file.</source
     <message>
         <location filename="../../MDIViewPage.cpp" line="584"/>
         <source>Document Name: </source>
-        <translation>文件名稱： </translation>
+        <translation>文件名稱: </translation>
     </message>
     <message>
         <location filename="../../MDIViewPage.cpp" line="692"/>
@@ -5258,10 +5258,10 @@ Without a selection, a file browser lets you select a SVG or image file.</source
  thin: %2
  graphic: %3
 thick: %4</source>
-        <translation>%1 定義這些線的寬度：
- 細：%2
- 繪圖：%3
- 粗：%4</translation>
+        <translation>%1 定義這些線的寬度:
+ 細: %2
+ 繪圖: %3
+ 粗: %4</translation>
     </message>
 </context>
 <context>
@@ -5306,20 +5306,20 @@ it has a weld symbol that would become broken.</source>
         <location filename="../../ViewProviderPage.cpp" line="208"/>
         <source>The page is not empty, therefore the
 following referencing objects might be lost:</source>
-        <translation>此頁面非空白，因此接下來的參考物件可能遺失：</translation>
+        <translation>此頁面非空白，因此接下來的參考物件可能遺失:</translation>
     </message>
     <message>
         <location filename="../../ViewProviderProjGroup.cpp" line="142"/>
         <source>The group cannot be deleted because its items have the following
 section or detail views, or leader lines that would get broken:</source>
         <translation>本群組無法被刪除因為其中的項目有
-剖面或詳細檢視或焊接線會損壞：</translation>
+剖面或詳細檢視或焊接線會損壞:</translation>
     </message>
     <message>
         <location filename="../../ViewProviderProjGroup.cpp" line="156"/>
         <source>The projection group is not empty, therefore
 the following referencing objects might be lost:</source>
-        <translation>此投影群組非空白，因此接下來的參考物件可能遺失：</translation>
+        <translation>此投影群組非空白，因此接下來的參考物件可能遺失:</translation>
     </message>
     <message>
         <location filename="../../ViewProviderProjGroupItem.cpp" line="145"/>
@@ -5344,7 +5344,7 @@ the following referencing objects might be lost:</source>
     <message>
         <location filename="../../ViewProviderTemplate.cpp" line="198"/>
         <source>The following referencing object might break:</source>
-        <translation>接下來的參考物件可能損壞：</translation>
+        <translation>接下來的參考物件可能損壞:</translation>
     </message>
     <message>
         <location filename="../../ViewProviderViewPart.cpp" line="319"/>
@@ -5828,9 +5828,13 @@ Only change unless you know what you are doing!</source>
         <translation>如果勾選此框，連續點擊二下樹狀檢視中的頁面將自動切換到 TechDraw 並且該頁面將為可見.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="444"/>
-        <source>If this box is checked, double clicking on a page in the tree will automatically switch to TechDraw and the page will be made visible.</source>
-        <translation>如果勾選此框，連續點擊二下樹狀檢視中的頁面將自動切換到 TechDraw 並且該頁面將為可見.</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="298"/>
+        <source>Limit of 64x64 pixel SVG tiles used to hatch a single face.
+For large scalings you might get an error about too many SVG tiles.
+Then you need to increase the tile limit.</source>
+        <translation>限制在 64x64 像素 SVG 磁磚以使用來填充單一面。
+針對更大尺度您可能會得到一個太多 SVG 磁磚的錯誤訊息。
+如此一來您必須增加磁磚限制.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="447"/>
@@ -5957,15 +5961,6 @@ when hatching a face with a PAT pattern</source>
         <translation>當使用 PAT 樣式來填充一個面時，所使用的最大填充線段值</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="298"/>
-        <source>Limit of 64x64 pixel SVG tiles used to hatch a single face.
-For large scalings you might get an error about too many SVG tiles.
-Then you need to increase the tile limit.</source>
-        <translation>限制在 64x64 像素 SVG 磁磚以使用來填充單一面。
-針對更大尺度您可能會得到一個太多 SVG 磁磚的錯誤訊息。
-如此一來您必須增加磁磚限制.</translation>
-    </message>
-    <message>
         <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="213"/>
         <source>Max SVG Hatch Tiles</source>
         <translation>最大 SVG 填充磁磚</translation>
@@ -6018,6 +6013,11 @@ Each unit is approx. 0.1 mm wide</source>
         <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="374"/>
         <source>Show Section Edges</source>
         <translation>顯示選擇邊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="444"/>
+        <source>If this box is checked, double clicking on a page in the tree will automatically switch to TechDraw and the page will be made visible.</source>
+        <translation>如果勾選此框，連續點擊二下樹狀檢視中的頁面將自動切換到 TechDraw 並且該頁面將為可見.</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="330"/>
@@ -6111,7 +6111,7 @@ Then you need to increase the tile limit.</source>
     <message>
         <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="607"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; Items in &lt;span style=&quot; font-style:italic;&quot;&gt;italics&lt;/span&gt; are default values for new objects. They have no effect on existing objects.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意：&lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意: &lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -6540,7 +6540,7 @@ if you are planning to use a drawing as a 1:1 cutting guide.
     <message>
         <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="881"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; Items in &lt;span style=&quot; font-style:italic;&quot;&gt;italics&lt;/span&gt; are default values for new objects. They have no effect on existing objects.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意：&lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意: &lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -6763,7 +6763,7 @@ if you are planning to use a drawing as a 1:1 cutting guide.
     <message>
         <location filename="../../DlgPrefsTechDrawColors.ui" line="656"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; Items in &lt;span style=&quot; font-style:italic;&quot;&gt;italics&lt;/span&gt; are default values for new objects. They have no effect on existing objects.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意：&lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意: &lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -7001,7 +7001,7 @@ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
     <message>
         <location filename="../../DlgPrefsTechDrawDimensions.ui" line="614"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; Items in &lt;span style=&quot; font-style:italic;&quot;&gt;italics&lt;/span&gt; are default values for new objects. They have no effect on existing objects.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意：&lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意: &lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="527"/>
@@ -7023,10 +7023,10 @@ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="548"/>
-        <source>Controls the size of the gap between the dimension point and the start of the extension line for ASME dimensions. Value * linewidth is the gap.
- Normally, no gap is used. If using a gap, the recommended value is 6.</source>
-        <translation>控制 ASME 尺寸的尺寸點與尺寸界線起點之間的間隙大小. 值*線寬 即為間隙.
- 通常不使用間隙. 如果使用間隙，建議值為6.</translation>
+        <source>Controls the size of gap between dimension point and start of extension line for ASME dimensions. Value * linewidth is the gap.
+ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
+        <translation>控制 ASME 尺寸的尺寸點和延伸線起點之間的間隙大小. 值 * 線寬是間隙.
+ 通常，不使用間隙. 如需使用間隙，建議值為 6.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="630"/>
@@ -7040,10 +7040,10 @@ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="548"/>
-        <source>Controls the size of gap between dimension point and start of extension line for ASME dimensions. Value * linewidth is the gap.
- Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
-        <translation>控制 ASME 尺寸的尺寸點和延伸線起點之間的間隙大小. 值 * 線寬是間隙.
- 通常，不使用間隙. 如需使用間隙，建議值為 6.</translation>
+        <source>Controls the size of the gap between the dimension point and the start of the extension line for ASME dimensions. Value * linewidth is the gap.
+ Normally, no gap is used. If using a gap, the recommended value is 6.</source>
+        <translation>控制 ASME 尺寸的尺寸點與尺寸界線起點之間的間隙大小. 值*線寬 即為間隙.
+ 通常不使用間隙. 如果使用間隙，建議值為6.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="643"/>
@@ -7265,16 +7265,6 @@ for ProjectionGroups</source>
         <translation>用於繪製剖面線的標準. 這會影響箭頭和符號的位置.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="451"/>
-        <source>ANSI</source>
-        <translation>ANSI</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="456"/>
-        <source>ISO</source>
-        <translation>ISO</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="469"/>
         <source>Section Line Convention</source>
         <translation>剖面線約束</translation>
@@ -7288,6 +7278,16 @@ for ProjectionGroups</source>
         <location filename="../../DlgPrefsTechDrawGeneral.ui" line="712"/>
         <source>PAT File</source>
         <translation>PAT 檔</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="451"/>
+        <source>ANSI</source>
+        <translation>ANSI</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="456"/>
+        <source>ISO</source>
+        <translation>ISO</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="538"/>
@@ -7430,6 +7430,16 @@ for ProjectionGroups</source>
         <translation>使用3D相機方向</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1024"/>
+        <source>If checked, the 3d camera direction (or normal of a selected face) will be used as the view direction.  If not checked, Views will be created as Front Views.</source>
+        <translation>如果選中，3D 相機方向(或所選面的法線)將用作檢視方向. 如果未選取，檢視將建立為正面檢視.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1027"/>
+        <source>Use 3d Camera Direction</source>
+        <translation>使用3D相機方向</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1045"/>
         <source>If checked, view labels will be displayed even when frames are suppressed.</source>
         <translation>如果選中，即使禁止顯示幀，也會顯示檢視標籤.</translation>
@@ -7467,17 +7477,7 @@ for ProjectionGroups</source>
     <message>
         <location filename="../../DlgPrefsTechDrawGeneral.ui" line="879"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; Items in &lt;span style=&quot; font-style:italic;&quot;&gt;italics&lt;/span&gt; are default values for new objects. They have no effect on existing objects.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意：&lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1024"/>
-        <source>If checked, the 3d camera direction (or normal of a selected face) will be used as the view direction.  If not checked, Views will be created as Front Views.</source>
-        <translation>如果選中，3D 相機方向(或所選面的法線)將用作檢視方向. 如果未選取，檢視將建立為正面檢視.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1027"/>
-        <source>Use 3d Camera Direction</source>
-        <translation>使用3D相機方向</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意: &lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -7591,7 +7591,7 @@ Fast, but result is a collection of short straight lines.</source>
     <message>
         <location filename="../../DlgPrefsTechDrawHLR.ui" line="414"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; Items in &lt;span style=&quot; font-style:italic;&quot;&gt;italics&lt;/span&gt; are default values for new objects. They have no effect on existing objects.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意：&lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意: &lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -7705,7 +7705,7 @@ Fast, but result is a collection of short straight lines.</source>
     <message>
         <location filename="../../DlgPrefsTechDrawScale.ui" line="427"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; Items in &lt;span style=&quot; font-style:italic;&quot;&gt;italics&lt;/span&gt; are default values for new objects. They have no effect on existing objects.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意：&lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意: &lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物件的預設值。它們對現有物件沒有影響。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -7815,7 +7815,7 @@ Do you want to continue?</source>
     <message>
         <location filename="../../MDIViewPage.cpp" line="1228"/>
         <source>Selected:</source>
-        <translation>已選取：</translation>
+        <translation>已選取:</translation>
     </message>
 </context>
 <context>
@@ -7894,7 +7894,7 @@ Do you want to continue?</source>
     <message>
         <location filename="../../TaskBalloon.ui" line="36"/>
         <source>Text Color:</source>
-        <translation>文字顏色：</translation>
+        <translation>文字顏色:</translation>
     </message>
     <message>
         <location filename="../../TaskBalloon.ui" line="43"/>
@@ -7914,7 +7914,7 @@ Do you want to continue?</source>
     <message>
         <location filename="../../TaskBalloon.ui" line="95"/>
         <source>Bubble Shape:</source>
-        <translation>氣泡形狀：</translation>
+        <translation>氣泡形狀:</translation>
     </message>
     <message>
         <location filename="../../TaskBalloon.ui" line="102"/>
@@ -7964,7 +7964,7 @@ Do you want to continue?</source>
     <message>
         <location filename="../../TaskBalloon.ui" line="181"/>
         <source>Shape Scale:</source>
-        <translation>形狀比例：</translation>
+        <translation>形狀比例:</translation>
     </message>
     <message>
         <location filename="../../TaskBalloon.ui" line="194"/>
@@ -7974,7 +7974,7 @@ Do you want to continue?</source>
     <message>
         <location filename="../../TaskBalloon.ui" line="213"/>
         <source>End Symbol:</source>
-        <translation>結束符號：</translation>
+        <translation>結束符號:</translation>
     </message>
     <message>
         <location filename="../../TaskBalloon.ui" line="220"/>
@@ -7984,7 +7984,7 @@ Do you want to continue?</source>
     <message>
         <location filename="../../TaskBalloon.ui" line="227"/>
         <source>End Symbol Scale:</source>
-        <translation>結束符號比例：</translation>
+        <translation>結束符號比例:</translation>
     </message>
     <message>
         <location filename="../../TaskBalloon.ui" line="240"/>
@@ -7994,7 +7994,7 @@ Do you want to continue?</source>
     <message>
         <location filename="../../TaskBalloon.ui" line="259"/>
         <source>Line Visible:</source>
-        <translation>線可視性：</translation>
+        <translation>線可視性:</translation>
     </message>
     <message>
         <location filename="../../TaskBalloon.ui" line="266"/>
@@ -8014,7 +8014,7 @@ Do you want to continue?</source>
     <message>
         <location filename="../../TaskBalloon.ui" line="286"/>
         <source>Line Width:</source>
-        <translation>線寬：</translation>
+        <translation>線寬:</translation>
     </message>
     <message>
         <location filename="../../TaskBalloon.ui" line="305"/>
@@ -8024,7 +8024,7 @@ Do you want to continue?</source>
     <message>
         <location filename="../../TaskBalloon.ui" line="324"/>
         <source>Leader Kink Length:</source>
-        <translation>焊接線紐結長度：</translation>
+        <translation>焊接線紐結長度:</translation>
     </message>
     <message>
         <location filename="../../TaskBalloon.ui" line="343"/>
@@ -8081,8 +8081,8 @@ Do you want to continue?</source>
   half of the angle the lines have to each other
 - points: in equal distance to the points</source>
         <translation>中心線介於
-- 線段：與線的距離相等，並且在線之間的夾角的一半
-- 點：與點的距確相等</translation>
+- 線段: 與線的距離相等，並且在線之間的夾角的一半
+- 點: 與點的距確相等</translation>
     </message>
     <message>
         <location filename="../../TaskCenterLine.ui" line="130"/>
@@ -8504,11 +8504,6 @@ Do you want to continue?</source>
         <translation>選中此框可沿順時針方向從角度起點到角度端點畫一個弧形.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="212"/>
-        <source>Check this box to make an arc from atart angle to end angle in a clockwise direction.</source>
-        <translation>選中此框可沿順時針方向從角度起點到角度端點畫一個弧形.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="215"/>
         <source>Clockwise Angle</source>
         <translation>順時針角度</translation>
@@ -8522,6 +8517,11 @@ Do you want to continue?</source>
         <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="180"/>
         <source>Start Angle:</source>
         <translation>起始角度:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="212"/>
+        <source>Check this box to make an arc from atart angle to end angle in a clockwise direction.</source>
+        <translation>選中此框可沿順時針方向從角度起點到角度端點畫一個弧形.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="215"/>
@@ -8567,19 +8567,19 @@ Do you want to continue?</source>
         <location filename="../../TaskCosmeticLine.ui" line="88"/>
         <location filename="../../TaskCosmeticLine.ui" line="161"/>
         <source>X:</source>
-        <translation>X：</translation>
+        <translation>X:</translation>
     </message>
     <message>
         <location filename="../../TaskCosmeticLine.ui" line="102"/>
         <location filename="../../TaskCosmeticLine.ui" line="175"/>
         <source>Y:</source>
-        <translation>Y：</translation>
+        <translation>Y:</translation>
     </message>
     <message>
         <location filename="../../TaskCosmeticLine.ui" line="116"/>
         <location filename="../../TaskCosmeticLine.ui" line="189"/>
         <source>Z:</source>
-        <translation>Z：</translation>
+        <translation>Z:</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticLine.ui" line="61"/>
@@ -8899,12 +8899,12 @@ Do you want to continue?</source>
     <message>
         <location filename="../../TaskCustomizeFormat.ui" line="708"/>
         <source>Format:</source>
-        <translation>格式：</translation>
+        <translation>格式:</translation>
     </message>
     <message>
         <location filename="../../TaskCustomizeFormat.ui" line="718"/>
         <source>Preview:</source>
-        <translation>預覽：</translation>
+        <translation>預覽:</translation>
     </message>
     <message>
         <location filename="../../TaskCustomizeFormat.cpp" line="81"/>
@@ -9001,10 +9001,10 @@ Do you want to continue?</source>
 Automatic: if the detail view is larger than the page,
                    it will be scaled down to fit into the page
 Custom: custom scale factor is used</source>
-        <translation>頁面：頁面縮放係數以下列方式使用
-自動：如果詳細檢視比頁面還大的話，
+        <translation>頁面: 頁面縮放係數以下列方式使用
+自動: 如果詳細檢視比頁面還大的話，
             它將會縮小以適合頁面
-自訂：使用者自訂縮放係數</translation>
+自訂: 使用者自訂縮放係數</translation>
     </message>
     <message>
         <location filename="../../TaskDetail.ui" line="216"/>
@@ -9080,7 +9080,7 @@ Custom: custom scale factor is used</source>
     <message>
         <location filename="../../TaskDimension.ui" line="48"/>
         <source>Overtolerance:</source>
-        <translation>超過公差：</translation>
+        <translation>超過公差:</translation>
     </message>
     <message>
         <location filename="../../TaskDimension.ui" line="61"/>
@@ -9094,7 +9094,7 @@ the negated value for &apos;Under Tolerance&apos;.</source>
     <message>
         <location filename="../../TaskDimension.ui" line="79"/>
         <source>Undertolerance:</source>
-        <translation>低於公差：</translation>
+        <translation>低於公差:</translation>
     </message>
     <message>
         <location filename="../../TaskDimension.ui" line="92"/>
@@ -9113,7 +9113,7 @@ by negative value of &apos;Over Tolerance&apos;.</source>
     <message>
         <location filename="../../TaskDimension.ui" line="123"/>
         <source>Format Specifier:</source>
-        <translation>格式說明符：</translation>
+        <translation>格式說明符號:</translation>
     </message>
     <message>
         <location filename="../../TaskDimension.ui" line="130"/>
@@ -9145,7 +9145,7 @@ be used instead of the dimension value</source>
     <message>
         <location filename="../../TaskDimension.ui" line="148"/>
         <source>OverTolerance Format Specifier:</source>
-        <translation>超過公差格式說明符：</translation>
+        <translation>超過公差格式說明符號:</translation>
     </message>
     <message>
         <location filename="../../TaskDimension.ui" line="155"/>
@@ -9155,7 +9155,7 @@ be used instead of the dimension value</source>
     <message>
         <location filename="../../TaskDimension.ui" line="162"/>
         <source>UnderTolerance Format Specifier:</source>
-        <translation>低於公差格式說明符：</translation>
+        <translation>低於公差格式說明符號:</translation>
     </message>
     <message>
         <location filename="../../TaskDimension.ui" line="169"/>
@@ -9190,7 +9190,7 @@ be used instead of the dimension value</source>
     <message>
         <location filename="../../TaskDimension.ui" line="209"/>
         <source>Color:</source>
-        <translation>色彩：</translation>
+        <translation>顏色:</translation>
     </message>
     <message>
         <location filename="../../TaskDimension.ui" line="216"/>
@@ -9210,7 +9210,7 @@ be used instead of the dimension value</source>
     <message>
         <location filename="../../TaskDimension.ui" line="271"/>
         <source>Drawing Style:</source>
-        <translation>繪製式樣：</translation>
+        <translation>繪製式樣:</translation>
     </message>
     <message>
         <location filename="../../TaskDimension.ui" line="278"/>
@@ -9245,12 +9245,12 @@ be used instead of the dimension value</source>
     <message>
         <location filename="../../TaskDimension.ui" line="318"/>
         <source>Use override angles if checked. Use default angles if unchecked.</source>
-        <translation>若點選的話使用覆寫角度。若未點選的話使用預設角度。</translation>
+        <translation>若點選的話使用覆蓋角度。若未點選的話使用預設角度。</translation>
     </message>
     <message>
         <location filename="../../TaskDimension.ui" line="321"/>
         <source>Override angles</source>
-        <translation>覆寫角度</translation>
+        <translation>覆蓋角度</translation>
     </message>
     <message>
         <location filename="../../TaskDimension.ui" line="328"/>
@@ -10421,7 +10421,7 @@ using the given X/Y Spacing</source>
     <message>
         <location filename="../../TaskSelectLineAttributes.ui" line="34"/>
         <source>Line style:</source>
-        <translation>線條樣式：</translation>
+        <translation>線條樣式:</translation>
     </message>
     <message>
         <location filename="../../TaskSelectLineAttributes.ui" line="41"/>
@@ -10451,7 +10451,7 @@ using the given X/Y Spacing</source>
     <message>
         <location filename="../../TaskSelectLineAttributes.ui" line="103"/>
         <source>Line width:</source>
-        <translation>線寬：</translation>
+        <translation>線寬:</translation>
     </message>
     <message>
         <location filename="../../TaskSelectLineAttributes.ui" line="110"/>
@@ -10471,7 +10471,7 @@ using the given X/Y Spacing</source>
     <message>
         <location filename="../../TaskSelectLineAttributes.ui" line="156"/>
         <source>Line color:</source>
-        <translation>線條色彩：</translation>
+        <translation>線條顏色:</translation>
     </message>
     <message>
         <location filename="../../TaskSelectLineAttributes.ui" line="163"/>
@@ -10657,7 +10657,7 @@ using the given X/Y Spacing</source>
     <message>
         <location filename="../../TaskSurfaceFinishSymbols.ui" line="98"/>
         <source>Symbol angle:</source>
-        <translation>符號角度：</translation>
+        <translation>符號角度:</translation>
     </message>
     <message>
         <location filename="../../TaskSurfaceFinishSymbols.ui" line="105"/>
@@ -10721,7 +10721,7 @@ using the given X/Y Spacing</source>
     <message>
         <location filename="../../DlgTemplateField.ui" line="28"/>
         <source>Text Name:</source>
-        <translation>文字名稱：</translation>
+        <translation>文字名稱:</translation>
     </message>
     <message>
         <location filename="../../DlgTemplateField.ui" line="35"/>
@@ -10731,7 +10731,7 @@ using the given X/Y Spacing</source>
     <message>
         <location filename="../../DlgTemplateField.ui" line="42"/>
         <source>Value:</source>
-        <translation>值：</translation>
+        <translation>值:</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgTemplateField.ui" line="52"/>
@@ -10811,7 +10811,7 @@ using the given X/Y Spacing</source>
     <message>
         <location filename="../../CommandExtensionDims.cpp" line="342"/>
         <source>Remove prefix symbols at the beginning of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</source>
-        <translation>移除標註文字的前置符號：&lt;br&gt;- 選擇一個以上的標註&lt;br&gt;- 點選此工具</translation>
+        <translation>移除標註文字的前置符號: &lt;br&gt;- 選擇一個以上的標註&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -11038,18 +11038,18 @@ using the given X/Y Spacing</source>
     <message>
         <location filename="../../Workbench.cpp" line="39"/>
         <source>Extensions: Attributes/Modifications</source>
-        <translation>擴展：屬性/修改</translation>
+        <translation>延伸: 屬性/修改</translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="40"/>
         <location filename="../../Workbench.cpp" line="61"/>
         <source>Extensions: Centerlines/Threading</source>
-        <translation>延伸：中心線/螺紋</translation>
+        <translation>延伸: 中心線/螺紋</translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="41"/>
         <source>Extensions: Dimensions</source>
-        <translation>延伸：標註</translation>
+        <translation>延伸: 標註</translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="42"/>
