@@ -1395,5 +1395,15 @@ If unchecked, they will be sorted by their name.</source>
         <source>Materials</source>
         <translation>材質</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/InitGui.py" line="36"/>
+        <source>Material</source>
+        <translation>材質</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0/src/Mod/Material/InitGui.py" line="37"/>
+        <source>Material workbench</source>
+        <translation>材質工作台</translation>
+    </message>
 </context>
 </TS>

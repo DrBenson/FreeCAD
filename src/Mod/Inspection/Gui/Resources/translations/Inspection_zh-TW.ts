@@ -143,4 +143,17 @@
         <translation>距離: %1</translation>
     </message>
 </context>
+<context>
+    <name>Workbench</name>
+    <message>
+        <location filename="../../InitGui.Py" line="38"/>
+        <source>Inspection</source>
+        <translation>檢查</translation>
+    </message>
+    <message>
+        <location filename="../../InitGui.py" line="39"/>
+        <source>Inspection workbench</source>
+        <translation>檢查工作台</translation>
+    </message>
+</context>
 </TS>

@@ -449,16 +449,6 @@
 <context>
     <name>OpenSCAD_Minkowski</name>
     <message>
-        <location filename="../../OpenSCADCommands.py" line="580"/>
-        <source>Minkowski sum</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../OpenSCADCommands.py" line="583"/>
-        <source>Use OpenSCAD to create a Minkowski sum</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../OpenSCADCommands.py" line="570"/>
         <source>Minkowski</source>
         <translation>Minkowski</translation>
@@ -467,6 +457,16 @@
         <location filename="../../OpenSCADCommands.py" line="573"/>
         <source>Perform Minkowski</source>
         <translation>執行 Minkowski</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="580"/>
+        <source>Minkowski sum</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="583"/>
+        <source>Use OpenSCAD to create a Minkowski sum</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -573,9 +573,23 @@
         <translation>OpenSCAD 工具</translation>
     </message>
     <message>
+        <location filename="../../InitGui.py" line="152"/>
+        <source>OpenSCAD</source>
+        <translation>OpenSCAD 工具</translation>
+    </message>
+    <message>
         <location filename="../../InitGui.py" line="156"/>
         <source>Frequently-used Part WB tools</source>
         <translation>常用的零件工作台工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/conda/AppDir6/media/usr/Mod/OpenSCAD/InitGui.py" line="49"/>
+        <source>OpenSCAD is an application for creating solid 3D CAD.
+FreeCAD utizes OpenSCAD&apos;s capability as a script-only based modeller that uses its own description language
+Note: the Mesh workbench heavily uses the boolean operations of this workbench because they are quite robust</source>
+        <translation>OpenSCAD 是一款用於建立實體 3D CAD 的應用程式.
+FreeCAD 利用 OpenSCAD 的功能，將其作為基於腳本的建模器，使用自己的描述語言
+注意: Mesh 工作台大量使用此工作台的布林運算，因為它們非常健全</translation>
     </message>
 </context>
 </TS>

@@ -145,4 +145,13 @@ FreeCAD UnitTest is part of FreeCAD and supports writing Unit Tests for ones own
 FreeCAD 單位測試為 FreeCAD 的一部分，支援測試自己的模組編寫單位。</translation>
     </message>
 </context>
+<context>
+    <name>Workbench</name>
+    <message>
+        <location filename="../../../InitGui.py" line="35"/>
+        <location filename="../../../InitGui.py" line="37"/>
+        <source>Test Framework</source>
+        <translation>測試架構</translation>
+    </message>
+</context>
 </TS>

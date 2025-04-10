@@ -33,4 +33,17 @@
         <translation>雲端測試功能</translation>
     </message>
 </context>
+<context>
+    <name>Workbench</name>
+    <message>
+        <location filename="../../../InitGui.py" line="14"/>
+        <source>Cloud</source>
+        <translation>雲端</translation>
+    </message>
+    <message>
+        <location filename="../../../InitGui.py" line="15"/>
+        <source>Cloud Workbench</source>
+        <translation>雲端工作台</translation>
+    </message>
+</context>
 </TS>

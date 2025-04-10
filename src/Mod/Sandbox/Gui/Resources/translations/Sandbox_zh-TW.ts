@@ -892,6 +892,26 @@
 <context>
     <name>QObject</name>
     <message>
+        <location filename="../../Command.cpp" line="72"/>
+        <source>Select one Robot to set home position</source>
+        <translation>選擇要設置起始位置之機器人</translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="121"/>
+        <source>Select one Robot</source>
+        <translation>選取一機器人</translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="226"/>
+        <source>Trajectory not valid</source>
+        <translation>無效軌跡</translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="227"/>
+        <source>You need at least two waypoints in a trajectory to simulate.</source>
+        <translation>軌跡中至少需要兩個航路點才能進行模擬.</translation>
+    </message>
+    <message>
         <location filename="../../Command.cpp" line="575"/>
         <location filename="../../Command.cpp" line="633"/>
         <location filename="../../Command.cpp" line="681"/>
@@ -946,26 +966,6 @@
         <location filename="../../Command.cpp" line="692"/>
         <source>Import mesh</source>
         <translation>匯入網格</translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="72"/>
-        <source>Select one Robot to set home position</source>
-        <translation>選擇要設置起始位置之機器人</translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="121"/>
-        <source>Select one Robot</source>
-        <translation>選取一機器人</translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="226"/>
-        <source>Trajectory not valid</source>
-        <translation>無效軌跡</translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="227"/>
-        <source>You need at least two waypoints in a trajectory to simulate.</source>
-        <translation>軌跡中至少需要兩個航路點才能進行模擬.</translation>
     </message>
     <message>
         <location filename="../../CommandInsertRobot.cpp" line="229"/>
@@ -1175,6 +1175,11 @@
 <context>
     <name>RobotGui::TaskRobot6Axis</name>
     <message>
+        <location filename="../../TaskRobot6Axis.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../TaskRobot6Axis.ui" line="22"/>
         <source>A1</source>
         <translation>A1</translation>
@@ -1213,11 +1218,6 @@
         <location filename="../../TaskRobot6Axis.ui" line="329"/>
         <source>Tool: (0,0,400,0,0,0)</source>
         <translation>工具： (0,0,400,0,0,0)</translation>
-    </message>
-    <message>
-        <location filename="../../TaskRobot6Axis.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
     <message>
         <location filename="../../TaskRobot6Axis.cpp" line="41"/>
@@ -1359,6 +1359,11 @@
 <context>
     <name>RobotGui::TaskTrajectory</name>
     <message>
+        <location filename="../../TaskTrajectory.ui" line="20"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../TaskTrajectory.ui" line="58"/>
         <source>|&lt;</source>
         <translation>|&lt;</translation>
@@ -1437,11 +1442,6 @@
         <location filename="../../TaskTrajectory.ui" line="337"/>
         <source>A</source>
         <translation>A</translation>
-    </message>
-    <message>
-        <location filename="../../TaskTrajectory.ui" line="20"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
     <message>
         <location filename="../../TaskTrajectory.cpp" line="37"/>
@@ -1810,6 +1810,16 @@
         <location filename="../../Workbench.cpp" line="50"/>
         <source>Export trajectory</source>
         <translation>匯出軌跡</translation>
+    </message>
+    <message>
+        <location filename="../../../InitGui.py" line="33"/>
+        <source>Sandbox</source>
+        <translation>沙箱</translation>
+    </message>
+    <message>
+        <location filename="../../../InitGui.py" line="34"/>
+        <source>Sandbox workbench</source>
+        <translation>沙箱工作台</translation>
     </message>
 </context>
 </TS>

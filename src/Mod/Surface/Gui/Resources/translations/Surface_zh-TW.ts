@@ -530,4 +530,17 @@ that is, the surface will be forced to pass through these points.</source>
         <translation>選擇單面</translation>
     </message>
 </context>
+<context>
+    <name>Workbench</name>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/conda/AppDir6/media/usr/Mod/Surface/InitGui.py" line="39"/>
+        <source>Surface</source>
+        <translation>曲面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/conda/AppDir6/media/usr/Mod/Surface/InitGui.py" line="41"/>
+        <source>Surface workbench: Create and edit complex surfaces</source>
+        <translation>曲面工作台: 建立和編輯複雜表面</translation>
+    </message>
+</context>
 </TS>

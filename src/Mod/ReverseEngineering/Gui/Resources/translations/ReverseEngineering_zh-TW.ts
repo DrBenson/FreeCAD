@@ -747,5 +747,10 @@
         <source>Reverse Engineering</source>
         <translation>逆向工程</translation>
     </message>
+    <message>
+        <location filename="../../Workbench.cpp" line="34"/>
+        <source>Reverse Engineering workbench</source>
+        <translation>逆向工程工作台</translation>
+    </message>
 </context>
 </TS>
