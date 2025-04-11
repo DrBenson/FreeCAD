@@ -2575,27 +2575,37 @@ Select a different shape, please.</source>
 <context>
     <name>MeshPart_CreateFlatFace</name>
     <message>
-        <location filename="../../MeshFlatteningCommand.py" line="79"/>
-        <source>Unwrap Face</source>
-        <translation>展開表面</translation>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD/src/Mod/MeshPart/MeshFlatteningCommand.py" line="88"/>
+        <source>Unwrap face</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../MeshFlatteningCommand.py" line="80"/>
         <source>Find a flat representation of a face.</source>
         <translation>找到平面的平面表示法.</translation>
     </message>
+    <message>
+        <location filename="../../MeshFlatteningCommand.py" line="79"/>
+        <source>Unwrap Face</source>
+        <translation>展開表面</translation>
+    </message>
 </context>
 <context>
     <name>MeshPart_CreateFlatMesh</name>
     <message>
-        <location filename="../../MeshFlatteningCommand.py" line="47"/>
-        <source>Unwrap Mesh</source>
-        <translation>展開網格</translation>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD/src/Mod/MeshPart/MeshFlatteningCommand.py" line="49"/>
+        <source>Unwrap mesh</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../MeshFlatteningCommand.py" line="48"/>
         <source>Find a flat representation of a mesh.</source>
         <translation>尋找網格的平面表示.</translation>
+    </message>
+    <message>
+        <location filename="../../MeshFlatteningCommand.py" line="47"/>
+        <source>Unwrap Mesh</source>
+        <translation>展開網格</translation>
     </message>
 </context>
 <context>
@@ -2961,6 +2971,11 @@ Please visit http://www.openscad.org/index.html to install it.</source>
         <location filename="../../Workbench.cpp" line="36"/>
         <source>MeshPart</source>
         <translation>網格零件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD/src/Mod/MeshPart/InitGui.py" line="66"/>
+        <source>MeshPart workbench</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/Mesh/Gui/Workbench.cpp" line="43"/>

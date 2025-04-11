@@ -339,6 +339,16 @@
 <context>
     <name>Workbench</name>
     <message>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD/src/Mod/Points/InitGui.py" line="43"/>
+        <source>Points</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD/src/Mod/Points/InitGui.py" line="45"/>
+        <source>Points workbench</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../Gui/Workbench.cpp" line="34"/>
         <source>Points tools</source>
         <translation>編輯點工具</translation>

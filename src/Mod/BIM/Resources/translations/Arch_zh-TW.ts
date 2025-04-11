@@ -2432,17 +2432,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchSpace.py" line="458"/>
+        <source>The text to show. Use $area, $label, $longname, $description or any other propery name preceded with $ (case insensitive), or $floor, $walls, $ceiling for finishes, to insert the respective data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>The color of the area text</source>
         <translation>區域文字的顏色</translation>
     </message>
     <message>
         <source>The size of the first line of text</source>
         <translation>首行文字大小</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchSpace.py" line="458"/>
-        <source>The text to show. Use $area, $label, $longname, $description or any other propery name preceded with $ (case insensitive), or $floor, $walls, $ceiling for finishes, to insert the respective data</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The space between the lines of text</source>
@@ -3448,16 +3448,6 @@ Floor creation aborted.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ArchMaterial.py" line="123"/>
-        <source>Create material</source>
-        <translation>建立材質</translation>
-    </message>
-    <message>
-        <location filename="../../ArchMaterial.py" line="157"/>
-        <source>Create multi-material</source>
-        <translation>建立多重材質</translation>
-    </message>
-    <message>
         <location filename="../../ArchMaterial.py" line="826"/>
         <location filename="../../ArchMaterial.py" line="845"/>
         <location filename="../../ArchWindow.py" line="1739"/>
@@ -3483,16 +3473,6 @@ Floor creation aborted.</source>
     <message>
         <source>depends on the object</source>
         <translation>相依於物件</translation>
-    </message>
-    <message>
-        <location filename="../../ArchStructure.py" line="432"/>
-        <source>Drawing mode</source>
-        <translation>繪圖模式</translation>
-    </message>
-    <message>
-        <location filename="../../ArchStructure.py" line="489"/>
-        <source>Switch L/W</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../ArchStructure.py" line="835"/>
@@ -4350,6 +4330,26 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     </message>
     <message>
         <source>Press to retrieve the selected edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ArchMaterial.py" line="123"/>
+        <source>Create material</source>
+        <translation>建立材質</translation>
+    </message>
+    <message>
+        <location filename="../../ArchMaterial.py" line="157"/>
+        <source>Create multi-material</source>
+        <translation>建立多重材質</translation>
+    </message>
+    <message>
+        <location filename="../../ArchStructure.py" line="432"/>
+        <source>Drawing mode</source>
+        <translation>繪圖模式</translation>
+    </message>
+    <message>
+        <location filename="../../ArchStructure.py" line="489"/>
+        <source>Switch L/W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6640,9 +6640,34 @@ When dealing with native IFC objects, you can use FreeCAD properties name, ex: &
         <translation>排序依據:</translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogIfcElements.ui" line="103"/>
+        <source>change type to:</source>
+        <translation>變更類型為:</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogIfcElements.ui" line="110"/>
         <source>change material to:</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="14"/>
+        <source>Classification manager</source>
+        <translation>分類管理</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="42"/>
+        <source>Objects &amp;&amp; Materials</source>
+        <translation>物體 &amp;&amp; 材質</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="48"/>
+        <source>Only visible objects</source>
+        <translation>僅可見物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="60"/>
+        <source>Sort by:</source>
+        <translation>排序依據:</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="68"/>
@@ -6725,11 +6750,6 @@ When dealing with native IFC objects, you can use FreeCAD properties name, ex: &
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogIfcElements.ui" line="101"/>
         <source>Change type to:</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogIfcElements.ui" line="103"/>
-        <source>change type to:</source>
-        <translation>變更類型為:</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogIfcElements.ui" line="108"/>
@@ -7116,11 +7136,6 @@ Utils -&gt; Make IFC project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="31"/>
-        <source>Use preset...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="41"/>
         <source>Saves the current document as a template, including all the current BIM settings</source>
         <translation type="unfinished"></translation>
@@ -7132,23 +7147,17 @@ Utils -&gt; Make IFC project</source>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="56"/>
-        <source>The settings below can be saved as a preset. Presets are stored as .txt files in your FreeCAD user folder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="56"/>
         <source>Loads the contents of a FCStd file into the active document, applying all the BIM settings stored in it if any</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="579"/>
-        <source>Save preset</source>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="31"/>
+        <source>Use preset...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="87"/>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="90"/>
-        <source>Create a new BIM project</source>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="56"/>
+        <source>The settings below can be saved as a preset. Presets are stored as .txt files in your FreeCAD user folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7162,6 +7171,77 @@ Utils -&gt; Make IFC project</source>
         <translation>建立新文件</translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="114"/>
+        <source>This will create a new FreeCAD docment that allows you to build a BIM model, but with no specific IFC structure yet. This is the most flexible option when you start working ona BIM project. You can convert this project to IFC anytime later.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="117"/>
+        <source>Create a new document witout IFC support yet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="117"/>
+        <source>If this is checked, a human figure will be added, which helps greatly to give a sense of scale when viewing the model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="130"/>
+        <source>Create a Native IFC project in the current dopcument</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="130"/>
+        <source>Create Site</source>
+        <translation>建立地點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="260"/>
+        <source>Create Building</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="498"/>
+        <source>Bind levels to vertical axes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="505"/>
+        <source>Define a working plane for each level</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="512"/>
+        <source>Default groups to be added to each level</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="567"/>
+        <source>The above settings can be saved as a preset. Presets are stored as .txt files in your FreeCAD user folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="579"/>
+        <source>Save preset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="637"/>
+        <source>Default groups to be added to each level. Defautl groups such as walls, windows,... are useful to organize the different building elements inside a level</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="717"/>
+        <source>Accept the values fo this form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="87"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="90"/>
+        <source>Create a new BIM project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="102"/>
         <source>A new BIM project will be created, either as a new FreeCAD document or as a Native IFC project</source>
         <translation type="unfinished"></translation>
@@ -7172,18 +7252,8 @@ Utils -&gt; Make IFC project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="114"/>
-        <source>This will create a new FreeCAD docment that allows you to build a BIM model, but with no specific IFC structure yet. This is the most flexible option when you start working ona BIM project. You can convert this project to IFC anytime later.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="117"/>
         <source>Create a new document without IFC support yet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="117"/>
-        <source>Create a new document witout IFC support yet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7197,11 +7267,6 @@ Utils -&gt; Make IFC project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="130"/>
-        <source>Create a Native IFC project in the current dopcument</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="140"/>
         <source>The new IFC project will be created as a new FreeCAD document.  In that mode, the IFC project is the FreeCAD document, anything you create in that document becomes part of the IFC project. This is extremely restrictive as no non-IFC object can be added to the document.</source>
         <translation type="unfinished"></translation>
@@ -7209,11 +7274,6 @@ Utils -&gt; Make IFC project</source>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="143"/>
         <source>Create a locked Native IFC project as a new document</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="717"/>
-        <source>Accept the values fo this form</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7230,16 +7290,6 @@ Utils -&gt; Make IFC project</source>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="107"/>
         <source>Unnamed</source>
         <translation>未命名</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="117"/>
-        <source>If this is checked, a human figure will be added, which helps greatly to give a sense of scale when viewing the model</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="130"/>
-        <source>Create Site</source>
-        <translation>建立地點</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="176"/>
@@ -7330,11 +7380,6 @@ Utils -&gt; Make IFC project</source>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="239"/>
         <source> N</source>
         <translation> N</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="260"/>
-        <source>Create Building</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="328"/>
@@ -7432,16 +7477,6 @@ Utils -&gt; Make IFC project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="498"/>
-        <source>Bind levels to vertical axes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="505"/>
-        <source>Define a working plane for each level</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="506"/>
         <source>Distance between horizontal axes</source>
         <translation type="unfinished"></translation>
@@ -7516,23 +7551,8 @@ Utils -&gt; Make IFC project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="512"/>
-        <source>Default groups to be added to each level</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="567"/>
-        <source>The above settings can be saved as a preset. Presets are stored as .txt files in your FreeCAD user folder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="637"/>
         <source>Default groups to be added to each level. Default groups such as walls, windows,... are useful to organize the different building elements inside a level</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogProjectManager.ui" line="637"/>
-        <source>Default groups to be added to each level. Defautl groups such as walls, windows,... are useful to organize the different building elements inside a level</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7826,26 +7846,6 @@ Utils -&gt; Make IFC project</source>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogConvertType.ui" line="36"/>
         <source>Keep original object. The object will adopt the new type</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="14"/>
-        <source>Classification manager</source>
-        <translation>分類管理</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="42"/>
-        <source>Objects &amp;&amp; Materials</source>
-        <translation>物體 &amp;&amp; 材質</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="48"/>
-        <source>Only visible objects</source>
-        <translation>僅可見物體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="60"/>
-        <source>Sort by:</source>
-        <translation>排序依據:</translation>
     </message>
     <message>
         <source>The property to retrieve from each object.Can be &apos;Count&apos; to count the objects, or property names like &apos;Length&apos; or &apos;Shape.Volume&apos; to retrieve a certain property.</source>
@@ -8241,24 +8241,9 @@ a certain property.</source>
         <translation>自訂屬性</translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="26"/>
-        <source>People</source>
-        <translation>開發者</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="57"/>
-        <source>Kind</source>
-        <translation>類別</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="62"/>
         <source>Name</source>
         <translation>名稱</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="67"/>
-        <source>Email</source>
-        <translation>電子郵件</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogCustomProperties.ui" line="30"/>
@@ -8990,6 +8975,21 @@ p, li { white-space: pre-wrap; }
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferencesNativeIFC.ui" line="290"/>
         <source>Check this to ask the above question every time a project is created</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="26"/>
+        <source>People</source>
+        <translation>開發者</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="57"/>
+        <source>Kind</source>
+        <translation>類別</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="67"/>
+        <source>Email</source>
+        <translation>電子郵件</translation>
     </message>
     <message>
         <source>Multimaterial definition</source>
@@ -9765,6 +9765,12 @@ Note: The serializer is still an experimental feature!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-ifc-export.ui" line="366"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-ifc.ui" line="473"/>
+        <source>Check also NativeIFC-specific preferences under BIM -&gt; NativeIFC</source>
+        <translation>並且檢查 BIM -&gt; NativeIFC 下的 NativeIFC 特定偏好設定</translation>
+    </message>
+    <message>
         <source>Use IfcOpenShell serializer if available</source>
         <translation>如果可用的話使用 IfcOpenShell 序列化器</translation>
     </message>
@@ -9869,12 +9875,6 @@ unit to work with when opening the file.</source>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-ifc.ui" line="473"/>
         <source>Check also native-IFC-specific preferences under BIM -&gt; Native IFC</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-ifc-export.ui" line="366"/>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-ifc.ui" line="473"/>
-        <source>Check also NativeIFC-specific preferences under BIM -&gt; NativeIFC</source>
-        <translation>並且檢查 BIM -&gt; NativeIFC 下的 NativeIFC 特定偏好設定</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-ifc-export.ui" line="376"/>
@@ -10208,6 +10208,11 @@ are placed in a &apos;Group&apos; instead.
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="264"/>
+        <source>Create a default Render project with the newly Site</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="267"/>
         <source>Create Render Project (requires Render)</source>
         <translation type="unfinished"></translation>
@@ -10227,11 +10232,6 @@ are placed in a &apos;Group&apos; instead.
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="226"/>
         <source>Default Ceiling Color</source>
         <translation>預設天花板顏色</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="264"/>
-        <source>Create a default Render project with the newly Site</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="296"/>
@@ -10654,11 +10654,6 @@ IfcWallStandardCase 或 IfcBeamStandardCase。
 <context>
     <name>Workbench</name>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="40"/>
-        <source>BIM</source>
-        <translation>建築信息模組</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="387"/>
         <source>Drafting tools</source>
         <translation>草圖工具</translation>
@@ -10756,6 +10751,11 @@ IfcWallStandardCase 或 IfcBeamStandardCase。
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="423"/>
         <source>Nudge</source>
         <translation>輕推</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="40"/>
+        <source>BIM</source>
+        <translation>建築信息模組</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/addonmanager_installer_gui.py" line="653"/>

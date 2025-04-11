@@ -2179,6 +2179,14 @@ Please visit http://www.openscad.org/index.html to install it.</source>
 <context>
     <name>Workbench</name>
     <message>
+        <source>Mesh</source>
+        <translation>網面工具</translation>
+    </message>
+    <message>
+        <source>Mesh workbench</source>
+        <translation>網面工作台</translation>
+    </message>
+    <message>
         <source>Analyze</source>
         <translation>分析</translation>
     </message>
@@ -2217,14 +2225,6 @@ Please visit http://www.openscad.org/index.html to install it.</source>
     <message>
         <source>Mesh analyze</source>
         <translation>網格分析</translation>
-    </message>
-    <message>
-        <source>Mesh</source>
-        <translation>網面工具</translation>
-    </message>
-    <message>
-        <source>Mesh workbench</source>
-        <translation>網面工作台</translation>
     </message>
 </context>
 </TS>

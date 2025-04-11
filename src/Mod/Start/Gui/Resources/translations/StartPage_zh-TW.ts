@@ -529,11 +529,6 @@ By using &quot;;;&quot; to separate paths, you can add several folders here.</so
         <translation>最近使用的檔案</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="575"/>
-        <source>Custom Folder</source>
-        <translation>自訂資料夾</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="446"/>
         <source>File not found</source>
         <translation>找不到檔案</translation>
@@ -542,6 +537,11 @@ By using &quot;;;&quot; to separate paths, you can add several folders here.</so
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="447"/>
         <source>The file &apos;%1&apos; cannot be opened.</source>
         <translation>無法打開檔案&apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="575"/>
+        <source>Custom Folder</source>
+        <translation>自訂資料夾</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="484"/>
