@@ -52,16 +52,6 @@
         <translation>這是物體2的局部座標系，將用於接點.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="182"/>
-        <source>The second part of the joint</source>
-        <translation>第二個連接的零件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="206"/>
-        <source>This is the local coordinate system within object2 that will be used for the joint.</source>
-        <translation>這是 物體2 中將用於連接的局部座標系.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="210"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="474"/>
         <source>The first reference of the joint</source>
@@ -71,11 +61,6 @@
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="221"/>
         <source>This is the local coordinate system within Reference1&apos;s object that will be used for the joint.</source>
         <translation>這是 參考點1 中將用於連接的局部座標系統.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="167"/>
-        <source>This prevents Placement1 from recomputing, enabling custom positioning of the placement.</source>
-        <translation>這可以防止重新計算 &quot;放置位置 1&quot;，從而實現放置位置的自訂定位.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="226"/>
@@ -88,6 +73,31 @@
         <translation>這是接點的偏移旋轉.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="246"/>
+        <source>This is the offset vector of the joint.</source>
+        <translation>這是接點的偏移向量.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="304"/>
+        <source>This is the distance of the joint. It is used only by the distance joint and by RackPinion (pitch radius), Screw and Gears and Belt(radius1)</source>
+        <translation>這是接點的距離. 僅由距離接點以及齒條小齒輪(節距半徑)、螺桿和齒輪以及皮帶(半徑 1)使用</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="360"/>
+        <source>Is this joint using limits.</source>
+        <translation>該接點是否使用限制.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="901"/>
+        <source>This is where the part is grounded.</source>
+        <translation>這是該零件的基礎位置.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="167"/>
+        <source>This prevents Placement1 from recomputing, enabling custom positioning of the placement.</source>
+        <translation>這可以防止重新計算 &quot;放置位置 1&quot;，從而實現放置位置的自訂定位.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="244"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="518"/>
         <source>This is the attachment offset of the first connector of the joint.</source>
@@ -98,11 +108,6 @@
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="497"/>
         <source>The second reference of the joint</source>
         <translation>這是接點的第二個參考點</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="246"/>
-        <source>This is the offset vector of the joint.</source>
-        <translation>這是接點的偏移向量.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="252"/>
@@ -126,11 +131,6 @@
         <translation>這是接點的距離. 僅用於距離連接和齒輪齒條(螺距半徑)、螺絲和齒輪以及皮帶(半徑 1)</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="304"/>
-        <source>This is the distance of the joint. It is used only by the distance joint and by RackPinion (pitch radius), Screw and Gears and Belt(radius1)</source>
-        <translation>這是接點的距離. 僅由距離接點以及齒條小齒輪(節距半徑)、螺桿和齒輪以及皮帶(半徑 1)使用</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="315"/>
         <source>This is the second distance of the joint. It is used only by the gear joint to store the second radius.</source>
         <translation>這是接點的第二距離. 僅由齒輪接點用來儲存第二半徑.</translation>
@@ -141,14 +141,19 @@
         <translation>這表示接點是否處於啟用狀態.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="133"/>
+        <source>The first part of the joint</source>
+        <translation>第一個連接的零件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="157"/>
+        <source>This is the local coordinate system within object1 that will be used for the joint.</source>
+        <translation>這是 物體1 中將用於連接的局部座標系.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="350"/>
         <source>Enable the minimum length limit of the joint.</source>
         <translation>啟用接點的最小長度限制.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="360"/>
-        <source>Is this joint using limits.</source>
-        <translation>該接點是否使用限制.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="362"/>
@@ -164,11 +169,6 @@
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="386"/>
         <source>Enable the minimum length of the joint.</source>
         <translation>啟用接點的最小長度.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="901"/>
-        <source>This is where the part is grounded.</source>
-        <translation>這是該零件的基礎位置.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="372"/>
@@ -209,6 +209,16 @@
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="889"/>
         <source>The object to ground</source>
         <translation>基礎的物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateView.py" line="230"/>
+        <source>The object moved by the move</source>
+        <translation>透過移動已移動的物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateView.py" line="237"/>
+        <source>The containing parts of objects moved by the move</source>
+        <translation>移動所移動的物件的包含部分</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateView.py" line="246"/>
@@ -272,24 +282,14 @@
         <translation>移動類型</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="133"/>
-        <source>The first part of the joint</source>
-        <translation>第一個連接的零件</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="182"/>
+        <source>The second part of the joint</source>
+        <translation>第二個連接的零件</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="157"/>
-        <source>This is the local coordinate system within object1 that will be used for the joint.</source>
-        <translation>這是 物體1 中將用於連接的局部座標系.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateView.py" line="230"/>
-        <source>The object moved by the move</source>
-        <translation>透過移動已移動的物體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateView.py" line="237"/>
-        <source>The containing parts of objects moved by the move</source>
-        <translation>移動所移動的物件的包含部分</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/JointObject.py" line="206"/>
+        <source>This is the local coordinate system within object2 that will be used for the joint.</source>
+        <translation>這是 物體2 中將用於連接的局部座標系.</translation>
     </message>
 </context>
 <context>
@@ -810,6 +810,11 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
 <context>
     <name>AssemblyGui::ViewProviderAssembly</name>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="136"/>
+        <source>Delete associated joints</source>
+        <translation>刪除關聯的接合</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="148"/>
         <source>The object is associated to one or more joints.</source>
         <translation>該物件與一個或多個接合相關聯.</translation>
@@ -823,11 +828,6 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="647"/>
         <source>Move part</source>
         <translation>移動零件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="136"/>
-        <source>Delete associated joints</source>
-        <translation>刪除關聯的接合</translation>
     </message>
 </context>
 <context>
@@ -1008,6 +1008,11 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="69"/>
+        <source>Create Bill of Materials</source>
+        <translation>建立(BOM)物料清單</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="76"/>
         <source>Create a bill of materials of the current assembly. If an assembly is active, it will be a BOM of this assembly. Else it will be a BOM of the whole document.</source>
         <translation>建立目前零件組合的物料清單. 如果零件組合處於啟用中狀態，則它將是該零件組合的 BOM. 否則它將是整個文件的 BOM.</translation>
@@ -1026,11 +1031,6 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="86"/>
         <source>The columns &apos;Index&apos;, &apos;Name&apos;, &apos;File Name&apos; and &apos;Quantity&apos; are automatically generated on recompute. The &apos;Description&apos; and custom columns are not overwritten.</source>
         <translation>&quot;索引&quot;、&quot;名稱&quot;、&quot;檔案名稱&quot; 和 &quot;數量&quot;列在重新計算時自動產生. &quot;說明&quot;列和自定義列不會被覆蓋.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateBom.py" line="69"/>
-        <source>Create Bill of Materials</source>
-        <translation>建立(BOM)物料清單</translation>
     </message>
 </context>
 <context>
@@ -1131,6 +1131,11 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <translation>&lt;p&gt;建立一個固定接點: 將兩個零件永久鎖在一起，防止任何移動或旋轉.&lt;/p&gt;</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateJoint.py" line="68"/>
+        <source>Create a Fixed Joint</source>
+        <translation>建立一個固定接點</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateJoint.py" line="75"/>
         <source>1 - If an assembly is active : Create a joint permanently locking two parts together, preventing any movement or rotation.</source>
         <translation>1 - 如果組裝處於啟用狀態: 建立將兩個零件永久鎖定在一起的接點，防止任何移動或旋轉.</translation>
@@ -1139,11 +1144,6 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateJoint.py" line="81"/>
         <source>2 - If a part is active : Position sub parts by matching selected coordinate systems. The second part selected will move.</source>
         <translation>2 - 如果零件處於啟用狀態: 透過符合選定的座標系統來定位子零件. 選定的第二部分將移動.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateJoint.py" line="68"/>
-        <source>Create a Fixed Joint</source>
-        <translation>建立一個固定接點</translation>
     </message>
 </context>
 <context>
@@ -1378,6 +1378,11 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
 <context>
     <name>Assembly_InsertLink</name>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="59"/>
+        <source>Insert a Link into the currently active assembly. This will create dynamic links to parts/bodies/primitives/assemblies. To insert external objects, make sure that the file is &lt;b&gt;open in the current session&lt;/b&gt;</source>
+        <translation>將連結插入目前活動的零件組合中. 這將建立到零件/實體/基元/組合件的動態連結. 若要插入外部對象，請確保檔案&lt;b&gt;在目前作業階段中開啟&lt;/b&gt;</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="60"/>
         <source>Insert a component into the active assembly. This will create dynamic links to parts, bodies, primitives, and assemblies. To insert external components, make sure that the file is &lt;b&gt;open in the current session&lt;/b&gt;</source>
         <translation>將零件插入活動零件組合體中. 這將建立到零件、實體、圖元和零件組合體的動態連結. 若要插入外部組件，請確保檔案&lt;b&gt;在目前操作中開啟&lt;/b&gt;</translation>
@@ -1406,11 +1411,6 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="53"/>
         <source>Insert Component</source>
         <translation>插入組件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="59"/>
-        <source>Insert a Link into the currently active assembly. This will create dynamic links to parts/bodies/primitives/assemblies. To insert external objects, make sure that the file is &lt;b&gt;open in the current session&lt;/b&gt;</source>
-        <translation>將連結插入目前活動的零件組合中. 這將建立到零件/實體/基元/組合件的動態連結. 若要插入外部對象，請確保檔案&lt;b&gt;在目前作業階段中開啟&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../../CommandInsertLink.py" line="55"/>
@@ -1554,9 +1554,19 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <translation>簡易</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="149"/>
+        <source>Advanced</source>
+        <translation>進階選項</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="152"/>
         <source>Length min</source>
         <translation>最小間距</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="164"/>
+        <source>By clicking this button, you can set the attachement offset of the first marker (coordinate system) of the joint.</source>
+        <translation>透過點擊此按鈕，您可以設定接點第一個標記(座標系統)的附加依賴偏移.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="172"/>
@@ -1589,11 +1599,6 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <translation>旋轉</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="149"/>
-        <source>Advanced</source>
-        <translation>進階選項</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="157"/>
         <source>Offset1</source>
         <translation>偏移1</translation>
@@ -1602,11 +1607,6 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="144"/>
         <source>By clicking this button, you can set the attachment offset of the first marker (coordinate system) of the joint.</source>
         <translation>透過點擊此按鈕，您可以設定連結第一個標記(座標系統)的附加依賴偏移.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="164"/>
-        <source>By clicking this button, you can set the attachement offset of the first marker (coordinate system) of the joint.</source>
-        <translation>透過點擊此按鈕，您可以設定接點第一個標記(座標系統)的附加依賴偏移.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyCreateJoint.ui" line="178"/>
@@ -1937,6 +1937,11 @@ You can change this property of sub-assemblies at any time by right clicking the
 您可以隨時透過右鍵點擊子零件組合來變更其屬性.</translation>
     </message>
     <message>
+        <location filename="../panels/TaskAssemblyInsertLink.ui" line="14"/>
+        <source>Insert Link</source>
+        <translation>插入連結</translation>
+    </message>
+    <message>
         <location filename="../panels/TaskAssemblyInsertLink.ui" line="20"/>
         <source>Search parts...</source>
         <translation>搜尋零件...</translation>
@@ -1979,11 +1984,6 @@ Turn rigid/Turn flexible command there, or by editing its Rigid property in the 
         <source>Rigid sub-assemblies</source>
         <translation>剛性的子零件組合</translation>
     </message>
-    <message>
-        <location filename="../panels/TaskAssemblyInsertLink.ui" line="14"/>
-        <source>Insert Link</source>
-        <translation>插入連結</translation>
-    </message>
 </context>
 <context>
     <name>UtilsAssembly</name>
@@ -1996,11 +1996,6 @@ Turn rigid/Turn flexible command there, or by editing its Rigid property in the 
 <context>
     <name>Workbench</name>
     <message>
-        <location filename="../../../InitGui.py" line="91"/>
-        <source>Assembly</source>
-        <translation>零件組合</translation>
-    </message>
-    <message>
         <location filename="../../../InitGui.py" line="70"/>
         <source>Assembly workbench</source>
         <translation>零件組合工作台</translation>
@@ -2009,6 +2004,11 @@ Turn rigid/Turn flexible command there, or by editing its Rigid property in the 
         <location filename="../../../InitGui.py" line="71"/>
         <source>Initializing Assembly workbench...</source>
         <translation>初始化零件組合工作台...</translation>
+    </message>
+    <message>
+        <location filename="../../../InitGui.py" line="91"/>
+        <source>Assembly</source>
+        <translation>零件組合</translation>
     </message>
     <message>
         <location filename="../../../InitGui.py" line="92"/>

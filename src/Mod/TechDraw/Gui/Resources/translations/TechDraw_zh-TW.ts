@@ -2351,6 +2351,15 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <translation>插入一個檢視</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="299"/>
+        <source>Insert a View in current page.
+Selected objects, spreadsheets or Arch WB section planes will be added.
+Without a selection, a file browser lets you select a SVG or image file.</source>
+        <translation>在目前頁面中插入視圖.
+將會新增選取的物件、電子表格或 建築結構工作台(Arch) 剖面.
+無需選擇，文件瀏覽器可讓您選擇 SVG 或圖像檔案.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="305"/>
         <source>Insert a View in current page.
 Selected objects, spreadsheets or BIM section planes will be added.
@@ -2368,15 +2377,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="426"/>
         <source>Do not show this message again</source>
         <translation>不要再顯示此訊息</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="299"/>
-        <source>Insert a View in current page.
-Selected objects, spreadsheets or Arch WB section planes will be added.
-Without a selection, a file browser lets you select a SVG or image file.</source>
-        <translation>在目前頁面中插入視圖.
-將會新增選取的物件、電子表格或 建築結構工作台(Arch) 剖面.
-無需選擇，文件瀏覽器可讓您選擇 SVG 或圖像檔案.</translation>
     </message>
 </context>
 <context>
@@ -2461,6 +2461,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../Command.cpp" line="1117"/>
         <source>Create Clip</source>
         <translation>建立裁剪</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="359"/>
+        <source>Create BIM View</source>
+        <translation>建立BIM檢視</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1420"/>
@@ -3081,11 +3086,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCenterLine.cpp" line="406"/>
         <source>Create Centerline</source>
         <translation>建立中心線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="359"/>
-        <source>Create BIM View</source>
-        <translation>建立BIM檢視</translation>
     </message>
     <message>
         <location filename="../../TaskCenterLine.cpp" line="397"/>
@@ -6360,6 +6360,17 @@ Then you need to increase the tile limit.</source>
         <translation>細節來源高亮顯示</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="800"/>
+        <source>Shape of line end caps.  The default (round) should almost
+always be the right choice.   Flat or square caps are useful 
+if you are planning to use a drawing as a 1:1 cutting guide.
+</source>
+        <translation>線端蓋的形狀. 預設(圓形)幾乎總是正確的選擇.
+如果您打算使用繪圖作為 1:1 切割指南，
+平頭或方形帽非常有用.
+</translation>
+    </message>
+    <message>
         <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="45"/>
         <source>Detail View Outline Shape</source>
         <translation>詳細檢視輪廓形狀</translation>
@@ -6473,17 +6484,6 @@ Then you need to increase the tile limit.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="698"/>
         <source>Shape of line end caps.  The default (round) should almost
 always be the right choice.  Flat or square caps are useful
-if you are planning to use a drawing as a 1:1 cutting guide.
-</source>
-        <translation>線端蓋的形狀. 預設(圓形)幾乎總是正確的選擇.
-如果您打算使用繪圖作為 1:1 切割指南，
-平頭或方形帽非常有用.
-</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="800"/>
-        <source>Shape of line end caps.  The default (round) should almost
-always be the right choice.   Flat or square caps are useful 
 if you are planning to use a drawing as a 1:1 cutting guide.
 </source>
         <translation>線端蓋的形狀. 預設(圓形)幾乎總是正確的選擇.
@@ -7255,16 +7255,6 @@ for ProjectionGroups</source>
         <translation>第三視角</translation>
     </message>
     <message>
-        <location filename="../../DlgPrefsTechDrawGeneral.ui" line="418"/>
-        <source>Page</source>
-        <translation>頁</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="438"/>
-        <source>Standard to be used to draw section lines.  This affects the position of arrows and symbol.</source>
-        <translation>用於繪製剖面線的標準. 這會影響箭頭和符號的位置.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="451"/>
         <source>ANSI</source>
         <translation>ANSI</translation>
@@ -7273,11 +7263,6 @@ for ProjectionGroups</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="456"/>
         <source>ISO</source>
         <translation>ISO</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="469"/>
-        <source>Section Line Convention</source>
-        <translation>剖面線約束</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="689"/>
@@ -7293,6 +7278,21 @@ for ProjectionGroups</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1027"/>
         <source>Use 3d Camera Direction</source>
         <translation>使用3D相機方向</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawGeneral.ui" line="418"/>
+        <source>Page</source>
+        <translation>頁</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="438"/>
+        <source>Standard to be used to draw section lines.  This affects the position of arrows and symbol.</source>
+        <translation>用於繪製剖面線的標準. 這會影響箭頭和符號的位置.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="469"/>
+        <source>Section Line Convention</source>
+        <translation>剖面線約束</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawGeneral.ui" line="493"/>
@@ -8479,6 +8479,11 @@ Do you want to continue?</source>
         <translation>3D 的點</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="212"/>
+        <source>Check this box to make an arc from atart angle to end angle in a clockwise direction.</source>
+        <translation>選中此框可沿順時針方向從角度起點到角度端點畫一個弧形.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="90"/>
         <source>Circle Center</source>
         <translation>圓心</translation>
@@ -8501,11 +8506,6 @@ Do you want to continue?</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="212"/>
         <source>Check this box to make an arc from start angle to end angle in a clockwise direction.</source>
-        <translation>選中此框可沿順時針方向從角度起點到角度端點畫一個弧形.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticCircle.ui" line="212"/>
-        <source>Check this box to make an arc from atart angle to end angle in a clockwise direction.</source>
         <translation>選中此框可沿順時針方向從角度起點到角度端點畫一個弧形.</translation>
     </message>
     <message>
@@ -11031,16 +11031,6 @@ using the given X/Y Spacing</source>
 <context>
     <name>Workbench</name>
     <message>
-        <location filename="../../Workbench.cpp" line="46"/>
-        <source>TechDraw</source>
-        <translation>工程圖</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/InitGui.py" line="42"/>
-        <source>Technical Drawing workbench</source>
-        <translation>工程製圖工作台</translation>
-    </message>
-    <message>
         <location filename="../../Workbench.cpp" line="38"/>
         <source>Dimensions</source>
         <translation>尺寸</translation>
@@ -11090,6 +11080,11 @@ using the given X/Y Spacing</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Workbench.cpp" line="46"/>
         <source>Page</source>
         <translation>頁面</translation>
+    </message>
+    <message>
+        <location filename="../../Workbench.cpp" line="46"/>
+        <source>TechDraw</source>
+        <translation>工程圖</translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="48"/>
@@ -11170,6 +11165,11 @@ using the given X/Y Spacing</source>
         <location filename="../../Workbench.cpp" line="60"/>
         <source>Views</source>
         <translation>檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/TechDraw/InitGui.py" line="42"/>
+        <source>Technical Drawing workbench</source>
+        <translation>工程製圖工作台</translation>
     </message>
 </context>
 </TS>

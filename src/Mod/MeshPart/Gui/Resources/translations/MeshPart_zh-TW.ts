@@ -2580,14 +2580,14 @@ Select a different shape, please.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../MeshFlatteningCommand.py" line="80"/>
-        <source>Find a flat representation of a face.</source>
-        <translation>找到平面的平面表示法.</translation>
-    </message>
-    <message>
         <location filename="../../MeshFlatteningCommand.py" line="79"/>
         <source>Unwrap Face</source>
         <translation>展開表面</translation>
+    </message>
+    <message>
+        <location filename="../../MeshFlatteningCommand.py" line="80"/>
+        <source>Find a flat representation of a face.</source>
+        <translation>找到平面的平面表示法.</translation>
     </message>
 </context>
 <context>
@@ -2598,14 +2598,14 @@ Select a different shape, please.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../MeshFlatteningCommand.py" line="48"/>
-        <source>Find a flat representation of a mesh.</source>
-        <translation>尋找網格的平面表示.</translation>
-    </message>
-    <message>
         <location filename="../../MeshFlatteningCommand.py" line="47"/>
         <source>Unwrap Mesh</source>
         <translation>展開網格</translation>
+    </message>
+    <message>
+        <location filename="../../MeshFlatteningCommand.py" line="48"/>
+        <source>Find a flat representation of a mesh.</source>
+        <translation>尋找網格的平面表示.</translation>
     </message>
 </context>
 <context>

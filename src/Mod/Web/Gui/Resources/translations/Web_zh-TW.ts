@@ -60232,17 +60232,17 @@ FreeCAD UnitTest is part of FreeCAD and supports writing Unit Tests for ones own
 <context>
     <name>Workbench</name>
     <message>
+        <location filename="../../Workbench.cpp" line="37"/>
+        <source>Navigation</source>
+        <translation type="unfinished">導覽</translation>
+    </message>
+    <message>
         <source>Web</source>
         <translation>網站</translation>
     </message>
     <message>
         <source>Web workbench</source>
         <translation>網站工作台</translation>
-    </message>
-    <message>
-        <location filename="../../Workbench.cpp" line="37"/>
-        <source>Navigation</source>
-        <translation type="unfinished">導覽</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Workbench.cpp" line="34"/>
