@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -4003,6 +4003,16 @@ Should multiple tools or tool shapes with the same name exist in different direc
 <context>
     <name>Workbench</name>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/InitGui.py" line="53"/>
+        <source>CAM</source>
+        <translation>電腦輔助製造CAM</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/InitGui.py" line="54"/>
+        <source>CAM workbench</source>
+        <translation>電腦輔助製造工作台</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/InitGui.py" line="185"/>
         <source>Project Setup</source>
         <translation>專案設定</translation>
@@ -4059,16 +4069,6 @@ Should multiple tools or tool shapes with the same name exist in different direc
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/InitGui.py" line="248"/>
         <source>Utils</source>
         <translation>實用工具</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/InitGui.py" line="53"/>
-        <source>CAM</source>
-        <translation>電腦輔助製造CAM</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/InitGui.py" line="54"/>
-        <source>CAM workbench</source>
-        <translation>電腦輔助製造工作台</translation>
     </message>
 </context>
 <context>

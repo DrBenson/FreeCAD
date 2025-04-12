@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -2179,6 +2179,14 @@ Please visit http://www.openscad.org/index.html to install it.</source>
 <context>
     <name>Workbench</name>
     <message>
+        <source>Mesh</source>
+        <translation>網面工具</translation>
+    </message>
+    <message>
+        <source>Mesh workbench</source>
+        <translation>網面工作台</translation>
+    </message>
+    <message>
         <source>Analyze</source>
         <translation>分析</translation>
     </message>
@@ -2217,14 +2225,6 @@ Please visit http://www.openscad.org/index.html to install it.</source>
     <message>
         <source>Mesh analyze</source>
         <translation>網格分析</translation>
-    </message>
-    <message>
-        <source>Mesh</source>
-        <translation>網面工具</translation>
-    </message>
-    <message>
-        <source>Mesh workbench</source>
-        <translation>網面工作台</translation>
     </message>
 </context>
 </TS>

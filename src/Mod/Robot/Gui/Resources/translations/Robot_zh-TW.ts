@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -596,11 +596,6 @@
 <context>
     <name>RobotGui::TaskRobot6Axis</name>
     <message>
-        <location filename="../../TaskRobot6Axis.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../TaskRobot6Axis.ui" line="22"/>
         <source>A1</source>
         <translation>A1</translation>
@@ -644,6 +639,11 @@
         <location filename="../../TaskRobot6Axis.cpp" line="41"/>
         <source>TaskRobot6Axis</source>
         <translation>任務機器人6軸</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobot6Axis.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -780,11 +780,6 @@
 <context>
     <name>RobotGui::TaskTrajectory</name>
     <message>
-        <location filename="../../TaskTrajectory.ui" line="20"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../TaskTrajectory.ui" line="58"/>
         <source>|&lt;</source>
         <translation>|&lt;</translation>
@@ -868,6 +863,11 @@
         <location filename="../../TaskTrajectory.cpp" line="37"/>
         <source>Trajectory</source>
         <translation>軌道</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectory.ui" line="20"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>

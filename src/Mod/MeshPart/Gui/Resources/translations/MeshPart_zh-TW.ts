@@ -2577,7 +2577,7 @@ Select a different shape, please.</source>
     <message>
         <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD/src/Mod/MeshPart/MeshFlatteningCommand.py" line="88"/>
         <source>Unwrap face</source>
-        <translation type="unfinished"></translation>
+        <translation>展開表面</translation>
     </message>
     <message>
         <location filename="../../MeshFlatteningCommand.py" line="79"/>
@@ -2595,7 +2595,7 @@ Select a different shape, please.</source>
     <message>
         <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD/src/Mod/MeshPart/MeshFlatteningCommand.py" line="49"/>
         <source>Unwrap mesh</source>
-        <translation type="unfinished"></translation>
+        <translation>展開網格</translation>
     </message>
     <message>
         <location filename="../../MeshFlatteningCommand.py" line="47"/>
@@ -2975,7 +2975,7 @@ Please visit http://www.openscad.org/index.html to install it.</source>
     <message>
         <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD/src/Mod/MeshPart/InitGui.py" line="66"/>
         <source>MeshPart workbench</source>
-        <translation type="unfinished"></translation>
+        <translation>網格零件工作台</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/Mesh/Gui/Workbench.cpp" line="43"/>
