@@ -1,0 +1,5 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource>
+		<file>translations/TemplatePyMod_zh-TW.ts</file>
+    </qresource>
+</RCC>
