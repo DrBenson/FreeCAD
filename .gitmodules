@@ -10,3 +10,6 @@
 [submodule "src/Mod/AddonManager"]
 	path = src/Mod/AddonManager
 	url = https://github.com/DrBenson/FreeCAD_AddonManager.git
+[submodule "src/3rdParty/tracy"]
+	path = src/3rdParty/tracy
+	url = https://github.com/wolfpld/tracy.git
