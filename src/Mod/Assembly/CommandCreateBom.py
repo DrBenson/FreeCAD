@@ -66,7 +66,8 @@ class CommandCreateBom:
     def GetResources(self):
         return {
             "Pixmap": "Assembly_BillOfMaterials",
-            "MenuText": QT_TRANSLATE_NOOP("Assembly_CreateBom", "Create Bill of Materials"+"\t&O"),
+            "MenuText": QT_TRANSLATE_NOOP("Assembly_CreateBom", "Create Bill of Materials"),
+            "Accel": "O",
             "ToolTip": "<p>"
             + QT_TRANSLATE_NOOP(
                 "Assembly_CreateBom",

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -339,16 +339,6 @@
 <context>
     <name>Workbench</name>
     <message>
-        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD/src/Mod/Points/InitGui.py" line="43"/>
-        <source>Points</source>
-        <translation>點</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD/src/Mod/Points/InitGui.py" line="45"/>
-        <source>Points workbench</source>
-        <translation>點工作台</translation>
-    </message>
-    <message>
         <location filename="../../Gui/Workbench.cpp" line="34"/>
         <source>Points tools</source>
         <translation>編輯點工具</translation>
@@ -357,6 +347,16 @@
         <location filename="../../Gui/Workbench.cpp" line="35"/>
         <source>&amp;Points</source>
         <translation>&amp;點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD/src/Mod/Points/InitGui.py" line="43"/>
+        <source>Points</source>
+        <translation>點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD/src/Mod/Points/InitGui.py" line="45"/>
+        <source>Points workbench</source>
+        <translation>點工作台</translation>
     </message>
 </context>
 </TS>
