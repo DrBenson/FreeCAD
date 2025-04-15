@@ -17,37 +17,37 @@
 <context>
     <name>App::LocalCoordinateSystem</name>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="209"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="209"/>
         <source>X-axis</source>
         <translation>X 軸</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="210"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="210"/>
         <source>Y-axis</source>
         <translation>Y 軸</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="211"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="211"/>
         <source>Z-axis</source>
         <translation>Z 軸</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="212"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="212"/>
         <source>XY-plane</source>
         <translation>XY 平面</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="213"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="213"/>
         <source>XZ-plane</source>
         <translation>XZ 平面</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="214"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="214"/>
         <source>YZ-plane</source>
         <translation>YZ 平面</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="215"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="215"/>
         <source>Origin</source>
         <translation>原點</translation>
     </message>
@@ -55,32 +55,32 @@
 <context>
     <name>App::Origin</name>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Origin.cpp" line="140"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Origin.cpp" line="140"/>
         <source>X-axis</source>
         <translation>X-軸</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Origin.cpp" line="141"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Origin.cpp" line="141"/>
         <source>Y-axis</source>
         <translation>Y-軸</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Origin.cpp" line="142"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Origin.cpp" line="142"/>
         <source>Z-axis</source>
         <translation>Z-軸</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Origin.cpp" line="143"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Origin.cpp" line="143"/>
         <source>XY-plane</source>
         <translation>XY-平面</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Origin.cpp" line="144"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Origin.cpp" line="144"/>
         <source>XZ-plane</source>
         <translation>XZ-平面</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Origin.cpp" line="145"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Origin.cpp" line="145"/>
         <source>YZ-plane</source>
         <translation>YZ-平面</translation>
     </message>
@@ -88,7 +88,7 @@
 <context>
     <name>App::OriginGroupExtension</name>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/OriginGroupExtension.cpp" line="134"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/OriginGroupExtension.cpp" line="134"/>
         <source>Origin</source>
         <translation>原點</translation>
     </message>
@@ -96,7 +96,7 @@
 <context>
     <name>LinkParams</name>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Link.cpp" line="118"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Link.cpp" line="118"/>
         <source>Stores the last user choice of whether to apply CopyOnChange setup to all links
 that reference the same configurable object</source>
         <translation>儲存最後的使用者選擇是否將 &apos;變更時複製&apos; 設定套用至所有連結
@@ -106,7 +106,7 @@ that reference the same configurable object</source>
 <context>
     <name>Notifications</name>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Document.cpp" line="1163"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Document.cpp" line="1163"/>
         <source>
 It is recommended that the user right-click the root of the document and select Mark to recompute.
 The user should then click the Refresh button in the main toolbar.
@@ -120,7 +120,7 @@ The user should then click the Refresh button in the main toolbar.
 <context>
     <name>QObject</name>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/App/Application.cpp" line="444"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/App/Application.cpp" line="444"/>
         <source>Unnamed</source>
         <translation>未命名</translation>
     </message>

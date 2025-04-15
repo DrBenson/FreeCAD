@@ -46,7 +46,7 @@
         <translation>雲端工作台</translation>
     </message>
     <message>
-        <location filename="/media/UserTemp/Sources/FreeCAD/src/Mod/Cloud/InitGui.py" line="21"/>
+        <location filename="../../../../../../../../../../media/UserTemp/Sources/FreeCAD/src/Mod/Cloud/InitGui.py" line="21"/>
         <source>Cloud workbench</source>
         <translation>雲端工作台</translation>
     </message>

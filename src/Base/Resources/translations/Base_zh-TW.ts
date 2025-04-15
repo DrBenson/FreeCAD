@@ -17,57 +17,57 @@
 <context>
     <name>UnitsApi</name>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="69"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="69"/>
         <source>Standard (mm, kg, s, °)</source>
         <translation>標準 (mm, kg, s, °)</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="71"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="71"/>
         <source>MKS (m, kg, s, °)</source>
         <translation>公制 (m, kg, s, °)</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="73"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="73"/>
         <source>US customary (in, lb)</source>
         <translation>美制 (in, lb)</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="75"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="75"/>
         <source>Imperial decimal (in, lb)</source>
         <translation>英制十進制 (in, lb)</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="77"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="77"/>
         <source>Building Euro (cm, m², m³)</source>
         <translation>歐式建築工程 (cm, m², m³)</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="79"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="79"/>
         <source>Building US (ft-in, sqft, cft)</source>
         <translation>美式建築工程 (ft-in, sqft, cft)</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="81"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="81"/>
         <source>Metric small parts &amp; CNC (mm, mm/min)</source>
         <translation>公制小零件 以及 CNC(mm, mm/min)</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="83"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="83"/>
         <source>Imperial for Civil Eng (ft, ft/s)</source>
         <translation>民用英制 (ft, ft/s)</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="85"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="85"/>
         <source>FEM (mm, N, s)</source>
         <translation>有限元素法 (mm, N, sec)</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="87"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="87"/>
         <source>Meter decimal (m, m², m³)</source>
         <translation>公尺十進制 (m, m², m³)</translation>
     </message>
     <message>
-        <location filename="/home/Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="89"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="89"/>
         <source>Unknown schema</source>
         <translation>未知架構</translation>
     </message>
