@@ -25,7 +25,11 @@
 import FreeCAD as App
 import FreeCADGui as Gui
 import os
+import PartGui
 
+Gui.addLanguagePath(":/translations")
+Gui.addIconPath(":/icons")
+Gui.updateLocale()
 
 class PartWorkbench(Gui.Workbench):
     """Part workbench object."""
@@ -35,8 +39,23 @@ class PartWorkbench(Gui.Workbench):
                                            "Mod", "Part",
                                            "Resources", "icons",
                                            "PartWorkbench.svg")
-        self.__class__.MenuText = "Part"
-        self.__class__.ToolTip = "Part workbench"
+        self.__class__.MenuText = App.Qt.translate("Workbench", "Part")
+        self.__class__.ToolTip = App.Qt.translate("Workbench", "Part workbench")
+
+    def tryAddManipulator(self):
+        try:
+            import SketcherGui
+
+            class Manipulator:
+                def modifyToolBars(self):
+                    return [{"insert" : "Sketcher_NewSketch", "toolItem" : "Part_Extrude"}]
+                def modifyMenuBar(self):
+                    return [{"insert" : "Sketcher_NewSketch", "menuItem" : "Part_Extrude"}]
+
+            manip = Manipulator()
+            Gui.addWorkbenchManipulator(manip)
+        except ImportError as err:
+            pass
 
     def Initialize(self):
         # load the module
@@ -63,6 +82,8 @@ class PartWorkbench(Gui.Workbench):
         except Exception as err:
             App.Console.PrintError("'BOPTools' package cannot be loaded. "
                                    "{err}\n".format(err=str(err)))
+
+        self.tryAddManipulator()
 
     def GetClassName(self):
         return "PartGui::Workbench"

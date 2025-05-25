@@ -29,6 +29,9 @@ import Measure
 import MeasureGui
 from MeasureCOM import makeMeasureCOM, MeasureCOM
 
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
 
 # Expose create functions
 Measure.makeMeasureCOM = makeMeasureCOM

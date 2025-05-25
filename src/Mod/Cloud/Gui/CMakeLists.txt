@@ -13,7 +13,12 @@ set(CloudGui_LIBS
     FreeCADGui
 )
 
-qt_add_resources(Cloud_QRC_SRCS Resources/Cloud.qrc)
+set (Cloud_TR_QRC ${CMAKE_CURRENT_BINARY_DIR}/Resources/Cloud_translation.qrc)
+qt_find_and_add_translation(QM_SRCS "Resources/translations/*_*.ts"
+    ${CMAKE_CURRENT_BINARY_DIR}/Resources/translations)
+qt_create_resource_file(${Cloud_TR_QRC} ${QM_SRCS})
+qt_add_resources(Cloud_QRC_SRCS Resources/Cloud.qrc ${Cloud_TR_QRC})
+PYSIDE_WRAP_RC(Cloud_QRC_SRCS Resources/Cloud.qrc)
 
 SET(CloudGui_SRCS
     ${Cloud_QRC_SRCS}

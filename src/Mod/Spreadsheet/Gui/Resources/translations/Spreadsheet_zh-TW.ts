@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
     <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
     <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
-    <extra-po-header-project_id_version>FreeCAD Spreadsheet Language Translations v0.22_dev</extra-po-header-project_id_version>
-    <extra-po-header-x_generator>Poedit 3.2.2</extra-po-header-x_generator>
+    <extra-po-header-project_id_version>FreeCAD Spreadsheet Language Translations v1.1.0</extra-po-header-project_id_version>
+    <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2023
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -25,6 +25,11 @@
         <location filename="../../Command.cpp" line="893"/>
         <source>Create spreadsheet</source>
         <translation>建立試算表</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="948"/>
+        <source>&amp;Create spreadsheet</source>
+        <translation>建立試算表(&amp;C)</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="894"/>
@@ -45,6 +50,11 @@
         <translation>向下對齊</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="511"/>
+        <source>Align &amp;bottom</source>
+        <translation>向下對齊(&amp;b)</translation>
+    </message>
+    <message>
         <location filename="../../Command.cpp" line="505"/>
         <source>Bottom-align contents of selected cells</source>
         <translation>所選儲存格之內容向下對齊</translation>
@@ -61,6 +71,11 @@
         <location filename="../../Command.cpp" line="348"/>
         <source>Align center</source>
         <translation>水平置中對齊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="340"/>
+        <source>Align &amp;center</source>
+        <translation>水平置中對齊(&amp;c)</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="349"/>
@@ -81,6 +96,11 @@
         <translation>向左對齊</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="283"/>
+        <source>Align &amp;left</source>
+        <translation>向左對齊(&amp;l)</translation>
+    </message>
+    <message>
         <location filename="../../Command.cpp" line="297"/>
         <source>Left-align contents of selected cells</source>
         <translation>所選儲存格之內容向左對齊</translation>
@@ -97,6 +117,11 @@
         <location filename="../../Command.cpp" line="400"/>
         <source>Align right</source>
         <translation>向右對齊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="397"/>
+        <source>Align &amp;right</source>
+        <translation>向右對齊(&amp;r)</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="401"/>
@@ -117,6 +142,11 @@
         <translation>向上對齊</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="454"/>
+        <source>Align &amp;top</source>
+        <translation>向上對齊(&amp;t)</translation>
+    </message>
+    <message>
         <location filename="../../Command.cpp" line="453"/>
         <source>Top-align contents of selected cells</source>
         <translation>所選儲存格之內容向上對齊</translation>
@@ -133,6 +163,11 @@
         <location filename="../../Command.cpp" line="556"/>
         <source>Vertically center-align</source>
         <translation>垂直置中對齊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="568"/>
+        <source>&amp;Vertically center-align</source>
+        <translation>垂直置中對齊(&amp;V)</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="557"/>
@@ -153,6 +188,11 @@
         <translation>匯出試算表</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="237"/>
+        <source>&amp;Export spreadsheet</source>
+        <translation>匯出試算表(&amp;E)</translation>
+    </message>
+    <message>
         <location filename="../../Command.cpp" line="236"/>
         <source>Export spreadsheet to CSV file</source>
         <translation>匯出試算表為CSV格式</translation>
@@ -171,6 +211,11 @@
         <translation>匯入試算表</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="184"/>
+        <source>&amp;Import spreadsheet</source>
+        <translation>匯入試算表(&amp;I)</translation>
+    </message>
+    <message>
         <location filename="../../Command.cpp" line="186"/>
         <source>Import CSV file into spreadsheet</source>
         <translation>將CSV檔匯入至試算表</translation>
@@ -187,6 +232,11 @@
         <location filename="../../Command.cpp" line="71"/>
         <source>Merge cells</source>
         <translation>合併儲存格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="61"/>
+        <source>&amp;Merge cells</source>
+        <translation>合併儲存格(&amp;M)</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="72"/>
@@ -225,6 +275,11 @@
         <translation>分割儲存格</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="122"/>
+        <source>Sp&amp;lit cell</source>
+        <translation>分割儲存格(&amp;l)</translation>
+    </message>
+    <message>
         <location filename="../../Command.cpp" line="127"/>
         <source>Split previously merged cells</source>
         <translation>分割前面合併的儲存格</translation>
@@ -241,6 +296,11 @@
         <location filename="../../Command.cpp" line="608"/>
         <source>Bold text</source>
         <translation>粗體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="625"/>
+        <source>&amp;Bold text</source>
+        <translation>粗體(&amp;B)</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="609"/>
@@ -261,6 +321,11 @@
         <translation>斜體</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="709"/>
+        <source>&amp;Italic text</source>
+        <translation>斜體(&amp;I)</translation>
+    </message>
+    <message>
         <location filename="../../Command.cpp" line="683"/>
         <source>Set text in selected cells italic</source>
         <translation>設定選取的儲存格為斜體字</translation>
@@ -276,7 +341,12 @@
     <message>
         <location filename="../../Command.cpp" line="756"/>
         <source>Underline text</source>
-        <translation>文字加上底線</translation>
+        <translation>底線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="793"/>
+        <source>&amp;Underline text</source>
+        <translation>底線(&amp;U)</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="757"/>
@@ -303,6 +373,11 @@
         <location filename="../../Command.cpp" line="146"/>
         <source>Split cell</source>
         <translation>分割儲存格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="143"/>
+        <source>Sp&amp;lit cell</source>
+        <translation>分割儲存格(&amp;l)</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="317"/>
@@ -920,6 +995,21 @@ Spreadsheet.my_alias_name instead of Spreadsheet.B1</source>
         <translation>參照儲存格使用別名,例如
 Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Sheet.ui" line="131"/>
+        <source>Zoom</source>
+        <translation>縮放</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Sheet.ui" line="147"/>
+        <source>-</source>
+        <translation>-</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Sheet.ui" line="197"/>
+        <source>+</source>
+        <translation>+</translation>
+    </message>
 </context>
 <context>
     <name>Spreadsheet</name>
@@ -1050,6 +1140,31 @@ Do you want to continue?</source>
         <translation>分隔字元: </translation>
     </message>
     <message>
+        <location filename="../../DlgSettings.ui" line="98"/>
+        <source>Quote Character: </source>
+        <translation>引用字元: </translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettings.ui" line="130"/>
+        <source>Escape Character: </source>
+        <translation>跳脫字元: </translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="48"/>
+        <source>Set a zoom level for table view from 60% to 160%.</source>
+        <translation>將表格檢視的縮放等級設定為 60% 到 160%.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="51"/>
+        <source>%</source>
+        <translation>%</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="76"/>
+        <source>Default zoom level:</source>
+        <translation>預設縮放等級:</translation>
+    </message>
+    <message>
         <location filename="../../DlgSettings.ui" line="64"/>
         <source>The format of the custom cell string presentation.
 Defaults to: %V = %A
@@ -1061,16 +1176,6 @@ Defaults to: %V = %A
 
 %A - 別名
 %V - 單元格值</translation>
-    </message>
-    <message>
-        <location filename="../../DlgSettings.ui" line="98"/>
-        <source>Quote Character: </source>
-        <translation>引用字元: </translation>
-    </message>
-    <message>
-        <location filename="../../DlgSettings.ui" line="130"/>
-        <source>Escape Character: </source>
-        <translation>跳脫字元: </translation>
     </message>
     <message>
         <location filename="../../DlgSettings.ui" line="26"/>
@@ -1303,6 +1408,11 @@ Defaults to: %V = %A
         <translation>試算表</translation>
     </message>
     <message>
+        <location filename="../../Workbench.cpp" line="49"/>
+        <source>Spreadsheet workbench</source>
+        <translation>試算表工作台</translation>
+    </message>
+    <message>
         <location filename="../../Workbench.cpp" line="50"/>
         <source>&amp;Spreadsheet</source>
         <translation>試算表(&amp;S)</translation>
@@ -1316,6 +1426,19 @@ Defaults to: %V = %A
         <location filename="../../Workbench.cpp" line="52"/>
         <source>&amp;Styles</source>
         <translation>樣式(&amp;S)</translation>
+    </message>
+</context>
+<context>
+    <name>ZoomableView</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/ZoomableView.cpp" line="112"/>
+        <source>Zoom level</source>
+        <translation>縮放等級</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/ZoomableView.cpp" line="112"/>
+        <source>New zoom level:</source>
+        <translation>新縮放等級:</translation>
     </message>
 </context>
 </TS>

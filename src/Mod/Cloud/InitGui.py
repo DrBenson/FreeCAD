@@ -2,6 +2,10 @@
 # (c) 2001 Juergen Riegel LGPL
 # (c) 2019 Jean-Marie Verdun LGPL
 
+import CloudGui
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
 
 class CloudWorkbench(Workbench):
     "Cloud workbench object"
@@ -11,8 +15,8 @@ class CloudWorkbench(Workbench):
             FreeCAD.getResourceDir() + "Mod/Cloud/Resources/icons/CloudWorkbench.svg"
         )
 
-    MenuText = "Cloud"
-    ToolTip = "Cloud workbench"
+    MenuText = FreeCAD.Qt.translate("Workbench", "Cloud")
+    ToolTip = FreeCAD.Qt.translate("Workbench", "Cloud workbench")
 
     def Initialize(self):
         # load the module

@@ -10,9 +10,9 @@ include_directories(
 if (QtWebEngineWidgets_FOUND)
     add_definitions(-DQTWEBENGINE)
     list (APPEND Web_Scripts InitGui.py)
-    set(WebUI_libs
-        WebGui.so
-	)
+#    set(WebUI_libs
+#        WebGui.so
+#	)
 endif()
 
 set(WebGui_LIBS

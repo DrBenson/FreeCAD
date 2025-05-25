@@ -21,6 +21,10 @@
 # *                                                                         *
 # ***************************************************************************
 
+import PathGui
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
 
 class PathCommandGroup:
     def __init__(self, cmdlist, menu, tooltip=None):
@@ -50,8 +54,8 @@ class CAMWorkbench(Workbench):
 
     def __init__(self):
         self.__class__.Icon = FreeCAD.getResourceDir() + "Mod/CAM/Resources/icons/CAMWorkbench.svg"
-        self.__class__.MenuText = "CAM"
-        self.__class__.ToolTip = "CAM workbench"
+        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "CAM")
+        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "CAM workbench")
 
     def Initialize(self):
         global PathCommandGroup
@@ -164,12 +168,6 @@ class CAMWorkbench(Workbench):
                     toolcmdlist.append("CAM_Camotics")
             except (FileNotFoundError, ModuleNotFoundError):
                 pass
-            except subprocess.CalledProcessError as e:
-                print(f"Failed to execute camotics command: {e}")
-            except ValueError as ve:
-                print(f"Version error: {ve}")
-            except Exception as ex:
-                print(f"An unexpected error occurred: {ex}")
 
             try:
                 try:

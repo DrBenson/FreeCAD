@@ -27,12 +27,17 @@
 # This is the second one of three init scripts, the third one
 # runs when the gui is up
 
+import PartDesignGui
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
+
 class PartDesignWorkbench ( Workbench ):
     "PartDesign workbench object"
     def __init__(self):
         self.__class__.Icon = FreeCAD.getResourceDir() + "Mod/PartDesign/Resources/icons/PartDesignWorkbench.svg"
-        self.__class__.MenuText = "Part Design"
-        self.__class__.ToolTip = "Part Design workbench"
+        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Part Design")
+        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Part Design workbench")
 
     def Initialize(self):
         # load the module

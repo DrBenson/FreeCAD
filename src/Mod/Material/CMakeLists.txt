@@ -106,6 +106,7 @@ SET(MaterialLib_Files
     Resources/Materials/Standard/Metal/Steel/Steel-S275JO.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-S275JR.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-S275N.FCMat
+    Resources/Materials/Standard/Metal/Steel/Steel-S304.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-S335JO.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-S335JR.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-S335N.FCMat

@@ -1,11 +1,7 @@
 include_directories(
     ${CMAKE_BINARY_DIR}
     ${CMAKE_CURRENT_BINARY_DIR}
-    ${COIN3D_INCLUDE_DIRS}
-    ${OCC_INCLUDE_DIR}
-    ${PYTHON_INCLUDE_DIRS}
 )
-link_directories(${OCC_LIBRARY_DIR})
 
 set(AssemblyGui_LIBS
     Assembly
@@ -16,15 +12,15 @@ set(AssemblyGui_LIBS
     FreeCADGui
 )
 
-PYSIDE_WRAP_RC(Assembly_QRC_SRCS Resources/Assembly.qrc)
 
 set (Assembly_TR_QRC ${CMAKE_CURRENT_BINARY_DIR}/Resources/Assembly_translation.qrc)
 qt_find_and_add_translation(QM_SRCS "Resources/translations/*_*.ts"
     ${CMAKE_CURRENT_BINARY_DIR}/Resources/translations)
 qt_create_resource_file(${Assembly_TR_QRC} ${QM_SRCS})
-qt_add_resources(AssemblyResource_SRCS Resources/Assembly.qrc ${Assembly_TR_QRC})
+qt_add_resources(Assembly_QRC_SRCS Resources/Assembly.qrc ${Assembly_TR_QRC})
 
-SOURCE_GROUP("Resources" FILES ${AssemblyResource_SRCS})
+PYSIDE_WRAP_RC(Assembly_QRC_SRCS Resources/Assembly.qrc)
+SOURCE_GROUP("Resources" FILES ${Assembly_QRC_SRCS})
 
 generate_from_xml(ViewProviderAssemblyPy)
 
@@ -69,7 +65,7 @@ SOURCE_GROUP("Module" FILES ${AssemblyGui_SRCS_Module})
 
 
 SET(AssemblyGui_SRCS
-    ${AssemblyResource_SRCS}
+    ${Assembly_QRC_SRCS}
     ${AssemblyGui_UIC_HDRS}
     ${AssemblyGui_SRCS_Module}
     ${Python_SRCS}

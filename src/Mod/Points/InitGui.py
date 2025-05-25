@@ -27,6 +27,10 @@
 # This is the second one of three init scripts, the third one
 # runs when the gui is up
 
+import PointsGui
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
 
 class PointsWorkbench(Workbench):
     "Points workbench object"
@@ -35,8 +39,8 @@ class PointsWorkbench(Workbench):
         self.__class__.Icon = (
             FreeCAD.getResourceDir() + "Mod/Points/Resources/icons/PointsWorkbench.svg"
         )
-        self.__class__.MenuText = "Points"
-        self.__class__.ToolTip = "Points workbench"
+        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Points")
+        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Points workbench")
 
     def Initialize(self):
         # load the module

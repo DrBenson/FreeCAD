@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
     <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
     <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
-    <extra-po-header-project_id_version>FreeCAD Mesh Language Translations v0.22_dev</extra-po-header-project_id_version>
-    <extra-po-header-x_generator>Poedit 3.2.2</extra-po-header-x_generator>
+    <extra-po-header-project_id_version>FreeCAD Mesh Language Translations v1.1.0</extra-po-header-project_id_version>
+    <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2023
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -728,32 +728,32 @@
 <context>
     <name>MeshGui::DlgDecimating</name>
     <message>
-        <location filename="../../DlgDecimating.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgDecimating.ui" line="14"/>
         <source>Decimating</source>
         <translation>十進制</translation>
     </message>
     <message>
-        <location filename="../../DlgDecimating.ui" line="20"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgDecimating.ui" line="20"/>
         <source>Reduction</source>
         <translation>減少</translation>
     </message>
     <message>
-        <location filename="../../DlgDecimating.ui" line="28"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgDecimating.ui" line="28"/>
         <source>None</source>
         <translation>無</translation>
     </message>
     <message>
-        <location filename="../../DlgDecimating.ui" line="57"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgDecimating.ui" line="57"/>
         <source>Full</source>
         <translation>飽滿</translation>
     </message>
     <message>
-        <location filename="../../DlgDecimating.ui" line="66"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgDecimating.ui" line="66"/>
         <source>Absolute number</source>
         <translation>絕對值</translation>
     </message>
     <message>
-        <location filename="../../DlgDecimating.ui" line="102"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgDecimating.ui" line="102"/>
         <source>Tolerance</source>
         <translation>公差</translation>
     </message>
@@ -765,123 +765,123 @@
 <context>
     <name>MeshGui::DlgEvaluateMesh</name>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="14"/>
         <source>Evaluate &amp; Repair Mesh</source>
         <translation>評估和修復網格</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="23"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="23"/>
         <source>Mesh information</source>
         <translation>網格資訊</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="46"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="46"/>
         <source>Number of faces:</source>
         <translation>面數：</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="69"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="102"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="135"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="211"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="291"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="371"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="451"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="531"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="611"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="691"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="753"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="69"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="102"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="135"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="211"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="291"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="371"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="451"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="531"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="611"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="691"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="753"/>
         <source>No information</source>
         <translation>沒有資訊</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="79"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="79"/>
         <source>Number of edges:</source>
         <translation>邊之數目：</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="112"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="112"/>
         <source>Number of points:</source>
         <translation>點的數目：</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="147"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="147"/>
         <source>Refresh</source>
         <translation>重新整理</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="187"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="187"/>
         <source>Orientation</source>
         <translation>定位</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="234"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="314"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="394"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="474"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="554"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="634"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="714"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="773"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="853"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="234"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="314"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="394"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="474"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="554"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="634"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="714"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="773"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="853"/>
         <source>Analyze</source>
         <translation>分析</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="244"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="324"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="404"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="484"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="564"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="644"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="724"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="783"/>
-        <location filename="../../DlgEvaluateMesh.ui" line="863"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="244"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="324"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="404"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="484"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="564"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="644"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="724"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="783"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="863"/>
         <source>Repair</source>
         <translation>修復</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="267"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="267"/>
         <source>Duplicated faces</source>
         <translation>複製之面</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="347"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="347"/>
         <source>Duplicated points</source>
         <translation>複製之點</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="427"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="427"/>
         <source>Non-manifolds</source>
         <translation>非重疊網格</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="507"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="507"/>
         <source>Degenerated faces</source>
         <translation>簡化面</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="587"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="587"/>
         <source>Face indices</source>
         <translation>面索引</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="667"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="667"/>
         <source>Self-intersections</source>
         <translation>自我交錯</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="735"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="735"/>
         <source>Folds on surface</source>
         <translation>於面上有重疊</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="806"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="806"/>
         <source>All above tests together</source>
         <translation>所有上述測試一起</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateMesh.ui" line="830"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="830"/>
         <source>Repetitive repair</source>
         <translation>重複修復</translation>
     </message>
@@ -1021,153 +1021,153 @@ Please run the command to repair folds first</source>
 <context>
     <name>MeshGui::DlgEvaluateSettings</name>
     <message>
-        <location filename="../../DlgEvaluateSettings.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="14"/>
         <source>Evaluation settings</source>
         <translation>計算設定</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateSettings.ui" line="20"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="20"/>
         <source>Settings</source>
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateSettings.ui" line="26"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="26"/>
         <source>Check for non-manifold points</source>
-        <translation type="unfinished"></translation>
+        <translation>檢查非流形點</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateSettings.ui" line="33"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="33"/>
         <source>Enable check for folds on surface</source>
-        <translation type="unfinished"></translation>
+        <translation>啟用表面折疊檢查</translation>
     </message>
     <message>
-        <location filename="../../DlgEvaluateSettings.ui" line="40"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="40"/>
         <source>Only consider zero area faces as degenerated</source>
-        <translation type="unfinished"></translation>
+        <translation>只將零面積面視為退化面</translation>
     </message>
 </context>
 <context>
     <name>MeshGui::DlgRegularSolid</name>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="14"/>
         <source>Regular Solid</source>
         <translation>矩形實體</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="29"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="29"/>
         <source>Solid:</source>
         <translation>實體：</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="42"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="42"/>
         <source>Cube</source>
         <translation>立方體</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="51"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="51"/>
         <source>Cylinder</source>
         <translation>圓柱</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="60"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="60"/>
         <source>Cone</source>
         <translation>錐體</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="69"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="69"/>
         <source>Sphere</source>
         <translation>球體</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="78"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="78"/>
         <source>Ellipsoid</source>
         <translation>橢球體</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="87"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="87"/>
         <source>Torus</source>
         <translation>圓環</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="120"/>
-        <location filename="../../DlgRegularSolid.ui" line="236"/>
-        <location filename="../../DlgRegularSolid.ui" line="387"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="120"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="236"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="387"/>
         <source>Length:</source>
         <translation>長度:</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="143"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="143"/>
         <source>Width:</source>
         <translation>寬度:</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="163"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="163"/>
         <source>Height:</source>
         <translation>高度:</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="219"/>
-        <location filename="../../DlgRegularSolid.ui" line="501"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="219"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="501"/>
         <source>Radius:</source>
         <translation>半徑:</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="273"/>
-        <location filename="../../DlgRegularSolid.ui" line="424"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="273"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="424"/>
         <source>Edge length:</source>
         <translation>邊長：</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="293"/>
-        <location filename="../../DlgRegularSolid.ui" line="441"/>
-        <location filename="../../DlgRegularSolid.ui" line="538"/>
-        <location filename="../../DlgRegularSolid.ui" line="642"/>
-        <location filename="../../DlgRegularSolid.ui" line="746"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="293"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="441"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="538"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="642"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="746"/>
         <source>Sampling:</source>
         <translation>採樣：</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="307"/>
-        <location filename="../../DlgRegularSolid.ui" line="455"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="307"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="455"/>
         <source>Closed</source>
         <translation>關閉</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="353"/>
-        <location filename="../../DlgRegularSolid.ui" line="588"/>
-        <location filename="../../DlgRegularSolid.ui" line="692"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="353"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="588"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="692"/>
         <source>Radius 1:</source>
         <translation>半徑 1:</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="370"/>
-        <location filename="../../DlgRegularSolid.ui" line="605"/>
-        <location filename="../../DlgRegularSolid.ui" line="709"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="370"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="605"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="709"/>
         <source>Radius 2:</source>
         <translation>半徑 2:</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="809"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="809"/>
         <source>&amp;Create</source>
         <translation>&amp;建立</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="812"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="812"/>
         <source>Alt+C</source>
         <translation>Alt+C</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="825"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="825"/>
         <source>Close</source>
         <translation>關閉</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="825"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="825"/>
         <source>Cl&amp;ose</source>
         <translation>&amp;關閉</translation>
     </message>
     <message>
-        <location filename="../../DlgRegularSolid.ui" line="828"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="828"/>
         <source>Alt+O</source>
         <translation>Alt+O</translation>
     </message>
@@ -1186,128 +1186,131 @@ Please run the command to repair folds first</source>
 <context>
     <name>MeshGui::DlgSettingsImportExport</name>
     <message>
-        <location filename="../../DlgSettingsImportExport.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="14"/>
         <source>Mesh Formats</source>
         <translation>網格格式</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsImportExport.ui" line="20"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="20"/>
         <source>Export</source>
         <translation>匯出</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsImportExport.ui" line="28"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="28"/>
         <source>Deviation of tessellation to the actual surface</source>
-        <translation type="unfinished"></translation>
+        <translation>鑲嵌與實際表面的偏差</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsImportExport.ui" line="31"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="31"/>
         <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tessellation&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Defines the maximum deviation of the tessellated mesh to the surface. The smaller the value is the slower the render speed which results in increased detail/resolution.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tessellation&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;定義細分網格相對於曲面的最大偏差. 該值越小，渲染速度越慢，從而提高細節/解析度..&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsImportExport.ui" line="34"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="34"/>
         <source>Maximum mesh deviation</source>
         <translation>網格最大偏差</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsImportExport.ui" line="41"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="41"/>
         <source>Maximal deviation between mesh and object</source>
-        <translation type="unfinished"></translation>
+        <translation>網格和物體之間的最大偏差</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsImportExport.ui" line="63"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="63"/>
         <source>ZIP compression is used when writing a mesh file in AMF format</source>
-        <translation type="unfinished"></translation>
+        <translation>以 AMF 格式寫入網格檔案時使用 ZIP 壓縮</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsImportExport.ui" line="66"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="66"/>
         <source>Export AMF files using compression</source>
-        <translation type="unfinished"></translation>
+        <translation>匯出 AMF 文件時使用壓縮</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsImportExport.ui" line="82"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="82"/>
         <source>Always export mesh as model type in 3MF format even if not a solid</source>
-        <translation type="unfinished"></translation>
+        <translation>即使不是實體, 也始​​終匯出網格為 3MF 格式的模型類型</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsImportExport.ui" line="85"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="85"/>
         <source>Export 3MF files as model type</source>
-        <translation type="unfinished"></translation>
+        <translation>匯出 3MF 檔案為模型類型</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsImportExport.ui" line="95"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="95"/>
         <source>Width:</source>
         <translation>寬度：</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsImportExport.ui" line="119"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="119"/>
         <source>Height:</source>
         <translation>高度：</translation>
     </message>
     <message>
         <source>This parameter indicates whether ZIP compression
 is used when writing a file in AMF format</source>
-        <translation type="unfinished"></translation>
+        <translation>此參數表示寫入AMF格式的檔案時是否使用ZIP壓縮</translation>
     </message>
 </context>
 <context>
     <name>MeshGui::DlgSettingsMeshView</name>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="14"/>
         <source>Mesh view</source>
         <translation>網格視圖</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="35"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="35"/>
         <source>Default appearance for new meshes</source>
         <translation>新網格的預設外觀</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="73"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="73"/>
         <source>Default mesh color</source>
         <translation>預設網格顏色</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="80"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="80"/>
         <source>Default color for new meshes</source>
         <translation>新網格的預設顏色</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="116"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="116"/>
         <source>Mesh transparency</source>
         <translation>網格透明度</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="142"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="142"/>
         <source>Default line color</source>
         <translation>預設線條顏色</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="149"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="149"/>
         <source>Default line color for new meshes</source>
         <translation>新網格的預設線條顏色</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="185"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="185"/>
         <source>Line transparency</source>
         <translation>線條透明度</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="211"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="211"/>
         <source>Backface color</source>
         <translation>背面顏色</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="251"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="251"/>
         <source>The bottom side of surface will be rendered the same way than top side.
 If not checked, it depends on the option &quot;Enable backlight color&quot;
 (preferences section Display -&gt; 3D View). Either the backlight color
 will be used or black.</source>
-        <translation type="unfinished"></translation>
+        <translation>表面底側的渲染方式與頂側相同.
+如果未選中，則取決於「啟用背光顏色」選項
+(偏好選項部分顯示-&gt;3D檢視).
+背光顏色將被使用或黑色.</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="334"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="334"/>
         <source>If this option is set Phong shading is used, otherwise flat shading.
 Shading defines the appearance of surfaces.
 
@@ -1315,38 +1318,46 @@ With flat shading the surface normals are not defined per vertex that leads
 to a unreal appearance for curved surfaces while using Phong shading leads
 to a smoother appearance.
 </source>
-        <translation type="unfinished"></translation>
+        <translation>如果設定此選項，則使用馮式陰影著色，否則使用平面陰影著色.
+陰影定義了表面的外觀.
+
+使用平面陰影著色時，表面法線不是按頂點定義的，
+這會導致曲面的外觀不真實，而使用馮式陰影著色會使外觀更為平滑.
+</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="251"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="251"/>
         <source>The bottom side of the surface will be rendered the same way as the top side.
 If not checked, it depends on the option &quot;Enable backlight color&quot;
 (preferences section Display -&gt; 3D View). Either the backlight color
 will be used or black.</source>
-        <translation type="unfinished"></translation>
+        <translation>表面的底側將以與頂側相同的方式渲染.
+如果未選中，則取決於「啟用背光顏色」選項
+(偏好選項部分顯示-&gt;3D簡檢視).
+背光顏色將被使用或黑色.</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="257"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="257"/>
         <source>Two-side rendering</source>
         <translation>雙面渲染</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="273"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="273"/>
         <source>A bounding box will be displayed</source>
-        <translation type="unfinished"></translation>
+        <translation>將顯示一個邊界框</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="276"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="276"/>
         <source>Show bounding-box for highlighted or selected meshes</source>
         <translation>顯示突出或選定的網格邊界框</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="313"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="313"/>
         <source>Smoothing</source>
         <translation>平滑</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="334"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="334"/>
         <source>If this option is set Phong shading is used, otherwise flat shading.
 Shading defines the appearance of surfaces.
 
@@ -1354,35 +1365,43 @@ With flat shading the surface normals are not defined per vertex that leads
 to an unreal appearance for curved surfaces while using Phong shading leads
 to a smoother appearance.
 </source>
-        <translation type="unfinished"></translation>
+        <translation>如果設定此選項，則使用馮式陰影著色，否則使用平面陰影著色.
+陰影定義了表面的外觀.
+
+使用平面陰影著色時，表面法線不是按頂點定義的，
+這會導致曲面的外觀不真實，而使用馮式陰影著色會使外觀更為平滑.
+</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="343"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="343"/>
         <source>Define normal per vertex</source>
         <translation>定義每個頂點法線</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="356"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="356"/>
         <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;This is the smallest angle between two faces where normals get calculated to do flat shading.&lt;/p&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;If the angle between the normals of two neighbouring faces is less than the crease angle, the faces will be smoothshaded around their common edge.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;這是計算法線以進行平面著色的兩個面之間的最小角度.&lt;/p&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;如果兩個相鄰面的法線之間的角度小於摺痕角，則這些面將在其公共邊緣周圍進行平滑著色.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="359"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="359"/>
         <source>Crease angle</source>
         <translation>消除摺角</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="369"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="369"/>
         <source>Crease angle is a threshold angle between two faces.
 
  If face angle ≥ crease angle, facet shading is used
  If face angle &lt; crease angle, smooth shading is used</source>
-        <translation type="unfinished"></translation>
+        <translation>摺痕角度是兩個面之間的閾值角度.
+
+ 若平面角 ≥ 摺痕角, 則使用面陰影
+ 若平面角 &lt; 摺痕角, 則使用平滑陰影</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsMeshView.ui" line="404"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="404"/>
         <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hint&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;Defining the normals per vertex is also called &lt;span style=&quot; font-style:italic;&quot;&gt;Phong shading&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;&quot;&gt;&lt;span style=&quot; font-style:normal;&quot;&gt;while defining the normals per face is called &lt;/span&gt;Flat shading&lt;span style=&quot; font-style:normal;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;提示:&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;定義每個頂點的常態也稱為 &lt;span style=&quot; font-style:italic;&quot;&gt;馮式陰影&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;&quot;&gt;&lt;span style=&quot; font-style:normal;&quot;&gt;在定義每張臉的正常時稱為 &lt;/span&gt;平面陰影&lt;span style=&quot; font-style:normal;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;This is the smallest angle between two faces where normals get calculated to do flat shading.&lt;/p&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;If the angle between the normals of two neighbouring faces is less than the crease angle, the faces will be smoothshaded around their common edge.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
@@ -1396,47 +1415,47 @@ to a smoother appearance.
 <context>
     <name>MeshGui::DlgSmoothing</name>
     <message>
-        <location filename="../../DlgSmoothing.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="14"/>
         <source>Smoothing</source>
         <translation>平滑</translation>
     </message>
     <message>
-        <location filename="../../DlgSmoothing.ui" line="23"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="23"/>
         <source>Method</source>
         <translation>方法</translation>
     </message>
     <message>
-        <location filename="../../DlgSmoothing.ui" line="29"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="29"/>
         <source>Taubin</source>
         <translation>Taubin</translation>
     </message>
     <message>
-        <location filename="../../DlgSmoothing.ui" line="39"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="39"/>
         <source>Laplace</source>
         <translation>Laplace</translation>
     </message>
     <message>
-        <location filename="../../DlgSmoothing.ui" line="49"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="49"/>
         <source>Parameter</source>
         <translation>參數</translation>
     </message>
     <message>
-        <location filename="../../DlgSmoothing.ui" line="55"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="55"/>
         <source>Iterations:</source>
         <translation>迭代：</translation>
     </message>
     <message>
-        <location filename="../../DlgSmoothing.ui" line="72"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="72"/>
         <source>Lambda:</source>
         <translation>Lambda：</translation>
     </message>
     <message>
-        <location filename="../../DlgSmoothing.ui" line="95"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="95"/>
         <source>Mu:</source>
         <translation>Mu：</translation>
     </message>
     <message>
-        <location filename="../../DlgSmoothing.ui" line="118"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="118"/>
         <source>Only selection</source>
         <translation>僅有選取部份</translation>
     </message>
@@ -1464,16 +1483,16 @@ to a smoother appearance.
         <translation>平行四邊形</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.cpp" line="106"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.cpp" line="106"/>
         <source>Quasi-structured Quad</source>
-        <translation type="unfinished"></translation>
+        <translation>準結構四邊形</translation>
     </message>
     <message>
         <source>Time:</source>
         <translation>時間：</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.cpp" line="241"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.cpp" line="241"/>
         <source>Running Gmsh...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1558,57 +1577,57 @@ to a smoother appearance.
 <context>
     <name>MeshGui::RemeshGmsh</name>
     <message>
-        <location filename="../../RemeshGmsh.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="14"/>
         <source>Remesh by Gmsh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../RemeshGmsh.ui" line="26"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="26"/>
         <source>Remeshing Parameter</source>
         <translation>重新劃分參數</translation>
     </message>
     <message>
-        <location filename="../../RemeshGmsh.ui" line="32"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="32"/>
         <source>Meshing:</source>
         <translation>建立網格:</translation>
     </message>
     <message>
-        <location filename="../../RemeshGmsh.ui" line="42"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="42"/>
         <source>Max element size (0.0 = Auto):</source>
         <translation>最大元素大小 (0.0 = 自動):</translation>
     </message>
     <message>
-        <location filename="../../RemeshGmsh.ui" line="68"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="68"/>
         <source>Min element size (0.0 = Auto):</source>
         <translation>最小元素大小 (0.0 = 自動):</translation>
     </message>
     <message>
-        <location filename="../../RemeshGmsh.ui" line="94"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="94"/>
         <source>Angle:</source>
         <translation>角度：</translation>
     </message>
     <message>
-        <location filename="../../RemeshGmsh.ui" line="126"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="126"/>
         <source>Gmsh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../RemeshGmsh.ui" line="134"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="134"/>
         <source>Path</source>
         <translation>路徑</translation>
     </message>
     <message>
-        <location filename="../../RemeshGmsh.ui" line="154"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="154"/>
         <source>Kill</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../RemeshGmsh.ui" line="181"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="181"/>
         <source>Time:</source>
         <translation>時間：</translation>
     </message>
     <message>
-        <location filename="../../RemeshGmsh.ui" line="188"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="188"/>
         <source>Clear</source>
         <translation>清除</translation>
     </message>
@@ -1616,76 +1635,76 @@ to a smoother appearance.
 <context>
     <name>MeshGui::RemoveComponents</name>
     <message>
-        <location filename="../../RemoveComponents.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="14"/>
         <source>Remove components</source>
         <translation>移除組件</translation>
     </message>
     <message>
-        <location filename="../../RemoveComponents.ui" line="20"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="20"/>
         <source>Select</source>
         <translation>選擇</translation>
     </message>
     <message>
-        <location filename="../../RemoveComponents.ui" line="32"/>
-        <location filename="../../RemoveComponents.ui" line="118"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="32"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="118"/>
         <source>Region</source>
         <translation>面域</translation>
     </message>
     <message>
-        <location filename="../../RemoveComponents.ui" line="52"/>
-        <location filename="../../RemoveComponents.ui" line="138"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="52"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="138"/>
         <source>All</source>
         <translation>所有</translation>
     </message>
     <message>
-        <location filename="../../RemoveComponents.ui" line="72"/>
-        <location filename="../../RemoveComponents.ui" line="158"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="72"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="158"/>
         <source>Components</source>
         <translation>組件</translation>
     </message>
     <message>
-        <location filename="../../RemoveComponents.ui" line="79"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="79"/>
         <source>&lt; faces than</source>
         <translation>&lt;面數</translation>
     </message>
     <message>
-        <location filename="../../RemoveComponents.ui" line="89"/>
-        <location filename="../../RemoveComponents.ui" line="175"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="89"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="175"/>
         <source>Pick triangle</source>
         <translation>選取三角形</translation>
     </message>
     <message>
-        <location filename="../../RemoveComponents.ui" line="96"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="96"/>
         <source>Select whole component</source>
         <translation>選擇整個組件</translation>
     </message>
     <message>
-        <location filename="../../RemoveComponents.ui" line="106"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="106"/>
         <source>Deselect</source>
         <translation>取消選擇</translation>
     </message>
     <message>
-        <location filename="../../RemoveComponents.ui" line="165"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="165"/>
         <source>&gt; faces than</source>
         <translation>&gt;面數</translation>
     </message>
     <message>
-        <location filename="../../RemoveComponents.ui" line="182"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="182"/>
         <source>Deselect whole component</source>
         <translation>取消選擇整個組件</translation>
     </message>
     <message>
-        <location filename="../../RemoveComponents.ui" line="192"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="192"/>
         <source>Region options</source>
         <translation>面域選項</translation>
     </message>
     <message>
-        <location filename="../../RemoveComponents.ui" line="198"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="198"/>
         <source>Respect only visible triangles</source>
         <translation>僅就可見的三角形</translation>
     </message>
     <message>
-        <location filename="../../RemoveComponents.ui" line="208"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="208"/>
         <source>Respect only triangles with normals facing screen</source>
         <translation>僅就法線正對畫面的三角形</translation>
     </message>
@@ -1693,74 +1712,74 @@ to a smoother appearance.
 <context>
     <name>MeshGui::Segmentation</name>
     <message>
-        <location filename="../../Segmentation.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="14"/>
         <source>Mesh segmentation</source>
         <translation>網格分割</translation>
     </message>
     <message>
-        <location filename="../../Segmentation.ui" line="20"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="20"/>
         <source>Smooth mesh</source>
         <translation>平滑化網格</translation>
     </message>
     <message>
-        <location filename="../../Segmentation.ui" line="37"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="37"/>
         <source>Plane</source>
         <translation>平面</translation>
     </message>
     <message>
-        <location filename="../../Segmentation.ui" line="46"/>
-        <location filename="../../Segmentation.ui" line="189"/>
-        <location filename="../../Segmentation.ui" line="252"/>
-        <location filename="../../Segmentation.ui" line="286"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="46"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="189"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="252"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="286"/>
         <source>Tolerance</source>
         <translation>公差</translation>
     </message>
     <message>
-        <location filename="../../Segmentation.ui" line="63"/>
-        <location filename="../../Segmentation.ui" line="143"/>
-        <location filename="../../Segmentation.ui" line="206"/>
-        <location filename="../../Segmentation.ui" line="303"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="63"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="143"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="206"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="303"/>
         <source>Minimum number of faces</source>
         <translation>面之最小數量</translation>
     </message>
     <message>
-        <location filename="../../Segmentation.ui" line="83"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="83"/>
         <source>Cylinder</source>
         <translation>圓柱</translation>
     </message>
     <message>
-        <location filename="../../Segmentation.ui" line="92"/>
-        <location filename="../../Segmentation.ui" line="172"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="92"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="172"/>
         <source>Curvature</source>
         <translation>曲率</translation>
     </message>
     <message>
-        <location filename="../../Segmentation.ui" line="109"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="109"/>
         <source>Tolerance (Flat)</source>
         <translation>誤差(平面)</translation>
     </message>
     <message>
-        <location filename="../../Segmentation.ui" line="126"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="126"/>
         <source>Tolerance (Curved)</source>
         <translation>誤差(曲面)</translation>
     </message>
     <message>
-        <location filename="../../Segmentation.ui" line="163"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="163"/>
         <source>Sphere</source>
         <translation>球體</translation>
     </message>
     <message>
-        <location filename="../../Segmentation.ui" line="226"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="226"/>
         <source>Freeform</source>
         <translation>自由形式</translation>
     </message>
     <message>
-        <location filename="../../Segmentation.ui" line="235"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="235"/>
         <source>Max. Curvature</source>
         <translation>最大曲率</translation>
     </message>
     <message>
-        <location filename="../../Segmentation.ui" line="269"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="269"/>
         <source>Min. Curvature</source>
         <translation>最小曲率</translation>
     </message>
@@ -1768,43 +1787,43 @@ to a smoother appearance.
 <context>
     <name>MeshGui::SegmentationBestFit</name>
     <message>
-        <location filename="../../SegmentationBestFit.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="14"/>
         <source>Mesh segmentation</source>
         <translation>網格分割</translation>
     </message>
     <message>
-        <location filename="../../SegmentationBestFit.ui" line="20"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="20"/>
         <source>Plane</source>
         <translation>平面</translation>
     </message>
     <message>
-        <location filename="../../SegmentationBestFit.ui" line="29"/>
-        <location filename="../../SegmentationBestFit.ui" line="82"/>
-        <location filename="../../SegmentationBestFit.ui" line="135"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="29"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="82"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="135"/>
         <source>Parameters...</source>
         <translation>參數...</translation>
     </message>
     <message>
-        <location filename="../../SegmentationBestFit.ui" line="36"/>
-        <location filename="../../SegmentationBestFit.ui" line="89"/>
-        <location filename="../../SegmentationBestFit.ui" line="142"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="36"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="89"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="142"/>
         <source>Tolerance</source>
         <translation>公差</translation>
     </message>
     <message>
-        <location filename="../../SegmentationBestFit.ui" line="53"/>
-        <location filename="../../SegmentationBestFit.ui" line="106"/>
-        <location filename="../../SegmentationBestFit.ui" line="159"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="53"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="106"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="159"/>
         <source>Minimum number of faces</source>
         <translation>面之最小數量</translation>
     </message>
     <message>
-        <location filename="../../SegmentationBestFit.ui" line="73"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="73"/>
         <source>Cylinder</source>
         <translation>圓柱</translation>
     </message>
     <message>
-        <location filename="../../SegmentationBestFit.ui" line="126"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="126"/>
         <source>Sphere</source>
         <translation>球體</translation>
     </message>
@@ -1832,28 +1851,28 @@ to a smoother appearance.
 <context>
     <name>MeshGui::Selection</name>
     <message>
-        <location filename="../../Selection.ui" line="14"/>
-        <location filename="../../Selection.ui" line="20"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Selection.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Selection.ui" line="20"/>
         <source>Selection</source>
         <translation>選擇</translation>
     </message>
     <message>
-        <location filename="../../Selection.ui" line="39"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Selection.ui" line="39"/>
         <source>Add</source>
         <translation>新增</translation>
     </message>
     <message>
-        <location filename="../../Selection.ui" line="46"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Selection.ui" line="46"/>
         <source>Clear</source>
         <translation>清除</translation>
     </message>
     <message>
-        <location filename="../../Selection.ui" line="53"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Selection.ui" line="53"/>
         <source>Respect only visible triangles</source>
         <translation>僅就可見的三角形</translation>
     </message>
     <message>
-        <location filename="../../Selection.ui" line="63"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Selection.ui" line="63"/>
         <source>Respect only triangles with normals facing screen</source>
         <translation>僅就法線正對畫面的三角形</translation>
     </message>
@@ -1880,6 +1899,10 @@ to a smoother appearance.
 <context>
     <name>MeshInfoWatcher</name>
     <message>
+        <source>X: %1	Y: %2	Z: %3</source>
+        <translation>X: %1	Y: %2	Z: %3</translation>
+    </message>
+    <message>
         <source>Number of points:</source>
         <translation>點的數目：</translation>
     </message>
@@ -1902,10 +1925,6 @@ to a smoother appearance.
     <message>
         <source>Mesh info</source>
         <translation>網格資訊</translation>
-    </message>
-    <message>
-        <source>X: %1	Y: %2	Z: %3</source>
-        <translation>X: %1	Y: %2	Z: %3</translation>
     </message>
 </context>
 <context>
@@ -1942,7 +1961,7 @@ Please visit http://www.openscad.org/index.html to install it.</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../../AppMeshGui.cpp" line="157"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/AppMeshGui.cpp" line="157"/>
         <source>Display</source>
         <translation>顯示</translation>
     </message>
@@ -2126,6 +2145,36 @@ Please visit http://www.openscad.org/index.html to install it.</source>
         <source>Annotation</source>
         <translation>注釋</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Workbench.cpp" line="69"/>
+        <source>Number of points:</source>
+        <translation>點的數量:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Workbench.cpp" line="72"/>
+        <source>Number of facets:</source>
+        <translation>平面數量:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Workbench.cpp" line="78"/>
+        <source>Minimum bound:</source>
+        <translation>最小界限:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Workbench.cpp" line="81"/>
+        <source>Maximum bound:</source>
+        <translation>最大界限:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Workbench.cpp" line="88"/>
+        <source>Mesh info box</source>
+        <translation>網格資訊框</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Workbench.cpp" line="89"/>
+        <source>Mesh info</source>
+        <translation>網格資訊</translation>
+    </message>
 </context>
 <context>
     <name>Workbench</name>
@@ -2168,6 +2217,14 @@ Please visit http://www.openscad.org/index.html to install it.</source>
     <message>
         <source>Mesh analyze</source>
         <translation>網格分析</translation>
+    </message>
+    <message>
+        <source>Mesh</source>
+        <translation>網面工具</translation>
+    </message>
+    <message>
+        <source>Mesh workbench</source>
+        <translation>網面工作台</translation>
     </message>
 </context>
 </TS>

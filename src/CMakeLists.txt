@@ -16,6 +16,7 @@ endif(BUILD_GUI)
 
 if(BUILD_TEMPLATE)
     add_subdirectory(Tools/_TEMPLATE_)
+    add_subdirectory(Tools/_TEMPLATEPY_)
 endif(BUILD_TEMPLATE)
 
 # "if" clause moved into local CMakeLists.txt file to support Conda and Homebrew builds

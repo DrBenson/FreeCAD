@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
     <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
     <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
-    <extra-po-header-project_id_version>FreeCAD StartPage Language Translations v0.22_dev</extra-po-header-project_id_version>
-    <extra-po-header-x_generator>Poedit 3.2.2</extra-po-header-x_generator>
+    <extra-po-header-project_id_version>FreeCAD StartPage Language Translations v1.1.0</extra-po-header-project_id_version>
+    <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2023
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -21,6 +21,11 @@
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/Manipulator.cpp" line="48"/>
         <source>Start</source>
         <translation>開始頁面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/Manipulator.cpp" line="48"/>
+        <source>&amp;Start Page</source>
+        <translation>開始頁面(&amp;S)</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/Manipulator.cpp" line="48"/>
@@ -79,89 +84,9 @@
         <translation>將使用可選的 HTML 模板，而不是預設的起始頁.</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="182"/>
-        <source>Show scrollbars</source>
-        <translation>顯示捲軸</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="572"/>
-        <source>Use gradient for New File icon</source>
-        <translation>新的檔案圖示使用漸層</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="579"/>
-        <source>If this is selected, the &apos;New File&apos; icon shows a gradient icon instead of the normal icon</source>
-        <translation>如果選擇此選項，「新檔案」圖示將顯示漸層圖示而不是普通圖示</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="601"/>
-        <source>Options</source>
-        <translation>選項</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="607"/>
-        <source>Choose which workbench to switch to after the program launches</source>
-        <translation>選擇程式啟動後要切換到的工作台</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="633"/>
-        <source>Switch workbench after loading</source>
-        <translation>切換工作台在載入後</translation>
-    </message>
-    <message>
         <location filename="../../DlgStartPreferences.ui" line="33"/>
         <source>Workbench to switch to after loading a file from the Start page, only used if Start is the start up workbench</source>
         <translation>從「開始」頁面載入檔案後切換到的工作台，僅在「開始」是啟動工作台時使用</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="640"/>
-        <source>Close start page after loading</source>
-        <translation>關閉開始頁在載入後</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="614"/>
-        <source>If checked, will automatically close the Start page when FreeCAD launches</source>
-        <translation>如果選中，將在 FreeCAD 啟動時自動關閉起始頁</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="647"/>
-        <source>Close and switch on opening file</source>
-        <translation>關閉並切換到開啟的文件</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="654"/>
-        <source>If application is started by opening a file, apply the two settings above</source>
-        <translation>如果應用程式是透過開啟檔案啟動的，則套用上面的兩個設定</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="42"/>
-        <source>Contents</source>
-        <translation>內容</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="122"/>
-        <source>The size of file thumbnail icons in recent files and examples sections</source>
-        <translation>最近文件和範例部分中文件縮圖圖示的大小</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="554"/>
-        <source>px</source>
-        <translation>px</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="69"/>
-        <source>If you want the examples to show on the first page</source>
-        <translation>如果你要範例顯示在第一頁</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="163"/>
-        <source>Displays help tips in the Start workbench Documents tab</source>
-        <translation>在「啟動工作台文件」分頁中顯示幫助提示</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="153"/>
-        <source>Show tips</source>
-        <translation>顯示提示</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="48"/>
@@ -169,34 +94,14 @@
         <translation>顯示論壇</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="127"/>
-        <source>Show notepad</source>
-        <translation>顯示記事本</translation>
+        <location filename="../../DlgStartPreferences.ui" line="62"/>
+        <source>Show additional folder</source>
+        <translation>顯示額外的資料夾</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="91"/>
         <source>If this is checked, the latest posts from the FreeCAD forum will be displayed on the Activity tab</source>
         <translation>如果這個被點取, 最後面貼在FreeCAD論壇討論, 將會顯示在活動的分頁</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="264"/>
-        <source>File thumbnail size</source>
-        <translation>縮略圖檔案大小</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="55"/>
-        <source>Show examples folder contents</source>
-        <translation>顯示範例的資料夾內容</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="134"/>
-        <source>Shows a notepad next to the file thumbnails, where you can keep notes across sessions</source>
-        <translation>在文件縮圖旁邊顯示記事本，您可以在其中跨工作階段保存筆記</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="297"/>
-        <source>Show file thumbnails</source>
-        <translation>顯示檔案縮圖</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="110"/>
@@ -206,9 +111,34 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
 透過使用&quot;;;&quot;分隔目錄路徑，您可以在此處新增多個資料夾</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="62"/>
-        <source>Show additional folder</source>
-        <translation>顯示額外的資料夾</translation>
+        <location filename="../../DlgStartPreferences.ui" line="122"/>
+        <source>The size of file thumbnail icons in recent files and examples sections</source>
+        <translation>最近文件和範例部分中文件縮圖圖示的大小</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="127"/>
+        <source>Show notepad</source>
+        <translation>顯示記事本</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="134"/>
+        <source>Shows a notepad next to the file thumbnails, where you can keep notes across sessions</source>
+        <translation>在文件縮圖旁邊顯示記事本，您可以在其中跨工作階段保存筆記</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="153"/>
+        <source>Show tips</source>
+        <translation>顯示提示</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="163"/>
+        <source>Displays help tips in the Start workbench Documents tab</source>
+        <translation>在「啟動工作台文件」分頁中顯示幫助提示</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="182"/>
+        <source>Show scrollbars</source>
+        <translation>顯示捲軸</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="185"/>
@@ -216,24 +146,14 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <translation>字型與顏色</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="417"/>
-        <source>The background color of the boxes inside the pages</source>
-        <translation>頁面內部框的背景色</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="378"/>
-        <source>Page text color</source>
-        <translation>頁面文字顏色</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="338"/>
-        <source>Page background color</source>
-        <translation>頁面背景顏色</translation>
-    </message>
-    <message>
         <location filename="../../DlgStartPreferences.ui" line="197"/>
         <source>The background of the main start page area</source>
         <translation>主啟動頁面區域背景</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="217"/>
+        <source>Background color</source>
+        <translation>背景顏色</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="229"/>
@@ -246,24 +166,9 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <translation>在外部瀏覽器</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="523"/>
-        <source>Font family</source>
-        <translation>字型家族</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="502"/>
-        <source>Open links</source>
-        <translation>開啟鏈結</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="450"/>
-        <source>The background color behind the panels</source>
-        <translation>面板後面的背景色</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="516"/>
-        <source>Use FreeCAD style sheet</source>
-        <translation>使用FreeCAD樣式表</translation>
+        <location filename="../../DlgStartPreferences.ui" line="264"/>
+        <source>File thumbnail size</source>
+        <translation>縮略圖檔案大小</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="266"/>
@@ -271,9 +176,59 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <translation>背景顏色向下漸變</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="479"/>
-        <source>The down gradient for the background color (currently unsupported)</source>
-        <translation>背景顏色向下漸層 (目前尚未支援)</translation>
+        <location filename="../../DlgStartPreferences.ui" line="279"/>
+        <source>The color of the version text</source>
+        <translation>版本文字的顏色</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="297"/>
+        <source>Show file thumbnails</source>
+        <translation>顯示檔案縮圖</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="299"/>
+        <source>Link color</source>
+        <translation>連結顏色</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="306"/>
+        <source>An optional image to display as background</source>
+        <translation>作為背景顯示的可選圖像</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="319"/>
+        <source>If this is checked and a style sheet is specified in General preferences, it will be used and override the colors below</source>
+        <translation>如果選取此項目並在一般偏好設定中指定樣式表，則將使用該樣式表並覆蓋下方的顏色</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="338"/>
+        <source>Page background color</source>
+        <translation>頁面背景顏色</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="351"/>
+        <source>The color of the text on the main pages</source>
+        <translation>主頁上文字的顏色</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="371"/>
+        <source>Background image</source>
+        <translation>背景圖片</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="378"/>
+        <source>Page text color</source>
+        <translation>頁面文字顏色</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="391"/>
+        <source>The color of the links</source>
+        <translation>鏈結的顏色</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="417"/>
+        <source>The background color of the boxes inside the pages</source>
+        <translation>頁面內部框的背景色</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="437"/>
@@ -281,14 +236,34 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <translation>框背景色</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="217"/>
-        <source>Background color</source>
-        <translation>背景顏色</translation>
+        <location filename="../../DlgStartPreferences.ui" line="450"/>
+        <source>The background color behind the panels</source>
+        <translation>面板後面的背景色</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="479"/>
+        <source>The down gradient for the background color (currently unsupported)</source>
+        <translation>背景顏色向下漸層 (目前尚未支援)</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="502"/>
+        <source>Open links</source>
+        <translation>開啟鏈結</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="509"/>
         <source>Background text color</source>
         <translation>背景文字顏色</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="516"/>
+        <source>Use FreeCAD style sheet</source>
+        <translation>使用FreeCAD樣式表</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="523"/>
+        <source>Font family</source>
+        <translation>字型家族</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="532"/>
@@ -306,39 +281,96 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <translation>開始頁的所有文字要使用的基本字體大小</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="391"/>
-        <source>The color of the links</source>
-        <translation>鏈結的顏色</translation>
+        <location filename="../../DlgStartPreferences.ui" line="554"/>
+        <source>px</source>
+        <translation>px</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="299"/>
-        <source>Link color</source>
-        <translation>連結顏色</translation>
+        <location filename="../../DlgStartPreferences.ui" line="572"/>
+        <source>Use gradient for New File icon</source>
+        <translation>新的檔案圖示使用漸層</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="319"/>
-        <source>If this is checked and a style sheet is specified in General preferences, it will be used and override the colors below</source>
-        <translation>如果選取此項目並在一般偏好設定中指定樣式表，則將使用該樣式表並覆蓋下方的顏色</translation>
+        <location filename="../../DlgStartPreferences.ui" line="579"/>
+        <source>If this is selected, the &apos;New File&apos; icon shows a gradient icon instead of the normal icon</source>
+        <translation>如果選擇此選項，「新檔案」圖示將顯示漸層圖示而不是普通圖示</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="279"/>
-        <source>The color of the version text</source>
-        <translation>版本文字的顏色</translation>
+        <location filename="../../DlgStartPreferences.ui" line="607"/>
+        <source>Choose which workbench to switch to after the program launches</source>
+        <translation>選擇程式啟動後要切換到的工作台</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="351"/>
-        <source>The color of the text on the main pages</source>
-        <translation>主頁上文字的顏色</translation>
+        <location filename="../../DlgStartPreferences.ui" line="633"/>
+        <source>Switch workbench after loading</source>
+        <translation>切換工作台在載入後</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="306"/>
-        <source>An optional image to display as background</source>
-        <translation>作為背景顯示的可選圖像</translation>
+        <location filename="../../DlgStartPreferences.ui" line="647"/>
+        <source>Close and switch on opening file</source>
+        <translation>關閉並切換到開啟的文件</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="371"/>
-        <source>Background image</source>
-        <translation>背景圖片</translation>
+        <location filename="../../DlgStartPreferences.ui" line="654"/>
+        <source>If application is started by opening a file, apply the two settings above</source>
+        <translation>如果應用程式是透過開啟檔案啟動的，則套用上面的兩個設定</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="42"/>
+        <source>Contents</source>
+        <translation>內容</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="26"/>
+        <source>Show only FreeCAD files in additional folder</source>
+        <translation>僅顯示附加資料夾中的 FreeCAD 文件</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="55"/>
+        <source>Show examples folder contents</source>
+        <translation>顯示範例的資料夾內容</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="26"/>
+        <source>Show additional folder contents</source>
+        <translation>顯示其他資料夾內容</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="47"/>
+        <source>An optional custom folder to be displayed on the Start page.
+By using &quot;;;&quot; to separate paths, you can add several folders here.</source>
+        <translation>要顯示在起始頁上的可選自訂資料夾.
+透過使用 &quot;;;&quot; 來分隔路徑，您可以在此處新增多個資料夾.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="55"/>
+        <source>An optional custom folder to be displayed on the Start page.</source>
+        <translation>要顯示在起始頁上的可選自訂資料夾.</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="69"/>
+        <source>If you want the examples to show on the first page</source>
+        <translation>如果你要範例顯示在第一頁</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="85"/>
+        <source>If the additional folder contents should include only .FCStd files</source>
+        <translation>如果附加資料夾內容應僅包含 .FCStd 文件</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="601"/>
+        <source>Options</source>
+        <translation>選項</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="614"/>
+        <source>If checked, will automatically close the Start page when FreeCAD launches</source>
+        <translation>如果選中，將在 FreeCAD 啟動時自動關閉起始頁</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="640"/>
+        <source>Close start page after loading</source>
+        <translation>關閉開始頁在載入後</translation>
     </message>
 </context>
 <context>
@@ -482,16 +514,6 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <translation>建立一個建築專案</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="446"/>
-        <source>File not found</source>
-        <translation>找不到檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="447"/>
-        <source>The file &apos;%1&apos; cannot be opened.</source>
-        <translation>無法打開檔案&apos;%1&apos;.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="434"/>
         <source>New File</source>
         <translation>新增檔案</translation>
@@ -505,6 +527,21 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="436"/>
         <source>Recent Files</source>
         <translation>最近使用的檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="446"/>
+        <source>File not found</source>
+        <translation>找不到檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="447"/>
+        <source>The file &apos;%1&apos; cannot be opened.</source>
+        <translation>無法打開檔案&apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="575"/>
+        <source>Custom Folder</source>
+        <translation>自訂資料夾</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="484"/>

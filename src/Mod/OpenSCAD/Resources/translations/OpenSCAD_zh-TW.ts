@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
     <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
     <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
-    <extra-po-header-project_id_version>FreeCAD OpenSCAD Language Translations v0.22_dev</extra-po-header-project_id_version>
-    <extra-po-header-x_generator>Poedit 3.2.2</extra-po-header-x_generator>
+    <extra-po-header-project_id_version>FreeCAD OpenSCAD Language Translations v1.1.0</extra-po-header-project_id_version>
+    <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2023
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -573,9 +573,23 @@
         <translation>OpenSCAD 工具</translation>
     </message>
     <message>
+        <location filename="../../InitGui.py" line="152"/>
+        <source>OpenSCAD</source>
+        <translation>OpenSCAD 工具</translation>
+    </message>
+    <message>
         <location filename="../../InitGui.py" line="156"/>
         <source>Frequently-used Part WB tools</source>
         <translation>常用的零件工作台工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/conda/AppDir6/media/usr/Mod/OpenSCAD/InitGui.py" line="49"/>
+        <source>OpenSCAD is an application for creating solid 3D CAD.
+FreeCAD utizes OpenSCAD&apos;s capability as a script-only based modeller that uses its own description language
+Note: the Mesh workbench heavily uses the boolean operations of this workbench because they are quite robust</source>
+        <translation>OpenSCAD 是一款用於建立實體 3D CAD 的應用程式.
+FreeCAD 利用 OpenSCAD 的功能，將其作為基於腳本的建模器，使用自己的描述語言
+注意: Mesh 工作台大量使用此工作台的布林運算，因為它們非常健全</translation>
     </message>
 </context>
 </TS>

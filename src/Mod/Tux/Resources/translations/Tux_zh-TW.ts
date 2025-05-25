@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
     <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
     <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
-    <extra-po-header-project_id_version>FreeCAD Tux Language Translations v0.22_dev</extra-po-header-project_id_version>
-    <extra-po-header-x_generator>Poedit 3.2.2</extra-po-header-x_generator>
+    <extra-po-header-project_id_version>FreeCAD Tux Language Translations v1.1.0</extra-po-header-project_id_version>
+    <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2023
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -44,7 +44,7 @@
     <message>
         <location filename="../../NavigationIndicatorGui.py" line="72"/>
         <source>Navigation style</source>
-        <translation>導覽列樣式</translation>
+        <translation>導覽風格</translation>
     </message>
     <message>
         <location filename="../../NavigationIndicatorGui.py" line="73"/>
@@ -99,7 +99,7 @@
     <message>
         <location filename="../../NavigationIndicatorGui.py" line="336"/>
         <source>Free Turntable</source>
-        <translation>自由旋轉</translation>
+        <translation>自由轉盤</translation>
     </message>
     <message>
         <location filename="../../NavigationIndicatorGui.py" line="336"/>
@@ -107,9 +107,25 @@
         <translation>軌跡球</translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Tux/NavigationIndicatorGui.py" line="615"/>
+        <source>Trackball Classic</source>
+        <translation>軌跡球 經典</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Tux/NavigationIndicatorGui.py" line="616"/>
+        <source>Rounded Arcball</source>
+        <translation>圓弧球</translation>
+    </message>
+    <message>
         <location filename="../../NavigationIndicatorGui.py" line="337"/>
         <source>Undefined</source>
         <translation>未定義</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Tux/NavigationIndicatorGui.py" line="627"/>
+        <source>Navigation indicator</source>
+        <comment>A context menu action used to show or hide the &apos;Navigation indicator&apos; toolbar widget</comment>
+        <translation>導航指示器</translation>
     </message>
 </context>
 </TS>

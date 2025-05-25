@@ -27,6 +27,10 @@ import FreeCAD
 import FreeCADGui
 import Arch_rc
 
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
+
 class BIMWorkbench(Workbench):
 
     def __init__(self):
@@ -35,8 +39,8 @@ class BIMWorkbench(Workbench):
             return text
 
         bdir = os.path.join(FreeCAD.getResourceDir(), "Mod", "BIM")
-        tt = QT_TRANSLATE_NOOP("BIM","The BIM workbench is used to model buildings")
-        self.__class__.MenuText = QT_TRANSLATE_NOOP("BIM", "BIM")
+        tt = FreeCAD.Qt.translate("BIM","The BIM workbench is used to model buildings")
+        self.__class__.MenuText = FreeCAD.Qt.translate("BIM", "BIM")
         self.__class__.ToolTip =  tt
         self.__class__.Icon = os.path.join(bdir,"Resources", "icons",
                                                 "BIMWorkbench.svg")
@@ -257,7 +261,7 @@ class BIMWorkbench(Workbench):
             def GetCommands(self):
                 return self.tools
             def GetResources(self):
-                t = QT_TRANSLATE_NOOP("BIM_GenericTools", "Generic 3D tools")
+                t = FreeCAD.Qt.translate("BIM_GenericTools", "Generic 3D tools")
                 return { "MenuText": t, "ToolTip": t, "Icon": "BIM_Box"}
             def IsActive(self):
                 v = hasattr(FreeCADGui.getMainWindow().getActiveWindow(), "getSceneGraph")
@@ -383,15 +387,15 @@ class BIMWorkbench(Workbench):
 
         # create toolbars
 
-        t1 = QT_TRANSLATE_NOOP("Workbench", "Drafting tools")
-        t2 = QT_TRANSLATE_NOOP("Workbench", "Draft snap")
-        t3 = QT_TRANSLATE_NOOP("Workbench", "3D/BIM tools")
-        t4 = QT_TRANSLATE_NOOP("Workbench", "Annotation tools")
-        t5 = QT_TRANSLATE_NOOP("Workbench", "2D modification tools")
-        t6 = QT_TRANSLATE_NOOP("Workbench", "Manage tools")
-        t7 = QT_TRANSLATE_NOOP("Workbench", "General modification tools")
-        t8 = QT_TRANSLATE_NOOP("Workbench", "Object modification tools")
-        t9 = QT_TRANSLATE_NOOP("Workbench", "3D modification tools")
+        t1 = FreeCAD.Qt.translate("Workbench", "Drafting tools")
+        t2 = FreeCAD.Qt.translate("Workbench", "Draft snap")
+        t3 = FreeCAD.Qt.translate("Workbench", "3D/BIM tools")
+        t4 = FreeCAD.Qt.translate("Workbench", "Annotation tools")
+        t5 = FreeCAD.Qt.translate("Workbench", "2D modification tools")
+        t6 = FreeCAD.Qt.translate("Workbench", "Manage tools")
+        t7 = FreeCAD.Qt.translate("Workbench", "General modification tools")
+        t8 = FreeCAD.Qt.translate("Workbench", "Object modification tools")
+        t9 = FreeCAD.Qt.translate("Workbench", "3D modification tools")
         self.appendToolbar(t1, self.draftingtools)
         self.appendToolbar(t2, self.snapbar)
         self.appendToolbar(t3, self.bimtools)
@@ -404,18 +408,18 @@ class BIMWorkbench(Workbench):
 
         # create menus
 
-        t1 =  QT_TRANSLATE_NOOP("Workbench", "&2D Drafting")
-        t2 =  QT_TRANSLATE_NOOP("Workbench", "&3D/BIM")
-        t3 =  QT_TRANSLATE_NOOP("Workbench", "Reinforcement tools")
-        t4 =  QT_TRANSLATE_NOOP("Workbench", "&Annotation")
-        t5 =  QT_TRANSLATE_NOOP("Workbench", "&Snapping")
-        t6 =  QT_TRANSLATE_NOOP("Workbench", "&Modify")
-        t7 =  QT_TRANSLATE_NOOP("Workbench", "&Manage")
-        #t8 =  QT_TRANSLATE_NOOP("Workbench", "&IFC")
-        t9 =  QT_TRANSLATE_NOOP("Workbench", "&Flamingo")
-        t10 = QT_TRANSLATE_NOOP("Workbench", "&Fasteners")
-        t11 = QT_TRANSLATE_NOOP("Workbench", "&Utils")
-        t12 = QT_TRANSLATE_NOOP("Workbench", "Nudge")
+        t1 =  FreeCAD.Qt.translate("Workbench", "&2D Drafting")
+        t2 =  FreeCAD.Qt.translate("Workbench", "&3D/BIM")
+        t3 =  FreeCAD.Qt.translate("Workbench", "Reinforcement tools")
+        t4 =  FreeCAD.Qt.translate("Workbench", "&Annotation")
+        t5 =  FreeCAD.Qt.translate("Workbench", "&Snapping")
+        t6 =  FreeCAD.Qt.translate("Workbench", "&Modify")
+        t7 =  FreeCAD.Qt.translate("Workbench", "&Manage")
+        #t8 =  FreeCAD.Qt.translate("Workbench", "&IFC")
+        t9 =  FreeCAD.Qt.translate("Workbench", "&Flamingo")
+        t10 = FreeCAD.Qt.translate("Workbench", "&Fasteners")
+        t11 = FreeCAD.Qt.translate("Workbench", "&Utils")
+        t12 = FreeCAD.Qt.translate("Workbench", "Nudge")
 
         #self.bimtools_menu = list(self.bimtools)
         #if "Arch_RebarTools" in self.bimtools_menu:
@@ -444,8 +448,8 @@ class BIMWorkbench(Workbench):
         def QT_TRANSLATE_NOOP(context, text):
             return text
 
-        t1 = QT_TRANSLATE_NOOP("QObject", "BIM")
-        t2 = QT_TRANSLATE_NOOP("QObject", "Draft")
+        t1 = FreeCAD.Qt.translate("QObject", "BIM")
+        t2 = FreeCAD.Qt.translate("QObject", "Draft")
         FreeCADGui.addPreferencePage(":/ui/preferences-arch.ui", t1)
         FreeCADGui.addPreferencePage(":/ui/preferences-archdefaults.ui", t1)
         FreeCADGui.addPreferencePage(":/ui/preferencesNativeIFC.ui", t1)
@@ -474,7 +478,7 @@ class BIMWorkbench(Workbench):
     def Activated(self):
 
         import WorkingPlane
-        from draftutils import todo
+        from DraftGui import todo
         import BimStatus
         from nativeifc import ifc_observer
         from draftutils import grid_observer
@@ -489,8 +493,8 @@ class BIMWorkbench(Workbench):
         grid_observer._view_observer_setup()
 
         if PARAMS.GetBool("FirstTime", True) and (not hasattr(FreeCAD, "TestEnvironment")):
-            todo.ToDo.delay(FreeCADGui.runCommand, "BIM_Welcome")
-        todo.ToDo.delay(BimStatus.setStatusIcons, True)
+            todo.delay(FreeCADGui.runCommand, "BIM_Welcome")
+        todo.delay(BimStatus.setStatusIcons, True)
         FreeCADGui.Control.clearTaskWatcher()
 
         class BimWatcher:
@@ -552,7 +556,7 @@ class BIMWorkbench(Workbench):
 
     def Deactivated(self):
 
-        from draftutils import todo
+        from DraftGui import todo
         import BimStatus
         from bimcommands import BimViews
         import WorkingPlane
@@ -573,7 +577,7 @@ class BIMWorkbench(Workbench):
         grid_observer._view_observer_setup()
 
         # print("Deactivating status icon")
-        todo.ToDo.delay(BimStatus.setStatusIcons, False)
+        todo.delay(BimStatus.setStatusIcons, False)
         FreeCADGui.Control.clearTaskWatcher()
 
         # store views widget state and vertical size
@@ -671,7 +675,7 @@ FreeCADGui.addWorkbench(BIMWorkbench)
 
 def QT_TRANSLATE_NOOP(context, text):
     return text
-t = QT_TRANSLATE_NOOP("QObject", "Import-Export")
+t = FreeCAD.Qt.translate("QObject-nt", "Import-Export")
 FreeCADGui.addPreferencePage(":/ui/preferences-ifc.ui", t)
 FreeCADGui.addPreferencePage(":/ui/preferences-ifc-export.ui", t)
 FreeCADGui.addPreferencePage(":/ui/preferences-dae.ui", t)

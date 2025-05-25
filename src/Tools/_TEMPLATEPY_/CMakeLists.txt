@@ -1,5 +1,10 @@
 
 IF (BUILD_GUI)
+    set (_TEMPLATEPY__TR_QRC ${CMAKE_CURRENT_BINARY_DIR}/Resources/_TEMPLATEPY__translation.qrc)
+    qt_find_and_add_translation(QM_SRCS "Resources/translations/*_*.ts"
+        ${CMAKE_CURRENT_BINARY_DIR}/Resources/translations)
+    qt_create_resource_file(${_TEMPLATEPY__TR_QRC} ${QM_SRCS})
+    qt_add_resources(_TEMPLATEPY__QRC_SRCS Resources/_TEMPLATEPY_.qrc ${_TEMPLATEPY__TR_QRC})
     PYSIDE_WRAP_RC(_TEMPLATEPY__QRC_SRCS Resources/_TEMPLATEPY_.qrc)
 ENDIF (BUILD_GUI)
 

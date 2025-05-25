@@ -6,11 +6,11 @@
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
     <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
     <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
-    <extra-po-header-project_id_version>FreeCAD Fem Language Translations v0.22_dev</extra-po-header-project_id_version>
-    <extra-po-header-x_generator>Poedit 3.2.2</extra-po-header-x_generator>
+    <extra-po-header-project_id_version>FreeCAD Fem Language Translations v1.1.0</extra-po-header-project_id_version>
+    <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2023
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -24,7 +24,7 @@
     <message>
         <location filename="../../../femguiutils/selection_widgets.py" line="136"/>
         <source>To add references: select them in the 3D view  and click &quot;Add&quot;.</source>
-        <translation type="unfinished"></translation>
+        <translation>若要新增參考: 在 3D檢視 中選擇它們並按一下&quot;新增&quot;.</translation>
     </message>
 </context>
 <context>
@@ -569,7 +569,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Command.cpp" line="1336"/>
         <source>Fem</source>
-        <translation type="unfinished"></translation>
+        <translation>有限元素法</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Command.cpp" line="1337"/>
@@ -708,6 +708,42 @@
     <message>
         <location filename="../../Command.cpp" line="1754"/>
         <source>Apply changes to parameters directly and not on recompute only...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>CmdFemPostBranchFilter</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Command.cpp" line="2710"/>
+        <source>Fem</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Command.cpp" line="2711"/>
+        <source>Pipeline branch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Command.cpp" line="2712"/>
+        <source>Branches the pipeline into a new path</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>CmdFemPostCalculatorFilter</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Command.cpp" line="2367"/>
+        <source>Fem</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Command.cpp" line="2368"/>
+        <source>Calculator filter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Command.cpp" line="2369"/>
+        <source>Create new fields from current data</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1171,7 +1207,7 @@
     <message>
         <location filename="../../Command.cpp" line="1194"/>
         <source>Create filter</source>
-        <translation type="unfinished"></translation>
+        <translation>建立篩選器</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="1636"/>
@@ -1288,7 +1324,7 @@
     <message>
         <location filename="../ui/MeshGroupXDMFExport.ui" line="23"/>
         <source>Mesh groups detected. Please choose values for the different groups.</source>
-        <translation type="unfinished"></translation>
+        <translation>偵測到網格組. 請為不同組選擇值.</translation>
     </message>
     <message>
         <location filename="../ui/MeshGroupXDMFExport.ui" line="62"/>
@@ -1316,7 +1352,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPanelConstraintTemperature.ui" line="26"/>
         <source>Select the vertices, lines and surfaces:</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇頂點、線和面:</translation>
     </message>
     <message>
         <source>Temperature:</source>
@@ -1331,7 +1367,7 @@
     <message>
         <location filename="../../TaskPanelConstraintTemperature.ui" line="26"/>
         <source>Select the vertices, lines and surfaces: </source>
-        <translation type="unfinished"></translation>
+        <translation>選擇頂點、線和面: </translation>
     </message>
     <message>
         <location filename="../../TaskPanelConstraintTemperature.ui" line="81"/>
@@ -1347,7 +1383,7 @@
         <location filename="../../TaskPanelInitialTemperature.ui" line="26"/>
         <source>Insert component&apos;s
  initial temperature:</source>
-        <translation type="unfinished"></translation>
+        <translation>插入元件的初始溫度:</translation>
     </message>
     <message>
         <source>25</source>
@@ -2409,23 +2445,8 @@ Please select a result type first.</source>
     </message>
     <message>
         <location filename="../../DlgSettingsFemCcx.ui" line="294"/>
-        <source>Number of CPU&apos;s to use</source>
-        <translation>使用 CPU 的數量</translation>
-    </message>
-    <message>
-        <location filename="../../DlgSettingsFemCcx.ui" line="294"/>
         <source>Number of CPU&apos;s to use (Spooles only)</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DlgSettingsFemCcx.ui" line="329"/>
-        <source>Matrix solver</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DlgSettingsFemCcx.ui" line="349"/>
-        <source>Default</source>
-        <translation>預設</translation>
     </message>
     <message>
         <location filename="../../DlgSettingsFemCcx.ui" line="354"/>
@@ -2438,9 +2459,61 @@ Please select a result type first.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../DlgSettingsFemCcx.ui" line="463"/>
+        <location filename="../../DlgSettingsFemCcx.ui" line="502"/>
+        <source>s</source>
+        <translation>s</translation>
+    </message>
+    <message>
         <location filename="../../DlgSettingsFemCcx.ui" line="509"/>
         <source>Beam, shell element 3D output format </source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettingsFemCcx.ui" line="693"/>
+        <location filename="../../DlgSettingsFemCcx.ui" line="741"/>
+        <source>Hz</source>
+        <translation>Hz</translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettingsFemCcx.ui" line="418"/>
+        <source>Time Initial Step</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettingsFemCcx.ui" line="470"/>
+        <source>Time End</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettingsFemCcx.ui" line="402"/>
+        <source>Use non ccx defaults</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettingsFemCcx.ui" line="294"/>
+        <source>Number of CPU&apos;s to use</source>
+        <translation>使用 CPU 的數量</translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettingsFemCcx.ui" line="516"/>
+        <source>3D Output, unchecked for 2D</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="304"/>
+        <source>Number of threads used for analysis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="304"/>
+        <source>Set to zero to automatically use maximum number of available cores</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DlgSettingsFemCcx.ui" line="349"/>
+        <source>Default</source>
+        <translation>預設</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="348"/>
@@ -2478,8 +2551,8 @@ Please select a result type first.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsFemCcx.ui" line="379"/>
-        <source>Use non-linear geometry</source>
+        <location filename="../../DlgSettingsFemCcx.ui" line="329"/>
+        <source>Matrix solver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2488,29 +2561,8 @@ Please select a result type first.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsFemCcx.ui" line="402"/>
-        <source>Use non ccx defaults</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../DlgSettingsFemCcx.ui" line="568"/>
         <source>Maximum number of iterations</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DlgSettingsFemCcx.ui" line="418"/>
-        <source>Time Initial Step</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DlgSettingsFemCcx.ui" line="463"/>
-        <location filename="../../DlgSettingsFemCcx.ui" line="502"/>
-        <source>s</source>
-        <translation>s</translation>
-    </message>
-    <message>
-        <location filename="../../DlgSettingsFemCcx.ui" line="470"/>
-        <source>Time End</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2519,8 +2571,8 @@ Please select a result type first.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="603"/>
-        <source>Time Maximum Step</source>
+        <location filename="../../DlgSettingsFemCcx.ui" line="379"/>
+        <source>Use non-linear geometry</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2529,8 +2581,52 @@ Please select a result type first.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsFemCcx.ui" line="516"/>
-        <source>3D Output, unchecked for 2D</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="603"/>
+        <source>Time Maximum Step</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="665"/>
+        <source>Result object</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="672"/>
+        <source>Pipeline only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="675"/>
+        <source>Load results as pipeline instead of Result Object.
+By uncheck this option, CalculiX command behave like SolverCalculiXCcxTools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="699"/>
+        <source>Save result in binary format.
+Only ta  kes effect if &apos;Pipeline only&apos; is enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="675"/>
+        <source>Load results as pipeline instead of CCX_Results objects.
+After unchecking this option, the CalculiX command behaves like SolverCalculiXCcxTools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="692"/>
+        <source>Result format</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="699"/>
+        <source>Save result in binary format.
+Only takes effect if &apos;Pipeline only&apos; is enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="703"/>
+        <source>Use binary format</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2554,25 +2650,24 @@ Please select a result type first.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsFemCcx.ui" line="610"/>
-        <source>Eigenmode number</source>
-        <translation>特徵模式數量</translation>
-    </message>
-    <message>
         <location filename="../../DlgSettingsFemCcx.ui" line="655"/>
         <source>High frequency limit</source>
         <translation>高頻限制</translation>
     </message>
     <message>
-        <location filename="../../DlgSettingsFemCcx.ui" line="693"/>
-        <location filename="../../DlgSettingsFemCcx.ui" line="741"/>
-        <source>Hz</source>
-        <translation>Hz</translation>
+        <location filename="../../DlgSettingsFemCcx.ui" line="610"/>
+        <source>Eigenmode number</source>
+        <translation>特徵模式數量</translation>
     </message>
     <message>
         <location filename="../../DlgSettingsFemCcx.ui" line="700"/>
         <source>Low frequency limit</source>
         <translation>低頻限制</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="816"/>
+        <source> Hz</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../DlgSettingsFemCcxImp.cpp" line="140"/>
@@ -2599,6 +2694,11 @@ Specify another file please.</source>
 <context>
     <name>FemGui::DlgSettingsFemElmerImp</name>
     <message>
+        <location filename="../../DlgSettingsFemElmer.ui" line="0"/>
+        <source>Multi-CPU core support:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../DlgSettingsFemElmer.ui" line="14"/>
         <source>Elmer</source>
         <translation type="unfinished"></translation>
@@ -2621,11 +2721,6 @@ Specify another file please.</source>
     <message>
         <location filename="../../DlgSettingsFemElmer.ui" line="0"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Leave blank to use default Elmer elmer binary file&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; To use multithreading you must specify here&lt;br&gt; the executable variant with the suffix &amp;quot;_mpi&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DlgSettingsFemElmer.ui" line="0"/>
-        <source>Multi-CPU core support:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3020,6 +3115,16 @@ adding an analysis container</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemGmsh.ui" line="157"/>
+        <source>Number of threads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemGmsh.ui" line="167"/>
+        <source>Number of threads used for meshing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../DlgSettingsFemGmshImp.cpp" line="76"/>
         <source>File does not exist</source>
         <translation>檔案不存在</translation>
@@ -3090,6 +3195,21 @@ exported from FreeCAD.</source>
     <message>
         <location filename="../../DlgSettingsFemInOutVtk.ui" line="0"/>
         <source>FreeCAD result object</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemInOutVtk.ui" line="89"/>
+        <source>Export</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemInOutVtk.ui" line="95"/>
+        <source>Mesh elements to export</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemInOutVtk.ui" line="102"/>
+        <source>Mesh element level to export</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3351,6 +3471,50 @@ Specify another file please.</source>
         <location filename="../../DlgSettingsFemZ88Imp.cpp" line="120"/>
         <source>You must specify the path to the z88r!</source>
         <translation>你必須指定 z88r 的路徑!</translation>
+    </message>
+</context>
+<context>
+    <name>FemGui::DlgSettingsNetgen</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/DlgSettingsNetgen.ui" line="14"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/DlgSettingsNetgen.ui" line="20"/>
+        <source>Netgen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/DlgSettingsNetgen.ui" line="26"/>
+        <source>Use legacy Netgen object implementation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/DlgSettingsNetgen.ui" line="35"/>
+        <source>Legacy Netgen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/DlgSettingsNetgen.ui" line="51"/>
+        <source>Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/DlgSettingsNetgen.ui" line="59"/>
+        <source>Log verbosity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/DlgSettingsNetgen.ui" line="66"/>
+        <source>Level of verbosity printed on the task panel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/DlgSettingsNetgen.ui" line="85"/>
+        <source>Number of threads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/DlgSettingsNetgen.ui" line="95"/>
+        <source>Number of threads used for meshing</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4173,6 +4337,11 @@ Specify another file please.</source>
 <context>
     <name>FemGui::TaskFemConstraintTransform</name>
     <message>
+        <location filename="../../TaskFemConstraintTransform.cpp" line="141"/>
+        <source>Constraint update error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskFemConstraintTransform.cpp" line="162"/>
         <source>Analysis feature update error</source>
         <translation type="unfinished"></translation>
@@ -4180,11 +4349,6 @@ Specify another file please.</source>
     <message>
         <location filename="../../TaskFemConstraintTransform.cpp" line="141"/>
         <source>The transformable faces have changed. Please add only the transformable faces and remove non-transformable faces!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskFemConstraintTransform.cpp" line="141"/>
-        <source>Constraint update error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4230,6 +4394,11 @@ Specify another file please.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../TaskFemConstraintTransform.cpp" line="360"/>
+        <source>Only transformable faces can be selected! Apply displacement boundary condition to surface first then apply local coordinate system to surface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskFemConstraintTransform.cpp" line="255"/>
         <location filename="../../TaskFemConstraintTransform.cpp" line="360"/>
         <source>Selected object is not a part!</source>
@@ -4251,8 +4420,8 @@ Specify another file please.</source>
         <translation>僅可以選取圓柱面</translation>
     </message>
     <message>
-        <location filename="../../TaskFemConstraintTransform.cpp" line="360"/>
-        <source>Only transformable faces can be selected! Apply displacement boundary condition to surface first then apply local coordinate system to surface</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintTransform.cpp" line="387"/>
+        <source>Only transformable faces can be selected! Apply a displacement boundary condition or a force load to a face first then apply local coordinate system to the face.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4262,6 +4431,22 @@ Specify another file please.</source>
         <location filename="../../TaskObjectName.cpp" line="49"/>
         <source>TaskObjectName</source>
         <translation>任務物件名稱</translation>
+    </message>
+</context>
+<context>
+    <name>FemGui::TaskPostBranch</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostBoxes.cpp" line="547"/>
+        <source>Branch behaviour</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>FemGui::TaskPostCalculator</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostBoxes.cpp" line="2139"/>
+        <source>Calculator options</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4321,6 +4506,14 @@ Specify another file please.</source>
     <message>
         <location filename="../../TaskPostBoxes.cpp" line="334"/>
         <source>Result display options</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>FemGui::TaskPostFrames</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostBoxes.cpp" line="483"/>
+        <source>Result Frames</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4441,16 +4634,6 @@ Specify another file please.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/Material.ui" line="144"/>
-        <source>Basic Properties</source>
-        <translation>基本屬性</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="40"/>
-        <source>Density:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../ui/Material.ui" line="34"/>
         <source>Category</source>
         <translation>類別</translation>
@@ -4491,6 +4674,11 @@ Specify another file please.</source>
         <translation>使用此工作面板</translation>
     </message>
     <message>
+        <location filename="../ui/Material.ui" line="144"/>
+        <source>Basic Properties</source>
+        <translation>基本屬性</translation>
+    </message>
+    <message>
         <location filename="../ui/Material.ui" line="155"/>
         <source>Density                     </source>
         <translation>密度                     </translation>
@@ -4501,19 +4689,14 @@ Specify another file please.</source>
         <translation>0 kg/m^3</translation>
     </message>
     <message>
-        <location filename="../ui/Material.ui" line="210"/>
-        <source>Mechanical Properties</source>
-        <translation>機械力學屬性</translation>
-    </message>
-    <message>
-        <location filename="../ui/Material.ui" line="221"/>
-        <source>Young&apos;s Modulus:</source>
-        <translation>楊氏模數(Young&apos;s Modulus):</translation>
-    </message>
-    <message>
         <location filename="../ui/Material.ui" line="240"/>
         <source>0 Pa</source>
         <translation>0 Pa</translation>
+    </message>
+    <message>
+        <location filename="../ui/Material.ui" line="325"/>
+        <source>Kinematic viscosity:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/Material.ui" line="344"/>
@@ -4524,6 +4707,11 @@ Specify another file please.</source>
         <location filename="../ui/Material.ui" line="380"/>
         <source>Thermal  Properties</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/Material.ui" line="410"/>
+        <source>0 W/m/K</source>
+        <translation>0 W/m/K</translation>
     </message>
     <message>
         <location filename="../ui/Material.ui" line="454"/>
@@ -4547,14 +4735,14 @@ Specify another file please.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="107"/>
-        <source>Use FreeCAD material editor</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="40"/>
+        <source>Density:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/Material.ui" line="265"/>
-        <source>Poisson Ratio:</source>
-        <translation>泊松比(Poisson Ratio):</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="107"/>
+        <source>Use FreeCAD material editor</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="155"/>
@@ -4562,13 +4750,33 @@ Specify another file please.</source>
         <translation>密度</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="343"/>
+        <source>Expansion Reference Temperature:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/Material.ui" line="210"/>
+        <source>Mechanical Properties</source>
+        <translation>機械力學屬性</translation>
+    </message>
+    <message>
+        <location filename="../ui/Material.ui" line="221"/>
+        <source>Young&apos;s Modulus:</source>
+        <translation>楊氏模數(Young&apos;s Modulus):</translation>
+    </message>
+    <message>
+        <location filename="../ui/Material.ui" line="265"/>
+        <source>Poisson Ratio:</source>
+        <translation>泊松比(Poisson Ratio):</translation>
+    </message>
+    <message>
         <location filename="../ui/Material.ui" line="314"/>
         <source>Fluidic Properties</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/Material.ui" line="325"/>
-        <source>Kinematic viscosity:</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="201"/>
+        <source>Kinematic Viscosity:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4582,13 +4790,18 @@ Specify another file please.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/Material.ui" line="410"/>
-        <source>0 W/m/K</source>
-        <translation>0 W/m/K</translation>
-    </message>
-    <message>
         <location filename="../ui/Material.ui" line="435"/>
         <source>Expansion Coefficient:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="343"/>
+        <source>Reference Temperature:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="346"/>
+        <source>Reference temperature for thermal expansion</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4599,6 +4812,24 @@ Specify another file please.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="123"/>
         <source>Use this task panel</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>FemMaterialReinforcement</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/MaterialReinforcement.ui" line="14"/>
+        <source>FEM material reinforcement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/MaterialReinforcement.ui" line="29"/>
+        <source>Matrix Material</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/MaterialReinforcement.ui" line="61"/>
+        <source>Reinforcement Material</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4628,7 +4859,7 @@ Specify another file please.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/BodyHeatSource.ui" line="35"/>
         <source>Mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>模式:</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/BodyHeatSource.ui" line="45"/>
@@ -4709,6 +4940,11 @@ Specify another file please.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../ui/ElementFluid1D.ui" line="0"/>
+        <source>Head Loss[mm]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../ui/ElementFluid1D.ui" line="26"/>
         <source>Fluid Section Parameter</source>
         <translation type="unfinished"></translation>
@@ -4736,11 +4972,6 @@ Specify another file please.</source>
         <location filename="../ui/ElementFluid1D.ui" line="0"/>
         <source>0 mm^2</source>
         <translation>0 mm^2</translation>
-    </message>
-    <message>
-        <location filename="../ui/ElementFluid1D.ui" line="0"/>
-        <source>Head Loss[mm]</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/ElementFluid1D.ui" line="85"/>
@@ -4893,8 +5124,14 @@ Specify another file please.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/CurrentDensity.ui" line="20"/>
-        <source>Current density:</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/CurrentDensity.ui" line="23"/>
+        <source>Select Custom mode to enable vector current density</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/CurrentDensity.ui" line="48"/>
+        <source>Imaginary part is only used for equations
+with harmonic/oscillating driving current</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4924,31 +5161,50 @@ Specify another file please.</source>
         <translation>x</translation>
     </message>
     <message>
-        <location filename="../ui/CurrentDensity.ui" line="0"/>
-        <source>Real part of potential x-component
-Note: if a face was selected this will be the value
-          in normal face direction
-          settings for y and z will be ignored</source>
+        <location filename="../ui/Magnetization.ui" line="0"/>
+        <source>Magnetization</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/ElectrostaticPotential.ui" line="76"/>
-        <location filename="../ui/ElectrostaticPotential.ui" line="143"/>
-        <location filename="../ui/FlowVelocity.ui" line="56"/>
-        <location filename="../ui/FlowVelocity.ui" line="83"/>
-        <location filename="../ui/FlowVelocity.ui" line="110"/>
-        <location filename="../ui/InitialFlowVelocity.ui" line="45"/>
-        <location filename="../ui/InitialFlowVelocity.ui" line="79"/>
-        <location filename="../ui/InitialFlowVelocity.ui" line="113"/>
-        <source>unspecified</source>
+        <location filename="../ui/Magnetization.ui" line="0"/>
+        <source>Real part of potential x-component</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../ui/Magnetization.ui" line="0"/>
+        <source>Imaginary part of potential x-component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/Magnetization.ui" line="0"/>
+        <source>Real part of potential y-component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/Magnetization.ui" line="0"/>
+        <source>Imaginary part of potential y-component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/Magnetization.ui" line="0"/>
         <location filename="../ui/CurrentDensity.ui" line="0"/>
-        <source>Imaginary part of potential x-component
-Note: if a face was selected this will be the value
-          in normal face direction
-          settings for y and z will be ignored</source>
+        <source>Real part of potential z-component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/Magnetization.ui" line="0"/>
+        <location filename="../ui/CurrentDensity.ui" line="0"/>
+        <source>Imaginary part of potential z-component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/CurrentDensity.ui" line="88"/>
+        <source>Real part of current density x-component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/CurrentDensity.ui" line="110"/>
+        <source>Imaginary part of current density x-component</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4964,17 +5220,13 @@ Note: if a face was selected this will be the value
         <translation>y</translation>
     </message>
     <message>
-        <location filename="../ui/CurrentDensity.ui" line="170"/>
-        <source>Real part of potential y-component
-Note: for 2D only setting for x is possible,
-          setting for y will be ignored</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/CurrentDensity.ui" line="139"/>
+        <source>Real part of current density y-component</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/CurrentDensity.ui" line="0"/>
-        <source>Imaginary part of potential y-component
-Note: for 2D only setting for x is possible,
-          setting for y will be ignored</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/CurrentDensity.ui" line="161"/>
+        <source>Imaginary part of current density y-component</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4990,15 +5242,78 @@ Note: for 2D only setting for x is possible,
         <translation>z</translation>
     </message>
     <message>
-        <location filename="../ui/Magnetization.ui" line="0"/>
-        <location filename="../ui/CurrentDensity.ui" line="0"/>
-        <source>Real part of potential z-component</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/CurrentDensity.ui" line="190"/>
+        <source>Real part of current density z-component</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/Magnetization.ui" line="0"/>
-        <location filename="../ui/CurrentDensity.ui" line="0"/>
-        <source>Imaginary part of potential z-component</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/CurrentDensity.ui" line="212"/>
+        <source>Imaginary part of current density z-component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/CurrentDensity.ui" line="237"/>
+        <source>Current density normal to surface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/CurrentDensity.ui" line="351"/>
+        <source>Normal:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/FlowVelocity.ui" line="25"/>
+        <location filename="../ui/FlowVelocity.ui" line="73"/>
+        <location filename="../ui/FlowVelocity.ui" line="131"/>
+        <location filename="../ui/InitialFlowVelocity.ui" line="25"/>
+        <location filename="../ui/InitialFlowVelocity.ui" line="73"/>
+        <location filename="../ui/InitialFlowVelocity.ui" line="131"/>
+        <source>formula</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/ElectrostaticPotential.ui" line="76"/>
+        <location filename="../ui/ElectrostaticPotential.ui" line="143"/>
+        <location filename="../ui/FlowVelocity.ui" line="56"/>
+        <location filename="../ui/FlowVelocity.ui" line="83"/>
+        <location filename="../ui/FlowVelocity.ui" line="110"/>
+        <location filename="../ui/InitialFlowVelocity.ui" line="45"/>
+        <location filename="../ui/InitialFlowVelocity.ui" line="79"/>
+        <location filename="../ui/InitialFlowVelocity.ui" line="113"/>
+        <source>unspecified</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/InitialFlowVelocity.ui" line="0"/>
+        <location filename="../ui/FlowVelocity.ui" line="0"/>
+        <source>Velocity x:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/InitialFlowVelocity.ui" line="0"/>
+        <location filename="../ui/FlowVelocity.ui" line="0"/>
+        <source>Velocity y:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/FlowVelocity.ui" line="138"/>
+        <location filename="../ui/InitialFlowVelocity.ui" line="138"/>
+        <source>Velocity z:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/FlowVelocity.ui" line="0"/>
+        <source>Normal to boundary</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="26"/>
+        <source>Boundary Condition:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="39"/>
+        <source>Dirichlet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5012,13 +5327,13 @@ Note: for 2D only setting for x is possible,
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/ElectrostaticPotential.ui" line="0"/>
-        <source>To define a vector field</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="81"/>
+        <source>To define scalar potential and magnetic vector potential</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/ElectrostaticPotential.ui" line="0"/>
-        <source>Vector Field</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="84"/>
+        <source>Electromagnetic Potential</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5034,12 +5349,17 @@ with a harmonic/oscillating driving force</source>
     </message>
     <message>
         <location filename="../ui/ElectrostaticPotential.ui" line="0"/>
-        <source>Potential as specified above</source>
+        <source>To define a vector field</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/ElectrostaticPotential.ui" line="0"/>
-        <source>Imaginary part of scalar potential</source>
+        <source>Vector Field</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/ElectrostaticPotential.ui" line="0"/>
+        <source>Potential as specified above</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5084,34 +5404,13 @@ Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/ElectrostaticPotential.ui" line="531"/>
-        <source>Whether the boundary condition defines a constant potential</source>
+        <location filename="../ui/ElectrostaticPotential.ui" line="547"/>
+        <source>Farfield / Electric infinity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/ElectrostaticPotential.ui" line="554"/>
         <source>Whether the constraint is for the electric force</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/ElectrostaticPotential.ui" line="566"/>
-        <source>Capacity Body: </source>
-        <extracomment>Enabled by &apos;Calculate Capacity Matrix&apos; in Electrostatic equation</extracomment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/ElectrostaticPotential.ui" line="91"/>
-        <source>Potential Constant</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/ElectrostaticPotential.ui" line="544"/>
-        <source>Whether the boundary condition defines a farfield potential</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/ElectrostaticPotential.ui" line="547"/>
-        <source>Farfield / Electric infinity</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5125,9 +5424,121 @@ Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../ui/ElectrostaticPotential.ui" line="566"/>
+        <source>Capacity Body: </source>
+        <extracomment>Enabled by &apos;Calculate Capacity Matrix&apos; in Electrostatic equation</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="150"/>
+        <source>Real part of scalar potential</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/ElectrostaticPotential.ui" line="0"/>
+        <source>Imaginary part of scalar potential</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="211"/>
+        <source>Real part of vector potential x-component
+Note: has no effect if a solid was selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="234"/>
+        <source>Imaginary part of vector potential x-component
+Note: has no effect if a solid was selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="274"/>
+        <source>Real part of vector potential y-component
+Note: has no effect if a solid was selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="297"/>
+        <source>Imaginary part of vector potential y-component
+Note: has no effect if a solid was selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="337"/>
+        <source>Real part of vector potential z-component
+Note: has no effect if a solid was selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="360"/>
+        <source>Imaginary part of vector potential z-component
+Note: has no effect if a solid was selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="419"/>
+        <source>Surface Charge Density:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="426"/>
+        <source>Surface charge density</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="566"/>
         <source>Capacity Body:</source>
         <extracomment>Enabled by &apos;Calculate Capacity Matrix&apos; in Electrostatic equation</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/ElectrostaticPotential.ui" line="544"/>
+        <source>Whether the boundary condition defines a farfield potential</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="391"/>
+        <source>Electric Infinity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/ElectrostaticPotential.ui" line="531"/>
+        <source>Whether the boundary condition defines a constant potential</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/ElectrostaticPotential.ui" line="91"/>
+        <source>Potential Constant</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="413"/>
+        <source>Neumann</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="419"/>
+        <source>Electric Flux Density:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="426"/>
+        <source>Normal component of electric displacement field</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="439"/>
+        <source>Capacitance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="445"/>
+        <source>Capacitance Body:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectrostaticPotential.ui" line="448"/>
+        <source>Enabled by &apos;Calculate Capacity Matrix&apos; in Electrostatic equation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5155,7 +5566,7 @@ Note: has no effect if a solid was selected</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElementGeometry1D.ui" line="71"/>
         <source>Width:</source>
-        <translation type="unfinished"></translation>
+        <translation>寬度:</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElementGeometry1D.ui" line="78"/>
@@ -5167,22 +5578,27 @@ Note: has no effect if a solid was selected</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/MeshBoundaryLayer.ui" line="58"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/MeshRegion.ui" line="44"/>
         <source>mm</source>
-        <translation type="unfinished"></translation>
+        <translation>mm</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElementGeometry1D.ui" line="115"/>
         <source>Height:</source>
-        <translation type="unfinished"></translation>
+        <translation>高度:</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElementGeometry1D.ui" line="225"/>
         <source>Diameter:</source>
-        <translation type="unfinished"></translation>
+        <translation>直徑:</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElementGeometry1D.ui" line="243"/>
         <source>Outer diameter:</source>
-        <translation type="unfinished"></translation>
+        <translation>外部直徑:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElementGeometry1D.ui" line="243"/>
+        <source>Outer diameter:   </source>
+        <translation>外部直徑:   </translation>
     </message>
     <message>
         <location filename="../ui/ElementGeometry1D.ui" line="0"/>
@@ -5197,11 +5613,6 @@ Note: has no effect if a solid was selected</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElementGeometry1D.ui" line="236"/>
         <source>Axis2 Length:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElementGeometry1D.ui" line="243"/>
-        <source>Outer diameter:   </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5252,70 +5663,12 @@ Note: has no effect if a solid was selected</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElementRotation1D.ui" line="89"/>
         <source>Rotation:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/FlowVelocity.ui" line="25"/>
-        <location filename="../ui/FlowVelocity.ui" line="73"/>
-        <location filename="../ui/FlowVelocity.ui" line="131"/>
-        <location filename="../ui/InitialFlowVelocity.ui" line="25"/>
-        <location filename="../ui/InitialFlowVelocity.ui" line="73"/>
-        <location filename="../ui/InitialFlowVelocity.ui" line="131"/>
-        <source>formula</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/InitialFlowVelocity.ui" line="0"/>
-        <location filename="../ui/FlowVelocity.ui" line="0"/>
-        <source>Velocity x:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/InitialFlowVelocity.ui" line="0"/>
-        <location filename="../ui/FlowVelocity.ui" line="0"/>
-        <source>Velocity y:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/FlowVelocity.ui" line="138"/>
-        <location filename="../ui/InitialFlowVelocity.ui" line="138"/>
-        <source>Velocity z:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/FlowVelocity.ui" line="0"/>
-        <source>Normal to boundary</source>
-        <translation type="unfinished"></translation>
+        <translation>旋轉:</translation>
     </message>
     <message>
         <location filename="../ui/InitialPressure.ui" line="0"/>
         <source>Pressure:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/Magnetization.ui" line="0"/>
-        <source>Magnetization</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/Magnetization.ui" line="0"/>
-        <source>Real part of potential x-component</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/Magnetization.ui" line="0"/>
-        <source>Imaginary part of potential x-component</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/Magnetization.ui" line="0"/>
-        <source>Real part of potential y-component</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/Magnetization.ui" line="0"/>
-        <source>Imaginary part of potential y-component</source>
-        <translation type="unfinished"></translation>
+        <translation>壓力:</translation>
     </message>
     <message>
         <location filename="../ui/MeshBoundaryLayer.ui" line="14"/>
@@ -5374,9 +5727,100 @@ Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Magnetization.ui" line="66"/>
+        <source>Real part of magnetization x-component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Magnetization.ui" line="88"/>
+        <source>Imaginary part of magnetization x-component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Magnetization.ui" line="117"/>
+        <source>Real part of magnetization y-component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Magnetization.ui" line="139"/>
+        <source>Imaginary part of magnetization y-component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Magnetization.ui" line="168"/>
+        <source>Real part of magnetization z-component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Magnetization.ui" line="190"/>
+        <source>Imaginary part of magnetization z-component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectricChargeDensity.ui" line="50"/>
+        <source>Free surface charge density</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectricChargeDensity.ui" line="55"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectricChargeDensity.ui" line="98"/>
+        <source>Density:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectricChargeDensity.ui" line="93"/>
+        <source>Free volume charge density</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectricChargeDensity.ui" line="136"/>
+        <source>Free total charge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElectricChargeDensity.ui" line="141"/>
+        <source>Total Charge:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../ui/ElementGeometry1D.ui" line="0"/>
         <source>Diameter:   </source>
         <translation>直徑:   </translation>
+    </message>
+    <message>
+        <location filename="../ui/CurrentDensity.ui" line="0"/>
+        <source>Real part of potential x-component
+Note: if a face was selected this will be the value
+          in normal face direction
+          settings for y and z will be ignored</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/CurrentDensity.ui" line="0"/>
+        <source>Imaginary part of potential x-component
+Note: if a face was selected this will be the value
+          in normal face direction
+          settings for y and z will be ignored</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/CurrentDensity.ui" line="0"/>
+        <source>Imaginary part of potential y-component
+Note: for 2D only setting for x is possible,
+          setting for y will be ignored</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/CurrentDensity.ui" line="20"/>
+        <source>Current density:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/CurrentDensity.ui" line="170"/>
+        <source>Real part of potential y-component
+Note: for 2D only setting for x is possible,
+          setting for y will be ignored</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>0 1/s</source>
@@ -5704,7 +6148,7 @@ Note: has no effect if a solid was selected</source>
     <message>
         <location filename="../../PropertyFemMeshItem.cpp" line="113"/>
         <source>Polygons</source>
-        <translation type="unfinished"></translation>
+        <translation>多邊型</translation>
     </message>
     <message>
         <location filename="../../PropertyFemMeshItem.cpp" line="114"/>
@@ -5720,11 +6164,6 @@ Note: has no effect if a solid was selected</source>
         <location filename="../../PropertyFemMeshItem.cpp" line="116"/>
         <source>Groups</source>
         <translation>群組</translation>
-    </message>
-    <message>
-        <location filename="../../TaskPostBoxes.cpp" line="248"/>
-        <source>Edit post processing object</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../ViewProviderAnalysis.cpp" line="227"/>
@@ -5774,6 +6213,11 @@ Note: has no effect if a solid was selected</source>
         <location filename="../../ViewProviderFemMeshShapeNetgen.cpp" line="62"/>
         <source>Meshing</source>
         <translation>建立網格</translation>
+    </message>
+    <message>
+        <location filename="../../TaskPostBoxes.cpp" line="248"/>
+        <source>Edit post processing object</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../TaskFemConstraintContact.cpp" line="405"/>
@@ -6080,6 +6524,11 @@ Note: has no effect if a solid was selected</source>
     </message>
     <message>
         <location filename="../ui/ResultShow.ui" line="0"/>
+        <source>Histogram</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/ResultShow.ui" line="0"/>
         <source>Min:</source>
         <translation>最小:</translation>
     </message>
@@ -6089,14 +6538,9 @@ Note: has no effect if a solid was selected</source>
         <translation>最大:</translation>
     </message>
     <message>
-        <location filename="../ui/ResultShow.ui" line="0"/>
-        <source>Histogram</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ResultShow.ui" line="229"/>
+        <source>Displacement Scaling</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/ResultShow.ui" line="0"/>
-        <source>Displacement</source>
-        <translation>位移</translation>
     </message>
     <message>
         <location filename="../ui/ResultShow.ui" line="0"/>
@@ -6104,14 +6548,44 @@ Note: has no effect if a solid was selected</source>
         <translation>顯示</translation>
     </message>
     <message>
-        <location filename="../ui/ResultShow.ui" line="0"/>
-        <source>Factor:</source>
-        <translation>因子:</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ResultShow.ui" line="276"/>
+        <source>Factor</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/ResultShow.ui" line="0"/>
-        <source>Slider max:</source>
-        <translation>變化最大值:</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ResultShow.ui" line="312"/>
+        <source>Slider Max</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ResultShow.ui" line="358"/>
+        <source>Animation Control</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ResultShow.ui" line="382"/>
+        <source>Number of Steps per Cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ResultShow.ui" line="429"/>
+        <source>Number of Cycles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ResultShow.ui" line="467"/>
+        <source>Frame Rate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ResultShow.ui" line="505"/>
+        <source>Toggles between Start and Stop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ResultShow.ui" line="508"/>
+        <source>Start Animation</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/ResultShow.ui" line="325"/>
@@ -6141,6 +6615,21 @@ For possible variables, see the description box below.</source>
         <source>P1 - P3 # Max - Min Principal Stress</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../ui/ResultShow.ui" line="0"/>
+        <source>Displacement</source>
+        <translation>位移</translation>
+    </message>
+    <message>
+        <location filename="../ui/ResultShow.ui" line="0"/>
+        <source>Factor:</source>
+        <translation>因子:</translation>
+    </message>
+    <message>
+        <location filename="../ui/ResultShow.ui" line="0"/>
+        <source>Slider max:</source>
+        <translation>變化最大值:</translation>
+    </message>
 </context>
 <context>
     <name>SolidSelector</name>
@@ -6152,6 +6641,59 @@ For possible variables, see the description box below.</source>
     <message>
         <location filename="../../../femguiutils/selection_widgets.py" line="155"/>
         <source>Select elements part of the solid that shall be added to the list. To add the solid click &quot;Add&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SolverCalculiX</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="14"/>
+        <source>Solver CalculiX Control</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="20"/>
+        <source>Working Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="35"/>
+        <source>Write</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="45"/>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="56"/>
+        <source>Path to working directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="66"/>
+        <source>...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="78"/>
+        <source>Solver Parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="86"/>
+        <source>Analysis Type:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="126"/>
+        <source>Time:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="133"/>
+        <source>Solver Version</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6966,6 +7508,32 @@ normal vector of the face is used as direction</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="75"/>
+        <source>Surface Radiation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="109"/>
+        <source>W/m^2/K</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="136"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="198"/>
+        <source>K</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="168"/>
+        <source>1 </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="234"/>
+        <source>W/m^2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskFemConstraintHeatflux.ui" line="0"/>
         <source>Add</source>
         <translation>新增</translation>
@@ -7006,49 +7574,18 @@ normal vector of the face is used as direction</source>
         <translation>1 W/m^2</translation>
     </message>
     <message>
-        <location filename="../../TaskFemConstraintHeatflux.ui" line="14"/>
-        <source>TaskFemConstraintHeatflux</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="75"/>
-        <source>Surface Radiation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../TaskFemConstraintHeatflux.ui" line="0"/>
         <source>Surface heat flux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="102"/>
-        <source>Film Coefficient</source>
+        <location filename="../../TaskFemConstraintHeatflux.ui" line="14"/>
+        <source>TaskFemConstraintHeatflux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="109"/>
-        <source>W/m^2/K</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskFemConstraintHeatflux.ui" line="0"/>
-        <source>Ambient Temperature</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="136"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="198"/>
-        <source>K</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="161"/>
-        <source>Emissivity</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="168"/>
-        <source>1 </source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="70"/>
+        <source>Constraint Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7057,8 +7594,18 @@ normal vector of the face is used as direction</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="234"/>
-        <source>W/m^2</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="102"/>
+        <source>Film Coefficient</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskFemConstraintHeatflux.ui" line="0"/>
+        <source>Ambient Temperature</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintHeatflux.ui" line="161"/>
+        <source>Emissivity</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -7447,6 +7994,98 @@ used for the Elmer solver</source>
     </message>
 </context>
 <context>
+    <name>TaskPostBranch</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostBranch.ui" line="34"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Selects the input, the child filter will receive:&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Serial:&lt;/span&gt; The first filter in the branch will get the Branches input as its own input. The next filter will then receive the firsts filters output as input, and so on.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Parallel: &lt;/span&gt;All filter in the branch will receive the Branches input as their own input. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostBranch.ui" line="37"/>
+        <source>Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostBranch.ui" line="50"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Selects the input, the child filters will receive:&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Serial:&lt;/span&gt; The first filter in the branch will get the Branches input as its own input. The next filter will then receive the firsts filters output as input, and so on.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Parallel: &lt;/span&gt;All filter in the branch will receive the Branches input as their own input. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostBranch.ui" line="54"/>
+        <source>Serial</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostBranch.ui" line="59"/>
+        <source>Parallel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostBranch.ui" line="73"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostBranch.ui" line="90"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Selects the how the output of the branch is determined:&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Passthrough:&lt;/span&gt; The branches output is the same as its input, no matter what the branch child filter do.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Append:&lt;/span&gt; The branches output is a collection of all child filter: it appends child outputs together and offers this as branch output.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostBranch.ui" line="77"/>
+        <source>Passthrough</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostBranch.ui" line="82"/>
+        <source>Append</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostBranch.ui" line="93"/>
+        <source>Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TaskPostCalculator</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostCalculator.ui" line="28"/>
+        <source>Field Name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostCalculator.ui" line="41"/>
+        <source>Mathematical expression</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostCalculator.ui" line="54"/>
+        <source>Available fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostCalculator.ui" line="62"/>
+        <source>Scalars:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostCalculator.ui" line="72"/>
+        <source>Vectors:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostCalculator.ui" line="82"/>
+        <source>Operators:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostCalculator.ui" line="102"/>
+        <source>Replace invalid data:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostCalculator.ui" line="105"/>
+        <source>Replacement value for invalid operations</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>TaskPostClip</name>
     <message>
         <location filename="../../TaskPostClip.ui" line="0"/>
@@ -7482,13 +8121,33 @@ used for the Elmer solver</source>
     </message>
     <message>
         <location filename="../../TaskPostContours.ui" line="0"/>
-        <source>Contour lines will not be colored</source>
+        <source>No color</source>
+        <translation>無色彩</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostContours.ui" line="77"/>
+        <source>Enable Laplacian smoothing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostContours.ui" line="80"/>
+        <source>Smoothing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostContours.ui" line="97"/>
+        <source>Factor to control vertex displacement</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../TaskPostContours.ui" line="0"/>
-        <source>No color</source>
-        <translation>無色彩</translation>
+        <source>Contour lines will not be colored</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostContours.ui" line="116"/>
+        <source>No Color</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Form</source>
@@ -7689,6 +8348,11 @@ used for the Elmer solver</source>
         <translation>Z</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/TaskPostDisplay.ui" line="116"/>
+        <source>Component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskPostDisplay.ui" line="156"/>
         <source>Styling</source>
         <translation type="unfinished"></translation>
@@ -7702,6 +8366,200 @@ used for the Elmer solver</source>
         <location filename="../../TaskPostDisplay.ui" line="14"/>
         <source>Form</source>
         <translation>格式</translation>
+    </message>
+</context>
+<context>
+    <name>TaskPostFrames</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostFrames.ui" line="26"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostFrames.ui" line="34"/>
+        <source>Type of frames:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostFrames.ui" line="41"/>
+        <source>Ressonance Frequencies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostFrames.ui" line="84"/>
+        <source>Frame</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostFrames.ui" line="89"/>
+        <source>Value</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TaskPostGlyph</name>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="22"/>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="38"/>
+        <source>The form of the glyph</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="25"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="42"/>
+        <source>Arrow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="47"/>
+        <source>Cone</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="52"/>
+        <source>Cube</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="57"/>
+        <source>Cylinder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="62"/>
+        <source>Line</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="67"/>
+        <source>Sphere</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="75"/>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="91"/>
+        <source>Which vector field is used to orient the glyphs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="78"/>
+        <source>Orientation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="95"/>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="148"/>
+        <source>None</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="111"/>
+        <source>Sca&amp;le</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="126"/>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="144"/>
+        <source>Which data field is used to scale the glyphs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="129"/>
+        <source>Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="158"/>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="176"/>
+        <source>A constant multiplier the glyphs are scaled with</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="161"/>
+        <source>Factor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="199"/>
+        <source>Changes the scale factor by +/- 50% of the set scale factor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="226"/>
+        <source>If the scale data is a vector this property decides if the glyph is scaled by vector magnitude or by the individual components</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="230"/>
+        <source>Not a vector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="235"/>
+        <source>By magnitude</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="240"/>
+        <source>By components</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="251"/>
+        <source>Vertex Mas&amp;king</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="263"/>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="349"/>
+        <source>Which vertices are used as glyph locations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="266"/>
+        <source>Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="282"/>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="311"/>
+        <source>Defines the maximal number of vertices used for &quot;Uniform Sampling&quot; masking mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="298"/>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="330"/>
+        <source>Define the stride for &quot;Every Nth&quot; masking mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="301"/>
+        <source>Stride</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="314"/>
+        <source>Max </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="353"/>
+        <source>All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="358"/>
+        <source>Every Nth</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="363"/>
+        <source>Uniform Sampling</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7916,6 +8774,11 @@ used for the Elmer solver</source>
         <translation>有限元素法</translation>
     </message>
     <message>
+        <location filename="../../Workbench.cpp" line="38"/>
+        <source>FEM workbench</source>
+        <translation>有限元素工作台</translation>
+    </message>
+    <message>
         <location filename="../../Workbench.cpp" line="39"/>
         <source>&amp;FEM</source>
         <translation>有限元素法(&amp;F)</translation>
@@ -7943,12 +8806,12 @@ used for the Elmer solver</source>
     <message>
         <location filename="../../Workbench.cpp" line="45"/>
         <source>Element Geometry</source>
-        <translation type="unfinished"></translation>
+        <translation>元件幾何</translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="46"/>
         <source>&amp;Element Geometry</source>
-        <translation type="unfinished"></translation>
+        <translation>元件幾何(&amp;E)</translation>
     </message>
     <message>
         <location filename="../../Workbench.cpp" line="47"/>
@@ -8167,6 +9030,16 @@ used for the Elmer solver</source>
         <location filename="../../Command.cpp" line="1161"/>
         <location filename="../../Command.cpp" line="1188"/>
         <source>Error: no post processing object selected.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Command.cpp" line="1850"/>
+        <source>Error: Object not in a post processing group</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Command.cpp" line="1851"/>
+        <source>The filter could not be set up: Object not in a post processing group.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

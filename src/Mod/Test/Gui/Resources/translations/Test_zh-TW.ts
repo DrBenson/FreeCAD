@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
-    <extra-po-header-language>zh_TW</extra-po-header-language>
-    <extra-po-header-language_team></extra-po-header-language_team>
-    <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
-    <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
-    <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
-    <extra-po-header-project_id_version>FreeCAD Language Translations v0.22_dev</extra-po-header-project_id_version>
-    <extra-po-header-x_generator>Poedit 3.2.2</extra-po-header-x_generator>
-    <extra-po-header_comment>#
-# Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2023
-#
-    </extra-po-header_comment>
-    <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
 <context>
     <name>TestGui::UnitTest</name>
     <message>
@@ -34,7 +21,7 @@
     <message>
         <location filename="../../UnitTest.ui" line="96"/>
         <source>&amp;Start</source>
-        <translation>啟動(&amp;S)</translation>
+        <translation>開始(&amp;S)</translation>
     </message>
     <message>
         <location filename="../../UnitTest.ui" line="99"/>
@@ -99,7 +86,7 @@
     <message>
         <location filename="../../UnitTest.ui" line="259"/>
         <source>Failures and errors</source>
-        <translation>失敗與錯誤</translation>
+        <translation>失敗及錯誤</translation>
     </message>
     <message>
         <location filename="../../UnitTest.ui" line="275"/>
@@ -143,6 +130,15 @@ FreeCAD UnitTest is part of FreeCAD and supports writing Unit Tests for ones own
         <translation>版權所有 (c) Werner Mayer
 
 FreeCAD 單位測試為 FreeCAD 的一部分，支援測試自己的模組編寫單位。</translation>
+    </message>
+</context>
+<context>
+    <name>Workbench</name>
+    <message>
+        <location filename="../../../InitGui.py" line="35"/>
+        <location filename="../../../InitGui.py" line="37"/>
+        <source>Test Framework</source>
+        <translation>測試架構</translation>
     </message>
 </context>
 </TS>

@@ -27,7 +27,11 @@ import os
 
 import FreeCAD as App
 import FreeCADGui as Gui
+import SurfaceGui
 
+Gui.addLanguagePath(":/translations")
+Gui.addIconPath(":/icons")
+Gui.updateLocale()
 
 class SurfaceWorkbench(Gui.Workbench):
     """Surface workbench object."""
@@ -35,8 +39,8 @@ class SurfaceWorkbench(Gui.Workbench):
     Icon = os.path.join(
         App.getResourceDir(), "Mod", "Surface", "Resources", "icons", "Surface_Workbench.svg"
     )
-    MenuText = "Surface"
-    ToolTip = "Surface workbench: Create and edit complex surfaces"
+    MenuText = FreeCAD.Qt.translate("Workbench", "Surface")
+    ToolTip = FreeCAD.Qt.translate("Workbench", "Surface workbench: Create and edit complex surfaces")
 
     def Initialize(self):
         """Initialize the module."""

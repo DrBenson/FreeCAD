@@ -28,6 +28,10 @@
 # *                                                                         *
 # ***************************************************************************/
 
+import MeshGui
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
 
 class MeshWorkbench(Workbench):
     "Mesh workbench object"
@@ -36,8 +40,8 @@ class MeshWorkbench(Workbench):
         self.__class__.Icon = (
             FreeCAD.getResourceDir() + "Mod/Mesh/Resources/icons/MeshWorkbench.svg"
         )
-        self.__class__.MenuText = "Mesh"
-        self.__class__.ToolTip = "Mesh workbench"
+        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Mesh")
+        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Mesh workbench")
 
     def Initialize(self):
         import Mesh

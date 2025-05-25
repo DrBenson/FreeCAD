@@ -2,6 +2,10 @@
 # (c) 2007 Juergen Riegel LGPL
 #
 
+import _TEMPLATEPY__rc
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
 
 class TemplatePyModWorkbench ( Workbench ):
 	"Test workbench object"
@@ -28,15 +32,15 @@ class TemplatePyModWorkbench ( Workbench ):
 			"................",
 			"................"};
 			"""
-	MenuText = "Python sandbox"
-	ToolTip = "Python template workbench"
+	MenuText = FreeCAD.Qt.translate("Workbench", "Python sandbox")
+	ToolTip = FreeCAD.Qt.translate("Workbench", "Python template workbench")
 	
 	def Initialize(self):
 		import Commands
 
 		self.appendToolbar("TemplateTools",["TemplatePyMod_Cmd1","TemplatePyMod_Cmd2","TemplatePyMod_Cmd3","TemplatePyMod_Cmd4","TemplatePyMod_Cmd5"])
 
-		menu = ["ModulePy &Commands","PyModuleCommands"]
+		menu = [FreeCAD.Qt.translate("TemplateTools", "ModulePy &Commands"), FreeCAD.Qt.translate("TemplateTools", "PyModuleCommands")]
 		list = ["TemplatePyMod_Cmd1","TemplatePyMod_Cmd2","TemplatePyMod_Cmd3","TemplatePyMod_Cmd5","TemplatePyMod_Cmd6"]
 		self.appendCommandbar("PyModuleCommands",list)
 		self.appendMenu(menu,list)
