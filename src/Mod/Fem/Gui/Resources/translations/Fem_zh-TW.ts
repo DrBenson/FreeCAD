@@ -2597,20 +2597,14 @@ Please select a result type first.</source>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="675"/>
-        <source>Load results as pipeline instead of Result Object.
-By uncheck this option, CalculiX command behave like SolverCalculiXCcxTools</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="699"/>
-        <source>Save result in binary format.
-Only ta  kes effect if &apos;Pipeline only&apos; is enabled</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="675"/>
         <source>Load results as pipeline instead of CCX_Results objects.
 After unchecking this option, the CalculiX command behaves like SolverCalculiXCcxTools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="675"/>
+        <source>Load results as pipeline instead of Result Object.
+By uncheck this option, CalculiX command behave like SolverCalculiXCcxTools</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2619,9 +2613,15 @@ After unchecking this option, the CalculiX command behaves like SolverCalculiXCc
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="699"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="699"/>
         <source>Save result in binary format.
 Only takes effect if &apos;Pipeline only&apos; is enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="699"/>
+        <source>Save result in binary format.
+Only ta  kes effect if &apos;Pipeline only&apos; is enabled</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2865,7 +2865,7 @@ Therefore an executable with the suffix &apos;_mpi&apos; is required.</source>
     <message>
         <location filename="../../DlgSettingsFemExportAbaqus.ui" line="28"/>
         <source>Which mesh elements to export</source>
-        <translation type="unfinished"></translation>
+        <translation>哪些網格元素要匯出</translation>
     </message>
     <message>
         <location filename="../../DlgSettingsFemExportAbaqus.ui" line="35"/>
@@ -2891,7 +2891,7 @@ not belonging to faces and faces not belonging to volumes.</source>
     <message>
         <location filename="../../DlgSettingsFemExportAbaqus.ui" line="62"/>
         <source>Highest</source>
-        <translation type="unfinished"></translation>
+        <translation>最高</translation>
     </message>
     <message>
         <location filename="../../DlgSettingsFemExportAbaqus.ui" line="67"/>
@@ -2901,7 +2901,7 @@ not belonging to faces and faces not belonging to volumes.</source>
     <message>
         <location filename="../../DlgSettingsFemExportAbaqus.ui" line="75"/>
         <source>Export group data</source>
-        <translation type="unfinished"></translation>
+        <translation>匯出群組資料</translation>
     </message>
     <message>
         <location filename="../../DlgSettingsFemExportAbaqus.ui" line="82"/>
@@ -3151,7 +3151,7 @@ Specify another file please.</source>
     <message>
         <location filename="../../DlgSettingsFemInOutVtk.ui" line="0"/>
         <source>VTK</source>
-        <translation type="unfinished"></translation>
+        <translation>VTK</translation>
     </message>
     <message>
         <location filename="../../DlgSettingsFemInOutVtk.ui" line="0"/>
@@ -3161,7 +3161,7 @@ Specify another file please.</source>
     <message>
         <location filename="../../DlgSettingsFemInOutVtk.ui" line="0"/>
         <source>Which object to import into</source>
-        <translation type="unfinished"></translation>
+        <translation>要匯入哪類型物體</translation>
     </message>
     <message>
         <location filename="../../DlgSettingsFemInOutVtk.ui" line="0"/>
@@ -3180,7 +3180,7 @@ exported from FreeCAD.</source>
     <message>
         <location filename="../../DlgSettingsFemInOutVtk.ui" line="0"/>
         <source>Choose in which object to import into</source>
-        <translation type="unfinished"></translation>
+        <translation>請選擇要匯入哪類型物體</translation>
     </message>
     <message>
         <location filename="../../DlgSettingsFemInOutVtk.ui" line="0"/>
@@ -3200,17 +3200,17 @@ exported from FreeCAD.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemInOutVtk.ui" line="89"/>
         <source>Export</source>
-        <translation type="unfinished"></translation>
+        <translation>匯出</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemInOutVtk.ui" line="95"/>
         <source>Mesh elements to export</source>
-        <translation type="unfinished"></translation>
+        <translation>網格元素匯出</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemInOutVtk.ui" line="102"/>
         <source>Mesh element level to export</source>
-        <translation type="unfinished"></translation>
+        <translation>網格元素層級匯出</translation>
     </message>
 </context>
 <context>
@@ -6148,7 +6148,7 @@ Note: for 2D only setting for x is possible,
     <message>
         <location filename="../../PropertyFemMeshItem.cpp" line="113"/>
         <source>Polygons</source>
-        <translation>多邊型</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../PropertyFemMeshItem.cpp" line="114"/>
@@ -8399,165 +8399,165 @@ used for the Elmer solver</source>
 <context>
     <name>TaskPostGlyph</name>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="22"/>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="38"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="22"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="38"/>
         <source>The form of the glyph</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="25"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="25"/>
         <source>Form</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="42"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="42"/>
         <source>Arrow</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="47"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="47"/>
         <source>Cone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="52"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="47"/>
         <source>Cube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="57"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="57"/>
         <source>Cylinder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="62"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="62"/>
         <source>Line</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="67"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="67"/>
         <source>Sphere</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="75"/>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="91"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="55"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="71"/>
         <source>Which vector field is used to orient the glyphs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="78"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="58"/>
         <source>Orientation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="95"/>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="148"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="75"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="128"/>
         <source>None</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="111"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="91"/>
         <source>Sca&amp;le</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="126"/>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="144"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="206"/>
         <source>Which data field is used to scale the glyphs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="129"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="109"/>
         <source>Data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="158"/>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="176"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="138"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="156"/>
         <source>A constant multiplier the glyphs are scaled with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="161"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="141"/>
         <source>Factor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="199"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="179"/>
         <source>Changes the scale factor by +/- 50% of the set scale factor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="226"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="106"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="124"/>
         <source>If the scale data is a vector this property decides if the glyph is scaled by vector magnitude or by the individual components</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="230"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="210"/>
         <source>Not a vector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="235"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="215"/>
         <source>By magnitude</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="240"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="220"/>
         <source>By components</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="251"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="231"/>
         <source>Vertex Mas&amp;king</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="263"/>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="349"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="243"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="329"/>
         <source>Which vertices are used as glyph locations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="266"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="246"/>
         <source>Mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="282"/>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="311"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="262"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="291"/>
         <source>Defines the maximal number of vertices used for &quot;Uniform Sampling&quot; masking mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="298"/>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="330"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="278"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="310"/>
         <source>Define the stride for &quot;Every Nth&quot; masking mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="301"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="281"/>
         <source>Stride</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="314"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="294"/>
         <source>Max </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="353"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="333"/>
         <source>All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="358"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="338"/>
         <source>Every Nth</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="363"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="343"/>
         <source>Uniform Sampling</source>
         <translation type="unfinished"></translation>
     </message>
