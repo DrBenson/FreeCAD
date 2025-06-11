@@ -1,11 +1,11 @@
 ---
-# File created by ConvertFCMat.py
 General:
-  UUID: "b588224e-e8d6-47ad-ba1f-a058333fd1c6"
-  Author: "Bernd Hahnebach"
+  UUID: "b588224e-e8d6-47ad-ba1f-a058333fd1c7"
+  Author: "DrBenson"
   License: "CC-BY-3.0"
-  Name: "Wood"
-  Description: "A standard construction wood"
+  Name: "Mahogany Wood"
+  Description: "Defines generic Wood appearance properties"
+  SourceURL: "https://www.matweb.com/search/DataSheet.aspx?MatGUID=23fb91fbe6bc481f809e6744efdf972a"
 Inherits:
   Wood:
     UUID: "1850ac4a-0df2-43cd-9934-e59e95b9526f"
@@ -15,7 +15,7 @@ Models:
     Father: "Aggregate"
   Density:
     UUID: '454661e5-265b-4320-8e6f-fcf6223ac3af'
-    Density: "700 kg/m^3"
+    Density: "600 kg/m^3"
   IsotropicLinearElastic:
     UUID: 'f6f9e48c-b116-4e82-ad7f-3659a9219c50'
     PoissonRatio: "0.05"
