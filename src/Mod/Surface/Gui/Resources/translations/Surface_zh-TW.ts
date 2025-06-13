@@ -168,6 +168,11 @@ and non-boundary vertices.</source>
         <source>Extend surface</source>
         <translation>延伸外型</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.cpp" line="408"/>
+        <source>Edit blending curve</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QObject</name>
@@ -186,6 +191,53 @@ and non-boundary vertices.</source>
         <location filename="../../Gui/TaskSections.cpp" line="57"/>
         <source>Edit sections</source>
         <translation>編輯剖面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/ViewProviderBlendCurve.cpp" line="48"/>
+        <source>Edit %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SurfaceGui::BlendCurve</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="14"/>
+        <source>Blending curve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="20"/>
+        <source>Start edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="26"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="119"/>
+        <source>Edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="43"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="136"/>
+        <source>Continuity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="79"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="172"/>
+        <source>Parameter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="96"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="189"/>
+        <source>Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="113"/>
+        <source>End edge</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

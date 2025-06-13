@@ -6,11 +6,11 @@
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
     <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
     <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
-    <extra-po-header-project_id_version>FreeCAD Material Language Translations v1.1.0</extra-po-header-project_id_version>
-    <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
+    <extra-po-header-project_id_version>FreeCAD Material Language Translations v0.22_dev</extra-po-header-project_id_version>
+    <extra-po-header-x_generator>Poedit 3.2.2</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2023
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -778,6 +778,16 @@ If unchecked, they will be sorted by their name.</source>
         <translation>依據資源排序</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/DlgSettingsMaterial.ui" line="212"/>
+        <source>Testing</source>
+        <translation>測試中</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/DlgSettingsMaterial.ui" line="218"/>
+        <source>Use legacy editor</source>
+        <translation>使用傳統編輯器</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/DlgSettingsMaterial.ui" line="237"/>
         <source>Material Selector</source>
         <translation>材質選擇</translation>
@@ -811,16 +821,6 @@ If unchecked, they will be sorted by their name.</source>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/DlgSettingsMaterial.ui" line="295"/>
         <source>Material Editor</source>
         <translation>材質編輯器</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/DlgSettingsMaterial.ui" line="212"/>
-        <source>Testing</source>
-        <translation>測試中</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/DlgSettingsMaterial.ui" line="218"/>
-        <source>Use legacy editor</source>
-        <translation>使用傳統編輯器</translation>
     </message>
 </context>
 <context>
@@ -1056,9 +1056,19 @@ If unchecked, they will be sorted by their name.</source>
         <translation>版權聲明</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="178"/>
+        <source>*</source>
+        <translation>*</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="188"/>
         <source>&amp;New</source>
         <translation>新增(&amp;N)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="188"/>
+        <source>Properties</source>
+        <translation>屬性</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="195"/>
@@ -1071,9 +1081,21 @@ If unchecked, they will be sorted by their name.</source>
         <translation>新增到我的最愛</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="209"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="253"/>
+        <source>+</source>
+        <translation>+</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="212"/>
         <source>Physical</source>
         <translation>實體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="216"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="260"/>
+        <source>-</source>
+        <translation>-</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="236"/>
@@ -1086,6 +1108,11 @@ If unchecked, they will be sorted by their name.</source>
         <translation>刪除實體模型</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="229"/>
+        <source>Appearance</source>
+        <translation>外觀</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="286"/>
         <source>Add appearance model</source>
         <translation>新增外觀模型</translation>
@@ -1094,33 +1121,6 @@ If unchecked, they will be sorted by their name.</source>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="296"/>
         <source>Delete appearance model</source>
         <translation>刪除外觀模型</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="178"/>
-        <source>*</source>
-        <translation>*</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="188"/>
-        <source>Properties</source>
-        <translation>屬性</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="209"/>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="253"/>
-        <source>+</source>
-        <translation>+</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="216"/>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="260"/>
-        <source>-</source>
-        <translation>-</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.ui" line="229"/>
-        <source>Appearance</source>
-        <translation>外觀</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/MaterialsEditor.cpp" line="452"/>
@@ -1502,15 +1502,15 @@ If unchecked, they will be sorted by their name.</source>
         <translation>外觀...</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/Command.cpp" line="89"/>
-        <source>&amp;Appearance...</source>
-        <translation>外觀(&amp;A)...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/Command.cpp" line="88"/>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/Command.cpp" line="90"/>
         <source>Sets the display properties of the selected object</source>
         <translation>設聽所選物體的顯示屬性</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/Command.cpp" line="89"/>
+        <source>&amp;Appearance...</source>
+        <translation>外觀(&amp;A)...</translation>
     </message>
 </context>
 <context>
@@ -1521,15 +1521,15 @@ If unchecked, they will be sorted by their name.</source>
         <translation>材質...</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/Command.cpp" line="118"/>
-        <source>&amp;Material...</source>
-        <translation>材質(&amp;M)...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/Command.cpp" line="117"/>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/Command.cpp" line="119"/>
         <source>Sets the material of the selected object</source>
         <translation>設定選定物體的材質</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/Command.cpp" line="118"/>
+        <source>&amp;Material...</source>
+        <translation>材質(&amp;M)...</translation>
     </message>
 </context>
 <context>

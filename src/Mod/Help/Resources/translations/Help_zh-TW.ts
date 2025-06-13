@@ -55,6 +55,61 @@ This is currently not available...</source>
         <translation>將其設定為自訂 URL 或說明文件所在的資料夾. 您可以使用附加元件管理器並安裝「離線文件」附加元件輕鬆下載文件以供離線使用. 如果此欄位留空，FreeCAD 將自動在預設位置($USERAPPDATADIR/Mod/Documentation)搜尋說明文件.</translation>
     </message>
     <message>
+        <location filename="../../dlgPreferencesHelp.ui" line="46"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="86"/>
+        <source>Set this to a custom URL or the folder where the help files are located.
+You can easily download the documentation for offline use by using the Addon
+Manager and installing the &quot;offline documentation&quot; addon. If this
+field is left blank, FreeCAD will automatically search for the help files at
+the default location ($USERAPPDATADIR/Mod/Documentation).</source>
+        <translation>將其設定為自訂 URL 或說明文件所在的資料夾.
+您可以使用附加元件管理器並安裝「離線文件」附加元件
+輕鬆下載文件以供離線使用.如果此欄位留空，
+FreeCAD 將自動在預設位置($USERAPPDATADIR/Mod/Documentation)搜尋說明文件.</translation>
+    </message>
+    <message>
+        <location filename="../../dlgPreferencesHelp.ui" line="67"/>
+        <source>A translation suffix to use, for example &quot;fr&quot; to get French translation of the documentation.</source>
+        <translation>要使用的翻譯後綴，例如“fr”以獲取文件的法語翻譯.</translation>
+    </message>
+    <message>
+        <location filename="../../dlgPreferencesHelp.ui" line="106"/>
+        <source>The documentation pages will be fetched from the official FreeCADwiki at https://wiki.freecad.org</source>
+        <translation>文件頁面將從官方 FreeCADwiki 獲取，網址為 https://wiki.freecad.org</translation>
+    </message>
+    <message>
+        <location filename="../../dlgPreferencesHelp.ui" line="125"/>
+        <source>The documentation pages will be fetched from an automatic markdown conversion of the FreeCAD wiki, hosted on FreeCAD&apos;s github account. This can be styled with a custom stylesheet below and can look nicer than the wiki option. The &apos;markdown&apos; or &apos;pandoc&apos; python module should be installed for optimal results.</source>
+        <translation>文件頁面將從 FreeCAD wiki 的自動编辑器轉換中獲取，託管在 FreeCAD 的 github 帳戶上. 這可以使用下面的自訂樣式表進行樣式設定，並且看起來比 wiki 選項更好. 應該安裝“markdown”或“pandoc”python 模組以獲得最佳結果.</translation>
+    </message>
+    <message>
+        <location filename="../../dlgPreferencesHelp.ui" line="153"/>
+        <source>The documentation will open in a new tab inside the FreeCAD interface.</source>
+        <translation>該文件將在 FreeCAD 介面內的新分頁中開啟.</translation>
+    </message>
+    <message>
+        <location filename="../../dlgPreferencesHelp.ui" line="172"/>
+        <source>The documentation will open in your default desktop browser.</source>
+        <translation>該文件將在您的預設桌面瀏覽器中打開.</translation>
+    </message>
+    <message>
+        <location filename="../../dlgPreferencesHelp.ui" line="191"/>
+        <source>The documentation will open in a dockable dialog inside the FreeCAD window, which allows you to keep it open whlle working in the 3D view.</source>
+        <translation>該文件將在 FreeCAD 視窗內的可停靠對話方塊中打開，這使您可以在 3D 檢視中工作時保持其開啟狀態.</translation>
+    </message>
+    <message>
+        <location filename="../../dlgPreferencesHelp.ui" line="205"/>
+        <source>The documentation will open in a dockable dialog inside the FreeCAD window,
+which allows you to keep it open whlle working in the 3D view.</source>
+        <translation>該文件將在 FreeCAD 視窗內的可停靠對話方塊中打開，
+讓您在 3D 檢視中工作時保持其開啟狀態.</translation>
+    </message>
+    <message>
+        <location filename="../../dlgPreferencesHelp.ui" line="225"/>
+        <source>You can here indicate the path to an alternative CSS file to be used to style the markdown pages. This will only work if you have selected the Markdown version above.</source>
+        <translation>您可以在此指示用於設定 Markdown 頁面樣式的替代 CSS 檔案的路徑. 只有當您選擇了上面的 Markdown 版本時才有效.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Help/dlgPreferencesHelp.ui" line="46"/>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Help/dlgPreferencesHelp.ui" line="89"/>
         <source>Set this to a custom URL or the folder where the help files are located.
@@ -75,38 +130,15 @@ which allows you to keep it open whlle working in the 3D view. This requires the
 這允許您在 3D 檢視中工作時保持其開啟狀態. 這需要 PySide QtWebengineWidgets 元件</translation>
     </message>
     <message>
-        <location filename="../../dlgPreferencesHelp.ui" line="46"/>
-        <location filename="../../dlgPreferencesHelp.ui" line="86"/>
-        <source>Set this to a custom URL or the folder where the help files are located.
-You can easily download the documentation for offline use by using the Addon
-Manager and installing the &quot;offline documentation&quot; addon. If this
-field is left blank, FreeCAD will automatically search for the help files at
-the default location ($USERAPPDATADIR/Mod/Documentation).</source>
-        <translation>將其設定為自訂 URL 或說明文件所在的資料夾.
-您可以使用附加元件管理器並安裝「離線文件」附加元件
-輕鬆下載文件以供離線使用.如果此欄位留空，
-FreeCAD 將自動在預設位置($USERAPPDATADIR/Mod/Documentation)搜尋說明文件.</translation>
-    </message>
-    <message>
         <location filename="../../dlgPreferencesHelp.ui" line="48"/>
         <source>Custom location</source>
         <translation>自訂位置</translation>
-    </message>
-    <message>
-        <location filename="../../dlgPreferencesHelp.ui" line="67"/>
-        <source>A translation suffix to use, for example &quot;fr&quot; to get French translation of the documentation.</source>
-        <translation>要使用的翻譯後綴，例如“fr”以獲取文件的法語翻譯.</translation>
     </message>
     <message>
         <location filename="../../dlgPreferencesHelp.ui" line="72"/>
         <source>A translation suffix to use, for example &quot;fr&quot;
 to get French translation of the documentation.</source>
         <translation>要使用的翻譯後綴，例如“fr”以獲取文件的法語翻譯.</translation>
-    </message>
-    <message>
-        <location filename="../../dlgPreferencesHelp.ui" line="106"/>
-        <source>The documentation pages will be fetched from the official FreeCADwiki at https://wiki.freecad.org</source>
-        <translation>文件頁面將從官方 FreeCADwiki 獲取，網址為 https://wiki.freecad.org</translation>
     </message>
     <message>
         <location filename="../../dlgPreferencesHelp.ui" line="99"/>
@@ -126,11 +158,6 @@ FreeCADwiki at https://wiki.freecad.org</source>
         <translation>FreeCAD Wiki (線上)</translation>
     </message>
     <message>
-        <location filename="../../dlgPreferencesHelp.ui" line="125"/>
-        <source>The documentation pages will be fetched from an automatic markdown conversion of the FreeCAD wiki, hosted on FreeCAD&apos;s github account. This can be styled with a custom stylesheet below and can look nicer than the wiki option. The &apos;markdown&apos; or &apos;pandoc&apos; python module should be installed for optimal results.</source>
-        <translation>文件頁面將從 FreeCAD wiki 的自動编辑器轉換中獲取，託管在 FreeCAD 的 github 帳戶上. 這可以使用下面的自訂樣式表進行樣式設定，並且看起來比 wiki 選項更好. 應該安裝“markdown”或“pandoc”python 模組以獲得最佳結果.</translation>
-    </message>
-    <message>
         <location filename="../../dlgPreferencesHelp.ui" line="136"/>
         <source>The documentation pages will be fetched from an automatic Markdown conversion
 of the FreeCAD wiki,hosted on FreeCAD&apos;s GitHub account. This can be styled with a
@@ -147,11 +174,6 @@ custom stylesheet below and can look nicer than the wiki option. The &apos;Markd
         <translation>Markdown版本(線上)</translation>
     </message>
     <message>
-        <location filename="../../dlgPreferencesHelp.ui" line="153"/>
-        <source>The documentation will open in a new tab inside the FreeCAD interface.</source>
-        <translation>該文件將在 FreeCAD 介面內的新分頁中開啟.</translation>
-    </message>
-    <message>
         <location filename="../../dlgPreferencesHelp.ui" line="147"/>
         <source>Display</source>
         <translation>顯示</translation>
@@ -160,11 +182,6 @@ custom stylesheet below and can look nicer than the wiki option. The &apos;Markd
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Help/dlgPreferencesHelp.ui" line="170"/>
         <source>Note: if PySide Web components are not found on your system, help pages will open in your default web browser regardless of the options below</source>
         <translation>注意: 如果在您的系統上找不到 PySide Web 元件，則無論以下選項如何，求助說明頁面都將在您的預設 Web 瀏覽器中打開</translation>
-    </message>
-    <message>
-        <location filename="../../dlgPreferencesHelp.ui" line="172"/>
-        <source>The documentation will open in your default desktop browser.</source>
-        <translation>該文件將在您的預設桌面瀏覽器中打開.</translation>
     </message>
     <message>
         <location filename="../../dlgPreferencesHelp.ui" line="186"/>
@@ -177,11 +194,6 @@ custom stylesheet below and can look nicer than the wiki option. The &apos;Markd
         <translation>在預設瀏覽器</translation>
     </message>
     <message>
-        <location filename="../../dlgPreferencesHelp.ui" line="191"/>
-        <source>The documentation will open in a dockable dialog inside the FreeCAD window, which allows you to keep it open whlle working in the 3D view.</source>
-        <translation>該文件將在 FreeCAD 視窗內的可停靠對話方塊中打開，這使您可以在 3D 檢視中工作時保持其開啟狀態.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Help/dlgPreferencesHelp.ui" line="189"/>
         <source>The documentation will open in a new tab inside the FreeCAD interface. This requires the PySide QtWebengineWidgets component</source>
         <translation>該文件將在 FreeCAD 介面內的新分頁中開啟. 這需要 PySide QtWebengineWidgets 元件</translation>
@@ -190,13 +202,6 @@ custom stylesheet below and can look nicer than the wiki option. The &apos;Markd
         <location filename="../../dlgPreferencesHelp.ui" line="156"/>
         <source>In a FreeCAD tab</source>
         <translation>在 FreeCAD 分頁</translation>
-    </message>
-    <message>
-        <location filename="../../dlgPreferencesHelp.ui" line="205"/>
-        <source>The documentation will open in a dockable dialog inside the FreeCAD window,
-which allows you to keep it open whlle working in the 3D view.</source>
-        <translation>該文件將在 FreeCAD 視窗內的可停靠對話方塊中打開，
-讓您在 3D 檢視中工作時保持其開啟狀態.</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Help/dlgPreferencesHelp.ui" line="211"/>
@@ -209,11 +214,6 @@ which allows you to keep it open while working in the 3D view. This requires the
         <location filename="../../dlgPreferencesHelp.ui" line="194"/>
         <source>In a separate, embeddable dialog</source>
         <translation>在單獨的可嵌入對話方塊中</translation>
-    </message>
-    <message>
-        <location filename="../../dlgPreferencesHelp.ui" line="225"/>
-        <source>You can here indicate the path to an alternative CSS file to be used to style the markdown pages. This will only work if you have selected the Markdown version above.</source>
-        <translation>您可以在此指示用於設定 Markdown 頁面樣式的替代 CSS 檔案的路徑. 只有當您選擇了上面的 Markdown 版本時才有效.</translation>
     </message>
     <message>
         <location filename="../../dlgPreferencesHelp.ui" line="210"/>

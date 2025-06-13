@@ -604,15 +604,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Adaptive.py" line="1410"/>
-        <source>Influences calculation performance vs stability and accuracy.
-
-Larger values (further to the right) will calculate faster; smaller values (further to the left) will result in more accurate toolpaths.</source>
-        <translation type="unfinished">Influences calculation performance vs stability and accuracy.
-
-Larger values (further to the right) will calculate faster; smaller values (further to the left) will result in more accurate toolpaths.</translation>
-    </message>
-    <message>
         <location filename="../../../Path/Op/Adaptive.py" line="954"/>
         <source>Lift distance for rapid moves</source>
         <translation type="unfinished"></translation>
@@ -626,17 +617,6 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <location filename="../../../Path/Op/Adaptive.py" line="972"/>
         <source>How much stock to leave (i.e. for finishing operation)</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Adaptive.py" line="1446"/>
-        <source>How much stock to leave in the XY plane (eg for finishing operation)</source>
-        <translation type="unfinished">How much stock to leave in the XY plane (eg for finishing operation)</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Adaptive.py" line="1455"/>
-        <location filename="../../../Path/Op/Adaptive.py" line="1655"/>
-        <source>How much stock to leave along the Z axis (eg for finishing operation)</source>
-        <translation type="unfinished">How much stock to leave along the Z axis (eg for finishing operation)</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Adaptive.py" line="981"/>
@@ -689,6 +669,26 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <location filename="../../../Path/Op/PocketShape.py" line="66"/>
         <source>Uses the outline of the base geometry.</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Adaptive.py" line="1410"/>
+        <source>Influences calculation performance vs stability and accuracy.
+
+Larger values (further to the right) will calculate faster; smaller values (further to the left) will result in more accurate toolpaths.</source>
+        <translation type="unfinished">Influences calculation performance vs stability and accuracy.
+
+Larger values (further to the right) will calculate faster; smaller values (further to the left) will result in more accurate toolpaths.</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Adaptive.py" line="1446"/>
+        <source>How much stock to leave in the XY plane (eg for finishing operation)</source>
+        <translation type="unfinished">How much stock to leave in the XY plane (eg for finishing operation)</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Adaptive.py" line="1455"/>
+        <location filename="../../../Path/Op/Adaptive.py" line="1655"/>
+        <source>How much stock to leave along the Z axis (eg for finishing operation)</source>
+        <translation type="unfinished">How much stock to leave along the Z axis (eg for finishing operation)</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Adaptive.py" line="1564"/>
@@ -1591,21 +1591,6 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Base.py" line="860"/>
-        <source>Base object %s.%s already in the list</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="870"/>
-        <source>Base object %s.%s rejected by operation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="822"/>
-        <source>Feedrate Error</source>
-        <translation>進給速度錯誤</translation>
-    </message>
-    <message>
         <location filename="../../../Path/Op/Base.py" line="805"/>
         <source>No Tool Controller selected.</source>
         <translation type="unfinished"></translation>
@@ -1621,9 +1606,9 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Base.py" line="860"/>
-        <source>Tool Feedrate Error</source>
-        <translation type="unfinished">Tool Feedrate Error</translation>
+        <location filename="../../../Path/Op/Base.py" line="822"/>
+        <source>Feedrate Error</source>
+        <translation>進給速度錯誤</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Base.py" line="830"/>
@@ -1634,6 +1619,21 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <location filename="../../../Path/Op/Base.py" line="839"/>
         <source>Cycletime Error</source>
         <translation>週期錯誤</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Base.py" line="860"/>
+        <source>Base object %s.%s already in the list</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Base.py" line="860"/>
+        <source>Tool Feedrate Error</source>
+        <translation type="unfinished">Tool Feedrate Error</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Base.py" line="870"/>
+        <source>Base object %s.%s rejected by operation</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Op/CircularHoleBase.py" line="115"/>
@@ -2557,12 +2557,6 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="71"/>
-        <location filename="../../../Path/Main/Gui/Job.py" line="1632"/>
-        <source>Warning</source>
-        <translation>警告</translation>
-    </message>
-    <message>
         <location filename="../../../Path/Main/Gui/Job.py" line="1633"/>
         <source>Please add one.</source>
         <translation type="unfinished"></translation>
@@ -2598,6 +2592,23 @@ For example:
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="71"/>
+        <location filename="../../../Path/Main/Gui/Job.py" line="1632"/>
+        <source>Warning</source>
+        <translation>警告</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="73"/>
+        <location filename="../../../Path/Main/Gui/Job.py" line="1634"/>
+        <source>Ok</source>
+        <translation>確認</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="75"/>
+        <source>Don&apos;t Show This Anymore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../Path/Main/Gui/JobDlg.py" line="84"/>
         <source>Solids</source>
         <translation>固體</translation>
@@ -2611,17 +2622,6 @@ For example:
         <location filename="../../../Path/Main/Gui/JobDlg.py" line="86"/>
         <source>Warning: Incompatible Unit Schema</source>
         <translation type="unfinished">Warning: Incompatible Unit Schema</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="73"/>
-        <location filename="../../../Path/Main/Gui/Job.py" line="1634"/>
-        <source>Ok</source>
-        <translation>確認</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="75"/>
-        <source>Don&apos;t Show This Anymore</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Main/Gui/JobDlg.py" line="118"/>
@@ -8589,6 +8589,16 @@ Aborting op creation</source>
 <context>
     <name>Workbench</name>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="53"/>
+        <source>CAM</source>
+        <translation>電腦輔助製造CAM</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="54"/>
+        <source>CAM workbench</source>
+        <translation>電腦輔助製造工作台</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="185"/>
         <source>Project Setup</source>
         <translation>專案設定</translation>
@@ -8645,16 +8655,6 @@ Aborting op creation</source>
         <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="248"/>
         <source>Utils</source>
         <translation>實用工具</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="53"/>
-        <source>CAM</source>
-        <translation>電腦輔助製造CAM</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="54"/>
-        <source>CAM workbench</source>
-        <translation>電腦輔助製造工作台</translation>
     </message>
 </context>
 <context>

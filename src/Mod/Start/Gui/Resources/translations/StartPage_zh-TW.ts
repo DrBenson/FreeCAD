@@ -74,21 +74,6 @@
         <translation>開始頁選項</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="42"/>
-        <source>Contents</source>
-        <translation>內容</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="26"/>
-        <source>Show only FreeCAD files in additional folder</source>
-        <translation>僅顯示附加資料夾中的 FreeCAD 文件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="55"/>
-        <source>An optional custom folder to be displayed on the Start page.</source>
-        <translation>要顯示在起始頁上的可選自訂資料夾.</translation>
-    </message>
-    <message>
         <location filename="../../DlgStartPreferences.ui" line="20"/>
         <source>Start page template</source>
         <translation>開始頁樣版</translation>
@@ -99,36 +84,19 @@
         <translation>將使用可選的 HTML 模板，而不是預設的起始頁.</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="48"/>
-        <source>Show forum</source>
-        <translation>顯示論壇</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="55"/>
-        <source>Show examples folder contents</source>
-        <translation>顯示範例的資料夾內容</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="91"/>
-        <source>If this is checked, the latest posts from the FreeCAD forum will be displayed on the Activity tab</source>
-        <translation>如果這個被點取, 最後面貼在FreeCAD論壇討論, 將會顯示在活動的分頁</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="26"/>
-        <source>Show additional folder contents</source>
-        <translation>顯示其他資料夾內容</translation>
-    </message>
-    <message>
         <location filename="../../DlgStartPreferences.ui" line="33"/>
         <source>Workbench to switch to after loading a file from the Start page, only used if Start is the start up workbench</source>
         <translation>從「開始」頁面載入檔案後切換到的工作台，僅在「開始」是啟動工作台時使用</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="47"/>
-        <source>An optional custom folder to be displayed on the Start page.
-By using &quot;;;&quot; to separate paths, you can add several folders here.</source>
-        <translation>要顯示在起始頁上的可選自訂資料夾.
-透過使用 &quot;;;&quot; 來分隔路徑，您可以在此處新增多個資料夾.</translation>
+        <location filename="../../DlgStartPreferences.ui" line="42"/>
+        <source>Contents</source>
+        <translation>內容</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="48"/>
+        <source>Show forum</source>
+        <translation>顯示論壇</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="62"/>
@@ -136,24 +104,9 @@ By using &quot;;;&quot; to separate paths, you can add several folders here.</so
         <translation>顯示額外的資料夾</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="69"/>
-        <source>If you want the examples to show on the first page</source>
-        <translation>如果你要範例顯示在第一頁</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="85"/>
-        <source>If the additional folder contents should include only .FCStd files</source>
-        <translation>如果附加資料夾內容應僅包含 .FCStd 文件</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="601"/>
-        <source>Options</source>
-        <translation>選項</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="614"/>
-        <source>If checked, will automatically close the Start page when FreeCAD launches</source>
-        <translation>如果選中，將在 FreeCAD 啟動時自動關閉起始頁</translation>
+        <location filename="../../DlgStartPreferences.ui" line="91"/>
+        <source>If this is checked, the latest posts from the FreeCAD forum will be displayed on the Activity tab</source>
+        <translation>如果這個被點取, 最後面貼在FreeCAD論壇討論, 將會顯示在活動的分頁</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="110"/>
@@ -348,19 +301,9 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <translation>如果選擇此選項，「新檔案」圖示將顯示漸層圖示而不是普通圖示</translation>
     </message>
     <message>
-        <location filename="../../DlgStartPreferences.ui" line="607"/>
-        <source>Choose which workbench to switch to after the program launches</source>
-        <translation>選擇程式啟動後要切換到的工作台</translation>
-    </message>
-    <message>
         <location filename="../../DlgStartPreferences.ui" line="633"/>
         <source>Switch workbench after loading</source>
         <translation>切換工作台在載入後</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="640"/>
-        <source>Close start page after loading</source>
-        <translation>關閉開始頁在載入後</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="647"/>
@@ -371,6 +314,63 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <location filename="../../DlgStartPreferences.ui" line="654"/>
         <source>If application is started by opening a file, apply the two settings above</source>
         <translation>如果應用程式是透過開啟檔案啟動的，則套用上面的兩個設定</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="26"/>
+        <source>Show only FreeCAD files in additional folder</source>
+        <translation>僅顯示附加資料夾中的 FreeCAD 文件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="55"/>
+        <source>An optional custom folder to be displayed on the Start page.</source>
+        <translation>要顯示在起始頁上的可選自訂資料夾.</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="55"/>
+        <source>Show examples folder contents</source>
+        <translation>顯示範例的資料夾內容</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="26"/>
+        <source>Show additional folder contents</source>
+        <translation>顯示其他資料夾內容</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="47"/>
+        <source>An optional custom folder to be displayed on the Start page.
+By using &quot;;;&quot; to separate paths, you can add several folders here.</source>
+        <translation>要顯示在起始頁上的可選自訂資料夾.
+透過使用 &quot;;;&quot; 來分隔路徑，您可以在此處新增多個資料夾.</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="69"/>
+        <source>If you want the examples to show on the first page</source>
+        <translation>如果你要範例顯示在第一頁</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="85"/>
+        <source>If the additional folder contents should include only .FCStd files</source>
+        <translation>如果附加資料夾內容應僅包含 .FCStd 文件</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="601"/>
+        <source>Options</source>
+        <translation>選項</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="607"/>
+        <source>Choose which workbench to switch to after the program launches</source>
+        <translation>選擇程式啟動後要切換到的工作台</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="614"/>
+        <source>If checked, will automatically close the Start page when FreeCAD launches</source>
+        <translation>如果選中，將在 FreeCAD 啟動時自動關閉起始頁</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="640"/>
+        <source>Close start page after loading</source>
+        <translation>關閉開始頁在載入後</translation>
     </message>
 </context>
 <context>
