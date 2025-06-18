@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -2356,6 +2356,15 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <translation>插入一個檢視</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="299"/>
+        <source>Insert a View in current page.
+Selected objects, spreadsheets or Arch WB section planes will be added.
+Without a selection, a file browser lets you select a SVG or image file.</source>
+        <translation>在目前頁面中插入視圖.
+將會新增選取的物件、電子表格或 建築結構工作台(Arch) 剖面.
+無需選擇，文件瀏覽器可讓您選擇 SVG 或圖像檔案.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="305"/>
         <source>Insert a View in current page.
 Selected objects, spreadsheets or BIM section planes will be added.
@@ -2373,15 +2382,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="426"/>
         <source>Do not show this message again</source>
         <translation>不要再顯示此訊息</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="299"/>
-        <source>Insert a View in current page.
-Selected objects, spreadsheets or Arch WB section planes will be added.
-Without a selection, a file browser lets you select a SVG or image file.</source>
-        <translation>在目前頁面中插入視圖.
-將會新增選取的物件、電子表格或 建築結構工作台(Arch) 剖面.
-無需選擇，文件瀏覽器可讓您選擇 SVG 或圖像檔案.</translation>
     </message>
 </context>
 <context>
@@ -2432,6 +2432,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>儲存頁面為 DXF 格式</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="359"/>
+        <source>Create BIM View</source>
+        <translation>建立BIM檢視</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="365"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1709"/>
         <source>Create BIM view</source>
@@ -2466,11 +2471,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../Command.cpp" line="1117"/>
         <source>Create Clip</source>
         <translation>建立裁剪</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="359"/>
-        <source>Create BIM View</source>
-        <translation>建立BIM檢視</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1420"/>
@@ -2699,16 +2699,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../CommandDecorate.cpp" line="197"/>
         <source>Create GeomHatch</source>
         <translation>建立幾何填充(GeomHatch)</translation>
-    </message>
-    <message>
-        <location filename="../../CommandExtensionDims.cpp" line="105"/>
-        <source>TechDraw Insert Prefix</source>
-        <translation>工程圖 插入前置</translation>
-    </message>
-    <message>
-        <location filename="../../CommandExtensionDims.cpp" line="109"/>
-        <source>Insert Prefix</source>
-        <translation>插入前置</translation>
     </message>
     <message>
         <location filename="../../CommandExtensionDims.cpp" line="191"/>
@@ -3091,6 +3081,16 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCenterLine.cpp" line="406"/>
         <source>Create Centerline</source>
         <translation>建立中心線</translation>
+    </message>
+    <message>
+        <location filename="../../CommandExtensionDims.cpp" line="105"/>
+        <source>TechDraw Insert Prefix</source>
+        <translation>工程圖 插入前置</translation>
+    </message>
+    <message>
+        <location filename="../../CommandExtensionDims.cpp" line="109"/>
+        <source>Insert Prefix</source>
+        <translation>插入前置</translation>
     </message>
     <message>
         <location filename="../../TaskCenterLine.cpp" line="397"/>
@@ -6186,57 +6186,6 @@ Then you need to increase the tile limit.</source>
         <translation>圓</translation>
     </message>
     <message>
-        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="82"/>
-        <source>Show arc center marks in views</source>
-        <translation>在檢視中顯示弧中心標誌</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="85"/>
-        <source>Show Center Marks</source>
-        <translation>顯示中心標誌</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="441"/>
-        <source>If checked, the section annotation will be drawn on the Source view.  If unchecked, no section line, arrows or symbol will be shown in the Source view.</source>
-        <translation>如果選中，則將在原始檢視上繪製截面註釋. 如果未選中，則原始檢視中不會顯示任何剖面線、箭頭或符號.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="444"/>
-        <source>Show Section Line in Source View</source>
-        <translation>顯示剖面線於來源檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="800"/>
-        <source>Shape of line end caps.  The default (round) should almost
-always be the right choice.   Flat or square caps are useful 
-if you are planning to use a drawing as a 1:1 cutting guide.
-</source>
-        <translation>線端蓋的形狀. 預設(圓形)幾乎總是正確的選擇.
-如果您打算使用繪圖作為 1:1 切割指南，
-平頭或方形帽非常有用.
-</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="555"/>
-        <source>Shape of balloon annotations</source>
-        <translation>件號圓圈註解的形狀</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="576"/>
-        <source>If checked, the cut line will be drawn on the Source view.  If unchecked, only the change marks, arrows and symbols will be displayed.</source>
-        <translation>如果選中，將在原始檢視上繪製剪切線. 如果未選取中，則僅顯示更改標記、箭頭和符號.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="579"/>
-        <source>Include Cut Line in Section Annotation</source>
-        <translation>在剖面註釋中包括切割線</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="141"/>
-        <source>Style for balloon leader line ends</source>
-        <translation>件號圓圈焊接線終點的式樣</translation>
-    </message>
-    <message>
         <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="221"/>
         <source>Style for section lines</source>
         <translation>剖面線的式樣</translation>
@@ -6304,29 +6253,9 @@ if you are planning to use a drawing as a 1:1 cutting guide.
         <translation>ISO</translation>
     </message>
     <message>
-        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="361"/>
-        <source>Length of horizontal portion of Balloon leader</source>
-        <translation>件號圓圈焊接線水平部份長度</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="435"/>
-        <source>Balloon Leader Kink Length</source>
-        <translation>引出序號引線扭結長度</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="600"/>
-        <source>Broken View Break Type</source>
-        <translation>斷面檢視圖中斷類型</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="524"/>
-        <source>Restrict Filled Triangle line end to vertical or horizontal directions</source>
-        <translation>將填充三角形線的末端限制為垂直或水平方向</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="527"/>
-        <source>Balloon Orthogonal Triangle</source>
-        <translation>件號圓圈正交三角形</translation>
+        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="364"/>
+        <source>Ballon Leader Kink Length</source>
+        <translation>件號圓圈焊接線紐結長度</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="565"/>
@@ -6367,6 +6296,82 @@ if you are planning to use a drawing as a 1:1 cutting guide.
         <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="652"/>
         <source>Type for centerlines</source>
         <translation>中心線類型</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="82"/>
+        <source>Show arc center marks in views</source>
+        <translation>在檢視中顯示弧中心標誌</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="85"/>
+        <source>Show Center Marks</source>
+        <translation>顯示中心標誌</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="441"/>
+        <source>If checked, the section annotation will be drawn on the Source view.  If unchecked, no section line, arrows or symbol will be shown in the Source view.</source>
+        <translation>如果選中，則將在原始檢視上繪製截面註釋. 如果未選中，則原始檢視中不會顯示任何剖面線、箭頭或符號.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="444"/>
+        <source>Show Section Line in Source View</source>
+        <translation>顯示剖面線於來源檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="800"/>
+        <source>Shape of line end caps.  The default (round) should almost
+always be the right choice.   Flat or square caps are useful 
+if you are planning to use a drawing as a 1:1 cutting guide.
+</source>
+        <translation>線端蓋的形狀. 預設(圓形)幾乎總是正確的選擇.
+如果您打算使用繪圖作為 1:1 切割指南，
+平頭或方形帽非常有用.
+</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="555"/>
+        <source>Shape of balloon annotations</source>
+        <translation>件號圓圈註解的形狀</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="576"/>
+        <source>If checked, the cut line will be drawn on the Source view.  If unchecked, only the change marks, arrows and symbols will be displayed.</source>
+        <translation>如果選中，將在原始檢視上繪製剪切線. 如果未選取中，則僅顯示更改標記、箭頭和符號.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="579"/>
+        <source>Include Cut Line in Section Annotation</source>
+        <translation>在剖面註釋中包括切割線</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="141"/>
+        <source>Style for balloon leader line ends</source>
+        <translation>件號圓圈焊接線終點的式樣</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="361"/>
+        <source>Length of horizontal portion of Balloon leader</source>
+        <translation>件號圓圈焊接線水平部份長度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="435"/>
+        <source>Balloon Leader Kink Length</source>
+        <translation>引出序號引線扭結長度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="600"/>
+        <source>Broken View Break Type</source>
+        <translation>斷面檢視圖中斷類型</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="524"/>
+        <source>Restrict Filled Triangle line end to vertical or horizontal directions</source>
+        <translation>將填充三角形線的末端限制為垂直或水平方向</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="527"/>
+        <source>Balloon Orthogonal Triangle</source>
+        <translation>件號圓圈正交三角形</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="795"/>
@@ -6417,11 +6422,6 @@ if you are planning to use a drawing as a 1:1 cutting guide.
         <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="45"/>
         <source>Detail View Outline Shape</source>
         <translation>詳細檢視輪廓形狀</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="364"/>
-        <source>Ballon Leader Kink Length</source>
-        <translation>件號圓圈焊接線紐結長度</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="746"/>
@@ -9859,6 +9859,11 @@ You can pick further points to get line segments.</source>
         <translation>縮放頁面/自動/手動</translation>
     </message>
     <message>
+        <location filename="../../TaskProjGroup.ui" line="100"/>
+        <source>Custom Scale</source>
+        <translation>自訂比例</translation>
+    </message>
+    <message>
         <location filename="../../TaskProjGroup.ui" line="55"/>
         <location filename="../../TaskProjGroup.ui" line="78"/>
         <source>Page</source>
@@ -9873,11 +9878,6 @@ You can pick further points to get line segments.</source>
         <location filename="../../TaskProjGroup.ui" line="88"/>
         <source>Custom</source>
         <translation>自訂</translation>
-    </message>
-    <message>
-        <location filename="../../TaskProjGroup.ui" line="100"/>
-        <source>Custom Scale</source>
-        <translation>自訂比例</translation>
     </message>
     <message>
         <location filename="../../TaskProjGroup.ui" line="120"/>

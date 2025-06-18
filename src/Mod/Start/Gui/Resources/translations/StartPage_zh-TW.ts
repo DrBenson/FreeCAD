@@ -301,6 +301,11 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <translation>如果選擇此選項，「新檔案」圖示將顯示漸層圖示而不是普通圖示</translation>
     </message>
     <message>
+        <location filename="../../DlgStartPreferences.ui" line="607"/>
+        <source>Choose which workbench to switch to after the program launches</source>
+        <translation>選擇程式啟動後要切換到的工作台</translation>
+    </message>
+    <message>
         <location filename="../../DlgStartPreferences.ui" line="633"/>
         <source>Switch workbench after loading</source>
         <translation>切換工作台在載入後</translation>
@@ -356,11 +361,6 @@ By using &quot;;;&quot; to separate paths, you can add several folders here.</so
         <location filename="../../DlgStartPreferences.ui" line="601"/>
         <source>Options</source>
         <translation>選項</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="607"/>
-        <source>Choose which workbench to switch to after the program launches</source>
-        <translation>選擇程式啟動後要切換到的工作台</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="614"/>

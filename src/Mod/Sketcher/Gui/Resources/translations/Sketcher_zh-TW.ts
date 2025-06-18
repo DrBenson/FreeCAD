@@ -503,11 +503,6 @@
 <context>
     <name>CmdSketcherCompHorizontalVertical</name>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2605"/>
-        <source>Horizontal/Vertical</source>
-        <translation>水平/垂直</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2724"/>
         <source>Constrain horizontal/vertical</source>
         <translation>約束 水平/垂直</translation>
@@ -516,6 +511,11 @@
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2606"/>
         <source>Constrains a single line to either horizontal or vertical.</source>
         <translation>將單線限制為水平或垂直.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2605"/>
+        <source>Horizontal/Vertical</source>
+        <translation>水平/垂直</translation>
     </message>
 </context>
 <context>
@@ -706,11 +706,6 @@
 <context>
     <name>CmdSketcherConstrainHorVer</name>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2914"/>
-        <source>Horizontal/Vertical</source>
-        <translation>水平/垂直</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3034"/>
         <source>Constrain horizontal/vertical</source>
         <translation>約束 水平/垂直</translation>
@@ -719,6 +714,11 @@
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2915"/>
         <source>Constrains a single line to either horizontal or vertical, whichever is closer to current alignment.</source>
         <translation>將單行限制為水平或垂直，以更接近目前對齊方式為準.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2914"/>
+        <source>Horizontal/Vertical</source>
+        <translation>水平/垂直</translation>
     </message>
 </context>
 <context>
@@ -1788,11 +1788,6 @@ This will clear the &apos;Support&apos; property, if any.</source>
 <context>
     <name>CmdSketcherRotate</name>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2382"/>
-        <source>Polar transform</source>
-        <translation>極座標變換</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2390"/>
         <source>Rotate / Polar transform</source>
         <translation>旋轉 / 極座標變換</translation>
@@ -1801,6 +1796,11 @@ This will clear the &apos;Support&apos; property, if any.</source>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2383"/>
         <source>Rotate selected geometries, making n copies, enable creation of circular patterns.</source>
         <translation>旋轉選取的幾何圖形，製作 n 個備份，從而能夠建立圓形圖案.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2382"/>
+        <source>Polar transform</source>
+        <translation>極座標變換</translation>
     </message>
 </context>
 <context>
@@ -3043,21 +3043,6 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
         <translation>無法建立拋物線弧</translation>
     </message>
     <message>
-        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="124"/>
-        <source>Cannot add knot point</source>
-        <translation>無法新增結點</translation>
-    </message>
-    <message>
-        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="195"/>
-        <source>Cannot add internal alignment points</source>
-        <translation>無法新增內部對齊點</translation>
-    </message>
-    <message>
-        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="304"/>
-        <source>Error removing knot</source>
-        <translation>解結時出錯</translation>
-    </message>
-    <message>
         <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="614"/>
         <location filename="../../DrawSketchHandlerBSpline.h" line="518"/>
         <source>Error creating B-spline</source>
@@ -3223,6 +3208,21 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerSymmetry.h" line="148"/>
         <source>Failed to create symmetry</source>
         <translation>建立對稱失敗</translation>
+    </message>
+    <message>
+        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="124"/>
+        <source>Cannot add knot point</source>
+        <translation>無法新增結點</translation>
+    </message>
+    <message>
+        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="195"/>
+        <source>Cannot add internal alignment points</source>
+        <translation>無法新增內部對齊點</translation>
+    </message>
+    <message>
+        <location filename="../../DrawSketchHandlerBSplineByInterpolation.h" line="304"/>
+        <source>Error removing knot</source>
+        <translation>解結時出錯</translation>
     </message>
     <message>
         <location filename="../../DrawSketchHandlerBSpline.h" line="129"/>
@@ -3808,6 +3808,24 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation>圓角/倒角參數</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerFillet.h" line="483"/>
+        <source>%1 pick first edge or point</source>
+        <comment>Sketcher Fillet/Chamfer: hint</comment>
+        <translation>%1 選取第一個邊或點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerFillet.h" line="486"/>
+        <source>%1 pick second edge</source>
+        <comment>Sketcher Fillet/Chamfer: hint</comment>
+        <translation>%1 選取第二個邊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerFillet.h" line="490"/>
+        <source>%1 create fillet</source>
+        <comment>Sketcher Fillet/Chamfer: hint</comment>
+        <translation>%1 建立圓角</translation>
+    </message>
+    <message>
         <source>Dimensional constraint</source>
         <translation>尺度拘束</translation>
     </message>
@@ -4072,11 +4090,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation>對稱參數</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="447"/>
-        <source>BSpline parameters</source>
-        <translation>B雲形線屬性參數</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="453"/>
         <source>B-spline parameters</source>
         <translation>B雲形線屬性參數</translation>
@@ -4170,6 +4183,47 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerSlot.h" line="703"/>
         <source>%1 set slot radius</source>
         <translation>%1 設定槽半徑</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerCarbonCopy.h" line="226"/>
+        <source>%1 pick sketch to copy</source>
+        <comment>Sketcher CarbonCopy: hint</comment>
+        <translation>%1 選取要複製的草圖</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerExtend.h" line="407"/>
+        <source>%1 pick edge to extend</source>
+        <comment>Sketcher Extend: hint</comment>
+        <translation>%1 選取要延伸的邊緣</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerExtend.h" line="410"/>
+        <source>%1 set extension length</source>
+        <comment>Sketcher Extend: hint</comment>
+        <translation>%1 設定延伸長度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerExternal.h" line="251"/>
+        <source>%1 pick external geometry</source>
+        <comment>Sketcher External: hint</comment>
+        <translation>%1 選取外部幾何</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerSplitting.h" line="203"/>
+        <source>%1 pick location on edge to split</source>
+        <comment>Sketcher Splitting: hint</comment>
+        <translation>%1 選取邊緣的位置進行分割</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerTrimming.h" line="215"/>
+        <source>%1 pick edge to trim</source>
+        <comment>Sketcher Trimming: hint</comment>
+        <translation>%1 選擇要修剪的邊緣</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="447"/>
+        <source>BSpline parameters</source>
+        <translation>B雲形線屬性參數</translation>
     </message>
     <message>
         <source>None of the selected points were constrained onto the respective curves, because they are parts of the same element, because they are both external geometry, or because the edge is not eligible.</source>
@@ -5323,6 +5377,11 @@ reflected on copies</source>
 &apos;高級求解器控制&apos; 可調整求解器設定</translation>
     </message>
     <message>
+        <location filename="../../SketcherSettings.ui" line="20"/>
+        <source>Task Panel Widgets</source>
+        <translation>工作面板小工具</translation>
+    </message>
+    <message>
         <location filename="../../SketcherSettings.ui" line="30"/>
         <source>Show section &apos;Advanced solver control&apos;</source>
         <translation>顯示“進階解算器控制”部分</translation>
@@ -5553,21 +5612,6 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
         <translation>當沒有視覺刻度指示時</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="170"/>
-        <source>Disabled</source>
-        <translation>已停用</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="171"/>
-        <source>Only dimensional</source>
-        <translation>只有尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="172"/>
-        <source>All</source>
-        <translation>全部</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="224"/>
         <source>None</source>
         <translation>無</translation>
@@ -5583,9 +5627,19 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
         <translation>位置及尺寸標註</translation>
     </message>
     <message>
-        <location filename="../../SketcherSettings.ui" line="20"/>
-        <source>Task Panel Widgets</source>
-        <translation>工作面板小工具</translation>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="170"/>
+        <source>Disabled</source>
+        <translation>已停用</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="171"/>
+        <source>Only dimensional</source>
+        <translation>只有尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="172"/>
+        <source>All</source>
+        <translation>全部</translation>
     </message>
     <message>
         <source>Allow to leave sketch edit mode when pressing Esc button</source>
@@ -8441,11 +8495,6 @@ Instead equal constraints are applied between the original objects and their cop
 <context>
     <name>TaskSketcherTool_c1_translate</name>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerTranslate.h" line="485"/>
-        <source>Clone constraints</source>
-        <translation>複製約束</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerTranslate.h" line="488"/>
         <source>Apply equal constraints</source>
         <translation>套用相等拘束</translation>
@@ -8461,6 +8510,11 @@ Instead equal constraints are applied between the original objects and their cop
 Instead equal constraints are applied between the original objects and their copies.</source>
         <translation>如果選擇此選項，則從操作中排除尺寸約束.
 相反，在原始物件及其複製品之間套用相等的約束.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerTranslate.h" line="485"/>
+        <source>Clone constraints</source>
+        <translation>複製約束</translation>
     </message>
 </context>
 <context>
@@ -8508,14 +8562,14 @@ Instead equal constraints are applied between the original objects and their cop
 <context>
     <name>TaskSketcherTool_p4_rotate</name>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRotate.h" line="511"/>
-        <source>Copies &apos;U&apos;/&apos;J&apos;</source>
-        <translation>複製品 &apos;U&apos;/&apos;J&apos;</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRotate.h" line="512"/>
         <source>Copies (+&apos;U&apos;/ -&apos;J&apos;)</source>
         <translation>複製品 (+&apos;U&apos;/ -&apos;J&apos;)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRotate.h" line="511"/>
+        <source>Copies &apos;U&apos;/&apos;J&apos;</source>
+        <translation>複製品 &apos;U&apos;/&apos;J&apos;</translation>
     </message>
 </context>
 <context>
@@ -8529,11 +8583,6 @@ Instead equal constraints are applied between the original objects and their cop
 <context>
     <name>ToolWidgetManager_p4</name>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerPolygon.h" line="301"/>
-        <source>Sides &apos;U&apos;/&apos;J&apos;</source>
-        <translation>側面 &apos;U&apos;/&apos;J&apos;</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerPolygon.h" line="307"/>
         <source>Sides (+&apos;U&apos;/ -&apos;J&apos;)</source>
         <translation>側面 (+&apos;U&apos;/ -&apos;J&apos;)</translation>
@@ -8542,6 +8591,11 @@ Instead equal constraints are applied between the original objects and their cop
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="880"/>
         <source>Degree (+&apos;U&apos;/ -&apos;J&apos;)</source>
         <translation>度 (+&apos;U&apos;/-&apos;J&apos;)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerPolygon.h" line="301"/>
+        <source>Sides &apos;U&apos;/&apos;J&apos;</source>
+        <translation>側面 &apos;U&apos;/&apos;J&apos;</translation>
     </message>
 </context>
 <context>
