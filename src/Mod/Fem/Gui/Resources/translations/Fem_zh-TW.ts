@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -1370,11 +1370,6 @@
         <translation>ºC</translation>
     </message>
     <message>
-        <location filename="../../TaskPanelConstraintTemperature.ui" line="26"/>
-        <source>Select the vertices, lines and surfaces: </source>
-        <translation>選擇頂點、線和面: </translation>
-    </message>
-    <message>
         <location filename="../../TaskPanelConstraintTemperature.ui" line="81"/>
         <source>Add</source>
         <translation>新增</translation>
@@ -1389,6 +1384,11 @@
         <source>Insert component&apos;s
  initial temperature:</source>
         <translation>插入元件的初始溫度:</translation>
+    </message>
+    <message>
+        <location filename="../../TaskPanelConstraintTemperature.ui" line="26"/>
+        <source>Select the vertices, lines and surfaces: </source>
+        <translation>選擇頂點、線和面: </translation>
     </message>
     <message>
         <source>25</source>
@@ -2856,6 +2856,11 @@ Specify another file please.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../DlgSettingsFemElmer.ui" line="0"/>
+        <source>Multi-CPU core support:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../DlgSettingsFemElmer.ui" line="55"/>
         <location filename="../../DlgSettingsFemElmer.ui" line="134"/>
         <source>Search in known binary directories</source>
@@ -2979,11 +2984,6 @@ Therefore an executable with the suffix &apos;_mpi.exe&apos; is required.</sourc
         <location filename="../../DlgSettingsFemElmerImp.cpp" line="126"/>
         <source>Wrong Elmer setting: You use more than one CPU core.
 Therefore an executable with the suffix &apos;_mpi&apos; is required.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DlgSettingsFemElmer.ui" line="0"/>
-        <source>Multi-CPU core support:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3989,11 +3989,6 @@ Specify another file please.</source>
 <context>
     <name>FemGui::TaskFemConstraintDisplacement</name>
     <message>
-        <location filename="../../TaskFemConstraintDisplacement.cpp" line="345"/>
-        <source>Only one type of selection (vertex,face or edge) per analysis feature allowed!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../TaskFemConstraintDisplacement.cpp" line="373"/>
         <location filename="../../TaskFemConstraintDisplacement.cpp" line="382"/>
         <location filename="../../TaskFemConstraintDisplacement.cpp" line="408"/>
@@ -4022,6 +4017,11 @@ Specify another file please.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintDisplacement.cpp" line="364"/>
         <source>Only one type of selection (vertex, face or edge) per analysis feature allowed!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskFemConstraintDisplacement.cpp" line="345"/>
+        <source>Only one type of selection (vertex,face or edge) per analysis feature allowed!</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4489,6 +4489,11 @@ Specify another file please.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../TaskFemConstraintTransform.cpp" line="141"/>
+        <source>Constraint update error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskFemConstraintTransform.cpp" line="231"/>
         <location filename="../../TaskFemConstraintTransform.cpp" line="236"/>
         <location filename="../../TaskFemConstraintTransform.cpp" line="242"/>
@@ -4559,11 +4564,6 @@ Specify another file please.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintTransform.cpp" line="387"/>
         <source>Only transformable faces can be selected! Apply a displacement boundary condition or a force load to a face first then apply local coordinate system to the face.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskFemConstraintTransform.cpp" line="141"/>
-        <source>Constraint update error</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4648,6 +4648,14 @@ Specify another file please.</source>
     <message>
         <location filename="../../TaskPostBoxes.cpp" line="334"/>
         <source>Result display options</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>FemGui::TaskPostExtraction</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/TaskPostExtraction.cpp" line="56"/>
+        <source>Data and extractions</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4801,66 +4809,6 @@ Specify another file please.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/Material.ui" line="210"/>
-        <source>Mechanical Properties</source>
-        <translation>機械力學屬性</translation>
-    </message>
-    <message>
-        <location filename="../ui/Material.ui" line="221"/>
-        <source>Young&apos;s Modulus:</source>
-        <translation>楊氏模數(Young&apos;s Modulus):</translation>
-    </message>
-    <message>
-        <location filename="../ui/Material.ui" line="265"/>
-        <source>Poisson Ratio:</source>
-        <translation>泊松比(Poisson Ratio):</translation>
-    </message>
-    <message>
-        <location filename="../ui/Material.ui" line="314"/>
-        <source>Fluidic Properties</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="201"/>
-        <source>Kinematic Viscosity:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="392"/>
-        <source>Thermal Properties</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/Material.ui" line="391"/>
-        <source>Thermal Conductivity:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/Material.ui" line="435"/>
-        <source>Expansion Coefficient:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="343"/>
-        <source>Reference Temperature:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="346"/>
-        <source>Reference temperature for thermal expansion</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="497"/>
-        <source>Specific Heat Capacity:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="123"/>
-        <source>Use this task panel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../ui/Material.ui" line="34"/>
         <source>Category</source>
         <translation>類別</translation>
@@ -4911,9 +4859,29 @@ Specify another file please.</source>
         <translation>0 kg/m^3</translation>
     </message>
     <message>
+        <location filename="../ui/Material.ui" line="210"/>
+        <source>Mechanical Properties</source>
+        <translation>機械力學屬性</translation>
+    </message>
+    <message>
+        <location filename="../ui/Material.ui" line="221"/>
+        <source>Young&apos;s Modulus:</source>
+        <translation>楊氏模數(Young&apos;s Modulus):</translation>
+    </message>
+    <message>
         <location filename="../ui/Material.ui" line="240"/>
         <source>0 Pa</source>
         <translation>0 Pa</translation>
+    </message>
+    <message>
+        <location filename="../ui/Material.ui" line="265"/>
+        <source>Poisson Ratio:</source>
+        <translation>泊松比(Poisson Ratio):</translation>
+    </message>
+    <message>
+        <location filename="../ui/Material.ui" line="314"/>
+        <source>Fluidic Properties</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/Material.ui" line="325"/>
@@ -4929,11 +4897,6 @@ Specify another file please.</source>
         <location filename="../ui/Material.ui" line="380"/>
         <source>Thermal  Properties</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../ui/Material.ui" line="410"/>
-        <source>0 W/m/K</source>
-        <translation>0 W/m/K</translation>
     </message>
     <message>
         <location filename="../ui/Material.ui" line="454"/>
@@ -4954,6 +4917,51 @@ Specify another file please.</source>
     <message>
         <location filename="../ui/Material.ui" line="523"/>
         <source>Vol Expansion Coeff</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="201"/>
+        <source>Kinematic Viscosity:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="392"/>
+        <source>Thermal Properties</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/Material.ui" line="391"/>
+        <source>Thermal Conductivity:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/Material.ui" line="410"/>
+        <source>0 W/m/K</source>
+        <translation>0 W/m/K</translation>
+    </message>
+    <message>
+        <location filename="../ui/Material.ui" line="435"/>
+        <source>Expansion Coefficient:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="343"/>
+        <source>Reference Temperature:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="346"/>
+        <source>Reference temperature for thermal expansion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="497"/>
+        <source>Specific Heat Capacity:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/Material.ui" line="123"/>
+        <source>Use this task panel</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5109,6 +5117,11 @@ Specify another file please.</source>
         <location filename="../ui/ElementFluid1D.ui" line="0"/>
         <source>0 mm^2</source>
         <translation>0 mm^2</translation>
+    </message>
+    <message>
+        <location filename="../ui/ElementFluid1D.ui" line="0"/>
+        <source>Head Loss[mm]</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/ElementFluid1D.ui" line="85"/>
@@ -5684,6 +5697,11 @@ Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../ui/ElementGeometry1D.ui" line="0"/>
+        <source>Diameter:   </source>
+        <translation>直徑:   </translation>
+    </message>
+    <message>
         <location filename="../ui/ElementGeometry1D.ui" line="14"/>
         <source>Beam section parameter</source>
         <translation type="unfinished"></translation>
@@ -5920,14 +5938,51 @@ Note: has no effect if a solid was selected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../BoxWidget.ui" line="0"/>
+        <location filename="../../CylinderWidget.ui" line="0"/>
         <location filename="../ui/ElementFluid1D.ui" line="0"/>
-        <source>Head Loss[mm]</source>
+        <location filename="../../TaskPostContours.ui" line="0"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramFieldAppEdit.ui" line="34"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramIndexAppEdit.ui" line="34"/>
+        <source>Field:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/ElementGeometry1D.ui" line="0"/>
-        <source>Diameter:   </source>
-        <translation>直徑:   </translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramFieldAppEdit.ui" line="61"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotFieldAppEdit.ui" line="86"/>
+        <source>Frames:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramFieldAppEdit.ui" line="68"/>
+        <source>One field for each frames</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramIndexAppEdit.ui" line="61"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotIndexAppEdit.ui" line="59"/>
+        <source>Index:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotFieldAppEdit.ui" line="32"/>
+        <source>X Field:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotFieldAppEdit.ui" line="59"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotIndexAppEdit.ui" line="32"/>
+        <source>Y Field:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotFieldAppEdit.ui" line="93"/>
+        <source>One Y field for each frames</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/CurrentDensity.ui" line="0"/>
@@ -5973,14 +6028,6 @@ Note: for 2D only setting for x is possible,
         <location filename="../ui/ElementGeometry1D.ui" line="0"/>
         <source>Height:     </source>
         <translation>高度:     </translation>
-    </message>
-    <message>
-        <location filename="../../BoxWidget.ui" line="0"/>
-        <location filename="../../CylinderWidget.ui" line="0"/>
-        <location filename="../ui/ElementFluid1D.ui" line="0"/>
-        <location filename="../../TaskPostContours.ui" line="0"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
     <message>
         <source>Constraint Properties</source>
@@ -6226,11 +6273,6 @@ Note: for 2D only setting for x is possible,
 <context>
     <name>PlaneWidget</name>
     <message>
-        <location filename="../../PlaneWidget.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../PlaneWidget.ui" line="29"/>
         <source>Origin</source>
         <translation>原點</translation>
@@ -6251,6 +6293,94 @@ Note: for 2D only setting for x is possible,
         <location filename="../../PlaneWidget.ui" line="115"/>
         <source>Normal</source>
         <translation>垂直</translation>
+    </message>
+    <message>
+        <location filename="../../PlaneWidget.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+</context>
+<context>
+    <name>PostHistogramEdit</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramFieldViewEdit.ui" line="14"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotFieldViewEdit.ui" line="14"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostTableFieldViewEdit.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramFieldViewEdit.ui" line="40"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotFieldViewEdit.ui" line="75"/>
+        <source>Outline draw style (None does not draw outlines)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramFieldViewEdit.ui" line="44"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramFieldViewEdit.ui" line="81"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotFieldViewEdit.ui" line="51"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotFieldViewEdit.ui" line="79"/>
+        <source>None</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramFieldViewEdit.ui" line="58"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotFieldViewEdit.ui" line="129"/>
+        <source>Width of all lines (outline and hatch)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramFieldViewEdit.ui" line="77"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotFieldViewEdit.ui" line="47"/>
+        <source>Hatch pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramFieldViewEdit.ui" line="89"/>
+        <source>Lines:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramFieldViewEdit.ui" line="102"/>
+        <source>Density of hatch pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramFieldViewEdit.ui" line="112"/>
+        <source>Bars:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramFieldViewEdit.ui" line="122"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotFieldViewEdit.ui" line="62"/>
+        <source>Legend:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramFieldViewEdit.ui" line="135"/>
+        <source>Color of all lines (bar outline and hatches)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostHistogramFieldViewEdit.ui" line="148"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotFieldViewEdit.ui" line="100"/>
+        <source>Color of the bars in histogram</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotFieldViewEdit.ui" line="34"/>
+        <source>Marker:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostLineplotFieldViewEdit.ui" line="87"/>
+        <source>Line:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/PostTableFieldViewEdit.ui" line="42"/>
+        <source>Name:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -6600,21 +6730,6 @@ Note: for 2D only setting for x is possible,
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ui/ResultShow.ui" line="0"/>
-        <source>Displacement</source>
-        <translation>位移</translation>
-    </message>
-    <message>
-        <location filename="../ui/ResultShow.ui" line="0"/>
-        <source>Factor:</source>
-        <translation>因子:</translation>
-    </message>
-    <message>
-        <location filename="../ui/ResultShow.ui" line="0"/>
-        <source>Slider max:</source>
-        <translation>變化最大值:</translation>
-    </message>
-    <message>
         <location filename="../ui/ResultShow.ui" line="14"/>
         <source>Show result</source>
         <translation>顯示結果</translation>
@@ -6781,6 +6896,21 @@ For possible variables, see the description box below.</source>
         <location filename="../ui/ResultShow.ui" line="0"/>
         <source>P1 - P3 # Max - Min Principal Stress</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../ui/ResultShow.ui" line="0"/>
+        <source>Displacement</source>
+        <translation>位移</translation>
+    </message>
+    <message>
+        <location filename="../ui/ResultShow.ui" line="0"/>
+        <source>Factor:</source>
+        <translation>因子:</translation>
+    </message>
+    <message>
+        <location filename="../ui/ResultShow.ui" line="0"/>
+        <source>Slider max:</source>
+        <translation>變化最大值:</translation>
     </message>
 </context>
 <context>
@@ -6952,18 +7082,18 @@ For possible variables, see the description box below.</source>
 <context>
     <name>Std_Delete</name>
     <message>
-        <location filename="../../ViewProviderAnalysis.cpp" line="222"/>
-        <source>The analysis is not empty, therefore the
-following referencing objects might be lost:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../ViewProviderAnalysis.cpp" line="230"/>
         <location filename="../../ViewProviderFemPostFunction.cpp" line="153"/>
         <location filename="../../ViewProviderSolver.cpp" line="74"/>
         <location filename="../../ViewProviderFemPostObject.cpp" line="684"/>
         <source>Object dependencies</source>
         <translation>物件相依</translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderAnalysis.cpp" line="222"/>
+        <source>The analysis is not empty, therefore the
+following referencing objects might be lost:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../ViewProviderFemPostFunction.cpp" line="145"/>
@@ -6991,14 +7121,14 @@ following referencing objects might be lost:</source>
         <translation>網格:</translation>
     </message>
     <message>
-        <location filename="../../TaskAnalysisInfo.ui" line="0"/>
-        <source>Constraints</source>
-        <translation>約束條件</translation>
-    </message>
-    <message>
         <location filename="../../TaskAnalysisInfo.ui" line="48"/>
         <source>Analysis features</source>
         <translation>分析特徵</translation>
+    </message>
+    <message>
+        <location filename="../../TaskAnalysisInfo.ui" line="0"/>
+        <source>Constraints</source>
+        <translation>約束條件</translation>
     </message>
     <message>
         <source>Form</source>
@@ -8436,11 +8566,6 @@ used for the Elmer solver</source>
 <context>
     <name>TaskPostDisplay</name>
     <message>
-        <location filename="../../TaskPostDisplay.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../TaskPostDisplay.ui" line="28"/>
         <source>Mode</source>
         <translation>模式</translation>
@@ -8518,6 +8643,47 @@ used for the Elmer solver</source>
         <location filename="../../TaskPostDisplay.ui" line="162"/>
         <source>Transparency</source>
         <translation>透明度</translation>
+    </message>
+    <message>
+        <location filename="../../TaskPostDisplay.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+</context>
+<context>
+    <name>TaskPostExtraction</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostExtraction.ui" line="14"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/TaskPostExtraction.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostExtraction.ui" line="37"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/TaskPostExtraction.ui" line="22"/>
+        <source>Data Summary</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostExtraction.ui" line="44"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/TaskPostExtraction.ui" line="29"/>
+        <source>Show Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/TaskPostExtraction.ui" line="62"/>
+        <source>Data used in:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/TaskPostExtraction.ui" line="92"/>
+        <source>Add data to</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/TaskPostExtraction.ui" line="107"/>
+        <source>Create and add</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -8713,14 +8879,86 @@ used for the Elmer solver</source>
         <source>Uniform Sampling</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostHistogram.ui" line="40"/>
+        <source>Bins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostHistogram.ui" line="69"/>
+        <source>Type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostHistogram.ui" line="94"/>
+        <source>Cumulative</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostHistogram.ui" line="103"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostLineplot.ui" line="64"/>
+        <source>Legend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostHistogram.ui" line="112"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostLineplot.ui" line="47"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostLineplot.ui" line="57"/>
+        <source>Show</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostHistogram.ui" line="138"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostLineplot.ui" line="117"/>
+        <source>Labels</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostHistogram.ui" line="156"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostLineplot.ui" line="135"/>
+        <source>Y Axis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostHistogram.ui" line="169"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostLineplot.ui" line="148"/>
+        <source>X Axis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostHistogram.ui" line="179"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostLineplot.ui" line="158"/>
+        <source>Title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostHistogram.ui" line="192"/>
+        <source>Visuals</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostHistogram.ui" line="208"/>
+        <source>Hatch Line Width</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostHistogram.ui" line="215"/>
+        <source>Bar width</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostLineplot.ui" line="40"/>
+        <source>Grid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostLineplot.ui" line="84"/>
+        <source>Scale</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TaskPostScalarClip</name>
-    <message>
-        <location filename="../../TaskPostScalarClip.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
     <message>
         <location filename="../../TaskPostScalarClip.ui" line="28"/>
         <source>Scalar</source>
@@ -8775,6 +9013,11 @@ used for the Elmer solver</source>
         <location filename="../../TaskPostScalarClip.ui" line="209"/>
         <source>Clip inside out</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskPostScalarClip.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>

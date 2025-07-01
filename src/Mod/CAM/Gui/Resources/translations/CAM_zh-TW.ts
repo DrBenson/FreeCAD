@@ -8589,6 +8589,16 @@ Aborting op creation</source>
 <context>
     <name>Workbench</name>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="53"/>
+        <source>CAM</source>
+        <translation>電腦輔助製造CAM</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="54"/>
+        <source>CAM workbench</source>
+        <translation>電腦輔助製造工作台</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="185"/>
         <source>Project Setup</source>
         <translation>專案設定</translation>
@@ -8645,16 +8655,6 @@ Aborting op creation</source>
         <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="248"/>
         <source>Utils</source>
         <translation>實用工具</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="53"/>
-        <source>CAM</source>
-        <translation>電腦輔助製造CAM</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="54"/>
-        <source>CAM workbench</source>
-        <translation>電腦輔助製造工作台</translation>
     </message>
 </context>
 <context>

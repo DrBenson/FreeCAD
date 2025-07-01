@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -2356,15 +2356,6 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <translation>插入一個檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="299"/>
-        <source>Insert a View in current page.
-Selected objects, spreadsheets or Arch WB section planes will be added.
-Without a selection, a file browser lets you select a SVG or image file.</source>
-        <translation>在目前頁面中插入視圖.
-將會新增選取的物件、電子表格或 建築結構工作台(Arch) 剖面.
-無需選擇，文件瀏覽器可讓您選擇 SVG 或圖像檔案.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="305"/>
         <source>Insert a View in current page.
 Selected objects, spreadsheets or BIM section planes will be added.
@@ -2382,6 +2373,15 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="426"/>
         <source>Do not show this message again</source>
         <translation>不要再顯示此訊息</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="299"/>
+        <source>Insert a View in current page.
+Selected objects, spreadsheets or Arch WB section planes will be added.
+Without a selection, a file browser lets you select a SVG or image file.</source>
+        <translation>在目前頁面中插入視圖.
+將會新增選取的物件、電子表格或 建築結構工作台(Arch) 剖面.
+無需選擇，文件瀏覽器可讓您選擇 SVG 或圖像檔案.</translation>
     </message>
 </context>
 <context>
@@ -2430,11 +2430,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../MDIViewPage.cpp" line="734"/>
         <source>Save page to dxf</source>
         <translation>儲存頁面為 DXF 格式</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="359"/>
-        <source>Create BIM View</source>
-        <translation>建立BIM檢視</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="365"/>
@@ -2699,6 +2694,16 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../CommandDecorate.cpp" line="197"/>
         <source>Create GeomHatch</source>
         <translation>建立幾何填充(GeomHatch)</translation>
+    </message>
+    <message>
+        <location filename="../../CommandExtensionDims.cpp" line="105"/>
+        <source>TechDraw Insert Prefix</source>
+        <translation>工程圖 插入前置</translation>
+    </message>
+    <message>
+        <location filename="../../CommandExtensionDims.cpp" line="109"/>
+        <source>Insert Prefix</source>
+        <translation>插入前置</translation>
     </message>
     <message>
         <location filename="../../CommandExtensionDims.cpp" line="191"/>
@@ -3083,14 +3088,9 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>建立中心線</translation>
     </message>
     <message>
-        <location filename="../../CommandExtensionDims.cpp" line="105"/>
-        <source>TechDraw Insert Prefix</source>
-        <translation>工程圖 插入前置</translation>
-    </message>
-    <message>
-        <location filename="../../CommandExtensionDims.cpp" line="109"/>
-        <source>Insert Prefix</source>
-        <translation>插入前置</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="359"/>
+        <source>Create BIM View</source>
+        <translation>建立BIM檢視</translation>
     </message>
     <message>
         <location filename="../../TaskCenterLine.cpp" line="397"/>
@@ -7513,14 +7513,34 @@ for ProjectionGroups</source>
         <translation>對齊檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="938"/>
-        <source>View Snapping Factor</source>
-        <translation>檢視捕捉因數</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="910"/>
+        <source>Check this box if you want detail view highlights to snap to the nearest vertex when dragging in TaskDetail.</source>
+        <translation>如果您希望在「任務詳細資料」中拖曳時，詳細檢視的高亮部分會緊貼最近的頂點，請勾選此方塊.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="913"/>
+        <source>Snap Detail Highlights</source>
+        <translation>對齊詳細亮點</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="945"/>
         <source>When dragging a view, if it is within this fraction of view size of the correct alignment, it will snap into alignment.</source>
         <translation>拖動檢視時，如果它位於正確對齊的檢視大小的捕捉因數範圍內，它將對齊捕捉點.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="938"/>
+        <source>View Snapping Factor</source>
+        <translation>檢視捕捉因數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="968"/>
+        <source>Highlight SnappingFactor</source>
+        <translation>高亮強調顯示擷取因素</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="975"/>
+        <source>Controls the snap radius for highlights. Vertex must be within this factor times the highlight size to be a snap target.</source>
+        <translation>控制高亮顯示的抓取半徑. 頂點必須在此因數乘以高亮尺寸的範圍內，才能成為抓取目標.</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawGeneral.ui" line="879"/>
