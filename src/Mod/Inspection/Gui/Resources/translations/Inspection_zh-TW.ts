@@ -31,6 +31,16 @@
         <source>Get distance information</source>
         <translation>取得距離訊息</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Inspection/Gui/Command.cpp" line="75"/>
+        <source>Inspection…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Inspection/Gui/Command.cpp" line="76"/>
+        <source>Inspects distance information</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdVisualInspection</name>
@@ -49,6 +59,16 @@
         <location filename="../../Command.cpp" line="51"/>
         <source>Visual inspection</source>
         <translation>虛擬檢查</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Inspection/Gui/Command.cpp" line="49"/>
+        <source>Visual Inspection…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Inspection/Gui/Command.cpp" line="50"/>
+        <source>Inspects the objects visually</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -125,6 +145,11 @@
         <location filename="../../ViewProviderInspection.cpp" line="511"/>
         <source>Leave info mode</source>
         <translation>離開訊息模式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Inspection/Gui/ViewProviderInspection.cpp" line="564"/>
+        <source>Leave Info Mode</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../ViewProviderInspection.cpp" line="632"/>

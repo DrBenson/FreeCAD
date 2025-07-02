@@ -317,6 +317,11 @@
         <source>Insert Active View (3D View)</source>
         <translation>插入活動檢視(3D 檢視)</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/Command.cpp" line="696"/>
+        <source>Insert Active View</source>
+        <translation>插入活動檢視</translation>
+    </message>
 </context>
 <context>
     <name>CmdTechDrawAlignVertexesHorizontally</name>
@@ -2356,6 +2361,15 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <translation>插入一個檢視</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="299"/>
+        <source>Insert a View in current page.
+Selected objects, spreadsheets or Arch WB section planes will be added.
+Without a selection, a file browser lets you select a SVG or image file.</source>
+        <translation>在目前頁面中插入視圖.
+將會新增選取的物件、電子表格或 建築結構工作台(Arch) 剖面.
+無需選擇，文件瀏覽器可讓您選擇 SVG 或圖像檔案.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="305"/>
         <source>Insert a View in current page.
 Selected objects, spreadsheets or BIM section planes will be added.
@@ -2373,15 +2387,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="426"/>
         <source>Do not show this message again</source>
         <translation>不要再顯示此訊息</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="299"/>
-        <source>Insert a View in current page.
-Selected objects, spreadsheets or Arch WB section planes will be added.
-Without a selection, a file browser lets you select a SVG or image file.</source>
-        <translation>在目前頁面中插入視圖.
-將會新增選取的物件、電子表格或 建築結構工作台(Arch) 剖面.
-無需選擇，文件瀏覽器可讓您選擇 SVG 或圖像檔案.</translation>
     </message>
 </context>
 <context>
@@ -2466,6 +2471,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../Command.cpp" line="1117"/>
         <source>Create Clip</source>
         <translation>建立裁剪</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="359"/>
+        <source>Create BIM View</source>
+        <translation>建立BIM檢視</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1420"/>
@@ -2694,16 +2704,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../CommandDecorate.cpp" line="197"/>
         <source>Create GeomHatch</source>
         <translation>建立幾何填充(GeomHatch)</translation>
-    </message>
-    <message>
-        <location filename="../../CommandExtensionDims.cpp" line="105"/>
-        <source>TechDraw Insert Prefix</source>
-        <translation>工程圖 插入前置</translation>
-    </message>
-    <message>
-        <location filename="../../CommandExtensionDims.cpp" line="109"/>
-        <source>Insert Prefix</source>
-        <translation>插入前置</translation>
     </message>
     <message>
         <location filename="../../CommandExtensionDims.cpp" line="191"/>
@@ -3088,9 +3088,14 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>建立中心線</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="359"/>
-        <source>Create BIM View</source>
-        <translation>建立BIM檢視</translation>
+        <location filename="../../CommandExtensionDims.cpp" line="105"/>
+        <source>TechDraw Insert Prefix</source>
+        <translation>工程圖 插入前置</translation>
+    </message>
+    <message>
+        <location filename="../../CommandExtensionDims.cpp" line="109"/>
+        <source>Insert Prefix</source>
+        <translation>插入前置</translation>
     </message>
     <message>
         <location filename="../../TaskCenterLine.cpp" line="397"/>
@@ -4989,19 +4994,9 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>選擇一個符號</translation>
     </message>
     <message>
-        <location filename="../../TaskActiveView.cpp" line="86"/>
-        <source>ActiveView to TD View</source>
-        <translation>活動檢視至 TD 檢視</translation>
-    </message>
-    <message>
-        <location filename="../../TaskActiveView.cpp" line="97"/>
-        <source>No Main Window</source>
-        <translation>沒有主視窗</translation>
-    </message>
-    <message>
-        <location filename="../../TaskActiveView.cpp" line="98"/>
-        <source>Can not find the main window</source>
-        <translation>找不到主視窗</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskActiveView.cpp" line="219"/>
+        <source>Insert Active View</source>
+        <translation>插入活動檢視</translation>
     </message>
     <message>
         <location filename="../../TaskActiveView.cpp" line="132"/>
@@ -5291,6 +5286,21 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/AppMeasureGui.cpp" line="94"/>
         <source>Measure</source>
         <translation>測量</translation>
+    </message>
+    <message>
+        <location filename="../../TaskActiveView.cpp" line="86"/>
+        <source>ActiveView to TD View</source>
+        <translation>活動檢視至 TD 檢視</translation>
+    </message>
+    <message>
+        <location filename="../../TaskActiveView.cpp" line="97"/>
+        <source>No Main Window</source>
+        <translation>沒有主視窗</translation>
+    </message>
+    <message>
+        <location filename="../../TaskActiveView.cpp" line="98"/>
+        <source>Can not find the main window</source>
+        <translation>找不到主視窗</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotationImp.cpp" line="193"/>

@@ -3534,16 +3534,6 @@ Floor creation aborted.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ArchMaterial.py" line="123"/>
-        <source>Create material</source>
-        <translation>建立材質</translation>
-    </message>
-    <message>
-        <location filename="../../ArchMaterial.py" line="157"/>
-        <source>Create multi-material</source>
-        <translation>建立多重材質</translation>
-    </message>
-    <message>
         <location filename="../../ArchMaterial.py" line="826"/>
         <location filename="../../ArchMaterial.py" line="845"/>
         <location filename="../../ArchWindow.py" line="1739"/>
@@ -3569,16 +3559,6 @@ Floor creation aborted.</source>
     <message>
         <source>depends on the object</source>
         <translation>相依於物件</translation>
-    </message>
-    <message>
-        <location filename="../../ArchStructure.py" line="432"/>
-        <source>Drawing mode</source>
-        <translation>繪圖模式</translation>
-    </message>
-    <message>
-        <location filename="../../ArchStructure.py" line="489"/>
-        <source>Switch L/W</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../ArchStructure.py" line="835"/>
@@ -4452,6 +4432,26 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     </message>
     <message>
         <source>Press to retrieve the selected edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ArchMaterial.py" line="123"/>
+        <source>Create material</source>
+        <translation>建立材質</translation>
+    </message>
+    <message>
+        <location filename="../../ArchMaterial.py" line="157"/>
+        <source>Create multi-material</source>
+        <translation>建立多重材質</translation>
+    </message>
+    <message>
+        <location filename="../../ArchStructure.py" line="432"/>
+        <source>Drawing mode</source>
+        <translation>繪圖模式</translation>
+    </message>
+    <message>
+        <location filename="../../ArchStructure.py" line="489"/>
+        <source>Switch L/W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6822,6 +6822,26 @@ When dealing with native IFC objects, you can use FreeCAD properties name, ex: &
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="14"/>
+        <source>Classification manager</source>
+        <translation>分類管理</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="42"/>
+        <source>Objects &amp;&amp; Materials</source>
+        <translation>物體 &amp;&amp; 材質</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="48"/>
+        <source>Only visible objects</source>
+        <translation>僅可見物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="60"/>
+        <source>Sort by:</source>
+        <translation>排序依據:</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="68"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogIfcElements.ui" line="47"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogIfcProperties.ui" line="58"/>
@@ -8005,26 +8025,6 @@ Utils -&gt; Make IFC project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="14"/>
-        <source>Classification manager</source>
-        <translation>分類管理</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="42"/>
-        <source>Objects &amp;&amp; Materials</source>
-        <translation>物體 &amp;&amp; 材質</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="48"/>
-        <source>Only visible objects</source>
-        <translation>僅可見物體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="60"/>
-        <source>Sort by:</source>
-        <translation>排序依據:</translation>
-    </message>
-    <message>
         <source>The property to retrieve from each object.Can be &apos;Count&apos; to count the objects, or property names like &apos;Length&apos; or &apos;Shape.Volume&apos; to retrieve a certain property.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8418,24 +8418,9 @@ a certain property.</source>
         <translation>自訂屬性</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="26"/>
-        <source>People</source>
-        <translation>開發者</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="57"/>
-        <source>Kind</source>
-        <translation>類別</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="62"/>
         <source>Name</source>
         <translation>名稱</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="67"/>
-        <source>Email</source>
-        <translation>電子郵件</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogCustomProperties.ui" line="30"/>
@@ -9192,6 +9177,21 @@ p, li { white-space: pre-wrap; }
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Resources/ui/preferencesNativeIFC.ui" line="337"/>
         <source>Show dialog when converting to type</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="26"/>
+        <source>People</source>
+        <translation>開發者</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="57"/>
+        <source>Kind</source>
+        <translation>類別</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="67"/>
+        <source>Email</source>
+        <translation>電子郵件</translation>
     </message>
     <message>
         <source>Multimaterial definition</source>
@@ -10877,11 +10877,6 @@ IfcWallStandardCase 或 IfcBeamStandardCase。
 <context>
     <name>Workbench</name>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="40"/>
-        <source>BIM</source>
-        <translation>建築信息模組</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="387"/>
         <source>Drafting tools</source>
         <translation>草圖工具</translation>
@@ -10979,6 +10974,11 @@ IfcWallStandardCase 或 IfcBeamStandardCase。
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="423"/>
         <source>Nudge</source>
         <translation>輕推</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="40"/>
+        <source>BIM</source>
+        <translation>建築信息模組</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/addonmanager_installer_gui.py" line="653"/>
