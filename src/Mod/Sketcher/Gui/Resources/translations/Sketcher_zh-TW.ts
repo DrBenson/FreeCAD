@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -3418,6 +3418,16 @@ invalid constraints, degenerated geometry, etc.</source>
         <translation>新增垂直約束</translation>
     </message>
     <message>
+        <location filename="../../CommandConstraints.cpp" line="1803"/>
+        <source>Add Radius constraint</source>
+        <translation>新增半徑拘束</translation>
+    </message>
+    <message>
+        <location filename="../../CommandConstraints.cpp" line="4183"/>
+        <source>Add point to circle Distance constraint</source>
+        <translation>新增點到圓距離約束</translation>
+    </message>
+    <message>
         <source>Add point to line Distance constraint</source>
         <translation>新增點到線的距離約束</translation>
     </message>
@@ -3477,19 +3487,9 @@ invalid constraints, degenerated geometry, etc.</source>
         <translation>新增相等拘束</translation>
     </message>
     <message>
-        <location filename="../../CommandConstraints.cpp" line="1803"/>
-        <source>Add Radius constraint</source>
-        <translation>新增半徑拘束</translation>
-    </message>
-    <message>
         <location filename="../../CommandConstraints.cpp" line="1808"/>
         <source>Add arc angle constraint</source>
         <translation>新增圓弧角度約束</translation>
-    </message>
-    <message>
-        <location filename="../../CommandConstraints.cpp" line="4183"/>
-        <source>Add point to circle Distance constraint</source>
-        <translation>新增點到圓距離約束</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2054"/>
@@ -4860,9 +4860,19 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
         <translation>已被取代為終點對終點相切.</translation>
     </message>
     <message>
+        <location filename="../../CommandConstraints.cpp" line="584"/>
+        <source>Unexpected error. More information may be available in the Report View.</source>
+        <translation>意外的錯誤. 報告檢視中可能提供更多信息.</translation>
+    </message>
+    <message>
         <location filename="../../CommandConstraints.cpp" line="2249"/>
         <source>B-spline knot to endpoint tangency was applied instead.</source>
         <translation>改為套用 B 雲形線結到端點相切.</translation>
+    </message>
+    <message>
+        <location filename="../../CommandConstraints.cpp" line="3199"/>
+        <source>Select either one point and several curves, or one curve and several points.</source>
+        <translation>選擇一個點和多條曲線，或一條曲線和多個點.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3670"/>
@@ -5718,14 +5728,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation>%1 選擇要修剪的邊緣</translation>
     </message>
     <message>
-        <source>Can&apos;t map the sketch to selected object. %1.</source>
-        <translation>無法在選取的物體上產生草圖投影 %1.</translation>
-    </message>
-    <message>
-        <source>Select edge(s) from the sketch.</source>
-        <translation>由草圖選取邊.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="227"/>
         <source>One or two point on object constraint(s) was/were deleted, since the latest constraint being applied internally applies point-on-object as well.</source>
         <translation>刪除了物件約束上的一兩個點，因為內部應用的最新約束也應用了物件上的點.</translation>
@@ -5736,18 +5738,26 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation>所選項目不能接受水平或垂直約束!</translation>
     </message>
     <message>
+        <location filename="../../CommandSketcherBSpline.cpp" line="1288"/>
+        <source>Nothing is selected. Please select end points of curves.</source>
+        <translation>沒有選擇任何內容. 請選擇曲線的端點.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="447"/>
+        <source>BSpline parameters</source>
+        <translation>B雲形線屬性參數</translation>
+    </message>
+    <message>
+        <source>Can&apos;t map the sketch to selected object. %1.</source>
+        <translation>無法在選取的物體上產生草圖投影 %1.</translation>
+    </message>
+    <message>
+        <source>Select edge(s) from the sketch.</source>
+        <translation>由草圖選取邊.</translation>
+    </message>
+    <message>
         <source>Keep notifying me of constraint substitutions</source>
         <translation>繼續通知我拘束替換</translation>
-    </message>
-    <message>
-        <location filename="../../CommandConstraints.cpp" line="584"/>
-        <source>Unexpected error. More information may be available in the Report View.</source>
-        <translation>意外的錯誤. 報告檢視中可能提供更多信息.</translation>
-    </message>
-    <message>
-        <location filename="../../CommandConstraints.cpp" line="3199"/>
-        <source>Select either one point and several curves, or one curve and several points.</source>
-        <translation>選擇一個點和多條曲線，或一條曲線和多個點.</translation>
     </message>
     <message>
         <source>Only sketch and its support are allowed to be selected.</source>
@@ -5764,11 +5774,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <source>The selection comprises more than one item. Please select just one knot.</source>
         <translation>該選擇包括不止一個項目. 請選擇單一個結點.</translation>
-    </message>
-    <message>
-        <location filename="../../CommandSketcherBSpline.cpp" line="1288"/>
-        <source>Nothing is selected. Please select end points of curves.</source>
-        <translation>沒有選擇任何內容. 請選擇曲線的端點.</translation>
     </message>
     <message>
         <source>Delete All Geometry</source>
@@ -5789,11 +5794,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <source>Select constraint(s) from the sketch.</source>
         <translation>從草圖中選取拘束.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="447"/>
-        <source>BSpline parameters</source>
-        <translation>B雲形線屬性參數</translation>
     </message>
     <message>
         <source>None of the selected points were constrained onto the respective curves, because they are parts of the same element, because they are both external geometry, or because the edge is not eligible.</source>
@@ -7140,16 +7140,6 @@ reflected on copies</source>
         <translation>工作面板小工具</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.ui" line="26"/>
-        <source>Displays the additional section &apos;Advanced solver control&apos; to adjust solver settings in the task view</source>
-        <translation>顯示「進階求解器控制」附加區段，以調整工作檢視中的求解器設定</translation>
-    </message>
-    <message>
-        <location filename="../../SketcherSettings.ui" line="30"/>
-        <source>Show section &apos;Advanced solver control&apos;</source>
-        <translation>顯示“進階解算器控制”部分</translation>
-    </message>
-    <message>
         <location filename="../../SketcherSettings.ui" line="180"/>
         <source>Dimensioning constraints:</source>
         <translation>尺寸約束:</translation>
@@ -7182,6 +7172,16 @@ This setting is only for the toolbar. Whichever you chose, all tools are always 
 &quot;自動&quot;: 此工具將半徑套用於圓弧，將直徑套用於圓.
 &quot;直徑&quot;: 此工具將直徑套用於圓弧和圓.
 &quot;半徑&quot;: 該工具將半徑套用於圓弧和圓.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.ui" line="26"/>
+        <source>Displays the additional section &apos;Advanced solver control&apos; to adjust solver settings in the task view</source>
+        <translation>顯示「進階求解器控制」附加區段，以調整工作檢視中的求解器設定</translation>
+    </message>
+    <message>
+        <location filename="../../SketcherSettings.ui" line="30"/>
+        <source>Show section &apos;Advanced solver control&apos;</source>
+        <translation>顯示“進階解算器控制”部分</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.ui" line="45"/>
@@ -7468,6 +7468,21 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
         <translation>檢視參數:</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="170"/>
+        <source>Disabled</source>
+        <translation>已停用</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="171"/>
+        <source>Only dimensional</source>
+        <translation>只有尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="172"/>
+        <source>All</source>
+        <translation>全部</translation>
+    </message>
+    <message>
         <source>Sketcher dialog will have additional section
 &apos;Advanced solver control&apos; to adjust solver settings</source>
         <translation>草圖對話框將具有其他輪廓圖
@@ -7484,21 +7499,6 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
     <message>
         <source>Auto remove redundants</source>
         <translation>自動移除冗餘</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="170"/>
-        <source>Disabled</source>
-        <translation>已停用</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="171"/>
-        <source>Only dimensional</source>
-        <translation>只有尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.cpp" line="172"/>
-        <source>All</source>
-        <translation>全部</translation>
     </message>
     <message>
         <source>Allow to leave sketch edit mode when pressing Esc button</source>

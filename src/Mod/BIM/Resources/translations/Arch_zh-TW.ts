@@ -10877,6 +10877,11 @@ IfcWallStandardCase 或 IfcBeamStandardCase。
 <context>
     <name>Workbench</name>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="40"/>
+        <source>BIM</source>
+        <translation>建築信息模組</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="387"/>
         <source>Drafting tools</source>
         <translation>草圖工具</translation>
@@ -10974,11 +10979,6 @@ IfcWallStandardCase 或 IfcBeamStandardCase。
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="423"/>
         <source>Nudge</source>
         <translation>輕推</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="40"/>
-        <source>BIM</source>
-        <translation>建築信息模組</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/addonmanager_installer_gui.py" line="653"/>

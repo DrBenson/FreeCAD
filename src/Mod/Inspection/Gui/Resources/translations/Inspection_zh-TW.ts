@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -34,12 +34,12 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Inspection/Gui/Command.cpp" line="75"/>
         <source>Inspection…</source>
-        <translation type="unfinished"></translation>
+        <translation>檢查…</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Inspection/Gui/Command.cpp" line="76"/>
         <source>Inspects distance information</source>
-        <translation type="unfinished"></translation>
+        <translation>檢查距離資訊</translation>
     </message>
 </context>
 <context>
@@ -63,12 +63,12 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Inspection/Gui/Command.cpp" line="49"/>
         <source>Visual Inspection…</source>
-        <translation type="unfinished"></translation>
+        <translation>虛擬檢查…</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Inspection/Gui/Command.cpp" line="50"/>
         <source>Inspects the objects visually</source>
-        <translation type="unfinished"></translation>
+        <translation>目視檢查物件</translation>
     </message>
 </context>
 <context>
@@ -149,7 +149,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Inspection/Gui/ViewProviderInspection.cpp" line="564"/>
         <source>Leave Info Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>離開訊息模式</translation>
     </message>
     <message>
         <location filename="../../ViewProviderInspection.cpp" line="632"/>

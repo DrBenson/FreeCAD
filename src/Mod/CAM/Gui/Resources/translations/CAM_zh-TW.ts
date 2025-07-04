@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -11,8 +11,7 @@
     <extra-po-header_comment>#
 # Translators:
 # DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
-#
-    </extra-po-header_comment>
+#</extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>App::Property</name>
@@ -100,7 +99,7 @@
         <location filename="../../../Path/Dressup/Boundary.py" line="83"/>
         <location filename="../../../Path/Dressup/Boundary.py" line="107"/>
         <source>Keep tool down.</source>
-        <translation type="unfinished">Keep tool down.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Dressup/DogboneII.py" line="203"/>
@@ -675,26 +674,24 @@
         <source>Influences calculation performance vs stability and accuracy.
 
 Larger values (further to the right) will calculate faster; smaller values (further to the left) will result in more accurate toolpaths.</source>
-        <translation type="unfinished">Influences calculation performance vs stability and accuracy.
-
-Larger values (further to the right) will calculate faster; smaller values (further to the left) will result in more accurate toolpaths.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Adaptive.py" line="1446"/>
         <source>How much stock to leave in the XY plane (eg for finishing operation)</source>
-        <translation type="unfinished">How much stock to leave in the XY plane (eg for finishing operation)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Adaptive.py" line="1455"/>
         <location filename="../../../Path/Op/Adaptive.py" line="1655"/>
         <source>How much stock to leave along the Z axis (eg for finishing operation)</source>
-        <translation type="unfinished">How much stock to leave along the Z axis (eg for finishing operation)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Adaptive.py" line="1564"/>
         <location filename="../../../Path/Op/Adaptive.py" line="1644"/>
         <source>Orders cuts by region instead of depth.</source>
-        <translation type="unfinished">Orders cuts by region instead of depth.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Helix.py" line="141"/>
@@ -1628,7 +1625,7 @@ Larger values (further to the right) will calculate faster; smaller values (furt
     <message>
         <location filename="../../../Path/Op/Base.py" line="860"/>
         <source>Tool Feedrate Error</source>
-        <translation type="unfinished">Tool Feedrate Error</translation>
+        <translation>工具進給速度錯誤</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Base.py" line="870"/>
@@ -1707,12 +1704,12 @@ Larger values (further to the right) will calculate faster; smaller values (furt
     <message>
         <location filename="../../../Path/Post/scripts/refactored_masso_g3_post.py" line="55"/>
         <source>Refactored Masso G3 post processor</source>
-        <translation type="unfinished">Refactored Masso G3 post processor</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Post/scripts/snapmaker_post.py" line="245"/>
         <source>Snapmaker post processor</source>
-        <translation type="unfinished">Snapmaker post processor</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Adaptive.py" line="647"/>
@@ -1850,7 +1847,7 @@ Larger values (further to the right) will calculate faster; smaller values (furt
     <message>
         <location filename="../../../Path/Op/Gui/Array.py" line="233"/>
         <source>Operation is deprecated</source>
-        <translation type="unfinished">Operation is deprecated</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1946,7 +1943,7 @@ Larger values (further to the right) will calculate faster; smaller values (furt
     <message>
         <location filename="../../../Path/Dressup/Array.py" line="400"/>
         <source>The selected object is not a path</source>
-        <translation>The selected object is not a path</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Dressup/Gui/Array.py" line="57"/>
@@ -1956,12 +1953,12 @@ Larger values (further to the right) will calculate faster; smaller values (furt
     <message>
         <location filename="../../../Path/Dressup/Gui/Array.py" line="61"/>
         <source>Creates an array from a selected toolpath</source>
-        <translation type="unfinished">Creates an array from a selected toolpath</translation>
+        <translation>從選取的刀具路徑建立陣列</translation>
     </message>
     <message>
         <location filename="../../../Path/Dressup/Gui/Array.py" line="76"/>
         <source>Please select one toolpath object</source>
-        <translation>Please select one toolpath object</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1969,7 +1966,7 @@ Larger values (further to the right) will calculate faster; smaller values (furt
     <message>
         <location filename="../../../Path/Dressup/Gui/AxisMap.py" line="253"/>
         <source>Axis Map</source>
-        <translation type="unfinished"></translation>
+        <translation>軸座標對應</translation>
     </message>
     <message>
         <location filename="../../../Path/Dressup/Gui/AxisMap.py" line="255"/>
@@ -2141,12 +2138,12 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <location filename="../../../Path/Dressup/Gui/LeadInOut.py" line="165"/>
         <location filename="../../../Path/Dressup/Gui/LeadInOut.py" line="171"/>
         <source>Length/Radius positive not Null</source>
-        <translation type="unfinished"></translation>
+        <translation>長度/半徑為正值不可為空白</translation>
     </message>
     <message>
         <location filename="../../../Path/Dressup/Gui/LeadInOut.py" line="454"/>
         <source>LeadInOut</source>
-        <translation type="unfinished"></translation>
+        <translation>導入導出</translation>
     </message>
     <message>
         <location filename="../../../Path/Dressup/Gui/LeadInOut.py" line="458"/>
@@ -2404,7 +2401,7 @@ Larger values (further to the right) will calculate faster; smaller values (furt
     <message>
         <location filename="../../../Path/Main/Gui/Fixture.py" line="153"/>
         <source>Fixture</source>
-        <translation type="unfinished"></translation>
+        <translation>特徵</translation>
     </message>
     <message>
         <location filename="../../../Path/Main/Gui/Fixture.py" line="154"/>
@@ -2621,12 +2618,12 @@ For example:
     <message>
         <location filename="../../../Path/Main/Gui/JobDlg.py" line="86"/>
         <source>Warning: Incompatible Unit Schema</source>
-        <translation type="unfinished">Warning: Incompatible Unit Schema</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Main/Gui/JobDlg.py" line="118"/>
         <source>Don&apos;t show this warning again</source>
-        <translation type="unfinished">Don&apos;t show this warning again</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Main/Gui/JobDlg.py" line="183"/>
@@ -2674,7 +2671,7 @@ For example:
     <message>
         <location filename="../../../Path/Main/Gui/JobDlg.py" line="364"/>
         <source>Cylinder: %.2f x %.2f</source>
-        <translation type="unfinished"></translation>
+        <translation>圓柱: %.2f x %.2f</translation>
     </message>
 </context>
 <context>
@@ -2731,12 +2728,12 @@ For example:
     <message>
         <location filename="../../../Path/Op/Gui/PathShapeTC.py" line="183"/>
         <source>Path from Shape TC</source>
-        <translation type="unfinished">Path from Shape TC</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/PathShapeTC.py" line="186"/>
         <source>Creates path from selected shapes with tool controller</source>
-        <translation type="unfinished">Creates path from selected shapes with tool controller</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2744,12 +2741,12 @@ For example:
     <message>
         <location filename="../../../Path/Op/MillFace.py" line="68"/>
         <source>Boundbox</source>
-        <translation type="unfinished"></translation>
+        <translation>邊界區塊</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/MillFace.py" line="69"/>
         <source>Face Region</source>
-        <translation type="unfinished"></translation>
+        <translation>面域</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/MillFace.py" line="70"/>
@@ -2774,12 +2771,12 @@ For example:
     <message>
         <location filename="../../../Path/Op/PocketBase.py" line="61"/>
         <source>Climb</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">攀附</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/PocketBase.py" line="62"/>
         <source>Conventional</source>
-        <translation type="unfinished"></translation>
+        <translation>慣用</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/PocketBase.py" line="65"/>
@@ -2829,7 +2826,7 @@ For example:
     <message>
         <location filename="../../../Path/Op/Gui/FeatureExtension.py" line="181"/>
         <source>Y</source>
-        <translation type="unfinished"></translation>
+        <translation>Y</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/FeatureExtension.py" line="185"/>
@@ -2842,7 +2839,7 @@ For example:
     <message>
         <location filename="../../../Path/Op/Gui/Pocket.py" line="57"/>
         <source>3D Pocket</source>
-        <translation>3D Pocket</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Pocket.py" line="58"/>
@@ -2881,7 +2878,7 @@ For example:
     <message>
         <location filename="../../../Path/Dressup/Gui/Preferences.py" line="39"/>
         <source>Dressups</source>
-        <translation type="unfinished"></translation>
+        <translation>裝飾</translation>
     </message>
 </context>
 <context>
@@ -2894,7 +2891,7 @@ For example:
     <message>
         <location filename="../../../Path/Op/Gui/Probe.py" line="104"/>
         <source>Select Output File</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇輸出檔案</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Probe.py" line="106"/>
@@ -2905,7 +2902,7 @@ For example:
     <message>
         <location filename="../../../Path/Op/Gui/Probe.py" line="118"/>
         <source>Probe</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">探針</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Probe.py" line="119"/>
@@ -3302,27 +3299,27 @@ For example:
     <message>
         <location filename="../../../Path/Main/Gui/Simulator.py" line="613"/>
         <source>CAM Simulator</source>
-        <translation type="unfinished"></translation>
+        <translation>CAM 模擬</translation>
     </message>
     <message>
         <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="307"/>
         <source>High</source>
-        <translation type="unfinished"></translation>
+        <translation>高</translation>
     </message>
     <message>
         <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="309"/>
         <source>Low</source>
-        <translation type="unfinished"></translation>
+        <translation>低</translation>
     </message>
     <message>
         <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="311"/>
         <source>Medium</source>
-        <translation type="unfinished"></translation>
+        <translation>中</translation>
     </message>
     <message>
         <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="350"/>
         <source>New CAM Simulator</source>
-        <translation type="unfinished"></translation>
+        <translation>新增 CAM 模擬</translation>
     </message>
     <message>
         <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="352"/>
@@ -3673,7 +3670,7 @@ For example:
     <message>
         <location filename="../../../Path/Op/Gui/Surface.py" line="269"/>
         <source>3D Surface</source>
-        <translation>3D Surface</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Surface.py" line="270"/>
@@ -3724,12 +3721,12 @@ For example:
     <message>
         <location filename="../../../Path/Op/ThreadMilling.py" line="245"/>
         <source>Custom External</source>
-        <translation type="unfinished"></translation>
+        <translation>自訂外部</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/ThreadMilling.py" line="249"/>
         <source>Custom Internal</source>
-        <translation type="unfinished"></translation>
+        <translation>自訂內部</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/ThreadMilling.py" line="253"/>
@@ -3859,7 +3856,7 @@ For example:
     <message>
         <location filename="../../../Path/Tool/Gui/BitCmd.py" line="49"/>
         <source>Create Tool</source>
-        <translation type="unfinished"></translation>
+        <translation>建立工具</translation>
     </message>
     <message>
         <location filename="../../../Path/Tool/Gui/BitCmd.py" line="50"/>
@@ -3898,7 +3895,7 @@ For example:
     <message>
         <location filename="../../../Path/Tool/Gui/BitCmd.py" line="136"/>
         <source>Load Tool</source>
-        <translation type="unfinished"></translation>
+        <translation>載入工具</translation>
     </message>
     <message>
         <location filename="../../../Path/Tool/Gui/BitCmd.py" line="139"/>
@@ -3911,7 +3908,7 @@ For example:
     <message>
         <location filename="../../../Path/Tool/Gui/BitCmd.py" line="74"/>
         <source>Save Tool</source>
-        <translation type="unfinished"></translation>
+        <translation>儲存工具</translation>
     </message>
     <message>
         <location filename="../../../Path/Tool/Gui/BitCmd.py" line="79"/>
@@ -4016,7 +4013,7 @@ For example:
     <message>
         <location filename="../../../Path/Op/Gui/Waterline.py" line="171"/>
         <source>Waterline</source>
-        <translation type="unfinished"></translation>
+        <translation>水線</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Waterline.py" line="172"/>
@@ -4673,12 +4670,12 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../Path/Dressup/Array.py" line="184"/>
         <source>Removing CoolantMode property from {} as base operation&apos;s CoolantMode is now used.</source>
-        <translation type="unfinished">Removing CoolantMode property from {} as base operation&apos;s CoolantMode is now used.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Dressup/Array.py" line="194"/>
         <source>Removing ToolController property from {} as base operation&apos;s ToolController is now used.</source>
-        <translation type="unfinished">Removing ToolController property from {} as base operation&apos;s ToolController is now used.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7165,7 +7162,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../Path/Dressup/Array.py" line="214"/>
         <source>Base is empty or an invalid object.</source>
-        <translation type="unfinished">Base is empty or an invalid object.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -7207,7 +7204,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../Path/Op/Deburr.py" line="186"/>
         <source>Miter</source>
-        <translation type="unfinished"></translation>
+        <translation>斜接</translation>
     </message>
 </context>
 <context>
@@ -7280,7 +7277,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="32"/>
         <source>px</source>
-        <translation> px</translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="57"/>
@@ -7501,7 +7498,7 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../Path/Op/Gui/Base.py" line="501"/>
         <source>Base Geometry</source>
-        <translation type="unfinished"></translation>
+        <translation>基礎幾何</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Base.py" line="620"/>
@@ -7511,12 +7508,12 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../Path/Op/Gui/Base.py" line="693"/>
         <source>Base Location</source>
-        <translation type="unfinished"></translation>
+        <translation>基礎位置</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Base.py" line="806"/>
         <source>Heights</source>
-        <translation type="unfinished"></translation>
+        <translation>高度</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Base.py" line="876"/>
@@ -7527,12 +7524,12 @@ If it is necessary to set the FinalDepth manually please select a different oper
     <message>
         <location filename="../../../Path/Op/Gui/Base.py" line="899"/>
         <source>Depths</source>
-        <translation type="unfinished"></translation>
+        <translation>深度</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Base.py" line="1000"/>
         <source>Diameters</source>
-        <translation type="unfinished"></translation>
+        <translation>直徑</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Base.py" line="1032"/>
@@ -7542,7 +7539,7 @@ If it is necessary to set the FinalDepth manually please select a different oper
     <message>
         <location filename="../../../Path/Op/Gui/Base.py" line="1093"/>
         <source>Operation</source>
-        <translation type="unfinished"></translation>
+        <translation>操作</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Base.py" line="1158"/>
@@ -7553,7 +7550,7 @@ If it is necessary to set the FinalDepth manually please select a different oper
         <location filename="../../../Path/Op/Gui/Base.py" line="1292"/>
         <location filename="../../../Path/Op/Gui/Base.py" line="1293"/>
         <source>Pick Start Point</source>
-        <translation type="unfinished"></translation>
+        <translation>選取起始點</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Base.py" line="1334"/>
@@ -7595,12 +7592,12 @@ Aborting op creation</source>
     <message>
         <location filename="../../../Path/Op/Profile.py" line="213"/>
         <source>Collectively</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">合併</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Profile.py" line="214"/>
         <source>Individually</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">單獨</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Profile.py" line="217"/>
@@ -7889,17 +7886,17 @@ Aborting op creation</source>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ShapeSelector.ui" line="14"/>
         <source>Select a Tool Shape</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇一個工具形狀</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ShapeSelector.ui" line="34"/>
         <source>Standard Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>標準工具</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ShapeSelector.ui" line="47"/>
         <source>My Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>我的工具</translation>
     </message>
 </context>
 <context>

@@ -1078,10 +1078,55 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="20"/>
+        <source>Speed &amp; Acceleration:</source>
+        <translation>速度 &amp; 加速度：</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="29"/>
+        <source>Speed:</source>
+        <translation>速度：</translation>
+    </message>
+    <message>
         <location filename="../../TaskTrajectoryDressUpParameter.ui" line="55"/>
         <location filename="../../TaskTrajectoryDressUpParameter.ui" line="92"/>
         <source>Use</source>
         <translation>使用</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="66"/>
+        <source>Accel:</source>
+        <translation>加速：</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="102"/>
+        <source>Don&apos;t change Cont</source>
+        <translation>不要改變內容</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="127"/>
+        <source>Position and Orientation:</source>
+        <translation>位置和方向：</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="159"/>
+        <source>Don&apos;t change Position &amp; Orientation</source>
+        <translation>不要更改位置和方向</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="164"/>
+        <source>Use Orientation</source>
+        <translation>使用定向</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="169"/>
+        <source>Add Position</source>
+        <translation>增加位置</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="174"/>
+        <source>Add Orientation</source>
+        <translation>增加方向</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="66"/>
@@ -1132,51 +1177,6 @@
         <location filename="../../TaskTrajectoryDressUpParameter.cpp" line="41"/>
         <source>Dress Up Parameter</source>
         <translation>外觀裝飾特徵屬性</translation>
-    </message>
-    <message>
-        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="20"/>
-        <source>Speed &amp; Acceleration:</source>
-        <translation>速度 &amp; 加速度：</translation>
-    </message>
-    <message>
-        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="29"/>
-        <source>Speed:</source>
-        <translation>速度：</translation>
-    </message>
-    <message>
-        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="66"/>
-        <source>Accel:</source>
-        <translation>加速：</translation>
-    </message>
-    <message>
-        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="102"/>
-        <source>Don&apos;t change Cont</source>
-        <translation>不要改變內容</translation>
-    </message>
-    <message>
-        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="127"/>
-        <source>Position and Orientation:</source>
-        <translation>位置和方向：</translation>
-    </message>
-    <message>
-        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="159"/>
-        <source>Don&apos;t change Position &amp; Orientation</source>
-        <translation>不要更改位置和方向</translation>
-    </message>
-    <message>
-        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="164"/>
-        <source>Use Orientation</source>
-        <translation>使用定向</translation>
-    </message>
-    <message>
-        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="169"/>
-        <source>Add Position</source>
-        <translation>增加位置</translation>
-    </message>
-    <message>
-        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="174"/>
-        <source>Add Orientation</source>
-        <translation>增加方向</translation>
     </message>
 </context>
 <context>

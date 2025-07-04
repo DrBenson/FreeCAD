@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -1607,55 +1607,6 @@ Defaults to: %V = %A
         <source>Properties…</source>
         <translation>屬性…</translation>
     </message>
-    <message>
-        <location filename="../../SheetTableView.cpp" line="182"/>
-        <source>Recompute</source>
-        <translation>重新計算</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="207"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="679"/>
-        <source>Bind…</source>
-        <translation>綁定…</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="211"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="672"/>
-        <source>Configuration Table…</source>
-        <translation>參數設定面板…</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="219"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="673"/>
-        <source>Merge Cells</source>
-        <translation>合併儲存格</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="221"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="674"/>
-        <source>Split Cells</source>
-        <translation>分割儲存格</translation>
-    </message>
-    <message>
-        <location filename="../../SheetTableView.cpp" line="204"/>
-        <source>Cut</source>
-        <translation>剪下</translation>
-    </message>
-    <message>
-        <location filename="../../SheetTableView.cpp" line="206"/>
-        <source>Copy</source>
-        <translation>複製</translation>
-    </message>
-    <message>
-        <location filename="../../SheetTableView.cpp" line="208"/>
-        <source>Paste</source>
-        <translation>貼上</translation>
-    </message>
-    <message>
-        <location filename="../../SheetTableView.cpp" line="210"/>
-        <source>Delete</source>
-        <translation>刪除</translation>
-    </message>
     <message numerus="yes">
         <location filename="../../SheetTableView.cpp" line="129"/>
         <source>Insert %n row(s) above</source>
@@ -1718,6 +1669,11 @@ Defaults to: %V = %A
         <translation>屬性...</translation>
     </message>
     <message>
+        <location filename="../../SheetTableView.cpp" line="182"/>
+        <source>Recompute</source>
+        <translation>重新計算</translation>
+    </message>
+    <message>
         <location filename="../../SheetTableView.cpp" line="186"/>
         <source>Bind...</source>
         <translation>綁定...</translation>
@@ -1736,6 +1692,50 @@ Defaults to: %V = %A
         <location filename="../../SheetTableView.cpp" line="200"/>
         <source>Split cells</source>
         <translation>分割儲存格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="207"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="679"/>
+        <source>Bind…</source>
+        <translation>綁定…</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="211"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="672"/>
+        <source>Configuration Table…</source>
+        <translation>參數設定面板…</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="219"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="673"/>
+        <source>Merge Cells</source>
+        <translation>合併儲存格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="221"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="674"/>
+        <source>Split Cells</source>
+        <translation>分割儲存格</translation>
+    </message>
+    <message>
+        <location filename="../../SheetTableView.cpp" line="204"/>
+        <source>Cut</source>
+        <translation>剪下</translation>
+    </message>
+    <message>
+        <location filename="../../SheetTableView.cpp" line="206"/>
+        <source>Copy</source>
+        <translation>複製</translation>
+    </message>
+    <message>
+        <location filename="../../SheetTableView.cpp" line="208"/>
+        <source>Paste</source>
+        <translation>貼上</translation>
+    </message>
+    <message>
+        <location filename="../../SheetTableView.cpp" line="210"/>
+        <source>Delete</source>
+        <translation>刪除</translation>
     </message>
 </context>
 <context>
@@ -1826,13 +1826,13 @@ Defaults to: %V = %A
         <translation>新縮放等級:</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/ZoomableView.cpp" line="112"/>
-        <source>Zoom Level</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/ZoomableView.cpp" line="112"/>
+        <source>Zoom level</source>
         <translation>縮放等級</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/ZoomableView.cpp" line="112"/>
-        <source>Zoom level</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/ZoomableView.cpp" line="112"/>
+        <source>Zoom Level</source>
         <translation>縮放等級</translation>
     </message>
 </context>

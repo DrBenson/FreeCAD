@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -1656,6 +1656,16 @@ is used when writing a file in AMF format</source>
         <translation>新網格的預設外觀</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="14"/>
+        <source>Mesh view</source>
+        <translation>網格視圖</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="35"/>
+        <source>Default appearance for new meshes</source>
+        <translation>新網格的預設外觀</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="73"/>
         <source>Default mesh color</source>
         <translation>預設網格顏色</translation>
@@ -1794,16 +1804,6 @@ to a smoother appearance.
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="404"/>
         <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hint&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;Defining the normals per vertex is also called &lt;span style=&quot; font-style:italic;&quot;&gt;Phong shading&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;&quot;&gt;&lt;span style=&quot; font-style:normal;&quot;&gt;while defining the normals per face is called &lt;/span&gt;Flat shading&lt;span style=&quot; font-style:normal;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;提示:&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;定義每個頂點的常態也稱為 &lt;span style=&quot; font-style:italic;&quot;&gt;馮式陰影&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;&quot;&gt;&lt;span style=&quot; font-style:normal;&quot;&gt;在定義每張臉的正常時稱為 &lt;/span&gt;平面陰影&lt;span style=&quot; font-style:normal;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="14"/>
-        <source>Mesh view</source>
-        <translation>網格視圖</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="35"/>
-        <source>Default appearance for new meshes</source>
-        <translation>新網格的預設外觀</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;This is the smallest angle between two faces where normals get calculated to do flat shading.&lt;/p&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;If the angle between the normals of two neighbouring faces is less than the crease angle, the faces will be smoothshaded around their common edge.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
@@ -2300,6 +2300,11 @@ to a smoother appearance.
         <translation>網格分割</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="14"/>
+        <source>Mesh segmentation</source>
+        <translation>網格分割</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="20"/>
         <source>Plane</source>
         <translation>平面</translation>
@@ -2361,11 +2366,6 @@ to a smoother appearance.
     <message>
         <source>Center</source>
         <translation>中心</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="14"/>
-        <source>Mesh segmentation</source>
-        <translation>網格分割</translation>
     </message>
 </context>
 <context>

@@ -47,6 +47,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../ui/openscadprefs-base.ui" line="14"/>
+        <source>General settings</source>
+        <translation>一般設定</translation>
+    </message>
+    <message>
         <location filename="../ui/openscadprefs-base.ui" line="82"/>
         <source>Print debug information in the Console</source>
         <translation>於主控台顯示除錯訊息</translation>
@@ -194,11 +199,6 @@
         <location filename="../ui/openscadprefs-base.ui" line="452"/>
         <source>Triangulation settings</source>
         <translation>三角測量設定</translation>
-    </message>
-    <message>
-        <location filename="../ui/openscadprefs-base.ui" line="14"/>
-        <source>General settings</source>
-        <translation>一般設定</translation>
     </message>
 </context>
 <context>

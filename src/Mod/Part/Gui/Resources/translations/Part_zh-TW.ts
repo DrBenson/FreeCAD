@@ -3327,11 +3327,6 @@ it inside the Placement property.</source>
         <translation>匯出STEP檔所用之單位</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExportStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExportStep.ui" line="47"/>
         <source>Millimeter</source>
         <translation>公厘</translation>
@@ -3388,6 +3383,11 @@ it inside the Placement property.</source>
 should be written into the STEP file. This parameter can be set to off in order to minimize
 the size of the resulting STEP file.</source>
         <translation>此參數指示是否將參數曲線（曲面參數空間中的曲線）寫入STEP檔案。為了最小化生成的STEP檔案大小，可以將此參數設置為關閉。</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExportStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
     </message>
 </context>
 <context>
@@ -3700,11 +3700,6 @@ If both lengths are zero, magnitude of direction is used.</source>
         <translation>倒角參數</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="266"/>
-        <source>Chamfer Parameter</source>
-        <translation>倒角參數</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="268"/>
         <source>Chamfer type</source>
         <translation>倒角類型</translation>
@@ -3728,6 +3723,11 @@ If both lengths are zero, magnitude of direction is used.</source>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="267"/>
         <source>Length:</source>
         <translation>長度：</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="266"/>
+        <source>Chamfer Parameter</source>
+        <translation>倒角參數</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="270"/>
@@ -4157,6 +4157,11 @@ the size of the resulting STEP file.</source>
         <translation>當匯入時顯示此對話框</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgImportStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgImportStep.ui" line="20"/>
         <source>Import</source>
         <translation>匯入</translation>
@@ -4275,11 +4280,6 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgImportStep.ui" line="181"/>
         <source>Object per document in sub-directory</source>
         <translation>依據子目錄中每個文件的物體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgImportStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
     </message>
 </context>
 <context>

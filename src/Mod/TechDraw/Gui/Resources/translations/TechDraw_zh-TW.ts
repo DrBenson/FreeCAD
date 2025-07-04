@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -2473,11 +2473,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>建立裁剪</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="359"/>
-        <source>Create BIM View</source>
-        <translation>建立BIM檢視</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1420"/>
         <source>Add clip group</source>
         <translation>新增裁剪組</translation>
@@ -3086,6 +3081,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCenterLine.cpp" line="406"/>
         <source>Create Centerline</source>
         <translation>建立中心線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="359"/>
+        <source>Create BIM View</source>
+        <translation>建立BIM檢視</translation>
     </message>
     <message>
         <location filename="../../CommandExtensionDims.cpp" line="105"/>

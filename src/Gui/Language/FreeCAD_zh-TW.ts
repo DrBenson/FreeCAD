@@ -7,7 +7,7 @@
     <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
     <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
     <extra-po-header-project_id_version>FreeCAD Language Translations v1.1.0</extra-po-header-project_id_version>
-    <extra-po-header-x_generator>Poedit 3.7</extra-po-header-x_generator>
+    <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
 # DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
@@ -3201,6 +3201,16 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
 <context>
     <name>EditMode</name>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="266"/>
+        <source>&amp;Default</source>
+        <translation>預設(&amp;D)</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="255"/>
+        <source>The object will be edited using the mode defined internally to be the most appropriate for the object type</source>
+        <translation>將使用內部定義的最適合對像類型的模式來編輯對象</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="243"/>
         <source>Default</source>
         <translation>預設</translation>
@@ -3221,19 +3231,9 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <translation>顏色</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="266"/>
-        <source>&amp;Default</source>
-        <translation>預設(&amp;D)</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="270"/>
         <source>The object will have the color of its individual faces editable with the Part FaceColors command</source>
         <translation>該對象將具有可使用&quot;零件面顏色&quot;命令編輯的各個面的顏色</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="255"/>
-        <source>The object will be edited using the mode defined internally to be the most appropriate for the object type</source>
-        <translation>將使用內部定義的最適合對像類型的模式來編輯對象</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="271"/>
@@ -6509,16 +6509,6 @@ Specify another directory, please.</source>
         <translation>重置群組 &apos;%1&apos;...</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="386"/>
-        <source>Reset tab &apos;%1&apos;...</source>
-        <translation>重設分頁 &apos;%1&apos;...</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="388"/>
-        <source>Resets the user settings for the tab &apos;%1&apos;</source>
-        <translation>重置分頁欄的使用者設定 &apos;%1&apos;</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="395"/>
         <source>Resets the user settings for the group &apos;%1&apos;</source>
         <translation>重置群組的使用者設定 &apos;%1&apos;</translation>
@@ -6532,32 +6522,6 @@ Specify another directory, please.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="400"/>
         <source>Resets the user settings entirely</source>
         <translation>完全重置使用者設定</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="442"/>
-        <source>Reset Tab Settings</source>
-        <translation>重置分頁設定</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="443"/>
-        <source>All the settings for the tab &apos;%1&apos; will be deleted.</source>
-        <translation>分頁欄的全部設定 &apos;%1&apos; 將被刪除.</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="444"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="470"/>
-        <source>Do you want to continue?</source>
-        <translation>您要繼續嗎?</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="468"/>
-        <source>Reset Group Settings</source>
-        <translation>重置群組設定</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="469"/>
-        <source>All the settings for the group &apos;%1&apos; will be deleted.</source>
-        <translation>群組的全部設定 &apos;%1&apos; 將被刪除.</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="268"/>
@@ -6604,6 +6568,42 @@ msgstr &quot; &quot;
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="499"/>
         <source>Restart later</source>
         <translation>稍後重新啟動</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="386"/>
+        <source>Reset tab &apos;%1&apos;...</source>
+        <translation>重設分頁 &apos;%1&apos;...</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="388"/>
+        <source>Resets the user settings for the tab &apos;%1&apos;</source>
+        <translation>重置分頁欄的使用者設定 &apos;%1&apos;</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="442"/>
+        <source>Reset Tab Settings</source>
+        <translation>重置分頁設定</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="443"/>
+        <source>All the settings for the tab &apos;%1&apos; will be deleted.</source>
+        <translation>分頁欄的全部設定 &apos;%1&apos; 將被刪除.</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="444"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="470"/>
+        <source>Do you want to continue?</source>
+        <translation>您要繼續嗎?</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="468"/>
+        <source>Reset Group Settings</source>
+        <translation>重置群組設定</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="469"/>
+        <source>All the settings for the group &apos;%1&apos; will be deleted.</source>
+        <translation>群組的全部設定 &apos;%1&apos; 將被刪除.</translation>
     </message>
 </context>
 <context>
@@ -6821,14 +6821,14 @@ msgstr &quot; &quot;
         <translation>解開提取文件失敗</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgProjectUtility.cpp" line="106"/>
-        <source>Failed to extract project</source>
-        <translation>專案提取失敗</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgProjectUtility.cpp" line="121"/>
         <source>Failed to create document</source>
         <translation>建立文件失敗</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgProjectUtility.cpp" line="106"/>
+        <source>Failed to extract project</source>
+        <translation>專案提取失敗</translation>
     </message>
 </context>
 <context>
@@ -11340,6 +11340,11 @@ Currently, your system has the following workbenches:&lt;/p&gt;&lt;/body&gt;&lt;
         <translation>選擇器</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsWorkbenches.ui" line="97"/>
+        <source>Workbench selector position:</source>
+        <translation>工作台選擇器位置:</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsWorkbenches.ui" line="167"/>
         <source>Workbench selector items style:</source>
         <translation>工作台選擇項目類型:</translation>
@@ -11384,11 +11389,6 @@ after FreeCAD launches</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgSettingsWorkbenches.ui" line="120"/>
         <source>Remember active workbench by tab</source>
         <translation>按分頁記住啟用工作台</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsWorkbenches.ui" line="97"/>
-        <source>Workbench selector position:</source>
-        <translation>工作台選擇器位置:</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgSettingsWorkbenchesImp.cpp" line="127"/>
@@ -16413,16 +16413,6 @@ the region are non-opaque.</source>
 <context>
     <name>QDockWidget</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="344"/>
-        <source>Toolbox</source>
-        <translation>工具箱</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="411"/>
-        <source>Combo View</source>
-        <translation>複合檢視</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="519"/>
         <source>Tasks</source>
         <translation>任務</translation>
@@ -16431,6 +16421,16 @@ the region are non-opaque.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="396"/>
         <source>Selection view</source>
         <translation>選擇檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="344"/>
+        <source>Toolbox</source>
+        <translation>工具箱</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="411"/>
+        <source>Combo View</source>
+        <translation>複合檢視</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="421"/>
@@ -16568,25 +16568,6 @@ Please check report view for more details.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Command.cpp" line="462"/>
         <source>Exception</source>
         <translation>異常</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="127"/>
-        <source>File Migration Warning</source>
-        <translation>檔案遷移警告</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="128"/>
-        <source>This file was created with an older version of %1. Origin axes had incorrect placements, which have now been corrected.
-
-However, if you save this file in the current version and reopen it in an older version of %1, the origin axes will be misaligned. Additionally, if your file references these origin axes, your file will likely be broken.</source>
-        <translation>該文件是使用舊版本的 %1 建立的. 原點軸的位置不正確，現已更正.
-
-但是，如果您在目前版本中儲存此檔案並在舊版本 %1 中重新開啟它，則原點軸將不會對齊. 此外，如果您的檔案引用這些原點軸，您的檔案可能會損壞.</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="136"/>
-        <source>Don&apos;t show this warning again</source>
-        <translation>不再顯示此警告</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="139"/>
@@ -17351,13 +17332,6 @@ Choose &apos;Abort&apos; to abort</source>
         <translation>太多已開啟之非侵入通知. 通知已被忽略!</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/OnlineDocumentation.cpp" line="419"/>
-        <source>Unable to open your browser.
-
-Please open a browser window and type in: http://localhost:%1.</source>
-        <translation>無法打開您的流覽器. 請打開流覽器視窗，並輸入: http://localhost:%1.</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/OnlineDocumentation.cpp" line="424"/>
         <source>No Server</source>
         <translation>沒有伺服器</translation>
@@ -17372,6 +17346,13 @@ Please open a browser window and type in: http://localhost:%1.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/OnlineDocumentation.cpp" line="458"/>
         <source>No Browser</source>
         <translation>無瀏覽器</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/OnlineDocumentation.cpp" line="419"/>
+        <source>Unable to open your browser.
+
+Please open a browser window and type in: http://localhost:%1.</source>
+        <translation>無法打開您的流覽器. 請打開流覽器視窗，並輸入: http://localhost:%1.</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/OnlineDocumentation.cpp" line="459"/>
@@ -17917,6 +17898,25 @@ underscore, and must not start with a digit.</source>
         <translation>請不要在生產環境中使用.</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="127"/>
+        <source>File Migration Warning</source>
+        <translation>檔案遷移警告</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="128"/>
+        <source>This file was created with an older version of %1. Origin axes had incorrect placements, which have now been corrected.
+
+However, if you save this file in the current version and reopen it in an older version of %1, the origin axes will be misaligned. Additionally, if your file references these origin axes, your file will likely be broken.</source>
+        <translation>該文件是使用舊版本的 %1 建立的. 原點軸的位置不正確，現已更正.
+
+但是，如果您在目前版本中儲存此檔案並在舊版本 %1 中重新開啟它，則原點軸將不會對齊. 此外，如果您的檔案引用這些原點軸，您的檔案可能會損壞.</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="136"/>
+        <source>Don&apos;t show this warning again</source>
+        <translation>不再顯示此警告</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="530"/>
         <source>UI</source>
         <translation>使用者界面</translation>
@@ -18377,11 +18377,6 @@ msgstr &quot;編輯 %1&quot;
         <translation>錄製巨集</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandMacro.cpp" line="46"/>
-        <source>&amp;Macro recording ...</source>
-        <translation>巨集錄製(&amp;M)...</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandMacro.cpp" line="66"/>
         <source>S&amp;top macro recording</source>
         <translation>停止錄製(&amp;T)</translation>
@@ -18390,6 +18385,11 @@ msgstr &quot;編輯 %1&quot;
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandMacro.cpp" line="67"/>
         <source>Stop the macro recording session</source>
         <translation>停止錄製</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandMacro.cpp" line="46"/>
+        <source>&amp;Macro recording ...</source>
+        <translation>巨集錄製(&amp;M)...</translation>
     </message>
 </context>
 <context>
@@ -19469,6 +19469,19 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdMergeProjects</name>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="570"/>
+        <source>&amp;Merge document...</source>
+        <translation>合併文件(&amp;M)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="521"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="523"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="533"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="542"/>
+        <source>Merge document</source>
+        <translation>合併文件</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="509"/>
         <source>Merge project...</source>
         <translation>合併專案...</translation>
@@ -19487,27 +19500,14 @@ This makes the docked widget stay transparent at all times.</source>
         <translation>合併文件...</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="532"/>
-        <source>Cannot merge project with itself.</source>
-        <translation>不能合併專案本身.</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="570"/>
-        <source>&amp;Merge document...</source>
-        <translation>合併文件(&amp;M)...</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="521"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="523"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="533"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="542"/>
-        <source>Merge document</source>
-        <translation>合併文件</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="523"/>
         <source>%1 document (*.FCStd)</source>
         <translation>%1 文件（*.FCStd）</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="532"/>
+        <source>Cannot merge project with itself.</source>
+        <translation>不能合併專案本身.</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="543"/>
@@ -19717,14 +19717,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>列印文件</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="895"/>
-        <source>&amp;Print preview...</source>
-        <translation>預覽列印(&amp;P)...</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="898"/>
         <source>Print preview</source>
         <translation>預覽列印</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="895"/>
+        <source>&amp;Print preview...</source>
+        <translation>預覽列印(&amp;P)...</translation>
     </message>
 </context>
 <context>
@@ -21812,6 +21812,16 @@ Are you sure you want to continue?
 <context>
     <name>Std_DrawStyle</name>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="727"/>
+        <source>&amp;1 As is</source>
+        <translation>&amp;1 如同</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="714"/>
+        <source>Normal mode</source>
+        <translation>正常模式</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="712"/>
         <source>As is</source>
         <translation>如同</translation>
@@ -21828,33 +21838,8 @@ Are you sure you want to continue?
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="727"/>
-        <source>&amp;1 As is</source>
-        <translation>&amp;1 如同</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="727"/>
         <source>Hidden line</source>
         <translation>隱藏線段</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="732"/>
-        <source>No shading</source>
-        <translation>無上色</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="737"/>
-        <source>Shaded</source>
-        <translation>上色</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="742"/>
-        <source>Flat lines</source>
-        <translation>框線</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="714"/>
-        <source>Normal mode</source>
-        <translation>正常模式</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="732"/>
@@ -21867,6 +21852,11 @@ Are you sure you want to continue?
         <translation>點模式</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="732"/>
+        <source>No shading</source>
+        <translation>無上色</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="737"/>
         <source>&amp;3 Wireframe</source>
         <translation>&amp;3 線框</translation>
@@ -21877,6 +21867,11 @@ Are you sure you want to continue?
         <translation>線框模式</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="737"/>
+        <source>Shaded</source>
+        <translation>上色</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="742"/>
         <source>&amp;4 Hidden line</source>
         <translation>&amp;4 隱藏線</translation>
@@ -21885,6 +21880,11 @@ Are you sure you want to continue?
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="729"/>
         <source>Hidden line mode</source>
         <translation>隱藏線段模式</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="742"/>
+        <source>Flat lines</source>
+        <translation>框線</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="747"/>

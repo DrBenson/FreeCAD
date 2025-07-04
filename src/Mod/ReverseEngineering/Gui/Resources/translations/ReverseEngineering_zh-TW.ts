@@ -534,6 +534,16 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../FitBSplineSurface.ui" line="14"/>
+        <source>Fit B-spline surface</source>
+        <translation>最適化B-雲行線表面</translation>
+    </message>
+    <message>
+        <location filename="../../FitBSplineSurface.ui" line="20"/>
+        <source>u-Direction</source>
+        <translation>u-方向</translation>
+    </message>
+    <message>
         <location filename="../../FitBSplineSurface.ui" line="26"/>
         <location filename="../../FitBSplineSurface.ui" line="93"/>
         <source>Degree</source>
@@ -549,6 +559,16 @@
         <location filename="../../FitBSplineSurface.ui" line="87"/>
         <source>v-Direction</source>
         <translation>v 方向</translation>
+    </message>
+    <message>
+        <location filename="../../FitBSplineSurface.ui" line="231"/>
+        <source>Create placement</source>
+        <translation>建立放置位置</translation>
+    </message>
+    <message>
+        <location filename="../../FitBSplineSurface.ui" line="247"/>
+        <source>Total Weight</source>
+        <translation>總重量</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/FitBSplineSurface.ui" line="87"/>
@@ -574,16 +594,6 @@
         <location filename="../../FitBSplineSurface.ui" line="218"/>
         <source>User-defined u/v directions</source>
         <translation>使用者定義 u/v 角度</translation>
-    </message>
-    <message>
-        <location filename="../../FitBSplineSurface.ui" line="231"/>
-        <source>Create placement</source>
-        <translation>建立放置位置</translation>
-    </message>
-    <message>
-        <location filename="../../FitBSplineSurface.ui" line="247"/>
-        <source>Total Weight</source>
-        <translation>總重量</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/FitBSplineSurface.ui" line="231"/>
@@ -614,16 +624,6 @@
         <location filename="../../FitBSplineSurface.ui" line="334"/>
         <source>Curvature variation</source>
         <translation>曲率變化</translation>
-    </message>
-    <message>
-        <location filename="../../FitBSplineSurface.ui" line="14"/>
-        <source>Fit B-spline surface</source>
-        <translation>最適化B-雲行線表面</translation>
-    </message>
-    <message>
-        <location filename="../../FitBSplineSurface.ui" line="20"/>
-        <source>u-Direction</source>
-        <translation>u-方向</translation>
     </message>
 </context>
 <context>
@@ -786,6 +786,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../SegmentationManual.ui" line="14"/>
+        <source>Manual segmentation</source>
+        <translation>手動分割</translation>
+    </message>
+    <message>
         <location filename="../../SegmentationManual.ui" line="20"/>
         <source>Select</source>
         <translation>選擇</translation>
@@ -905,11 +910,6 @@
         <location filename="../../SegmentationManual.ui" line="326"/>
         <source>Hide segment</source>
         <translation>隱藏分割片段</translation>
-    </message>
-    <message>
-        <location filename="../../SegmentationManual.ui" line="14"/>
-        <source>Manual segmentation</source>
-        <translation>手動分割</translation>
     </message>
 </context>
 <context>
