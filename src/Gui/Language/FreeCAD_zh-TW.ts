@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -16,11 +16,6 @@
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>Angle</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgLocationAngle.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgLocationAngle.ui" line="22"/>
         <source>A:</source>
@@ -40,6 +35,11 @@
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgLocationAngle.ui" line="86"/>
         <source>Angle Snap</source>
         <translation>角度貼齊</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgLocationAngle.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -2877,11 +2877,6 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <translation>匯入所有連結</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="768"/>
-        <source>Insert measurement</source>
-        <translation>插入尺寸</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="799"/>
         <source>Insert text document</source>
         <translation>插入文字文件</translation>
@@ -2964,6 +2959,11 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandFeat.cpp" line="147"/>
         <source>Toggle freeze</source>
         <translation>切換凍結檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="768"/>
+        <source>Insert measurement</source>
+        <translation>插入尺寸</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/ViewProviderMeasureDistance.cpp" line="272"/>
@@ -3183,11 +3183,6 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
 <context>
     <name>DownloadItem</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/DownloadItem.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/DownloadItem.ui" line="29"/>
         <source>Ico</source>
         <translation>Ico</translation>
@@ -3197,19 +3192,14 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <source>Filename</source>
         <translation>檔案名稱</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/DownloadItem.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
 </context>
 <context>
     <name>EditMode</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="266"/>
-        <source>&amp;Default</source>
-        <translation>預設(&amp;D)</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="255"/>
-        <source>The object will be edited using the mode defined internally to be the most appropriate for the object type</source>
-        <translation>將使用內部定義的最適合對像類型的模式來編輯對象</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="243"/>
         <source>Default</source>
@@ -3231,9 +3221,19 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <translation>顏色</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="266"/>
+        <source>&amp;Default</source>
+        <translation>預設(&amp;D)</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="270"/>
         <source>The object will have the color of its individual faces editable with the Part FaceColors command</source>
         <translation>該對象將具有可使用&quot;零件面顏色&quot;命令編輯的各個面的顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="255"/>
+        <source>The object will be edited using the mode defined internally to be the most appropriate for the object type</source>
+        <translation>將使用內部定義的最適合對像類型的模式來編輯對象</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="271"/>
@@ -3287,6 +3287,14 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/QuantitySpinBox_p.h" line="54"/>
         <source>Expression:</source>
         <translation>表達式:</translation>
+    </message>
+</context>
+<context>
+    <name>Gui</name>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.cpp" line="282"/>
+        <source>New parameter...</source>
+        <translation>新增參數...</translation>
     </message>
 </context>
 <context>
@@ -3346,6 +3354,24 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/ManualAlignment.cpp" line="430"/>
         <source>Fixed object</source>
         <translation>固定物體</translation>
+    </message>
+</context>
+<context>
+    <name>Gui::Application</name>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Application.cpp" line="385"/>
+        <source>Built-in Parameters</source>
+        <translation>內建屬性參數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Application.cpp" line="391"/>
+        <source>Theme Parameters</source>
+        <translation>主題屬性參數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Application.cpp" line="398"/>
+        <source>User Parameters</source>
+        <translation>使用者參數</translation>
     </message>
 </context>
 <context>
@@ -3818,16 +3844,6 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>Gui::Dialog::ButtonModel</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgCustomizeSpaceball.cpp" line="285"/>
-        <source> &quot;</source>
-        <translation> &quot;</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgCustomizeSpaceball.cpp" line="285"/>
-        <source>&quot;</source>
-        <translation>&quot;</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgCustomizeSpaceball.cpp" line="286"/>
         <source>Button %1</source>
         <translation>按鈕 %1</translation>
@@ -3836,6 +3852,16 @@ p, li { white-space: pre-wrap; }
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgCustomizeSpaceball.cpp" line="288"/>
         <source>Out Of Range</source>
         <translation>超出範圍</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgCustomizeSpaceball.cpp" line="285"/>
+        <source> &quot;</source>
+        <translation> &quot;</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgCustomizeSpaceball.cpp" line="285"/>
+        <source>&quot;</source>
+        <translation>&quot;</translation>
     </message>
 </context>
 <context>
@@ -6550,26 +6576,6 @@ msgstr &quot; &quot;
         <translation>錯誤的參數</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="492"/>
-        <source>Restart required</source>
-        <translation>需要重新啟動</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="493"/>
-        <source>You must restart FreeCAD for changes to take effect.</source>
-        <translation>您必須重新啟動 FreeCAD 以套用變更.</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="498"/>
-        <source>Restart now</source>
-        <translation>現在重新啟動</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="499"/>
-        <source>Restart later</source>
-        <translation>稍後重新啟動</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="386"/>
         <source>Reset tab &apos;%1&apos;...</source>
         <translation>重設分頁 &apos;%1&apos;...</translation>
@@ -6604,6 +6610,26 @@ msgstr &quot; &quot;
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="469"/>
         <source>All the settings for the group &apos;%1&apos; will be deleted.</source>
         <translation>群組的全部設定 &apos;%1&apos; 將被刪除.</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="492"/>
+        <source>Restart required</source>
+        <translation>需要重新啟動</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="493"/>
+        <source>You must restart FreeCAD for changes to take effect.</source>
+        <translation>您必須重新啟動 FreeCAD 以套用變更.</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="498"/>
+        <source>Restart now</source>
+        <translation>現在重新啟動</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="499"/>
+        <source>Restart later</source>
+        <translation>稍後重新啟動</translation>
     </message>
 </context>
 <context>
@@ -6821,14 +6847,14 @@ msgstr &quot; &quot;
         <translation>解開提取文件失敗</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgProjectUtility.cpp" line="121"/>
-        <source>Failed to create document</source>
-        <translation>建立文件失敗</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgProjectUtility.cpp" line="106"/>
         <source>Failed to extract project</source>
         <translation>專案提取失敗</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgProjectUtility.cpp" line="121"/>
+        <source>Failed to create document</source>
+        <translation>建立文件失敗</translation>
     </message>
 </context>
 <context>
@@ -10298,6 +10324,16 @@ Additionally, pop-up notifications can be disabled. In this case the user can st
         <translation>Python 分析器間隔(毫秒): </translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgSettingsPythonConsole.ui" line="14"/>
+        <source>Python console</source>
+        <translation>Python 控制台</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgSettingsPythonConsole.ui" line="20"/>
+        <source>Settings</source>
+        <translation>設定</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgSettingsPythonConsole.ui" line="26"/>
         <source>Words will be wrapped when they exceed available
 horizontal space in Python console</source>
@@ -10357,16 +10393,6 @@ horizontal space in Python console</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsPythonConsole.ui" line="141"/>
         <source>Used for package installation with pip and debugging with debugpy. Autodetected if needed and not specified.</source>
         <translation>用於使用 pip 安裝套件並使用 debugpy 進行偵錯. 如果需要且未指定則自動偵測.</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgSettingsPythonConsole.ui" line="14"/>
-        <source>Python console</source>
-        <translation>Python 控制台</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgSettingsPythonConsole.ui" line="20"/>
-        <source>Settings</source>
-        <translation>設定</translation>
     </message>
 </context>
 <context>
@@ -10773,6 +10799,16 @@ You can now use Theme to get a full customization of the interface.</source>
         <translation>樣式表決定使用者界面的外觀</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsUI.ui" line="296"/>
+        <source>If enabled, show an eye icon before the tree view items, showing the items visibility status. When clicked the visibility is toggled.</source>
+        <translation>如果啟用，則在樹狀圖檢視項目之前顯示一個眼睛圖示，顯示項目的可見性狀態. 點擊時，可見性會切換.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsUI.ui" line="197"/>
+        <source>Open Theme Editor</source>
+        <translation>開啟主題編輯器</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsUI.ui" line="200"/>
         <source>Tree view</source>
         <translation>樹狀檢視</translation>
@@ -10821,11 +10857,6 @@ You can now use Theme to get a full customization of the interface.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsUI.ui" line="296"/>
         <source>If enabled, show an eye icon before the tree view items, showing their visibility status. When clicked the visibility is toggled.</source>
         <translation>如果啟用，則在樹狀檢視項目之前顯示一個眼睛圖示，顯示其可見性狀態. 按兩下時，將切換可見性.</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsUI.ui" line="296"/>
-        <source>If enabled, show an eye icon before the tree view items, showing the items visibility status. When clicked the visibility is toggled.</source>
-        <translation>如果啟用，則在樹狀圖檢視項目之前顯示一個眼睛圖示，顯示項目的可見性狀態. 點擊時，可見性會切換.</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsUI.ui" line="299"/>
@@ -11328,6 +11359,11 @@ Currently, your system has the following workbenches:&lt;/p&gt;&lt;/body&gt;&lt;
         <translation>工作臺</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsWorkbenches.ui" line="97"/>
+        <source>Workbench selector position:</source>
+        <translation>工作台選擇器位置:</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsWorkbenches.ui" line="101"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You can reorder workbenches by drag and drop or sort them by right-clicking on any workbench and select &lt;span style=&quot;  font-weight:600; font-style:italic;&quot;&gt;Sort alphabetically&lt;/span&gt;. Additional workbenches can be installed through the addon manager.&lt;/p&gt;&lt;p&gt;
 Currently, your system has the following workbenches:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
@@ -11338,11 +11374,6 @@ Currently, your system has the following workbenches:&lt;/p&gt;&lt;/body&gt;&lt;
         <location filename="../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsWorkbenches.ui" line="55"/>
         <source>Selectors</source>
         <translation>選擇器</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsWorkbenches.ui" line="97"/>
-        <source>Workbench selector position:</source>
-        <translation>工作台選擇器位置:</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsWorkbenches.ui" line="167"/>
@@ -12413,11 +12444,6 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
 <context>
     <name>Gui::Dialog::SceneModel</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/SceneInspector.cpp" line="85"/>
-        <source>Nodes</source>
-        <translation>節點</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/SceneInspector.cpp" line="69"/>
         <source>Inventor Tree</source>
         <translation>發明歷程</translation>
@@ -12426,6 +12452,11 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/SceneInspector.cpp" line="71"/>
         <source>Name</source>
         <translation>名稱</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/SceneInspector.cpp" line="85"/>
+        <source>Nodes</source>
+        <translation>節點</translation>
     </message>
 </context>
 <context>
@@ -12489,16 +12520,16 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
 <context>
     <name>Gui::Dialog::Transform</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Transform.cpp" line="292"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Transform.cpp" line="420"/>
-        <source>Transform</source>
-        <translation>轉換</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Transform.cpp" line="291"/>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Transform.cpp" line="419"/>
         <source>Cancel</source>
         <translation>取消</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Transform.cpp" line="292"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Transform.cpp" line="420"/>
+        <source>Transform</source>
+        <translation>轉換</translation>
     </message>
 </context>
 <context>
@@ -12626,6 +12657,54 @@ originally selected prior to opening this dialog</source>
     </message>
 </context>
 <context>
+    <name>Gui::DlgThemeEditor</name>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.ui" line="14"/>
+        <source>Theme Editor</source>
+        <translation>主題編輯器</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.ui" line="20"/>
+        <source>Preview</source>
+        <translation>預覽</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.ui" line="29"/>
+        <source>CheckBox</source>
+        <translation>複選框</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.ui" line="59"/>
+        <source>RadioButton</source>
+        <translation>單選按鈕</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.ui" line="67"/>
+        <source>Item 1</source>
+        <translation>物件 1</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.ui" line="72"/>
+        <source>Item 2</source>
+        <translation>物件 2</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.ui" line="80"/>
+        <source>PushButton</source>
+        <translation>按鍵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.ui" line="88"/>
+        <source>Tab 1</source>
+        <translation>分頁 1</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.ui" line="93"/>
+        <source>Tab 2</source>
+        <translation>分頁 2</translation>
+    </message>
+</context>
+<context>
     <name>Gui::DlgTreeWidget</name>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgTreeWidget.ui" line="14"/>
@@ -12667,13 +12746,13 @@ msgstr &quot; &quot;
 <context>
     <name>Gui::DockWnd::PropertyDockView</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/PropertyView.cpp" line="548"/>
-        <source>Property View</source>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/PropertyView.cpp" line="562"/>
+        <source>Property view</source>
         <translation>屬性檢視</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/PropertyView.cpp" line="562"/>
-        <source>Property view</source>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/PropertyView.cpp" line="548"/>
+        <source>Property View</source>
         <translation>屬性檢視</translation>
     </message>
 </context>
@@ -14583,6 +14662,11 @@ Do you want to specify another directory?</source>
 <context>
     <name>Gui::StdCmdPythonHelp</name>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/OnlineDocumentation.cpp" line="318"/>
+        <source>Automatic Python modules documentation</source>
+        <translation>自動python模組文件</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/OnlineDocumentation.cpp" line="325"/>
         <source>Automatic Python &amp;Modules Documentation</source>
         <translation>自動python模組文件(&amp;M)</translation>
@@ -14608,10 +14692,38 @@ Do you want to specify another directory?</source>
         <source>Opens a browser to show the Python modules documentation</source>
         <translation>開啟一個瀏覽器顯示Python模組文件</translation>
     </message>
+</context>
+<context>
+    <name>Gui::StyleParametersModel</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/OnlineDocumentation.cpp" line="318"/>
-        <source>Automatic Python modules documentation</source>
-        <translation>自動python模組文件</translation>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.cpp" line="356"/>
+        <source>All Theme Editor Parameters</source>
+        <translation>所有主題編輯參數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.cpp" line="426"/>
+        <source>Root</source>
+        <translation>根</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.cpp" line="495"/>
+        <source>Name</source>
+        <translation>名稱</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.cpp" line="497"/>
+        <source>Expression</source>
+        <translation>表達式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.cpp" line="499"/>
+        <source>Preview</source>
+        <translation>預覽</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.cpp" line="501"/>
+        <source>Type</source>
+        <translation>類型</translation>
     </message>
 </context>
 <context>
@@ -15309,12 +15421,6 @@ Do you want to specify another directory?</source>
 <context>
     <name>Gui::TextDocumentEditorView</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/TextDocumentEditorView.cpp" line="286"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/TextDocumentEditorView.cpp" line="293"/>
-        <source>Edit text</source>
-        <translation>編輯文字</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/TextDocumentEditorView.cpp" line="138"/>
         <source>Text updated</source>
         <translation>文字上傳</translation>
@@ -15343,6 +15449,12 @@ Do you want to specify another directory?</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/TextDocumentEditorView.cpp" line="232"/>
         <source>If you don&apos;t save, your changes will be lost.</source>
         <translation>若不儲存將會失去所有修改.</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/TextDocumentEditorView.cpp" line="286"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/TextDocumentEditorView.cpp" line="293"/>
+        <source>Edit text</source>
+        <translation>編輯文字</translation>
     </message>
 </context>
 <context>
@@ -15998,15 +16110,15 @@ Do you want to specify another directory?</source>
 <context>
     <name>Gui::WorkbenchTabWidget</name>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/WorkbenchSelector.cpp" line="240"/>
+        <source>Preferences</source>
+        <translation>偏好設定</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/WorkbenchSelector.cpp" line="197"/>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/WorkbenchSelector.cpp" line="203"/>
         <source>More</source>
         <translation>更多</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/WorkbenchSelector.cpp" line="240"/>
-        <source>Preferences</source>
-        <translation>偏好設定</translation>
     </message>
 </context>
 <context>
@@ -16295,11 +16407,6 @@ the region are non-opaque.</source>
 <context>
     <name>Position</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgLocationPos.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgLocationPos.ui" line="22"/>
         <source>X:</source>
         <translation>X:</translation>
@@ -16394,6 +16501,11 @@ the region are non-opaque.</source>
         <source>5 m</source>
         <translation>5 m</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgLocationPos.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
 </context>
 <context>
     <name>PropertyListDialog</name>
@@ -16413,16 +16525,6 @@ the region are non-opaque.</source>
 <context>
     <name>QDockWidget</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="519"/>
-        <source>Tasks</source>
-        <translation>任務</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="396"/>
-        <source>Selection view</source>
-        <translation>選擇檢視</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="344"/>
         <source>Toolbox</source>
         <translation>工具箱</translation>
@@ -16431,6 +16533,16 @@ the region are non-opaque.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="411"/>
         <source>Combo View</source>
         <translation>複合檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="519"/>
+        <source>Tasks</source>
+        <translation>任務</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="396"/>
+        <source>Selection view</source>
+        <translation>選擇檢視</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="421"/>
@@ -16601,6 +16713,25 @@ Please check report view for more details.</source>
         <translation>未儲存文件</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="127"/>
+        <source>File Migration Warning</source>
+        <translation>檔案遷移警告</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="128"/>
+        <source>This file was created with an older version of %1. Origin axes had incorrect placements, which have now been corrected.
+
+However, if you save this file in the current version and reopen it in an older version of %1, the origin axes will be misaligned. Additionally, if your file references these origin axes, your file will likely be broken.</source>
+        <translation>該文件是使用舊版本的 %1 建立的. 原點軸的位置不正確，現已更正.
+
+但是，如果您在目前版本中儲存此檔案並在舊版本 %1 中重新開啟它，則原點軸將不會對齊. 此外，如果您的檔案引用這些原點軸，您的檔案可能會損壞.</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="136"/>
+        <source>Don&apos;t show this warning again</source>
+        <translation>不再顯示此警告</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1208"/>
         <source>The exported object contains external link. Please save the documentat least once before exporting.</source>
         <translation>匯出的物體包含外部連結. 請在匯出前至少儲存一次文件.</translation>
@@ -16749,30 +16880,6 @@ Be aware the point where you click matters.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="350"/>
         <source>Safe mode temporarily disables your configuration and addons.</source>
         <translation>安全模式會暫時停用您的設定和附加元件.</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="308"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="528"/>
-        <source>Save views...</source>
-        <translation>保存檢視...</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="310"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="529"/>
-        <source>Load views...</source>
-        <translation>載入檢視...</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="313"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="530"/>
-        <source>Freeze view</source>
-        <translation>凍結檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="316"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="531"/>
-        <source>Clear views</source>
-        <translation>清除檢視</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="338"/>
@@ -17005,26 +17112,6 @@ underscore, and must not start with a digit.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgParameterImp.cpp" line="1236"/>
         <source>Change value</source>
         <translation>變更值</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Document.cpp" line="190"/>
-        <source>Too many message notifications. Notification temporarily stopped. Look at the report view for more information.</source>
-        <translation>通知訊息過多. 暫時停止通知. 檢視報告視窗以獲取更多資訊.</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Document.cpp" line="209"/>
-        <source>Warning</source>
-        <translation>警告</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Document.cpp" line="213"/>
-        <source>Information</source>
-        <translation>資訊</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Document.cpp" line="217"/>
-        <source>Critical</source>
-        <translation>關鍵</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Document.cpp" line="1061"/>
@@ -17332,6 +17419,13 @@ Choose &apos;Abort&apos; to abort</source>
         <translation>太多已開啟之非侵入通知. 通知已被忽略!</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/OnlineDocumentation.cpp" line="419"/>
+        <source>Unable to open your browser.
+
+Please open a browser window and type in: http://localhost:%1.</source>
+        <translation>無法打開您的流覽器. 請打開流覽器視窗，並輸入: http://localhost:%1.</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/OnlineDocumentation.cpp" line="424"/>
         <source>No Server</source>
         <translation>沒有伺服器</translation>
@@ -17346,13 +17440,6 @@ Choose &apos;Abort&apos; to abort</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/OnlineDocumentation.cpp" line="458"/>
         <source>No Browser</source>
         <translation>無瀏覽器</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/OnlineDocumentation.cpp" line="419"/>
-        <source>Unable to open your browser.
-
-Please open a browser window and type in: http://localhost:%1.</source>
-        <translation>無法打開您的流覽器. 請打開流覽器視窗，並輸入: http://localhost:%1.</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/OnlineDocumentation.cpp" line="459"/>
@@ -17385,6 +17472,11 @@ Please open a browser window and type in: http://localhost:%1.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsAdvanced.cpp" line="406"/>
         <source>Advanced</source>
         <translation>進階內容</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="530"/>
+        <source>UI</source>
+        <translation>使用者界面</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="531"/>
@@ -17898,28 +17990,48 @@ underscore, and must not start with a digit.</source>
         <translation>請不要在生產環境中使用.</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="127"/>
-        <source>File Migration Warning</source>
-        <translation>檔案遷移警告</translation>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="308"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="528"/>
+        <source>Save views...</source>
+        <translation>保存檢視...</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="128"/>
-        <source>This file was created with an older version of %1. Origin axes had incorrect placements, which have now been corrected.
-
-However, if you save this file in the current version and reopen it in an older version of %1, the origin axes will be misaligned. Additionally, if your file references these origin axes, your file will likely be broken.</source>
-        <translation>該文件是使用舊版本的 %1 建立的. 原點軸的位置不正確，現已更正.
-
-但是，如果您在目前版本中儲存此檔案並在舊版本 %1 中重新開啟它，則原點軸將不會對齊. 此外，如果您的檔案引用這些原點軸，您的檔案可能會損壞.</translation>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="310"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="529"/>
+        <source>Load views...</source>
+        <translation>載入檢視...</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="136"/>
-        <source>Don&apos;t show this warning again</source>
-        <translation>不再顯示此警告</translation>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="313"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="530"/>
+        <source>Freeze view</source>
+        <translation>凍結檢視</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="530"/>
-        <source>UI</source>
-        <translation>使用者界面</translation>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="316"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="531"/>
+        <source>Clear views</source>
+        <translation>清除檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Document.cpp" line="190"/>
+        <source>Too many message notifications. Notification temporarily stopped. Look at the report view for more information.</source>
+        <translation>通知訊息過多. 暫時停止通知. 檢視報告視窗以獲取更多資訊.</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Document.cpp" line="209"/>
+        <source>Warning</source>
+        <translation>警告</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Document.cpp" line="213"/>
+        <source>Information</source>
+        <translation>資訊</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/Document.cpp" line="217"/>
+        <source>Critical</source>
+        <translation>關鍵</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/ToolBarManager.cpp" line="835"/>
@@ -17935,6 +18047,24 @@ However, if you save this file in the current version and reopen it in an older 
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/ViewProviderAnnotation.cpp" line="410"/>
         <source>Move annotation</source>
         <translation>移動標註</translation>
+    </message>
+</context>
+<context>
+    <name>QWidget</name>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.cpp" line="65"/>
+        <source>Generic</source>
+        <translation>一般</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.cpp" line="68"/>
+        <source>Length</source>
+        <translation>長度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/Dialogs/DlgThemeEditor.cpp" line="71"/>
+        <source>Color</source>
+        <translation>顏色</translation>
     </message>
 </context>
 <context>
@@ -17991,13 +18121,6 @@ msgstr &quot;編輯 %1&quot;
 <context>
     <name>StdBoxSelection</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2739"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2740"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2742"/>
-        <source>Box selection</source>
-        <translation>框選</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2753"/>
         <source>&amp;Box selection</source>
         <translation>框選(&amp;B)</translation>
@@ -18007,6 +18130,13 @@ msgstr &quot;編輯 %1&quot;
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2916"/>
         <source>Activate the box selection tool</source>
         <translation>啟動框選工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2739"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2740"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2742"/>
+        <source>Box selection</source>
+        <translation>框選</translation>
     </message>
 </context>
 <context>
@@ -18101,11 +18231,6 @@ msgstr &quot;編輯 %1&quot;
 <context>
     <name>StdCmdAlignment</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1613"/>
-        <source>Alignment...</source>
-        <translation>對齊...</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1674"/>
         <source>Ali&amp;gnment...</source>
         <translation>對齊(&amp;g)...</translation>
@@ -18115,6 +18240,11 @@ msgstr &quot;編輯 %1&quot;
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1615"/>
         <source>Align the selected objects</source>
         <translation>對齊選定物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1613"/>
+        <source>Alignment...</source>
+        <translation>對齊...</translation>
     </message>
 </context>
 <context>
@@ -18134,16 +18264,6 @@ msgstr &quot;編輯 %1&quot;
 <context>
     <name>StdCmdAxisCross</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2054"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2055"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2056"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2141"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2142"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2143"/>
-        <source>Toggle axis cross</source>
-        <translation>切換軸交錯</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2221"/>
         <source>Toggle a&amp;xis cross</source>
         <translation>切換軸交錯(&amp;x)</translation>
@@ -18153,6 +18273,16 @@ msgstr &quot;編輯 %1&quot;
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2327"/>
         <source>Turns on or off the axis cross at the origin</source>
         <translation>打開或關閉在原點處的軸交叉</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2054"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2055"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2056"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2141"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2142"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2143"/>
+        <source>Toggle axis cross</source>
+        <translation>切換軸交錯</translation>
     </message>
 </context>
 <context>
@@ -18224,11 +18354,6 @@ msgstr &quot;編輯 %1&quot;
 <context>
     <name>StdCmdCopy</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1098"/>
-        <source>C&amp;opy</source>
-        <translation>複製(&amp;o)</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1171"/>
         <source>&amp;Copy</source>
         <translation>複製(&amp;C)</translation>
@@ -18239,14 +18364,14 @@ msgstr &quot;編輯 %1&quot;
         <source>Copy operation</source>
         <translation>複製</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1098"/>
+        <source>C&amp;opy</source>
+        <translation>複製(&amp;o)</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdCut</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1070"/>
-        <source>&amp;Cut</source>
-        <translation>剪下(&amp;C)</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1143"/>
         <source>Cu&amp;t</source>
@@ -18257,6 +18382,11 @@ msgstr &quot;編輯 %1&quot;
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1073"/>
         <source>Cut out</source>
         <translation>剪下</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1070"/>
+        <source>&amp;Cut</source>
+        <translation>剪下(&amp;C)</translation>
     </message>
 </context>
 <context>
@@ -18295,11 +18425,6 @@ msgstr &quot;編輯 %1&quot;
 <context>
     <name>StdCmdDependencyGraph</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="562"/>
-        <source>Dependency graph...</source>
-        <translation>關係圖...</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="623"/>
         <source>Dependency gra&amp;ph...</source>
         <translation>關係圖(&amp;p)...</translation>
@@ -18309,6 +18434,24 @@ msgstr &quot;編輯 %1&quot;
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="564"/>
         <source>Show the dependency graph of the objects in the active document</source>
         <translation>顯示目前文件中物體相依圖</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="562"/>
+        <source>Dependency graph...</source>
+        <translation>關係圖...</translation>
+    </message>
+</context>
+<context>
+    <name>StdCmdDevHandbook</name>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="606"/>
+        <source>Developers Handbook</source>
+        <translation>開發人員手冊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="608"/>
+        <source>Handbook about FreeCAD development</source>
+        <translation>關於 FreeCAD 開發的手冊</translation>
     </message>
 </context>
 <context>
@@ -18377,6 +18520,11 @@ msgstr &quot;編輯 %1&quot;
         <translation>錄製巨集</translation>
     </message>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandMacro.cpp" line="46"/>
+        <source>&amp;Macro recording ...</source>
+        <translation>巨集錄製(&amp;M)...</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandMacro.cpp" line="66"/>
         <source>S&amp;top macro recording</source>
         <translation>停止錄製(&amp;T)</translation>
@@ -18386,18 +18534,14 @@ msgstr &quot;編輯 %1&quot;
         <source>Stop the macro recording session</source>
         <translation>停止錄製</translation>
     </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandMacro.cpp" line="46"/>
-        <source>&amp;Macro recording ...</source>
-        <translation>巨集錄製(&amp;M)...</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdDlgParameter</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="326"/>
-        <source>E&amp;dit parameters ...</source>
-        <translation>編輯參數(&amp;d)...</translation>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="327"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="329"/>
+        <source>Opens a Dialog to edit the parameters</source>
+        <translation>打開一個對話框來編輯參數</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="381"/>
@@ -18411,18 +18555,18 @@ msgstr &quot;編輯 %1&quot;
         <translation>打開一個對話框來編輯參數</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="327"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="329"/>
-        <source>Opens a Dialog to edit the parameters</source>
-        <translation>打開一個對話框來編輯參數</translation>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="326"/>
+        <source>E&amp;dit parameters ...</source>
+        <translation>編輯參數(&amp;d)...</translation>
     </message>
 </context>
 <context>
     <name>StdCmdDlgPreferences</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="351"/>
-        <source>&amp;Preferences ...</source>
-        <translation>偏好設定(&amp;P)...</translation>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="352"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="354"/>
+        <source>Opens a Dialog to edit the preferences</source>
+        <translation>開啟偏好設定視窗</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="406"/>
@@ -18436,10 +18580,9 @@ msgstr &quot;編輯 %1&quot;
         <translation>開啟偏好設定視窗</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="352"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="354"/>
-        <source>Opens a Dialog to edit the preferences</source>
-        <translation>開啟偏好設定視窗</translation>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="351"/>
+        <source>&amp;Preferences ...</source>
+        <translation>偏好設定(&amp;P)...</translation>
     </message>
 </context>
 <context>
@@ -18687,11 +18830,6 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdDrawStyle</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="634"/>
-        <source>Draw style</source>
-        <translation>繪製樣式</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="648"/>
         <source>&amp;Draw style</source>
         <translation>繪製樣式(&amp;D)</translation>
@@ -18702,14 +18840,14 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Change the draw style of the objects</source>
         <translation>更改物體的繪製樣式</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="634"/>
+        <source>Draw style</source>
+        <translation>繪製樣式</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdDuplicateSelection</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1173"/>
-        <source>Duplicate selection</source>
-        <translation>複製選定物體</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1246"/>
         <source>Duplicate selecti&amp;on</source>
@@ -18720,6 +18858,11 @@ This makes the docked widget stay transparent at all times.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1176"/>
         <source>Put duplicates of the selected objects to the active document</source>
         <translation>於目前文件中貼上所複製之物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1173"/>
+        <source>Duplicate selection</source>
+        <translation>複製選定物體</translation>
     </message>
 </context>
 <context>
@@ -18781,11 +18924,6 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdExportDependencyGraph</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="605"/>
-        <source>Export dependency graph...</source>
-        <translation>匯出關係圖...</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="655"/>
         <source>Export dependency &amp;graph...</source>
         <translation>匯出關係圖(&amp;g)...</translation>
@@ -18795,6 +18933,11 @@ This makes the docked widget stay transparent at all times.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="607"/>
         <source>Export the dependency graph to a file</source>
         <translation>匯出關係圖到檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="605"/>
+        <source>Export dependency graph...</source>
+        <translation>匯出關係圖...</translation>
     </message>
 </context>
 <context>
@@ -18843,6 +18986,16 @@ This makes the docked widget stay transparent at all times.</source>
 </context>
 <context>
     <name>StdCmdFreeCADDonation</name>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="577"/>
+        <source>Donate to FreeCA&amp;D</source>
+        <translation>捐款協助 FreeCA&amp;D</translation>
+    </message>
+    <message>
+        <location filename="../../../../../Benson/sources/FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="578"/>
+        <source>Support the FreeCAD development</source>
+        <translation>支援FreeCAD開發</translation>
+    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="510"/>
         <source>Donate</source>
@@ -18900,16 +19053,6 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdFreeCADForum</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="621"/>
-        <source>FreeCAD Forum</source>
-        <translation>FreeCAD討論區</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="624"/>
-        <source>The FreeCAD Forum</source>
-        <translation>FreeCAD討論區</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="688"/>
         <source>FreeCAD &amp;Forum</source>
         <translation>FreeCAD討論區(&amp;F)</translation>
@@ -18918,6 +19061,16 @@ This makes the docked widget stay transparent at all times.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="622"/>
         <source>The FreeCAD forum, where you can find help from other users</source>
         <translation>FreeCAD討論區是一個您可以從其他使用者得到幫助的地方</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="621"/>
+        <source>FreeCAD Forum</source>
+        <translation>FreeCAD討論區</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="624"/>
+        <source>The FreeCAD Forum</source>
+        <translation>FreeCAD討論區</translation>
     </message>
 </context>
 <context>
@@ -18956,6 +19109,16 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdFreeCADUserHub</name>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="632"/>
+        <source>&amp;User Documentation</source>
+        <translation>使用者文件(&amp;U)</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="633"/>
+        <source>Opens the documentation for users</source>
+        <translation>為使用者開啟文件</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="565"/>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="568"/>
         <source>Users documentation</source>
@@ -18968,22 +19131,22 @@ This makes the docked widget stay transparent at all times.</source>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="632"/>
-        <source>&amp;User Documentation</source>
-        <translation>使用者文件(&amp;U)</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="632"/>
         <source>User Documentation</source>
         <translation>使用者文件</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="633"/>
-        <source>Opens the documentation for users</source>
-        <translation>為使用者開啟文件</translation>
     </message>
 </context>
 <context>
     <name>StdCmdFreeCADWebsite</name>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="604"/>
+        <source>FreeCAD W&amp;ebsite</source>
+        <translation>FreeCAD 網站(&amp;e)</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="605"/>
+        <source>Navigates to the official FreeCAD website</source>
+        <translation>導覽至 FreeCAD 官方網站</translation>
+    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="537"/>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="540"/>
@@ -18995,24 +19158,9 @@ This makes the docked widget stay transparent at all times.</source>
         <source>The FreeCAD website</source>
         <translation>FreeCAD 網站</translation>
     </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="604"/>
-        <source>FreeCAD W&amp;ebsite</source>
-        <translation>FreeCAD 網站(&amp;e)</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="605"/>
-        <source>Navigates to the official FreeCAD website</source>
-        <translation>導覽至 FreeCAD 官方網站</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdFreezeViews</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="293"/>
-        <source>Freeze display</source>
-        <translation>凍結顯示</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="323"/>
         <source>F&amp;reeze display</source>
@@ -19023,6 +19171,11 @@ This makes the docked widget stay transparent at all times.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="296"/>
         <source>Freezes the current view position</source>
         <translation>凍結目前視景的位置</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="293"/>
+        <source>Freeze display</source>
+        <translation>凍結顯示</translation>
     </message>
 </context>
 <context>
@@ -19046,11 +19199,6 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdHideObjects</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1106"/>
-        <source>Hide all objects</source>
-        <translation>隱藏所有物體</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1234"/>
         <source>Hide all &amp;objects</source>
         <translation>隱藏所有物體(&amp;o)</translation>
@@ -19061,14 +19209,14 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Hide all objects in the document</source>
         <translation>隱藏檔案中的所有物體</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1106"/>
+        <source>Hide all objects</source>
+        <translation>隱藏所有物體</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdHideSelection</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="958"/>
-        <source>Hide selection</source>
-        <translation>隱藏選取內容</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1086"/>
         <source>&amp;Hide selection</source>
@@ -19079,6 +19227,11 @@ This makes the docked widget stay transparent at all times.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="960"/>
         <source>Hide all selected objects</source>
         <translation>隱藏所有選取的物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="958"/>
+        <source>Hide selection</source>
+        <translation>隱藏選取內容</translation>
     </message>
 </context>
 <context>
@@ -19212,11 +19365,6 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdLinkSelectActions</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandLink.cpp" line="845"/>
-        <source>Link navigation</source>
-        <translation>連結導航</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandLink.cpp" line="852"/>
         <source>&amp;Link navigation</source>
         <translation>連結導航(&amp;L)</translation>
@@ -19227,14 +19375,14 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Link navigation actions</source>
         <translation>連結導航動作</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandLink.cpp" line="845"/>
+        <source>Link navigation</source>
+        <translation>連結導航</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdLinkSelectAllLinks</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandLink.cpp" line="806"/>
-        <source>Select all links</source>
-        <translation>選取所有連結</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandLink.cpp" line="812"/>
         <source>Select &amp;all links</source>
@@ -19245,14 +19393,14 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Select all links to the current selected object</source>
         <translation>選擇目前選定物體的所有連結</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandLink.cpp" line="806"/>
+        <source>Select all links</source>
+        <translation>選取所有連結</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdLinkSelectLinked</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandLink.cpp" line="645"/>
-        <source>Go to linked object</source>
-        <translation>轉到連結物體</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandLink.cpp" line="649"/>
         <source>&amp;Go to linked object</source>
@@ -19263,14 +19411,14 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Select the linked object and switch to its owner document</source>
         <translation>選擇連結物體並切換到其擁有的文件</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandLink.cpp" line="645"/>
+        <source>Go to linked object</source>
+        <translation>轉到連結物體</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdLinkSelectLinkedFinal</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandLink.cpp" line="772"/>
-        <source>Go to the deepest linked object</source>
-        <translation>轉到最底層的連結物體</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandLink.cpp" line="777"/>
         <source>Go to the &amp;deepest linked object</source>
@@ -19280,6 +19428,11 @@ This makes the docked widget stay transparent at all times.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandLink.cpp" line="773"/>
         <source>Select the deepest linked object and switch to its owner document</source>
         <translation>選擇最底層的連結物體並切換到其擁有的文件</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandLink.cpp" line="772"/>
+        <source>Go to the deepest linked object</source>
+        <translation>轉到最底層的連結物體</translation>
     </message>
 </context>
 <context>
@@ -19469,19 +19622,6 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdMergeProjects</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="570"/>
-        <source>&amp;Merge document...</source>
-        <translation>合併文件(&amp;M)...</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="521"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="523"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="533"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="542"/>
-        <source>Merge document</source>
-        <translation>合併文件</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="509"/>
         <source>Merge project...</source>
         <translation>合併專案...</translation>
@@ -19500,14 +19640,27 @@ This makes the docked widget stay transparent at all times.</source>
         <translation>合併文件...</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="523"/>
-        <source>%1 document (*.FCStd)</source>
-        <translation>%1 文件（*.FCStd）</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="532"/>
         <source>Cannot merge project with itself.</source>
         <translation>不能合併專案本身.</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="570"/>
+        <source>&amp;Merge document...</source>
+        <translation>合併文件(&amp;M)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="521"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="523"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="533"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="542"/>
+        <source>Merge document</source>
+        <translation>合併文件</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="523"/>
+        <source>%1 document (*.FCStd)</source>
+        <translation>%1 文件（*.FCStd）</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="543"/>
@@ -19539,6 +19692,16 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdOnlineHelp</name>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="525"/>
+        <source>&amp;Help</source>
+        <translation>求助說明(&amp;H)</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="526"/>
+        <source>Opens the Help documentation</source>
+        <translation>開啟求助說明文件</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="458"/>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="461"/>
         <source>Help</source>
@@ -19548,16 +19711,6 @@ This makes the docked widget stay transparent at all times.</source>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="459"/>
         <source>Show help to the application</source>
         <translation>顯示應用程式的説明</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="525"/>
-        <source>&amp;Help</source>
-        <translation>求助說明(&amp;H)</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="526"/>
-        <source>Opens the Help documentation</source>
-        <translation>開啟求助說明文件</translation>
     </message>
 </context>
 <context>
@@ -19655,11 +19808,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdPlacement</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1545"/>
-        <source>Placement...</source>
-        <translation>放置位置...</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1592"/>
         <source>P&amp;lacement...</source>
         <translation>放置位置(&amp;l)...</translation>
@@ -19669,6 +19817,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1547"/>
         <source>Place the selected objects</source>
         <translation>放置所選物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1545"/>
+        <source>Placement...</source>
+        <translation>放置位置...</translation>
     </message>
 </context>
 <context>
@@ -19688,11 +19841,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdPrintPdf</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="925"/>
-        <source>&amp;Export PDF...</source>
-        <translation>匯出 PDF(&amp;E)...</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="998"/>
         <source>Export P&amp;DF...</source>
         <translation>匯出 P&amp;DF...</translation>
@@ -19702,6 +19850,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="928"/>
         <source>Export the document as PDF</source>
         <translation>將文件匯出為 PDF</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="925"/>
+        <source>&amp;Export PDF...</source>
+        <translation>匯出 PDF(&amp;E)...</translation>
     </message>
 </context>
 <context>
@@ -19717,18 +19870,29 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>列印文件</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="898"/>
-        <source>Print preview</source>
-        <translation>預覽列印</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="895"/>
         <source>&amp;Print preview...</source>
         <translation>預覽列印(&amp;P)...</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="898"/>
+        <source>Print preview</source>
+        <translation>預覽列印</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdProjectInfo</name>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="878"/>
+        <source>Doc&amp;ument information...</source>
+        <translation>文件資訊(&amp;u)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="829"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="831"/>
+        <source>Show details of the currently active document</source>
+        <translation>顯示目前作業中文件的詳細資訊</translation>
+    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="805"/>
         <source>Project i&amp;nformation...</source>
@@ -19745,20 +19909,20 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Document i&amp;nformation...</source>
         <translation>文件資訊(&amp;n)...</translation>
     </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="878"/>
-        <source>Doc&amp;ument information...</source>
-        <translation>文件資訊(&amp;u)...</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="829"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="831"/>
-        <source>Show details of the currently active document</source>
-        <translation>顯示目前作業中文件的詳細資訊</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdProjectUtil</name>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="909"/>
+        <source>Do&amp;cument utility...</source>
+        <translation>文件實用程式(&amp;c)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="860"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="861"/>
+        <source>Utility to extract or create document files</source>
+        <translation>讀取或建立專案檔之功能</translation>
+    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="836"/>
         <source>Project utility...</source>
@@ -19775,25 +19939,9 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Document utility...</source>
         <translation>文件實用程式...</translation>
     </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="909"/>
-        <source>Do&amp;cument utility...</source>
-        <translation>文件實用程式(&amp;c)...</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="860"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="861"/>
-        <source>Utility to extract or create document files</source>
-        <translation>讀取或建立專案檔之功能</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdProperties</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1728"/>
-        <source>Properties</source>
-        <translation>屬性</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1784"/>
         <source>Propert&amp;ies</source>
@@ -19803,6 +19951,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1729"/>
         <source>Show the property view, which displays the properties of the selected object.</source>
         <translation>顯示屬性檢視，顯示其中所選物件的屬性.</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1728"/>
+        <source>Properties</source>
+        <translation>屬性</translation>
     </message>
 </context>
 <context>
@@ -19836,13 +19989,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdRandomColor</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandFeat.cpp" line="78"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandFeat.cpp" line="79"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandFeat.cpp" line="81"/>
-        <source>Random color</source>
-        <translation>隨機顏色</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandFeat.cpp" line="80"/>
         <source>Random &amp;color</source>
         <translation>隨機顏色(&amp;c)</translation>
@@ -19853,19 +19999,16 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Set each selected object to a randomly-selected color</source>
         <translation>設定每個選擇物件為隨機選機顏色</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandFeat.cpp" line="78"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandFeat.cpp" line="79"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandFeat.cpp" line="81"/>
+        <source>Random color</source>
+        <translation>隨機顏色</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdRecentFiles</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="133"/>
-        <source>Recent files</source>
-        <translation>最近使用的檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="137"/>
-        <source>Open Recent</source>
-        <translation>開啟最近使用的檔案</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="140"/>
         <source>Open &amp;Recent</source>
@@ -19877,14 +20020,19 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Recent file list</source>
         <translation>最近檔案清單</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="133"/>
+        <source>Recent files</source>
+        <translation>最近使用的檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="137"/>
+        <source>Open Recent</source>
+        <translation>開啟最近使用的檔案</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdRecentMacros</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="174"/>
-        <source>Recent macros</source>
-        <translation>最近使用的巨集</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="181"/>
         <source>&amp;Recent macros</source>
@@ -19895,6 +20043,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="177"/>
         <source>Recent macro list</source>
         <translation>最近使用的巨集清單</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="174"/>
+        <source>Recent macros</source>
+        <translation>最近使用的巨集</translation>
     </message>
 </context>
 <context>
@@ -19914,11 +20067,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdRefresh</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1465"/>
-        <source>&amp;Refresh</source>
-        <translation>重新整理(&amp;R)</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1512"/>
         <source>Refres&amp;h</source>
         <translation>重新整理(&amp;h)</translation>
@@ -19928,6 +20076,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1468"/>
         <source>Recomputes the current active document</source>
         <translation>重新計算目前作業中檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1465"/>
+        <source>&amp;Refresh</source>
+        <translation>重新整理(&amp;R)</translation>
     </message>
 </context>
 <context>
@@ -19957,6 +20110,16 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdReportBug</name>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="769"/>
+        <source>Report an &amp;Issue</source>
+        <translation>回報問題(&amp;I)</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="770"/>
+        <source>Report an issue or suggest a new feature</source>
+        <translation>回報問題或建議新功能</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="702"/>
         <source>Report a bug</source>
         <translation>回報錯誤</translation>
@@ -19969,18 +20132,8 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="769"/>
-        <source>Report an &amp;Issue</source>
-        <translation>回報問題(&amp;I)</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="769"/>
         <source>Report an Issue</source>
         <translation>回報問題</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="770"/>
-        <source>Report an issue or suggest a new feature</source>
-        <translation>回報問題或建議新功能</translation>
     </message>
 </context>
 <context>
@@ -20006,11 +20159,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdRevert</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="766"/>
-        <source>Revert</source>
-        <translation>還原</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="839"/>
         <source>Rever&amp;t</source>
         <translation>還原(&amp;t)</translation>
@@ -20020,6 +20168,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="769"/>
         <source>Reverts to the saved version of this file</source>
         <translation>還原至此檔儲存之版本</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="766"/>
+        <source>Revert</source>
+        <translation>還原</translation>
     </message>
 </context>
 <context>
@@ -20039,11 +20192,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdSaveAll</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="738"/>
-        <source>Save All</source>
-        <translation>全部儲存</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="811"/>
         <source>Sa&amp;ve All</source>
         <translation>全部儲存(&amp;v)</translation>
@@ -20053,6 +20201,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="741"/>
         <source>Save all opened document</source>
         <translation>儲存所有開啟的文件</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="738"/>
+        <source>Save All</source>
+        <translation>全部儲存</translation>
     </message>
 </context>
 <context>
@@ -20072,11 +20225,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdSaveCopy</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="705"/>
-        <source>Save a &amp;Copy...</source>
-        <translation>儲存備份(&amp;C)...</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="784"/>
         <source>Save a Cop&amp;y...</source>
         <translation>儲存備份(&amp;y)...</translation>
@@ -20086,6 +20234,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="708"/>
         <source>Save a copy of the active document under a new file name</source>
         <translation>以新的檔案名稱儲存目前檔案的備份</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="705"/>
+        <source>Save a &amp;Copy...</source>
+        <translation>儲存備份(&amp;C)...</translation>
     </message>
 </context>
 <context>
@@ -20220,11 +20373,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdSelectVisibleObjects</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="986"/>
-        <source>Select visible objects</source>
-        <translation>選取顯示中物體</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1114"/>
         <source>&amp;Select visible objects</source>
         <translation>選取顯示中物體(&amp;S)</translation>
@@ -20234,6 +20382,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="988"/>
         <source>Select visible objects in the active document</source>
         <translation>於編輯中檔案選取顯示中之物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="986"/>
+        <source>Select visible objects</source>
+        <translation>選取顯示中物體</translation>
     </message>
 </context>
 <context>
@@ -20267,11 +20420,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdShowObjects</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1069"/>
-        <source>Show all objects</source>
-        <translation>顯示所有物體</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1197"/>
         <source>Show &amp;all objects</source>
         <translation>顯示所有物體(&amp;a)</translation>
@@ -20282,14 +20430,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Show all objects in the document</source>
         <translation>在檔案中顯示所有物體</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1069"/>
+        <source>Show all objects</source>
+        <translation>顯示所有物體</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdShowSelection</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="930"/>
-        <source>Show selection</source>
-        <translation>顯示選取內容</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1058"/>
         <source>Sho&amp;w selection</source>
@@ -20300,6 +20448,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="932"/>
         <source>Show all selected objects</source>
         <translation>顯示所有選取的物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="930"/>
+        <source>Show selection</source>
+        <translation>顯示選取內容</translation>
     </message>
 </context>
 <context>
@@ -20319,11 +20472,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdTextDocument</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="787"/>
-        <source>Add text document</source>
-        <translation>增加文字文件</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="796"/>
         <source>Add te&amp;xt document</source>
         <translation>增加文字文件(&amp;x)</translation>
@@ -20333,6 +20481,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="790"/>
         <source>Add text document to active document</source>
         <translation>增加文字文件至啟用文件</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="787"/>
+        <source>Add text document</source>
+        <translation>增加文字文件</translation>
     </message>
 </context>
 <context>
@@ -20392,11 +20545,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdToggleClipPlane</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="552"/>
-        <source>Clipping plane</source>
-        <translation>裁剪平面</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="595"/>
         <source>Clippin&amp;g plane</source>
         <translation>裁剪平面(&amp;g)</translation>
@@ -20406,6 +20554,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="555"/>
         <source>Toggles clipping plane for active view</source>
         <translation>為目前檢視切換剪裁面板</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="552"/>
+        <source>Clipping plane</source>
+        <translation>裁剪平面</translation>
     </message>
 </context>
 <context>
@@ -20434,11 +20587,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdToggleNavigation</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2004"/>
-        <source>Toggle navigation/Edit mode</source>
-        <translation>切換導航/編輯模式</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2172"/>
         <source>Toggle navigation/&amp;Edit mode</source>
         <translation>切換導航/編輯模式(&amp;E)</translation>
@@ -20449,14 +20597,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Toggle between navigation and edit mode</source>
         <translation>導航和編輯模式之間切換</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2004"/>
+        <source>Toggle navigation/Edit mode</source>
+        <translation>切換導航/編輯模式</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdToggleObjects</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1028"/>
-        <source>Toggle all objects</source>
-        <translation>切換所有物體</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1156"/>
         <source>To&amp;ggle all objects</source>
@@ -20468,14 +20616,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Toggles visibility of all objects in the active document</source>
         <translation>切換顯示活動文件中的所有物體的可見性</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1028"/>
+        <source>Toggle all objects</source>
+        <translation>切換所有物體</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdToggleSelectability</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="883"/>
-        <source>Toggle selectability</source>
-        <translation>切換可能選項</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1006"/>
         <source>Toggle se&amp;lectability</source>
@@ -20486,6 +20634,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="885"/>
         <source>Toggles the property of the objects to get selected in the 3D-View</source>
         <translation>切換物體性質於3D檢視中選取</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="883"/>
+        <source>Toggle selectability</source>
+        <translation>切換可能選項</translation>
     </message>
 </context>
 <context>
@@ -20529,11 +20682,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdToggleVisibility</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="853"/>
-        <source>Toggle visibility</source>
-        <translation>切換可見性</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="868"/>
         <source>Toggle &amp;visibility</source>
         <translation>切換可見性(&amp;v)</translation>
@@ -20542,6 +20690,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="854"/>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="855"/>
         <source>Toggles visibility</source>
+        <translation>切換可見性</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="853"/>
+        <source>Toggle visibility</source>
         <translation>切換可見性</translation>
     </message>
 </context>
@@ -20581,17 +20734,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdTransformManip</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1579"/>
-        <source>Transform</source>
-        <translation>轉換</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1580"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1581"/>
-        <source>Transform the selected object in the 3d view</source>
-        <translation>轉換於3D檢視中所選物體</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1639"/>
         <source>Trans&amp;form</source>
         <translation>轉換(&amp;f)</translation>
@@ -20600,6 +20742,17 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1593"/>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1594"/>
         <source>Transform the selected object in the 3D view</source>
+        <translation>轉換於3D檢視中所選物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1579"/>
+        <source>Transform</source>
+        <translation>轉換</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1580"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1581"/>
+        <source>Transform the selected object in the 3d view</source>
         <translation>轉換於3D檢視中所選物體</translation>
     </message>
 </context>
@@ -20701,11 +20854,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdUserEditMode</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="856"/>
-        <source>Edit mode</source>
-        <translation>編輯模式</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="865"/>
         <source>Edit &amp;mode</source>
         <translation>編輯模式(&amp;m)</translation>
@@ -20715,6 +20863,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="858"/>
         <source>Defines behavior when editing an object from tree</source>
         <translation>定義從樹狀圖編輯物體時的行為</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="856"/>
+        <source>Edit mode</source>
+        <translation>編輯模式</translation>
     </message>
 </context>
 <context>
@@ -20761,11 +20914,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdViewBottom</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1214"/>
-        <source>Bottom</source>
-        <translation>底視圖</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1299"/>
         <source>&amp;5 Bottom</source>
         <translation>底視圖(&amp;5)</translation>
@@ -20775,6 +20923,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1217"/>
         <source>Set to bottom view</source>
         <translation>設定為底部檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1214"/>
+        <source>Bottom</source>
+        <translation>底視圖</translation>
     </message>
 </context>
 <context>
@@ -20794,11 +20947,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdViewDimetric</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1382"/>
-        <source>Dimetric</source>
-        <translation>二維圖</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1468"/>
         <source>&amp;Dimetric</source>
         <translation>二維圖(&amp;D)</translation>
@@ -20808,6 +20956,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1385"/>
         <source>Set to dimetric view</source>
         <translation>設定為二維圖視景</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1382"/>
+        <source>Dimetric</source>
+        <translation>二維圖</translation>
     </message>
 </context>
 <context>
@@ -20855,11 +21008,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdViewFitAll</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1478"/>
-        <source>Fit all</source>
-        <translation>顯示全部</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1564"/>
         <source>&amp;Fit all</source>
         <translation>顯示全部(&amp;F)</translation>
@@ -20870,14 +21018,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Fits the whole content on the screen</source>
         <translation>在螢幕上容納整個內容</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1478"/>
+        <source>Fit all</source>
+        <translation>顯示全部</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewFitSelection</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1509"/>
-        <source>Fit selection</source>
-        <translation>顯示所選區域</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1595"/>
         <source>Fit &amp;selection</source>
@@ -20889,14 +21037,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Fits the selected content on the screen</source>
         <translation>顯示所選內容於螢幕</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1509"/>
+        <source>Fit selection</source>
+        <translation>顯示所選區域</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewFront</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1238"/>
-        <source>Front</source>
-        <translation>正視圖</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1323"/>
         <source>&amp;1 Front</source>
@@ -20907,6 +21055,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1241"/>
         <source>Set to front view</source>
         <translation>設定為正面檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1238"/>
+        <source>Front</source>
+        <translation>正視圖</translation>
     </message>
 </context>
 <context>
@@ -20931,11 +21084,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdViewHome</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1186"/>
-        <source>Home</source>
-        <translation>主視景</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1271"/>
         <source>&amp;Home</source>
         <translation>主視景(&amp;H)</translation>
@@ -20946,14 +21094,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Set to default home view</source>
         <translation>設定為預設主視景</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1186"/>
+        <source>Home</source>
+        <translation>主視景</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewIsometric</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1358"/>
-        <source>Isometric</source>
-        <translation>等角立體</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1444"/>
         <source>&amp;Isometric</source>
@@ -20965,14 +21113,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Set to isometric view</source>
         <translation>設定為立體正投影檢視</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1358"/>
+        <source>Isometric</source>
+        <translation>等角立體</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewIvIssueCamPos</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2416"/>
-        <source>Issue camera position</source>
-        <translation>設定攝影位置</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2494"/>
         <source>Issue camera &amp;position</source>
@@ -20984,14 +21132,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Issue the camera position to the console and to a macro, to easily recall this position</source>
         <translation>於控制台及巨集中紀錄攝影機位置,以方便回復</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2416"/>
+        <source>Issue camera position</source>
+        <translation>設定攝影位置</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewIvStereoInterleavedColumns</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2387"/>
-        <source>Stereo Interleaved Columns</source>
-        <translation>立體插入列</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2465"/>
         <source>Stereo Interleaved &amp;Columns</source>
@@ -21003,14 +21151,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Switch stereo viewing to Interleaved Columns</source>
         <translation>轉換立體檢視為行交錯</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2387"/>
+        <source>Stereo Interleaved Columns</source>
+        <translation>立體插入列</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewIvStereoInterleavedRows</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2359"/>
-        <source>Stereo Interleaved Rows</source>
-        <translation>立體列交錯</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2437"/>
         <source>Stereo Interleaved &amp;Rows</source>
@@ -21022,14 +21170,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Switch stereo viewing to Interleaved Rows</source>
         <translation>轉換立體檢視為列交錯</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2359"/>
+        <source>Stereo Interleaved Rows</source>
+        <translation>立體列交錯</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewIvStereoOff</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2274"/>
-        <source>Stereo Off</source>
-        <translation>關閉立體影像</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2352"/>
         <source>Stereo &amp;Off</source>
@@ -21041,14 +21189,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Switch stereo viewing off</source>
         <translation>關閉立體影像</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2274"/>
+        <source>Stereo Off</source>
+        <translation>關閉立體影像</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewIvStereoQuadBuff</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2331"/>
-        <source>Stereo quad buffer</source>
-        <translation>四組立體緩衝功能</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2409"/>
         <source>Stereo &amp;quad buffer</source>
@@ -21060,14 +21208,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Switch stereo viewing to quad buffer</source>
         <translation>轉換立體檢視為四組緩衝功能</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2331"/>
+        <source>Stereo quad buffer</source>
+        <translation>四組立體緩衝功能</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewIvStereoRedGreen</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2303"/>
-        <source>Stereo red/cyan</source>
-        <translation>立體 紅/青</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2381"/>
         <source>Stereo re&amp;d/cyan</source>
@@ -21079,14 +21227,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Switch stereo viewing to red/cyan</source>
         <translation>切換立體檢視至 紅/青</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2303"/>
+        <source>Stereo red/cyan</source>
+        <translation>立體 紅/青</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewLeft</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1262"/>
-        <source>Left</source>
-        <translation>左視圖</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1347"/>
         <source>&amp;6 Left</source>
@@ -21098,14 +21246,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Set to left view</source>
         <translation>設定為左面檢視</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1262"/>
+        <source>Left</source>
+        <translation>左視圖</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewRear</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1286"/>
-        <source>Rear</source>
-        <translation>後視圖</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1371"/>
         <source>&amp;4 Rear</source>
@@ -21116,6 +21264,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1289"/>
         <source>Set to rear view</source>
         <translation>設定為背面檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1286"/>
+        <source>Rear</source>
+        <translation>後視圖</translation>
     </message>
 </context>
 <context>
@@ -21135,11 +21288,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdViewRight</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1310"/>
-        <source>Right</source>
-        <translation>右視圖</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1395"/>
         <source>&amp;3 Right</source>
         <translation>右視圖(&amp;3)</translation>
@@ -21150,14 +21298,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Set to right view</source>
         <translation>設定為右面檢視</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1310"/>
+        <source>Right</source>
+        <translation>右視圖</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewRotateLeft</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1428"/>
-        <source>Rotate Left</source>
-        <translation>向左旋轉</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1514"/>
         <source>Rotate &amp;Left</source>
@@ -21169,14 +21317,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Rotate the view by 90° counter-clockwise</source>
         <translation>逆時針90°旋轉視景</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1428"/>
+        <source>Rotate Left</source>
+        <translation>向左旋轉</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewRotateRight</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1453"/>
-        <source>Rotate Right</source>
-        <translation>向右旋轉</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1539"/>
         <source>Rotate &amp;Right</source>
@@ -21187,6 +21335,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1456"/>
         <source>Rotate the view by 90° clockwise</source>
         <translation>順時針90°旋轉視景</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1453"/>
+        <source>Rotate Right</source>
+        <translation>向右旋轉</translation>
     </message>
 </context>
 <context>
@@ -21206,11 +21359,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdViewTop</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1334"/>
-        <source>Top</source>
-        <translation>上視圖</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1419"/>
         <source>&amp;2 Top</source>
         <translation>上視圖(&amp;2)</translation>
@@ -21221,14 +21369,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Set to top view</source>
         <translation>設定為上面檢視</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1334"/>
+        <source>Top</source>
+        <translation>上視圖</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewTrimetric</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1405"/>
-        <source>Trimetric</source>
-        <translation>不等角立體</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1491"/>
         <source>&amp;Trimetric</source>
@@ -21239,6 +21387,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1408"/>
         <source>Set to trimetric view</source>
         <translation>設定為不等角立體視景</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1405"/>
+        <source>Trimetric</source>
+        <translation>不等角立體</translation>
     </message>
 </context>
 <context>
@@ -21306,11 +21459,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdWorkbench</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="68"/>
-        <source>Workbench</source>
-        <translation>工作台</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="75"/>
         <source>&amp;Workbench</source>
         <translation>工作台(&amp;W)</translation>
@@ -21320,6 +21468,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="71"/>
         <source>Switch between workbenches</source>
         <translation>工作台之間切換</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandStd.cpp" line="68"/>
+        <source>Workbench</source>
+        <translation>工作台</translation>
     </message>
 </context>
 <context>
@@ -21367,11 +21520,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdRecallWorkingView</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="3711"/>
-        <source>Recall working view</source>
-        <translation>調用之前的工作檢視</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="3914"/>
         <source>R&amp;ecall working view</source>
         <translation>調用之前的工作檢視(&amp;e)</translation>
@@ -21382,14 +21530,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Recall previously stored temporary working view</source>
         <translation>調用之前儲存的暫時工作檢視</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="3711"/>
+        <source>Recall working view</source>
+        <translation>調用之前的工作檢視</translation>
+    </message>
 </context>
 <context>
     <name>StdStoreWorkingView</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="3681"/>
-        <source>Store working view</source>
-        <translation>儲存工作檢視</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="3884"/>
         <source>St&amp;ore working view</source>
@@ -21400,6 +21548,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="3683"/>
         <source>Store a document-specific temporary working view</source>
         <translation>儲存特定文件的暫時工作檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="3681"/>
+        <source>Store working view</source>
+        <translation>儲存工作檢視</translation>
     </message>
 </context>
 <context>
@@ -21461,6 +21614,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdTreePreSelection</name>
     <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="3456"/>
+        <source>&amp;4 Pre-selection</source>
+        <translation>&amp;4 預先選擇</translation>
+    </message>
+    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="3457"/>
         <source>&amp;4 Preselection</source>
         <translation>&amp;4 預先選擇</translation>
@@ -21479,11 +21637,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="3614"/>
         <source>Preselect the object in 3D view when mouse over the tree item</source>
         <translation>將滑鼠游標停在樹狀圖項目上時，在3D視窗中預選取該物體</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="3456"/>
-        <source>&amp;4 Pre-selection</source>
-        <translation>&amp;4 預先選擇</translation>
     </message>
 </context>
 <context>
@@ -21599,13 +21752,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdViewBoxZoom</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2669"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2670"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2672"/>
-        <source>Box zoom</source>
-        <translation>框選縮放</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2719"/>
         <source>&amp;Box zoom</source>
         <translation>框選縮放(&amp;B)</translation>
@@ -21616,14 +21762,16 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Activate the box zoom tool</source>
         <translation>啟動框縮放工具</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2669"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2670"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2672"/>
+        <source>Box zoom</source>
+        <translation>框選縮放</translation>
+    </message>
 </context>
 <context>
     <name>StdViewDock</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1540"/>
-        <source>Docked</source>
-        <translation>嵌入</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1664"/>
         <source>&amp;Docked</source>
@@ -21635,14 +21783,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Display the active view either in fullscreen, in undocked or docked mode</source>
         <translation>無論是在全螢幕，在未嵌入或嵌入模式中均顯示目前檢視</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1540"/>
+        <source>Docked</source>
+        <translation>嵌入</translation>
+    </message>
 </context>
 <context>
     <name>StdViewDockUndockFullscreen</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1660"/>
-        <source>Document window</source>
-        <translation>檔案視窗</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1784"/>
         <source>D&amp;ocument window</source>
@@ -21654,14 +21802,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Display the active view either in fullscreen, in undocked or docked mode</source>
         <translation>無論是在全螢幕，在未嵌入或嵌入模式中均顯示目前檢視</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1660"/>
+        <source>Document window</source>
+        <translation>檔案視窗</translation>
+    </message>
 </context>
 <context>
     <name>StdViewFullscreen</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1630"/>
-        <source>Fullscreen</source>
-        <translation>全螢幕</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1754"/>
         <source>&amp;Fullscreen</source>
@@ -21673,14 +21821,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Display the active view either in fullscreen, in undocked or docked mode</source>
         <translation>無論是在全螢幕，在未嵌入或嵌入模式中均顯示目前檢視</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1630"/>
+        <source>Fullscreen</source>
+        <translation>全螢幕</translation>
+    </message>
 </context>
 <context>
     <name>StdViewLoadImage</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1983"/>
-        <source>Load image...</source>
-        <translation>載入影像...</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2097"/>
         <source>&amp;Load image...</source>
@@ -21692,19 +21840,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Loads an image</source>
         <translation>載入一個影像</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1983"/>
+        <source>Load image...</source>
+        <translation>載入影像...</translation>
+    </message>
 </context>
 <context>
     <name>StdViewScreenShot</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1804"/>
-        <source>Save picture...</source>
-        <translation>儲存圖片...</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1811"/>
-        <source>Save image...</source>
-        <translation>儲存影像...</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1926"/>
         <source>Save &amp;image...</source>
@@ -21716,14 +21859,19 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Creates a screenshot of the active view</source>
         <translation>建立目前檢視畫面的螢幕截圖</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1804"/>
+        <source>Save picture...</source>
+        <translation>儲存圖片...</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1811"/>
+        <source>Save image...</source>
+        <translation>儲存影像...</translation>
+    </message>
 </context>
 <context>
     <name>StdViewUndock</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1569"/>
-        <source>Undocked</source>
-        <translation>未嵌入</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1693"/>
         <source>&amp;Undocked</source>
@@ -21735,16 +21883,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Display the active view either in fullscreen, in undocked or docked mode</source>
         <translation>無論是在全螢幕，在未嵌入或嵌入模式中均顯示目前檢視</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="1569"/>
+        <source>Undocked</source>
+        <translation>未嵌入</translation>
+    </message>
 </context>
 <context>
     <name>StdViewZoomIn</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2466"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2467"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2469"/>
-        <source>Zoom In</source>
-        <translation>放大</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2544"/>
         <source>Zoom &amp;In</source>
@@ -21756,16 +21902,16 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Increase the zoom factor by a fixed amount</source>
         <translation>以固定數量來增加縮放比例</translation>
     </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2466"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2467"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2469"/>
+        <source>Zoom In</source>
+        <translation>放大</translation>
+    </message>
 </context>
 <context>
     <name>StdViewZoomOut</name>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2499"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2500"/>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2502"/>
-        <source>Zoom Out</source>
-        <translation>縮小</translation>
-    </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2573"/>
         <source>Zoom &amp;Out</source>
@@ -21776,6 +21922,13 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2461"/>
         <source>Decrease the zoom factor by a fixed amount</source>
         <translation>將縮放係數減小固定量</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2499"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2500"/>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="2502"/>
+        <source>Zoom Out</source>
+        <translation>縮小</translation>
     </message>
 </context>
 <context>
@@ -21812,16 +21965,6 @@ Are you sure you want to continue?
 <context>
     <name>Std_DrawStyle</name>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="727"/>
-        <source>&amp;1 As is</source>
-        <translation>&amp;1 如同</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="714"/>
-        <source>Normal mode</source>
-        <translation>正常模式</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="712"/>
         <source>As is</source>
         <translation>如同</translation>
@@ -21838,8 +21981,33 @@ Are you sure you want to continue?
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="727"/>
+        <source>&amp;1 As is</source>
+        <translation>&amp;1 如同</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="727"/>
         <source>Hidden line</source>
         <translation>隱藏線段</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="732"/>
+        <source>No shading</source>
+        <translation>無上色</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="737"/>
+        <source>Shaded</source>
+        <translation>上色</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="742"/>
+        <source>Flat lines</source>
+        <translation>框線</translation>
+    </message>
+    <message>
+        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="714"/>
+        <source>Normal mode</source>
+        <translation>正常模式</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="732"/>
@@ -21852,11 +22020,6 @@ Are you sure you want to continue?
         <translation>點模式</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="732"/>
-        <source>No shading</source>
-        <translation>無上色</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="737"/>
         <source>&amp;3 Wireframe</source>
         <translation>&amp;3 線框</translation>
@@ -21867,11 +22030,6 @@ Are you sure you want to continue?
         <translation>線框模式</translation>
     </message>
     <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="737"/>
-        <source>Shaded</source>
-        <translation>上色</translation>
-    </message>
-    <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="742"/>
         <source>&amp;4 Hidden line</source>
         <translation>&amp;4 隱藏線</translation>
@@ -21880,11 +22038,6 @@ Are you sure you want to continue?
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="729"/>
         <source>Hidden line mode</source>
         <translation>隱藏線段模式</translation>
-    </message>
-    <message>
-        <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="742"/>
-        <source>Flat lines</source>
-        <translation>框線</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="747"/>

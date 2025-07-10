@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -11,7 +11,8 @@
     <extra-po-header_comment>#
 # Translators:
 # DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
-#</extra-po-header_comment>
+#
+    </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>App::Property</name>
@@ -78,6 +79,70 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../Path/Dressup/Gui/Dragknife.py" line="58"/>
+        <location filename="../../../Path/Dressup/Gui/LeadInOut.py" line="61"/>
+        <location filename="../../../Path/Dressup/Gui/RampEntry.py" line="57"/>
+        <location filename="../../../Path/Dressup/Gui/ZCorrect.py" line="62"/>
+        <source>The base toolpath to modify</source>
+        <translation>要修改的基礎刀具路徑</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Gui/Array.py" line="51"/>
+        <source>Pattern method</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Gui/Array.py" line="60"/>
+        <source>The spacing between the array copies in Linear pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Gui/Array.py" line="68"/>
+        <source>The number of copies in X direction in Linear pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Gui/Array.py" line="76"/>
+        <source>The number of copies in Y direction in Linear pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Gui/Array.py" line="82"/>
+        <source>Total angle in Polar pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Gui/Array.py" line="90"/>
+        <source>The number of copies in Linear 1D and Polar pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Gui/Array.py" line="96"/>
+        <source>The centre of rotation in Polar pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Gui/Array.py" line="105"/>
+        <source>Make copies in X direction before Y in Linear 2D pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Gui/Array.py" line="111"/>
+        <source>Percent of copies to randomly offset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Gui/Array.py" line="117"/>
+        <source>Maximum random offset of copies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Gui/Array.py" line="123"/>
+        <location filename="../../../Path/Op/Gui/Array.py" line="169"/>
+        <source>Seed value for jitter randomness</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../Path/Dressup/Boundary.py" line="53"/>
         <location filename="../../../Path/Dressup/Tags.py" line="908"/>
         <location filename="../../../Path/Dressup/Gui/Dogbone.py" line="415"/>
@@ -128,7 +193,7 @@
         <location filename="../../../Path/Dressup/DogboneII.py" line="246"/>
         <location filename="../../../Path/Dressup/Gui/Dogbone.py" line="453"/>
         <source>Dressup length if incision is set to &apos;custom&apos;</source>
-        <translation>如果切口設定為「自訂」，則為修飾長度.</translation>
+        <translation>如果切口設定為「自訂」，則為修飾長度</translation>
     </message>
     <message>
         <location filename="../../../Path/Dressup/DogboneII.py" line="254"/>
@@ -180,14 +245,6 @@
         <location filename="../../../Path/Dressup/Gui/AxisMap.py" line="66"/>
         <source>The radius of the wrapped axis</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Dressup/Gui/Dragknife.py" line="58"/>
-        <location filename="../../../Path/Dressup/Gui/LeadInOut.py" line="61"/>
-        <location filename="../../../Path/Dressup/Gui/RampEntry.py" line="57"/>
-        <location filename="../../../Path/Dressup/Gui/ZCorrect.py" line="62"/>
-        <source>The base toolpath to modify</source>
-        <translation>要修改的基礎刀具路徑</translation>
     </message>
     <message>
         <location filename="../../../Path/Dressup/Gui/Dragknife.py" line="67"/>
@@ -389,57 +446,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Main/Job.py" line="515"/>
-        <source>Select the type of Job</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="115"/>
-        <source>The base geometry for this operation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="124"/>
-        <source>Holds the calculated value for the StartDepth</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="132"/>
-        <source>Holds the calculated value for the FinalDepth</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="140"/>
-        <source>Holds the diameter of the tool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="148"/>
-        <source>Holds the max Z value of Stock</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="155"/>
-        <source>Holds the min Z value of Stock</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="168"/>
-        <location filename="../../../Path/Main/Gui/Fixture.py" line="63"/>
-        <source>Make False, to prevent operation from generating code</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="174"/>
-        <source>An optional comment for this Operation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="180"/>
-        <source>User Assigned Label</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../Path/Op/Base.py" line="186"/>
         <location filename="../../../Path/Op/Base.py" line="440"/>
         <location filename="../../../Path/Main/Job.py" line="479"/>
@@ -447,74 +453,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Base.py" line="200"/>
-        <source>Base locations for this operation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="211"/>
-        <source>The tool controller that will be used to calculate the path</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="220"/>
-        <source>Coolant mode for this operation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="228"/>
-        <source>Starting Depth of Tool- first cut depth in Z</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="234"/>
-        <source>Final Depth of Tool- lowest value in Z</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="248"/>
-        <source>Starting Depth internal use only for derived values</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="259"/>
-        <location filename="../../../Path/Op/Base.py" line="448"/>
-        <source>Incremental Step Down of Tool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="267"/>
-        <source>Maximum material removed on final pass.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="278"/>
-        <source>The height needed to clear clamps and obstructions</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="284"/>
-        <source>Rapid Safety Height between locations.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="292"/>
-        <source>The start point of this path</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="306"/>
-        <source>Lower limit of the turning diameter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="312"/>
-        <source>Upper limit of the turning diameter.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="420"/>
-        <source>Coolant option for this operation</source>
+        <location filename="../../../Path/Main/Job.py" line="515"/>
+        <source>Select the type of Job</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -588,6 +528,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../Path/Op/Base.py" line="168"/>
+        <location filename="../../../Path/Main/Gui/Fixture.py" line="63"/>
+        <source>Make False, to prevent operation from generating code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../Path/Op/Adaptive.py" line="908"/>
         <source>Side of selected faces that tool should cut</source>
         <translation type="unfinished"></translation>
@@ -603,6 +549,25 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../Path/Op/Adaptive.py" line="972"/>
+        <source>How much stock to leave (i.e. for finishing operation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Adaptive.py" line="1410"/>
+        <source>Influences calculation performance vs stability and accuracy.
+
+Larger values (further to the right) will calculate faster; smaller values (further to the left) will result in more accurate toolpaths.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Helix.py" line="170"/>
+        <location filename="../../../Path/Op/Adaptive.py" line="945"/>
+        <location filename="../../../Path/Op/PocketBase.py" line="152"/>
+        <source>Percent of cutter diameter to step over on each pass</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../Path/Op/Adaptive.py" line="954"/>
         <source>Lift distance for rapid moves</source>
         <translation type="unfinished"></translation>
@@ -613,8 +578,14 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Adaptive.py" line="972"/>
-        <source>How much stock to leave (i.e. for finishing operation)</source>
+        <location filename="../../../Path/Op/Adaptive.py" line="1446"/>
+        <source>How much stock to leave in the XY plane (eg for finishing operation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Adaptive.py" line="1455"/>
+        <location filename="../../../Path/Op/Adaptive.py" line="1655"/>
+        <source>How much stock to leave along the Z axis (eg for finishing operation)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -670,56 +641,9 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Adaptive.py" line="1410"/>
-        <source>Influences calculation performance vs stability and accuracy.
-
-Larger values (further to the right) will calculate faster; smaller values (further to the left) will result in more accurate toolpaths.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Adaptive.py" line="1446"/>
-        <source>How much stock to leave in the XY plane (eg for finishing operation)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Adaptive.py" line="1455"/>
-        <location filename="../../../Path/Op/Adaptive.py" line="1655"/>
-        <source>How much stock to leave along the Z axis (eg for finishing operation)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../Path/Op/Adaptive.py" line="1564"/>
         <location filename="../../../Path/Op/Adaptive.py" line="1644"/>
         <source>Orders cuts by region instead of depth.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Helix.py" line="141"/>
-        <source>The direction of the circular cuts, ClockWise (CW), or CounterClockWise (CCW)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Helix.py" line="150"/>
-        <source>Start cutting from the inside or outside</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Helix.py" line="161"/>
-        <location filename="../../../Path/Op/Helix.py" line="223"/>
-        <source>The direction of the circular cuts, ClockWise (Climb), or CounterClockWise (Conventional)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Helix.py" line="170"/>
-        <location filename="../../../Path/Op/Adaptive.py" line="945"/>
-        <location filename="../../../Path/Op/PocketBase.py" line="152"/>
-        <source>Percent of cutter diameter to step over on each pass</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Helix.py" line="176"/>
-        <location filename="../../../Path/Op/Helix.py" line="199"/>
-        <source>Starting Radius</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -729,202 +653,99 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="125"/>
-        <location filename="../../../Path/Op/Waterline.py" line="203"/>
-        <source>Show the temporary path construction objects when module is in DEBUG mode.</source>
-        <translation>當模組處於 DEBUG 模式時，顯示臨時路徑建構物件.</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Surface.py" line="134"/>
-        <source>Smaller values yield a finer, more accurate mesh. Smaller values increase processing time a lot.</source>
+        <location filename="../../../Path/Op/Base.py" line="115"/>
+        <source>The base geometry for this operation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="143"/>
-        <source>Smaller values yield a finer, more accurate mesh. Smaller values do not increase processing time much.</source>
+        <location filename="../../../Path/Op/Base.py" line="124"/>
+        <source>Holds the calculated value for the StartDepth</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="149"/>
-        <location filename="../../../Path/Op/Surface.py" line="184"/>
-        <source>Stop index(angle) for rotational scan</source>
+        <location filename="../../../Path/Op/Base.py" line="132"/>
+        <source>Holds the calculated value for the FinalDepth</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="158"/>
-        <source>Dropcutter lines are created parallel to this axis.</source>
+        <location filename="../../../Path/Op/Base.py" line="140"/>
+        <source>Holds the diameter of the tool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="166"/>
-        <source>Additional offset to the selected bounding box</source>
+        <location filename="../../../Path/Op/Base.py" line="148"/>
+        <source>Holds the max Z value of Stock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="172"/>
-        <source>The model will be rotated around this axis.</source>
+        <location filename="../../../Path/Op/Base.py" line="155"/>
+        <source>Holds the min Z value of Stock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="178"/>
-        <source>Start index(angle) for rotational scan</source>
+        <location filename="../../../Path/Op/Base.py" line="174"/>
+        <source>An optional comment for this Operation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="193"/>
-        <source>Planar: Flat, 3D surface scan.  Rotational: 4th-axis rotational scan.</source>
+        <location filename="../../../Path/Op/Base.py" line="180"/>
+        <source>User Assigned Label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="202"/>
-        <location filename="../../../Path/Op/Waterline.py" line="230"/>
-        <source>Avoid cutting the last &apos;N&apos; faces in the Base Geometry list of selected faces.</source>
+        <location filename="../../../Path/Op/Base.py" line="200"/>
+        <source>Base locations for this operation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="210"/>
-        <location filename="../../../Path/Op/Waterline.py" line="238"/>
-        <source>Do not cut internal features on avoided faces.</source>
-        <translation>不在避免的面上切割內部特徵.</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Surface.py" line="219"/>
-        <location filename="../../../Path/Op/Waterline.py" line="247"/>
-        <source>Positive values push the cutter toward, or beyond, the boundary. Negative values retract the cutter away from the boundary.</source>
+        <location filename="../../../Path/Op/Base.py" line="211"/>
+        <source>The tool controller that will be used to calculate the path</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="228"/>
-        <location filename="../../../Path/Op/Waterline.py" line="256"/>
-        <source>If true, the cutter will remain inside the boundaries of the model or selected face(s).</source>
+        <location filename="../../../Path/Op/Base.py" line="220"/>
+        <source>Coolant mode for this operation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="237"/>
-        <location filename="../../../Path/Op/Profile.py" line="115"/>
-        <location filename="../../../Path/Op/Pocket.py" line="66"/>
-        <location filename="../../../Path/Op/Waterline.py" line="265"/>
-        <source>Choose how to process multiple Base Geometry features.</source>
-        <translation>選擇如何處理多個基礎幾何圖形特徵.</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Surface.py" line="246"/>
-        <location filename="../../../Path/Op/Waterline.py" line="274"/>
-        <source>Positive values push the cutter toward, or into, the feature. Negative values retract the cutter away from the feature.</source>
-        <translation>正值會將刀具推向或進入特徵. 負值則會將刀具從特徵中撤回.</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Surface.py" line="255"/>
-        <location filename="../../../Path/Op/Waterline.py" line="283"/>
-        <source>Cut internal feature areas within a larger selected face.</source>
-        <translation>在選定的較大面內切割內部特徵區域.</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Surface.py" line="263"/>
-        <location filename="../../../Path/Op/Waterline.py" line="300"/>
-        <source>Select the overall boundary for the operation.</source>
+        <location filename="../../../Path/Op/Base.py" line="228"/>
+        <source>Starting Depth of Tool- first cut depth in Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="272"/>
-        <location filename="../../../Path/Op/Waterline.py" line="318"/>
-        <source>Set the direction for the cutting tool to engage the material: Climb (ClockWise) or Conventional (CounterClockWise)</source>
+        <location filename="../../../Path/Op/Base.py" line="234"/>
+        <source>Final Depth of Tool- lowest value in Z</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="281"/>
-        <location filename="../../../Path/Op/Slot.py" line="147"/>
-        <location filename="../../../Path/Op/Waterline.py" line="327"/>
-        <source>Set the geometric clearing pattern to use for the operation.</source>
+        <location filename="../../../Path/Op/Base.py" line="248"/>
+        <source>Starting Depth internal use only for derived values</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="289"/>
-        <location filename="../../../Path/Op/Waterline.py" line="335"/>
-        <source>The yaw angle used for certain clearing patterns</source>
+        <location filename="../../../Path/Op/Base.py" line="259"/>
+        <location filename="../../../Path/Op/Base.py" line="448"/>
+        <source>Incremental Step Down of Tool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="298"/>
-        <location filename="../../../Path/Op/Waterline.py" line="344"/>
-        <source>Reverse the cut order of the stepover paths. For circular cut patterns, begin at the outside and work toward the center.</source>
+        <location filename="../../../Path/Op/Base.py" line="267"/>
+        <source>Maximum material removed on final pass.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="307"/>
-        <location filename="../../../Path/Op/Waterline.py" line="353"/>
-        <source>Set the Z-axis depth offset from the target surface.</source>
+        <location filename="../../../Path/Op/Base.py" line="278"/>
+        <source>The height needed to clear clamps and obstructions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="316"/>
-        <location filename="../../../Path/Op/Slot.py" line="174"/>
-        <location filename="../../../Path/Op/Waterline.py" line="368"/>
-        <source>Complete the operation in a single pass at depth, or multiple passes to final depth.</source>
+        <location filename="../../../Path/Op/Base.py" line="284"/>
+        <source>Rapid Safety Height between locations.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Surface.py" line="322"/>
-        <location filename="../../../Path/Op/Waterline.py" line="374"/>
-        <source>Set the start point for the cut pattern.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Surface.py" line="331"/>
-        <location filename="../../../Path/Op/Waterline.py" line="383"/>
-        <source>Choose location of the center point for starting the cut pattern.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Surface.py" line="337"/>
-        <source>Profile the edges of the selection.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Surface.py" line="346"/>
-        <location filename="../../../Path/Op/Waterline.py" line="392"/>
-        <source>Set the sampling resolution. Smaller values quickly increase processing time.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Surface.py" line="355"/>
-        <location filename="../../../Path/Op/Waterline.py" line="401"/>
-        <source>Set the stepover percentage, based on the tool&apos;s diameter.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Surface.py" line="364"/>
-        <location filename="../../../Path/Op/Waterline.py" line="410"/>
-        <source>Enable optimization of linear paths (co-linear points). Removes unnecessary co-linear points from G-code output.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Surface.py" line="373"/>
-        <location filename="../../../Path/Op/Waterline.py" line="419"/>
-        <source>Enable separate optimization of transitions between, and breaks within, each step over path.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Surface.py" line="382"/>
-        <source>Convert co-planar arcs to G2/G3 G-code commands for `Circular` and `CircularZigZag` cut patterns.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Surface.py" line="391"/>
-        <location filename="../../../Path/Op/Waterline.py" line="428"/>
-        <source>Collinear and co-radial artifact gaps that are smaller than this threshold are closed in the path.</source>
-        <translation>共線和同徑偽影的間隙如果小於此閾值，則會在路徑中被閉合.</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Surface.py" line="400"/>
-        <location filename="../../../Path/Op/Waterline.py" line="437"/>
-        <source>Feedback: three smallest gaps identified in the path geometry.</source>
-        <translation>回饋: 路徑幾何中確定的三個最小間隙. .</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Surface.py" line="409"/>
-        <location filename="../../../Path/Op/Waterline.py" line="446"/>
-        <source>The custom start point for the path of this operation</source>
+        <location filename="../../../Path/Op/Base.py" line="292"/>
+        <source>The start point of this path</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -933,6 +754,21 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <location filename="../../../Path/Op/Waterline.py" line="452"/>
         <location filename="../../../Path/Op/Base.py" line="298"/>
         <source>Make True, if specifying a Start Point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Base.py" line="306"/>
+        <source>Lower limit of the turning diameter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Base.py" line="312"/>
+        <source>Upper limit of the turning diameter.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Base.py" line="420"/>
+        <source>Coolant option for this operation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1021,6 +857,13 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Op/Drilling.py" line="164"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Op/Drilling.py" line="242"/>
+        <source>Controls tool retract height between holes in same op, Default=G98: safety height
+Use property KeepToolDown to change this</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../Path/Op/Drilling.py" line="173"/>
         <source>The height where cutting feed rate starts and retract height for peck operation</source>
         <translation type="unfinished"></translation>
@@ -1045,37 +888,6 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Vcarve.py" line="291"/>
-        <source>Optimize movements</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Vcarve.py" line="298"/>
-        <source>Add finishing pass</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Vcarve.py" line="305"/>
-        <source>Finishing pass Z offset</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Vcarve.py" line="317"/>
-        <source>The deflection value for discretizing arcs</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Vcarve.py" line="327"/>
-        <source>Cutoff for removing colinear segments (degrees).
-                        default=10.0.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Vcarve.py" line="333"/>
-        <source>Vcarve Tolerance</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../Path/Op/Engrave.py" line="87"/>
         <source>The vertex index to start the toolpath from</source>
         <translation type="unfinished"></translation>
@@ -1096,67 +908,32 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation>當啟用時，連接的延伸邊緣會合併為線段.</translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Profile.py" line="106"/>
-        <location filename="../../../Path/Op/PocketBase.py" line="129"/>
-        <source>The direction that the toolpath should go around the part ClockWise (CW) or CounterClockWise (CCW)</source>
+        <location filename="../../../Path/Op/Helix.py" line="141"/>
+        <source>The direction of the circular cuts, ClockWise (CW), or CounterClockWise (CCW)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Profile.py" line="124"/>
-        <source>Controls how tool moves around corners. Default=Round</source>
+        <location filename="../../../Path/Op/Helix.py" line="150"/>
+        <source>Start cutting from the inside or outside</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Profile.py" line="132"/>
-        <source>Maximum distance before a miter joint is truncated</source>
-        <translation>斜面接點被截斷之前的最大距離</translation>
+        <location filename="../../../Path/Op/Helix.py" line="161"/>
+        <location filename="../../../Path/Op/Helix.py" line="223"/>
+        <source>The direction of the circular cuts, ClockWise (Climb), or CounterClockWise (Conventional)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Helix.py" line="176"/>
+        <location filename="../../../Path/Op/Helix.py" line="199"/>
+        <source>Starting Radius</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Profile.py" line="141"/>
         <location filename="../../../Path/Op/Helix.py" line="185"/>
         <location filename="../../../Path/Op/Helix.py" line="210"/>
         <source>Extra value to stay away from final profile- good for roughing toolpath</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Profile.py" line="147"/>
-        <source>Profile holes as well as the outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Profile.py" line="153"/>
-        <source>Profile the outline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Profile.py" line="159"/>
-        <source>Profile round holes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Profile.py" line="165"/>
-        <source>Side of edge that tool should cut</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Profile.py" line="173"/>
-        <source>Make True, if using Cutter Radius Compensation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Profile.py" line="182"/>
-        <source>The number of passes to do. If more than one, requires a non-zero value for Stepover</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Profile.py" line="191"/>
-        <location filename="../../../Path/Op/Profile.py" line="336"/>
-        <source>If doing multiple passes, the extra offset of each additional pass</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Profile.py" line="326"/>
-        <source>The number of passes to do. Requires a non-zero value for Stepover</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1175,18 +952,9 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Pocket.py" line="77"/>
-        <source>Use adaptive algorithm to eliminate excessive air milling above planar pocket top.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Pocket.py" line="87"/>
-        <source>Use adaptive algorithm to eliminate excessive air milling below planar pocket bottom.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Pocket.py" line="97"/>
-        <source>Process the model and stock in an operation with no Base Geometry selected.</source>
+        <location filename="../../../Path/Op/Profile.py" line="106"/>
+        <location filename="../../../Path/Op/PocketBase.py" line="129"/>
+        <source>The direction that the toolpath should go around the part ClockWise (CW) or CounterClockWise (CCW)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1232,6 +1000,29 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../Path/Op/Surface.py" line="237"/>
+        <location filename="../../../Path/Op/Profile.py" line="115"/>
+        <location filename="../../../Path/Op/Pocket.py" line="66"/>
+        <location filename="../../../Path/Op/Waterline.py" line="265"/>
+        <source>Choose how to process multiple Base Geometry features.</source>
+        <translation>選擇如何處理多個基礎幾何圖形特徵.</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Pocket.py" line="77"/>
+        <source>Use adaptive algorithm to eliminate excessive air milling above planar pocket top.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Pocket.py" line="87"/>
+        <source>Use adaptive algorithm to eliminate excessive air milling below planar pocket bottom.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Pocket.py" line="97"/>
+        <source>Process the model and stock in an operation with no Base Geometry selected.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../Path/Op/Probe.py" line="55"/>
         <source>X offset between tool and probe</source>
         <translation type="unfinished"></translation>
@@ -1257,6 +1048,57 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../Path/Op/Profile.py" line="124"/>
+        <source>Controls how tool moves around corners. Default=Round</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Profile.py" line="132"/>
+        <source>Maximum distance before a miter joint is truncated</source>
+        <translation>斜面接點被截斷之前的最大距離</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Profile.py" line="147"/>
+        <source>Profile holes as well as the outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Profile.py" line="153"/>
+        <source>Profile the outline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Profile.py" line="159"/>
+        <source>Profile round holes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Profile.py" line="165"/>
+        <source>Side of edge that tool should cut</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Profile.py" line="173"/>
+        <source>Make True, if using Cutter Radius Compensation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Profile.py" line="182"/>
+        <source>The number of passes to do. If more than one, requires a non-zero value for Stepover</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Profile.py" line="191"/>
+        <location filename="../../../Path/Op/Profile.py" line="336"/>
+        <source>If doing multiple passes, the extra offset of each additional pass</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Profile.py" line="326"/>
+        <source>The number of passes to do. Requires a non-zero value for Stepover</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../Path/Op/Slot.py" line="122"/>
         <source>Show the temporary toolpath construction objects when module is in DEBUG mode.</source>
         <translation type="unfinished"></translation>
@@ -1272,6 +1114,13 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../Path/Op/Surface.py" line="281"/>
+        <location filename="../../../Path/Op/Slot.py" line="147"/>
+        <location filename="../../../Path/Op/Waterline.py" line="327"/>
+        <source>Set the geometric clearing pattern to use for the operation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../Path/Op/Slot.py" line="156"/>
         <source>Positive extends the beginning of the toolpath, negative shortens.</source>
         <translation type="unfinished"></translation>
@@ -1279,6 +1128,13 @@ Larger values (further to the right) will calculate faster; smaller values (furt
     <message>
         <location filename="../../../Path/Op/Slot.py" line="165"/>
         <source>Positive extends the end of the toolpath, negative shortens.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="316"/>
+        <location filename="../../../Path/Op/Slot.py" line="174"/>
+        <location filename="../../../Path/Op/Waterline.py" line="368"/>
+        <source>Complete the operation in a single pass at depth, or multiple passes to final depth.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1309,6 +1165,203 @@ Larger values (further to the right) will calculate faster; smaller values (furt
     <message>
         <location filename="../../../Path/Op/Slot.py" line="228"/>
         <source>The custom start point for the toolpath of this operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="125"/>
+        <location filename="../../../Path/Op/Waterline.py" line="203"/>
+        <source>Show the temporary path construction objects when module is in DEBUG mode.</source>
+        <translation>當模組處於 DEBUG 模式時，顯示臨時路徑建構物件.</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="134"/>
+        <source>Smaller values yield a finer, more accurate mesh. Smaller values increase processing time a lot.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="143"/>
+        <source>Smaller values yield a finer, more accurate mesh. Smaller values do not increase processing time much.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="149"/>
+        <location filename="../../../Path/Op/Surface.py" line="184"/>
+        <source>Stop index(angle) for rotational scan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="158"/>
+        <source>Dropcutter lines are created parallel to this axis.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="166"/>
+        <source>Additional offset to the selected bounding box</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="172"/>
+        <source>The model will be rotated around this axis.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="178"/>
+        <source>Start index(angle) for rotational scan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="193"/>
+        <source>Planar: Flat, 3D surface scan.  Rotational: 4th-axis rotational scan.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="202"/>
+        <location filename="../../../Path/Op/Waterline.py" line="230"/>
+        <source>Avoid cutting the last &apos;N&apos; faces in the Base Geometry list of selected faces.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="210"/>
+        <location filename="../../../Path/Op/Waterline.py" line="238"/>
+        <source>Do not cut internal features on avoided faces.</source>
+        <translation>不在避免的面上切割內部特徵.</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="219"/>
+        <location filename="../../../Path/Op/Waterline.py" line="247"/>
+        <source>Positive values push the cutter toward, or beyond, the boundary. Negative values retract the cutter away from the boundary.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="228"/>
+        <location filename="../../../Path/Op/Waterline.py" line="256"/>
+        <source>If true, the cutter will remain inside the boundaries of the model or selected face(s).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="246"/>
+        <location filename="../../../Path/Op/Waterline.py" line="274"/>
+        <source>Positive values push the cutter toward, or into, the feature. Negative values retract the cutter away from the feature.</source>
+        <translation>正值會將刀具推向或進入特徵. 負值則會將刀具從特徵中撤回.</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="255"/>
+        <location filename="../../../Path/Op/Waterline.py" line="283"/>
+        <source>Cut internal feature areas within a larger selected face.</source>
+        <translation>在選定的較大面內切割內部特徵區域.</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="263"/>
+        <location filename="../../../Path/Op/Waterline.py" line="300"/>
+        <source>Select the overall boundary for the operation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="272"/>
+        <location filename="../../../Path/Op/Waterline.py" line="318"/>
+        <source>Set the direction for the cutting tool to engage the material: Climb (ClockWise) or Conventional (CounterClockWise)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="289"/>
+        <location filename="../../../Path/Op/Waterline.py" line="335"/>
+        <source>The yaw angle used for certain clearing patterns</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="298"/>
+        <location filename="../../../Path/Op/Waterline.py" line="344"/>
+        <source>Reverse the cut order of the stepover paths. For circular cut patterns, begin at the outside and work toward the center.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="307"/>
+        <location filename="../../../Path/Op/Waterline.py" line="353"/>
+        <source>Set the Z-axis depth offset from the target surface.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="322"/>
+        <location filename="../../../Path/Op/Waterline.py" line="374"/>
+        <source>Set the start point for the cut pattern.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="331"/>
+        <location filename="../../../Path/Op/Waterline.py" line="383"/>
+        <source>Choose location of the center point for starting the cut pattern.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="337"/>
+        <source>Profile the edges of the selection.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="346"/>
+        <location filename="../../../Path/Op/Waterline.py" line="392"/>
+        <source>Set the sampling resolution. Smaller values quickly increase processing time.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="355"/>
+        <location filename="../../../Path/Op/Waterline.py" line="401"/>
+        <source>Set the stepover percentage, based on the tool&apos;s diameter.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="364"/>
+        <location filename="../../../Path/Op/Waterline.py" line="410"/>
+        <source>Enable optimization of linear paths (co-linear points). Removes unnecessary co-linear points from G-code output.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="373"/>
+        <location filename="../../../Path/Op/Waterline.py" line="419"/>
+        <source>Enable separate optimization of transitions between, and breaks within, each step over path.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="382"/>
+        <source>Convert co-planar arcs to G2/G3 G-code commands for `Circular` and `CircularZigZag` cut patterns.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="391"/>
+        <location filename="../../../Path/Op/Waterline.py" line="428"/>
+        <source>Collinear and co-radial artifact gaps that are smaller than this threshold are closed in the path.</source>
+        <translation>共線和同徑偽影的間隙如果小於此閾值，則會在路徑中被閉合.</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="400"/>
+        <location filename="../../../Path/Op/Waterline.py" line="437"/>
+        <source>Feedback: three smallest gaps identified in the path geometry.</source>
+        <translation>回饋: 路徑幾何中確定的三個最小間隙. .</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Surface.py" line="409"/>
+        <location filename="../../../Path/Op/Waterline.py" line="446"/>
+        <source>The custom start point for the path of this operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Tapping.py" line="103"/>
+        <source>The time to dwell at bottom of tapping cycle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Tapping.py" line="124"/>
+        <source>Controls how tool retracts Default=G98</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Tapping.py" line="133"/>
+        <source>The height where feed starts and height during retract tool when path is finished while in a peck operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Tapping.py" line="139"/>
+        <source>How far the tap depth is extended</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1372,6 +1425,43 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../Path/Op/Vcarve.py" line="291"/>
+        <source>Optimize movements</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Vcarve.py" line="298"/>
+        <source>Add finishing pass</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Vcarve.py" line="305"/>
+        <source>Finishing pass Z offset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Vcarve.py" line="317"/>
+        <source>The deflection value for discretizing arcs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Vcarve.py" line="327"/>
+        <source>Cutoff for removing colinear segments (degrees).
+                        default=10.0.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Op/Vcarve.py" line="332"/>
+        <source>Cutoff for removing colinear segments (degrees). 
+                        default=10.0.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Vcarve.py" line="333"/>
+        <source>Vcarve Tolerance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../Path/Op/Waterline.py" line="212"/>
         <source>Smaller values yield a finer, more accurate the mesh. Smaller values increase processing time a lot.</source>
         <translation type="unfinished"></translation>
@@ -1402,62 +1492,6 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Gui/Array.py" line="51"/>
-        <source>Pattern method</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Gui/Array.py" line="60"/>
-        <source>The spacing between the array copies in Linear pattern</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Gui/Array.py" line="68"/>
-        <source>The number of copies in X direction in Linear pattern</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Gui/Array.py" line="76"/>
-        <source>The number of copies in Y direction in Linear pattern</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Gui/Array.py" line="82"/>
-        <source>Total angle in Polar pattern</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Gui/Array.py" line="90"/>
-        <source>The number of copies in Linear 1D and Polar pattern</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Gui/Array.py" line="96"/>
-        <source>The centre of rotation in Polar pattern</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Gui/Array.py" line="105"/>
-        <source>Make copies in X direction before Y in Linear 2D pattern</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Gui/Array.py" line="111"/>
-        <source>Percent of copies to randomly offset</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Gui/Array.py" line="117"/>
-        <source>Maximum random offset of copies</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Gui/Array.py" line="123"/>
-        <location filename="../../../Path/Op/Gui/Array.py" line="169"/>
-        <source>Seed value for jitter randomness</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../Path/Op/Gui/Array.py" line="132"/>
         <location filename="../../../Path/Op/Gui/Copy.py" line="50"/>
         <source>The tool controller that will be used to calculate the toolpath</source>
@@ -1469,34 +1503,13 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../Path/Op/Gui/Copy.py" line="41"/>
+        <source>The toolpath to be copied</source>
+        <translation>要拷類之刀具路徑</translation>
+    </message>
+    <message>
         <location filename="../../../Path/Op/Gui/Stop.py" line="40"/>
         <source>Add Optional or Mandatory Stop to the program</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Tool/Bit.py" line="144"/>
-        <source>Shape for bit shape</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Tool/Bit.py" line="150"/>
-        <source>The parametrized body representing the tool bit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Tool/Bit.py" line="156"/>
-        <source>The file of the tool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Tool/Bit.py" line="162"/>
-        <source>The name of the shape file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Tool/Bit.py" line="168"/>
-        <location filename="../../../Path/Tool/Bit.py" line="204"/>
-        <source>List of all properties inherited from the bit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1540,28 +1553,54 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Gui/Copy.py" line="41"/>
-        <source>The toolpath to be copied</source>
-        <translation>要拷類之刀具路徑</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Tapping.py" line="103"/>
-        <source>The time to dwell at bottom of tapping cycle</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/mixins/cutting.py" line="38"/>
+        <source>Chipload per tooth</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Tapping.py" line="124"/>
-        <source>Controls how tool retracts Default=G98</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/base.py" line="227"/>
+        <source>The unique ID of the tool shape (.fcstd)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Tapping.py" line="133"/>
-        <source>The height where feed starts and height during retract tool when path is finished while in a peck operation</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/base.py" line="237"/>
+        <source>The tool shape type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Tapping.py" line="139"/>
-        <source>How far the tap depth is extended</source>
+        <location filename="../../../Path/Tool/Bit.py" line="144"/>
+        <source>Shape for bit shape</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Tool/Bit.py" line="150"/>
+        <source>The parametrized body representing the tool bit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Tool/Bit.py" line="156"/>
+        <source>The file of the tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Tool/Bit.py" line="162"/>
+        <source>The name of the shape file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Tool/Bit.py" line="168"/>
+        <location filename="../../../Path/Tool/Bit.py" line="204"/>
+        <source>List of all properties inherited from the bit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/base.py" line="257"/>
+        <source>The unique ID of the toolbit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/base.py" line="282"/>
+        <source>Tool material</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1588,6 +1627,21 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../Path/Op/Base.py" line="822"/>
+        <source>Feedrate Error</source>
+        <translation>進給速度錯誤</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Base.py" line="860"/>
+        <source>Base object %s.%s already in the list</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Base.py" line="870"/>
+        <source>Base object %s.%s rejected by operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../Path/Op/Base.py" line="805"/>
         <source>No Tool Controller selected.</source>
         <translation type="unfinished"></translation>
@@ -1603,9 +1657,9 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Base.py" line="822"/>
-        <source>Feedrate Error</source>
-        <translation>進給速度錯誤</translation>
+        <location filename="../../../Path/Op/Base.py" line="860"/>
+        <source>Tool Feedrate Error</source>
+        <translation>工具進給速度錯誤</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Base.py" line="830"/>
@@ -1616,21 +1670,6 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <location filename="../../../Path/Op/Base.py" line="839"/>
         <source>Cycletime Error</source>
         <translation>週期錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="860"/>
-        <source>Base object %s.%s already in the list</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="860"/>
-        <source>Tool Feedrate Error</source>
-        <translation>工具進給速度錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Base.py" line="870"/>
-        <source>Base object %s.%s rejected by operation</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Op/CircularHoleBase.py" line="115"/>
@@ -1665,30 +1704,15 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Gui/Vcarve.py" line="176"/>
-        <location filename="../../../Path/Op/Gui/Probe.py" line="69"/>
-        <location filename="../../../Path/Op/Gui/ThreadMilling.py" line="112"/>
-        <source>No valid toolcontroller</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Gui/Vcarve.py" line="181"/>
-        <source>This operation requires a tool controller with a v-bit tool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../Path/Op/Gui/Engrave.py" line="80"/>
         <source>Base shape %s already in the list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Tool/Gui/Controller.py" line="116"/>
-        <source>Edit</source>
-        <translation>編輯</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Post/scripts/generic_post.py" line="44"/>
-        <source>Generic post processor</source>
+        <location filename="../../../Path/Op/Gui/Vcarve.py" line="176"/>
+        <location filename="../../../Path/Op/Gui/Probe.py" line="69"/>
+        <location filename="../../../Path/Op/Gui/ThreadMilling.py" line="112"/>
+        <source>No valid toolcontroller</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1702,14 +1726,179 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../Path/Op/Gui/Vcarve.py" line="181"/>
+        <source>This operation requires a tool controller with a v-bit tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Post/scripts/generic_post.py" line="44"/>
+        <source>Generic post processor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Post/scripts/refactored_centroid_post.py" line="55"/>
+        <source>Refactored Centroid post processor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Post/scripts/refactored_grbl_post.py" line="58"/>
+        <source>Refactored Grbl post processor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Post/scripts/refactored_linuxcnc_post.py" line="55"/>
+        <source>Refactored LinuxCNC post processor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Post/scripts/refactored_mach3_mach4_post.py" line="55"/>
+        <source>Refactored Mach3_Mach4 post processor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../Path/Post/scripts/refactored_masso_g3_post.py" line="55"/>
         <source>Refactored Masso G3 post processor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Post/scripts/refactored_test_post.py" line="55"/>
+        <source>Refactored Test post processor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Post/scripts/snapmaker_post.py" line="245"/>
         <source>Snapmaker post processor</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Post/scripts/svg_post.py" line="48"/>
+        <source>SVG post processor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/serializers/camotics.py" line="59"/>
+        <source>Camotics Tool Library</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/serializers/fctl.py" line="42"/>
+        <source>FreeCAD Tool Library</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/serializers/linuxcnc.py" line="42"/>
+        <source>LinuxCNC Tool Table</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/drill.py" line="56"/>
+        <source>Drill</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/ballend.py" line="46"/>
+        <source>{diameter} {flutes}-flute ballend, {cutting_edge_height} cutting edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/bullnose.py" line="48"/>
+        <source>{diameter} {flutes}-flute bullnose, {cutting_edge_height} cutting edge, {flat_radius} flat radius</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/chamfer.py" line="46"/>
+        <source>{diameter} {cutting_edge_angle} chamfer bit, {flutes}-flute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/custom.py" line="38"/>
+        <source>Unknown custom toolbit type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/dovetail.py" line="46"/>
+        <source>{diameter} {cutting_edge_angle} dovetail bit, {flutes}-flute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/drill.py" line="44"/>
+        <source>{diameter} drill, {tip_angle} tip, {flutes}-flute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/endmill.py" line="46"/>
+        <source>{diameter} {flutes}-flute endmill, {cutting_edge_height} cutting edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/fillet.py" line="46"/>
+        <source>R{radius} fillet bit, {diameter} shank, {flutes}-flute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/probe.py" line="47"/>
+        <source>{diameter} probe, {length} length, {shaft_diameter} shaft</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/reamer.py" line="43"/>
+        <source>{diameter} reamer, {cutting_edge_height} cutting edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/slittingsaw.py" line="46"/>
+        <source>{diameter} slitting saw, {blade_thickness} blade, {flutes}-flute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/tap.py" line="46"/>
+        <source>{diameter} tap, {flutes}-flute, {cutting_edge_length} cutting edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/threadmill.py" line="46"/>
+        <source>{diameter} thread mill, {flutes}-flute, {cutting_angle} cutting angle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/vbit.py" line="44"/>
+        <source>{diameter} {cutting_edge_angle} v-bit, {flutes}-flute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/serializers/camotics.py" line="61"/>
+        <source>Camotics Tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/serializers/fctb.py" line="40"/>
+        <source>FreeCAD Tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/ui/editor.py" line="60"/>
+        <source>Tool Bit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/ui/editor.py" line="68"/>
+        <source>Properties</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/ui/selector.py" line="39"/>
+        <source>Add Tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/ui/selector.py" line="44"/>
+        <source>Select Tool Bit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Tool/Gui/Controller.py" line="116"/>
+        <source>Edit</source>
+        <translation>編輯</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Adaptive.py" line="647"/>
@@ -1806,17 +1995,17 @@ Larger values (further to the right) will calculate faster; smaller values (furt
     <message>
         <location filename="../../../Path/Op/Adaptive.py" line="879"/>
         <source>Clearing</source>
-        <translation type="unfinished"></translation>
+        <translation>清除</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Adaptive.py" line="880"/>
         <source>Profiling</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">輪廓</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Adaptive.py" line="159"/>
         <source>Adaptive</source>
-        <translation type="unfinished"></translation>
+        <translation>適配</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Adaptive.py" line="160"/>
@@ -1834,6 +2023,12 @@ Larger values (further to the right) will calculate faster; smaller values (furt
     <message>
         <location filename="../../../Path/Op/Gui/Array.py" line="449"/>
         <source>Creates an array from selected toolpath(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Op/Gui/Array.py" line="486"/>
+        <source>Creates an array from selected toolpath(s)
+with identical tool controllers and without coolant</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2425,16 +2620,6 @@ Larger values (further to the right) will calculate faster; smaller values (furt
 <context>
     <name>CAM_Helix</name>
     <message>
-        <location filename="../../../Path/Op/Gui/Helix.py" line="110"/>
-        <source>Helix</source>
-        <translation>螺旋</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Gui/Helix.py" line="111"/>
-        <source>Creates a Helical toolpath from the features of a base object</source>
-        <translation>從基礎物件的特徵建立螺旋工具路徑</translation>
-    </message>
-    <message>
         <location filename="../../../Path/Op/Helix.py" line="101"/>
         <source>CW</source>
         <translation>順時針</translation>
@@ -2454,9 +2639,25 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <source>Conventional</source>
         <translation>慣用</translation>
     </message>
+    <message>
+        <location filename="../../../Path/Op/Gui/Helix.py" line="110"/>
+        <source>Helix</source>
+        <translation>螺旋</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Gui/Helix.py" line="111"/>
+        <source>Creates a Helical toolpath from the features of a base object</source>
+        <translation>從基礎物件的特徵建立螺旋工具路徑</translation>
+    </message>
 </context>
 <context>
     <name>CAM_Inspect</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Main/Gui/Inspect.py" line="132"/>
+        <source>&lt;b&gt;Note&lt;/b&gt;: This dialog shows Path Commands in FreeCAD base units (mm/s). 
+ Values will be converted to the desired unit during post processing.</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../../Path/Main/Gui/Inspect.py" line="132"/>
         <source>&lt;b&gt;Note&lt;/b&gt;: This dialog shows Path Commands in FreeCAD base units (mm/s).
@@ -2485,7 +2686,7 @@ Larger values (further to the right) will calculate faster; smaller values (furt
     <message>
         <location filename="../../../Path/Main/Job.py" line="249"/>
         <source>Fixture</source>
-        <translation type="unfinished"></translation>
+        <translation>特徵</translation>
     </message>
     <message>
         <location filename="../../../Path/Main/Job.py" line="250"/>
@@ -2495,7 +2696,7 @@ Larger values (further to the right) will calculate faster; smaller values (furt
     <message>
         <location filename="../../../Path/Main/Job.py" line="251"/>
         <source>Operation</source>
-        <translation type="unfinished"></translation>
+        <translation>操作</translation>
     </message>
     <message>
         <location filename="../../../Path/Main/Job.py" line="254"/>
@@ -2516,6 +2717,92 @@ Larger values (further to the right) will calculate faster; smaller values (furt
     <message>
         <location filename="../../../Path/Main/Job.py" line="257"/>
         <source>Multiaxis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobCmd.py" line="57"/>
+        <source>Job</source>
+        <translation type="unfinished">作業</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobCmd.py" line="59"/>
+        <source>Creates a CAM Job</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="75"/>
+        <source>Don&apos;t Show This Anymore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="84"/>
+        <source>Solids</source>
+        <translation>固體</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="86"/>
+        <source>Jobs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="86"/>
+        <source>Warning: Incompatible Unit Schema</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="73"/>
+        <location filename="../../../Path/Main/Gui/Job.py" line="1634"/>
+        <source>Ok</source>
+        <translation>確認</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="69"/>
+        <source>The currently selected unit schema:
+     &apos;{}&apos; for this document
+ Does not use &apos;minutes&apos; for velocity values.
+
+CNC machines require feed rate to be expressed in
+unit/minute. To ensure correct G-code:
+Select a minute-based schema in preferences.
+For example:
+    &apos;Metric, Small Parts &amp; CNC&apos;
+    &apos;US Customary&apos;
+    &apos;Imperial Decimal&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="118"/>
+        <source>Don&apos;t show this warning again</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="183"/>
+        <source>Model</source>
+        <translation>模型</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="184"/>
+        <source>Count</source>
+        <translation>計數</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="266"/>
+        <source>&lt;none&gt;</source>
+        <translation>&lt;無&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="348"/>
+        <source>Base -/+ %.2f/%.2f %.2f/%.2f %.2f/%.2f</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="358"/>
+        <source>Box: %.2f x %.2f x %.2f</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="373"/>
+        <source>Unsupported stock type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2554,6 +2841,12 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="71"/>
+        <location filename="../../../Path/Main/Gui/Job.py" line="1632"/>
+        <source>Warning</source>
+        <translation>警告</translation>
+    </message>
+    <message>
         <location filename="../../../Path/Main/Gui/Job.py" line="1633"/>
         <source>Please add one.</source>
         <translation type="unfinished"></translation>
@@ -2571,98 +2864,6 @@ Larger values (further to the right) will calculate faster; smaller values (furt
     <message>
         <location filename="../../../Path/Main/Gui/Job.py" line="1654"/>
         <source>This job has no tool.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="69"/>
-        <source>The currently selected unit schema:
-     &apos;{}&apos; for this document
- Does not use &apos;minutes&apos; for velocity values.
-
-CNC machines require feed rate to be expressed in
-unit/minute. To ensure correct G-code:
-Select a minute-based schema in preferences.
-For example:
-    &apos;Metric, Small Parts &amp; CNC&apos;
-    &apos;US Customary&apos;
-    &apos;Imperial Decimal&apos;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="71"/>
-        <location filename="../../../Path/Main/Gui/Job.py" line="1632"/>
-        <source>Warning</source>
-        <translation>警告</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="73"/>
-        <location filename="../../../Path/Main/Gui/Job.py" line="1634"/>
-        <source>Ok</source>
-        <translation>確認</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="75"/>
-        <source>Don&apos;t Show This Anymore</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="84"/>
-        <source>Solids</source>
-        <translation>固體</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="86"/>
-        <source>Jobs</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="86"/>
-        <source>Warning: Incompatible Unit Schema</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="118"/>
-        <source>Don&apos;t show this warning again</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="183"/>
-        <source>Model</source>
-        <translation>模型</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="184"/>
-        <source>Count</source>
-        <translation>計數</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="266"/>
-        <source>&lt;none&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="348"/>
-        <source>Base -/+ %.2f/%.2f %.2f/%.2f %.2f/%.2f</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="358"/>
-        <source>Box: %.2f x %.2f x %.2f</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="373"/>
-        <source>Unsupported stock type</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobCmd.py" line="57"/>
-        <source>Job</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobCmd.py" line="59"/>
-        <source>Creates a CAM Job</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2759,16 +2960,6 @@ For example:
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Pocket.py" line="117"/>
-        <source>Collectively</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Pocket.py" line="118"/>
-        <source>Individually</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../Path/Op/PocketBase.py" line="61"/>
         <source>Climb</source>
         <translation type="unfinished">攀附</translation>
@@ -2812,6 +3003,16 @@ For example:
         <location filename="../../../Path/Op/PocketBase.py" line="73"/>
         <source>Grid</source>
         <translation>格線</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Pocket.py" line="117"/>
+        <source>Collectively</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Pocket.py" line="118"/>
+        <source>Individually</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/FeatureExtension.py" line="179"/>
@@ -2874,6 +3075,45 @@ For example:
     </message>
 </context>
 <context>
+    <name>CAM_PreferencesAssets</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/assets/ui/preferences.py" line="49"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/assets/ui/preferences.py" line="93"/>
+        <source>Assets</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/assets/ui/preferences.py" line="55"/>
+        <source>Asset Directory:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/assets/ui/preferences.py" line="63"/>
+        <source>Note: Select the directory that will contain the Bit/, Shape/, and Library/ subfolders.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/assets/ui/preferences.py" line="68"/>
+        <source>Reset</source>
+        <translation>重置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/assets/ui/preferences.py" line="99"/>
+        <source>Select Asset Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/assets/ui/preferences.py" line="118"/>
+        <source>Warning</source>
+        <translation>警告</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/assets/ui/preferences.py" line="119"/>
+        <source>The selected asset path is not writable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CAM_PreferencesPathDressup</name>
     <message>
         <location filename="../../../Path/Dressup/Gui/Preferences.py" line="39"/>
@@ -2889,15 +3129,15 @@ For example:
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Gui/Probe.py" line="104"/>
-        <source>Select Output File</source>
-        <translation>選擇輸出檔案</translation>
-    </message>
-    <message>
         <location filename="../../../Path/Op/Gui/Probe.py" line="106"/>
         <location filename="../../../Path/Dressup/Gui/ZCorrect.py" line="283"/>
         <source>All Files (*.*)</source>
         <translation>所有檔 (*.*)</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Gui/Probe.py" line="104"/>
+        <source>Select Output File</source>
+        <translation>選擇輸出檔案</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Probe.py" line="118"/>
@@ -3227,6 +3467,12 @@ For example:
                     被 Path-Sanity 支援</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Main/Sanity/Sanity.py" line="364"/>
+        <source>Tool number {} is a legacy tool. Legacy tools not 
+                    supported by Path-Sanity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../Path/Main/Sanity/Sanity.py" line="376"/>
         <source>Tool number {} used by multiple tools</source>
         <translation type="unfinished"></translation>
@@ -3297,11 +3543,6 @@ For example:
 <context>
     <name>CAM_Simulator</name>
     <message>
-        <location filename="../../../Path/Main/Gui/Simulator.py" line="613"/>
-        <source>CAM Simulator</source>
-        <translation>CAM 模擬</translation>
-    </message>
-    <message>
         <location filename="../../../Path/Main/Gui/SimulatorGL.py" line="307"/>
         <source>High</source>
         <translation>高</translation>
@@ -3326,6 +3567,11 @@ For example:
         <location filename="../../../Path/Main/Gui/Simulator.py" line="615"/>
         <source>Simulate G-code on stock</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/Simulator.py" line="613"/>
+        <source>CAM Simulator</source>
+        <translation>CAM 模擬</translation>
     </message>
 </context>
 <context>
@@ -3408,7 +3654,7 @@ For example:
         <location filename="../../../Path/Op/Slot.py" line="273"/>
         <location filename="../../../Path/Op/Slot.py" line="283"/>
         <source>Vertex</source>
-        <translation type="unfinished"></translation>
+        <translation>頂點</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Slot.py" line="596"/>
@@ -3538,7 +3784,7 @@ For example:
     <message>
         <location filename="../../../Path/Op/Surface.py" line="433"/>
         <source>BaseBoundBox</source>
-        <translation type="unfinished"></translation>
+        <translation>基礎邊界區塊</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Surface.py" line="434"/>
@@ -3573,7 +3819,7 @@ For example:
     <message>
         <location filename="../../../Path/Op/Surface.py" line="444"/>
         <source>Climb</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">攀附</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Surface.py" line="447"/>
@@ -3630,12 +3876,12 @@ For example:
     <message>
         <location filename="../../../Path/Op/Surface.py" line="463"/>
         <source>Single-pass</source>
-        <translation type="unfinished"></translation>
+        <translation>單次通過</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Surface.py" line="464"/>
         <source>Multi-pass</source>
-        <translation type="unfinished"></translation>
+        <translation>多次通過</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Surface.py" line="467"/>
@@ -3665,12 +3911,12 @@ For example:
     <message>
         <location filename="../../../Path/Op/Surface.py" line="478"/>
         <source>Rotational</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">旋轉</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Surface.py" line="269"/>
         <source>3D Surface</source>
-        <translation type="unfinished"></translation>
+        <translation>3D 曲面</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Surface.py" line="270"/>
@@ -3698,12 +3944,12 @@ For example:
     <message>
         <location filename="../../../Path/Op/Tapping.py" line="74"/>
         <source>Drill Tip</source>
-        <translation type="unfinished"></translation>
+        <translation>鑽頭</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Tapping.py" line="75"/>
         <source>2x Drill Tip</source>
-        <translation type="unfinished"></translation>
+        <translation>2x 鑽頭</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Gui/Tapping.py" line="179"/>
@@ -3796,6 +4042,75 @@ For example:
 </context>
 <context>
     <name>CAM_ToolBit</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/dock.py" line="58"/>
+        <source>Tool Selector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/dock.py" line="79"/>
+        <source>Open Library Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/dock.py" line="80"/>
+        <source>Add to Job</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/dock.py" line="151"/>
+        <source>No Job Found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/dock.py" line="152"/>
+        <source>Please create a Job first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/editor.py" line="285"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/editor.py" line="344"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/editor.py" line="569"/>
+        <source>No Library Loaded</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/editor.py" line="286"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/editor.py" line="345"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/editor.py" line="570"/>
+        <source>Load or create a tool library first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/editor.py" line="332"/>
+        <source>Error Creating Toolbit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/editor.py" line="380"/>
+        <source>Error Adding Imported Toolbit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/editor.py" line="463"/>
+        <source>Error Editing Toolbit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/editor.py" line="475"/>
+        <source>New Tool Library</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/editor.py" line="476"/>
+        <source>Enter a name for the new library:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/library/ui/editor.py" line="558"/>
+        <source>Error Saving Library</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../../Path/Tool/Gui/BitLibrary.py" line="80"/>
         <source>Toolbit working directory not set up. Do that now?</source>
@@ -3954,6 +4269,11 @@ For example:
 </context>
 <context>
     <name>CAM_Toolbit</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/ui/tablecell.py" line="110"/>
+        <source>Pocket</source>
+        <translation>凹陷</translation>
+    </message>
     <message>
         <location filename="../../../Path/Tool/Gui/Bit.py" line="116"/>
         <source>Toolbit cannot be edited: Shapefile not found</source>
@@ -4591,27 +4911,27 @@ For stock from the Base object&apos;s bounding box it means the extra material i
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="90"/>
         <source>Notes</source>
-        <translation type="unfinished"></translation>
+        <translation>備註</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="107"/>
         <source>Coating:</source>
-        <translation type="unfinished"></translation>
+        <translation>塗層:</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="117"/>
         <source>Hardness:</source>
-        <translation type="unfinished"></translation>
+        <translation>硬度:</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="127"/>
         <source>Materials:</source>
-        <translation type="unfinished"></translation>
+        <translation>材質:</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="140"/>
         <source>Supplier:</source>
-        <translation type="unfinished"></translation>
+        <translation>供應商:</translation>
     </message>
 </context>
 <context>
@@ -7099,6 +7419,26 @@ Should multiple tools or tool shapes with the same name exist in different direc
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../Path/Main/Gui/SanityCmd.py" line="75"/>
+        <source>Save Sanity Check Report</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Deburr.py" line="181"/>
+        <source>CW</source>
+        <translation>順時針</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Deburr.py" line="182"/>
+        <source>CCW</source>
+        <translation>逆時針</translation>
+    </message>
+    <message>
+        <location filename="../../../PathScripts/PathUtilsGui.py" line="89"/>
+        <source>Choose a CAM Job</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../PathScripts/PathUtils.py" line="535"/>
         <source>Selected tool is not a drill</source>
         <translation type="unfinished"></translation>
@@ -7112,26 +7452,6 @@ Should multiple tools or tool shapes with the same name exist in different direc
         <location filename="../../../PathScripts/PathUtils.py" line="552"/>
         <source>Cutting Edge Angle (%.2f) results in negative tool tip length</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/SanityCmd.py" line="75"/>
-        <source>Save Sanity Check Report</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../PathScripts/PathUtilsGui.py" line="89"/>
-        <source>Choose a CAM Job</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Deburr.py" line="181"/>
-        <source>CW</source>
-        <translation>順時針</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Deburr.py" line="182"/>
-        <source>CCW</source>
-        <translation>逆時針</translation>
     </message>
 </context>
 <context>
@@ -7150,6 +7470,11 @@ Should multiple tools or tool shapes with the same name exist in different direc
 <context>
     <name>PathArray</name>
     <message>
+        <location filename="../../../Path/Dressup/Array.py" line="214"/>
+        <source>Base is empty or an invalid object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../Path/Op/Gui/Array.py" line="301"/>
         <source>No base objects for PathArray.</source>
         <translation type="unfinished"></translation>
@@ -7160,8 +7485,13 @@ Should multiple tools or tool shapes with the same name exist in different direc
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Dressup/Array.py" line="214"/>
-        <source>Base is empty or an invalid object.</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Op/Gui/Array.py" line="276"/>
+        <source>Arrays of toolpaths having different tool controllers or tool controller not selected.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Op/Gui/Array.py" line="285"/>
+        <source>Arrays not compatible with coolant modes.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -7178,13 +7508,28 @@ Should multiple tools or tool shapes with the same name exist in different direc
         <translation>檔案</translation>
     </message>
     <message>
+        <location filename="../../../Path/Op/Custom.py" line="186"/>
+        <source>Invalid G-code line: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Op/Custom.py" line="183"/>
+        <source>Total invalid lines in Custom Text G-code: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../Path/Op/Custom.py" line="177"/>
         <source>Custom file %s could not be found.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Op/Custom.py" line="186"/>
-        <source>Invalid G-code line: %s</source>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Op/Custom.py" line="209"/>
+        <source>Total invalid lines in Custom File G-code: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Op/Custom.py" line="215"/>
+        <source>Please check lines: %s</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -7580,6 +7925,18 @@ Aborting op creation</source>
 <context>
     <name>PathProfile</name>
     <message>
+        <location filename="../../../Path/Op/Profile.py" line="222"/>
+        <location filename="../../../Path/Op/Helix.py" line="105"/>
+        <source>Outside</source>
+        <translation>外面</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Op/Profile.py" line="223"/>
+        <location filename="../../../Path/Op/Helix.py" line="106"/>
+        <source>Inside</source>
+        <translation>裡面</translation>
+    </message>
+    <message>
         <location filename="../../../Path/Op/Profile.py" line="209"/>
         <source>CW</source>
         <translation>順時針</translation>
@@ -7613,18 +7970,6 @@ Aborting op creation</source>
         <location filename="../../../Path/Op/Profile.py" line="219"/>
         <source>Miter</source>
         <translation>斜接</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Profile.py" line="222"/>
-        <location filename="../../../Path/Op/Helix.py" line="105"/>
-        <source>Outside</source>
-        <translation>外面</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Op/Profile.py" line="223"/>
-        <location filename="../../../Path/Op/Helix.py" line="106"/>
-        <source>Inside</source>
-        <translation>裡面</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Profile.py" line="442"/>
@@ -8551,6 +8896,262 @@ Aborting op creation</source>
     </message>
 </context>
 <context>
+    <name>ToolBitShape</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/ballend.py" line="36"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/bullnose.py" line="36"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/chamfer.py" line="40"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/endmill.py" line="36"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/reamer.py" line="36"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/vbit.py" line="40"/>
+        <source>Cutting edge height</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/ballend.py" line="40"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/bullnose.py" line="40"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/chamfer.py" line="44"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/drill.py" line="36"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/endmill.py" line="40"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/fillet.py" line="40"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/reamer.py" line="40"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/slittingsaw.py" line="48"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/vbit.py" line="44"/>
+        <source>Diameter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/ballend.py" line="44"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/bullnose.py" line="44"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/chamfer.py" line="48"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/dovetail.py" line="52"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/drill.py" line="40"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/endmill.py" line="44"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/fillet.py" line="48"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/slittingsaw.py" line="52"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/tap.py" line="44"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/threadmill.py" line="44"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/vbit.py" line="48"/>
+        <source>Flutes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/ballend.py" line="48"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/bullnose.py" line="48"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/chamfer.py" line="52"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/dovetail.py" line="56"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/drill.py" line="44"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/endmill.py" line="48"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/fillet.py" line="52"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/reamer.py" line="44"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/slittingsaw.py" line="56"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/threadmill.py" line="48"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/vbit.py" line="52"/>
+        <source>Overall tool length</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/ballend.py" line="52"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/bullnose.py" line="52"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/chamfer.py" line="56"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/dovetail.py" line="68"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/fillet.py" line="56"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/reamer.py" line="48"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/slittingsaw.py" line="60"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/tap.py" line="52"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/threadmill.py" line="60"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/vbit.py" line="56"/>
+        <source>Shank diameter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/ballend.py" line="60"/>
+        <source>Ballend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/bullnose.py" line="56"/>
+        <source>Torus radius</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/bullnose.py" line="64"/>
+        <source>Torus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/chamfer.py" line="36"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/vbit.py" line="36"/>
+        <source>Cutting edge angle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/chamfer.py" line="60"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/vbit.py" line="60"/>
+        <source>Tip diameter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/chamfer.py" line="68"/>
+        <source>Chamfer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/custom.py" line="44"/>
+        <source>Unknown custom shape</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/dovetail.py" line="36"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/threadmill.py" line="36"/>
+        <source>Crest height</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/dovetail.py" line="40"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/threadmill.py" line="64"/>
+        <source>Cutting angle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/dovetail.py" line="44"/>
+        <source>Dovetail height</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/dovetail.py" line="48"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/threadmill.py" line="40"/>
+        <source>Major diameter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/dovetail.py" line="60"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/threadmill.py" line="52"/>
+        <source>Neck diameter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/dovetail.py" line="64"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/threadmill.py" line="56"/>
+        <source>Neck length</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/dovetail.py" line="76"/>
+        <source>Dovetail</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/drill.py" line="48"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/tap.py" line="56"/>
+        <source>Tip angle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/endmill.py" line="60"/>
+        <source>Endmill</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/fillet.py" line="36"/>
+        <source>Crown height</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/fillet.py" line="44"/>
+        <source>Fillet radius</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/fillet.py" line="64"/>
+        <source>Filleted Chamfer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/probe.py" line="36"/>
+        <source>Ball diameter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/probe.py" line="40"/>
+        <source>Length of probe</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/probe.py" line="44"/>
+        <source>Shaft diameter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/probe.py" line="52"/>
+        <source>Probe</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/reamer.py" line="56"/>
+        <source>Reamer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/slittingsaw.py" line="36"/>
+        <source>Blade thickness</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/slittingsaw.py" line="40"/>
+        <source>Cap diameter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/slittingsaw.py" line="44"/>
+        <source>Cap height</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/slittingsaw.py" line="68"/>
+        <source>Slitting Saw</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/tap.py" line="36"/>
+        <source>Cutting edge length</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/tap.py" line="40"/>
+        <source>Tap diameter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/tap.py" line="48"/>
+        <source>Overall length of tap</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/tap.py" line="64"/>
+        <source>Tap</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/threadmill.py" line="72"/>
+        <source>Thread Mill</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/vbit.py" line="68"/>
+        <source>V-Bit</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ToolBitToolBitShapeShapeEndMill</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/shape/models/endmill.py" line="52"/>
+        <source>Shank diameter</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ToolSelector</name>
     <message>
         <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ToolBitSelector.ui" line="20"/>
@@ -9406,12 +10007,12 @@ Default: &quot;5mm&quot;</source>
     <message>
         <location filename="../../../Path/Op/Waterline.py" line="136"/>
         <source>Single-pass</source>
-        <translation type="unfinished"></translation>
+        <translation>單次通過</translation>
     </message>
     <message>
         <location filename="../../../Path/Op/Waterline.py" line="137"/>
         <source>Multi-pass</source>
-        <translation type="unfinished"></translation>
+        <translation>多次通過</translation>
     </message>
 </context>
 </TS>

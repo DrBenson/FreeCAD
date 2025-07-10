@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -11,8 +11,7 @@
     <extra-po-header_comment>#
 # Translators:
 # DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
-#
-    </extra-po-header_comment>
+#</extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>App::Property</name>
@@ -132,7 +131,7 @@ set True for fusion or False for compound</source>
     <message>
         <location filename="../../draftobjects/clone.py" line="64"/>
         <source>Always create a compound</source>
-        <translation type="unfinished">Always create a compound</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/circle.py" line="45"/>
@@ -249,7 +248,7 @@ set True for fusion or False for compound</source>
         <location filename="../../draftobjects/array.py" line="154"/>
         <location filename="../../draftobjects/pointarray.py" line="127"/>
         <source>The placement for each array element</source>
-        <translation type="unfinished">The placement for each array element</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/array.py" line="82"/>
@@ -681,7 +680,7 @@ Otherwise the copies will have the same orientation as the original Base object.
     <message>
         <location filename="../../draftobjects/patharray.py" line="331"/>
         <source>Walk the path backwards.</source>
-        <translation type="unfinished">Walk the path backwards.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/patharray.py" line="368"/>
@@ -689,25 +688,22 @@ Otherwise the copies will have the same orientation as the original Base object.
  - Fixed count: available path length (minus start and end offsets) is evenly divided into n.
  - Fixed spacing: start at &quot;Start offset&quot; and place new copies after traveling a fixed distance along the path.
  - Fixed count and spacing: same as &quot;Fixed spacing&quot;, but also stop at given number of copies.</source>
-        <translation type="unfinished">How copies are spaced.
- - Fixed count: available path length (minus start and end offsets) is evenly divided into n.
- - Fixed spacing: start at &quot;Start offset&quot; and place new copies after traveling a fixed distance along the path.
- - Fixed count and spacing: same as &quot;Fixed spacing&quot;, but also stop at given number of copies.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/patharray.py" line="378"/>
         <source>Base fixed distance between elements.</source>
-        <translation type="unfinished">Base fixed distance between elements.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/patharray.py" line="388"/>
         <source>Use repeating spacing patterns instead of uniform spacing.</source>
-        <translation type="unfinished">Use repeating spacing patterns instead of uniform spacing.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/patharray.py" line="397"/>
         <source>Spacing is multiplied by a corresponding number in this sequence.</source>
-        <translation type="unfinished">Spacing is multiplied by a corresponding number in this sequence.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/pointarray.py" line="75"/>
@@ -844,7 +840,7 @@ This property is read-only, as the number depends on the points contained within
     <message>
         <location filename="../../draftobjects/bezcurve.py" line="54"/>
         <source>Continuity</source>
-        <translation type="unfinished"></translation>
+        <translation>連續性</translation>
     </message>
     <message>
         <location filename="../../draftobjects/bezcurve.py" line="58"/>
@@ -1284,12 +1280,12 @@ the &apos;First Angle&apos; and &apos;Last Angle&apos; properties.</source>
     <message>
         <location filename="../../draftviewproviders/view_rectangle.py" line="41"/>
         <source>Defines a texture image (overrides hatch patterns)</source>
-        <translation type="unfinished">Defines a texture image (overrides hatch patterns)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftviewproviders/view_wire.py" line="64"/>
         <source>Displays a Dimension symbol at the end of the wire.</source>
-        <translation type="unfinished">Displays a Dimension symbol at the end of the wire.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/drawingview.py" line="66"/>
@@ -1922,7 +1918,7 @@ from menu Tools -&gt; Addon Manager</source>
     <message>
         <location filename="../../drafttaskpanels/task_scale.py" line="195"/>
         <source>Edit scale</source>
-        <translation type="unfinished">Edit scale</translation>
+        <translation>編輯比例</translation>
     </message>
     <message>
         <location filename="../../draftobjects/pointarray.py" line="244"/>
@@ -2236,33 +2232,33 @@ A Link array is more efficient when creating multiple copies, but it cannot be f
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskPanel_OrthoArray.ui" line="53"/>
         <source>Switch to linear mode</source>
-        <translation type="unfinished"></translation>
+        <translation>切換成線性模式</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskPanel_OrthoArray.ui" line="65"/>
         <source>X axis</source>
-        <translation type="unfinished"></translation>
+        <translation>X 軸</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskPanel_OrthoArray.ui" line="75"/>
         <source>Y axis</source>
-        <translation type="unfinished"></translation>
+        <translation>Y 軸</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskPanel_OrthoArray.ui" line="85"/>
         <source>Z axis</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskPanel_OrthoArray.ui" line="47"/>
-        <source>Axis mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Z 軸</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_OrthoArray.ui" line="51"/>
         <source>Number of elements in the array in the specified direction, including a copy of the original object.
 The number must be at least 1 in each direction.</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskPanel_OrthoArray.ui" line="47"/>
+        <source>Axis mode</source>
+        <translation>軸座標模式</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_OrthoArray.ui" line="55"/>
@@ -2296,7 +2292,7 @@ The number must be at least 1 in each direction.</source>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskPanel_OrthoArray.ui" line="177"/>
         <source>Currently selected axis</source>
-        <translation type="unfinished"></translation>
+        <translation>目前已選取軸</translation>
     </message>
     <message>
         <location filename="../ui/TaskPanel_OrthoArray.ui" line="119"/>
@@ -2606,9 +2602,7 @@ It creates a construction group if it doesn&apos;t exist.</source>
         <source>Adds the selected objects to the construction group,
 and changes their appearance to the construction style.
 The construction group is created if it doesn&apos;t exist.</source>
-        <translation type="unfinished">Adds the selected objects to the construction group,
-and changes their appearance to the construction style.
-The construction group is created if it doesn&apos;t exist.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2626,12 +2620,12 @@ The construction group is created if it doesn&apos;t exist.</translation>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="391"/>
         <source>New named group</source>
-        <translation type="unfinished">New named group</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="394"/>
         <source>Adds a group with a given name.</source>
-        <translation type="unfinished">Adds a group with a given name.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2652,7 +2646,7 @@ The construction group is created if it doesn&apos;t exist.</translation>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="73"/>
         <source>Add to group...</source>
-        <translation type="unfinished">Add to group...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="73"/>
@@ -2662,7 +2656,7 @@ The construction group is created if it doesn&apos;t exist.</translation>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="76"/>
         <source>Adds the selected objects to a group, or removes them from any group.</source>
-        <translation type="unfinished">Adds the selected objects to a group, or removes them from any group.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="76"/>
@@ -2676,12 +2670,12 @@ Create a group first to use this tool.</source>
     <message>
         <location filename="../../draftguitools/gui_layers.py" line="96"/>
         <source>Add to layer...</source>
-        <translation type="unfinished">Add to layer...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_layers.py" line="99"/>
         <source>Adds the selected objects to a layer, or removes them from any layer.</source>
-        <translation type="unfinished">Adds the selected objects to a layer, or removes them from any layer.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2721,8 +2715,7 @@ Create a group first to use this tool.</source>
         <location filename="../../draftguitools/gui_arcs.py" line="66"/>
         <source>Creates a circular arc by a center point and a radius.
 SHIFT to constrain.</source>
-        <translation type="unfinished">Creates a circular arc by a center point and a radius.
-SHIFT to constrain.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_arcs.py" line="69"/>
@@ -2761,8 +2754,7 @@ CTRL to snap, SHIFT to constrain.</source>
         <location filename="../../draftguitools/gui_arcs.py" line="513"/>
         <source>Creates a circular arc by 3 points.
 SHIFT to constrain.</source>
-        <translation type="unfinished">Creates a circular arc by 3 points.
-SHIFT to constrain.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2814,7 +2806,7 @@ to polar or circular, and its properties can be modified.</source>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="216"/>
         <source>Select a layer or group to add new Draft and BIM objects to.</source>
-        <translation type="unfinished">Select a layer or group to add new Draft and BIM objects to.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2828,8 +2820,7 @@ to polar or circular, and its properties can be modified.</source>
         <location filename="../../draftguitools/gui_splines.py" line="63"/>
         <source>Creates a multiple-point B-spline.
 SHIFT to constrain.</source>
-        <translation type="unfinished">Creates a multiple-point B-spline.
-SHIFT to constrain.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_splines.py" line="63"/>
@@ -2854,8 +2845,7 @@ CTRL to snap, SHIFT to constrain.</source>
         <location filename="../../draftguitools/gui_beziers.py" line="69"/>
         <source>Creates an N-degree Bézier curve. The more points you pick, the higher the degree.
 SHIFT to constrain.</source>
-        <translation type="unfinished">Creates an N-degree Bézier curve. The more points you pick, the higher the degree.
-SHIFT to constrain.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2886,7 +2876,7 @@ SHIFT to constrain.</translation>
     <message>
         <location filename="../../draftguitools/gui_circles.py" line="84"/>
         <source>Creates a circle (full circular arc).</source>
-        <translation type="unfinished">Creates a circle (full circular arc).</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_circles.py" line="84"/>
@@ -2945,9 +2935,7 @@ CTRL to snap, SHIFT to constrain.</source>
         <source>Creates a Bézier curve made of 2nd degree (quadratic) and 3rd degree (cubic) segments. Click and drag to define each segment.
 After the curve is created you can go back to edit each control point and set the properties of each knot.
 SHIFT to constrain.</source>
-        <translation type="unfinished">Creates a Bézier curve made of 2nd degree (quadratic) and 3rd degree (cubic) segments. Click and drag to define each segment.
-After the curve is created you can go back to edit each control point and set the properties of each knot.
-SHIFT to constrain.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2998,16 +2986,7 @@ SHIFT to constrain, E or ALT to select an edge or arc.
 
 You may select a single line or single circular arc before launching this command
 to create the corresponding linked dimension.</source>
-        <translation type="unfinished">Creates a dimension.
-
-- Pick three points to create a simple linear dimension.
-- Select a straight line to create a linear dimension linked to that line.
-- Select an arc or circle to create a radius or diameter dimension linked to that arc.
-- Select two straight lines to create an angular dimension between them.
-SHIFT to constrain, E or ALT to select an edge or arc.
-
-You may select a single line or single circular arc before launching this command
-to create the corresponding linked dimension.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3094,7 +3073,7 @@ on supported nodes and on supported objects.</source>
     <message>
         <location filename="../../draftguitools/gui_ellipses.py" line="62"/>
         <source>Creates an ellipse.</source>
-        <translation type="unfinished">Creates an ellipse.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_ellipses.py" line="62"/>
@@ -3268,8 +3247,7 @@ Objects added to this layer can share the same visual properties.</source>
         <location filename="../../draftguitools/gui_lines.py" line="66"/>
         <source>Creates a 2-point line.
 SHIFT to constrain.</source>
-        <translation type="unfinished">Creates a 2-point line.
-SHIFT to constrain.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_lines.py" line="66"/>
@@ -3311,9 +3289,7 @@ A &apos;Link array&apos; is more efficient when handling many copies but the &ap
         <source>Moves the selected objects.
 If the &quot;copy&quot; option is active, it will create displaced copies.
 SHIFT to constrain. Hold ALT and click to create a copy with each click.</source>
-        <translation type="unfinished">Moves the selected objects.
-If the &quot;copy&quot; option is active, it will create displaced copies.
-SHIFT to constrain. Hold ALT and click to create a copy with each click.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_move.py" line="63"/>
@@ -3340,9 +3316,7 @@ CTRL to snap, SHIFT to constrain.</source>
         <source>Offsets of the selected object.
 It can also create an offset copy of the original object.
 SHIFT to constrain. Hold ALT and click to create a copy with each click.</source>
-        <translation type="unfinished">Offsets of the selected object.
-It can also create an offset copy of the original object.
-SHIFT to constrain. Hold ALT and click to create a copy with each click.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_offset.py" line="66"/>
@@ -3521,8 +3495,7 @@ The array can be turned into an orthogonal or a circular array by changing its t
         <location filename="../../draftguitools/gui_polygons.py" line="60"/>
         <source>Creates a regular polygon (triangle, square, pentagon, ...).
 SHIFT to constrain</source>
-        <translation type="unfinished">Creates a regular polygon (triangle, square, pentagon, ...).
-SHIFT to constrain</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_polygons.py" line="60"/>
@@ -3541,7 +3514,7 @@ CTRL to snap, SHIFT to constrain</source>
     <message>
         <location filename="../../draftguitools/gui_rectangles.py" line="57"/>
         <source>Creates a 2-point rectangle.</source>
-        <translation type="unfinished">Creates a 2-point rectangle.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_rectangles.py" line="57"/>
@@ -3556,9 +3529,7 @@ CTRL to snap, SHIFT to constrain</source>
         <source>Rotates the selected objects. Choose the center of rotation, then the initial angle, and then the final angle.
 If the &quot;copy&quot; option is active, it will create rotated copies.
 SHIFT to constrain. Hold ALT and click to create a copy with each click.</source>
-        <translation type="unfinished">Rotates the selected objects. Choose the center of rotation, then the initial angle, and then the final angle.
-If the &quot;copy&quot; option is active, it will create rotated copies.
-SHIFT to constrain. Hold ALT and click to create a copy with each click.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_rotate.py" line="62"/>
@@ -3579,8 +3550,7 @@ CTRL to snap, SHIFT to constrain. Hold ALT and click to create a copy with each 
         <location filename="../../draftguitools/gui_scale.py" line="70"/>
         <source>Scales the selected objects from a base point.
 SHIFT to constrain.</source>
-        <translation type="unfinished">Scales the selected objects from a base point.
-SHIFT to constrain.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_scale.py" line="71"/>
@@ -3612,7 +3582,7 @@ CTRL to snap, SHIFT to constrain, ALT to copy.</source>
     <message>
         <location filename="../../draftguitools/gui_selectplane.py" line="59"/>
         <source>Select working plane</source>
-        <translation type="unfinished">Select working plane</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_selectplane.py" line="59"/>
@@ -4114,7 +4084,7 @@ then draw a line to specify the distance and direction of stretching.</source>
     <message>
         <location filename="../../draftguitools/gui_texts.py" line="63"/>
         <source>Creates a multi-line annotation.</source>
-        <translation type="unfinished">Creates a multi-line annotation.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_texts.py" line="63"/>
@@ -4190,8 +4160,7 @@ This is intended to be used with closed shapes and solids, and doesn&apos;t affe
         <location filename="../../draftguitools/gui_trimex.py" line="82"/>
         <source>Trims or extends the selected object, or extrudes single faces.
 SHIFT constrains to current segment or to normal, ALT inverts.</source>
-        <translation type="unfinished">Trims or extends the selected object, or extrudes single faces.
-SHIFT constrains to current segment or to normal, ALT inverts.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_trimex.py" line="82"/>
@@ -4232,8 +4201,7 @@ convert closed edges into filled faces and parametric polygons, and merge faces 
         <location filename="../../draftguitools/gui_lines.py" line="313"/>
         <source>Creates a multiple-points line (polyline).
 SHIFT to constrain.</source>
-        <translation type="unfinished">Creates a multiple-points line (polyline).
-SHIFT to constrain.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4270,6 +4238,11 @@ Then you can use it to save a different camera position and objects&apos; states
         <location filename="../../Resources/ui/dialogHatch.ui" line="14"/>
         <source>Hatch</source>
         <translation>填充</translation>
+    </message>
+    <message>
+        <location filename="../ui/dialogHatch.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
     <message>
         <location filename="../ui/dialogHatch.ui" line="20"/>
@@ -5074,11 +5047,6 @@ value by using the [ and ] keys while drawing</source>
         <source>Previous</source>
         <translation>前一個</translation>
     </message>
-    <message>
-        <location filename="../ui/dialogHatch.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
 </context>
 <context>
     <name>Gui::Dialog::DlgSettingsDraft</name>
@@ -5190,7 +5158,7 @@ value by using the [ and ] keys while drawing</source>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="746"/>
         <source>Recenter</source>
-        <translation type="unfinished"></translation>
+        <translation>重新定位</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="749"/>
@@ -7318,6 +7286,12 @@ a raw Wire from the original Shape is added.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="82"/>
+        <source>If checked, no units conversion will occur.
+One unit in the SVG file will translate as one millimeter.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="204"/>
         <source>Versions of OpenCASCADE older than version 6.8 don&apos;t support arc projection.
 In this case arcs will be discretized into small line segments.
@@ -7426,12 +7400,6 @@ This value is the maximum segment length. </source>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftvisual.ui" line="75"/>
         <source>An optional directory with custom SVG files containing
 pattern definitions to be added to the standard patterns</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="82"/>
-        <source>If checked, no units conversion will occur.
-One unit in the SVG file will translate as one millimeter.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -7574,7 +7542,7 @@ One unit in the SVG file will translate as one millimeter.</source>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="532"/>
         <source>X coordinate of point</source>
-        <translation type="unfinished"></translation>
+        <translation>點的 X 座標</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="732"/>
@@ -7595,12 +7563,12 @@ One unit in the SVG file will translate as one millimeter.</source>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="536"/>
         <source>Y coordinate of point</source>
-        <translation type="unfinished"></translation>
+        <translation>點的 Y 座標</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="537"/>
         <source>Z coordinate of point</source>
-        <translation type="unfinished"></translation>
+        <translation>點的 Z 座標</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="737"/>
@@ -7710,12 +7678,12 @@ Not available if the &apos;Use Part Primitives&apos; preference is enabled</sour
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="562"/>
         <source>Chained mode</source>
-        <translation type="unfinished"></translation>
+        <translation>鎖定模式</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="562"/>
         <source>Chained Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>鎖定模式</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="564"/>
@@ -7730,7 +7698,7 @@ Not available if the &apos;Use Part Primitives&apos; preference is enabled</sour
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="565"/>
         <source>OCC-style offset</source>
-        <translation type="unfinished"></translation>
+        <translation>OCC 型式偏移量</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="654"/>
@@ -7763,136 +7731,6 @@ Not available if the &apos;Use Part Primitives&apos; preference is enabled</sour
         <location filename="../../DraftGui.py" line="792"/>
         <source>Wipe</source>
         <translation>擦拭</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="793"/>
-        <source>Wipes the existing segments of this line and starts again from the last point</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="794"/>
-        <source>Set WP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="795"/>
-        <source>Reorients the working plane on the last segment</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="126"/>
-        <location filename="../../DraftGui.py" line="796"/>
-        <source>Select edge</source>
-        <translation>選擇邊緣</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="797"/>
-        <source>Selects an existing edge to be measured by this dimension</source>
-        <translation>選擇一條現有的邊按此尺寸測量</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="798"/>
-        <source>Sides</source>
-        <translation>側面</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="799"/>
-        <source>Number of sides</source>
-        <translation>邊數</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="76"/>
-        <location filename="../../DraftGui.py" line="801"/>
-        <location filename="../../draftguitools/gui_move.py" line="207"/>
-        <location filename="../../draftguitools/gui_scale.py" line="203"/>
-        <location filename="../../draftguitools/gui_scale.py" line="227"/>
-        <location filename="../../draftguitools/gui_scale.py" line="356"/>
-        <location filename="../../draftguitools/gui_rotate.py" line="283"/>
-        <source>Copy</source>
-        <translation>複製</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="581"/>
-        <source>If checked, objects will be copied instead of moved</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="803"/>
-        <source>Modify subelements</source>
-        <translation>修改子元素</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="804"/>
-        <source>If checked, subelements will be modified instead of entire objects</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="813"/>
-        <source>Create text</source>
-        <translation>建立文字</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="814"/>
-        <source>Press this button to create the text object, or finish your text with two blank lines</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="837"/>
-        <source>Change default style for new objects</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="838"/>
-        <source>Toggle construction mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="839"/>
-        <location filename="../../DraftGui.py" line="2050"/>
-        <location filename="../../DraftGui.py" line="2065"/>
-        <source>Autogroup off</source>
-        <translation>關閉自動群組</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="950"/>
-        <source>Line</source>
-        <translation>線</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="958"/>
-        <source>DWire</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="976"/>
-        <source>Circle</source>
-        <translation>圓</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="981"/>
-        <source>Arc</source>
-        <translation>弧</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="986"/>
-        <location filename="../../draftguitools/gui_rotate.py" line="286"/>
-        <source>Rotate</source>
-        <translation>旋轉</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="990"/>
-        <source>Point</source>
-        <translation>點</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1018"/>
-        <source>Label</source>
-        <translation>標籤</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="848"/>
-        <source>Label type</source>
-        <translation>標籤樣式</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="81"/>
@@ -8026,106 +7864,24 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation>復原(&amp;U) (CTRL+Z)</translation>
     </message>
     <message>
+        <location filename="../../DraftGui.py" line="793"/>
+        <source>Wipes the existing segments of this line and starts again from the last point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="794"/>
+        <source>Set WP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="795"/>
+        <source>Reorients the working plane on the last segment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../DraftGui.py" line="802"/>
         <source>If checked, objects will be copied instead of moved. Preferences -&gt; Draft -&gt; Global copy mode to keep this mode in next commands</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="805"/>
-        <source>Text string to draw</source>
-        <translation>要繪製之文字字串</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="806"/>
-        <source>String</source>
-        <translation>字串</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="807"/>
-        <source>Height of text</source>
-        <translation>字高</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="808"/>
-        <source>Height</source>
-        <translation>高度</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="809"/>
-        <source>Intercharacter spacing</source>
-        <translation>字元間距</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="810"/>
-        <source>Tracking</source>
-        <translation>追蹤</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="811"/>
-        <source>Full path to font file:</source>
-        <translation>字型檔完整路徑：</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="812"/>
-        <source>Open a FileChooser for font file</source>
-        <translation>選取字型檔</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="836"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="272"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="327"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="530"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="541"/>
-        <source>Current working plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1036"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="527"/>
-        <location filename="../../draftguitools/gui_offset.py" line="243"/>
-        <location filename="../../draftguitools/gui_offset.py" line="260"/>
-        <location filename="../../draftguitools/gui_offset.py" line="324"/>
-        <source>Offset</source>
-        <translation>偏移複製</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1042"/>
-        <location filename="../../DraftGui.py" line="1100"/>
-        <location filename="../../draftguitools/gui_trimex.py" line="215"/>
-        <source>Distance</source>
-        <translation>距離</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1043"/>
-        <location filename="../../DraftGui.py" line="1101"/>
-        <location filename="../../draftguitools/gui_trimex.py" line="217"/>
-        <source>Offset distance</source>
-        <translation>偏移距離</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1097"/>
-        <source>Trimex</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="965"/>
-        <location filename="../../DraftGui.py" line="966"/>
-        <location filename="../../DraftGui.py" line="967"/>
-        <location filename="../../DraftGui.py" line="969"/>
-        <location filename="../../DraftGui.py" line="970"/>
-        <location filename="../../DraftGui.py" line="971"/>
-        <source>Local {}</source>
-        <translation>區域 {}</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="973"/>
-        <location filename="../../DraftGui.py" line="974"/>
-        <location filename="../../DraftGui.py" line="975"/>
-        <location filename="../../DraftGui.py" line="977"/>
-        <location filename="../../DraftGui.py" line="978"/>
-        <location filename="../../DraftGui.py" line="979"/>
-        <source>Global {}</source>
-        <translation>全局 {}</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="1197"/>
@@ -8223,6 +7979,218 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation>請輸入字型檔。</translation>
     </message>
     <message>
+        <location filename="../../DraftGui.py" line="126"/>
+        <location filename="../../DraftGui.py" line="796"/>
+        <source>Select edge</source>
+        <translation>選擇邊緣</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="797"/>
+        <source>Selects an existing edge to be measured by this dimension</source>
+        <translation>選擇一條現有的邊按此尺寸測量</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="798"/>
+        <source>Sides</source>
+        <translation>側面</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="799"/>
+        <source>Number of sides</source>
+        <translation>邊數</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="76"/>
+        <location filename="../../DraftGui.py" line="801"/>
+        <location filename="../../draftguitools/gui_move.py" line="207"/>
+        <location filename="../../draftguitools/gui_scale.py" line="203"/>
+        <location filename="../../draftguitools/gui_scale.py" line="227"/>
+        <location filename="../../draftguitools/gui_scale.py" line="356"/>
+        <location filename="../../draftguitools/gui_rotate.py" line="283"/>
+        <source>Copy</source>
+        <translation>複製</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="581"/>
+        <source>If checked, objects will be copied instead of moved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="803"/>
+        <source>Modify subelements</source>
+        <translation>修改子元素</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="804"/>
+        <source>If checked, subelements will be modified instead of entire objects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="805"/>
+        <source>Text string to draw</source>
+        <translation>要繪製之文字字串</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="806"/>
+        <source>String</source>
+        <translation>字串</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="807"/>
+        <source>Height of text</source>
+        <translation>字高</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="808"/>
+        <source>Height</source>
+        <translation>高度</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="809"/>
+        <source>Intercharacter spacing</source>
+        <translation>字元間距</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="810"/>
+        <source>Tracking</source>
+        <translation>追蹤</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="811"/>
+        <source>Full path to font file:</source>
+        <translation>字型檔完整路徑：</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="812"/>
+        <source>Open a FileChooser for font file</source>
+        <translation>選取字型檔</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="813"/>
+        <source>Create text</source>
+        <translation>建立文字</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="814"/>
+        <source>Press this button to create the text object, or finish your text with two blank lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="836"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="272"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="327"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="530"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="541"/>
+        <source>Current working plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="837"/>
+        <source>Change default style for new objects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="838"/>
+        <source>Toggle construction mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="839"/>
+        <location filename="../../DraftGui.py" line="2050"/>
+        <location filename="../../DraftGui.py" line="2065"/>
+        <source>Autogroup off</source>
+        <translation>關閉自動群組</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="950"/>
+        <source>Line</source>
+        <translation>線</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="958"/>
+        <source>DWire</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="976"/>
+        <source>Circle</source>
+        <translation>圓</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="981"/>
+        <source>Arc</source>
+        <translation>弧</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="986"/>
+        <location filename="../../draftguitools/gui_rotate.py" line="286"/>
+        <source>Rotate</source>
+        <translation>旋轉</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="990"/>
+        <source>Point</source>
+        <translation>點</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1018"/>
+        <source>Label</source>
+        <translation>標籤</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="848"/>
+        <source>Label type</source>
+        <translation>標籤樣式</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1036"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="527"/>
+        <location filename="../../draftguitools/gui_offset.py" line="243"/>
+        <location filename="../../draftguitools/gui_offset.py" line="260"/>
+        <location filename="../../draftguitools/gui_offset.py" line="324"/>
+        <source>Offset</source>
+        <translation>偏移複製</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1042"/>
+        <location filename="../../DraftGui.py" line="1100"/>
+        <location filename="../../draftguitools/gui_trimex.py" line="215"/>
+        <source>Distance</source>
+        <translation>距離</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1043"/>
+        <location filename="../../DraftGui.py" line="1101"/>
+        <location filename="../../draftguitools/gui_trimex.py" line="217"/>
+        <source>Offset distance</source>
+        <translation>偏移距離</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1097"/>
+        <source>Trimex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="965"/>
+        <location filename="../../DraftGui.py" line="966"/>
+        <location filename="../../DraftGui.py" line="967"/>
+        <location filename="../../DraftGui.py" line="969"/>
+        <location filename="../../DraftGui.py" line="970"/>
+        <location filename="../../DraftGui.py" line="971"/>
+        <source>Local {}</source>
+        <translation>區域 {}</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="973"/>
+        <location filename="../../DraftGui.py" line="974"/>
+        <location filename="../../DraftGui.py" line="975"/>
+        <location filename="../../DraftGui.py" line="977"/>
+        <location filename="../../DraftGui.py" line="978"/>
+        <location filename="../../DraftGui.py" line="979"/>
+        <source>Global {}</source>
+        <translation>全局 {}</translation>
+    </message>
+    <message>
         <location filename="../../DraftGui.py" line="2058"/>
         <source>Autogroup:</source>
         <translation>自動群組:</translation>
@@ -8303,6 +8271,26 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
+        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="152"/>
+        <source>Select 3 vertices, one or more shapes or an object to define a working plane</source>
+        <translation>選擇 3 個頂點、一個或多個形狀或一個物件來定義一個工作平面</translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
+        <source>Working plane aligned to global placement of</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
+        <source>Dir</source>
+        <translation>方向</translation>
+    </message>
+    <message>
         <location filename="../../draftguitools/gui_selectplane.py" line="539"/>
         <source>Custom</source>
         <translation>自訂</translation>
@@ -8328,28 +8316,10 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation>位置:</translation>
     </message>
     <message>
-        <location filename="../../importDWG.py" line="284"/>
-        <source>Error during DWG conversion.
-Try moving the DWG file to a directory path without spaces and non-english characters,
-or try saving to a lower DWG version.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="218"/>
-        <location filename="../../importDWG.py" line="290"/>
-        <source>Converting:</source>
-        <translation>轉換中:</translation>
-    </message>
-    <message>
         <location filename="../../importDWG.py" line="209"/>
         <location filename="../../importDWG.py" line="281"/>
         <source>LibreDWG error</source>
         <translation>LibreDWG 錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="223"/>
-        <source>Conversion successful</source>
-        <translation>轉換成功</translation>
     </message>
     <message>
         <location filename="../../importDWG.py" line="226"/>
@@ -8367,6 +8337,24 @@ or try saving to a lower DWG version.</source>
         <location filename="../../importDWG.py" line="306"/>
         <source>QCAD error</source>
         <translation>QCAD 錯誤</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="284"/>
+        <source>Error during DWG conversion.
+Try moving the DWG file to a directory path without spaces and non-english characters,
+or try saving to a lower DWG version.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="218"/>
+        <location filename="../../importDWG.py" line="290"/>
+        <source>Converting:</source>
+        <translation>轉換中:</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="223"/>
+        <source>Conversion successful</source>
+        <translation>轉換成功</translation>
     </message>
     <message>
         <location filename="../../importDWG.py" line="302"/>
@@ -8411,26 +8399,6 @@ Or download these libraries manually, as explained on
 https://github.com/yorikvanhavre/Draft-dxf-importer
 To enabled FreeCAD to download these libraries, answer Yes.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
-        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="152"/>
-        <source>Select 3 vertices, one or more shapes or an object to define a working plane</source>
-        <translation>選擇 3 個頂點、一個或多個形狀或一個物件來定義一個工作平面</translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
-        <source>Working plane aligned to global placement of</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
-        <source>Dir</source>
-        <translation>方向</translation>
     </message>
     <message>
         <location filename="../../draftutils/init_draft_statusbar.py" line="51"/>
@@ -8628,7 +8596,7 @@ To enabled FreeCAD to download these libraries, answer Yes.</source>
     <message>
         <location filename="../../draftutils/utils.py" line="848"/>
         <source>%s cannot be modified because its placement is readonly</source>
-        <translation type="unfinished">%s cannot be modified because its placement is readonly</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftutils/utils.py" line="977"/>
@@ -8831,7 +8799,7 @@ To enabled FreeCAD to download these libraries, answer Yes.</source>
         <location filename="../../draftguitools/gui_rotate.py" line="224"/>
         <location filename="../../draftguitools/gui_scale.py" line="117"/>
         <source>No valid subelements selected</source>
-        <translation type="unfinished">No valid subelements selected</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_move.py" line="210"/>
@@ -8905,27 +8873,27 @@ To enabled FreeCAD to download these libraries, answer Yes.</source>
     <message>
         <location filename="../../draftguitools/gui_arcs.py" line="297"/>
         <source>%1 toggle global</source>
-        <translation type="unfinished">%1 toggle global</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_arcs.py" line="298"/>
         <source>%1 toggle continue</source>
-        <translation type="unfinished">%1 toggle continue</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_arcs.py" line="302"/>
         <source>%1 pick center</source>
-        <translation type="unfinished">%1 pick center</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_arcs.py" line="308"/>
         <source>%1 pick radius</source>
-        <translation type="unfinished">%1 pick radius</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_arcs.py" line="313"/>
         <source>%1 pick starting angle</source>
-        <translation type="unfinished">%1 pick starting angle</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_arcs.py" line="317"/>
@@ -8935,7 +8903,7 @@ To enabled FreeCAD to download these libraries, answer Yes.</source>
     <message>
         <location filename="../../draftguitools/gui_arcs.py" line="318"/>
         <source>%1 pick aperture</source>
-        <translation type="unfinished">%1 pick aperture</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_arcs.py" line="335"/>
@@ -9117,7 +9085,7 @@ To enabled FreeCAD to download these libraries, answer Yes.</source>
         <location filename="../../draftguitools/gui_rotate.py" line="193"/>
         <location filename="../../draftguitools/gui_rotate.py" line="396"/>
         <source>Base angle</source>
-        <translation type="unfinished"></translation>
+        <translation>基礎角度</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_rotate.py" line="194"/>
@@ -9129,7 +9097,7 @@ To enabled FreeCAD to download these libraries, answer Yes.</source>
         <location filename="../../draftguitools/gui_rotate.py" line="199"/>
         <location filename="../../draftguitools/gui_rotate.py" line="400"/>
         <source>Pick base angle</source>
-        <translation type="unfinished"></translation>
+        <translation>選取基礎角度</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_rotate.py" line="205"/>
@@ -9148,7 +9116,7 @@ The final angle will be the base angle plus this amount.</source>
         <location filename="../../draftguitools/gui_rotate.py" line="213"/>
         <location filename="../../draftguitools/gui_rotate.py" line="418"/>
         <source>Pick rotation angle</source>
-        <translation type="unfinished"></translation>
+        <translation>選取旋轉角度</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="65"/>
@@ -9168,7 +9136,7 @@ The final angle will be the base angle plus this amount.</source>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="94"/>
         <source>Add to new group...</source>
-        <translation type="unfinished">Add to new group...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="159"/>
@@ -9193,19 +9161,19 @@ The final angle will be the base angle plus this amount.</source>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="260"/>
         <source>New layer...</source>
-        <translation type="unfinished">New layer...</translation>
+        <translation>新增圖層...</translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="293"/>
         <location filename="../../draftguitools/gui_layers.py" line="148"/>
         <source>Create new layer</source>
-        <translation type="unfinished">Create new layer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="294"/>
         <location filename="../../draftguitools/gui_layers.py" line="149"/>
         <source>Layer name:</source>
-        <translation type="unfinished">Layer name:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="296"/>
@@ -9247,7 +9215,7 @@ The final angle will be the base angle plus this amount.</source>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="399"/>
         <source>Create new group</source>
-        <translation type="unfinished">Create new group</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="400"/>
@@ -9263,7 +9231,7 @@ The final angle will be the base angle plus this amount.</source>
     <message>
         <location filename="../../draftguitools/gui_groups.py" line="407"/>
         <source>New named group</source>
-        <translation type="unfinished">New named group</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_dimension_ops.py" line="55"/>
@@ -9593,7 +9561,7 @@ The final angle will be the base angle plus this amount.</source>
     <message>
         <location filename="../../draftguitools/gui_scale.py" line="199"/>
         <source>Zero scale factor not allowed</source>
-        <translation type="unfinished">Zero scale factor not allowed</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_scale.py" line="206"/>
@@ -10194,17 +10162,17 @@ of existing objects in all opened documents?</source>
     <message>
         <location filename="../../draftobjects/shapestring.py" line="144"/>
         <source>Font file not found</source>
-        <translation type="unfinished">Font file not found</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/shapestring.py" line="147"/>
         <source>Specified font file is not a file</source>
-        <translation type="unfinished">Specified font file is not a file</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/shapestring.py" line="150"/>
         <source>Specified font type is not supported</source>
-        <translation type="unfinished">Specified font type is not supported</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/shapestring.py" line="186"/>
@@ -10320,22 +10288,22 @@ of existing objects in all opened documents?</source>
     <message>
         <location filename="../../draftobjects/patharray.py" line="589"/>
         <source>moved &apos;Count&apos; property to &apos;Spacing&apos; subsection</source>
-        <translation type="unfinished">moved &apos;Count&apos; property to &apos;Spacing&apos; subsection</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/patharray.py" line="591"/>
         <source>added &apos;ReversePath&apos;, &apos;SpacingMode&apos;, &apos;SpacingUnit&apos;, &apos;UseSpacingPattern&apos; and &apos;SpacingPattern&apos; properties</source>
-        <translation type="unfinished">added &apos;ReversePath&apos;, &apos;SpacingMode&apos;, &apos;SpacingUnit&apos;, &apos;UseSpacingPattern&apos; and &apos;SpacingPattern&apos; properties</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/patharray.py" line="681"/>
         <source>Spacing unit of 0 is not allowed, using default</source>
-        <translation type="unfinished">Spacing unit of 0 is not allowed, using default</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/patharray.py" line="759"/>
         <source>Operation would generate too many objects. Aborting</source>
-        <translation type="unfinished">Operation would generate too many objects. Aborting</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/pathtwistedarray.py" line="141"/>
@@ -10350,7 +10318,7 @@ of existing objects in all opened documents?</source>
         <location filename="../../draftobjects/array.py" line="76"/>
         <location filename="../../draftobjects/pointarray.py" line="164"/>
         <source>added hidden property &apos;PlacementList&apos;</source>
-        <translation type="unfinished">added hidden property &apos;PlacementList&apos;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftmake/make_sketch.py" line="104"/>
@@ -10738,12 +10706,12 @@ of existing objects in all opened documents?</source>
     <message>
         <location filename="../../draftviewproviders/view_layer.py" line="518"/>
         <source>Reassign properties of layer</source>
-        <translation type="unfinished">Reassign properties of layer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftviewproviders/view_layer.py" line="572"/>
         <source>Reassign properties of all layers</source>
-        <translation type="unfinished">Reassign properties of all layers</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftviewproviders/view_base.py" line="402"/>
@@ -10815,7 +10783,7 @@ of existing objects in all opened documents?</source>
     <message>
         <location filename="../../draftfunctions/upgrade.py" line="502"/>
         <source>Found groups: closing open wires inside</source>
-        <translation type="unfinished">Found groups: closing open wires inside</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftfunctions/upgrade.py" line="505"/>
@@ -10825,7 +10793,7 @@ of existing objects in all opened documents?</source>
     <message>
         <location filename="../../draftfunctions/upgrade.py" line="508"/>
         <source>Found meshes: turning them into Part shapes</source>
-        <translation type="unfinished">Found meshes: turning them into Part shapes</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftfunctions/upgrade.py" line="511"/>
@@ -10866,18 +10834,18 @@ of existing objects in all opened documents?</source>
     <message>
         <location filename="../../draftfunctions/upgrade.py" line="563"/>
         <source>Found object with several coplanar faces: refining them</source>
-        <translation type="unfinished">Found object with several coplanar faces: refining them</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftfunctions/upgrade.py" line="569"/>
         <location filename="../../draftfunctions/upgrade.py" line="612"/>
         <source>Found 1 non-parametric object: draftifying it</source>
-        <translation type="unfinished">Found 1 non-parametric object: draftifying it</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftfunctions/upgrade.py" line="628"/>
         <source>Unable to upgrade these objects</source>
-        <translation type="unfinished">Unable to upgrade these objects</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftfunctions/downgrade.py" line="238"/>
@@ -10927,22 +10895,22 @@ of existing objects in all opened documents?</source>
     <message>
         <location filename="../../draftfunctions/downgrade.py" line="364"/>
         <source>Downgrade: Unknown force method:</source>
-        <translation type="unfinished">Downgrade: Unknown force method:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftfunctions/downgrade.py" line="388"/>
         <source>Found 1 array: exploding it</source>
-        <translation type="unfinished">Found 1 array: exploding it</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftfunctions/downgrade.py" line="422"/>
         <source>Found several faces: subtracting them from the first one</source>
-        <translation type="unfinished">Found several faces: subtracting them from the first one</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftfunctions/downgrade.py" line="438"/>
         <source>Unable to downgrade these objects</source>
-        <translation type="unfinished">Unable to downgrade these objects</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftfunctions/mirror.py" line="90"/>
@@ -11115,38 +11083,38 @@ of existing objects in all opened documents?</source>
     <message>
         <location filename="../../draftguitools/gui_layers.py" line="80"/>
         <source>Create layer</source>
-        <translation type="unfinished">Create layer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_layers.py" line="113"/>
         <location filename="../../draftguitools/gui_layers.py" line="135"/>
         <source>Remove from layer</source>
-        <translation type="unfinished">Remove from layer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_layers.py" line="117"/>
         <source>Add to new layer...</source>
-        <translation type="unfinished">Add to new layer...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_layers.py" line="156"/>
         <source>Add to new layer</source>
-        <translation type="unfinished">Add to new layer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_layers.py" line="168"/>
         <source>Add to layer</source>
-        <translation type="unfinished">Add to layer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftguitools/gui_layers.py" line="252"/>
         <source>Layers change</source>
-        <translation type="unfinished">Layers change</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../draftobjects/clone.py" line="75"/>
         <source>added &apos;ForceCompound&apos; property</source>
-        <translation type="unfinished">added &apos;ForceCompound&apos; property</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../importDXF.py" line="146"/>
@@ -11353,11 +11321,6 @@ https://github.com/yorikvanhavre/Draft-dxf-importer
 <context>
     <name>importOCA</name>
     <message>
-        <location filename="../../importOCA.py" line="360"/>
-        <source>OCA error: couldn&apos;t determine character encoding</source>
-        <translation>OCA錯誤: 無法定義字元編碼</translation>
-    </message>
-    <message>
         <location filename="../../importOCA.py" line="445"/>
         <source>OCA: found no data to export</source>
         <translation>OCA：找不到要匯出的資料</translation>
@@ -11366,6 +11329,11 @@ https://github.com/yorikvanhavre/Draft-dxf-importer
         <location filename="../../importOCA.py" line="490"/>
         <source>successfully exported</source>
         <translation>成功匯出</translation>
+    </message>
+    <message>
+        <location filename="../../importOCA.py" line="360"/>
+        <source>OCA error: couldn&apos;t determine character encoding</source>
+        <translation>OCA錯誤: 無法定義字元編碼</translation>
     </message>
 </context>
 </TS>

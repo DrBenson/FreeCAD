@@ -595,11 +595,6 @@
         <translation>設定文字顏色</translation>
     </message>
     <message>
-        <location filename="../../Workbench.cpp" line="131"/>
-        <source>Set foreground color</source>
-        <translation>設定前景顏色</translation>
-    </message>
-    <message>
         <location filename="../../Workbench.cpp" line="158"/>
         <source>Set background color</source>
         <translation>設定背景顏色</translation>
@@ -627,6 +622,11 @@
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SpreadsheetView.cpp" line="192"/>
         <source>Clear Cells</source>
         <translation>清除儲存格</translation>
+    </message>
+    <message>
+        <location filename="../../Workbench.cpp" line="131"/>
+        <source>Set foreground color</source>
+        <translation>設定前景顏色</translation>
     </message>
     <message>
         <location filename="../../SheetTableView.cpp" line="276"/>
@@ -884,6 +884,11 @@ switch the design configuration. The property will be created if not exist.</sou
         <translation>儲存格屬性</translation>
     </message>
     <message>
+        <location filename="../../PropertiesDialog.ui" line="14"/>
+        <source>Cell properties</source>
+        <translation>儲存格屬性</translation>
+    </message>
+    <message>
         <location filename="../../PropertiesDialog.ui" line="27"/>
         <source>&amp;Color</source>
         <translation>顏色(&amp;C)</translation>
@@ -984,11 +989,6 @@ switch the design configuration. The property will be created if not exist.</sou
         <source>Alias for this cell</source>
         <translation>儲存格之別名</translation>
     </message>
-    <message>
-        <location filename="../../PropertiesDialog.ui" line="14"/>
-        <source>Cell properties</source>
-        <translation>儲存格屬性</translation>
-    </message>
 </context>
 <context>
     <name>Py</name>
@@ -1010,12 +1010,6 @@ switch the design configuration. The property will be created if not exist.</sou
         <location filename="../../../../../../FreeCAD-0.22.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="254"/>
         <source>CSV (*.csv *.CSV);;All (*)</source>
         <translation>CSV (*.csv *.CSV);;全部 (*)</translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="196"/>
-        <location filename="../../Command.cpp" line="252"/>
-        <source>All (*)</source>
-        <translation>全部(*)</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="198"/>
@@ -1075,6 +1069,12 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="116"/>
         <source>Sets the spreadsheet cells background color</source>
         <translation>設定試算表儲存格的背景顏色</translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="196"/>
+        <location filename="../../Command.cpp" line="252"/>
+        <source>All (*)</source>
+        <translation>全部(*)</translation>
     </message>
     <message>
         <location filename="../../ViewProviderSpreadsheet.cpp" line="141"/>
@@ -1239,6 +1239,21 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
         <translation>別名(&amp;A)</translation>
     </message>
     <message>
+        <location filename="../../Sheet.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
+        <location filename="../../Sheet.ui" line="22"/>
+        <source>&amp;Content:</source>
+        <translation>內容(&amp;C):</translation>
+    </message>
+    <message>
+        <location filename="../../Sheet.ui" line="39"/>
+        <source>&amp;Alias:</source>
+        <translation>別名(&amp;A):</translation>
+    </message>
+    <message>
         <location filename="../../Sheet.ui" line="52"/>
         <source>Refer to cell by alias, for example
 Spreadsheet.my_alias_name instead of Spreadsheet.B1</source>
@@ -1259,21 +1274,6 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Sheet.ui" line="197"/>
         <source>+</source>
         <translation>+</translation>
-    </message>
-    <message>
-        <location filename="../../Sheet.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
-        <location filename="../../Sheet.ui" line="22"/>
-        <source>&amp;Content:</source>
-        <translation>內容(&amp;C):</translation>
-    </message>
-    <message>
-        <location filename="../../Sheet.ui" line="39"/>
-        <source>&amp;Alias:</source>
-        <translation>別名(&amp;A):</translation>
     </message>
 </context>
 <context>
@@ -1434,6 +1434,11 @@ Continue?</source>
         <translation>將表格檢視的縮放等級設定為 60% 到 160%</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="48"/>
+        <source>Set a zoom level for table view from 60% to 160%.</source>
+        <translation>將表格檢視的縮放等級設定為 60% 到 160%.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="51"/>
         <source>%</source>
         <translation>%</translation>
@@ -1515,11 +1520,6 @@ Defaults to: %V = %A
         <location filename="../../DlgSettings.ui" line="137"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Escape character, typically the backslash (\), used to indicate special unprintable characters, e.g. \t = tab. Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;跳脫字元，通常是反斜線 (\)，用於指示特殊的無法列印字元，例如 \t = 定位字元. 必須是單個字元.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="48"/>
-        <source>Set a zoom level for table view from 60% to 160%.</source>
-        <translation>將表格檢視的縮放等級設定為 60% 到 160%.</translation>
     </message>
 </context>
 <context>
@@ -1607,6 +1607,55 @@ Defaults to: %V = %A
         <source>Properties…</source>
         <translation>屬性…</translation>
     </message>
+    <message>
+        <location filename="../../SheetTableView.cpp" line="182"/>
+        <source>Recompute</source>
+        <translation>重新計算</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="207"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="679"/>
+        <source>Bind…</source>
+        <translation>綁定…</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="211"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="672"/>
+        <source>Configuration Table…</source>
+        <translation>參數設定面板…</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="219"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="673"/>
+        <source>Merge Cells</source>
+        <translation>合併儲存格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="221"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="674"/>
+        <source>Split Cells</source>
+        <translation>分割儲存格</translation>
+    </message>
+    <message>
+        <location filename="../../SheetTableView.cpp" line="204"/>
+        <source>Cut</source>
+        <translation>剪下</translation>
+    </message>
+    <message>
+        <location filename="../../SheetTableView.cpp" line="206"/>
+        <source>Copy</source>
+        <translation>複製</translation>
+    </message>
+    <message>
+        <location filename="../../SheetTableView.cpp" line="208"/>
+        <source>Paste</source>
+        <translation>貼上</translation>
+    </message>
+    <message>
+        <location filename="../../SheetTableView.cpp" line="210"/>
+        <source>Delete</source>
+        <translation>刪除</translation>
+    </message>
     <message numerus="yes">
         <location filename="../../SheetTableView.cpp" line="129"/>
         <source>Insert %n row(s) above</source>
@@ -1669,11 +1718,6 @@ Defaults to: %V = %A
         <translation>屬性...</translation>
     </message>
     <message>
-        <location filename="../../SheetTableView.cpp" line="182"/>
-        <source>Recompute</source>
-        <translation>重新計算</translation>
-    </message>
-    <message>
         <location filename="../../SheetTableView.cpp" line="186"/>
         <source>Bind...</source>
         <translation>綁定...</translation>
@@ -1692,50 +1736,6 @@ Defaults to: %V = %A
         <location filename="../../SheetTableView.cpp" line="200"/>
         <source>Split cells</source>
         <translation>分割儲存格</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="207"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="679"/>
-        <source>Bind…</source>
-        <translation>綁定…</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="211"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="672"/>
-        <source>Configuration Table…</source>
-        <translation>參數設定面板…</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="219"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="673"/>
-        <source>Merge Cells</source>
-        <translation>合併儲存格</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="221"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="674"/>
-        <source>Split Cells</source>
-        <translation>分割儲存格</translation>
-    </message>
-    <message>
-        <location filename="../../SheetTableView.cpp" line="204"/>
-        <source>Cut</source>
-        <translation>剪下</translation>
-    </message>
-    <message>
-        <location filename="../../SheetTableView.cpp" line="206"/>
-        <source>Copy</source>
-        <translation>複製</translation>
-    </message>
-    <message>
-        <location filename="../../SheetTableView.cpp" line="208"/>
-        <source>Paste</source>
-        <translation>貼上</translation>
-    </message>
-    <message>
-        <location filename="../../SheetTableView.cpp" line="210"/>
-        <source>Delete</source>
-        <translation>刪除</translation>
     </message>
 </context>
 <context>
