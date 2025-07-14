@@ -58,6 +58,10 @@ import re
 import urllib.request
 import urllib.error
 import FreeCAD
+import FreeCADGui
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
 
 
 translate = FreeCAD.Qt.translate

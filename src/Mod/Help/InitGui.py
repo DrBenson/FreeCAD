@@ -21,6 +21,10 @@
 # *                                                                         *
 # ***************************************************************************
 
+import FreeCADGui
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
 import Help
 
 Help.add_preferences_page()

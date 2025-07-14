@@ -448,7 +448,8 @@ class BIMWorkbench(Workbench):
         def QT_TRANSLATE_NOOP(context, text):
             return text
 
-        t1 = FreeCAD.Qt.translate("QObject", "BIM")
+        # t1 = FreeCAD.Qt.translate("QObject", "BIM")
+        t1 = "BIM"
         t2 = FreeCAD.Qt.translate("QObject", "Draft")
         FreeCADGui.addPreferencePage(":/ui/preferences-arch.ui", t1)
         FreeCADGui.addPreferencePage(":/ui/preferences-archdefaults.ui", t1)
