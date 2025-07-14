@@ -221,6 +221,16 @@
         <translation>基礎的物體</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateView.py" line="230"/>
+        <source>The object moved by the move</source>
+        <translation>透過移動已移動的物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateView.py" line="237"/>
+        <source>The containing parts of objects moved by the move</source>
+        <translation>移動所移動的物件的包含部分</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateView.py" line="246"/>
         <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateView.py" line="280"/>
         <source>The objects moved by the move</source>
@@ -280,16 +290,6 @@
         <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="318"/>
         <source>The type of the motion</source>
         <translation>移動類型</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateView.py" line="230"/>
-        <source>The object moved by the move</source>
-        <translation>透過移動已移動的物體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateView.py" line="237"/>
-        <source>The containing parts of objects moved by the move</source>
-        <translation>移動所移動的物件的包含部分</translation>
     </message>
 </context>
 <context>
@@ -815,6 +815,11 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
 <context>
     <name>AssemblyGui::ViewProviderAssembly</name>
     <message>
+        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="136"/>
+        <source>Delete associated joints</source>
+        <translation>刪除關聯的接合</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="148"/>
         <source>The object is associated to one or more joints.</source>
         <translation>該物件與一個或多個接合相關聯.</translation>
@@ -828,11 +833,6 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="647"/>
         <source>Move part</source>
         <translation>移動零件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="136"/>
-        <source>Delete associated joints</source>
-        <translation>刪除關聯的接合</translation>
     </message>
 </context>
 <context>
@@ -1327,8 +1327,7 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
     <message>
         <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/CommandCreateSimulation.py" line="74"/>
         <source>Create a simulation of the current assembly.</source>
-        <translatorcomment>建立目前零件組合的模擬.</translatorcomment>
-        <translation></translation>
+        <translation>建立目前零件組合的模擬.</translation>
     </message>
 </context>
 <context>
@@ -1383,14 +1382,9 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
 <context>
     <name>Assembly_InsertLink</name>
     <message>
-        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="55"/>
-        <source>Insert Link</source>
-        <translation>插入連結</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="57"/>
-        <source>&lt;p&gt;Insert a Link into the assembly. This will create dynamic links to parts/bodies/primitives/assemblies.To insert external objects, make sure that the file is &lt;b&gt;open in the current session&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Press shift to add several links while clicking on the view.</source>
-        <translation>&lt;p&gt;將連結插入到程式集中. 這將建立到零件/實體/基元/零件組合件的動態連結. 若要插入外部物體，請確保檔案&lt;b&gt;在目前作業階段中開啟&lt;/b&gt;&lt;/p&gt;&lt;p&gt;按Shift 鍵新增多個連結點擊檢視內容.</translation>
+        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="59"/>
+        <source>Insert a Link into the currently active assembly. This will create dynamic links to parts/bodies/primitives/assemblies. To insert external objects, make sure that the file is &lt;b&gt;open in the current session&lt;/b&gt;</source>
+        <translation>將連結插入目前活動的零件組合中. 這將建立到零件/實體/基元/組合件的動態連結. 若要插入外部對象，請確保檔案&lt;b&gt;在目前作業階段中開啟&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="60"/>
@@ -1423,9 +1417,14 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <translation>插入組件</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="59"/>
-        <source>Insert a Link into the currently active assembly. This will create dynamic links to parts/bodies/primitives/assemblies. To insert external objects, make sure that the file is &lt;b&gt;open in the current session&lt;/b&gt;</source>
-        <translation>將連結插入目前活動的零件組合中. 這將建立到零件/實體/基元/組合件的動態連結. 若要插入外部對象，請確保檔案&lt;b&gt;在目前作業階段中開啟&lt;/b&gt;</translation>
+        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="55"/>
+        <source>Insert Link</source>
+        <translation>插入連結</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/CommandInsertLink.py" line="57"/>
+        <source>&lt;p&gt;Insert a Link into the assembly. This will create dynamic links to parts/bodies/primitives/assemblies.To insert external objects, make sure that the file is &lt;b&gt;open in the current session&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Press shift to add several links while clicking on the view.</source>
+        <translation>&lt;p&gt;將連結插入到程式集中. 這將建立到零件/實體/基元/零件組合件的動態連結. 若要插入外部物體，請確保檔案&lt;b&gt;在目前作業階段中開啟&lt;/b&gt;&lt;/p&gt;&lt;p&gt;按Shift 鍵新增多個連結點擊檢視內容.</translation>
     </message>
 </context>
 <context>
@@ -1952,6 +1951,11 @@ You can change this property of sub-assemblies at any time by right clicking the
 您可以隨時透過右鍵點擊子零件組合來變更其屬性.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyInsertLink.ui" line="14"/>
+        <source>Insert Link</source>
+        <translation>插入連結</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyInsertLink.ui" line="20"/>
         <source>Search parts...</source>
         <translation>搜尋零件...</translation>
@@ -1994,11 +1998,6 @@ Turn rigid/Turn flexible command there, or by editing its Rigid property in the 
         <source>Rigid sub-assemblies</source>
         <translation>剛性的子零件組合</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/Assembly/Gui/Resources/panels/TaskAssemblyInsertLink.ui" line="14"/>
-        <source>Insert Link</source>
-        <translation>插入連結</translation>
-    </message>
 </context>
 <context>
     <name>UtilsAssembly</name>
@@ -2010,6 +2009,16 @@ Turn rigid/Turn flexible command there, or by editing its Rigid property in the 
 </context>
 <context>
     <name>Workbench</name>
+    <message>
+        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/InitGui.py" line="70"/>
+        <source>Assembly workbench</source>
+        <translation>零件組合工作台</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/InitGui.py" line="71"/>
+        <source>Initializing Assembly workbench...</source>
+        <translation>初始化零件組合工作台...</translation>
+    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/InitGui.py" line="91"/>
         <source>Assembly</source>
@@ -2029,16 +2038,6 @@ Turn rigid/Turn flexible command there, or by editing its Rigid property in the 
         <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/InitGui.py" line="110"/>
         <source>Assembly workbench loaded</source>
         <translation>零件組合工作台已載入</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/InitGui.py" line="70"/>
-        <source>Assembly workbench</source>
-        <translation>零件組合工作台</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-0.22.0-git/src/Mod/Assembly/InitGui.py" line="71"/>
-        <source>Initializing Assembly workbench...</source>
-        <translation>初始化零件組合工作台...</translation>
     </message>
 </context>
 </TS>

@@ -1014,7 +1014,7 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/AttacherTexts.cpp" line="130"/>
         <source>Translate origin</source>
         <comment>AttachmentPlane mode caption</comment>
-        <translation type="unfinished">轉換物體原點</translation>
+        <translation type="unfinished">平移物體原點</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/AttacherTexts.cpp" line="131"/>
@@ -1223,7 +1223,7 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/AttacherTexts.cpp" line="55"/>
         <source>Translate origin</source>
         <comment>Attachment3D mode caption</comment>
-        <translation type="unfinished">轉換物體原點</translation>
+        <translation type="unfinished">平移物體原點</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/AttacherTexts.cpp" line="56"/>
@@ -2326,6 +2326,67 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/BoxWidget.ui" line="182"/>
         <source>Height</source>
         <translation type="unfinished">高度</translation>
+    </message>
+</context>
+<context>
+    <name>CAM:Simulator:Tooltips</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/PathSimulator/AppGL/GuiDisplay.cpp" line="268"/>
+        <source>Pause simulation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/PathSimulator/AppGL/GuiDisplay.cpp" line="270"/>
+        <source>Play simulation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/PathSimulator/AppGL/GuiDisplay.cpp" line="272"/>
+        <source>Single step simulation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/PathSimulator/AppGL/GuiDisplay.cpp" line="274"/>
+        <source>Decrease simulation speed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/PathSimulator/AppGL/GuiDisplay.cpp" line="276"/>
+        <source>Increase simulation speed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/PathSimulator/AppGL/GuiDisplay.cpp" line="278"/>
+        <source>Show/Hide tool path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/PathSimulator/AppGL/GuiDisplay.cpp" line="279"/>
+        <source>Toggle turn table animation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/PathSimulator/AppGL/GuiDisplay.cpp" line="283"/>
+        <source>Toggle ambient oclusion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/PathSimulator/AppGL/GuiDisplay.cpp" line="284"/>
+        <source>Toggle view simulation/model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/PathSimulator/AppGL/GuiDisplay.cpp" line="290"/>
+        <source>Reset camera</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>CAMSimulator::DlgCAMSimulator</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/PathSimulator/AppGL/DlgCAMSimulator.cpp" line="335"/>
+        <source>%1 - New CAM Simulator</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4587,6 +4648,24 @@ This command only works with a &apos;mesh&apos; object.</source>
     </message>
 </context>
 <context>
+    <name>CmdMigrateToExternal</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/Command.cpp" line="202"/>
+        <source>Migrate...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/Command.cpp" line="203"/>
+        <source>Migrate the materials to the external materials manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/Command.cpp" line="205"/>
+        <source>Migrate existing materials to the external materials manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CmdPartBoolean</name>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="1246"/>
@@ -5414,12 +5493,12 @@ This command only works with a &apos;mesh&apos; object.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/Command.cpp" line="2221"/>
         <source>Create MultiTransform</source>
-        <translation type="unfinished">建立多重轉換</translation>
+        <translation type="unfinished">建立多重平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/Command.cpp" line="2222"/>
         <source>Create a multitransform feature</source>
-        <translation type="unfinished">建立多重轉換特徵</translation>
+        <translation type="unfinished">建立多重平移特徵</translation>
     </message>
 </context>
 <context>
@@ -6325,12 +6404,12 @@ of projection.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/CommandSimple.cpp" line="297"/>
         <source>Create transformed copy</source>
-        <translation type="unfinished">建立轉換後的拷貝</translation>
+        <translation type="unfinished">建立平移後的拷貝</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/CommandSimple.cpp" line="298"/>
         <source>Create a non-parametric copy with transformed placement</source>
-        <translation type="unfinished">建立具有變換後的放置的非參數備份</translation>
+        <translation type="unfinished">建立具有平移後的放置的非參數備份</translation>
     </message>
 </context>
 <context>
@@ -9102,7 +9181,7 @@ This will clear the &apos;AttachmentSupport&apos; property, if any.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2424"/>
         <source>Scale transform</source>
-        <translation type="unfinished">縮放轉換</translation>
+        <translation type="unfinished">縮放平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2425"/>
@@ -11146,6 +11225,11 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <source>Lock or unlock the position of a view:&lt;br&gt;- Select a single view&lt;br&gt;- Click this tool</source>
         <translation type="unfinished">鎖定或解鎖一個檢視的位置: &lt;br&gt;-選擇單一檢視&lt;br&gt;- 點選此工具</translation>
     </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1465"/>
+        <source>Lock or unlock the position of a view:&lt;br&gt;- Select view(s)&lt;br&gt;- Click this tool</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdTechDrawExtensionPosChainDimensionGroup</name>
@@ -12716,7 +12800,7 @@ Without a selection, a file browser lets you select a SVG or image file.</source
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/Command.cpp" line="2270"/>
         <source>Convert to MultiTransform feature</source>
-        <translation type="unfinished">轉換至多重轉換特徵</translation>
+        <translation type="unfinished">轉換至多重平移特徵</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/Command.cpp" line="2362"/>
@@ -13675,6 +13759,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="177"/>
         <source>Set background color</source>
         <translation type="unfinished">設定背景顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.cpp" line="408"/>
+        <source>Edit blending curve</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Surface/Gui/Command.cpp" line="129"/>
@@ -14692,6 +14781,121 @@ Do you want the Addon Manager to install them automatically? Choose &quot;Ignore
 <context>
     <name>Dialog</name>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/AddonManager.ui" line="14"/>
+        <source>Addon Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_tags.ui" line="14"/>
+        <source>Edit Tags</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_tags.ui" line="20"/>
+        <source>Comma-separated list of tags describing this item:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_tags.ui" line="35"/>
+        <source>HINT: Common tags include &quot;Assembly&quot;, &quot;FEM&quot;, &quot;Mesh&quot;, &quot;NURBS&quot;, etc.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="17"/>
+        <source>Add-on Manager: Warning!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="17"/>
+        <source>Welcome to the Addon Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="23"/>
+        <source>The addons that can be installed here are not officially part of FreeCAD, and are not reviewed by the FreeCAD team. Make sure you know what you are installing!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="46"/>
+        <source>Download Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="53"/>
+        <source>Automatically check installed Addons for updates</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="60"/>
+        <source>Download Macro metadata (approximately 10MB)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="62"/>
+        <source>The Add-on Manager provides access to an extensive library of useful third-party FreeCAD extensions. No guarantees can be made regarding their safety or functionality.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="70"/>
+        <source>No proxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="75"/>
+        <source>System proxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="80"/>
+        <source>User-defined proxy:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="93"/>
+        <source>These and other settings are available in the FreeCAD Preferences window.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="96"/>
+        <source>Continue</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialogLayers.ui" line="14"/>
+        <source>Layers manager</source>
+        <translation type="unfinished">圖層管理</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialogLayers.ui" line="29"/>
+        <source>New</source>
+        <translation type="unfinished">新增</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialogLayers.ui" line="43"/>
+        <source>Select all</source>
+        <translation type="unfinished">全選</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialogLayers.ui" line="50"/>
+        <source>Toggle on/off</source>
+        <translation type="unfinished">切換 開啟/關閉</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialogLayers.ui" line="57"/>
+        <source>Isolate</source>
+        <translation type="unfinished">隔離</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialogLayers.ui" line="77"/>
+        <source>Cancel</source>
+        <translation type="unfinished">取消</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialogLayers.ui" line="84"/>
+        <source>OK</source>
+        <translation type="unfinished">確定</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Arch/Resources/ui/ArchSchedule.ui" line="14"/>
         <source>Schedule definition</source>
         <translation type="unfinished">排程定義</translation>
@@ -15365,41 +15569,6 @@ menu IFC -&gt; Convert document</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogIfcQuantities.ui" line="69"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialogLayers.ui" line="14"/>
-        <source>Layers manager</source>
-        <translation type="unfinished">圖層管理</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialogLayers.ui" line="29"/>
-        <source>New</source>
-        <translation type="unfinished">新增</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialogLayers.ui" line="43"/>
-        <source>Select all</source>
-        <translation type="unfinished">全選</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialogLayers.ui" line="50"/>
-        <source>Toggle on/off</source>
-        <translation type="unfinished">切換 開啟/關閉</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialogLayers.ui" line="57"/>
-        <source>Isolate</source>
-        <translation type="unfinished">隔離</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialogLayers.ui" line="77"/>
-        <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/dialogLayers.ui" line="84"/>
-        <source>OK</source>
-        <translation type="unfinished">確定</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogImport.ui" line="14"/>
@@ -17138,6 +17307,36 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="14"/>
+        <source>Tool Parameter Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="90"/>
+        <source>Notes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="107"/>
+        <source>Coating:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="117"/>
+        <source>Hardness:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="127"/>
+        <source>Materials:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ToolBitEditor.ui" line="140"/>
+        <source>Supplier:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolBitLibraryEdit.ui" line="14"/>
         <source>Library Manager</source>
         <translation type="unfinished"></translation>
@@ -17199,89 +17398,14 @@ For stock from the Base object&apos;s bounding box it means the extra material i
         <translation type="unfinished">關閉</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ToolBitLibraryEdit.ui" line="276"/>
+        <source>Close the library editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPanelInitialTemperature.ui" line="26"/>
         <source>Insert component&apos;s
  initial temperature:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/AddonManager.ui" line="14"/>
-        <source>Addon Manager</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_tags.ui" line="14"/>
-        <source>Edit Tags</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_tags.ui" line="20"/>
-        <source>Comma-separated list of tags describing this item:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_tags.ui" line="35"/>
-        <source>HINT: Common tags include &quot;Assembly&quot;, &quot;FEM&quot;, &quot;Mesh&quot;, &quot;NURBS&quot;, etc.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="17"/>
-        <source>Add-on Manager: Warning!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="17"/>
-        <source>Welcome to the Addon Manager</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="23"/>
-        <source>The addons that can be installed here are not officially part of FreeCAD, and are not reviewed by the FreeCAD team. Make sure you know what you are installing!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="46"/>
-        <source>Download Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="53"/>
-        <source>Automatically check installed Addons for updates</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="60"/>
-        <source>Download Macro metadata (approximately 10MB)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="62"/>
-        <source>The Add-on Manager provides access to an extensive library of useful third-party FreeCAD extensions. No guarantees can be made regarding their safety or functionality.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="70"/>
-        <source>No proxy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="75"/>
-        <source>System proxy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="80"/>
-        <source>User-defined proxy:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="93"/>
-        <source>These and other settings are available in the FreeCAD Preferences window.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/first_run.ui" line="96"/>
-        <source>Continue</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -17936,13 +18060,13 @@ A Link array is more efficient when creating multiple copies, but it cannot be f
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskShapeString.ui" line="114"/>
-        <source>Reset 3D point selection</source>
-        <translation type="unfinished"></translation>
+        <source>Reset 3d point selection</source>
+        <translation type="unfinished">重置 3d 點選擇</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskShapeString.ui" line="114"/>
-        <source>Reset 3d point selection</source>
-        <translation type="unfinished">重置 3d 點選擇</translation>
+        <source>Reset 3D point selection</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskShapeString.ui" line="120"/>
@@ -17978,6 +18102,32 @@ A Link array is more efficient when creating multiple copies, but it cannot be f
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskShapeString.ui" line="183"/>
         <source>Font files (*.ttf *.otf *.pfb *.TTF *.OTF *.PFB)</source>
         <translation type="unfinished">字型檔 (*.ttf *.otf *.pfb *.TTF *.OTF *.PFB)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskShapeString.ui" line="97"/>
+        <source>Coordinates relative to global coordinate system.
+Uncheck to use working plane coordinate system</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskShapeString.ui" line="101"/>
+        <source>Global</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskShapeString.ui" line="114"/>
+        <source>Reset point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskShapeString.ui" line="148"/>
+        <source>Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskShapeString.ui" line="169"/>
+        <source>Font files (*.ttc *.ttf *.otf *.pfb *.TTC *.TTF *.OTF *.PFB)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -19545,17 +19695,17 @@ Intersecting sketch entities in a sketch are not allowed.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="97"/>
         <source>No originals linked to the transformed feature.</source>
-        <translation type="unfinished">沒有原始連結到轉換後的特徵.</translation>
+        <translation type="unfinished">沒有原始連結到平移後的特徵.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="217"/>
         <source>Cannot transform invalid support shape</source>
-        <translation type="unfinished">無法轉換無效的支撐形狀</translation>
+        <translation type="unfinished">無法平移無效的支撐形狀</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="246"/>
         <source>Transformation failed</source>
-        <translation type="unfinished">轉換失敗</translation>
+        <translation type="unfinished">平移失敗</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="274"/>
@@ -19565,7 +19715,7 @@ Intersecting sketch entities in a sketch are not allowed.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="290"/>
         <source>Only additive and subtractive features can be transformed</source>
-        <translation type="unfinished">只有增加與除料特徵可以被轉換</translation>
+        <translation type="unfinished">只有增加與除料特徵可以被平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeaturePad.cpp" line="105"/>
@@ -19625,76 +19775,6 @@ Intersecting sketch entities in a sketch are not allowed.</source>
 </context>
 <context>
     <name>Exceptions</name>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="479"/>
-        <source>Autoconstrain error: Unsolvable sketch while applying coincident constraints.</source>
-        <translation type="unfinished">自動拘束錯誤: 套用共點拘束時無法解出此草圖.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="567"/>
-        <source>Autoconstrain error: Unsolvable sketch while applying vertical/horizontal constraints.</source>
-        <translation type="unfinished">自動拘束錯誤: 套用垂直/水平拘束時無法解出此草圖.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="675"/>
-        <source>Autoconstraint error: Unsolvable sketch while applying coincident constraints.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="722"/>
-        <source>Autoconstraint error: Unsolvable sketch while applying vertical/horizontal constraints.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="776"/>
-        <source>Autoconstrain error: Unsolvable sketch while applying equality constraints.</source>
-        <translation type="unfinished">自動拘束錯誤: 套用等長拘束時無法解出此草圖.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="814"/>
-        <source>Autoconstraint error: Unsolvable sketch while applying equality constraints.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="839"/>
-        <source>Autoconstrain error: Unsolvable sketch without constraints.</source>
-        <translation type="unfinished">自動拘束錯誤: 無拘束時無法解出此草圖.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="854"/>
-        <source>Autoconstraint error: Unsolvable sketch without constraints.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="868"/>
-        <source>Autoconstraint error: Unsolvable sketch after applying horizontal and vertical constraints.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="883"/>
-        <source>Autoconstraint error: Unsolvable sketch after applying point-on-point constraints.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="885"/>
-        <source>Autoconstrain error: Unsolvable sketch after applying horizontal and vertical constraints.</source>
-        <translation type="unfinished">自動拘束錯誤: 套用水平及垂直拘束後無法解出此草圖.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="904"/>
-        <source>Autoconstraint error: Unsolvable sketch after applying equality constraints.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="910"/>
-        <source>Autoconstrain error: Unsolvable sketch after applying point-on-point constraints.</source>
-        <translation type="unfinished">自動拘束錯誤: 套用共點拘束後無法解出此草圖.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="942"/>
-        <source>Autoconstrain error: Unsolvable sketch after applying equality constraints.</source>
-        <translation type="unfinished">自動拘束錯誤: 套用對稱拘束後無法解出此草圖.</translation>
-    </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchObject.cpp" line="2366"/>
         <source>Unable to guess intersection of curves. Try adding a coincident constraint between the vertices of the curves you are intending to fillet.</source>
@@ -19773,6 +19853,76 @@ Intersecting sketch entities in a sketch are not allowed.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchObject.cpp" line="7307"/>
         <source>Knot multiplicity cannot be higher than the degree of the B-spline.</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="479"/>
+        <source>Autoconstrain error: Unsolvable sketch while applying coincident constraints.</source>
+        <translation type="unfinished">自動拘束錯誤: 套用共點拘束時無法解出此草圖.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="567"/>
+        <source>Autoconstrain error: Unsolvable sketch while applying vertical/horizontal constraints.</source>
+        <translation type="unfinished">自動拘束錯誤: 套用垂直/水平拘束時無法解出此草圖.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="675"/>
+        <source>Autoconstraint error: Unsolvable sketch while applying coincident constraints.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="722"/>
+        <source>Autoconstraint error: Unsolvable sketch while applying vertical/horizontal constraints.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="776"/>
+        <source>Autoconstrain error: Unsolvable sketch while applying equality constraints.</source>
+        <translation type="unfinished">自動拘束錯誤: 套用等長拘束時無法解出此草圖.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="814"/>
+        <source>Autoconstraint error: Unsolvable sketch while applying equality constraints.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="839"/>
+        <source>Autoconstrain error: Unsolvable sketch without constraints.</source>
+        <translation type="unfinished">自動拘束錯誤: 無拘束時無法解出此草圖.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="854"/>
+        <source>Autoconstraint error: Unsolvable sketch without constraints.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="868"/>
+        <source>Autoconstraint error: Unsolvable sketch after applying horizontal and vertical constraints.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="883"/>
+        <source>Autoconstraint error: Unsolvable sketch after applying point-on-point constraints.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="885"/>
+        <source>Autoconstrain error: Unsolvable sketch after applying horizontal and vertical constraints.</source>
+        <translation type="unfinished">自動拘束錯誤: 套用水平及垂直拘束後無法解出此草圖.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="904"/>
+        <source>Autoconstraint error: Unsolvable sketch after applying equality constraints.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="910"/>
+        <source>Autoconstrain error: Unsolvable sketch after applying point-on-point constraints.</source>
+        <translation type="unfinished">自動拘束錯誤: 套用共點拘束後無法解出此草圖.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/App/SketchAnalysis.cpp" line="942"/>
+        <source>Autoconstrain error: Unsolvable sketch after applying equality constraints.</source>
+        <translation type="unfinished">自動拘束錯誤: 套用對稱拘束後無法解出此草圖.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherToolDefaultWidget.cpp" line="321"/>
@@ -20172,6 +20322,38 @@ Intersecting sketch entities in a sketch are not allowed.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="820"/>
         <source>Low frequency limit</source>
         <translation type="unfinished">低頻限制</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="665"/>
+        <source>Result object</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="672"/>
+        <source>Pipeline only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="675"/>
+        <source>Load results as pipeline instead of CCX_Results objects.
+After unchecking this option, the CalculiX command behaves like SolverCalculiXCcxTools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="692"/>
+        <source>Result format</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="699"/>
+        <source>Save result in binary format.
+Only takes effect if &apos;Pipeline only&apos; is enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/DlgSettingsFemCcx.ui" line="703"/>
+        <source>Use binary format</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/DlgSettingsFemCcxImp.cpp" line="149"/>
@@ -22139,6 +22321,43 @@ Specify another file please.</source>
 <context>
     <name>Form</name>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_licenses_table.ui" line="38"/>
+        <source>Licenses</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_licenses_table.ui" line="69"/>
+        <source>License</source>
+        <translation type="unfinished">版權聲明</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_licenses_table.ui" line="74"/>
+        <source>License file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="26"/>
+        <source>People</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="57"/>
+        <source>Kind</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="62"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolEditor.ui" line="26"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/MeshGroup.ui" line="37"/>
+        <source>Name</source>
+        <translation type="unfinished">名稱</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="67"/>
+        <source>Email</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/ArchMultiMaterial.ui" line="14"/>
         <source>Multi-material definition</source>
         <translation type="unfinished">多重材質設定</translation>
@@ -22409,28 +22628,6 @@ Specify another file please.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogCustomProperties.ui" line="83"/>
         <source>Delete</source>
         <translation type="unfinished">刪除</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="26"/>
-        <source>People</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="57"/>
-        <source>Kind</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="62"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/ToolEditor.ui" line="26"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/MeshGroup.ui" line="37"/>
-        <source>Name</source>
-        <translation type="unfinished">名稱</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="67"/>
-        <source>Email</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogLibrary.ui" line="14"/>
@@ -23912,6 +24109,45 @@ Reset deletes all current items from the list and fills the list with all circul
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="71"/>
+        <source>Influences calculation performance vs stability and accuracy.
+
+Larger values (further to the right) will calculate faster; smaller values (further to the left) will result in more accurate toolpaths.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="129"/>
+        <source>How much material to leave in the XY plane (i.e. for finishing operation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="139"/>
+        <source>XY Stock to Leave</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="278"/>
+        <source>After calculating toolpaths, the default cut order is by depth- all regions at a given stepdown are cleared before moving to the next stepdown.
+
+This option changes that behavior to cut each discrete area to its full depth before moving on to the next.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="283"/>
+        <source>Order cuts by region</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="290"/>
+        <source>Z Stock to Leave</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="297"/>
+        <source>How much material to leave along the Z axis (i.e. for finishing operation)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpCustomEdit.ui" line="42"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDeburrEdit.ui" line="60"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDeburrEdit.ui" line="92"/>
@@ -25141,6 +25377,18 @@ If the radius is bigger than that which the tag shape itself supports, the resul
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/ElementRotation1D.ui" line="89"/>
         <source>Rotation:</source>
         <translation type="unfinished">旋轉:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/dialogHatch.ui" line="81"/>
+        <source>Align to face:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/dialogHatch.ui" line="88"/>
+        <source>If checked, the pattern aligns with the base object.
+If unchecked, the pattern aligns with the global coordinate system.
+This setting modifies the Translate property.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="14"/>
@@ -26655,21 +26903,6 @@ Note: has no effect if a solid was selected</source>
         <source>Max element size:</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_licenses_table.ui" line="38"/>
-        <source>Licenses</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_licenses_table.ui" line="69"/>
-        <source>License</source>
-        <translation type="unfinished">版權聲明</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_licenses_table.ui" line="74"/>
-        <source>License file</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>FreeCADVersionToBranchMapDialog</name>
@@ -27860,6 +28093,16 @@ as standard cases when the necessary conditions are met.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/BIM/Resources/ui/preferences-ifc-export.ui" line="412"/>
+        <source>If not checked, standard FreeCAD groups (App::DocumentObjectGroup) will not be exported as IfcGroup or IfcElementAssembly.\nTheir children will be re-parented to the container of the skipped group in the IFC structure.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/BIM/Resources/ui/preferences-ifc-export.ui" line="415"/>
+        <source>Export FreeCAD groups</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Arch/Resources/ui/preferences-ifc.ui" line="14"/>
         <source>IFC import</source>
         <translation type="unfinished">IFC匯入</translation>
@@ -28761,12 +29004,12 @@ accidentally and modifying the entered value.</source>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="774"/>
-        <source>If checked, the Snap widget is displayed in the Draft status bar</source>
+        <source>If checked, the Snap widget is displayed in the Draft statusbar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="774"/>
-        <source>If checked, the Snap widget is displayed in the Draft statusbar</source>
+        <source>If checked, the Snap widget is displayed in the Draft status bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -28776,18 +29019,28 @@ accidentally and modifying the entered value.</source>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="793"/>
-        <source>If checked, the Annotation scale widget is displayed in the Draft status bar</source>
+        <source>If checked, the Annotation scale widget is displayed in the Draft statusbar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="793"/>
-        <source>If checked, the Annotation scale widget is displayed in the Draft statusbar</source>
+        <source>If checked, the Annotation scale widget is displayed in the Draft status bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="796"/>
         <source>Show the Annotation scale widget in the Draft Workbench</source>
         <translation type="unfinished">在草稿工作台中顯示註釋比例小工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="746"/>
+        <source>Recenter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="759"/>
+        <source>D</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="14"/>
@@ -29793,6 +30046,11 @@ This might fail for post DXF R12 templates.</source>
         <translation>匯出沿目前檢視方向投影物體</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="20"/>
+        <source>General options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-oca.ui" line="14"/>
         <source>OCA</source>
         <translation type="unfinished">OCA</translation>
@@ -29888,6 +30146,64 @@ One unit in the SVG file will translate as one millimeter.</source>
         <source>Versions of OpenCASCADE older than version 6.8 don&apos;t support arc projection.
 In this case arcs will be discretized into small line segments.
 This value is the maximum segment length.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="47"/>
+        <source>Method for importing SVG object colors into FreeCAD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="60"/>
+        <source>Use default style from Part/PartDesign</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="65"/>
+        <source>Use original SVG style</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="77"/>
+        <source>If checked, no unit conversion will occur.
+One unit in the SVG file will be interpreted as one millimeter.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="81"/>
+        <source>Disable unit scaling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="97"/>
+        <source>If face generation results in a degenerated face,
+a raw Wire from the original Shape is added.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="101"/>
+        <source>Add wires for invalid faces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="117"/>
+        <source>Check to cut shapes according to the even/odd SVG fill rule.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="120"/>
+        <source>Apply Cuts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="140"/>
+        <source>Coordinate precision (crucial for detecting closed paths)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="166"/>
+        <source>The number of decimal places used in internal coordinate operations (for example 3 = 0.001).
+	The optimal value depends on the absolute size of the import. Typical values are between 1 and 5.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -31504,6 +31820,60 @@ Should multiple tools or tool shapes with the same name exist in different direc
     </message>
 </context>
 <context>
+    <name>MatGui::DlgMigrateExternal</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="77"/>
+        <source>Migrating Models...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="83"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="95"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="107"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="119"/>
+        <source>  Library: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="87"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="99"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="111"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="123"/>
+        <source>done</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="89"/>
+        <source>Validating Models...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="101"/>
+        <source>Migrating Materials...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="113"/>
+        <source>Validating Materials...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="127"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="131"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="135"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="139"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="143"/>
+        <source>Aborted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="147"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="150"/>
+        <source>Unknown exception - Aborted</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MatGui::DlgSettingsDefaultMaterial</name>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/DlgSettingsDefaultMaterial.ui" line="14"/>
@@ -31514,6 +31884,46 @@ Should multiple tools or tool shapes with the same name exist in different direc
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/DlgSettingsDefaultMaterial.cpp" line="51"/>
         <source>Physical</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MatGui::DlgSettingsExternal</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/DlgSettingsExternal.ui" line="14"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/DlgSettingsExternal.ui" line="29"/>
+        <source>External Interface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/DlgSettingsExternal.ui" line="20"/>
+        <source>Use External Interface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/DlgSettingsExternal.ui" line="65"/>
+        <source>Cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/DlgSettingsExternal.ui" line="91"/>
+        <source>Model Cache Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/DlgSettingsExternal.ui" line="98"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/DlgSettingsExternal.ui" line="124"/>
+        <source>Hit Rate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/DlgSettingsExternal.ui" line="134"/>
+        <source>Material Cache Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/DlgSettingsExternal.cpp" line="97"/>
+        <source>None</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -32100,6 +32510,44 @@ If unchecked, they will be sorted by their name.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Material/Gui/ModelSelect.cpp" line="441"/>
         <source>Appearance</source>
         <translation type="unfinished">外觀</translation>
+    </message>
+</context>
+<context>
+    <name>MatGui::TaskMigrateExternal</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.ui" line="14"/>
+        <source>Materials Migration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.ui" line="20"/>
+        <source>Select Material Libraries</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.ui" line="27"/>
+        <source>Select material libraries to migrate. Existing materials will not be overwritten.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.ui" line="34"/>
+        <source>Select Model Libraries</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.ui" line="41"/>
+        <source>Select model libraries to migrate. Existing models will not be overwritten.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.ui" line="48"/>
+        <source>Status</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Material/Gui/TaskMigrateExternal.cpp" line="180"/>
+        <source>&amp;Migrate</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -34429,6 +34877,11 @@ Please visit http://www.openscad.org/index.html to install it.</source>
         <translation type="unfinished">值錯誤</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/EditDatumDialog.cpp" line="60"/>
+        <source>Invalid constraint name (must only contain alphanumericals and underscores, and must not start with digit)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSplineByInterpolation.h" line="131"/>
         <source>Cannot add knot point</source>
         <translation type="unfinished">無法新增結點</translation>
@@ -35778,6 +36231,65 @@ click again to end selection</source>
         <source>BSF whitworth fine profile</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="73"/>
+        <source>ISO tyre valves</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="675"/>
+        <source>Medium</source>
+        <comment>Distance between thread crest and hole wall, use ISO-273 nomenclature or equivalent if possible</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="676"/>
+        <source>Fine</source>
+        <comment>Distance between thread crest and hole wall, use ISO-273 nomenclature or equivalent if possible</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="677"/>
+        <source>Coarse</source>
+        <comment>Distance between thread crest and hole wall, use ISO-273 nomenclature or equivalent if possible</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="680"/>
+        <source>Normal</source>
+        <comment>Distance between thread crest and hole wall, use ASME B18.2.8 nomenclature or equivalent if possible</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="681"/>
+        <source>Close</source>
+        <comment>Distance between thread crest and hole wall, use ASME B18.2.8 nomenclature or equivalent if possible</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="682"/>
+        <source>Loose</source>
+        <comment>Distance between thread crest and hole wall, use ASME B18.2.8 nomenclature or equivalent if possible</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="685"/>
+        <source>Normal</source>
+        <comment>Distance between thread crest and hole wall</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="686"/>
+        <source>Close</source>
+        <comment>Distance between thread crest and hole wall</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="687"/>
+        <source>Wide</source>
+        <comment>Distance between thread crest and hole wall</comment>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PartDesignGui::TaskLinearPatternParameters</name>
@@ -36279,12 +36791,12 @@ measured along the specified direction</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskPipeParameters.ui" line="51"/>
         <source>Corner Transition</source>
-        <translation type="unfinished">轉角轉換</translation>
+        <translation type="unfinished">轉角平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskPipeParameters.ui" line="65"/>
         <source>Transformed</source>
-        <translation type="unfinished">轉換</translation>
+        <translation type="unfinished">平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskPipeParameters.ui" line="70"/>
@@ -36368,7 +36880,7 @@ measured along the specified direction</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskPipeParameters.cpp" line="802"/>
         <source>Section transformation</source>
-        <translation type="unfinished">輪廓圖轉換</translation>
+        <translation type="unfinished">輪廓圖平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskPipeParameters.cpp" line="818"/>
@@ -36747,12 +37259,12 @@ click again to end selection</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="35"/>
         <source>Transform body</source>
-        <translation type="unfinished">轉換實體</translation>
+        <translation type="unfinished">平移實體</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="48"/>
         <source>Transform tool shapes</source>
-        <translation type="unfinished">轉換工具形狀</translation>
+        <translation type="unfinished">平移工具形狀</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="50"/>
@@ -36895,7 +37407,7 @@ click again to end selection</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/ViewProviderMultiTransform.h" line="37"/>
         <source>MultiTransform parameters</source>
-        <translation type="unfinished">多重轉換參數</translation>
+        <translation type="unfinished">多重平移參數</translation>
     </message>
 </context>
 <context>
@@ -38967,6 +39479,31 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="118"/>
         <source>Allow multiple solids in Part Design Body by default (experimental)</source>
         <translation type="unfinished">預設情況下允許在零件設計主體中使用多個實體(實驗性)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="111"/>
+        <source>Features settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="117"/>
+        <source>Default profile type for holes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="134"/>
+        <source>Circles and arcs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="139"/>
+        <source>Points, circles and arcs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="144"/>
+        <source>Points</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -41144,6 +41681,16 @@ in the 3D view for the sweep path.</source>
         <translation>檔案不存在!</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Assembly/App/BomObject.cpp" line="272"/>
+        <source>N/A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Assembly/App/BomObject.cpp" line="296"/>
+        <source>Not supported</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="121"/>
         <source>Active object</source>
         <translation type="unfinished"></translation>
@@ -41172,313 +41719,6 @@ in the 3D view for the sweep path.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/AppPathGui.cpp" line="90"/>
         <source>CAM</source>
         <translation type="unfinished">CAM電腦輔助製造</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="72"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="640"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1504"/>
-        <source>Choose an SVG file to open</source>
-        <translation type="unfinished">選擇要開啟的 SVG 檔</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="74"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="642"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="703"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1506"/>
-        <source>Scalable Vector Graphic</source>
-        <translation type="unfinished">可縮放向量圖檔</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="331"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="431"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="485"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="697"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="822"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="312"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="388"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="464"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="855"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="912"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="2033"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/Command.cpp" line="1580"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/Command.cpp" line="1606"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="71"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="130"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="237"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="271"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandExport.cpp" line="62"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandExport.cpp" line="137"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandInsertRobot.cpp" line="260"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="106"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="173"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="192"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="464"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandAlterGeometry.cpp" line="168"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandAlterGeometry.cpp" line="177"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="171"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="178"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2392"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2521"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2537"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2795"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3204"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3231"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3236"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3489"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3522"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3527"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3814"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3844"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3867"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3898"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3921"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4055"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4077"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4108"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4315"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4327"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4576"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4584"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4650"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4770"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4876"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4963"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4976"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5009"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5071"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5107"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5143"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5266"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5279"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5310"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5372"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5406"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5442"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5564"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5599"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5608"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5647"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5746"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5758"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5793"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5869"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5879"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5920"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5931"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5960"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5981"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6161"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6182"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6361"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6578"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6590"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6624"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6696"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6716"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6725"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6754"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6763"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6774"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6802"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6961"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7014"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7188"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7233"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7359"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7372"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7438"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7446"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7602"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7722"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7735"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7780"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7798"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7924"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7932"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8041"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8054"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8115"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8123"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8301"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8584"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8597"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8633"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8731"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8744"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8809"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8870"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9024"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9038"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9056"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9063"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9084"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9117"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9133"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9188"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9280"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9294"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9321"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9350"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9380"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9430"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9459"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9508"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9532"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9626"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9636"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9661"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9671"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9689"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9824"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9902"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9914"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9950"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="10026"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="10038"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="169"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="244"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="327"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="380"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="440"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="528"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="576"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="938"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="1048"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="80"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="362"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1003"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1327"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1337"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1399"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1928"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1938"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2002"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2212"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2222"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2269"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2334"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherVirtualSpace.cpp" line="121"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherVirtualSpace.cpp" line="130"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherVirtualSpace.cpp" line="157"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="581"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="591"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="809"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="926"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="933"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="938"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="976"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1075"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1341"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1358"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1363"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1372"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1425"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1444"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1554"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1629"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1635"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1686"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="319"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="420"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1309"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1317"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1364"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1506"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1513"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1577"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1251"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1260"/>
-        <source>Wrong selection</source>
-        <translation type="unfinished">錯誤的選取</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="332"/>
-        <source>Select a Part object.</source>
-        <translation type="unfinished">選取零件物體.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="342"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="442"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="527"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="582"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="632"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="830"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DrawGuiUtil.cpp" line="187"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DrawGuiUtil.cpp" line="220"/>
-        <source>No page found</source>
-        <translation type="unfinished">未發現頁面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="343"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="443"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="528"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="583"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="633"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="831"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1159"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1443"/>
-        <source>Create a page first.</source>
-        <translation type="unfinished">請先建立一個頁面.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="432"/>
-        <source>Select exactly one Part object.</source>
-        <translation type="unfinished">請確實選取一個零件物體.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="486"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="698"/>
-        <source>Select one Page object.</source>
-        <translation type="unfinished">選取一個頁面物體.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="704"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Command.cpp" line="345"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Command.cpp" line="415"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="1075"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Points/Gui/Command.cpp" line="84"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Points/Gui/Command.cpp" line="141"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandExport.cpp" line="90"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandExport.cpp" line="165"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="441"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1506"/>
-        <source>All Files</source>
-        <translation type="unfinished">所有檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="707"/>
-        <source>Export page</source>
-        <translation type="unfinished">匯出頁面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="823"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1687"/>
-        <source>Select exactly one Spreadsheet object.</source>
-        <translation type="unfinished">請僅選擇一個試算表物件.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/TaskOrthoViews.cpp" line="47"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/TaskOrthoViews.cpp" line="1041"/>
-        <source>Make axonometric...</source>
-        <translation type="unfinished">產生軸測...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/TaskOrthoViews.cpp" line="48"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/TaskOrthoViews.cpp" line="1042"/>
-        <source>Edit axonometric settings...</source>
-        <translation type="unfinished">編輯軸測設定...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/TaskOrthoViews.cpp" line="49"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/TaskOrthoViews.cpp" line="1043"/>
-        <source>Make orthographic</source>
-        <translation type="unfinished">建立正投影視角</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/ViewProviderPage.cpp" line="141"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/ViewProviderPage.cpp" line="233"/>
-        <source>Show drawing</source>
-        <translation type="unfinished">顯示圖面</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/AppFemGui.cpp" line="174"/>
@@ -41543,11 +41783,6 @@ in the 3D view for the sweep path.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/PropertyFemMeshItem.cpp" line="116"/>
         <source>Groups</source>
         <translation type="unfinished">群組</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostBoxes.cpp" line="313"/>
-        <source>Edit post processing object</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/ViewProviderAnalysis.cpp" line="332"/>
@@ -41891,6 +42126,289 @@ in the 3D view for the sweep path.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Command.cpp" line="1805"/>
         <source>Enter scaling factor:</source>
         <translation type="unfinished">輸入縮放係數:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="72"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="640"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1504"/>
+        <source>Choose an SVG file to open</source>
+        <translation type="unfinished">選擇要開啟的 SVG 檔</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="74"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="642"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="703"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1506"/>
+        <source>Scalable Vector Graphic</source>
+        <translation type="unfinished">可縮放向量圖檔</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="331"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="431"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="485"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="697"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="822"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="312"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="388"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="464"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="855"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="912"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="2033"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/Command.cpp" line="1580"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/Command.cpp" line="1606"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="71"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="130"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="237"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="271"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandExport.cpp" line="62"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandExport.cpp" line="137"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandInsertRobot.cpp" line="260"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="106"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="173"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="192"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="464"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandAlterGeometry.cpp" line="168"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandAlterGeometry.cpp" line="177"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="171"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="178"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2392"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2521"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2537"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2795"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3204"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3231"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3236"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3489"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3522"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3527"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3814"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3844"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3867"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3898"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3921"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4055"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4077"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4108"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4315"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4327"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4576"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4584"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4650"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4770"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4876"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4963"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4976"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5009"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5071"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5107"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5143"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5266"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5279"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5310"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5372"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5406"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5442"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5564"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5599"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5608"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5647"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5746"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5758"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5793"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5869"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5879"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5920"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5931"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5960"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="5981"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6161"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6182"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6361"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6578"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6590"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6624"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6696"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6716"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6725"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6754"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6763"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6774"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6802"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6961"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7014"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7188"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7233"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7359"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7372"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7438"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7446"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7602"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7722"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7735"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7780"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7798"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7924"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7932"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8041"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8054"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8115"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8123"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8301"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8584"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8597"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8633"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8731"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8744"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8809"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8870"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9024"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9038"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9056"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9063"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9084"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9117"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9133"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9188"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9280"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9294"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9321"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9350"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9380"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9430"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9459"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9508"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9532"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9626"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9636"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9661"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9671"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9689"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9824"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9902"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9914"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9950"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="10026"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="10038"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="169"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="244"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="327"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="380"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="440"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="528"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="576"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="938"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherBSpline.cpp" line="1048"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="80"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="362"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1003"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1327"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1337"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1399"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1928"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1938"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2002"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2212"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2222"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2269"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2334"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherVirtualSpace.cpp" line="121"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherVirtualSpace.cpp" line="130"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherVirtualSpace.cpp" line="157"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="581"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="591"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="809"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="926"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="933"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="938"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="976"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1075"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1341"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1358"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1363"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1372"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1425"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1444"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1554"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1629"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1635"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1686"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="319"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="420"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1309"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1317"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1364"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1506"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1513"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1577"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1251"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1260"/>
+        <source>Wrong selection</source>
+        <translation type="unfinished">錯誤的選取</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="332"/>
+        <source>Select a Part object.</source>
+        <translation type="unfinished">選取零件物體.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="342"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="442"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="527"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="582"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="632"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="830"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DrawGuiUtil.cpp" line="187"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DrawGuiUtil.cpp" line="220"/>
+        <source>No page found</source>
+        <translation type="unfinished">未發現頁面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="343"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="443"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="528"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="583"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="633"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="831"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1159"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1443"/>
+        <source>Create a page first.</source>
+        <translation type="unfinished">請先建立一個頁面.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="432"/>
+        <source>Select exactly one Part object.</source>
+        <translation type="unfinished">請確實選取一個零件物體.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="486"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="698"/>
+        <source>Select one Page object.</source>
+        <translation type="unfinished">選取一個頁面物體.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="704"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Command.cpp" line="345"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Command.cpp" line="415"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Command.cpp" line="1075"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Points/Gui/Command.cpp" line="84"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Points/Gui/Command.cpp" line="141"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandExport.cpp" line="90"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandExport.cpp" line="165"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="441"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1506"/>
+        <source>All Files</source>
+        <translation type="unfinished">所有檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="707"/>
+        <source>Export page</source>
+        <translation type="unfinished">匯出頁面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Command.cpp" line="823"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1687"/>
+        <source>Select exactly one Spreadsheet object.</source>
+        <translation type="unfinished">請僅選擇一個試算表物件.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/PropertyEditorMesh.cpp" line="77"/>
@@ -42886,7 +43404,7 @@ This feature is broken and can&apos;t be edited.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/ViewProviderMultiTransform.cpp" line="48"/>
         <source>Edit multi-transform</source>
-        <translation type="unfinished">編輯多重轉換</translation>
+        <translation type="unfinished">編輯多重平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/ViewProviderPad.cpp" line="46"/>
@@ -42941,7 +43459,7 @@ This feature is broken and can&apos;t be edited.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/ViewProviderTransformed.cpp" line="179"/>
         <source>One transformed shape does not intersect the support</source>
-        <translation type="unfinished">一個轉換後的外形與支撐不相交</translation>
+        <translation type="unfinished">一個平移後的外形與支撐不相交</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/ViewProviderTransformed.cpp" line="179"/>
@@ -42951,7 +43469,7 @@ This feature is broken and can&apos;t be edited.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/ViewProviderTransformed.cpp" line="181"/>
         <source>%1 transformed shapes do not intersect the support</source>
-        <translation type="unfinished">%1 轉換後的外形與支撐不相交</translation>
+        <translation type="unfinished">%1 平移後的外形與支撐不相交</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/ViewProviderTransformed.cpp" line="181"/>
@@ -44243,9 +44761,106 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation type="unfinished">弧參數</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArc.h" line="923"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="1219"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerCircle.h" line="732"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerLine.h" line="823"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerLineSet.h" line="852"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2699"/>
+        <source>%1 switch mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArc.h" line="935"/>
+        <source>%1 pick arc center</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArc.h" line="938"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcOfEllipse.h" line="434"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcOfHyperbola.h" line="443"/>
+        <source>%1 pick arc start point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArc.h" line="942"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcOfEllipse.h" line="436"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcOfHyperbola.h" line="445"/>
+        <source>%1 pick arc end point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArc.h" line="948"/>
+        <source>%1 pick first arc point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArc.h" line="952"/>
+        <source>%1 pick second arc point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArc.h" line="956"/>
+        <source>%1 pick third arc point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcOfEllipse.h" line="430"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerEllipse.h" line="981"/>
+        <source>%1 pick ellipse center</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcOfEllipse.h" line="432"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcOfHyperbola.h" line="441"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcOfParabola.h" line="361"/>
+        <source>%1 pick axis point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcOfHyperbola.h" line="439"/>
+        <source>%1 pick center point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcOfParabola.h" line="359"/>
+        <source>%1 pick focus point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcOfParabola.h" line="363"/>
+        <source>%1 pick starting point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcOfParabola.h" line="365"/>
+        <source>%1 pick end point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerArcSlot.h" line="272"/>
         <source>Arc Slot parameters</source>
         <translation type="unfinished">弧槽參數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcSlot.h" line="963"/>
+        <source>%1 pick slot center</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcSlot.h" line="965"/>
+        <source>%1 pick slot radius</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcSlot.h" line="967"/>
+        <source>%1 pick slot angle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcSlot.h" line="969"/>
+        <source>%1 pick slot width</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="259"/>
@@ -44268,14 +44883,78 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="1231"/>
+        <source>%1 pick first control point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="1235"/>
+        <source>%1 pick next control point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="1236"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="1246"/>
+        <source>%1 finish B-spline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="1242"/>
+        <source>%1 pick first knot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="1245"/>
+        <source>%1 pick next knot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerCircle.h" line="278"/>
         <source>Circle parameters</source>
         <translation type="unfinished">圓參數</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerCircle.h" line="744"/>
+        <source>%1 pick circle center</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerCircle.h" line="748"/>
+        <source>%1 pick rim point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerCircle.h" line="753"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerEllipse.h" line="992"/>
+        <source>%1 pick first rim point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerCircle.h" line="757"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerEllipse.h" line="995"/>
+        <source>%1 pick second rim point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerCircle.h" line="761"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerEllipse.h" line="998"/>
+        <source>%1 pick third rim point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerEllipse.h" line="289"/>
         <source>Ellipse parameters</source>
         <translation type="unfinished">橢圓參數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerEllipse.h" line="984"/>
+        <source>%1 pick axis endpoint</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerEllipse.h" line="987"/>
+        <source>%1 pick minor axis endpoint</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerFillet.h" line="288"/>
@@ -44293,9 +44972,40 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation type="unfinished">線段屬性</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerLine.h" line="835"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerLine.h" line="847"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerLine.h" line="859"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerLineSet.h" line="848"/>
+        <source>%1 pick first point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerLine.h" line="840"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerLine.h" line="852"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerLine.h" line="864"/>
+        <source>%1 pick second point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerLineSet.h" line="850"/>
+        <source>%1 pick next point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerLineSet.h" line="851"/>
+        <source>%1 finish</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerOffset.h" line="180"/>
         <source>Offset parameters</source>
         <translation type="unfinished">偏移屬性</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerPoint.h" line="69"/>
+        <source>%1 place a point</source>
+        <comment>Sketcher Point: hint</comment>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerPolygon.h" line="205"/>
@@ -44303,9 +45013,78 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation type="unfinished">多邊形屬性</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerPolygon.h" line="554"/>
+        <source>%1 pick polygon center</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerPolygon.h" line="555"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerPolygon.h" line="560"/>
+        <source>%1/%2 increase / decrease number of sides</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerPolygon.h" line="558"/>
+        <source>%1 pick rotation and size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerPolygon.h" line="559"/>
+        <source>%1 confirm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="591"/>
         <source>Rectangle parameters</source>
         <translation type="unfinished">矩形屬性</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2710"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2746"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2768"/>
+        <source>%1 pick first corner</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2714"/>
+        <source>%1 pick opposite corner</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2718"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2735"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2758"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2776"/>
+        <source>%1 set corner radius or frame thickness</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2723"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2740"/>
+        <source>%1 set frame thickness</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2729"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2765"/>
+        <source>%1 pick center</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2732"/>
+        <source>%1 pick corner</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2750"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2772"/>
+        <source>%1 pick second corner</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="2754"/>
+        <source>%1 pick third corner</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerRotate.h" line="178"/>
@@ -44316,6 +45095,21 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerScale.h" line="174"/>
         <source>Scale parameters</source>
         <translation type="unfinished">縮放屬性</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerSlot.h" line="699"/>
+        <source>%1 pick slot start point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerSlot.h" line="701"/>
+        <source>%1 pick slot end point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerSlot.h" line="703"/>
+        <source>%1 set slot radius</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/DrawSketchHandlerSymmetry.h" line="194"/>
@@ -44924,6 +45718,21 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
         <translation type="unfinished">此填充中沒有面要填充</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="111"/>
+        <source>TechDraw Insert Prefix</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="118"/>
+        <source>Repeat Count</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="130"/>
+        <source>Insert Prefix</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="434"/>
         <source>TechDraw Increase/Decrease Decimal</source>
         <translation type="unfinished">工程圖 增加/減少小數點</translation>
@@ -45231,6 +46040,16 @@ thick: %4</source>
         <translation type="unfinished">操作失敗</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskComplexSection.cpp" line="527"/>
+        <source>Possible Coordinate System Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskComplexSection.cpp" line="528"/>
+        <source>Check SectionNormal, Direction and/or XDirection.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosmeticCircle.cpp" line="112"/>
         <source>Create Cosmetic Circle</source>
         <translation type="unfinished">建立裝飾圓</translation>
@@ -45414,6 +46233,12 @@ thick: %4</source>
         <translation type="unfinished">點擊以更新文字</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/ViewProviderPage.cpp" line="141"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/ViewProviderPage.cpp" line="233"/>
+        <source>Show drawing</source>
+        <translation type="unfinished">顯示圖面</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/ViewProviderPage.cpp" line="235"/>
         <source>Toggle Keep Updated</source>
         <translation type="unfinished"></translation>
@@ -45422,6 +46247,29 @@ thick: %4</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/ViewProviderPage.cpp" line="235"/>
         <source>Toggle KeepUpdated</source>
         <translation type="unfinished">切換保持更新</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/TaskOrthoViews.cpp" line="47"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/TaskOrthoViews.cpp" line="1041"/>
+        <source>Make axonometric...</source>
+        <translation type="unfinished">產生軸測...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/TaskOrthoViews.cpp" line="48"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/TaskOrthoViews.cpp" line="1042"/>
+        <source>Edit axonometric settings...</source>
+        <translation type="unfinished">編輯軸測設定...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/TaskOrthoViews.cpp" line="49"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/TaskOrthoViews.cpp" line="1043"/>
+        <source>Make orthographic</source>
+        <translation type="unfinished">建立正投影視角</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostBoxes.cpp" line="313"/>
+        <source>Edit post processing object</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskFemConstraintContact.cpp" line="527"/>
@@ -46538,6 +47386,24 @@ thick: %4</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_select_from_list.ui" line="20"/>
         <source>TextLabel</source>
         <translation type="unfinished">文字標籤</translation>
+    </message>
+</context>
+<context>
+    <name>ShapeSelector</name>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ShapeSelector.ui" line="14"/>
+        <source>Select a Tool Shape</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ShapeSelector.ui" line="34"/>
+        <source>Standard Tools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/CAM/Gui/Resources/panels/ShapeSelector.ui" line="47"/>
+        <source>My Tools</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -49930,6 +50796,59 @@ Points must be set closer than a fifth of the grid spacing to a grid line to sna
     </message>
 </context>
 <context>
+    <name>SolverCalculiX</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="14"/>
+        <source>Solver CalculiX Control</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="20"/>
+        <source>Working Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="35"/>
+        <source>Write</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="45"/>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="56"/>
+        <source>Path to working directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="66"/>
+        <source>...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="78"/>
+        <source>Solver Parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="86"/>
+        <source>Analysis Type:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="126"/>
+        <source>Time:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/SolverCalculiX.ui" line="133"/>
+        <source>Solver Version</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SolverCalculix</name>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Resources/ui/SolverCalculix.ui" line="14"/>
@@ -50873,6 +51792,48 @@ it has a tile weld that would become broken.</source>
     </message>
 </context>
 <context>
+    <name>SurfaceGui::BlendCurve</name>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="14"/>
+        <source>Blending curve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="20"/>
+        <source>Start edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="26"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="119"/>
+        <source>Edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="43"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="136"/>
+        <source>Continuity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="79"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="172"/>
+        <source>Parameter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="96"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="189"/>
+        <source>Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="113"/>
+        <source>End edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SurfaceGui::FillingEdgePanel</name>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Surface/Gui/TaskFillingEdge.cpp" line="135"/>
@@ -51749,6 +52710,14 @@ there is an open task dialog.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/ViewProviderBalloon.cpp" line="186"/>
         <source>Can Not Delete</source>
         <translation type="unfinished">無法刪除</translation>
+    </message>
+</context>
+<context>
+    <name>TaskComplexSection</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskComplexSection.cpp" line="479"/>
+        <source> updates pending</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -53202,6 +54171,46 @@ over 90: larger hole radius at the bottom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="1082"/>
+        <source>Base profile types</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="1090"/>
+        <source>Circles and arcs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="1095"/>
+        <source>Points, circles and arcs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="1100"/>
+        <source>Points</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="668"/>
+        <source>Clearance / Passthrough</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="673"/>
+        <source>Tap Drill (To Be Threaded)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="678"/>
+        <source>Modeled Thread</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskHoleParameters.ui" line="686"/>
+        <source>Hole Type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="629"/>
         <source>Normal</source>
         <translation type="unfinished">正常</translation>
@@ -54131,6 +55140,11 @@ over 90: larger hole radius at the bottom</source>
         <source>Transparency</source>
         <translation type="unfinished">透明度</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/TaskPostDisplay.ui" line="116"/>
+        <source>Component</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TaskPostFrames</name>
@@ -54157,6 +55171,172 @@ over 90: larger hole radius at the bottom</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/TaskPostFrames.ui" line="89"/>
         <source>Value</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TaskPostGlyph</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="22"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="38"/>
+        <source>The form of the glyph</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="25"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="42"/>
+        <source>Arrow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="47"/>
+        <source>Cube</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="55"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="71"/>
+        <source>Which vector field is used to orient the glyphs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="58"/>
+        <source>Orientation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="75"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="128"/>
+        <source>None</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="91"/>
+        <source>Sca&amp;le</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="106"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="124"/>
+        <source>If the scale data is a vector this property decides if the glyph is scaled by vector magnitude or by the individual components</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="109"/>
+        <source>Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="138"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="156"/>
+        <source>A constant multiplier the glyphs are scaled with</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="141"/>
+        <source>Factor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="179"/>
+        <source>Changes the scale factor by +/- 50% of the set scale factor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="206"/>
+        <source>Which data field is used to scale the glyphs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="210"/>
+        <source>Not a vector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="215"/>
+        <source>By magnitude</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="220"/>
+        <source>By components</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="231"/>
+        <source>Vertex Mas&amp;king</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="243"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="329"/>
+        <source>Which vertices are used as glyph locations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="246"/>
+        <source>Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="262"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="291"/>
+        <source>Defines the maximal number of vertices used for &quot;Uniform Sampling&quot; masking mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="278"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="310"/>
+        <source>Define the stride for &quot;Every Nth&quot; masking mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="281"/>
+        <source>Stride</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="294"/>
+        <source>Max </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="333"/>
+        <source>All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="338"/>
+        <source>Every Nth</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="343"/>
+        <source>Uniform Sampling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="47"/>
+        <source>Cone</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="57"/>
+        <source>Cylinder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="62"/>
+        <source>Line</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Fem/Gui/Resources/ui/TaskPostGlyph.ui" line="67"/>
+        <source>Sphere</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -60237,11 +61417,6 @@ FreeCAD UnitTest is part of FreeCAD and supports writing Unit Tests for ones own
         <translation type="unfinished">導覽</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Workbench.cpp" line="34"/>
-        <source>Drawing</source>
-        <translation>工程圖</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Fem/Gui/Workbench.cpp" line="40"/>
         <source>FEM</source>
         <translation>有限元素法</translation>
@@ -60833,6 +62008,11 @@ FreeCAD UnitTest is part of FreeCAD and supports writing Unit Tests for ones own
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Workbench.cpp" line="64"/>
         <source>Views</source>
         <translation type="unfinished">檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Drawing/Gui/Workbench.cpp" line="34"/>
+        <source>Drawing</source>
+        <translation>工程圖</translation>
     </message>
     <message>
         <source>Web</source>

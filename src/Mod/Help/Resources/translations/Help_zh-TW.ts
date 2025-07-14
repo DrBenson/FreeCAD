@@ -28,15 +28,15 @@
     </message>
     <message>
         <location filename="../../dlgPreferencesHelp.ui" line="29"/>
-        <source>This will fetch the documentation from pages rendered on github. This is currently not available...</source>
-        <translation>這將從 github 上呈現的頁面取得文件. 目前不可用...</translation>
-    </message>
-    <message>
-        <location filename="../../dlgPreferencesHelp.ui" line="29"/>
         <source>This will fetch the documentation from pages rendered on GitHub.
 This is currently not available...</source>
         <translation>這將從 GitHub 上呈現的頁面取得文件.
 目前不可用...</translation>
+    </message>
+    <message>
+        <location filename="../../dlgPreferencesHelp.ui" line="29"/>
+        <source>This will fetch the documentation from pages rendered on github. This is currently not available...</source>
+        <translation>這將從 github 上呈現的頁面取得文件. 目前不可用...</translation>
     </message>
     <message>
         <location filename="../../dlgPreferencesHelp.ui" line="32"/>

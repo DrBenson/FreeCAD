@@ -17,6 +17,11 @@
 <context>
     <name>Gui::Dialog::DlgSettingsOpenSCAD</name>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/Resources/ui/openscadprefs-base.ui" line="14"/>
+        <source>General</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../ui/openscadprefs-base.ui" line="14"/>
         <source>General settings</source>
         <translation>一般設定</translation>
@@ -40,6 +45,11 @@
         <location filename="../ui/openscadprefs-base.ui" line="74"/>
         <source>OpenSCAD import</source>
         <translation>匯入OpenSCAD</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/Resources/ui/openscadprefs-base.ui" line="74"/>
+        <source>OpenSCAD Import</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/openscadprefs-base.ui" line="82"/>
@@ -83,6 +93,21 @@
         <translation>通過以下方式發送到 OpenSCAD:</translation>
     </message>
     <message>
+        <location filename="../ui/openscadprefs-base.ui" line="258"/>
+        <source>OpenSCAD export</source>
+        <translation>匯出 OpenSCAD</translation>
+    </message>
+    <message>
+        <location filename="../ui/openscadprefs-base.ui" line="289"/>
+        <source>angular (fa)</source>
+        <translation>角 (fa)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/Resources/ui/openscadprefs-base.ui" line="182"/>
+        <source>Send to OpenSCAD via</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../ui/openscadprefs-base.ui" line="195"/>
         <source>The transfer mechanism for getting data to and from OpenSCAD</source>
         <translation>與 OpenSCAD 之間獲取資料的傳輸機制</translation>
@@ -113,9 +138,9 @@
         <translation>與 OpenSCAD 之間傳輸文件的目錄路徑</translation>
     </message>
     <message>
-        <location filename="../ui/openscadprefs-base.ui" line="258"/>
-        <source>OpenSCAD export</source>
-        <translation>匯出 OpenSCAD</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/Resources/ui/openscadprefs-base.ui" line="261"/>
+        <source>OpenSCAD Export</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../ui/openscadprefs-base.ui" line="266"/>
@@ -132,11 +157,6 @@
         <location filename="../ui/openscadprefs-base.ui" line="289"/>
         <source>angle (fa)</source>
         <translation>角度 (fa)</translation>
-    </message>
-    <message>
-        <location filename="../ui/openscadprefs-base.ui" line="289"/>
-        <source>angular (fa)</source>
-        <translation>角 (fa)</translation>
     </message>
     <message>
         <location filename="../ui/openscadprefs-base.ui" line="328"/>
@@ -227,18 +247,6 @@
         <translation>請先選擇3個物件</translation>
     </message>
     <message>
-        <location filename="../../OpenSCADCommands.py" line="340"/>
-        <location filename="../../OpenSCADCommands.py" line="363"/>
-        <source>Add</source>
-        <translation>新增</translation>
-    </message>
-    <message>
-        <location filename="../../OpenSCADCommands.py" line="344"/>
-        <location filename="../../OpenSCADCommands.py" line="366"/>
-        <source>Refresh</source>
-        <translation>重新整理</translation>
-    </message>
-    <message>
         <location filename="../../OpenSCADCommands.py" line="333"/>
         <source>Clear code</source>
         <translation>清除指令碼</translation>
@@ -254,10 +262,46 @@
         <translation>儲存...</translation>
     </message>
     <message>
-        <location filename="../../OpenSCADCommands.py" line="345"/>
-        <location filename="../../OpenSCADCommands.py" line="368"/>
-        <source>as Mesh</source>
-        <translation>當作網格</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="139"/>
+        <source>Converts edges to faces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="301"/>
+        <source>Select 3 objects first</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="340"/>
+        <location filename="../../OpenSCADCommands.py" line="363"/>
+        <source>Add</source>
+        <translation>新增</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="344"/>
+        <location filename="../../OpenSCADCommands.py" line="366"/>
+        <source>Refresh</source>
+        <translation>重新整理</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="335"/>
+        <source>Clear Code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="336"/>
+        <source>Open…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="337"/>
+        <source>Save…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="338"/>
+        <source>as mesh</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../OpenSCADCommands.py" line="358"/>
@@ -282,6 +326,12 @@
         <location filename="../../OpenSCADCommands.py" line="367"/>
         <source>Clear</source>
         <translation>清除</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="345"/>
+        <location filename="../../OpenSCADCommands.py" line="368"/>
+        <source>as Mesh</source>
+        <translation>當作網格</translation>
     </message>
     <message>
         <location filename="../../OpenSCADCommands.py" line="424"/>
@@ -335,14 +385,24 @@
 <context>
     <name>OpenSCAD_AddOpenSCADElement</name>
     <message>
-        <location filename="../../OpenSCADCommands.py" line="530"/>
-        <source>Add OpenSCAD Element...</source>
-        <translation>加入OpenSCAD元素...</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="529"/>
+        <source>Add OpenSCAD Element…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="533"/>
+        <source>Adds an OpenSCAD element by entering OpenSCAD code and executing the OpenSCAD binary</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../OpenSCADCommands.py" line="520"/>
         <source>Add an OpenSCAD element by entering OpenSCAD code and executing the OpenSCAD binary</source>
         <translation>藉由輸入OpenSCAD語言並執行OpenSCAD程式加入OpenSCAD元素</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="530"/>
+        <source>Add OpenSCAD Element...</source>
+        <translation>加入OpenSCAD元素...</translation>
     </message>
 </context>
 <context>
@@ -357,9 +417,19 @@
         <source>Color Shapes by validity and type</source>
         <translation>依有效性及類型對造型上色</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="119"/>
+        <source>Colors shapes by validity and type</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>OpenSCAD_Edgestofaces</name>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="136"/>
+        <source>Convert Edges to Faces</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../OpenSCADCommands.py" line="145"/>
         <source>Convert Edges To Faces</source>
@@ -383,6 +453,11 @@
         <source>Expand all placements downwards the FeatureTree</source>
         <translation>延伸功能樹下方位置</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="286"/>
+        <source>Expands all placements downwards in the tree view</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>OpenSCAD_ExplodeGroup</name>
@@ -395,6 +470,11 @@
         <location filename="../../OpenSCADCommands.py" line="112"/>
         <source>Remove fusion, apply placement to children, and color randomly</source>
         <translation>移除合併，套用至子項目位置並隨機著色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="103"/>
+        <source>Removes fusion and applies placement to children, and color randomly</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -414,6 +494,11 @@
         <source>Use OpenSCAD to create a hull</source>
         <translation>使用OpenSCAD建立船體</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="568"/>
+        <source>Creates a hull</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>OpenSCAD_IncreaseToleranceFeature</name>
@@ -428,6 +513,11 @@
         <translation>建立允許增加容忍度之特徵</translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="269"/>
+        <source>Creates a feature that allows increasing the tolerance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../OpenSCADCommands.py" line="269"/>
         <source>Create Feature that allows increasing the tolerance</source>
         <translation>建立允許增加容忍度之特徵</translation>
@@ -435,6 +525,16 @@
 </context>
 <context>
     <name>OpenSCAD_MeshBoolean</name>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="544"/>
+        <source>Mesh Boolean…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="548"/>
+        <source>Exports objects as meshes and use OpenSCAD to perform a boolean operation</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../OpenSCADCommands.py" line="531"/>
         <source>Mesh Boolean...</source>
@@ -449,13 +549,13 @@
 <context>
     <name>OpenSCAD_Minkowski</name>
     <message>
-        <location filename="../../OpenSCADCommands.py" line="580"/>
-        <source>Minkowski sum</source>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="585"/>
+        <source>Minkowski Sum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../OpenSCADCommands.py" line="583"/>
-        <source>Use OpenSCAD to create a Minkowski sum</source>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="588"/>
+        <source>Creates a Minkowski sum</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -467,6 +567,16 @@
         <location filename="../../OpenSCADCommands.py" line="573"/>
         <source>Perform Minkowski</source>
         <translation>執行 Minkowski</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="580"/>
+        <source>Minkowski sum</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="583"/>
+        <source>Use OpenSCAD to create a Minkowski sum</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -481,6 +591,11 @@
         <source>Create Mirror Mesh Feature</source>
         <translation>建立鏡像網格特徵</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="189"/>
+        <source>Mirrors the mesh</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>OpenSCAD_RefineShapeFeature</name>
@@ -494,9 +609,19 @@
         <source>Create Refine Shape Feature</source>
         <translation>建立調整造型功能</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="159"/>
+        <source>Creates a refined shape</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>OpenSCAD_RemoveSubtree</name>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="317"/>
+        <source>Remove Objects and Children</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../OpenSCADCommands.py" line="323"/>
         <source>Remove Objects and their Children</source>
@@ -521,6 +646,11 @@
         <translation>取代特徵樹中的物件。 請選擇原始物件、新物件和父物件</translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="307"/>
+        <source>Replaces an object in the tree view. Select old, new, and parent object</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../OpenSCADCommands.py" line="305"/>
         <source>Replace an object in the Tree view. Please select old, new, and parent object</source>
         <translation>替換樹狀檢視中的物體. 請選擇舊物體、新物體和父系物體</translation>
@@ -528,6 +658,16 @@
 </context>
 <context>
     <name>OpenSCAD_ResizeMeshFeature</name>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="245"/>
+        <source>Resize Mesh Feature…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="249"/>
+        <source>Resizes the mesh</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../OpenSCADCommands.py" line="253"/>
         <source>Resize Mesh Feature...</source>
@@ -541,6 +681,16 @@
 </context>
 <context>
     <name>OpenSCAD_ScaleMeshFeature</name>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="215"/>
+        <source>Scale Mesh Feature…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="219"/>
+        <source>Scales the mesh</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../OpenSCADCommands.py" line="223"/>
         <source>Scale Mesh Feature...</source>

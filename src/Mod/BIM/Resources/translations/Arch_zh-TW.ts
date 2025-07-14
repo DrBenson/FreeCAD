@@ -1281,7 +1281,7 @@
     </message>
     <message>
         <source>A transformation to apply to the level mark</source>
-        <translation>套用於級別標記的轉換</translation>
+        <translation>套用於級別標記的平移</translation>
     </message>
     <message>
         <source>If true, show the level</source>
@@ -2558,21 +2558,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchStairs.py" line="179"/>
-        <source>Height of Railing on Right hand side from Stairs or Landing </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchStairs.py" line="181"/>
-        <source>Offset of Railing on Left hand side from stairs or landing Edge </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchStairs.py" line="183"/>
-        <source>Offset of Railing on Right hand side from stairs or landing Edge </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>The &apos;left outline&apos; of all segments of stairs</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2591,13 +2576,28 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchStairs.py" line="179"/>
+        <source>Height of Railing on Right hand side from Stairs or Landing </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchStairs.py" line="181"/>
         <source>Offset of Railing on Left hand side from stairs or landing Edge</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchStairs.py" line="181"/>
+        <source>Offset of Railing on Left hand side from stairs or landing Edge </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchStairs.py" line="183"/>
         <source>Offset of Railing on Right hand side from stairs or landing Edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchStairs.py" line="183"/>
+        <source>Offset of Railing on Right hand side from stairs or landing Edge </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2924,7 +2924,7 @@
         <translation>此窗戶的高度</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchWindow.py" line="145"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchWindow.py" line="145"/>
         <source>The height of this window&apos;s sill</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2933,12 +2933,18 @@
         <translation>此窗口的正常方向</translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchWindow.py" line="150"/>
+        <source>When normal direction is in auto mode (0,0,0), use reversed normal direction of the Base Sketch, i.e. -z.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>The preset number this window is based on</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The frame size of this window</source>
-        <translation>此窗戶的窗框尺寸</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchWindow.py" line="160"/>
+        <source>The frame depth of this window. Measured from front face to back face horizontally (i.e. perpendicular to the window elevation plane).</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The offset size of this window</source>
@@ -2975,6 +2981,10 @@
     <message>
         <source>The number of the wire that defines the hole. A value of 0 means automatic</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The frame size of this window</source>
+        <translation>此窗戶的窗框尺寸</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Arch/ArchSpace.py" line="512"/>
@@ -3141,12 +3151,9 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Deactivate</source>
-        <translation>停用</translation>
-    </message>
-    <message>
-        <source>Activate</source>
-        <translation>啟用</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchBuildingPart.py" line="815"/>
+        <source>Active</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Set working plane</source>
@@ -3192,6 +3199,16 @@ Building creation aborted.</source>
     </message>
     <message>
         <source>Create Building</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchCommands.py" line="132"/>
+        <source>Cannot add {0} as it is already referenced by {1}.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchCommands.py" line="201"/>
+        <source>{0} is mapped to {1}, removing the former&apos;s Attachment Support to avoid cyclic dependency.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3326,6 +3343,30 @@ Building creation aborted.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchComponent.py" line="1173"/>
         <source>Wrong base type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchComponent.py" line="1175"/>
+        <source>Could not project face from {self.obj.Label}
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchComponent.py" line="1188"/>
+        <source>Could not determine if a face from {self.obj.Label} is vertical: normalAt() failed
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchComponent.py" line="1205"/>
+        <source>Could not determine if a face from {self.obj.Label} is horizontal: normalAt() failed
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchComponent.py" line="1287"/>
+        <source>Error computing areas for {self.obj.Label}: unable to project or make face with normal {face.normalAt(0, 0)}. Area values will be reset to 0.
+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3503,6 +3544,16 @@ Floor creation aborted.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../ArchMaterial.py" line="123"/>
+        <source>Create material</source>
+        <translation>建立材質</translation>
+    </message>
+    <message>
+        <location filename="../../ArchMaterial.py" line="157"/>
+        <source>Create multi-material</source>
+        <translation>建立多重材質</translation>
+    </message>
+    <message>
         <location filename="../../ArchMaterial.py" line="826"/>
         <location filename="../../ArchMaterial.py" line="845"/>
         <location filename="../../ArchWindow.py" line="1739"/>
@@ -3528,6 +3579,16 @@ Floor creation aborted.</source>
     <message>
         <source>depends on the object</source>
         <translation>相依於物件</translation>
+    </message>
+    <message>
+        <location filename="../../ArchStructure.py" line="432"/>
+        <source>Drawing mode</source>
+        <translation>繪圖模式</translation>
+    </message>
+    <message>
+        <location filename="../../ArchStructure.py" line="489"/>
+        <source>Switch L/W</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../ArchStructure.py" line="835"/>
@@ -3747,12 +3808,22 @@ Floor creation aborted.</source>
         <translation>設備</translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Arch.py" line="418"/>
+        <source>Fence</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Frame</source>
         <translation>外框</translation>
     </message>
     <message>
         <location filename="../../../../../FreeCAD-0.22.0/src/Mod/Arch/ArchMaterial.py" line="88"/>
         <source>MultiMaterial</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Arch.py" line="583"/>
+        <source>Materials</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3771,8 +3842,9 @@ Floor creation aborted.</source>
         <translation>旋轉</translation>
     </message>
     <message>
-        <source>View of</source>
-        <translation>視圖</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Arch.py" line="677"/>
+        <source>View of {panel.Label}</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../FreeCAD-0.22.0/src/Mod/Arch/ArchPanel.py" line="120"/>
@@ -3806,6 +3878,11 @@ Floor creation aborted.</source>
     </message>
     <message>
         <source>Schedule</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Arch.py" line="1140"/>
+        <source>Secton</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3947,13 +4024,14 @@ Floor creation aborted.</source>
         <translation>無法建立屋頂</translation>
     </message>
     <message>
-        <source>Parameters of the roof profiles :
-* Angle : slope in degrees relative to the horizontal.
-* Run : horizontal distance between the wall and the ridge.
-* Thickness : thickness of the roof.
-* Overhang : horizontal distance between the eave and the wall.
-* Height : height of the ridge above the base (calculated automatically).
-* IdRel : Id of the relative profile used for automatic calculations.
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchRoof.py" line="970"/>
+        <source>Parameters of the roof profiles:
+* Angle: slope in degrees relative to the horizontal.
+* Run: horizontal distance between the wall and the ridge.
+* IdRel: Id of the relative profile used for automatic calculations.
+* Thickness: thickness of the roof.
+* Overhang: horizontal distance between the eave and the wall.
+* Height: height of the ridge above the base (calculated automatically).
 ---
 If Angle = 0 and Run = 0 then the profile is identical to the relative profile.
 If Angle = 0 then the angle is calculated so that the height is the same as the relative profile.
@@ -3965,7 +4043,7 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
         <translation>Id</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchRoof.py" line="975"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchRoof.py" line="975"/>
         <source>Run</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3974,7 +4052,7 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchRoof.py" line="978"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchRoof.py" line="978"/>
         <source>Overhang</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4350,11 +4428,54 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
         <translation>建立新元件</translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchWindow.py" line="1456"/>
+        <source>Frame depth</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Hinge</source>
         <translation>轉軸</translation>
     </message>
     <message>
         <source>Opening mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchWindow.py" line="1460"/>
+        <source>+ Frame prop.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchWindow.py" line="1461"/>
+        <source>If this is checked, the window&apos;s Frame property value will be added to the value entered here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchWindow.py" line="1462"/>
+        <source>+ Offset prop.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/ArchWindow.py" line="1463"/>
+        <source>If this is checked, the window&apos;s Offset property value will be added to the value entered here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Press to retrieve the selected edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Parameters of the roof profiles :
+* Angle : slope in degrees relative to the horizontal.
+* Run : horizontal distance between the wall and the ridge.
+* Thickness : thickness of the roof.
+* Overhang : horizontal distance between the eave and the wall.
+* Height : height of the ridge above the base (calculated automatically).
+* IdRel : Id of the relative profile used for automatic calculations.
+---
+If Angle = 0 and Run = 0 then the profile is identical to the relative profile.
+If Angle = 0 then the angle is calculated so that the height is the same as the relative profile.
+If Run = 0 then the run is calculated so that the height is the same as the relative profile.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4370,28 +4491,16 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Press to retrieve the selected edge</source>
-        <translation type="unfinished"></translation>
+        <source>Deactivate</source>
+        <translation>停用</translation>
     </message>
     <message>
-        <location filename="../../ArchMaterial.py" line="123"/>
-        <source>Create material</source>
-        <translation>建立材質</translation>
+        <source>Activate</source>
+        <translation>啟用</translation>
     </message>
     <message>
-        <location filename="../../ArchMaterial.py" line="157"/>
-        <source>Create multi-material</source>
-        <translation>建立多重材質</translation>
-    </message>
-    <message>
-        <location filename="../../ArchStructure.py" line="432"/>
-        <source>Drawing mode</source>
-        <translation>繪圖模式</translation>
-    </message>
-    <message>
-        <location filename="../../ArchStructure.py" line="489"/>
-        <source>Switch L/W</source>
-        <translation type="unfinished"></translation>
+        <source>View of</source>
+        <translation>視圖</translation>
     </message>
     <message>
         <source>Angle (deg)</source>
@@ -4529,7 +4638,7 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     </message>
     <message>
         <source>Which side to cut</source>
-        <translation type="unfinished"></translation>
+        <translation>剪裁哪一側</translation>
     </message>
     <message>
         <source>Behind</source>
@@ -6157,15 +6266,15 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/BimStatus.py" line="127"/>
         <source>BIM status widget</source>
         <comment>A context menu action used to show or hide this toolbar widget</comment>
-        <translation type="unfinished"></translation>
+        <translation>BIM 建築信息模組狀態小工具</translation>
     </message>
 </context>
 <context>
     <name>BIM_Create2DViews</name>
     <message>
-        <location filename="../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/BIM/InitGui.py" line="284"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/InitGui.py" line="283"/>
         <source>Create 2D views</source>
-        <translation type="unfinished"></translation>
+        <translation>建立2D檢視</translation>
     </message>
 </context>
 <context>
@@ -6723,26 +6832,6 @@ When dealing with native IFC objects, you can use FreeCAD properties name, ex: &
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="14"/>
-        <source>Classification manager</source>
-        <translation>分類管理</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="42"/>
-        <source>Objects &amp;&amp; Materials</source>
-        <translation>物體 &amp;&amp; 材質</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="48"/>
-        <source>Only visible objects</source>
-        <translation>僅可見物體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="60"/>
-        <source>Sort by:</source>
-        <translation>排序依據:</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="68"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogIfcElements.ui" line="47"/>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogIfcProperties.ui" line="58"/>
@@ -7054,6 +7143,21 @@ Utils -&gt; Make IFC project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogImport.ui" line="129"/>
+        <source>Preload all materials fo the file. It is advised to leave this unchecked and load materials later, only when needed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Resources/ui/dialogImport.ui" line="119"/>
+        <source>Preload IFC types that are connected to the objects. It is also possible to leave this setting disabled and double click later on the object to load the types</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Resources/ui/dialogImport.ui" line="122"/>
+        <source>Preload types</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogImport.ui" line="119"/>
         <source>Preload property sets of all objects. It is advised to leave this unchecked and load property sets later, only when needed</source>
         <translation type="unfinished"></translation>
@@ -7066,11 +7170,6 @@ Utils -&gt; Make IFC project</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogImport.ui" line="129"/>
         <source>Preload all materials of the file. It is advised to leave this unchecked and load materials later, only when needed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogImport.ui" line="129"/>
-        <source>Preload all materials fo the file. It is advised to leave this unchecked and load materials later, only when needed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7921,6 +8020,31 @@ Utils -&gt; Make IFC project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Resources/ui/dialogConvertType.ui" line="43"/>
+        <source>Do not ask again and use this setting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="14"/>
+        <source>Classification manager</source>
+        <translation>分類管理</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="42"/>
+        <source>Objects &amp;&amp; Materials</source>
+        <translation>物體 &amp;&amp; 材質</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="48"/>
+        <source>Only visible objects</source>
+        <translation>僅可見物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="60"/>
+        <source>Sort by:</source>
+        <translation>排序依據:</translation>
+    </message>
+    <message>
         <source>The property to retrieve from each object.Can be &apos;Count&apos; to count the objects, or property names like &apos;Length&apos; or &apos;Shape.Volume&apos; to retrieve a certain property.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8031,7 +8155,7 @@ a certain property.</source>
     </message>
     <message>
         <source>Draft</source>
-        <translation>草圖</translation>
+        <translation>底圖繪製</translation>
     </message>
     <message>
         <source>Import-Export</source>
@@ -8314,9 +8438,24 @@ a certain property.</source>
         <translation>自訂屬性</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="26"/>
+        <source>People</source>
+        <translation>開發者</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="57"/>
+        <source>Kind</source>
+        <translation>類別</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="62"/>
         <source>Name</source>
         <translation>名稱</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="67"/>
+        <source>Email</source>
+        <translation>電子郵件</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogCustomProperties.ui" line="30"/>
@@ -8797,7 +8936,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogViews.ui" line="79"/>
         <source>2D Views</source>
-        <translation type="unfinished"></translation>
+        <translation>2D 檢視</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogWindows.ui" line="14"/>
@@ -8964,6 +9103,16 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Resources/ui/preferencesNativeIFC.ui" line="135"/>
+        <source>Load all types automatically when opening an IFC file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Resources/ui/preferencesNativeIFC.ui" line="138"/>
+        <source>Preload types</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferencesNativeIFC.ui" line="135"/>
         <source>Load all materials automatically when opening an IFC file</source>
         <translation type="unfinished"></translation>
@@ -9050,19 +9199,29 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="26"/>
-        <source>People</source>
-        <translation>開發者</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Resources/ui/preferencesNativeIFC.ui" line="312"/>
+        <source>New type</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="57"/>
-        <source>Kind</source>
-        <translation>類別</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Resources/ui/preferencesNativeIFC.ui" line="318"/>
+        <source>When enabled, converting objects to IFC types will always keep the original object</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/AddonManager/developer_mode_people_table.ui" line="67"/>
-        <source>Email</source>
-        <translation>電子郵件</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Resources/ui/preferencesNativeIFC.ui" line="321"/>
+        <source>Always keep original object when converting to type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Resources/ui/preferencesNativeIFC.ui" line="334"/>
+        <source>When enabled, a dialog will be shown each time when converting objects to IFC types</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Resources/ui/preferencesNativeIFC.ui" line="337"/>
+        <source>Show dialog when converting to type</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Multimaterial definition</source>
@@ -9969,6 +10128,16 @@ IFC 檔案.
         <translation>如果文件中沒有找到，請新增預設建築</translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Resources/ui/preferences-ifc-export.ui" line="412"/>
+        <source>If not checked, standard FreeCAD groups (App::DocumentObjectGroup) will not be exported as IfcGroup or IfcElementAssembly.\nTheir children will be re-parented to the container of the skipped group in the IFC structure.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/BIM/Resources/ui/preferences-ifc-export.ui" line="415"/>
+        <source>Export FreeCAD groups</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-ifc-export.ui" line="403"/>
         <source>In FreeCAD, it is possible to nest groups inside buildings or storeys. If this option is disabled, FreeCAD groups will be saved as IfcGroups and aggregated to the building structure. Aggregating non-building elements such as IfcGroups is however not recommended by the IFC standards. It is therefore also possible to export these groups as IfcElementAssemblies, which produces an IFC-compliant file. However, at FreeCAD, we believe nesting groups inside structures should be possible, and this option is there to have a chance to demonstrate our point of view.</source>
         <translation>在 FreeCAD 中，可以在建築物或樓層內嵌套群組. 如果停用此選項，FreeCAD 群組將儲存為 IfcGroups 並聚合到建築結構. 然而，IFC 標準不建議聚合 IfcGroups 等非建築元素. 因此，這些群組也可以匯出為 IfcElementAssemblies，從而產生符合 IFC 標準的檔案. 然而，在 FreeCAD，我們相信結構內部的嵌套組應該是可能的，而此選項有機會展示我們的觀點.</translation>
@@ -10309,7 +10478,7 @@ are placed in a &apos;Group&apos; instead.
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="296"/>
         <source>Create a default IFC project with the newly created Site.</source>
-        <translation type="unfinished">使用新建立的網站建立預設的 IFC 專案.</translation>
+        <translation>使用新建立的站點建立預設的 IFC 專案.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="299"/>
@@ -10329,7 +10498,7 @@ are placed in a &apos;Group&apos; instead.
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="328"/>
         <source>Default ground Color</source>
-        <translation type="unfinished"></translation>
+        <translation>預設地面顏色</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="344"/>
@@ -10339,7 +10508,7 @@ are placed in a &apos;Group&apos; instead.
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="368"/>
         <source>Default sky Color</source>
-        <translation type="unfinished"></translation>
+        <translation>預設天空顏色</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="384"/>
@@ -10354,12 +10523,12 @@ are placed in a &apos;Group&apos; instead.
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="409"/>
         <source>Decorate surfaces</source>
-        <translation type="unfinished"></translation>
+        <translation>裝飾表面</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="426"/>
         <source>Default furniture Color</source>
-        <translation type="unfinished"></translation>
+        <translation>預設家具顏色</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/preferences-sh3d-import.ui" line="442"/>
@@ -10669,7 +10838,7 @@ IfcWallStandardCase 或 IfcBeamStandardCase。
     </message>
     <message>
         <source>Draft</source>
-        <translation>草圖</translation>
+        <translation>製圖</translation>
     </message>
     <message>
         <source>Import-Export</source>
@@ -10683,6 +10852,17 @@ IfcWallStandardCase 或 IfcBeamStandardCase。
     <message>
         <source>Arch</source>
         <translation>建築</translation>
+    </message>
+</context>
+<context>
+    <name>QObject-nt</name>
+    <message>
+        <source>Draft</source>
+        <translation>Draft</translation>
+    </message>
+    <message>
+        <source>Import-Export</source>
+        <translation>Import-Export</translation>
     </message>
 </context>
 <context>

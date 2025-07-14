@@ -1835,7 +1835,7 @@ to a smoother appearance.
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="154"/>
         <source>Kill</source>
-        <translation type="unfinished"></translation>
+        <translation>強制終止</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="181"/>

@@ -17,59 +17,62 @@
 <context>
     <name>UnitsApi</name>
     <message>
-        <location filename="../../../../../FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="81"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Base/UnitsSchemasData.h" line="48"/>
         <source>Metric small parts &amp; CNC (mm, mm/min)</source>
         <translation>公制小零件 以及 CNC(mm, mm/min)</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="87"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Base/UnitsSchemasData.h" line="57"/>
         <source>Meter decimal (m, m², m³)</source>
         <translation>公尺十進制 (m, m², m³)</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="75"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Base/UnitsSchemasData.h" line="70"/>
         <source>Imperial decimal (in, lb)</source>
         <translation>英制十進制 (in, lb)</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="69"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Base/UnitsSchemasData.h" line="85"/>
+        <source>Internal (m, m², m³)</source>
+        <translation>公制標準十進制 (m, m², m³)</translation>
+    </message>
+    <message>
         <source>Standard (mm, kg, s, °)</source>
         <translation>標準 (mm, kg, s, °)</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="71"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Base/UnitsSchemasData.h" line="315"/>
         <source>MKS (m, kg, s, °)</source>
         <translation>公制 (m, kg, s, °)</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="77"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Base/UnitsSchemasData.h" line="540"/>
         <source>Building Euro (cm, m², m³)</source>
         <translation>歐式建築工程 (cm, m², m³)</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="85"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Base/UnitsSchemasData.h" line="567"/>
         <source>FEM (mm, N, s)</source>
         <translation>有限元素法 (mm, N, sec)</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="89"/>
-        <source>Unknown schema</source>
-        <translation>未知架構</translation>
-    </message>
-    <message>
-        <location filename="../../../../../FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="73"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Base/UnitsSchemasData.h" line="579"/>
         <source>US customary (in, lb)</source>
         <translation>美制 (in, lb)</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="79"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Base/UnitsSchemasData.h" line="617"/>
         <source>Building US (ft-in, sqft, cft)</source>
         <translation>美式建築工程 (ft-in, sqft, cft)</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-0.22.0-git/src/Base/UnitsApi.cpp" line="83"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Base/UnitsSchemasData.h" line="628"/>
         <source>Imperial for Civil Eng (ft, ft/s)</source>
         <translation>民用英制 (ft, ft/s)</translation>
+    </message>
+    <message>
+        <source>Unknown schema</source>
+        <translation>未知架構</translation>
     </message>
 </context>
 </TS>

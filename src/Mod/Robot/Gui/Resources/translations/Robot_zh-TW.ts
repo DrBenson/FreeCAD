@@ -31,6 +31,16 @@
         <source>Add a tool shape to the robot</source>
         <translation>於機器人上增加工具造型</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandInsertRobot.cpp" line="241"/>
+        <source>Tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandInsertRobot.cpp" line="242"/>
+        <source>Adds a tool shape to the robot</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotConstraintAxle</name>
@@ -48,6 +58,16 @@
         <location filename="../../Command.cpp" line="156"/>
         <source>Place a robot (experimental!)</source>
         <translation>放置一個機器人(測試!)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/Command.cpp" line="164"/>
+        <source>Place Robot…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/Command.cpp" line="165"/>
+        <source>Places a robot in the scene</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -67,6 +87,16 @@
         <source>Create a new empty trajectory</source>
         <translation>建立新的空白軌跡</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="56"/>
+        <source>Trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="57"/>
+        <source>Creates a new empty trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotEdge2Trac</name>
@@ -84,6 +114,16 @@
         <location filename="../../CommandTrajectory.cpp" line="316"/>
         <source>Generate a Trajectory from a set of edges</source>
         <translation>由一組邊產生軌跡</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="361"/>
+        <source>Edge to Trajectory…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="362"/>
+        <source>Generates a trajectory from the selected edges</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -103,6 +143,16 @@
         <source>Export the trajectory as a compact KRL subroutine.</source>
         <translation>以精簡KRL子程式匯出軌跡.</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandExport.cpp" line="47"/>
+        <source>Kuka Compact Subroutine…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandExport.cpp" line="48"/>
+        <source>Exports the trajectory as a compact KRL subroutine</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotExportKukaFull</name>
@@ -120,6 +170,16 @@
         <location filename="../../CommandExport.cpp" line="110"/>
         <source>Export the trajectory as a full KRL subroutine.</source>
         <translation>以完整KRL子程式匯出軌跡.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandExport.cpp" line="122"/>
+        <source>Kuka Full Subroutine…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandExport.cpp" line="123"/>
+        <source>Exports the trajectory as a full KRL subroutine</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -139,6 +199,11 @@
         <source>Insert a Kuka IR125 into the document.</source>
         <translation>於此文件中插入Kula IR125.</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandInsertRobot.cpp" line="194"/>
+        <source>Inserts a Kuka IR125 robot into the scene</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotInsertKukaIR16</name>
@@ -156,6 +221,11 @@
         <location filename="../../CommandInsertRobot.cpp" line="90"/>
         <source>Insert a Kuka IR16 into the document.</source>
         <translation>於此文件中插入Kula IR16.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandInsertRobot.cpp" line="99"/>
+        <source>Inserts a Kuka IR16 robot into the scene</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -175,6 +245,11 @@
         <source>Insert a Kuka IR210 into the document.</source>
         <translation>於此文件中插入Kula IR210.</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandInsertRobot.cpp" line="147"/>
+        <source>Inserts a Kuka IR210 robot into the scene</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotInsertKukaIR500</name>
@@ -192,6 +267,11 @@
         <location filename="../../CommandInsertRobot.cpp" line="48"/>
         <source>Insert a Kuka IR500 into the document.</source>
         <translation>於此文件中插入Kula IR500.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandInsertRobot.cpp" line="48"/>
+        <source>Inserts a Kuka IR500 into the document</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -211,6 +291,11 @@
         <source>Insert robot Tool location into trajectory</source>
         <translation>插入機器人工具位置至軌跡中</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="91"/>
+        <source>Inserts the robot tool location into the trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotInsertWaypointPreselect</name>
@@ -229,6 +314,16 @@
         <source>Insert preselection position into trajectory (W)</source>
         <translation>插入預選位置至軌跡(W)</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="159"/>
+        <source>Insert in Trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="160"/>
+        <source>Inserts the preselection position into the trajectory (W)</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotRestoreHomePos</name>
@@ -242,6 +337,16 @@
         <location filename="../../Command.cpp" line="102"/>
         <source>Move to home</source>
         <translation>移動至原點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/Command.cpp" line="111"/>
+        <source>Move to Home</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/Command.cpp" line="112"/>
+        <source>Moves to the home position</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -261,6 +366,16 @@
         <source>Set the default orientation for subsequent commands for waypoint creation</source>
         <translation>設定預設的方向為後續建立航點的命令</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="236"/>
+        <source>Set Default Orientation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="238"/>
+        <source>Sets the default orientation for subsequent commands for waypoint creation</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotSetDefaultValues</name>
@@ -279,6 +394,16 @@
         <source>Set the default values for speed, acceleration and continuity for subsequent commands of waypoint creation</source>
         <translation>設定預設值給速率, 加速度和連續性為了後續命令建立新航點</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="280"/>
+        <source>Set Default Values</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="281"/>
+        <source>Sets the default values for speed, acceleration, and continuity for subsequent commands of waypoint creation</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotSetHomePos</name>
@@ -292,6 +417,16 @@
         <location filename="../../Command.cpp" line="53"/>
         <source>Set the home position</source>
         <translation>設定原點位置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/Command.cpp" line="52"/>
+        <source>Set Home Position</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/Command.cpp" line="53"/>
+        <source>Sets the home position</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -311,6 +446,16 @@
         <source>Run a simulation on a trajectory</source>
         <translation>於軌跡上進行模擬</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/Command.cpp" line="213"/>
+        <source>Simulate Trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/Command.cpp" line="214"/>
+        <source>Simulates robot movement along a selected trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotTrajectoryCompound</name>
@@ -328,6 +473,16 @@
         <location filename="../../CommandTrajectory.cpp" line="427"/>
         <source>Group and connect some trajectories to one</source>
         <translation>連結並群組數個軌跡成一個</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="483"/>
+        <source>Trajectory Compound…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="484"/>
+        <source>Groups and connects multiple trajectories into one</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -347,9 +502,29 @@
         <source>Create a dress-up object which overrides some aspects of a trajectory</source>
         <translation>建立覆蓋軌跡部分設定的修改物件</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="427"/>
+        <source>Dress-Up Trajectory…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="428"/>
+        <source>Creates a dress-up object that overrides aspects of a trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Gui::TaskView::TaskWatcherCommands</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/Workbench.cpp" line="51"/>
+        <source>Trajectory Tools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/Workbench.cpp" line="52"/>
+        <source>Robot Tools</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../Workbench.cpp" line="51"/>
         <source>Trajectory tools</source>
@@ -501,6 +676,11 @@
         <source>Please visit %1 and copy the files to %2</source>
         <translation>請參照%1並複製至檔案%2</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/Workbench.cpp" line="74"/>
+        <source>Visit %1 and copy the files to %2</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>RobotGui::DlgTrajectorySimulate</name>
@@ -563,6 +743,11 @@
 <context>
     <name>RobotGui::TaskEdge2TracParameter</name>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="29"/>
+        <source>Hide/Show</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskEdge2TracParameter.ui" line="29"/>
         <source>Hide / Show</source>
         <translation>隱藏/顯示</translation>
@@ -581,6 +766,11 @@
         <location filename="../../TaskEdge2TracParameter.ui" line="72"/>
         <source>Sizing Value:</source>
         <translation>尺寸值：</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="72"/>
+        <source>Sizing Value</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../TaskEdge2TracParameter.ui" line="103"/>
@@ -767,14 +957,19 @@
 <context>
     <name>RobotGui::TaskRobotMessages</name>
     <message>
-        <location filename="../../TaskRobotMessages.ui" line="20"/>
-        <source>clear</source>
-        <translation>清除</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/TaskRobotMessages.ui" line="20"/>
+        <source>Clear</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../TaskRobotMessages.cpp" line="35"/>
         <source>TaskRobotMessages</source>
         <translation>任務機器人訊息</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobotMessages.ui" line="20"/>
+        <source>clear</source>
+        <translation>清除</translation>
     </message>
 </context>
 <context>
@@ -873,14 +1068,14 @@
 <context>
     <name>RobotGui::TaskTrajectoryDressUpParameter</name>
     <message>
-        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="20"/>
-        <source>Speed &amp; Acceleration:</source>
-        <translation>速度 &amp; 加速度：</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="20"/>
+        <source>Speed &amp; acceleration</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="29"/>
-        <source>Speed:</source>
-        <translation>速度：</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="29"/>
+        <source>Speed</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../TaskTrajectoryDressUpParameter.ui" line="55"/>
@@ -889,14 +1084,19 @@
         <translation>使用</translation>
     </message>
     <message>
-        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="66"/>
-        <source>Accel:</source>
-        <translation>加速：</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="66"/>
+        <source>Acceleration</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="102"/>
-        <source>Don&apos;t change Cont</source>
-        <translation>不要改變內容</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="102"/>
+        <source>Do not change continuous mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="102"/>
+        <source>Do not change continous mode</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../TaskTrajectoryDressUpParameter.ui" line="107"/>
@@ -907,6 +1107,56 @@
         <location filename="../../TaskTrajectoryDressUpParameter.ui" line="112"/>
         <source>Discontinues</source>
         <translation>中止</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="128"/>
+        <source>Position and orientation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="160"/>
+        <source>Don not change position &amp; orientation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="165"/>
+        <source>Use orientation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="170"/>
+        <source>Add position</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="175"/>
+        <source>Add orientation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.cpp" line="41"/>
+        <source>Dress Up Parameter</source>
+        <translation>外觀裝飾特徵屬性</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="20"/>
+        <source>Speed &amp; Acceleration:</source>
+        <translation>速度 &amp; 加速度：</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="29"/>
+        <source>Speed:</source>
+        <translation>速度：</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="66"/>
+        <source>Accel:</source>
+        <translation>加速：</translation>
+    </message>
+    <message>
+        <location filename="../../TaskTrajectoryDressUpParameter.ui" line="102"/>
+        <source>Don&apos;t change Cont</source>
+        <translation>不要改變內容</translation>
     </message>
     <message>
         <location filename="../../TaskTrajectoryDressUpParameter.ui" line="127"/>
@@ -932,11 +1182,6 @@
         <location filename="../../TaskTrajectoryDressUpParameter.ui" line="174"/>
         <source>Add Orientation</source>
         <translation>增加方向</translation>
-    </message>
-    <message>
-        <location filename="../../TaskTrajectoryDressUpParameter.cpp" line="41"/>
-        <source>Dress Up Parameter</source>
-        <translation>外觀裝飾特徵屬性</translation>
     </message>
 </context>
 <context>
@@ -1186,14 +1431,24 @@
         <translation>插入機器人</translation>
     </message>
     <message>
+        <location filename="../../Workbench.cpp" line="50"/>
+        <source>Export trajectory</source>
+        <translation>匯出軌跡</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/Workbench.cpp" line="48"/>
+        <source>Insert Robot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../Workbench.cpp" line="49"/>
         <source>&amp;Robot</source>
         <translation>機器人(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../../Workbench.cpp" line="50"/>
-        <source>Export trajectory</source>
-        <translation>匯出軌跡</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Robot/Gui/Workbench.cpp" line="50"/>
+        <source>Export Trajectory</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../InitGui.py" line="40"/>

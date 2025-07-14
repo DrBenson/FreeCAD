@@ -300,7 +300,7 @@ The user should then click the Refresh button in the main toolbar.
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/BrowserView.cpp" line="431"/>
         <source>View source</source>
-        <translation type="unfinished">檢視原始碼</translation>
+        <translation>檢視原始碼</translation>
     </message>
 </context>
 <context>

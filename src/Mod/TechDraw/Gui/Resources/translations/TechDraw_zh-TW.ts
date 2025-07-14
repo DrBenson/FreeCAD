@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -11,8 +11,7 @@
     <extra-po-header_comment>#
 # Translators:
 # DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
-#
-    </extra-po-header_comment>
+#</extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>ANSILineTypeEnum</name>
@@ -316,6 +315,11 @@
         <location filename="../../Command.cpp" line="438"/>
         <source>Insert Active View (3D View)</source>
         <translation>插入活動檢視(3D 檢視)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/Command.cpp" line="696"/>
+        <source>Insert Active View</source>
+        <translation>插入活動檢視</translation>
     </message>
 </context>
 <context>
@@ -1518,9 +1522,9 @@ Left clicking on empty space will validate the current Dimensiont. Right clickin
         <translation>鎖定或解鎖一個檢視的位置: &lt;br&gt;-選擇單一檢視&lt;br&gt;- 點選此工具</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1465"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1465"/>
         <source>Lock or unlock the position of a view:&lt;br&gt;- Select view(s)&lt;br&gt;- Click this tool</source>
-        <translation type="unfinished"></translation>
+        <translation>鎖定或解鎖一個檢視的位置: &lt;br&gt;-選擇檢視&lt;br&gt;- 點選此工具</translation>
     </message>
 </context>
 <context>
@@ -2468,6 +2472,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>建立裁剪</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="359"/>
+        <source>Create BIM View</source>
+        <translation>建立BIM檢視</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="1420"/>
         <source>Add clip group</source>
         <translation>新增裁剪組</translation>
@@ -3086,11 +3095,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCenterLine.cpp" line="406"/>
         <source>Create Centerline</source>
         <translation>建立中心線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Command.cpp" line="359"/>
-        <source>Create BIM View</source>
-        <translation>建立BIM檢視</translation>
     </message>
     <message>
         <location filename="../../TaskCenterLine.cpp" line="397"/>
@@ -4423,6 +4427,21 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>選取的物件不是零件檢視，也不是引導線</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="111"/>
+        <source>TechDraw Insert Prefix</source>
+        <translation>工程圖 插入前置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="118"/>
+        <source>Repeat Count</source>
+        <translation>重複計數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="130"/>
+        <source>Insert Prefix</source>
+        <translation>插入前置</translation>
+    </message>
+    <message>
         <location filename="../../CommandExtensionDims.cpp" line="363"/>
         <source>TechDraw Increase/Decrease Decimal</source>
         <translation>工程圖 增加/減少小數點</translation>
@@ -4455,7 +4474,7 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../CommandExtensionDims.cpp" line="681"/>
         <location filename="../../CommandExtensionDims.cpp" line="690"/>
         <source>TechDraw PosObliqueChainDimension</source>
-        <translation>TechDraw PosObliqueChainDimension</translation>
+        <translation>工程圖 PosObliqueChainDimension</translation>
     </message>
     <message>
         <location filename="../../CommandExtensionDims.cpp" line="691"/>
@@ -4974,6 +4993,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>選擇一個符號</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskActiveView.cpp" line="219"/>
+        <source>Insert Active View</source>
+        <translation>插入活動檢視</translation>
+    </message>
+    <message>
         <location filename="../../TaskActiveView.cpp" line="86"/>
         <source>ActiveView to TD View</source>
         <translation>活動檢視至 TD 檢視</translation>
@@ -5031,14 +5055,14 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>基本檢視座標中的檢視方向</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskComplexSection.cpp" line="527"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskComplexSection.cpp" line="527"/>
         <source>Possible Coordinate System Error</source>
-        <translation type="unfinished"></translation>
+        <translation>可能是座標系統錯誤</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskComplexSection.cpp" line="528"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskComplexSection.cpp" line="528"/>
         <source>Check SectionNormal, Direction and/or XDirection.</source>
-        <translation type="unfinished"></translation>
+        <translation>檢查截面法線、方向 和/或 X 方向.</translation>
     </message>
     <message>
         <location filename="../../TaskComplexSection.cpp" line="688"/>
@@ -5108,6 +5132,16 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../TaskDimRepair.cpp" line="139"/>
         <source>Can not make a dimension from selection</source>
         <translation>無法從選擇中建立尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskDimRepair.cpp" line="125"/>
+        <source>Incorrect Selection?</source>
+        <translation>不正確的選取?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskDimRepair.cpp" line="126"/>
+        <source>This will change the dimension&apos;s owner view. Continue?</source>
+        <translation>這將會改變擁有標註的檢視.是否繼續?</translation>
     </message>
     <message>
         <location filename="../../TaskDimRepair.cpp" line="150"/>
@@ -5455,9 +5489,9 @@ there is an open task dialog.</source>
 <context>
     <name>TaskComplexSection</name>
     <message>
-        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskComplexSection.cpp" line="479"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskComplexSection.cpp" line="479"/>
         <source> updates pending</source>
-        <translation type="unfinished"></translation>
+        <translation> 更新待處理</translation>
     </message>
 </context>
 <context>
@@ -6109,7 +6143,7 @@ Then you need to increase the tile limit.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="500"/>
         <source>Shift</source>
-        <translation>Shift</translation>
+        <translation>⇧Shift</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="507"/>
@@ -6119,7 +6153,7 @@ Then you need to increase the tile limit.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="510"/>
         <source>Meta</source>
-        <translation>Meta</translation>
+        <translation type="unfinished">Meta</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="517"/>
@@ -6129,7 +6163,7 @@ Then you need to increase the tile limit.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAdvanced.ui" line="520"/>
         <source>Control</source>
-        <translation>Control</translation>
+        <translation type="unfinished">Control</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="607"/>
@@ -6144,6 +6178,16 @@ Then you need to increase the tile limit.</source>
         <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="32"/>
         <source>Annotation</source>
         <translation>註解</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="113"/>
+        <source>Show arc centers in printed output</source>
+        <translation>在列印輸出中顯示弧中心</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="116"/>
+        <source>Print Center Marks</source>
+        <translation>列印中心標誌</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="176"/>
@@ -6263,16 +6307,6 @@ Then you need to increase the tile limit.</source>
         <translation>中心線類型</translation>
     </message>
     <message>
-        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="113"/>
-        <source>Show arc centers in printed output</source>
-        <translation>在列印輸出中顯示弧中心</translation>
-    </message>
-    <message>
-        <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="116"/>
-        <source>Print Center Marks</source>
-        <translation>列印中心標誌</translation>
-    </message>
-    <message>
         <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="82"/>
         <source>Show arc center marks in views</source>
         <translation>在檢視中顯示弧中心標誌</translation>
@@ -6291,6 +6325,17 @@ Then you need to increase the tile limit.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="444"/>
         <source>Show Section Line in Source View</source>
         <translation>顯示剖面線於來源檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="800"/>
+        <source>Shape of line end caps.  The default (round) should almost
+always be the right choice.   Flat or square caps are useful 
+if you are planning to use a drawing as a 1:1 cutting guide.
+</source>
+        <translation>線端蓋的形狀. 預設(圓形)幾乎總是正確的選擇.
+如果您打算使用繪圖作為 1:1 切割指南，
+平頭或方形帽非常有用.
+</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="555"/>
@@ -6381,17 +6426,6 @@ Then you need to increase the tile limit.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="531"/>
         <source>Detail Source Show Highlight</source>
         <translation>細節來源高亮顯示</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotation.ui" line="800"/>
-        <source>Shape of line end caps.  The default (round) should almost
-always be the right choice.   Flat or square caps are useful 
-if you are planning to use a drawing as a 1:1 cutting guide.
-</source>
-        <translation>線端蓋的形狀. 預設(圓形)幾乎總是正確的選擇.
-如果您打算使用繪圖作為 1:1 切割指南，
-平頭或方形帽非常有用.
-</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="45"/>
@@ -6580,15 +6614,6 @@ if you are planning to use a drawing as a 1:1 cutting guide.
         <translation>幾何填充</translation>
     </message>
     <message>
-        <location filename="../../DlgPrefsTechDrawColors.ui" line="620"/>
-        <source>If checked FreeCAD will use a single color for all text and lines. 
-
-</source>
-        <translation>如果選中，FreeCAD 將為所有文字和線條使用單一顏色. 
-
-</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawColors.ui" line="84"/>
         <source>If checked, FreeCAD will use a single color for all text and lines.</source>
         <translation>如果選中，FreeCAD 將為所有文字和線條使用單一顏色.</translation>
@@ -6637,6 +6662,15 @@ if you are planning to use a drawing as a 1:1 cutting guide.
         <location filename="../../DlgPrefsTechDrawColors.ui" line="487"/>
         <source>Vertex</source>
         <translation>頂點</translation>
+    </message>
+    <message>
+        <location filename="../../DlgPrefsTechDrawColors.ui" line="620"/>
+        <source>If checked FreeCAD will use a single color for all text and lines. 
+
+</source>
+        <translation>如果選中，FreeCAD 將為所有文字和線條使用單一顏色. 
+
+</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawColors.ui" line="130"/>
@@ -6995,11 +7029,6 @@ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
  通常不使用間隙. 如果使用間隙，建議值為 6.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="483"/>
-        <source>Controls the gap size between dimension line and dimension text for ISO dimensions.</source>
-        <translation>控制 ISO 尺寸的尺寸線和尺寸文字之間的間隙大小.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="486"/>
         <source>Controls the size of the gap between the dimension point and the start of the extension line for ISO dimensions.</source>
         <translation>控制 ISO 標註的標註點和延長線起點間的間隙大小。</translation>
@@ -7040,6 +7069,11 @@ Normally, no gap is used. If a gap is used, the recommended value is 6.</source>
  Normally, no gap is used. If using a gap, the recommended value is 6.</source>
         <translation>控制 ASME 尺寸的尺寸點與尺寸界線起點之間的間隙大小. 值*線寬 即為間隙.
  通常不使用間隙. 如果使用間隙，建議值為6.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawDimensions.ui" line="483"/>
+        <source>Controls the gap size between dimension line and dimension text for ISO dimensions.</source>
+        <translation>控制 ISO 尺寸的尺寸線和尺寸文字之間的間隙大小.</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawDimensions.ui" line="576"/>
@@ -7488,14 +7522,34 @@ for ProjectionGroups</source>
         <translation>對齊檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="938"/>
-        <source>View Snapping Factor</source>
-        <translation>檢視捕捉因數</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="910"/>
+        <source>Check this box if you want detail view highlights to snap to the nearest vertex when dragging in TaskDetail.</source>
+        <translation>如果您希望在「任務詳細資料」中拖曳時，詳細檢視的高亮部分會緊貼最近的頂點，請勾選此方塊.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="913"/>
+        <source>Snap Detail Highlights</source>
+        <translation>對齊詳細亮點</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="945"/>
         <source>When dragging a view, if it is within this fraction of view size of the correct alignment, it will snap into alignment.</source>
         <translation>拖動檢視時，如果它位於正確對齊的檢視大小的捕捉因數範圍內，它將對齊捕捉點.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="938"/>
+        <source>View Snapping Factor</source>
+        <translation>檢視捕捉因數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="968"/>
+        <source>Highlight SnappingFactor</source>
+        <translation>高亮強調顯示擷取因素</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="975"/>
+        <source>Controls the snap radius for highlights. Vertex must be within this factor times the highlight size to be a snap target.</source>
+        <translation>控制高亮顯示的抓取半徑. 頂點必須在此因數乘以高亮尺寸的範圍內，才能成為抓取目標.</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawGeneral.ui" line="879"/>
@@ -7508,7 +7562,7 @@ for ProjectionGroups</source>
     <message>
         <location filename="../../DlgPrefsTechDrawHLR.ui" line="20"/>
         <source>HLR</source>
-        <translation>HLR</translation>
+        <translation>消除隱藏線(HLR)</translation>
     </message>
     <message>
         <location filename="../../DlgPrefsTechDrawHLR.ui" line="47"/>
@@ -8400,7 +8454,7 @@ Do you want to continue?</source>
     <message>
         <location filename="../../TaskCosVertex.ui" line="142"/>
         <source>Y</source>
-        <translation>Ÿ</translation>
+        <translation>Y</translation>
     </message>
     <message>
         <location filename="../../TaskCosVertex.cpp" line="158"/>
@@ -8971,7 +9025,7 @@ Do you want to continue?</source>
     <message>
         <location filename="../../TaskDetail.ui" line="153"/>
         <source>Y</source>
-        <translation>Ÿ</translation>
+        <translation>Y</translation>
     </message>
     <message>
         <location filename="../../TaskDetail.ui" line="202"/>
@@ -10384,7 +10438,7 @@ using the given X/Y Spacing</source>
     <message>
         <location filename="../../TaskSectionView.ui" line="393"/>
         <source>Y</source>
-        <translation>Ÿ</translation>
+        <translation>Y</translation>
     </message>
     <message>
         <location filename="../../TaskSectionView.ui" line="434"/>
@@ -10789,6 +10843,30 @@ using the given X/Y Spacing</source>
     </message>
 </context>
 <context>
+    <name>TechDraw_AddOffsetVertex</name>
+    <message>
+        <location filename="../../../TechDrawTools/CommandVertexCreations.py" line="77"/>
+        <source>Add an offset vertex</source>
+        <translation>新增偏移頂點</translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/CommandVertexCreations.py" line="83"/>
+        <source>Create an offset vertex&lt;br&gt;
+                - select one vertex&lt;br&gt;
+                - start the tool&lt;br&gt;
+                - enter offset values in panel</source>
+        <translation>建立一偏移頂點&lt;br&gt;
+                - 選擇一頂點&lt;br&gt;
+                - 啟動工具&lt;br&gt;
+                - 在面板中輸入偏移值</translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/TaskAddOffsetVertex.py" line="45"/>
+        <source>Add offset vertex</source>
+        <translation>新增偏移頂點</translation>
+    </message>
+</context>
+<context>
     <name>TechDraw_AxoLengthDimension</name>
     <message>
         <location filename="../../../TechDrawTools/CommandAxoLengthDimension.py" line="50"/>
@@ -10846,6 +10924,34 @@ using the given X/Y Spacing</source>
     </message>
 </context>
 <context>
+    <name>TechDraw_FillTemplateFields</name>
+    <message>
+        <location filename="../../../TechDrawTools/CommandFillTemplateFields.py" line="50"/>
+        <source>Update template fields</source>
+        <translation>更新模板欄位</translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/CommandFillTemplateFields.py" line="54"/>
+        <source>Use document info to populate the template fields</source>
+        <translation>使用文件資訊填充模板欄位</translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="136"/>
+        <source>Fill Template Fields in </source>
+        <translation>填充模板欄位 </translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="143"/>
+        <source>Update</source>
+        <translation>更新</translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="352"/>
+        <source>Update All</source>
+        <translation>全部更新</translation>
+    </message>
+</context>
+<context>
     <name>TechDraw_HoleShaftFit</name>
     <message>
         <location filename="../../../TechDrawTools/CommandHoleShaftFit.py" line="43"/>
@@ -10864,6 +10970,29 @@ using the given X/Y Spacing</source>
                 - 點選工具按鈕，開啟一個面板&lt;br&gt;
                 - 選擇軸配合/孔配合&lt;br&gt;
                 - 使用組合框選擇所需的 ISO 286 擬合欄位</translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/CommandHoleShaftFit.py" line="59"/>
+        <source>Add a hole or shaft fit to a dimension
+- select one length dimension or diameter dimension
+- click the tool button, a panel opens
+- select shaft fit / hole fit
+- select the desired ISO 286 fit field using the combo box</source>
+        <translation>添加孔或軸配合至標註尺寸：
+- 選取一個長度標註或直徑標註
+- 點擊工具按鈕，會開啟一個面板
+- 選擇軸配合 / 孔配合
+- 使用下拉選單選擇所需的 ISO 286 配合欄位</translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/CommandHoleShaftFit.py" line="74"/>
+        <source>Add a hole or shaft fit to a dimension</source>
+        <translation>添加孔或軸配合至標註尺寸</translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/CommandHoleShaftFit.py" line="78"/>
+        <source>Please select one length dimension or diameter dimension and retry</source>
+        <translation>請選取一個長度標註或直徑標註並且重試</translation>
     </message>
     <message>
         <location filename="../../../TechDrawTools/TaskHoleShaftFit.py" line="42"/>
@@ -10944,6 +11073,27 @@ using the given X/Y Spacing</source>
         <location filename="../../../TechDrawTools/TaskMoveView.py" line="126"/>
         <source>Select To Page.</source>
         <translation>選擇到頁面.</translation>
+    </message>
+</context>
+<context>
+    <name>TechDraw_PositionSectionView</name>
+    <message>
+        <location filename="../../../TechDrawTools/CommandPositionSectionView.py" line="51"/>
+        <source>Position Section View</source>
+        <translation>放置剖面視圖</translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/CommandPositionSectionView.py" line="59"/>
+        <source>Orthogonally align a section view with its source view:&lt;br&gt;
+                - Select a single section view&lt;br&gt;
+                - Click this tool&lt;br&gt;
+                - optional: select one edge in the section view and it&apos;s corresponding vertex in the base view&lt;br&gt;
+                  Click this tool</source>
+        <translation>正交對齊剖面視圖與其來源視圖：&lt;br&gt;
+                - 選取單一剖視圖&lt;br&gt;
+                - 點擊此工具&lt;br&gt;
+                - 選填：選擇剖視圖中的一條邊與基礎視圖中相應的頂點&lt;br&gt;
+                  點擊此工具</translation>
     </message>
 </context>
 <context>
@@ -11044,11 +11194,63 @@ using the given X/Y Spacing</source>
     </message>
 </context>
 <context>
+    <name>TechDraw_Utils</name>
+    <message>
+        <location filename="../../../TechDrawTools/TDToolsUtil.py" line="79"/>
+        <source>No vertex selected</source>
+        <translation>沒有頂點被選取</translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/TDToolsUtil.py" line="91"/>
+        <location filename="../../../TechDrawTools/TDToolsUtil.py" line="122"/>
+        <source>Select at least </source>
+        <translation>至少選擇 </translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/TDToolsUtil.py" line="92"/>
+        <source> vertexes</source>
+        <translation> 頂點</translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/TDToolsUtil.py" line="110"/>
+        <source>No edge selected</source>
+        <translation>無邊被選取</translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/TDToolsUtil.py" line="123"/>
+        <source> edges</source>
+        <translation> 邊</translation>
+    </message>
+</context>
+<context>
     <name>TechDraw_VerticalExtentDimension</name>
     <message>
         <location filename="../../CommandCreateDims.cpp" line="1027"/>
         <source>Insert Vertical Extent Dimension</source>
         <translation>插入垂直範圍標註</translation>
+    </message>
+</context>
+<context>
+    <name>Techdraw_FillTemplateFields</name>
+    <message>
+        <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="81"/>
+        <source> file does not contain the correct field names therefore exiting</source>
+        <translation> 檔案不包含正確的欄位名稱，因此退出</translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="87"/>
+        <source> file has not been found therefore exiting</source>
+        <translation> 未找到檔案，因此退出</translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="108"/>
+        <source>View or Projection Group missing</source>
+        <translation>缺少視圖或投影群組</translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/TaskFillTemplateFields.py" line="382"/>
+        <source>Corresponding template fields missing</source>
+        <translation>缺少相對應的模板欄位</translation>
     </message>
 </context>
 <context>
@@ -11098,6 +11300,11 @@ using the given X/Y Spacing</source>
         <location filename="../../Workbench.cpp" line="51"/>
         <source>TechDraw Clips</source>
         <translation>工程圖剪輯</translation>
+    </message>
+    <message>
+        <location filename="../../Workbench.cpp" line="257"/>
+        <source>Aligning</source>
+        <translation>對齊</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/Workbench.cpp" line="46"/>

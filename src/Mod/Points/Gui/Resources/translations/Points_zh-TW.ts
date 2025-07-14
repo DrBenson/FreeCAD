@@ -32,6 +32,16 @@
         <source>Convert to points</source>
         <translation>轉換為點</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="240"/>
+        <source>Convert to Points…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="241"/>
+        <source>Converts to points</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdPointsExport</name>
@@ -44,6 +54,11 @@
         <location filename="../../Gui/Command.cpp" line="121"/>
         <source>Export points...</source>
         <translation>匯出點...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="154"/>
+        <source>Export Points…</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Gui/Command.cpp" line="122"/>
@@ -63,6 +78,11 @@
         <location filename="../../Gui/Command.cpp" line="68"/>
         <source>Import points...</source>
         <translation>匯入點...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="69"/>
+        <source>Import Points…</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Gui/Command.cpp" line="69"/>
@@ -89,6 +109,16 @@
         <source>Merge several point clouds into one</source>
         <translation>將多個點雲合併為一個</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="376"/>
+        <source>Merge Point Clouds</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="377"/>
+        <source>Merges several point clouds into one</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdPointsPolyCut</name>
@@ -107,6 +137,16 @@
         <location filename="../../Gui/Command.cpp" line="298"/>
         <source>Cuts a point cloud with a picked polygon</source>
         <translation>由選定之多邊形切割點雲</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="328"/>
+        <source>Cut Point Cloud</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="329"/>
+        <source>Cuts a point cloud with a selected polygon</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -127,6 +167,16 @@
         <source>Convert points to structured point cloud</source>
         <translation>將點轉換為結構化點雲</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="438"/>
+        <source>Structured Point Cloud</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="439"/>
+        <source>Converts points to a structured point cloud</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdPointsTransform</name>
@@ -145,6 +195,11 @@
         <location filename="../../Gui/Command.cpp" line="171"/>
         <source>Test to transform a point cloud</source>
         <translation>測試修改點雲</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="202"/>
+        <source>Performs tests to transform a point cloud</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -174,24 +229,24 @@
 <context>
     <name>PointsGui::DlgPointsRead</name>
     <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="14"/>
-        <source>ASCII points import</source>
-        <translation>匯入 ASCII 點</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="14"/>
+        <source>ASCII Points Import</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="34"/>
-        <source>Template:</source>
-        <translation>模板：</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="34"/>
+        <source>Template</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="46"/>
-        <source>Special lines</source>
-        <translation>特殊行</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="46"/>
+        <source>Special Lines</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="58"/>
-        <source>First line:</source>
-        <translation>第一行：</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="58"/>
+        <source>First Line</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Gui/DlgPointsRead.ui" line="70"/>
@@ -204,24 +259,24 @@
         <translation>點的數量</translation>
     </message>
     <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="101"/>
-        <source>Cluster by lines starting with:</source>
-        <translation>群組開始由行：</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="101"/>
+        <source>Cluster by lines starting with</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="111"/>
-        <source>Ignore lines starting with:</source>
-        <translation>忽略開始由行：</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="111"/>
+        <source>Ignore lines starting with</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="126"/>
-        <source>Point format</source>
-        <translation>點型式</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="126"/>
+        <source>Point Format</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="146"/>
-        <source>Number separator:</source>
-        <translation>分隔符號數量：</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="146"/>
+        <source>Number separator</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Gui/DlgPointsRead.ui" line="167"/>
@@ -234,9 +289,9 @@
         <translation>\w</translation>
     </message>
     <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="180"/>
-        <source>Points format:</source>
-        <translation>點格式：</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="180"/>
+        <source>Points format</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Gui/DlgPointsRead.ui" line="188"/>
@@ -249,18 +304,18 @@
         <translation>X、 Y</translation>
     </message>
     <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="201"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="237"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="273"/>
-        <source>Next block:</source>
-        <translation>下一個區塊：</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="201"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="237"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="273"/>
+        <source>Next block</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="209"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="245"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="281"/>
-        <source>none</source>
-        <translation>無</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="209"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="245"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="281"/>
+        <source>None</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Gui/DlgPointsRead.ui" line="214"/>
@@ -284,16 +339,87 @@
         <translation>R、 G、 B （顏色）</translation>
     </message>
     <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="229"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="265"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="301"/>
-        <source>I (Gray value)</source>
-        <translation>I (灰度值)</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="229"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="265"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="301"/>
+        <source>I (gray value)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Gui/DlgPointsRead.ui" line="314"/>
         <source>Preview</source>
         <translation>預覽</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="341"/>
+        <source>Number of previewed lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="14"/>
+        <source>ASCII points import</source>
+        <translation>匯入 ASCII 點</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="34"/>
+        <source>Template:</source>
+        <translation>模板：</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="46"/>
+        <source>Special lines</source>
+        <translation>特殊行</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="58"/>
+        <source>First line:</source>
+        <translation>第一行：</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="101"/>
+        <source>Cluster by lines starting with:</source>
+        <translation>群組開始由行：</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="111"/>
+        <source>Ignore lines starting with:</source>
+        <translation>忽略開始由行：</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="126"/>
+        <source>Point format</source>
+        <translation>點型式</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="146"/>
+        <source>Number separator:</source>
+        <translation>分隔符號數量：</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="180"/>
+        <source>Points format:</source>
+        <translation>點格式：</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="201"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="237"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="273"/>
+        <source>Next block:</source>
+        <translation>下一個區塊：</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="209"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="245"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="281"/>
+        <source>none</source>
+        <translation>無</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="229"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="265"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="301"/>
+        <source>I (Gray value)</source>
+        <translation>I (灰度值)</translation>
     </message>
     <message>
         <location filename="../../Gui/DlgPointsRead.ui" line="341"/>
@@ -323,7 +449,12 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Points/Gui/Command.cpp" line="118"/>
         <source>The Bounding Box of the imported points does not contain the origin.  Do you want to translate it to the origin?</source>
-        <translation>導入點的邊框不包含原點. 你想把它轉換成原點嗎?</translation>
+        <translation>導入點的邊框不包含原點. 你想把它平移至原點嗎?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="118"/>
+        <source>The bounding box of the imported points does not contain the origin. Translate it to the origin?</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Gui/Command.cpp" line="227"/>
@@ -338,6 +469,11 @@
 </context>
 <context>
     <name>Workbench</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Workbench.cpp" line="34"/>
+        <source>Points Tools</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../Gui/Workbench.cpp" line="34"/>
         <source>Points tools</source>

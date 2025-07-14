@@ -31,6 +31,11 @@
         <source>Join two edges with high continuity</source>
         <translation>以高連續性連接兩條邊</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="219"/>
+        <source>Joins 2 edges with continuity</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdSurfaceCurveOnMesh</name>
@@ -50,6 +55,17 @@
 This command only works with a &apos;mesh&apos; object.</source>
         <translation>在網格頂部建立一條近似曲線.
 此命令僅適用於“網格”物體.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="180"/>
+        <source>Curve on Mesh…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="181"/>
+        <source>Creates an approximated curve on top of a mesh.
+This command only works with a mesh object.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -71,6 +87,16 @@ It returns a modified version of the first shape</source>
         <translation>用另一個形狀切割一個形狀.
 它會傳回第一個形狀的修改版本</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="56"/>
+        <source>Surface Cut</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="57"/>
+        <source>Cuts one shape using another</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdSurfaceExtendFace</name>
@@ -89,6 +115,16 @@ It returns a modified version of the first shape</source>
         <source>Extrapolates the selected face or surface at its boundaries
 with its local U and V parameters.</source>
         <translation>使用局部 U 和 V 參數推斷選定面或曲面的邊界.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="278"/>
+        <source>Extend Face</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="279"/>
+        <source>Extrapolates the selected face or surface at its boundaries with its local U and V parameters</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -112,6 +148,18 @@ and non-boundary vertices.</source>
 此外，表面可能受到非邊界邊
 和非邊界頂點的約束.</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="114"/>
+        <source>Filling…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="115"/>
+        <source>Creates a surface from a series of selected boundary edges.
+Additionally, the surface may be constrained by edges and
+vertices that are not on the boundary.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdSurfaceGeomFillSurface</name>
@@ -130,6 +178,16 @@ and non-boundary vertices.</source>
         <source>Creates a surface from two, three or four boundary edges.</source>
         <translation>從兩個、三個或四個邊界邊建立曲面.</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="148"/>
+        <source>Fill Boundary Curves</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="149"/>
+        <source>Creates a surface from 2, 3, or 4 boundary edges</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdSurfaceSections</name>
@@ -147,6 +205,16 @@ and non-boundary vertices.</source>
         <location filename="../../Gui/Command.cpp" line="331"/>
         <source>Creates a surface from a series of sectional edges.</source>
         <translation>從一系列截面邊緣建立曲面.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="325"/>
+        <source>Sections…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="326"/>
+        <source>Creates a surface from a series of sectional edges</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -168,9 +236,35 @@ and non-boundary vertices.</source>
         <source>Extend surface</source>
         <translation>延伸外型</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.cpp" line="408"/>
+        <source>Edit blending curve</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QObject</name>
+    <message>
+        <location filename="../../Gui/TaskGeomFillSurface.cpp" line="660"/>
+        <source>Surface</source>
+        <translation>外型</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/ViewProviderBlendCurve.cpp" line="48"/>
+        <source>Edit %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskFilling.cpp" line="65"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskGeomFillSurface.cpp" line="63"/>
+        <source>Edit Filling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskSections.cpp" line="60"/>
+        <source>Edit Sections</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../Gui/TaskFilling.cpp" line="63"/>
         <location filename="../../Gui/TaskGeomFillSurface.cpp" line="61"/>
@@ -178,14 +272,66 @@ and non-boundary vertices.</source>
         <translation>編輯填充</translation>
     </message>
     <message>
-        <location filename="../../Gui/TaskGeomFillSurface.cpp" line="660"/>
-        <source>Surface</source>
-        <translation>外型</translation>
-    </message>
-    <message>
         <location filename="../../Gui/TaskSections.cpp" line="57"/>
         <source>Edit sections</source>
         <translation>編輯剖面</translation>
+    </message>
+</context>
+<context>
+    <name>SurfaceGui::BlendCurve</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="14"/>
+        <source>Blend Curve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="14"/>
+        <source>Blending curve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="20"/>
+        <source>Start Edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="20"/>
+        <source>Start edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="26"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="119"/>
+        <source>Edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="43"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="136"/>
+        <source>Continuity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="79"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="172"/>
+        <source>Parameter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="96"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="189"/>
+        <source>Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="113"/>
+        <source>End Edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Blending/TaskBlendCurve.ui" line="113"/>
+        <source>End edge</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -269,6 +415,11 @@ and non-boundary vertices.</source>
         <translation>填充類型:</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskGeomFillSurface.ui" line="26"/>
+        <source>Fill Type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskGeomFillSurface.ui" line="38"/>
         <source>Stretch</source>
         <translation>拉伸</translation>
@@ -327,6 +478,17 @@ and non-boundary vertices.</source>
 </context>
 <context>
     <name>SurfaceGui::Sections</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskSections.ui" line="14"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskSections.ui" line="23"/>
+        <source>Sectional Edges</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskSections.ui" line="20"/>
+        <source>Constrains the surface to follow the selected sectional edges</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../TaskSections.ui" line="14"/>
         <location filename="../../TaskSections.ui" line="24"/>
@@ -397,21 +559,6 @@ that is, the surface will be forced to pass through these edges.</source>
         <translation>邊界邊緣</translation>
     </message>
     <message>
-        <location filename="../../TaskFilling.ui" line="64"/>
-        <source>Add Edge</source>
-        <translation>新增邊界</translation>
-    </message>
-    <message>
-        <location filename="../../TaskFilling.ui" line="83"/>
-        <source>Remove Edge</source>
-        <translation>移除邊界</translation>
-    </message>
-    <message>
-        <location filename="../../TaskFilling.ui" line="95"/>
-        <source>Drag the items to reorder the list</source>
-        <translation>拖動項目以重新排序列表</translation>
-    </message>
-    <message>
         <location filename="../../TaskFilling.ui" line="111"/>
         <source>Drag the items to reorder the list.</source>
         <translation>拖動項目以重新排序列表.</translation>
@@ -427,6 +574,46 @@ that is, the surface will be forced to pass through these edges.</source>
         <translation>連續性:</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskFilling.ui" line="28"/>
+        <source>Support Surface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskFilling.ui" line="44"/>
+        <source>Edges that will limit the surface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskFilling.ui" line="47"/>
+        <source>Boundary Edges</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskFilling.ui" line="64"/>
+        <source>Add Edge</source>
+        <translation>新增邊界</translation>
+    </message>
+    <message>
+        <location filename="../../TaskFilling.ui" line="83"/>
+        <source>Remove Edge</source>
+        <translation>移除邊界</translation>
+    </message>
+    <message>
+        <location filename="../../TaskFilling.ui" line="95"/>
+        <source>Drag the items to reorder the list</source>
+        <translation>拖動項目以重新排序列表</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskFilling.ui" line="131"/>
+        <source>Faces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskFilling.ui" line="151"/>
+        <source>Continuity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskFilling.ui" line="184"/>
         <source>Accept</source>
         <translation>接受更改</translation>
@@ -439,6 +626,21 @@ that is, the surface will be forced to pass through these edges.</source>
 </context>
 <context>
     <name>SurfaceGui::TaskFillingEdge</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskFillingEdge.ui" line="20"/>
+        <source>Edge Constraints</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskFillingEdge.ui" line="26"/>
+        <source>Constrains the surface to pass through the selected edges</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskFillingEdge.ui" line="29"/>
+        <source>Non-Boundary Edges</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../TaskFillingEdge.ui" line="20"/>
         <source>Edge constraints</source>
@@ -477,6 +679,16 @@ that is, the surface will be forced to pass through these edges.</source>
         <translation>連續性:</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskFillingEdge.ui" line="93"/>
+        <source>Faces</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskFillingEdge.ui" line="113"/>
+        <source>Continuity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskFillingEdge.ui" line="147"/>
         <source>Accept</source>
         <translation>接受更改</translation>
@@ -489,6 +701,21 @@ that is, the surface will be forced to pass through these edges.</source>
 </context>
 <context>
     <name>SurfaceGui::TaskFillingVertex</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskFillingVertex.ui" line="14"/>
+        <source>Vertex Constraints</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskFillingVertex.ui" line="20"/>
+        <source>Constrains the surface to pass through the selected vertices</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskFillingVertex.ui" line="23"/>
+        <source>Non-Boundary Vertices</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../TaskFillingVertex.ui" line="14"/>
         <source>Vertex constraints</source>

@@ -31,6 +31,16 @@
         <source>Approximate a B-spline curve</source>
         <translation>模擬 B 雲形線曲線</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="71"/>
+        <source>Approximate B-Spline Curve…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="72"/>
+        <source>Approximates a B-spline curve</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdApproxCylinder</name>
@@ -49,6 +59,11 @@
         <source>Approximate a cylinder</source>
         <translation>模擬圓柱體</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="251"/>
+        <source>Approximates a cylinder</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdApproxPlane</name>
@@ -63,14 +78,19 @@
         <translation>平面...</translation>
     </message>
     <message>
+        <location filename="../../Command.cpp" line="106"/>
+        <source>Approximate a plane</source>
+        <translation>模擬平面</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/ReverseEngineering/Gui/Command.cpp" line="107"/>
         <source>Plane</source>
         <translation>平面</translation>
     </message>
     <message>
-        <location filename="../../Command.cpp" line="106"/>
-        <source>Approximate a plane</source>
-        <translation>模擬平面</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="143"/>
+        <source>Approximates a plane</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -90,6 +110,16 @@
         <source>Approximate a polynomial surface</source>
         <translation>模擬多項式曲面</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="366"/>
+        <source>Polynomial Surface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="367"/>
+        <source>Approximates a polynomial surface</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdApproxSphere</name>
@@ -107,6 +137,11 @@
         <location filename="../../Command.cpp" line="273"/>
         <source>Approximate a sphere</source>
         <translation>模擬一個球體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="319"/>
+        <source>Approximates a sphere</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -126,6 +161,16 @@
         <source>Approximate a B-spline surface</source>
         <translation>模擬 B 雲形線表面</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="104"/>
+        <source>Approximate B-Spline Surface…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="105"/>
+        <source>Approximates a B-spline surface</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdMeshBoundary</name>
@@ -144,6 +189,16 @@
         <source>Create wire from mesh boundaries</source>
         <translation>從網格邊界建立線</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="536"/>
+        <source>Wire From Mesh Boundary…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="537"/>
+        <source>Creates a wire from mesh boundaries</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdPoissonReconstruction</name>
@@ -160,6 +215,16 @@
     <message>
         <location filename="../../Command.cpp" line="552"/>
         <source>Poisson surface reconstruction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="601"/>
+        <source>Poisson…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="602"/>
+        <source>Performs Poisson surface reconstruction</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -180,6 +245,16 @@
         <source>Create mesh segments</source>
         <translation>建立網格分割</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="424"/>
+        <source>Mesh Segmentation…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="425"/>
+        <source>Creates separate mesh segments based on surface types</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdSegmentationFromComponents</name>
@@ -197,6 +272,16 @@
         <location filename="../../Command.cpp" line="436"/>
         <source>Create mesh segments from components</source>
         <translation>從組件建立網格分割</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="486"/>
+        <source>From Components</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="487"/>
+        <source>Creates mesh segments from components</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -216,6 +301,16 @@
         <source>Create mesh segments manually</source>
         <translation>手動建立網格分割</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="456"/>
+        <source>Manual Segmentation…</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="457"/>
+        <source>Creates mesh segments manually</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdViewTriangulation</name>
@@ -228,6 +323,16 @@
         <location filename="../../Command.cpp" line="585"/>
         <source>Structured point clouds</source>
         <translation>結構化點雲</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="635"/>
+        <source>Structured Point Clouds</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="636"/>
+        <source>Triangulates structured point clouds</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="586"/>
@@ -292,6 +397,11 @@
 </context>
 <context>
     <name>ReenGui::FitBSplineCurve</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/FitBSplineCurve.ui" line="14"/>
+        <source>Fit B-Spline Curve</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/ReverseEngineering/Gui/FitBSplineCurve.ui" line="14"/>
         <source>Fit B-spline curve</source>
@@ -414,14 +524,14 @@
 <context>
     <name>ReenGui::FitBSplineSurface</name>
     <message>
-        <location filename="../../FitBSplineSurface.ui" line="14"/>
-        <source>Fit B-spline surface</source>
-        <translation>最適化B-雲行線表面</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/FitBSplineSurface.ui" line="14"/>
+        <source>Fit B-Spline Surface</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../FitBSplineSurface.ui" line="20"/>
-        <source>u-Direction</source>
-        <translation>u-方向</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/FitBSplineSurface.ui" line="20"/>
+        <source>U-Direction</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../FitBSplineSurface.ui" line="26"/>
@@ -439,6 +549,21 @@
         <location filename="../../FitBSplineSurface.ui" line="87"/>
         <source>v-Direction</source>
         <translation>v 方向</translation>
+    </message>
+    <message>
+        <location filename="../../FitBSplineSurface.ui" line="231"/>
+        <source>Create placement</source>
+        <translation>建立放置位置</translation>
+    </message>
+    <message>
+        <location filename="../../FitBSplineSurface.ui" line="247"/>
+        <source>Total Weight</source>
+        <translation>總重量</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/FitBSplineSurface.ui" line="87"/>
+        <source>V-Direction</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../FitBSplineSurface.ui" line="154"/>
@@ -461,9 +586,9 @@
         <translation>使用者定義 u/v 角度</translation>
     </message>
     <message>
-        <location filename="../../FitBSplineSurface.ui" line="231"/>
-        <source>Create placement</source>
-        <translation>建立放置位置</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/FitBSplineSurface.ui" line="231"/>
+        <source>Create Placement</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../FitBSplineSurface.ui" line="238"/>
@@ -471,9 +596,9 @@
         <translation>平滑</translation>
     </message>
     <message>
-        <location filename="../../FitBSplineSurface.ui" line="247"/>
-        <source>Total Weight</source>
-        <translation>總重量</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/FitBSplineSurface.ui" line="247"/>
+        <source>Total weight</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../FitBSplineSurface.ui" line="276"/>
@@ -489,6 +614,16 @@
         <location filename="../../FitBSplineSurface.ui" line="334"/>
         <source>Curvature variation</source>
         <translation>曲率變化</translation>
+    </message>
+    <message>
+        <location filename="../../FitBSplineSurface.ui" line="14"/>
+        <source>Fit B-spline surface</source>
+        <translation>最適化B-雲行線表面</translation>
+    </message>
+    <message>
+        <location filename="../../FitBSplineSurface.ui" line="20"/>
+        <source>u-Direction</source>
+        <translation>u-方向</translation>
     </message>
 </context>
 <context>
@@ -508,6 +643,11 @@
         <location filename="../../FitBSplineSurface.cpp" line="200"/>
         <source>Please select a single placement object to get local orientation.</source>
         <translation>請選擇一個放置物件以獲得區域方向.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/FitBSplineSurface.cpp" line="206"/>
+        <source>Select a single placement object to get the local orientation.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -552,11 +692,6 @@
         <translation>錯誤的選取</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/ReverseEngineering/Gui/Command.cpp" line="83"/>
-        <source>Please select a point cloud.</source>
-        <translation>請選擇點雲.</translation>
-    </message>
-    <message>
         <location filename="../../Command.cpp" line="84"/>
         <source>Please select a point cloud or mesh.</source>
         <translation>請選擇點雲或網格.</translation>
@@ -565,6 +700,26 @@
         <location filename="../../Command.cpp" line="564"/>
         <source>Please select a single point cloud.</source>
         <translation>請選擇一個單一的點雲.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="84"/>
+        <source>Select a point cloud.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="122"/>
+        <source>Select a point cloud or mesh.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Command.cpp" line="615"/>
+        <source>Select a single point cloud.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/ReverseEngineering/Gui/Command.cpp" line="83"/>
+        <source>Please select a point cloud.</source>
+        <translation>請選擇點雲.</translation>
     </message>
 </context>
 <context>
@@ -577,6 +732,11 @@
 </context>
 <context>
     <name>ReverseEngineeringGui::Segmentation</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/Segmentation.ui" line="14"/>
+        <source>Mesh Segmentation</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../Segmentation.ui" line="14"/>
         <source>Mesh segmentation</source>
@@ -621,9 +781,9 @@
 <context>
     <name>ReverseEngineeringGui::SegmentationManual</name>
     <message>
-        <location filename="../../SegmentationManual.ui" line="14"/>
-        <source>Manual segmentation</source>
-        <translation>手動分割</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/SegmentationManual.ui" line="14"/>
+        <source>Manual Mesh Segmentation</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../SegmentationManual.ui" line="20"/>
@@ -654,6 +814,11 @@
         <location filename="../../SegmentationManual.ui" line="98"/>
         <source>Pick triangle</source>
         <translation>選取三角形</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/SegmentationManual.ui" line="98"/>
+        <source>Pick Triangle</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../SegmentationManual.ui" line="105"/>
@@ -707,14 +872,24 @@
         <translation>面域選項</translation>
     </message>
     <message>
+        <location filename="../../SegmentationManual.ui" line="297"/>
+        <source>Respect only triangles with normals facing screen</source>
+        <translation>僅就法線正對畫面的三角形</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/SegmentationManual.ui" line="281"/>
+        <source>Region Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../SegmentationManual.ui" line="287"/>
         <source>Respect only visible triangles</source>
         <translation>僅就可見的三角形</translation>
     </message>
     <message>
-        <location filename="../../SegmentationManual.ui" line="297"/>
-        <source>Respect only triangles with normals facing screen</source>
-        <translation>僅就法線正對畫面的三角形</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/SegmentationManual.ui" line="297"/>
+        <source>Respect only triangles with screen-facing normals</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../SegmentationManual.ui" line="310"/>
@@ -730,6 +905,11 @@
         <location filename="../../SegmentationManual.ui" line="326"/>
         <source>Hide segment</source>
         <translation>隱藏分割片段</translation>
+    </message>
+    <message>
+        <location filename="../../SegmentationManual.ui" line="14"/>
+        <source>Manual segmentation</source>
+        <translation>手動分割</translation>
     </message>
 </context>
 <context>

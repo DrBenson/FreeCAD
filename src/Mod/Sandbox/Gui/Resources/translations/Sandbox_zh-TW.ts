@@ -22,6 +22,11 @@
         <translation>沙箱</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="1213"/>
+        <source>Menger Sponge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../Command.cpp" line="1213"/>
         <location filename="../../Command.cpp" line="1214"/>
         <location filename="../../Command.cpp" line="1216"/>
@@ -381,6 +386,16 @@
         <source>Sandbox Test function</source>
         <translation>沙箱測試功能</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="211"/>
+        <source>Thread and No Sequencer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="212"/>
+        <source>Runs a sandbox test function</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdSandboxDocThreadWithDialog</name>
@@ -399,6 +414,16 @@
         <location filename="../../Command.cpp" line="459"/>
         <source>Sandbox Test function</source>
         <translation>沙箱測試功能</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="456"/>
+        <source>Thread and Modal Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="457"/>
+        <source>Runs a sandbox test function</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -419,6 +444,16 @@
         <source>Sandbox Test function</source>
         <translation>沙箱測試功能</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="483"/>
+        <source>Thread and File Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="484"/>
+        <source>Runs a sandbox test function</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdSandboxDocThreadWithSeq</name>
@@ -437,6 +472,16 @@
         <location filename="../../Command.cpp" line="175"/>
         <source>Sandbox Test function</source>
         <translation>沙箱測試功能</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="172"/>
+        <source>Thread and Sequencer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="173"/>
+        <source>Runs a sandbox test function</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -457,6 +502,16 @@
         <source>Sandbox Test function</source>
         <translation>沙箱測試功能</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="248"/>
+        <source>GUI Thread</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="249"/>
+        <source>Runs a sandbox test function</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdSandboxDocumentSaveThread</name>
@@ -475,6 +530,16 @@
         <location filename="../../Command.cpp" line="147"/>
         <source>Sandbox save function</source>
         <translation>沙箱儲存功能</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="144"/>
+        <source>Save Thread</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="145"/>
+        <source>Runs a sandbox save function</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -495,6 +560,16 @@
         <source>Sandbox Test function</source>
         <translation>沙箱測試功能</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="120"/>
+        <source>Test Thread</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="121"/>
+        <source>Runs a sandbox test function</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdSandboxDocumentThread</name>
@@ -513,6 +588,16 @@
         <location filename="../../Command.cpp" line="96"/>
         <source>Sandbox Test function</source>
         <translation>沙箱測試功能</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="93"/>
+        <source>Run Several Threads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="94"/>
+        <source>Runs a sandbox test function</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -533,6 +618,16 @@
         <source>Sandbox Test function</source>
         <translation>沙箱測試功能</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="521"/>
+        <source>Local Event Loop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="522"/>
+        <source>Runs a sandbox test function</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdSandboxMeshLoader</name>
@@ -551,6 +646,16 @@
         <location filename="../../Command.cpp" line="567"/>
         <source>Sandbox Test function</source>
         <translation>沙箱測試功能</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="564"/>
+        <source>Load Mesh in Thread</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="565"/>
+        <source>Runs a sandbox test function</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -571,6 +676,16 @@
         <source>Sandbox Test function</source>
         <translation>沙箱測試功能</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="622"/>
+        <source>Load Mesh in Boost-Thread</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="623"/>
+        <source>Runs a sandbox test function</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdSandboxMeshLoaderFuture</name>
@@ -589,6 +704,16 @@
         <location filename="../../Command.cpp" line="673"/>
         <source>Sandbox Test function</source>
         <translation>沙箱測試功能</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="670"/>
+        <source>Load Mesh in QFuture</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="671"/>
+        <source>Runs a sandbox test function</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -609,6 +734,16 @@
         <source>Sandbox Test function</source>
         <translation>沙箱測試功能</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="785"/>
+        <source>Test Mesh Job</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="786"/>
+        <source>Runs a sandbox test function</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdSandboxMeshTestRef</name>
@@ -627,6 +762,16 @@
         <location filename="../../Command.cpp" line="883"/>
         <source>Sandbox Test function</source>
         <translation>沙箱測試功能</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="880"/>
+        <source>Test Mesh Reference</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="881"/>
+        <source>Runs a sandbox test function</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -647,6 +792,16 @@
         <source>Use PySide&apos;s thread module</source>
         <translation>使用PySide的執行緒模組</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="369"/>
+        <source>PySide Threads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="370"/>
+        <source>Uses PySide&apos;s thread module</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdSandboxPythonLockThread</name>
@@ -665,6 +820,16 @@
         <location filename="../../Command.cpp" line="305"/>
         <source>Use Python&apos;s thread module where each thread is locked</source>
         <translation>使用Python的執行緒模組，每個執行緒都被鎖定</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="302"/>
+        <source>Locked Python Threads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="303"/>
+        <source>Uses Python&apos;s thread module where each thread is locked</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -685,6 +850,16 @@
         <source>Run python code in main thread</source>
         <translation>在主執行緒中執行Python程式碼</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="430"/>
+        <source>Python Main Thread</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="431"/>
+        <source>Runs Python code in the main thread</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdSandboxPythonNolockThread</name>
@@ -703,6 +878,16 @@
         <location filename="../../Command.cpp" line="340"/>
         <source>Use Python&apos;s thread module where each thread is unlocked</source>
         <translation>使用Python的執行緒模組，其中每個執行緒都是解鎖的</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="337"/>
+        <source>Unlocked Python Threads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="338"/>
+        <source>Uses Python&apos;s thread module where each thread is unlocked</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -723,6 +908,16 @@
         <source>Use class PythonThread running Python code in its run() method</source>
         <translation>使用類別 Python 執行緒 在其 run() 方法中執行 Python 程式碼</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="404"/>
+        <source>Python Threads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="405"/>
+        <source>Uses class PythonThread running Python code in its run() method</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdSandboxWorkerThread</name>
@@ -742,6 +937,16 @@
         <source>Sandbox Test function</source>
         <translation>沙箱測試功能</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="279"/>
+        <source>Worker Thread</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="280"/>
+        <source>Runs a sandbox test function</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdTestGraphicsView</name>
@@ -754,6 +959,11 @@
         <location filename="../../Command.cpp" line="1382"/>
         <source>Create new graphics view</source>
         <translation>建立新的圖形檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="1382"/>
+        <source>New Graphics View</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="1383"/>
@@ -892,6 +1102,26 @@
 <context>
     <name>QObject</name>
     <message>
+        <location filename="../../Command.cpp" line="72"/>
+        <source>Select one Robot to set home position</source>
+        <translation>選擇要設置起始位置之機器人</translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="121"/>
+        <source>Select one Robot</source>
+        <translation>選取一機器人</translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="226"/>
+        <source>Trajectory not valid</source>
+        <translation>無效軌跡</translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="227"/>
+        <source>You need at least two waypoints in a trajectory to simulate.</source>
+        <translation>軌跡中至少需要兩個航路點才能進行模擬.</translation>
+    </message>
+    <message>
         <location filename="../../Command.cpp" line="575"/>
         <location filename="../../Command.cpp" line="633"/>
         <location filename="../../Command.cpp" line="681"/>
@@ -946,26 +1176,6 @@
         <location filename="../../Command.cpp" line="692"/>
         <source>Import mesh</source>
         <translation>匯入網格</translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="72"/>
-        <source>Select one Robot to set home position</source>
-        <translation>選擇要設置起始位置之機器人</translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="121"/>
-        <source>Select one Robot</source>
-        <translation>選取一機器人</translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="226"/>
-        <source>Trajectory not valid</source>
-        <translation>無效軌跡</translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="227"/>
-        <source>You need at least two waypoints in a trajectory to simulate.</source>
-        <translation>軌跡中至少需要兩個航路點才能進行模擬.</translation>
     </message>
     <message>
         <location filename="../../CommandInsertRobot.cpp" line="229"/>
@@ -1175,6 +1385,11 @@
 <context>
     <name>RobotGui::TaskRobot6Axis</name>
     <message>
+        <location filename="../../TaskRobot6Axis.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../TaskRobot6Axis.ui" line="22"/>
         <source>A1</source>
         <translation>A1</translation>
@@ -1213,11 +1428,6 @@
         <location filename="../../TaskRobot6Axis.ui" line="329"/>
         <source>Tool: (0,0,400,0,0,0)</source>
         <translation>工具： (0,0,400,0,0,0)</translation>
-    </message>
-    <message>
-        <location filename="../../TaskRobot6Axis.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
     <message>
         <location filename="../../TaskRobot6Axis.cpp" line="41"/>
@@ -1359,6 +1569,11 @@
 <context>
     <name>RobotGui::TaskTrajectory</name>
     <message>
+        <location filename="../../TaskTrajectory.ui" line="20"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../TaskTrajectory.ui" line="58"/>
         <source>|&lt;</source>
         <translation>|&lt;</translation>
@@ -1437,11 +1652,6 @@
         <location filename="../../TaskTrajectory.ui" line="337"/>
         <source>A</source>
         <translation>A</translation>
-    </message>
-    <message>
-        <location filename="../../TaskTrajectory.ui" line="20"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
     <message>
         <location filename="../../TaskTrajectory.cpp" line="37"/>
