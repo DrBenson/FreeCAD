@@ -1017,7 +1017,7 @@
     </message>
     <message>
         <source>Support Transform</source>
-        <translation>支援變形轉換</translation>
+        <translation>支援平移</translation>
     </message>
     <message>
         <source>Radius</source>
@@ -1113,7 +1113,7 @@
     </message>
     <message>
         <source>Transformations</source>
-        <translation>轉換</translation>
+        <translation>平移</translation>
     </message>
     <message>
         <source>min Relief Gap</source>
@@ -1879,15 +1879,15 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
     </message>
     <message>
         <source>Transition</source>
-        <translation>轉換</translation>
+        <translation>平移</translation>
     </message>
     <message>
         <source>Transform Mode</source>
-        <translation>轉換模式</translation>
+        <translation>平移模式</translation>
     </message>
     <message>
         <source>Transformation</source>
-        <translation>轉換效果</translation>
+        <translation>平移效果</translation>
     </message>
     <message>
         <source>Standard</source>
@@ -2748,7 +2748,7 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
     </message>
     <message>
         <source>Transformed</source>
-        <translation>轉換</translation>
+        <translation>平移</translation>
     </message>
     <message>
         <source>Right corner</source>
@@ -2927,7 +2927,7 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/ViewProviderDragger.cpp" line="222"/>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Transform.cpp" line="104"/>
         <source>Transform</source>
-        <translation>轉換</translation>
+        <translation>平移</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/TaskView/TaskImage.cpp" line="258"/>
@@ -3074,7 +3074,7 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgCustomizeSpNavSettings.ui" line="72"/>
         <source>Enable Translations</source>
-        <translation>啟用轉換</translation>
+        <translation>啟用平移</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgCustomizeSpNavSettings.ui" line="82"/>
@@ -3208,7 +3208,7 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="244"/>
         <source>Transform</source>
-        <translation>轉換</translation>
+        <translation>平移</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="245"/>
@@ -3238,7 +3238,7 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="271"/>
         <source>Trans&amp;form</source>
-        <translation>轉換(&amp;f)</translation>
+        <translation>平移(&amp;f)</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Application.h" line="260"/>
@@ -12529,7 +12529,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Transform.cpp" line="292"/>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/Transform.cpp" line="420"/>
         <source>Transform</source>
-        <translation>轉換</translation>
+        <translation>平移</translation>
     </message>
 </context>
 <context>
@@ -15160,7 +15160,7 @@ Do you want to specify another directory?</source>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/TaskCSysDragger.cpp" line="88"/>
         <source>Transform</source>
-        <translation>轉換</translation>
+        <translation>平移</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/TaskCSysDragger.cpp" line="171"/>
@@ -17287,7 +17287,7 @@ Would you like to save the file with a different name?</source>
         <source>Choose &apos;Yes&apos; to roll back all preceding transactions.
 Choose &apos;No&apos; to roll back in the active document only.
 Choose &apos;Abort&apos; to abort</source>
-        <translation>選擇 &apos;是&apos; 以回復所有之前的轉換.
+        <translation>選擇 &apos;是&apos; 以回復所有之前的平移.
 選擇 &apos;否&apos; 僅在啟用文件中回復.
 選擇 &apos;中止&apos; 以中止</translation>
     </message>
@@ -20722,13 +20722,13 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1519"/>
         <source>Transform...</source>
-        <translation>轉換...</translation>
+        <translation>平移...</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1520"/>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1521"/>
         <source>Transform the geometry of selected objects</source>
-        <translation>所選物體的幾何轉換</translation>
+        <translation>所選物體的幾何平移</translation>
     </message>
 </context>
 <context>
@@ -20736,24 +20736,24 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1639"/>
         <source>Trans&amp;form</source>
-        <translation>轉換(&amp;f)</translation>
+        <translation>平移(&amp;f)</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1593"/>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1594"/>
         <source>Transform the selected object in the 3D view</source>
-        <translation>轉換於3D檢視中所選物體</translation>
+        <translation>平移於3D檢視中所選物體</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1579"/>
         <source>Transform</source>
-        <translation>轉換</translation>
+        <translation>平移</translation>
     </message>
     <message>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1580"/>
         <location filename="../../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1581"/>
         <source>Transform the selected object in the 3d view</source>
-        <translation>轉換於3D檢視中所選物體</translation>
+        <translation>平移於3D檢視中所選物體</translation>
     </message>
 </context>
 <context>

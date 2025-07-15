@@ -800,7 +800,7 @@
     </message>
     <message>
         <source>Transform mesh</source>
-        <translation>轉換網格</translation>
+        <translation>平移網格</translation>
     </message>
     <message>
         <source>Rotate or move a mesh</source>

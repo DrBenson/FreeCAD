@@ -2599,12 +2599,12 @@ of projection.</source>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/CommandSimple.cpp" line="257"/>
         <source>Create transformed copy</source>
-        <translation>建立轉換後的拷貝</translation>
+        <translation>建立平移後的拷貝</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/CommandSimple.cpp" line="258"/>
         <source>Create a non-parametric copy with transformed placement</source>
-        <translation>建立具有變換後的放置的非參數備份</translation>
+        <translation>建立具有平移後的放置的非參數備份</translation>
     </message>
 </context>
 <context>

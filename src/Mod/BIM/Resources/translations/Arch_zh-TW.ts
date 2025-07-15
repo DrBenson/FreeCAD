@@ -1281,7 +1281,7 @@
     </message>
     <message>
         <source>A transformation to apply to the level mark</source>
-        <translation>套用於級別標記的轉換</translation>
+        <translation>套用於級別標記的平移</translation>
     </message>
     <message>
         <source>If true, show the level</source>

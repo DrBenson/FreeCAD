@@ -1014,7 +1014,7 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/AttacherTexts.cpp" line="130"/>
         <source>Translate origin</source>
         <comment>AttachmentPlane mode caption</comment>
-        <translation type="unfinished">轉換物體原點</translation>
+        <translation type="unfinished">平移物體原點</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/AttacherTexts.cpp" line="131"/>
@@ -1223,7 +1223,7 @@ The files are named &quot;runPreDrag.asmt&quot; and &quot;dragging.log&quot; and
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/AttacherTexts.cpp" line="55"/>
         <source>Translate origin</source>
         <comment>Attachment3D mode caption</comment>
-        <translation type="unfinished">轉換物體原點</translation>
+        <translation type="unfinished">平移物體原點</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/AttacherTexts.cpp" line="56"/>
@@ -5493,12 +5493,12 @@ This command only works with a &apos;mesh&apos; object.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/Command.cpp" line="2221"/>
         <source>Create MultiTransform</source>
-        <translation type="unfinished">建立多重轉換</translation>
+        <translation type="unfinished">建立多重平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/Command.cpp" line="2222"/>
         <source>Create a multitransform feature</source>
-        <translation type="unfinished">建立多重轉換特徵</translation>
+        <translation type="unfinished">建立多重平移特徵</translation>
     </message>
 </context>
 <context>
@@ -6404,12 +6404,12 @@ of projection.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/CommandSimple.cpp" line="297"/>
         <source>Create transformed copy</source>
-        <translation type="unfinished">建立轉換後的拷貝</translation>
+        <translation type="unfinished">建立平移後的拷貝</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/CommandSimple.cpp" line="298"/>
         <source>Create a non-parametric copy with transformed placement</source>
-        <translation type="unfinished">建立具有變換後的放置的非參數備份</translation>
+        <translation type="unfinished">建立具有平移後的放置的非參數備份</translation>
     </message>
 </context>
 <context>
@@ -9181,7 +9181,7 @@ This will clear the &apos;AttachmentSupport&apos; property, if any.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2424"/>
         <source>Scale transform</source>
-        <translation type="unfinished">縮放轉換</translation>
+        <translation type="unfinished">縮放平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2425"/>
@@ -12800,7 +12800,7 @@ Without a selection, a file browser lets you select a SVG or image file.</source
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/Command.cpp" line="2270"/>
         <source>Convert to MultiTransform feature</source>
-        <translation type="unfinished">轉換至多重轉換特徵</translation>
+        <translation type="unfinished">轉換至多重平移特徵</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/Command.cpp" line="2362"/>
@@ -19695,17 +19695,17 @@ Intersecting sketch entities in a sketch are not allowed.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="97"/>
         <source>No originals linked to the transformed feature.</source>
-        <translation type="unfinished">沒有原始連結到轉換後的特徵.</translation>
+        <translation type="unfinished">沒有原始連結到平移後的特徵.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="217"/>
         <source>Cannot transform invalid support shape</source>
-        <translation type="unfinished">無法轉換無效的支撐形狀</translation>
+        <translation type="unfinished">無法平移無效的支撐形狀</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="246"/>
         <source>Transformation failed</source>
-        <translation type="unfinished">轉換失敗</translation>
+        <translation type="unfinished">平移失敗</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="274"/>
@@ -19715,7 +19715,7 @@ Intersecting sketch entities in a sketch are not allowed.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="290"/>
         <source>Only additive and subtractive features can be transformed</source>
-        <translation type="unfinished">只有增加與除料特徵可以被轉換</translation>
+        <translation type="unfinished">只有增加與除料特徵可以被平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/App/FeaturePad.cpp" line="105"/>
@@ -36791,12 +36791,12 @@ measured along the specified direction</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskPipeParameters.ui" line="51"/>
         <source>Corner Transition</source>
-        <translation type="unfinished">轉角轉換</translation>
+        <translation type="unfinished">轉角平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskPipeParameters.ui" line="65"/>
         <source>Transformed</source>
-        <translation type="unfinished">轉換</translation>
+        <translation type="unfinished">平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskPipeParameters.ui" line="70"/>
@@ -36880,7 +36880,7 @@ measured along the specified direction</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskPipeParameters.cpp" line="802"/>
         <source>Section transformation</source>
-        <translation type="unfinished">輪廓圖轉換</translation>
+        <translation type="unfinished">輪廓圖平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskPipeParameters.cpp" line="818"/>
@@ -37259,12 +37259,12 @@ click again to end selection</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="35"/>
         <source>Transform body</source>
-        <translation type="unfinished">轉換實體</translation>
+        <translation type="unfinished">平移實體</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="48"/>
         <source>Transform tool shapes</source>
-        <translation type="unfinished">轉換工具形狀</translation>
+        <translation type="unfinished">平移工具形狀</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="50"/>
@@ -37407,7 +37407,7 @@ click again to end selection</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/ViewProviderMultiTransform.h" line="37"/>
         <source>MultiTransform parameters</source>
-        <translation type="unfinished">多重轉換參數</translation>
+        <translation type="unfinished">多重平移參數</translation>
     </message>
 </context>
 <context>
@@ -43404,7 +43404,7 @@ This feature is broken and can&apos;t be edited.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/ViewProviderMultiTransform.cpp" line="48"/>
         <source>Edit multi-transform</source>
-        <translation type="unfinished">編輯多重轉換</translation>
+        <translation type="unfinished">編輯多重平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/ViewProviderPad.cpp" line="46"/>
@@ -43459,7 +43459,7 @@ This feature is broken and can&apos;t be edited.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/ViewProviderTransformed.cpp" line="179"/>
         <source>One transformed shape does not intersect the support</source>
-        <translation type="unfinished">一個轉換後的外形與支撐不相交</translation>
+        <translation type="unfinished">一個平移後的外形與支撐不相交</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/ViewProviderTransformed.cpp" line="179"/>
@@ -43469,7 +43469,7 @@ This feature is broken and can&apos;t be edited.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/ViewProviderTransformed.cpp" line="181"/>
         <source>%1 transformed shapes do not intersect the support</source>
-        <translation type="unfinished">%1 轉換後的外形與支撐不相交</translation>
+        <translation type="unfinished">%1 平移後的外形與支撐不相交</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/ViewProviderTransformed.cpp" line="181"/>

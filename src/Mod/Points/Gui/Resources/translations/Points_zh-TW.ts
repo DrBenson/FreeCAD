@@ -449,7 +449,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Points/Gui/Command.cpp" line="118"/>
         <source>The Bounding Box of the imported points does not contain the origin.  Do you want to translate it to the origin?</source>
-        <translation>導入點的邊框不包含原點. 你想把它轉換成原點嗎?</translation>
+        <translation>導入點的邊框不包含原點. 你想把它平移至原點嗎?</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="118"/>

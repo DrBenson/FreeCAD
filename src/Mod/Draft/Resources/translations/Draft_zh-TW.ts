@@ -1339,7 +1339,7 @@ the &apos;First Angle&apos; and &apos;Last Angle&apos; properties.</source>
         <location filename="../../draftviewproviders/view_base.py" line="462"/>
         <location filename="../../draftviewproviders/view_hatch.py" line="90"/>
         <source>Transform</source>
-        <translation>轉換</translation>
+        <translation>平移</translation>
     </message>
 </context>
 <context>

@@ -574,12 +574,12 @@ so that self intersection is avoided.</source>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/Command.cpp" line="2515"/>
         <source>Create MultiTransform</source>
-        <translation>建立多重轉換</translation>
+        <translation>建立多重平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/Command.cpp" line="2516"/>
         <source>Create a multitransform feature</source>
-        <translation>建立多重轉換特徵</translation>
+        <translation>建立多重平移特徵</translation>
     </message>
 </context>
 <context>
@@ -974,7 +974,7 @@ so that self intersection is avoided.</source>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/Command.cpp" line="2564"/>
         <source>Convert to MultiTransform feature</source>
-        <translation>轉換至多重轉換特徵</translation>
+        <translation>轉換至多重平移特徵</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/Command.cpp" line="2656"/>
@@ -1863,22 +1863,22 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed for m
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="97"/>
         <source>No originals linked to the transformed feature.</source>
-        <translation>沒有原始連結到轉換後的特徵.</translation>
+        <translation>沒有原始連結到平移後的特徵.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="204"/>
         <source>Cannot transform invalid support shape</source>
-        <translation>無法轉換無效的支撐形狀</translation>
+        <translation>無法平移無效的支撐形狀</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="233"/>
         <source>Transformation failed</source>
-        <translation>轉換失敗</translation>
+        <translation>平移失敗</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="269"/>
         <source>Only additive and subtractive features can be transformed</source>
-        <translation>只有增加與除料特徵可以被轉換</translation>
+        <translation>只有增加與除料特徵可以被平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="261"/>
@@ -3991,12 +3991,12 @@ measured along the specified direction</source>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskPipeParameters.ui" line="51"/>
         <source>Corner Transition</source>
-        <translation>轉角轉換</translation>
+        <translation>轉角平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskPipeParameters.ui" line="65"/>
         <source>Transformed</source>
-        <translation>轉換</translation>
+        <translation>平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskPipeParameters.ui" line="70"/>
@@ -4085,7 +4085,7 @@ measured along the specified direction</source>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskPipeParameters.cpp" line="809"/>
         <source>Section transformation</source>
-        <translation>輪廓圖轉換</translation>
+        <translation>輪廓圖平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskPipeParameters.cpp" line="825"/>
@@ -4534,12 +4534,12 @@ click again to end selection</source>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="35"/>
         <source>Transform body</source>
-        <translation>轉換實體</translation>
+        <translation>平移實體</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="48"/>
         <source>Transform tool shapes</source>
-        <translation>轉換工具形狀</translation>
+        <translation>平移工具形狀</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="22"/>
@@ -4697,7 +4697,7 @@ click again to end selection</source>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/ViewProviderMultiTransform.h" line="38"/>
         <source>MultiTransform parameters</source>
-        <translation>多重轉換參數</translation>
+        <translation>多重平移參數</translation>
     </message>
 </context>
 <context>
@@ -5439,7 +5439,7 @@ This feature is broken and can&apos;t be edited.</source>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/ViewProviderMultiTransform.cpp" line="48"/>
         <source>Edit multi-transform</source>
-        <translation>編輯多重轉換</translation>
+        <translation>編輯多重平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/PartDesign/Gui/ViewProviderPad.cpp" line="48"/>

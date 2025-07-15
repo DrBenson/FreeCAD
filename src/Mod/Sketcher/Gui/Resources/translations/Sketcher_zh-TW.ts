@@ -2861,7 +2861,7 @@ This will clear the &apos;Support&apos; property, if any.</source>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2601"/>
         <source>Scale transform</source>
-        <translation>縮放轉換</translation>
+        <translation>縮放平移</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2602"/>
