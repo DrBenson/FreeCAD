@@ -1568,11 +1568,6 @@ Use property KeepToolDown to change this</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Tool/Bit.py" line="144"/>
-        <source>Shape for bit shape</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../Path/Tool/Bit.py" line="150"/>
         <source>The parametrized body representing the tool bit</source>
         <translation type="unfinished"></translation>
@@ -1601,6 +1596,11 @@ Use property KeepToolDown to change this</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/CAM/Path/Tool/toolbit/models/base.py" line="282"/>
         <source>Tool material</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Tool/Bit.py" line="144"/>
+        <source>Shape for bit shape</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2659,12 +2659,6 @@ with identical tool controllers and without coolant</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Main/Gui/Inspect.py" line="132"/>
-        <source>&lt;b&gt;Note&lt;/b&gt;: This dialog shows Path Commands in FreeCAD base units (mm/s).
- Values will be converted to the desired unit during post processing.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../Path/Main/Gui/Inspect.py" line="255"/>
         <source>Inspect toolPath Commands</source>
         <translation>檢查刀具路徑指令</translation>
@@ -2678,6 +2672,12 @@ with identical tool controllers and without coolant</source>
         <location filename="../../../Path/Main/Gui/Inspect.py" line="271"/>
         <location filename="../../../Path/Main/Gui/Inspect.py" line="276"/>
         <source>Please select exactly one path object</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/Inspect.py" line="132"/>
+        <source>&lt;b&gt;Note&lt;/b&gt;: This dialog shows Path Commands in FreeCAD base units (mm/s).
+ Values will be converted to the desired unit during post processing.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2730,8 +2730,18 @@ with identical tool controllers and without coolant</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="75"/>
-        <source>Don&apos;t Show This Anymore</source>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="69"/>
+        <source>The currently selected unit schema:
+     &apos;{}&apos; for this document
+ Does not use &apos;minutes&apos; for velocity values.
+
+CNC machines require feed rate to be expressed in
+unit/minute. To ensure correct G-code:
+Select a minute-based schema in preferences.
+For example:
+    &apos;Metric, Small Parts &amp; CNC&apos;
+    &apos;US Customary&apos;
+    &apos;Imperial Decimal&apos;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2754,21 +2764,6 @@ with identical tool controllers and without coolant</source>
         <location filename="../../../Path/Main/Gui/Job.py" line="1634"/>
         <source>Ok</source>
         <translation>確認</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Main/Gui/JobDlg.py" line="69"/>
-        <source>The currently selected unit schema:
-     &apos;{}&apos; for this document
- Does not use &apos;minutes&apos; for velocity values.
-
-CNC machines require feed rate to be expressed in
-unit/minute. To ensure correct G-code:
-Select a minute-based schema in preferences.
-For example:
-    &apos;Metric, Small Parts &amp; CNC&apos;
-    &apos;US Customary&apos;
-    &apos;Imperial Decimal&apos;</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../Path/Main/Gui/JobDlg.py" line="118"/>
@@ -2864,6 +2859,11 @@ For example:
     <message>
         <location filename="../../../Path/Main/Gui/Job.py" line="1654"/>
         <source>This job has no tool.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Main/Gui/JobDlg.py" line="75"/>
+        <source>Don&apos;t Show This Anymore</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4112,6 +4112,16 @@ For example:
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../Path/Tool/Gui/BitLibrary.py" line="783"/>
+        <source>Tool</source>
+        <translation>工具</translation>
+    </message>
+    <message>
+        <location filename="../../../Path/Tool/Gui/BitLibrary.py" line="784"/>
+        <source>Shape</source>
+        <translation>造型</translation>
+    </message>
+    <message>
         <location filename="../../../Path/Tool/Gui/BitLibrary.py" line="80"/>
         <source>Toolbit working directory not set up. Do that now?</source>
         <translation type="unfinished"></translation>
@@ -4144,16 +4154,6 @@ For example:
         <location filename="../../../Path/Tool/Gui/BitLibrary.py" line="856"/>
         <source>Save toolbit library</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Tool/Gui/BitLibrary.py" line="783"/>
-        <source>Tool</source>
-        <translation>工具</translation>
-    </message>
-    <message>
-        <location filename="../../../Path/Tool/Gui/BitLibrary.py" line="784"/>
-        <source>Shape</source>
-        <translation>造型</translation>
     </message>
     <message>
         <location filename="../../../Path/Tool/Gui/BitLibrary.py" line="852"/>
@@ -9187,6 +9187,16 @@ Aborting op creation</source>
 <context>
     <name>Workbench</name>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="53"/>
+        <source>CAM</source>
+        <translation>電腦輔助製造CAM</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="54"/>
+        <source>CAM workbench</source>
+        <translation>電腦輔助製造工作台</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="185"/>
         <source>Project Setup</source>
         <translation>專案設定</translation>
@@ -9243,16 +9253,6 @@ Aborting op creation</source>
         <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="248"/>
         <source>Utils</source>
         <translation>實用工具</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="53"/>
-        <source>CAM</source>
-        <translation>電腦輔助製造CAM</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/CAM/InitGui.py" line="54"/>
-        <source>CAM workbench</source>
-        <translation>電腦輔助製造工作台</translation>
     </message>
 </context>
 <context>

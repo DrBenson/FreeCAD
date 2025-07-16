@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -45,7 +45,7 @@
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/Manipulator.cpp" line="49"/>
         <source>Displays the start page</source>
-        <translation type="unfinished"></translation>
+        <translation>顯示開始頁面</translation>
     </message>
 </context>
 <context>
@@ -371,12 +371,13 @@ By using &quot;;;&quot; to separate paths, you can add several folders here.</so
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="47"/>
         <source>An optional custom folder to be displayed on the Start page.
 Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
-        <translation type="unfinished"></translation>
+        <translation>要顯示在起始頁上的可選自訂資料夾.
+多個資料夾透過使用 &quot;;;&quot; 來分隔路徑.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="64"/>
         <source>Shows example files on the start page</source>
-        <translation type="unfinished"></translation>
+        <translation>在起始頁顯示範例檔案</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="601"/>
@@ -386,7 +387,7 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="114"/>
         <source>The start page is closed automatically when FreeCAD launches</source>
-        <translation type="unfinished"></translation>
+        <translation>將在 FreeCAD 啟動時自動關閉起始頁</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="640"/>
@@ -456,12 +457,12 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="99"/>
         <source>Set your basic configuration options below.</source>
-        <translation type="unfinished"></translation>
+        <translation>請在下面設定基本參數設定選項.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="100"/>
         <source>These options (and many more) can be changed later in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>這些選項(以及更多選項)可以在稍後的&quot;偏好設定&quot;中更改.</translation>
     </message>
 </context>
 <context>
@@ -487,12 +488,12 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="193"/>
         <source>Empty File</source>
-        <translation type="unfinished"></translation>
+        <translation>空檔案</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="194"/>
         <source>Creates a new empty FreeCAD file</source>
-        <translation type="unfinished"></translation>
+        <translation>建立一個新的空白FreeCAD檔案</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="181"/>
@@ -502,17 +503,17 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="198"/>
         <source>Opens an existing CAD file or 3D model</source>
-        <translation type="unfinished"></translation>
+        <translation>打開現有 CAD 或 3D 模型檔案</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="201"/>
         <source>Parametric Body</source>
-        <translation type="unfinished"></translation>
+        <translation>參數零件主體</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="202"/>
         <source>Creates a body with the Part Design workbench</source>
-        <translation type="unfinished"></translation>
+        <translation>使用零件設計工作台建立一個零件主體</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="187"/>
@@ -522,7 +523,7 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="206"/>
         <source>Creates an assembly project</source>
-        <translation type="unfinished"></translation>
+        <translation>建立一個零件組合專案</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="190"/>
@@ -532,7 +533,7 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="210"/>
         <source>Creates a 2D draft document</source>
-        <translation type="unfinished"></translation>
+        <translation>使用建立2D底圖繪製</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="193"/>
@@ -542,32 +543,7 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="214"/>
         <source>Creates an architectural project</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="434"/>
-        <source>New File</source>
-        <translation>新增檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="435"/>
-        <source>Examples</source>
-        <translation>範例</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="436"/>
-        <source>Recent Files</source>
-        <translation>最近使用的檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="458"/>
-        <source>Open First Start Setup</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="460"/>
-        <source>Do not show this Start page again (start with blank screen)</source>
-        <translation type="unfinished"></translation>
+        <translation>建立一個建築專案</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="178"/>
@@ -610,6 +586,21 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
         <translation>建立一個建築專案</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="434"/>
+        <source>New File</source>
+        <translation>新增檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="435"/>
+        <source>Examples</source>
+        <translation>範例</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="436"/>
+        <source>Recent Files</source>
+        <translation>最近使用的檔案</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="440"/>
         <source>Don&apos;t show this Start page again (start with blank screen)</source>
         <translation>不要再次顯示此開始頁面 (使用空白頁面啟動)</translation>
@@ -633,6 +624,16 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="575"/>
         <source>Custom Folder</source>
         <translation>自訂資料夾</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="458"/>
+        <source>Open First Start Setup</source>
+        <translation>打開首次啟動設定頁面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="460"/>
+        <source>Do not show this Start page again (start with blank screen)</source>
+        <translation>不要再次顯示此開始頁面 (使用空白頁面啟動)</translation>
     </message>
 </context>
 <context>
