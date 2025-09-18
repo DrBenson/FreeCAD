@@ -1,0 +1,3856 @@
+--- .gitmodules	2025-09-18 13:55:31.130762777 +0800
++++ .gitmodules	2025-08-15 16:12:38.620776049 +0800
+@@ -1,6 +1,6 @@
+ [submodule "src/3rdParty/OndselSolver"]
+ 	path = src/3rdParty/OndselSolver
+-	url = https://github.com/Ondsel-Development/OndselSolver.git
++	url = https://github.com/FreeCAD/OndselSolver.git
+ [submodule "tests/lib"]
+ 	path = tests/lib
+ 	url = https://github.com/google/googletest
+--- src/Mod/Assembly/CommandCreateBom.py	2025-09-18 14:43:03.779350700 +0800
++++ src/Mod/Assembly/CommandCreateBom.py	2025-09-18 14:14:39.054957857 +0800
+@@ -66,17 +66,16 @@
+     def GetResources(self):
+         return {
+             "Pixmap": "Assembly_BillOfMaterials",
+-            "MenuText": QT_TRANSLATE_NOOP("Assembly_CreateBom", "Bill of Materials"),
+-            "Accel": "O",
++            "MenuText": QT_TRANSLATE_NOOP("Assembly_CreateBom", "Create Bill of Materials")+"\t&O",
+             "ToolTip": "<p>"
+             + QT_TRANSLATE_NOOP(
+                 "Assembly_CreateBom",
+-                "Creates a bill of materials of the current assembly. If an assembly is active, it will be a BOM of this assembly. Else it will be a BOM of the whole document.",
++                "Create a bill of materials of the current assembly. If an assembly is active, it will be a BOM of this assembly. Else it will be a BOM of the whole document.",
+             )
+             + "</p><p>"
+             + QT_TRANSLATE_NOOP(
+                 "Assembly_CreateBom",
+-                "The BOM object is a document object that stores the settings of your BOM. It is also a spreadsheet object so you can easily visualize the BOM. If you do not need the BOM object to be saved as a document object, you can simply export and cancel the task.",
++                "The BOM object is a document object that stores the settings of your BOM. It is also a spreadsheet object so you can easily visualize the BOM. If you don't need the BOM object to be saved as a document object, you can simply export and cancel the task.",
+             )
+             + "</p><p>"
+             + QT_TRANSLATE_NOOP(
+@@ -333,7 +332,6 @@
+                 "assembly = UtilsAssembly.activeAssembly()\n"
+                 "bom_group = UtilsAssembly.getBomGroup(assembly)\n"
+                 'bomObj = bom_group.newObject("Assembly::BomObject", "Bill of Materials")'
+-            )
+         else:
+             commands = 'bomObj = App.activeDocument().addObject("Assembly::BomObject", "Bill of Materials")'
+         Gui.doCommand(commands)
+--- src/Mod/Assembly/InitGui.py	2025-09-13 10:12:34.832084182 +0800
++++ src/Mod/Assembly/InitGui.py	2025-08-05 10:49:19.969710137 +0800
+@@ -22,7 +22,11 @@
+ # **************************************************************************/
+ 
+ import Assembly_rc
++import AssemblyGui
+ 
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class AssemblyCommandGroup:
+     def __init__(self, cmdlist, menu, tooltip=None):
+@@ -52,8 +56,8 @@
+         self.__class__.Icon = (
+             FreeCAD.getResourceDir() + "Mod/Assembly/Resources/icons/AssemblyWorkbench.svg"
+         )
+-        self.__class__.MenuText = "Assembly"
+-        self.__class__.ToolTip = "Assembly workbench"
++        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Assembly")
++        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Assembly workbench")
+ 
+     def Initialize(self):
+         global AssemblyCommandGroup
+--- src/Mod/BIM/InitGui.py	2025-09-13 10:12:34.875085869 +0800
++++ src/Mod/BIM/InitGui.py	2025-09-18 14:16:58.932463766 +0800
+@@ -29,6 +29,9 @@
+ import FreeCAD
+ import FreeCADGui
+ import Arch_rc
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class BIMWorkbench(Workbench):
+ 
+@@ -38,8 +41,8 @@
+             return text
+ 
+         bdir = os.path.join(FreeCAD.getResourceDir(), "Mod", "BIM")
+-        tt = QT_TRANSLATE_NOOP("BIM","The BIM workbench is used to model buildings")
+-        self.__class__.MenuText = QT_TRANSLATE_NOOP("BIM", "BIM")
++        tt = FreeCAD.Qt.translate("BIM","The BIM workbench is used to model buildings")
++        self.__class__.MenuText = FreeCAD.Qt.translate("BIM", "BIM")
+         self.__class__.ToolTip =  tt
+         self.__class__.Icon = os.path.join(bdir,"Resources", "icons",
+                                                 "BIMWorkbench.svg")
+@@ -265,7 +268,7 @@
+             def GetCommands(self):
+                 return self.tools
+             def GetResources(self):
+-                t = QT_TRANSLATE_NOOP("BIM_GenericTools", "Generic 3D Tools")
++                t = FreeCAD.Qt.translate("BIM_GenericTools", "Generic 3D tools")
+                 return { "MenuText": t, "ToolTip": t, "Icon": "BIM_Box"}
+             def IsActive(self):
+                 v = hasattr(FreeCADGui.getMainWindow().getActiveWindow(), "getSceneGraph")
+@@ -280,7 +283,7 @@
+             def GetCommands(self):
+                 return self.tools
+             def GetResources(self):
+-                t = QT_TRANSLATE_NOOP("BIM_Create2DViews", "Create 2D Views")
++                t = FreeCAD.Qt.translate("BIM_Create2DViews", "Create 2D views")
+                 return { "MenuText": t, "ToolTip": t, "Icon": "BIM_DrawingView"}
+             def IsActive(self):
+                 v = hasattr(FreeCADGui.getMainWindow().getActiveWindow(), "getSceneGraph")
+@@ -303,10 +306,10 @@
+ 
+                 def GetResources(self):
+                     return {
+-                        "MenuText": QT_TRANSLATE_NOOP(
+-                            "Arch_RebarTools", "Reinforcement Tools"
++                        "MenuText": FreeCAD.Qt.translate(
++                            "Arch_RebarTools", "Reinforcement tools"
+                         ),
+-                        "ToolTip": QT_TRANSLATE_NOOP(
++                        "ToolTip": FreeCAD.Qt.translate(
+                             "Arch_RebarTools", "Reinforcement tools"
+                         ),
+                         "Icon": "Arch_Rebar",
+@@ -319,7 +322,7 @@
+             FreeCADGui.addCommand("Arch_RebarTools", RebarGroupCommand())
+             self.bimtools[self.bimtools.index("Arch_Rebar")] = "Arch_RebarTools"
+             RebarTools.load_translations()
+-            Log("Load Reinforcement Module… done\n")
++            Log("Load Reinforcement Module...done\n")
+             if hasattr(RebarTools, "updateLocale"):
+                 RebarTools.updateLocale()
+             #self.rebar = RebarTools.RebarCommands + ["Arch_Rebar"]
+@@ -412,15 +415,15 @@
+ 
+         # create toolbars
+ 
+-        t1 = QT_TRANSLATE_NOOP("Workbench", "Drafting Tools")
+-        t2 = QT_TRANSLATE_NOOP("Workbench", "Draft Snap")
+-        t3 = QT_TRANSLATE_NOOP("Workbench", "3D/BIM Tools")
+-        t4 = QT_TRANSLATE_NOOP("Workbench", "Annotation Tools")
+-        t5 = QT_TRANSLATE_NOOP("Workbench", "2D Tools")
+-        t6 = QT_TRANSLATE_NOOP("Workbench", "Manage Tools")
+-        t7 = QT_TRANSLATE_NOOP("Workbench", "General Tools")
+-        t8 = QT_TRANSLATE_NOOP("Workbench", "Object Tools")
+-        t9 = QT_TRANSLATE_NOOP("Workbench", "3D Tools")
++        t1 = FreeCAD.Qt.translate("Workbench", "Drafting tools")
++        t2 = FreeCAD.Qt.translate("Workbench", "Draft snap")
++        t3 = FreeCAD.Qt.translate("Workbench", "3D/BIM tools")
++        t4 = FreeCAD.Qt.translate("Workbench", "Annotation tools")
++        t5 = FreeCAD.Qt.translate("Workbench", "2D modification tools")
++        t6 = FreeCAD.Qt.translate("Workbench", "Manage tools")
++        t7 = FreeCAD.Qt.translate("Workbench", "General modification tools")
++        t8 = FreeCAD.Qt.translate("Workbench", "Object modification tools")
++        t9 = FreeCAD.Qt.translate("Workbench", "3D modification tools")
+         self.appendToolbar(t1, self.draftingtools)
+         self.appendToolbar(t2, self.snapbar)
+         self.appendToolbar(t3, self.bimtools)
+@@ -433,18 +436,18 @@
+ 
+         # create menus
+ 
+-        t1 =  QT_TRANSLATE_NOOP("Workbench", "&2D Drafting")
+-        t2 =  QT_TRANSLATE_NOOP("Workbench", "&3D/BIM")
+-        t3 =  QT_TRANSLATE_NOOP("Workbench", "Reinforcement Tools")
+-        t4 =  QT_TRANSLATE_NOOP("Workbench", "&Annotation")
+-        t5 =  QT_TRANSLATE_NOOP("Workbench", "&Snapping")
+-        t6 =  QT_TRANSLATE_NOOP("Workbench", "&Modify")
+-        t7 =  QT_TRANSLATE_NOOP("Workbench", "&Manage")
+-        #t8 =  QT_TRANSLATE_NOOP("Workbench", "&IFC")
+-        t9 =  QT_TRANSLATE_NOOP("Workbench", "&Flamingo")
+-        t10 = QT_TRANSLATE_NOOP("Workbench", "&Fasteners")
+-        t11 = QT_TRANSLATE_NOOP("Workbench", "&Utils")
+-        t12 = QT_TRANSLATE_NOOP("Workbench", "Nudge")
++        t1 =  FreeCAD.Qt.translate("Workbench", "&2D Drafting")
++        t2 =  FreeCAD.Qt.translate("Workbench", "&3D/BIM")
++        t3 =  FreeCAD.Qt.translate("Workbench", "Reinforcement tools")
++        t4 =  FreeCAD.Qt.translate("Workbench", "&Annotation")
++        t5 =  FreeCAD.Qt.translate("Workbench", "&Snapping")
++        t6 =  FreeCAD.Qt.translate("Workbench", "&Modify")
++        t7 =  FreeCAD.Qt.translate("Workbench", "&Manage")
++        #t8 =  FreeCAD.Qt.translate("Workbench", "&IFC")
++        t9 =  FreeCAD.Qt.translate("Workbench", "&Flamingo")
++        t10 = FreeCAD.Qt.translate("Workbench", "&Fasteners")
++        t11 = FreeCAD.Qt.translate("Workbench", "&Utils")
++        t12 = FreeCAD.Qt.translate("Workbench", "Nudge")
+ 
+         #self.bimtools_menu = list(self.bimtools)
+         #if "Arch_RebarTools" in self.bimtools_menu:
+@@ -473,8 +476,9 @@
+         def QT_TRANSLATE_NOOP(context, text):
+             return text
+ 
++        # t1 = FreeCAD.Qt.translate("QObject", "BIM")
+         t1 = QT_TRANSLATE_NOOP("QObject", "BIM")
+-        t2 = QT_TRANSLATE_NOOP("QObject", "Draft")
++        t2 = FreeCAD.Qt.translate("QObject", "Draft")
+         FreeCADGui.addPreferencePage(":/ui/preferences-arch.ui", t1)
+         FreeCADGui.addPreferencePage(":/ui/preferences-archdefaults.ui", t1)
+         FreeCADGui.addPreferencePage(":/ui/preferencesNativeIFC.ui", t1)
+@@ -702,6 +706,7 @@
+ 
+ def QT_TRANSLATE_NOOP(context, text):
+     return text
++#t = "Import-Export"
+ t = QT_TRANSLATE_NOOP("QObject", "Import-Export")
+ FreeCADGui.addPreferencePage(":/ui/preferences-ifc.ui", t)
+ FreeCADGui.addPreferencePage(":/ui/preferences-ifc-export.ui", t)
+--- src/Mod/CAM/Gui/Resources/Path.qrc	2025-09-18 14:43:04.179366509 +0800
++++ src/Mod/CAM/Gui/Resources/Path.qrc	2025-09-18 14:18:35.366263867 +0800
+@@ -153,5 +153,6 @@
+         <file>preferences/Advanced.ui</file>
+         <file>preferences/PathDressupHoldingTags.ui</file>
+         <file>preferences/PathJob.ui</file>
++        <file>translations/CAM_zh-TW.ts</file>
+     </qresource>
+ </RCC>
+--- src/Mod/CAM/Path/Base/Gui/PreferencesAdvanced.py	2025-09-13 10:12:35.843123849 +0800
++++ src/Mod/CAM/Path/Base/Gui/PreferencesAdvanced.py	2025-07-04 08:40:39.857068364 +0800
+@@ -22,6 +22,7 @@
+ 
+ import FreeCADGui
+ import Path
++import PathGui
+ 
+ if False:
+     Path.Log.setLevel(Path.Log.Level.DEBUG, Path.Log.thisModule())
+--- src/Mod/CAM/Path/Tool/assets/ui/preferences.py	2025-09-18 11:37:35.609319455 +0800
++++ src/Mod/CAM/Path/Tool/assets/ui/preferences.py	2025-09-18 14:39:06.377968020 +0800
+@@ -25,6 +25,7 @@
+ import FreeCAD
+ import Path
+ from PySide import QtGui, QtCore
++import PathGui
+ 
+ translate = FreeCAD.Qt.translate
+ 
+--- src/Mod/CAM/Path/Main/Gui/PreferencesJob.py	2025-09-18 11:37:35.604319258 +0800
++++ src/Mod/CAM/Path/Main/Gui/PreferencesJob.py	2025-09-18 14:42:09.804217471 +0800
+@@ -22,6 +22,7 @@
+ 
+ import FreeCAD
+ import Path
++import PathGui
+ import Path.Main.Stock as PathStock
+ from Path.Post.Processor import PostProcessor, PostProcessorFactory
+ import json
+@@ -45,6 +46,7 @@
+         self.processor = {}
+ 
+     def saveSettings(self):
++        filePath = self.form.leDefaultFilePath.text()
+         jobTemplate = self.form.leDefaultJobTemplate.text()
+         geometryTolerance = Units.Quantity(self.form.geometryTolerance.text())
+         curveAccuracy = Units.Quantity(self.form.curveAccuracy.text())
+@@ -145,6 +147,7 @@
+         )
+ 
+     def loadSettings(self):
++        self.form.leDefaultFilePath.setText(Path.Preferences.defaultFilePath())
+         self.form.leDefaultJobTemplate.setText(Path.Preferences.defaultJobTemplate())
+ 
+         blacklist = Path.Preferences.postProcessorBlacklist()
+@@ -173,6 +176,7 @@
+         self.form.leOutputFile.setText(Path.Preferences.defaultOutputFile())
+         self.selectComboEntry(self.form.cboOutputPolicy, Path.Preferences.defaultOutputPolicy())
+ 
++        self.form.tbDefaultFilePath.clicked.connect(self.browseDefaultFilePath)
+         self.form.tbDefaultJobTemplate.clicked.connect(self.browseDefaultJobTemplate)
+         self.form.postProcessorList.itemEntered.connect(self.setProcessorListTooltip)
+         self.form.postProcessorList.itemChanged.connect(self.verifyAndUpdateDefaultPostProcessor)
+@@ -308,13 +312,14 @@
+             self.form.defaultPostProcessorArgs.setToolTip(self.postProcessorArgsDefaultTooltip)
+ 
+     def bestGuessForFilePath(self):
+-
++#        path = self.form.leDefaultFilePath.text()
+         path = Path.Preferences.defaultFilePath()
+         if not path:
+             path = Path.Preferences.filePath()
+         return path
+ 
+     def browseDefaultJobTemplate(self):
++#        path = Path.Preferences.defaultFilePath()
+         path = self.form.leDefaultJobTemplate.text()
+         if not path:
+             path = self.bestGuessForFilePath()
+@@ -324,6 +329,14 @@
+         if foo:
+             self.form.leDefaultJobTemplate.setText(foo)
+ 
++    def browseDefaultFilePath(self):
++        path = self.bestGuessForFilePath()
++        foo = QtGui.QFileDialog.getExistingDirectory(
++            QtGui.QApplication.activeWindow(), "Path - External File Directory", path
++        )
++        if foo:
++            self.form.leDefaultFilePath.setText(foo)
++
+     def browseOutputFile(self):
+         path = self.form.leOutputFile.text()
+         foo = QtGui.QFileDialog.getExistingDirectory(
+--- src/Mod/CAM/InitGui.py	2025-09-18 11:37:35.602319179 +0800
++++ src/Mod/CAM/InitGui.py	2025-09-18 14:28:31.321847629 +0800
+@@ -22,19 +22,52 @@
+ # *                                                                         *
+ # ***************************************************************************
+ import FreeCAD
+-
++from PySide.QtCore import QT_TRANSLATE_NOOP
++import Path.Dressup.Gui.Preferences as PathPreferencesPathDressup
++import Path.Tool.assets.ui.preferences as AssetPreferences
++import Path.Main.Gui.PreferencesJob as PathPreferencesPathJob
++import Path.Base.Gui.PreferencesAdvanced as PathPreferencesAdvanced
++import Path.Op.Base
++import Path.Tool
++
++import PathGui
++import FreeCADGui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ FreeCAD.__unit_test__ += ["TestCAMGui"]
+ 
+ 
++if FreeCAD.GuiUp:
++    import FreeCADGui
++
++    FreeCADGui.addPreferencePage(
++        PathPreferencesPathJob.JobPreferencesPage,
++        QT_TRANSLATE_NOOP("QObject", "CAM"),
++    )
++    FreeCADGui.addPreferencePage(
++        AssetPreferences.AssetPreferencesPage,
++        QT_TRANSLATE_NOOP("QObject", "CAM"),
++    )
++    FreeCADGui.addPreferencePage(
++        PathPreferencesPathDressup.DressupPreferencesPage,
++        QT_TRANSLATE_NOOP("QObject", "CAM"),
++    )
++    FreeCADGui.addPreferencePage(
++        PathPreferencesAdvanced.AdvancedPreferencesPage,
++        QT_TRANSLATE_NOOP("QObject", "CAM"),
++    )
++
++
+ class PathCommandGroup:
+     def __init__(self, cmdlist, menu, tooltip=None):
+         self.cmdlist = cmdlist
+         self.menu = menu
+         if tooltip is None:
+-            self.tooltip = menu
++            self.tooltip = FreeCAD.Qt.translate("Workbench", menu)
+         else:
+-            self.tooltip = tooltip
++            self.tooltip = FreeCAD.Qt.translate("Workbench", tooltip)
+ 
+     def GetCommands(self):
+         return tuple(self.cmdlist)
+@@ -55,8 +88,8 @@
+ 
+     def __init__(self):
+         self.__class__.Icon = FreeCAD.getResourceDir() + "Mod/CAM/Resources/icons/CAMWorkbench.svg"
+-        self.__class__.MenuText = "CAM"
+-        self.__class__.ToolTip = "CAM workbench"
++        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench","CAM")
++        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench","CAM workbench")
+ 
+     def Initialize(self):
+         global PathCommandGroup
+@@ -83,6 +116,10 @@
+         from Path.Tool.toolbit.ui import cmd as PathToolBitCmd
+         from Path.Tool.library.ui import cmd as PathToolBitLibraryCmd
+ 
++        from Path.Tool.camassets import cam_assets
++
++        cam_assets.setup()
++
+         from PySide.QtCore import QT_TRANSLATE_NOOP
+ 
+         import PathCommands
+@@ -154,7 +191,7 @@
+             "CAM_EngraveTools",
+             PathCommandGroup(
+                 engravecmdlist,
+-                QT_TRANSLATE_NOOP("CAM_EngraveTools", "Engraving Operations"),
++                FreeCAD.Qt.translate("CAM_EngraveTools", "Engraving Operations"),
+             ),
+         )
+         drillingcmdgroup = ["CAM_DrillingTools"]
+@@ -162,7 +199,7 @@
+             "CAM_DrillingTools",
+             PathCommandGroup(
+                 drillingcmdlist,
+-                QT_TRANSLATE_NOOP("CAM_DrillingTools", "Drilling Operations"),
++                FreeCAD.Qt.translate("CAM_DrillingTools", "Drilling Operations"),
+             ),
+         )
+         dressupcmdgroup = ["CAM_DressupTools"]
+@@ -170,7 +207,7 @@
+             "CAM_DressupTools",
+             PathCommandGroup(
+                 dressupcmdlist,
+-                QT_TRANSLATE_NOOP("CAM_DressupTools", "Dressup Operations"),
++                FreeCAD.Qt.translate("CAM_DressupTools", "Dressup Operations"),
+             ),
+         )
+         threedcmdgroup = threedopcmdlist
+@@ -212,27 +249,27 @@
+                     "CAM_3dTools",
+                     PathCommandGroup(
+                         threedopcmdlist,
+-                        QT_TRANSLATE_NOOP("CAM_3dTools", "3D Operations"),
++                        FreeCAD.Qt.translate("CAM_3dTools", "3D Operations"),
+                     ),
+                 )
+             except ImportError:
+                 if not Path.Preferences.suppressOpenCamLibWarning():
+                     FreeCAD.Console.PrintError("OpenCamLib is not working!\n")
+ 
+-        self.appendToolbar(QT_TRANSLATE_NOOP("Workbench", "Project Setup"), projcmdlist)
+-        self.appendToolbar(QT_TRANSLATE_NOOP("Workbench", "Tool Commands"), toolcmdlist)
++        self.appendToolbar(FreeCAD.Qt.translate("Workbench", "Project Setup"), projcmdlist)
++        self.appendToolbar(FreeCAD.Qt.translate("Workbench", "Tool Commands"), toolcmdlist)
+         self.appendToolbar(
+-            QT_TRANSLATE_NOOP("Workbench", "New Operations"),
++            FreeCAD.Qt.translate("Workbench", "New Operations"),
+             twodopcmdlist + drillingcmdgroup + engravecmdgroup + threedcmdgroup,
+         )
+         self.appendToolbar(
+-            QT_TRANSLATE_NOOP("Workbench", "Path Modification"), modcmdlist + dressupcmdgroup
++            FreeCAD.Qt.translate("Workbench", "Path Modification"), modcmdlist + dressupcmdgroup
+         )
+         if extracmdlist:
+-            self.appendToolbar(QT_TRANSLATE_NOOP("Workbench", "Helpful Tools"), extracmdlist)
++            self.appendToolbar(FreeCAD.Qt.translate("Workbench", "Helpful Tools"), extracmdlist)
+ 
+         self.appendMenu(
+-            [QT_TRANSLATE_NOOP("Workbench", "&CAM")],
++            [FreeCAD.Qt.translate("Workbench", "&CAM")],
+             projcmdlist
+             + ["CAM_ExportTemplate", "Separator"]
+             + toolcmdlist
+@@ -247,41 +284,41 @@
+         )
+         self.appendMenu(
+             [
+-                QT_TRANSLATE_NOOP("Workbench", "&CAM"),
+-                QT_TRANSLATE_NOOP("Workbench", "Path Dressup"),
++                FreeCAD.Qt.translate("Workbench", "&CAM"),
++                FreeCAD.Qt.translate("Workbench", "Path Dressup"),
+             ],
+             dressupcmdlist,
+         )
+         self.appendMenu(
+             [
+-                QT_TRANSLATE_NOOP("Workbench", "&CAM"),
+-                QT_TRANSLATE_NOOP("Workbench", "Supplemental Commands"),
++                FreeCAD.Qt.translate("Workbench", "&CAM"),
++                FreeCAD.Qt.translate("Workbench", "Supplemental Commands"),
+             ],
+             prepcmdlist,
+         )
+         self.appendMenu(
+             [
+-                QT_TRANSLATE_NOOP("Workbench", "&CAM"),
+-                QT_TRANSLATE_NOOP("Workbench", "Path Modification"),
++                FreeCAD.Qt.translate("Workbench", "&CAM"),
++                FreeCAD.Qt.translate("Workbench", "Path Modification"),
+             ],
+             modcmdlist,
+         )
+         if specialcmdlist:
+             self.appendMenu(
+                 [
+-                    QT_TRANSLATE_NOOP("Workbench", "&CAM"),
+-                    QT_TRANSLATE_NOOP("Workbench", "Specialty Operations"),
++                    FreeCAD.Qt.translate("Workbench", "&CAM"),
++                    FreeCAD.Qt.translate("Workbench", "Specialty Operations"),
+                 ],
+                 specialcmdlist,
+             )
+         if extracmdlist:
+-            self.appendMenu([QT_TRANSLATE_NOOP("Workbench", "&CAM")], extracmdlist)
++            self.appendMenu([FreeCAD.Qt.translate("Workbench", "&CAM")], extracmdlist)
+ 
+-        self.appendMenu([QT_TRANSLATE_NOOP("Workbench", "&CAM")], ["Separator"])
++        self.appendMenu([FreeCAD.Qt.translate("Workbench", "&CAM")], ["Separator"])
+         self.appendMenu(
+             [
+-                QT_TRANSLATE_NOOP("Workbench", "&CAM"),
+-                QT_TRANSLATE_NOOP("Workbench", "Utils"),
++                FreeCAD.Qt.translate("Workbench", "&CAM"),
++                FreeCAD.Qt.translate("Workbench", "Utils"),
+             ],
+             ["CAM_PropertyBag"],
+         )
+--- src/Mod/Cloud/InitGui.py	2025-09-18 11:37:07.641218759 +0800
++++ src/Mod/Cloud/InitGui.py	2025-04-11 15:34:57.161697892 +0800
+@@ -2,6 +2,10 @@
+ # (c) 2001 Juergen Riegel LGPL
+ # (c) 2019 Jean-Marie Verdun LGPL
+ 
++import CloudGui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class CloudWorkbench(Workbench):
+     "Cloud workbench object"
+@@ -11,8 +15,8 @@
+             FreeCAD.getResourceDir() + "Mod/Cloud/Resources/icons/CloudWorkbench.svg"
+         )
+ 
+-    MenuText = "Cloud"
+-    ToolTip = "Cloud workbench"
++    MenuText = FreeCAD.Qt.translate("Workbench", "Cloud")
++    ToolTip = FreeCAD.Qt.translate("Workbench", "Cloud workbench")
+ 
+     def Initialize(self):
+         # load the module
+--- src/Mod/Cloud/App/AppCloud.cpp	2025-09-18 11:37:07.641218759 +0800
++++ src/Mod/Cloud/App/AppCloud.cpp	2025-07-02 15:34:59.357946109 +0800
+@@ -1451,7 +1451,7 @@
+     string newName;
+     Document* currentDoc = GetApplication().getActiveDocument();
+     newName = GetApplication().getUniqueDocumentName("unnamed");
+-    newDoc = GetApplication().newDocument(newName.c_str(), (const char*)path.c_str(), true);
++    newDoc = GetApplication().newDocument(newName.c_str(), (const char*)path.c_str());  //, true);
+     GetApplication().setActiveDocument(newDoc);
+     this->cloudRestore((const char*)path.c_str());
+     GetApplication().setActiveDocument(currentDoc);
+--- src/Mod/Draft/InitGui.py	2025-09-13 10:12:36.041131618 +0800
++++ src/Mod/Draft/InitGui.py	2025-09-18 13:50:29.990900074 +0800
+@@ -29,6 +29,10 @@
+ __author__ = "Yorik van Havre <yorik@uncreated.net>"
+ __url__ = "https://www.freecad.org"
+ 
++import Draft_rc
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class DraftWorkbench(FreeCADGui.Workbench):
+     """The Draft Workbench definition."""
+@@ -42,8 +46,8 @@
+         self.__class__.Icon = os.path.join(__dirname__,
+                                            "Resources", "icons",
+                                            "DraftWorkbench.svg")
+-        self.__class__.MenuText = QT_TRANSLATE_NOOP("draft", "Draft")
+-        self.__class__.ToolTip = QT_TRANSLATE_NOOP("draft", _tooltip)
++        self.__class__.MenuText = FreeCAD.Qt.translate("draft", "Draft")
++        self.__class__.ToolTip = FreeCAD.Qt.translate("draft", _tooltip)
+ 
+     def Initialize(self):
+         """When the workbench is first loaded."""
+@@ -100,33 +104,33 @@
+ 
+         # Set up toolbars
+         it.init_toolbar(self,
+-                        QT_TRANSLATE_NOOP("Workbench", "Draft Creation"),
++                        FreeCAD.Qt.translate("Workbench", "Draft creation tools"),
+                         self.drawing_commands)
+         it.init_toolbar(self,
+-                        QT_TRANSLATE_NOOP("Workbench", "Draft Annotation"),
++                        FreeCAD.Qt.translate("Workbench", "Draft annotation tools"),
+                         self.annotation_commands)
+         it.init_toolbar(self,
+-                        QT_TRANSLATE_NOOP("Workbench", "Draft Modification"),
++                        FreeCAD.Qt.translate("Workbench", "Draft modification tools"),
+                         self.modification_commands)
+         it.init_toolbar(self,
+-                        QT_TRANSLATE_NOOP("Workbench", "Draft Utility"),
++                        FreeCAD.Qt.translate("Workbench", "Draft utility tools"),
+                         self.utility_commands_toolbar)
+         it.init_toolbar(self,
+-                        QT_TRANSLATE_NOOP("Workbench", "Draft Snap"),
++                        FreeCAD.Qt.translate("Workbench", "Draft snap"),
+                         it.get_draft_snap_commands())
+ 
+         # Set up menus
+         it.init_menu(self,
+-                     [QT_TRANSLATE_NOOP("Workbench", "&Drafting")],
++                     [FreeCAD.Qt.translate("Workbench", "&Drafting")],
+                      self.drawing_commands)
+         it.init_menu(self,
+-                     [QT_TRANSLATE_NOOP("Workbench", "&Annotation")],
++                     [FreeCAD.Qt.translate("Workbench", "&Annotation")],
+                      self.annotation_commands)
+         it.init_menu(self,
+-                     [QT_TRANSLATE_NOOP("Workbench", "&Modification")],
++                     [FreeCAD.Qt.translate("Workbench", "&Modification")],
+                      self.modification_commands)
+         it.init_menu(self,
+-                     [QT_TRANSLATE_NOOP("Workbench", "&Utilities")],
++                     [FreeCAD.Qt.translate("Workbench", "&Utilities")],
+                      self.utility_commands_menu)
+ 
+         # Set up preferences pages
+@@ -134,11 +138,11 @@
+             if not hasattr(FreeCADGui.draftToolBar, "loadedPreferences"):
+                 from draftutils import params
+                 params._param_observer_start()
+-                FreeCADGui.addPreferencePage(":/ui/preferences-draft.ui", QT_TRANSLATE_NOOP("QObject", "Draft"))
+-                FreeCADGui.addPreferencePage(":/ui/preferences-draftinterface.ui", QT_TRANSLATE_NOOP("QObject", "Draft"))
+-                FreeCADGui.addPreferencePage(":/ui/preferences-draftsnap.ui", QT_TRANSLATE_NOOP("QObject", "Draft"))
+-                FreeCADGui.addPreferencePage(":/ui/preferences-draftvisual.ui", QT_TRANSLATE_NOOP("QObject", "Draft"))
+-                FreeCADGui.addPreferencePage(":/ui/preferences-drafttexts.ui", QT_TRANSLATE_NOOP("QObject", "Draft"))
++                FreeCADGui.addPreferencePage(":/ui/preferences-draft.ui",  "Draft")
++                FreeCADGui.addPreferencePage(":/ui/preferences-draftinterface.ui",  "Draft")
++                FreeCADGui.addPreferencePage(":/ui/preferences-draftsnap.ui",  "Draft")
++                FreeCADGui.addPreferencePage(":/ui/preferences-draftvisual.ui",  "Draft")
++                FreeCADGui.addPreferencePage(":/ui/preferences-drafttexts.ui",  "Draft")
+                 FreeCADGui.draftToolBar.loadedPreferences = True
+ 
+         FreeCADGui.getMainWindow().mainWindowClosed.connect(self.Deactivated)
+@@ -157,6 +161,8 @@
+         WorkingPlane._view_observer_start()  # Updates the draftToolBar when switching views.
+         from draftutils import grid_observer
+         grid_observer._view_observer_setup()
++#        from draftutils import doc_observer
++#        doc_observer._doc_observer_start()
+         FreeCAD.Console.PrintLog("Draft workbench activated.\n")
+ 
+     def Deactivated(self):
+@@ -171,6 +177,8 @@
+         WorkingPlane._view_observer_stop()
+         from draftutils import grid_observer
+         grid_observer._view_observer_setup()
++#        from draftutils import doc_observer
++#        doc_observer._doc_observer_stop()
+         FreeCAD.Console.PrintLog("Draft workbench deactivated.\n")
+ 
+     def ContextMenu(self, recipient):
+@@ -202,9 +210,9 @@
+ # are independent of the loading of the workbench and can be loaded at startup
+ import Draft_rc
+ from PySide.QtCore import QT_TRANSLATE_NOOP
+-FreeCADGui.addPreferencePage(":/ui/preferences-dxf.ui", QT_TRANSLATE_NOOP("QObject", "Import-Export"))
+-FreeCADGui.addPreferencePage(":/ui/preferences-dwg.ui", QT_TRANSLATE_NOOP("QObject", "Import-Export"))
+-FreeCADGui.addPreferencePage(":/ui/preferences-svg.ui", QT_TRANSLATE_NOOP("QObject", "Import-Export"))
+-FreeCADGui.addPreferencePage(":/ui/preferences-oca.ui", QT_TRANSLATE_NOOP("QObject", "Import-Export"))
++FreeCADGui.addPreferencePage(":/ui/preferences-dxf.ui", "Import-Export")
++FreeCADGui.addPreferencePage(":/ui/preferences-dwg.ui", "Import-Export")
++FreeCADGui.addPreferencePage(":/ui/preferences-svg.ui", "Import-Export")
++FreeCADGui.addPreferencePage(":/ui/preferences-oca.ui", "Import-Export")
+ 
+ FreeCAD.__unit_test__ += ["TestDraftGui"]
+--- src/Mod/Draft/CMakeLists.txt	2025-09-13 10:12:36.031131225 +0800
++++ src/Mod/Draft/CMakeLists.txt	2025-08-05 11:03:56.020699815 +0800
+@@ -1,6 +1,11 @@
+ add_subdirectory(App)
+ 
+ IF (BUILD_GUI)
++    set (Draft_TR_QRC ${CMAKE_CURRENT_BINARY_DIR}/Resources/Draft_translation.qrc)
++    qt_find_and_add_translation(QM_SRCS "Resources/translations/*_*.ts"
++        ${CMAKE_CURRENT_BINARY_DIR}/Resources/translations)
++    qt_create_resource_file(${Draft_TR_QRC} ${QM_SRCS})
++    qt_add_resources(Draft_QRC_SRCS Resources/Draft.qrc ${Draft_TR_QRC})
+     PYSIDE_WRAP_RC(Draft_QRC_SRCS Resources/Draft.qrc)
+ ENDIF (BUILD_GUI)
+ 
+--- src/Mod/Fem/InitGui.py	2025-09-13 10:12:36.954167440 +0800
++++ src/Mod/Fem/InitGui.py	2025-09-18 13:51:49.025013439 +0800
+@@ -48,7 +48,11 @@
+ 
+ # needed imports
+ from femguiutils.migrate_gui import FemMigrateGui
+-
++import FemGui
++ 
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ # migrate old FEM Gui objects
+ sys.meta_path.append(FemMigrateGui())
+@@ -63,8 +67,8 @@
+ 
+     def __init__(self):
+         self.__class__.Icon = FreeCAD.getResourceDir() + "Mod/Fem/Resources/icons/FemWorkbench.svg"
+-        self.__class__.MenuText = "FEM"
+-        self.__class__.ToolTip = "FEM workbench"
++        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "FEM")
++        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "FEM workbench")
+ 
+     def Initialize(self):
+         # load the module
+--- src/Mod/Import/Gui/Resources/Import.qrc	2025-09-18 14:43:04.502379275 +0800
++++ src/Mod/Import/Gui/Resources/Import.qrc	2025-05-14 14:32:38.852451602 +0800
+@@ -0,0 +1,4 @@
++<RCC>
++    <qresource>
++    </qresource>
++</RCC>
+--- src/Mod/Inspection/InitGui.py	2025-09-18 11:37:07.678220215 +0800
++++ src/Mod/Inspection/InitGui.py	2025-05-14 08:43:30.838598151 +0800
+@@ -26,7 +26,10 @@
+ # Gathering all the information to start FreeCAD
+ # This is the second one of three init scripts, the third one
+ # runs when the gui is up
+-
++import InspectionGui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class InspectionWorkbench(Workbench):
+     "Inspection workbench object"
+@@ -35,8 +38,8 @@
+         self.__class__.Icon = (
+             FreeCAD.getResourceDir() + "Mod/Inspection/Resources/icons/InspectionWorkbench.svg"
+         )
+-        self.__class__.MenuText = "Inspection"
+-        self.__class__.ToolTip = "Inspection workbench"
++        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Inspection")
++        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Inspection workbench")
+ 
+     def Initialize(self):
+         # load the module
+--- src/Mod/Material/InitGui.py	2025-09-13 10:12:38.001208520 +0800
++++ src/Mod/Material/InitGui.py	2025-04-11 10:51:42.687967988 +0800
+@@ -23,7 +23,11 @@
+ import FreeCAD as App
+ import FreeCADGui as Gui
+ import os
++import MatGui
+ 
++Gui.addLanguagePath(":/translations")
++Gui.addIconPath(":/icons")
++Gui.updateLocale()
+ 
+ class MaterialWorkbench(Gui.Workbench):
+     """Part workbench object."""
+@@ -33,8 +37,8 @@
+                                            "Mod", "Material",
+                                            "Resources", "icons",
+                                            "MaterialWorkbench.svg")
+-        self.__class__.MenuText = "Material"
+-        self.__class__.ToolTip = "Material workbench"
++        self.__class__.MenuText = App.Qt.translate("Workbench", "Material")
++        self.__class__.ToolTip = App.Qt.translate("Workbench", "Material workbench")
+ 
+     def Initialize(self):
+         # load the module
+--- src/Mod/Material/CMakeLists.txt	2025-09-18 11:37:35.804327129 +0800
++++ src/Mod/Material/CMakeLists.txt	2025-09-18 14:32:45.985925452 +0800
+@@ -107,6 +107,7 @@
+     Resources/Materials/Standard/Metal/Steel/Steel-S275JO.FCMat
+     Resources/Materials/Standard/Metal/Steel/Steel-S275JR.FCMat
+     Resources/Materials/Standard/Metal/Steel/Steel-S275N.FCMat
++    Resources/Materials/Standard/Metal/Steel/Steel-S304.FCMat
+     Resources/Materials/Standard/Metal/Steel/Steel-S335JO.FCMat
+     Resources/Materials/Standard/Metal/Steel/Steel-S335JR.FCMat
+     Resources/Materials/Standard/Metal/Steel/Steel-S335N.FCMat
+@@ -134,6 +135,7 @@
+     Resources/Materials/Standard/Metal/Steel/Steel-X5CrNiMo17-12-2.FCMat
+     Resources/Materials/Standard/Metal/Steel/Steel-X6CrNiTi18-10.FCMat
+     Resources/Materials/Standard/Metal/Titanium/Ti-6Al-4V.FCMat
++    Resources/Materials/Standard/Thermoplast/ABS-FR-V-0.FCMat
+     Resources/Materials/Standard/Thermoplast/ABS-Generic.FCMat
+     Resources/Materials/Standard/Thermoplast/Acrylic-Glass-Generic.FCMat
+     Resources/Materials/Standard/Thermoplast/PA6-Generic.FCMat
+@@ -144,9 +146,11 @@
+     Resources/Materials/Standard/Thermoplast/POM-Homopolymer-Generic.FCMat
+     Resources/Materials/Standard/Thermoplast/POM-Copolymer-Generic.FCMat
+     Resources/Materials/Standard/Thermoplast/PP-Generic.FCMat
++    "Resources/Materials/Standard/Thermoplast/PDMS Silicone.FCMat"
+     Resources/Materials/Standard/Thermoplast/PTFE-Generic.FCMat
+     Resources/Materials/Standard/Thermoplast/PVC-Generic.FCMat
+     Resources/Materials/Standard/Thermoplast/PC-Molded.FCMat
++    Resources/Materials/Standard/Wood/Mahogany-Wood.FCMat
+     Resources/Materials/Standard/Wood/Wood-Generic.FCMat
+ )
+ 
+--- src/Mod/Measure/Resources/Measure.qrc	2025-09-18 14:43:04.771389908 +0800
++++ src/Mod/Measure/Resources/Measure.qrc	2025-09-18 14:33:53.469595984 +0800
+@@ -1,160 +1,176 @@
+-<RCC>
+-    <qresource prefix="/">
+-        <file>icons/umf-measurement.svg</file>
+-        <file>icons/preferences-measure.svg</file>
+-        <file>icons/Measurement-Angle.svg</file>
+-        <file>icons/Measurement-Area.svg</file>
+-        <file>icons/Measurement-CenterOfMass.svg</file>
+-        <file>icons/Measurement-Distance.svg</file>
+-        <file>icons/Measurement-Group.svg</file>
+-        <file>icons/Measurement-Inertia.svg</file>
+-        <file>icons/Measurement-Position.svg</file>
+-        <file>icons/Measurement-Radius.svg</file>
+-        <file>icons/Measurement-Volume.svg</file>
+-        <file>icons/quick-measure.svg</file>
+-    </qresource>
+-</RCC>
+-<RCC>
+-    <qresource prefix="/">
+-        <file>icons/umf-measurement.svg</file>
+-        <file>icons/preferences-measure.svg</file>
+-        <file>icons/Measurement-Angle.svg</file>
+-        <file>icons/Measurement-Area.svg</file>
+-        <file>icons/Measurement-CenterOfMass.svg</file>
+-        <file>icons/Measurement-Distance.svg</file>
+-        <file>icons/Measurement-Group.svg</file>
+-        <file>icons/Measurement-Inertia.svg</file>
+-        <file>icons/Measurement-Position.svg</file>
+-        <file>icons/Measurement-Radius.svg</file>
+-        <file>icons/Measurement-Volume.svg</file>
+-        <file>icons/quick-measure.svg</file>
+-    </qresource>
+-</RCC>
+-<RCC>
+-    <qresource prefix="/">
+-        <file>icons/umf-measurement.svg</file>
+-        <file>icons/preferences-measure.svg</file>
+-        <file>icons/Measurement-Angle.svg</file>
+-        <file>icons/Measurement-Area.svg</file>
+-        <file>icons/Measurement-CenterOfMass.svg</file>
+-        <file>icons/Measurement-Distance.svg</file>
+-        <file>icons/Measurement-Group.svg</file>
+-        <file>icons/Measurement-Inertia.svg</file>
+-        <file>icons/Measurement-Position.svg</file>
+-        <file>icons/Measurement-Radius.svg</file>
+-        <file>icons/Measurement-Volume.svg</file>
+-        <file>icons/quick-measure.svg</file>
+-    </qresource>
+-</RCC>
+-<RCC>
+-    <qresource prefix="/">
+-        <file>icons/umf-measurement.svg</file>
+-        <file>icons/preferences-measure.svg</file>
+-        <file>icons/Measurement-Angle.svg</file>
+-        <file>icons/Measurement-Area.svg</file>
+-        <file>icons/Measurement-CenterOfMass.svg</file>
+-        <file>icons/Measurement-Distance.svg</file>
+-        <file>icons/Measurement-Group.svg</file>
+-        <file>icons/Measurement-Inertia.svg</file>
+-        <file>icons/Measurement-Position.svg</file>
+-        <file>icons/Measurement-Radius.svg</file>
+-        <file>icons/Measurement-Volume.svg</file>
+-        <file>icons/quick-measure.svg</file>
+-    </qresource>
+-</RCC>
+-<RCC>
+-    <qresource prefix="/">
+-        <file>icons/umf-measurement.svg</file>
+-        <file>icons/preferences-measure.svg</file>
+-        <file>icons/Measurement-Angle.svg</file>
+-        <file>icons/Measurement-Area.svg</file>
+-        <file>icons/Measurement-CenterOfMass.svg</file>
+-        <file>icons/Measurement-Distance.svg</file>
+-        <file>icons/Measurement-Group.svg</file>
+-        <file>icons/Measurement-Inertia.svg</file>
+-        <file>icons/Measurement-Position.svg</file>
+-        <file>icons/Measurement-Radius.svg</file>
+-        <file>icons/Measurement-Volume.svg</file>
+-        <file>icons/quick-measure.svg</file>
+-    </qresource>
+-</RCC>
+-<RCC>
+-    <qresource prefix="/">
+-        <file>icons/umf-measurement.svg</file>
+-        <file>icons/preferences-measure.svg</file>
+-        <file>icons/Measurement-Angle.svg</file>
+-        <file>icons/Measurement-Area.svg</file>
+-        <file>icons/Measurement-CenterOfMass.svg</file>
+-        <file>icons/Measurement-Distance.svg</file>
+-        <file>icons/Measurement-Group.svg</file>
+-        <file>icons/Measurement-Inertia.svg</file>
+-        <file>icons/Measurement-Position.svg</file>
+-        <file>icons/Measurement-Radius.svg</file>
+-        <file>icons/Measurement-Volume.svg</file>
+-        <file>icons/quick-measure.svg</file>
+-    </qresource>
+-</RCC>
+-<RCC>
+-    <qresource prefix="/">
+-        <file>icons/umf-measurement.svg</file>
+-        <file>icons/preferences-measure.svg</file>
+-        <file>icons/Measurement-Angle.svg</file>
+-        <file>icons/Measurement-Area.svg</file>
+-        <file>icons/Measurement-CenterOfMass.svg</file>
+-        <file>icons/Measurement-Distance.svg</file>
+-        <file>icons/Measurement-Group.svg</file>
+-        <file>icons/Measurement-Inertia.svg</file>
+-        <file>icons/Measurement-Position.svg</file>
+-        <file>icons/Measurement-Radius.svg</file>
+-        <file>icons/Measurement-Volume.svg</file>
+-        <file>icons/quick-measure.svg</file>
+-    </qresource>
+-</RCC>
+-<RCC>
+-    <qresource prefix="/">
+-        <file>icons/umf-measurement.svg</file>
+-        <file>icons/preferences-measure.svg</file>
+-        <file>icons/Measurement-Angle.svg</file>
+-        <file>icons/Measurement-Area.svg</file>
+-        <file>icons/Measurement-CenterOfMass.svg</file>
+-        <file>icons/Measurement-Distance.svg</file>
+-        <file>icons/Measurement-Group.svg</file>
+-        <file>icons/Measurement-Inertia.svg</file>
+-        <file>icons/Measurement-Position.svg</file>
+-        <file>icons/Measurement-Radius.svg</file>
+-        <file>icons/Measurement-Volume.svg</file>
+-        <file>icons/quick-measure.svg</file>
+-    </qresource>
+-</RCC>
+-<RCC>
+-    <qresource prefix="/">
+-        <file>icons/umf-measurement.svg</file>
+-        <file>icons/preferences-measure.svg</file>
+-        <file>icons/Measurement-Angle.svg</file>
+-        <file>icons/Measurement-Area.svg</file>
+-        <file>icons/Measurement-CenterOfMass.svg</file>
+-        <file>icons/Measurement-Distance.svg</file>
+-        <file>icons/Measurement-Group.svg</file>
+-        <file>icons/Measurement-Inertia.svg</file>
+-        <file>icons/Measurement-Position.svg</file>
+-        <file>icons/Measurement-Radius.svg</file>
+-        <file>icons/Measurement-Volume.svg</file>
+-        <file>icons/quick-measure.svg</file>
+-    </qresource>
+-</RCC>
+-<RCC>
+-    <qresource prefix="/">
+-        <file>icons/umf-measurement.svg</file>
+-        <file>icons/preferences-measure.svg</file>
+-        <file>icons/Measurement-Angle.svg</file>
+-        <file>icons/Measurement-Area.svg</file>
+-        <file>icons/Measurement-CenterOfMass.svg</file>
+-        <file>icons/Measurement-Distance.svg</file>
+-        <file>icons/Measurement-Group.svg</file>
+-        <file>icons/Measurement-Inertia.svg</file>
+-        <file>icons/Measurement-Position.svg</file>
+-        <file>icons/Measurement-Radius.svg</file>
+-        <file>icons/Measurement-Volume.svg</file>
+-        <file>icons/quick-measure.svg</file>
+-    </qresource>
+-</RCC>
++<RCC>
++    <qresource prefix="/">
++        <file>icons/umf-measurement.svg</file>
++        <file>icons/preferences-measure.svg</file>
++        <file>icons/Measurement-Angle.svg</file>
++        <file>icons/Measurement-Area.svg</file>
++        <file>icons/Measurement-CenterOfMass.svg</file>
++        <file>icons/Measurement-Distance.svg</file>
++        <file>icons/Measurement-Group.svg</file>
++        <file>icons/Measurement-Inertia.svg</file>
++        <file>icons/Measurement-Position.svg</file>
++        <file>icons/Measurement-Radius.svg</file>
++        <file>icons/Measurement-Volume.svg</file>
++        <file>icons/quick-measure.svg</file>
++    </qresource>
++</RCC>
++<RCC>
++    <qresource prefix="/">
++        <file>icons/umf-measurement.svg</file>
++        <file>icons/preferences-measure.svg</file>
++        <file>icons/Measurement-Angle.svg</file>
++        <file>icons/Measurement-Area.svg</file>
++        <file>icons/Measurement-CenterOfMass.svg</file>
++        <file>icons/Measurement-Distance.svg</file>
++        <file>icons/Measurement-Group.svg</file>
++        <file>icons/Measurement-Inertia.svg</file>
++        <file>icons/Measurement-Position.svg</file>
++        <file>icons/Measurement-Radius.svg</file>
++        <file>icons/Measurement-Volume.svg</file>
++        <file>icons/quick-measure.svg</file>
++    </qresource>
++</RCC>
++<RCC>
++    <qresource prefix="/">
++        <file>icons/umf-measurement.svg</file>
++        <file>icons/preferences-measure.svg</file>
++        <file>icons/Measurement-Angle.svg</file>
++        <file>icons/Measurement-Area.svg</file>
++        <file>icons/Measurement-CenterOfMass.svg</file>
++        <file>icons/Measurement-Distance.svg</file>
++        <file>icons/Measurement-Group.svg</file>
++        <file>icons/Measurement-Inertia.svg</file>
++        <file>icons/Measurement-Position.svg</file>
++        <file>icons/Measurement-Radius.svg</file>
++        <file>icons/Measurement-Volume.svg</file>
++        <file>icons/quick-measure.svg</file>
++    </qresource>
++</RCC>
++<RCC>
++    <qresource prefix="/">
++        <file>icons/umf-measurement.svg</file>
++        <file>icons/preferences-measure.svg</file>
++        <file>icons/Measurement-Angle.svg</file>
++        <file>icons/Measurement-Area.svg</file>
++        <file>icons/Measurement-CenterOfMass.svg</file>
++        <file>icons/Measurement-Distance.svg</file>
++        <file>icons/Measurement-Group.svg</file>
++        <file>icons/Measurement-Inertia.svg</file>
++        <file>icons/Measurement-Position.svg</file>
++        <file>icons/Measurement-Radius.svg</file>
++        <file>icons/Measurement-Volume.svg</file>
++        <file>icons/quick-measure.svg</file>
++    </qresource>
++</RCC>
++<RCC>
++    <qresource prefix="/">
++        <file>icons/umf-measurement.svg</file>
++        <file>icons/preferences-measure.svg</file>
++        <file>icons/Measurement-Angle.svg</file>
++        <file>icons/Measurement-Area.svg</file>
++        <file>icons/Measurement-CenterOfMass.svg</file>
++        <file>icons/Measurement-Distance.svg</file>
++        <file>icons/Measurement-Group.svg</file>
++        <file>icons/Measurement-Inertia.svg</file>
++        <file>icons/Measurement-Position.svg</file>
++        <file>icons/Measurement-Radius.svg</file>
++        <file>icons/Measurement-Volume.svg</file>
++        <file>icons/quick-measure.svg</file>
++    </qresource>
++</RCC>
++<RCC>
++    <qresource prefix="/">
++        <file>icons/umf-measurement.svg</file>
++        <file>icons/preferences-measure.svg</file>
++        <file>icons/Measurement-Angle.svg</file>
++        <file>icons/Measurement-Area.svg</file>
++        <file>icons/Measurement-CenterOfMass.svg</file>
++        <file>icons/Measurement-Distance.svg</file>
++        <file>icons/Measurement-Group.svg</file>
++        <file>icons/Measurement-Inertia.svg</file>
++        <file>icons/Measurement-Position.svg</file>
++        <file>icons/Measurement-Radius.svg</file>
++        <file>icons/Measurement-Volume.svg</file>
++        <file>icons/quick-measure.svg</file>
++    </qresource>
++</RCC>
++<RCC>
++    <qresource prefix="/">
++        <file>icons/umf-measurement.svg</file>
++        <file>icons/preferences-measure.svg</file>
++        <file>icons/Measurement-Angle.svg</file>
++        <file>icons/Measurement-Area.svg</file>
++        <file>icons/Measurement-CenterOfMass.svg</file>
++        <file>icons/Measurement-Distance.svg</file>
++        <file>icons/Measurement-Group.svg</file>
++        <file>icons/Measurement-Inertia.svg</file>
++        <file>icons/Measurement-Position.svg</file>
++        <file>icons/Measurement-Radius.svg</file>
++        <file>icons/Measurement-Volume.svg</file>
++        <file>icons/quick-measure.svg</file>
++    </qresource>
++</RCC>
++<RCC>
++    <qresource prefix="/">
++        <file>icons/umf-measurement.svg</file>
++        <file>icons/preferences-measure.svg</file>
++        <file>icons/Measurement-Angle.svg</file>
++        <file>icons/Measurement-Area.svg</file>
++        <file>icons/Measurement-CenterOfMass.svg</file>
++        <file>icons/Measurement-Distance.svg</file>
++        <file>icons/Measurement-Group.svg</file>
++        <file>icons/Measurement-Inertia.svg</file>
++        <file>icons/Measurement-Position.svg</file>
++        <file>icons/Measurement-Radius.svg</file>
++        <file>icons/Measurement-Volume.svg</file>
++        <file>icons/quick-measure.svg</file>
++    </qresource>
++</RCC>
++<RCC>
++    <qresource prefix="/">
++        <file>icons/umf-measurement.svg</file>
++        <file>icons/preferences-measure.svg</file>
++        <file>icons/Measurement-Angle.svg</file>
++        <file>icons/Measurement-Area.svg</file>
++        <file>icons/Measurement-CenterOfMass.svg</file>
++        <file>icons/Measurement-Distance.svg</file>
++        <file>icons/Measurement-Group.svg</file>
++        <file>icons/Measurement-Inertia.svg</file>
++        <file>icons/Measurement-Position.svg</file>
++        <file>icons/Measurement-Radius.svg</file>
++        <file>icons/Measurement-Volume.svg</file>
++        <file>icons/quick-measure.svg</file>
++    </qresource>
++</RCC>
++<RCC>
++    <qresource prefix="/">
++        <file>icons/umf-measurement.svg</file>
++        <file>icons/preferences-measure.svg</file>
++        <file>icons/Measurement-Angle.svg</file>
++        <file>icons/Measurement-Area.svg</file>
++        <file>icons/Measurement-CenterOfMass.svg</file>
++        <file>icons/Measurement-Distance.svg</file>
++        <file>icons/Measurement-Group.svg</file>
++        <file>icons/Measurement-Inertia.svg</file>
++        <file>icons/Measurement-Position.svg</file>
++        <file>icons/Measurement-Radius.svg</file>
++        <file>icons/Measurement-Volume.svg</file>
++        <file>icons/quick-measure.svg</file>
++    </qresource>
++</RCC>
++<RCC>
++    <qresource prefix="/">
++        <file>icons/umf-measurement.svg</file>
++        <file>icons/preferences-measure.svg</file>
++        <file>icons/Measurement-Angle.svg</file>
++        <file>icons/Measurement-Area.svg</file>
++        <file>icons/Measurement-CenterOfMass.svg</file>
++        <file>icons/Measurement-Distance.svg</file>
++        <file>icons/Measurement-Group.svg</file>
++        <file>icons/Measurement-Inertia.svg</file>
++        <file>icons/Measurement-Position.svg</file>
++        <file>icons/Measurement-Radius.svg</file>
++        <file>icons/Measurement-Volume.svg</file>
++        <file>icons/quick-measure.svg</file>
++    </qresource>
++</RCC>
+--- src/Mod/Measure/InitGui.py	2025-09-18 11:37:07.679220254 +0800
++++ src/Mod/Measure/InitGui.py	2025-08-05 11:05:05.056425195 +0800
+@@ -30,6 +30,10 @@
+ from MeasureCOM import makeMeasureCOM, MeasureCOM
+ 
+ 
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
++
+ # Expose create functions
+ Measure.makeMeasureCOM = makeMeasureCOM
+ 
+--- src/Mod/Mesh/InitGui.py	2025-09-18 11:37:07.697220963 +0800
++++ src/Mod/Mesh/InitGui.py	2025-04-11 10:52:45.881287302 +0800
+@@ -28,6 +28,10 @@
+ # *                                                                         *
+ # ***************************************************************************/
+ 
++import MeshGui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class MeshWorkbench(Workbench):
+     "Mesh workbench object"
+@@ -36,8 +40,8 @@
+         self.__class__.Icon = (
+             FreeCAD.getResourceDir() + "Mod/Mesh/Resources/icons/MeshWorkbench.svg"
+         )
+-        self.__class__.MenuText = "Mesh"
+-        self.__class__.ToolTip = "Mesh workbench"
++        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Mesh")
++        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Mesh workbench")
+ 
+     def Initialize(self):
+         import Mesh
+--- src/Mod/MeshPart/InitGui.py	2025-09-18 11:37:07.699221041 +0800
++++ src/Mod/MeshPart/InitGui.py	2025-04-11 10:52:34.363864591 +0800
+@@ -28,6 +28,10 @@
+ # *                                                                         *
+ # ***************************************************************************/
+ 
++import MeshPartGui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class MeshPartWorkbench(Workbench):
+     "MeshPart workbench object"
+@@ -56,8 +60,8 @@
+             ".########.......",
+             "................"};
+             """
+-    MenuText = "MeshPart"
+-    ToolTip = "MeshPart workbench"
++    MenuText = FreeCAD.Qt.translate("Workbench", "MeshPart")
++    ToolTip = FreeCAD.Qt.translate("Workbench", "MeshPart workbench")
+ 
+     def Initialize(self):
+         # load the module
+--- src/Mod/OpenSCAD/InitGui.py	2025-09-13 10:12:38.467226804 +0800
++++ src/Mod/OpenSCAD/InitGui.py	2025-04-11 11:13:43.384440077 +0800
+@@ -30,6 +30,10 @@
+ import FreeCAD
+ import sys
+ 
++import OpenSCAD_rc
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class OpenSCADWorkbench(Workbench):
+     "OpenSCAD workbench object"
+@@ -39,8 +43,8 @@
+             FreeCAD.getResourceDir()
+             + "Mod/OpenSCAD/Resources/icons/OpenSCADWorkbench.svg"
+         )
+-        self.__class__.MenuText = "OpenSCAD"
+-        self.__class__.ToolTip = (
++        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "OpenSCAD")
++        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench",
+             "OpenSCAD is an application for creating solid 3D CAD.\n"
+             "FreeCAD utizes OpenSCAD's capability as a script-only based modeller that uses its own description language\n"
+             "Note: the Mesh workbench heavily uses the boolean operations of this workbench because they are quite robust"
+--- src/Mod/Part/InitGui.py	2025-09-18 11:37:07.741222694 +0800
++++ src/Mod/Part/InitGui.py	2025-04-11 10:46:13.585889312 +0800
+@@ -26,6 +26,11 @@
+ import FreeCADGui as Gui
+ import os
+ 
++import PartGui
++
++Gui.addLanguagePath(":/translations")
++Gui.addIconPath(":/icons")
++Gui.updateLocale()
+ 
+ class PartWorkbench(Gui.Workbench):
+     """Part workbench object."""
+@@ -35,8 +40,8 @@
+                                            "Mod", "Part",
+                                            "Resources", "icons",
+                                            "PartWorkbench.svg")
+-        self.__class__.MenuText = "Part"
+-        self.__class__.ToolTip = "Part workbench"
++        self.__class__.MenuText = App.Qt.translate("Workbench", "Part")
++        self.__class__.ToolTip = App.Qt.translate("Workbench", "Part workbench")
+ 
+     def Initialize(self):
+         # load the module
+--- src/Mod/PartDesign/InitGui.py	2025-09-18 11:37:07.742222734 +0800
++++ src/Mod/PartDesign/InitGui.py	2025-04-11 10:45:50.862055303 +0800
+@@ -27,12 +27,18 @@
+ # This is the second one of three init scripts, the third one
+ # runs when the gui is up
+ 
++
++import PartDesignGui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
++
+ class PartDesignWorkbench ( Workbench ):
+     "PartDesign workbench object"
+     def __init__(self):
+         self.__class__.Icon = FreeCAD.getResourceDir() + "Mod/PartDesign/Resources/icons/PartDesignWorkbench.svg"
+-        self.__class__.MenuText = "Part Design"
+-        self.__class__.ToolTip = "Part Design workbench"
++        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Part Design")
++        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Part Design workbench")
+ 
+     def Initialize(self):
+         # load the module
+--- src/Mod/Points/InitGui.py	2025-09-18 11:37:07.760223442 +0800
++++ src/Mod/Points/InitGui.py	2025-04-11 10:54:09.225346188 +0800
+@@ -27,6 +27,10 @@
+ # This is the second one of three init scripts, the third one
+ # runs when the gui is up
+ 
++import PointsGui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class PointsWorkbench(Workbench):
+     "Points workbench object"
+@@ -35,8 +39,8 @@
+         self.__class__.Icon = (
+             FreeCAD.getResourceDir() + "Mod/Points/Resources/icons/PointsWorkbench.svg"
+         )
+-        self.__class__.MenuText = "Points"
+-        self.__class__.ToolTip = "Points workbench"
++        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Points")
++        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Points workbench")
+ 
+     def Initialize(self):
+         # load the module
+--- src/Mod/ReverseEngineering/InitGui.py	2025-09-18 11:37:07.762223521 +0800
++++ src/Mod/ReverseEngineering/InitGui.py	2025-04-11 10:54:39.904472170 +0800
+@@ -27,6 +27,10 @@
+ # This is the second one of three init scripts, the third one
+ # runs when the gui is up
+ 
++import ReverseEngineeringGui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class ReverseEngineeringWorkbench(Workbench):
+     "ReverseEngineering workbench object"
+@@ -36,8 +40,8 @@
+             FreeCAD.getResourceDir()
+             + "Mod/ReverseEngineering/Resources/icons/ReverseEngineeringWorkbench.svg"
+         )
+-        self.__class__.MenuText = "Reverse Engineering"
+-        self.__class__.ToolTip = "Reverse Engineering workbench"
++        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Reverse Engineering")
++        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Reverse Engineering workbench")
+ 
+     def Initialize(self):
+         # load the module
+--- src/Mod/Robot/InitGui.py	2025-09-18 11:37:07.762223521 +0800
++++ src/Mod/Robot/InitGui.py	2025-04-11 10:54:33.017219395 +0800
+@@ -28,6 +28,10 @@
+ # *                                                                         *
+ # ***************************************************************************/
+ 
++import RobotGui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class RobotWorkbench(Workbench):
+     "Robot workbench object"
+@@ -36,8 +40,8 @@
+         self.__class__.Icon = (
+             FreeCAD.getResourceDir() + "Mod/Robot/Resources/icons/RobotWorkbench.svg"
+         )
+-        self.__class__.MenuText = "Robot"
+-        self.__class__.ToolTip = "Robot workbench"
++        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Robot")
++        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Robot workbench")
+ 
+     def Initialize(self):
+         # load the module
+--- src/Mod/Sandbox/InitGui.py	2025-09-18 11:37:07.763223560 +0800
++++ src/Mod/Sandbox/InitGui.py	2025-04-11 10:55:24.099094198 +0800
+@@ -27,10 +27,15 @@
+ # This is the second one of three init scripts, the third one
+ # runs when the gui is up
+ 
++import SandboxGui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
++
+ class SandboxWorkbench ( Workbench ):
+     "Sandbox workbench object"
+-    MenuText = "Sandbox"
+-    ToolTip = "Sandbox workbench"
++    MenuText = FreeCAD.Qt.translate("Workbench", "Sandbox")
++    ToolTip = FreeCAD.Qt.translate("Workbench", "Sandbox workbench")
+     def Initialize(self):
+         # load the module
+         import SandboxGui
+--- src/Mod/Sketcher/Gui/TaskSketcherSolverAdvanced.ui	2025-09-18 14:43:05.120403701 +0800
++++ src/Mod/Sketcher/Gui/TaskSketcherSolverAdvanced.ui	2025-07-03 08:53:57.788417268 +0800
+@@ -11,7 +11,7 @@
+    </rect>
+   </property>
+   <property name="windowTitle">
+-   <string notr="true">Form</string>
++   <string>Form</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+@@ -223,7 +223,7 @@
+      <item>
+       <widget class="QLabel" name="labelSolverParam1">
+        <property name="text">
+-        <string notr="true">Param1</string>
++        <string>Param1</string>
+        </property>
+       </widget>
+      </item>
+@@ -247,7 +247,7 @@
+      <item>
+       <widget class="QLabel" name="labelSolverParam2">
+        <property name="text">
+-        <string notr="true">Param2</string>
++        <string>Param2</string>
+        </property>
+       </widget>
+      </item>
+@@ -271,7 +271,7 @@
+      <item>
+       <widget class="QLabel" name="labelSolverParam3">
+        <property name="text">
+-        <string notr="true">Param3</string>
++        <string>Param3</string>
+        </property>
+       </widget>
+      </item>
+@@ -514,7 +514,7 @@
+      <item>
+       <widget class="QLabel" name="labelRedundantSolverParam1">
+        <property name="text">
+-        <string notr="true">Redundant param1</string>
++        <string>Redundant param1</string>
+        </property>
+       </widget>
+      </item>
+@@ -538,7 +538,7 @@
+      <item>
+       <widget class="QLabel" name="labelRedundantSolverParam2">
+        <property name="text">
+-        <string notr="true">Redundant param2</string>
++        <string>Redundant param2</string>
+        </property>
+       </widget>
+      </item>
+@@ -562,7 +562,7 @@
+      <item>
+       <widget class="QLabel" name="labelRedundantSolverParam3">
+        <property name="text">
+-        <string notr="true">Redundant param3</string>
++        <string>Redundant param3</string>
+        </property>
+       </widget>
+      </item>
+@@ -619,7 +619,7 @@
+        </item>
+        <item>
+         <property name="text">
+-         <string>Iteration level</string>
++         <string>Iteration Level</string>
+         </property>
+        </item>
+       </widget>
+--- src/Mod/Sketcher/InitGui.py	2025-09-18 11:37:07.848226906 +0800
++++ src/Mod/Sketcher/InitGui.py	2025-04-11 10:55:10.804606265 +0800
+@@ -27,6 +27,10 @@
+ # This is the second one of three init scripts, the third one
+ # runs when the gui is up
+ 
++import SketcherGui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class SketcherWorkbench(Workbench):
+     "Sketcher workbench object"
+@@ -35,8 +39,8 @@
+         self.__class__.Icon = (
+             FreeCAD.getResourceDir() + "Mod/Sketcher/Resources/icons/SketcherWorkbench.svg"
+         )
+-        self.__class__.MenuText = "Sketcher"
+-        self.__class__.ToolTip = "Sketcher workbench"
++        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Sketcher")
++        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Sketcher workbench")
+ 
+     def Initialize(self):
+         # load the module
+--- src/Mod/Spreadsheet/InitGui.py	2025-09-13 10:12:40.696314260 +0800
++++ src/Mod/Spreadsheet/InitGui.py	2025-04-11 10:48:10.416177208 +0800
+@@ -27,6 +27,10 @@
+ # This is the second one of three init scripts, the third one
+ # runs when the gui is up
+ 
++import SpreadsheetGui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class SpreadsheetWorkbench(Workbench):
+     "Spreadsheet workbench object"
+@@ -35,8 +39,8 @@
+         self.__class__.Icon = (
+             FreeCAD.getResourceDir() + "Mod/Spreadsheet/Resources/icons/SpreadsheetWorkbench.svg"
+         )
+-        self.__class__.MenuText = "Spreadsheet"
+-        self.__class__.ToolTip = "Spreadsheet workbench"
++        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Spreadsheet")
++        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Spreadsheet workbench")
+ 
+     def Initialize(self):
+         # load the module
+--- src/Mod/Surface/Gui/TaskFilling.ui	2025-09-18 14:43:05.297410697 +0800
++++ src/Mod/Surface/Gui/TaskFilling.ui	2025-08-15 16:18:37.592822335 +0800
+@@ -115,7 +115,7 @@
+       <item row="3" column="0" colspan="3">
+        <widget class="QLabel" name="statusLabel">
+         <property name="text">
+-         <string notr="true">Status messages</string>
++         <string>Status messages</string>
+         </property>
+        </widget>
+       </item>
+--- src/Mod/Surface/InitGui.py	2025-09-18 11:37:07.887228441 +0800
++++ src/Mod/Surface/InitGui.py	2025-04-15 08:40:41.767224392 +0800
+@@ -27,7 +27,11 @@
+ 
+ import FreeCAD as App
+ import FreeCADGui as Gui
++import SurfaceGui
+ 
++Gui.addLanguagePath(":/translations")
++Gui.addIconPath(":/icons")
++Gui.updateLocale()
+ 
+ class SurfaceWorkbench(Gui.Workbench):
+     """Surface workbench object."""
+@@ -35,8 +39,8 @@
+     Icon = os.path.join(
+         App.getResourceDir(), "Mod", "Surface", "Resources", "icons", "Surface_Workbench.svg"
+     )
+-    MenuText = "Surface"
+-    ToolTip = "Surface workbench: Create and edit complex surfaces"
++    MenuText = App.Qt.translate("Workbench", "Surface")
++    ToolTip = App.Qt.translate("Workbench", "Surface workbench: Create and edit complex surfaces")
+ 
+     def Initialize(self):
+         """Initialize the module."""
+--- src/Mod/TechDraw/InitGui.py	2025-09-18 11:37:07.889228519 +0800
++++ src/Mod/TechDraw/InitGui.py	2025-04-11 10:47:26.589568686 +0800
+@@ -27,6 +27,10 @@
+ # This is the second one of three init scripts, the third one
+ # runs when the gui is up
+ 
++import TechDrawGui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class TechDrawWorkbench(Workbench):
+     "Technical Drawing workbench object"
+@@ -36,8 +40,8 @@
+             FreeCAD.getResourceDir()
+             + "Mod/TechDraw/Resources/icons/preferences-techdraw.svg"
+         )
+-        self.__class__.MenuText = "TechDraw"
+-        self.__class__.ToolTip = "Technical Drawing workbench"
++        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "TechDraw")
++        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Technical Drawing workbench")
+ 
+     def Initialize(self):
+         # load the module
+--- src/Mod/TemplatePyMod/Gui/Resources/TemplatePyMod.qrc	2025-09-18 14:43:05.504418879 +0800
++++ src/Mod/TemplatePyMod/Gui/Resources/TemplatePyMod.qrc	2025-04-22 11:00:07.550370394 +0800
+@@ -1,50 +1,5 @@
+-<RCC>
+-  <qresource prefix="/">
+-    <file>translations/TemplatePyMod_zh-TW.ts</file>
+-  </qresource>
+-</RCC>
+-<RCC>
+-  <qresource prefix="/">
+-    <file>translations/TemplatePyMod_zh-TW.ts</file>
+-  </qresource>
+-</RCC>
+-<RCC>
+-  <qresource prefix="/">
+-    <file>translations/TemplatePyMod_zh-TW.ts</file>
+-  </qresource>
+-</RCC>
+-<RCC>
+-  <qresource prefix="/">
+-    <file>translations/TemplatePyMod_zh-TW.ts</file>
+-  </qresource>
+-</RCC>
+-<RCC>
+-  <qresource prefix="/">
+-    <file>translations/TemplatePyMod_zh-TW.ts</file>
+-  </qresource>
+-</RCC>
+-<RCC>
+-  <qresource prefix="/">
+-    <file>translations/TemplatePyMod_zh-TW.ts</file>
+-  </qresource>
+-</RCC>
+-<RCC>
+-  <qresource prefix="/">
+-    <file>translations/TemplatePyMod_zh-TW.ts</file>
+-  </qresource>
+-</RCC>
+-<RCC>
+-  <qresource prefix="/">
+-    <file>translations/TemplatePyMod_zh-TW.ts</file>
+-  </qresource>
+-</RCC>
+-<RCC>
+-  <qresource prefix="/">
+-    <file>translations/TemplatePyMod_zh-TW.ts</file>
+-  </qresource>
+-</RCC>
+-<RCC>
+-  <qresource prefix="/">
+-    <file>translations/TemplatePyMod_zh-TW.ts</file>
+-  </qresource>
+-</RCC>
++<RCC>
++  <qresource prefix="/">
++    <file>translations/TemplatePyMod_zh-TW.ts</file>
++  </qresource>
++</RCC>
+--- src/Mod/TemplatePyMod/InitGui.py	2025-09-18 11:37:07.889228519 +0800
++++ src/Mod/TemplatePyMod/InitGui.py	2025-04-11 16:41:48.564924122 +0800
+@@ -2,6 +2,10 @@
+ # (c) 2007 Juergen Riegel LGPL
+ #
+ 
++import _TEMPLATEPY__rc
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class TemplatePyModWorkbench ( Workbench ):
+ 	"Test workbench object"
+@@ -28,19 +32,19 @@
+ 			"................",
+ 			"................"};
+ 			"""
+-	MenuText = "Python sandbox"
+-	ToolTip = "Python template workbench"
++	MenuText = FreeCAD.Qt.translate("Workbench", "Python sandbox")
++	ToolTip = FreeCAD.Qt.translate("Workbench", "Python template workbench")
+ 	
+ 	def Initialize(self):
+ 		import Commands
+ 
+ 		self.appendToolbar("TemplateTools",["TemplatePyMod_Cmd1","TemplatePyMod_Cmd2","TemplatePyMod_Cmd3","TemplatePyMod_Cmd4","TemplatePyMod_Cmd5"])
+ 
+-		menu = ["ModulePy &Commands","PyModuleCommands"]
++		menu = [FreeCAD.Qt.translate("TemplateTools", "ModulePy &Commands"), FreeCAD.Qt.translate("TemplateTools", "PyModuleCommands")]
+ 		list = ["TemplatePyMod_Cmd1","TemplatePyMod_Cmd2","TemplatePyMod_Cmd3","TemplatePyMod_Cmd5","TemplatePyMod_Cmd6"]
+ 		self.appendCommandbar("PyModuleCommands",list)
+ 		self.appendMenu(menu,list)
+-
++
+ 		Log ('Loading TemplatePyMod module... done\n')
+ 	def Activated(self):
+ 		Msg("TemplatePyModWorkbench::Activated()\n")
+--- src/Mod/TemplatePyMod/CMakeLists.txt	2025-09-13 10:12:41.416342510 +0800
++++ src/Mod/TemplatePyMod/CMakeLists.txt	2025-04-13 07:33:24.642146813 +0800
+@@ -1,6 +1,9 @@
+ 
++IF (BUILD_GUI)
++    PYSIDE_WRAP_RC(_TEMPLATEPY__QRC_SRCS Resources/TemplatePyMod.qrc)
++ENDIF (BUILD_GUI)
+ 
+-fc_copy_to_mod_path("TemplatePyMod"
++set(TemplatePyModScripts
+     InitGui.py
+     Init.py
+     Commands.py
+@@ -10,6 +13,14 @@
+ )
+ 
+ INSTALL(
++    FILES
++        ${TemplatePyModScripts}
++        ${_TEMPLATEPY__QRC_SRCS}
++    DESTINATION
++        Mod/TemplatePyMod
++)
++
++INSTALL(
+     FILES
+         Init.py
+         InitGui.py
+--- src/Mod/Test/InitGui.py	2025-09-18 11:37:07.890228559 +0800
++++ src/Mod/Test/InitGui.py	2025-04-11 16:02:49.673082288 +0800
+@@ -23,6 +23,10 @@
+ 
+ # Test gui init module
+ 
++import TestGui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class TestWorkbench(Workbench):
+     "Test workbench object"
+@@ -31,8 +35,8 @@
+         self.__class__.Icon = (
+             FreeCAD.getResourceDir() + "Mod/Test/Resources/icons/TestWorkbench.svg"
+         )
+-        self.__class__.MenuText = "Test Framework"
+-        self.__class__.ToolTip = "Test Framework"
++        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Test Framework")
++        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Test Framework")
+ 
+     def Initialize(self):
+         import TestGui
+@@ -40,7 +44,7 @@
+         list = ["Test_Test", "Test_TestAll", "Test_TestDoc", "Test_TestBase"]
+         self.appendToolbar("TestTools", list)
+ 
+-        menu = ["Test &Commands", "TestToolsGui"]
++        menu = [FreeCAD.Qt.translate("TestTools", "Test &Commands"), FreeCAD.Qt.translate("TestTools", "TestToolsGui")]
+         list = [
+             "Std_TestQM",
+             "Std_TestReloadQM",
+@@ -52,22 +56,22 @@
+         self.appendCommandbar("TestToolsGui", list)
+         self.appendMenu(menu, list)
+ 
+-        menu = ["Test &Commands", "TestToolsText"]
++        menu = [FreeCAD.Qt.translate("TestTools", "Test &Commands"), FreeCAD.Qt.translate("TestTools", "TestToolsText")]
+         list = ["Test_TestAllText", "Test_TestDocText", "Test_TestBaseText"]
+         self.appendCommandbar("TestToolsText", list)
+         self.appendMenu(menu, list)
+ 
+-        menu = ["Test &Commands", "TestToolsMenu"]
++        menu = [FreeCAD.Qt.translate("TestTools", "Test &Commands"), FreeCAD.Qt.translate("TestTools", "TestToolsMenu")]
+         list = ["Test_TestCreateMenu", "Test_TestDeleteMenu", "Test_TestWork"]
+         self.appendCommandbar("TestToolsMenu", list)
+         self.appendMenu(menu, list)
+ 
+-        menu = ["Test &Commands", "TestFeatureMenu"]
++        menu = [FreeCAD.Qt.translate("TestTools", "Test &Commands"), FreeCAD.Qt.translate("TestTools", "TestFeatureMenu")]
+         list = ["Test_InsertFeature"]
+         self.appendCommandbar("TestFeature", list)
+         self.appendMenu(menu, list)
+ 
+-        menu = ["Test &Commands", "Progress bar"]
++        menu = [FreeCAD.Qt.translate("TestTools", "Test &Commands"), FreeCAD.Qt.translate("TestTools", "Progress bar")]
+         list = [
+             "Std_TestProgress1",
+             "Std_TestProgress2",
+@@ -77,16 +81,16 @@
+         ]
+         self.appendMenu(menu, list)
+ 
+-        menu = ["Test &Commands", "Console"]
++        menu = [FreeCAD.Qt.translate("TestTools", "Test &Commands"), FreeCAD.Qt.translate("TestTools", "Console")]
+         list = ["Std_TestConsoleOutput"]
+         self.appendMenu(menu, list)
+ 
+-        menu = ["Test &Commands", "MDI"]
++        menu = [FreeCAD.Qt.translate("TestTools", "Test &Commands"), FreeCAD.Qt.translate("TestTools", "MDI")]
+         list = ["Std_MDITest1", "Std_MDITest2", "Std_MDITest3"]
+         self.appendMenu(menu, list)
+ 
+         list = ["Std_ViewExample1", "Std_ViewExample2", "Std_ViewExample3"]
+-        self.appendMenu("Inventor View", list)
++        self.appendMenu(FreeCAD.Qt.translate("TestTools", "Inventor View"), list)
+ 
+ 
+ Gui.addWorkbench(TestWorkbench())
+--- src/Base/Console.h	2025-09-18 11:37:07.502213288 +0800
++++ src/Base/Console.h	2025-05-14 10:08:44.789954142 +0800
+@@ -729,6 +729,9 @@
+     /// Prints a log Message
+     template<typename... Args>
+     void log(const char* pMsg, Args&&... args);
++    /// Prints a log Message
++    template<typename... Args>
++    void Log(const char* pMsg, Args&&... args);
+     /// Prints a Critical Message
+     template<typename... Args>
+     void critical(const char* pMsg, Args&&... args);
+@@ -768,6 +771,9 @@
+     /// Prints a log Message with source indication
+     template<typename... Args>
+     void log(const std::string& notifier, const char* pMsg, Args&&... args);
++    /// Prints a log Message with source indication
++    template<typename... Args>
++    void Log(const std::string& notifier, const char* pMsg, Args&&... args);
+     /// Prints a Critical Message with source indication
+     template<typename... Args>
+     void critical(const std::string& notifier, const char* pMsg, Args&&... args);
+@@ -1175,6 +1181,18 @@
+     send<LogStyle::Log>(notifier, pMsg, std::forward<Args>(args)...);
+ }
+ 
++
++template<typename... Args>
++void Base::ConsoleSingleton::Log(const char* pMsg, Args&&... args)
++{
++    log(std::string(""), pMsg, std::forward<Args>(args)...);
++}
++
++template<typename... Args>
++void Base::ConsoleSingleton::Log(const std::string& notifier, const char* pMsg, Args&&... args)
++{
++    send<LogStyle::Log>(notifier, pMsg, std::forward<Args>(args)...);
++}
+ template<Base::LogStyle category,
+          Base::IntendedRecipient recipient /*= Base::IntendedRecipient::All*/,
+          Base::ContentType contenttype /*= Base::ContentType::Untranslated*/,
+--- src/CMakeLists.txt	2025-09-13 10:12:33.398027918 +0800
++++ src/CMakeLists.txt	2025-04-12 20:25:27.793966652 +0800
+@@ -17,6 +17,9 @@
+ if(BUILD_TEMPLATE)
+     add_subdirectory(Tools/_TEMPLATE_)
+ endif(BUILD_TEMPLATE)
++if(BUILD_TEMPLATEPY)
++    add_subdirectory(Tools/_TEMPLATEPY_)
++endif(BUILD_TEMPLATEPY)
+ 
+ # "if" clause moved into local CMakeLists.txt file to support Conda and Homebrew builds
+ add_subdirectory(MacAppBundle)
+--- src/Ext/freecad/CMakeLists.txt	2025-09-18 11:37:07.502213288 +0800
++++ src/Ext/freecad/CMakeLists.txt	2025-04-30 16:09:53.328588883 +0800
+@@ -3,6 +3,7 @@
+     OUTPUT_VARIABLE python_libs OUTPUT_STRIP_TRAILING_WHITESPACE )
+ 
+ SET(PYTHON_MAIN_DIR ${python_libs})
++#SET(PYTHON_MAIN_DIR "/usr/lib/python3.13/site-packages")
+ 
+ set(NAMESPACE_DIR "${CMAKE_BINARY_DIR}/Ext/freecad")
+ set(NAMESPACE_INIT "${NAMESPACE_DIR}/__init__.py")
+--- cMake/FreeCAD_Helpers/SetupQt.cmake	2025-09-13 10:12:32.716001159 +0800
++++ cMake/FreeCAD_Helpers/SetupQt.cmake	2025-08-05 11:10:52.057124029 +0800
+@@ -18,6 +18,10 @@
+ 
+     list (APPEND FREECAD_QT_COMPONENTS OpenGL PrintSupport Svg UiTools Widgets LinguistTools)
+ 
++    if(BUILD_WEBGUI)
++        list (APPEND FREECAD_QT_COMPONENTS WebEngineWidgets)
++    endif()
++
+     if(BUILD_DESIGNER_PLUGIN)
+         list (APPEND FREECAD_QT_COMPONENTS Designer)
+     endif()
+--- src/Tools/_TEMPLATE_/InitGui.py	2025-09-18 11:37:07.916229582 +0800
++++ src/Tools/_TEMPLATE_/InitGui.py	2025-04-11 10:57:26.924602129 +0800
+@@ -1,12 +1,16 @@
+ # _TEMPLATE_ gui init module
+ # (c) 2001 Juergen Riegel LGPL
+ 
++import _TEMPLATE_Gui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class _TEMPLATE_Workbench(Workbench):
+     "_TEMPLATE_ workbench object"
+ 
+-    MenuText = "_TEMPLATE_"
+-    ToolTip = "_TEMPLATE_ workbench"
++    MenuText = FreeCAD.Qt.translate("Workbench", "_TEMPLATE_")
++    ToolTip = FreeCAD.Qt.translate("Workbench", "_TEMPLATE_ workbench")
+ 
+     def Initialize(self):
+         # load the module
+--- src/Tools/_TEMPLATEPY_/InitGui.py	2025-09-13 10:12:41.571348592 +0800
++++ src/Tools/_TEMPLATEPY_/InitGui.py	2025-04-11 16:40:25.991893535 +0800
+@@ -3,20 +3,24 @@
+ # (c) 2001 Juergen Riegel
+ # License LGPL
+ 
++import _TEMPLATEPY__rc
++import _TEMPLATEPY_Gui
++FreeCADGui.addLanguagePath(":/translations")
++FreeCADGui.addIconPath(":/icons")
++FreeCADGui.updateLocale()
+ 
+ class _TEMPLATEPY_Workbench(Workbench):
+     "_TEMPLATEPY_ workbench object"
+-
+     Icon = FreeCAD.getResourceDir() + "Mod/_TEMPLATEPY_/Resources/icons/_TEMPLATEPY_Workbench.svg"
+-    MenuText = "_TEMPLATEPY_"
+-    ToolTip = "_TEMPLATEPY_ workbench"
++    MenuText = FreeCAD.Qt.translate("Workbench", "_TEMPLATEPY_")
++    ToolTip = FreeCAD.Qt.translate("Workbench", "_TEMPLATEPY_ workbench")
+ 
+     def Initialize(self):
+         # load the module
+         import _TEMPLATEPY_Gui
+ 
+-        self.appendToolbar("_TEMPLATEPY_", ["_TEMPLATEPY__HelloWorld"])
+-        self.appendMenu("_TEMPLATEPY_", ["_TEMPLATEPY__HelloWorld"])
++        self.appendToolbar(FreeCAD.Qt.translate("Workbench", "_TEMPLATEPY_"), ["_TEMPLATEPY__HelloWorld"])
++        self.appendMenu(FreeCAD.Qt.translate("Workbench", "_TEMPLATEPY_"), ["_TEMPLATEPY__HelloWorld"])
+ 
+     def GetClassName(self):
+         return "Gui::PythonWorkbench"
+--- src/Tools/_TEMPLATEPY_/Resources/_TEMPLATEPY_.qrc	2025-09-13 10:12:41.571348592 +0800
++++ src/Tools/_TEMPLATEPY_/Resources/_TEMPLATEPY_.qrc	2025-04-12 17:34:24.524908394 +0800
+@@ -1,5 +1,6 @@
+ <!DOCTYPE RCC><RCC version="1.0">
+     <qresource>
+         <file>icons/_TEMPLATEPY_Workbench.svg</file>
++        <file>translations/_TEMPLATEPY__zh-TW.ts</file>
+     </qresource>
+ </RCC>
+--- src/Tools/_TEMPLATEPY_/CMakeLists.txt	2025-09-13 10:12:41.569348513 +0800
++++ src/Tools/_TEMPLATEPY_/CMakeLists.txt	2025-04-23 08:17:37.702322890 +0800
+@@ -1,6 +1,7 @@
+ 
+ IF (BUILD_GUI)
+     PYSIDE_WRAP_RC(_TEMPLATEPY__QRC_SRCS Resources/_TEMPLATEPY_.qrc)
++    qt_add_resources(_TEMPLATEPY__QRC_SRCS Resources/_TEMPLATEPY_.qrc)
+ ENDIF (BUILD_GUI)
+ 
+ SET(_TEMPLATEPY__SRCS
+@@ -37,4 +38,4 @@
+         Mod/_TEMPLATEPY_
+ )
+ 
+-INSTALL(FILES ${_TEMPLATEPY_GuiIcon_SVG} DESTINATION "Mod/_TEMPLATEPY_/Resources/icons")
++INSTALL(FILES ${_TEMPLATEPY_GuiIcon_SVG} DESTINATION "${CMAKE_INSTALL_DATADIR}/Mod/_TEMPLATEPY_/Resources/icons")
+--- src/Doc/CONTRIBUTORS	2025-09-13 10:12:33.406028232 +0800
++++ src/Doc/CONTRIBUTORS	2025-09-18 13:54:12.996684867 +0800
+@@ -21,6 +21,7 @@
+ Benjamin Bræstrup Sayoc
+ Benjamin Nauck (hyarion)
+ Bernd Hahnebach
++bgbsww
+ blobfish (tanderson69)
+ bluecd
+ Brad Collette (sliptonic)
+@@ -42,6 +43,7 @@
+ Дмитрий Сидоров
+ dinasapitri
+ Dion Moult (Moult)
++白鴻崇 (DrBenson)
+ easyw
+ Ediloren
+ Eduardo Magdalena
+--- src/Mod/Part/App/PartFeature.cpp	2025-09-18 11:37:07.702221160 +0800
++++ /media/UserTemp/Sources/conda/media/1.1.0/App/org/PartFeature.cpp	2025-08-28 09:26:02.811460457 +0800
+@@ -23,48 +23,47 @@
+ #include "PreCompiled.h"
+ 
+ #ifndef _PreComp_
+-# include <sstream>
+-# include <Bnd_Box.hxx>
+-# include <BRepAdaptor_Curve.hxx>
+-# include <Mod/Part/App/FCBRepAlgoAPI_Fuse.h>
+-# include <Mod/Part/App/FCBRepAlgoAPI_Common.h>
+-# include <BRepBndLib.hxx>
+-# include <BRepBuilderAPI_MakeEdge.hxx>
+-# include <BRepBuilderAPI_MakeFace.hxx>
+-# include <BRepBuilderAPI_MakeVertex.hxx>
+-# include <BRepBuilderAPI_MakeShape.hxx>
+-# include <BRepBuilderAPI_MakeVertex.hxx>
+-# include <BRepExtrema_DistShapeShape.hxx>
+-# include <BRepGProp.hxx>
+-# include <BRepGProp_Face.hxx>
+-# include <BRepIntCurveSurface_Inter.hxx>
+-# include <gce_MakeDir.hxx>
+-# include <gce_MakeLin.hxx>
+-# include <gp_Ax1.hxx>
+-# include <gp_Dir.hxx>
+-# include <gp_Pln.hxx>
+-# include <gp_Trsf.hxx>
+-# include <GProp_GProps.hxx>
+-# include <IntCurveSurface_IntersectionPoint.hxx>
+-# include <Precision.hxx>
+-# include <Standard_Failure.hxx>
+-# include <Standard_Version.hxx>
+-# include <TopExp.hxx>
+-# include <TopExp_Explorer.hxx>
+-# include <TopoDS.hxx>
+-# include <TopTools_IndexedMapOfShape.hxx>
+-# include <TopTools_ListIteratorOfListOfShape.hxx>
++#include <BRepAdaptor_Curve.hxx>
++#include <BRepBndLib.hxx>
++#include <BRepBuilderAPI_MakeEdge.hxx>
++#include <BRepBuilderAPI_MakeFace.hxx>
++#include <BRepBuilderAPI_MakeShape.hxx>
++#include <BRepBuilderAPI_MakeVertex.hxx>
++#include <BRepExtrema_DistShapeShape.hxx>
++#include <BRepGProp.hxx>
++#include <BRepGProp_Face.hxx>
++#include <BRepIntCurveSurface_Inter.hxx>
++#include <Bnd_Box.hxx>
++#include <GProp_GProps.hxx>
++#include <IntCurveSurface_IntersectionPoint.hxx>
++#include <Mod/Part/App/FCBRepAlgoAPI_Common.h>
++#include <Mod/Part/App/FCBRepAlgoAPI_Fuse.h>
++#include <Precision.hxx>
++#include <Standard_Failure.hxx>
++#include <Standard_Version.hxx>
++#include <TopExp.hxx>
++#include <TopExp_Explorer.hxx>
++#include <TopTools_IndexedMapOfShape.hxx>
++#include <TopTools_ListIteratorOfListOfShape.hxx>
++#include <TopoDS.hxx>
++#include <gce_MakeDir.hxx>
++#include <gce_MakeLin.hxx>
++#include <gp_Ax1.hxx>
++#include <gp_Dir.hxx>
++#include <gp_Pln.hxx>
++#include <gp_Trsf.hxx>
++#include <sstream>
+ #endif
+ 
+ #include <App/Application.h>
++#include <App/Datums.h>
+ #include <App/Document.h>
++#include <App/ElementNamingUtils.h>
+ #include <App/FeaturePythonPyImp.h>
+ #include <App/GeoFeature.h>
+-#include <App/Link.h>
+ #include <App/GeoFeatureGroupExtension.h>
+-#include <App/ElementNamingUtils.h>
++#include <App/Link.h>
+ #include <App/Placement.h>
+-#include <App/Datums.h>
+ #include <Base/Exception.h>
+ #include <Base/Placement.h>
+ #include <Base/Rotation.h>
+@@ -76,22 +75,49 @@
+ #include "PartFeature.h"
+ #include "PartFeaturePy.h"
+ #include "PartPyCXX.h"
+-#include "TopoShapePy.h"
+ #include "Tools.h"
++#include "TopoShapePy.h"
++#include <Base/Tools.h>
+ 
+ using namespace Part;
+ namespace sp = std::placeholders;
+ 
+-FC_LOG_LEVEL_INIT("Part",true,true)
++FC_LOG_LEVEL_INIT("Part", true, true)
+ 
+ PROPERTY_SOURCE(Part::Feature, App::GeoFeature)
+ 
+-
+ Feature::Feature()
+ {
+     ADD_PROPERTY(Shape, (TopoDS_Shape()));
+     auto mat = Materials::MaterialManager::defaultMaterial();
+     ADD_PROPERTY(ShapeMaterial, (*mat));
++
++    // Read only properties based on the material
++    static const char* group = "PhysicalProperties";
++    ADD_PROPERTY_TYPE(MaterialName,
++        (""),
++        group,
++        static_cast<App::PropertyType>(App::Prop_ReadOnly | App::Prop_Output
++            | App::Prop_NoRecompute | App::Prop_NoPersist),
++        "Feature material");
++    ADD_PROPERTY_TYPE(Density,
++        (0.0),
++        group,
++        static_cast<App::PropertyType>(App::Prop_ReadOnly | App::Prop_Output
++            | App::Prop_NoRecompute | App::Prop_NoPersist),
++        "Feature density");
++    ADD_PROPERTY_TYPE(Mass,
++        (0.0),
++        group,
++        static_cast<App::PropertyType>(App::Prop_ReadOnly | App::Prop_Output
++            | App::Prop_NoRecompute | App::Prop_NoPersist),
++        "Feature mass");
++    ADD_PROPERTY_TYPE(Volume,
++        (1.0),
++        group,
++        static_cast<App::PropertyType>(App::Prop_ReadOnly | App::Prop_Output
++            | App::Prop_NoRecompute | App::Prop_NoPersist),
++        "Feature volume");
+ }
+ 
+ Feature::~Feature() = default;
+@@ -101,30 +127,30 @@
+     return GeoFeature::mustExecute();
+ }
+ 
+-App::DocumentObjectExecReturn *Feature::recompute()
++App::DocumentObjectExecReturn* Feature::recompute()
+ {
+     try {
+         return App::GeoFeature::recompute();
+-    }
+-    catch (Standard_Failure& e) {
++    } catch (Standard_Failure& e) {
+ 
+         App::DocumentObjectExecReturn* ret = new App::DocumentObjectExecReturn(e.GetMessageString());
+-        if (ret->Why.empty()) ret->Why = "Unknown OCC exception";
++        if (ret->Why.empty())
++            ret->Why = "Unknown OCC exception";
+         return ret;
+     }
+ }
+ 
+-App::DocumentObjectExecReturn *Feature::execute()
++App::DocumentObjectExecReturn* Feature::execute()
+ {
+     this->Shape.touch();
+     return GeoFeature::execute();
+ }
+ 
+-PyObject *Feature::getPyObject()
++PyObject* Feature::getPyObject()
+ {
+-    if (PythonObject.is(Py::_None())){
++    if (PythonObject.is(Py::_None())) {
+         // ref counter is set to 1
+-        PythonObject = Py::Object(new PartFeaturePy(this),true);
++        PythonObject = Py::Object(new PartFeaturePy(this), true);
+     }
+     return Py::new_reference_to(PythonObject);
+ }
+@@ -157,7 +183,7 @@
+  * @return a struct with the newName and oldName. New element name may be empty.
+  */
+ App::ElementNamePair Feature::getElementName(const char* name,
+-                                                ElementNameType type) const
++    ElementNameType type) const
+ {
+     if (type != ElementNameType::Export) {
+         return App::GeoFeature::getElementName(name, type);
+@@ -174,7 +200,7 @@
+ }
+ 
+ App::ElementNamePair Feature::getExportElementName(TopoShape shape,
+-                                                                  const char* name) const
++    const char* name) const
+ {
+     Data::MappedElement mapped = shape.getElementName(name);
+     auto res = shape.shapeTypeAndIndex(mapped.index);
+@@ -203,19 +229,19 @@
+         Data::IndexedName idxName;
+         if (!subshape.isNull()) {
+             switch (res.first) {
+-                case TopAbs_WIRE:
+-                    lower = TopAbs_EDGE;
+-                    idxName = Data::IndexedName::fromConst("Edge", 1);
+-                    break;
+-                case TopAbs_SHELL:
+-                case TopAbs_SOLID:
+-                case TopAbs_COMPOUND:
+-                case TopAbs_COMPSOLID:
+-                    lower = TopAbs_FACE;
+-                    idxName = Data::IndexedName::fromConst("Face", 1);
+-                    break;
+-                default:
+-                    lower = TopAbs_SHAPE;
++            case TopAbs_WIRE:
++                lower = TopAbs_EDGE;
++                idxName = Data::IndexedName::fromConst("Edge", 1);
++                break;
++            case TopAbs_SHELL:
++            case TopAbs_SOLID:
++            case TopAbs_COMPOUND:
++            case TopAbs_COMPSOLID:
++                lower = TopAbs_FACE;
++                idxName = Data::IndexedName::fromConst("Face", 1);
++                break;
++            default:
++                lower = TopAbs_SHAPE;
+             }
+             if (lower != TopAbs_SHAPE) {
+                 typedef std::pair<size_t, std::vector<int>> NameEntry;
+@@ -229,7 +255,7 @@
+                         continue;
+                     }
+                     indices.emplace_back(names.size(),
+-                                         shape.findAncestors(ss.getShape(), res.first));
++                        shape.findAncestors(ss.getShape(), res.first));
+                     names.push_back(name);
+                     if (indices.back().second.size() == 1 && ++count >= MinLowerTopoNames) {
+                         break;
+@@ -238,10 +264,10 @@
+ 
+                 if (names.size() >= MaxLowerTopoNames) {
+                     std::stable_sort(indices.begin(),
+-                                     indices.end(),
+-                                     [](const NameEntry& a, const NameEntry& b) {
+-                                         return a.second.size() < b.second.size();
+-                                     });
++                        indices.end(),
++                        [](const NameEntry& a, const NameEntry& b) {
++                            return a.second.size() < b.second.size();
++                        });
+                     std::vector<Data::MappedName> sorted;
+                     auto pos = 0;
+                     sorted.reserve(names.size());
+@@ -249,8 +275,7 @@
+                         size_t size = ancestors.size();
+                         if (size == 0) {
+                             ancestors = v.second;
+-                        }
+-                        else if (size > 1) {
++                        } else if (size > 1) {
+                             for (auto it = ancestors.begin(); it != ancestors.end();) {
+                                 if (std::ranges::find(v.second, *it)
+                                     == v.second.end()) {
+@@ -258,8 +283,7 @@
+                                     if (ancestors.size() == 1) {
+                                         break;
+                                     }
+-                                }
+-                                else {
++                                } else {
+                                     ++it;
+                                 }
+                             }
+@@ -285,7 +309,7 @@
+                         // disambiguation.
+                         auto it = std::ranges::find(ancestors, res.second);
+                         if (it == ancestors.end()) {
+-                            assert(0 && "ancestor not found");  // this shouldn't happen
++                            assert(0 && "ancestor not found"); // this shouldn't happen
+                         }
+ 
+                         op = Data::POSTFIX_INDEX + std::to_string(it - ancestors.begin());
+@@ -303,14 +327,13 @@
+                     // recording the change in undo stack.
+                     //
+                     mapped.name = shape.setElementComboName(mapped.index,
+-                                                            names,
+-                                                            mapped.index.getType(),
+-                                                            op.c_str());
++                        names,
++                        mapped.index.getType(),
++                        op.c_str());
+                 }
+             }
+         }
+-    }
+-    else if (!res.second && mapped.name) {
++    } else if (!res.second && mapped.name) {
+         const char* dot = strchr(name, '.');
+         if (dot) {
+             ++dot;
+@@ -328,24 +351,23 @@
+             std::pair<TopAbs_ShapeEnum, int> occindex = shape.shapeTypeAndIndex(dot);
+             if (occindex.second > 0) {
+                 auto idxName = Data::IndexedName::fromConst(shape.shapeName(occindex.first).c_str(),
+-                                                            occindex.second);
++                    occindex.second);
+                 std::string postfix;
+-                auto names =
+-                    shape.decodeElementComboName(idxName, mapped.name, idxName.getType(), &postfix);
++                auto names = shape.decodeElementComboName(idxName, mapped.name, idxName.getType(), &postfix);
+                 std::vector<int> ancestors;
+-                if ( names.empty() ) {
++                if (names.empty()) {
+                     // Naming based heuristic has failed to find the element.  Let's see if we can
+                     // find it by matching either planes for faces or lines for edges.
+                     auto searchShape = this->Shape.getShape();
+                     // If we're still out at a Shell, Solid, CompSolid, or Compound drill in
+-                    while (!searchShape.getShape().IsNull() && searchShape.getShape().ShapeType() < TopAbs_FACE ) {
++                    while (!searchShape.getShape().IsNull() && searchShape.getShape().ShapeType() < TopAbs_FACE) {
+                         auto shapes = searchShape.getSubTopoShapes();
+-                        if ( shapes.empty() ) // No more subshapes, so don't continue
++                        if (shapes.empty()) // No more subshapes, so don't continue
+                             break;
+-                        searchShape = shapes.front();   // After the break, so we stopped at innermost container
++                        searchShape = shapes.front(); // After the break, so we stopped at innermost container
+                     }
+                     auto newMapped = TopoShape::chooseMatchingSubShapeByPlaneOrLine(shape, searchShape);
+-                    if ( ! newMapped.name.empty() )
++                    if (!newMapped.name.empty())
+                         mapped = newMapped;
+                 }
+                 for (auto& name : names) {
+@@ -363,17 +385,15 @@
+                     auto current = shape.findAncestors(subshape, occindex.first);
+                     if (ancestors.empty()) {
+                         ancestors = std::move(current);
+-                    }
+-                    else {
++                    } else {
+                         for (auto it = ancestors.begin(); it != ancestors.end();) {
+                             if (std::ranges::find(current, *it) == current.end()) {
+                                 it = ancestors.erase(it);
+-                            }
+-                            else {
++                            } else {
+                                 ++it;
+                             }
+                         }
+-                        if (ancestors.empty()) {  // model changed beyond recognition, bail!
++                        if (ancestors.empty()) { // model changed beyond recognition, bail!
+                             break;
+                         }
+                     }
+@@ -396,12 +416,13 @@
+ }
+ 
+ App::DocumentObject* Feature::getSubObject(const char* subname,
+-                                           PyObject** pyObj,
+-                                           Base::Matrix4D* pmat,
+-                                           bool transform,
+-                                           int depth) const
++    PyObject** pyObj,
++    Base::Matrix4D* pmat,
++    bool transform,
++    int depth) const
+ {
+-    while(subname && *subname=='.') ++subname; // skip leading .
++    while (subname && *subname == '.')
++        ++subname; // skip leading .
+ 
+     // having '.' inside subname means it is referencing some children object,
+     // instead of any sub-element from ourself
+@@ -427,7 +448,7 @@
+             ts.setShape(ts.getShape().Located(TopLoc_Location()), false);
+         }
+         if (subname && *subname && !ts.isNull()) {
+-            ts = ts.getSubTopoShape(subname,true);
++            ts = ts.getSubTopoShape(subname, true);
+         }
+         if (doTransform && !ts.isNull()) {
+             static int sCopy = -1;
+@@ -455,8 +476,7 @@
+         }
+         *pyObj = Py::new_reference_to(shape2pyshape(ts));
+         return const_cast<Feature*>(this);
+-    }
+-    catch (Standard_Failure& e) {
++    } catch (Standard_Failure& e) {
+         // FIXME: Do not handle the exception here because it leads to a flood of irrelevant and
+         // annoying error messages.
+         // For example: https://forum.freecad.org/viewtopic.php?f=19&t=42216
+@@ -470,8 +490,7 @@
+ 
+         if (msg) {
+             str << msg;
+-        }
+-        else {
++        } else {
+             str << "No OCCT Exception Message";
+         }
+         str << ": " << getFullName();
+@@ -484,9 +503,9 @@
+ }
+ 
+ static std::vector<std::pair<long, Data::MappedName>> getElementSource(App::DocumentObject* owner,
+-                                                                       TopoShape shape,
+-                                                                       const Data::MappedName& name,
+-                                                                       char type)
++    TopoShape shape,
++    const Data::MappedName& name,
++    char type)
+ {
+     std::set<std::pair<App::Document*, long>> tagSet;
+     std::vector<std::pair<long, Data::MappedName>> ret;
+@@ -521,8 +540,7 @@
+                 }
+             }
+             if (owner->isDerivedFrom<App::GeoFeature>()) {
+-                auto ownerGeoFeature =
+-                    static_cast<App::GeoFeature*>(owner)->getElementOwner(ret.back().second);
++                auto ownerGeoFeature = static_cast<App::GeoFeature*>(owner)->getElementOwner(ret.back().second);
+                 if (ownerGeoFeature) {
+                     doc = ownerGeoFeature->getDocument();
+                 }
+@@ -542,15 +560,13 @@
+             // source element name from hasher table.
+             shape.setShape(TopoDS_Shape());
+             doc = nullptr;
+-        }
+-        else {
+-            shape =
+-                Part::Feature::getTopoShape(obj,
+-                                              Part::ShapeOption::ResolveLink 
+-                                            | Part::ShapeOption::Transform,
+-                                            nullptr,
+-                                            nullptr,
+-                                            &owner);
++        } else {
++            shape = Part::Feature::getTopoShape(obj,
++                Part::ShapeOption::ResolveLink
++                    | Part::ShapeOption::Transform,
++                nullptr,
++                nullptr,
++                &owner);
+         }
+         if (type && shape.elementType(original) != type) {
+             break;
+@@ -572,9 +588,9 @@
+ }
+ 
+ std::list<Data::HistoryItem> Feature::getElementHistory(App::DocumentObject* feature,
+-                                                        const char* name,
+-                                                        bool recursive,
+-                                                        bool sameType)
++    const char* name,
++    bool recursive,
++    bool sameType)
+ {
+     std::list<Data::HistoryItem> ret;
+     TopoShape shape = getTopoShape(feature, ShapeOption::ResolveLink | ShapeOption::Transform);
+@@ -583,11 +599,9 @@
+     Data::MappedName prevElement;
+     if (idx) {
+         element = shape.getMappedName(idx, true);
+-    }
+-    else if (Data::isMappedElement(name)) {
++    } else if (Data::isMappedElement(name)) {
+         element = Data::MappedName(Data::newElementName(name));
+-    }
+-    else {
++    } else {
+         element = Data::MappedName(name);
+     }
+     char element_type = 0;
+@@ -610,8 +624,7 @@
+         }
+         if (ret.back().intermediates.size()) {
+             prevElement = ret.back().intermediates.back();
+-        }
+-        else {
++        } else {
+             prevElement = Data::MappedName();
+         }
+ 
+@@ -629,9 +642,9 @@
+                     break;
+                 }
+             }
++            //            if (feature->isDerivedFrom(App::GeoFeature::getClassTypeId())) {
+             if (feature->isDerivedFrom<App::GeoFeature>()) {
+-                auto ownerGeoFeature =
+-                    static_cast<App::GeoFeature*>(feature)->getElementOwner(element);
++                auto ownerGeoFeature = static_cast<App::GeoFeature*>(feature)->getElementOwner(element);
+                 if (ownerGeoFeature) {
+                     doc = ownerGeoFeature->getDocument();
+                 }
+@@ -654,6 +667,7 @@
+             }
+         }
+         feature = obj;
++        // shape = Feature::getTopoShape(feature);
+         shape = Feature::getTopoShape(feature, ShapeOption::ResolveLink | ShapeOption::Transform);
+         element = original;
+         if (element_type && shape.elementType(original) != element_type) {
+@@ -664,23 +678,32 @@
+ }
+ 
+ QVector<Data::MappedElement> Feature::getElementFromSource(App::DocumentObject* obj,
+-                                                           const char* subname,
+-                                                           App::DocumentObject* src,
+-                                                           const char* srcSub,
+-                                                           bool single)
++    const char* subname,
++    App::DocumentObject* src,
++    const char* srcSub,
++    bool single)
+ {
+     QVector<Data::MappedElement> res;
+     if (!obj || !src) {
+         return res;
+     }
++    /*    auto shape = getTopoShape(obj,
++                                  subname,
++                                  false,
++                                  nullptr,
++                                  nullptr,
++                                  true, */
++    /*transform = */ /* false);
++                      */
+     auto shape = getTopoShape(obj, ShapeOption::ResolveLink, subname, nullptr, nullptr);
+     App::DocumentObject* owner = nullptr;
++    //    auto srcShape = getTopoShape(src, srcSub, false, nullptr, &owner);
+     auto srcShape = getTopoShape(src,
+-                                   ShapeOption::ResolveLink 
+-                                 | ShapeOption::Transform,
+-                                 srcSub,
+-                                 nullptr,
+-                                 &owner);
++        ShapeOption::ResolveLink
++            | ShapeOption::Transform,
++        srcSub,
++        nullptr,
++        &owner);
+     int tagChanges;
+     Data::MappedElement element;
+     Data::IndexedName checkingSubname;
+@@ -690,8 +713,7 @@
+             if (!tagChanges) {
+                 tagChanges = 1;
+             }
+-        }
+-        else if (tagChanges && ++tagChanges > 3) {
++        } else if (tagChanges && ++tagChanges > 3) {
+             // Once we found the tag, trace no more than 2 addition tag changes
+             // to limited the search depth.
+             return true;
+@@ -704,7 +726,7 @@
+             sub.resize(len);
+             if (objElement.oldName.size()) {
+                 res.push_back(Data::MappedElement(Data::MappedName(objElement.newName),
+-                                                  Data::IndexedName(objElement.oldName.c_str())));
++                    Data::IndexedName(objElement.oldName.c_str())));
+                 return true;
+             }
+         }
+@@ -728,11 +750,9 @@
+     // Translate the element name for datum
+     if (objElement.oldName == "Plane") {
+         objElement.oldName = "Face1";
+-    }
+-    else if (objElement.oldName == "Line") {
++    } else if (objElement.oldName == "Line") {
+         objElement.oldName = "Edge1";
+-    }
+-    else if (objElement.oldName == "Point") {
++    } else if (objElement.oldName == "Point") {
+         objElement.oldName = "Vertex1";
+     }
+ 
+@@ -791,17 +811,18 @@
+ }
+ 
+ QVector<Data::MappedElement> Feature::getRelatedElements(App::DocumentObject* obj,
+-                                                         const char* name,
+-                                                         HistoryTraceType sameType,
+-                                                         bool withCache)
++    const char* name,
++    HistoryTraceType sameType,
++    bool withCache)
+ {
+     auto owner = obj;
++    //    auto shape = getTopoShape(obj, nullptr, false, 0, &owner);
+     auto shape = getTopoShape(obj,
+-                                ShapeOption::ResolveLink 
+-                              | ShapeOption::Transform,
+-                              nullptr,
+-                              nullptr,
+-                              &owner);
++        ShapeOption::ResolveLink
++            | ShapeOption::Transform,
++        nullptr,
++        nullptr,
++        &owner);
+     QVector<Data::MappedElement> ret;
+     Data::MappedElement mapped = shape.getElementName(name);
+     if (!mapped.name) {
+@@ -817,11 +838,10 @@
+         return ret;
+     }
+ 
+-    auto source =
+-        getElementSource(owner,
+-                         shape,
+-                         mapped.name,
+-                         sameType == HistoryTraceType::followTypeChange ? element_type : 0);
++    auto source = getElementSource(owner,
++        shape,
++        mapped.name,
++        sameType == HistoryTraceType::followTypeChange ? element_type : 0);
+     for (auto& src : source) {
+         auto srcIndex = shape.getIndexedName(src.second);
+         if (srcIndex) {
+@@ -842,11 +862,10 @@
+         if (!related.name) {
+             continue;
+         }
+-        auto src =
+-            getElementSource(owner,
+-                             shape,
+-                             related.name,
+-                             sameType == HistoryTraceType::followTypeChange ? element_type : 0);
++        auto src = getElementSource(owner,
++            shape,
++            related.name,
++            sameType == HistoryTraceType::followTypeChange ? element_type : 0);
+         int idx = (int)source.size() - 1;
+         for (auto rit = src.rbegin(); idx >= 0 && rit != src.rend(); ++rit, --idx) {
+             // TODO: shall we ignore source tag when comparing? It could cause
+@@ -867,12 +886,20 @@
+     shape.cacheRelatedElements(mapped.name, sameType, ret);
+     return ret;
+ }
++/*
+ 
+-TopoDS_Shape Feature::getShape( const App::DocumentObject *obj, 
+-                                ShapeOptions options, 
+-                                const char *subname,
+-                                Base::Matrix4D *pmat, 
+-                                App::DocumentObject **powner)
++TopoDS_Shape Feature::getShape(const App::DocumentObject *obj, const char *subname,
++        bool needSubElement, Base::Matrix4D *pmat, App::DocumentObject **powner,
++        bool resolveLink, bool transform)
++{
++    return getTopoShape(obj,subname,needSubElement,pmat,powner,resolveLink,transform,true).getShape();
++}
++*/
++TopoDS_Shape Feature::getShape(const App::DocumentObject* obj,
++    ShapeOptions options,
++    const char* subname,
++    Base::Matrix4D* pmat,
++    App::DocumentObject** powner)
+ {
+     return getTopoShape(obj, options | ShapeOption::NoElementMap, subname, pmat, powner).getShape();
+ }
+@@ -886,15 +913,15 @@
+ {
+     try {
+         ShapeMaterial.setValue(material);
+-    }
+-    catch (const Base::Exception& e) {
++    } catch (const Base::Exception& e) {
+         e.reportException();
+     }
+ }
+ 
+ // Toponaming project March 2024:  This method should be going away when we get to the python layer.
+-void Feature::clearShapeCache() {
+-//    _ShapeCache.cache.clear();
++void Feature::clearShapeCache()
++{
++    //    _ShapeCache.cache.clear();
+ }
+ 
+ /*
+@@ -909,12 +936,12 @@
+                                const App::DocumentObject* lastLink)
+ */
+ static TopoShape _getTopoShape(const App::DocumentObject* obj,
+-                               ShapeOptions options,
+-                               const char* subname,
+-                               Base::Matrix4D* pmat,
+-                               App::DocumentObject** powner,
+-                               const std::set<std::string> hiddens,
+-                               const App::DocumentObject* lastLink)
++    ShapeOptions options,
++    const char* subname,
++    Base::Matrix4D* pmat,
++    App::DocumentObject** powner,
++    const std::set<std::string> hiddens,
++    const App::DocumentObject* lastLink)
+ 
+ {
+     TopoShape shape;
+@@ -947,7 +974,7 @@
+         if (options.testFlag(ShapeOption::NoElementMap)) {
+             shape.resetElementMap();
+             shape.Tag = 0;
+-            if ( shape.Hasher ) {
++            if (shape.Hasher) {
+                 shape.Hasher = nullptr;
+             }
+         }
+@@ -970,8 +997,7 @@
+         if (pmat) {
+             if (options.testFlag(ShapeOption::ResolveLink) && obj != owner) {
+                 *pmat = mat * linkMat;
+-            }
+-            else {
++            } else {
+                 *pmat = mat;
+             }
+         }
+@@ -996,18 +1022,26 @@
+                         PropertyShapeCache::setShape(obj, shape, subname);
+                     }
+                 }
++                /*
++                                if (noElementMap) {
++                                    shape.resetElementMap();
++                                    shape.Tag = 0;
++                                    if ( shape.Hasher ) {
++                                        shape.Hasher = nullptr;
++                                    }
++                                }
++                */
+                 if (options.testFlag(ShapeOption::NoElementMap)) {
+                     shape.resetElementMap();
+                     shape.Tag = 0;
+-                    if ( shape.Hasher ) {
++                    if (shape.Hasher) {
+                         shape.Hasher = nullptr;
+                     }
+                 }
+                 Py_DECREF(pyobj);
+                 return shape;
+             }
+-        }
+-        else {
++        } else {
+             if (linked->isDerivedFrom<App::Line>()) {
+                 static TopoDS_Shape _shape;
+                 if (_shape.IsNull()) {
+@@ -1018,8 +1052,7 @@
+                     _shape.Infinite(Standard_True);
+                 }
+                 shape = TopoShape(tag, hasher, _shape);
+-            }
+-            else if (linked->isDerivedFrom<App::Plane>()) {
++            } else if (linked->isDerivedFrom<App::Plane>()) {
+                 static TopoDS_Shape _shape;
+                 if (_shape.IsNull()) {
+                     auto plane = static_cast<App::Plane*>(linked);
+@@ -1029,16 +1062,14 @@
+                     _shape.Infinite(Standard_True);
+                 }
+                 shape = TopoShape(tag, hasher, _shape);
+-            }
+-            else if (linked->isDerivedFrom<App::Point>()) {
++            } else if (linked->isDerivedFrom<App::Point>()) {
+                 static TopoDS_Shape _shape;
+                 if (_shape.IsNull()) {
+                     BRepBuilderAPI_MakeVertex builder(gp_Pnt(0, 0, 0));
+                     _shape = builder.Shape();
+                 }
+                 shape = TopoShape(tag, hasher, _shape);
+-            }
+-            else if (linked->isDerivedFrom<App::Placement>()) {
++            } else if (linked->isDerivedFrom<App::Placement>()) {
+                 auto element = Data::findElementName(subname);
+                 if (element) {
+                     if (boost::iequals("x", element) || boost::iequals("x-axis", element)
+@@ -1052,8 +1083,7 @@
+                             _shape.Infinite(Standard_True);
+                         }
+                         shape = TopoShape(tag, hasher, _shape);
+-                    }
+-                    else if (boost::iequals("o", element) || boost::iequals("origin", element)) {
++                    } else if (boost::iequals("o", element) || boost::iequals("origin", element)) {
+                         static TopoDS_Shape _shape;
+                         if (_shape.IsNull()) {
+                             BRepBuilderAPI_MakeVertex builder(gp_Pnt(0, 0, 0));
+@@ -1094,9 +1124,8 @@
+             if (owner->getDocument() != obj->getDocument()) {
+                 shape.reTagElementMap(obj->getID(), obj->getDocument()->getStringHasher());
+                 PropertyShapeCache::setShape(obj, shape, subname);
+-            }
+-            else if (scaled
+-                     || (linked != owner && linkMat.hasScale() != Base::ScaleType::NoScaling)) {
++            } else if (scaled
++                || (linked != owner && linkMat.hasScale() != Base::ScaleType::NoScaling)) {
+                 PropertyShapeCache::setShape(obj, shape, subname);
+             }
+         }
+@@ -1104,7 +1133,7 @@
+             if (options.testFlag(ShapeOption::NoElementMap)) {
+                 shape.resetElementMap();
+                 shape.Tag = 0;
+-                if ( shape.Hasher) {
++                if (shape.Hasher) {
+                     shape.Hasher = nullptr;
+                 }
+             }
+@@ -1125,13 +1154,11 @@
+         }
+         if (owner == obj) {
+             shape.transformShape(mat * linkMat, false, true);
+-        }
+-        else {
++        } else {
+             shape.transformShape(linkMat, false, true);
+         }
+         shape.reTagElementMap(tag, hasher);
+-    }
+-    else {
++    } else {
+         // Construct a compound of sub objects
+         std::vector<TopoShape> shapes;
+ 
+@@ -1147,7 +1174,7 @@
+                 baseShape = Feature::getTopoShape(linked, ShapeOption::NoFlag);
+                 if (!link->getShowElementValue()) {
+                     baseShape.reTagElementMap(owner->getID(),
+-                                              owner->getDocument()->getStringHasher());
++                        owner->getDocument()->getStringHasher());
+                 }
+             }
+         }
+@@ -1162,17 +1189,14 @@
+             App::DocumentObject* subObj = nullptr;
+             if (sub.find('.') == std::string::npos) {
+                 visible = 1;
+-            }
+-            else {
+-                subObj =
+-                    owner->resolve(sub.c_str(), &parent, &childName, nullptr, nullptr, &mat, false);
++            } else {
++                subObj = owner->resolve(sub.c_str(), &parent, &childName, nullptr, nullptr, &mat, false);
+                 if (!parent || !subObj) {
+                     continue;
+                 }
+                 if (lastLink && App::GeoFeatureGroupExtension::isNonGeoGroup(parent)) {
+                     visible = lastLink->isElementVisible(childName.c_str());
+-                }
+-                else {
++                } else {
+                     visible = parent->isElementVisible(childName.c_str());
+                 }
+             }
+@@ -1184,10 +1208,10 @@
+             const App::DocumentObject* nextLink = lastLink;
+             // Todo: This might belong.
+             // Toponaming project March 2024:  This appears to be a non toponaming feature:
+-//            if (!checkLinkVisibility(nextHiddens, true, nextLink, owner, sub.c_str())) {
+-//                cacheable = false;
+-//                continue;
+-//            }
++            //            if (!checkLinkVisibility(nextHiddens, true, nextLink, owner, sub.c_str())) {
++            //                cacheable = false;
++            //                continue;
++            //            }
+ 
+             TopoShape shape;
+ 
+@@ -1200,12 +1224,12 @@
+             }
+             if (doGetShape) {
+                 shape = _getTopoShape(owner,
+-                                      ShapeOption::NeedSubElement,
+-                                      sub.c_str(),
+-                                      nullptr,
+-                                      &subObj,
+-                                      nextHiddens,
+-                                      nextLink);
++                    ShapeOption::NeedSubElement,
++                    sub.c_str(),
++                    nullptr,
++                    &subObj,
++                    nextHiddens,
++                    nextLink);
+ 
+                 if (shape.isNull()) {
+                     continue;
+@@ -1213,17 +1237,14 @@
+                 if (visible < 0 && subObj && !subObj->Visibility.getValue()) {
+                     continue;
+                 }
+-            }
+-            else {
++            } else {
+                 if (link && !link->getShowElementValue()) {
+-                    shape =
+-                        baseShape.makeElementTransform(mat,
+-                                                (Data::POSTFIX_INDEX + childName).c_str());
+-                }
+-                else {
++                    shape = baseShape.makeElementTransform(mat,
++                        (Data::POSTFIX_INDEX + childName).c_str());
++                } else {
+                     shape = baseShape.makeElementTransform(mat);
+                     shape.reTagElementMap(subObj->getID(),
+-                                          subObj->getDocument()->getStringHasher());
++                        subObj->getDocument()->getStringHasher());
+                 }
+             }
+             shapes.push_back(shape);
+@@ -1245,7 +1266,7 @@
+         bool scaled = shape.transformShape(mat, false, true);
+         if (owner->getDocument() != obj->getDocument()) {
+             shape.reTagElementMap(obj->getID(), obj->getDocument()->getStringHasher());
+-            scaled = true;  // force cache
++            scaled = true; // force cache
+         }
+         if (canCache(obj) && scaled) {
+             PropertyShapeCache::setShape(obj, shape, subname);
+@@ -1254,19 +1275,27 @@
+     if (options.testFlag(ShapeOption::NoElementMap)) {
+         shape.resetElementMap();
+         shape.Tag = 0;
+-        if ( shape.Hasher ) {
++        if (shape.Hasher) {
+             shape.Hasher = nullptr;
+         }
+     }
+     return shape;
+ }
+-
+-
+-TopoShape Feature::getTopoShape(const App::DocumentObject* obj, 
+-                                ShapeOptions options,
+-                                const char* subname, 
+-                                Base::Matrix4D* pmat, 
+-                                App::DocumentObject** powner)
++/*
++TopoShape Feature::getTopoShape(const App::DocumentObject* obj,
++                                const char* subname,
++                                bool needSubElement,
++                                Base::Matrix4D* pmat,
++                                App::DocumentObject** powner,
++                                bool resolveLink,
++                                bool transform,
++                                bool noElementMap)
++*/
++TopoShape Feature::getTopoShape(const App::DocumentObject* obj,
++    ShapeOptions options,
++    const char* subname,
++    Base::Matrix4D* pmat,
++    App::DocumentObject** powner)
+ {
+     if (!obj || !obj->getNameInDocument()) {
+         return {};
+@@ -1276,9 +1305,9 @@
+     std::set<std::string> hiddens;
+     // Toponaming project March 2024:  This appears to be a non toponaming feature:
+     // Todo is this a cause behind #13886 ?
+-//    if (!checkLinkVisibility(hiddens, false, lastLink, obj, subname)) {
+-//        return TopoShape();
+-//    }
++    //    if (!checkLinkVisibility(hiddens, false, lastLink, obj, subname)) {
++    //        return TopoShape();
++    //    }
+ 
+     // NOTE! _getTopoShape() always return shape without top level
+     // transformation for easy shape caching, i.e.  with `transform` set
+@@ -1297,8 +1326,7 @@
+             }
+             if (options.testFlag(ShapeOption::NoElementMap)) {
+                 ts = ts.getSubShape(subname, true);
+-            }
+-            else {
++            } else {
+                 ts = ts.getSubTopoShape(subname, true);
+             }
+             if (!ts.isNull()) {
+@@ -1314,15 +1342,42 @@
+     }
+ 
+     Base::Matrix4D mat;
++    /*
++        auto shape = _getTopoShape(obj,
++                                   subname,
++                                   needSubElement,
++                                   &mat,
++                                   powner,
++                                   resolveLink,
++                                   noElementMap,
++                                   hiddens,
++                                   lastLink);
++        if (needSubElement && shape.shapeType(true) == TopAbs_COMPOUND) {
++            if (shape.countSubShapes(TopAbs_SOLID) == 1)
++                shape = shape.getSubTopoShape(TopAbs_SOLID, 1);
++            else if (shape.countSubShapes(TopAbs_COMPSOLID) == 1)
++                shape = shape.getSubTopoShape(TopAbs_COMPSOLID, 1);
++            else if (shape.countSubShapes(TopAbs_FACE) == 1)
++                shape = shape.getSubTopoShape(TopAbs_FACE, 1);
++            else if (shape.countSubShapes(TopAbs_SHELL) == 1)
++                shape = shape.getSubTopoShape(TopAbs_SHELL, 1);
++            else if (shape.countSubShapes(TopAbs_EDGE) == 1)
++                shape = shape.getSubTopoShape(TopAbs_EDGE, 1);
++            else if (shape.countSubShapes(TopAbs_WIRE) == 1)
++                shape = shape.getSubTopoShape(TopAbs_WIRE, 1);
++            else if (shape.countSubShapes(TopAbs_VERTEX) == 1)
++                shape = shape.getSubTopoShape(TopAbs_VERTEX, 1);
++        }
++    */
+     auto shape = _getTopoShape(obj,
+-                               options,
+-                               subname,
+-                               &mat,
+-                               powner,
+-                               hiddens,
+-                               lastLink);
+-    if (options.testFlag(ShapeOption::NeedSubElement) 
+-        && !options.testFlag(ShapeOption::DontSimplifyCompound) 
++        options,
++        subname,
++        &mat,
++        powner,
++        hiddens,
++        lastLink);
++    if (options.testFlag(ShapeOption::NeedSubElement)
++        && !options.testFlag(ShapeOption::DontSimplifyCompound)
+         && shape.shapeType(true) == TopAbs_COMPOUND) {
+         shape = simplifyCompound(shape);
+     }
+@@ -1346,41 +1401,40 @@
+ }
+ TopoShape Feature::simplifyCompound(TopoShape compoundShape)
+ {
+-    std::initializer_list<TopAbs_ShapeEnum> simplificationOrder = {  
+-                                            TopAbs_SOLID,
+-                                            TopAbs_COMPSOLID,
+-                                            TopAbs_FACE,
+-                                            TopAbs_SHELL,
+-                                            TopAbs_EDGE,
+-                                            TopAbs_WIRE,
+-                                            TopAbs_VERTEX};
+-
+-    auto foundSimplification =
+-        std::ranges::find_if(simplificationOrder,
+-                             [&](TopAbs_ShapeEnum topType) {
+-                                 return compoundShape.countSubShapes(topType) == 1;
+-                             });
++    std::initializer_list<TopAbs_ShapeEnum> simplificationOrder = {
++        TopAbs_SOLID,
++        TopAbs_COMPSOLID,
++        TopAbs_FACE,
++        TopAbs_SHELL,
++        TopAbs_EDGE,
++        TopAbs_WIRE,
++        TopAbs_VERTEX
++    };
++
++    auto foundSimplification = std::ranges::find_if(simplificationOrder,
++        [&](TopAbs_ShapeEnum topType) {
++            return compoundShape.countSubShapes(topType) == 1;
++        });
+     if (foundSimplification != simplificationOrder.end()) {
+         return compoundShape.getSubTopoShape(*foundSimplification, 1);
+     }
+     return compoundShape;
+ }
+ 
+-App::DocumentObject *Feature::getShapeOwner(const App::DocumentObject *obj, const char *subname)
++App::DocumentObject* Feature::getShapeOwner(const App::DocumentObject* obj, const char* subname)
+ {
+-    if(!obj)
++    if (!obj)
+         return nullptr;
+     auto owner = obj->getSubObject(subname);
+-    if(owner) {
++    if (owner) {
+         auto linked = owner->getLinkedObject(true);
+-        if(linked)
++        if (linked)
+             owner = linked;
+     }
+     return owner;
+ }
+ 
+-struct Feature::ElementCache
+-{
++struct Feature::ElementCache {
+     TopoShape shape;
+     mutable std::vector<std::string> names;
+     mutable bool searched;
+@@ -1406,8 +1460,7 @@
+     const std::string* prefix = nullptr;
+     if (prop == &Shape) {
+         propShape = &Shape;
+-    }
+-    else {
++    } else {
+         for (const auto& v : _elementCachePrefixMap) {
+             if (prop == v.second) {
+                 prefix = &v.first;
+@@ -1418,14 +1471,12 @@
+     if (propShape) {
+         if (_elementCachePrefixMap.empty()) {
+             _elementCache.clear();
+-        }
+-        else {
++        } else {
+             for (auto it = _elementCache.begin(); it != _elementCache.end();) {
+                 bool remove;
+                 if (prefix) {
+                     remove = boost::starts_with(it->first, *prefix);
+-                }
+-                else {
++                } else {
+                     remove = true;
+                     for (const auto& v : _elementCache) {
+                         if (boost::starts_with(it->first, v.first)) {
+@@ -1436,8 +1487,7 @@
+                 }
+                 if (remove) {
+                     it = _elementCache.erase(it);
+-                }
+-                else {
++                } else {
+                     ++it;
+                 }
+             }
+@@ -1462,8 +1512,7 @@
+                         if (!boost::starts_with(element, *prefix)) {
+                             continue;
+                         }
+-                    }
+-                    else {
++                    } else {
+                         bool found = false;
+                         for (const auto& v : _elementCachePrefixMap) {
+                             if (boost::starts_with(element, v.first)) {
+@@ -1475,8 +1524,7 @@
+                             continue;
+                         }
+                     }
+-                    auto res =
+-                        _elementCache.insert(std::make_pair(std::string(element), ElementCache()));
++                    auto res = _elementCache.insert(std::make_pair(std::string(element), ElementCache()));
+                     if (res.second) {
+                         res.first->second.searched = false;
+                         res.first->second.shape = propShape->getShape().getSubTopoShape(
+@@ -1501,7 +1549,7 @@
+         Base::ObjectStatusLocker<App::Property::Status, App::Property> guard(
+             App::Property::NoRecompute,
+             &this->Shape);
+-        if ( oldTransform != newTransform) {
++        if (oldTransform != newTransform) {
+             this->Shape.setValue(shape);
+         }
+     }
+@@ -1509,28 +1557,55 @@
+     else if (prop == &this->Shape) {
+         if (this->isRecomputing()) {
+             this->Shape._Shape.setTransform(this->Placement.getValue().toMatrix());
+-        }
+-        else {
++        } else {
+             Base::Placement p;
+             // shape must not be null to override the placement
+             if (!this->Shape.getValue().IsNull()) {
+                 try {
+                     p.fromMatrix(this->Shape.getShape().getTransform());
+                     this->Placement.setValueIfChanged(p);
+-                }
+-                catch (const Base::ValueError&) {
++                } catch (const Base::ValueError&) {
+                 }
+             }
+         }
++        updatePhysicalProperties();
++    } else if (prop == &this->ShapeMaterial) {
++        updatePhysicalProperties();
+     }
+ 
+     GeoFeature::onChanged(prop);
+ }
+ 
++void Feature::updatePhysicalProperties()
++{
++    MaterialName.setValue(ShapeMaterial.getValue().getName().toStdString());
++    if (ShapeMaterial.getValue().hasPhysicalProperty(QString::fromLatin1("Density"))) {
++        Density.setValue(ShapeMaterial.getValue()
++                .getPhysicalQuantity(QString::fromLatin1("Density"))
++                .getValue());
++    } else {
++        Base::Console().Log("Density is undefined\n");
++        Density.setValue(0.0);
++    }
++
++    auto topoShape = Shape.getValue();
++    if (!topoShape.IsNull()) {
++        GProp_GProps props;
++        BRepGProp::VolumeProperties(topoShape, props);
++        Volume.setValue(props.Mass());
++        Mass.setValue(Volume.getValue() * Density.getValue());
++    } else {
++        // No shape
++        Base::Console().Log("No shape defined\n");
++        Volume.setValue(0.0);
++        Mass.setValue(0.0);
++    }
++}
++
+ const std::vector<std::string>& Feature::searchElementCache(const std::string& element,
+-                                                            Data::SearchOptions options,
+-                                                            double tol,
+-                                                            double atol) const
++    Data::SearchOptions options,
++    double tol,
++    double atol) const
+ {
+     static std::vector<std::string> none;
+     if (element.empty()) {
+@@ -1552,16 +1627,15 @@
+         }
+         it->second.searched = true;
+         propShape->getShape().findSubShapesWithSharedVertex(it->second.shape,
+-                                                            &it->second.names,
+-                                                            options,
+-                                                            tol,
+-                                                            atol);
++            &it->second.names,
++            options,
++            tol,
++            atol);
+         if (prefix) {
+             for (auto& name : it->second.names) {
+                 if (auto dot = strrchr(name.c_str(), '.')) {
+                     name.insert(dot + 1 - name.c_str(), *prefix);
+-                }
+-                else {
++                } else {
+                     name.insert(0, *prefix);
+                 }
+             }
+@@ -1579,7 +1653,7 @@
+     rot.getValue(axis, angle);
+     gp_Trsf trf;
+     trf.SetRotation(gp_Ax1(gp_Pnt(), gp_Dir(axis.x, axis.y, axis.z)), angle);
+-    trf.SetTranslationPart(gp_Vec(pl.getPosition().x,pl.getPosition().y,pl.getPosition().z));
++    trf.SetTranslationPart(gp_Vec(pl.getPosition().x, pl.getPosition().y, pl.getPosition().z));
+     return TopLoc_Location(trf);
+ }
+ 
+@@ -1607,7 +1681,7 @@
+ }
+ 
+ ShapeHistory Feature::buildHistory(BRepBuilderAPI_MakeShape& mkShape, TopAbs_ShapeEnum type,
+-                                   const TopoDS_Shape& newS, const TopoDS_Shape& oldS)
++    const TopoDS_Shape& newS, const TopoDS_Shape& oldS)
+ {
+     ShapeHistory history;
+     history.type = type;
+@@ -1617,15 +1691,15 @@
+     TopExp::MapShapes(oldS, type, oldM); // map containing all new objects of type "type"
+ 
+     // Look at all objects in the old shape and try to find the modified object in the new shape
+-    for (int i=1; i<=oldM.Extent(); i++) {
++    for (int i = 1; i <= oldM.Extent(); i++) {
+         bool found = false;
+         TopTools_ListIteratorOfListOfShape it;
+         // Find all new objects that are a modification of the old object (e.g. a face was resized)
+         for (it.Initialize(mkShape.Modified(oldM(i))); it.More(); it.Next()) {
+             found = true;
+-            for (int j=1; j<=newM.Extent(); j++) { // one old object might create several new ones!
++            for (int j = 1; j <= newM.Extent(); j++) { // one old object might create several new ones!
+                 if (newM(j).IsPartner(it.Value())) {
+-                    history.shapeMap[i-1].push_back(j-1); // adjust indices to start at zero
++                    history.shapeMap[i - 1].push_back(j - 1); // adjust indices to start at zero
+                     break;
+                 }
+             }
+@@ -1634,9 +1708,9 @@
+         // Find all new objects that were generated from an old object (e.g. a face generated from an edge)
+         for (it.Initialize(mkShape.Generated(oldM(i))); it.More(); it.Next()) {
+             found = true;
+-            for (int j=1; j<=newM.Extent(); j++) {
++            for (int j = 1; j <= newM.Extent(); j++) {
+                 if (newM(j).IsPartner(it.Value())) {
+-                    history.shapeMap[i-1].push_back(j-1);
++                    history.shapeMap[i - 1].push_back(j - 1);
+                     break;
+                 }
+             }
+@@ -1645,13 +1719,12 @@
+         if (!found) {
+             // Find all old objects that don't exist any more (e.g. a face was completely cut away)
+             if (mkShape.IsDeleted(oldM(i))) {
+-                history.shapeMap[i-1] = std::vector<int>();
+-            }
+-            else {
++                history.shapeMap[i - 1] = std::vector<int>();
++            } else {
+                 // Mop up the rest (will this ever be reached?)
+-                for (int j=1; j<=newM.Extent(); j++) {
++                for (int j = 1; j <= newM.Extent(); j++) {
+                     if (newM(j).IsPartner(oldM(i))) {
+-                        history.shapeMap[i-1].push_back(j-1);
++                        history.shapeMap[i - 1].push_back(j - 1);
+                         break;
+                     }
+                 }
+@@ -1667,7 +1740,7 @@
+     ShapeHistory join;
+     join.type = oldH.type;
+ 
+-    for (const auto & it : oldH.shapeMap) {
++    for (const auto& it : oldH.shapeMap) {
+         int old_shape_index = it.first;
+         if (it.second.empty())
+             join.shapeMap[old_shape_index] = ShapeHistory::List();
+@@ -1683,8 +1756,9 @@
+     return join;
+ }
+ 
+-    /// returns the type name of the ViewProvider
+-const char* Feature::getViewProviderName() const {
++/// returns the type name of the ViewProvider
++const char* Feature::getViewProviderName() const
++{
+     return "PartGui::ViewProviderPart";
+ }
+ 
+@@ -1699,31 +1773,31 @@
+     return false;
+ 
+     // TODO:  March 2024 consider if any of this RT branch logic makes sense:
+-//    if (!container) {
+-//        return false;
+-//    }
+-//    auto prop = propDisableMapping(container, /*forced*/ false);
+-//    if (prop && prop->getValue()) {
+-//        return true;
+-//    }
+-//    if (auto obj = freecad_cast<App::DocumentObject*>(container)) {
+-//        if (auto doc = obj->getDocument()) {
+-//            if (auto prop = propDisableMapping(doc, /*forced*/ false)) {
+-//                return prop->getValue();
+-//            }
+-//        }
+-//    }
+-//    return false;
++    //    if (!container) {
++    //        return false;
++    //    }
++    //    auto prop = propDisableMapping(container, /*forced*/ false);
++    //    if (prop && prop->getValue()) {
++    //        return true;
++    //    }
++    //    if (auto obj = freecad_cast<App::DocumentObject*>(container)) {
++    //        if (auto doc = obj->getDocument()) {
++    //            if (auto prop = propDisableMapping(doc, /*forced*/ false)) {
++    //                return prop->getValue();
++    //            }
++    //        }
++    //    }
++    //    return false;
+ }
+ 
+-bool Feature::getCameraAlignmentDirection(Base::Vector3d& directionZ, Base::Vector3d &directionX, const char* subname) const
++bool Feature::getCameraAlignmentDirection(Base::Vector3d& directionZ, Base::Vector3d& directionX, const char* subname) const
+ {
+     const auto topoShape = getTopoShape(this,
+-                                            ShapeOptions(
+-                                            ShapeOption::NeedSubElement 
+-                                            | ShapeOption::ResolveLink
+-                                            | ShapeOption::Transform),
+-                                        subname);
++        ShapeOptions(
++            ShapeOption::NeedSubElement
++            | ShapeOption::ResolveLink
++            | ShapeOption::Transform),
++        subname);
+ 
+     if (topoShape.isNull()) {
+         return false;
+@@ -1737,11 +1811,11 @@
+             gp_Vec vector;
+             BRepGProp_Face(face).Normal(0, 0, point, vector);
+             directionZ = Base::Vector3d(vector.X(), vector.Y(), vector.Z()).Normalize();
+-            
++
+             // Try to find a second alignment direction
+             // Use the longest straight edge for horizontal or vertical alignment
+             std::optional<std::tuple<TopoDS_Shape, Standard_Real>> longestEdge; // Tuple of (shape, length of edge)
+-            for (TopExp_Explorer Ex (face, TopAbs_EDGE); Ex.More(); Ex.Next()) {
++            for (TopExp_Explorer Ex(face, TopAbs_EDGE); Ex.More(); Ex.Next()) {
+                 const auto edge = TopoDS::Edge(Ex.Current());
+                 const auto edgeTopoShape = TopoShape(edge);
+                 if (!edgeTopoShape.isLinearEdge()) {
+@@ -1765,15 +1839,14 @@
+                     }
+                 }
+             }
+-            
++
+             return true;
+-        }
+-        catch (Standard_TypeMismatch&) {
++        } catch (Standard_TypeMismatch&) {
+             // Shape is not a face, do nothing
+         }
+     }
+ 
+-     // Single non-planar face (average normal of a curved surface)
++    // Single non-planar face (average normal of a curved surface)
+     const TopoDS_Shape shape = topoShape.getShape();
+     if (shape.ShapeType() == TopAbs_FACE && !topoShape.isPlanar()) {
+         const auto face = TopoDS::Face(shape);
+@@ -1786,11 +1859,12 @@
+         faceProp.Normal(uMid, vMid, p, n);
+         if (n.Magnitude() <= Precision::Confusion()) {
+             // If center point is problematic (e.g. on seam), try corners of param bounds
+-            Standard_Real uTest[4] = {u1, u2, u1, u2};
+-            Standard_Real vTest[4] = {v1, v2, v2, v1};
++            Standard_Real uTest[4] = { u1, u2, u1, u2 };
++            Standard_Real vTest[4] = { v1, v2, v2, v1 };
+             for (int i = 0; i < 4; ++i) {
+                 faceProp.Normal(uTest[i], vTest[i], p, n);
+-                if (n.Magnitude() > Precision::Confusion()) break;
++                if (n.Magnitude() > Precision::Confusion())
++                    break;
+             }
+             if (n.Magnitude() <= Precision::Confusion()) {
+                 return false;
+@@ -1803,7 +1877,8 @@
+         for (TopExp_Explorer Ex(face, TopAbs_EDGE); Ex.More(); Ex.Next()) {
+             const auto edge = TopoDS::Edge(Ex.Current());
+             const auto edgeTopoShape = TopoShape(edge);
+-            if (!edgeTopoShape.isLinearEdge()) continue;
++            if (!edgeTopoShape.isLinearEdge())
++                continue;
+             GProp_GProps props;
+             BRepGProp::LinearProperties(edge, props);
+             const auto length = props.Mass();
+@@ -1833,8 +1908,7 @@
+                     return true;
+                 }
+             }
+-        }
+-        else {
++        } else {
+             // Planar curves
+             if (gp_Pln plane; topoShape.findPlane(plane)) {
+                 directionZ = Base::Vector3d(plane.Axis().Direction().X(), plane.Axis().Direction().Y(), plane.Axis().Direction().Z()).Normalize();
+@@ -1846,8 +1920,9 @@
+     return GeoFeature::getCameraAlignmentDirection(directionZ, directionX, subname);
+ }
+ 
+-void Feature::guessNewLink(std::string &replacementName, DocumentObject *base, const char *oldLink) {
+-    for (auto &element : Part::Feature::getRelatedElements(base, oldLink)) {
++void Feature::guessNewLink(std::string& replacementName, DocumentObject* base, const char* oldLink)
++{
++    for (auto& element : Part::Feature::getRelatedElements(base, oldLink)) {
+         replacementName.clear();
+         element.index.appendToStringBuffer(replacementName);
+         FC_WARN("Feature guess element reference " << oldLink << " -> " << replacementName);
+@@ -1862,10 +1937,10 @@
+ 
+ FilletBase::FilletBase()
+ {
+-    ADD_PROPERTY(Base,(nullptr));
+-    ADD_PROPERTY(Edges,(0,0,0));
+-    ADD_PROPERTY_TYPE(EdgeLinks,(0), 0,
+-                      (App::PropertyType)(App::Prop_ReadOnly|App::Prop_Hidden),0);
++    ADD_PROPERTY(Base, (nullptr));
++    ADD_PROPERTY(Edges, (0, 0, 0));
++    ADD_PROPERTY_TYPE(EdgeLinks, (0), 0,
++        (App::PropertyType)(App::Prop_ReadOnly | App::Prop_Hidden), 0);
+     Edges.setSize(0);
+ }
+ 
+@@ -1886,73 +1961,79 @@
+     return Part::Feature::execute();
+ }
+ 
+-void FilletBase::onChanged(const App::Property *prop) {
+-    if(getDocument() && !getDocument()->testStatus(App::Document::Restoring)) {
+-        if(prop == &Edges || prop == &Base) {
+-            if(!prop->testStatus(App::Property::User3))
++void FilletBase::onChanged(const App::Property* prop)
++{
++    if (getDocument() && !getDocument()->testStatus(App::Document::Restoring)) {
++        if (prop == &Edges || prop == &Base) {
++            if (!prop->testStatus(App::Property::User3))
+                 syncEdgeLink();
+         }
+     }
+     Feature::onChanged(prop);
+ }
+ 
+-void FilletBase::onDocumentRestored() {
+-    if(EdgeLinks.getSubValues().empty())
++void FilletBase::onDocumentRestored()
++{
++    if (EdgeLinks.getSubValues().empty())
+         syncEdgeLink();
+     Feature::onDocumentRestored();
+ }
+ 
+-void FilletBase::syncEdgeLink() {
+-    if(!Base.getValue() || !Edges.getSize()) {
++void FilletBase::syncEdgeLink()
++{
++    if (!Base.getValue() || !Edges.getSize()) {
+         EdgeLinks.setValue(0);
+         return;
+     }
+     std::vector<std::string> subs;
+     std::string sub("Edge");
+-    for(auto &info : Edges.getValues())
+-        subs.emplace_back(sub+std::to_string(info.edgeid));
+-    EdgeLinks.setValue(Base.getValue(),subs);
++    for (auto& info : Edges.getValues())
++        subs.emplace_back(sub + std::to_string(info.edgeid));
++    EdgeLinks.setValue(Base.getValue(), subs);
+ }
+ 
+-void FilletBase::onUpdateElementReference(const App::Property *prop) {
+-    if(prop!=&EdgeLinks || !getNameInDocument())
++void FilletBase::onUpdateElementReference(const App::Property* prop)
++{
++    if (prop != &EdgeLinks || !getNameInDocument())
+         return;
+     auto values = Edges.getValues();
+-    const auto &subs = EdgeLinks.getSubValues();
+-    for(size_t i=0;i<values.size();++i) {
+-        if(i>=subs.size()) {
++    const auto& subs = EdgeLinks.getSubValues();
++    for (size_t i = 0; i < values.size(); ++i) {
++        if (i >= subs.size()) {
+             FC_WARN("fillet edge count mismatch in object " << getFullName());
+             break;
+         }
+         int idx = 0;
+-        sscanf(subs[i].c_str(),"Edge%d",&idx);
+-        if(idx)
++        sscanf(subs[i].c_str(), "Edge%d", &idx);
++        if (idx)
+             values[i].edgeid = idx;
+         else
+             FC_WARN("invalid fillet edge link '" << subs[i] << "' in object "
+                                                  << getFullName());
+     }
+-    Edges.setStatus(App::Property::User3,true);
++    Edges.setStatus(App::Property::User3, true);
+     Edges.setValues(values);
+-    Edges.setStatus(App::Property::User3,false);
++    Edges.setStatus(App::Property::User3, false);
+ }
+ 
+ // ---------------------------------------------------------
+ 
+ PROPERTY_SOURCE(Part::FeatureExt, Part::Feature)
+ 
+-
+-
+ namespace App {
+ /// @cond DOXERR
+ PROPERTY_SOURCE_TEMPLATE(Part::FeaturePython, Part::Feature)
+-template<> const char* Part::FeaturePython::getViewProviderName() const {
++template <>
++const char* Part::FeaturePython::getViewProviderName() const
++{
+     return "PartGui::ViewProviderPython";
+ }
+-template<> PyObject* Part::FeaturePython::getPyObject() {
++template <>
++PyObject* Part::FeaturePython::getPyObject()
++{
+     if (PythonObject.is(Py::_None())) {
+         // ref counter is set to 1
+-        PythonObject = Py::Object(new FeaturePythonPyT<Part::PartFeaturePy>(this),true);
++        PythonObject = Py::Object(new FeaturePythonPyT<Part::PartFeaturePy>(this), true);
+     }
+     return Py::new_reference_to(PythonObject);
+ }
+@@ -1964,11 +2045,11 @@
+ 
+ // TODO: Toponaming April 2024 Deprecated in favor of TopoShape method.  Remove when possible.
+ std::vector<Part::cutFaces> Part::findAllFacesCutBy(
+-        const TopoDS_Shape& shape, const TopoDS_Shape& face, const gp_Dir& dir)
++    const TopoDS_Shape& shape, const TopoDS_Shape& face, const gp_Dir& dir)
+ {
+     // Find the centre of gravity of the face
+     GProp_GProps props;
+-    BRepGProp::SurfaceProperties(face,props);
++    BRepGProp::SurfaceProperties(face, props);
+     gp_Pnt cog = props.CentreOfMass();
+ 
+     // create a line through the centre of gravity
+@@ -2020,22 +2101,22 @@
+     // TODO: Less precision than Confusion() should be OK?
+ 
+     for (mkSection.Init(shape.getShape(), line, Precision::Confusion()); mkSection.More();
+-         mkSection.Next()) {
++        mkSection.Next()) {
+         gp_Pnt iPnt = mkSection.Pnt();
+         double dsq = cog.SquareDistance(iPnt);
+ 
+         if (dsq < Precision::Confusion()) {
+-            continue;  // intersection with original face
++            continue; // intersection with original face
+         }
+ 
+         // Find out which side of the original face the intersection is on
+         gce_MakeDir mkDir(cog, iPnt);
+         if (!mkDir.IsDone()) {
+-            continue;  // some error (appears highly unlikely to happen, though...)
++            continue; // some error (appears highly unlikely to happen, though...)
+         }
+ 
+         if (mkDir.Value().IsOpposite(dir, Precision::Confusion())) {
+-            continue;  // wrong side of face (opposite to extrusion direction)
++            continue; // wrong side of face (opposite to extrusion direction)
+         }
+ 
+         cutTopoShapeFaces newF;
+@@ -2049,7 +2130,8 @@
+ }
+ 
+ bool Part::checkIntersection(const TopoDS_Shape& first, const TopoDS_Shape& second,
+-                             const bool quick, const bool touch_is_intersection) {
++    const bool quick, const bool touch_is_intersection)
++{
+ 
+     Bnd_Box first_bb, second_bb;
+     BRepBndLib::Add(first, first_bb);
+@@ -2076,7 +2158,7 @@
+ 
+         // Did we get one or two solids?
+         TopExp_Explorer xp;
+-        xp.Init(mkFuse.Shape(),TopAbs_SOLID);
++        xp.Init(mkFuse.Shape(), TopAbs_SOLID);
+         if (xp.More()) {
+             // At least one solid
+             xp.Next();
+@@ -2094,8 +2176,7 @@
+ 
+         // Did we get a solid?
+         TopExp_Explorer xp;
+-        xp.Init(mkCommon.Shape(),TopAbs_SOLID);
++        xp.Init(mkCommon.Shape(), TopAbs_SOLID);
+         return (xp.More() == Standard_True);
+     }
+-
+ }
+--- src/Mod/Part/App/PartFeature.h	2025-09-18 11:37:07.702221160 +0800
++++ /media/UserTemp/Sources/conda/media/1.1.0/App/org/PartFeature.h	2025-08-23 08:06:59.262935612 +0800
+@@ -25,28 +25,25 @@
+ 
+ #include <App/FeaturePython.h>
+ #include <App/GeoFeature.h>
++#include <App/PropertyUnits.h>
++#include <Base/Bitmask.h>
+ #include <Mod/Material/App/PropertyMaterial.h>
+ #include <Mod/Part/PartGlobal.h>
+-#include <Base/Bitmask.h>
+ 
+ #include <TopoDS_Face.hxx>
+ 
+ #include "PropertyTopoShape.h"
+ 
+-
+ class gp_Dir;
+ class BRepBuilderAPI_MakeShape;
+ 
+-namespace Data
+-{
++namespace Data {
+ struct HistoryItem;
+ }
+ 
+-namespace Part
+-{
++namespace Part {
+ 
+-enum class ShapeOption
+-{
++enum class ShapeOption {
+     NoFlag = 0,
+     NeedSubElement = 1,
+     ResolveLink = 2,
+@@ -56,13 +53,11 @@
+ };
+ using ShapeOptions = Base::Flags<ShapeOption>;
+ 
+-
+ class PartFeaturePy;
+ 
+ /** Base class of all shape feature classes in FreeCAD
+  */
+-class PartExport Feature : public App::GeoFeature
+-{
++class PartExport Feature : public App::GeoFeature {
+     PROPERTY_HEADER_WITH_OVERRIDE(Part::Feature);
+ 
+ public:
+@@ -73,6 +68,12 @@
+     PropertyPartShape Shape;
+     Materials::PropertyMaterial ShapeMaterial;
+ 
++    // Convenience properties set when material or shape changes
++    App::PropertyString MaterialName;
++    App::PropertyDensity Density;
++    App::PropertyMass Mass;
++    App::PropertyVolume Volume;
++
+     /** @name methods override feature */
+     //@{
+     short mustExecute() const override;
+@@ -85,16 +86,16 @@
+     PyObject* getPyObject() override;
+ 
+     App::ElementNamePair getElementName(
+-            const char *name, ElementNameType type=Normal) const override;
++        const char* name, ElementNameType type = Normal) const override;
+ 
+-    static std::list<Data::HistoryItem> getElementHistory(App::DocumentObject *obj,
+-                                                          const char *name, bool recursive=true, bool sameType=false);
++    static std::list<Data::HistoryItem> getElementHistory(App::DocumentObject* obj,
++        const char* name, bool recursive = true, bool sameType = false);
+ 
+     static QVector<Data::MappedElement>
+     getRelatedElements(App::DocumentObject* obj,
+-                       const char* name,
+-                       HistoryTraceType sameType = HistoryTraceType::followTypeChange,
+-                       bool withCache = true);
++        const char* name,
++        HistoryTraceType sameType = HistoryTraceType::followTypeChange,
++        bool withCache = true);
+ 
+     /** Obtain the element name from a feature based of the element name of its source feature
+      *
+@@ -109,16 +110,16 @@
+      * @return Return a vector of pair of new style and old style element names.
+      */
+     static QVector<Data::MappedElement>
+-    getElementFromSource(App::DocumentObject *obj,
+-                         const char *subname,
+-                         App::DocumentObject *src,
+-                         const char *srcSub,
+-                         bool single = false);
++    getElementFromSource(App::DocumentObject* obj,
++        const char* subname,
++        App::DocumentObject* src,
++        const char* srcSub,
++        bool single = false);
+ 
+     TopLoc_Location getLocation() const;
+ 
+-    DocumentObject *getSubObject(const char *subname, PyObject **pyObj,
+-            Base::Matrix4D *mat, bool transform, int depth) const override;
++    DocumentObject* getSubObject(const char* subname, PyObject** pyObj,
++        Base::Matrix4D* mat, bool transform, int depth) const override;
+ 
+     App::Material getMaterialAppearance() const override;
+     void setMaterialAppearance(const App::Material& material) override;
+@@ -143,42 +144,44 @@
+      * @param transform: if true, apply obj's transformation. Set to false
+      * if pmat already include obj's transformation matrix.
+      */
+-    static TopoDS_Shape getShape(const App::DocumentObject *obj, ShapeOptions options,
+-            const char *subname=nullptr, Base::Matrix4D *pmat=nullptr,
+-            App::DocumentObject **owner=nullptr);
++    static TopoDS_Shape getShape(const App::DocumentObject* obj, ShapeOptions options,
++        const char* subname = nullptr, Base::Matrix4D* pmat = nullptr,
++        App::DocumentObject** owner = nullptr);
+ 
+     static TopoShape getTopoShape(const App::DocumentObject* obj, ShapeOptions options,
+-                                    const char* subname=nullptr, Base::Matrix4D* pmat=nullptr, 
+-                                    App::DocumentObject**owner=nullptr);
++        const char* subname = nullptr, Base::Matrix4D* pmat = nullptr,
++        App::DocumentObject** owner = nullptr);
+ 
+     static TopoShape simplifyCompound(TopoShape compoundShape);
+     static void clearShapeCache();
+ 
+-    static App::DocumentObject *getShapeOwner(const App::DocumentObject *obj, const char *subname=nullptr);
++    static App::DocumentObject* getShapeOwner(const App::DocumentObject* obj, const char* subname = nullptr);
+ 
+-    static bool hasShapeOwner(const App::DocumentObject *obj, const char *subname=nullptr) {
+-        auto owner = getShapeOwner(obj,subname);
++    static bool hasShapeOwner(const App::DocumentObject* obj, const char* subname = nullptr)
++    {
++        auto owner = getShapeOwner(obj, subname);
+         return owner && owner->isDerivedFrom(getClassTypeId());
+     }
+ 
+     static Feature*
+     create(const TopoShape& shape, const char* name = nullptr, App::Document* document = nullptr);
+ 
+-    static bool isElementMappingDisabled(App::PropertyContainer *container);
++    static bool isElementMappingDisabled(App::PropertyContainer* container);
++
++    bool getCameraAlignmentDirection(Base::Vector3d& directionZ, Base::Vector3d& directionX, const char* subname) const override;
+ 
+-    bool getCameraAlignmentDirection(Base::Vector3d &directionZ, Base::Vector3d &directionX, const char *subname) const override;
++    static void guessNewLink(std::string& replacementName, DocumentObject* base, const char* oldLink);
+ 
+-    static void guessNewLink(std::string &replacementName, DocumentObject *base, const char *oldLink);
++    const std::vector<std::string>& searchElementCache(const std::string& element,
++        Data::SearchOptions options = Data::SearchOption::CheckGeometry,
++        double tol = 1e-7,
++        double atol = 1e-10) const override;
+ 
+-    const std::vector<std::string>& searchElementCache(const std::string &element,
+-                                                       Data::SearchOptions options = Data::SearchOption::CheckGeometry,
+-                                                       double tol = 1e-7,
+-                                                       double atol = 1e-10) const override;
+ protected:
+     /// recompute only this object
+-    App::DocumentObjectExecReturn *recompute() override;
++    App::DocumentObjectExecReturn* recompute() override;
+     /// recalculate the feature
+-    App::DocumentObjectExecReturn *execute() override;
++    App::DocumentObjectExecReturn* execute() override;
+     void onBeforeChange(const App::Property* prop) override;
+     void onChanged(const App::Property* prop) override;
+     void onDocumentRestored() override;
+@@ -186,7 +189,10 @@
+     void copyMaterial(Feature* feature);
+     void copyMaterial(App::DocumentObject* link);
+ 
+-    void registerElementCache(const std::string &prefix, PropertyPartShape *prop);
++    /// Update the mass and volume properties
++    void updatePhysicalProperties();
++
++    void registerElementCache(const std::string& prefix, PropertyPartShape* prop);
+ 
+     /** Helper function to obtain mapped and indexed element name from a shape
+      * @params shape: source shape
+@@ -197,7 +203,7 @@
+      * Vertex/Edge/Face, this function will auto generate a name from primary
+      * sub-shapes.
+      */
+-    App::ElementNamePair getExportElementName(TopoShape shape, const char *name) const;
++    App::ElementNamePair getExportElementName(TopoShape shape, const char* name) const;
+ 
+     /**
+      * Build a history of changes
+@@ -209,22 +215,22 @@
+     ShapeHistory buildHistory(BRepBuilderAPI_MakeShape&, TopAbs_ShapeEnum type,
+         const TopoDS_Shape& newS, const TopoDS_Shape& oldS);
+     ShapeHistory joinHistory(const ShapeHistory&, const ShapeHistory&);
++
+ private:
+     struct ElementCache;
+     std::map<std::string, ElementCache> _elementCache;
+     std::vector<std::pair<std::string, PropertyPartShape*>> _elementCachePrefixMap;
+ };
+ 
+-class PartExport FilletBase : public Part::Feature
+-{
++class PartExport FilletBase : public Part::Feature {
+     PROPERTY_HEADER_WITH_OVERRIDE(Part::FilletBase);
+ 
+ public:
+     FilletBase();
+ 
+-    App::PropertyLink   Base;
++    App::PropertyLink Base;
+     PropertyFilletEdges Edges;
+-    App::PropertyLinkSub   EdgeLinks;
++    App::PropertyLinkSub EdgeLinks;
+ 
+     short mustExecute() const override;
+     App::DocumentObjectExecReturn* execute() override;
+@@ -232,21 +238,20 @@
+ 
+ protected:
+     void onDocumentRestored() override;
+-    void onChanged(const App::Property *) override;
++    void onChanged(const App::Property*) override;
+     void syncEdgeLink();
+ };
+ 
+ using FeaturePython = App::FeaturePythonT<Feature>;
+ 
+-
+ /** Base class of all shape feature classes in FreeCAD
+  */
+-class PartExport FeatureExt : public Feature
+-{
++class PartExport FeatureExt : public Feature {
+     PROPERTY_HEADER_WITH_OVERRIDE(Part::FeatureExt);
+ 
+ public:
+-    const char* getViewProviderName() const override {
++    const char* getViewProviderName() const override
++    {
+         return "PartGui::ViewProviderPartExt";
+     }
+ };
+@@ -264,10 +269,10 @@
+ 
+ // TODO: Toponaming April 2024 Deprecated in favor of TopoShape method.  Remove when possible.
+ PartExport
+-std::vector<cutFaces> findAllFacesCutBy(const TopoDS_Shape& shape,
+-                                        const TopoDS_Shape& face, const gp_Dir& dir);
+-struct cutTopoShapeFaces
+-{
++    std::vector<cutFaces>
++    findAllFacesCutBy(const TopoDS_Shape& shape,
++        const TopoDS_Shape& face, const gp_Dir& dir);
++struct cutTopoShapeFaces {
+     TopoShape face;
+     double distsq;
+ };
+@@ -276,26 +281,24 @@
+ findAllFacesCutBy(const TopoShape& shape, const TopoShape& face, const gp_Dir& dir);
+ 
+ /**
+-  * Check for intersection between the two shapes. Only solids are guaranteed to work properly
+-  * There are two modes:
+-  * 1. Bounding box check only - quick but inaccurate
+-  * 2. Bounding box check plus (if necessary) boolean operation - costly but accurate
+-  * Return true if the shapes intersect, false if they don't
+-  * The flag touch_is_intersection decides whether shapes touching at distance zero are regarded
+-  * as intersecting or not
+-  * 1. If set to true, a true check result means that a boolean fuse operation between the two shapes
+-  *    will return a single solid
+-  * 2. If set to false, a true check result means that a boolean common operation will return a
+-  *    valid solid
+-  * If there is any error in the boolean operations, the check always returns false
+-  */
+-PartExport
+-bool checkIntersection(const TopoDS_Shape& first, const TopoDS_Shape& second,
+-                       const bool quick, const bool touch_is_intersection);
++ * Check for intersection between the two shapes. Only solids are guaranteed to work properly
++ * There are two modes:
++ * 1. Bounding box check only - quick but inaccurate
++ * 2. Bounding box check plus (if necessary) boolean operation - costly but accurate
++ * Return true if the shapes intersect, false if they don't
++ * The flag touch_is_intersection decides whether shapes touching at distance zero are regarded
++ * as intersecting or not
++ * 1. If set to true, a true check result means that a boolean fuse operation between the two shapes
++ *    will return a single solid
++ * 2. If set to false, a true check result means that a boolean common operation will return a
++ *    valid solid
++ * If there is any error in the boolean operations, the check always returns false
++ */
++PartExport bool checkIntersection(const TopoDS_Shape& first, const TopoDS_Shape& second,
++    const bool quick, const bool touch_is_intersection);
+ 
+-} //namespace Part
++} // namespace Part
+ 
+ ENABLE_BITMASK_OPERATORS(Part::ShapeOption)
+ 
+ #endif // PART_FEATURE_H
+-
