@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -246,7 +246,7 @@
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="657"/>
         <source>Centerline 2 Lines</source>
-        <translation type="unfinished"></translation>
+        <translation>兩條線中的中心線</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="659"/>
@@ -264,7 +264,7 @@
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="661"/>
         <source>Centerline 2 Points</source>
-        <translation type="unfinished"></translation>
+        <translation>在兩點間的中心線</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="663"/>
@@ -282,7 +282,7 @@
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="283"/>
         <source>Midpoint Vertices</source>
-        <translation type="unfinished"></translation>
+        <translation>頂點的中心點</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="285"/>
@@ -300,7 +300,7 @@
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="287"/>
         <source>Quadrant Vertices</source>
-        <translation type="unfinished"></translation>
+        <translation>象限頂點</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="289"/>
@@ -668,7 +668,7 @@
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="653"/>
         <source>Centerline Faces</source>
-        <translation type="unfinished"></translation>
+        <translation>面的中心線</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="655"/>
@@ -13191,22 +13191,22 @@ be used instead of the dimension value</source>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskDimension.ui" line="52"/>
         <source>Number of decimals</source>
-        <translation type="unfinished"></translation>
+        <translation>小數位數</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskDimension.ui" line="65"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Increments the number of decimals of the selected dimenesion&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;增加所選尺寸的小數點數&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskDimension.ui" line="72"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Encloses the dimension value in parentheses () to indicate it is for reference only&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;將尺寸值放在括號 () 中，表示僅供參考&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/TechDraw/Gui/TaskDimension.ui" line="75"/>
         <source>Reference</source>
-        <translation type="unfinished"></translation>
+        <translation>參考</translation>
     </message>
     <message>
         <location filename="../../TaskDimension.ui" line="20"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -3222,7 +3222,7 @@ This will clear the &apos;Support&apos; property, if any.</source>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandAlterGeometry.cpp" line="73"/>
         <source>Toggle Construction Geometry</source>
-        <translation type="unfinished"></translation>
+        <translation>幾何於建構線及一般模式切換</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandAlterGeometry.cpp" line="74"/>
@@ -4532,12 +4532,12 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerOffset.h" line="393"/>
         <source>Offset Error</source>
-        <translation type="unfinished"></translation>
+        <translation>偏移錯誤</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerOffset.h" line="394"/>
         <source>Offset could not be created.</source>
-        <translation type="unfinished"></translation>
+        <translation>無法建立偏移.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerOffset.h" line="1067"/>
@@ -5307,7 +5307,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="86"/>
         <source>Wrong Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>錯誤的選取</translation>
     </message>
     <message>
         <source>Select elements from a single sketch.</source>
@@ -6598,7 +6598,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArc.h" line="392"/>
         <source>Arc Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>圓弧參數</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArc.h" line="392"/>
@@ -6680,7 +6680,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcSlot.h" line="100"/>
         <source>%1 switch mode</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 切換模式</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcSlot.h" line="105"/>
@@ -6710,7 +6710,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcSlot.h" line="305"/>
         <source>Arc Slot Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>弧線型跑道圖型參數</translation>
     </message>
 </context>
 <context>
@@ -6729,13 +6729,13 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="423"/>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="432"/>
         <source>%1 + degree</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 + 度</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="424"/>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="433"/>
         <source>%1 - degree</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 - 度</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="427"/>
@@ -6757,7 +6757,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="442"/>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="450"/>
         <source>%1 toggle periodic</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 切換週期性</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="442"/>
@@ -6772,7 +6772,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="497"/>
         <source>B-Spline Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>B雲形線屬性參數</translation>
     </message>
 </context>
 <context>
@@ -6819,7 +6819,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerCircle.h" line="310"/>
         <source>Circle Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>圓參數</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerCircle.h" line="310"/>
@@ -6867,7 +6867,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerEllipse.h" line="328"/>
         <source>Ellipse Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>橢圓參數</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerEllipse.h" line="328"/>
@@ -6914,7 +6914,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerFillet.h" line="348"/>
         <source>Fillet/Chamfer Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>圓角/倒角參數</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerFillet.h" line="348"/>
@@ -6924,12 +6924,12 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerFillet.h" line="417"/>
         <source>%1 switch mode</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 切換模式</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerFillet.h" line="418"/>
         <source>%1 toggle preserve corner</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 切換保留角落</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerFillet.h" line="421"/>
@@ -6946,7 +6946,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerFillet.h" line="425"/>
         <source>%1 pick first edge or point</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 選取第一個邊或點</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerFillet.h" line="427"/>
@@ -6957,12 +6957,12 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerFillet.h" line="429"/>
         <source>%1 pick second edge</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 選取第二個邊</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerFillet.h" line="433"/>
         <source>%1 create fillet</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 建立圓角</translation>
     </message>
 </context>
 <context>
@@ -6970,7 +6970,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerLine.h" line="217"/>
         <source>Line Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>線段屬性</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerLine.h" line="217"/>
@@ -7025,7 +7025,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerOffset.h" line="182"/>
         <source>Offset Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>偏移屬性</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerOffset.h" line="182"/>
@@ -7053,7 +7053,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerPolygon.h" line="203"/>
         <source>Polygon Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>多邊形屬性</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerPolygon.h" line="203"/>
@@ -7092,12 +7092,12 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="118"/>
         <source>%1 toggle rounded corners</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 切換圓角</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="120"/>
         <source>%1 toggle frame</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 轉換框架</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="126"/>
@@ -7155,7 +7155,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRectangle.h" line="741"/>
         <source>Rectangle Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>矩形屬性</translation>
     </message>
 </context>
 <context>
@@ -7186,7 +7186,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRotate.h" line="212"/>
         <source>Rotate Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>旋轉參數</translation>
     </message>
 </context>
 <context>
@@ -7209,7 +7209,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerScale.h" line="233"/>
         <source>Scale Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>縮放屬性</translation>
     </message>
 </context>
 <context>
@@ -7244,7 +7244,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerSymmetry.h" line="194"/>
         <source>Symmetry Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>對稱參數</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerSymmetry.h" line="194"/>
@@ -7268,7 +7268,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerTranslate.h" line="185"/>
         <source>Translate Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>平移屬性</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerTranslate.h" line="438"/>
@@ -7478,12 +7478,12 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="64"/>
         <source>Coincident Constraint</source>
-        <translation type="unfinished"></translation>
+        <translation>共點拘束</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="66"/>
         <source>Point-On-Object Constraint</source>
-        <translation type="unfinished"></translation>
+        <translation>約束物體上的點</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherElements.cpp" line="63"/>
@@ -7613,7 +7613,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="90"/>
         <source>Distance Dimension</source>
-        <translation type="unfinished"></translation>
+        <translation>距離尺寸</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="92"/>
@@ -7628,7 +7628,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="96"/>
         <source>Radius/Diameter Dimension</source>
-        <translation type="unfinished"></translation>
+        <translation>半徑/直徑尺寸</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="98"/>
@@ -7638,7 +7638,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="100"/>
         <source>Toggle Construction Geometry</source>
-        <translation type="unfinished"></translation>
+        <translation>幾何於建構線及一般模式切換</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherElements.cpp" line="80"/>
@@ -8107,7 +8107,7 @@ This setting is only for the toolbar. Whichever you chose, all tools are always 
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettings.ui" line="26"/>
         <source>Displays the additional section &apos;Advanced Solver Controls&apos; to adjust solver settings in the task view</source>
-        <translation type="unfinished"></translation>
+        <translation>顯示「進階求解器控制」附加區段，以調整工作檢視中的求解器設定</translation>
     </message>
     <message>
         <location filename="../../SketcherSettings.ui" line="30"/>
@@ -8831,17 +8831,17 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="489"/>
         <source>External construction geometry</source>
-        <translation type="unfinished"></translation>
+        <translation>外部建構幾何圖形</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="502"/>
         <source>Color of external construction geometry in edit mode</source>
-        <translation type="unfinished"></translation>
+        <translation>編輯模式下外部結構幾何的顏色</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="522"/>
         <source>Line pattern of external construction edges</source>
-        <translation type="unfinished"></translation>
+        <translation>外側參考邊緣線條圖樣</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="522"/>
@@ -8851,7 +8851,7 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="532"/>
         <source>Width of external construction edges</source>
-        <translation type="unfinished"></translation>
+        <translation>外部結構邊緣寬度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettingsAppearance.ui" line="561"/>
@@ -9230,7 +9230,7 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettingsDisplay.ui" line="128"/>
         <source>Shows names of dimensional constraints, if they exist</source>
-        <translation type="unfinished"></translation>
+        <translation>顯示尺寸約束的名稱, 如果有的話</translation>
     </message>
     <message>
         <source>Show dimensional constraint name with format</source>
@@ -9300,12 +9300,12 @@ Supports all unit systems except &apos;US customary&apos; and &apos;Building US/
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettingsDisplay.ui" line="277"/>
         <source>Shows cursor position coordinates next to the cursor while editing a sketch</source>
-        <translation type="unfinished"></translation>
+        <translation>編輯草圖時，顯示游標旁邊的游標位置座標</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettingsDisplay.ui" line="280"/>
         <source>Show coordinates next to the cursor while editing</source>
-        <translation type="unfinished"></translation>
+        <translation>編輯時顯示游標旁邊的座標</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/SketcherSettingsDisplay.ui" line="259"/>
@@ -9905,7 +9905,7 @@ However, no constraints linking to the endpoints were found.</source>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/TaskSketcherValidation.cpp" line="391"/>
         <source>Delete Constraints to External Geometry</source>
-        <translation type="unfinished"></translation>
+        <translation>刪除外部幾何之拘束</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/TaskSketcherValidation.cpp" line="392"/>
@@ -10597,7 +10597,7 @@ However, no constraints linking to the endpoints were found.</source>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/TaskSketcherTool.cpp" line="48"/>
         <source>Tool Parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>刀具參數</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/TaskSketcherTool.cpp" line="48"/>
@@ -11225,12 +11225,12 @@ This is purely based on topological shape of the sketch and not on its geometry/
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="911"/>
         <source>From control points</source>
-        <translation type="unfinished"></translation>
+        <translation>從控制點</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="912"/>
         <source>From knots</source>
-        <translation type="unfinished"></translation>
+        <translation>從結點</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="839"/>
@@ -11491,7 +11491,7 @@ This is purely based on topological shape of the sketch and not on its geometry/
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/Command.cpp" line="643"/>
         <source>Select Sketch</source>
-        <translation type="unfinished"></translation>
+        <translation>選擇草圖</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/Command.cpp" line="619"/>
@@ -11517,7 +11517,7 @@ This is purely based on topological shape of the sketch and not on its geometry/
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/Command.cpp" line="728"/>
         <source>Sketch Attachment</source>
-        <translation type="unfinished"></translation>
+        <translation>草圖附加</translation>
     </message>
     <message>
         <source>Current attachment mode is incompatible with the new selection.
@@ -11562,7 +11562,7 @@ Select the method to attach this sketch to selected objects.</source>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/Command.cpp" line="214"/>
         <source>Sketch Attachment</source>
-        <translation type="unfinished"></translation>
+        <translation>草圖附加</translation>
     </message>
     <message>
         <source>Select the method to attach this sketch to selected object</source>
@@ -11589,7 +11589,7 @@ Select the method to attach this sketch to selected objects.</source>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Sketcher/Gui/Command.cpp" line="457"/>
         <source>Sketch Has Support</source>
-        <translation type="unfinished"></translation>
+        <translation>草圖具有支撐</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sketcher/Gui/Command.cpp" line="456"/>
