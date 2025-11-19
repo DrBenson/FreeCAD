@@ -6,7 +6,7 @@
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
     <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
     <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
-    <extra-po-header-project_id_version>FreeCAD StartPage Language Translations v1.1.0</extra-po-header-project_id_version>
+    <extra-po-header-project_id_version>FreeCAD Show Language Translations v1.1.0</extra-po-header-project_id_version>
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
@@ -14,40 +14,6 @@
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
-<context>
-    <name>CmdStart</name>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/Manipulator.cpp" line="47"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/Manipulator.cpp" line="48"/>
-        <source>Start</source>
-        <translation>開始頁面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/Manipulator.cpp" line="48"/>
-        <source>&amp;Start Page</source>
-        <translation>開始頁面(&amp;S)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/Manipulator.cpp" line="48"/>
-        <source>Start Page</source>
-        <translation>開始頁面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/Manipulator.cpp" line="49"/>
-        <source>Displays the Start Page</source>
-        <translation>顯示開始頁面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/Manipulator.cpp" line="49"/>
-        <source>Displays the Start in an MDI view</source>
-        <translation>在主要顯示介面中(MDI)顯示開始頁面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/Manipulator.cpp" line="49"/>
-        <source>Displays the start page</source>
-        <translation>顯示開始頁面</translation>
-    </message>
-</context>
 <context>
     <name>CmdStartPage</name>
     <message>
@@ -102,6 +68,11 @@
         <location filename="../../DlgStartPreferences.ui" line="48"/>
         <source>Show forum</source>
         <translation>顯示論壇</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="55"/>
+        <source>Show examples folder contents</source>
+        <translation>顯示範例的資料夾內容</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferences.ui" line="62"/>
@@ -311,6 +282,11 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <translation>如果選擇此選項，「新檔案」圖示將顯示漸層圖示而不是普通圖示</translation>
     </message>
     <message>
+        <location filename="../../DlgStartPreferences.ui" line="601"/>
+        <source>Options</source>
+        <translation>選項</translation>
+    </message>
+    <message>
         <location filename="../../DlgStartPreferences.ui" line="607"/>
         <source>Choose which workbench to switch to after the program launches</source>
         <translation>選擇程式啟動後要切換到的工作台</translation>
@@ -326,6 +302,11 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <translation>切換工作台在載入後</translation>
     </message>
     <message>
+        <location filename="../../DlgStartPreferences.ui" line="640"/>
+        <source>Close start page after loading</source>
+        <translation>關閉開始頁在載入後</translation>
+    </message>
+    <message>
         <location filename="../../DlgStartPreferences.ui" line="647"/>
         <source>Close and switch on opening file</source>
         <translation>關閉並切換到開啟的文件</translation>
@@ -334,65 +315,6 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
         <location filename="../../DlgStartPreferences.ui" line="654"/>
         <source>If application is started by opening a file, apply the two settings above</source>
         <translation>如果應用程式是透過開啟檔案啟動的，則套用上面的兩個設定</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="26"/>
-        <source>Show only FreeCAD files in additional folder</source>
-        <translation>僅顯示附加資料夾中的 FreeCAD 文件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="47"/>
-        <source>An optional custom folder to be displayed on the Start page.
-By using &quot;;;&quot; to separate paths, you can add several folders here.</source>
-        <translation>要顯示在起始頁上的可選自訂資料夾.
-透過使用 &quot;;;&quot; 來分隔路徑，您可以在此處新增多個資料夾.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="55"/>
-        <source>An optional custom folder to be displayed on the Start page.</source>
-        <translation>要顯示在起始頁上的可選自訂資料夾.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="85"/>
-        <source>If the additional folder contents should include only .FCStd files</source>
-        <translation>如果附加資料夾內容應僅包含 .FCStd 文件</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="55"/>
-        <source>Show examples folder contents</source>
-        <translation>顯示範例的資料夾內容</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/DlgStartPreferences.ui" line="26"/>
-        <source>Show additional folder contents</source>
-        <translation>顯示其他資料夾內容</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="47"/>
-        <source>An optional custom folder to be displayed on the Start page.
-Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
-        <translation>要顯示在起始頁上的可選自訂資料夾.
-多個資料夾透過使用 &quot;;;&quot; 來分隔路徑.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="64"/>
-        <source>Shows example files on the start page</source>
-        <translation>在起始頁顯示範例檔案</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="601"/>
-        <source>Options</source>
-        <translation>選項</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="114"/>
-        <source>The start page is closed automatically when FreeCAD launches</source>
-        <translation>將在 FreeCAD 啟動時自動關閉起始頁</translation>
-    </message>
-    <message>
-        <location filename="../../DlgStartPreferences.ui" line="640"/>
-        <source>Close start page after loading</source>
-        <translation>關閉開始頁在載入後</translation>
     </message>
 </context>
 <context>
@@ -405,7 +327,7 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
     <message>
         <location filename="../../DlgStartPreferencesAdvanced.ui" line="20"/>
         <source>Custom HTML Template</source>
-        <translation>自訂 HTML 模板</translation>
+        <translation>自訂HTML模板</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferencesAdvanced.ui" line="26"/>
@@ -415,7 +337,7 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
     <message>
         <location filename="../../DlgStartPreferencesAdvanced.ui" line="42"/>
         <source>Custom CSS</source>
-        <translation>自訂CSS</translation>
+        <translation>自訂 CSS</translation>
     </message>
     <message>
         <location filename="../../DlgStartPreferencesAdvanced.ui" line="48"/>
@@ -433,318 +355,400 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
     </message>
 </context>
 <context>
-    <name>StartGui::FirstStartWidget</name>
+    <name>RobotGui::DlgTrajectorySimulate</name>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/FirstStartWidget.cpp" line="101"/>
-        <source>Done</source>
-        <translation>完成</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="20"/>
+        <source>Simulation</source>
+        <translation>模擬</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/FirstStartWidget.cpp" line="103"/>
-        <source>Welcome to %1</source>
-        <translation>歡迎使用 %1</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="58"/>
+        <source>|&lt;</source>
+        <translation>|&lt;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/FirstStartWidget.cpp" line="106"/>
-        <source>To get started, set your basic configuration options below.</source>
-        <translation>首先，請在下面設定基本參數設定選項.</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="89"/>
+        <source>&lt;</source>
+        <translation>&lt;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/FirstStartWidget.cpp" line="107"/>
-        <source>These options (and many more) can be changed later in Preferences.</source>
-        <translation>這些選項(以及更多選項)可以在稍後的&quot;偏好設定&quot;中更改.</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="151"/>
+        <source>|&gt;</source>
+        <translation>|&gt;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="99"/>
-        <source>Set your basic configuration options below.</source>
-        <translation>請在下面設定基本參數設定選項.</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="182"/>
+        <source>&gt;</source>
+        <translation>&gt;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="100"/>
-        <source>These options (and many more) can be changed later in the preferences.</source>
-        <translation>這些選項(以及更多選項)可以在稍後的&quot;偏好設定&quot;中更改.</translation>
-    </message>
-</context>
-<context>
-    <name>StartGui::GeneralSettingsWidget</name>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/GeneralSettingsWidget.cpp" line="209"/>
-        <source>Language</source>
-        <translation>語系</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="213"/>
+        <source>&gt;|</source>
+        <translation>&gt;|</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/GeneralSettingsWidget.cpp" line="210"/>
-        <source>Unit System</source>
-        <translation>單位系統</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="272"/>
+        <source>Type</source>
+        <translation>類型</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/GeneralSettingsWidget.cpp" line="223"/>
-        <source>Navigation Style</source>
-        <translation>導覽風格</translation>
-    </message>
-</context>
-<context>
-    <name>StartGui::StartView</name>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="193"/>
-        <source>Empty File</source>
-        <translation>空檔案</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="277"/>
+        <source>Name</source>
+        <translation>名稱</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="194"/>
-        <source>Creates a new empty FreeCAD file</source>
-        <translation>建立一個新的空白FreeCAD檔案</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="282"/>
+        <source>C</source>
+        <translation>C</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="178"/>
-        <source>Empty file</source>
-        <translation>空白檔案</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="287"/>
+        <source>V</source>
+        <translation>V</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="179"/>
-        <source>Create a new empty FreeCAD file</source>
-        <translation>建立一個新的空白FreeCAD檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="181"/>
-        <source>Open File</source>
-        <translation>開啟檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="182"/>
-        <source>Open an existing CAD file or 3D model</source>
-        <translation>打開現有 CAD 或 3D 模型檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="184"/>
-        <source>Parametric Part</source>
-        <translation>參數零件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="185"/>
-        <source>Create a part with the Part Design workbench</source>
-        <translation>使用零件設計工作台建立一個零件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="188"/>
-        <source>Create an assembly project</source>
-        <translation>建立一個零件組合專案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="191"/>
-        <source>Create a 2D Draft with the Draft workbench</source>
-        <translation>使用底圖繪製工作台建立2D草圖</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="194"/>
-        <source>Create an architectural project</source>
-        <translation>建立一個建築專案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="440"/>
-        <source>Don&apos;t show this Start page again (start with blank screen)</source>
-        <translation>不要再次顯示此開始頁面 (使用空白頁面啟動)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="446"/>
-        <source>File not found</source>
-        <translation>找不到檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="447"/>
-        <source>The file &apos;%1&apos; cannot be opened.</source>
-        <translation>無法打開檔案&apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="484"/>
-        <source>Open first start setup</source>
-        <translation>打開首次啟動設定頁面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="575"/>
-        <source>Custom Folder</source>
-        <translation>自訂資料夾</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="198"/>
-        <source>Opens an existing CAD file or 3D model</source>
-        <translation>打開現有 CAD 或 3D 模型檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="201"/>
-        <source>Parametric Body</source>
-        <translation>參數零件主體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="202"/>
-        <source>Creates a body with the Part Design workbench</source>
-        <translation>使用零件設計工作台建立一個零件主體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="210"/>
-        <source>Creates a 2D draft document</source>
-        <translation>使用建立2D底圖繪製</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="187"/>
-        <source>Assembly</source>
-        <translation>零件組合</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="206"/>
-        <source>Creates an assembly project</source>
-        <translation>建立一個零件組合專案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="190"/>
-        <source>2D Draft</source>
-        <translation>2D草稿</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="225"/>
-        <source>Creates a 2D Draft document</source>
-        <translation>使用建立2D底圖繪製</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="193"/>
-        <source>BIM/Architecture</source>
-        <translation>BIM/建築</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="214"/>
-        <source>Creates an architectural project</source>
-        <translation>建立一個建築專案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="434"/>
-        <source>New File</source>
-        <translation>新增檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="435"/>
-        <source>Examples</source>
-        <translation>範例</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="436"/>
-        <source>Recent Files</source>
-        <translation>最近使用的檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="458"/>
-        <source>Open First Start Setup</source>
-        <translation>打開首次啟動設定頁面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="460"/>
-        <source>Do not show this Start page again (start with blank screen)</source>
-        <translation>不要再次顯示此開始頁面 (使用空白頁面啟動)</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="292"/>
+        <source>A</source>
+        <translation>A</translation>
     </message>
 </context>
 <context>
-    <name>StartGui::ThemeSelectorWidget</name>
+    <name>RobotGui::TaskEdge2TracParameter</name>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="58"/>
-        <source>FreeCAD Classic</source>
-        <translation>FreeCAD 經典</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="29"/>
+        <source>Hide / Show</source>
+        <translation>隱藏/顯示</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="58"/>
-        <source>Classic</source>
-        <translation>經典</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="47"/>
+        <source>Edges: 0</source>
+        <translation>邊緣: 0</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="59"/>
-        <source>FreeCAD Dark</source>
-        <translation>FreeCAD 暗色</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="61"/>
+        <source>Cluster: 0</source>
+        <translation>群組: 0</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="59"/>
-        <source>Dark theme</source>
-        <translation>暗色主題</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="72"/>
+        <source>Sizing Value:</source>
+        <translation>尺寸值:</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="59"/>
-        <source>Light</source>
-        <translation>亮色</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="103"/>
+        <source>Use orientation of edge</source>
+        <translation>使用邊之方向</translation>
+    </message>
+</context>
+<context>
+    <name>RobotGui::TaskRobot6Axis</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="22"/>
+        <source>A1</source>
+        <translation>A1</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="60"/>
-        <source>FreeCAD Light</source>
-        <translation>FreeCAD 亮色</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="69"/>
+        <source>A2</source>
+        <translation>A2</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="60"/>
-        <source>Light theme</source>
-        <translation>亮色主題</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="116"/>
+        <source>A3</source>
+        <translation>A3</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="60"/>
-        <source>Dark</source>
-        <translation>暗色</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="163"/>
+        <source>A4</source>
+        <translation>A4</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="137"/>
-        <source>Theme</source>
-        <translation>主題</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="210"/>
+        <source>A5</source>
+        <translation>A5</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="138"/>
-        <source>More themes are available online using the Addon Manager</source>
-        <translation>更多主題請在附加元件管理員中</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="257"/>
+        <source>A6</source>
+        <translation>A6</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="139"/>
-        <source>Dark theme</source>
-        <comment>Visual theme name</comment>
-        <translation>暗色主題</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="313"/>
+        <source>TCP: (200.23,300.23,400.23,234,343,343)</source>
+        <translation>TCP: (200.23,300.23,400.23,234,343,343)</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="139"/>
-        <source>Classic</source>
-        <comment>Visual theme name</comment>
-        <translation>經典</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="329"/>
+        <source>Tool: (0,0,400,0,0,0)</source>
+        <translation>工具: (0,0,400,0,0,0)</translation>
+    </message>
+</context>
+<context>
+    <name>RobotGui::TaskRobotControl</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="37"/>
+        <source>X+</source>
+        <translation>X+</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="140"/>
-        <source>Light</source>
-        <comment>Visual theme name</comment>
-        <translation>亮色</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="56"/>
+        <source>Y+</source>
+        <translation>Y+</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="140"/>
-        <source>Light theme</source>
-        <comment>Visual theme name</comment>
-        <translation>亮色主題</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="75"/>
+        <source>Z+</source>
+        <translation>Z+</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="141"/>
-        <source>Dark</source>
-        <comment>Visual theme name</comment>
-        <translation>暗色</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="94"/>
+        <source>A+</source>
+        <translation>A+</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="157"/>
-        <source>Looking for more themes? You can obtain them using &lt;a href=&quot;freecad:Std_AddonMgr&quot;&gt;Addon Manager&lt;/a&gt;.</source>
-        <translation>尋找更多主題風格? 您可以使用 &lt;a href=&quot;freecad:Std_AddonMgr&quot;&gt;附加元件管理器 取得它們&lt;/a&gt;.</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="113"/>
+        <source>B+</source>
+        <translation>B+</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="159"/>
-        <source>FreeCAD Dark</source>
-        <comment>Visual theme name</comment>
-        <translation>FreeCAD 暗色</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="132"/>
+        <source>C+</source>
+        <translation>C+</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="160"/>
-        <source>FreeCAD Light</source>
-        <comment>Visual theme name</comment>
-        <translation>FreeCAD 亮色</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="151"/>
+        <source>X-</source>
+        <translation>X-</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="161"/>
-        <source>FreeCAD Classic</source>
-        <comment>Visual theme name</comment>
-        <translation>FreeCAD 經典</translation>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="170"/>
+        <source>Y-</source>
+        <translation>Y-</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="189"/>
+        <source>Z-</source>
+        <translation>Z-</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="208"/>
+        <source>A-</source>
+        <translation>A-</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="227"/>
+        <source>B-</source>
+        <translation>B-</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="246"/>
+        <source>C-</source>
+        <translation>C-</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="258"/>
+        <source>Tool 0</source>
+        <translation>工具 0</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="263"/>
+        <source>Tool</source>
+        <translation>工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="268"/>
+        <source>Base 0</source>
+        <translation>基礎 0</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="273"/>
+        <source>Base</source>
+        <translation>基礎</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="278"/>
+        <source>World</source>
+        <translation>世界</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="287"/>
+        <source>50mm / 5°</source>
+        <translation>50mm / 5°</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="292"/>
+        <source>20mm / 2°</source>
+        <translation>20mm / 2°</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="297"/>
+        <source>10mm / 1°</source>
+        <translation>10mm / 1°</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="302"/>
+        <source>5mm / 0.5°</source>
+        <translation>5mm / 0.5°</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="307"/>
+        <source>1mm / 0.1°</source>
+        <translation>1mm / 0.1°</translation>
+    </message>
+</context>
+<context>
+    <name>RobotGui::TaskRobotMessages</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotMessages.ui" line="20"/>
+        <source>clear</source>
+        <translation>清除</translation>
+    </message>
+</context>
+<context>
+    <name>RobotGui::TaskTrajectory</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="58"/>
+        <source>|&lt;</source>
+        <translation>|&lt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="89"/>
+        <source>&lt;</source>
+        <translation>&lt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="151"/>
+        <source>|&gt;</source>
+        <translation>|&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="182"/>
+        <source>&gt;</source>
+        <translation>&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="213"/>
+        <source>&gt;|</source>
+        <translation>&gt;|</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="254"/>
+        <source>10 ms</source>
+        <translation>10毫秒</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="259"/>
+        <source>50 ms</source>
+        <translation>50毫秒</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="264"/>
+        <source>100 ms</source>
+        <translation>100毫秒</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="269"/>
+        <source>500 ms</source>
+        <translation>500毫秒</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="274"/>
+        <source>1 s</source>
+        <translation>1秒</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="291"/>
+        <source>Pos: (200.23, 300.23, 400.23, 234, 343 ,343)</source>
+        <translation>位置: (200.23, 300.23, 400.23, 234, 343 ,343)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="317"/>
+        <source>Type</source>
+        <translation>類型</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="322"/>
+        <source>Name</source>
+        <translation>名稱</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="327"/>
+        <source>C</source>
+        <translation>C</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="332"/>
+        <source>V</source>
+        <translation>V</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="337"/>
+        <source>A</source>
+        <translation>A</translation>
+    </message>
+</context>
+<context>
+    <name>RobotGui::TaskTrajectoryDressUpParameter</name>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="20"/>
+        <source>Speed &amp; Acceleration:</source>
+        <translation>速度 &amp; 加速度：</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="29"/>
+        <source>Speed:</source>
+        <translation>速度:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="55"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="92"/>
+        <source>Use</source>
+        <translation>使用</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="66"/>
+        <source>Accel:</source>
+        <translation>加速:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="102"/>
+        <source>Don&apos;t change Cont</source>
+        <translation>不要改變內容</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="107"/>
+        <source>Continues</source>
+        <translation>繼續</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="112"/>
+        <source>Discontinues</source>
+        <translation>中止</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="127"/>
+        <source>Position and Orientation:</source>
+        <translation>位置和方向:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="159"/>
+        <source>Don&apos;t change Position &amp; Orientation</source>
+        <translation>不要更改位置和方向</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="164"/>
+        <source>Use Orientation</source>
+        <translation>使用定向</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="169"/>
+        <source>Add Position</source>
+        <translation>增加位置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="174"/>
+        <source>Add Orientation</source>
+        <translation>增加方向</translation>
     </message>
 </context>
 <context>
@@ -1057,11 +1061,6 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
 </context>
 <context>
     <name>Workbench</name>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Start/Gui/StartView.cpp" line="428"/>
-        <source>Start</source>
-        <translation>開始</translation>
-    </message>
     <message>
         <location filename="../../Workbench.cpp" line="75"/>
         <source>Start page</source>
