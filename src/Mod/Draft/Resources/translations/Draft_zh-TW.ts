@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -5722,7 +5722,7 @@ value by using the [ and ] keys while drawing</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="781"/>
         <source>UI Options</source>
-        <translation type="unfinished"></translation>
+        <translation>使用者介面選項</translation>
     </message>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="787"/>
@@ -5732,7 +5732,7 @@ value by using the [ and ] keys while drawing</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="790"/>
         <source>Only show the Draft Snap toolbar during commands</source>
-        <translation type="unfinished"></translation>
+        <translation>僅在指令期間顯示草稿捕捉工具列</translation>
     </message>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="806"/>
@@ -5742,7 +5742,7 @@ value by using the [ and ] keys while drawing</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="809"/>
         <source>Show the Draft Snap Widget in the Draft Workbench</source>
-        <translation type="unfinished"></translation>
+        <translation>在底圖工作台中顯示底圖快照小工具</translation>
     </message>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="825"/>
@@ -5757,7 +5757,7 @@ value by using the [ and ] keys while drawing</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="828"/>
         <source>Show the Draft Scale Widget in the Draft Workbench</source>
-        <translation type="unfinished"></translation>
+        <translation>在底圖工作台中顯示底圖比例小工具</translation>
     </message>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draftinterface.ui" line="828"/>
@@ -6188,7 +6188,7 @@ value by using the [ and ] keys while drawing</source>
     <message>
         <location filename="../ui/preferences-draftsnap.ui" line="621"/>
         <source>Maximum number of contemporary edited objects</source>
-        <translation type="unfinished"></translation>
+        <translation>同時編輯物件的最大數量</translation>
     </message>
     <message>
         <location filename="../ui/preferences-draftsnap.ui" line="644"/>
@@ -6572,7 +6572,7 @@ such as &quot;Arial:Bold&quot;</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="14"/>
         <source>Texts and Dimensions</source>
-        <translation type="unfinished"></translation>
+        <translation>文字和尺寸</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="20"/>
@@ -6696,7 +6696,7 @@ in the Draft Scale Widget. If the scale is 1:100 the multiplier is 100.</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="205"/>
         <source>Lines and Arrows</source>
-        <translation type="unfinished"></translation>
+        <translation>線和箭頭</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="188"/>
@@ -6721,7 +6721,7 @@ in the Draft Scale Widget. If the scale is 1:100 the multiplier is 100.</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="266"/>
         <source>Start arrow type</source>
-        <translation type="unfinished"></translation>
+        <translation>起點箭頭樣式</translation>
     </message>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="279"/>
@@ -6731,7 +6731,7 @@ in the Draft Scale Widget. If the scale is 1:100 the multiplier is 100.</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="322"/>
         <source>Start arrow size</source>
-        <translation type="unfinished"></translation>
+        <translation>起始箭頭尺寸</translation>
     </message>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="329"/>
@@ -6741,7 +6741,7 @@ in the Draft Scale Widget. If the scale is 1:100 the multiplier is 100.</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="354"/>
         <source>End arrow type</source>
-        <translation type="unfinished"></translation>
+        <translation>終點箭頭樣式</translation>
     </message>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="367"/>
@@ -6751,7 +6751,7 @@ in the Draft Scale Widget. If the scale is 1:100 the multiplier is 100.</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="410"/>
         <source>End arrow size</source>
-        <translation type="unfinished"></translation>
+        <translation>終點箭頭尺寸</translation>
     </message>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="417"/>
@@ -6807,7 +6807,7 @@ or cm, leave blank to use the current unit defined in FreeCAD.</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="589"/>
         <source>Dimension Details</source>
-        <translation type="unfinished"></translation>
+        <translation>尺寸細節</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-drafttexts.ui" line="492"/>
@@ -7099,7 +7099,7 @@ plane orientation appears when picking points</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="116"/>
         <source>Show working plane orientation</source>
-        <translation type="unfinished"></translation>
+        <translation>顯示工作平面方向</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="129"/>
@@ -7115,7 +7115,7 @@ Objects can then automatically be added to groups as well.</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="149"/>
         <source>Command Options</source>
-        <translation type="unfinished"></translation>
+        <translation>命令選項</translation>
     </message>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="155"/>
@@ -7125,7 +7125,7 @@ Objects can then automatically be added to groups as well.</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="158"/>
         <source>Show prompts in the Report View</source>
-        <translation type="unfinished"></translation>
+        <translation>在報表檢視中顯示提示</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="171"/>
@@ -8127,7 +8127,7 @@ This value is the maximum segment length. </source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="14"/>
         <source>Grid and Snapping</source>
-        <translation type="unfinished"></translation>
+        <translation>格線與鎖點</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="26"/>
@@ -8253,7 +8253,7 @@ movement will be disabled until the command finishes.</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="298"/>
         <source>Snapping and Modifier Keys</source>
-        <translation type="unfinished"></translation>
+        <translation>捕捉與修改鍵</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftsnap.ui" line="293"/>
@@ -8328,7 +8328,7 @@ movement will be disabled until the command finishes.</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draftvisual.ui" line="20"/>
         <source>SVG Patterns</source>
-        <translation type="unfinished"></translation>
+        <translation>SVG 圖案</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draftvisual.ui" line="26"/>
@@ -8354,7 +8354,7 @@ pattern definitions to be added to the standard patterns</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draftvisual.ui" line="92"/>
         <source>Drawing View Line Definitions</source>
-        <translation type="unfinished"></translation>
+        <translation>工程圖線段定義</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="47"/>
