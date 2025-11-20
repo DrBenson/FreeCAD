@@ -1,516 +1,810 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en">
-  <context>
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+    <extra-po-header-language>zh_TW</extra-po-header-language>
+    <extra-po-header-language_team></extra-po-header-language_team>
+    <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
+    <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
+    <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
+    <extra-po-header-project_id_version>FreeCAD OpenSCAD Language Translations v1.1.0</extra-po-header-project_id_version>
+    <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
+    <extra-po-header_comment>#
+# Translators:
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
+#
+    </extra-po-header_comment>
+    <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
+<context>
     <name>Gui::Dialog::DlgSettingsOpenSCAD</name>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="35"/>
-      <source>General OpenSCAD Settings</source>
-      <translation>一般 OpenSCAD 設定</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/Resources/ui/openscadprefs-base.ui" line="14"/>
+        <source>General</source>
+        <translation>一般</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="43"/>
-      <source>OpenSCAD executable</source>
-      <translation>OpenSCAD 可執行</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="14"/>
+        <source>General settings</source>
+        <translation>一般設定</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="56"/>
-      <source>The path to the OpenSCAD executable</source>
-      <translation>此路徑可以在 OpenSCAD 上執行</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="35"/>
+        <source>General OpenSCAD Settings</source>
+        <translation>一般 OpenSCAD 設定</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="82"/>
-      <source>Print debug information in the Console</source>
-      <translation>於主控台顯示除錯訊息</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="43"/>
+        <source>OpenSCAD executable</source>
+        <translation>OpenSCAD 可執行</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="99"/>
-      <source>If this is checked, Features will claim their children in the tree view</source>
-      <translation>若勾選此項, 於樹狀檢視中特徵將會納入其子項</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="56"/>
+        <source>The path to the OpenSCAD executable</source>
+        <translation>此路徑可以在 OpenSCAD 上執行</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="119"/>
-      <source>If this is checked, Multmatrix Object will be Parametric</source>
-      <translation>若勾選此項, 將會參數化多矩陣物件</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="74"/>
+        <source>OpenSCAD import</source>
+        <translation>匯入OpenSCAD</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="122"/>
-      <source>Use Multmatrix Feature</source>
-      <translation>使用多矩陣功能</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="102"/>
+        <source>Use ViewProvider in Tree View</source>
+        <translation>於樹狀圖使用檢視提供者功能</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="139"/>
-      <location filename="../ui/openscadprefs-base.ui" line="162"/>
-      <source>The maximum number of faces of a polygon, prism or frustum. If fn is greater than this value the object is considered to be a circular. Set to 0 for no limit</source>
-      <translation>如果fn大於多邊形, 棱形或錐形面之最大數目, 物件將認為是一圓形. 設定0表示沒有限制。</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="182"/>
+        <source>Send to OpenSCAD via:</source>
+        <translation>通過以下方式發送到 OpenSCAD:</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="142"/>
-      <source>Maximum number of faces for polygons (fn)</source>
-      <translation>多邊形(fn)之最大面數量</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="258"/>
+        <source>OpenSCAD export</source>
+        <translation>匯出 OpenSCAD</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="195"/>
-      <source>The transfer mechanism for getting data to and from OpenSCAD</source>
-      <translation>The transfer mechanism for getting data to and from OpenSCAD</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="289"/>
+        <source>angular (fa)</source>
+        <translation>角 (fa)</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="205"/>
-      <source>Standard temp directory</source>
-      <translation>標準暫存目錄</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/Resources/ui/openscadprefs-base.ui" line="74"/>
+        <source>OpenSCAD Import</source>
+        <translation>OpenSCAD 匯入</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="210"/>
-      <source>User-specified directory</source>
-      <translation>使用者指定的目錄</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="82"/>
+        <source>Print debug information in the Console</source>
+        <translation>於主控台顯示除錯訊息</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="215"/>
-      <source>stdout pipe (requires OpenSCAD &gt;= 2021.1)</source>
-      <translation>stdout pipe (需要 OpenSCAD &gt;= 2021.1)</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="99"/>
+        <source>If this is checked, Features will claim their children in the tree view</source>
+        <translation>若勾選此項，於樹狀檢視中特徵將會納入其子項</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="227"/>
-      <source>Transfer directory</source>
-      <translation>傳輸目錄</translation>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/OpenSCAD/Resources/ui/openscadprefs-base.ui" line="102"/>
+        <source>Use ViewProviders in Tree View</source>
+        <translation>於樹狀圖使用檢視提供者功能</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="243"/>
-      <source>The path to the directory for transferring files to and from OpenSCAD</source>
-      <translation>用於與 OpenSCAD 之間傳輸檔案的目錄路徑</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="119"/>
+        <source>If this is checked, Multmatrix Object will be Parametric</source>
+        <translation>若勾選此項，將會參數化多矩陣物件</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="269"/>
-      <source>Maximum fragment size</source>
-      <translation>最大片段尺寸</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="122"/>
+        <source>Use Multmatrix Feature</source>
+        <translation>使用多矩陣功能</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="292"/>
-      <source>angle (fa)</source>
-      <translation>角度 (fa)</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="139"/>
+        <location filename="../ui/openscadprefs-base.ui" line="162"/>
+        <source>The maximum number of faces of a polygon, prism or frustum. If fn is greater than this value the object is considered to be a circular. Set to 0 for no limit</source>
+        <translation>如果fn大於多邊形、 棱形或錐形面之最大數目，物件將認為是一圓形。設定0表示沒有限制</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="388"/>
-      <source>Convexity</source>
-      <translation>Convexity</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="142"/>
+        <source>Maximum number of faces for polygons (fn)</source>
+        <translation>多邊形(fn)之最大面數量</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="289"/>
-      <location filename="../ui/openscadprefs-base.ui" line="299"/>
-      <source>Minimum angle for a fragment</source>
-      <translation>片段的最小角度</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/Resources/ui/openscadprefs-base.ui" line="182"/>
+        <source>Send to OpenSCAD via</source>
+        <translation>通過以下方式發送到 OpenSCAD</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="14"/>
-      <source>General</source>
-      <translation>一般</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="195"/>
+        <source>The transfer mechanism for getting data to and from OpenSCAD</source>
+        <translation>與 OpenSCAD 之間獲取資料的傳輸機制</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="74"/>
-      <source>OpenSCAD Import</source>
-      <translation type="unfinished">OpenSCAD Import</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="205"/>
+        <source>Standard temp directory</source>
+        <translation>標準暫存目錄</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="102"/>
-      <source>Use ViewProviders in Tree View</source>
-      <translation type="unfinished">Use ViewProviders in Tree View</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="210"/>
+        <source>User-specified directory</source>
+        <translation>使用者特定目錄</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="182"/>
-      <source>Send to OpenSCAD via</source>
-      <translation type="unfinished">Send to OpenSCAD via</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="215"/>
+        <source>stdout pipe (requires OpenSCAD &gt;= 2021.1)</source>
+        <translation>標準輸出管道 (需要 OpenSCAD &gt;= 2021.1)</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="261"/>
-      <source>OpenSCAD Export</source>
-      <translation type="unfinished">OpenSCAD Export</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="227"/>
+        <source>Transfer directory</source>
+        <translation>傳輸目錄</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="331"/>
-      <location filename="../ui/openscadprefs-base.ui" line="356"/>
-      <source>Minimum size of a fragment</source>
-      <translation>片段的最小尺寸</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="240"/>
+        <source>The path to the directory for transferring files to and from OpenSCAD</source>
+        <translation>與 OpenSCAD 之間傳輸文件的目錄路徑</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="334"/>
-      <source>size (fs)</source>
-      <translation>尺寸(fs)</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/Resources/ui/openscadprefs-base.ui" line="261"/>
+        <source>OpenSCAD Export</source>
+        <translation>OpenSCAD 匯出</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="362"/>
-      <source>mm</source>
-      <translation>mm</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="266"/>
+        <source>Maximum fragment size</source>
+        <translation>片段之最大尺寸</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="425"/>
-      <source>Mesh fallback</source>
-      <translation>網格退縮</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="286"/>
+        <location filename="../ui/openscadprefs-base.ui" line="296"/>
+        <source>Minimum angle for a fragment</source>
+        <translation>片段的最小角度</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="445"/>
-      <location filename="../ui/openscadprefs-base.ui" line="462"/>
-      <source>Deflection</source>
-      <translation>偏斜</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="289"/>
+        <source>angle (fa)</source>
+        <translation>角度 (fa)</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="448"/>
-      <source>deflection</source>
-      <translation>偏斜</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="328"/>
+        <location filename="../ui/openscadprefs-base.ui" line="353"/>
+        <source>Minimum size of a fragment</source>
+        <translation>片段的最小大小</translation>
     </message>
     <message>
-      <location filename="../ui/openscadprefs-base.ui" line="455"/>
-      <source>Triangulation settings</source>
-      <translation>三角測量設定</translation>
+        <location filename="../ui/openscadprefs-base.ui" line="331"/>
+        <source>size (fs)</source>
+        <translation>尺寸(fs)</translation>
     </message>
-  </context>
-  <context>
+    <message>
+        <location filename="../ui/openscadprefs-base.ui" line="359"/>
+        <source>mm</source>
+        <translation>mm</translation>
+    </message>
+    <message>
+        <location filename="../ui/openscadprefs-base.ui" line="385"/>
+        <source>Convexity</source>
+        <translation>凸度</translation>
+    </message>
+    <message>
+        <location filename="../ui/openscadprefs-base.ui" line="422"/>
+        <source>Mesh fallback</source>
+        <translation>網格退縮</translation>
+    </message>
+    <message>
+        <location filename="../ui/openscadprefs-base.ui" line="442"/>
+        <location filename="../ui/openscadprefs-base.ui" line="459"/>
+        <source>Deflection</source>
+        <translation>偏斜</translation>
+    </message>
+    <message>
+        <location filename="../ui/openscadprefs-base.ui" line="445"/>
+        <source>deflection</source>
+        <translation>偏斜</translation>
+    </message>
+    <message>
+        <location filename="../ui/openscadprefs-base.ui" line="452"/>
+        <source>Triangulation settings</source>
+        <translation>三角測量設定</translation>
+    </message>
+</context>
+<context>
     <name>OpenSCAD</name>
     <message>
-      <location filename="../../InitGui.py" line="132"/>
-      <source>It looks like you may be using a Snap version of OpenSCAD.</source>
-      <translation>看起來您可能正在使用鎖點版本的 OpenSCAD。</translation>
+        <location filename="../../importCSG.py" line="549"/>
+        <location filename="../../importCSG.py" line="1385"/>
+        <source>Unsupported Function</source>
+        <translation>此功能尚未支援</translation>
     </message>
     <message>
-      <location filename="../../InitGui.py" line="137"/>
-      <location filename="../../InitGui.py" line="150"/>
-      <source>If OpenSCAD execution fails to load the temporary file, use FreeCAD's OpenSCAD Workbench Preferences to change the transfer mechanism.</source>
-      <translation>如果 OpenSCAD 執行無法載入暫存檔案, 使用 FreeCAD's 的 OpenSCAD 工作台 喜好設定 來變更傳輸機制.</translation>
+        <location filename="../../importCSG.py" line="550"/>
+        <location filename="../../importCSG.py" line="1432"/>
+        <source>Press OK</source>
+        <translation>按確定</translation>
     </message>
     <message>
-      <location filename="../../InitGui.py" line="145"/>
-      <source>It looks like you may be using a sandboxed version of FreeCAD.</source>
-      <translation>您可能正在使用 FreeCAD 的沙盒版本.</translation>
+        <location filename="../../InitGui.py" line="130"/>
+        <source>It looks like you may be using a Snap version of OpenSCAD.</source>
+        <translation>看起來您可能正在使用 OpenSCAD 的 Snap 版本.</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="94"/>
-      <source>Unable to explode %s</source>
-      <translation>Unable to explode %s</translation>
+        <location filename="../../InitGui.py" line="135"/>
+        <location filename="../../InitGui.py" line="148"/>
+        <source>If OpenSCAD execution fails to load the temporary file, use FreeCAD&apos;s OpenSCAD Workbench Preferences to change the transfer mechanism.</source>
+        <translation>如果 OpenSCAD 執行載入臨時文件失敗，使用 FreeCAD 的 OpenSCAD 工作台預設屬性更改傳輸機制.</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="335"/>
-      <location filename="../../OpenSCADCommands.py" line="366"/>
-      <source>Add</source>
-      <translation>新增</translation>
+        <location filename="../../InitGui.py" line="143"/>
+        <source>It looks like you may be using a sandboxed version of FreeCAD.</source>
+        <translation>看起來您可能正在使用 OpenSCAD 的沙箱版本.</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="370"/>
-      <source>Clear</source>
-      <translation>清除</translation>
+        <location filename="../../OpenSCADCommands.py" line="101"/>
+        <source>Unable to explode %s</source>
+        <translation>無法拆解 %s</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="367"/>
-      <source>Load</source>
-      <translation>載入</translation>
+        <location filename="../../OpenSCADCommands.py" line="148"/>
+        <source>Convert Edges to Faces</source>
+        <translation>轉換邊為面</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="368"/>
-      <source>Save</source>
-      <translation>儲存</translation>
+        <location filename="../../OpenSCADCommands.py" line="308"/>
+        <source>Please select 3 objects first</source>
+        <translation>請先選擇3個物件</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="336"/>
-      <location filename="../../OpenSCADCommands.py" line="369"/>
-      <source>Refresh</source>
-      <translation>重新運算</translation>
+        <location filename="../../OpenSCADCommands.py" line="333"/>
+        <source>Clear code</source>
+        <translation>清除指令碼</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="371"/>
-      <source>as Mesh</source>
-      <translation>作為網格</translation>
+        <location filename="../../OpenSCADCommands.py" line="334"/>
+        <source>Open...</source>
+        <translation>開啟...</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="353"/>
-      <location filename="../../OpenSCADCommands.py" line="372"/>
-      <source>Add OpenSCAD Element</source>
-      <translation>新增 OpenSCAD 元素</translation>
+        <location filename="../../OpenSCADCommands.py" line="335"/>
+        <source>Save...</source>
+        <translation>儲存...</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="141"/>
-      <source>Converts edges to faces</source>
-      <translation type="unfinished">Converts edges to faces</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="139"/>
+        <source>Converts edges to faces</source>
+        <translation>轉換邊為面</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="303"/>
-      <source>Select 3 objects first</source>
-      <translation type="unfinished">Select 3 objects first</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="301"/>
+        <source>Select 3 objects first</source>
+        <translation>先選擇3個物件</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="337"/>
-      <source>Clear Code</source>
-      <translation type="unfinished">Clear Code</translation>
+        <location filename="../../OpenSCADCommands.py" line="340"/>
+        <location filename="../../OpenSCADCommands.py" line="363"/>
+        <source>Add</source>
+        <translation>新增</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="338"/>
-      <source>Open…</source>
-      <translation type="unfinished">Open…</translation>
+        <location filename="../../OpenSCADCommands.py" line="344"/>
+        <location filename="../../OpenSCADCommands.py" line="366"/>
+        <source>Refresh</source>
+        <translation>重新整理</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="339"/>
-      <source>Save…</source>
-      <translation type="unfinished">Save…</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="335"/>
+        <source>Clear Code</source>
+        <translation>清除指令碼</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="340"/>
-      <source>as mesh</source>
-      <translation type="unfinished">as mesh</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="336"/>
+        <source>Open…</source>
+        <translation>開啟...</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="429"/>
-      <source>Open file</source>
-      <translation>開啟檔案</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="337"/>
+        <source>Save…</source>
+        <translation>儲存...</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="431"/>
-      <location filename="../../OpenSCADCommands.py" line="445"/>
-      <source>OpenSCAD Files</source>
-      <translation>OpenSCAD 檔案</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="338"/>
+        <source>as mesh</source>
+        <translation>當作網格</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="443"/>
-      <source>Save file</source>
-      <translation>儲存檔案</translation>
+        <location filename="../../OpenSCADCommands.py" line="358"/>
+        <location filename="../../OpenSCADCommands.py" line="369"/>
+        <source>Add OpenSCAD Element</source>
+        <translation>加入OpenSCAD元素</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="457"/>
-      <location filename="../../OpenSCADCommands.py" line="486"/>
-      <source>Perform</source>
-      <translation>Perform</translation>
+        <location filename="../../OpenSCADCommands.py" line="342"/>
+        <location filename="../../OpenSCADCommands.py" line="364"/>
+        <source>Load</source>
+        <translation>載入</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="483"/>
-      <location filename="../../OpenSCADCommands.py" line="487"/>
-      <source>Mesh Boolean</source>
-      <translation>Mesh Boolean</translation>
+        <location filename="../../OpenSCADCommands.py" line="343"/>
+        <location filename="../../OpenSCADCommands.py" line="365"/>
+        <source>Save</source>
+        <translation>儲存</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="488"/>
-      <source>Minkowski sum</source>
-      <translation>Minkowski sum</translation>
+        <location filename="../../OpenSCADCommands.py" line="341"/>
+        <location filename="../../OpenSCADCommands.py" line="367"/>
+        <source>Clear</source>
+        <translation>清除</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADUtils.py" line="650"/>
-      <source>OpenSCAD file contains both 2D and 3D shapes. That is not supported in this importer, all shapes must have the same dimensionality.</source>
-      <translation>OpenSCAD 檔案包含 2D 和 3D 形狀. 此匯入器不支援這一點, 所有形狀必須具有相同的維度.</translation>
+        <location filename="../../OpenSCADCommands.py" line="345"/>
+        <location filename="../../OpenSCADCommands.py" line="368"/>
+        <source>as Mesh</source>
+        <translation>當作網格</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADUtils.py" line="661"/>
-      <source>Error: either all shapes must be 2D or all shapes must be 3D</source>
-      <translation>錯誤: 要麼所有形狀都必須是 2D 或是要麼所有形狀都必須是 3D</translation>
+        <location filename="../../OpenSCADCommands.py" line="424"/>
+        <source>Open file</source>
+        <translation>開啟檔案</translation>
     </message>
     <message>
-      <location filename="../../importCSG.py" line="518"/>
-      <location filename="../../importCSG.py" line="1390"/>
-      <source>Unsupported Function</source>
-      <translation>不支援的功能</translation>
+        <location filename="../../OpenSCADCommands.py" line="426"/>
+        <location filename="../../OpenSCADCommands.py" line="440"/>
+        <source>OpenSCAD Files</source>
+        <translation>OpenSCAD 檔案</translation>
     </message>
     <message>
-      <location filename="../../importCSG.py" line="518"/>
-      <location filename="../../importCSG.py" line="1390"/>
-      <source>Press OK</source>
-      <translation>按確定</translation>
-    </message>
-  </context>
-  <context>
-    <name>OpenSCAD_ExplodeGroup</name>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="102"/>
-      <source>Explode Group</source>
-      <translation>Explode Group</translation>
+        <location filename="../../OpenSCADCommands.py" line="438"/>
+        <source>Save file</source>
+        <translation>儲存檔案</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="105"/>
-      <source>Explodes a fusion or compound and applies random colors</source>
-      <translation type="unfinished">Explodes a fusion or compound and applies random colors</translation>
-    </message>
-  </context>
-  <context>
-    <name>OpenSCAD_ColorCodeShape</name>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="118"/>
-      <source>Color Shapes</source>
-      <translation>Color Shapes</translation>
+        <location filename="../../OpenSCADCommands.py" line="443"/>
+        <location filename="../../OpenSCADCommands.py" line="472"/>
+        <source>Perform</source>
+        <translation>執行</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="121"/>
-      <source>Colors shapes by validity and type</source>
-      <translation type="unfinished">Colors shapes by validity and type</translation>
-    </message>
-  </context>
-  <context>
-    <name>OpenSCAD_RefineShapeFeature</name>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="158"/>
-      <source>Refine Shape Feature</source>
-      <translation>精煉形狀功能</translation>
+        <location filename="../../OpenSCADCommands.py" line="469"/>
+        <location filename="../../OpenSCADCommands.py" line="473"/>
+        <source>Mesh Boolean</source>
+        <translation>網格布林運算</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="161"/>
-      <source>Creates a refined shape</source>
-      <translation type="unfinished">Creates a refined shape</translation>
-    </message>
-  </context>
-  <context>
-    <name>OpenSCAD_IncreaseToleranceFeature</name>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="268"/>
-      <source>Increase Tolerance Feature</source>
-      <translation>增加公差特徵</translation>
+        <location filename="../../OpenSCADCommands.py" line="483"/>
+        <source>Minkowski sum</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="271"/>
-      <source>Creates a feature to increase the tolerance</source>
-      <translation type="unfinished">Creates a feature to increase the tolerance</translation>
-    </message>
-  </context>
-  <context>
-    <name>OpenSCAD_ExpandPlacements</name>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="285"/>
-      <source>Expand Placements</source>
-      <translation>Expand Placements</translation>
+        <location filename="../../OpenSCADUtils.py" line="710"/>
+        <source>OpenSCAD file contains both 2D and 3D shapes. That is not supported in this importer, all shapes must have the same dimensionality.</source>
+        <translation>OpenSCAD 檔案同時包含 2D 與 3D 形狀。目前不支援匯入這樣的格式，所有形狀必須為相同維度。</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="288"/>
-      <source>Expands all placements downwards in the Tree View</source>
-      <translation type="unfinished">Expands all placements downwards in the Tree View</translation>
-    </message>
-  </context>
-  <context>
-    <name>OpenSCAD_ReplaceObject</name>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="306"/>
-      <source>Replace Object</source>
-      <translation>Replace Object</translation>
+        <location filename="../../OpenSCADUtils.py" line="722"/>
+        <source>Error all shapes must be either 2D or both must be 3D</source>
+        <translation>錯誤：所有形狀必須為 2D 或兩者均為 3D</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="309"/>
-      <source>Replaces an object in the Tree View</source>
-      <translation type="unfinished">Replaces an object in the Tree View</translation>
+        <location filename="../../OpenSCADUtils.py" line="665"/>
+        <source>Error: either all shapes must be 2D or all shapes must be 3D</source>
+        <translation>錯誤: 所有形狀必須是 2D 或 3D</translation>
     </message>
-  </context>
-  <context>
-    <name>OpenSCAD_RemoveSubtree</name>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="319"/>
-      <source>Remove Objects and Children</source>
-      <translation type="unfinished">Remove Objects and Children</translation>
-    </message>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="322"/>
-      <source>Removes the selected objects and all children that are not referenced by other objects</source>
-      <translation type="unfinished">Removes the selected objects and all children that are not referenced by other objects</translation>
-    </message>
-  </context>
-  <context>
-    <name>OpenSCAD_Hull</name>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="567"/>
-      <source>Hull</source>
-      <translation>殼體</translation>
-    </message>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="570"/>
-      <source>Creates a hull</source>
-      <translation type="unfinished">Creates a hull</translation>
-    </message>
-  </context>
-  <context>
-    <name>Workbench</name>
-    <message>
-      <location filename="../../InitGui.py" line="154"/>
-      <source>OpenSCAD Tools</source>
-      <translation>OpenSCAD 工具</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="158"/>
-      <source>Frequently-used Part WB tools</source>
-      <translation>Frequently-used Part WB tools</translation>
-    </message>
-  </context>
-  <context>
-    <name>OpenSCAD_Edgestofaces</name>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="138"/>
-      <source>Convert Edges to Faces</source>
-      <translation type="unfinished">Convert Edges to Faces</translation>
-    </message>
-  </context>
-  <context>
-    <name>OpenSCAD_MirrorMeshFeature</name>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="188"/>
-      <source>Mirror Mesh Feature</source>
-      <translation type="unfinished">Mirror Mesh Feature</translation>
-    </message>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="191"/>
-      <source>Mirrors the mesh</source>
-      <translation type="unfinished">Mirrors the mesh</translation>
-    </message>
-  </context>
-  <context>
-    <name>OpenSCAD_ScaleMeshFeature</name>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="217"/>
-      <source>Scale Mesh Feature</source>
-      <translation type="unfinished">Scale Mesh Feature</translation>
-    </message>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="221"/>
-      <source>Scales the mesh</source>
-      <translation type="unfinished">Scales the mesh</translation>
-    </message>
-  </context>
-  <context>
-    <name>OpenSCAD_ResizeMeshFeature</name>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="247"/>
-      <source>Resize Mesh Feature</source>
-      <translation type="unfinished">Resize Mesh Feature</translation>
-    </message>
-    <message>
-      <location filename="../../OpenSCADCommands.py" line="251"/>
-      <source>Resizes the mesh</source>
-      <translation type="unfinished">Resizes the mesh</translation>
-    </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>OpenSCAD_AddOpenSCADElement</name>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="531"/>
-      <source>Add OpenSCAD Element</source>
-      <translation>新增 OpenSCAD 元素</translation>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="529"/>
+        <source>Add OpenSCAD Element</source>
+        <translation>加入OpenSCAD元素</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="535"/>
-      <source>Adds an OpenSCAD element based on entered OpenSCAD code using the OpenSCAD binary</source>
-      <translation type="unfinished">Adds an OpenSCAD element based on entered OpenSCAD code using the OpenSCAD binary</translation>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="533"/>
+        <source>Adds an OpenSCAD element based on entered OpenSCAD code using the OpenSCAD binary</source>
+        <translation>藉由輸入OpenSCAD語言並執行OpenSCAD程式加入OpenSCAD元素</translation>
     </message>
-  </context>
-  <context>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="529"/>
+        <source>Add OpenSCAD Element…</source>
+        <translation>加入OpenSCAD元素...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="533"/>
+        <source>Adds an OpenSCAD element by entering OpenSCAD code and executing the OpenSCAD binary</source>
+        <translation>藉由輸入OpenSCAD語言並執行OpenSCAD程式加入OpenSCAD元素</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="520"/>
+        <source>Add an OpenSCAD element by entering OpenSCAD code and executing the OpenSCAD binary</source>
+        <translation>藉由輸入OpenSCAD語言並執行OpenSCAD程式加入OpenSCAD元素</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="530"/>
+        <source>Add OpenSCAD Element...</source>
+        <translation>加入OpenSCAD元素...</translation>
+    </message>
+</context>
+<context>
+    <name>OpenSCAD_ColorCodeShape</name>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="125"/>
+        <source>Color Shapes</source>
+        <translation>對造型上色</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="128"/>
+        <source>Color Shapes by validity and type</source>
+        <translation>依有效性及類型對造型上色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="119"/>
+        <source>Colors shapes by validity and type</source>
+        <translation>依有效性及類型對造型上色</translation>
+    </message>
+</context>
+<context>
+    <name>OpenSCAD_Edgestofaces</name>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="136"/>
+        <source>Convert Edges to Faces</source>
+        <translation>轉換邊為面</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="145"/>
+        <source>Convert Edges To Faces</source>
+        <translation>轉換邊為面</translation>
+    </message>
+</context>
+<context>
+    <name>OpenSCAD_ExpandPlacements</name>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="281"/>
+        <source>Expand Placements</source>
+        <translation>延伸位置</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="284"/>
+        <source>Expand all placements downwards in the Tree view</source>
+        <translation>延伸樹狀檢視下方位置</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="293"/>
+        <source>Expand all placements downwards the FeatureTree</source>
+        <translation>延伸功能樹下方位置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="286"/>
+        <source>Expands all placements downwards in the Tree View</source>
+        <translation>延伸樹狀檢視下方位置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="286"/>
+        <source>Expands all placements downwards in the tree view</source>
+        <translation>延伸樹狀檢視下方位置</translation>
+    </message>
+</context>
+<context>
+    <name>OpenSCAD_ExplodeGroup</name>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="109"/>
+        <source>Explode Group</source>
+        <translation>拆解群組</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="112"/>
+        <source>Remove fusion, apply placement to children, and color randomly</source>
+        <translation>移除合併，套用至子項目位置並隨機著色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="103"/>
+        <source>Explodes a fusion or compound and applies random colors</source>
+        <translation>套用至子項目位置並隨機著色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="103"/>
+        <source>Removes fusion and applies placement to children, and color randomly</source>
+        <translation>移除合併，套用至子項目位置並隨機著色</translation>
+    </message>
+</context>
+<context>
+    <name>OpenSCAD_Hull</name>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="551"/>
+        <source>Hull</source>
+        <translation>殼體</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="554"/>
+        <source>Perform Hull</source>
+        <translation>執行殼體</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="564"/>
+        <source>Use OpenSCAD to create a hull</source>
+        <translation>使用OpenSCAD建立殼體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="568"/>
+        <source>Creates a hull</source>
+        <translation>建立殼體</translation>
+    </message>
+</context>
+<context>
+    <name>OpenSCAD_IncreaseToleranceFeature</name>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="269"/>
+        <source>Create Feature that allows increasing the tolerance</source>
+        <translation>建立允許增加公差之特徵</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="273"/>
+        <source>Increase Tolerance Feature</source>
+        <translation>提升公差特徵</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="276"/>
+        <source>Create Feature that allows to increase the tolerance</source>
+        <translation>建立允許增加公差之特徵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="269"/>
+        <source>Creates a feature to increase the tolerance</source>
+        <translation>建立允許增加公差之特徵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="269"/>
+        <source>Creates a feature that allows increasing the tolerance</source>
+        <translation>建立允許增加公差之特徵</translation>
+    </message>
+</context>
+<context>
     <name>OpenSCAD_MeshBoolean</name>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="546"/>
-      <source>Mesh Boolean</source>
-      <translation>Mesh Boolean</translation>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="544"/>
+        <source>Mesh Boolean</source>
+        <translation>網格布林運算</translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="550"/>
-      <source>Performs a boolean operation using the OpenSCAD binary</source>
-      <translation type="unfinished">Performs a boolean operation using the OpenSCAD binary</translation>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="548"/>
+        <source>Performs a boolean operation using the OpenSCAD binary</source>
+        <translation>使用 OpenSCAD程式執行布林運算</translation>
     </message>
-  </context>
-  <context>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="544"/>
+        <source>Mesh Boolean…</source>
+        <translation>網格布林運算...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="548"/>
+        <source>Exports objects as meshes and use OpenSCAD to perform a boolean operation</source>
+        <translation>將物件匯出為網格，並使用 OpenSCAD 執行布林運算</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="531"/>
+        <source>Mesh Boolean...</source>
+        <translation>網格布林運算...</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="535"/>
+        <source>Export objects as meshes and use OpenSCAD to perform a boolean operation</source>
+        <translation>將物件匯出為網格，並使用 OpenSCAD 執行布林運算</translation>
+    </message>
+</context>
+<context>
     <name>OpenSCAD_Minkowski</name>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="587"/>
-      <source>Minkowski Sum</source>
-      <translation type="unfinished">Minkowski Sum</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="585"/>
+        <source>Minkowski Sum</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../OpenSCADCommands.py" line="590"/>
-      <source>Creates a Minkowski sum</source>
-      <translation type="unfinished">Creates a Minkowski sum</translation>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="588"/>
+        <source>Creates a Minkowski sum</source>
+        <translation type="unfinished"></translation>
     </message>
-  </context>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="570"/>
+        <source>Minkowski</source>
+        <translation>Minkowski</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="573"/>
+        <source>Perform Minkowski</source>
+        <translation>執行 Minkowski</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="580"/>
+        <source>Minkowski sum</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="583"/>
+        <source>Use OpenSCAD to create a Minkowski sum</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>OpenSCAD_MirrorMeshFeature</name>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="186"/>
+        <source>Mirror Mesh Feature</source>
+        <translation>網格特徵的鏡像拷貝</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="189"/>
+        <source>Mirrors the mesh</source>
+        <translation>網格特徵的鏡像拷貝</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="194"/>
+        <source>Mirror Mesh Feature...</source>
+        <translation>網格特徵的鏡像拷貝...</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="197"/>
+        <source>Create Mirror Mesh Feature</source>
+        <translation>建立鏡像網格特徵</translation>
+    </message>
+</context>
+<context>
+    <name>OpenSCAD_RefineShapeFeature</name>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="164"/>
+        <source>Refine Shape Feature</source>
+        <translation>調整造型功能</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="167"/>
+        <source>Create Refine Shape Feature</source>
+        <translation>建立調整造型功能</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="159"/>
+        <source>Creates a refined shape</source>
+        <translation>建立調整造型</translation>
+    </message>
+</context>
+<context>
+    <name>OpenSCAD_RemoveSubtree</name>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="317"/>
+        <source>Remove Objects and Children</source>
+        <translation>移除物件及其子物件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="320"/>
+        <source>Removes the selected objects and all children that are not referenced by other objects</source>
+        <translation>移除所選物件及其所有未被其他物件所參考之子物件</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="323"/>
+        <source>Remove Objects and their Children</source>
+        <translation>移除物件及其子物件</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="326"/>
+        <source>Removes the selected objects and all children that are not referenced from other objects</source>
+        <translation>移除所選物件及其所有未被其他物件所參考之子物件</translation>
+    </message>
+</context>
+<context>
+    <name>OpenSCAD_ReplaceObject</name>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="305"/>
+        <source>Replace an object in the Tree view. Please select old, new, and parent object</source>
+        <translation>替換樹狀檢視中的物體. 請選擇舊物體、新物體和父系物體</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="311"/>
+        <source>Replace Object</source>
+        <translation>取代物件</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="314"/>
+        <source>Replace an object in the Feature Tree. Please select old, new, and parent object</source>
+        <translation>取代特徵樹中的物件。 請選擇原始物件、新物件和父物件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="307"/>
+        <source>Replaces an object in the Tree View</source>
+        <translation>取代特徵樹中的物件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="307"/>
+        <source>Replaces an object in the tree view. Select old, new, and parent object</source>
+        <translation>替換樹狀檢視中的物體. 請選擇舊物體、新物體和父系物體</translation>
+    </message>
+</context>
+<context>
+    <name>OpenSCAD_ResizeMeshFeature</name>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="245"/>
+        <source>Resize Mesh Feature</source>
+        <translation>調整網格尺寸特徵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="245"/>
+        <source>Resize Mesh Feature…</source>
+        <translation>調整網格尺寸特徵...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="249"/>
+        <source>Resizes the mesh</source>
+        <translation>調整網格尺寸</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="253"/>
+        <source>Resize Mesh Feature...</source>
+        <translation>調整網格尺寸特徵...</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="257"/>
+        <source>Create Resize Mesh Feature</source>
+        <translation>建立調整網格尺寸特徵</translation>
+    </message>
+</context>
+<context>
+    <name>OpenSCAD_ScaleMeshFeature</name>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="215"/>
+        <source>Scale Mesh Feature</source>
+        <translation>網格縮放特徵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="215"/>
+        <source>Scale Mesh Feature…</source>
+        <translation>網格縮放特徵...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="219"/>
+        <source>Scales the mesh</source>
+        <translation>網格縮放</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="223"/>
+        <source>Scale Mesh Feature...</source>
+        <translation>網格縮放特徵...</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="227"/>
+        <source>Create Scale Mesh Feature</source>
+        <translation>建立網格縮放特徵</translation>
+    </message>
+</context>
+<context>
+    <name>Workbech</name>
+    <message>
+        <location filename="../../InitGui.py" line="156"/>
+        <source>OpenSCAD Part tools</source>
+        <translation>OpenSCAD 零件工具</translation>
+    </message>
+</context>
+<context>
+    <name>Workbench</name>
+    <message>
+        <location filename="../../InitGui.py" line="152"/>
+        <source>OpenSCAD Tools</source>
+        <translation>OpenSCAD 工具</translation>
+    </message>
+    <message>
+        <location filename="../../InitGui.py" line="152"/>
+        <source>OpenSCADTools</source>
+        <translation>OpenSCAD 工具</translation>
+    </message>
+    <message>
+        <location filename="../../InitGui.py" line="152"/>
+        <source>OpenSCAD</source>
+        <translation>OpenSCAD 工具</translation>
+    </message>
+    <message>
+        <location filename="../../InitGui.py" line="156"/>
+        <source>Frequently-used Part WB tools</source>
+        <translation>常用的零件工作台工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/conda/AppDir6/media/usr/Mod/OpenSCAD/InitGui.py" line="49"/>
+        <source>OpenSCAD is an application for creating solid 3D CAD.
+FreeCAD utizes OpenSCAD&apos;s capability as a script-only based modeller that uses its own description language
+Note: the Mesh workbench heavily uses the boolean operations of this workbench because they are quite robust</source>
+        <translation>OpenSCAD 是一款用於建立實體 3D CAD 的應用程式.
+FreeCAD 利用 OpenSCAD 的功能，將其作為基於腳本的建模器，使用自己的描述語言
+注意: Mesh 工作台大量使用此工作台的布林運算，因為它們非常健全</translation>
+    </message>
+</context>
 </TS>
