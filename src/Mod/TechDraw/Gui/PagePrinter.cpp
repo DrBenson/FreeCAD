@@ -240,7 +240,7 @@ void PagePrinter::printAllPdf(QPrinter* printer, App::Document* doc)
         renderPage(vpp, painter, sourceRect, targetRect);
         dPage->redrawCommand();
 
-        ourScene->setExportingPdf(false);
+        ourScene->setExportingPdf(true);
     }
 
     ourDoc->setModified(docModifiedState);
@@ -305,7 +305,7 @@ void PagePrinter::renderPage(ViewProviderPage* vpp, QPainter& painter, QRectF& s
 
 
 /// print the Page associated with the view provider
-void PagePrinter::print(ViewProviderPage* vpPage, QPrinter* printer, bool isPreview)
+void PagePrinter::print(ViewProviderPage* vpPage, QPrinter* printer)
 {
     QPageLayout pageLayout = printer->pageLayout();
 
@@ -318,8 +318,7 @@ void PagePrinter::print(ViewProviderPage* vpPage, QPrinter* printer, bool isPrev
     QPainter painter(printer);
 
     auto ourScene = vpPage->getQGSPage();
-    if (!printer->outputFileName().isEmpty() ||
-        isPreview) {
+    if (!printer->outputFileName().isEmpty()) {
         ourScene->setExportingPdf(true);
     }
     auto ourDoc = Gui::Application::Instance->getDocument(dPage->getDocument());

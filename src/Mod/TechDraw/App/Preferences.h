@@ -166,9 +166,6 @@ public:
     static bool snapDetailHighlights();
     static double detailSnapRadius();
 
-    static bool showCenterMarks();
-    static bool printCenterMarks();
-
 };
 
 

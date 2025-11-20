@@ -31,10 +31,11 @@ QT_TRANSLATE_NOOP = FreeCAD.Qt.QT_TRANSLATE_NOOP
 
 
 class BIM_Sketch:
+
     def GetResources(self):
         return {
             "Pixmap": "Sketch",
-            "MenuText": QT_TRANSLATE_NOOP("BIM_Sketch", "New Sketch"),
+            "MenuText": QT_TRANSLATE_NOOP("BIM_Sketch", "Sketch"),
             "ToolTip": QT_TRANSLATE_NOOP(
                 "BIM_Sketch", "Creates a new sketch in the current working plane"
             ),

@@ -123,7 +123,7 @@ def setStatusIcons(show=True):
                 statuswidget.setObjectName("BIMStatusWidget")
                 text = translate(
                     "BIMStatusWidget",
-                    "BIM Status Widget",
+                    "BIM status widget",
                     "A context menu action used to show or hide this toolbar widget",
                 )
                 statuswidget.setWindowTitle(text)

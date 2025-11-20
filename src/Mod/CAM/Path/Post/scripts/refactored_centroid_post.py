@@ -48,13 +48,13 @@ Values = Dict[str, Any]
 Visible = Dict[str, bool]
 
 
-class Test(PostProcessor):
-    """The Test post processor class."""
+class Refactored_Centroid(PostProcessor):
+    """The Refactored Centroid post processor class."""
 
     def __init__(
         self,
         job,
-        tooltip=translate("CAM", "Test post processor"),
+        tooltip=translate("CAM", "Refactored Centroid post processor"),
         tooltipargs=[""],
         units="Metric",
     ) -> None:
@@ -64,7 +64,7 @@ class Test(PostProcessor):
             tooltipargs=tooltipargs,
             units=units,
         )
-        Path.Log.debug("Test post processor initialized")
+        Path.Log.debug("Refactored Centroid post processor initialized.")
 
     def init_values(self, values: Values) -> None:
         """Initialize values that are used throughout the postprocessor."""
@@ -74,43 +74,107 @@ class Test(PostProcessor):
         # Set any values here that need to override the default values set
         # in the parent routine.
         #
+        # Use 4 digits for axis precision by default.
+        #
+        values["AXIS_PRECISION"] = 4
+        values["DEFAULT_AXIS_PRECISION"] = 4
+        values["DEFAULT_INCH_AXIS_PRECISION"] = 4
+        #
+        # Use ";" as the comment symbol
+        #
+        values["COMMENT_SYMBOL"] = ";"
+        #
+        # Use 1 digit for feed precision by default.
+        #
+        values["FEED_PRECISION"] = 1
+        values["DEFAULT_FEED_PRECISION"] = 1
+        values["DEFAULT_INCH_FEED_PRECISION"] = 1
+        #
+        # This value usually shows up in the post_op comment as "Finish operation:".
+        # Change it to "End" to produce "End operation:".
+        #
+        values["FINISH_LABEL"] = "End"
+        #
+        # If this value is True, then a list of tool numbers
+        # with their labels are output just before the preamble.
+        #
+        values["LIST_TOOLS_IN_PREAMBLE"] = True
+        #
         # Used in the argparser code as the "name" of the postprocessor program.
+        # This would normally show up in the usage message in the TOOLTIP_ARGS.
         #
-        values["MACHINE_NAME"] = "test"
+        values["MACHINE_NAME"] = "Centroid"
         #
-        # Don't output comments by default.
+        # This list controls the order of parameters in a line during output.
+        # centroid doesn't want K properties on XY plane; Arcs need work.
         #
-        values["OUTPUT_COMMENTS"] = False
+        values["PARAMETER_ORDER"] = [
+            "X",
+            "Y",
+            "Z",
+            "A",
+            "B",
+            "I",
+            "J",
+            "F",
+            "S",
+            "T",
+            "Q",
+            "R",
+            "L",
+            "H",
+        ]
         #
-        # Don't output the header by default.
+        # Any commands in this value will be output as the last commands
+        # in the G-code file.
         #
-        values["OUTPUT_HEADER"] = False
-        #
-        # Convert M56 tool change commands to comments,
-        # which are then suppressed by default.
-        #
-        values["OUTPUT_TOOL_CHANGE"] = False
+        values["POSTAMBLE"] = """M99"""
         values["POSTPROCESSOR_FILE_NAME"] = __name__
         #
-        # Do not show the editor by default since we are testing.
+        # Any commands in this value will be output after the header and
+        # safety block at the beginning of the G-code file.
         #
-        values["SHOW_EDITOR"] = False
+        values["PREAMBLE"] = """G53 G00 G17"""
         #
-        # Don't show the current machine units by default.
+        # Output any messages.
+        #
+        values["REMOVE_MESSAGES"] = False
+        #
+        # Any commands in this value are output after the header but before the preamble,
+        # then again after the TOOLRETURN but before the POSTAMBLE.
+        #
+        values["SAFETYBLOCK"] = """G90 G80 G40 G49"""
+        #
+        # Do not show the current machine units just before the PRE_OPERATION.
         #
         values["SHOW_MACHINE_UNITS"] = False
         #
-        # Don't show the current operation label by default.
+        # Do not show the current operation label just before the PRE_OPERATION.
         #
         values["SHOW_OPERATION_LABELS"] = False
         #
-        # Don't output an M5 command to stop the spindle after an M6 tool change by default.
+        # Do not output an M5 command to stop the spindle for tool changes.
         #
         values["STOP_SPINDLE_FOR_TOOL_CHANGE"] = False
         #
-        # Don't output a G43 tool length command following tool changes by default.
+        # spindle off, height offset canceled, spindle retracted
+        # (M25 is a centroid command to retract spindle)
+        #
+        values[
+            "TOOLRETURN"
+        ] = """M5
+M25
+G49 H0"""
+        #
+        # Default to not outputting a G43 following tool changes
         #
         values["USE_TLO"] = False
+        #
+        # This was in the original centroid postprocessor file
+        # but does not appear to be used anywhere.
+        #
+        # ZAXISRETURN = """G91 G28 X0 Z0 G90"""
+        #
 
     def init_arguments_visible(self, arguments_visible: Visible) -> None:
         """Initialize which argument pairs are visible in TOOLTIP_ARGS."""
@@ -118,15 +182,15 @@ class Test(PostProcessor):
         #
         # Modify the visibility of any arguments from the defaults here.
         #
-        # Make all arguments invisible by default.
-        #
-        for key in iter(arguments_visible):
-            arguments_visible[key] = False
+        arguments_visible["axis-modal"] = False
+        arguments_visible["precision"] = False
+        arguments_visible["tlo"] = False
 
     @property
     def tooltip(self):
         tooltip: str = """
-        This is a postprocessor file for the CAM workbench.  It is used
-        to test the postprocessor code.  It probably isn't useful for "real" gcode.
+        This is a postprocessor file for the CAM workbench.
+        It is used to take a pseudo-gcode fragment from a CAM object
+        and output 'real' GCode suitable for a centroid 3 axis mill.
         """
         return tooltip

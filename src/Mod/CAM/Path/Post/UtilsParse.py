@@ -37,7 +37,6 @@ import FreeCAD
 from FreeCAD import Units
 
 import Path
-import Path.Post.Utils as PostUtils
 
 # Define some types that are used throughout this file
 CommandLine = List[str]
@@ -705,12 +704,7 @@ def parse_a_path(values: Values, gcode: Gcode, pathobj) -> None:
     )
     adaptive_op_variables = determine_adaptive_op(values, pathobj)
 
-    # Apply arc splitting if requested
-    path_to_process = pathobj.Path
-    if values["SPLIT_ARCS"]:
-        path_to_process = PostUtils.splitArcs(path_to_process)
-
-    for c in path_to_process.Commands:
+    for c in pathobj.Path.Commands:
         command = c.Name
         command_line = []
 

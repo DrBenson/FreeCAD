@@ -231,6 +231,7 @@ void CmdTechDrawCosmeticVertexGroup::activated(int iMsg)
             Base::Console().message("CMD::CVGrp - invalid iMsg: %d\n", iMsg);
     };
     updateActive();
+    Gui::Selection().clearSelection();
 }
 
 Gui::Action * CmdTechDrawCosmeticVertexGroup::createAction()

@@ -709,13 +709,3 @@ double Preferences::detailSnapRadius()
     return getPreferenceGroup("General")->GetFloat("DetailSnapRadius", 0.6);
 }
 
-
-bool Preferences::showCenterMarks()
-{
-    return getPreferenceGroup("Decorations")->GetBool("ShowCenterMarks", false);
-}
-
-bool Preferences::printCenterMarks()
-{
-    return getPreferenceGroup("Decorations")->GetBool("PrintCenterMarks", false);
-}

@@ -124,8 +124,7 @@ class CAMWorkbench(Workbench):
         Path.GuiInit.Startup()
 
         # build commands list
-        projcmdlist = ["CAM_Job", "CAM_Sanity"]
-        postcmdlist = ["CAM_Post", "CAM_PostSelected"]
+        projcmdlist = ["CAM_Job", "CAM_Post", "CAM_Sanity"]
         toolcmdlist = ["CAM_Inspect", "CAM_SelectLoop", "CAM_OpActiveToggle"]
 
         simcmdlist = ["CAM_SimulatorGL", "CAM_Simulator"]
@@ -169,14 +168,6 @@ class CAMWorkbench(Workbench):
         toolcmdlist.extend(PathToolBitLibraryCmd.BarList)
         toolbitcmdlist = PathToolBitLibraryCmd.MenuList
 
-        postcmdgroup = ["CAM_PostTools"]
-        FreeCADGui.addCommand(
-            "CAM_PostTools",
-            PathCommandGroup(
-                postcmdlist,
-                QT_TRANSLATE_NOOP("CAM_PostTools", "Post process Operations"),
-            ),
-        )
         simcmdgroup = ["CAM_SimTools"]
         FreeCADGui.addCommand(
             "CAM_SimTools",
@@ -262,10 +253,7 @@ class CAMWorkbench(Workbench):
                 if not Path.Preferences.suppressOpenCamLibWarning():
                     FreeCAD.Console.PrintError("OpenCamLib is not working!\n")
 
-        self.appendToolbar(
-            QT_TRANSLATE_NOOP("Workbench", "Project Setup"),
-            projcmdlist + postcmdgroup,
-        )
+        self.appendToolbar(QT_TRANSLATE_NOOP("Workbench", "Project Setup"), projcmdlist)
         self.appendToolbar(
             QT_TRANSLATE_NOOP("Workbench", "Tool Commands"),
             simcmdgroup + toolcmdlist,
@@ -283,7 +271,6 @@ class CAMWorkbench(Workbench):
         self.appendMenu(
             [QT_TRANSLATE_NOOP("Workbench", "&CAM")],
             projcmdlist
-            + postcmdlist
             + ["CAM_ExportTemplate", "Separator"]
             + simcmdlist
             + toolcmdlist
@@ -369,17 +356,16 @@ class CAMWorkbench(Workbench):
         import PathScripts
 
         menuAppended = False
-        selection = FreeCADGui.Selection.getSelection()
-        if len(selection) == 1:
-            obj = selection[0]
-            selectedName = obj.Name
+        if len(FreeCADGui.Selection.getSelection()) == 1:
+            obj = FreeCADGui.Selection.getSelection()[0]
             if obj.isDerivedFrom("Path::Feature"):
                 self.appendContextMenu("", "Separator")
                 self.appendContextMenu("", ["CAM_Inspect"])
+                selectedName = obj.Name
                 if "Remote" in selectedName:
                     self.appendContextMenu("", ["Refresh_Path"])
                 if "Job" in selectedName:
-                    self.appendContextMenu("", ["CAM_ExportTemplate"])
+                    self.appendContextMenu("", ["CAM_ExportTemplate"] + self.toolbitctxmenu)
                 menuAppended = True
             if isinstance(obj.Proxy, Path.Op.Base.ObjectOp):
                 self.appendContextMenu("", ["CAM_OperationCopy", "CAM_OpActiveToggle"])
@@ -402,14 +388,6 @@ class CAMWorkbench(Workbench):
             if isinstance(obj.Proxy, Path.Tool.ToolBit):
                 self.appendContextMenu("", ["CAM_ToolBitSave", "CAM_ToolBitSaveAs"])
                 menuAppended = True
-
-        if selection:
-            for obj in selection:
-                if not obj.isDerivedFrom("Path::Feature"):
-                    break
-            else:
-                self.appendContextMenu("", ["CAM_Post", "CAM_PostSelected"])
-
         if menuAppended:
             self.appendContextMenu("", "Separator")
 
