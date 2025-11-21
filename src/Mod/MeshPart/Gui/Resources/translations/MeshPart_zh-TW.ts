@@ -2212,6 +2212,16 @@ to a smoother appearance.
         <translation>參考平面</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/MeshPart/Gui/CrossSections.ui" line="14"/>
+        <source>Cross sections</source>
+        <translation>剖面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/MeshPart/Gui/CrossSections.ui" line="20"/>
+        <source>Guiding plane</source>
+        <translation>參考平面</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/MeshPart/Gui/CrossSections.ui" line="26"/>
         <source>XY</source>
         <translation>XY</translation>
@@ -2275,16 +2285,6 @@ to a smoother appearance.
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/MeshPart/Gui/CrossSections.cpp" line="345"/>
         <source>Failure</source>
         <translation>失敗</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/MeshPart/Gui/CrossSections.ui" line="14"/>
-        <source>Cross sections</source>
-        <translation>剖面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/MeshPart/Gui/CrossSections.ui" line="20"/>
-        <source>Guiding plane</source>
-        <translation>參考平面</translation>
     </message>
 </context>
 <context>
@@ -2356,6 +2356,20 @@ This command only works with a &apos;mesh&apos; object, not a regular face or su
 此指令僅適用於&apos;網格&apos;物體，不適用於常規表面或曲面. 若要將物件轉換為網格，請使用網格工作台的工具.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/MeshPart/Gui/TaskCurveOnMesh.ui" line="14"/>
+        <source>Curve on mesh</source>
+        <translation>網格上的曲線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/MeshPart/Gui/TaskCurveOnMesh.ui" line="23"/>
+        <source>Press &apos;Start&apos;, then pick points on the mesh; when enough points have been set, right-click and choose &apos;Create&apos;. Repeat this process to create more splines. Close this task panel to complete the operation.
+
+This command only works with a &apos;mesh&apos; object, not a regular face or surface. To convert an object to a mesh use the tools of the Mesh Workbench.</source>
+        <translation>按下&apos;開始&apos;，然後在網格上選取點; 設定足夠的點後，右鍵點擊並選擇&quot;建立&quot;. 重複此過程以建立更多聚合線. 關閉該任務面板即可完成操作.
+
+此指令僅適用於&apos;網格&apos;物體，不適用於常規表面或曲面. 若要將物件轉換為網格，請使用網格工作台的工具.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/MeshPart/Gui/TaskCurveOnMesh.ui" line="38"/>
         <source>Wire</source>
         <translation>線</translation>
@@ -2399,20 +2413,6 @@ This command only works with a &apos;mesh&apos; object, not a regular face or su
         <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/MeshPart/Gui/TaskCurveOnMesh.ui" line="153"/>
         <source>Start</source>
         <translation>開始</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/MeshPart/Gui/TaskCurveOnMesh.ui" line="14"/>
-        <source>Curve on mesh</source>
-        <translation>網格上的曲線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/MeshPart/Gui/TaskCurveOnMesh.ui" line="23"/>
-        <source>Press &apos;Start&apos;, then pick points on the mesh; when enough points have been set, right-click and choose &apos;Create&apos;. Repeat this process to create more splines. Close this task panel to complete the operation.
-
-This command only works with a &apos;mesh&apos; object, not a regular face or surface. To convert an object to a mesh use the tools of the Mesh Workbench.</source>
-        <translation>按下&apos;開始&apos;，然後在網格上選取點; 設定足夠的點後，右鍵點擊並選擇&quot;建立&quot;. 重複此過程以建立更多聚合線. 關閉該任務面板即可完成操作.
-
-此指令僅適用於&apos;網格&apos;物體，不適用於常規表面或曲面. 若要將物件轉換為網格，請使用網格工作台的工具.</translation>
     </message>
 </context>
 <context>

@@ -38,14 +38,14 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="241"/>
-        <source>Converts to points</source>
-        <translation>轉換為點</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="240"/>
         <source>Convert to Points…</source>
         <translation>轉換為點...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="241"/>
+        <source>Converts to points</source>
+        <translation>轉換為點</translation>
     </message>
 </context>
 <context>
@@ -323,44 +323,6 @@
         <translation>無</translation>
     </message>
     <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="214"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="250"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="286"/>
-        <source>I,J,K (normal vector)</source>
-        <translation>I,J,K (垂直向量)</translation>
-    </message>
-    <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="219"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="255"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="291"/>
-        <source>I,K (normal vector 2D)</source>
-        <translation>I,K (2D垂直向量)</translation>
-    </message>
-    <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="224"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="260"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="296"/>
-        <source>R,G,B (color)</source>
-        <translation>R、 G、 B (顏色)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="229"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="265"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="301"/>
-        <source>I (gray value)</source>
-        <translation>I (灰度值)</translation>
-    </message>
-    <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="314"/>
-        <source>Preview</source>
-        <translation>預覽</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="341"/>
-        <source>Number of previewed lines</source>
-        <translation>預覽行數</translation>
-    </message>
-    <message>
         <location filename="../../Gui/DlgPointsRead.ui" line="14"/>
         <source>ASCII points import</source>
         <translation>匯入 ASCII 點</translation>
@@ -420,6 +382,27 @@
         <translation>無</translation>
     </message>
     <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="214"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="250"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="286"/>
+        <source>I,J,K (normal vector)</source>
+        <translation>I,J,K (垂直向量)</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="219"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="255"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="291"/>
+        <source>I,K (normal vector 2D)</source>
+        <translation>I,K (2D垂直向量)</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="224"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="260"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="296"/>
+        <source>R,G,B (color)</source>
+        <translation>R、 G、 B (顏色)</translation>
+    </message>
+    <message>
         <location filename="../../Gui/DlgPointsRead.ui" line="229"/>
         <location filename="../../Gui/DlgPointsRead.ui" line="265"/>
         <location filename="../../Gui/DlgPointsRead.ui" line="301"/>
@@ -430,6 +413,23 @@
         <location filename="../../Gui/DlgPointsRead.ui" line="341"/>
         <source>Number of previewed lines:</source>
         <translation>預覽行數:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="229"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="265"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="301"/>
+        <source>I (gray value)</source>
+        <translation>I (灰度值)</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="314"/>
+        <source>Preview</source>
+        <translation>預覽</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="341"/>
+        <source>Number of previewed lines</source>
+        <translation>預覽行數</translation>
     </message>
 </context>
 <context>
@@ -480,14 +480,14 @@
         <translation>編輯點工具</translation>
     </message>
     <message>
-        <location filename="../../Gui/Workbench.cpp" line="35"/>
-        <source>&amp;Points</source>
-        <translation>&amp;點</translation>
-    </message>
-    <message>
         <location filename="../../Gui/Workbench.cpp" line="34"/>
         <source>Points tools</source>
         <translation>編輯點工具</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/Workbench.cpp" line="35"/>
+        <source>&amp;Points</source>
+        <translation>&amp;點</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD/src/Mod/Points/InitGui.py" line="43"/>
