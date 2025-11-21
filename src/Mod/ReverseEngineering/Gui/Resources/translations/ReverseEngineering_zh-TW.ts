@@ -403,16 +403,6 @@
         <translation>最適化B-雲形線</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/ReverseEngineering/Gui/FitBSplineCurve.ui" line="14"/>
-        <source>Fit B-spline curve</source>
-        <translation>適合B-雲形線曲線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/ReverseEngineering/Gui/FitBSplineCurve.ui" line="14"/>
-        <source>Fit B-spline surface</source>
-        <translation>最適化B-雲形線曲面</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/ReverseEngineering/Gui/FitBSplineCurve.ui" line="20"/>
         <source>Parameters</source>
         <translation>屬性參數</translation>
@@ -512,6 +502,16 @@
         <source>Curvature</source>
         <translation>曲率</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/ReverseEngineering/Gui/FitBSplineCurve.ui" line="14"/>
+        <source>Fit B-spline curve</source>
+        <translation>適合B-雲形線曲線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/ReverseEngineering/Gui/FitBSplineCurve.ui" line="14"/>
+        <source>Fit B-spline surface</source>
+        <translation>最適化B-雲形線曲面</translation>
+    </message>
 </context>
 <context>
     <name>ReenGui::FitBSplineCurveWidget</name>
@@ -532,6 +532,16 @@
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/FitBSplineSurface.ui" line="20"/>
         <source>U-Direction</source>
         <translation>U 方向</translation>
+    </message>
+    <message>
+        <location filename="../../FitBSplineSurface.ui" line="14"/>
+        <source>Fit B-spline surface</source>
+        <translation>最適化B-雲行線表面</translation>
+    </message>
+    <message>
+        <location filename="../../FitBSplineSurface.ui" line="20"/>
+        <source>u-Direction</source>
+        <translation>u-方向</translation>
     </message>
     <message>
         <location filename="../../FitBSplineSurface.ui" line="26"/>
@@ -614,16 +624,6 @@
         <location filename="../../FitBSplineSurface.ui" line="334"/>
         <source>Curvature variation</source>
         <translation>曲率變化</translation>
-    </message>
-    <message>
-        <location filename="../../FitBSplineSurface.ui" line="14"/>
-        <source>Fit B-spline surface</source>
-        <translation>最適化B-雲行線表面</translation>
-    </message>
-    <message>
-        <location filename="../../FitBSplineSurface.ui" line="20"/>
-        <source>u-Direction</source>
-        <translation>u-方向</translation>
     </message>
 </context>
 <context>
@@ -738,11 +738,6 @@
         <translation>網格分割</translation>
     </message>
     <message>
-        <location filename="../../Segmentation.ui" line="14"/>
-        <source>Mesh segmentation</source>
-        <translation>網格分割</translation>
-    </message>
-    <message>
         <location filename="../../Segmentation.ui" line="20"/>
         <source>Smooth mesh</source>
         <translation>平滑化網格</translation>
@@ -777,6 +772,11 @@
         <source>Create compound</source>
         <translation>建立複合體</translation>
     </message>
+    <message>
+        <location filename="../../Segmentation.ui" line="14"/>
+        <source>Mesh segmentation</source>
+        <translation>網格分割</translation>
+    </message>
 </context>
 <context>
     <name>ReverseEngineeringGui::SegmentationManual</name>
@@ -784,11 +784,6 @@
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/ReverseEngineering/Gui/SegmentationManual.ui" line="14"/>
         <source>Manual Mesh Segmentation</source>
         <translation>手動設定網格分割</translation>
-    </message>
-    <message>
-        <location filename="../../SegmentationManual.ui" line="14"/>
-        <source>Manual segmentation</source>
-        <translation>手動分割</translation>
     </message>
     <message>
         <location filename="../../SegmentationManual.ui" line="20"/>
@@ -910,6 +905,11 @@
         <location filename="../../SegmentationManual.ui" line="326"/>
         <source>Hide segment</source>
         <translation>隱藏分割片段</translation>
+    </message>
+    <message>
+        <location filename="../../SegmentationManual.ui" line="14"/>
+        <source>Manual segmentation</source>
+        <translation>手動分割</translation>
     </message>
 </context>
 <context>

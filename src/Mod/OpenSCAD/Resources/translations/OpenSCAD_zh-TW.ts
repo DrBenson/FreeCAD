@@ -22,11 +22,6 @@
         <translation>一般</translation>
     </message>
     <message>
-        <location filename="../ui/openscadprefs-base.ui" line="14"/>
-        <source>General settings</source>
-        <translation>一般設定</translation>
-    </message>
-    <message>
         <location filename="../ui/openscadprefs-base.ui" line="35"/>
         <source>General OpenSCAD Settings</source>
         <translation>一般 OpenSCAD 設定</translation>
@@ -204,6 +199,11 @@
         <location filename="../ui/openscadprefs-base.ui" line="452"/>
         <source>Triangulation settings</source>
         <translation>三角測量設定</translation>
+    </message>
+    <message>
+        <location filename="../ui/openscadprefs-base.ui" line="14"/>
+        <source>General settings</source>
+        <translation>一般設定</translation>
     </message>
 </context>
 <context>
@@ -528,11 +528,6 @@
 <context>
     <name>OpenSCAD_IncreaseToleranceFeature</name>
     <message>
-        <location filename="../../OpenSCADCommands.py" line="269"/>
-        <source>Create Feature that allows increasing the tolerance</source>
-        <translation>建立允許增加公差之特徵</translation>
-    </message>
-    <message>
         <location filename="../../OpenSCADCommands.py" line="273"/>
         <source>Increase Tolerance Feature</source>
         <translation>提升公差特徵</translation>
@@ -545,6 +540,11 @@
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="269"/>
         <source>Creates a feature to increase the tolerance</source>
+        <translation>建立允許增加公差之特徵</translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADCommands.py" line="269"/>
+        <source>Create Feature that allows increasing the tolerance</source>
         <translation>建立允許增加公差之特徵</translation>
     </message>
     <message>
@@ -686,11 +686,6 @@
 <context>
     <name>OpenSCAD_ReplaceObject</name>
     <message>
-        <location filename="../../OpenSCADCommands.py" line="305"/>
-        <source>Replace an object in the Tree view. Please select old, new, and parent object</source>
-        <translation>替換樹狀檢視中的物體. 請選擇舊物體、新物體和父系物體</translation>
-    </message>
-    <message>
         <location filename="../../OpenSCADCommands.py" line="311"/>
         <source>Replace Object</source>
         <translation>取代物件</translation>
@@ -706,6 +701,11 @@
         <translation>取代特徵樹中的物件</translation>
     </message>
     <message>
+        <location filename="../../OpenSCADCommands.py" line="305"/>
+        <source>Replace an object in the Tree view. Please select old, new, and parent object</source>
+        <translation>替換樹狀檢視中的物體. 請選擇舊物體、新物體和父系物體</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="307"/>
         <source>Replaces an object in the tree view. Select old, new, and parent object</source>
         <translation>替換樹狀檢視中的物體. 請選擇舊物體、新物體和父系物體</translation>
@@ -719,14 +719,14 @@
         <translation>調整網格尺寸特徵</translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="245"/>
-        <source>Resize Mesh Feature…</source>
-        <translation>調整網格尺寸特徵...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="249"/>
         <source>Resizes the mesh</source>
         <translation>調整網格尺寸</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="245"/>
+        <source>Resize Mesh Feature…</source>
+        <translation>調整網格尺寸特徵...</translation>
     </message>
     <message>
         <location filename="../../OpenSCADCommands.py" line="253"/>
@@ -747,14 +747,14 @@
         <translation>網格縮放特徵</translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="215"/>
-        <source>Scale Mesh Feature…</source>
-        <translation>網格縮放特徵...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="219"/>
         <source>Scales the mesh</source>
         <translation>網格縮放</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="215"/>
+        <source>Scale Mesh Feature…</source>
+        <translation>網格縮放特徵...</translation>
     </message>
     <message>
         <location filename="../../OpenSCADCommands.py" line="223"/>

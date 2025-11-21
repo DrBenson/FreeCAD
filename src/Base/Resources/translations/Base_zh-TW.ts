@@ -32,13 +32,13 @@
         <translation>英制十進制 (in, lb)</translation>
     </message>
     <message>
-        <source>Standard (mm, kg, s, °)</source>
-        <translation>標準 (mm, kg, s, °)</translation>
-    </message>
-    <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Base/UnitsSchemasData.h" line="85"/>
         <source>Internal (m, m², m³)</source>
         <translation>公制標準十進制 (m, m², m³)</translation>
+    </message>
+    <message>
+        <source>Standard (mm, kg, s, °)</source>
+        <translation>標準 (mm, kg, s, °)</translation>
     </message>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Base/UnitsSchemasData.h" line="315"/>

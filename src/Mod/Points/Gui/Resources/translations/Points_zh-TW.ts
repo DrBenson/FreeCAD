@@ -38,14 +38,14 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="240"/>
-        <source>Convert to Points…</source>
-        <translation>轉換為點...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="241"/>
         <source>Converts to points</source>
         <translation>轉換為點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/Command.cpp" line="240"/>
+        <source>Convert to Points…</source>
+        <translation>轉換為點...</translation>
     </message>
 </context>
 <context>
@@ -254,26 +254,6 @@
         <translation>第一行</translation>
     </message>
     <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="14"/>
-        <source>ASCII points import</source>
-        <translation>匯入 ASCII 點</translation>
-    </message>
-    <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="34"/>
-        <source>Template:</source>
-        <translation>模板:</translation>
-    </message>
-    <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="46"/>
-        <source>Special lines</source>
-        <translation>特殊行</translation>
-    </message>
-    <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="58"/>
-        <source>First line:</source>
-        <translation>第一行:</translation>
-    </message>
-    <message>
         <location filename="../../Gui/DlgPointsRead.ui" line="70"/>
         <source>Ignore</source>
         <translation>忽略</translation>
@@ -282,57 +262,6 @@
         <location filename="../../Gui/DlgPointsRead.ui" line="80"/>
         <source>Number of points</source>
         <translation>點的數量</translation>
-    </message>
-    <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="101"/>
-        <source>Cluster by lines starting with:</source>
-        <translation>群組開始由行:</translation>
-    </message>
-    <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="111"/>
-        <source>Ignore lines starting with:</source>
-        <translation>忽略開始由行:</translation>
-    </message>
-    <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="126"/>
-        <source>Point format</source>
-        <translation>點型式</translation>
-    </message>
-    <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="146"/>
-        <source>Number separator:</source>
-        <translation>分隔符號數量:</translation>
-    </message>
-    <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="180"/>
-        <source>Points format:</source>
-        <translation>點格式:</translation>
-    </message>
-    <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="201"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="237"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="273"/>
-        <source>Next block:</source>
-        <translation>下一個區塊:</translation>
-    </message>
-    <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="209"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="245"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="281"/>
-        <source>none</source>
-        <translation>無</translation>
-    </message>
-    <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="229"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="265"/>
-        <location filename="../../Gui/DlgPointsRead.ui" line="301"/>
-        <source>I (Gray value)</source>
-        <translation>I (灰度值)</translation>
-    </message>
-    <message>
-        <location filename="../../Gui/DlgPointsRead.ui" line="341"/>
-        <source>Number of previewed lines:</source>
-        <translation>預覽行數:</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="101"/>
@@ -431,6 +360,77 @@
         <source>Number of previewed lines</source>
         <translation>預覽行數</translation>
     </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="14"/>
+        <source>ASCII points import</source>
+        <translation>匯入 ASCII 點</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="34"/>
+        <source>Template:</source>
+        <translation>模板:</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="46"/>
+        <source>Special lines</source>
+        <translation>特殊行</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="58"/>
+        <source>First line:</source>
+        <translation>第一行:</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="101"/>
+        <source>Cluster by lines starting with:</source>
+        <translation>群組開始由行:</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="111"/>
+        <source>Ignore lines starting with:</source>
+        <translation>忽略開始由行:</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="126"/>
+        <source>Point format</source>
+        <translation>點型式</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="146"/>
+        <source>Number separator:</source>
+        <translation>分隔符號數量:</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="180"/>
+        <source>Points format:</source>
+        <translation>點格式:</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="201"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="237"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="273"/>
+        <source>Next block:</source>
+        <translation>下一個區塊:</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="209"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="245"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="281"/>
+        <source>none</source>
+        <translation>無</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="229"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="265"/>
+        <location filename="../../Gui/DlgPointsRead.ui" line="301"/>
+        <source>I (Gray value)</source>
+        <translation>I (灰度值)</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/DlgPointsRead.ui" line="341"/>
+        <source>Number of previewed lines:</source>
+        <translation>預覽行數:</translation>
+    </message>
 </context>
 <context>
     <name>QObject</name>
@@ -480,14 +480,14 @@
         <translation>編輯點工具</translation>
     </message>
     <message>
-        <location filename="../../Gui/Workbench.cpp" line="34"/>
-        <source>Points tools</source>
-        <translation>編輯點工具</translation>
-    </message>
-    <message>
         <location filename="../../Gui/Workbench.cpp" line="35"/>
         <source>&amp;Points</source>
         <translation>&amp;點</translation>
+    </message>
+    <message>
+        <location filename="../../Gui/Workbench.cpp" line="34"/>
+        <source>Points tools</source>
+        <translation>編輯點工具</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD/src/Mod/Points/InitGui.py" line="43"/>

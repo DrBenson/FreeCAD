@@ -62,16 +62,16 @@ This command only works with a &apos;mesh&apos; object.</source>
         <translation>網格上的曲線</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="180"/>
+        <source>Curve on Mesh…</source>
+        <translation>網格上的曲線...</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="181"/>
         <source>Creates an approximated curve on top of a mesh.
 This command only works with a mesh object.</source>
         <translation>在網格頂部建立一條近似曲線.
 此命令僅適用於“網格”物體.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="180"/>
-        <source>Curve on Mesh…</source>
-        <translation>網格上的曲線...</translation>
     </message>
 </context>
 <context>
@@ -160,6 +160,11 @@ and non-boundary vertices.</source>
         <translation>填充</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="114"/>
+        <source>Filling…</source>
+        <translation>填充...</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="115"/>
         <source>Creates a surface from a series of selected boundary edges.
 Additionally, the surface may be constrained by edges and
@@ -167,11 +172,6 @@ vertices that are not on the boundary.</source>
         <translation>從一系列選取的邊界邊建立曲面。
 此外，表面可能受到非邊界邊
 和非邊界頂點的約束.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="114"/>
-        <source>Filling…</source>
-        <translation>填充...</translation>
     </message>
 </context>
 <context>
@@ -225,14 +225,14 @@ vertices that are not on the boundary.</source>
         <translation>剖面</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="326"/>
-        <source>Creates a surface from a series of sectional edges</source>
-        <translation>從一系列截面邊緣建立曲面</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="325"/>
         <source>Sections…</source>
         <translation>剖面...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/Command.cpp" line="326"/>
+        <source>Creates a surface from a series of sectional edges</source>
+        <translation>從一系列截面邊緣建立曲面</translation>
     </message>
 </context>
 <context>
@@ -508,6 +508,21 @@ vertices that are not on the boundary.</source>
         <translation>限制曲面沿著選取的剖面邊緣移動</translation>
     </message>
     <message>
+        <location filename="../../TaskSections.ui" line="41"/>
+        <source>Add Edge</source>
+        <translation>新增邊界</translation>
+    </message>
+    <message>
+        <location filename="../../TaskSections.ui" line="60"/>
+        <source>Remove Edge</source>
+        <translation>移除邊界</translation>
+    </message>
+    <message>
+        <location filename="../../TaskSections.ui" line="72"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;List can be reordered by dragging&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;列表可以通過拖拉重新排序&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
         <location filename="../../TaskSections.ui" line="14"/>
         <location filename="../../TaskSections.ui" line="24"/>
         <source>Sectional edges</source>
@@ -521,24 +536,9 @@ that is, the surface will be forced to pass through these edges.</source>
 也就是說，表面將被迫通過這些邊.</translation>
     </message>
     <message>
-        <location filename="../../TaskSections.ui" line="41"/>
-        <source>Add Edge</source>
-        <translation>新增邊界</translation>
-    </message>
-    <message>
         <location filename="../../TaskSections.ui" line="52"/>
         <source>Status messages</source>
         <translation>狀態訊息</translation>
-    </message>
-    <message>
-        <location filename="../../TaskSections.ui" line="60"/>
-        <source>Remove Edge</source>
-        <translation>移除邊界</translation>
-    </message>
-    <message>
-        <location filename="../../TaskSections.ui" line="72"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;List can be reordered by dragging&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;列表可以通過拖拉重新排序&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -665,23 +665,6 @@ that is, the surface will be forced to pass through these edges.</source>
         <translation>非邊界邊緣</translation>
     </message>
     <message>
-        <location filename="../../TaskFillingEdge.ui" line="20"/>
-        <source>Edge constraints</source>
-        <translation>邊緣約束設定</translation>
-    </message>
-    <message>
-        <location filename="../../TaskFillingEdge.ui" line="26"/>
-        <source>Add edges that will be used to constrain the surface,
-that is, the surface will be forced to pass through these edges.</source>
-        <translation>增加將用於約束表面的邊，
-也就是說，表面將被迫通過這些邊.</translation>
-    </message>
-    <message>
-        <location filename="../../TaskFillingEdge.ui" line="30"/>
-        <source>Non-boundary edges</source>
-        <translation>非邊界邊緣</translation>
-    </message>
-    <message>
         <location filename="../../TaskFillingEdge.ui" line="47"/>
         <source>Add Edge</source>
         <translation>新增邊界</translation>
@@ -690,16 +673,6 @@ that is, the surface will be forced to pass through these edges.</source>
         <location filename="../../TaskFillingEdge.ui" line="66"/>
         <source>Remove Edge</source>
         <translation>移除邊界</translation>
-    </message>
-    <message>
-        <location filename="../../TaskFillingEdge.ui" line="94"/>
-        <source>Faces:</source>
-        <translation>面:</translation>
-    </message>
-    <message>
-        <location filename="../../TaskFillingEdge.ui" line="114"/>
-        <source>Continuity:</source>
-        <translation>連續性:</translation>
     </message>
     <message>
         <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Surface/Gui/TaskFillingEdge.ui" line="93"/>
@@ -721,6 +694,33 @@ that is, the surface will be forced to pass through these edges.</source>
         <source>Ignore</source>
         <translation>忽略</translation>
     </message>
+    <message>
+        <location filename="../../TaskFillingEdge.ui" line="20"/>
+        <source>Edge constraints</source>
+        <translation>邊緣約束設定</translation>
+    </message>
+    <message>
+        <location filename="../../TaskFillingEdge.ui" line="26"/>
+        <source>Add edges that will be used to constrain the surface,
+that is, the surface will be forced to pass through these edges.</source>
+        <translation>增加將用於約束表面的邊，
+也就是說，表面將被迫通過這些邊.</translation>
+    </message>
+    <message>
+        <location filename="../../TaskFillingEdge.ui" line="30"/>
+        <source>Non-boundary edges</source>
+        <translation>非邊界邊緣</translation>
+    </message>
+    <message>
+        <location filename="../../TaskFillingEdge.ui" line="94"/>
+        <source>Faces:</source>
+        <translation>面:</translation>
+    </message>
+    <message>
+        <location filename="../../TaskFillingEdge.ui" line="114"/>
+        <source>Continuity:</source>
+        <translation>連續性:</translation>
+    </message>
 </context>
 <context>
     <name>SurfaceGui::TaskFillingVertex</name>
@@ -740,6 +740,16 @@ that is, the surface will be forced to pass through these edges.</source>
         <translation>非邊界頂點</translation>
     </message>
     <message>
+        <location filename="../../TaskFillingVertex.ui" line="41"/>
+        <source>Add Vertex</source>
+        <translation>新增頂點</translation>
+    </message>
+    <message>
+        <location filename="../../TaskFillingVertex.ui" line="60"/>
+        <source>Remove Vertex</source>
+        <translation>移除頂點</translation>
+    </message>
+    <message>
         <location filename="../../TaskFillingVertex.ui" line="14"/>
         <source>Vertex constraints</source>
         <translation>頂點約束設定</translation>
@@ -755,16 +765,6 @@ that is, the surface will be forced to pass through these points.</source>
         <location filename="../../TaskFillingVertex.ui" line="24"/>
         <source>Non-boundary vertices</source>
         <translation>非邊界頂點</translation>
-    </message>
-    <message>
-        <location filename="../../TaskFillingVertex.ui" line="41"/>
-        <source>Add Vertex</source>
-        <translation>新增頂點</translation>
-    </message>
-    <message>
-        <location filename="../../TaskFillingVertex.ui" line="60"/>
-        <source>Remove Vertex</source>
-        <translation>移除頂點</translation>
     </message>
 </context>
 <context>

@@ -1252,22 +1252,6 @@
         <translation>類型</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBlock.ui" line="14"/>
-        <source>Block definition</source>
-        <translation>區塊定義</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBlock.ui" line="20"/>
-        <source>First limit</source>
-        <translation>第1局限</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBlock.ui" line="40"/>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBlock.ui" line="201"/>
-        <source>Type:</source>
-        <translation>類型:</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBlock.ui" line="48"/>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBlock.ui" line="209"/>
         <source>Dimension</source>
@@ -1384,6 +1368,22 @@
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBlock.ui" line="306"/>
         <source>Reference</source>
         <translation>參考</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBlock.ui" line="14"/>
+        <source>Block definition</source>
+        <translation>區塊定義</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBlock.ui" line="20"/>
+        <source>First limit</source>
+        <translation>第1局限</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBlock.ui" line="40"/>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBlock.ui" line="201"/>
+        <source>Type:</source>
+        <translation>類型:</translation>
     </message>
 </context>
 <context>
@@ -1887,11 +1887,6 @@ into its X, Y, and Z components.</source>
 <context>
     <name>CmdPartCompSplitFeatures</name>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/Command.cpp" line="620"/>
-        <source>Shape splitting and Compsolid creation tools.</source>
-        <translation>造型分割和組合實體建立工具.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/Command.cpp" line="684"/>
         <source>Part</source>
         <translation>零件</translation>
@@ -1915,6 +1910,11 @@ into its X, Y, and Z components.</source>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/Command.cpp" line="607"/>
         <source>Shape splitting and compsolid creation tools</source>
         <translation>造型分割和組合實體建立工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/Command.cpp" line="620"/>
+        <source>Shape splitting and Compsolid creation tools.</source>
+        <translation>造型分割和組合實體建立工具.</translation>
     </message>
 </context>
 <context>
@@ -3295,6 +3295,11 @@ of the projection.</source>
         <translation>建立圓柱</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/CommandSimple.cpp" line="67"/>
+        <source>Create Part Cylinder</source>
+        <translation>建立零件圓柱體</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/CommandSimple.cpp" line="181"/>
         <source>Points from geometry</source>
         <translation>幾何中的點</translation>
@@ -3369,11 +3374,6 @@ of the projection.</source>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/ViewProviderMirror.cpp" line="210"/>
         <source>Edit mirror</source>
         <translation>編輯鏡像</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/CommandSimple.cpp" line="67"/>
-        <source>Create Part Cylinder</source>
-        <translation>建立零件圓柱體</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/Command.cpp" line="2257"/>
@@ -3648,6 +3648,11 @@ of the projection.</source>
 <context>
     <name>PartDesignGui::TaskDatumParameters</name>
     <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/AttachmentEditor/TaskAttachmentEditor.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/AttachmentEditor/TaskAttachmentEditor.ui" line="20"/>
         <source>Selection accepted</source>
         <translation>接受選擇</translation>
@@ -3754,6 +3759,31 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <translation>在 方向-x</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="171"/>
+        <source>In y-direction</source>
+        <translation>在 方向-y</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="203"/>
+        <source>In z-direction</source>
+        <translation>在 方向-z</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="235"/>
+        <source>Around x-axis</source>
+        <translation>圍繞 x 軸</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="280"/>
+        <source>Around y-axis</source>
+        <translation>圍繞 y 軸</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="325"/>
+        <source>Around z-axis</source>
+        <translation>圍繞 z 軸</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/AttachmentEditor/TaskAttachmentEditor.ui" line="158"/>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/AttachmentEditor/TaskAttachmentEditor.ui" line="190"/>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/AttachmentEditor/TaskAttachmentEditor.ui" line="222"/>
@@ -3766,29 +3796,14 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <translation>在 方向-Y</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="171"/>
-        <source>In y-direction</source>
-        <translation>在 方向-y</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="203"/>
         <source>In Z-direction</source>
         <translation>在 方向-Z</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="203"/>
-        <source>In z-direction</source>
-        <translation>在 方向-z</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="235"/>
         <source>Around X-axis</source>
         <translation>圍繞 X 軸</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="235"/>
-        <source>Around x-axis</source>
-        <translation>圍繞 x 軸</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="254"/>
@@ -3803,11 +3818,6 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <translation>圍繞 Y 軸</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="280"/>
-        <source>Around y-axis</source>
-        <translation>圍繞 y 軸</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="299"/>
         <source>Rotation around the Y-axis
 Note: The placement is expressed in local space of object being attached.</source>
@@ -3820,11 +3830,6 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <translation>圍繞 Z 軸</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="325"/>
-        <source>Around z-axis</source>
-        <translation>圍繞 z 軸</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="344"/>
         <source>Rotation around the Z-axis
 Note: The placement is expressed in local space of object being attached.</source>
@@ -3835,11 +3840,6 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/AttachmentEditor/TaskAttachmentEditor.ui" line="367"/>
         <source>Flip sides</source>
         <translation>翻面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/AttachmentEditor/TaskAttachmentEditor.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -3860,16 +3860,6 @@ Note: The placement is expressed in local space of object being attached.</sourc
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/CrossSections.ui" line="20"/>
         <source>Guiding Plane</source>
-        <translation>參考平面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/CrossSections.ui" line="14"/>
-        <source>Cross sections</source>
-        <translation>剖面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/CrossSections.ui" line="20"/>
-        <source>Guiding plane</source>
         <translation>參考平面</translation>
     </message>
     <message>
@@ -3926,6 +3916,16 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/CrossSections.cpp" line="307"/>
         <source>Cannot compute cross-sections</source>
         <translation>無法計算剖面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/CrossSections.ui" line="14"/>
+        <source>Cross sections</source>
+        <translation>剖面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/CrossSections.ui" line="20"/>
+        <source>Guiding plane</source>
+        <translation>參考平面</translation>
     </message>
 </context>
 <context>
@@ -4015,16 +4015,6 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <translation>先由右側選取造型</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBooleanOperation.cpp" line="382"/>
-        <source>Select a shape on the left side, first</source>
-        <translation>先由左側選取造型</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBooleanOperation.cpp" line="387"/>
-        <source>Select a shape on the right side, first</source>
-        <translation>先由右側選取造型</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBooleanOperation.cpp" line="392"/>
         <source>Cannot perform a boolean operation with the same shape</source>
         <translation>無法於同一個圖形上進行布林運算</translation>
@@ -4059,6 +4049,16 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <source>Performing difference on non-solids is not possible</source>
         <translation>無法對非實體進行差集</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBooleanOperation.cpp" line="382"/>
+        <source>Select a shape on the left side, first</source>
+        <translation>先由左側選取造型</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgBooleanOperation.cpp" line="387"/>
+        <source>Select a shape on the right side, first</source>
+        <translation>先由右側選取造型</translation>
+    </message>
 </context>
 <context>
     <name>PartGui::DlgChamferEdges</name>
@@ -4074,16 +4074,6 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgExportHeaderStep.ui" line="23"/>
         <source>If not empty, field contents will be used in the STEP file header</source>
         <translation>如果不為空，則欄位內容將用於STEP文件標題</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExportHeaderStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExportHeaderStep.ui" line="20"/>
-        <source>If not empty, field contents will be used in the STEP file header.</source>
-        <translation>如果不為空，則欄位內容將用於STEP文件標題.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExportHeaderStep.ui" line="23"/>
@@ -4104,6 +4094,16 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExportHeaderStep.ui" line="49"/>
         <source>Product</source>
         <translation>產品</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExportHeaderStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExportHeaderStep.ui" line="20"/>
+        <source>If not empty, field contents will be used in the STEP file header.</source>
+        <translation>如果不為空，則欄位內容將用於STEP文件標題.</translation>
     </message>
 </context>
 <context>
@@ -4154,6 +4154,11 @@ it inside the Placement property.</source>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExportStep.ui" line="26"/>
         <source>Units for export of STEP</source>
         <translation>匯出STEP檔所用之單位</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExportStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExportStep.ui" line="47"/>
@@ -4212,11 +4217,6 @@ it inside the placement property.</source>
 should be written into the STEP file. This parameter can be set to off in order to minimize
 the size of the resulting STEP file.</source>
         <translation>此參數指示是否將參數曲線(曲面參數空間中的曲線)寫入STEP檔案.為了最小化生成的STEP檔案大小，可以將此參數設置為關閉.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExportStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
     </message>
 </context>
 <context>
@@ -4450,6 +4450,11 @@ If both lengths are zero, magnitude of direction is used.</source>
         <translation>選擇...</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExtrusion.cpp" line="182"/>
+        <source>Selecting...</source>
+        <translation>選擇...</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExtrusion.cpp" line="430"/>
         <source>The document &apos;%1&apos; doesn&apos;t exist.</source>
         <translation>文件 &apos;%1&apos; 不存在.</translation>
@@ -4506,11 +4511,6 @@ If both lengths are zero, magnitude of direction is used.</source>
         <translation>拉伸方向連結無效.
 
 %1</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExtrusion.cpp" line="182"/>
-        <source>Selecting...</source>
-        <translation>選擇...</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgExtrusion.cpp" line="634"/>
@@ -4636,6 +4636,26 @@ If both lengths are zero, magnitude of direction is used.</source>
         <translation>可變半徑</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="266"/>
+        <source>Chamfer Parameter</source>
+        <translation>倒角參數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="268"/>
+        <source>Constant Length</source>
+        <translation>固定長度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="269"/>
+        <source>Variable Length</source>
+        <translation>可變長度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="273"/>
+        <source>End length</source>
+        <translation>長度2</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="835"/>
         <source>Radius</source>
         <translation>半徑</translation>
@@ -4656,21 +4676,6 @@ If both lengths are zero, magnitude of direction is used.</source>
         <translation>長度:</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="266"/>
-        <source>Chamfer Parameter</source>
-        <translation>倒角參數</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="268"/>
-        <source>Constant Length</source>
-        <translation>固定長度</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="269"/>
-        <source>Variable Length</source>
-        <translation>可變長度</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="270"/>
         <source>Equal distance</source>
         <translation>同等距離</translation>
@@ -4684,11 +4689,6 @@ If both lengths are zero, magnitude of direction is used.</source>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="271"/>
         <source>Edges to chamfer</source>
         <translation>要倒角的邊緣</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="273"/>
-        <source>End length</source>
-        <translation>長度2</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="275"/>
@@ -5139,6 +5139,11 @@ during file reading (slower but higher details).</source>
         <translation>當匯入時顯示此對話框</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgImportStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgImportStep.ui" line="20"/>
         <source>Import</source>
         <translation>匯入</translation>
@@ -5271,11 +5276,6 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgImportStep.ui" line="181"/>
         <source>Object per document in sub-directory</source>
         <translation>依據子目錄中每個文件的物體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgImportStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
     </message>
 </context>
 <context>
@@ -5414,6 +5414,21 @@ during file reading (slower but higher details).</source>
         <translation>方向</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgPartCylinder.ui" line="109"/>
+        <source>Parameter</source>
+        <translation>參數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgPartCylinder.ui" line="121"/>
+        <source>Radius</source>
+        <translation>半徑</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgPartCylinder.ui" line="141"/>
+        <source>Height</source>
+        <translation>高度</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgPartCylinder.ui" line="14"/>
         <source>Cylinder definition</source>
         <translation>圓柱定義</translation>
@@ -5444,11 +5459,6 @@ during file reading (slower but higher details).</source>
         <translation>方向:</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgPartCylinder.ui" line="109"/>
-        <source>Parameter</source>
-        <translation>參數</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgPartCylinder.ui" line="121"/>
         <source>Radius:</source>
         <translation>半徑:</translation>
@@ -5458,27 +5468,12 @@ during file reading (slower but higher details).</source>
         <source>Height:</source>
         <translation>高度:</translation>
     </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgPartCylinder.ui" line="121"/>
-        <source>Radius</source>
-        <translation>半徑</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgPartCylinder.ui" line="141"/>
-        <source>Height</source>
-        <translation>高度</translation>
-    </message>
 </context>
 <context>
     <name>PartGui::DlgPartImportIges</name>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgPartImportIges.ui" line="14"/>
         <source>IGES Input File</source>
-        <translation>IGES 匯入檔</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgPartImportIges.ui" line="14"/>
-        <source>IGES input file</source>
         <translation>IGES 匯入檔</translation>
     </message>
     <message>
@@ -5490,6 +5485,11 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgPartImportIges.ui" line="54"/>
         <source>Search File</source>
         <translation>搜索檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgPartImportIges.ui" line="14"/>
+        <source>IGES input file</source>
+        <translation>IGES 匯入檔</translation>
     </message>
 </context>
 <context>
@@ -5513,11 +5513,6 @@ during file reading (slower but higher details).</source>
         <translation>STEP 匯入檔案</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgPartImportStep.ui" line="14"/>
-        <source>Step input file</source>
-        <translation>STEP 匯入檔案</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgPartImportStep.ui" line="20"/>
         <source>File Name</source>
         <translation>檔案名稱</translation>
@@ -5528,6 +5523,11 @@ during file reading (slower but higher details).</source>
         <translation>搜索檔案</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgPartImportStep.ui" line="14"/>
+        <source>Step input file</source>
+        <translation>STEP 匯入檔案</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/DlgPartImportStep.ui" line="14"/>
         <source>STEP input file</source>
         <translation>STEP 匯入檔案</translation>
@@ -5536,14 +5536,14 @@ during file reading (slower but higher details).</source>
 <context>
     <name>PartGui::DlgPartImportStepImp</name>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgPartImportStepImp.cpp" line="72"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgPartImportStepImp.cpp" line="73"/>
         <source>All Files</source>
         <translation>所有檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgPartImportStepImp.cpp" line="72"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
     </message>
 </context>
 <context>
@@ -6117,31 +6117,6 @@ during file reading (slower but higher details).</source>
         <translation>新增邊</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="14"/>
-        <source>Projection on surface</source>
-        <translation>投影在表面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="20"/>
-        <source>Select projection surface</source>
-        <translation>選擇投影表面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="31"/>
-        <source>Add face</source>
-        <translation>新增面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="38"/>
-        <source>Add wire</source>
-        <translation>新增線段</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="45"/>
-        <source>Add edge</source>
-        <translation>新增邊界</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="56"/>
         <source>Show all</source>
         <translation>顯示全部</translation>
@@ -6150,31 +6125,6 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="66"/>
         <source>Show faces</source>
         <translation>顯示面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="76"/>
-        <source>Show Edges</source>
-        <translation>顯示邊緣</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="147"/>
-        <source>Get current camera direction</source>
-        <translation>取得目前相機方向</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="156"/>
-        <source>X:</source>
-        <translation>X:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="186"/>
-        <source>Y:</source>
-        <translation>Y:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="213"/>
-        <source>Z:</source>
-        <translation>Z:</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgProjectionOnSurface.ui" line="76"/>
@@ -6230,6 +6180,56 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgProjectionOnSurface.cpp" line="171"/>
         <source>Cannot create a projection object</source>
         <translation>無法建立投影物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="14"/>
+        <source>Projection on surface</source>
+        <translation>投影在表面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="20"/>
+        <source>Select projection surface</source>
+        <translation>選擇投影表面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="31"/>
+        <source>Add face</source>
+        <translation>新增面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="38"/>
+        <source>Add wire</source>
+        <translation>新增線段</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="45"/>
+        <source>Add edge</source>
+        <translation>新增邊界</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="76"/>
+        <source>Show Edges</source>
+        <translation>顯示邊緣</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="147"/>
+        <source>Get current camera direction</source>
+        <translation>取得目前相機方向</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="156"/>
+        <source>X:</source>
+        <translation>X:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="186"/>
+        <source>Y:</source>
+        <translation>Y:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="213"/>
+        <source>Z:</source>
+        <translation>Z:</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgProjectionOnSurface.cpp" line="146"/>
@@ -6596,11 +6596,6 @@ during file reading (slower but higher details).</source>
         <translation>造型檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgSettings3DViewPart.ui" line="14"/>
-        <source>Shape view</source>
-        <translation>造型檢視</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgSettings3DViewPart.ui" line="26"/>
         <source>Tessellation</source>
         <translation>鑲嵌</translation>
@@ -6655,6 +6650,11 @@ during file reading (slower but higher details).</source>
         <source>Setting a too small angle deviation causes the tessellation to take longer and thus freezes or slows down the GUI.</source>
         <translation>設定太小的角度偏差會導致曲面細分花費更長的時間，從而凍結或減慢 GUI 圖形使用者介面.</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgSettings3DViewPart.ui" line="14"/>
+        <source>Shape view</source>
+        <translation>造型檢視</translation>
+    </message>
 </context>
 <context>
     <name>PartGui::DlgSettingsGeneral</name>
@@ -6699,9 +6699,19 @@ during file reading (slower but higher details).</source>
         <translation>於布林運算後自動調校模型</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="190"/>
+        <source>Show final result by default when editing feature</source>
+        <translation>編輯功能時預設顯示最終結果</translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="200"/>
         <source>Allow multiple solids in Part Design bodies by default</source>
         <translation>預設情況下允許在零件設計主體中使用多個實體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="203"/>
+        <source>Show transparent preview overlay by default when editing feature</source>
+        <translation>編輯功能時預設顯示透明預覽覆蓋圖</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="83"/>
@@ -6716,6 +6726,11 @@ during file reading (slower but higher details).</source>
     <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="111"/>
         <source>Features Settings</source>
+        <translation>特徵設定</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="111"/>
+        <source>Features settings</source>
         <translation>特徵設定</translation>
     </message>
     <message>
@@ -6754,16 +6769,6 @@ during file reading (slower but higher details).</source>
         <translation>預覽</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="190"/>
-        <source>Show final result by default when editing feature</source>
-        <translation>編輯功能時預設顯示最終結果</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="203"/>
-        <source>Show transparent preview overlay by default when editing feature</source>
-        <translation>編輯功能時預設顯示透明預覽覆蓋圖</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="206"/>
         <source>Show final result by default when editing features</source>
         <translation>編輯功能時預設顯示最終結果</translation>
@@ -6777,6 +6782,11 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="235"/>
         <source>Highlight the profile used to create features</source>
         <translation>強調用於建立特徵的剖面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="289"/>
+        <source>Show interactive draggers during Part Design tasks</source>
+        <translation>在零件設計工作期間顯示互動式拖曳器</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="99"/>
@@ -6804,19 +6814,9 @@ during file reading (slower but higher details).</source>
         <translation>編輯特徵工作期間顯示互動式拖曳器</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="289"/>
-        <source>Show interactive draggers during Part Design tasks</source>
-        <translation>在零件設計工作期間顯示互動式拖曳器</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="305"/>
         <source>Disable recompute while dragging</source>
         <translation>拖曳時停用重新計算</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="111"/>
-        <source>Features settings</source>
-        <translation>特徵設定</translation>
     </message>
 </context>
 <context>
@@ -6888,16 +6888,6 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/DlgSettingsObjectColor.ui" line="20"/>
         <source>Default Shape Appearance Properties</source>
         <translation>預設造形外觀屬性</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="14"/>
-        <source>Shape appearance</source>
-        <translation>造型外觀</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="20"/>
-        <source>Default Shape view properties</source>
-        <translation>預設造形檢視屬性</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="34"/>
@@ -7081,6 +7071,16 @@ will be used or black.</source>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="354"/>
         <source>Text color for document annotations</source>
         <translation>文件註解的文字顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="14"/>
+        <source>Shape appearance</source>
+        <translation>造型外觀</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="20"/>
+        <source>Default Shape view properties</source>
+        <translation>預設造形檢視屬性</translation>
     </message>
 </context>
 <context>
@@ -7284,6 +7284,11 @@ the sketch plane&apos;s normal vector will be used</source>
         <translation>使用選定的參考</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/Mirroring.ui" line="14"/>
+        <source>Mirroring</source>
+        <translation>鏡像</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/Mirroring.ui" line="33"/>
         <source>Shapes</source>
         <translation>造型</translation>
@@ -7350,19 +7355,14 @@ the sketch plane&apos;s normal vector will be used</source>
         <translation>請先選擇一鏡射物體.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/Mirroring.cpp" line="133"/>
-        <source>No such document &apos;%1&apos;.</source>
-        <translation>無此檔案 &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/Mirroring.ui" line="14"/>
-        <source>Mirroring</source>
-        <translation>鏡像</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/Mirroring.cpp" line="126"/>
         <source>Select a shape for mirroring, first.</source>
         <translation>請先選擇一鏡射物體.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/Mirroring.cpp" line="133"/>
+        <source>No such document &apos;%1&apos;.</source>
+        <translation>無此檔案 &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -7462,11 +7462,6 @@ the sketch plane&apos;s normal vector will be used</source>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/SectionCutting.ui" line="20"/>
         <source>Persistent Section Cut</source>
         <translation>持續截面切割</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/SectionCutting.ui" line="20"/>
-        <source>Permanent Section Cutting</source>
-        <translation>永久斷面切割</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/SectionCutting.ui" line="32"/>
@@ -7583,11 +7578,6 @@ have the same values.</source>
         <translation>透明度</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/SectionCutting.ui" line="20"/>
-        <source>Persistent Section Cutting</source>
-        <translation>持續截面切割</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/SectionCutting.ui" line="371"/>
         <source>Allows cutting objects intersecting each other
 for the price that all cut objects
@@ -7630,6 +7620,16 @@ only created cuts will be visible</source>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/SectionCutting.cpp" line="520"/>
         <source>Sliders are disabled for assemblies</source>
         <translation>組件中的滑桿被禁用</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/SectionCutting.ui" line="20"/>
+        <source>Permanent Section Cutting</source>
+        <translation>永久斷面切割</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/SectionCutting.ui" line="20"/>
+        <source>Persistent Section Cutting</source>
+        <translation>持續截面切割</translation>
     </message>
 </context>
 <context>
@@ -7864,6 +7864,11 @@ only created cuts will be visible</source>
 </context>
 <context>
     <name>PartGui::TaskAttacher</name>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/TaskAttacher.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/TaskAttacher.ui" line="20"/>
         <source>Selection accepted</source>
@@ -8182,19 +8187,9 @@ of the object being attached.</source>
         <source>%1 (add more references)</source>
         <translation>%1 (增加更多參考)</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/TaskAttacher.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
 </context>
 <context>
     <name>PartGui::TaskCheckGeometryDialog</name>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/TaskCheckGeometry.cpp" line="1015"/>
-        <source>Skip this settings page and run the geometry check automatically.</source>
-        <translation>跳過此設定頁面並自動執行幾何檢查.</translation>
-    </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/TaskCheckGeometry.cpp" line="1023"/>
         <source>Shape Content</source>
@@ -8444,6 +8439,11 @@ Individual boolean operation checks:</source>
         <source>Results</source>
         <translation>結果</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/TaskCheckGeometry.cpp" line="1015"/>
+        <source>Skip this settings page and run the geometry check automatically.</source>
+        <translation>跳過此設定頁面並自動執行幾何檢查.</translation>
+    </message>
 </context>
 <context>
     <name>PartGui::TaskCheckGeometryResults</name>
@@ -8631,6 +8631,26 @@ Individual boolean operation checks:</source>
         <translation>自訂外觀</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/TaskFaceAppearances.ui" line="87"/>
+        <source>Resets color for all faces of the part</source>
+        <translation>重置零件所有面的顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/TaskFaceAppearances.ui" line="91"/>
+        <source>Set to Default</source>
+        <translation>設定為預設</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/TaskFaceAppearances.ui" line="98"/>
+        <source>Allows the selection of multiple faces by dragging a rectangle in the 3D view</source>
+        <translation>允許在 3D 檢視中拖曳矩形來選擇多個面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/TaskFaceAppearances.ui" line="101"/>
+        <source>Box Selection</source>
+        <translation>框選</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/TaskFaceAppearances.ui" line="14"/>
         <source>Set appearance per face</source>
         <translation>每個面的固定外觀</translation>
@@ -8661,11 +8681,6 @@ Individual boolean operation checks:</source>
         <translation>自訂外觀</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/TaskFaceAppearances.ui" line="87"/>
-        <source>Resets color for all faces of the part</source>
-        <translation>重置零件所有面的顏色</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/TaskFaceAppearances.ui" line="90"/>
         <source>Set to default</source>
         <translation>設定為預設值</translation>
@@ -8686,21 +8701,6 @@ by dragging a selection rectangle in the 3D view</source>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/TaskFaceAppearances.ui" line="101"/>
         <source>Box selection</source>
-        <translation>框選</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/TaskFaceAppearances.ui" line="91"/>
-        <source>Set to Default</source>
-        <translation>設定為預設</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/TaskFaceAppearances.ui" line="98"/>
-        <source>Allows the selection of multiple faces by dragging a rectangle in the 3D view</source>
-        <translation>允許在 3D 檢視中拖曳矩形來選擇多個面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/TaskFaceAppearances.ui" line="101"/>
-        <source>Box Selection</source>
         <translation>框選</translation>
     </message>
 </context>
@@ -8868,12 +8868,6 @@ by dragging a selection rectangle in the 3D view</source>
         <translation>建立造型</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/TaskShapeBuilder.ui" line="14"/>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/TaskShapeBuilder.ui" line="20"/>
-        <source>Create shape</source>
-        <translation>建立造型</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/TaskShapeBuilder.ui" line="26"/>
         <source>Edge from vertices</source>
         <translation>由頂點產生邊</translation>
@@ -8932,6 +8926,12 @@ by dragging a selection rectangle in the 3D view</source>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/TaskShapeBuilder.ui" line="121"/>
         <source>Create</source>
         <translation>建立</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/TaskShapeBuilder.ui" line="14"/>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/TaskShapeBuilder.ui" line="20"/>
+        <source>Create shape</source>
+        <translation>建立造型</translation>
     </message>
 </context>
 <context>
@@ -10207,21 +10207,6 @@ Continue?</source>
         <translation>編輯倒角</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/ViewProviderMirror.cpp" line="78"/>
-        <source>Edit mirror plane</source>
-        <translation>編輯鏡像平面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/ViewProviderMirror.cpp" line="278"/>
-        <source>Edit fillet edges</source>
-        <translation>編輯邊之圓角</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/ViewProviderMirror.cpp" line="382"/>
-        <source>Edit chamfer edges</source>
-        <translation>編輯邊之倒角</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/ViewProviderMirror.cpp" line="526"/>
         <source>Edit offset</source>
         <translation>編輯偏移量</translation>
@@ -10306,6 +10291,21 @@ Continue?</source>
         <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Part/Gui/ViewProviderCompound.cpp" line="76"/>
         <source>The compound &apos;%1&apos; has %2 child objects. Do you want to delete them as well?</source>
         <translation>複合物  &apos;%1&apos; 有 %2 個子物體. 您是否也要刪除它們?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/ViewProviderMirror.cpp" line="78"/>
+        <source>Edit mirror plane</source>
+        <translation>編輯鏡像平面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/ViewProviderMirror.cpp" line="278"/>
+        <source>Edit fillet edges</source>
+        <translation>編輯邊之圓角</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/part/Gui/ViewProviderMirror.cpp" line="382"/>
+        <source>Edit chamfer edges</source>
+        <translation>編輯邊之倒角</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../../home/DrBenson/sources/FreeCAD-1.1.0/src/Mod/Part/Gui/Command.cpp" line="389"/>

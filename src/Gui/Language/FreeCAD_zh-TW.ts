@@ -17,11 +17,6 @@
 <context>
     <name>Angle</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgLocationAngle.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgLocationAngle.ui" line="22"/>
         <source>A</source>
         <translation>A</translation>
@@ -60,6 +55,11 @@
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgLocationAngle.ui" line="86"/>
         <source>Angle Snap</source>
         <translation>角度貼齊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgLocationAngle.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -2902,6 +2902,11 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <translation>匯入所有連結</translation>
     </message>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="768"/>
+        <source>Insert measurement</source>
+        <translation>插入尺寸</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="799"/>
         <source>Insert text document</source>
         <translation>插入文字文件</translation>
@@ -3004,11 +3009,6 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1032"/>
         <source>Toggle Selectability</source>
         <translation>切換可能選項</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="768"/>
-        <source>Insert measurement</source>
-        <translation>插入尺寸</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/ViewProviderMeasureDistance.cpp" line="272"/>
@@ -3315,6 +3315,11 @@ The property of this object will refer to the property of the Variable Set.</sou
 <context>
     <name>DownloadItem</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/DownloadItem.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/DownloadItem.ui" line="29"/>
         <source>Ico</source>
         <translation>Ico</translation>
@@ -3324,48 +3329,13 @@ The property of this object will refer to the property of the Variable Set.</sou
         <source>Filename</source>
         <translation>檔案名稱</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/DownloadItem.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
 </context>
 <context>
     <name>EditMode</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Application.h" line="243"/>
-        <source>Default</source>
-        <translation>預設</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Application.h" line="244"/>
-        <source>Transform</source>
-        <translation>平移</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Application.h" line="245"/>
-        <source>Cutting</source>
-        <translation>切割</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Application.h" line="246"/>
-        <source>Color</source>
-        <translation>顏色</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Application.h" line="266"/>
         <source>&amp;Default</source>
         <translation>預設(&amp;D)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Application.h" line="270"/>
-        <source>The object will have the color of its individual faces editable with the Part FaceColors command</source>
-        <translation>該對象將具有可使用&quot;零件面顏色&quot;命令編輯的各個面的顏色</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Application.h" line="272"/>
-        <source>The object will have the color of its individual faces editable with the Part FaceAppearances command</source>
-        <translation>物體各面的顏色可通過「零件面外觀」(Part FaceAppearances) 指令進行編輯</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Application.h" line="255"/>
@@ -3402,6 +3372,36 @@ The property of this object will refer to the property of the Variable Set.</sou
         <source>The object will have the color of its individual faces editable with the Appearance per Face command</source>
         <translation>該對象將具有可使用&quot;零件面顏色&quot;命令編輯的各個面的顏色</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Application.h" line="243"/>
+        <source>Default</source>
+        <translation>預設</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Application.h" line="244"/>
+        <source>Transform</source>
+        <translation>平移</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Application.h" line="245"/>
+        <source>Cutting</source>
+        <translation>切割</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Application.h" line="246"/>
+        <source>Color</source>
+        <translation>顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Application.h" line="270"/>
+        <source>The object will have the color of its individual faces editable with the Part FaceColors command</source>
+        <translation>該對象將具有可使用&quot;零件面顏色&quot;命令編輯的各個面的顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Application.h" line="272"/>
+        <source>The object will have the color of its individual faces editable with the Part FaceAppearances command</source>
+        <translation>物體各面的顏色可通過「零件面外觀」(Part FaceAppearances) 指令進行編輯</translation>
+    </message>
 </context>
 <context>
     <name>Exceptions</name>
@@ -3424,6 +3424,16 @@ The property of this object will refer to the property of the Variable Set.</sou
 <context>
     <name>ExpressionLabel</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/QuantitySpinBox_p.h" line="63"/>
+        <source>Enter expression… (=)</source>
+        <translation>請輸入表達式... (=)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/QuantitySpinBox_p.h" line="54"/>
+        <source>Expression:</source>
+        <translation>表達式:</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/QuantitySpinBox_p.h" line="53"/>
         <source>Enter an expression...</source>
         <translation>請輸入表達式...</translation>
@@ -3437,16 +3447,6 @@ The property of this object will refer to the property of the Variable Set.</sou
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/QuantitySpinBox_p.h" line="54"/>
         <source>Expression: </source>
         <translation>表達式: </translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/QuantitySpinBox_p.h" line="63"/>
-        <source>Enter expression… (=)</source>
-        <translation>請輸入表達式... (=)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/QuantitySpinBox_p.h" line="54"/>
-        <source>Expression:</source>
-        <translation>表達式:</translation>
     </message>
 </context>
 <context>
@@ -3565,14 +3565,14 @@ The property of this object will refer to the property of the Variable Set.</sou
 <context>
     <name>Gui::AutoSaver</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/AutoSaver.cpp" line="165"/>
-        <source>Please wait until the AutoRecovery file has been saved...</source>
-        <translation>自動修復暫存檔儲存中，請稍候...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/AutoSaver.cpp" line="174"/>
         <source>Wait until the auto-recovery file has been saved…</source>
         <translation>等待&quot;自動修復&quot;檔案儲存完成…</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/AutoSaver.cpp" line="165"/>
+        <source>Please wait until the AutoRecovery file has been saved...</source>
+        <translation>自動修復暫存檔儲存中，請稍候...</translation>
     </message>
 </context>
 <context>
@@ -4051,11 +4051,6 @@ p, li { white-space: pre-wrap; }
         <translation>快取目錄</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsCacheDirectory.cpp" line="230"/>
-        <source>Cache directory</source>
-        <translation>快取目錄</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsCacheDirectory.cpp" line="232"/>
         <source>The cache directory %1 exceeds the size of %2.</source>
         <translation>快取目錄 %1 超過 %2 的大小.</translation>
@@ -4080,9 +4075,24 @@ p, li { white-space: pre-wrap; }
         <source>Warning: Make sure that this is the only running %1 instance and that no documents are opened as this may result into data loss!</source>
         <translation>警告: 請確保這是唯一正在執行的 %1 實體，並且沒有打開任何文件，因為這可能會導致資料遺失!</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsCacheDirectory.cpp" line="230"/>
+        <source>Cache directory</source>
+        <translation>快取目錄</translation>
+    </message>
 </context>
 <context>
     <name>Gui::Dialog::ButtonModel</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgCustomizeSpaceball.cpp" line="285"/>
+        <source> &quot;</source>
+        <translation> &quot;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgCustomizeSpaceball.cpp" line="285"/>
+        <source>&quot;</source>
+        <translation>&quot;</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgCustomizeSpaceball.cpp" line="286"/>
         <source>Button %1</source>
@@ -4098,27 +4108,12 @@ p, li { white-space: pre-wrap; }
         <source>Out Of Range</source>
         <translation>超出範圍</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgCustomizeSpaceball.cpp" line="285"/>
-        <source> &quot;</source>
-        <translation> &quot;</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgCustomizeSpaceball.cpp" line="285"/>
-        <source>&quot;</source>
-        <translation>&quot;</translation>
-    </message>
 </context>
 <context>
     <name>Gui::Dialog::CameraDialog</name>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNavigation.cpp" line="361"/>
         <source>Camera Settings</source>
-        <translation>相機設定</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsNavigation.cpp" line="244"/>
-        <source>Camera settings</source>
         <translation>相機設定</translation>
     </message>
     <message>
@@ -4155,6 +4150,11 @@ p, li { white-space: pre-wrap; }
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsNavigation.cpp" line="421"/>
         <source>Current View</source>
         <translation>目前視角</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsNavigation.cpp" line="244"/>
+        <source>Camera settings</source>
+        <translation>相機設定</translation>
     </message>
 </context>
 <context>
@@ -4573,6 +4573,11 @@ If this is not checked, the property must be uniquely named, and it is accessed 
         <source>CheckBox</source>
         <translation>勾選盒</translation>
     </message>
+    <message>
+        <location filename="../../../../../../media/ERP/sources/FreeCAD-1.2.0/src/Gui/Dialogs/DlgCheckableMessageBox.h" line="125"/>
+        <source>Don&apos;t show me again</source>
+        <translation>不再顯示</translation>
+    </message>
 </context>
 <context>
     <name>Gui::Dialog::DlgChooseIcon</name>
@@ -4618,11 +4623,6 @@ If this is not checked, the property must be uniquely named, and it is accessed 
 <context>
     <name>Gui::Dialog::DlgCreateNewPreferencePackImp</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgCreateNewPreferencePackImp.cpp" line="159"/>
-        <source>A preference pack with that name already exists. Do you want to overwrite it?</source>
-        <translation>已存在具有該名稱的預設值內容. 你想覆蓋它嗎?</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgCreateNewPreferencePackImp.cpp" line="163"/>
         <source>Export configuration</source>
         <translation>匯出參數設定</translation>
@@ -4641,6 +4641,11 @@ If this is not checked, the property must be uniquely named, and it is accessed 
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgCreateNewPreferencePackImp.cpp" line="172"/>
         <source>A preference pack with that name already exists. Overwrite it?</source>
         <translation>已存在具有該名稱的預設值內容. 覆蓋嗎?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgCreateNewPreferencePackImp.cpp" line="159"/>
+        <source>A preference pack with that name already exists. Do you want to overwrite it?</source>
+        <translation>已存在具有該名稱的預設值內容. 你想覆蓋它嗎?</translation>
     </message>
 </context>
 <context>
@@ -7393,26 +7398,6 @@ Specify another directory.</source>
         <translation>重置頁面的使用者設定 &apos;%1&apos;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="779"/>
-        <source>Reset Group &apos;%1&apos;</source>
-        <translation>重置群組 &apos;%1&apos;</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="395"/>
-        <source>Resets the user settings for the group &apos;%1&apos;</source>
-        <translation>重置群組的使用者設定 &apos;%1&apos;</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="787"/>
-        <source>Reset All</source>
-        <translation>全部重設</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="400"/>
-        <source>Resets the user settings entirely</source>
-        <translation>完全重置使用者設定</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="268"/>
         <source>Clear user settings</source>
         <translatorcomment>msgctxt &quot;Gui::Dialog::DlgPreferences|&quot;
@@ -7503,6 +7488,26 @@ msgstr &quot; &quot;
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="499"/>
         <source>Restart later</source>
         <translation>稍後重新啟動</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="779"/>
+        <source>Reset Group &apos;%1&apos;</source>
+        <translation>重置群組 &apos;%1&apos;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="395"/>
+        <source>Resets the user settings for the group &apos;%1&apos;</source>
+        <translation>重置群組的使用者設定 &apos;%1&apos;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="787"/>
+        <source>Reset All</source>
+        <translation>全部重設</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="400"/>
+        <source>Resets the user settings entirely</source>
+        <translation>完全重置使用者設定</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgPreferencesImp.cpp" line="805"/>
@@ -7845,14 +7850,14 @@ msgstr &quot; &quot;
         <translation>解開提取文件失敗</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgProjectUtility.cpp" line="121"/>
-        <source>Failed to create document</source>
-        <translation>建立文件失敗</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgProjectUtility.cpp" line="106"/>
         <source>Failed to extract project</source>
         <translation>專案提取失敗</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgProjectUtility.cpp" line="121"/>
+        <source>Failed to create document</source>
+        <translation>建立文件失敗</translation>
     </message>
 </context>
 <context>
@@ -8374,11 +8379,6 @@ Larger value eases to pick things, but can make small features impossible to sel
         <translation>物體將以正投影法顯示</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettings3DView.ui" line="63"/>
-        <source>Relative size:</source>
-        <translation>相對尺寸:</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettings3DView.ui" line="64"/>
         <source>Relative size</source>
         <translation>相對尺寸</translation>
@@ -8672,6 +8672,11 @@ bounding box size of the 3D object that is currently displayed.</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettings3DView.ui" line="279"/>
         <source>MSAA 8x</source>
         <translation>反鋸齒 8x</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettings3DView.ui" line="63"/>
+        <source>Relative size:</source>
+        <translation>相對尺寸:</translation>
     </message>
 </context>
 <context>
@@ -10579,6 +10584,16 @@ display the splash screen.</source>
 <context>
     <name>Gui::Dialog::DlgSettingsImageImp</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsImageImp.cpp" line="51"/>
+        <source>Offscreen (New)</source>
+        <translation>螢幕外 (新)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsImageImp.cpp" line="52"/>
+        <source>Offscreen (Old)</source>
+        <translation>螢幕外 (舊)</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsImageImp.cpp" line="57"/>
         <source>Offscreen (new)</source>
         <translation>螢幕外 (新)</translation>
@@ -10592,16 +10607,6 @@ display the splash screen.</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsImageImp.cpp" line="53"/>
         <source>Framebuffer (custom)</source>
         <translation>影像緩衝(自訂)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsImageImp.cpp" line="51"/>
-        <source>Offscreen (New)</source>
-        <translation>螢幕外 (新)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsImageImp.cpp" line="52"/>
-        <source>Offscreen (Old)</source>
-        <translation>螢幕外 (舊)</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsImageImp.cpp" line="54"/>
@@ -12120,16 +12125,6 @@ Additionally, pop-up notifications can be disabled. In this case the user can st
         <translation>外部 Python 可執行檔的路徑 (可選):</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsPythonConsole.ui" line="14"/>
-        <source>Python console</source>
-        <translation>Python 控制台</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsPythonConsole.ui" line="20"/>
-        <source>Settings</source>
-        <translation>設定</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsPythonConsole.ui" line="26"/>
         <source>Words will be wrapped when they exceed available
 horizontal space in Python console</source>
@@ -12189,6 +12184,16 @@ horizontal space in Python console</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsPythonConsole.ui" line="141"/>
         <source>Used for package installation with pip and debugging with debugpy. Autodetected if needed and not specified.</source>
         <translation>用於使用 pip 安裝套件並使用 debugpy 進行偵錯. 如果需要且未指定則自動偵測.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsPythonConsole.ui" line="14"/>
+        <source>Python console</source>
+        <translation>Python 控制台</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsPythonConsole.ui" line="20"/>
+        <source>Settings</source>
+        <translation>設定</translation>
     </message>
 </context>
 <context>
@@ -13766,15 +13771,6 @@ The preference system is the one set in the general preferences.</source>
         <translation>複製參數設定 (建議)</translation>
     </message>
     <message>
-        <location filename="../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgVersionMigrator.cpp" line="129"/>
-        <source>Welcome to %1 %2.%3
-
-</source>
-        <translation>歡迎使用 %1 %2.%3
-
-</translation>
-    </message>
-    <message>
         <location filename="../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgVersionMigrator.cpp" line="137"/>
         <source>Welcome to %1 %2.%3</source>
         <translation>歡迎使用 %1 %2.%3</translation>
@@ -13808,6 +13804,15 @@ The preference system is the one set in the general preferences.</source>
         <location filename="../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgVersionMigrator.cpp" line="330"/>
         <source>New default configuration created</source>
         <translation>新的預設參數設定已建立</translation>
+    </message>
+    <message>
+        <location filename="../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgVersionMigrator.cpp" line="129"/>
+        <source>Welcome to %1 %2.%3
+
+</source>
+        <translation>歡迎使用 %1 %2.%3
+
+</translation>
     </message>
 </context>
 <context>
@@ -14171,11 +14176,6 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
 <context>
     <name>Gui::Dialog::IconDialog</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgActionsImp.cpp" line="437"/>
-        <source>Icon folders</source>
-        <translation>圖示資料夾</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgActionsImp.cpp" line="460"/>
         <source>Icon Folders</source>
         <translation>圖示資料夾</translation>
@@ -14184,6 +14184,11 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgActionsImp.cpp" line="574"/>
         <source>Add icon folder</source>
         <translation>增加圖示資料夾</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgActionsImp.cpp" line="437"/>
+        <source>Icon folders</source>
+        <translation>圖示資料夾</translation>
     </message>
 </context>
 <context>
@@ -14449,26 +14454,6 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
 <context>
     <name>Gui::Dialog::ParameterValue</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="688"/>
-        <source>Change Value</source>
-        <translation>變更值</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="692"/>
-        <source>Remove Key</source>
-        <translation>移除鍵</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="693"/>
-        <source>Rename Key</source>
-        <translation>重新命名鍵</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="657"/>
-        <source>New</source>
-        <translation>新增</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="650"/>
         <source>Change value</source>
         <translation>變更值</translation>
@@ -14509,6 +14494,35 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
         <translation>新增布林項目</translation>
     </message>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="688"/>
+        <source>Change Value</source>
+        <translation>變更值</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="692"/>
+        <source>Remove Key</source>
+        <translation>移除鍵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="693"/>
+        <source>Rename Key</source>
+        <translation>重新命名鍵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="774"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="803"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="833"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="869"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="898"/>
+        <source>Existing item</source>
+        <translation>現有項目</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="657"/>
+        <source>New</source>
+        <translation>新增</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="698"/>
         <source>New String Item</source>
         <translation>新增字串項目</translation>
@@ -14532,15 +14546,6 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="703"/>
         <source>New Boolean Item</source>
         <translation>新增布林項目</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="774"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="803"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="833"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="869"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="898"/>
-        <source>Existing item</source>
-        <translation>現有項目</translation>
     </message>
     <message>
         <location filename="../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgParameterImp.cpp" line="835"/>
@@ -14796,21 +14801,6 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
         <translation>重設</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Placement.cpp" line="498"/>
-        <source>Please select 1, 2, or 3 points before clicking this button.  A point may be on a vertex, face, or edge.  If on a face or edge the point used will be the point at the mouse position along face or edge.  If 1 point is selected it will be used as the center of rotation.  If 2 points are selected the midpoint between them will be the center of rotation and a new custom axis will be created, if needed.  If 3 points are selected the first point becomes the center of rotation and lies on the vector that is normal to the plane defined by the 3 points.  Some distance and angle information is provided in the report view, which can be useful when aligning objects.  For your convenience when Shift + click is used the appropriate distance or angle is copied to the clipboard.</source>
-        <translation>請在點擊此按鈕之前選擇 1、2 或 3 個點. 點可能位於頂點、面或邊上. 如果在面或邊上，則使用的點將是沿面或邊的滑鼠游標位置處的點. 如果選擇 1 個點，它將用作旋轉中心. 如果選擇了 2 個點，它們之間的中點將成為旋轉中心，如果需要，將建立一個新的自定義軸. 如果選擇了 3 個點，則第一個點成為旋轉中心並位於垂直於由 3 個點定義的平面的矢量上. 報告檢視中提供了一些距離和角度信息，這在對齊對象時很有用. 為了您的方便，當使用 Shift + 點擊時，適當的距離或角度被複製到剪貼板.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Placement.cpp" line="598"/>
-        <source>Incorrect quantity</source>
-        <translation>錯誤的數量</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Placement.cpp" line="600"/>
-        <source>There are input fields with incorrect input, please ensure valid placement values!</source>
-        <translation>於輸入區域有錯誤的內容,請確認該區域合理之輸入內容!</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Placement.cpp" line="712"/>
         <source>Select 1, 2, or 3 points before clicking this button. A point may be on a vertex, face, or edge.  If on a face or edge the point used will be the point at the mouse position along face or edge.  If 1 point is selected it will be used as the center of rotation.  If 2 points are selected the midpoint between them will be the center of rotation and a new custom axis will be created, if needed.  If 3 points are selected the first point becomes the center of rotation and lies on the vector that is normal to the plane defined by the 3 points.  Some distance and angle information is provided in the report view, which can be useful when aligning objects.  For your convenience when Shift + click is used the appropriate distance or angle is copied to the clipboard.</source>
         <translation>請在點擊此按鈕之前選擇 1、2 或 3 個點. 點可能位於頂點、面或邊上. 如果在面或邊上，則使用的點將是沿面或邊的滑鼠游標位置處的點. 如果選擇 1 個點，它將用作旋轉中心. 如果選擇了 2 個點，它們之間的中點將成為旋轉中心，如果需要，將建立一個新的自定義軸. 如果選擇了 3 個點，則第一個點成為旋轉中心並位於垂直於由 3 個點定義的平面的矢量上. 報告檢視中提供了一些距離和角度信息，這在對齊對象時很有用. 為了您的方便，當使用 Shift + 點擊時，適當的距離或角度被複製到剪貼板.</translation>
@@ -14823,6 +14813,21 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Placement.cpp" line="806"/>
         <source>There are input fields with incorrect input. Ensure valid placement values!</source>
+        <translation>於輸入區域有錯誤的內容,請確認該區域合理之輸入內容!</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Placement.cpp" line="498"/>
+        <source>Please select 1, 2, or 3 points before clicking this button.  A point may be on a vertex, face, or edge.  If on a face or edge the point used will be the point at the mouse position along face or edge.  If 1 point is selected it will be used as the center of rotation.  If 2 points are selected the midpoint between them will be the center of rotation and a new custom axis will be created, if needed.  If 3 points are selected the first point becomes the center of rotation and lies on the vector that is normal to the plane defined by the 3 points.  Some distance and angle information is provided in the report view, which can be useful when aligning objects.  For your convenience when Shift + click is used the appropriate distance or angle is copied to the clipboard.</source>
+        <translation>請在點擊此按鈕之前選擇 1、2 或 3 個點. 點可能位於頂點、面或邊上. 如果在面或邊上，則使用的點將是沿面或邊的滑鼠游標位置處的點. 如果選擇 1 個點，它將用作旋轉中心. 如果選擇了 2 個點，它們之間的中點將成為旋轉中心，如果需要，將建立一個新的自定義軸. 如果選擇了 3 個點，則第一個點成為旋轉中心並位於垂直於由 3 個點定義的平面的矢量上. 報告檢視中提供了一些距離和角度信息，這在對齊對象時很有用. 為了您的方便，當使用 Shift + 點擊時，適當的距離或角度被複製到剪貼板.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Placement.cpp" line="598"/>
+        <source>Incorrect quantity</source>
+        <translation>錯誤的數量</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Placement.cpp" line="600"/>
+        <source>There are input fields with incorrect input, please ensure valid placement values!</source>
         <translation>於輸入區域有錯誤的內容,請確認該區域合理之輸入內容!</translation>
     </message>
 </context>
@@ -14918,6 +14923,11 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
 <context>
     <name>Gui::Dialog::SceneModel</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/SceneInspector.cpp" line="85"/>
+        <source>Nodes</source>
+        <translation>節點</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/SceneInspector.cpp" line="69"/>
         <source>Inventor Tree</source>
         <translation>發明歷程</translation>
@@ -14926,11 +14936,6 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/SceneInspector.cpp" line="71"/>
         <source>Name</source>
         <translation>名稱</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/SceneInspector.cpp" line="85"/>
-        <source>Nodes</source>
-        <translation>節點</translation>
     </message>
 </context>
 <context>
@@ -14999,16 +15004,16 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
 <context>
     <name>Gui::Dialog::Transform</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Transform.cpp" line="291"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Transform.cpp" line="419"/>
-        <source>Cancel</source>
-        <translation>取消</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Transform.cpp" line="292"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Transform.cpp" line="420"/>
         <source>Transform</source>
         <translation>平移</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Transform.cpp" line="291"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Transform.cpp" line="419"/>
+        <source>Cancel</source>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
@@ -15049,21 +15054,6 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
         <translation>這是目前的啟動模組，且必須自動載入.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsWorkbenchesImp.cpp" line="141"/>
-        <source>Loaded</source>
-        <translation>已載入</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsWorkbenchesImp.cpp" line="144"/>
-        <source>Load</source>
-        <translation>載入</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsWorkbenchesImp.cpp" line="145"/>
-        <source>To preserve resources, FreeCAD does not load workbenches until they are used. Loading them may provide access to additional preferences related to their functionality.</source>
-        <translation>為了保護資源，FreeCAD 在使用之前不會載入工作台. 載入它們可以存取與其功能相關的其他預設功能.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsWorkbenchesImp.cpp" line="85"/>
         <source>If unchecked, %1 will not appear in the available workbenches.</source>
         <translation>如果未勾選，%1 將不會出現在可用的工作台中.</translation>
@@ -15087,6 +15077,21 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsWorkbenchesImp.cpp" line="134"/>
         <source>This is the current startup module, and must be autoloaded. See Preferences/General/Autoload to change.</source>
         <translation>這是目前的啟動模組，必須自動載入. 請參閱 屬性/一般/自動載入 進行更改.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsWorkbenchesImp.cpp" line="141"/>
+        <source>Loaded</source>
+        <translation>已載入</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsWorkbenchesImp.cpp" line="144"/>
+        <source>Load</source>
+        <translation>載入</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgSettingsWorkbenchesImp.cpp" line="145"/>
+        <source>To preserve resources, FreeCAD does not load workbenches until they are used. Loading them may provide access to additional preferences related to their functionality.</source>
+        <translation>為了保護資源，FreeCAD 在使用之前不會載入工作台. 載入它們可以存取與其功能相關的其他預設功能.</translation>
     </message>
 </context>
 <context>
@@ -15700,42 +15705,31 @@ Save all changes?</source>
 <context>
     <name>Gui::ExpressionLineEdit</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/ExpressionCompleter.cpp" line="648"/>
-        <source>Exact match</source>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/ExpressionCompleter.cpp" line="1058"/>
+        <source>Exact Match</source>
         <translation>完全符合</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/ExpressionCompleter.cpp" line="1058"/>
-        <source>Exact Match</source>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/ExpressionCompleter.cpp" line="648"/>
+        <source>Exact match</source>
         <translation>完全符合</translation>
     </message>
 </context>
 <context>
     <name>Gui::ExpressionTextEdit</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/ExpressionCompleter.cpp" line="747"/>
-        <source>Exact match</source>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/ExpressionCompleter.cpp" line="1162"/>
+        <source>Exact Match</source>
         <translation>完全符合</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/ExpressionCompleter.cpp" line="1162"/>
-        <source>Exact Match</source>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/ExpressionCompleter.cpp" line="747"/>
+        <source>Exact match</source>
         <translation>完全符合</translation>
     </message>
 </context>
 <context>
     <name>Gui::FileChooser</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="721"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="723"/>
-        <source>Select a file</source>
-        <translation>選擇一個檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="726"/>
-        <source>Select a directory</source>
-        <translation>選擇一個目錄</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="744"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="746"/>
@@ -15747,14 +15741,20 @@ Save all changes?</source>
         <source>Select a Directory</source>
         <translation>選擇一個目錄</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="721"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="723"/>
+        <source>Select a file</source>
+        <translation>選擇一個檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="726"/>
+        <source>Select a directory</source>
+        <translation>選擇一個目錄</translation>
+    </message>
 </context>
 <context>
     <name>Gui::FileDialog</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="177"/>
-        <source>Save as</source>
-        <translation>另存新檔</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="215"/>
         <source>Save As</source>
@@ -15765,6 +15765,11 @@ Save all changes?</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="323"/>
         <source>Open</source>
         <translation>開啟</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="177"/>
+        <source>Save as</source>
+        <translation>另存新檔</translation>
     </message>
 </context>
 <context>
@@ -15783,29 +15788,9 @@ Save all changes?</source>
 <context>
     <name>Gui::Flag</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Flag.cpp" line="155"/>
-        <source>Top left</source>
-        <translation>左上</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Flag.cpp" line="157"/>
-        <source>Bottom left</source>
-        <translation>左下</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Flag.cpp" line="159"/>
-        <source>Top right</source>
-        <translation>右上</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Flag.cpp" line="161"/>
         <source>Top Left</source>
         <translation>左上</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Flag.cpp" line="161"/>
-        <source>Bottom right</source>
-        <translation>右下</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Flag.cpp" line="163"/>
@@ -15826,6 +15811,26 @@ Save all changes?</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Flag.cpp" line="164"/>
         <source>Remove</source>
         <translation>移除</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Flag.cpp" line="155"/>
+        <source>Top left</source>
+        <translation>左上</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Flag.cpp" line="157"/>
+        <source>Bottom left</source>
+        <translation>左下</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Flag.cpp" line="159"/>
+        <source>Top right</source>
+        <translation>右上</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Flag.cpp" line="161"/>
+        <source>Bottom right</source>
+        <translation>右下</translation>
     </message>
 </context>
 <context>
@@ -16019,66 +16024,16 @@ Save all changes?</source>
 <context>
     <name>Gui::InputHintWidget</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="166"/>
-        <source>Space</source>
-        <translation>空格鍵</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="236"/>
-        <source>Escape</source>
-        <translation>跳脫鍵</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="237"/>
-        <source>tab ⭾</source>
-        <translation>跳位鍵 ⭾</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="239"/>
-        <source>⌫</source>
-        <translation>退位鍵 ⌫</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="240"/>
-        <source>↵ Enter</source>
-        <translation>輸入鍵 ↵</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="242"/>
         <source>Esc</source>
         <extracomment>Keyboard key for Escape</extracomment>
         <translation>跳脫鍵</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="243"/>
-        <source>Delete</source>
-        <translation>刪除鍵</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="244"/>
         <source>Tab ⭾</source>
         <extracomment>Keyboard key for Tab</extracomment>
         <translation>跳位鍵 ⭾</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="266"/>
-        <source>Shift</source>
-        <translation>Shift 鍵</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="269"/>
-        <source>⊞ Win</source>
-        <translation>⊞ Win 鍵</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="271"/>
-        <source>❖ Meta</source>
-        <translation>❖Meta 鍵</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="316"/>
-        <source>???</source>
-        <translation>???</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="238"/>
@@ -16233,6 +16188,56 @@ SysReq</translation>
         <extracomment>Keyboard key for numpad 9</extracomment>
         <translation>數字鍵 9</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="166"/>
+        <source>Space</source>
+        <translation>空格鍵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="236"/>
+        <source>Escape</source>
+        <translation>跳脫鍵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="237"/>
+        <source>tab ⭾</source>
+        <translation>跳位鍵 ⭾</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="239"/>
+        <source>⌫</source>
+        <translation>退位鍵 ⌫</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="240"/>
+        <source>↵ Enter</source>
+        <translation>輸入鍵 ↵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="243"/>
+        <source>Delete</source>
+        <translation>刪除鍵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="266"/>
+        <source>Shift</source>
+        <translation>Shift 鍵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="269"/>
+        <source>⊞ Win</source>
+        <translation>⊞ Win 鍵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="271"/>
+        <source>❖ Meta</source>
+        <translation>❖Meta 鍵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InputHintWidget.cpp" line="316"/>
+        <source>???</source>
+        <translation>???</translation>
+    </message>
 </context>
 <context>
     <name>Gui::InteractiveScale</name>
@@ -16247,11 +16252,6 @@ SysReq</translation>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Navigation/InventorNavigationStyle.cpp" line="51"/>
         <source>Press Ctrl and left mouse button</source>
-        <translation>請按 Ctrl 鍵和滑鼠左鍵</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InventorNavigationStyle.cpp" line="55"/>
-        <source>Press CTRL and left mouse button</source>
         <translation>請按 Ctrl 鍵和滑鼠左鍵</translation>
     </message>
     <message>
@@ -16273,6 +16273,11 @@ SysReq</translation>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Navigation/InventorNavigationStyle.cpp" line="57"/>
         <source>Scroll mouse wheel</source>
         <translation>滾動滑鼠滾輪</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/InventorNavigationStyle.cpp" line="55"/>
+        <source>Press CTRL and left mouse button</source>
+        <translation>請按 Ctrl 鍵和滑鼠左鍵</translation>
     </message>
 </context>
 <context>
@@ -16474,18 +16479,6 @@ Do you want to save the document now?</source>
 您現在要儲存文件嗎?</translation>
     </message>
     <message>
-        <location filename="../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="408"/>
-        <source>Input hints</source>
-        <extracomment>A context menu action used to show or hide the input hints in the status bar</extracomment>
-        <translation>輸入提示</translation>
-    </message>
-    <message>
-        <location filename="../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="418"/>
-        <source>Quick measure</source>
-        <extracomment>A context menu action used to enable or disable quick measure in the status bar</extracomment>
-        <translation>快速測量</translation>
-    </message>
-    <message>
         <location filename="../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="430"/>
         <source>Input Hints</source>
         <extracomment>A context menu action used to show or hide the input hints in the status bar</extracomment>
@@ -16564,6 +16557,18 @@ Save the document now?</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="2631"/>
         <source>Safe Mode</source>
         <translation>安全模式</translation>
+    </message>
+    <message>
+        <location filename="../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="408"/>
+        <source>Input hints</source>
+        <extracomment>A context menu action used to show or hide the input hints in the status bar</extracomment>
+        <translation>輸入提示</translation>
+    </message>
+    <message>
+        <location filename="../../../FreeCAD-1.1.0/src/Gui/MainWindow.cpp" line="418"/>
+        <source>Quick measure</source>
+        <extracomment>A context menu action used to enable or disable quick measure in the status bar</extracomment>
+        <translation>快速測量</translation>
     </message>
 </context>
 <context>
@@ -16840,11 +16845,6 @@ How do you want to proceed?</source>
 <context>
     <name>Gui::NotificationArea</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/NotificationArea.cpp" line="839"/>
-        <source>Delete user notifications</source>
-        <translation>刪除使用者通知</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/NotificationArea.cpp" line="978"/>
         <source>Delete User Notifications</source>
         <translation>刪除使用者通知</translation>
@@ -16853,6 +16853,11 @@ How do you want to proceed?</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/NotificationArea.cpp" line="849"/>
         <source>Delete All</source>
         <translation>全部刪除</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/NotificationArea.cpp" line="839"/>
+        <source>Delete user notifications</source>
+        <translation>刪除使用者通知</translation>
     </message>
 </context>
 <context>
@@ -16987,13 +16992,13 @@ How do you want to proceed?</source>
 <context>
     <name>Gui::OverlayTitleBar</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/OverlayWidgets.cpp" line="1836"/>
-        <source>Mouse pass through, ESC to stop</source>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/OverlayWidgets.cpp" line="2018"/>
+        <source>Mouse pass through, Esc to stop</source>
         <translation>滑鼠通過，ESC停止</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/OverlayWidgets.cpp" line="2018"/>
-        <source>Mouse pass through, Esc to stop</source>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/OverlayWidgets.cpp" line="1836"/>
+        <source>Mouse pass through, ESC to stop</source>
         <translation>滑鼠通過，ESC停止</translation>
     </message>
 </context>
@@ -17074,13 +17079,13 @@ How do you want to proceed?</source>
 <context>
     <name>Gui::PropertyEditor::LinkLabel</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/propertyeditor/PropertyItem.cpp" line="4295"/>
-        <source>Change the linked object</source>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/propertyeditor/PropertyItem.cpp" line="4551"/>
+        <source>Changes the linked object</source>
         <translation>變更連結物體</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/propertyeditor/PropertyItem.cpp" line="4551"/>
-        <source>Changes the linked object</source>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/propertyeditor/PropertyItem.cpp" line="4295"/>
+        <source>Change the linked object</source>
         <translation>變更連結物體</translation>
     </message>
 </context>
@@ -17488,16 +17493,6 @@ Exit without saving all data?</source>
 <context>
     <name>Gui::RecentFilesAction</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Action.cpp" line="805"/>
-        <source>File not found</source>
-        <translation>找不到檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Action.cpp" line="805"/>
-        <source>The file &apos;%1&apos; cannot be opened.</source>
-        <translation>無法打開&apos;%1&apos;檔案.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Action.cpp" line="867"/>
         <source>Clear Recent Files</source>
         <extracomment>Empties the list of recent files</extracomment>
@@ -17507,6 +17502,16 @@ Exit without saving all data?</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Action.cpp" line="763"/>
         <source>Open file %1</source>
         <translation>打開檔案 %1</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Action.cpp" line="805"/>
+        <source>File not found</source>
+        <translation>找不到檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Action.cpp" line="805"/>
+        <source>The file &apos;%1&apos; cannot be opened.</source>
+        <translation>無法打開&apos;%1&apos;檔案.</translation>
     </message>
 </context>
 <context>
@@ -17586,11 +17591,6 @@ Exit without saving all data?</source>
 <context>
     <name>Gui::SelectModule</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="807"/>
-        <source>Select module</source>
-        <translation>選擇模組</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="842"/>
         <source>Select Module</source>
         <translation>選擇模組</translation>
@@ -17604,6 +17604,11 @@ Exit without saving all data?</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="809"/>
         <source>Open %1 as</source>
         <translation>開啟%1為</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/FileDialog.cpp" line="807"/>
+        <source>Select module</source>
+        <translation>選擇模組</translation>
     </message>
 </context>
 <context>
@@ -17762,11 +17767,6 @@ Do you want to specify another directory?</source>
 <context>
     <name>Gui::StdCmdPythonHelp</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/OnlineDocumentation.cpp" line="318"/>
-        <source>Automatic Python modules documentation</source>
-        <translation>自動python模組文件</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/OnlineDocumentation.cpp" line="325"/>
         <source>Python &amp;Modules Documentation</source>
         <translation>python模組文件(&amp;M)</translation>
@@ -17796,6 +17796,11 @@ Do you want to specify another directory?</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/OnlineDocumentation.cpp" line="363"/>
         <source>Opens a browser to show the Python modules documentation</source>
         <translation>開啟一個瀏覽器顯示Python模組文件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/OnlineDocumentation.cpp" line="318"/>
+        <source>Automatic Python modules documentation</source>
+        <translation>自動python模組文件</translation>
     </message>
 </context>
 <context>
@@ -18711,6 +18716,12 @@ Do you want to specify another directory?</source>
 <context>
     <name>Gui::TextDocumentEditorView</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/TextDocumentEditorView.cpp" line="286"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/TextDocumentEditorView.cpp" line="293"/>
+        <source>Edit text</source>
+        <translation>編輯文字</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/TextDocumentEditorView.cpp" line="138"/>
         <source>Text updated</source>
         <translation>文字上傳</translation>
@@ -18739,12 +18750,6 @@ Do you want to specify another directory?</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/TextDocumentEditorView.cpp" line="232"/>
         <source>If you don&apos;t save, your changes will be lost.</source>
         <translation>若不儲存將會失去所有修改.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/TextDocumentEditorView.cpp" line="286"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/TextDocumentEditorView.cpp" line="293"/>
-        <source>Edit text</source>
-        <translation>編輯文字</translation>
     </message>
 </context>
 <context>
@@ -19092,13 +19097,13 @@ Do you want to specify another directory?</source>
 <context>
     <name>Gui::TreeDockWidget</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="3170"/>
-        <source>Tree view</source>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="3749"/>
+        <source>Tree View</source>
         <translation>樹狀檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="3749"/>
-        <source>Tree View</source>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="3170"/>
+        <source>Tree view</source>
         <translation>樹狀檢視</translation>
     </message>
 </context>
@@ -19358,6 +19363,16 @@ Do you want to specify another directory?</source>
         <translation>群組</translation>
     </message>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="513"/>
+        <source>Search...</source>
+        <translation>搜尋...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="514"/>
+        <source>Search for objects</source>
+        <translation>搜尋物體</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="2895"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="2916"/>
         <source>Error</source>
@@ -19377,16 +19392,6 @@ Do you want to specify another directory?</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="2827"/>
         <source>Labels &amp; Attributes</source>
         <translation>標籤和屬性</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="513"/>
-        <source>Search...</source>
-        <translation>搜尋...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="514"/>
-        <source>Search for objects</source>
-        <translation>搜尋物體</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Tree.cpp" line="2828"/>
@@ -19562,16 +19567,6 @@ Do you want to specify another directory?</source>
         <translation>表格</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/VectorListEditor.cpp" line="326"/>
-        <source>Copy table</source>
-        <translation>複製表格</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/VectorListEditor.cpp" line="330"/>
-        <source>Paste table</source>
-        <translation>貼上表格</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/VectorListEditor.cpp" line="337"/>
         <source>Copy Table</source>
         <translation>複製表格</translation>
@@ -19579,6 +19574,16 @@ Do you want to specify another directory?</source>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/VectorListEditor.cpp" line="341"/>
         <source>Paste Table</source>
+        <translation>貼上表格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/VectorListEditor.cpp" line="326"/>
+        <source>Copy table</source>
+        <translation>複製表格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/VectorListEditor.cpp" line="330"/>
+        <source>Paste table</source>
         <translation>貼上表格</translation>
     </message>
 </context>
@@ -19630,15 +19635,15 @@ Do you want to specify another directory?</source>
 <context>
     <name>Gui::WorkbenchTabWidget</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/WorkbenchSelector.cpp" line="240"/>
-        <source>Preferences</source>
-        <translation>偏好設定</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/WorkbenchSelector.cpp" line="197"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/WorkbenchSelector.cpp" line="203"/>
         <source>More</source>
         <translation>更多</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/WorkbenchSelector.cpp" line="240"/>
+        <source>Preferences</source>
+        <translation>偏好設定</translation>
     </message>
 </context>
 <context>
@@ -19692,11 +19697,6 @@ Do you want to specify another directory?</source>
 <context>
     <name>NaviCubeDraggableCmd</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/NaviCube.cpp" line="1092"/>
-        <source>Movable navigation cube</source>
-        <translation>可移動導覽立方體</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/NaviCube.cpp" line="1258"/>
         <source>Movable Navigation Cube</source>
         <translation>可移動導覽立方體</translation>
@@ -19705,6 +19705,11 @@ Do you want to specify another directory?</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/NaviCube.cpp" line="1093"/>
         <source>Drag and place NaviCube</source>
         <translation>拖放導覽立方體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/NaviCube.cpp" line="1092"/>
+        <source>Movable navigation cube</source>
+        <translation>可移動導覽立方體</translation>
     </message>
 </context>
 <context>
@@ -19957,11 +19962,6 @@ the region are non-opaque.</source>
 <context>
     <name>Position</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgLocationPos.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgLocationPos.ui" line="22"/>
         <source>X</source>
         <translation>X</translation>
@@ -20076,6 +20076,11 @@ the region are non-opaque.</source>
         <source>5 m</source>
         <translation>5 m</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgLocationPos.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
 </context>
 <context>
     <name>PropertyListDialog</name>
@@ -20094,6 +20099,41 @@ the region are non-opaque.</source>
 </context>
 <context>
     <name>QDockWidget</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="344"/>
+        <source>Toolbox</source>
+        <translation>工具箱</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="365"/>
+        <source>Tree view</source>
+        <translation>樹狀檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="386"/>
+        <source>Property view</source>
+        <translation>屬性檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="396"/>
+        <source>Selection view</source>
+        <translation>選擇檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="411"/>
+        <source>Combo View</source>
+        <translation>複合檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="421"/>
+        <source>Report view</source>
+        <translation>報表檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="432"/>
+        <source>Python console</source>
+        <translation>Python 控制台</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="519"/>
         <source>Tasks</source>
@@ -20133,41 +20173,6 @@ the region are non-opaque.</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="585"/>
         <source>Model</source>
         <translation>模型</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="344"/>
-        <source>Toolbox</source>
-        <translation>工具箱</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="365"/>
-        <source>Tree view</source>
-        <translation>樹狀檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="386"/>
-        <source>Property view</source>
-        <translation>屬性檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="396"/>
-        <source>Selection view</source>
-        <translation>選擇檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="411"/>
-        <source>Combo View</source>
-        <translation>複合檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="421"/>
-        <source>Report view</source>
-        <translation>報表檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="432"/>
-        <source>Python console</source>
-        <translation>Python 控制台</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="457"/>
@@ -20256,30 +20261,6 @@ Check the report view for more details.</source>
 請檢查報告檢視以瞭解更多詳細資訊.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="127"/>
-        <source>File Migration Warning</source>
-        <translation>檔案遷移警告</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="128"/>
-        <source>This file was created with an older version of %1. Origin axes had incorrect placements, which have now been corrected.
-
-However, if you save this file in the current version and reopen it in an older version of %1, the origin axes will be misaligned. Additionally, if your file references these origin axes, your file will likely be broken.</source>
-        <translation>該文件是使用舊版本的 %1 建立的. 原點軸的位置不正確，現已更正.
-
-但是，如果您在目前版本中儲存此檔案並在舊版本 %1 中重新開啟它，則原點軸將不會對齊. 此外，如果您的檔案引用這些原點軸，您的檔案可能會損壞.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="136"/>
-        <source>Don&apos;t show this warning again</source>
-        <translation>不再顯示此警告</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="139"/>
-        <source>Open document</source>
-        <translation>開啟文件</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="157"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="160"/>
         <source>Error</source>
@@ -20294,74 +20275,6 @@ However, if you save this file in the current version and reopen it in an older 
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="160"/>
         <source>There were serious errors while loading the file. Some data might have been modified or not recovered at all. Saving the project will most likely result in loss of data.</source>
         <translation>載入檔案時出現嚴重錯誤. 某些資料可能已被修改或根本未恢復. 儲存專案很可能會導致資料丟失.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="222"/>
-        <source>Import file</source>
-        <translation>匯入檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="467"/>
-        <source>Export file</source>
-        <translation>匯出檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="876"/>
-        <source>Printing...</source>
-        <translation>列印...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="937"/>
-        <source>Exporting PDF...</source>
-        <translation>匯出 PDF...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1208"/>
-        <source>The exported object contains external link. Please save the documentat least once before exporting.</source>
-        <translation>匯出的物體包含外部連結. 請在匯出前至少儲存一次文件.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1439"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1443"/>
-        <source>Delete failed</source>
-        <translation>刪除失敗</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1493"/>
-        <source>Dependency error</source>
-        <translation>依賴錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1771"/>
-        <source>Copy selected</source>
-        <translation>複製已選取的</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1772"/>
-        <source>Copy active document</source>
-        <translation>複製啟用文件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1773"/>
-        <source>Copy all documents</source>
-        <translation>複製所有文件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1879"/>
-        <source>Expression error</source>
-        <translation>表達式錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1880"/>
-        <source>Failed to parse some of the expressions.
-Please check the Report View for more details.</source>
-        <translation>無法解析某些表達式.
-請檢視報告視窗以獲取更多詳細資訊.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1904"/>
-        <source>Failed to paste expressions</source>
-        <translation>無法貼上表達式</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Application.cpp" line="1440"/>
@@ -20537,12 +20450,6 @@ Check the report view for more details.</source>
         <translation>無法貼上表達式</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="97"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="114"/>
-        <source>Simple group</source>
-        <translation>簡單群組</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="99"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="116"/>
         <source>Simple Group</source>
@@ -20667,39 +20574,9 @@ Be aware the point where you click matters.</source>
         <translation>安全模式會暫時停用您的設定和附加元件.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="308"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="528"/>
-        <source>Save views...</source>
-        <translation>保存檢視...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="310"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="529"/>
-        <source>Load views...</source>
-        <translation>載入檢視...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="313"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="530"/>
-        <source>Freeze view</source>
-        <translation>凍結檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="316"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="531"/>
-        <source>Clear views</source>
-        <translation>清除檢視</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="338"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="571"/>
         <source>&amp;Save Views…</source>
-        <translation>保存檢視(&amp;S)...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="338"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="571"/>
-        <source>&amp;Save views...</source>
         <translation>保存檢視(&amp;S)...</translation>
     </message>
     <message>
@@ -20709,21 +20586,9 @@ Be aware the point where you click matters.</source>
         <translation>載入檢視(&amp;L)...</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="340"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="572"/>
-        <source>&amp;Load views...</source>
-        <translation>載入檢視(&amp;L)...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="343"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="573"/>
         <source>F&amp;reeze View</source>
-        <translation>凍結檢視(&amp;r)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="343"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="573"/>
-        <source>F&amp;reeze view</source>
         <translation>凍結檢視(&amp;r)</translation>
     </message>
     <message>
@@ -20731,56 +20596,6 @@ Be aware the point where you click matters.</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="574"/>
         <source>&amp;Clear Views</source>
         <translation>清除檢視(&amp;C)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="346"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="574"/>
-        <source>&amp;Clear views</source>
-        <translation>清除檢視(&amp;C)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="349"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="488"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="535"/>
-        <source>Restore view &amp;%1</source>
-        <translation>還原檢視 &amp;%1</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="378"/>
-        <source>Save frozen views</source>
-        <translation>保存凍結的檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="419"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="434"/>
-        <source>Restore views</source>
-        <translation>還原檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="420"/>
-        <source>Importing the restored views would clear the already stored views.
-Do you want to continue?</source>
-        <translation>導入恢復的檢視將清除已存儲的檢視. 您要繼續嗎?</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="428"/>
-        <source>Restore frozen views</source>
-        <translation>還原凍結的檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1845"/>
-        <source>Save picture</source>
-        <translation>儲存圖片</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2071"/>
-        <source>Save image</source>
-        <translation>儲存影像</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2222"/>
-        <source>Choose an image file to open</source>
-        <translation>選擇要打開的影像檔</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="578"/>
@@ -20836,35 +20651,6 @@ Continue?</source>
         <translation>選擇要打開的影像檔</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgAddProperty.cpp" line="100"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgAddProperty.cpp" line="113"/>
-        <source>Invalid name</source>
-        <translation>無效的名稱</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgAddProperty.cpp" line="101"/>
-        <source>The property name or group name must only contain alpha numericals,
-underscore, and must not start with a digit.</source>
-        <translation>屬性名稱或群組名稱只能包含字母數字、底線，並且不能以數字開頭.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgAddProperty.cpp" line="107"/>
-        <source>The property or group name must only contain alphanumericals,
-underscore, and must not start with a digit.</source>
-        <translation>屬性名稱或群組名稱只能包含字母數字、底線，並且不能以數字開頭.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgAddProperty.cpp" line="114"/>
-        <source>The property &apos;%1&apos; already exists in &apos;%2&apos;</source>
-        <translation>屬性&apos;%1&apos;已存在於&apos;%2&apos;中</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgAddProperty.cpp" line="118"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgAddPropertyVarSet.cpp" line="354"/>
-        <source>The property name is a reserved word.</source>
-        <translation>此屬性名稱是保留字.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgAddProperty.cpp" line="137"/>
         <source>Add property</source>
         <translation>新增屬性</translation>
@@ -20898,6 +20684,11 @@ underscore, and must not start with a digit.</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="888"/>
         <source>Enter the name:</source>
         <translation>輸入名稱:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="540"/>
+        <source>New sub-group</source>
+        <translation>新的分組</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="764"/>
@@ -20945,6 +20736,11 @@ underscore, and must not start with a digit.</source>
         <translation>新增布林項目</translation>
     </message>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="906"/>
+        <source>New boolean item</source>
+        <translation>新布林項目</translation>
+    </message>
+    <message>
         <location filename="../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgParameterImp.cpp" line="818"/>
         <location filename="../../../FreeCAD-1.1.0/src/Gui/Dialogs/DlgParameterImp.cpp" line="844"/>
         <source>New Text Item</source>
@@ -20971,11 +20767,6 @@ underscore, and must not start with a digit.</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="1304"/>
         <source>Enter number:</source>
         <translation>輸入數目:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="906"/>
-        <source>New boolean item</source>
-        <translation>新布林項目</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="907"/>
@@ -21059,6 +20850,41 @@ underscore, and must not start with a digit.</source>
         <translation>實體路徑:</translation>
     </message>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="131"/>
+        <source>Do you want to skip confirmation of further critical message notifications while loading the file?</source>
+        <translation>是否要在載入文件時跳過進一步關鍵訊息通知的確認?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="132"/>
+        <source>Critical Message</source>
+        <translation>關鍵訊息</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="190"/>
+        <source>Too many message notifications. Notification temporarily stopped. Look at the report view for more information.</source>
+        <translation>通知訊息過多. 暫時停止通知. 檢視報告視窗以獲取更多資訊.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="209"/>
+        <source>Warning</source>
+        <translation>警告</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="213"/>
+        <source>Information</source>
+        <translation>資訊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="217"/>
+        <source>Critical</source>
+        <translation>關鍵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="1081"/>
+        <source>Please check report view for more...</source>
+        <translation>請檢查檢視報告視窗以了解更多...</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="1086"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="1092"/>
         <source>Document:</source>
@@ -21117,6 +20943,16 @@ Would you like to save the file with a different name?</source>
         <translation>儲存檔案失敗</translation>
     </message>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="1218"/>
+        <source>Save document under new filename...</source>
+        <translation>以新檔名儲存文件...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="1319"/>
+        <source>Save a copy of the document under new filename...</source>
+        <translation>以新的檔案名稱儲存目前檔案的備份...</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="1484"/>
         <source>Save document under new filename…</source>
         <translation>以新檔名儲存文件…</translation>
@@ -21164,6 +21000,16 @@ Would you like to save the file with a different name?</source>
         <translation>目前文件無法關閉.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="2012"/>
+        <source>Document not saved</source>
+        <translation>檔案未儲存</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="2013"/>
+        <source>The document%1 could not be saved. Do you want to cancel closing it?</source>
+        <translation>無法儲存文件%1. 你想取消關閉它嗎?</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="2271"/>
         <source>Failed to save document &apos;%1&apos;. Would you like to cancel the closure?</source>
         <translation>文件 &apos;%1&apos; 儲存失敗. 您想取消關閉嗎?</translation>
@@ -21206,6 +21052,37 @@ Choose &apos;Abort&apos; to abort</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/EditorView.cpp" line="346"/>
         <source>Save Macro</source>
         <translation>儲存巨集</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="547"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1207"/>
+        <source>Unsaved document</source>
+        <translation>未儲存文件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="549"/>
+        <source>Do you want to save your changes to document &apos;%1&apos; before closing?</source>
+        <translation>於關閉前要儲存「%1」檔嘛?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="552"/>
+        <source>Do you want to save your changes to document before closing?</source>
+        <translation>是否要在關閉前儲存對文件所做的更改?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="554"/>
+        <source>If you don&apos;t save, your changes will be lost.</source>
+        <translation>若不儲存將會失去所有修改.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="559"/>
+        <source>Apply answer to all</source>
+        <translation>將回答套用到全部</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="650"/>
+        <source>Some documents could not be saved. Do you want to cancel closing?</source>
+        <translation>無法儲存某些文件. 您要取消關閉嗎?</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="804"/>
@@ -21330,6 +21207,13 @@ Choose &apos;Abort&apos; to abort</source>
         <translation>太多已開啟之非侵入通知. 通知已被忽略!</translation>
     </message>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/OnlineDocumentation.cpp" line="419"/>
+        <source>Unable to open your browser.
+
+Please open a browser window and type in: http://localhost:%1.</source>
+        <translation>無法打開您的流覽器. 請打開流覽器視窗，並輸入: http://localhost:%1.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/OnlineDocumentation.cpp" line="424"/>
         <source>No Server</source>
         <translation>沒有伺服器</translation>
@@ -21344,13 +21228,6 @@ Choose &apos;Abort&apos; to abort</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/OnlineDocumentation.cpp" line="458"/>
         <source>No Browser</source>
         <translation>無瀏覽器</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/OnlineDocumentation.cpp" line="419"/>
-        <source>Unable to open your browser.
-
-Please open a browser window and type in: http://localhost:%1.</source>
-        <translation>無法打開您的流覽器. 請打開流覽器視窗，並輸入: http://localhost:%1.</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/OnlineDocumentation.cpp" line="459"/>
@@ -21382,26 +21259,6 @@ Please open a browser window and type in: http://localhost:%1.</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsAdvanced.cpp" line="443"/>
         <source>Font size</source>
         <translation>字體大小</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="557"/>
-        <source>Overlay</source>
-        <translation>覆蓋</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsAdvanced.cpp" line="447"/>
-        <source>Delay mouse wheel pass through</source>
-        <translation>延遲滑鼠滾輪通過</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="572"/>
-        <source>Alpha test radius</source>
-        <translation>Alpha 測試半徑</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsAdvanced.cpp" line="453"/>
-        <source>Check navigation cube</source>
-        <translation>檢視確認導覽立方體</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="530"/>
@@ -21479,6 +21336,11 @@ Please open a browser window and type in: http://localhost:%1.</source>
         <translation>物體間距</translation>
     </message>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="557"/>
+        <source>Overlay</source>
+        <translation>覆蓋</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="559"/>
         <source>Hide tab bar</source>
         <translation>隱藏分頁條</translation>
@@ -21511,6 +21373,46 @@ Please open a browser window and type in: http://localhost:%1.</source>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="575"/>
         <source>Check Navigation Cube</source>
+        <translation>檢視確認導覽立方體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="607"/>
+        <source>Hint show tab bar</source>
+        <translation>提示顯示分頁欄</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="609"/>
+        <source>Hint delay (ms)</source>
+        <translation>提示延遲 (ms)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="612"/>
+        <source>Splitter auto hide delay (ms)</source>
+        <translation>分配器自動隱藏延遲 (ms)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="617"/>
+        <source>Layout delay (ms)</source>
+        <translation>佈局延遲 (ms)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="620"/>
+        <source>Animation duration (ms)</source>
+        <translation>動畫持續時間 (ms)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsAdvanced.cpp" line="447"/>
+        <source>Delay mouse wheel pass through</source>
+        <translation>延遲滑鼠滾輪通過</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="572"/>
+        <source>Alpha test radius</source>
+        <translation>Alpha 測試半徑</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsAdvanced.cpp" line="453"/>
+        <source>Check navigation cube</source>
         <translation>檢視確認導覽立方體</translation>
     </message>
     <message>
@@ -21562,31 +21464,6 @@ Please open a browser window and type in: http://localhost:%1.</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="604"/>
         <source>Bottom panel hint length</source>
         <translation>底部面板提示長度</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="607"/>
-        <source>Hint show tab bar</source>
-        <translation>提示顯示分頁欄</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="609"/>
-        <source>Hint delay (ms)</source>
-        <translation>提示延遲 (ms)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="612"/>
-        <source>Splitter auto hide delay (ms)</source>
-        <translation>分配器自動隱藏延遲 (ms)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="617"/>
-        <source>Layout delay (ms)</source>
-        <translation>佈局延遲 (ms)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="620"/>
-        <source>Animation duration (ms)</source>
-        <translation>動畫持續時間 (ms)</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/PreferencePages/DlgSettingsAdvanced.cpp" line="485"/>
@@ -21934,11 +21811,6 @@ the current copy will be lost.
         <translation>按 ESC 鍵隱藏提示</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/TaskView/TaskDialog.cpp" line="67"/>
-        <source>Do you want to close this dialog?</source>
-        <translation>您確定要關閉此對話窗嗎?</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/TaskView/TaskDialog.cpp" line="102"/>
         <source>Close this dialog?</source>
         <translation>關閉此對話框?</translation>
@@ -21969,11 +21841,6 @@ the current copy will be lost.
         <translation>編輯文字</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/SoFCColorBar.cpp" line="328"/>
-        <source>Options...</source>
-        <translation>選項 ...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/SoFCColorBar.cpp" line="353"/>
         <source>Options</source>
         <translation>選項</translation>
@@ -21982,11 +21849,6 @@ the current copy will be lost.
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/SoFCColorBar.cpp" line="353"/>
         <source>Options…</source>
         <translation>選項...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/ViewProviderImagePlane.cpp" line="147"/>
-        <source>Change image...</source>
-        <translation>變更影像...</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/ViewProviderImagePlane.cpp" line="169"/>
@@ -22034,95 +21896,238 @@ the current copy will be lost.
         <translation>遞迴刪除群組內容?</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="547"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1207"/>
-        <source>Unsaved document</source>
-        <translation>未儲存文件</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="127"/>
+        <source>File Migration Warning</source>
+        <translation>檔案遷移警告</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="549"/>
-        <source>Do you want to save your changes to document &apos;%1&apos; before closing?</source>
-        <translation>於關閉前要儲存「%1」檔嘛?</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="128"/>
+        <source>This file was created with an older version of %1. Origin axes had incorrect placements, which have now been corrected.
+
+However, if you save this file in the current version and reopen it in an older version of %1, the origin axes will be misaligned. Additionally, if your file references these origin axes, your file will likely be broken.</source>
+        <translation>該文件是使用舊版本的 %1 建立的. 原點軸的位置不正確，現已更正.
+
+但是，如果您在目前版本中儲存此檔案並在舊版本 %1 中重新開啟它，則原點軸將不會對齊. 此外，如果您的檔案引用這些原點軸，您的檔案可能會損壞.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="552"/>
-        <source>Do you want to save your changes to document before closing?</source>
-        <translation>是否要在關閉前儲存對文件所做的更改?</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="136"/>
+        <source>Don&apos;t show this warning again</source>
+        <translation>不再顯示此警告</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="554"/>
-        <source>If you don&apos;t save, your changes will be lost.</source>
-        <translation>若不儲存將會失去所有修改.</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="139"/>
+        <source>Open document</source>
+        <translation>開啟文件</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="559"/>
-        <source>Apply answer to all</source>
-        <translation>將回答套用到全部</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="222"/>
+        <source>Import file</source>
+        <translation>匯入檔案</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/MainWindow.cpp" line="650"/>
-        <source>Some documents could not be saved. Do you want to cancel closing?</source>
-        <translation>無法儲存某些文件. 您要取消關閉嗎?</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="467"/>
+        <source>Export file</source>
+        <translation>匯出檔案</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgParameterImp.cpp" line="540"/>
-        <source>New sub-group</source>
-        <translation>新的分組</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="876"/>
+        <source>Printing...</source>
+        <translation>列印...</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="131"/>
-        <source>Do you want to skip confirmation of further critical message notifications while loading the file?</source>
-        <translation>是否要在載入文件時跳過進一步關鍵訊息通知的確認?</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="937"/>
+        <source>Exporting PDF...</source>
+        <translation>匯出 PDF...</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="132"/>
-        <source>Critical Message</source>
-        <translation>關鍵訊息</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1208"/>
+        <source>The exported object contains external link. Please save the documentat least once before exporting.</source>
+        <translation>匯出的物體包含外部連結. 請在匯出前至少儲存一次文件.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="190"/>
-        <source>Too many message notifications. Notification temporarily stopped. Look at the report view for more information.</source>
-        <translation>通知訊息過多. 暫時停止通知. 檢視報告視窗以獲取更多資訊.</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1439"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1443"/>
+        <source>Delete failed</source>
+        <translation>刪除失敗</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="209"/>
-        <source>Warning</source>
-        <translation>警告</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1493"/>
+        <source>Dependency error</source>
+        <translation>依賴錯誤</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="213"/>
-        <source>Information</source>
-        <translation>資訊</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1771"/>
+        <source>Copy selected</source>
+        <translation>複製已選取的</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="217"/>
-        <source>Critical</source>
-        <translation>關鍵</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1772"/>
+        <source>Copy active document</source>
+        <translation>複製啟用文件</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="1081"/>
-        <source>Please check report view for more...</source>
-        <translation>請檢查檢視報告視窗以了解更多...</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1773"/>
+        <source>Copy all documents</source>
+        <translation>複製所有文件</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="1218"/>
-        <source>Save document under new filename...</source>
-        <translation>以新檔名儲存文件...</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1879"/>
+        <source>Expression error</source>
+        <translation>表達式錯誤</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="1319"/>
-        <source>Save a copy of the document under new filename...</source>
-        <translation>以新的檔案名稱儲存目前檔案的備份...</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1880"/>
+        <source>Failed to parse some of the expressions.
+Please check the Report View for more details.</source>
+        <translation>無法解析某些表達式.
+請檢視報告視窗以獲取更多詳細資訊.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="2012"/>
-        <source>Document not saved</source>
-        <translation>檔案未儲存</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1904"/>
+        <source>Failed to paste expressions</source>
+        <translation>無法貼上表達式</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Document.cpp" line="2013"/>
-        <source>The document%1 could not be saved. Do you want to cancel closing it?</source>
-        <translation>無法儲存文件%1. 你想取消關閉它嗎?</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="97"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="114"/>
+        <source>Simple group</source>
+        <translation>簡單群組</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="308"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="528"/>
+        <source>Save views...</source>
+        <translation>保存檢視...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="310"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="529"/>
+        <source>Load views...</source>
+        <translation>載入檢視...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="313"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="530"/>
+        <source>Freeze view</source>
+        <translation>凍結檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="316"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="531"/>
+        <source>Clear views</source>
+        <translation>清除檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="338"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="571"/>
+        <source>&amp;Save views...</source>
+        <translation>保存檢視(&amp;S)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="340"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="572"/>
+        <source>&amp;Load views...</source>
+        <translation>載入檢視(&amp;L)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="343"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="573"/>
+        <source>F&amp;reeze view</source>
+        <translation>凍結檢視(&amp;r)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="346"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="574"/>
+        <source>&amp;Clear views</source>
+        <translation>清除檢視(&amp;C)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="349"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="488"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="535"/>
+        <source>Restore view &amp;%1</source>
+        <translation>還原檢視 &amp;%1</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="378"/>
+        <source>Save frozen views</source>
+        <translation>保存凍結的檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="419"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="434"/>
+        <source>Restore views</source>
+        <translation>還原檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="420"/>
+        <source>Importing the restored views would clear the already stored views.
+Do you want to continue?</source>
+        <translation>導入恢復的檢視將清除已存儲的檢視. 您要繼續嗎?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="428"/>
+        <source>Restore frozen views</source>
+        <translation>還原凍結的檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1845"/>
+        <source>Save picture</source>
+        <translation>儲存圖片</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2071"/>
+        <source>Save image</source>
+        <translation>儲存影像</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2222"/>
+        <source>Choose an image file to open</source>
+        <translation>選擇要打開的影像檔</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgAddProperty.cpp" line="100"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgAddProperty.cpp" line="113"/>
+        <source>Invalid name</source>
+        <translation>無效的名稱</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgAddProperty.cpp" line="101"/>
+        <source>The property name or group name must only contain alpha numericals,
+underscore, and must not start with a digit.</source>
+        <translation>屬性名稱或群組名稱只能包含字母數字、底線，並且不能以數字開頭.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgAddProperty.cpp" line="107"/>
+        <source>The property or group name must only contain alphanumericals,
+underscore, and must not start with a digit.</source>
+        <translation>屬性名稱或群組名稱只能包含字母數字、底線，並且不能以數字開頭.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgAddProperty.cpp" line="114"/>
+        <source>The property &apos;%1&apos; already exists in &apos;%2&apos;</source>
+        <translation>屬性&apos;%1&apos;已存在於&apos;%2&apos;中</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgAddProperty.cpp" line="118"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgAddPropertyVarSet.cpp" line="354"/>
+        <source>The property name is a reserved word.</source>
+        <translation>此屬性名稱是保留字.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/TaskView/TaskDialog.cpp" line="67"/>
+        <source>Do you want to close this dialog?</source>
+        <translation>您確定要關閉此對話窗嗎?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/SoFCColorBar.cpp" line="328"/>
+        <source>Options...</source>
+        <translation>選項 ...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/ViewProviderImagePlane.cpp" line="147"/>
+        <source>Change image...</source>
+        <translation>變更影像...</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/ViewProviderGroupExtension.cpp" line="167"/>
@@ -22266,13 +22271,6 @@ msgstr &quot;編輯 %1&quot;
 <context>
     <name>StdBoxSelection</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2739"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2740"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2742"/>
-        <source>Box selection</source>
-        <translation>框選</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2745"/>
         <source>&amp;Box Selection</source>
         <translation>框選(&amp;B)</translation>
@@ -22292,6 +22290,13 @@ msgstr &quot;編輯 %1&quot;
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2916"/>
         <source>Activate the box selection tool</source>
         <translation>啟動框選工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2739"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2740"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2742"/>
+        <source>Box selection</source>
+        <translation>框選</translation>
     </message>
 </context>
 <context>
@@ -22416,17 +22421,6 @@ msgstr &quot;編輯 %1&quot;
 <context>
     <name>StdCmdAlignment</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1613"/>
-        <source>Alignment...</source>
-        <translation>對齊...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1614"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1615"/>
-        <source>Align the selected objects</source>
-        <translation>對齊選定物體</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1644"/>
         <source>Ali&amp;gn To…</source>
         <translation>對齊至(&amp;g)…</translation>
@@ -22440,6 +22434,17 @@ msgstr &quot;編輯 %1&quot;
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1674"/>
         <source>Ali&amp;gnment...</source>
         <translation>對齊(&amp;g)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1613"/>
+        <source>Alignment...</source>
+        <translation>對齊...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1614"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1615"/>
+        <source>Align the selected objects</source>
+        <translation>對齊選定物體</translation>
     </message>
 </context>
 <context>
@@ -22458,16 +22463,6 @@ msgstr &quot;編輯 %1&quot;
 </context>
 <context>
     <name>StdCmdAxisCross</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2054"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2055"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2056"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2141"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2142"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2143"/>
-        <source>Toggle axis cross</source>
-        <translation>切換軸交錯</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2216"/>
         <source>Toggle A&amp;xis Cross</source>
@@ -22488,6 +22483,16 @@ msgstr &quot;編輯 %1&quot;
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2327"/>
         <source>Turns on or off the axis cross at the origin</source>
         <translation>打開或關閉在原點處的軸交叉</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2054"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2055"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2056"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2141"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2142"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2143"/>
+        <source>Toggle axis cross</source>
+        <translation>切換軸交錯</translation>
     </message>
 </context>
 <context>
@@ -22575,6 +22580,16 @@ msgstr &quot;編輯 %1&quot;
 <context>
     <name>StdCmdCommandLine</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="479"/>
+        <source>Command &amp;Line</source>
+        <translation>指令列(&amp;L)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="481"/>
+        <source>Opens a command line interface in the console</source>
+        <translation>在主控台中開啟指令列</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="410"/>
         <source>Start command &amp;line...</source>
         <translation>啟動指令和列(&amp;L)...</translation>
@@ -22585,24 +22600,13 @@ msgstr &quot;編輯 %1&quot;
         <source>Opens the command line in the console</source>
         <translation>在主控台中開啟指令列</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="479"/>
-        <source>Command &amp;Line</source>
-        <translation>指令列(&amp;L)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="481"/>
-        <source>Opens a command line interface in the console</source>
-        <translation>在主控台中開啟指令列</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdCopy</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1099"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1101"/>
-        <source>Copy operation</source>
-        <translation>複製</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1098"/>
+        <source>C&amp;opy</source>
+        <translation>複製(&amp;o)</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1171"/>
@@ -22615,18 +22619,18 @@ msgstr &quot;編輯 %1&quot;
         <translation>選取的內容複製到剪貼簿</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1098"/>
-        <source>C&amp;opy</source>
-        <translation>複製(&amp;o)</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1099"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1101"/>
+        <source>Copy operation</source>
+        <translation>複製</translation>
     </message>
 </context>
 <context>
     <name>StdCmdCut</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1071"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1073"/>
-        <source>Cut out</source>
-        <translation>剪下</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1070"/>
+        <source>&amp;Cut</source>
+        <translation>剪下(&amp;C)</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1143"/>
@@ -22639,9 +22643,10 @@ msgstr &quot;編輯 %1&quot;
         <translation>移除選取的內容並複製到剪貼簿</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1070"/>
-        <source>&amp;Cut</source>
-        <translation>剪下(&amp;C)</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1071"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1073"/>
+        <source>Cut out</source>
+        <translation>剪下</translation>
     </message>
 </context>
 <context>
@@ -22695,17 +22700,6 @@ msgstr &quot;編輯 %1&quot;
 <context>
     <name>StdCmdDependencyGraph</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="562"/>
-        <source>Dependency graph...</source>
-        <translation>關係圖...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="563"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="564"/>
-        <source>Show the dependency graph of the objects in the active document</source>
-        <translation>顯示目前文件中物體相依圖</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="579"/>
         <source>Dependency Gra&amp;ph</source>
         <translation>關係圖(&amp;p)</translation>
@@ -22719,6 +22713,17 @@ msgstr &quot;編輯 %1&quot;
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="623"/>
         <source>Dependency gra&amp;ph...</source>
         <translation>關係圖(&amp;p)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="562"/>
+        <source>Dependency graph...</source>
+        <translation>關係圖...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="563"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="564"/>
+        <source>Show the dependency graph of the objects in the active document</source>
+        <translation>顯示目前文件中物體相依圖</translation>
     </message>
 </context>
 <context>
@@ -22742,6 +22747,11 @@ msgstr &quot;編輯 %1&quot;
         <translation>自訂(&amp;S)</translation>
     </message>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="453"/>
+        <source>Opens a dialog to edit toolbars, shortcuts, and macros</source>
+        <translation>開啟對話框以編輯工具列、捷徑和巨集</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="383"/>
         <source>Cu&amp;stomize...</source>
         <translation>自訂(&amp;S)...</translation>
@@ -22753,11 +22763,6 @@ msgstr &quot;編輯 %1&quot;
         <translation>自訂工具列和指令列</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="453"/>
-        <source>Opens a dialog to edit toolbars, shortcuts, and macros</source>
-        <translation>開啟對話框以編輯工具列、捷徑和巨集</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="452"/>
         <source>Cu&amp;stomize…</source>
         <translation>自訂(&amp;s)...</translation>
@@ -22765,11 +22770,6 @@ msgstr &quot;編輯 %1&quot;
 </context>
 <context>
     <name>StdCmdDlgMacroExecute</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="94"/>
-        <source>Ma&amp;cros...</source>
-        <translation>巨集(&amp;c) ...</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="97"/>
         <source>Ma&amp;cros</source>
@@ -22791,14 +22791,14 @@ msgstr &quot;編輯 %1&quot;
         <source>Opens a dialog to let you execute a recorded macro</source>
         <translation>打開一個對話框，讓您執行所錄製的巨集</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="94"/>
+        <source>Ma&amp;cros...</source>
+        <translation>巨集(&amp;c) ...</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdDlgMacroExecuteDirect</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="123"/>
-        <source>&amp;Execute macro</source>
-        <translation>執行巨集(&amp;E)</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="127"/>
         <source>&amp;Execute Macro</source>
@@ -22820,28 +22820,18 @@ msgstr &quot;編輯 %1&quot;
         <source>Execute the macro in the editor</source>
         <translation>在編輯器中執行巨集</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="123"/>
+        <source>&amp;Execute macro</source>
+        <translation>執行巨集(&amp;E)</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdDlgMacroRecord</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="46"/>
-        <source>&amp;Macro recording ...</source>
-        <translation>巨集錄製(&amp;M)...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="51"/>
-        <source>&amp;Macro recording...</source>
-        <translation>巨集錄製(&amp;M)...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="53"/>
         <source>Record &amp;Macro</source>
         <translation>巨集錄製(&amp;M)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="66"/>
-        <source>S&amp;top macro recording</source>
-        <translation>停止錄製(&amp;T)</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="47"/>
@@ -22859,9 +22849,35 @@ msgstr &quot;編輯 %1&quot;
         <source>Stop the macro recording session</source>
         <translation>停止錄製</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="46"/>
+        <source>&amp;Macro recording ...</source>
+        <translation>巨集錄製(&amp;M)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="51"/>
+        <source>&amp;Macro recording...</source>
+        <translation>巨集錄製(&amp;M)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="66"/>
+        <source>S&amp;top macro recording</source>
+        <translation>停止錄製(&amp;T)</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdDlgParameter</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="381"/>
+        <source>E&amp;dit Parameters</source>
+        <translation>編輯參數(&amp;d)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="382"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="384"/>
+        <source>Opens a dialog to edit the parameters</source>
+        <translation>打開一個對話框來編輯參數</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="326"/>
         <source>E&amp;dit parameters ...</source>
@@ -22875,23 +22891,23 @@ msgstr &quot;編輯 %1&quot;
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="381"/>
-        <source>E&amp;dit Parameters</source>
-        <translation>編輯參數(&amp;d)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="381"/>
         <source>E&amp;dit parameters...</source>
         <translation>編輯參數(&amp;d)...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="382"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="384"/>
-        <source>Opens a dialog to edit the parameters</source>
-        <translation>打開一個對話框來編輯參數</translation>
     </message>
 </context>
 <context>
     <name>StdCmdDlgPreferences</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="407"/>
+        <source>Prefere&amp;nces</source>
+        <translation>偏好設定 (&amp;P)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="407"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="409"/>
+        <source>Opens a dialog to edit the preferences</source>
+        <translation>開啟偏好設定視窗</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="351"/>
         <source>&amp;Preferences ...</source>
@@ -22907,17 +22923,6 @@ msgstr &quot;編輯 %1&quot;
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="406"/>
         <source>Prefere&amp;nces ...</source>
         <translation>偏好設定(&amp;n)...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="407"/>
-        <source>Prefere&amp;nces</source>
-        <translation>偏好設定 (&amp;P)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="407"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="409"/>
-        <source>Opens a dialog to edit the preferences</source>
-        <translation>開啟偏好設定視窗</translation>
     </message>
 </context>
 <context>
@@ -23279,6 +23284,16 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdDrawStyle</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="648"/>
+        <source>&amp;Draw Style</source>
+        <translation>繪製樣式(&amp;D)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="649"/>
+        <source>Changes the draw style of the objects</source>
+        <translation>更改物體的繪製樣式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="634"/>
         <source>Draw style</source>
         <translation>繪製樣式</translation>
@@ -23291,33 +23306,12 @@ This makes the docked widget stay transparent at all times.</source>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="648"/>
-        <source>&amp;Draw Style</source>
-        <translation>繪製樣式(&amp;D)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="648"/>
         <source>&amp;Draw style</source>
         <translation>繪製樣式(&amp;D)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="649"/>
-        <source>Changes the draw style of the objects</source>
-        <translation>更改物體的繪製樣式</translation>
     </message>
 </context>
 <context>
     <name>StdCmdDuplicateSelection</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1173"/>
-        <source>Duplicate selection</source>
-        <translation>複製選定物體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1174"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1176"/>
-        <source>Put duplicates of the selected objects to the active document</source>
-        <translation>於目前文件中貼上所複製之物體</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1211"/>
         <source>Duplicate Selecti&amp;on</source>
@@ -23332,6 +23326,17 @@ This makes the docked widget stay transparent at all times.</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1246"/>
         <source>Duplicate selecti&amp;on</source>
         <translation>複製選定物體(&amp;o)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1173"/>
+        <source>Duplicate selection</source>
+        <translation>複製選定物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1174"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1176"/>
+        <source>Put duplicates of the selected objects to the active document</source>
+        <translation>於目前文件中貼上所複製之物體</translation>
     </message>
 </context>
 <context>
@@ -23351,16 +23356,6 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdEdit</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1683"/>
-        <source>Toggle &amp;Edit mode</source>
-        <translation>切換編輯模式(&amp;E)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1686"/>
-        <source>Activates or Deactivates the selected object&apos;s edit mode</source>
-        <translation>啟用或停用所選物體的編輯模式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1715"/>
         <source>Toggle &amp;Edit Mode</source>
         <translation>切換編輯模式(&amp;E)</translation>
@@ -23370,20 +23365,19 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Toggles the selected object&apos;s edit mode</source>
         <translation>切換所選的物體的編輯模式</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1683"/>
+        <source>Toggle &amp;Edit mode</source>
+        <translation>切換編輯模式(&amp;E)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1686"/>
+        <source>Activates or Deactivates the selected object&apos;s edit mode</source>
+        <translation>啟用或停用所選物體的編輯模式</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdExport</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="262"/>
-        <source>&amp;Export...</source>
-        <translation>匯出(&amp;E)...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="263"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="265"/>
-        <source>Export an object in the active document</source>
-        <translation>從目前檔案中匯出物體</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="269"/>
         <source>&amp;Export…</source>
@@ -23414,6 +23408,17 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Select objects to export before using the Export command.</source>
         <translation>在選擇匯出之前選擇要匯出的物體.</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="262"/>
+        <source>&amp;Export...</source>
+        <translation>匯出(&amp;E)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="263"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="265"/>
+        <source>Export an object in the active document</source>
+        <translation>從目前檔案中匯出物體</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdExportDependencyGraph</name>
@@ -23421,6 +23426,11 @@ This makes the docked widget stay transparent at all times.</source>
         <location filename="../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="661"/>
         <source>Export Dependency &amp;Graph…</source>
         <translation>匯出關係圖(&amp;G)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="614"/>
+        <source>Exports the dependency graph as a Graphviz (.gv) file</source>
+        <translation>匯出關係圖到關係圖檔案(.gv)</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="605"/>
@@ -23434,30 +23444,18 @@ This makes the docked widget stay transparent at all times.</source>
         <translation>匯出關係圖到檔案</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="614"/>
-        <source>Exports the dependency graph as a Graphviz (.gv) file</source>
-        <translation>匯出關係圖到關係圖檔案(.gv)</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="612"/>
+        <source>Export Dependency &amp;Graph</source>
+        <translation>匯出關係圖(&amp;G)</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="655"/>
         <source>Export dependency &amp;graph...</source>
         <translation>匯出關係圖(&amp;g)...</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="612"/>
-        <source>Export Dependency &amp;Graph</source>
-        <translation>匯出關係圖(&amp;G)</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdExpression</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1727"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1728"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1730"/>
-        <source>Expression actions</source>
-        <translation>表達式動作</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1792"/>
         <source>Expression Actions</source>
@@ -23468,6 +23466,13 @@ This makes the docked widget stay transparent at all times.</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1730"/>
         <source>Actions that apply to expressions</source>
         <translation>套用在表示式的動作</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1727"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1728"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1730"/>
+        <source>Expression actions</source>
+        <translation>表達式動作</translation>
     </message>
 </context>
 <context>
@@ -23506,6 +23511,16 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdFreeCADDonation</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="577"/>
+        <source>Donate to FreeCA&amp;D</source>
+        <translation>捐款協助 FreeCA&amp;D</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="578"/>
+        <source>Support the FreeCAD development</source>
+        <translation>支援FreeCAD開發</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="510"/>
         <source>Donate</source>
         <translation>贊助</translation>
@@ -23517,11 +23532,6 @@ This makes the docked widget stay transparent at all times.</source>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="577"/>
-        <source>Donate to FreeCA&amp;D</source>
-        <translation>捐款協助 FreeCA&amp;D</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="577"/>
         <source>Support FreeCA&amp;D</source>
         <translation>支援 FreeCA&amp;D</translation>
     </message>
@@ -23529,11 +23539,6 @@ This makes the docked widget stay transparent at all times.</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="577"/>
         <source>Support FreeCAD</source>
         <translation>支援 FreeCAD</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="578"/>
-        <source>Support the FreeCAD development</source>
-        <translation>支援FreeCAD開發</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="578"/>
@@ -23572,16 +23577,6 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdFreeCADForum</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="688"/>
-        <source>FreeCAD &amp;Forum</source>
-        <translation>FreeCAD討論區(&amp;F)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="622"/>
-        <source>The FreeCAD forum, where you can find help from other users</source>
-        <translation>FreeCAD討論區是一個您可以從其他使用者得到幫助的地方</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="621"/>
         <source>FreeCAD Forum</source>
         <translation>FreeCAD討論區</translation>
@@ -23590,6 +23585,16 @@ This makes the docked widget stay transparent at all times.</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="624"/>
         <source>The FreeCAD Forum</source>
         <translation>FreeCAD討論區</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="688"/>
+        <source>FreeCAD &amp;Forum</source>
+        <translation>FreeCAD討論區(&amp;F)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="622"/>
+        <source>The FreeCAD forum, where you can find help from other users</source>
+        <translation>FreeCAD討論區是一個您可以從其他使用者得到幫助的地方</translation>
     </message>
 </context>
 <context>
@@ -23628,16 +23633,6 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdFreeCADUserHub</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="632"/>
-        <source>&amp;User Documentation</source>
-        <translation>使用者文件(&amp;U)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="633"/>
-        <source>Opens the documentation for users</source>
-        <translation>為使用者開啟文件</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="565"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="568"/>
         <source>Users documentation</source>
@@ -23650,22 +23645,22 @@ This makes the docked widget stay transparent at all times.</source>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="632"/>
+        <source>&amp;User Documentation</source>
+        <translation>使用者文件(&amp;U)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="632"/>
         <source>User Documentation</source>
         <translation>使用者文件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="633"/>
+        <source>Opens the documentation for users</source>
+        <translation>為使用者開啟文件</translation>
     </message>
 </context>
 <context>
     <name>StdCmdFreeCADWebsite</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="604"/>
-        <source>FreeCAD W&amp;ebsite</source>
-        <translation>FreeCAD 網站(&amp;e)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="605"/>
-        <source>Navigates to the official FreeCAD website</source>
-        <translation>導覽至 FreeCAD 官方網站</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="537"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="540"/>
@@ -23677,14 +23672,19 @@ This makes the docked widget stay transparent at all times.</source>
         <source>The FreeCAD website</source>
         <translation>FreeCAD 網站</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="604"/>
+        <source>FreeCAD W&amp;ebsite</source>
+        <translation>FreeCAD 網站(&amp;e)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="605"/>
+        <source>Navigates to the official FreeCAD website</source>
+        <translation>導覽至 FreeCAD 官方網站</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdFreezeViews</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="293"/>
-        <source>Freeze display</source>
-        <translation>凍結顯示</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="323"/>
         <source>F&amp;reeze Display</source>
@@ -23701,9 +23701,24 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Freezes the current view position</source>
         <translation>凍結目前檢視的位置</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="293"/>
+        <source>Freeze display</source>
+        <translation>凍結顯示</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdGroup</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStructure.cpp" line="107"/>
+        <source>New Group</source>
+        <translation>新增群組</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStructure.cpp" line="108"/>
+        <source>Creates a group, which is a general-purpose container to group objects in the tree view, regardless of their data type. It is a simple folder to organize the objects in a model.</source>
+        <translation>建立一個群組，它是一個通用的容器，可以在樹狀檢視中將物體群組起來，不論其資料類型為何. 它是組織模型中物體的簡單資料夾.</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStructure.cpp" line="92"/>
         <source>Create group</source>
@@ -23719,19 +23734,19 @@ This makes the docked widget stay transparent at all times.</source>
         <source>A Group is a general purpose container to group objects in the Tree view, regardless of their data type. It is a simple folder to organize the objects in a model.</source>
         <translation>群組是一種通用容器，用於對樹狀檢視中的物體進行分組，無論其資料類型為何. 這是一個用於組織模型中物體的簡單資料夾.</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStructure.cpp" line="107"/>
-        <source>New Group</source>
-        <translation>新增群組</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStructure.cpp" line="108"/>
-        <source>Creates a group, which is a general-purpose container to group objects in the tree view, regardless of their data type. It is a simple folder to organize the objects in a model.</source>
-        <translation>建立一個群組，它是一個通用的容器，可以在樹狀檢視中將物體群組起來，不論其資料類型為何. 它是組織模型中物體的簡單資料夾.</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdHideObjects</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1238"/>
+        <source>Hide All &amp;Objects</source>
+        <translation>隱藏所有物體(&amp;O)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1239"/>
+        <source>Hides all objects in the document</source>
+        <translation>隱藏檔案中的所有物體</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1106"/>
         <source>Hide all objects</source>
@@ -23750,22 +23765,22 @@ This makes the docked widget stay transparent at all times.</source>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1238"/>
-        <source>Hide All &amp;Objects</source>
-        <translation>隱藏所有物體(&amp;O)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1238"/>
         <source>Hide all &amp;Objects</source>
         <translation>隱藏所有物體(&amp;O)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1239"/>
-        <source>Hides all objects in the document</source>
-        <translation>隱藏檔案中的所有物體</translation>
     </message>
 </context>
 <context>
     <name>StdCmdHideSelection</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1090"/>
+        <source>&amp;Hide Selection</source>
+        <translation>隱藏選取內容(&amp;H)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1091"/>
+        <source>Hides all selected objects</source>
+        <translation>隱藏所有選取的物體</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="958"/>
         <source>Hide selection</source>
@@ -23782,30 +23797,9 @@ This makes the docked widget stay transparent at all times.</source>
         <source>&amp;Hide selection</source>
         <translation>隱藏選取內容(&amp;H)</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1090"/>
-        <source>&amp;Hide Selection</source>
-        <translation>隱藏選取內容(&amp;H)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1091"/>
-        <source>Hides all selected objects</source>
-        <translation>隱藏所有選取的物體</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdImport</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="176"/>
-        <source>&amp;Import...</source>
-        <translation>匯入(&amp;I)...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="177"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="179"/>
-        <source>Import a file in the active document</source>
-        <translation>於作用中檔案匯入檔案</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="183"/>
         <source>&amp;Import…</source>
@@ -23826,9 +23820,30 @@ This makes the docked widget stay transparent at all times.</source>
         <source>All files (*.*)</source>
         <translation>所有檔案(*.*)</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="176"/>
+        <source>&amp;Import...</source>
+        <translation>匯入(&amp;I)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="177"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="179"/>
+        <source>Import a file in the active document</source>
+        <translation>於作用中檔案匯入檔案</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdLinkActions</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="878"/>
+        <source>Link Actions</source>
+        <translation>連結動作</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="879"/>
+        <source>Commands that operate on link objects</source>
+        <translation>操作連結物體的指令</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="871"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="872"/>
@@ -23842,29 +23857,9 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Actions that apply to link objects</source>
         <translation>適用於連結物件的操作</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="878"/>
-        <source>Link Actions</source>
-        <translation>連結動作</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="879"/>
-        <source>Commands that operate on link objects</source>
-        <translation>操作連結物體的指令</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdLinkImport</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="540"/>
-        <source>Import links</source>
-        <translation>匯入連結</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="541"/>
-        <source>Import selected external link(s)</source>
-        <translation>匯入選定的外部連結</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="544"/>
         <source>Import Links</source>
@@ -23875,19 +23870,19 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Imports selected external links</source>
         <translation>匯入選定的外部連結</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="540"/>
+        <source>Import links</source>
+        <translation>匯入連結</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="541"/>
+        <source>Import selected external link(s)</source>
+        <translation>匯入選定的外部連結</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdLinkImportAll</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="604"/>
-        <source>Import all links</source>
-        <translation>匯入所有連結</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="605"/>
-        <source>Import all links of the active document</source>
-        <translation>匯入啟用文件的所有連結</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="608"/>
         <source>Import All Links</source>
@@ -23898,9 +23893,29 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Imports all links of the active document</source>
         <translation>匯入啟用文件的所有連結</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="604"/>
+        <source>Import all links</source>
+        <translation>匯入所有連結</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="605"/>
+        <source>Import all links of the active document</source>
+        <translation>匯入啟用文件的所有連結</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdLinkMake</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="210"/>
+        <source>Make Link</source>
+        <translation>建立連結</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="211"/>
+        <source>A link is an object that references another object, either within the same or in another document. Unlike clones, links reference the original shape directly, making them more memory-efficient, which helps with the creation of complex assemblies.</source>
+        <translation>連結是引用或連結到同一文件或另一個文件中的另一個物體的物體. 與複製不同，連結直接引用原始形狀，從而提高記憶體效率，有助於建立複雜的零件組合.</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="208"/>
         <source>Make link</source>
@@ -23913,17 +23928,7 @@ This makes the docked widget stay transparent at all times.</source>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="210"/>
-        <source>Make Link</source>
-        <translation>建立連結</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="210"/>
         <source>A Link is an object that references or links to another object in the same document, or in another document.Unlike Clones, Links reference the original Shape directly,  making them more memory efficient which helps with the creation of complex assemblies.</source>
-        <translation>連結是引用或連結到同一文件或另一個文件中的另一個物體的物體. 與複製不同，連結直接引用原始形狀，從而提高記憶體效率，有助於建立複雜的零件組合.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="211"/>
-        <source>A link is an object that references another object, either within the same or in another document. Unlike clones, links reference the original shape directly, making them more memory-efficient, which helps with the creation of complex assemblies.</source>
         <translation>連結是引用或連結到同一文件或另一個文件中的另一個物體的物體. 與複製不同，連結直接引用原始形狀，從而提高記憶體效率，有助於建立複雜的零件組合.</translation>
     </message>
     <message>
@@ -23935,16 +23940,6 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdLinkMakeGroup</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="77"/>
-        <source>Make link group</source>
-        <translation>建立連結群組</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="78"/>
-        <source>Create a group of links</source>
-        <translation>建立連結群組</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="79"/>
         <source>Link Group</source>
         <translation>連結群組</translation>
@@ -23954,19 +23949,19 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Creates a group of links</source>
         <translation>建立連結群組</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="77"/>
+        <source>Make link group</source>
+        <translation>建立連結群組</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="78"/>
+        <source>Create a group of links</source>
+        <translation>建立連結群組</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdLinkMakeRelative</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="271"/>
-        <source>Make sub-link</source>
-        <translation>建立子連結</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="272"/>
-        <source>Create a sub-object or sub-element link</source>
-        <translation>建立子物體或子元素連結</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="275"/>
         <source>Make Sub-Link</source>
@@ -23977,19 +23972,19 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Creates a sub-object or sub-element link</source>
         <translation>建立子物體或子元素連結</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="271"/>
+        <source>Make sub-link</source>
+        <translation>建立子連結</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="272"/>
+        <source>Create a sub-object or sub-element link</source>
+        <translation>建立子物體或子元素連結</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdLinkReplace</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="492"/>
-        <source>Replace with link</source>
-        <translation>取代連結</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="493"/>
-        <source>Replace the selected object(s) with link</source>
-        <translation>使用連結取代選取的物體</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="496"/>
         <source>Replace With Link</source>
@@ -24000,14 +23995,19 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Replaces the selected objects with links</source>
         <translation>使用連結取代選取的物體</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="492"/>
+        <source>Replace with link</source>
+        <translation>取代連結</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="493"/>
+        <source>Replace the selected object(s) with link</source>
+        <translation>使用連結取代選取的物體</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdLinkSelectActions</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="845"/>
-        <source>Link navigation</source>
-        <translation>連結導航</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="852"/>
         <source>&amp;Link Navigation</source>
@@ -24024,9 +24024,24 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Link navigation actions</source>
         <translation>連結導航動作</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="845"/>
+        <source>Link navigation</source>
+        <translation>連結導航</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdLinkSelectAllLinks</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="812"/>
+        <source>Select &amp;All Links</source>
+        <translation>選取所有連結(&amp;A)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="813"/>
+        <source>Selects all links to the current selected object</source>
+        <translation>選擇目前選定物體的所有連結</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="806"/>
         <source>Select all links</source>
@@ -24039,22 +24054,22 @@ This makes the docked widget stay transparent at all times.</source>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="812"/>
-        <source>Select &amp;All Links</source>
-        <translation>選取所有連結(&amp;A)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="812"/>
         <source>Select &amp;all links</source>
         <translation>選取所有連結(&amp;a)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="813"/>
-        <source>Selects all links to the current selected object</source>
-        <translation>選擇目前選定物體的所有連結</translation>
     </message>
 </context>
 <context>
     <name>StdCmdLinkSelectLinked</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="649"/>
+        <source>&amp;Go to Linked Object</source>
+        <translation>轉到連結物體(&amp;G)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="650"/>
+        <source>Selects the linked object and switches to its original document</source>
+        <translation>選擇連結物體並切換到其擁有的文件</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="645"/>
         <source>Go to linked object</source>
@@ -24067,22 +24082,22 @@ This makes the docked widget stay transparent at all times.</source>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="649"/>
-        <source>&amp;Go to Linked Object</source>
-        <translation>轉到連結物體(&amp;G)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="649"/>
         <source>&amp;Go to linked object</source>
         <translation>轉到連結物體(&amp;G)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="650"/>
-        <source>Selects the linked object and switches to its original document</source>
-        <translation>選擇連結物體並切換到其擁有的文件</translation>
     </message>
 </context>
 <context>
     <name>StdCmdLinkSelectLinkedFinal</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="777"/>
+        <source>Go to &amp;Deepest Linked Object</source>
+        <translation>轉到最底層的連結物體(&amp;D)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="778"/>
+        <source>Selects the deepest linked object and switches to its original document</source>
+        <translation>選擇最底層的連結物體並切換到其擁有的文件</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="772"/>
         <source>Go to the deepest linked object</source>
@@ -24095,18 +24110,8 @@ This makes the docked widget stay transparent at all times.</source>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="777"/>
-        <source>Go to &amp;Deepest Linked Object</source>
-        <translation>轉到最底層的連結物體(&amp;D)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="777"/>
         <source>Go to the &amp;deepest linked object</source>
         <translation>轉到最底層的連結物體(&amp;d)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandLink.cpp" line="778"/>
-        <source>Selects the deepest linked object and switches to its original document</source>
-        <translation>選擇最底層的連結物體並切換到其擁有的文件</translation>
     </message>
 </context>
 <context>
@@ -24130,11 +24135,6 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdMacroAttachDebugger</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="149"/>
-        <source>&amp;Attach to remote debugger...</source>
-        <translation>附加到遠端偵錯程式(&amp;A)...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="153"/>
         <source>&amp;Attach to Remote Debugger</source>
         <translation>附加到遠端偵錯程式(&amp;A)</translation>
@@ -24155,14 +24155,14 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Attach to a remotely running debugger</source>
         <translation>附加到遠端執行中的偵錯程式</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="149"/>
+        <source>&amp;Attach to remote debugger...</source>
+        <translation>附加到遠端偵錯程式(&amp;A)...</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdMacroStartDebug</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="174"/>
-        <source>&amp;Debug macro</source>
-        <translation>巨集除錯(&amp;D)</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="179"/>
         <source>&amp;Debug Macro</source>
@@ -24184,14 +24184,14 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Start debugging of macro</source>
         <translation>開始巨集除錯</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="174"/>
+        <source>&amp;Debug macro</source>
+        <translation>巨集除錯(&amp;D)</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdMacroStepInto</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="258"/>
-        <source>Step &amp;into</source>
-        <translation>跳至(&amp;i)</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="263"/>
         <source>Step &amp;Into</source>
@@ -24215,14 +24215,14 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Step to the next line executed</source>
         <translation>跳至執行的下一行</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="258"/>
+        <source>Step &amp;into</source>
+        <translation>跳至(&amp;i)</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdMacroStepOver</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="231"/>
-        <source>Step &amp;over</source>
-        <translation>跨越(&amp;o)</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="236"/>
         <source>Step &amp;Over</source>
@@ -24246,14 +24246,14 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Step to the next line in this file</source>
         <translation>跳至此檔案的下一行</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="231"/>
+        <source>Step &amp;over</source>
+        <translation>跨越(&amp;o)</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdMacroStopDebug</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="204"/>
-        <source>&amp;Stop debugging</source>
-        <translation>停止除錯(&amp;S)</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="209"/>
         <source>&amp;Stop Debugging</source>
@@ -24275,6 +24275,11 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Stop debugging of macro</source>
         <translation>停止巨集除錯</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="204"/>
+        <source>&amp;Stop debugging</source>
+        <translation>停止除錯(&amp;S)</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdMacroStopRecord</name>
@@ -24293,6 +24298,16 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdMacrosFolder</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="316"/>
+        <source>Open Macro Folder</source>
+        <translation>開啟巨集資料夾</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="317"/>
+        <source>Opens the macros folder in the system file manager</source>
+        <translation>使用系統檔案管理員開啟包含巨集的資料夾</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="313"/>
         <source>Open macros containing folder</source>
         <translation>開啟包含巨集的資料夾</translation>
@@ -24302,16 +24317,6 @@ This makes the docked widget stay transparent at all times.</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="316"/>
         <source>Open macros containing folder by default system file manager</source>
         <translation>使用預設的系統檔案管理員開啟包含巨集的資料夾</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="316"/>
-        <source>Open Macro Folder</source>
-        <translation>開啟巨集資料夾</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="317"/>
-        <source>Opens the macros folder in the system file manager</source>
-        <translation>使用系統檔案管理員開啟包含巨集的資料夾</translation>
     </message>
 </context>
 <context>
@@ -24361,6 +24366,32 @@ This makes the docked widget stay transparent at all times.</source>
 <context>
     <name>StdCmdMergeProjects</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="524"/>
+        <source>&amp;Merge Document</source>
+        <translation>合併文件(&amp;M)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="526"/>
+        <source>Merges another FreeCAD document into the active one</source>
+        <translation>將另一個 FreeCAD 文件合併到使用中的文件</translation>
+    </message>
+    <message>
+        <location filename="../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="584"/>
+        <location filename="../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="596"/>
+        <source>Merge Document</source>
+        <translation>合併文件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="523"/>
+        <source>%1 document (*.FCStd)</source>
+        <translation>%1 文件（*.FCStd）</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="543"/>
+        <source>Cannot merge document with itself.</source>
+        <translation>無法將文件與其自身合併.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="509"/>
         <source>Merge project...</source>
         <translation>合併專案...</translation>
@@ -24387,40 +24418,14 @@ This makes the docked widget stay transparent at all times.</source>
         <translation>合併文件</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="524"/>
-        <source>&amp;Merge Document</source>
-        <translation>合併文件(&amp;M)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="526"/>
-        <source>Merges another FreeCAD document into the active one</source>
-        <translation>將另一個 FreeCAD 文件合併到使用中的文件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="570"/>
-        <source>&amp;Merge document...</source>
-        <translation>合併文件(&amp;M)...</translation>
-    </message>
-    <message>
-        <location filename="../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="584"/>
-        <location filename="../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="596"/>
-        <source>Merge Document</source>
-        <translation>合併文件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="523"/>
-        <source>%1 document (*.FCStd)</source>
-        <translation>%1 文件（*.FCStd）</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="532"/>
         <source>Cannot merge project with itself.</source>
         <translation>不能合併專案本身.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="543"/>
-        <source>Cannot merge document with itself.</source>
-        <translation>無法將文件與其自身合併.</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="570"/>
+        <source>&amp;Merge document...</source>
+        <translation>合併文件(&amp;M)...</translation>
     </message>
 </context>
 <context>
@@ -24433,6 +24438,16 @@ This makes the docked widget stay transparent at all times.</source>
         <translation>未命名</translation>
     </message>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="655"/>
+        <source>&amp;New Document</source>
+        <translation>新增文件(&amp;N)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="656"/>
+        <source>Creates a new empty document</source>
+        <translation>建立一個新的空白檔案</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="594"/>
         <source>&amp;New</source>
         <translation>新增(&amp;N)</translation>
@@ -24443,29 +24458,9 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Create a new empty document</source>
         <translation>建立一個新的空白檔案</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="655"/>
-        <source>&amp;New Document</source>
-        <translation>新增文件(&amp;N)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="656"/>
-        <source>Creates a new empty document</source>
-        <translation>建立一個新的空白檔案</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdOnlineHelp</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="525"/>
-        <source>&amp;Help</source>
-        <translation>求助說明(&amp;H)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="526"/>
-        <source>Opens the Help documentation</source>
-        <translation>開啟求助說明文件</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="458"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="461"/>
@@ -24476,6 +24471,16 @@ This makes the docked widget stay transparent at all times.</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="459"/>
         <source>Show help to the application</source>
         <translation>顯示應用程式的説明</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="525"/>
+        <source>&amp;Help</source>
+        <translation>求助說明(&amp;H)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="526"/>
+        <source>Opens the Help documentation</source>
+        <translation>開啟求助說明文件</translation>
     </message>
 </context>
 <context>
@@ -24499,17 +24504,6 @@ This makes the docked widget stay transparent at all times.</source>
 </context>
 <context>
     <name>StdCmdOpen</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="85"/>
-        <source>&amp;Open...</source>
-        <translation>開啟(&amp;O)...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="86"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="88"/>
-        <source>Open a document or import files</source>
-        <translation>開啟文件或匯入檔案</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="89"/>
         <source>&amp;Open…</source>
@@ -24545,14 +24539,20 @@ This makes the docked widget stay transparent at all times.</source>
         <source>Loading the file %1 is not supported</source>
         <translation>並不支援載入之%1檔</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="85"/>
+        <source>&amp;Open...</source>
+        <translation>開啟(&amp;O)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="86"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="88"/>
+        <source>Open a document or import files</source>
+        <translation>開啟文件或匯入檔案</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdPart</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStructure.cpp" line="51"/>
-        <source>Create part</source>
-        <translation>建立零件</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStructure.cpp" line="52"/>
         <source>New Part</source>
@@ -24580,6 +24580,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>零件是一種通用容器，用於將一組物體保存在一起，以便它們在 3D 檢視中充當一個單元.
 它旨在排列具有零件拓撲形狀的對象，例如零件基元、零件設計主體和其他零件.</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStructure.cpp" line="51"/>
+        <source>Create part</source>
+        <translation>建立零件</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdPaste</name>
@@ -24603,17 +24608,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdPlacement</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1545"/>
-        <source>Placement...</source>
-        <translation>放置位置...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1546"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1547"/>
-        <source>Place the selected objects</source>
-        <translation>放置所選物體</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1560"/>
         <source>P&amp;lacement</source>
         <translation>放置位置(&amp;l)</translation>
@@ -24628,9 +24622,30 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>P&amp;lacement...</source>
         <translation>放置位置(&amp;l)...</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1545"/>
+        <source>Placement...</source>
+        <translation>放置位置...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1546"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1547"/>
+        <source>Place the selected objects</source>
+        <translation>放置所選物體</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdPrint</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="898"/>
+        <source>&amp;Print</source>
+        <translation>列印(&amp;P)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="900"/>
+        <source>Prints the active document</source>
+        <translation>列印啟用中文件</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="863"/>
         <source>&amp;Print...</source>
@@ -24642,30 +24657,9 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Print the document</source>
         <translation>列印文件</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="898"/>
-        <source>&amp;Print</source>
-        <translation>列印(&amp;P)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="900"/>
-        <source>Prints the active document</source>
-        <translation>列印啟用中文件</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdPrintPdf</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="925"/>
-        <source>&amp;Export PDF...</source>
-        <translation>匯出 PDF(&amp;E)...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="926"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="928"/>
-        <source>Export the document as PDF</source>
-        <translation>將文件匯出為 PDF</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="962"/>
         <source>Export P&amp;DF</source>
@@ -24681,9 +24675,30 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Export P&amp;DF...</source>
         <translation>匯出 P&amp;DF...</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="925"/>
+        <source>&amp;Export PDF...</source>
+        <translation>匯出 PDF(&amp;E)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="926"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="928"/>
+        <source>Export the document as PDF</source>
+        <translation>將文件匯出為 PDF</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdPrintPreview</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="931"/>
+        <source>Print Previe&amp;w</source>
+        <translation>預覽列印(&amp;w)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="933"/>
+        <source>Previews the active document before printing</source>
+        <translation>列印前預覽使用中的文件</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="895"/>
         <source>&amp;Print preview...</source>
@@ -24700,16 +24715,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>預覽列印</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="931"/>
-        <source>Print Previe&amp;w</source>
-        <translation>預覽列印(&amp;w)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="933"/>
-        <source>Previews the active document before printing</source>
-        <translation>列印前預覽使用中的文件</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="968"/>
         <source>Print previe&amp;w...</source>
         <translation>預覽列印(&amp;w)...</translation>
@@ -24717,6 +24722,16 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 </context>
 <context>
     <name>StdCmdProjectInfo</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="838"/>
+        <source>Doc&amp;ument Information</source>
+        <translation>文件資訊(&amp;u)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="840"/>
+        <source>Shows information about the active document</source>
+        <translation>顯示目前作業中文件的資訊</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="805"/>
         <source>Project i&amp;nformation...</source>
@@ -24740,16 +24755,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>顯示目前作業中文件的詳細資訊</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="838"/>
-        <source>Doc&amp;ument Information</source>
-        <translation>文件資訊(&amp;u)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="840"/>
-        <source>Shows information about the active document</source>
-        <translation>顯示目前作業中文件的資訊</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="878"/>
         <source>Doc&amp;ument information...</source>
         <translation>文件資訊(&amp;u)...</translation>
@@ -24757,6 +24762,16 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 </context>
 <context>
     <name>StdCmdProjectUtil</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="870"/>
+        <source>Do&amp;cument Utility</source>
+        <translation>文件實用程式(&amp;c)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="872"/>
+        <source>Extracts or creates document files</source>
+        <translation>提取或建立專案檔案</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="836"/>
         <source>Project utility...</source>
@@ -24780,16 +24795,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>讀取或建立專案檔之功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="870"/>
-        <source>Do&amp;cument Utility</source>
-        <translation>文件實用程式(&amp;c)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="872"/>
-        <source>Extracts or creates document files</source>
-        <translation>提取或建立專案檔案</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="909"/>
         <source>Do&amp;cument utility...</source>
         <translation>文件實用程式(&amp;c)...</translation>
@@ -24798,9 +24803,9 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdProperties</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1729"/>
-        <source>Show the property view, which displays the properties of the selected object.</source>
-        <translation>顯示屬性檢視，顯示其中所選物件的屬性.</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1728"/>
+        <source>Properties</source>
+        <translation>屬性</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1784"/>
@@ -24813,9 +24818,9 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>顯示屬性檢視，顯示其中所選物件的屬性.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1728"/>
-        <source>Properties</source>
-        <translation>屬性</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1729"/>
+        <source>Show the property view, which displays the properties of the selected object.</source>
+        <translation>顯示屬性檢視，顯示其中所選物件的屬性.</translation>
     </message>
 </context>
 <context>
@@ -24849,6 +24854,16 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdRandomColor</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandFeat.cpp" line="82"/>
+        <source>Random &amp;Color</source>
+        <translation>隨機顏色(&amp;C)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandFeat.cpp" line="83"/>
+        <source>Assigns random diffuse colors for the selected objects</source>
+        <translation></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandFeat.cpp" line="78"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandFeat.cpp" line="79"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandFeat.cpp" line="81"/>
@@ -24866,29 +24881,9 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Random &amp;color</source>
         <translation>隨機顏色(&amp;c)</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandFeat.cpp" line="82"/>
-        <source>Random &amp;Color</source>
-        <translation>隨機顏色(&amp;C)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandFeat.cpp" line="83"/>
-        <source>Assigns random diffuse colors for the selected objects</source>
-        <translation></translation>
-    </message>
 </context>
 <context>
     <name>StdCmdRecentFiles</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="140"/>
-        <source>Open &amp;Recent</source>
-        <translation>開啟最近使用的檔案(&amp;R)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="141"/>
-        <source>Displays the list of recently opened files</source>
-        <translation>顯示最近開啟的檔案清單</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="133"/>
         <source>Recent files</source>
@@ -24905,9 +24900,29 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Open Recent</source>
         <translation>開啟最近使用的檔案</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="140"/>
+        <source>Open &amp;Recent</source>
+        <translation>開啟最近使用的檔案(&amp;R)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="141"/>
+        <source>Displays the list of recently opened files</source>
+        <translation>顯示最近開啟的檔案清單</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdRecentMacros</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="181"/>
+        <source>&amp;Recent Macros</source>
+        <translation>最近使用的巨集(&amp;R)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="182"/>
+        <source>Displays the list of recently used macros</source>
+        <translation>顯示最近使用的巨集清單</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="174"/>
         <source>Recent macros</source>
@@ -24921,18 +24936,8 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="181"/>
-        <source>&amp;Recent Macros</source>
-        <translation>最近使用的巨集(&amp;R)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="181"/>
         <source>&amp;Recent macros</source>
         <translation>最近使用的巨集(&amp;R)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="182"/>
-        <source>Displays the list of recently used macros</source>
-        <translation>顯示最近使用的巨集清單</translation>
     </message>
 </context>
 <context>
@@ -24952,17 +24957,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdRefresh</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1465"/>
-        <source>&amp;Refresh</source>
-        <translation>重新整理(&amp;R)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1466"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1468"/>
-        <source>Recomputes the current active document</source>
-        <translation>重新計算目前作用中檔案</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1478"/>
         <source>Recompute</source>
         <translation>重新計算</translation>
@@ -24976,6 +24970,17 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1512"/>
         <source>Refres&amp;h</source>
         <translation>重新整理(&amp;h)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1465"/>
+        <source>&amp;Refresh</source>
+        <translation>重新整理(&amp;R)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1466"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1468"/>
+        <source>Recomputes the current active document</source>
+        <translation>重新計算目前作用中檔案</translation>
     </message>
 </context>
 <context>
@@ -25010,16 +25015,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdReportBug</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="769"/>
-        <source>Report an &amp;Issue</source>
-        <translation>回報問題(&amp;I)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="726"/>
-        <source>Opens the bugtracker to report an issue</source>
-        <translation>開啟臭蟲追蹤以回報問題</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="702"/>
         <source>Report a bug</source>
         <translation>回報錯誤</translation>
@@ -25032,6 +25027,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="769"/>
+        <source>Report an &amp;Issue</source>
+        <translation>回報問題(&amp;I)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="769"/>
         <source>Report an Issue</source>
         <translation>回報問題</translation>
     </message>
@@ -25039,6 +25039,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="770"/>
         <source>Report an issue or suggest a new feature</source>
         <translation>回報問題或建議新功能</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="726"/>
+        <source>Opens the bugtracker to report an issue</source>
+        <translation>開啟臭蟲追蹤以回報問題</translation>
     </message>
 </context>
 <context>
@@ -25064,6 +25069,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdRevert</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="766"/>
+        <source>Revert</source>
+        <translation>還原</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="839"/>
         <source>Rever&amp;t</source>
         <translation>還原(&amp;t)</translation>
@@ -25073,11 +25083,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="769"/>
         <source>Reverts to the saved version of this file</source>
         <translation>還原至此檔儲存之版本</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="766"/>
-        <source>Revert</source>
-        <translation>還原</translation>
     </message>
 </context>
 <context>
@@ -25102,10 +25107,9 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdSaveAll</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="739"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="741"/>
-        <source>Save all opened document</source>
-        <translation>儲存所有開啟的文件</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="738"/>
+        <source>Save All</source>
+        <translation>全部儲存</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="811"/>
@@ -25118,13 +25122,24 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>儲存所有開啟的文件</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="738"/>
-        <source>Save All</source>
-        <translation>全部儲存</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="739"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="741"/>
+        <source>Save all opened document</source>
+        <translation>儲存所有開啟的文件</translation>
     </message>
 </context>
 <context>
     <name>StdCmdSaveAs</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="714"/>
+        <source>Save &amp;As…</source>
+        <translation>另存新檔(&amp;A)…</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="715"/>
+        <source>Saves the active document under a new file name</source>
+        <translation>將作用中檔案以新的檔名儲存</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="665"/>
         <source>Save &amp;As...</source>
@@ -25136,30 +25151,9 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Save the active document under a new file name</source>
         <translation>將作用中檔案以新的檔名儲存</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="714"/>
-        <source>Save &amp;As…</source>
-        <translation>另存新檔(&amp;A)…</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="715"/>
-        <source>Saves the active document under a new file name</source>
-        <translation>將作用中檔案以新的檔名儲存</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdSaveCopy</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="705"/>
-        <source>Save a &amp;Copy...</source>
-        <translation>儲存備份(&amp;C)...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="706"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="708"/>
-        <source>Save a copy of the active document under a new file name</source>
-        <translation>以新的檔案名稱儲存目前檔案的備份</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="743"/>
         <source>Save Cop&amp;y</source>
@@ -25174,6 +25168,17 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="784"/>
         <source>Save a Cop&amp;y...</source>
         <translation>儲存備份(&amp;y)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="705"/>
+        <source>Save a &amp;Copy...</source>
+        <translation>儲存備份(&amp;C)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="706"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="708"/>
+        <source>Save a copy of the active document under a new file name</source>
+        <translation>以新的檔案名稱儲存目前檔案的備份</translation>
     </message>
 </context>
 <context>
@@ -25358,6 +25363,16 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdSelectVisibleObjects</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1118"/>
+        <source>&amp;Select Visible Objects</source>
+        <translation>選取顯示中物體(&amp;S)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1119"/>
+        <source>Selects all visible objects in the active document</source>
+        <translation>於編輯中檔案選取顯示中之物體</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="986"/>
         <source>Select visible objects</source>
         <translation>選取顯示中物體</translation>
@@ -25372,16 +25387,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1114"/>
         <source>&amp;Select visible objects</source>
         <translation>選取顯示中物體(&amp;S)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1118"/>
-        <source>&amp;Select Visible Objects</source>
-        <translation>選取顯示中物體(&amp;S)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1119"/>
-        <source>Selects all visible objects in the active document</source>
-        <translation>於編輯中檔案選取顯示中之物體</translation>
     </message>
 </context>
 <context>
@@ -25415,6 +25420,16 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdShowObjects</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1201"/>
+        <source>Show &amp;All Objects</source>
+        <translation>顯示所有物體(&amp;A)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1202"/>
+        <source>Shows all objects in the document</source>
+        <translation>在檔案中顯示所有物體</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1069"/>
         <source>Show all objects</source>
         <translation>顯示所有物體</translation>
@@ -25432,22 +25447,22 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1201"/>
-        <source>Show &amp;All Objects</source>
-        <translation>顯示所有物體(&amp;A)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1201"/>
         <source>Show &amp;all Objects</source>
         <translation>顯示所有物體(&amp;a)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1202"/>
-        <source>Shows all objects in the document</source>
-        <translation>在檔案中顯示所有物體</translation>
     </message>
 </context>
 <context>
     <name>StdCmdShowSelection</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1062"/>
+        <source>Sho&amp;w Selection</source>
+        <translation>顯示選取內容(&amp;w)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1063"/>
+        <source>Shows all selected objects</source>
+        <translation>顯示所有選取的物體</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="930"/>
         <source>Show selection</source>
@@ -25464,24 +25479,9 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Sho&amp;w selection</source>
         <translation>顯示選取內容(&amp;w)</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1062"/>
-        <source>Sho&amp;w Selection</source>
-        <translation>顯示選取內容(&amp;w)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1063"/>
-        <source>Shows all selected objects</source>
-        <translation>顯示所有選取的物體</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdStatusBar</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandWindow.cpp" line="392"/>
-        <source>Status bar</source>
-        <translation>狀態列</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandWindow.cpp" line="413"/>
         <source>Status Bar</source>
@@ -25492,6 +25492,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandWindow.cpp" line="395"/>
         <source>Toggles the status bar</source>
         <translation>切換狀態列</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandWindow.cpp" line="392"/>
+        <source>Status bar</source>
+        <translation>狀態列</translation>
     </message>
 </context>
 <context>
@@ -25579,11 +25584,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdToggleBreakpoint</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="285"/>
-        <source>Toggle &amp;breakpoint</source>
-        <translation>切換中斷點(&amp;b)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="290"/>
         <source>Toggle &amp;Breakpoint</source>
         <translation>切換中斷點(&amp;B)</translation>
@@ -25606,9 +25606,24 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Add or remove a breakpoint at this position</source>
         <translation>在此位置增加或移除中斷點</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandMacro.cpp" line="285"/>
+        <source>Toggle &amp;breakpoint</source>
+        <translation>切換中斷點(&amp;b)</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdToggleClipPlane</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="595"/>
+        <source>Clippin&amp;g View</source>
+        <translation>裁剪檢視(&amp;g)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="596"/>
+        <source>Toggles clipping of the active view</source>
+        <translation>為目前檢視切換剪裁面板</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="552"/>
         <source>Clipping plane</source>
@@ -25622,22 +25637,22 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="595"/>
-        <source>Clippin&amp;g View</source>
-        <translation>裁剪檢視(&amp;g)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="595"/>
         <source>Clippin&amp;g plane</source>
         <translation>裁剪平面(&amp;g)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="596"/>
-        <source>Toggles clipping of the active view</source>
-        <translation>為目前檢視切換剪裁面板</translation>
     </message>
 </context>
 <context>
     <name>StdCmdToggleFreeze</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandFeat.cpp" line="162"/>
+        <source>Toggle Freeze</source>
+        <translation>切換凍結檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandFeat.cpp" line="152"/>
+        <source>Toggles freeze state of the selected objects. A frozen object is not recomputed when its parents change.</source>
+        <translation>切換所選物件的凍結狀態. 當其父級更改時，凍結物件不會重新計算.</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandFeat.cpp" line="132"/>
         <source>Toggle freeze</source>
@@ -25653,30 +25668,9 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Toggles freeze state of the selected objects. A freezed object is not recomputed when its parents change.</source>
         <translation>切換所選物件的凍結狀態. 當其父級更改時，凍結的物件不會重新計算.</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandFeat.cpp" line="162"/>
-        <source>Toggle Freeze</source>
-        <translation>切換凍結檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandFeat.cpp" line="152"/>
-        <source>Toggles freeze state of the selected objects. A frozen object is not recomputed when its parents change.</source>
-        <translation>切換所選物件的凍結狀態. 當其父級更改時，凍結物件不會重新計算.</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdToggleNavigation</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2004"/>
-        <source>Toggle navigation/Edit mode</source>
-        <translation>切換導航/編輯模式</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2005"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2006"/>
-        <source>Toggle between navigation and edit mode</source>
-        <translation>導航和編輯模式之間切換</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2167"/>
         <source>Toggle Navigation/&amp;Edit Mode</source>
@@ -25692,9 +25686,30 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Toggle navigation/&amp;Edit mode</source>
         <translation>切換導航/編輯模式(&amp;E)</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2004"/>
+        <source>Toggle navigation/Edit mode</source>
+        <translation>切換導航/編輯模式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2005"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2006"/>
+        <source>Toggle between navigation and edit mode</source>
+        <translation>導航和編輯模式之間切換</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdToggleObjects</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1160"/>
+        <source>To&amp;ggle All Objects</source>
+        <translation>切換所有物體(&amp;g)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1161"/>
+        <source>Toggles the visibility of all objects in the active document</source>
+        <translation>切換顯示活動文件中的所有物體的可見性</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1028"/>
         <source>Toggle all objects</source>
@@ -25713,22 +25728,22 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1160"/>
-        <source>To&amp;ggle All Objects</source>
-        <translation>切換所有物體(&amp;g)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1160"/>
         <source>To&amp;ggle all Objects</source>
         <translation>切換所有物體(&amp;g)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1161"/>
-        <source>Toggles the visibility of all objects in the active document</source>
-        <translation>切換顯示活動文件中的所有物體的可見性</translation>
     </message>
 </context>
 <context>
     <name>StdCmdToggleSelectability</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1010"/>
+        <source>Toggle Se&amp;lectability</source>
+        <translation>切換可能選項(&amp;l)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1011"/>
+        <source>Toggles the property of the objects to get selected in the 3D view</source>
+        <translation>切換物體性質於3D檢視中選取</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="883"/>
         <source>Toggle selectability</source>
@@ -25744,16 +25759,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1006"/>
         <source>Toggle se&amp;lectability</source>
         <translation>切換可能選項(&amp;l)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1010"/>
-        <source>Toggle Se&amp;lectability</source>
-        <translation>切換可能選項(&amp;l)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1011"/>
-        <source>Toggles the property of the objects to get selected in the 3D view</source>
-        <translation>切換物體性質於3D檢視中選取</translation>
     </message>
 </context>
 <context>
@@ -25771,11 +25776,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 </context>
 <context>
     <name>StdCmdToggleToolBarLock</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandWindow.cpp" line="352"/>
-        <source>Lock toolbars</source>
-        <translation>鎖定工具列</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandWindow.cpp" line="353"/>
         <source>Lock Toolbars</source>
@@ -25797,6 +25797,11 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandWindow.cpp" line="354"/>
         <source>Locks toolbars so they are no longer moveable</source>
         <translation>鎖定工具列，使其不可移動</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandWindow.cpp" line="352"/>
+        <source>Lock toolbars</source>
+        <translation>鎖定工具列</translation>
     </message>
 </context>
 <context>
@@ -25830,6 +25835,16 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdToggleVisibility</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="868"/>
+        <source>Toggle &amp;Visibility</source>
+        <translation>切換可見性(&amp;V)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="869"/>
+        <source>Toggles the visibility of the selection</source>
+        <translation>切換選取物體的可見性</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="853"/>
         <source>Toggle visibility</source>
         <translation>切換可見性</translation>
@@ -25842,18 +25857,8 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="868"/>
-        <source>Toggle &amp;Visibility</source>
-        <translation>切換可見性(&amp;V)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="868"/>
         <source>Toggle &amp;visibility</source>
         <translation>切換可見性(&amp;v)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="869"/>
-        <source>Toggles the visibility of the selection</source>
-        <translation>切換選取物體的可見性</translation>
     </message>
 </context>
 <context>
@@ -25878,6 +25883,16 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdTransform</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1533"/>
+        <source>Transform</source>
+        <translation>平移</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1535"/>
+        <source>Transforms the selected object</source>
+        <translation>平移所選的物體</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1519"/>
         <source>Transform...</source>
         <translation>平移...</translation>
@@ -25888,29 +25903,9 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Transform the geometry of selected objects</source>
         <translation>所選物體的幾何平移</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1533"/>
-        <source>Transform</source>
-        <translation>平移</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1535"/>
-        <source>Transforms the selected object</source>
-        <translation>平移所選的物體</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdTransformManip</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1639"/>
-        <source>Trans&amp;form</source>
-        <translation>平移(&amp;f)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1610"/>
-        <source>Transforms the selected object in the 3D view</source>
-        <translation>平移於3D檢視中所選物體</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1579"/>
         <source>Transform</source>
@@ -25926,6 +25921,16 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1593"/>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1594"/>
         <source>Transform the selected object in the 3D view</source>
+        <translation>平移於3D檢視中所選物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1639"/>
+        <source>Trans&amp;form</source>
+        <translation>平移(&amp;f)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1610"/>
+        <source>Transforms the selected object in the 3D view</source>
         <translation>平移於3D檢視中所選物體</translation>
     </message>
 </context>
@@ -26052,17 +26057,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdUnitsCalculator</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="778"/>
-        <source>&amp;Units converter...</source>
-        <translation>單位轉換(&amp;U)...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="779"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="781"/>
-        <source>Start the units converter</source>
-        <translation>啟動單位轉換器</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="785"/>
         <source>&amp;Units Converter</source>
         <translation>單位轉換(&amp;U)</translation>
@@ -26082,6 +26076,17 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="823"/>
         <source>Start the units calculator</source>
         <translation>啟動單位計算機</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="778"/>
+        <source>&amp;Units converter...</source>
+        <translation>單位轉換(&amp;U)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="779"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="781"/>
+        <source>Start the units converter</source>
+        <translation>啟動單位轉換器</translation>
     </message>
 </context>
 <context>
@@ -26140,16 +26145,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdVarSet</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStructure.cpp" line="139"/>
-        <source>Create a variable set</source>
-        <translation>建立變數集合</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStructure.cpp" line="140"/>
-        <source>A Variable Set is an object that maintains a set of properties to be used as variables.</source>
-        <translation>變數集合是一個物件，它維護一組要用作變數的屬性.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStructure.cpp" line="169"/>
         <source>Variable Set</source>
         <translation>變數集合</translation>
@@ -26158,6 +26153,16 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStructure.cpp" line="170"/>
         <source>Creates a variable set, which is an object that maintains a set of properties to be used as variables</source>
         <translation>建立變數集合，變數集合是維護一組可用作變數屬性的物件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStructure.cpp" line="139"/>
+        <source>Create a variable set</source>
+        <translation>建立變數集合</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStructure.cpp" line="140"/>
+        <source>A Variable Set is an object that maintains a set of properties to be used as variables.</source>
+        <translation>變數集合是一個物件，它維護一組要用作變數的屬性.</translation>
     </message>
 </context>
 <context>
@@ -26177,10 +26182,9 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdViewBottom</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1215"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1217"/>
-        <source>Set to bottom view</source>
-        <translation>設定為底部檢視</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1214"/>
+        <source>Bottom</source>
+        <translation>底視圖</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1299"/>
@@ -26193,13 +26197,24 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>設定為底部檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1214"/>
-        <source>Bottom</source>
-        <translation>底視圖</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1215"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1217"/>
+        <source>Set to bottom view</source>
+        <translation>設定為底部檢視</translation>
     </message>
 </context>
 <context>
     <name>StdCmdViewCreate</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2138"/>
+        <source>New 3D View</source>
+        <translation>新增 3d 檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2139"/>
+        <source>Opens a new 3D view window for the active document</source>
+        <translation>透過啟用文件建立一個新的3D檢視視窗</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1975"/>
         <source>Create new view</source>
@@ -26211,24 +26226,13 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Creates a new view window for the active document</source>
         <translation>透過啟用文件建立一個新檢視視窗</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2138"/>
-        <source>New 3D View</source>
-        <translation>新增 3d 檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2139"/>
-        <source>Opens a new 3D view window for the active document</source>
-        <translation>透過啟用文件建立一個新的3D檢視視窗</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdViewDimetric</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1383"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1385"/>
-        <source>Set to dimetric view</source>
-        <translation>設定為二維圖視景</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1382"/>
+        <source>Dimetric</source>
+        <translation>二維圖</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1468"/>
@@ -26241,18 +26245,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>設定為二維圖視景</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1382"/>
-        <source>Dimetric</source>
-        <translation>二維圖</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1383"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1385"/>
+        <source>Set to dimetric view</source>
+        <translation>設定為二維圖視景</translation>
     </message>
 </context>
 <context>
     <name>StdCmdViewExample1</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2189"/>
-        <source>Inventor example #1</source>
-        <translation>創作範例 #1</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2262"/>
         <source>Inventor Example #1</source>
@@ -26264,14 +26264,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Shows a 3D texture with manipulator</source>
         <translation>顯示3D紋理及控制面板</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2189"/>
+        <source>Inventor example #1</source>
+        <translation>創作範例 #1</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewExample2</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2217"/>
-        <source>Inventor example #2</source>
-        <translation>創作範例 #2</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2290"/>
         <source>Inventor Example #2</source>
@@ -26283,9 +26283,24 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Shows spheres and drag-lights</source>
         <translation>顯示範圍和拖燈</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2217"/>
+        <source>Inventor example #2</source>
+        <translation>創作範例 #2</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewExample3</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2318"/>
+        <source>Inventor Example #3</source>
+        <translation>創作範例 #3</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2319"/>
+        <source>Shows an animated texture</source>
+        <translation>顯示動畫的紋理</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2245"/>
         <source>Inventor example #3</source>
@@ -26297,19 +26312,19 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Shows a animated texture</source>
         <translation>顯示動畫的紋理</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2318"/>
-        <source>Inventor Example #3</source>
-        <translation>創作範例 #3</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2319"/>
-        <source>Shows an animated texture</source>
-        <translation>顯示動畫的紋理</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdViewFitAll</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1568"/>
+        <source>&amp;Fit All</source>
+        <translation>顯示全部(&amp;F)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1569"/>
+        <source>Fits all content into the 3D view</source>
+        <translation>在3D檢視畫面上容納整個內容</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1478"/>
         <source>Fit all</source>
@@ -26326,19 +26341,19 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>&amp;Fit all</source>
         <translation>顯示全部(&amp;F)</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1568"/>
-        <source>&amp;Fit All</source>
-        <translation>顯示全部(&amp;F)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1569"/>
-        <source>Fits all content into the 3D view</source>
-        <translation>在3D檢視畫面上容納整個內容</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdViewFitSelection</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1599"/>
+        <source>Fit &amp;Selection</source>
+        <translation>顯示所選區域(&amp;S)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1600"/>
+        <source>Fits the selected content into the 3D view</source>
+        <translation>顯示所選內容於3D檢視</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1509"/>
         <source>Fit selection</source>
@@ -26355,24 +26370,13 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Fit &amp;selection</source>
         <translation>顯示所選區域(&amp;s)</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1599"/>
-        <source>Fit &amp;Selection</source>
-        <translation>顯示所選區域(&amp;S)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1600"/>
-        <source>Fits the selected content into the 3D view</source>
-        <translation>顯示所選內容於3D檢視</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdViewFront</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1239"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1241"/>
-        <source>Set to front view</source>
-        <translation>設定為正面檢視</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1238"/>
+        <source>Front</source>
+        <translation>正視圖</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1323"/>
@@ -26385,18 +26389,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>設定為正面檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1238"/>
-        <source>Front</source>
-        <translation>正視圖</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1239"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1241"/>
+        <source>Set to front view</source>
+        <translation>設定為正面檢視</translation>
     </message>
 </context>
 <context>
     <name>StdCmdViewGroup</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1625"/>
-        <source>Standard &amp;views</source>
-        <translation>標準檢視(&amp;v)</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1629"/>
         <source>Standard &amp;Views</source>
@@ -26418,14 +26418,18 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Change to a standard view</source>
         <translation>變更為標準檢視</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1625"/>
+        <source>Standard &amp;views</source>
+        <translation>標準檢視(&amp;v)</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewHome</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1187"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1189"/>
-        <source>Set to default home view</source>
-        <translation>設定為預設主視景</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1186"/>
+        <source>Home</source>
+        <translation>主視景</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1271"/>
@@ -26438,18 +26442,18 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>設定為預設主視景</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1186"/>
-        <source>Home</source>
-        <translation>主視景</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1187"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1189"/>
+        <source>Set to default home view</source>
+        <translation>設定為預設主視景</translation>
     </message>
 </context>
 <context>
     <name>StdCmdViewIsometric</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1359"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1361"/>
-        <source>Set to isometric view</source>
-        <translation>設定為立體正投影檢視</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1358"/>
+        <source>Isometric</source>
+        <translation>等角立體</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1444"/>
@@ -26462,24 +26466,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>設定為立體正投影檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1358"/>
-        <source>Isometric</source>
-        <translation>等角立體</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1359"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1361"/>
+        <source>Set to isometric view</source>
+        <translation>設定為立體正投影檢視</translation>
     </message>
 </context>
 <context>
     <name>StdCmdViewIvIssueCamPos</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2416"/>
-        <source>Issue camera position</source>
-        <translation>設定攝影位置</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2417"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2419"/>
-        <source>Issue the camera position to the console and to a macro, to easily recall this position</source>
-        <translation>於控制台及巨集中紀錄攝影機位置,以方便回復</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2489"/>
         <source>Issue Camera &amp;Position</source>
@@ -26495,14 +26489,24 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Issue camera &amp;position</source>
         <translation>設定攝影位置(&amp;p)</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2416"/>
+        <source>Issue camera position</source>
+        <translation>設定攝影位置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2417"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2419"/>
+        <source>Issue the camera position to the console and to a macro, to easily recall this position</source>
+        <translation>於控制台及巨集中紀錄攝影機位置,以方便回復</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewIvStereoInterleavedColumns</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2388"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2390"/>
-        <source>Switch stereo viewing to Interleaved Columns</source>
-        <translation>轉換立體檢視為行交錯</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2387"/>
+        <source>Stereo Interleaved Columns</source>
+        <translation>立體插入列</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2465"/>
@@ -26515,18 +26519,18 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>轉換立體檢視為行交錯</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2387"/>
-        <source>Stereo Interleaved Columns</source>
-        <translation>立體插入列</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2388"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2390"/>
+        <source>Switch stereo viewing to Interleaved Columns</source>
+        <translation>轉換立體檢視為行交錯</translation>
     </message>
 </context>
 <context>
     <name>StdCmdViewIvStereoInterleavedRows</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2360"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2362"/>
-        <source>Switch stereo viewing to Interleaved Rows</source>
-        <translation>轉換立體檢視為列交錯</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2359"/>
+        <source>Stereo Interleaved Rows</source>
+        <translation>立體列交錯</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2437"/>
@@ -26539,17 +26543,17 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>轉換立體檢視為列交錯</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2359"/>
-        <source>Stereo Interleaved Rows</source>
-        <translation>立體列交錯</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2360"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2362"/>
+        <source>Switch stereo viewing to Interleaved Rows</source>
+        <translation>轉換立體檢視為列交錯</translation>
     </message>
 </context>
 <context>
     <name>StdCmdViewIvStereoOff</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2275"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2277"/>
-        <source>Switch stereo viewing off</source>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2274"/>
+        <source>Stereo Off</source>
         <translation>關閉立體影像</translation>
     </message>
     <message>
@@ -26563,24 +26567,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>關閉立體影像</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2274"/>
-        <source>Stereo Off</source>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2275"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2277"/>
+        <source>Switch stereo viewing off</source>
         <translation>關閉立體影像</translation>
     </message>
 </context>
 <context>
     <name>StdCmdViewIvStereoQuadBuff</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2331"/>
-        <source>Stereo quad buffer</source>
-        <translation>四組立體緩衝功能</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2332"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2334"/>
-        <source>Switch stereo viewing to quad buffer</source>
-        <translation>轉換立體檢視為四組緩衝功能</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2404"/>
         <source>Stereo &amp;Quad Buffer</source>
@@ -26596,20 +26590,20 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Stereo &amp;quad buffer</source>
         <translation>四組立體緩衝功能(&amp;q)</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2331"/>
+        <source>Stereo quad buffer</source>
+        <translation>四組立體緩衝功能</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2332"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2334"/>
+        <source>Switch stereo viewing to quad buffer</source>
+        <translation>轉換立體檢視為四組緩衝功能</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewIvStereoRedGreen</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2303"/>
-        <source>Stereo red/cyan</source>
-        <translation>立體 紅/青</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2304"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2306"/>
-        <source>Switch stereo viewing to red/cyan</source>
-        <translation>切換立體檢視至 紅/青</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2376"/>
         <source>Stereo Re&amp;d/Cyan</source>
@@ -26625,14 +26619,24 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Stereo re&amp;d/cyan</source>
         <translation>立體 紅/青(&amp;d)</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2303"/>
+        <source>Stereo red/cyan</source>
+        <translation>立體 紅/青</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2304"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2306"/>
+        <source>Switch stereo viewing to red/cyan</source>
+        <translation>切換立體檢視至 紅/青</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdViewLeft</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1263"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1265"/>
-        <source>Set to left view</source>
-        <translation>設定為左面檢視</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1262"/>
+        <source>Left</source>
+        <translation>左視圖</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1347"/>
@@ -26645,18 +26649,18 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>設定為左面檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1262"/>
-        <source>Left</source>
-        <translation>左視圖</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1263"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1265"/>
+        <source>Set to left view</source>
+        <translation>設定為左面檢視</translation>
     </message>
 </context>
 <context>
     <name>StdCmdViewRear</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1287"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1289"/>
-        <source>Set to rear view</source>
-        <translation>設定為背面檢視</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1286"/>
+        <source>Rear</source>
+        <translation>後視圖</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1371"/>
@@ -26669,13 +26673,24 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>設定為背面檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1286"/>
-        <source>Rear</source>
-        <translation>後視圖</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1287"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1289"/>
+        <source>Set to rear view</source>
+        <translation>設定為背面檢視</translation>
     </message>
 </context>
 <context>
     <name>StdCmdViewRestoreCamera</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="268"/>
+        <source>Restore Saved Camera</source>
+        <translation>恢復已儲存的相機視野</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="269"/>
+        <source>Restores the saved camera settings</source>
+        <translation>恢復已儲存的相機視野設定</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="234"/>
         <source>Restore saved camera</source>
@@ -26687,24 +26702,13 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Restore saved camera settings</source>
         <translation>恢復已儲存的相機視野設定</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="268"/>
-        <source>Restore Saved Camera</source>
-        <translation>恢復已儲存的相機視野</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="269"/>
-        <source>Restores the saved camera settings</source>
-        <translation>恢復已儲存的相機視野設定</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdViewRight</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1311"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1313"/>
-        <source>Set to right view</source>
-        <translation>設定為右面檢視</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1310"/>
+        <source>Right</source>
+        <translation>右視圖</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1395"/>
@@ -26717,18 +26721,18 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>設定為右面檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1310"/>
-        <source>Right</source>
-        <translation>右視圖</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1311"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1313"/>
+        <source>Set to right view</source>
+        <translation>設定為右面檢視</translation>
     </message>
 </context>
 <context>
     <name>StdCmdViewRotateLeft</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1429"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1431"/>
-        <source>Rotate the view by 90° counter-clockwise</source>
-        <translation>逆時針90°旋轉檢視</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1428"/>
+        <source>Rotate Left</source>
+        <translation>向左旋轉</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1514"/>
@@ -26741,13 +26745,24 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>逆時針90°旋轉檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1428"/>
-        <source>Rotate Left</source>
-        <translation>向左旋轉</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1429"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1431"/>
+        <source>Rotate the view by 90° counter-clockwise</source>
+        <translation>逆時針90°旋轉檢視</translation>
     </message>
 </context>
 <context>
     <name>StdCmdViewRotateRight</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1543"/>
+        <source>Rotates &amp;Right</source>
+        <translation>向右旋轉(&amp;R)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1544"/>
+        <source>Rotates the view by 90° clockwise</source>
+        <translation>順時針90°旋轉檢視</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1453"/>
         <source>Rotate Right</source>
@@ -26764,19 +26779,19 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Rotate &amp;Right</source>
         <translation>向右旋轉(&amp;R)</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1543"/>
-        <source>Rotates &amp;Right</source>
-        <translation>向右旋轉(&amp;R)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1544"/>
-        <source>Rotates the view by 90° clockwise</source>
-        <translation>順時針90°旋轉檢視</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdViewSaveCamera</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="242"/>
+        <source>Save Current Camera</source>
+        <translation>儲存相機視野</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="243"/>
+        <source>Saves the current camera settings</source>
+        <translation>儲存相機視野設定</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="208"/>
         <source>Save current camera</source>
@@ -26788,24 +26803,13 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Save current camera settings</source>
         <translation>儲存相機視野設定</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="242"/>
-        <source>Save Current Camera</source>
-        <translation>儲存相機視野</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="243"/>
-        <source>Saves the current camera settings</source>
-        <translation>儲存相機視野設定</translation>
-    </message>
 </context>
 <context>
     <name>StdCmdViewTop</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1335"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1337"/>
-        <source>Set to top view</source>
-        <translation>設定為上面檢視</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1334"/>
+        <source>Top</source>
+        <translation>上視圖</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1419"/>
@@ -26818,18 +26822,18 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>設定為上面檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1334"/>
-        <source>Top</source>
-        <translation>上視圖</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1335"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1337"/>
+        <source>Set to top view</source>
+        <translation>設定為上面檢視</translation>
     </message>
 </context>
 <context>
     <name>StdCmdViewTrimetric</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1406"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1408"/>
-        <source>Set to trimetric view</source>
-        <translation>設定為不等角立體檢視</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1405"/>
+        <source>Trimetric</source>
+        <translation>不等角立體</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1491"/>
@@ -26842,13 +26846,24 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>設定為不等角立體檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1405"/>
-        <source>Trimetric</source>
-        <translation>不等角立體</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1406"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1408"/>
+        <source>Set to trimetric view</source>
+        <translation>設定為不等角立體檢視</translation>
     </message>
 </context>
 <context>
     <name>StdCmdViewVR</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1895"/>
+        <source>FreeCAD VR</source>
+        <translation>FreeCAD-虛擬實境</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1896"/>
+        <source>Extends the FreeCAD 3D Window to a VR device</source>
+        <translation>延伸FreeCAD 3D視窗到 VR裝置</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1774"/>
         <source>FreeCAD-VR</source>
@@ -26859,16 +26874,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1777"/>
         <source>Extend the FreeCAD 3D Window to a Oculus Rift</source>
         <translation>延伸FreeCAD 3D視窗到 Oculus Rift</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1895"/>
-        <source>FreeCAD VR</source>
-        <translation>FreeCAD-虛擬實境</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1896"/>
-        <source>Extends the FreeCAD 3D Window to a VR device</source>
-        <translation>延伸FreeCAD 3D視窗到 VR裝置</translation>
     </message>
 </context>
 <context>
@@ -26922,11 +26927,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdCmdWindowsMenu</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandWindow.cpp" line="417"/>
-        <source>Activate window</source>
-        <translation>啟動視窗</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandWindow.cpp" line="459"/>
         <source>Activate Window</source>
         <translation>啟動視窗</translation>
@@ -26938,14 +26938,18 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Activates this window</source>
         <translation>啟動此視窗</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandWindow.cpp" line="417"/>
+        <source>Activate window</source>
+        <translation>啟動視窗</translation>
+    </message>
 </context>
 <context>
     <name>StdCmdWorkbench</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="69"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="71"/>
-        <source>Switch between workbenches</source>
-        <translation>工作台之間切換</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="68"/>
+        <source>Workbench</source>
+        <translation>工作台</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="75"/>
@@ -26958,9 +26962,10 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>工作台之間切換</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="68"/>
-        <source>Workbench</source>
-        <translation>工作台</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="69"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandStd.cpp" line="71"/>
+        <source>Switch between workbenches</source>
+        <translation>工作台之間切換</translation>
     </message>
 </context>
 <context>
@@ -26985,11 +26990,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdOrthographicCamera</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="98"/>
-        <source>Orthographic view</source>
-        <translation>正投影檢視</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="132"/>
         <source>Orthographic View</source>
         <translation>正投影檢視</translation>
@@ -27000,14 +27000,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Switches to orthographic view mode</source>
         <translation>切換到正投影模式</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="98"/>
+        <source>Orthographic view</source>
+        <translation>正投影檢視</translation>
+    </message>
 </context>
 <context>
     <name>StdPerspectiveCamera</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="148"/>
-        <source>Perspective view</source>
-        <translation>透視檢視</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="182"/>
         <source>Perspective View</source>
@@ -27019,20 +27019,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Switches to perspective view mode</source>
         <translation>切換到透檢視模式</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="148"/>
+        <source>Perspective view</source>
+        <translation>透視檢視</translation>
+    </message>
 </context>
 <context>
     <name>StdRecallWorkingView</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3711"/>
-        <source>Recall working view</source>
-        <translation>調用之前的工作檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3712"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3713"/>
-        <source>Recall previously stored temporary working view</source>
-        <translation>調用之前儲存的暫時工作檢視</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3906"/>
         <source>R&amp;ecall Working View</source>
@@ -27048,20 +27042,20 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>R&amp;ecall working view</source>
         <translation>調用之前的工作檢視(&amp;e)</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3711"/>
+        <source>Recall working view</source>
+        <translation>調用之前的工作檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3712"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3713"/>
+        <source>Recall previously stored temporary working view</source>
+        <translation>調用之前儲存的暫時工作檢視</translation>
+    </message>
 </context>
 <context>
     <name>StdStoreWorkingView</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3681"/>
-        <source>Store working view</source>
-        <translation>儲存工作檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3682"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3683"/>
-        <source>Store a document-specific temporary working view</source>
-        <translation>儲存特定文件的暫時工作檢視</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3876"/>
         <source>St&amp;ore Working View</source>
@@ -27076,6 +27070,17 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3884"/>
         <source>St&amp;ore working view</source>
         <translation>儲存工作檢視(&amp;o)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3681"/>
+        <source>Store working view</source>
+        <translation>儲存工作檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3682"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3683"/>
+        <source>Store a document-specific temporary working view</source>
+        <translation>儲存特定文件的暫時工作檢視</translation>
     </message>
 </context>
 <context>
@@ -27162,6 +27167,16 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdTreePreSelection</name>
     <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3457"/>
+        <source>&amp;4 Preselection</source>
+        <translation>&amp;4 預先選擇</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3449"/>
+        <source>Preselects the object in 3D view when hovering the cursor over the tree item</source>
+        <translation>將滑鼠游標懸停在樹項目上時在 3D 檢視中預選物體</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3449"/>
         <source>Pre-selects the object in 3D view when hovering the cursor over the tree item</source>
         <translation>將滑鼠游標懸停在樹項目上時在 3D 檢視中預選物體</translation>
@@ -27169,11 +27184,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3456"/>
         <source>&amp;4 Pre-selection</source>
-        <translation>&amp;4 預先選擇</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3457"/>
-        <source>&amp;4 Preselection</source>
         <translation>&amp;4 預先選擇</translation>
     </message>
     <message>
@@ -27190,11 +27200,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3614"/>
         <source>Preselect the object in 3D view when mouse over the tree item</source>
         <translation>將滑鼠游標停在樹狀圖項目上時，在3D視窗中預選取該物體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="3449"/>
-        <source>Preselects the object in 3D view when hovering the cursor over the tree item</source>
-        <translation>將滑鼠游標懸停在樹項目上時在 3D 檢視中預選物體</translation>
     </message>
 </context>
 <context>
@@ -27370,19 +27375,6 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
 <context>
     <name>StdViewBoxZoom</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2625"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2627"/>
-        <source>Activate the box zoom tool</source>
-        <translation>啟動框縮放工具</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2669"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2670"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2672"/>
-        <source>Box zoom</source>
-        <translation>框選縮放</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2711"/>
         <source>&amp;Box Zoom</source>
         <translation>框選縮放(&amp;B)</translation>
@@ -27397,14 +27389,26 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>&amp;Box zoom</source>
         <translation>框選縮放(&amp;B)</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2625"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2627"/>
+        <source>Activate the box zoom tool</source>
+        <translation>啟動框縮放工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2669"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2670"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2672"/>
+        <source>Box zoom</source>
+        <translation>框選縮放</translation>
+    </message>
 </context>
 <context>
     <name>StdViewDock</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1541"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1543"/>
-        <source>Display the active view either in fullscreen, in undocked or docked mode</source>
-        <translation>無論是在全螢幕，在未嵌入或嵌入模式中均顯示目前檢視</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1540"/>
+        <source>Docked</source>
+        <translation>嵌入</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1664"/>
@@ -27417,13 +27421,24 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>無論是在全螢幕，在未嵌入或嵌入模式中均顯示目前檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1540"/>
-        <source>Docked</source>
-        <translation>嵌入</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1541"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1543"/>
+        <source>Display the active view either in fullscreen, in undocked or docked mode</source>
+        <translation>無論是在全螢幕，在未嵌入或嵌入模式中均顯示目前檢視</translation>
     </message>
 </context>
 <context>
     <name>StdViewDockUndockFullscreen</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1788"/>
+        <source>D&amp;ocument Window</source>
+        <translation>檔案視窗(&amp;o)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1789"/>
+        <source>Displays the active view either in fullscreen, undocked, or docked mode</source>
+        <translation>無論是在全螢幕，在未嵌入或嵌入模式中均顯示目前檢視</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1660"/>
         <source>Document window</source>
@@ -27440,24 +27455,13 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>D&amp;ocument window</source>
         <translation>檔案視窗(&amp;o)</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1788"/>
-        <source>D&amp;ocument Window</source>
-        <translation>檔案視窗(&amp;o)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1789"/>
-        <source>Displays the active view either in fullscreen, undocked, or docked mode</source>
-        <translation>無論是在全螢幕，在未嵌入或嵌入模式中均顯示目前檢視</translation>
-    </message>
 </context>
 <context>
     <name>StdViewFullscreen</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1631"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1633"/>
-        <source>Display the active view either in fullscreen, in undocked or docked mode</source>
-        <translation>無論是在全螢幕，在未嵌入或嵌入模式中均顯示目前檢視</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1630"/>
+        <source>Fullscreen</source>
+        <translation>全螢幕</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1754"/>
@@ -27470,18 +27474,14 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>無論是在全螢幕，在未嵌入或嵌入模式中均顯示目前檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1630"/>
-        <source>Fullscreen</source>
-        <translation>全螢幕</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1631"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1633"/>
+        <source>Display the active view either in fullscreen, in undocked or docked mode</source>
+        <translation>無論是在全螢幕，在未嵌入或嵌入模式中均顯示目前檢視</translation>
     </message>
 </context>
 <context>
     <name>StdViewLoadImage</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1983"/>
-        <source>Load image...</source>
-        <translation>載入影像...</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2092"/>
         <source>&amp;Load Image…</source>
@@ -27498,9 +27498,25 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Loads an image</source>
         <translation>載入一個影像</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1983"/>
+        <source>Load image...</source>
+        <translation>載入影像...</translation>
+    </message>
 </context>
 <context>
     <name>StdViewScreenShot</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1924"/>
+        <source>Save &amp;Image…</source>
+        <translation>儲存影像(&amp;I)...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1805"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1807"/>
+        <source>Creates a screenshot of the active view</source>
+        <translation>建立目前檢視畫面的螢幕截圖</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1804"/>
         <source>Save picture...</source>
@@ -27512,29 +27528,17 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>儲存影像...</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1924"/>
-        <source>Save &amp;Image…</source>
-        <translation>儲存影像(&amp;I)...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1926"/>
         <source>Save &amp;image...</source>
         <translation>儲存影像(&amp;i)...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1805"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1807"/>
-        <source>Creates a screenshot of the active view</source>
-        <translation>建立目前檢視畫面的螢幕截圖</translation>
     </message>
 </context>
 <context>
     <name>StdViewUndock</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1570"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1572"/>
-        <source>Display the active view either in fullscreen, in undocked or docked mode</source>
-        <translation>無論是在全螢幕，在未嵌入或嵌入模式中均顯示目前檢視</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1569"/>
+        <source>Undocked</source>
+        <translation>未嵌入</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1693"/>
@@ -27547,13 +27551,21 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>無論是在全螢幕，在未嵌入或嵌入模式中均顯示目前檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1569"/>
-        <source>Undocked</source>
-        <translation>未嵌入</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1570"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="1572"/>
+        <source>Display the active view either in fullscreen, in undocked or docked mode</source>
+        <translation>無論是在全螢幕，在未嵌入或嵌入模式中均顯示目前檢視</translation>
     </message>
 </context>
 <context>
     <name>StdViewZoomIn</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2466"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2467"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2469"/>
+        <source>Zoom In</source>
+        <translation>放大</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2544"/>
         <source>Zoom &amp;In</source>
@@ -27570,21 +27582,15 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <source>Increases the zoom factor by a fixed amount</source>
         <translation>以固定數來增加縮放比例</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2466"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2467"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2469"/>
-        <source>Zoom In</source>
-        <translation>放大</translation>
-    </message>
 </context>
 <context>
     <name>StdViewZoomOut</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2459"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2461"/>
-        <source>Decrease the zoom factor by a fixed amount</source>
-        <translation>將縮放係數減小固定量</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2499"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2500"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2502"/>
+        <source>Zoom Out</source>
+        <translation>縮小</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2573"/>
@@ -27597,15 +27603,29 @@ It is meant to arrange objects that have a Part TopoShape, like Part Primitives,
         <translation>將縮放係數減小固定量</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2499"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2500"/>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2502"/>
-        <source>Zoom Out</source>
-        <translation>縮小</translation>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2459"/>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="2461"/>
+        <source>Decrease the zoom factor by a fixed amount</source>
+        <translation>將縮放係數減小固定量</translation>
     </message>
 </context>
 <context>
     <name>Std_Delete</name>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1408"/>
+        <source>The following referencing objects might break.
+
+Continue?
+</source>
+        <translation>以下引用物體可能會中斷.
+要繼續嗎?
+</translation>
+    </message>
+    <message>
+        <location filename="../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1534"/>
+        <source>Object Dependencies</source>
+        <translation>物體相依</translation>
+    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1382"/>
         <source>The following referencing objects might break.
@@ -27626,32 +27646,17 @@ Are you sure you want to continue?
         <source>Object dependencies</source>
         <translation>物體相依</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1408"/>
-        <source>The following referencing objects might break.
-
-Continue?
-</source>
-        <translation>以下引用物體可能會中斷.
-要繼續嗎?
-</translation>
-    </message>
-    <message>
-        <location filename="../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1534"/>
-        <source>Object Dependencies</source>
-        <translation>物體相依</translation>
-    </message>
 </context>
 <context>
     <name>Std_DependencyGraph</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="575"/>
-        <source>Dependency graph</source>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="593"/>
+        <source>Dependency Graph</source>
         <translation>關係圖</translation>
     </message>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="593"/>
-        <source>Dependency Graph</source>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="575"/>
+        <source>Dependency graph</source>
         <translation>關係圖</translation>
     </message>
 </context>
@@ -27661,6 +27666,11 @@ Continue?
         <location filename="../../../FreeCAD-1.1.0/src/Gui/CommandView.cpp" line="779"/>
         <source>&amp;1 As Is</source>
         <translation>&amp;1 如同</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="712"/>
+        <source>As is</source>
+        <translation>如同</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="714"/>
@@ -27681,6 +27691,11 @@ Continue?
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="727"/>
         <source>Hidden line</source>
         <translation>隱藏線段</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="727"/>
+        <source>&amp;1 As is</source>
+        <translation>&amp;1 如同</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="732"/>
@@ -27721,11 +27736,6 @@ Continue?
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="719"/>
         <source>Points mode</source>
         <translation>點模式</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="712"/>
-        <source>As is</source>
-        <translation>如同</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="737"/>
@@ -27777,11 +27787,6 @@ Continue?
         <source>Flat lines mode</source>
         <translation>框線模式</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="727"/>
-        <source>&amp;1 As is</source>
-        <translation>&amp;1 如同</translation>
-    </message>
 </context>
 <context>
     <name>Std_DuplicateSelection</name>
@@ -27789,13 +27794,6 @@ Continue?
         <location filename="../../../FreeCAD-1.1.0/src/Gui/CommandDoc.cpp" line="1344"/>
         <source>Object Dependencies</source>
         <translation>物體相依</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1264"/>
-        <source>To link to external objects, the document must be saved at least once.
-Save the document now?</source>
-        <translation>要連結到外部物體，文件必須至少儲存一次.
-現在要儲存文件嗎?</translation>
     </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1225"/>
@@ -27809,6 +27807,13 @@ Do you want to save the document now?</source>
         <translation>要連結到外部物體，文件必須至少儲存一次.
 您現在要儲存文件嗎?</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1264"/>
+        <source>To link to external objects, the document must be saved at least once.
+Save the document now?</source>
+        <translation>要連結到外部物體，文件必須至少儲存一次.
+現在要儲存文件嗎?</translation>
+    </message>
 </context>
 <context>
     <name>Std_Group</name>
@@ -27821,17 +27826,6 @@ Do you want to save the document now?</source>
 <context>
     <name>Std_Refresh</name>
     <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1494"/>
-        <source>The document contains dependency cycles.
-Please check the Report View for more details.
-
-Do you still want to proceed?</source>
-        <translation>該文件包含依賴循環.
-請檢查報告視窗以獲取更多詳細資訊.
-
-你還想繼續嗎?</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1509"/>
         <source>The document contains dependency cycles.
 Check the report view for more details.
@@ -27842,24 +27836,20 @@ Proceed?</source>
 
 繼續?</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="1494"/>
+        <source>The document contains dependency cycles.
+Please check the Report View for more details.
+
+Do you still want to proceed?</source>
+        <translation>該文件包含依賴循環.
+請檢查報告視窗以獲取更多詳細資訊.
+
+你還想繼續嗎?</translation>
+    </message>
 </context>
 <context>
     <name>Std_Revert</name>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="779"/>
-        <source>Revert document</source>
-        <translation>恢復檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="780"/>
-        <source>This will discard all the changes since last file save.</source>
-        <translation>這將會放棄自前次儲存檔案後所有的變更.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="781"/>
-        <source>Do you want to continue?</source>
-        <translation>您要繼續嗎?</translation>
-    </message>
     <message>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="812"/>
         <source>Revert Document</source>
@@ -27874,6 +27864,21 @@ Proceed?</source>
         <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="814"/>
         <source>Continue?</source>
         <translation>繼續?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="779"/>
+        <source>Revert document</source>
+        <translation>恢復檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="780"/>
+        <source>This will discard all the changes since last file save.</source>
+        <translation>這將會放棄自前次儲存檔案後所有的變更.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../media/ERP/sources/FreeCAD-0.22.0-git/src/Gui/CommandDoc.cpp" line="781"/>
+        <source>Do you want to continue?</source>
+        <translation>您要繼續嗎?</translation>
     </message>
 </context>
 <context>

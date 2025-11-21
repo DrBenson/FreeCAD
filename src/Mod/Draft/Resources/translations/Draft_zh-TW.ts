@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -2534,21 +2534,6 @@ A Link array is more efficient when creating multiple copies, but it cannot be f
         <translation>切換成線性模式</translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskPanel_OrthoArray.ui" line="44"/>
-        <source>Toggle between Orthogonal mode and Linear mode. In Linear mode, you can select which axis to use.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskPanel_OrthoArray.ui" line="47"/>
-        <source>Axis mode</source>
-        <translation>軸座標模式</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskPanel_OrthoArray.ui" line="53"/>
-        <source>Switch to linear mode</source>
-        <translation>切換成線性模式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskPanel_OrthoArray.ui" line="65"/>
         <source>X axis</source>
         <translation>X 軸</translation>
@@ -2608,6 +2593,21 @@ Negative values will result in copies produced in the negative direction.</sourc
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskPanel_OrthoArray.ui" line="355"/>
         <source>Z Intervals</source>
         <translation>Z 間隙</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskPanel_OrthoArray.ui" line="44"/>
+        <source>Toggle between Orthogonal mode and Linear mode. In Linear mode, you can select which axis to use.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskPanel_OrthoArray.ui" line="47"/>
+        <source>Axis mode</source>
+        <translation>軸座標模式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskPanel_OrthoArray.ui" line="53"/>
+        <source>Switch to linear mode</source>
+        <translation>切換成線性模式</translation>
     </message>
 </context>
 <context>
@@ -4626,11 +4626,6 @@ shape. Best for viewing very large files with maximum performance.</source>
         <translation>圖樣</translation>
     </message>
     <message>
-        <location filename="../ui/dialogHatch.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../ui/dialogHatch.ui" line="44"/>
         <source>Scale</source>
         <translation>縮放</translation>
@@ -4820,6 +4815,21 @@ Annotation scale widget. If the scale is 1:100 the multiplier is 100.</source>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="285"/>
         <source>Texts</source>
         <translation>文字</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="40"/>
+        <source>Save the current style as a preset...</source>
+        <translation>將目前樣式儲存為預設...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="56"/>
+        <source>Shapes</source>
+        <translation>造型</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="63"/>
+        <source>Shape appearance</source>
+        <translation>造形外觀</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="228"/>
@@ -5328,6 +5338,13 @@ of the buttons above</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../Resources/ui/TaskSelectPlane.ui" line="20"/>
+        <source>Select 3 vertices, one or more shapes or a WP Proxy. Then confirm by clicking in the 3D view.
+Or choose one of the options below.</source>
+        <translation>選擇 3 個頂點、一個或多個形狀或 WP 代理程式. 然後透過點擊 3D 檢視進行確認.
+或選擇以下選項之一.</translation>
+    </message>
+    <message>
         <location filename="../../Resources/ui/TaskSelectPlane.ui" line="135"/>
         <source>Or select a single vertex to move the current working plane without changing its orientation. Then press the button below.</source>
         <translation>或選擇單一頂點來移動目前工作平面而不改變其方向. 然後按下下面的按鈕.</translation>
@@ -5405,13 +5422,6 @@ will be moved to the center of the view.</source>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/TaskSelectPlane.ui" line="265"/>
         <source>Center View</source>
         <translation>中間視角</translation>
-    </message>
-    <message>
-        <location filename="../../Resources/ui/TaskSelectPlane.ui" line="20"/>
-        <source>Select 3 vertices, one or more shapes or a WP Proxy. Then confirm by clicking in the 3D view.
-Or choose one of the options below.</source>
-        <translation>選擇 3 個頂點、一個或多個形狀或 WP 代理程式. 然後透過點擊 3D 檢視進行確認.
-或選擇以下選項之一.</translation>
     </message>
     <message>
         <location filename="../../Resources/ui/TaskSelectPlane.ui" line="264"/>
@@ -5549,19 +5559,9 @@ value by using the [ and ] keys while drawing</source>
         <translation>前一個</translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="40"/>
-        <source>Save the current style as a preset...</source>
-        <translation>將目前樣式儲存為預設...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="56"/>
-        <source>Shapes</source>
-        <translation>造型</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/TaskPanel_SetStyle.ui" line="63"/>
-        <source>Shape appearance</source>
-        <translation>造形外觀</translation>
+        <location filename="../ui/dialogHatch.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
     <message>
         <source>Point Color If Attached</source>
@@ -6206,11 +6206,6 @@ value by using the [ and ] keys while drawing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="20"/>
-        <source>General options</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="26"/>
         <source>If checked, this preferences dialog will be shown each time you import or export
 a DXF file.</source>
@@ -6399,61 +6394,9 @@ possible. Otherwise, default FreeCAD colors are applied</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="58"/>
-        <source>Use legacy Python importer</source>
-        <translation>使用傳統python匯入器</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="78"/>
-        <source>Use legacy Python exporter</source>
-        <translation>使用傳統python匯出器</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="91"/>
-        <source>Automatic update (legacy importer/exporter only)</source>
-        <translation>自動更新(僅適用於舊的匯入/匯出)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="148"/>
-        <source>Some options are not yet available for the new importer</source>
-        <translation>某些選項尚不適用於新匯入</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="199"/>
-        <source>Layouts</source>
-        <translation>佈局</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="248"/>
-        <source>Simple Part shapes</source>
-        <translation>簡單零件造型</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="338"/>
-        <source>Colors will set as specified in the DXF file whenever possible.
-Otherwise default colors will be applied.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="342"/>
         <source>Use colors from the DXF file</source>
         <translation>使用DXF檔案中的色彩</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="380"/>
-        <source>Objects from the same layers will be joined into Draft Blocks,
-turning the display faster, but making them less easily editable.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="451"/>
-        <source>Use layers</source>
-        <translation>使用圖層</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="530"/>
-        <source>Some options are not yet available for the new exporter</source>
-        <translation>某些選項尚不適用於新匯出</translation>
     </message>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="411"/>
@@ -7194,7 +7137,7 @@ accidentally and modifying the entered value.</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="296"/>
         <source>Maximum number of editable objects</source>
-        <translation type="unfinished"></translation>
+        <translation>最大限度可編輯物體的數量</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-draft.ui" line="263"/>
@@ -7965,6 +7908,11 @@ This might fail for post DXF R12 templates.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="47"/>
+        <source>Method for importing SVG object colors into FreeCAD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="60"/>
         <source>Use default style from Part/PartDesign</source>
         <translation>使用零件/零件設計的預設樣式</translation>
@@ -8036,12 +7984,6 @@ a raw wire from the original shape is added</source>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="265"/>
         <source>Maximum segment length for discretized arcs</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="82"/>
-        <source>If checked, no units conversion will occur.
-One unit in the SVG file will translate as one millimeter.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8357,8 +8299,66 @@ pattern definitions to be added to the standard patterns</source>
         <translation>工程圖線段定義</translation>
     </message>
     <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="47"/>
-        <source>Method for importing SVG object colors into FreeCAD</source>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="20"/>
+        <source>General options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="58"/>
+        <source>Use legacy Python importer</source>
+        <translation>使用傳統python匯入器</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="78"/>
+        <source>Use legacy Python exporter</source>
+        <translation>使用傳統python匯出器</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="91"/>
+        <source>Automatic update (legacy importer/exporter only)</source>
+        <translation>自動更新(僅適用於舊的匯入/匯出)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="148"/>
+        <source>Some options are not yet available for the new importer</source>
+        <translation>某些選項尚不適用於新匯入</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="199"/>
+        <source>Layouts</source>
+        <translation>佈局</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="248"/>
+        <source>Simple Part shapes</source>
+        <translation>簡單零件造型</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="338"/>
+        <source>Colors will set as specified in the DXF file whenever possible.
+Otherwise default colors will be applied.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="380"/>
+        <source>Objects from the same layers will be joined into Draft Blocks,
+turning the display faster, but making them less easily editable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="451"/>
+        <source>Use layers</source>
+        <translation>使用圖層</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-dxf.ui" line="530"/>
+        <source>Some options are not yet available for the new exporter</source>
+        <translation>某些選項尚不適用於新匯出</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/Resources/ui/preferences-svg.ui" line="82"/>
+        <source>If checked, no units conversion will occur.
+One unit in the SVG file will translate as one millimeter.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8442,6 +8442,26 @@ turning the display faster, but making them less easily editable.</source>
         <translation>底圖貼齊</translation>
     </message>
     <message>
+        <location filename="../../InitGui.py" line="118"/>
+        <source>&amp;Drafting</source>
+        <translation>底圖繪製(&amp;D)</translation>
+    </message>
+    <message>
+        <location filename="../../InitGui.py" line="121"/>
+        <source>&amp;Annotation</source>
+        <translation>註釋(&amp;A)</translation>
+    </message>
+    <message>
+        <location filename="../../InitGui.py" line="124"/>
+        <source>&amp;Modification</source>
+        <translation>編修(&amp;M)</translation>
+    </message>
+    <message>
+        <location filename="../../InitGui.py" line="127"/>
+        <source>&amp;Utilities</source>
+        <translation>實用工具(&amp;U)</translation>
+    </message>
+    <message>
         <location filename="../../InitGui.py" line="104"/>
         <source>Draft creation tools</source>
         <translation>底圖建立工具</translation>
@@ -8465,26 +8485,6 @@ turning the display faster, but making them less easily editable.</source>
         <location filename="../../InitGui.py" line="115"/>
         <source>Draft snap</source>
         <translation>底圖貼齊</translation>
-    </message>
-    <message>
-        <location filename="../../InitGui.py" line="118"/>
-        <source>&amp;Drafting</source>
-        <translation>底圖繪製(&amp;D)</translation>
-    </message>
-    <message>
-        <location filename="../../InitGui.py" line="121"/>
-        <source>&amp;Annotation</source>
-        <translation>註釋(&amp;A)</translation>
-    </message>
-    <message>
-        <location filename="../../InitGui.py" line="124"/>
-        <source>&amp;Modification</source>
-        <translation>編修(&amp;M)</translation>
-    </message>
-    <message>
-        <location filename="../../InitGui.py" line="127"/>
-        <source>&amp;Utilities</source>
-        <translation>實用工具(&amp;U)</translation>
     </message>
     <message>
         <location filename="../../draftutils/init_tools.py" line="50"/>
@@ -8566,9 +8566,29 @@ turning the display faster, but making them less easily editable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="532"/>
+        <source>X coordinate of point</source>
+        <translation>點的 X 座標</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="536"/>
+        <source>Y coordinate of point</source>
+        <translation>點的 Y 座標</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="537"/>
+        <source>Z coordinate of point</source>
+        <translation>點的 Z 座標</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="540"/>
         <source>Enter a point with given coordinates</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="1611"/>
+        <source>Modify objects</source>
+        <translation>修改物體</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="740"/>
@@ -8612,307 +8632,6 @@ turning the display faster, but making them less easily editable.</source>
         <location filename="../../DraftGui.py" line="751"/>
         <source>Relative</source>
         <translation>相對關係</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="754"/>
-        <source>Coordinates relative to last point or to coordinate system origin
-if is the first point to set</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="61"/>
-        <location filename="../../DraftGui.py" line="756"/>
-        <source>Global</source>
-        <translation>全局的</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="759"/>
-        <source>Coordinates relative to global coordinate system.
-Uncheck to use working plane coordinate system</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="532"/>
-        <source>X coordinate of point</source>
-        <translation>點的 X 座標</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="536"/>
-        <source>Y coordinate of point</source>
-        <translation>點的 Y 座標</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="537"/>
-        <source>Z coordinate of point</source>
-        <translation>點的 Z 座標</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="539"/>
-        <source>Make face</source>
-        <translation>建立表面外觀</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="542"/>
-        <source>If checked, the object will be filled with a face.
-Not available if the &apos;Use Part Primitives&apos; preference is enabled</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="1611"/>
-        <source>Modify objects</source>
-        <translation>修改物體</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="767"/>
-        <source>Finish</source>
-        <translation>結束</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="769"/>
-        <source>Finishes the current drawing or editing operation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="66"/>
-        <location filename="../../DraftGui.py" line="774"/>
-        <location filename="../../DraftGui.py" line="1126"/>
-        <source>Continue</source>
-        <translation>繼續</translation>
-    </message>
-    <message>
-        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="569"/>
-        <source>If checked, the command will not finish until pressing the command button again</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="562"/>
-        <source>Chained mode</source>
-        <translation>鎖定模式</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="562"/>
-        <source>Chained Mode</source>
-        <translation>鎖定模式</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="564"/>
-        <source>If checked, next Dimension will be placed in a chain with the previously placed Dimension</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="564"/>
-        <source>If checked, the next Dimension will be placed in a chain with the previously placed Dimension</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="572"/>
-        <source>If checked, the next dimension will be placed in a chain with the previously placed Dimension</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="565"/>
-        <source>OCC-style offset</source>
-        <translation>OCC 型式偏移量</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="654"/>
-        <source>If checked, an OCC-style offset will be performed instead of the classic offset</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="567"/>
-        <source>Undo</source>
-        <translation>復原</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="789"/>
-        <source>Undo the last segment</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="71"/>
-        <location filename="../../DraftGui.py" line="790"/>
-        <source>Close</source>
-        <translation>關閉</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="791"/>
-        <source>Finishes and closes the current line</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="141"/>
-        <location filename="../../DraftGui.py" line="792"/>
-        <source>Wipe</source>
-        <translation>擦拭</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="793"/>
-        <source>Wipes the existing segments of this line and starts again from the last point</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="146"/>
-        <source>Set Working Plane</source>
-        <translation>設定工作平面</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="795"/>
-        <source>Reorients the working plane on the last segment</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="585"/>
-        <source>Select Edge</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="797"/>
-        <source>Selects an existing edge to be measured by this dimension</source>
-        <translation>選擇一條現有的邊按此尺寸測量</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="798"/>
-        <source>Sides</source>
-        <translation>側面</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="799"/>
-        <source>Number of sides</source>
-        <translation>邊數</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="76"/>
-        <location filename="../../DraftGui.py" line="801"/>
-        <location filename="../../draftguitools/gui_move.py" line="207"/>
-        <location filename="../../draftguitools/gui_scale.py" line="203"/>
-        <location filename="../../draftguitools/gui_scale.py" line="227"/>
-        <location filename="../../draftguitools/gui_scale.py" line="356"/>
-        <location filename="../../draftguitools/gui_rotate.py" line="283"/>
-        <source>Copy</source>
-        <translation>複製</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="581"/>
-        <source>If checked, objects will be copied instead of moved</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="803"/>
-        <source>Modify subelements</source>
-        <translation>修改子元素</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="804"/>
-        <source>If checked, subelements will be modified instead of entire objects</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_texts.py" line="77"/>
-        <source>Pick location point</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_texts.py" line="121"/>
-        <source>Create Text</source>
-        <translation>建立文字</translation>
-    </message>
-    <message>
-        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="595"/>
-        <source>Creates the text object and finishes the command</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="617"/>
-        <source>Changes the default style for new objects</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="618"/>
-        <source>Toggles construction mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="839"/>
-        <location filename="../../DraftGui.py" line="2050"/>
-        <location filename="../../DraftGui.py" line="2065"/>
-        <source>Autogroup off</source>
-        <translation>關閉自動群組</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="950"/>
-        <source>Line</source>
-        <translation>線</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="958"/>
-        <source>DWire</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="976"/>
-        <source>Circle</source>
-        <translation>圓</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="981"/>
-        <source>Arc</source>
-        <translation>弧</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="986"/>
-        <location filename="../../draftguitools/gui_rotate.py" line="286"/>
-        <source>Rotate</source>
-        <translation>旋轉</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="990"/>
-        <source>Point</source>
-        <translation>點</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1018"/>
-        <source>Label</source>
-        <translation>標籤</translation>
-    </message>
-    <message>
-        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="776"/>
-        <source>Label Type</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1036"/>
-        <location filename="../../draftguitools/gui_selectplane.py" line="527"/>
-        <location filename="../../draftguitools/gui_offset.py" line="243"/>
-        <location filename="../../draftguitools/gui_offset.py" line="260"/>
-        <location filename="../../draftguitools/gui_offset.py" line="324"/>
-        <source>Offset</source>
-        <translation>偏移複製</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1042"/>
-        <location filename="../../DraftGui.py" line="1100"/>
-        <location filename="../../draftguitools/gui_trimex.py" line="215"/>
-        <source>Distance</source>
-        <translation>距離</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1043"/>
-        <location filename="../../DraftGui.py" line="1101"/>
-        <location filename="../../draftguitools/gui_trimex.py" line="217"/>
-        <source>Offset distance</source>
-        <translation>偏移距離</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="1097"/>
-        <source>Trimex</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="749"/>
-        <location filename="../../DraftGui.py" line="1109"/>
-        <source>Radius of Circle</source>
-        <translation>圓的半徑</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="81"/>
@@ -9041,39 +8760,9 @@ Not available if the &apos;Use Part Primitives&apos; preference is enabled</sour
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../DraftGui.py" line="761"/>
-        <source>Filled</source>
-        <translation>圓角</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="765"/>
-        <source>Check this if the object should appear as filled, otherwise it will appear as wireframe.
-Not available if Draft preference option &apos;Use Part Primitives&apos; is enabled</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="772"/>
-        <source>If checked, command will not finish until you press the command button again</source>
-        <translation>如果選取，指令將不會結束直到再次按下指令按鈕</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="777"/>
-        <source>If checked, an OCC-style offset will be performedinstead of the classic offset</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="778"/>
-        <source>&amp;OCC-style offset</source>
-        <translation>&amp;OCC 型式偏移量</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="788"/>
-        <source>&amp;Undo (CTRL+Z)</source>
-        <translation>復原(&amp;U) (CTRL+Z)</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="794"/>
-        <source>Set WP</source>
+        <location filename="../../DraftGui.py" line="754"/>
+        <source>Coordinates relative to last point or to coordinate system origin
+if is the first point to set</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9149,31 +8838,6 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <location filename="../../DraftGui.py" line="838"/>
         <source>Toggle construction mode</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="848"/>
-        <source>Label type</source>
-        <translation>標籤樣式</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="965"/>
-        <location filename="../../DraftGui.py" line="966"/>
-        <location filename="../../DraftGui.py" line="967"/>
-        <location filename="../../DraftGui.py" line="969"/>
-        <location filename="../../DraftGui.py" line="970"/>
-        <location filename="../../DraftGui.py" line="971"/>
-        <source>Local {}</source>
-        <translation>區域 {}</translation>
-    </message>
-    <message>
-        <location filename="../../DraftGui.py" line="973"/>
-        <location filename="../../DraftGui.py" line="974"/>
-        <location filename="../../DraftGui.py" line="975"/>
-        <location filename="../../DraftGui.py" line="977"/>
-        <location filename="../../DraftGui.py" line="978"/>
-        <location filename="../../DraftGui.py" line="979"/>
-        <source>Global {}</source>
-        <translation>全局 {}</translation>
     </message>
     <message>
         <location filename="../../DraftGui.py" line="1197"/>
@@ -9271,14 +8935,345 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation>請輸入字型檔。</translation>
     </message>
     <message>
-        <location filename="../../DraftGui.py" line="2058"/>
-        <source>Autogroup:</source>
-        <translation>自動群組:</translation>
-    </message>
-    <message>
         <location filename="../../DraftGui.py" line="2397"/>
         <source>Facebinder elements</source>
         <translation>面連接器</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="61"/>
+        <location filename="../../DraftGui.py" line="756"/>
+        <source>Global</source>
+        <translation>全局的</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="759"/>
+        <source>Coordinates relative to global coordinate system.
+Uncheck to use working plane coordinate system</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="539"/>
+        <source>Make face</source>
+        <translation>建立表面外觀</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="542"/>
+        <source>If checked, the object will be filled with a face.
+Not available if the &apos;Use Part Primitives&apos; preference is enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="767"/>
+        <source>Finish</source>
+        <translation>結束</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="769"/>
+        <source>Finishes the current drawing or editing operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="66"/>
+        <location filename="../../DraftGui.py" line="774"/>
+        <location filename="../../DraftGui.py" line="1126"/>
+        <source>Continue</source>
+        <translation>繼續</translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="569"/>
+        <source>If checked, the command will not finish until pressing the command button again</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="562"/>
+        <source>Chained mode</source>
+        <translation>鎖定模式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="562"/>
+        <source>Chained Mode</source>
+        <translation>鎖定模式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="564"/>
+        <source>If checked, next Dimension will be placed in a chain with the previously placed Dimension</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="564"/>
+        <source>If checked, the next Dimension will be placed in a chain with the previously placed Dimension</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="572"/>
+        <source>If checked, the next dimension will be placed in a chain with the previously placed Dimension</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="565"/>
+        <source>OCC-style offset</source>
+        <translation>OCC 型式偏移量</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="654"/>
+        <source>If checked, an OCC-style offset will be performed instead of the classic offset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="567"/>
+        <source>Undo</source>
+        <translation>復原</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="789"/>
+        <source>Undo the last segment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="71"/>
+        <location filename="../../DraftGui.py" line="790"/>
+        <source>Close</source>
+        <translation>關閉</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="761"/>
+        <source>Filled</source>
+        <translation>圓角</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="765"/>
+        <source>Check this if the object should appear as filled, otherwise it will appear as wireframe.
+Not available if Draft preference option &apos;Use Part Primitives&apos; is enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="772"/>
+        <source>If checked, command will not finish until you press the command button again</source>
+        <translation>如果選取，指令將不會結束直到再次按下指令按鈕</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="777"/>
+        <source>If checked, an OCC-style offset will be performedinstead of the classic offset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="778"/>
+        <source>&amp;OCC-style offset</source>
+        <translation>&amp;OCC 型式偏移量</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="788"/>
+        <source>&amp;Undo (CTRL+Z)</source>
+        <translation>復原(&amp;U) (CTRL+Z)</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="791"/>
+        <source>Finishes and closes the current line</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="141"/>
+        <location filename="../../DraftGui.py" line="792"/>
+        <source>Wipe</source>
+        <translation>擦拭</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="793"/>
+        <source>Wipes the existing segments of this line and starts again from the last point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="146"/>
+        <source>Set Working Plane</source>
+        <translation>設定工作平面</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="794"/>
+        <source>Set WP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="795"/>
+        <source>Reorients the working plane on the last segment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="585"/>
+        <source>Select Edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="797"/>
+        <source>Selects an existing edge to be measured by this dimension</source>
+        <translation>選擇一條現有的邊按此尺寸測量</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="798"/>
+        <source>Sides</source>
+        <translation>側面</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="799"/>
+        <source>Number of sides</source>
+        <translation>邊數</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="76"/>
+        <location filename="../../DraftGui.py" line="801"/>
+        <location filename="../../draftguitools/gui_move.py" line="207"/>
+        <location filename="../../draftguitools/gui_scale.py" line="203"/>
+        <location filename="../../draftguitools/gui_scale.py" line="227"/>
+        <location filename="../../draftguitools/gui_scale.py" line="356"/>
+        <location filename="../../draftguitools/gui_rotate.py" line="283"/>
+        <source>Copy</source>
+        <translation>複製</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/DraftGui.py" line="581"/>
+        <source>If checked, objects will be copied instead of moved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="803"/>
+        <source>Modify subelements</source>
+        <translation>修改子元素</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="804"/>
+        <source>If checked, subelements will be modified instead of entire objects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_texts.py" line="121"/>
+        <source>Create Text</source>
+        <translation>建立文字</translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="595"/>
+        <source>Creates the text object and finishes the command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="617"/>
+        <source>Changes the default style for new objects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="618"/>
+        <source>Toggles construction mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="839"/>
+        <location filename="../../DraftGui.py" line="2050"/>
+        <location filename="../../DraftGui.py" line="2065"/>
+        <source>Autogroup off</source>
+        <translation>關閉自動群組</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="848"/>
+        <source>Label type</source>
+        <translation>標籤樣式</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="950"/>
+        <source>Line</source>
+        <translation>線</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="958"/>
+        <source>DWire</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="976"/>
+        <source>Circle</source>
+        <translation>圓</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="981"/>
+        <source>Arc</source>
+        <translation>弧</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="986"/>
+        <location filename="../../draftguitools/gui_rotate.py" line="286"/>
+        <source>Rotate</source>
+        <translation>旋轉</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="990"/>
+        <source>Point</source>
+        <translation>點</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1018"/>
+        <source>Label</source>
+        <translation>標籤</translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="776"/>
+        <source>Label Type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1036"/>
+        <location filename="../../draftguitools/gui_selectplane.py" line="527"/>
+        <location filename="../../draftguitools/gui_offset.py" line="243"/>
+        <location filename="../../draftguitools/gui_offset.py" line="260"/>
+        <location filename="../../draftguitools/gui_offset.py" line="324"/>
+        <source>Offset</source>
+        <translation>偏移複製</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1042"/>
+        <location filename="../../DraftGui.py" line="1100"/>
+        <location filename="../../draftguitools/gui_trimex.py" line="215"/>
+        <source>Distance</source>
+        <translation>距離</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1043"/>
+        <location filename="../../DraftGui.py" line="1101"/>
+        <location filename="../../draftguitools/gui_trimex.py" line="217"/>
+        <source>Offset distance</source>
+        <translation>偏移距離</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="1097"/>
+        <source>Trimex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="749"/>
+        <location filename="../../DraftGui.py" line="1109"/>
+        <source>Radius of Circle</source>
+        <translation>圓的半徑</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="965"/>
+        <location filename="../../DraftGui.py" line="966"/>
+        <location filename="../../DraftGui.py" line="967"/>
+        <location filename="../../DraftGui.py" line="969"/>
+        <location filename="../../DraftGui.py" line="970"/>
+        <location filename="../../DraftGui.py" line="971"/>
+        <source>Local {}</source>
+        <translation>區域 {}</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="973"/>
+        <location filename="../../DraftGui.py" line="974"/>
+        <location filename="../../DraftGui.py" line="975"/>
+        <location filename="../../DraftGui.py" line="977"/>
+        <location filename="../../DraftGui.py" line="978"/>
+        <location filename="../../DraftGui.py" line="979"/>
+        <source>Global {}</source>
+        <translation>全局 {}</translation>
+    </message>
+    <message>
+        <location filename="../../DraftGui.py" line="2058"/>
+        <source>Autogroup:</source>
+        <translation>自動群組:</translation>
     </message>
     <message>
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Draft/DraftGui.py" line="1665"/>
@@ -9353,29 +9348,21 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
-        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="152"/>
-        <source>Select 3 vertices, one or more shapes or an object to define a working plane</source>
-        <translation>選擇 3 個頂點、一個或多個形狀或一個物件來定義一個工作平面</translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
-        <source>Working plane aligned to global placement of</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
-        <source>Dir</source>
-        <translation>方向</translation>
-    </message>
-    <message>
         <location filename="../../draftguitools/gui_selectplane.py" line="539"/>
         <source>Custom</source>
         <translation>自訂</translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="713"/>
+        <location filename="../../draftmake/make_sketch.py" line="127"/>
+        <location filename="../../draftmake/make_sketch.py" line="139"/>
+        <source>All Shapes must be coplanar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../WorkingPlane.py" line="721"/>
+        <source>Selected Shapes must define a plane</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../WorkingPlane.py" line="1616"/>
@@ -9391,18 +9378,6 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
         <location filename="../../WorkingPlane.py" line="1198"/>
         <location filename="../../WorkingPlane.py" line="1657"/>
         <source>Current working plane:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../WorkingPlane.py" line="713"/>
-        <location filename="../../draftmake/make_sketch.py" line="127"/>
-        <location filename="../../draftmake/make_sketch.py" line="139"/>
-        <source>All Shapes must be coplanar</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../WorkingPlane.py" line="721"/>
-        <source>Selected Shapes must define a plane</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9429,9 +9404,32 @@ or try saving to a lower DWG version.</source>
         <translation>轉換中:</translation>
     </message>
     <message>
+        <location filename="../../importDWG.py" line="209"/>
+        <location filename="../../importDWG.py" line="281"/>
+        <source>LibreDWG error</source>
+        <translation>LibreDWG 錯誤</translation>
+    </message>
+    <message>
         <location filename="../../importDWG.py" line="223"/>
         <source>Conversion successful</source>
         <translation>轉換成功</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="226"/>
+        <source>Error during DWG conversion. Try moving the DWG file to a directory path without spaces and non-english characters, or try saving to a lower DWG version.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="229"/>
+        <location filename="../../importDWG.py" line="296"/>
+        <source>ODA File Converter not found</source>
+        <translation>沒找到 ODA 檔案轉換</translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="242"/>
+        <location filename="../../importDWG.py" line="306"/>
+        <source>QCAD error</source>
+        <translation>QCAD 錯誤</translation>
     </message>
     <message>
         <location filename="../../importDWG.py" line="302"/>
@@ -9449,6 +9447,15 @@ or try saving to a lower DWG version.</source>
         <location filename="../../importDWG.py" line="339"/>
         <location filename="../../importDWG.py" line="407"/>
         <source>QCAD converter not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importDWG.py" line="344"/>
+        <location filename="../../importDWG.py" line="412"/>
+        <source>No suitable external DWG converter has been found.
+Please set one manually under menu Edit -&gt; Preferences -&gt; Import/Export -&gt; DWG
+For more information see:
+https://wiki.freecad.org/Import_Export_Preferences</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9478,36 +9485,29 @@ To enabled FreeCAD to download these libraries, answer Yes.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../importDWG.py" line="209"/>
-        <location filename="../../importDWG.py" line="281"/>
-        <source>LibreDWG error</source>
-        <translation>LibreDWG 錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="226"/>
-        <source>Error during DWG conversion. Try moving the DWG file to a directory path without spaces and non-english characters, or try saving to a lower DWG version.</source>
+        <location filename="../../draftguitools/gui_texts.py" line="77"/>
+        <source>Pick location point</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../importDWG.py" line="229"/>
-        <location filename="../../importDWG.py" line="296"/>
-        <source>ODA File Converter not found</source>
-        <translation>沒找到 ODA 檔案轉換</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="242"/>
-        <location filename="../../importDWG.py" line="306"/>
-        <source>QCAD error</source>
-        <translation>QCAD 錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../importDWG.py" line="344"/>
-        <location filename="../../importDWG.py" line="412"/>
-        <source>No suitable external DWG converter has been found.
-Please set one manually under menu Edit -&gt; Preferences -&gt; Import/Export -&gt; DWG
-For more information see:
-https://wiki.freecad.org/Import_Export_Preferences</source>
+        <location filename="../../draftguitools/gui_selectplane.py" line="150"/>
+        <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="152"/>
+        <source>Select 3 vertices, one or more shapes or an object to define a working plane</source>
+        <translation>選擇 3 個頂點、一個或多個形狀或一個物件來定義一個工作平面</translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="274"/>
+        <source>Working plane aligned to global placement of</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../draftguitools/gui_selectplane.py" line="523"/>
+        <source>Dir</source>
+        <translation>方向</translation>
     </message>
     <message>
         <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Draft/importDXF.py" line="143"/>
@@ -12432,6 +12432,11 @@ https://github.com/yorikvanhavre/Draft-dxf-importer
 <context>
     <name>importOCA</name>
     <message>
+        <location filename="../../importOCA.py" line="360"/>
+        <source>OCA error: couldn&apos;t determine character encoding</source>
+        <translation>OCA錯誤: 無法定義字元編碼</translation>
+    </message>
+    <message>
         <location filename="../../importOCA.py" line="445"/>
         <source>OCA: found no data to export</source>
         <translation>OCA：找不到要匯出的資料</translation>
@@ -12440,11 +12445,6 @@ https://github.com/yorikvanhavre/Draft-dxf-importer
         <location filename="../../importOCA.py" line="490"/>
         <source>successfully exported</source>
         <translation>成功匯出</translation>
-    </message>
-    <message>
-        <location filename="../../importOCA.py" line="360"/>
-        <source>OCA error: couldn&apos;t determine character encoding</source>
-        <translation>OCA錯誤: 無法定義字元編碼</translation>
     </message>
 </context>
 </TS>
