@@ -4,7 +4,14 @@ EXECUTE_PROCESS(COMMAND ${Python3_EXECUTABLE} -c
     "from sysconfig import get_path; print(get_path('purelib'))"
     OUTPUT_VARIABLE python_libs OUTPUT_STRIP_TRAILING_WHITESPACE )
 
-SET(PYTHON_MAIN_DIR ${python_libs})
+EXECUTE_PROCESS(COMMAND ${Python3_EXECUTABLE} -c
+    "from sysconfig import get_python_version; print(get_python_version())"
+    OUTPUT_VARIABLE python_version OUTPUT_STRIP_TRAILING_WHITESPACE)
+if (BUILD_WITH_CONDA)
+    SET(PYTHON_MAIN_DIR "/usr/lib/python${python_version}/site-packages")
+else()
+    SET(PYTHON_MAIN_DIR ${python_libs})
+endif()
 
 set(NAMESPACE_DIR "${CMAKE_BINARY_DIR}/Ext/freecad")
 set(NAMESPACE_INIT "${NAMESPACE_DIR}/__init__.py")
