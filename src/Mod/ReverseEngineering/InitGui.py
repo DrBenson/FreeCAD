@@ -29,6 +29,10 @@
 # This is the second one of three init scripts, the third one
 # runs when the gui is up
 
+import ReverseEngineeringGui
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
 
 class ReverseEngineeringWorkbench(Workbench):
     "ReverseEngineering workbench object"
@@ -38,8 +42,8 @@ class ReverseEngineeringWorkbench(Workbench):
             FreeCAD.getResourceDir()
             + "Mod/ReverseEngineering/Resources/icons/ReverseEngineeringWorkbench.svg"
         )
-        self.__class__.MenuText = "Reverse Engineering"
-        self.__class__.ToolTip = "Reverse Engineering workbench"
+        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Reverse Engineering")
+        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Reverse Engineering workbench")
 
     def Initialize(self):
         # load the module

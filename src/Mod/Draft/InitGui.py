@@ -31,6 +31,10 @@ __title__ = "FreeCAD Draft Workbench - Init file"
 __author__ = "Yorik van Havre <yorik@uncreated.net>"
 __url__ = "https://www.freecad.org"
 
+import Draft_rc
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
 
 class DraftWorkbench(FreeCADGui.Workbench):
     """The Draft Workbench definition."""
@@ -42,14 +46,14 @@ class DraftWorkbench(FreeCADGui.Workbench):
         __dirname__ = os.path.join(FreeCAD.getResourceDir(), "Mod", "Draft")
         _tooltip = "The Draft workbench is used for 2D drafting on a grid"
         self.__class__.Icon = os.path.join(__dirname__, "Resources", "icons", "DraftWorkbench.svg")
-        self.__class__.MenuText = QT_TRANSLATE_NOOP("draft", "Draft")
-        self.__class__.ToolTip = QT_TRANSLATE_NOOP("draft", _tooltip)
+        self.__class__.MenuText = FreeCAD.Qt.translate("draft", "Draft")
+        self.__class__.ToolTip = FreeCAD.Qt.translate("draft", _tooltip)
 
     def Initialize(self):
         """When the workbench is first loaded."""
 
         def QT_TRANSLATE_NOOP(context, text):
-            return text
+            return FreeCAD.Qt.translate(context, text)
 
         # Run self-tests
         dependencies_OK = False
@@ -232,6 +236,7 @@ FreeCADGui.addWorkbench(DraftWorkbench)
 import Draft_rc
 from PySide.QtCore import QT_TRANSLATE_NOOP
 
+FreeCADGui.addIconPath(":/icons")
 FreeCADGui.addPreferencePage(
     ":/ui/preferences-dxf.ui", QT_TRANSLATE_NOOP("QObject", "Import-Export")
 )

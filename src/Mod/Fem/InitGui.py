@@ -48,7 +48,11 @@ from FreeCADGui import Workbench
 
 # needed imports
 from femguiutils.migrate_gui import FemMigrateGui
+import FemGui
 
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
 
 # migrate old FEM Gui objects
 sys.meta_path.append(FemMigrateGui())
@@ -65,8 +69,8 @@ class FemWorkbench(Workbench):
 
     def __init__(self):
         self.__class__.Icon = FreeCAD.getResourceDir() + "Mod/Fem/Resources/icons/FemWorkbench.svg"
-        self.__class__.MenuText = "FEM"
-        self.__class__.ToolTip = "FEM workbench"
+        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "FEM")
+        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "FEM workbench")
 
     def Initialize(self):
         # load the module

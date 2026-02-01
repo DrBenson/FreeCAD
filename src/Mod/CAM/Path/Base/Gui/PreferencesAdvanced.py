@@ -1,4 +1,5 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
+# -*- coding: utf-8 -*-
 # ***************************************************************************
 # *   Copyright (c) 2021 sliptonic <shopinthewoods@gmail.com>               *
 # *                                                                         *
@@ -22,6 +23,7 @@
 
 import FreeCADGui
 import Path
+import Path_rc
 
 if False:
     Path.Log.setLevel(Path.Log.Level.DEBUG, Path.Log.thisModule())

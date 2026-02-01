@@ -25,6 +25,7 @@ import pathlib
 import tempfile
 import FreeCAD
 import Path
+import path_rc
 from PySide import QtGui, QtCore
 
 translate = FreeCAD.Qt.translate

@@ -30,6 +30,9 @@ import FreeCAD
 import FreeCADGui
 import Arch_rc
 
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
 
 class BIMWorkbench(Workbench):
 
@@ -39,8 +42,8 @@ class BIMWorkbench(Workbench):
             return text
 
         bdir = os.path.join(FreeCAD.getResourceDir(), "Mod", "BIM")
-        tt = QT_TRANSLATE_NOOP("BIM", "The BIM workbench is used to model buildings")
-        self.__class__.MenuText = QT_TRANSLATE_NOOP("BIM", "BIM")
+        tt = FreeCAD.Qt.translate("BIM", "The BIM workbench is used to model buildings")
+        self.__class__.MenuText = FreeCAD.Qt.translate("BIM", "BIM")
         self.__class__.ToolTip = tt
         self.__class__.Icon = os.path.join(bdir, "Resources", "icons", "BIMWorkbench.svg")
 
@@ -112,6 +115,7 @@ class BIMWorkbench(Workbench):
         ]
 
         self.bimtools = [
+            "BIM_Project",
             "Arch_Site",
             "Arch_Building",
             "Arch_Level",
@@ -707,7 +711,7 @@ FreeCADGui.addWorkbench(BIMWorkbench)
 def QT_TRANSLATE_NOOP(context, text):
     return text
 
-
+FreeCADGui.addIconPath(":/icons")
 t = QT_TRANSLATE_NOOP("QObject", "Import-Export")
 FreeCADGui.addPreferencePage(":/ui/preferences-ifc.ui", t)
 FreeCADGui.addPreferencePage(":/ui/preferences-ifc-export.ui", t)

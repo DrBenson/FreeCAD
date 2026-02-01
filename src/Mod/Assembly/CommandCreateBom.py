@@ -66,8 +66,7 @@ class CommandCreateBom:
     def GetResources(self):
         return {
             "Pixmap": "Assembly_BillOfMaterials",
-            "MenuText": QT_TRANSLATE_NOOP("Assembly_CreateBom", "Bill of Materials"),
-            "Accel": "O",
+            "MenuText": QT_TRANSLATE_NOOP("Assembly_CreateBom", "Bill of Materials")+"\t&O",
             "ToolTip": QT_TRANSLATE_NOOP(
                 "Assembly_CreateBom",
                 "<p>Creates a bill of materials of the current assembly. If an assembly is active, it will be a BOM of this assembly. Else it will be a BOM of the whole document.</p>"

@@ -28,6 +28,10 @@
 # *                                                                         *
 # ***************************************************************************/
 
+import RobotGui
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
 
 class RobotWorkbench(Workbench):
     "Robot workbench object"
@@ -36,8 +40,8 @@ class RobotWorkbench(Workbench):
         self.__class__.Icon = (
             FreeCAD.getResourceDir() + "Mod/Robot/Resources/icons/RobotWorkbench.svg"
         )
-        self.__class__.MenuText = "Robot"
-        self.__class__.ToolTip = "Robot workbench"
+        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Robot")
+        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Robot workbench")
 
     def Initialize(self):
         # load the module
