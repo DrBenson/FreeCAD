@@ -4,7 +4,7 @@ General:
   UUID: "73371529-2983-47dd-b988-6739a2e20029"
   Author: "Juergen Riegel"
   License: "CC-BY-3.0"
-  Name: "ABS"
+  Name: "ABS Styrene-Acrylonitrile-Butadiene"
   Description: "This is a blend AcrylnitrilButadienStyrol (ABS) material card. The values are at the low end of the spectrum. If you need a more precise material definition use the more specialised ABS-blend cards."
   SourceURL: "http://www.matweb.com/search/DataSheet.aspx?MatGUID=eb7a78f5948d481c9493a67f0d089646"
 Models:
@@ -26,3 +26,12 @@ Models:
   Costs:
     UUID: '881df808-8726-4c2e-be38-688bb6cce466'
     ProductURL: "https://en.wikipedia.org/wiki/Acrylonitrile_butadiene_styrene"
+AppearanceModels:
+  Basic Rendering:
+    UUID: "f006c7e4-35b7-43d5-bbf9-c5d572309e6e"
+    AmbientColor: "(0.137255,0.137255,0.137255,1)"
+    DiffuseColor: "(0.376471,0.376471,0.423529,1)"
+    EmissiveColor: "(0, 0, 0, 1)"
+    Shininess: "0.15"
+    SpecularColor: "(0.203922,0.203922,0.203922,1)"
+    Transparency: "0"
