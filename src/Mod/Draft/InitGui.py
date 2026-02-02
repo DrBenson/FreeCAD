@@ -237,17 +237,9 @@ import Draft_rc
 from PySide.QtCore import QT_TRANSLATE_NOOP
 
 FreeCADGui.addIconPath(":/icons")
-FreeCADGui.addPreferencePage(
-    ":/ui/preferences-dxf.ui", QT_TRANSLATE_NOOP("QObject", "Import-Export")
-)
-FreeCADGui.addPreferencePage(
-    ":/ui/preferences-dwg.ui", QT_TRANSLATE_NOOP("QObject", "Import-Export")
-)
-FreeCADGui.addPreferencePage(
-    ":/ui/preferences-svg.ui", QT_TRANSLATE_NOOP("QObject", "Import-Export")
-)
-FreeCADGui.addPreferencePage(
-    ":/ui/preferences-oca.ui", QT_TRANSLATE_NOOP("QObject", "Import-Export")
-)
+FreeCADGui.addPreferencePage(":/ui/preferences-dxf.ui", "Import-Export")
+FreeCADGui.addPreferencePage(":/ui/preferences-dwg.ui", "Import-Export")
+FreeCADGui.addPreferencePage(":/ui/preferences-svg.ui", "Import-Export")
+FreeCADGui.addPreferencePage(":/ui/preferences-oca.ui", "Import-Export")
 
 FreeCAD.__unit_test__ += ["TestDraftGui"]
