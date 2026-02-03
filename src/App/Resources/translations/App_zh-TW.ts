@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -220,10 +220,17 @@
 <context>
     <name>LinkParams</name>
     <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/App/Link.cpp" line="119"/>
+        <source>Stores the last user choice of whether to apply CopyOnChange setup to all link
+that links to the same configurable object</source>
+        <translation>儲存使用者最後選擇是否要將 變更時複製(CopyOnChange) 設定
+套用到連結到相同設定物件的所有連結</translation>
+    </message>
+    <message>
         <location filename="../../../../../FreeCAD-1.2.0/src/App/Link.cpp" line="118"/>
         <source>Stores the last user choice of whether to apply CopyOnChange setup to all links
 that reference the same configurable object</source>
-        <translation>儲存最後的使用者選擇是否將 &apos;變更時複製&apos; 設定套用至所有連結
+        <translation>儲存最後的使用者選擇是否將 變更時複製(CopyOnChange) 設定套用至所有連結
 引用相同的可設定物體</translation>
     </message>
 </context>
