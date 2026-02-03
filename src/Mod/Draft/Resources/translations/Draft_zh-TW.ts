@@ -2194,7 +2194,7 @@ from menu Tools -&gt; Addon Manager</source>
         <location filename="../../../../../../FreeCAD-1.2.0/Mod/Draft/InitGui.py" line="136"/>
         <location filename="../../../../../../FreeCAD-1.2.0/Mod/Draft/InitGui.py" line="137"/>
         <source>Draft</source>
-        <translation>製圖</translation>
+        <translation>底圖繪製</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/Mod/Draft/InitGui.py" line="179"/>
@@ -2892,7 +2892,7 @@ Uncheck to use working plane coordinate system</source>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/Mod/Draft/draftguitools/gui_groups.py" line="307"/>
         <source>Add to construction group</source>
-        <translation>添加到建構群組</translation>
+        <translation>新增到建構群組</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/Mod/Draft/draftguitools/gui_groups.py" line="309"/>
@@ -9341,7 +9341,7 @@ To enabled FreeCAD to download these libraries, answer Yes.</source>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/Mod/Draft/DraftGui.py" line="330"/>
         <source>Draft Command Bar</source>
-        <translation>底圖指令列</translation>
+        <translation>製圖指令列</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/Mod/Draft/DraftGui.py" line="532"/>
@@ -9616,7 +9616,7 @@ Or download these libraries manually, as explained on
 https://github.com/yorikvanhavre/Draft-dxf-importer
 To enabled FreeCAD to download these libraries, answer Yes.</source>
         <translation>此系統並無FreeCAD所需用來匯入/匯出DXF格式之函式庫，可啟動FreeCAD來下載這些函式庫：
-1-載入底圖模組
+1-載入製圖模組
 2-選單&gt;編輯&gt;偏好選項&gt;匯入-匯出&gt;DXF&gt;啟動下載
 或是手動下載這些函式庫，參照於
 https://github.com/yorikvanhavre/Draft-dxf-importer
@@ -11522,7 +11522,7 @@ of existing objects in all opened documents?</source>
         <location filename="../../../../../../FreeCAD-1.2.0/Mod/Draft/draftobjects/patharray.py" line="431"/>
         <location filename="../../../../../../FreeCAD-1.2.0/Mod/Draft/draftobjects/pointarray.py" line="145"/>
         <source>added &apos;Fuse&apos; property</source>
-        <translation>添加 &apos;Fuse&apos; 屬性</translation>
+        <translation>新增 &apos;Fuse&apos; 屬性</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/Mod/Draft/draftobjects/pathtwistedarray.py" line="162"/>
@@ -12239,7 +12239,7 @@ of existing objects in all opened documents?</source>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/Mod/Draft/draftobjects/pointarray.py" line="139"/>
         <source>added &apos;ExtraPlacement&apos; property</source>
-        <translation>已添加 &apos;ExtraPlacement&apos; 屬性</translation>
+        <translation>已新增 &apos;ExtraPlacement&apos; 屬性</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/Mod/Draft/draftobjects/pointarray.py" line="142"/>

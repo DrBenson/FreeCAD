@@ -9701,7 +9701,7 @@ A larger value makes it easier to select elements, but may prevent selection of 
     <message>
         <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Gui/PreferencePages/DlgSettingsUI.ui" line="518"/>
         <source>Suggest actions in the task view based on the selection</source>
-        <translation>在工作檢視中根據選擇建議動作</translation>
+        <translation>在任務操作檢視中根據選擇建議動作</translation>
     </message>
     <message>
         <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Gui/PreferencePages/DlgSettingsUI.cpp" line="124"/>
@@ -12433,12 +12433,12 @@ How do you want to proceed?</source>
     <message>
         <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Gui/OverlayWidgets.cpp" line="961"/>
         <source>Auto task</source>
-        <translation>自動工作任務</translation>
+        <translation>自動任務操作</translation>
     </message>
     <message>
         <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Gui/OverlayWidgets.cpp" line="963"/>
         <source>Auto show task view for any current task, and hide the view when there is no task.</source>
-        <translation>自動顯示任何目前工作任務的工作檢視, 並在沒有工作任務時隱藏檢視.</translation>
+        <translation>自動顯示任何目前任務操作的工作檢視, 並在沒有任務操作時隱藏檢視.</translation>
     </message>
     <message>
         <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Gui/OverlayWidgets.cpp" line="965"/>
@@ -13606,7 +13606,7 @@ Specify another directory?</source>
     <message>
         <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Gui/TaskView/TaskDialog.cpp" line="95"/>
         <source>A dialog is already open in the task panel</source>
-        <translation>於工作面板已開啟對話窗</translation>
+        <translation>於任務操作面板已開啟對話窗</translation>
     </message>
 </context>
 <context>
@@ -14658,7 +14658,7 @@ the region are non-opaque.</source>
     <message>
         <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Gui/MainWindow.cpp" line="591"/>
         <source>Tasks</source>
-        <translation>工作</translation>
+        <translation>任務操作</translation>
     </message>
     <message>
         <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Gui/MainWindow.cpp" line="608"/>
@@ -14688,7 +14688,7 @@ the region are non-opaque.</source>
     <message>
         <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Gui/MainWindow.cpp" line="762"/>
         <source>Task List</source>
-        <translation>工作清單</translation>
+        <translation>任務操作清單</translation>
     </message>
     <message>
         <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Gui/MainWindow.cpp" line="791"/>
@@ -17744,7 +17744,7 @@ This makes the docked panels stay transparent at all times.</source>
     <message>
         <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="942"/>
         <source>Toggles the transparency of the selected objects. Transparency can be fine-tuned in the appearance task dialog</source>
-        <translation>切換選定物體的透明度. 可以在&apos;外觀&apos;工作任務框中微調透明度值</translation>
+        <translation>切換選定物體的透明度. 可以在&apos;外觀&apos;任務操作框中微調透明度值</translation>
     </message>
 </context>
 <context>
