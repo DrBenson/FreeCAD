@@ -146,20 +146,23 @@ class DraftWorkbench(FreeCADGui.Workbench):
                 from draftutils import params
 
                 params._param_observer_start()
+                t2 = "Draft"
+                FreeCADGui.addLanguagePath(":/translations")
+                FreeCADGui.addIconPath(":/icons")
                 FreeCADGui.addPreferencePage(
-                    ":/ui/preferences-draft.ui", QT_TRANSLATE_NOOP("QObject", "Draft")
+                    ":/ui/preferences-draft.ui", t2
                 )
                 FreeCADGui.addPreferencePage(
-                    ":/ui/preferences-draftinterface.ui", QT_TRANSLATE_NOOP("QObject", "Draft")
+                    ":/ui/preferences-draftinterface.ui", t2
                 )
                 FreeCADGui.addPreferencePage(
-                    ":/ui/preferences-draftsnap.ui", QT_TRANSLATE_NOOP("QObject", "Draft")
+                    ":/ui/preferences-draftsnap.ui", t2
                 )
                 FreeCADGui.addPreferencePage(
-                    ":/ui/preferences-draftvisual.ui", QT_TRANSLATE_NOOP("QObject", "Draft")
+                    ":/ui/preferences-draftvisual.ui", t2
                 )
                 FreeCADGui.addPreferencePage(
-                    ":/ui/preferences-drafttexts.ui", QT_TRANSLATE_NOOP("QObject", "Draft")
+                    ":/ui/preferences-drafttexts.ui", t2
                 )
                 FreeCADGui.draftToolBar.loadedPreferences = True
 
@@ -236,6 +239,7 @@ FreeCADGui.addWorkbench(DraftWorkbench)
 import Draft_rc
 from PySide.QtCore import QT_TRANSLATE_NOOP
 
+FreeCADGui.addLanguagePath(":/translations")
 FreeCADGui.addIconPath(":/icons")
 FreeCADGui.addPreferencePage(":/ui/preferences-dxf.ui", "Import-Export")
 FreeCADGui.addPreferencePage(":/ui/preferences-dwg.ui", "Import-Export")

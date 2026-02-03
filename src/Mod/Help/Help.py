@@ -430,6 +430,8 @@ def add_preferences_page():
     """adds the Help preferences page to the UI"""
 
     import FreeCADGui
+    FreeCADGui.addLanguagePath(":/translations")
+    FreeCADGui.addIconPath(":/icons")
 
     page = os.path.join(os.path.dirname(__file__), "dlgPreferencesHelp.ui")
     FreeCADGui.addPreferencePage(page, QT_TRANSLATE_NOOP("QObject", "General"))

@@ -112,6 +112,8 @@ class CAMWorkbench(Workbench):
         import PathCommands
         import subprocess
         from packaging.version import Version, parse
+        FreeCADGui.addLanguagePath(":/translations")
+        FreeCADGui.addIconPath(":/icons")
 
         FreeCADGui.addPreferencePage(
             PathPreferencesPathJob.JobPreferencesPage,
@@ -338,6 +340,8 @@ class CAMWorkbench(Workbench):
         # keep this one the last entry in the preferences
         import Path.Base.Gui.PreferencesAdvanced as PathPreferencesAdvanced
         from Path.Preferences import preferences
+        FreeCADGui.addLanguagePath(":/translations")
+        FreeCADGui.addIconPath(":/icons")
 
         FreeCADGui.addPreferencePage(
             PathPreferencesAdvanced.AdvancedPreferencesPage,
