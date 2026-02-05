@@ -395,11 +395,6 @@
 <context>
     <name>OpenSCAD_AddOpenSCADElement</name>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="520"/>
-        <source>Add an OpenSCAD element by entering OpenSCAD code and executing the OpenSCAD binary</source>
-        <translation>藉由輸入OpenSCAD語言並執行OpenSCAD程式加入OpenSCAD元素</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="529"/>
         <source>Add OpenSCAD Element</source>
         <translation>加入OpenSCAD元素</translation>
@@ -422,6 +417,11 @@
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="533"/>
         <source>Adds an OpenSCAD element by entering OpenSCAD code and executing the OpenSCAD binary</source>
+        <translation>藉由輸入OpenSCAD語言並執行OpenSCAD程式加入OpenSCAD元素</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="520"/>
+        <source>Add an OpenSCAD element by entering OpenSCAD code and executing the OpenSCAD binary</source>
         <translation>藉由輸入OpenSCAD語言並執行OpenSCAD程式加入OpenSCAD元素</translation>
     </message>
 </context>
@@ -487,11 +487,6 @@
 <context>
     <name>OpenSCAD_ExplodeGroup</name>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="103"/>
-        <source>Removes fusion and applies placement to children, and color randomly</source>
-        <translation>移除合併，套用至子項目位置並隨機著色</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="109"/>
         <source>Explode Group</source>
         <translation>拆解群組</translation>
@@ -505,6 +500,11 @@
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="103"/>
         <source>Explodes a fusion or compound and applies random colors</source>
         <translation>套用至子項目位置並隨機著色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="103"/>
+        <source>Removes fusion and applies placement to children, and color randomly</source>
+        <translation>移除合併，套用至子項目位置並隨機著色</translation>
     </message>
 </context>
 <context>
@@ -533,6 +533,16 @@
 <context>
     <name>OpenSCAD_IncreaseToleranceFeature</name>
     <message>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="273"/>
+        <source>Increase Tolerance Feature</source>
+        <translation>提升公差特徵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="269"/>
+        <source>Creates a feature to increase the tolerance</source>
+        <translation>建立允許增加公差之特徵</translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="269"/>
         <source>Create Feature that allows increasing the tolerance</source>
         <translation>建立允許增加公差之特徵</translation>
@@ -543,23 +553,23 @@
         <translation>建立允許增加公差之特徵</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="273"/>
-        <source>Increase Tolerance Feature</source>
-        <translation>提升公差特徵</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="276"/>
         <source>Create Feature that allows to increase the tolerance</source>
-        <translation>建立允許增加公差之特徵</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="269"/>
-        <source>Creates a feature to increase the tolerance</source>
         <translation>建立允許增加公差之特徵</translation>
     </message>
 </context>
 <context>
     <name>OpenSCAD_MeshBoolean</name>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="544"/>
+        <source>Mesh Boolean</source>
+        <translation>網格布林運算</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="548"/>
+        <source>Performs a boolean operation using the OpenSCAD binary</source>
+        <translation>使用 OpenSCAD程式執行布林運算</translation>
+    </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="531"/>
         <source>Mesh Boolean...</source>
@@ -572,18 +582,8 @@
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="544"/>
-        <source>Mesh Boolean</source>
-        <translation>網格布林運算</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="544"/>
         <source>Mesh Boolean…</source>
         <translation>網格布林運算...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="548"/>
-        <source>Performs a boolean operation using the OpenSCAD binary</source>
-        <translation>使用 OpenSCAD程式執行布林運算</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="548"/>
@@ -593,6 +593,16 @@
 </context>
 <context>
     <name>OpenSCAD_Minkowski</name>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="585"/>
+        <source>Minkowski Sum</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="588"/>
+        <source>Creates a Minkowski sum</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="570"/>
         <source>Minkowski</source>
@@ -611,16 +621,6 @@
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="583"/>
         <source>Use OpenSCAD to create a Minkowski sum</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="585"/>
-        <source>Minkowski Sum</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="588"/>
-        <source>Creates a Minkowski sum</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -691,6 +691,16 @@
 <context>
     <name>OpenSCAD_ReplaceObject</name>
     <message>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="311"/>
+        <source>Replace Object</source>
+        <translation>取代物件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="307"/>
+        <source>Replaces an object in the Tree View</source>
+        <translation>取代特徵樹中的物件</translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="305"/>
         <source>Replace an object in the Tree view. Please select old, new, and parent object</source>
         <translation>替換樹狀檢視中的物體. 請選擇舊物體、新物體和父系物體</translation>
@@ -701,19 +711,9 @@
         <translation>替換樹狀檢視中的物體. 請選擇舊物體、新物體和父系物體</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="311"/>
-        <source>Replace Object</source>
-        <translation>取代物件</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="314"/>
         <source>Replace an object in the Feature Tree. Please select old, new, and parent object</source>
         <translation>取代特徵樹中的物件。 請選擇原始物件、新物件和父物件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/OpenSCADCommands.py" line="307"/>
-        <source>Replaces an object in the Tree View</source>
-        <translation>取代特徵樹中的物件</translation>
     </message>
 </context>
 <context>
@@ -792,13 +792,8 @@
     <name>Workbench</name>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/InitGui.py" line="152"/>
-        <source>OpenSCAD Tools</source>
+        <source>OpenSCAD</source>
         <translation>OpenSCAD 工具</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/InitGui.py" line="156"/>
-        <source>Frequently-used Part WB tools</source>
-        <translation>常用的零件工作台工具</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/InitGui.py" line="49"/>
@@ -811,13 +806,18 @@ FreeCAD 利用 OpenSCAD 的功能，將其作為基於腳本的建模器，使�
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/InitGui.py" line="152"/>
-        <source>OpenSCAD</source>
+        <source>OpenSCAD Tools</source>
         <translation>OpenSCAD 工具</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/InitGui.py" line="152"/>
         <source>OpenSCADTools</source>
         <translation>OpenSCAD 工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/InitGui.py" line="156"/>
+        <source>Frequently-used Part WB tools</source>
+        <translation>常用的零件工作台工具</translation>
     </message>
 </context>
 </TS>

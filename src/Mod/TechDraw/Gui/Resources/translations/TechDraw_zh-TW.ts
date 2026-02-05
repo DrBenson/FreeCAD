@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -244,16 +244,6 @@
 <context>
     <name>Cmd2LineCenterLine</name>
     <message>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="653"/>
-        <source>Centerline Between 2 Lines</source>
-        <translation>兩條線中的中心線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="646"/>
-        <source>Add Centerline between 2 Lines</source>
-        <translation>在兩條線中加入中心線</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="657"/>
         <source>Centerline 2 Lines</source>
         <translation>兩條線中的中心線</translation>
@@ -263,19 +253,19 @@
         <source>Centerline 2 lines</source>
         <translation>兩條線中的中心線</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="653"/>
+        <source>Centerline Between 2 Lines</source>
+        <translation>兩條線中的中心線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="646"/>
+        <source>Add Centerline between 2 Lines</source>
+        <translation>在兩條線中加入中心線</translation>
+    </message>
 </context>
 <context>
     <name>Cmd2PointCenterLine</name>
-    <message>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="657"/>
-        <source>Centerline Between 2 Points</source>
-        <translation>在兩點間的中心線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="650"/>
-        <source>Add Centerline between 2 Points</source>
-        <translation>加入中心線在兩點間</translation>
-    </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="661"/>
         <source>Centerline 2 Points</source>
@@ -285,6 +275,16 @@
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="663"/>
         <source>Centerline 2 points</source>
         <translation>在兩點間的中心線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="657"/>
+        <source>Centerline Between 2 Points</source>
+        <translation>在兩點間的中心線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="650"/>
+        <source>Add Centerline between 2 Points</source>
+        <translation>加入中心線在兩點間</translation>
     </message>
 </context>
 <context>
@@ -576,11 +576,6 @@
 <context>
     <name>CmdTechDrawAreaDimension</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1841"/>
-        <source>Insert Area Annotation</source>
-        <translation>插入區域註解</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2205"/>
         <source>TechDraw</source>
         <translation>工程圖</translation>
@@ -599,6 +594,11 @@
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1835"/>
         <source>Inserts an annotation showing the area of a selected face</source>
         <translation>插入註解以顯示選取面的區域</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1841"/>
+        <source>Insert Area Annotation</source>
+        <translation>插入區域註解</translation>
     </message>
 </context>
 <context>
@@ -666,11 +666,6 @@
         <translation>新增中心線至面</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="653"/>
-        <source>Centerline Faces</source>
-        <translation>面的中心線</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="655"/>
         <source>Centerline faces</source>
         <translation>面的中心線</translation>
@@ -684,6 +679,11 @@
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="583"/>
         <source>Inserts a centerline to a face, or between 2 lines or edges</source>
         <translation>將中心線插入面，或插入兩條線或邊緣之間</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="653"/>
+        <source>Centerline Faces</source>
+        <translation>面的中心線</translation>
     </message>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="649"/>
@@ -1187,11 +1187,6 @@ Left clicking on empty space will validate the current dimension. Right clicking
 <context>
     <name>CmdTechDrawExtensionAreaAnnotation</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1768"/>
-        <source>Select several faces then click this tool</source>
-        <translation>點選此工具選擇數個面</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1776"/>
         <source>TechDraw</source>
         <translation>工程圖</translation>
@@ -1215,6 +1210,11 @@ Left clicking on empty space will validate the current dimension. Right clicking
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1668"/>
         <source>Calculates the area of multiple selected faces</source>
         <translation>計算多個選取面的面積</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1768"/>
+        <source>Select several faces then click this tool</source>
+        <translation>點選此工具選擇數個面</translation>
     </message>
 </context>
 <context>
@@ -1833,11 +1833,6 @@ Left clicking on empty space will validate the current dimension. Right clicking
 <context>
     <name>CmdTechDrawExtensionDrawCirclesGroup</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1049"/>
-        <source>Cosmetic Circle</source>
-        <translation>裝飾圓</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1063"/>
         <source>TechDraw</source>
         <translation>工程圖</translation>
@@ -1861,6 +1856,11 @@ Left clicking on empty space will validate the current dimension. Right clicking
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1050"/>
         <source>Adds a cosmetic circle based on two vertices, where the first selection is the centerpoint and the second is the radius</source>
         <translation>根據兩個頂點新增裝飾圓，其中第一個選擇是中心點，第二個選擇是半徑</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1049"/>
+        <source>Cosmetic Circle</source>
+        <translation>裝飾圓</translation>
     </message>
 </context>
 <context>
@@ -1902,32 +1902,9 @@ Left clicking on empty space will validate the current dimension. Right clicking
 <context>
     <name>CmdTechDrawExtensionDrawCosmCircle</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="954"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1123"/>
-        <source>Cosmetic Circle</source>
-        <translation>裝飾圓</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="955"/>
-        <source>Adds a cosmetic circle based on two selected vertices, where the first is the ceneter point and the second is the radius</source>
-        <translation>以兩個選取的頂點為基礎，新增一個裝飾圓，第一個是頂點，第二個是半徑</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="964"/>
         <source>TechDraw</source>
         <translation>工程圖</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="965"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1141"/>
-        <source>Add Cosmetic Circle</source>
-        <translation>增加裝飾圓</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="966"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1142"/>
-        <source>Add a cosmetic circle based on two vertexes:&lt;br&gt;- Specify the line attributes (optional)&lt;br&gt;- Select vertex 1 (center point)&lt;br&gt;- Select vertex 2 (radius)&lt;br&gt;- Click this tool</source>
-        <translation>基於兩頂點增加一個裝飾圓:&lt;br&gt;- 指定線屬性(可選) &lt;br&gt;- 選擇頂點 1 (中心點)&lt;br&gt;- 選擇頂點 2 (半徑)&lt;br&gt;- 點選此工具</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1106"/>
@@ -1945,25 +1922,32 @@ Left clicking on empty space will validate the current dimension. Right clicking
         <source>Adds a cosmetic circle based on two vertices, where the first selection is the centerpoint and the second is the radius</source>
         <translation>根據兩個頂點新增裝飾圓，其中第一個選擇是中心點，第二個選擇是半徑</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="954"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1123"/>
+        <source>Cosmetic Circle</source>
+        <translation>裝飾圓</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="955"/>
+        <source>Adds a cosmetic circle based on two selected vertices, where the first is the ceneter point and the second is the radius</source>
+        <translation>以兩個選取的頂點為基礎，新增一個裝飾圓，第一個是頂點，第二個是半徑</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="965"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1141"/>
+        <source>Add Cosmetic Circle</source>
+        <translation>增加裝飾圓</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="966"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1142"/>
+        <source>Add a cosmetic circle based on two vertexes:&lt;br&gt;- Specify the line attributes (optional)&lt;br&gt;- Select vertex 1 (center point)&lt;br&gt;- Select vertex 2 (radius)&lt;br&gt;- Click this tool</source>
+        <translation>基於兩頂點增加一個裝飾圓:&lt;br&gt;- 指定線屬性(可選) &lt;br&gt;- 選擇頂點 1 (中心點)&lt;br&gt;- 選擇頂點 2 (半徑)&lt;br&gt;- 點選此工具</translation>
+    </message>
 </context>
 <context>
     <name>CmdTechDrawExtensionDrawCosmCircle3Points</name>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1028"/>
-        <source>TechDraw</source>
-        <translation>工程圖</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1136"/>
-        <source>Cosmetic 3 Point Circle</source>
-        <translation>在孔或圓的側檢視中加入裝飾線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1169"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1297"/>
-        <source>Adds a cosmetic circle that passes through 3 selected perimeter points</source>
-        <translation>新增一個經過 3 個選取週邊點的裝飾圓</translation>
-    </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1017"/>
         <source>Cosmetic Circle 3 Points</source>
@@ -1973,6 +1957,11 @@ Left clicking on empty space will validate the current dimension. Right clicking
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1018"/>
         <source>Adds a cosmetic circle to three selected vertices</source>
         <translation>在三個選取的頂點上新增一個裝飾圓</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1028"/>
+        <source>TechDraw</source>
+        <translation>工程圖</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1029"/>
@@ -1986,6 +1975,11 @@ Left clicking on empty space will validate the current dimension. Right clicking
         <translation>基於三個頂點增加一個裝飾圓:&lt;br&gt;- 指定線屬性 (可選)&lt;br&gt;- 選擇 3 個頂點&lt;br&gt;- 點選此工具</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1136"/>
+        <source>Cosmetic 3 Point Circle</source>
+        <translation>在孔或圓的側檢視中加入裝飾線</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1138"/>
         <source>Adds a cosmetic circle to 3 selected vertices</source>
         <translation>在三個選取的頂點上新增一個裝飾圓</translation>
@@ -1994,6 +1988,12 @@ Left clicking on empty space will validate the current dimension. Right clicking
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1163"/>
         <source>Add a cosmetic circle based on three vertexes:&lt;br&gt;- Specify the line attributes (optional)&lt;br&gt;- Select three vertexes&lt;br&gt;- Click this tool</source>
         <translation>基於三個頂點增加一個裝飾圓:&lt;br&gt;- 指定線屬性 (可選)&lt;br&gt;- 選擇 3 個頂點&lt;br&gt;- 點選此工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1169"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1297"/>
+        <source>Adds a cosmetic circle that passes through 3 selected perimeter points</source>
+        <translation>新增一個經過 3 個選取週邊點的裝飾圓</translation>
     </message>
 </context>
 <context>
@@ -2384,11 +2384,6 @@ Left clicking on empty space will validate the current dimension. Right clicking
         <translation>對齊水平鏈標註</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="629"/>
-        <source>Align Horizontal Chain Dimensions</source>
-        <translation>對齊水平鏈標註</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="632"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="871"/>
         <source>Aligns the horizontal dimensions to create a chain dimension:&lt;br&gt;- Select two or more horizontal dimensions&lt;br&gt;- The first dimension defines the position&lt;br&gt;- Click this tool</source>
@@ -2399,6 +2394,11 @@ Left clicking on empty space will validate the current dimension. Right clicking
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="828"/>
         <source>Position Horizontal Chain Dimensions</source>
         <translation>水平鏈標註位置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="629"/>
+        <source>Align Horizontal Chain Dimensions</source>
+        <translation>對齊水平鏈標註</translation>
     </message>
 </context>
 <context>
@@ -2451,11 +2451,6 @@ Left clicking on empty space will validate the current dimension. Right clicking
         <translation>對齊垂直鏈標註</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="691"/>
-        <source>Align Vertical Chain Dimensions</source>
-        <translation>對齊垂直鏈標註</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="694"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="879"/>
         <source>Aligns the vertical dimensions to create a chain dimension:&lt;br&gt;- Select two or more vertical dimensions&lt;br&gt;- The first dimension defines the position&lt;br&gt;- Click this tool</source>
@@ -2466,6 +2461,11 @@ Left clicking on empty space will validate the current dimension. Right clicking
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="836"/>
         <source>Position Vertical Chain Dimensions</source>
         <translation>垂直鏈標註位置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="691"/>
+        <source>Align Vertical Chain Dimensions</source>
+        <translation>對齊垂直鏈標註</translation>
     </message>
 </context>
 <context>
@@ -2816,14 +2816,14 @@ Left clicking on empty space will validate the current dimension. Right clicking
         <translation>兩個面之間的中心線</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="679"/>
-        <source>Centerline on Face</source>
-        <translation>面的中心線</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="686"/>
         <source>Adds a centerline to selected faces</source>
         <translation>增加中心線至選取的面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="679"/>
+        <source>Centerline on Face</source>
+        <translation>面的中心線</translation>
     </message>
 </context>
 <context>
@@ -3859,11 +3859,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>儲存頁面為 DXF 格式</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="338"/>
-        <source>Add Midpoint Vertices</source>
-        <translation>加入頂點的中心點</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="339"/>
         <source>Add midpoint vertices</source>
         <translation>加入頂點的中心點</translation>
@@ -4056,6 +4051,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>增加長度尺寸標註</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="233"/>
+        <source>Insert Dimension</source>
+        <translation>插入標註</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="891"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="906"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="944"/>
@@ -4184,11 +4184,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>建立標註</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="118"/>
-        <source>Remove old Hatch</source>
-        <translation>移除舊填充</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="123"/>
         <source>Remove old hatch</source>
         <translation>移除舊填充</translation>
@@ -4202,16 +4197,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="265"/>
         <source>Create Image</source>
         <translation>建立圖片</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="105"/>
-        <source>TechDraw Insert Prefix</source>
-        <translation>工程圖 插入前置</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="109"/>
-        <source>Insert Prefix</source>
-        <translation>插入前置</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="191"/>
@@ -4377,11 +4362,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="2214"/>
         <source>Create Arc Length Dimension</source>
         <translation>建立弧長標註</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="97"/>
-        <source>TechDraw Hole Circle</source>
-        <translation>工程圖 孔圓</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="106"/>
@@ -4741,11 +4721,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>表面紋理符號</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskCenterLine.cpp" line="397"/>
-        <source>Create CenterLine</source>
-        <translation>建立中心線</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskCenterLine.cpp" line="406"/>
         <source>Create Centerline</source>
         <translation>建立中心線</translation>
@@ -4781,9 +4756,34 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>編輯引線符號</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="233"/>
-        <source>Insert Dimension</source>
-        <translation>插入標註</translation>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="338"/>
+        <source>Add Midpoint Vertices</source>
+        <translation>加入頂點的中心點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="118"/>
+        <source>Remove old Hatch</source>
+        <translation>移除舊填充</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="105"/>
+        <source>TechDraw Insert Prefix</source>
+        <translation>工程圖 插入前置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="109"/>
+        <source>Insert Prefix</source>
+        <translation>插入前置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="97"/>
+        <source>TechDraw Hole Circle</source>
+        <translation>工程圖 孔圓</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskCenterLine.cpp" line="397"/>
+        <source>Create CenterLine</source>
+        <translation>建立中心線</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskDimRepair.cpp" line="239"/>
@@ -4960,14 +4960,14 @@ Without a selection, a file browser lets you select a SVG or image file.</source
 <context>
     <name>DrawViewArch</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/App/DrawView.cpp" line="66"/>
-        <source>Arch</source>
-        <translation>架構</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/App/DrawView.cpp" line="68"/>
         <source>BIM</source>
         <translation>BIM建築</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/App/DrawView.cpp" line="66"/>
+        <source>Arch</source>
+        <translation>架構</translation>
     </message>
 </context>
 <context>
@@ -5778,6 +5778,11 @@ Without a selection, a file browser lets you select a SVG or image file.</source
 <context>
     <name>QObject</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/InitGui.py" line="67"/>
+        <source>Technical Drawing (*.svg *.dxf *.pdf)</source>
+        <translation>工程圖 (*.svg *.dxf *.pdf)</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/AppTechDrawGui.cpp" line="171"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/AppTechDrawGui.cpp" line="172"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/AppTechDrawGui.cpp" line="173"/>
@@ -6131,6 +6136,12 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>在選擇中找不到設定物體</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Command.cpp" line="376"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Command.cpp" line="874"/>
+        <source>No Shapes, Groups or Links in this selection</source>
+        <translation>此選擇中沒有形狀、群組或連結</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Command.cpp" line="951"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Command.cpp" line="958"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Command.cpp" line="966"/>
@@ -6267,11 +6278,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandStack.cpp" line="312"/>
         <source>Close the active task dialog and try again.</source>
         <translation>關閉作用中的工作對話框並重試.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="113"/>
-        <source>TechDraw Hole Circle</source>
-        <translation>工程圖 孔圓</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="123"/>
@@ -6447,151 +6453,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>選取 2 條直線</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="188"/>
-        <source>Can not make 2d radius dimension from selection</source>
-        <translation>無法從選擇中製作2d半徑尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="203"/>
-        <source>Can not make 3d radius dimension from selection</source>
-        <translation>無法從選擇中製作3d半徑尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="212"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="338"/>
-        <source>Ellipse Curve Warning</source>
-        <translation>橢圓曲線警告</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="213"/>
-        <source>Selected edge is an Ellipse.  Radius will be approximate. Continue?</source>
-        <translation>選取邊為橢圓，其半徑為近似值. 是否繼續?</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="223"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="349"/>
-        <source>BSpline Curve Warning</source>
-        <translation>BSpline 曲線警告</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="224"/>
-        <source>Selected edge is a BSpline.  Radius will be approximate. Continue?</source>
-        <translation>選取邊為 B 雲形線. 半徑將會是近似值. 是否繼續 ?</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="234"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="360"/>
-        <source>BSpline Curve Error</source>
-        <translation>B 雲形線曲線錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="235"/>
-        <source>Selected edge is a BSpline and a radius can not be calculated.</source>
-        <translation>選取邊為 B 雲形線而半徑無法被計算出來.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="314"/>
-        <source>Can not make 2d diameter dimension from selection</source>
-        <translation>無法從選擇中製作2d直徑尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="329"/>
-        <source>Can not make 3d diameter dimension from selection</source>
-        <translation>無法從選擇中製作3d直徑尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="339"/>
-        <source>Selected edge is an Ellipse.  Diameter will be approximate. Continue?</source>
-        <translation>選取邊為橢圓，其直徑為近似值. 是否繼續?</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="350"/>
-        <source>Selected edge is a BSpline.  Diameter will be approximate. Continue?</source>
-        <translation>選取邊為 B 雲形線. 直徑將會是近似值. 是否繼續 ?</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="361"/>
-        <source>Selected edge is a BSpline and a diameter can not be calculated.</source>
-        <translation>選取邊為 B 雲形線而直徑無法被計算出來.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="441"/>
-        <source>Can not make 2d linear dimension from selection</source>
-        <translation>無法從選擇中製作2d線性尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="457"/>
-        <source>Can not make 3d linear dimension from selection</source>
-        <translation>無法從選擇中製作3d線性尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="539"/>
-        <source>Can not make 2d horizontal dimension from selection</source>
-        <translation>無法從選擇中製作2d水平尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="555"/>
-        <source>Can not make 3d horizontal dimension from selection</source>
-        <translation>無法從選擇中製作3d水平尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="638"/>
-        <source>Can not make 2d vertical dimension from selection</source>
-        <translation>無法從選擇中製作2d垂直尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="653"/>
-        <source>Can not make 3d vertical dimension from selection</source>
-        <translation>無法從選擇中製作3d垂直尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="734"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="830"/>
-        <source>Can not make 2d angle dimension from selection</source>
-        <translation>無法從選擇中製作2d角度尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="749"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="845"/>
-        <source>Can not make 3d angle dimension from selection</source>
-        <translation>無法從選擇中製作3d角度尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="913"/>
-        <source>There is no 3D object in your selection</source>
-        <translation>您的選擇中沒有 3D 物體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="920"/>
-        <source>There are no 3D Edges or Vertices in your selection</source>
-        <translation>在您的選擇中沒有 3D 邊或點</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1113"/>
-        <source>Can not make 2d extent dimension from selection</source>
-        <translation>無法從選擇中製作2d範圍尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1127"/>
-        <source>Can not make 3d extent dimension from selection</source>
-        <translation>無法從選擇中製作3d範圍尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1219"/>
-        <source>There is no Dimension in your selection</source>
-        <translation>您的選擇中沒有尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1278"/>
-        <source>Select 2 point objects and 1 View. (1)</source>
-        <translation>選擇 2 點物體以及 1 個檢視. (1)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1287"/>
-        <source>Select 2 point objects and 1 View. (2)</source>
-        <translation>選擇 2 點物體以及 1 個檢視. (2)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1515"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1563"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1611"/>
@@ -6605,11 +6466,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2187"/>
         <source>Close the active task dialog and try again</source>
         <translation>關閉作用中的工作對話框並重試</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1932"/>
-        <source>There are no 3D edges or vertices in your selection</source>
-        <translation>在您的選擇中沒有 3D 邊或點</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2093"/>
@@ -6628,34 +6484,14 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>無法從選取建立 2D 延伸尺寸</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2134"/>
-        <source>Can not make 2D extent dimension from selection</source>
-        <translation>無法從選擇中製作2D範圍尺寸標注</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2148"/>
         <source>Cannot make 3D extent dimension from selection</source>
         <translation>無法從選取建立 3D 延伸尺寸</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2149"/>
-        <source>Can not make 3D extent dimension from selection</source>
-        <translation>無法從選擇中製作3D範圍尺寸標注</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2226"/>
         <source>There is no dimension in your selection</source>
         <translation>您的選擇中沒有尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2279"/>
-        <source>Select 2 point objects and 1 view. (1)</source>
-        <translation>選擇 2 點物體以及 1 個檢視. (1)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2288"/>
-        <source>Select 2 point objects and 1 view. (2)</source>
-        <translation>選擇 2 點物體以及 1 個檢視. (2)</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2402"/>
@@ -6668,44 +6504,14 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>無法從選取建立 3D 尺寸</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2420"/>
-        <source>Can not make 2D dimension from selection</source>
-        <translation>無法從選擇中製作2D尺寸標注</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2431"/>
         <source>Ellipse curve warning</source>
         <translation>橢圓曲線警告</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2436"/>
-        <source>Can not make 3D dimension from selection</source>
-        <translation>無法從選擇中製作3D尺寸標注</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2443"/>
-        <source>B-spline Curve Warning</source>
-        <translation>B-雲形曲線警告</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2450"/>
         <source>Selected edge is an Ellipse. Value will be approximate. Continue?</source>
         <translation>選取邊為橢圓，其結果為近似值. 是否繼續?</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2454"/>
-        <source>B-spline Curve Error</source>
-        <translation>B-雲形曲線錯誤</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2472"/>
-        <source>Selected edge is a B-spline and a radius/diameter can not be calculated.</source>
-        <translation>選取邊為 B 雲形線而半徑/直徑無法被計算出來.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2523"/>
-        <source>Selection contains both 2d and 3d geometry</source>
-        <translation>選擇包含 2d 和 3d 幾何體</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2442"/>
@@ -6796,45 +6602,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>錯誤的選擇</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="775"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="958"/>
-        <source>Selection is not a centerline</source>
-        <translation>選擇並非中心線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="846"/>
-        <source>Selection is not a Centerline</source>
-        <translation>選擇並非中心線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="855"/>
-        <source>Selection not understood</source>
-        <translation>不了解選取什麼</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="946"/>
-        <source>You must select 2 vertices or an existing centerline</source>
-        <translation>您必須選取 2 個點或現有的中心線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="968"/>
-        <source>Select 2 vertices or 1 centerline</source>
-        <translation>選取 2 個頂點或 1 條中心線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1468"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="2268"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1469"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1958"/>
-        <source>Selection is empty</source>
-        <translation>選擇為空</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1059"/>
-        <source>Not enough points in the selection</source>
-        <translation>沒有足夠的點被選取</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="120"/>
         <source>Can not attach leader.  No base View selected.</source>
         <translation>無法附加引線. 未選擇基本檢視.</translation>
@@ -6876,9 +6643,25 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>選擇並非中心線.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="775"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="958"/>
+        <source>Selection is not a centerline</source>
+        <translation>選擇並非中心線</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="842"/>
         <source>Selection not understood.</source>
         <translation>不了解選取什麼.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="846"/>
+        <source>Selection is not a Centerline</source>
+        <translation>選擇並非中心線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="855"/>
+        <source>Selection not understood</source>
+        <translation>不了解選取什麼</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="933"/>
@@ -6886,9 +6669,19 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>您必須選取 2 個點或現有的中心線.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="946"/>
+        <source>You must select 2 vertices or an existing centerline</source>
+        <translation>您必須選取 2 個點或現有的中心線</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="955"/>
         <source>Need 2 Vertices or 1 CenterLine.</source>
         <translation>需要 2 個點或 1 條中心線.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="968"/>
+        <source>Select 2 vertices or 1 centerline</source>
+        <translation>選取 2 個頂點或 1 條中心線</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1046"/>
@@ -6901,40 +6694,14 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>選擇並非裝飾線.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1079"/>
-        <source>Selection is not a cosmetic line</source>
-        <translation>選擇並非裝飾線</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1103"/>
         <source>You must select 2 Vertexes.</source>
         <translation>您必須選擇2個點.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1115"/>
-        <source>You must select 2 vertices</source>
-        <translation>您必須選擇2個點</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1153"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1350"/>
-        <source>Nothing selected</source>
-        <translation>沒有選取項目</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1161"/>
-        <source>At least 1 object in selection is not a part view</source>
-        <translation>至少 1 個選取物體不是零件檢視</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1202"/>
         <source>You must select a base view for the circle</source>
         <translation>您必須為圓選擇一個基礎檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1208"/>
-        <source>Unknown object type in selection</source>
-        <translation>未知的物體類型在選擇中</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1213"/>
@@ -6972,6 +6739,60 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>選擇正好一個引線或一個引線符號.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1468"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionDims.cpp" line="2268"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1469"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="1958"/>
+        <source>Selection is empty</source>
+        <translation>選擇為空</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1533"/>
+        <source>No Part View in Selection</source>
+        <translation>選擇中沒有零件檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1546"/>
+        <source>No %1 in Selection</source>
+        <translation>選擇中沒有 %1</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1630"/>
+        <source>No page to insert the symbol!</source>
+        <translation>沒有頁面可插入符號!</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1059"/>
+        <source>Not enough points in the selection</source>
+        <translation>沒有足夠的點被選取</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1079"/>
+        <source>Selection is not a cosmetic line</source>
+        <translation>選擇並非裝飾線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1115"/>
+        <source>You must select 2 vertices</source>
+        <translation>您必須選擇2個點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1153"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1350"/>
+        <source>Nothing selected</source>
+        <translation>沒有選取項目</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1161"/>
+        <source>At least 1 object in selection is not a part view</source>
+        <translation>至少 1 個選取物體不是零件檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1208"/>
+        <source>Unknown object type in selection</source>
+        <translation>未知的物體類型在選擇中</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1429"/>
         <source>You must select a view and/or lines</source>
         <translation>您必須選擇一個檢視與/或線</translation>
@@ -6987,16 +6808,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>此選擇中沒有零件檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1533"/>
-        <source>No Part View in Selection</source>
-        <translation>選擇中沒有零件檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1546"/>
-        <source>No %1 in Selection</source>
-        <translation>選擇中沒有 %1</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1582"/>
         <source>Select exactly one leader line or one weld symbol</source>
         <translation>選擇正好一個引線或一個引線符號</translation>
@@ -7006,11 +6817,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1474"/>
         <source>SurfaceFinishSymbols</source>
         <translation>表面紋理符號</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1630"/>
-        <source>No page to insert the symbol!</source>
-        <translation>沒有頁面可插入符號!</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="1641"/>
@@ -7203,41 +7009,18 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>不正確的選取</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAlign.cpp" line="57"/>
-        <source>You must select 2 vertices or 1 edge
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAlign.cpp" line="54"/>
+        <source>You must select 2 vertexes or 1 edge
 </source>
         <translation>您必須選擇2個點或一個邊緣
 </translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="310"/>
-        <source>No TechDraw Page</source>
-        <translation>沒有 工程圖 頁面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="311"/>
-        <source>Need a TechDraw Page for this command</source>
-        <translation>本命令需要一個 TechDraw 頁面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="111"/>
-        <source>Replace hatch?</source>
-        <translation>替代填充?</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="112"/>
-        <source>Some faces in the selection are already hatched. Replace?</source>
-        <translation>某些選擇中的面已被填充，是否更換?</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="387"/>
-        <source>Select a face first</source>
-        <translation>請先選擇一個面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="352"/>
-        <source>No TechDraw object in selection</source>
-        <translation>沒有 工程圖 物體在選擇中</translation>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAlign.cpp" line="57"/>
+        <source>You must select 2 vertices or 1 edge
+</source>
+        <translation>您必須選擇2個點或一個邊緣
+</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="106"/>
@@ -7251,7 +7034,17 @@ Without a selection, a file browser lets you select a SVG or image file.</source
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="111"/>
+        <source>Replace hatch?</source>
+        <translation>替代填充?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="111"/>
         <source>Some Faces in selection are already hatched. Replace?</source>
+        <translation>某些選擇中的面已被填充，是否更換?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="112"/>
+        <source>Some faces in the selection are already hatched. Replace?</source>
         <translation>某些選擇中的面已被填充，是否更換?</translation>
     </message>
     <message>
@@ -7281,6 +7074,16 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>此填充中沒有面要填充</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="387"/>
+        <source>Select a face first</source>
+        <translation>請先選擇一個面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="352"/>
+        <source>No TechDraw object in selection</source>
+        <translation>沒有 工程圖 物體在選擇中</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="401"/>
         <source>Create a page to insert</source>
         <translation>建立要插入的頁面</translation>
@@ -7292,9 +7095,15 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>此填充中沒有面要填充</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotationImp.cpp" line="147"/>
-        <source>Please select a Line Group</source>
-        <translation>請選擇一個線群組</translation>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotationImp.cpp" line="193"/>
+        <source>%1 defines these line widths:
+ thin: %2
+ graphic: %3
+thick: %4</source>
+        <translation>%1 定義這些線的寬度:
+ 細: %2
+ 繪圖: %3
+ 粗: %4</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotationImp.cpp" line="231"/>
@@ -7401,21 +7210,6 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/SymbolChooser.cpp" line="61"/>
         <source>Select a symbol</source>
         <translation>選擇一個符號</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskActiveView.cpp" line="86"/>
-        <source>ActiveView to TD View</source>
-        <translation>活動檢視至 TD 檢視</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskActiveView.cpp" line="97"/>
-        <source>No Main Window</source>
-        <translation>沒有主視窗</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskActiveView.cpp" line="98"/>
-        <source>Can not find the main window</source>
-        <translation>找不到主視窗</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskActiveView.cpp" line="219"/>
@@ -7779,33 +7573,239 @@ Without a selection, a file browser lets you select a SVG or image file.</source
         <translation>更新文字</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/InitGui.py" line="67"/>
-        <source>Technical Drawing (*.svg *.dxf *.pdf)</source>
-        <translation>工程圖 (*.svg *.dxf *.pdf)</translation>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandExtensionPack.cpp" line="113"/>
+        <source>TechDraw Hole Circle</source>
+        <translation>工程圖 孔圓</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Command.cpp" line="376"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Command.cpp" line="874"/>
-        <source>No Shapes, Groups or Links in this selection</source>
-        <translation>此選擇中沒有形狀、群組或連結</translation>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="188"/>
+        <source>Can not make 2d radius dimension from selection</source>
+        <translation>無法從選擇中製作2d半徑尺寸標注</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAlign.cpp" line="54"/>
-        <source>You must select 2 vertexes or 1 edge
-</source>
-        <translation>您必須選擇2個點或一個邊緣
-</translation>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="203"/>
+        <source>Can not make 3d radius dimension from selection</source>
+        <translation>無法從選擇中製作3d半徑尺寸標注</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotationImp.cpp" line="193"/>
-        <source>%1 defines these line widths:
- thin: %2
- graphic: %3
-thick: %4</source>
-        <translation>%1 定義這些線的寬度:
- 細: %2
- 繪圖: %3
- 粗: %4</translation>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="212"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="338"/>
+        <source>Ellipse Curve Warning</source>
+        <translation>橢圓曲線警告</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="213"/>
+        <source>Selected edge is an Ellipse.  Radius will be approximate. Continue?</source>
+        <translation>選取邊為橢圓，其半徑為近似值. 是否繼續?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="223"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="349"/>
+        <source>BSpline Curve Warning</source>
+        <translation>BSpline 曲線警告</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="224"/>
+        <source>Selected edge is a BSpline.  Radius will be approximate. Continue?</source>
+        <translation>選取邊為 B 雲形線. 半徑將會是近似值. 是否繼續 ?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="234"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="360"/>
+        <source>BSpline Curve Error</source>
+        <translation>B 雲形線曲線錯誤</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="235"/>
+        <source>Selected edge is a BSpline and a radius can not be calculated.</source>
+        <translation>選取邊為 B 雲形線而半徑無法被計算出來.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="314"/>
+        <source>Can not make 2d diameter dimension from selection</source>
+        <translation>無法從選擇中製作2d直徑尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="329"/>
+        <source>Can not make 3d diameter dimension from selection</source>
+        <translation>無法從選擇中製作3d直徑尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="339"/>
+        <source>Selected edge is an Ellipse.  Diameter will be approximate. Continue?</source>
+        <translation>選取邊為橢圓，其直徑為近似值. 是否繼續?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="350"/>
+        <source>Selected edge is a BSpline.  Diameter will be approximate. Continue?</source>
+        <translation>選取邊為 B 雲形線. 直徑將會是近似值. 是否繼續 ?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="361"/>
+        <source>Selected edge is a BSpline and a diameter can not be calculated.</source>
+        <translation>選取邊為 B 雲形線而直徑無法被計算出來.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="441"/>
+        <source>Can not make 2d linear dimension from selection</source>
+        <translation>無法從選擇中製作2d線性尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="457"/>
+        <source>Can not make 3d linear dimension from selection</source>
+        <translation>無法從選擇中製作3d線性尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="539"/>
+        <source>Can not make 2d horizontal dimension from selection</source>
+        <translation>無法從選擇中製作2d水平尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="555"/>
+        <source>Can not make 3d horizontal dimension from selection</source>
+        <translation>無法從選擇中製作3d水平尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="638"/>
+        <source>Can not make 2d vertical dimension from selection</source>
+        <translation>無法從選擇中製作2d垂直尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="653"/>
+        <source>Can not make 3d vertical dimension from selection</source>
+        <translation>無法從選擇中製作3d垂直尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="734"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="830"/>
+        <source>Can not make 2d angle dimension from selection</source>
+        <translation>無法從選擇中製作2d角度尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="749"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="845"/>
+        <source>Can not make 3d angle dimension from selection</source>
+        <translation>無法從選擇中製作3d角度尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="913"/>
+        <source>There is no 3D object in your selection</source>
+        <translation>您的選擇中沒有 3D 物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="920"/>
+        <source>There are no 3D Edges or Vertices in your selection</source>
+        <translation>在您的選擇中沒有 3D 邊或點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1113"/>
+        <source>Can not make 2d extent dimension from selection</source>
+        <translation>無法從選擇中製作2d範圍尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1127"/>
+        <source>Can not make 3d extent dimension from selection</source>
+        <translation>無法從選擇中製作3d範圍尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1219"/>
+        <source>There is no Dimension in your selection</source>
+        <translation>您的選擇中沒有尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1278"/>
+        <source>Select 2 point objects and 1 View. (1)</source>
+        <translation>選擇 2 點物體以及 1 個檢視. (1)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1287"/>
+        <source>Select 2 point objects and 1 View. (2)</source>
+        <translation>選擇 2 點物體以及 1 個檢視. (2)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1932"/>
+        <source>There are no 3D edges or vertices in your selection</source>
+        <translation>在您的選擇中沒有 3D 邊或點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2134"/>
+        <source>Can not make 2D extent dimension from selection</source>
+        <translation>無法從選擇中製作2D範圍尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2149"/>
+        <source>Can not make 3D extent dimension from selection</source>
+        <translation>無法從選擇中製作3D範圍尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2279"/>
+        <source>Select 2 point objects and 1 view. (1)</source>
+        <translation>選擇 2 點物體以及 1 個檢視. (1)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2288"/>
+        <source>Select 2 point objects and 1 view. (2)</source>
+        <translation>選擇 2 點物體以及 1 個檢視. (2)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2420"/>
+        <source>Can not make 2D dimension from selection</source>
+        <translation>無法從選擇中製作2D尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2436"/>
+        <source>Can not make 3D dimension from selection</source>
+        <translation>無法從選擇中製作3D尺寸標注</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2443"/>
+        <source>B-spline Curve Warning</source>
+        <translation>B-雲形曲線警告</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2454"/>
+        <source>B-spline Curve Error</source>
+        <translation>B-雲形曲線錯誤</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2472"/>
+        <source>Selected edge is a B-spline and a radius/diameter can not be calculated.</source>
+        <translation>選取邊為 B 雲形線而半徑/直徑無法被計算出來.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2523"/>
+        <source>Selection contains both 2d and 3d geometry</source>
+        <translation>選擇包含 2d 和 3d 幾何體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="310"/>
+        <source>No TechDraw Page</source>
+        <translation>沒有 工程圖 頁面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandDecorate.cpp" line="311"/>
+        <source>Need a TechDraw Page for this command</source>
+        <translation>本命令需要一個 TechDraw 頁面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawAnnotationImp.cpp" line="147"/>
+        <source>Please select a Line Group</source>
+        <translation>請選擇一個線群組</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskActiveView.cpp" line="86"/>
+        <source>ActiveView to TD View</source>
+        <translation>活動檢視至 TD 檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskActiveView.cpp" line="97"/>
+        <source>No Main Window</source>
+        <translation>沒有主視窗</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskActiveView.cpp" line="98"/>
+        <source>Can not find the main window</source>
+        <translation>找不到主視窗</translation>
     </message>
 </context>
 <context>
@@ -8104,11 +8104,6 @@ there is an open task dialog.</source>
         <translation>定義此尺寸標注的幾何圖形檢視的子元素</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskDimRepair.ui" line="86"/>
-        <source>Replace References With Current Selection</source>
-        <translation>將參考替換為目前選擇</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskDimRepair.ui" line="98"/>
         <source>References 2D</source>
         <translation>參考2D</translation>
@@ -8137,6 +8132,11 @@ there is an open task dialog.</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskDimRepair.ui" line="187"/>
         <source>References 3D</source>
         <translation>參考3D</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskDimRepair.ui" line="86"/>
+        <source>Replace References With Current Selection</source>
+        <translation>將參考替換為目前選擇</translation>
     </message>
 </context>
 <context>
@@ -10671,11 +10671,6 @@ can override the global &apos;Update With 3D&apos; parameter</source>
         <translation>使用3D相機方向</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="856"/>
-        <source>Displays view labels even when frames are suppressed</source>
-        <translation>即使框架被抑制，仍可顯示檢視標籤</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="906"/>
         <source>Check this box if you want views to snap into alignment when being dragged.</source>
         <translation>如果您希望檢視在拖動時對齊，請勾選此框.</translation>
@@ -10724,11 +10719,6 @@ can override the global &apos;Update With 3D&apos; parameter</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1045"/>
         <source>If checked, view labels will be displayed even when frames are suppressed.</source>
         <translation>如果選中，即使禁止顯示幀，也會顯示檢視標籤.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1048"/>
-        <source>Always Show Label</source>
-        <translation>總是顯示標籤</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="35"/>
@@ -10992,34 +10982,14 @@ for ProjectionGroups</source>
         <translation>使用3D相機方向</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="853"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Control when the view boundary frames and labels are displayed.&lt;/p&gt;&lt;p&gt;Auto: Show on hover, On: Always show, Off: Never show.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;控制何時顯示檢視邊界框架和標籤.&lt;/p&gt;&lt;p&gt;自動: 在懸浮時顯示，開: 總是顯示, 關: 永遠不顯示.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="856"/>
+        <source>Displays view labels even when frames are suppressed</source>
+        <translation>即使框架被抑制，仍可顯示檢視標籤</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="863"/>
-        <source>Auto</source>
-        <translation>自動</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="868"/>
-        <source>On</source>
-        <translation>開</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="873"/>
-        <source>Off</source>
-        <translation>關</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="878"/>
-        <source>Manual</source>
-        <translation>手動</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="886"/>
-        <source>View frames mode</source>
-        <translation>檢視圖框模式</translation>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="1048"/>
+        <source>Always Show Label</source>
+        <translation>總是顯示標籤</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="898"/>
@@ -11070,6 +11040,36 @@ for ProjectionGroups</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="879"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; Items in &lt;span style=&quot; font-style:italic;&quot;&gt;italics&lt;/span&gt; are default values for new objects. They have no effect on existing objects.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;注意: &lt;/span&gt; 項目為 &lt;span style=&quot; font-style:italic;&quot;&gt;斜體&lt;/span&gt; 是新物體的預設值. 它們對現有物體沒有影響. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="853"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Control when the view boundary frames and labels are displayed.&lt;/p&gt;&lt;p&gt;Auto: Show on hover, On: Always show, Off: Never show.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;控制何時顯示檢視邊界框架和標籤.&lt;/p&gt;&lt;p&gt;自動: 在懸浮時顯示，開: 總是顯示, 關: 永遠不顯示.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="863"/>
+        <source>Auto</source>
+        <translation>自動</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="868"/>
+        <source>On</source>
+        <translation>開</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="873"/>
+        <source>Off</source>
+        <translation>關</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="878"/>
+        <source>Manual</source>
+        <translation>手動</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/DlgPrefsTechDrawGeneral.ui" line="886"/>
+        <source>View frames mode</source>
+        <translation>檢視圖框模式</translation>
     </message>
 </context>
 <context>
@@ -12304,10 +12304,10 @@ Do you want to continue?</source>
         <translation>Y</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskCosVertex.cpp" line="158"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskCosVertex.cpp" line="244"/>
-        <source>Pick Points</source>
-        <translation>選擇點</translation>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskCosVertex.cpp" line="159"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskCosVertex.cpp" line="248"/>
+        <source>Pick points</source>
+        <translation>選取點</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskCosVertex.cpp" line="172"/>
@@ -12317,11 +12317,6 @@ Do you want to continue?</source>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskCosVertex.cpp" line="175"/>
         <source>Escape picking</source>
-        <translation>退出挑選</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosVertex.cpp" line="173"/>
-        <source>Escape Picking</source>
         <translation>退出挑選</translation>
     </message>
     <message>
@@ -12335,10 +12330,15 @@ Do you want to continue?</source>
         <translation>放棄進行的編輯. 重新來過.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskCosVertex.cpp" line="159"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskCosVertex.cpp" line="248"/>
-        <source>Pick points</source>
-        <translation>選取點</translation>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskCosVertex.cpp" line="158"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskCosVertex.cpp" line="244"/>
+        <source>Pick Points</source>
+        <translation>選擇點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskCosVertex.cpp" line="173"/>
+        <source>Escape Picking</source>
+        <translation>退出挑選</translation>
     </message>
 </context>
 <context>
@@ -13940,13 +13940,13 @@ by negative value of &apos;Overtolerance&apos;.</source>
 <context>
     <name>TechDrawGui::TaskDlgLineDecor</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLineDecor.cpp" line="442"/>
-        <source>Restore Invisible Lines</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLineDecor.cpp" line="467"/>
+        <source>Restore invisible lines</source>
         <translation>恢復隱形線</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLineDecor.cpp" line="467"/>
-        <source>Restore invisible lines</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLineDecor.cpp" line="442"/>
+        <source>Restore Invisible Lines</source>
         <translation>恢復隱形線</translation>
     </message>
 </context>
@@ -14353,8 +14353,16 @@ You can pick further points to get line segments.</source>
         <translation>虛線點點</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="479"/>
-        <source>Edit Points</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="224"/>
+        <source>Pick points</source>
+        <translation>選擇點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="273"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="632"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="684"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="701"/>
+        <source>Edit points</source>
         <translation>編輯點</translation>
     </message>
     <message>
@@ -14369,12 +14377,6 @@ You can pick further points to get line segments.</source>
         <translation>儲存點</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="525"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="542"/>
-        <source>Save changes</source>
-        <translation>儲存變更</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="535"/>
         <source>Save points</source>
         <translation>儲存點</translation>
@@ -14385,9 +14387,9 @@ You can pick further points to get line segments.</source>
         <translation>點擊並拖曳標記以調整引線</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="568"/>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="585"/>
-        <source>Save Changes</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="525"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="542"/>
+        <source>Save changes</source>
         <translation>儲存變更</translation>
     </message>
     <message>
@@ -14406,17 +14408,15 @@ You can pick further points to get line segments.</source>
         <translation>放棄進行的編輯. 重新來過.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="224"/>
-        <source>Pick points</source>
-        <translation>選擇點</translation>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="479"/>
+        <source>Edit Points</source>
+        <translation>編輯點</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="273"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="632"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="684"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="701"/>
-        <source>Edit points</source>
-        <translation>編輯點</translation>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="568"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/TechDraw/Gui/TaskLeaderLine.cpp" line="585"/>
+        <source>Save Changes</source>
+        <translation>儲存變更</translation>
     </message>
 </context>
 <context>
@@ -15835,26 +15835,26 @@ using the given X/Y spacings</source>
 <context>
     <name>TechDraw_2LineCenterLine</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="647"/>
-        <source>Adds a Centerline between 2 Lines</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="660"/>
+        <source>Adds a centerline between 2 selected lines</source>
         <translation>在兩條線中加入中心線</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="660"/>
-        <source>Adds a centerline between 2 selected lines</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="647"/>
+        <source>Adds a Centerline between 2 Lines</source>
         <translation>在兩條線中加入中心線</translation>
     </message>
 </context>
 <context>
     <name>TechDraw_2PointCenterLine</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="651"/>
-        <source>Adds a Centerline between 2 Points</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="664"/>
+        <source>Adds a centerline between 2 selected points</source>
         <translation>在兩點間加入中心線</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="664"/>
-        <source>Adds a centerline between 2 selected points</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="651"/>
+        <source>Adds a Centerline between 2 Points</source>
         <translation>在兩點間加入中心線</translation>
     </message>
 </context>
@@ -15905,26 +15905,26 @@ using the given X/Y spacings</source>
 <context>
     <name>TechDraw_ComplexSection</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Command.cpp" line="539"/>
-        <source>Insert complex Section View</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Command.cpp" line="801"/>
+        <source>Inserts a complex section view</source>
         <translation>插入複雜剖面檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Command.cpp" line="801"/>
-        <source>Inserts a complex section view</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Command.cpp" line="539"/>
+        <source>Insert complex Section View</source>
         <translation>插入複雜剖面檢視</translation>
     </message>
 </context>
 <context>
     <name>TechDraw_CosmeticVertex</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="281"/>
-        <source>Inserts a Cosmetic Vertex into a View</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="282"/>
+        <source>Inserts a cosmetic vertex into a view</source>
         <translation>在檢視中插入裝飾頂點</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="282"/>
-        <source>Inserts a cosmetic vertex into a view</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="281"/>
+        <source>Inserts a Cosmetic Vertex into a View</source>
         <translation>在檢視中插入裝飾頂點</translation>
     </message>
 </context>
@@ -15949,14 +15949,14 @@ using the given X/Y spacings</source>
 <context>
     <name>TechDraw_FaceCenterLine</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="643"/>
-        <source>Adds a Centerline to Faces</source>
-        <translation>增加中心線至面</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="656"/>
         <source>Adds a centerline to selected faces</source>
         <translation>增加中心線至選擇面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="643"/>
+        <source>Adds a Centerline to Faces</source>
+        <translation>增加中心線至面</translation>
     </message>
 </context>
 <context>
@@ -16054,26 +16054,26 @@ using the given X/Y spacings</source>
 <context>
     <name>TechDraw_HorizontalExtent</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1023"/>
-        <source>Insert Horizontal Extent Dimension</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2035"/>
+        <source>Insert horizontal extent dimension</source>
         <translation>插入水平範圍標註</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2035"/>
-        <source>Insert horizontal extent dimension</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1023"/>
+        <source>Insert Horizontal Extent Dimension</source>
         <translation>插入水平範圍標註</translation>
     </message>
 </context>
 <context>
     <name>TechDraw_Midpoints</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="285"/>
-        <source>Inserts Cosmetic Vertices at Midpoint of selected Edges</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="286"/>
+        <source>Inserts cosmetic vertices at the midpoint of the selected edges</source>
         <translation>在選擇邊之中點處插入裝飾頂點</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="286"/>
-        <source>Inserts cosmetic vertices at the midpoint of the selected edges</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="285"/>
+        <source>Inserts Cosmetic Vertices at Midpoint of selected Edges</source>
         <translation>在選擇邊之中點處插入裝飾頂點</translation>
     </message>
 </context>
@@ -16145,26 +16145,26 @@ using the given X/Y spacings</source>
 <context>
     <name>TechDraw_Quadrants</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="289"/>
-        <source>Inserts Cosmetic Vertices at Quadrant Points of selected Circles</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="290"/>
+        <source>Inserts cosmetic vertices at the quadrant points of the selected circles</source>
         <translation>在選擇圓之象限點處插入裝飾頂點</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="290"/>
-        <source>Inserts cosmetic vertices at the quadrant points of the selected circles</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandAnnotate.cpp" line="289"/>
+        <source>Inserts Cosmetic Vertices at Quadrant Points of selected Circles</source>
         <translation>在選擇圓之象限點處插入裝飾頂點</translation>
     </message>
 </context>
 <context>
     <name>TechDraw_SectionView</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Command.cpp" line="534"/>
-        <source>Insert simple Section View</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Command.cpp" line="796"/>
+        <source>Inserts a simple section view</source>
         <translation>插入簡單剖面檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Command.cpp" line="796"/>
-        <source>Inserts a simple section view</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Command.cpp" line="534"/>
+        <source>Insert simple Section View</source>
         <translation>插入簡單剖面檢視</translation>
     </message>
 </context>
@@ -16301,13 +16301,13 @@ using the given X/Y spacings</source>
 <context>
     <name>TechDraw_VerticalExtentDimension</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1027"/>
-        <source>Insert Vertical Extent Dimension</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2039"/>
+        <source>Insert vertical extent dimension</source>
         <translation>插入垂直範圍標註</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="2039"/>
-        <source>Insert vertical extent dimension</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/CommandCreateDims.cpp" line="1027"/>
+        <source>Insert Vertical Extent Dimension</source>
         <translation>插入垂直範圍標註</translation>
     </message>
 </context>
@@ -16336,6 +16336,16 @@ using the given X/Y spacings</source>
 </context>
 <context>
     <name>Workbench</name>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Workbench.cpp" line="46"/>
+        <source>TechDraw</source>
+        <translation>工程圖</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/InitGui.py" line="42"/>
+        <source>Technical Drawing workbench</source>
+        <translation>工程製圖工作台</translation>
+    </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Workbench.cpp" line="38"/>
         <source>Dimensions</source>
@@ -16391,11 +16401,6 @@ using the given X/Y spacings</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Workbench.cpp" line="45"/>
         <source>Add Vertices</source>
         <translation>加入點</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Workbench.cpp" line="46"/>
-        <source>TechDraw</source>
-        <translation>工程圖</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Workbench.cpp" line="46"/>
@@ -16491,11 +16496,6 @@ using the given X/Y spacings</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/Gui/Workbench.cpp" line="257"/>
         <source>Aligning</source>
         <translation>對齊</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/TechDraw/InitGui.py" line="42"/>
-        <source>Technical Drawing workbench</source>
-        <translation>工程製圖工作台</translation>
     </message>
 </context>
 </TS>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -298,16 +298,6 @@
         <translation>基礎的物體</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateView.py" line="230"/>
-        <source>The object moved by the move</source>
-        <translation>透過移動已移動的物體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateView.py" line="237"/>
-        <source>The containing parts of objects moved by the move</source>
-        <translation>移動所移動的物件的包含部分</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateView.py" line="246"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateView.py" line="280"/>
         <source>The objects moved by the move</source>
@@ -367,6 +357,16 @@
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateSimulation.py" line="318"/>
         <source>The type of the motion</source>
         <translation>移動類型</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateView.py" line="230"/>
+        <source>The object moved by the move</source>
+        <translation>透過移動已移動的物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateView.py" line="237"/>
+        <source>The containing parts of objects moved by the move</source>
+        <translation>移動所移動的物件的包含部分</translation>
     </message>
 </context>
 <context>
@@ -841,21 +841,6 @@ SLOPE 分別定義了時間 = T1 和 T2 時從 0 到 H1 以及從 H2 到 0 的�
         <translation>不要連結</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/InitGui.py" line="63"/>
-        <source>Loading Assembly workbench...</source>
-        <translation>載入零件組合工作台...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/InitGui.py" line="63"/>
-        <source>Initializing Assembly workbench...</source>
-        <translation>初始化零件組合工作台...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/InitGui.py" line="106"/>
-        <source>Assembly workbench loaded</source>
-        <translation>零件組合工作台已載入</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/InitGui.py" line="142"/>
         <source>Create</source>
         <translation>建立</translation>
@@ -889,6 +874,21 @@ SLOPE 分別定義了時間 = T1 和 T2 時從 0 到 H1 以及從 H2 到 0 的�
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/InitGui.py" line="259"/>
         <source>Simulation</source>
         <translation>模擬</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/InitGui.py" line="63"/>
+        <source>Loading Assembly workbench...</source>
+        <translation>載入零件組合工作台...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/InitGui.py" line="63"/>
+        <source>Initializing Assembly workbench...</source>
+        <translation>初始化零件組合工作台...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/InitGui.py" line="106"/>
+        <source>Assembly workbench loaded</source>
+        <translation>零件組合工作台已載入</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateAssembly.py" line="45"/>
@@ -1087,16 +1087,6 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <translation>檢視組合來源</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="1350"/>
-        <source>Redundant joints:</source>
-        <translation>冗餘接點:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="1357"/>
-        <source>Partially redundant:</source>
-        <translation>部份冗餘:</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="1653"/>
         <source>and %1 more</source>
         <translation>以及 %1 以上</translation>
@@ -1107,6 +1097,11 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <translation>空零件組合</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="136"/>
+        <source>Delete associated joints</source>
+        <translation>刪除關聯的接合</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="1337"/>
         <source>Over-constrained:</source>
         <translation>過度約束:</translation>
@@ -1115,6 +1110,16 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="1344"/>
         <source>Malformed joints:</source>
         <translation>畸形接點:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="1350"/>
+        <source>Redundant joints:</source>
+        <translation>冗餘接點:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="1357"/>
+        <source>Partially redundant:</source>
+        <translation>部份冗餘:</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="1363"/>
@@ -1137,11 +1142,6 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="1375"/>
         <source>Fully constrained</source>
         <translation>完全拘束</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/Gui/ViewProviderAssembly.cpp" line="136"/>
-        <source>Delete associated joints</source>
-        <translation>刪除關聯的接合</translation>
     </message>
 </context>
 <context>
@@ -1318,6 +1318,16 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
 <context>
     <name>Assembly_CreateAssembly</name>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateAssembly.py" line="49"/>
+        <source>New Assembly</source>
+        <translation>新增零件組合</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateAssembly.py" line="54"/>
+        <source>Creates an assembly object in the current document, or in the current active assembly (if any). Limit of one root assembly per file.</source>
+        <translation>在目前文件或目前活動組合體(如果有)中建立組合件物件. 每個檔案只能有一個根零件組合.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateAssembly.py" line="45"/>
         <source>Create Assembly</source>
         <translation>建立零件組合</translation>
@@ -1328,18 +1338,8 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <translation>在目前文件中建立零件組合物體.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateAssembly.py" line="49"/>
-        <source>New Assembly</source>
-        <translation>新增零件組合</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateAssembly.py" line="53"/>
         <source>Create an assembly object in the current document, or in the current active assembly (if any). Limit of one root assembly per file.</source>
-        <translation>在目前文件或目前活動組合體(如果有)中建立組合件物件. 每個檔案只能有一個根零件組合.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateAssembly.py" line="54"/>
-        <source>Creates an assembly object in the current document, or in the current active assembly (if any). Limit of one root assembly per file.</source>
         <translation>在目前文件或目前活動組合體(如果有)中建立組合件物件. 每個檔案只能有一個根零件組合.</translation>
     </message>
 </context>
@@ -1422,6 +1422,16 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
 <context>
     <name>Assembly_CreateJointBall</name>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="185"/>
+        <source>Ball Joint</source>
+        <translation>球體接點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="192"/>
+        <source>Creates a ball joint that connects parts at a point, allowing unrestricted movement as long as the connection points remain in contact</source>
+        <translation>建立球體接點: 在一點連接零件，只要連接點保持接觸，就可以不受限制地移動</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="174"/>
         <source>Create Ball Joint</source>
         <translation>建立球體接點</translation>
@@ -1432,23 +1442,23 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <translation>&lt;p&gt;建立球體接點: 在一個點連接零件，只要連接點保持接觸，就可以不受限制地移動.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="185"/>
-        <source>Ball Joint</source>
-        <translation>球體接點</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="190"/>
         <source>Create a Ball Joint: Connects parts at a point, allowing unrestricted movement as long as the connection points remain in contact.</source>
         <translation>建立球體接點: 在一點連接零件，只要連接點保持接觸，就可以不受限制地移動.</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="192"/>
-        <source>Creates a ball joint that connects parts at a point, allowing unrestricted movement as long as the connection points remain in contact</source>
-        <translation>建立球體接點: 在一點連接零件，只要連接點保持接觸，就可以不受限制地移動</translation>
-    </message>
 </context>
 <context>
     <name>Assembly_CreateJointBelt</name>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="410"/>
+        <source>Belt Joint</source>
+        <translation>皮帶連接</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="372"/>
+        <source>&lt;p&gt;Creates a belt joint that links 2 rotating objects together. They will have the same rotation direction.&lt;/p&gt;&lt;p&gt;Select the same coordinate systems as the revolute joints.&lt;/p&gt;</source>
+        <translation>&lt;p&gt;建立皮帶接點: 將兩個旋轉物件連接在一起. 它們將具有相同的旋轉方向.&lt;/p&gt;&lt;p&gt;選擇與旋轉軸連接相同的座標系統&lt;/p&gt;</translation>
+    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="344"/>
         <source>Create Belt Joint</source>
@@ -1460,23 +1470,23 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <translation>建立皮帶接點: 將兩個旋轉物件連接在一起. 它們將具有相同的旋轉方向.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="410"/>
-        <source>Belt Joint</source>
-        <translation>皮帶連接</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="417"/>
         <source>Creates a belt joint that links 2 rotating objects together. They will have the same rotation direction.</source>
         <translation>建立皮帶接點: 將兩個旋轉物件連接在一起. 它們將具有相同的旋轉方向.</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="372"/>
-        <source>&lt;p&gt;Creates a belt joint that links 2 rotating objects together. They will have the same rotation direction.&lt;/p&gt;&lt;p&gt;Select the same coordinate systems as the revolute joints.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;建立皮帶接點: 將兩個旋轉物件連接在一起. 它們將具有相同的旋轉方向.&lt;/p&gt;&lt;p&gt;選擇與旋轉軸連接相同的座標系統&lt;/p&gt;</translation>
-    </message>
 </context>
 <context>
     <name>Assembly_CreateJointCylindrical</name>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="135"/>
+        <source>Cylindrical Joint</source>
+        <translation>環狀接點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="142"/>
+        <source>Creates a cylindrical joint that allows rotation around and translation along a single axis between assembled parts</source>
+        <translation>建立環狀接點: 允許沿著一個軸旋轉，同時允許在組裝零件之間沿著同一軸移動</translation>
+    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="112"/>
         <source>Create Cylindrical Joint</source>
@@ -1488,28 +1498,13 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <translation>&lt;p&gt;建立一個圓柱體接點: 允許沿一個軸旋轉，同時允許在零件組合之間沿同一軸移動.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="135"/>
-        <source>Cylindrical Joint</source>
-        <translation>環狀接點</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="138"/>
         <source>Create a Cylindrical Joint: Enables rotation along one axis while permitting movement along the same axis between assembled parts.</source>
         <translation>建立環狀接點: 允許沿著一個軸旋轉，同時允許在組裝零件之間沿著同一軸移動.</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="142"/>
-        <source>Creates a cylindrical joint that allows rotation around and translation along a single axis between assembled parts</source>
-        <translation>建立環狀接點: 允許沿著一個軸旋轉，同時允許在組裝零件之間沿著同一軸移動</translation>
-    </message>
 </context>
 <context>
     <name>Assembly_CreateJointDistance</name>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="209"/>
-        <source>Create Distance Joint</source>
-        <translation>建立距離接點</translation>
-    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="210"/>
         <source>Distance Joint</source>
@@ -1545,9 +1540,24 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <source>&lt;p&gt;Creates a distance joint that fixes the distance between the selected objects&lt;/p&gt;&lt;p&gt;Creates one of several different joints based on the selection. For example, a distance of 0 between a plane and a cylinder creates a tangent joint. A distance of 0 between planes will make them co-planar.&lt;/p&gt;</source>
         <translation>&lt;p&gt;建立距離接點: 固定選定物件之間的距離&lt;/p&gt;&lt;p-&gt;根據選取的內容建立幾種不同連接點中的一種. 例如，平面與圓柱體之間的距離為 0 時，會建立相切連接點。平面與圓柱體之間的距離為 0，會建立相切接點；平面與圓柱體之間的距離為 0，會建立共面連接點.&lt;/p&gt;</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="209"/>
+        <source>Create Distance Joint</source>
+        <translation>建立距離接點</translation>
+    </message>
 </context>
 <context>
     <name>Assembly_CreateJointFixed</name>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="76"/>
+        <source>Fixed Joint</source>
+        <translation>固定接點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="83"/>
+        <source>&lt;p&gt;1 - If an assembly is active : Creates a joint permanently locking two parts together, preventing any movement or rotation&lt;/p&gt;&lt;p&gt;2 - If a part is active: Positions sub-parts by matching selected coordinate systems. The second part selected will move.&lt;/p&gt;</source>
+        <translation>&lt;p&gt;1 - 如果組裝處於啟用狀態: 建立將兩個零件永久鎖定在一起的接點，防止任何移動或旋轉.&lt;/p&gt;&lt;p&gt;2 - 如果零件處於啟用狀態: 透過符合選定的座標系統來定位子零件. 選定的第二部分將移動.&lt;/p&gt;</translation>
+    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="52"/>
         <source>Create Fixed Joint</source>
@@ -1569,19 +1579,9 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <translation>1 - 如果組裝處於啟用狀態: 建立將兩個零件永久鎖定在一起的接點，防止任何移動或旋轉.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="76"/>
-        <source>Fixed Joint</source>
-        <translation>固定接點</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="81"/>
         <source>2 - If a part is active : Position sub parts by matching selected coordinate systems. The second part selected will move.</source>
         <translation>2 - 如果零件處於啟用狀態: 透過符合選定的座標系統來定位子零件. 選定的第二部分將移動.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="83"/>
-        <source>&lt;p&gt;1 - If an assembly is active : Creates a joint permanently locking two parts together, preventing any movement or rotation&lt;/p&gt;&lt;p&gt;2 - If a part is active: Positions sub-parts by matching selected coordinate systems. The second part selected will move.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;1 - 如果組裝處於啟用狀態: 建立將兩個零件永久鎖定在一起的接點，防止任何移動或旋轉.&lt;/p&gt;&lt;p&gt;2 - 如果零件處於啟用狀態: 透過符合選定的座標系統來定位子零件. 選定的第二部分將移動.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="83"/>
@@ -1596,6 +1596,16 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
 </context>
 <context>
     <name>Assembly_CreateJointGearBelt</name>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="441"/>
+        <source>Gears/Belt Joint</source>
+        <translation>齒輪/皮帶接頭</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="396"/>
+        <source>&lt;p&gt;Creates a gears or belt joint that links 2 rotating gears together&lt;/p&gt;&lt;p&gt;Select the same coordinate systems as the revolute joints.&lt;/p&gt;</source>
+        <translation>&lt;p&gt;建立齒輪或皮帶接頭: 將兩個旋轉齒輪連接在一起&lt;/p&gt;&lt;p&gt;選擇與旋轉連接點相同的座標系統&lt;/p&gt;</translation>
+    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="376"/>
         <source>Create Gear/Belt Joint</source>
@@ -1612,23 +1622,23 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <translation>選擇與旋轉接點相同的座標系統.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="441"/>
-        <source>Gears/Belt Joint</source>
-        <translation>齒輪/皮帶接頭</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="447"/>
         <source>Creates a gears or belt joint that links 2 rotating gears together</source>
         <translation>建立齒輪或皮帶接頭: 將兩個旋轉齒輪連接在一起</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="396"/>
-        <source>&lt;p&gt;Creates a gears or belt joint that links 2 rotating gears together&lt;/p&gt;&lt;p&gt;Select the same coordinate systems as the revolute joints.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;建立齒輪或皮帶接頭: 將兩個旋轉齒輪連接在一起&lt;/p&gt;&lt;p&gt;選擇與旋轉連接點相同的座標系統&lt;/p&gt;</translation>
-    </message>
 </context>
 <context>
     <name>Assembly_CreateJointGears</name>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="380"/>
+        <source>Gears Joint</source>
+        <translation>齒輪接點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="348"/>
+        <source>&lt;p&gt;Creates a gears joint that links 2 rotating gears together. They will have inverse rotation direction.&lt;/p&gt;&lt;p&gt;Select the same coordinate systems as the revolute joints.&lt;/p&gt;</source>
+        <translation>&lt;p&gt;建立齒輪接點: 將兩個旋轉齒輪連接在一起. 它們的旋轉方向相反.&lt;/p&gt;&lt;p&gt;選擇與旋轉軸連接相同的座標系統.&lt;/p&gt;</translation>
+    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="313"/>
         <source>Create Gears Joint</source>
@@ -1640,33 +1650,13 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <translation>建立齒輪接點: 將兩個旋轉齒輪連接在一起. 它們的旋轉方向相反.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="380"/>
-        <source>Gears Joint</source>
-        <translation>齒輪接點</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="387"/>
         <source>Creates a gears joint that links 2 rotating gears together. They will have inverse rotation direction.</source>
         <translation>建立齒輪接點: 將兩個旋轉齒輪連接在一起. 它們的旋轉方向相反.</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="348"/>
-        <source>&lt;p&gt;Creates a gears joint that links 2 rotating gears together. They will have inverse rotation direction.&lt;/p&gt;&lt;p&gt;Select the same coordinate systems as the revolute joints.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;建立齒輪接點: 將兩個旋轉齒輪連接在一起. 它們的旋轉方向相反.&lt;/p&gt;&lt;p&gt;選擇與旋轉軸連接相同的座標系統.&lt;/p&gt;</translation>
-    </message>
 </context>
 <context>
     <name>Assembly_CreateJointParallel</name>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="234"/>
-        <source>Create Parallel Joint</source>
-        <translation>建立平行接點</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="236"/>
-        <source>&lt;p&gt;Create a Parallel Joint: Aligns two features to be parallel, constraining relative movement to parallel translations.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;建立一個平行接點: 將兩個特徵平行對齊，將相對運動限制為平行平移.&lt;/p&gt;</translation>
-    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="241"/>
         <source>Parallel Joint</source>
@@ -1681,6 +1671,16 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="256"/>
         <source>Create an Parallel Joint: Make the Z axis of selected coordinate systems parallel.</source>
         <translation>建立平行連接: 使所選座標系的 Z 軸平行.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="234"/>
+        <source>Create Parallel Joint</source>
+        <translation>建立平行接點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="236"/>
+        <source>&lt;p&gt;Create a Parallel Joint: Aligns two features to be parallel, constraining relative movement to parallel translations.&lt;/p&gt;</source>
+        <translation>&lt;p&gt;建立一個平行接點: 將兩個特徵平行對齊，將相對運動限制為平行平移.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -1722,6 +1722,16 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
 <context>
     <name>Assembly_CreateJointRackPinion</name>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="320"/>
+        <source>Rack and Pinion Joint</source>
+        <translation>齒條和小齒輪接點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="300"/>
+        <source>&lt;p&gt;Creates a rack and pinion joint that links a part with a sliding joint to a part with a revolute joint&lt;/p&gt;&lt;p&gt;Selects the same coordinate systems as the revolute and sliding joints. The pitch radius defines the movement ratio between the rack and the pinion.&lt;/p&gt;</source>
+        <translation>&lt;p&gt;建立齒條和小齒輪接點: 將具有滑動接點的零件與具有旋轉接點的零件連接起來&lt;/p&gt;&lt;p&gt;選擇與旋轉軸和滑動軸相同的座標系統. 節距半徑定義了齒條和小齒輪之間的移動比率.&lt;/p&gt;</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="251"/>
         <source>Create Rack and Pinion Joint</source>
         <translation>建立齒條和小齒輪接點</translation>
@@ -1737,14 +1747,9 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <translation>選擇與旋轉接點和滑動接點相同的座標系統. 節圓半徑定義了齒條和小齒輪之間的運動比率.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="300"/>
-        <source>&lt;p&gt;Creates a rack and pinion joint that links a part with a sliding joint to a part with a revolute joint&lt;/p&gt;&lt;p&gt;Selects the same coordinate systems as the revolute and sliding joints. The pitch radius defines the movement ratio between the rack and the pinion.&lt;/p&gt;</source>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="296"/>
+        <source>&lt;p&gt;Creates a rack and pinion joint that links a part with a slider joint to a part with a revolute joint&lt;/p&gt;&lt;p&gt;Select the same coordinate systems as the revolute and slider joints. The pitch radius defines the movement ratio between the rack and the pinion.&lt;/p&gt;</source>
         <translation>&lt;p&gt;建立齒條和小齒輪接點: 將具有滑動接點的零件與具有旋轉接點的零件連接起來&lt;/p&gt;&lt;p&gt;選擇與旋轉軸和滑動軸相同的座標系統. 節距半徑定義了齒條和小齒輪之間的移動比率.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="320"/>
-        <source>Rack and Pinion Joint</source>
-        <translation>齒條和小齒輪接點</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="327"/>
@@ -1756,14 +1761,19 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <source>Selects the same coordinate systems as the revolute and sliding joints. The pitch radius defines the movement ratio between the rack and the pinion.</source>
         <translation>選擇與旋轉接點和滑動接點相同的座標系統. 節圓半徑定義了齒條和小齒輪之間的運動比率.</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="296"/>
-        <source>&lt;p&gt;Creates a rack and pinion joint that links a part with a slider joint to a part with a revolute joint&lt;/p&gt;&lt;p&gt;Select the same coordinate systems as the revolute and slider joints. The pitch radius defines the movement ratio between the rack and the pinion.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;建立齒條和小齒輪接點: 將具有滑動接點的零件與具有旋轉接點的零件連接起來&lt;/p&gt;&lt;p&gt;選擇與旋轉軸和滑動軸相同的座標系統. 節距半徑定義了齒條和小齒輪之間的移動比率.&lt;/p&gt;</translation>
-    </message>
 </context>
 <context>
     <name>Assembly_CreateJointRevolute</name>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="110"/>
+        <source>Revolute Joint</source>
+        <translation>旋轉接點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="117"/>
+        <source>Creates a revolute joint allowing rotation around a single axis between selected parts</source>
+        <translation>建立旋轉接點: 允許在選定零件之間圍繞單軸旋轉</translation>
+    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="82"/>
         <source>Create Revolute Joint</source>
@@ -1776,22 +1786,22 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="110"/>
-        <source>Revolute Joint</source>
-        <translation>旋轉接點</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="110"/>
         <source>Create a Revolute Joint: Allows rotation around a single axis between selected parts.</source>
         <translation>建立旋轉接點: 允許在選定零件之間圍繞單軸旋轉.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="117"/>
-        <source>Creates a revolute joint allowing rotation around a single axis between selected parts</source>
-        <translation>建立旋轉接點: 允許在選定零件之間圍繞單軸旋轉</translation>
     </message>
 </context>
 <context>
     <name>Assembly_CreateJointScrew</name>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="350"/>
+        <source>Screw Joint</source>
+        <translation>螺旋接點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="324"/>
+        <source>&lt;p&gt;Creates a screw joint that links a part with a sliding joint to a part with a revolute joint&lt;/p&gt;&lt;p&gt;Select the same coordinate systems as the revolute and sliding joints. The pitch radius defines the movement ratio between the rotating screw and the sliding part.&lt;/p&gt;</source>
+        <translation>&lt;p&gt;建立螺旋接點 將具有滑動接點的零件與具有旋轉接點的零件連接起來&lt;/p&gt;&lt;p&gt;選擇與旋轉軸和滑動軸相同的坐標系統。螺距半徑定義旋轉螺桿與滑動部分的移動比率.&lt;/p&gt;</translation>
+    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="282"/>
         <source>Create Screw Joint</source>
@@ -1808,8 +1818,8 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <translation>選擇與旋轉接點和滑動接點相同的座標系統. 螺距半徑定義了旋轉螺桿和滑動部分之間的運動比率.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="324"/>
-        <source>&lt;p&gt;Creates a screw joint that links a part with a sliding joint to a part with a revolute joint&lt;/p&gt;&lt;p&gt;Select the same coordinate systems as the revolute and sliding joints. The pitch radius defines the movement ratio between the rotating screw and the sliding part.&lt;/p&gt;</source>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="320"/>
+        <source>&lt;p&gt;Creates a screw joint that links a part with a slider joint to a part with a revolute joint&lt;/p&gt;&lt;p&gt;Select the same coordinate systems as the revolute and slider joints. The pitch radius defines the movement ratio between the rotating screw and the sliding part.&lt;/p&gt;</source>
         <translation>&lt;p&gt;建立螺旋接點 將具有滑動接點的零件與具有旋轉接點的零件連接起來&lt;/p&gt;&lt;p&gt;選擇與旋轉軸和滑動軸相同的坐標系統。螺距半徑定義旋轉螺桿與滑動部分的移動比率.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -1819,23 +1829,23 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <translation>選擇與旋轉接點相同的座標系統.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="350"/>
-        <source>Screw Joint</source>
-        <translation>螺旋接點</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="357"/>
         <source>Creates a screw joint that links a part with a sliding joint to a part with a revolute joint</source>
         <translation>建立螺旋接點 將具有滑動接點的零件與具有旋轉接點的零件連接起來</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="320"/>
-        <source>&lt;p&gt;Creates a screw joint that links a part with a slider joint to a part with a revolute joint&lt;/p&gt;&lt;p&gt;Select the same coordinate systems as the revolute and slider joints. The pitch radius defines the movement ratio between the rotating screw and the sliding part.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;建立螺旋接點 將具有滑動接點的零件與具有旋轉接點的零件連接起來&lt;/p&gt;&lt;p&gt;選擇與旋轉軸和滑動軸相同的坐標系統。螺距半徑定義旋轉螺桿與滑動部分的移動比率.&lt;/p&gt;</translation>
-    </message>
 </context>
 <context>
     <name>Assembly_CreateJointSlider</name>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="160"/>
+        <source>Slider Joint</source>
+        <translation>滑動接點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="167"/>
+        <source>Creates a slider joint that allows linear movement along a single axis, but restricts rotation between selected parts</source>
+        <translation>建立滑動接點: 允許沿單一軸線性移動，但限制選定零件之間的旋轉</translation>
+    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="144"/>
         <source>Create Slider Joint</source>
@@ -1847,19 +1857,9 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <translation>&lt;p&gt;建立一個滑動接點: 允許沿單一軸線性移動，但限制選定零件之間的旋轉.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="160"/>
-        <source>Slider Joint</source>
-        <translation>滑動接點</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="164"/>
         <source>Create a Slider Joint: Allows linear movement along a single axis but restricts rotation between selected parts.</source>
         <translation>建立滑動接點: 允許沿單一軸線性移動，但限制選定零件之間的旋轉.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="167"/>
-        <source>Creates a slider joint that allows linear movement along a single axis, but restricts rotation between selected parts</source>
-        <translation>建立滑動接點: 允許沿單一軸線性移動，但限制選定零件之間的旋轉</translation>
     </message>
 </context>
 <context>
@@ -1975,16 +1975,6 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
 <context>
     <name>Assembly_InsertLink</name>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandInsertLink.py" line="56"/>
-        <source>&lt;p&gt;Inserts a component into the active assembly. This will create dynamic links to parts, bodies, primitives, and assemblies. To insert external components, make sure that the file is &lt;b&gt;open in the current session&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Insert by left clicking items in the list.&lt;/li&gt;&lt;li&gt;Remove by right clicking items in the list.&lt;/li&gt;&lt;li&gt;Press shift to add several instances of the component while clicking on the view.&lt;/li&gt;&lt;/ul&gt;</source>
-        <translation>&lt;p&gt;將零件插入活動零件組合體中. 這將建立到零件、實體、圖元和零件組合體的動態連結. 若要插入外部組件，請確保檔案&lt;b&gt;在目前操作中開啟&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;透過左鍵點選清單中的項目來插入物體.&lt;/li&gt;&lt;li&gt;透過右鍵點擊清單中的項目來刪除物體.&lt;/li&gt;&lt;li&gt;按一下檢視時按 Shift 鍵可新增元件的多個範例.&lt;/li&gt;&lt;/ul&gt;</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandInsertLink.py" line="89"/>
-        <source>Component</source>
-        <translation>組件</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandInsertLink.py" line="51"/>
         <source>Inserts a component into the active assembly. This will create dynamic links to parts, bodies, primitives, and assemblies. To insert external components, make sure that the file is &lt;b&gt;open in the current session&lt;/b&gt;</source>
         <translation>將零件插入活動零件組合體中. 這將建立到零件、實體、圖元和零件組合體的動態連結. 若要插入外部組件，請確保檔案&lt;b&gt;在目前操作中開啟&lt;/b&gt;</translation>
@@ -1998,6 +1988,11 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandInsertLink.py" line="55"/>
         <source>Insert Link</source>
         <translation>插入連結</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandInsertLink.py" line="56"/>
+        <source>&lt;p&gt;Inserts a component into the active assembly. This will create dynamic links to parts, bodies, primitives, and assemblies. To insert external components, make sure that the file is &lt;b&gt;open in the current session&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Insert by left clicking items in the list.&lt;/li&gt;&lt;li&gt;Remove by right clicking items in the list.&lt;/li&gt;&lt;li&gt;Press shift to add several instances of the component while clicking on the view.&lt;/li&gt;&lt;/ul&gt;</source>
+        <translation>&lt;p&gt;將零件插入活動零件組合體中. 這將建立到零件、實體、圖元和零件組合體的動態連結. 若要插入外部組件，請確保檔案&lt;b&gt;在目前操作中開啟&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;透過左鍵點選清單中的項目來插入物體.&lt;/li&gt;&lt;li&gt;透過右鍵點擊清單中的項目來刪除物體.&lt;/li&gt;&lt;li&gt;按一下檢視時按 Shift 鍵可新增元件的多個範例.&lt;/li&gt;&lt;/ul&gt;</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandInsertLink.py" line="57"/>
@@ -2033,6 +2028,11 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandInsertLink.py" line="71"/>
         <source>Press shift to add several instances of the component while clicking on the view.</source>
         <translation>按一下檢視時按 Shift 鍵可新增元件的多個範例.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandInsertLink.py" line="89"/>
+        <source>Component</source>
+        <translation>組件</translation>
     </message>
 </context>
 <context>
@@ -2079,6 +2079,16 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
 <context>
     <name>Assembly_ToggleGrounded</name>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="485"/>
+        <source>Toggle Grounded</source>
+        <translation>切換基礎</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="435"/>
+        <source>&lt;p&gt;Toggles the grounding of a part.&lt;/p&gt;&lt;p&gt;Grounding a part permanently locks its position in the assembly, preventing any movement or rotation. You need at least one grounded part before starting to assemble.</source>
+        <translation>&lt;p&gt;切換零件基礎,&lt;/p&gt;&lt;p&gt;將零件接地可永久鎖定其在組件中的位置，以防止任何移動或旋轉。 在開始組裝之前，您至少需要一個基礎零件.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="250"/>
         <source>Toggle grounded</source>
         <translation>切換基礎</translation>
@@ -2089,25 +2099,15 @@ Note: Currently this selects only unconnected parts, not constrained parts that 
         <translation>將零件接地可永久鎖定其在組件中的位置，以防止任何移動或旋轉。 在開始組裝之前，您至少需要一個基礎零件.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="435"/>
-        <source>&lt;p&gt;Toggles the grounding of a part.&lt;/p&gt;&lt;p&gt;Grounding a part permanently locks its position in the assembly, preventing any movement or rotation. You need at least one grounded part before starting to assemble.</source>
-        <translation>&lt;p&gt;切換零件基礎,&lt;/p&gt;&lt;p&gt;將零件接地可永久鎖定其在組件中的位置，以防止任何移動或旋轉。 在開始組裝之前，您至少需要一個基礎零件.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="485"/>
-        <source>Toggle Grounded</source>
-        <translation>切換基礎</translation>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="431"/>
+        <source>&lt;p&gt;Toggles the grounding of a part.&lt;/p&gt;&lt;p&gt;Grounding a part permanently locks its position in the assembly, preventing any movement or rotation.</source>
+        <translation>&lt;p&gt;切換零件的基點.&lt;/p&gt;&lt;p&gt;基點可永久鎖定零件在組裝中的位置，防止任何移動或旋轉.</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="492"/>
         <source>Toggles the grounding of a part.
 Grounding a part permanently locks its position in the assembly, preventing any movement or rotation. You need at least one grounded part before starting to assemble.</source>
         <translation>切換零件基礎, 將零件接地可永久鎖定其在組件中的位置，以防止任何移動或旋轉。 在開始組裝之前，您至少需要一個基礎零件.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/CommandCreateJoint.py" line="431"/>
-        <source>&lt;p&gt;Toggles the grounding of a part.&lt;/p&gt;&lt;p&gt;Grounding a part permanently locks its position in the assembly, preventing any movement or rotation.</source>
-        <translation>&lt;p&gt;切換零件的基點.&lt;/p&gt;&lt;p&gt;基點可永久鎖定零件在組裝中的位置，防止任何移動或旋轉.</translation>
     </message>
 </context>
 <context>
@@ -2888,6 +2888,11 @@ You can change this behavior at any time by either right-clicking the sub-assemb
 <context>
     <name>Workbench</name>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/InitGui.py" line="91"/>
+        <source>Assembly</source>
+        <translation>零件組合</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/InitGui.py" line="70"/>
         <source>Assembly workbench</source>
         <translation>零件組合工作台</translation>
@@ -2896,11 +2901,6 @@ You can change this behavior at any time by either right-clicking the sub-assemb
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/InitGui.py" line="71"/>
         <source>Initializing Assembly workbench...</source>
         <translation>初始化零件組合工作台...</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/InitGui.py" line="91"/>
-        <source>Assembly</source>
-        <translation>零件組合</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Assembly/InitGui.py" line="92"/>

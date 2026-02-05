@@ -117,8 +117,8 @@
         <translation>圓弧球</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/Tux/NavigationIndicatorGui.py" line="627"/>
-        <source>Navigation indicator</source>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/Tux/NavigationIndicatorGui.py" line="674"/>
+        <source>Navigation Indicator</source>
         <comment>A context menu action used to show or hide the &apos;Navigation indicator&apos; toolbar widget</comment>
         <translation>導航指示器</translation>
     </message>
@@ -128,8 +128,8 @@
         <translation>未定義</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/Tux/NavigationIndicatorGui.py" line="674"/>
-        <source>Navigation Indicator</source>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/Tux/NavigationIndicatorGui.py" line="627"/>
+        <source>Navigation indicator</source>
         <comment>A context menu action used to show or hide the &apos;Navigation indicator&apos; toolbar widget</comment>
         <translation>導航指示器</translation>
     </message>

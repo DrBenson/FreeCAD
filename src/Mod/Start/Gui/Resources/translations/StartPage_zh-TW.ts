@@ -486,41 +486,6 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
 <context>
     <name>StartGui::StartView</name>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="178"/>
-        <source>Empty file</source>
-        <translation>空白檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="179"/>
-        <source>Create a new empty FreeCAD file</source>
-        <translation>建立一個新的空白FreeCAD檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="182"/>
-        <source>Open an existing CAD file or 3D model</source>
-        <translation>打開現有 CAD 或 3D 模型檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="184"/>
-        <source>Parametric Part</source>
-        <translation>參數零件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="185"/>
-        <source>Create a part with the Part Design workbench</source>
-        <translation>使用零件設計工作台建立一個零件</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="188"/>
-        <source>Create an assembly project</source>
-        <translation>建立一個零件組合專案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="191"/>
-        <source>Create a 2D Draft with the Draft workbench</source>
-        <translation>使用底圖繪製工作台建立2D草圖</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="193"/>
         <source>Empty File</source>
         <translation>空檔案</translation>
@@ -529,41 +494,6 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="194"/>
         <source>Creates a new empty FreeCAD file</source>
         <translation>建立一個新的空白FreeCAD檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="194"/>
-        <source>Create an architectural project</source>
-        <translation>建立一個建築專案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="210"/>
-        <source>Creates a 2D draft document</source>
-        <translation>使用建立2D底圖繪製</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="440"/>
-        <source>Don&apos;t show this Start page again (start with blank screen)</source>
-        <translation>不要再次顯示此開始頁面 (使用空白頁面啟動)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="446"/>
-        <source>File not found</source>
-        <translation>找不到檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="447"/>
-        <source>The file &apos;%1&apos; cannot be opened.</source>
-        <translation>無法打開檔案&apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="484"/>
-        <source>Open first start setup</source>
-        <translation>打開首次啟動設定頁面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="575"/>
-        <source>Custom Folder</source>
-        <translation>自訂資料夾</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="181"/>
@@ -639,6 +569,76 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="460"/>
         <source>Do not show this Start page again (start with blank screen)</source>
         <translation>不要再次顯示此開始頁面 (使用空白頁面啟動)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="178"/>
+        <source>Empty file</source>
+        <translation>空白檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="179"/>
+        <source>Create a new empty FreeCAD file</source>
+        <translation>建立一個新的空白FreeCAD檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="182"/>
+        <source>Open an existing CAD file or 3D model</source>
+        <translation>打開現有 CAD 或 3D 模型檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="184"/>
+        <source>Parametric Part</source>
+        <translation>參數零件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="185"/>
+        <source>Create a part with the Part Design workbench</source>
+        <translation>使用零件設計工作台建立一個零件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="188"/>
+        <source>Create an assembly project</source>
+        <translation>建立一個零件組合專案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="191"/>
+        <source>Create a 2D Draft with the Draft workbench</source>
+        <translation>使用底圖繪製工作台建立2D草圖</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="194"/>
+        <source>Create an architectural project</source>
+        <translation>建立一個建築專案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="210"/>
+        <source>Creates a 2D draft document</source>
+        <translation>使用建立2D底圖繪製</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="440"/>
+        <source>Don&apos;t show this Start page again (start with blank screen)</source>
+        <translation>不要再次顯示此開始頁面 (使用空白頁面啟動)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="446"/>
+        <source>File not found</source>
+        <translation>找不到檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="447"/>
+        <source>The file &apos;%1&apos; cannot be opened.</source>
+        <translation>無法打開檔案&apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="484"/>
+        <source>Open first start setup</source>
+        <translation>打開首次啟動設定頁面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="575"/>
+        <source>Custom Folder</source>
+        <translation>自訂資料夾</translation>
     </message>
 </context>
 <context>
