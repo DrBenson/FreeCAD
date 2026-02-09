@@ -27,6 +27,7 @@
 
 #include <App/FeaturePython.h>
 #include <App/GeoFeature.h>
+#include <App/PropertyUnits.h>
 #include <Mod/Material/App/PropertyMaterial.h>
 #include <Mod/Part/PartGlobal.h>
 #include <Base/Bitmask.h>
@@ -76,6 +77,12 @@ public:
 
     PropertyPartShape Shape;
     Materials::PropertyMaterial ShapeMaterial;
+
+    // Convenience properties set when material or shape changes
+    App::PropertyString MaterialName;
+    App::PropertyDensity Density;
+    App::PropertyMass Mass;
+    App::PropertyVolume Volume;
 
     /** @name methods override feature */
     //@{
@@ -221,6 +228,9 @@ protected:
 
     void copyMaterial(Feature* feature);
     void copyMaterial(App::DocumentObject* link);
+
+    /// Update the mass and volume properties
+    void updatePhysicalProperties();
 
     void registerElementCache(const std::string& prefix, PropertyPartShape* prop);
 
