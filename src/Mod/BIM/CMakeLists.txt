@@ -1,5 +1,3 @@
-find_package(PythonInterp REQUIRED)
-
 # ==============================================================================
 # File Management
 # Define the source files and resources of the BIM workbench
@@ -12,6 +10,11 @@ find_package(PythonInterp REQUIRED)
 IF (BUILD_GUI)
     PYSIDE_WRAP_RC(Arch_QRC_SRCS Resources/Arch.qrc)
 ENDIF (BUILD_GUI)
+set (Arch_TR_QRC ${CMAKE_CURRENT_BINARY_DIR}/Resources/Arch_translation.qrc)
+qt_find_and_add_translation(QM_SRCS "Resources/translations/*_*.ts"
+    ${CMAKE_CURRENT_BINARY_DIR}/Resources/translations)
+qt_create_resource_file(${Arch_TR_QRC} ${QM_SRCS})
+qt_add_resources(ArchResource_SRCS Resources/Arch.qrc ${Arch_TR_QRC})
 
 SET(Arch_SRCS
     Init.py
@@ -58,8 +61,6 @@ SET(Arch_SRCS
     BimStatus.py
     TestArch.py
     TestArchGui.py
-    ArchReport.py
-    ArchSql.py
 )
 
 SET(importers_SRCS
@@ -100,11 +101,6 @@ SET(Arch_presets
     Presets/ifc_contexts_IFC2X3.json
     Presets/ifc_contexts_IFC4.json
     Presets/properties_conversion.csv
-    Presets/ArchReport/QueryPresets/all_spaces.json
-    Presets/ArchReport/QueryPresets/all_walls.json
-    Presets/ArchReport/QueryPresets/count_by_ifc_class.json
-    Presets/ArchReport/ReportPresets/room_schedule.json
-    Presets/ArchReport/ReportPresets/wall_quantities.json
 )
 
 SET(bimcommands_SRCS
@@ -188,7 +184,6 @@ SET(bimcommands_SRCS
     bimcommands/BimWindow.py
     bimcommands/BimWindows.py
     bimcommands/BimWPCommands.py
-    bimcommands/BimReport.py
     bimcommands/__init__.py
 )
 
@@ -229,7 +224,6 @@ SET(bimtests_SRCS
     bimtests/TestArchRoof.py
     bimtests/TestArchSpace.py
     bimtests/TestArchWall.py
-    bimtests/TestArchWallGui.py
     bimtests/TestArchMaterial.py
     bimtests/TestArchPanel.py
     bimtests/TestArchWindow.py
@@ -253,14 +247,10 @@ SET(bimtests_SRCS
     bimtests/TestWebGLExportGui.py
     bimtests/TestArchImportersGui.py
     bimtests/TestArchBuildingPartGui.py
-    bimtests/TestArchReport.py
-    bimtests/TestArchReportGui.py
 )
 
 set(bimtests_FIXTURES
     bimtests/fixtures/FC_site_simple-102.FCStd
-    bimtests/fixtures/__init__.py
-    bimtests/fixtures/BimFixtures.py
 )
 
 SET(BIMGuiIcon_SVG
@@ -274,23 +264,6 @@ SET(ImportersSample_Files
 # TODO:
 # - ImportersSample_Files should probably be merged into bimtests_FIXTURES
 # - BIM_templates should probably be merged into Arch_presets
-
-SET(ArchSql_resources
-    Resources/ArchSql.lark
-    Resources/ArchSqlParserGenerator.py
-)
-
-set(BIM_LARK_GRAMMAR ${CMAKE_CURRENT_SOURCE_DIR}/Resources/ArchSql.lark)
-set(BIM_PARSER_GENERATOR ${CMAKE_CURRENT_SOURCE_DIR}/Resources/ArchSqlParserGenerator.py)
-
-set(BIM_GENERATED_PARSER ${CMAKE_BINARY_DIR}/Mod/BIM/generated_sql_parser.py)
-
-add_custom_command(
-    OUTPUT ${BIM_GENERATED_PARSER}
-    COMMAND ${PYTHON_EXECUTABLE} ${BIM_PARSER_GENERATOR} ${BIM_LARK_GRAMMAR} ${BIM_GENERATED_PARSER}
-    DEPENDS ${BIM_LARK_GRAMMAR} ${BIM_PARSER_GENERATOR}
-    COMMENT "Generating Arch SQL parser..."
-)
 
 # ==============================================================================
 # Developer workflow
@@ -336,8 +309,6 @@ ADD_CUSTOM_TARGET(BIM ALL
             ${BIM_templates}
 )
 
-add_custom_target(ArchSqlParser ALL DEPENDS ${BIM_GENERATED_PARSER})
-
 # Populate the build tree with the BIM workbench sources and test data
 fc_copy_sources(BIM "${CMAKE_BINARY_DIR}/Mod/BIM" ${Arch_SRCS})
 fc_copy_sources(BIM "${CMAKE_BINARY_DIR}/Mod/BIM" ${Dice3DS_SRCS})
@@ -352,7 +323,6 @@ fc_copy_sources(BIM "${CMAKE_BINARY_DIR}/Mod/BIM" ${nativeifc_SRCS})
 fc_copy_sources(BIM "${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_DATADIR}/Mod/BIM" ${BIMGuiIcon_SVG})
 fc_copy_sources(BIM "${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_DATADIR}/Mod/BIM" ${Arch_presets})
 fc_copy_sources(BIM "${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_DATADIR}/Mod/BIM" ${BIM_templates})
-fc_copy_sources(BIM "${CMAKE_SOURCE_DIR}/${CMAKE_INSTALL_DATADIR}/Mod/BIM" ${ArchSql_resources})
 
 # For generated resources, we cannot rely on `fc_copy_sources` in case
 # INSTALL_PREFER_SYMLINKS=ON has been specified, since we're generating a new
@@ -433,10 +403,3 @@ INSTALL(
     DESTINATION
         "${CMAKE_INSTALL_DATADIR}/Mod/BIM/Resources/templates"
     )
-
-INSTALL(
-    FILES
-        ${BIM_GENERATED_PARSER}
-    DESTINATION
-        Mod/BIM
-)
