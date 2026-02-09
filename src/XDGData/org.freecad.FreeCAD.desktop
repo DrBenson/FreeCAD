@@ -1,14 +1,19 @@
 [Desktop Entry]
 Name=FreeCAD
+Name[zh_TW]=FreeCAD
+Name[de]=FreeCAD
+Name[ko]=FreeCAD
+Name[pl]=FreeCAD
+Name[ru]=FreeCAD
 Comment=Feature based Parametric Modeler
+Comment[zh_TW]=基於特徵的參數化3D建模工具
 Comment[de]=Feature-basierter parametrischer Modellierer
-Comment[es]=Modelador paramétrico basado en operaciones
 Comment[ko]=형상 기반 파라메트릭 모델링 도구
 Comment[pl]=Modeler parametryczny oparty na cechach
 Comment[ru]=Система автоматизированного проектирования
 GenericName=CAD Application
+GenericName[zh_TW]=CAD 3D繪圖軟體
 GenericName[de]=CAD-Anwendung
-GenericName[es]=Aplicación CAD
 GenericName[ko]=CAD 응용프로그램
 GenericName[pl]=Aplikacja CAD
 GenericName[ru]=Система автоматизированного проектирования
