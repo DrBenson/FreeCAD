@@ -22,16 +22,20 @@
 # **************************************************************************/
 
 import Assembly_rc
+import AssemblyGui
 
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
 
 class AssemblyCommandGroup:
     def __init__(self, cmdlist, menu, tooltip=None):
         self.cmdlist = cmdlist
-        self.menu = menu
+        self.menu = FreeCAD.Qt.translate("Workbench", menu)
         if tooltip is None:
             self.tooltip = menu
         else:
-            self.tooltip = tooltip
+            self.tooltip = FreeCAD.Qt.translate("Workbench", tooltip)
 
     def GetCommands(self):
         return tuple(self.cmdlist)
@@ -52,8 +56,8 @@ class AssemblyWorkbench(Workbench):
         self.__class__.Icon = (
             FreeCAD.getResourceDir() + "Mod/Assembly/Resources/icons/AssemblyWorkbench.svg"
         )
-        self.__class__.MenuText = "Assembly"
-        self.__class__.ToolTip = "Assembly workbench"
+        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Assembly")
+        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Assembly workbench")
 
     def Initialize(self):
         global AssemblyCommandGroup

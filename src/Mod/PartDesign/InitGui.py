@@ -1,5 +1,3 @@
-# SPDX-License-Identifier: LGPL-2.1-or-later
-
 # ***************************************************************************
 # *   Copyright (c) 2002,2003 Juergen Riegel <juergen.riegel@web.de>        *
 # *                                                                         *
@@ -30,15 +28,17 @@
 # runs when the gui is up
 
 
-class PartDesignWorkbench(Workbench):
-    "PartDesign workbench object"
+import PartDesignGui
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
 
+class PartDesignWorkbench ( Workbench ):
+    "PartDesign workbench object"
     def __init__(self):
-        self.__class__.Icon = (
-            FreeCAD.getResourceDir() + "Mod/PartDesign/Resources/icons/PartDesignWorkbench.svg"
-        )
-        self.__class__.MenuText = "Part Design"
-        self.__class__.ToolTip = "Part Design workbench"
+        self.__class__.Icon = FreeCAD.getResourceDir() + "Mod/PartDesign/Resources/icons/PartDesignWorkbench.svg"
+        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Part Design")
+        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Part Design workbench")
 
     def Initialize(self):
         # load the module
@@ -46,7 +46,7 @@ class PartDesignWorkbench(Workbench):
             import traceback
             from PartDesign.WizardShaft import WizardShaft
         except RuntimeError:
-            print("{}".format(traceback.format_exc()))
+            print ("{}".format(traceback.format_exc()))
         except ImportError:
             print("Wizard shaft module cannot be loaded")
             try:
@@ -59,11 +59,11 @@ class PartDesignWorkbench(Workbench):
 
         from PartDesign.InvoluteGearFeature import CommandInvoluteGear
 
-        Gui.addCommand("PartDesign_InvoluteGear", CommandInvoluteGear())
+        Gui.addCommand('PartDesign_InvoluteGear', CommandInvoluteGear())
 
         from PartDesign.SprocketFeature import CommandSprocket
 
-        FreeCADGui.addCommand("PartDesign_Sprocket", CommandSprocket())
+        FreeCADGui.addCommand('PartDesign_Sprocket', CommandSprocket())
 
     def GetClassName(self):
         return "PartDesignGui::Workbench"
@@ -71,4 +71,4 @@ class PartDesignWorkbench(Workbench):
 
 Gui.addWorkbench(PartDesignWorkbench())
 
-FreeCAD.__unit_test__ += ["TestPartDesignGui"]
+FreeCAD.__unit_test__ += [ "TestPartDesignGui" ]
