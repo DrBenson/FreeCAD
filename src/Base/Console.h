@@ -44,8 +44,8 @@ using PyMethodDef = struct PyMethodDef;
 
 // FIXME: Even with parameter packs this is necessary for MSYS2
 #if defined(__clang__)
-# pragma clang diagnostic push
-# pragma clang diagnostic ignored "-Wgnu-zero-variadic-macro-arguments"
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wgnu-zero-variadic-macro-arguments"
 #endif
 
 //**************************************************************************
@@ -53,11 +53,11 @@ using PyMethodDef = struct PyMethodDef;
 
 #ifdef FC_DEBUG
 /// switch on the logging of python object creation and destruction
-# undef FC_LOGPYOBJECTS
+#undef FC_LOGPYOBJECTS
 /// switch on the logging of Feature update and execution
-# define FC_LOGFEATUREUPDATE
+#define FC_LOGFEATUREUPDATE
 /// switch on the logging of the Update execution through Doc, App, GuiApp and GuiDoc
-# undef FC_LOGUPDATECHAIN
+#undef FC_LOGUPDATECHAIN
 #endif
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -730,6 +730,9 @@ public:
     /// Prints a log Message
     template<typename... Args>
     void log(const char* pMsg, Args&&... args);
+    /// Prints a log Message
+    template<typename... Args>
+    void Log(const char* pMsg, Args&&... args);
     /// Prints a Critical Message
     template<typename... Args>
     void critical(const char* pMsg, Args&&... args);
@@ -769,6 +772,9 @@ public:
     /// Prints a log Message with source indication
     template<typename... Args>
     void log(const std::string& notifier, const char* pMsg, Args&&... args);
+    /// Prints a log Message with source indication
+    template<typename... Args>
+    void Log(const std::string& notifier, const char* pMsg, Args&&... args);
     /// Prints a Critical Message with source indication
     template<typename... Args>
     void critical(const std::string& notifier, const char* pMsg, Args&&... args);
@@ -879,8 +885,8 @@ private:
         IntendedRecipient recipient,
         ContentType content,
         const std::string& notifiername,
-        const std::string& msg
-    );
+        const std::string& msg)
+    ;
     void notifyPrivate(
         LogStyle category,
         IntendedRecipient recipient,
@@ -1054,8 +1060,7 @@ template<typename... Args>
 void Base::ConsoleSingleton::translatedUserWarning(
     const std::string& notifier,
     const char* pMsg,
-    Args&&... args
-)
+    Args&&... args)
 {
     send<LogStyle::Warning, IntendedRecipient::User, ContentType::Translated>(
         notifier,
@@ -1073,7 +1078,8 @@ void Base::ConsoleSingleton::error(const char* pMsg, Args&&... args)
 template<typename... Args>
 void Base::ConsoleSingleton::error(const std::string& notifier, const char* pMsg, Args&&... args)
 {
-    send<LogStyle::Error>(notifier, pMsg, std::forward<Args>(args)...);
+    send<LogStyle::Error>(notifier, pMsg, std::forward<Args>(args)...
+    );
 }
 
 template<typename... Args>
@@ -1173,8 +1179,7 @@ void Base::ConsoleSingleton::userTranslatedNotification(
     send<LogStyle::Notification, IntendedRecipient::User, ContentType::Translated>(
         notifier,
         pMsg,
-        std::forward<Args>(args)...
-    );
+        std::forward<Args>(args)...);
 }
 
 template<typename... Args>
@@ -1185,6 +1190,18 @@ void Base::ConsoleSingleton::log(const char* pMsg, Args&&... args)
 
 template<typename... Args>
 void Base::ConsoleSingleton::log(const std::string& notifier, const char* pMsg, Args&&... args)
+{
+    send<LogStyle::Log>(notifier, pMsg, std::forward<Args>(args)...);
+}
+
+template<typename... Args>
+void Base::ConsoleSingleton::Log(const char* pMsg, Args&&... args)
+{
+    Log(std::string(""), pMsg, std::forward<Args>(args)...);
+}
+
+template<typename... Args>
+void Base::ConsoleSingleton::Log(const std::string& notifier, const char* pMsg, Args&&... args)
 {
     send<LogStyle::Log>(notifier, pMsg, std::forward<Args>(args)...);
 }
@@ -1229,7 +1246,7 @@ void Base::ConsoleSingleton::notify(const std::string& notifiername, const std::
 }
 
 #if defined(__clang__)
-# pragma clang diagnostic pop
+#pragma clang diagnostic pop
 #endif
 
 #endif  // BASE_CONSOLE_H
