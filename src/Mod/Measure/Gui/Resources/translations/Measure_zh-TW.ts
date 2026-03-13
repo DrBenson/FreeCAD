@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -10,7 +10,7 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -294,6 +294,11 @@
         <translation>顯示 Delta:</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="121"/>
+        <source>Show Delta</source>
+        <translation>顯示 Delta</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Measure/Gui/TaskMeasure.cpp" line="94"/>
         <source>Auto Save</source>
         <translation>自動儲存</translation>
@@ -332,6 +337,16 @@
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Measure/Gui/TaskMeasure.cpp" line="160"/>
         <source>Result:</source>
         <translation>結果:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="199"/>
+        <source>Mode</source>
+        <translation>模式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="213"/>
+        <source>Result</source>
+        <translation>結果</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Measure/Gui/TaskMeasure.cpp" line="188"/>

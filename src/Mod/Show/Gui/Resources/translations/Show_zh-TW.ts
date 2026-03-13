@@ -10,7 +10,7 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -357,57 +357,57 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
 <context>
     <name>RobotGui::DlgTrajectorySimulate</name>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="20"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="20"/>
         <source>Simulation</source>
         <translation>模擬</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="58"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="58"/>
         <source>|&lt;</source>
         <translation>|&lt;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="89"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="89"/>
         <source>&lt;</source>
         <translation>&lt;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="151"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="151"/>
         <source>|&gt;</source>
         <translation>|&gt;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="182"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="182"/>
         <source>&gt;</source>
         <translation>&gt;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="213"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="213"/>
         <source>&gt;|</source>
         <translation>&gt;|</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="272"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="272"/>
         <source>Type</source>
         <translation>類型</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="277"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="277"/>
         <source>Name</source>
         <translation>名稱</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="282"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="282"/>
         <source>C</source>
         <translation>C</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="287"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="287"/>
         <source>V</source>
         <translation>V</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="292"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TrajectorySimulate.ui" line="292"/>
         <source>A</source>
         <translation>A</translation>
     </message>
@@ -415,27 +415,27 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
 <context>
     <name>RobotGui::TaskEdge2TracParameter</name>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="29"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="29"/>
         <source>Hide / Show</source>
         <translation>隱藏/顯示</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="47"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="47"/>
         <source>Edges: 0</source>
         <translation>邊緣: 0</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="61"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="61"/>
         <source>Cluster: 0</source>
         <translation>群組: 0</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="72"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="72"/>
         <source>Sizing Value:</source>
         <translation>尺寸值:</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="103"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="103"/>
         <source>Use orientation of edge</source>
         <translation>使用邊之方向</translation>
     </message>
@@ -443,42 +443,42 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
 <context>
     <name>RobotGui::TaskRobot6Axis</name>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="22"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="22"/>
         <source>A1</source>
         <translation>A1</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="69"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="69"/>
         <source>A2</source>
         <translation>A2</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="116"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="116"/>
         <source>A3</source>
         <translation>A3</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="163"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="163"/>
         <source>A4</source>
         <translation>A4</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="210"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="210"/>
         <source>A5</source>
         <translation>A5</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="257"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="257"/>
         <source>A6</source>
         <translation>A6</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="313"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="313"/>
         <source>TCP: (200.23,300.23,400.23,234,343,343)</source>
         <translation>TCP: (200.23,300.23,400.23,234,343,343)</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="329"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="329"/>
         <source>Tool: (0,0,400,0,0,0)</source>
         <translation>工具: (0,0,400,0,0,0)</translation>
     </message>
@@ -486,112 +486,112 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
 <context>
     <name>RobotGui::TaskRobotControl</name>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="37"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="37"/>
         <source>X+</source>
         <translation>X+</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="56"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="56"/>
         <source>Y+</source>
         <translation>Y+</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="75"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="75"/>
         <source>Z+</source>
         <translation>Z+</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="94"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="94"/>
         <source>A+</source>
         <translation>A+</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="113"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="113"/>
         <source>B+</source>
         <translation>B+</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="132"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="132"/>
         <source>C+</source>
         <translation>C+</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="151"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="151"/>
         <source>X-</source>
         <translation>X-</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="170"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="170"/>
         <source>Y-</source>
         <translation>Y-</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="189"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="189"/>
         <source>Z-</source>
         <translation>Z-</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="208"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="208"/>
         <source>A-</source>
         <translation>A-</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="227"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="227"/>
         <source>B-</source>
         <translation>B-</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="246"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="246"/>
         <source>C-</source>
         <translation>C-</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="258"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="258"/>
         <source>Tool 0</source>
         <translation>工具 0</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="263"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="263"/>
         <source>Tool</source>
         <translation>工具</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="268"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="268"/>
         <source>Base 0</source>
         <translation>基礎 0</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="273"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="273"/>
         <source>Base</source>
         <translation>基礎</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="278"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="278"/>
         <source>World</source>
         <translation>世界</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="287"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="287"/>
         <source>50mm / 5°</source>
         <translation>50mm / 5°</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="292"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="292"/>
         <source>20mm / 2°</source>
         <translation>20mm / 2°</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="297"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="297"/>
         <source>10mm / 1°</source>
         <translation>10mm / 1°</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="302"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="302"/>
         <source>5mm / 0.5°</source>
         <translation>5mm / 0.5°</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotControl.ui" line="307"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotControl.ui" line="307"/>
         <source>1mm / 0.1°</source>
         <translation>1mm / 0.1°</translation>
     </message>
@@ -599,7 +599,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
 <context>
     <name>RobotGui::TaskRobotMessages</name>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotMessages.ui" line="20"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotMessages.ui" line="20"/>
         <source>clear</source>
         <translation>清除</translation>
     </message>
@@ -607,82 +607,82 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
 <context>
     <name>RobotGui::TaskTrajectory</name>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="58"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="58"/>
         <source>|&lt;</source>
         <translation>|&lt;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="89"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="89"/>
         <source>&lt;</source>
         <translation>&lt;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="151"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="151"/>
         <source>|&gt;</source>
         <translation>|&gt;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="182"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="182"/>
         <source>&gt;</source>
         <translation>&gt;</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="213"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="213"/>
         <source>&gt;|</source>
         <translation>&gt;|</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="254"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="254"/>
         <source>10 ms</source>
         <translation>10毫秒</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="259"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="259"/>
         <source>50 ms</source>
         <translation>50毫秒</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="264"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="264"/>
         <source>100 ms</source>
         <translation>100毫秒</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="269"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="269"/>
         <source>500 ms</source>
         <translation>500毫秒</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="274"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="274"/>
         <source>1 s</source>
         <translation>1秒</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="291"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="291"/>
         <source>Pos: (200.23, 300.23, 400.23, 234, 343 ,343)</source>
         <translation>位置: (200.23, 300.23, 400.23, 234, 343 ,343)</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="317"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="317"/>
         <source>Type</source>
         <translation>類型</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="322"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="322"/>
         <source>Name</source>
         <translation>名稱</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="327"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="327"/>
         <source>C</source>
         <translation>C</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="332"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="332"/>
         <source>V</source>
         <translation>V</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectory.ui" line="337"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="337"/>
         <source>A</source>
         <translation>A</translation>
     </message>
@@ -690,63 +690,63 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
 <context>
     <name>RobotGui::TaskTrajectoryDressUpParameter</name>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="20"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="20"/>
         <source>Speed &amp; Acceleration:</source>
         <translation>速度 &amp; 加速度：</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="29"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="29"/>
         <source>Speed:</source>
         <translation>速度:</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="55"/>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="92"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="55"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="92"/>
         <source>Use</source>
         <translation>使用</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="66"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="66"/>
         <source>Accel:</source>
         <translation>加速:</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="102"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="102"/>
         <source>Don&apos;t change Cont</source>
         <translation>不要改變內容</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="107"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="107"/>
         <source>Continues</source>
         <translation>繼續</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="112"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="112"/>
         <source>Discontinues</source>
         <translation>中止</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="127"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="127"/>
         <source>Position and Orientation:</source>
         <translation>位置和方向:</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="159"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="159"/>
         <source>Don&apos;t change Position &amp; Orientation</source>
         <translation>不要更改位置和方向</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="164"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="164"/>
         <source>Use Orientation</source>
         <translation>使用定向</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="169"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="169"/>
         <source>Add Position</source>
         <translation>增加位置</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="174"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="174"/>
         <source>Add Orientation</source>
         <translation>增加方向</translation>
     </message>

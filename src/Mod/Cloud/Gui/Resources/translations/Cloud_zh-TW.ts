@@ -10,25 +10,25 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>CmdCloudTest</name>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/Cloud/Gui/Command.cpp" line="41"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Cloud/Gui/Command.cpp" line="41"/>
         <source>Cloud</source>
         <translation>雲端</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/Cloud/Gui/Command.cpp" line="42"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Cloud/Gui/Command.cpp" line="42"/>
         <source>Hello</source>
         <translation>Hello</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/Cloud/Gui/Command.cpp" line="43"/>
-        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/Cloud/Gui/Command.cpp" line="45"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Cloud/Gui/Command.cpp" line="43"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Cloud/Gui/Command.cpp" line="45"/>
         <source>Cloud Test function</source>
         <translation>雲端測試功能</translation>
     </message>
@@ -36,17 +36,17 @@
 <context>
     <name>Workbench</name>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/Cloud/InitGui.py" line="14"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Cloud/InitGui.py" line="14"/>
         <source>Cloud</source>
         <translation>雲端</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/Cloud/InitGui.py" line="15"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Cloud/InitGui.py" line="15"/>
         <source>Cloud Workbench</source>
         <translation>雲端工作台</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.1.0/src/Mod/Cloud/InitGui.py" line="21"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Cloud/InitGui.py" line="21"/>
         <source>Cloud workbench</source>
         <translation>雲端工作台</translation>
     </message>

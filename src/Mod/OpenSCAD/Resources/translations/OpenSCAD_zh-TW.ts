@@ -10,7 +10,7 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -791,11 +791,6 @@
 <context>
     <name>Workbench</name>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/InitGui.py" line="152"/>
-        <source>OpenSCAD</source>
-        <translation>OpenSCAD 工具</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/InitGui.py" line="49"/>
         <source>OpenSCAD is an application for creating solid 3D CAD.
 FreeCAD utizes OpenSCAD&apos;s capability as a script-only based modeller that uses its own description language
@@ -807,6 +802,11 @@ FreeCAD 利用 OpenSCAD 的功能，將其作為基於腳本的建模器，使�
     <message>
         <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/InitGui.py" line="152"/>
         <source>OpenSCAD Tools</source>
+        <translation>OpenSCAD 工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/OpenSCAD/InitGui.py" line="152"/>
+        <source>OpenSCAD</source>
         <translation>OpenSCAD 工具</translation>
     </message>
     <message>

@@ -10,7 +10,7 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -225,14 +225,14 @@ vertices that are not on the boundary.</source>
         <translation>剖面</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/Command.cpp" line="325"/>
-        <source>Sections…</source>
-        <translation>剖面...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/Command.cpp" line="326"/>
         <source>Creates a surface from a series of sectional edges</source>
         <translation>從一系列截面邊緣建立曲面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/Command.cpp" line="325"/>
+        <source>Sections…</source>
+        <translation>剖面...</translation>
     </message>
 </context>
 <context>

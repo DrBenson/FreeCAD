@@ -10,7 +10,7 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -220,18 +220,18 @@
 <context>
     <name>LinkParams</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Link.cpp" line="118"/>
-        <source>Stores the last user choice of whether to apply CopyOnChange setup to all links
-that reference the same configurable object</source>
-        <translation>儲存最後的使用者選擇是否將 變更時複製(CopyOnChange) 設定套用至所有連結
-引用相同的可設定物體</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/App/Link.cpp" line="119"/>
         <source>Stores the last user choice of whether to apply CopyOnChange setup to all link
 that links to the same configurable object</source>
         <translation>儲存使用者最後選擇是否要將 變更時複製(CopyOnChange) 設定
 套用到連結到相同設定物件的所有連結</translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-1.2.0/src/App/Link.cpp" line="118"/>
+        <source>Stores the last user choice of whether to apply CopyOnChange setup to all links
+that reference the same configurable object</source>
+        <translation>儲存最後的使用者選擇是否將 變更時複製(CopyOnChange) 設定套用至所有連結
+引用相同的可設定物體</translation>
     </message>
 </context>
 <context>

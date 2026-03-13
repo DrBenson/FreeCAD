@@ -10,7 +10,7 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -1229,26 +1229,6 @@
         <translation>不要變更連續模式</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="20"/>
-        <source>Speed &amp; Acceleration:</source>
-        <translation>速度 &amp; 加速度:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="29"/>
-        <source>Speed:</source>
-        <translation>速度:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="66"/>
-        <source>Accel:</source>
-        <translation>加速:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="102"/>
-        <source>Don&apos;t change Cont</source>
-        <translation>不要改變內容</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="107"/>
         <source>Continues</source>
         <translation>繼續</translation>
@@ -1257,31 +1237,6 @@
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="112"/>
         <source>Discontinues</source>
         <translation>中止</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="127"/>
-        <source>Position and Orientation:</source>
-        <translation>位置和方向:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="159"/>
-        <source>Don&apos;t change Position &amp; Orientation</source>
-        <translation>不要更改位置和方向</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="164"/>
-        <source>Use Orientation</source>
-        <translation>使用定向</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="169"/>
-        <source>Add Position</source>
-        <translation>增加位置</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="174"/>
-        <source>Add Orientation</source>
-        <translation>增加方向</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="128"/>
@@ -1312,6 +1267,51 @@
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.cpp" line="41"/>
         <source>Dress Up Parameter</source>
         <translation>外觀裝飾特徵屬性</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="20"/>
+        <source>Speed &amp; Acceleration:</source>
+        <translation>速度 &amp; 加速度:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="29"/>
+        <source>Speed:</source>
+        <translation>速度:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="66"/>
+        <source>Accel:</source>
+        <translation>加速:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="102"/>
+        <source>Don&apos;t change Cont</source>
+        <translation>不要改變內容</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="127"/>
+        <source>Position and Orientation:</source>
+        <translation>位置和方向:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="159"/>
+        <source>Don&apos;t change Position &amp; Orientation</source>
+        <translation>不要更改位置和方向</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="164"/>
+        <source>Use Orientation</source>
+        <translation>使用定向</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="169"/>
+        <source>Add Position</source>
+        <translation>增加位置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="174"/>
+        <source>Add Orientation</source>
+        <translation>增加方向</translation>
     </message>
 </context>
 <context>

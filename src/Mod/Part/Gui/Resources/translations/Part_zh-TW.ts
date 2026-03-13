@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -10,7 +10,7 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -3739,6 +3739,11 @@ Note: The placement is expressed in local space of object being attached.</sourc
 注意: 放置以被附著對象的局部坐標系統表示.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="101"/>
+        <source>Attachment Mode</source>
+        <translation>附加依賴模式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="101"/>
         <source>Attachment mode</source>
         <translation>附加依賴模式</translation>
@@ -3847,11 +3852,6 @@ Note: The placement is expressed in local space of object being attached.</sourc
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/AttachmentEditor/TaskAttachmentEditor.ui" line="367"/>
         <source>Flip sides</source>
         <translation>翻面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.ui" line="101"/>
-        <source>Attachment Mode</source>
-        <translation>附加依賴模式</translation>
     </message>
 </context>
 <context>
@@ -4168,11 +4168,6 @@ it inside the Placement property.</source>
 而不是將其保留在 放置位置 屬性中.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExportStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExportStep.ui" line="20"/>
         <source>Export</source>
         <translation>匯出</translation>
@@ -4202,6 +4197,11 @@ it inside the Placement property.</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExportStep.ui" line="26"/>
         <source>Units for export of STEP</source>
         <translation>匯出STEP檔所用之單位</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExportStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExportStep.ui" line="47"/>
@@ -4515,6 +4515,11 @@ If both lengths are zero, magnitude of direction is used.</source>
         <translation>選擇...</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExtrusion.cpp" line="182"/>
+        <source>Selecting...</source>
+        <translation>選擇...</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExtrusion.cpp" line="430"/>
         <source>The document &apos;%1&apos; doesn&apos;t exist.</source>
         <translation>文件 &apos;%1&apos; 不存在.</translation>
@@ -4595,11 +4600,6 @@ If both lengths are zero, magnitude of direction is used.</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExtrusion.cpp" line="678"/>
         <source>Total extrusion length is zero (length1 == -length2). It must be nonzero.</source>
         <translation>總拉伸長度為零 (長度1 == -長度2). 它必須為非零值.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExtrusion.cpp" line="182"/>
-        <source>Selecting...</source>
-        <translation>選擇...</translation>
     </message>
 </context>
 <context>
@@ -4682,6 +4682,16 @@ If both lengths are zero, magnitude of direction is used.</source>
         <translation>類型:</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.ui" line="118"/>
+        <source>Constant Radius</source>
+        <translation>固定半徑</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.ui" line="123"/>
+        <source>Variable Radius</source>
+        <translation>可變半徑</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.ui" line="142"/>
         <source>Radius:</source>
         <translation>半徑:</translation>
@@ -4692,13 +4702,13 @@ If both lengths are zero, magnitude of direction is used.</source>
         <translation>類型</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.ui" line="118"/>
-        <source>Constant Radius</source>
+        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgFilletEdges.ui" line="118"/>
+        <source>Constant radius</source>
         <translation>固定半徑</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.ui" line="123"/>
-        <source>Variable Radius</source>
+        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgFilletEdges.ui" line="123"/>
+        <source>Variable radius</source>
         <translation>可變半徑</translation>
     </message>
     <message>
@@ -4722,43 +4732,9 @@ If both lengths are zero, magnitude of direction is used.</source>
         <translation>倒角類型</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="267"/>
-        <source>Length:</source>
-        <translation>長度:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="266"/>
-        <source>Chamfer Parameter</source>
-        <translation>倒角參數</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="268"/>
-        <source>Constant Length</source>
-        <translation>固定長度</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="269"/>
-        <source>Variable Length</source>
-        <translation>可變長度</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="273"/>
-        <source>End length</source>
-        <translation>長度2</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="890"/>
-        <source>No valid shape is selected.
-Please select a valid shape in the drop-down box first.</source>
-        <translation>未選取有效之造型.
-請先於下拉選單中選取有效之造型.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="942"/>
-        <source>No edge entity is checked to fillet.
-Please check one or more edge entities first.</source>
-        <translation>未選擇實體之邊產生圓角,
-請先選擇一個或多個實體之邊.</translation>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="833"/>
+        <source>Length</source>
+        <translation>間距</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="270"/>
@@ -4818,11 +4794,6 @@ Please check one or more edge entities first.</source>
         <translation>邊 %1</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="833"/>
-        <source>Length</source>
-        <translation>間距</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="272"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="841"/>
         <source>Start length</source>
@@ -4853,14 +4824,43 @@ Check one or more edge entities first.</source>
 請先選擇一個或多個實體之邊.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgFilletEdges.ui" line="118"/>
-        <source>Constant radius</source>
-        <translation>固定半徑</translation>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="266"/>
+        <source>Chamfer Parameter</source>
+        <translation>倒角參數</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgFilletEdges.ui" line="123"/>
-        <source>Variable radius</source>
-        <translation>可變半徑</translation>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="267"/>
+        <source>Length:</source>
+        <translation>長度:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="268"/>
+        <source>Constant Length</source>
+        <translation>固定長度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="269"/>
+        <source>Variable Length</source>
+        <translation>可變長度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="273"/>
+        <source>End length</source>
+        <translation>長度2</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="890"/>
+        <source>No valid shape is selected.
+Please select a valid shape in the drop-down box first.</source>
+        <translation>未選取有效之造型.
+請先於下拉選單中選取有效之造型.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="942"/>
+        <source>No edge entity is checked to fillet.
+Please check one or more edge entities first.</source>
+        <translation>未選擇實體之邊產生圓角,
+請先選擇一個或多個實體之邊.</translation>
     </message>
 </context>
 <context>
@@ -5649,6 +5649,11 @@ during file reading (slower but higher details).</source>
         <translation>基本幾何</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="23"/>
+        <source>Select the type of geometric primitive to create</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgPrimitives.ui" line="33"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgPrimitives.cpp" line="739"/>
         <source>Plane</source>
@@ -6001,30 +6006,6 @@ during file reading (slower but higher details).</source>
         <translation>mm</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="260"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="351"/>
-        <source>Width</source>
-        <translation>寬度</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="371"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="465"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="683"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1419"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1745"/>
-        <source>Height</source>
-        <translation>高度</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="445"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="803"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1765"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1914"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1970"/>
-        <source>Radius</source>
-        <translation>半徑</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="498"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="524"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="579"/>
@@ -6049,10 +6030,79 @@ during file reading (slower but higher details).</source>
         <translation>度</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1802"/>
+        <source>Coordinate system:</source>
+        <translation>座標系統:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="250"/>
+        <source>Length of the plane in the local X direction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="260"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="351"/>
+        <source>Width</source>
+        <translation>寬度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="273"/>
+        <source>Width of the plane in the local Y direction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="347"/>
+        <source>Length of the box in the local X direction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="370"/>
+        <source>Width of the box in the local Y direction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="371"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="465"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="683"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1419"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1745"/>
+        <source>Height</source>
+        <translation>高度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="393"/>
+        <source>Height of the box in the local Z direction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="445"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="803"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1765"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1914"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1970"/>
+        <source>Radius</source>
+        <translation>半徑</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="470"/>
+        <source>Radius of the cylinder</source>
+        <translation>圓柱半徑</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="493"/>
+        <source>Height of the cylinder along the local Z axis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgPrimitives.ui" line="492"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgPrimitives.ui" line="1446"/>
         <source>Angle in first direction</source>
         <translation>第一方向之角度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="516"/>
+        <source>Skew angle of the cylinder in the first direction</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgPrimitives.ui" line="518"/>
@@ -6061,9 +6111,19 @@ during file reading (slower but higher details).</source>
         <translation>第二方向之角度</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="542"/>
+        <source>Skew angle of the cylinder in the second direction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="569"/>
         <source>Rotation angle</source>
         <translation>旋轉角度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="600"/>
+        <source>Rotation angle of the cylinder cross-section</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="643"/>
@@ -6073,6 +6133,11 @@ during file reading (slower but higher details).</source>
         <translation>半徑 1</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="677"/>
+        <source>Radius of the cone at the bottom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="663"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="995"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1204"/>
@@ -6080,10 +6145,30 @@ during file reading (slower but higher details).</source>
         <translation>半徑 2</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="700"/>
+        <source>Radius of the cone at the top</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="723"/>
+        <source>Height of the cone along the local Z axis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="729"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1785"/>
         <source>Angle</source>
         <translation>角度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="772"/>
+        <source>Rotation angle of the cone cross-section</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="849"/>
+        <source>Radius of the sphere</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="852"/>
@@ -6093,14 +6178,49 @@ during file reading (slower but higher details).</source>
         <translation>繞指定軸角度</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="901"/>
+        <source>Rotation angle of the sphere cross-section around the local Z axis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="872"/>
         <source>V parameters</source>
         <translation>與指定軸之夾角</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="924"/>
+        <source>Start angle of the sphere along the local Z axis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="956"/>
+        <source>End angle of the sphere along the local Z axis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1033"/>
+        <source>Radius of the ellipsoid along the local Z axis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1056"/>
+        <source>Radius of the ellipsoid along the local X axis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1015"/>
         <source>Radius 3</source>
         <translation>半徑 3</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1079"/>
+        <source>Radius of the ellipsoid along the local Y axis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1131"/>
+        <source>Rotation angle of the ellipsoid cross-section around the local Z axis</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1084"/>
@@ -6109,10 +6229,50 @@ during file reading (slower but higher details).</source>
         <translation>與指定軸之夾角</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1154"/>
+        <source>Start angle of the ellipsoid along the local Z axis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1186"/>
+        <source>End angle of the ellipsoid along the local Z axis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1260"/>
+        <source>Radius from the center of the torus to the center of the cross-section</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1283"/>
+        <source>Radius of the torus cross-section</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1335"/>
+        <source>Rotation angle of the torus cross-section around the local Z axis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1358"/>
+        <source>Start angle of the torus cross-section</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1390"/>
+        <source>End angle of the torus cross-section</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1376"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="2418"/>
         <source>Polygon</source>
         <translation>多邊形</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1467"/>
+        <source>Number of sides of the polygon cross-section</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1399"/>
@@ -6121,9 +6281,39 @@ during file reading (slower but higher details).</source>
         <translation>圓周長</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1493"/>
+        <source>Circumradius of the polygon cross-section</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1516"/>
+        <source>Height of the prism along the local Z axis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1539"/>
+        <source>Skew angle of the prism in the first direction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1565"/>
+        <source>Skew angle of the prism in the second direction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1518"/>
         <source>X min/max</source>
         <translation>X 最小/最大</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1618"/>
+        <source>Minimum X value of the base face</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1631"/>
+        <source>Maximum X value of the base face</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1548"/>
@@ -6131,9 +6321,29 @@ during file reading (slower but higher details).</source>
         <translation>Y 最小/最大</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1654"/>
+        <source>Minimum Y value (height start)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1667"/>
+        <source>Maximum Y value (height end)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1578"/>
         <source>Z min/max</source>
         <translation>Z 最小/最大</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1690"/>
+        <source>Minimum Z value of the base face</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1703"/>
+        <source>Maximum Z value of the base face</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1608"/>
@@ -6141,9 +6351,29 @@ during file reading (slower but higher details).</source>
         <translation>X2 最小/最大</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1726"/>
+        <source>Minimum X value of the top face</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1742"/>
+        <source>Maximum X value of the top face</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1641"/>
         <source>Z2 min/max</source>
         <translation>Z2 最小/最大</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1765"/>
+        <source>Minimum Z value of the top face</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1781"/>
+        <source>Maximum Z value of the top face</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1725"/>
@@ -6151,14 +6381,34 @@ during file reading (slower but higher details).</source>
         <translation>間距</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1855"/>
+        <source>Distance between consecutive turns of the helix</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1878"/>
+        <source>Total height of the helix</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1901"/>
+        <source>Radius of the helix</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1924"/>
+        <source>Taper angle of the helix</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1802"/>
         <source>Coordinate system</source>
         <translation>座標系統</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1802"/>
-        <source>Coordinate system:</source>
-        <translation>座標系統:</translation>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="1944"/>
+        <source>Handedness of the helix: right-handed or left-handed</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgPrimitives.ui" line="1810"/>
@@ -6176,9 +6426,29 @@ during file reading (slower but higher details).</source>
         <translation>增長</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2019"/>
+        <source>Radial growth per rotation of the spiral</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1894"/>
         <source>Number of rotations</source>
         <translation>迴旋數量</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2042"/>
+        <source>Total number of rotations of the spiral</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2065"/>
+        <source>Starting radius of the spiral</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2124"/>
+        <source>Radius of the circle</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="1990"/>
@@ -6187,10 +6457,25 @@ during file reading (slower but higher details).</source>
         <translation>角度 1</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2147"/>
+        <source>Start angle of the circular arc</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="2007"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="2129"/>
         <source>Angle 2</source>
         <translation>角度 2</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2167"/>
+        <source>End angle of the circular arc</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2200"/>
+        <source>Define the circle by selecting 3 points in the 3D view</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="2044"/>
@@ -6203,9 +6488,29 @@ during file reading (slower but higher details).</source>
         <translation>主要半徑</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2238"/>
+        <source>Major radius of the ellipse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="2092"/>
         <source>Minor radius</source>
         <translation>次要半徑</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2261"/>
+        <source>Minor radius of the ellipse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2284"/>
+        <source>Start angle of the elliptical arc</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2304"/>
+        <source>End angle of the elliptical arc</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="2170"/>
@@ -6214,16 +6519,31 @@ during file reading (slower but higher details).</source>
         <translation>X</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2351"/>
+        <source>X coordinate of the point</source>
+        <translation>點的 X 座標</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="2190"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="2301"/>
         <source>Y</source>
         <translation>Y</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2374"/>
+        <source>Y coordinate of the point</source>
+        <translation>點的 Y 座標</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="2210"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgPrimitives.ui" line="2334"/>
         <source>Z</source>
         <translation>Z</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2397"/>
+        <source>Z coordinate of the point</source>
+        <translation>點的 Z 座標</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgPrimitives.ui" line="2251"/>
@@ -6234,6 +6554,46 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgPrimitives.ui" line="2258"/>
         <source>End point</source>
         <translation>終點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2458"/>
+        <source>X coordinate of the start point</source>
+        <translation>起點的 X 座標</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2471"/>
+        <source>X coordinate of the end point</source>
+        <translation>終點的 X 座標</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2497"/>
+        <source>Y coordinate of the start point</source>
+        <translation>起點的 Y 座標</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2510"/>
+        <source>Y coordinate of the end point</source>
+        <translation>終點的 Y 座標</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2536"/>
+        <source>Z coordinate of the start point</source>
+        <translation>起點的 Z 座標</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2549"/>
+        <source>Z coordinate of the end point</source>
+        <translation>終點的 Z 座標</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2623"/>
+        <source>Number of sides of the regular polygon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgPrimitives.ui" line="2649"/>
+        <source>Circumradius of the regular polygon</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgPrimitives.cpp" line="1003"/>
@@ -6301,36 +6661,6 @@ during file reading (slower but higher details).</source>
         <translation>顯示邊緣</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="14"/>
-        <source>Projection on surface</source>
-        <translation>投影在表面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="20"/>
-        <source>Select projection surface</source>
-        <translation>選擇投影表面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="31"/>
-        <source>Add face</source>
-        <translation>新增面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="38"/>
-        <source>Add wire</source>
-        <translation>新增線段</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="45"/>
-        <source>Add edge</source>
-        <translation>新增邊界</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="76"/>
-        <source>Show Edges</source>
-        <translation>顯示邊緣</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="92"/>
         <source>Extrude height</source>
         <translation>拉伸高度</translation>
@@ -6344,26 +6674,6 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="141"/>
         <source>Direction</source>
         <translation>方向</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="147"/>
-        <source>Get current camera direction</source>
-        <translation>取得目前相機方向</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="156"/>
-        <source>X:</source>
-        <translation>X:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="186"/>
-        <source>Y:</source>
-        <translation>Y:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="213"/>
-        <source>Z:</source>
-        <translation>Z:</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgProjectionOnSurface.ui" line="147"/>
@@ -6399,6 +6709,56 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgProjectionOnSurface.cpp" line="171"/>
         <source>Cannot create a projection object</source>
         <translation>無法建立投影物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="14"/>
+        <source>Projection on surface</source>
+        <translation>投影在表面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="20"/>
+        <source>Select projection surface</source>
+        <translation>選擇投影表面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="31"/>
+        <source>Add face</source>
+        <translation>新增面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="38"/>
+        <source>Add wire</source>
+        <translation>新增線段</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="45"/>
+        <source>Add edge</source>
+        <translation>新增邊界</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="76"/>
+        <source>Show Edges</source>
+        <translation>顯示邊緣</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="147"/>
+        <source>Get current camera direction</source>
+        <translation>取得目前相機方向</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="156"/>
+        <source>X:</source>
+        <translation>X:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="186"/>
+        <source>Y:</source>
+        <translation>Y:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="213"/>
+        <source>Z:</source>
+        <translation>Z:</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.cpp" line="146"/>
@@ -6468,6 +6828,12 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgRevolution.ui" line="228"/>
         <source>Dir. Z:</source>
         <translation>方向 Z:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgRevolution.ui" line="250"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgRevolution.cpp" line="457"/>
+        <source>Select reference</source>
+        <translation>選擇參考物體</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgRevolution.ui" line="281"/>
@@ -6603,6 +6969,11 @@ during file reading (slower but higher details).</source>
         <translation>先選擇旋轉造型.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgRevolution.cpp" line="464"/>
+        <source>Selecting… (line or arc)</source>
+        <translation>選擇...(直線或圓弧)</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgRevolution.cpp" line="274"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgRevolution.cpp" line="279"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgRevolution.cpp" line="284"/>
@@ -6644,17 +7015,6 @@ during file reading (slower but higher details).</source>
         <translation>選擇...(直線或圓弧)</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgRevolution.cpp" line="464"/>
-        <source>Selecting… (line or arc)</source>
-        <translation>選擇...(直線或圓弧)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgRevolution.ui" line="250"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgRevolution.cpp" line="457"/>
-        <source>Select reference</source>
-        <translation>選擇參考物體</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgRevolution.cpp" line="536"/>
         <source>Selecting… (Line or Arc)</source>
         <translation>選擇...(直線或圓弧)</translation>
@@ -6678,6 +7038,11 @@ during file reading (slower but higher details).</source>
         <translation>Z 因子</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgScale.ui" line="74"/>
+        <source>Uniform Scaling</source>
+        <translation>統一縮放</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgScale.ui" line="112"/>
         <source>Y Factor</source>
         <translation>Y 因子</translation>
@@ -6698,8 +7063,8 @@ during file reading (slower but higher details).</source>
         <translation>選擇要縮放的造型</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgScale.ui" line="22"/>
-        <source>X factor</source>
+        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgScale.ui" line="22"/>
+        <source>X-factor</source>
         <translation>X 因子</translation>
     </message>
     <message>
@@ -6708,8 +7073,8 @@ during file reading (slower but higher details).</source>
         <translation>比例因子</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgScale.ui" line="64"/>
-        <source>Z factor</source>
+        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgScale.ui" line="64"/>
+        <source>Z-factor</source>
         <translation>Z 因子</translation>
     </message>
     <message>
@@ -6718,9 +7083,24 @@ during file reading (slower but higher details).</source>
         <translation>在所有方向上以單一因子縮放對象.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgScale.ui" line="74"/>
-        <source>Uniform Scaling</source>
+        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgScale.ui" line="74"/>
+        <source>Uniform scaling</source>
         <translation>統一縮放</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgScale.ui" line="112"/>
+        <source>Y-factor</source>
+        <translation>Y 因子</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgScale.ui" line="22"/>
+        <source>X factor</source>
+        <translation>X 因子</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgScale.ui" line="64"/>
+        <source>Z factor</source>
+        <translation>Z 因子</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgScale.ui" line="112"/>
@@ -6772,26 +7152,6 @@ during file reading (slower but higher details).</source>
 %1</source>
         <translation>建立縮放失敗.
 %1</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgScale.ui" line="22"/>
-        <source>X-factor</source>
-        <translation>X 因子</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgScale.ui" line="64"/>
-        <source>Z-factor</source>
-        <translation>Z 因子</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgScale.ui" line="74"/>
-        <source>Uniform scaling</source>
-        <translation>統一縮放</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgScale.ui" line="112"/>
-        <source>Y-factor</source>
-        <translation>Y 因子</translation>
     </message>
 </context>
 <context>
@@ -7199,16 +7559,6 @@ during file reading (slower but higher details).</source>
         <translation>新造型的預設光澤度</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="14"/>
-        <source>Shape appearance</source>
-        <translation>造型外觀</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="20"/>
-        <source>Default Shape view properties</source>
-        <translation>預設造形檢視屬性</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="83"/>
         <source>Line color</source>
         <translation>線條顏色</translation>
@@ -7315,6 +7665,16 @@ will be used or black.</source>
         <source>Text color for document annotations</source>
         <translation>文件註解的文字顏色</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="14"/>
+        <source>Shape appearance</source>
+        <translation>造型外觀</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="20"/>
+        <source>Default Shape view properties</source>
+        <translation>預設造形檢視屬性</translation>
+    </message>
 </context>
 <context>
     <name>PartGui::Location</name>
@@ -7327,21 +7687,6 @@ will be used or black.</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/Location.ui" line="29"/>
         <source>Position</source>
         <translation>位置</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/Location.ui" line="37"/>
-        <source>X</source>
-        <translation>X</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/Location.ui" line="54"/>
-        <source>Y</source>
-        <translation>Y</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/Location.ui" line="71"/>
-        <source>Z</source>
-        <translation>Z</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/Location.ui" line="90"/>
@@ -7384,9 +7729,52 @@ will be used or black.</source>
         <translation>方向向量的 z 分量</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/Location.ui" line="90"/>
-        <source>3D View</source>
-        <translation>3D 檢視</translation>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Location.ui" line="32"/>
+        <source>Set the placement location coordinates</source>
+        <translation>設定放置位置座標</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Location.ui" line="40"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Location.ui" line="50"/>
+        <source>X coordinate of the placement location</source>
+        <translation>放置位置的 X 座標</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/Location.ui" line="37"/>
+        <source>X</source>
+        <translation>X</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Location.ui" line="63"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Location.ui" line="73"/>
+        <source>Y coordinate of the placement location</source>
+        <translation>放置位置的 Y 座標</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/Location.ui" line="54"/>
+        <source>Y</source>
+        <translation>Y</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Location.ui" line="86"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Location.ui" line="96"/>
+        <source>Z coordinate of the placement location</source>
+        <translation>放置位置的 Z 座標</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/Location.ui" line="71"/>
+        <source>Z</source>
+        <translation>Z</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Location.ui" line="111"/>
+        <source>Select a point in the 3D view to set the location automatically</source>
+        <translation>在 3D 檢視中選取一個點，即可自動設定位置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Location.ui" line="114"/>
+        <source>Pick Position</source>
+        <translation>選取位置</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/Location.ui" line="106"/>
@@ -7401,9 +7789,19 @@ the sketch plane&apos;s normal vector will be used</source>
         <translation>旋轉軸</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Location.ui" line="142"/>
+        <source>X-component of the rotation axis direction vector</source>
+        <translation>旋轉軸方向向量的 X 分量</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/Location.ui" line="125"/>
         <source>X-component of direction vector</source>
         <translation>方向向量的 X 分量</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Location.ui" line="174"/>
+        <source>Y-component of the rotation axis direction vector</source>
+        <translation>旋轉軸方向向量的 Y 分量</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/Location.ui" line="154"/>
@@ -7411,14 +7809,30 @@ the sketch plane&apos;s normal vector will be used</source>
         <translation>方向向量的 Y 分量</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Location.ui" line="206"/>
+        <source>Z-component of the rotation axis direction vector</source>
+        <translation>旋轉軸方向向量的 Z 分量</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/Location.ui" line="183"/>
         <source>Z-component of direction vector</source>
         <translation>方向向量的 Z 分量</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Location.ui" line="241"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Location.ui" line="251"/>
+        <source>Rotation angle around the specified axis</source>
+        <translation>圍繞指定軸的旋轉角度</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/Location.ui" line="208"/>
         <source>Angle</source>
         <translation>角度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/Location.ui" line="90"/>
+        <source>3D View</source>
+        <translation>3D 檢視</translation>
     </message>
 </context>
 <context>
@@ -7585,6 +7999,11 @@ the sketch plane&apos;s normal vector will be used</source>
         <translation>鏡像平面參考</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Mirroring.cpp" line="235"/>
+        <source>Select Reference</source>
+        <translation>選擇參考物體</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/Mirroring.cpp" line="211"/>
         <source>Select reference</source>
         <translation>選擇參考物體</translation>
@@ -7603,11 +8022,6 @@ the sketch plane&apos;s normal vector will be used</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/Mirroring.cpp" line="133"/>
         <source>No such document &apos;%1&apos;.</source>
         <translation>無此檔案 &apos;%1&apos;.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/Mirroring.cpp" line="235"/>
-        <source>Select Reference</source>
-        <translation>選擇參考物體</translation>
     </message>
 </context>
 <context>
@@ -8219,8 +8633,8 @@ of object being attached.</source>
 注意: 放置以被附著對象的局部坐標系表示.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/TaskAttacher.ui" line="101"/>
-        <source>Attachment mode</source>
+        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/TaskAttacher.ui" line="101"/>
+        <source>Attachment Mode</source>
         <translation>附加依賴模式</translation>
     </message>
     <message>
@@ -8327,6 +8741,11 @@ of the object being attached.</source>
         <translation>圍繞 Y 軸</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/TaskAttacher.ui" line="101"/>
+        <source>Attachment mode</source>
+        <translation>附加依賴模式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/TaskAttacher.ui" line="296"/>
         <source>Rotation around the local Y-axis. The offset is expressed in the local coordinate system
 of the object being attached.</source>
@@ -8381,23 +8800,18 @@ of the object being attached.</source>
         <translation>以模式 %1 連接</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/TaskAttacher.cpp" line="336"/>
-        <source>Attachment Offset (inactive - not attached):</source>
-        <translation>連接偏移(無效-未連接其他物體):</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/TaskAttacher.cpp" line="713"/>
         <source>Selecting...</source>
         <translation>選擇...</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/TaskAttacher.cpp" line="344"/>
-        <source>Attachment offset (in its local coordinate system):</source>
+        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/TaskAttacher.cpp" line="425"/>
+        <source>Attachment Offset (in its local coordinate system):</source>
         <translation>連結偏移 (在局部坐標):</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/TaskAttacher.cpp" line="344"/>
-        <source>Attachment offset (inactive - not attached):</source>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/TaskAttacher.cpp" line="336"/>
+        <source>Attachment Offset (inactive - not attached):</source>
         <translation>連接偏移(無效-未連接其他物體):</translation>
     </message>
     <message>
@@ -8414,6 +8828,16 @@ of the object being attached.</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/TaskAttacher.cpp" line="648"/>
         <source>Vertex</source>
         <translation>頂點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/TaskAttacher.cpp" line="344"/>
+        <source>Attachment offset (in its local coordinate system):</source>
+        <translation>連結偏移 (在局部坐標):</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/TaskAttacher.cpp" line="344"/>
+        <source>Attachment offset (inactive - not attached):</source>
+        <translation>連接偏移(無效-未連接其他物體):</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/TaskAttacher.cpp" line="879"/>
@@ -8445,16 +8869,6 @@ of the object being attached.</source>
         <source>%1 (add more references)</source>
         <translation>%1 (增加更多參考)</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/TaskAttacher.ui" line="101"/>
-        <source>Attachment Mode</source>
-        <translation>附加依賴模式</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/TaskAttacher.cpp" line="425"/>
-        <source>Attachment Offset (in its local coordinate system):</source>
-        <translation>連結偏移 (在局部坐標):</translation>
-    </message>
 </context>
 <context>
     <name>PartGui::TaskCheckGeometryDialog</name>
@@ -8483,11 +8897,6 @@ of the object being attached.</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/TaskCheckGeometry.cpp" line="1094"/>
         <source>Skip this settings page and run the geometry check automatically</source>
         <translation>跳過此設定頁面並自動執行幾何檢查</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/TaskCheckGeometry.cpp" line="1015"/>
-        <source>Skip this settings page and run the geometry check automatically.</source>
-        <translation>跳過此設定頁面並自動執行幾何檢查.</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/TaskCheckGeometry.cpp" line="1017"/>
@@ -8606,6 +9015,11 @@ Individual BOP Checks:</source>
         <translation>  曲面上的曲線無效</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/TaskCheckGeometry.cpp" line="1224"/>
+        <source>Run check</source>
+        <translation>執行檢查</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/TaskCheckGeometry.cpp" line="1072"/>
         <source>
 Individual boolean operation checks:</source>
@@ -8703,8 +9117,8 @@ Individual boolean operation checks:</source>
         <translation>檢查表面的無效曲線. 預設值: true</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/TaskCheckGeometry.cpp" line="1224"/>
-        <source>Run check</source>
+        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/TaskCheckGeometry.cpp" line="1454"/>
+        <source>Run Check</source>
         <translation>執行檢查</translation>
     </message>
     <message>
@@ -8713,9 +9127,9 @@ Individual boolean operation checks:</source>
         <translation>結果</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/TaskCheckGeometry.cpp" line="1454"/>
-        <source>Run Check</source>
-        <translation>執行檢查</translation>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/TaskCheckGeometry.cpp" line="1015"/>
+        <source>Skip this settings page and run the geometry check automatically.</source>
+        <translation>跳過此設定頁面並自動執行幾何檢查.</translation>
     </message>
 </context>
 <context>
@@ -9894,6 +10308,11 @@ Continue?</source>
         <translation>選擇兩個造型或兩個線段.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/CommandSimple.cpp" line="185"/>
+        <source>Distance in Parameter Space</source>
+        <translation>參數空間中的距離</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/CommandSimple.cpp" line="173"/>
         <source>Distance in parameter space</source>
         <translation>參數空間中的距離</translation>
@@ -10616,11 +11035,6 @@ Continue?</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/ViewProviderCompound.cpp" line="76"/>
         <source>The compound &apos;%1&apos; has %2 child objects. Do you want to delete them as well?</source>
         <translation>複合物  &apos;%1&apos; 有 %2 個子物體. 您是否也要刪除它們?</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../home/Benson/sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/CommandSimple.cpp" line="185"/>
-        <source>Distance in Parameter Space</source>
-        <translation>參數空間中的距離</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/ViewProviderMirror.cpp" line="78"/>

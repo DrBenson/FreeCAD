@@ -10,7 +10,7 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -117,8 +117,8 @@
         <translation>圓弧球</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/Tux/NavigationIndicatorGui.py" line="674"/>
-        <source>Navigation Indicator</source>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/Tux/NavigationIndicatorGui.py" line="627"/>
+        <source>Navigation indicator</source>
         <comment>A context menu action used to show or hide the &apos;Navigation indicator&apos; toolbar widget</comment>
         <translation>導航指示器</translation>
     </message>
@@ -128,8 +128,8 @@
         <translation>未定義</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/Tux/NavigationIndicatorGui.py" line="627"/>
-        <source>Navigation indicator</source>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/Tux/NavigationIndicatorGui.py" line="674"/>
+        <source>Navigation Indicator</source>
         <comment>A context menu action used to show or hide the &apos;Navigation indicator&apos; toolbar widget</comment>
         <translation>導航指示器</translation>
     </message>

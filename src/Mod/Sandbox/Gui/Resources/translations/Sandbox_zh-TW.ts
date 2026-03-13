@@ -10,7 +10,7 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -389,12 +389,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="211"/>
         <source>Thread and No Sequencer</source>
-        <translation type="unfinished"></translation>
+        <translation>執行緒且無定序器</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="212"/>
         <source>Runs a sandbox test function</source>
-        <translation type="unfinished"></translation>
+        <translation>執行沙箱測試功能</translation>
     </message>
 </context>
 <context>
@@ -418,12 +418,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="456"/>
         <source>Thread and Modal Dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>執行緒和模式對話框</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="457"/>
         <source>Runs a sandbox test function</source>
-        <translation type="unfinished"></translation>
+        <translation>執行沙箱測試功能</translation>
     </message>
 </context>
 <context>
@@ -447,12 +447,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="483"/>
         <source>Thread and File Dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>執行緒及檔案對話框</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="484"/>
         <source>Runs a sandbox test function</source>
-        <translation type="unfinished"></translation>
+        <translation>執行沙箱測試功能</translation>
     </message>
 </context>
 <context>
@@ -476,12 +476,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="172"/>
         <source>Thread and Sequencer</source>
-        <translation type="unfinished"></translation>
+        <translation>執行緒及定序器</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="173"/>
         <source>Runs a sandbox test function</source>
-        <translation type="unfinished"></translation>
+        <translation>執行沙箱測試功能</translation>
     </message>
 </context>
 <context>
@@ -505,12 +505,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="248"/>
         <source>GUI Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>圖形使用者介面執行緒</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="249"/>
         <source>Runs a sandbox test function</source>
-        <translation type="unfinished"></translation>
+        <translation>執行沙箱測試功能</translation>
     </message>
 </context>
 <context>
@@ -534,12 +534,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="144"/>
         <source>Save Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>儲存執行緒</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="145"/>
         <source>Runs a sandbox save function</source>
-        <translation type="unfinished"></translation>
+        <translation>執行沙箱測試功能</translation>
     </message>
 </context>
 <context>
@@ -563,12 +563,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="120"/>
         <source>Test Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>測試執行緒</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="121"/>
         <source>Runs a sandbox test function</source>
-        <translation type="unfinished"></translation>
+        <translation>執行沙箱測試功能</translation>
     </message>
 </context>
 <context>
@@ -592,12 +592,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="93"/>
         <source>Run Several Threads</source>
-        <translation type="unfinished"></translation>
+        <translation>執行多個執行緒</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="94"/>
         <source>Runs a sandbox test function</source>
-        <translation type="unfinished"></translation>
+        <translation>執行沙箱測試功能</translation>
     </message>
 </context>
 <context>
@@ -621,12 +621,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="521"/>
         <source>Local Event Loop</source>
-        <translation type="unfinished"></translation>
+        <translation>本地事件循環</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="522"/>
         <source>Runs a sandbox test function</source>
-        <translation type="unfinished"></translation>
+        <translation>執行沙箱測試功能</translation>
     </message>
 </context>
 <context>
@@ -650,12 +650,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="564"/>
         <source>Load Mesh in Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>在執行緒中載入網格</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="565"/>
         <source>Runs a sandbox test function</source>
-        <translation type="unfinished"></translation>
+        <translation>執行沙箱測試功能</translation>
     </message>
 </context>
 <context>
@@ -679,12 +679,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="622"/>
         <source>Load Mesh in Boost-Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>在 boost 執行緒中載入網格</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="623"/>
         <source>Runs a sandbox test function</source>
-        <translation type="unfinished"></translation>
+        <translation>執行沙箱測試功能</translation>
     </message>
 </context>
 <context>
@@ -708,12 +708,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="670"/>
         <source>Load Mesh in QFuture</source>
-        <translation type="unfinished"></translation>
+        <translation>在 QFuture 中載入網格</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="671"/>
         <source>Runs a sandbox test function</source>
-        <translation type="unfinished"></translation>
+        <translation>執行沙箱測試功能</translation>
     </message>
 </context>
 <context>
@@ -737,12 +737,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="785"/>
         <source>Test Mesh Job</source>
-        <translation type="unfinished"></translation>
+        <translation>測試網格作業</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="786"/>
         <source>Runs a sandbox test function</source>
-        <translation type="unfinished"></translation>
+        <translation>執行沙箱測試功能</translation>
     </message>
 </context>
 <context>
@@ -766,12 +766,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="880"/>
         <source>Test Mesh Reference</source>
-        <translation type="unfinished"></translation>
+        <translation>測試網格參考</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="881"/>
         <source>Runs a sandbox test function</source>
-        <translation type="unfinished"></translation>
+        <translation>執行沙箱測試功能</translation>
     </message>
 </context>
 <context>
@@ -795,12 +795,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="369"/>
         <source>PySide Threads</source>
-        <translation type="unfinished"></translation>
+        <translation>Python執行緒</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="370"/>
         <source>Uses PySide&apos;s thread module</source>
-        <translation type="unfinished"></translation>
+        <translation>使用PySide的執行緒模組</translation>
     </message>
 </context>
 <context>
@@ -824,12 +824,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="302"/>
         <source>Locked Python Threads</source>
-        <translation type="unfinished"></translation>
+        <translation>鎖定的 Python 執行緒</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="303"/>
         <source>Uses Python&apos;s thread module where each thread is locked</source>
-        <translation type="unfinished"></translation>
+        <translation>使用Python的執行緒模組，每個執行緒都被鎖定</translation>
     </message>
 </context>
 <context>
@@ -853,12 +853,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="430"/>
         <source>Python Main Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>Python主執行緒</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="431"/>
         <source>Runs Python code in the main thread</source>
-        <translation type="unfinished"></translation>
+        <translation>在主執行緒中執行Python程式碼</translation>
     </message>
 </context>
 <context>
@@ -882,12 +882,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="337"/>
         <source>Unlocked Python Threads</source>
-        <translation type="unfinished"></translation>
+        <translation>解鎖的 Python 執行緒</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="338"/>
         <source>Uses Python&apos;s thread module where each thread is unlocked</source>
-        <translation type="unfinished"></translation>
+        <translation>使用Python的執行緒模組，其中每個執行緒都是解鎖的</translation>
     </message>
 </context>
 <context>
@@ -911,12 +911,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="404"/>
         <source>Python Threads</source>
-        <translation type="unfinished"></translation>
+        <translation>Python執行緒</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="405"/>
         <source>Uses class PythonThread running Python code in its run() method</source>
-        <translation type="unfinished"></translation>
+        <translation>使用類別 Python 執行緒 在其 run() 方法中執行 Python 程式碼</translation>
     </message>
 </context>
 <context>
@@ -940,12 +940,12 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="279"/>
         <source>Worker Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>工作執行緒</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="280"/>
         <source>Runs a sandbox test function</source>
-        <translation type="unfinished"></translation>
+        <translation>執行沙箱測試功能</translation>
     </message>
 </context>
 <context>
@@ -963,7 +963,7 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="1382"/>
         <source>New Graphics View</source>
-        <translation type="unfinished"></translation>
+        <translation>新的圖形檢視</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="1383"/>
