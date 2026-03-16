@@ -1484,7 +1484,7 @@ void Cloud::Module::LinkXSetValue(std::string filename)
     string newName;
     Document* currentDoc = GetApplication().getActiveDocument();
     newName = GetApplication().getUniqueDocumentName("unnamed");
-    newDoc = GetApplication().newDocument(newName.c_str(), (const char*)path.c_str(), true);
+    newDoc = GetApplication().newDocument(newName.c_str(), (const char*)path.c_str());  //, true);
     GetApplication().setActiveDocument(newDoc);
     this->cloudRestore((const char*)path.c_str());
     GetApplication().setActiveDocument(currentDoc);
