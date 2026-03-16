@@ -33,6 +33,14 @@
     </message>
 </context>
 <context>
+    <name>FileFormat</name>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Import/Init.py" line="41"/>
+        <source>STEPZ (Zipped STEP)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Gui::Dialog::DlgSettingsDraft</name>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Import/Resources/ui/preferences-import.ui" line="14"/>

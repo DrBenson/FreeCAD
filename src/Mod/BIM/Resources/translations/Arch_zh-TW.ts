@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -1420,11 +1420,6 @@
         <translation>從這個物體中減去的其他形狀</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchComponent.py" line="214"/>
-        <source>An optional standard (OmniClass, etc…) code for this component</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchComponent.py" line="274"/>
         <source>An optional standard (OmniClass, etc.) code for this component</source>
         <translation type="unfinished"></translation>
@@ -2032,6 +2027,11 @@
         <location filename="../../../../../FreeCAD-1.1.0/src/Mod/BIM/ArchProfile.py" line="330"/>
         <source>Overall size</source>
         <translation>整體尺寸</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchProfile.py" line="332"/>
+        <source>side size</source>
+        <translation type="unfinished">側面尺寸</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchProfile.py" line="333"/>
@@ -3033,11 +3033,6 @@
         <translation>此窗口的正常方向</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchWindow.py" line="145"/>
-        <source>The height of this window&apos;s sill</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchWindow.py" line="150"/>
         <source>When normal direction is in auto mode (0,0,0), use reversed normal direction of the Base Sketch, i.e. -z.</source>
         <translation type="unfinished"></translation>
@@ -3108,9 +3103,14 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchProfile.py" line="332"/>
-        <source>side size</source>
-        <translation type="unfinished">側面尺寸</translation>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchComponent.py" line="214"/>
+        <source>An optional standard (OmniClass, etc…) code for this component</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchWindow.py" line="145"/>
+        <source>The height of this window&apos;s sill</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The type of winders in these stairs</source>
@@ -3632,6 +3632,16 @@ Building creation aborted.</source>
         <translation>新增屬性參數</translation>
     </message>
     <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchComponent.py" line="2799"/>
+        <source>Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchComponent.py" line="2939"/>
+        <source>Error saving property</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Floor</source>
         <translation>樓板</translation>
     </message>
@@ -3688,6 +3698,16 @@ Floor creation aborted.</source>
         <translation>總高度</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchGrid.py" line="390"/>
+        <source>Add column</source>
+        <translation>增加欄</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchGrid.py" line="391"/>
+        <source>Del column</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchGrid.py" line="394"/>
         <source>Add Row</source>
         <translation>新增列</translation>
@@ -3731,6 +3751,16 @@ Floor creation aborted.</source>
         <translation>合併重複內容</translation>
     </message>
     <message>
+        <location filename="../../ArchMaterial.py" line="123"/>
+        <source>Create material</source>
+        <translation>建立材質</translation>
+    </message>
+    <message>
+        <location filename="../../ArchMaterial.py" line="157"/>
+        <source>Create multi-material</source>
+        <translation>建立多重材質</translation>
+    </message>
+    <message>
         <location filename="../../ArchMaterial.py" line="826"/>
         <location filename="../../ArchMaterial.py" line="845"/>
         <location filename="../../ArchWindow.py" line="1739"/>
@@ -3758,6 +3788,31 @@ Floor creation aborted.</source>
         <translation>相依於物體</translation>
     </message>
     <message>
+        <location filename="../../ArchStructure.py" line="328"/>
+        <source>Base point of column</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ArchStructure.py" line="428"/>
+        <source>Structure options</source>
+        <translation>結構選項</translation>
+    </message>
+    <message>
+        <location filename="../../ArchStructure.py" line="432"/>
+        <source>Drawing mode</source>
+        <translation>繪圖模式</translation>
+    </message>
+    <message>
+        <location filename="../../ArchStructure.py" line="489"/>
+        <source>Switch L/W</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ArchStructure.py" line="764"/>
+        <source>Error: The base shape couldn&apos;t be extruded along this tool object</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../ArchStructure.py" line="835"/>
         <location filename="../../ArchPanel.py" line="538"/>
         <source>Facemaker returned an error</source>
@@ -3771,6 +3826,35 @@ Floor creation aborted.</source>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchPanel.py" line="445"/>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchStructure.py" line="1591"/>
         <source>Could not compute a shape</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Width</source>
+        <translation>寬度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchPanel.py" line="579"/>
+        <source>Sheets</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchPanel.py" line="580"/>
+        <source>Wave Length</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchPanel.py" line="581"/>
+        <source>Wave Height</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchPanel.py" line="582"/>
+        <source>Wave Bottom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchPanel.py" line="583"/>
+        <source>Wave Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3934,10 +4018,6 @@ Floor creation aborted.</source>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchPrecast.py" line="1718"/>
         <source>Remove Dent</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Width</source>
-        <translation>寬度</translation>
     </message>
     <message>
         <source>Height</source>
@@ -4260,11 +4340,6 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchSchedule.py" line="102"/>
-        <source>renamed property &apos;Description&apos; to &apos;Operation&apos;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchSchedule.py" line="771"/>
         <source>Remove Spreadsheet</source>
         <translation type="unfinished"></translation>
@@ -4380,6 +4455,36 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     </message>
     <message>
         <source>Centers the plane on the objects in the list above</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchSpace.py" line="920"/>
+        <source>Space Type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchSpace.py" line="921"/>
+        <source>Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchSpace.py" line="922"/>
+        <source>Finish Floor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchSpace.py" line="923"/>
+        <source>Finish Walls</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchSpace.py" line="924"/>
+        <source>Finish Ceiling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchSpace.py" line="932"/>
+        <source>Space Tools</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4564,11 +4669,6 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     </message>
     <message>
         <source>Cannot compute blocks for wall</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchWall.py" line="243"/>
-        <source>changed &apos;Normal&apos; to [0, 0, 1] to preserve extrusion direction</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5282,48 +5382,103 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchGrid.py" line="390"/>
-        <source>Add column</source>
-        <translation>增加欄</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchGrid.py" line="391"/>
-        <source>Del column</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchCurtainWall.py" line="732"/>
+        <source>Vertical Sections</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ArchMaterial.py" line="123"/>
-        <source>Create material</source>
-        <translation>建立材質</translation>
-    </message>
-    <message>
-        <location filename="../../ArchMaterial.py" line="157"/>
-        <source>Create multi-material</source>
-        <translation>建立多重材質</translation>
-    </message>
-    <message>
-        <location filename="../../ArchStructure.py" line="328"/>
-        <source>Base point of column</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchCurtainWall.py" line="733"/>
+        <source>Horizontal Sections</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ArchStructure.py" line="428"/>
-        <source>Structure options</source>
-        <translation>結構選項</translation>
-    </message>
-    <message>
-        <location filename="../../ArchStructure.py" line="432"/>
-        <source>Drawing mode</source>
-        <translation>繪圖模式</translation>
-    </message>
-    <message>
-        <location filename="../../ArchStructure.py" line="489"/>
-        <source>Switch L/W</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchCurtainWall.py" line="734"/>
+        <source>Vertical Mullion Width</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ArchStructure.py" line="764"/>
-        <source>Error: The base shape couldn&apos;t be extruded along this tool object</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchCurtainWall.py" line="737"/>
+        <source>Vertical Mullion Height</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchCurtainWall.py" line="741"/>
+        <source>Horizontal Mullion Width</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchCurtainWall.py" line="745"/>
+        <source>Horizontal Mullion Height</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchCurtainWall.py" line="747"/>
+        <source>Panel Thickness</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchCurtainWall.py" line="748"/>
+        <source>Refine</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchEquipment.py" line="64"/>
+        <source>Model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchEquipment.py" line="65"/>
+        <source>Equipment Power</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchTruss.py" line="414"/>
+        <source>Height Start</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchTruss.py" line="415"/>
+        <source>Height End</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchTruss.py" line="416"/>
+        <source>Strut Height</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchTruss.py" line="417"/>
+        <source>Strut Width</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchTruss.py" line="418"/>
+        <source>Rod Sections</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchTruss.py" line="419"/>
+        <source>Rod Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchTruss.py" line="420"/>
+        <source>Rod Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/ArchTruss.py" line="421"/>
+        <source>Rod Type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchSchedule.py" line="102"/>
+        <source>renamed property &apos;Description&apos; to &apos;Operation&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchWall.py" line="243"/>
+        <source>changed &apos;Normal&apos; to [0, 0, 1] to preserve extrusion direction</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6985,13 +7140,13 @@ Do you want to proceed?</source>
         <translation>多重結構</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchStructure.py" line="208"/>
-        <source>Creates multiple BIM Structures from a selected base, using each selected edge as an extrusion path</source>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchStructure.py" line="199"/>
+        <source>Create multiple BIM Structures from a selected base, using each selected edge as an extrusion path</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchStructure.py" line="199"/>
-        <source>Create multiple BIM Structures from a selected base, using each selected edge as an extrusion path</source>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchStructure.py" line="208"/>
+        <source>Creates multiple BIM Structures from a selected base, using each selected edge as an extrusion path</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7099,9 +7254,22 @@ Do you want to proceed?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="201"/>
+        <source>The value of the nudge movement (rotation is always 45°).CTRL+arrows to move
+CTRL+, to rotate leftCTRL+. to rotate right
+CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch between auto and manual mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="152"/>
         <source>Toggles the bottom dock panels on/off (Ctrl+0)</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="44"/>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="54"/>
+        <source>Custom...</source>
+        <translation>自訂...</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="171"/>
@@ -7114,10 +7282,10 @@ Do you want to proceed?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="201"/>
-        <source>The value of the nudge movement (rotation is always 45°).CTRL+arrows to move
-CTRL+, to rotate leftCTRL+. to rotate right
-CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch between auto and manual mode</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/BimStatus.py" line="206"/>
+        <source>The value of the nudge movement (rotation is always 45°).Alt+arrows to move
+Alt+, to rotate leftAlt+. to rotate right
+Alt+PgUp to extend extrusionAlt+PgDown to shrink extrusionAlt+/ to switch between auto and manual mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7134,12 +7302,6 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="641"/>
         <source>Snapping</source>
         <translation>貼齊捕捉</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="44"/>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="54"/>
-        <source>Custom...</source>
-        <translation>自訂...</translation>
     </message>
 </context>
 <context>
@@ -7160,6 +7322,11 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation>將滑鼠懸停在每個設定上可檢視其他資訊.</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="71"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Check this to make FreeCAD start with a new blank document. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; Document &amp;gt; Create new document at startup&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="81"/>
         <source>Choose one of the presets in this list to fill all the settings below with predetermined values. Then, adjust to your likings</source>
         <translation type="unfinished"></translation>
@@ -7175,8 +7342,18 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation>美制 / 英制</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="108"/>
+        <source>Main grid line every</source>
+        <translation>主網格線間隔</translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="115"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The unit you prefer to work with, that will be used everywhere: in dialogs, measurements and dimensions. However, you can enter any other unit anytime. For example, if you configured FreeCAD to work in millimeters, you can still enter measures as &amp;quot;10m&amp;quot; or &amp;quot;5ft&amp;quot;. You can also change the default unit system anytime without causing any modification to your model. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; Default unit system&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="115"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The preferred unit that will be used everywhere: in dialogs, measurements and dimensions. However, any other unit can be entered anytime. Changing the default unit system anytime will not cause any modification to the model. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; Default unit system&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7215,6 +7392,206 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="166"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The number of decimals preferred in the interface controls and measurements. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; Units &amp;gt; Number of decimals&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="176"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;How many small squares between each main line of the grid. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Grid and snapping &amp;gt; Main line every&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="189"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Default dimension style. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Texts and dimensions &amp;gt; Arrow style, TechDraw &amp;gt; TechDraw 2 &amp;gt; Arrow Style&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="253"/>
+        <source>3D view background</source>
+        <translation>3D檢視背景</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="290"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Default line width. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Part colors &amp;gt; Default line width, Draft &amp;gt; Visual settings &amp;gt; Default line width&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="303"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The number of backup files to keep when saving a file. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; Document &amp;gt; Maximum number of backup files&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="334"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This is the size of the smallest square of the grid. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Grid and snapping &amp;gt; Grid spacing&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="349"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color of construction geometry. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; General &amp;gt; Construction geometry color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="356"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color of faces in the 3D view. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Part Color &amp;gt; Default shape color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="356"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color of faces in the 3D view. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Part/Part Design Color &amp;gt; Shape Appearance &amp;gt; Shape color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="363"/>
+        <source>Construction:</source>
+        <translation>建構:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="370"/>
+        <source>Helpers:</source>
+        <translation>輔助:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="377"/>
+        <source>Faces:</source>
+        <translation>面:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="384"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color for helper objects such as grids and axes. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;BIM  &amp;gt; Defaults &amp;gt; Helpers&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="384"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color for helper objects such as grids and axes. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;BIM  &amp;gt; Defaults &amp;gt; Helper colors&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="391"/>
+        <source>Lines:</source>
+        <translation>線段:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="398"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color of lines in the 3D view. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Part Colors &amp;gt; Default line color, Draft &amp;gt; Visual settings &amp;gt; Default line color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="398"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color of lines in the 3D view. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Part/Part Design Color &amp;gt; Shape Appearance &amp;gt; Default line color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="405"/>
+        <source>Gradient top:</source>
+        <translation>漸層上方:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="412"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The top color of the 3D view background gradient. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Colors &amp;gt; Color gradient&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="419"/>
+        <source>Gradient bottom:</source>
+        <translation>漸層底部:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="426"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The bottom color of the 3D view background gradient. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Colors &amp;gt; Color gradient&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="433"/>
+        <source>Plain background:</source>
+        <translation>純色背景:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="440"/>
+        <source>Text:</source>
+        <translation>文字:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="447"/>
+        <source>The background color when switched to simple color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="447"/>
+        <source>The background color when simple color is enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="454"/>
+        <source>The color to use for texts and dimensions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="463"/>
+        <source>This is the altitude of the camera when you create a blank file. Good values are between 5 (view a few centimeters wide) and 5000 (view a few meters wide)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="476"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Your name (optional). You can also add your email like this: John Doe &amp;lt;john@doe.com&amp;gt;. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; Document &amp;gt; Author name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="486"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default size of texts and dimension texts. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Texts and dimensions &amp;gt; Font size, TechDraw &amp;gt; TechDraw 2 &amp;gt; Font size&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="506"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Optional license you wish to use for new files. Keep &amp;quot;All rights reserved&amp;quot; if you don&apos;t wish to use any particular license. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; Document &amp;gt; Default license&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="515"/>
+        <source>CC-BY</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="520"/>
+        <source>CC-BY-SA</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="525"/>
+        <source>CC-BY-NC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="530"/>
+        <source>CC-BY-SA-NC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="543"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Default dimension arrow size. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;TechDraw &amp;gt; TechDraw 2 &amp;gt; Arrow size, Draft &amp;gt; Texts and dimensions &amp;gt; Arrow size&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="556"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Default font. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Texts and dimensions &amp;gt; Font family, TechDraw &amp;gt; TechDraw 1 &amp;gt; Label Font&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="603"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tip&lt;/span&gt;: You might also want to set the appropriate snapping modes on the Snapping toolbar. Enabling only the snap positions that you need will make drawing in FreeCAD considerably faster.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;p&gt;&lt;body&gt;&lt;head/&gt;&lt;span style=&quot; font-weight: 600;&quot;&gt;&lt;b&gt;提示&lt;/b&gt;&lt;/span&gt;: 您可能還需要在“貼齊”工具欄上設定適當的貼齊模式. 僅啟用您需要的捕捉位置將使在FreeCAD中繪圖的速度大大加快.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="613"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Tip&lt;/b&gt;: You are currently using FreeCAD version %1. Consider using the &lt;a href=&quot;https://github.com/FreeCAD/FreeCAD/releases&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;latest development version %2&lt;/span&gt;&lt;/a&gt;, which brings all the latest improvements to FreeCAD.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;提示&lt;/b&gt;: 您目前使用的是 FreeCAD 版本 %1. 考慮使用 &lt;a href=&quot;https://github.com/FreeCAD/FreeCAD/releases&quot;&gt;&lt;span style=&quot; text-decoration: underline; color: #0000ff;&quot;&gt;最新開發版本 %2&lt;/span&gt;&lt;/a&gt;，它為 FreeCAD 帶來了所有最新的改進.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="636"/>
+        <source>&lt;b&gt;IfcOpenShell&lt;/b&gt; is missing on your system. IfcOpenShell is needed to import or export IFC files to/from FreeCAD. Check &lt;a href=&quot;https://www.freecadweb.org/wiki/Arch_IFC&quot;&gt;this wiki page&lt;/a&gt; to know more, or &lt;a href=&quot;#install&quot;&gt;download and install it&lt;/a&gt; directly.&lt;/p&gt;</source>
+        <translation>您的系統上缺少 &lt;b&gt;IfcOpenShell&lt;/b&gt;. 需要 IfcOpenShell 才能將 IFC 檔案導入或從 FreeCAD 匯出. 檢視 &lt;a href=&quot;https://www.freecadweb.org/wiki/Arch_IFC&quot;&gt;此 wiki 頁面&lt;/a&gt;瞭解更多，或直接&lt;a href=&quot;#install&quot;&gt;下載並安裝&lt;/a&gt;.&lt;/p&gt;</translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="23"/>
         <source>This dialog will help set FreeCAD up for efficient BIM workflow by setting a couple FreeCAD options. This dialog can be accessed again anytime from menu Manage -&gt; Setup, and more options are available under the edit -&gt; preferences menu.</source>
         <translation type="unfinished"></translation>
@@ -7235,8 +7612,8 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation>小數位數</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="71"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Check this to make FreeCAD start with a new blank document. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; Document &amp;gt; Create new document at startup&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="71"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Check this to make FreeCAD start with a new blank document. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; Document &amp;gt; Create new document at start up&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7265,13 +7642,13 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation>美制 / 英制</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="108"/>
-        <source>Main grid line every</source>
-        <translation>主網格線間隔</translation>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="108"/>
+        <source>Major grid line every</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="115"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The preferred unit that will be used everywhere: in dialogs, measurements and dimensions. However, any other unit can be entered anytime. Changing the default unit system anytime will not cause any modification to the model. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; Default unit system&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="115"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The preferred unit that will be used everywhere: in dialogs, measurements and dimensions. However, any other unit can be entered anytime. Changing the default unit system anytime will not cause any modification to the model. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; General &amp;gt; Default unit system&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7305,13 +7682,13 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation>備份檔數量</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="166"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The number of decimals preferred in the interface controls and measurements. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; Units &amp;gt; Number of decimals&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="166"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The number of decimals preferred in the interface controls and measurements. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; General &amp;gt; Number of decimals&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="176"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;How many small squares between each main line of the grid. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Grid and snapping &amp;gt; Main line every&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="176"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;How many small squares between each major line of the grid. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Grid and Snapping &amp;gt; Major lines every&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7320,8 +7697,8 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation> 正方形</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="189"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Default dimension style. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Texts and dimensions &amp;gt; Arrow style, TechDraw &amp;gt; TechDraw 2 &amp;gt; Arrow Style&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="189"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Default dimension style. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Texts and Dimensions &amp;gt; Start/End arrow type, TechDraw &amp;gt; Dimensions &amp;gt; Arrow style&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7370,9 +7747,9 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation>使用預設值填充</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="253"/>
-        <source>3D view background</source>
-        <translation>3D檢視背景</translation>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="253"/>
+        <source>3D View background</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="267"/>
@@ -7385,8 +7762,8 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation>預設字體</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="290"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Default line width. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Part colors &amp;gt; Default line width, Draft &amp;gt; Visual settings &amp;gt; Default line width&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="290"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Default line width. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Part/Part Design &amp;gt; Shape Appearance &amp;gt; Line width &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7395,8 +7772,8 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="303"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The number of backup files to keep when saving a file. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; Document &amp;gt; Maximum number of backup files&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="303"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The number of backup files to keep when saving a file. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; Document &amp;gt; Maximum number of backup files to keep when resaving document&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7415,8 +7792,8 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation>預設線寬</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="334"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This is the size of the smallest square of the grid. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Grid and snapping &amp;gt; Grid spacing&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="334"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The size of the smallest square of the grid. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Grid and Snapping &amp;gt; Grid spacing&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7427,118 +7804,13 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation>0 </translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="349"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color of construction geometry. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; General &amp;gt; Construction geometry color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="349"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color for construction geometry. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; General &amp;gt; Construction geometry color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="356"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color of faces in the 3D view. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Part Color &amp;gt; Default shape color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="363"/>
-        <source>Construction:</source>
-        <translation>建構:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="370"/>
-        <source>Helpers:</source>
-        <translation>輔助:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="377"/>
-        <source>Faces:</source>
-        <translation>面:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="384"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color for helper objects such as grids and axes. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;BIM  &amp;gt; Defaults &amp;gt; Helpers&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="391"/>
-        <source>Lines:</source>
-        <translation>線段:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="398"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color of lines in the 3D view. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Part Colors &amp;gt; Default line color, Draft &amp;gt; Visual settings &amp;gt; Default line color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="419"/>
-        <source>Gradient bottom:</source>
-        <translation>漸層底部:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="433"/>
-        <source>Plain background:</source>
-        <translation>純色背景:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="440"/>
-        <source>Text:</source>
-        <translation>文字:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="447"/>
-        <source>The background color when switched to simple color</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="463"/>
-        <source>This is the altitude of the camera when you create a blank file. Good values are between 5 (view a few centimeters wide) and 5000 (view a few meters wide)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="476"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Your name (optional). You can also add your email like this: John Doe &amp;lt;john@doe.com&amp;gt;. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; Document &amp;gt; Author name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="506"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Optional license you wish to use for new files. Keep &amp;quot;All rights reserved&amp;quot; if you don&apos;t wish to use any particular license. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;General &amp;gt; Document &amp;gt; Default license&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="515"/>
-        <source>CC-BY</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="520"/>
-        <source>CC-BY-SA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="525"/>
-        <source>CC-BY-NC</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="530"/>
-        <source>CC-BY-SA-NC</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="603"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tip&lt;/span&gt;: You might also want to set the appropriate snapping modes on the Snapping toolbar. Enabling only the snap positions that you need will make drawing in FreeCAD considerably faster.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;p&gt;&lt;body&gt;&lt;head/&gt;&lt;span style=&quot; font-weight: 600;&quot;&gt;&lt;b&gt;提示&lt;/b&gt;&lt;/span&gt;: 您可能還需要在“貼齊”工具欄上設定適當的貼齊模式. 僅啟用您需要的捕捉位置將使在FreeCAD中繪圖的速度大大加快.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="613"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Tip&lt;/b&gt;: You are currently using FreeCAD version %1. Consider using the &lt;a href=&quot;https://github.com/FreeCAD/FreeCAD/releases&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;latest development version %2&lt;/span&gt;&lt;/a&gt;, which brings all the latest improvements to FreeCAD.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;提示&lt;/b&gt;: 您目前使用的是 FreeCAD 版本 %1. 考慮使用 &lt;a href=&quot;https://github.com/FreeCAD/FreeCAD/releases&quot;&gt;&lt;span style=&quot; text-decoration: underline; color: #0000ff;&quot;&gt;最新開發版本 %2&lt;/span&gt;&lt;/a&gt;，它為 FreeCAD 帶來了所有最新的改進.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="636"/>
-        <source>&lt;b&gt;IfcOpenShell&lt;/b&gt; is missing on your system. IfcOpenShell is needed to import or export IFC files to/from FreeCAD. Check &lt;a href=&quot;https://www.freecadweb.org/wiki/Arch_IFC&quot;&gt;this wiki page&lt;/a&gt; to know more, or &lt;a href=&quot;#install&quot;&gt;download and install it&lt;/a&gt; directly.&lt;/p&gt;</source>
-        <translation>您的系統上缺少 &lt;b&gt;IfcOpenShell&lt;/b&gt;. 需要 IfcOpenShell 才能將 IFC 檔案導入或從 FreeCAD 匯出. 檢視 &lt;a href=&quot;https://www.freecadweb.org/wiki/Arch_IFC&quot;&gt;此 wiki 頁面&lt;/a&gt;瞭解更多，或直接&lt;a href=&quot;#install&quot;&gt;下載並安裝&lt;/a&gt;.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="356"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color of faces in the 3D view. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Part/Part Design Color &amp;gt; Shape Appearance &amp;gt; Shape color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="356"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color for faces in the 3D View. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Part/Part Design &amp;gt; Shape Appearance &amp;gt; Shape color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7557,8 +7829,8 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation>面</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="384"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color for helper objects such as grids and axes. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;BIM  &amp;gt; Defaults &amp;gt; Helper colors&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="384"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color for helper objects such as axes. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;BIM &amp;gt; Defaults &amp;gt; Helper color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7567,18 +7839,18 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation>線</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="398"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color of lines in the 3D view. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Part/Part Design Color &amp;gt; Shape Appearance &amp;gt; Default line color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="398"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color for lines in the 3D View. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Part/Part Design &amp;gt; Shape Appearance &amp;gt; Line color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="405"/>
-        <source>Gradient top:</source>
-        <translation>漸層上方:</translation>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="405"/>
+        <source>Gradient top</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="412"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The top color of the 3D view background gradient. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Colors &amp;gt; Color gradient&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="412"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The top color of the 3D View background gradient. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Colors &amp;gt; Linear gradient&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7587,8 +7859,8 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation>漸層底部</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="426"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The bottom color of the 3D view background gradient. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Colors &amp;gt; Color gradient&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="426"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The bottom color of the 3D View background gradient. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Colors &amp;gt; Linear gradient&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7602,13 +7874,13 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation>文字</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="447"/>
-        <source>The background color when simple color is enabled</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="447"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The 3D View background color when simple color is enabled. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Display &amp;gt; Colors &amp;gt; Simple color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="454"/>
-        <source>The color to use for texts and dimensions</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="454"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default color for texts. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Texts and Dimensions &amp;gt; Text color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7622,8 +7894,8 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="486"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default size of texts and dimension texts. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Texts and dimensions &amp;gt; Font size, TechDraw &amp;gt; TechDraw 2 &amp;gt; Font size&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="486"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default size of texts. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Texts and Dimensions &amp;gt; Font size, TechDraw &amp;gt; Dimensions &amp;gt; Font size&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7642,13 +7914,14 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation>版權所有</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="543"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Default dimension arrow size. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;TechDraw &amp;gt; TechDraw 2 &amp;gt; Arrow size, Draft &amp;gt; Texts and dimensions &amp;gt; Arrow size&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="543"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Default dimension arrow size. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Texts and Dimensions &amp;gt; Start/End arrow size, TechDraw &amp;gt; Dimensions &amp;gt; Arrow size
+            &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="556"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Default font. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Texts and dimensions &amp;gt; Font family, TechDraw &amp;gt; TechDraw 1 &amp;gt; Label Font&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/Resources/ui/dialogSetup.ui" line="557"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Default font. Location in preferences: &lt;span style=&quot; font-weight:600;&quot;&gt;Draft &amp;gt; Texts and Dimensions &amp;gt; Font name, TechDraw &amp;gt; General &amp;gt; Label font&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7750,28 +8023,36 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     </message>
 </context>
 <context>
-    <name>BIM_Create2DViews</name>
+    <name>BIM_CloneTools</name>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="284"/>
-        <source>Create 2D Views</source>
-        <translation>建立2D檢視</translation>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="366"/>
+        <source>Cloning Tools</source>
+        <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>BIM_Create2DViews</name>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="283"/>
         <source>Create 2D views</source>
+        <translation>建立2D檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="284"/>
+        <source>Create 2D Views</source>
         <translation>建立2D檢視</translation>
     </message>
 </context>
 <context>
     <name>BIM_GenericTools</name>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="269"/>
-        <source>Generic 3D Tools</source>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="261"/>
+        <source>Generic 3D tools</source>
         <translation>一般 3D 工具</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="261"/>
-        <source>Generic 3D tools</source>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="269"/>
+        <source>Generic 3D Tools</source>
         <translation>一般 3D 工具</translation>
     </message>
 </context>
@@ -7809,11 +8090,6 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
 </context>
 <context>
     <name>BimServer</name>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/BimServerTaskPanel.ui" line="28"/>
-        <source>The name of the BIM Server you are currently connecting to. Change settings in the BIM preferences</source>
-        <translation>您目前要連接的 BIM 伺服器的名稱. 更改 BIM 偏好設定中的設定</translation>
-    </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/BimServerTaskPanel.ui" line="31"/>
         <source>BIM Server</source>
@@ -7875,6 +8151,11 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
     <message>
         <source>Comment</source>
         <translation>註釋</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/BimServerTaskPanel.ui" line="28"/>
+        <source>The name of the BIM Server you are currently connecting to. Change settings in the BIM preferences</source>
+        <translation>您目前要連接的 BIM 伺服器的名稱. 更改 BIM 偏好設定中的設定</translation>
     </message>
     <message>
         <source>BimServer</source>
@@ -8422,26 +8703,6 @@ When dealing with native IFC objects, you can use FreeCAD properties name, ex: &
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogIfcProperties.ui" line="50"/>
         <source>Order by</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="14"/>
-        <source>Classification manager</source>
-        <translation>分類管理</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="42"/>
-        <source>Objects &amp;&amp; Materials</source>
-        <translation>物體 &amp;&amp; 材質</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="48"/>
-        <source>Only visible objects</source>
-        <translation>僅可見物體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="60"/>
-        <source>Sort by:</source>
-        <translation>排序依據:</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="68"/>
@@ -9410,6 +9671,16 @@ Utils -&gt; Make IFC project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSpaces.ui" line="14"/>
+        <source>Spaces manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSpaces.ui" line="20"/>
+        <source>This screen will allow you to check the spaces configuration of your project and change some attributes.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSpaces.ui" line="92"/>
         <source>0</source>
         <translation>0</translation>
@@ -9680,18 +9951,8 @@ Utils -&gt; Make IFC project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSpaces.ui" line="14"/>
-        <source>Spaces manager</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSpaces.ui" line="20"/>
         <source>This screen enables checking the spaces configuration and editing of attributes in the project.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSpaces.ui" line="20"/>
-        <source>This screen will allow you to check the spaces configuration of your project and change some attributes.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9996,6 +10257,26 @@ Utils -&gt; Make IFC project</source>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogPreflightResults.ui" line="91"/>
         <source>to Report panel</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="14"/>
+        <source>Classification manager</source>
+        <translation>分類管理</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="42"/>
+        <source>Objects &amp;&amp; Materials</source>
+        <translation>物體 &amp;&amp; 材質</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="48"/>
+        <source>Only visible objects</source>
+        <translation>僅可見物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="60"/>
+        <source>Sort by:</source>
+        <translation>排序依據:</translation>
     </message>
     <message>
         <source>If this is enabled, additional lines will be filled with each object considered. If not, only the totals.</source>
@@ -10304,9 +10585,24 @@ a certain property.</source>
         <translation>編輯定義</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/AddonManager/developer_mode_people_table.ui" line="26"/>
+        <source>People</source>
+        <translation>開發者</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/AddonManager/developer_mode_people_table.ui" line="57"/>
+        <source>Kind</source>
+        <translation>類別</translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/AddonManager/developer_mode_people_table.ui" line="62"/>
         <source>Name</source>
         <translation>名稱</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/AddonManager/developer_mode_people_table.ui" line="67"/>
+        <source>Email</source>
+        <translation>電子郵件</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/ArchMultiMaterial.ui" line="49"/>
@@ -11501,21 +11797,6 @@ p, li { white-space: pre-wrap; }
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/preferencesNativeIFC.ui" line="337"/>
         <source>Show dialog when converting to type</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/AddonManager/developer_mode_people_table.ui" line="26"/>
-        <source>People</source>
-        <translation>開發者</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/AddonManager/developer_mode_people_table.ui" line="57"/>
-        <source>Kind</source>
-        <translation>類別</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/AddonManager/developer_mode_people_table.ui" line="67"/>
-        <source>Email</source>
-        <translation>電子郵件</translation>
     </message>
     <message>
         <source>0,90,180,270</source>
@@ -13650,41 +13931,6 @@ IfcWallStandardCase 或 IfcBeamStandardCase.
         <translation>註釋(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="412"/>
-        <source>&amp;Snapping</source>
-        <translation>貼齊捕捉(&amp;S)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="413"/>
-        <source>&amp;Modify</source>
-        <translation>修改(&amp;M)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="415"/>
-        <source>&amp;Manage</source>
-        <translation>管理(&amp;M)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="416"/>
-        <source>&amp;Flamingo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="417"/>
-        <source>&amp;Fasteners</source>
-        <translation>緊固件(&amp;F)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="418"/>
-        <source>&amp;Utils</source>
-        <translation>實用工具(&amp;U)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="423"/>
-        <source>Nudge</source>
-        <translation>輕推</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="40"/>
         <source>BIM</source>
         <translation>建築信息模組</translation>
@@ -13733,6 +13979,41 @@ IfcWallStandardCase 或 IfcBeamStandardCase.
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="410"/>
         <source>Reinforcement tools</source>
         <translation>鋼筋結構工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="412"/>
+        <source>&amp;Snapping</source>
+        <translation>貼齊捕捉(&amp;S)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="413"/>
+        <source>&amp;Modify</source>
+        <translation>修改(&amp;M)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="415"/>
+        <source>&amp;Manage</source>
+        <translation>管理(&amp;M)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="416"/>
+        <source>&amp;Flamingo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="417"/>
+        <source>&amp;Fasteners</source>
+        <translation>緊固件(&amp;F)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="418"/>
+        <source>&amp;Utils</source>
+        <translation>實用工具(&amp;U)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="423"/>
+        <source>Nudge</source>
+        <translation>輕推</translation>
     </message>
     <message>
         <source>Draft snap</source>

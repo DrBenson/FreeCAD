@@ -27,10 +27,15 @@
 # This is the second one of three init scripts, the third one
 # runs when the gui is up
 
+import SandboxGui
+FreeCADGui.addLanguagePath(":/translations")
+FreeCADGui.addIconPath(":/icons")
+FreeCADGui.updateLocale()
+
 class SandboxWorkbench ( Workbench ):
     "Sandbox workbench object"
-    MenuText = "Sandbox"
-    ToolTip = "Sandbox workbench"
+    MenuText = FreeCAD.Qt.translate("Workbench", "Sandbox")
+    ToolTip = FreeCAD.Qt.translate("Workbench", "Sandbox workbench")
     def Initialize(self):
         # load the module
         import SandboxGui

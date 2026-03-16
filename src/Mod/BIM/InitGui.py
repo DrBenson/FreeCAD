@@ -480,9 +480,7 @@ class BIMWorkbench(Workbench):
             return text
 
         t1 = QT_TRANSLATE_NOOP("QObject", "BIM")
-        t2 = QT_TRANSLATE_NOOP("QObject-nt", "Draft")
-        FreeCADGui.addLanguagePath(":/translations")
-        FreeCADGui.addIconPath(":/icons")
+        t2 = QT_TRANSLATE_NOOP("QObject", "Draft")
         FreeCADGui.addPreferencePage(":/ui/preferences-arch.ui", t1)
         FreeCADGui.addPreferencePage(":/ui/preferences-archdefaults.ui", t1)
         FreeCADGui.addPreferencePage(":/ui/preferencesNativeIFC.ui", t1)

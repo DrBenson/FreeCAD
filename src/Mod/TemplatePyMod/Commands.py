@@ -31,7 +31,7 @@ class TemplatePyMod_Cmd1:
         print("TemplatePyMod_Cmd1 activated ;-) ")
 
     def GetResources(self):
-        return {'Pixmap'  : 'Std_Tool1', 'MenuText': 'Example command', 'ToolTip': 'Very unimportand example command'}
+        return {'Pixmap'  : 'Std_Tool1', 'MenuText': FreeCAD.Qt.translate("Command", 'Example command'), 'ToolTip': FreeCAD.Qt.translate("Command", 'Very unimportand example command')}
 
 
 class TemplatePyMod_Cmd2:
@@ -75,7 +75,7 @@ class TemplatePyMod_Cmd2:
             return True
 
     def GetResources(self):
-        return {'Pixmap'  : 'Std_Tool2', 'MenuText': 'Create polygon...', 'ToolTip': 'Create a polygon by clicking inside the viewer'}
+        return {'Pixmap'  : 'Std_Tool2', 'MenuText': FreeCAD.Qt.translate("Command", 'Create polygon...'), 'ToolTip': FreeCAD.Qt.translate("Command", 'Create a polygon by clicking inside the viewer')}
 
 
 class TemplatePyMod_Cmd3:
@@ -88,7 +88,7 @@ class TemplatePyMod_Cmd3:
         FreeCADGui.activateWorkbench("PythonQtWorkbench")
 
     def GetResources(self):
-        return {'Pixmap'  : 'python', 'MenuText': 'Import PySide', 'ToolTip': 'Add a workbench for PySide samples'}
+        return {'Pixmap'  : 'python', 'MenuText': FreeCAD.Qt.translate("Command", 'Import PySide'), 'ToolTip': FreeCAD.Qt.translate("Command", 'Add a workbench for PySide samples')}
 
 class SphereCreator:
 	def __init__(self):
@@ -148,7 +148,7 @@ class TemplatePyMod_Cmd4:
 			FreeCAD.Console.PrintWarning('A 3d view must be created\n')
 
 	def GetResources(self):
-		return {'Pixmap'  : 'python', 'MenuText': 'Create spheres...', 'ToolTip': 'Click on the screen to create a sphere'}
+		return {'Pixmap'  : 'python', 'MenuText': FreeCAD.Qt.translate("Command", 'Create spheres...'), 'ToolTip': FreeCAD.Qt.translate("Command", 'Click on the screen to create a sphere')}
 
 
 myRenderArea = None
@@ -182,7 +182,7 @@ class TemplatePyMod_Cmd5:
 		myRenderArea.show()
 
 	def GetResources(self):
-		return {'Pixmap'  : 'Std_Tool1', 'MenuText': 'Render area', 'ToolTip': 'Show render area'}
+		return {'Pixmap'  : 'Std_Tool1', 'MenuText': FreeCAD.Qt.translate("Command", 'Render area'), 'ToolTip': FreeCAD.Qt.translate("Command", 'Show render area')}
 
 
 class TemplatePyMod_Cmd6:
@@ -191,7 +191,7 @@ class TemplatePyMod_Cmd6:
 		FeaturePython.makeBox()
 
 	def GetResources(self):
-		return {'Pixmap'  : 'python', 'MenuText': 'Create a box', 'ToolTip': 'Use Box feature class which is completely written in Python'}
+		return {'Pixmap'  : 'python', 'MenuText': FreeCAD.Qt.translate("Command", 'Create a box'), 'ToolTip': FreeCAD.Qt.translate("Command", 'Use Box feature class which is completely written in Python')}
 
 class TemplatePyGrp_1:
     def Activated(self):
@@ -199,7 +199,7 @@ class TemplatePyGrp_1:
         FreeCAD.Console.PrintMessage("TemplatePyGrp_1\n")
 
     def GetResources(self):
-        return {'Pixmap'  : 'Part_JoinConnect', 'MenuText': 'TemplatePyGrp_1', 'ToolTip': 'Print a message'}
+        return {'Pixmap'  : 'Part_JoinConnect', 'MenuText': FreeCAD.Qt.translate("Command", 'TemplatePyGrp_1'), 'ToolTip': FreeCAD.Qt.translate("Command", 'Print a message')}
 
 class TemplatePyGrp_2:
     def Activated(self):
@@ -207,7 +207,7 @@ class TemplatePyGrp_2:
         FreeCAD.Console.PrintMessage("TemplatePyGrp_2\n")
 
     def GetResources(self):
-        return {'Pixmap'  : 'Part_JoinEmbed', 'MenuText': 'TemplatePyGrp_2', 'ToolTip': 'Print a message'}
+        return {'Pixmap'  : 'Part_JoinEmbed', 'MenuText': FreeCAD.Qt.translate("Command", 'TemplatePyGrp_2'), 'ToolTip': FreeCAD.Qt.translate("Command", 'Print a message')}
 
 class TemplatePyGrp_3:
     def Activated(self):
@@ -215,7 +215,7 @@ class TemplatePyGrp_3:
         FreeCAD.Console.PrintMessage("TemplatePyGrp_3\n")
 
     def GetResources(self):
-        return {'Pixmap'  : 'Part_JoinCutout', 'MenuText': 'TemplatePyGrp_3', 'ToolTip': 'Print a message'}
+        return {'Pixmap'  : 'Part_JoinCutout', 'MenuText': FreeCAD.Qt.translate("Command", 'TemplatePyGrp_3'), 'ToolTip': FreeCAD.Qt.translate("Command", 'Print a message')}
 
 class TemplatePyGroup:
     "Example group command class"
@@ -229,7 +229,7 @@ class TemplatePyGroup:
         return 2
 
     def GetResources(self):
-        return {'Pixmap'  : 'python', 'MenuText': 'Group command', 'ToolTip': 'Example group command'}
+        return {'Pixmap'  : 'python', 'MenuText': FreeCAD.Qt.translate("Command", 'Group command'), 'ToolTip': FreeCAD.Qt.translate("Command", 'Example group command')}
 
 class TemplatePyCheckable:
     "Example toggle command class"
@@ -240,7 +240,7 @@ class TemplatePyCheckable:
             print("Toggle is on")
 
     def GetResources(self):
-        return {'Pixmap'  : 'python', 'MenuText': 'Toggle command', 'ToolTip': 'Example toggle command', 'Checkable': True}
+        return {'Pixmap'  : 'python', 'MenuText': FreeCAD.Qt.translate("Command", 'Toggle command'), 'ToolTip': FreeCAD.Qt.translate("Command", 'Example toggle command'), 'Checkable': True}
 
 #---------------------------------------------------------------------------
 # Adds the commands to the FreeCAD command manager

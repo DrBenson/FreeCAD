@@ -3,6 +3,11 @@
 add_subdirectory(App)
 
 IF (BUILD_GUI)
+    set (Draft_TR_QRC ${CMAKE_CURRENT_BINARY_DIR}/Resources/Draft_translation.qrc)
+    qt_find_and_add_translation(QM_SRCS "Resources/translations/*_*.ts"
+        ${CMAKE_CURRENT_BINARY_DIR}/Resources/translations)
+    qt_create_resource_file(${Draft_TR_QRC} ${QM_SRCS})
+    qt_add_resources(Draft_QRC_SRCS Resources/Draft.qrc ${Draft_TR_QRC})
     PYSIDE_WRAP_RC(Draft_QRC_SRCS Resources/Draft.qrc)
 ENDIF (BUILD_GUI)
 

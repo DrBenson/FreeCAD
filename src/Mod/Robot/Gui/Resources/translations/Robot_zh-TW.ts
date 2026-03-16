@@ -813,13 +813,13 @@
 <context>
     <name>RobotGui::TaskEdge2TracParameter</name>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="29"/>
         <source>Hide/Show</source>
+        <translation>隱藏/顯示</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskEdge2TracParameter.ui" line="29"/>
+        <source>Hide / Show</source>
         <translation>隱藏/顯示</translation>
     </message>
     <message>
@@ -853,18 +853,13 @@
         <translation>工作任務邊緣到軌道參數</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskEdge2TracParameter.ui" line="29"/>
-        <source>Hide / Show</source>
-        <translation>隱藏/顯示</translation>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
     <name>RobotGui::TaskRobot6Axis</name>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskRobot6Axis.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskRobot6Axis.ui" line="22"/>
         <source>A1</source>
@@ -909,6 +904,11 @@
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskRobot6Axis.cpp" line="41"/>
         <source>TaskRobot6Axis</source>
         <translation>工作機器人6軸</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskRobot6Axis.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobot6Axis.ui" line="345"/>
@@ -1042,11 +1042,6 @@
 <context>
     <name>RobotGui::TaskRobotMessages</name>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotMessages.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotMessages.ui" line="20"/>
         <source>Clear</source>
         <translation>清除</translation>
@@ -1057,6 +1052,11 @@
         <translation>工作機器人訊息</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskRobotMessages.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskRobotMessages.ui" line="20"/>
         <source>clear</source>
         <translation>清除</translation>
@@ -1064,11 +1064,6 @@
 </context>
 <context>
     <name>RobotGui::TaskTrajectory</name>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectory.ui" line="20"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectory.ui" line="58"/>
         <source>|&lt;</source>
@@ -1155,6 +1150,11 @@
         <translation>軌道</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectory.ui" line="20"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectory.ui" line="120"/>
         <source>||</source>
         <translation>||</translation>
@@ -1167,11 +1167,6 @@
 </context>
 <context>
     <name>RobotGui::TaskTrajectoryDressUpParameter</name>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="20"/>
         <source>Speed &amp; acceleration</source>
@@ -1229,6 +1224,26 @@
         <translation>不要變更連續模式</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="20"/>
+        <source>Speed &amp; Acceleration:</source>
+        <translation>速度 &amp; 加速度:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="29"/>
+        <source>Speed:</source>
+        <translation>速度:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="66"/>
+        <source>Accel:</source>
+        <translation>加速:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="102"/>
+        <source>Don&apos;t change Cont</source>
+        <translation>不要改變內容</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="107"/>
         <source>Continues</source>
         <translation>繼續</translation>
@@ -1237,6 +1252,31 @@
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="112"/>
         <source>Discontinues</source>
         <translation>中止</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="127"/>
+        <source>Position and Orientation:</source>
+        <translation>位置和方向:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="159"/>
+        <source>Don&apos;t change Position &amp; Orientation</source>
+        <translation>不要更改位置和方向</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="164"/>
+        <source>Use Orientation</source>
+        <translation>使用定向</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="169"/>
+        <source>Add Position</source>
+        <translation>增加位置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="174"/>
+        <source>Add Orientation</source>
+        <translation>增加方向</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="128"/>
@@ -1269,49 +1309,9 @@
         <translation>外觀裝飾特徵屬性</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="20"/>
-        <source>Speed &amp; Acceleration:</source>
-        <translation>速度 &amp; 加速度:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="29"/>
-        <source>Speed:</source>
-        <translation>速度:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="66"/>
-        <source>Accel:</source>
-        <translation>加速:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="102"/>
-        <source>Don&apos;t change Cont</source>
-        <translation>不要改變內容</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="127"/>
-        <source>Position and Orientation:</source>
-        <translation>位置和方向:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="159"/>
-        <source>Don&apos;t change Position &amp; Orientation</source>
-        <translation>不要更改位置和方向</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="164"/>
-        <source>Use Orientation</source>
-        <translation>使用定向</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="169"/>
-        <source>Add Position</source>
-        <translation>增加位置</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="174"/>
-        <source>Add Orientation</source>
-        <translation>增加方向</translation>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>

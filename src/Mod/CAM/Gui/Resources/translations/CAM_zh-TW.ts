@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -85,6 +85,11 @@
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/ZCorrect.py" line="62"/>
         <source>The base toolpath to modify</source>
         <translation>要修改的基礎刀具路徑</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Op/Gui/Array.py" line="45"/>
+        <source>The toolpath(s) to array</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Op/Gui/Array.py" line="51"/>
@@ -187,11 +192,6 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Op/Gui/Array.py" line="47"/>
         <source>The toolpaths to array</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Op/Gui/Array.py" line="45"/>
-        <source>The toolpath(s) to array</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -343,44 +343,13 @@ Can be useful for multi profile operations, e.g. Pocket with ZigZagOffset patter
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="67"/>
-        <source>Calculate roll-on to toolpath</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="73"/>
-        <source>Calculate roll-off from toolpath</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="76"/>
         <source>Modify lead in to toolpath</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="79"/>
-        <source>Keep the tool down in toolpath</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="79"/>
-        <source>Keep the Tool Down in toolpath</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="82"/>
         <source>Modify lead out from toolpath</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="85"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="213"/>
-        <source>Length or radius of the approach</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="85"/>
-        <source>Length or Radius of the approach</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -390,24 +359,9 @@ Can be useful for multi profile operations, e.g. Pocket with ZigZagOffset patter
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="91"/>
-        <source>Length or radius of the exit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="91"/>
-        <source>Length or Radius of the exit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="97"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="191"/>
         <source>The style of motion into the toolpath</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="97"/>
-        <source>The Style of motion into the toolpath</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -417,44 +371,9 @@ Can be useful for multi profile operations, e.g. Pocket with ZigZagOffset patter
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="104"/>
-        <source>The Style of motion out of the toolpath</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="111"/>
-        <source>Extends lead in distance</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="111"/>
-        <source>Extends LeadIn distance</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="117"/>
-        <source>Extends lead out distance</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="117"/>
-        <source>Extends LeadOut distance</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="123"/>
         <source>Perform plunges with G0</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="129"/>
-        <source>Apply Lead in/out to layers within an operation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="129"/>
-        <source>Apply LeadInOut to layers within an operation</source>
-        <translation>將 LeadInOut 套用於操作中的圖層</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="116"/>
@@ -1860,11 +1779,6 @@ Use property KeepToolDown to change this</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/Bit.py" line="144"/>
-        <source>Shape for bit shape</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/Bit.py" line="150"/>
         <source>The parametrized body representing the tool bit</source>
         <translation type="unfinished"></translation>
@@ -1898,6 +1812,92 @@ Use property KeepToolDown to change this</source>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/toolbit/models/base.py" line="688"/>
         <source>Custom property from shape: {name}</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="67"/>
+        <source>Calculate roll-on to toolpath</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="73"/>
+        <source>Calculate roll-off from toolpath</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="79"/>
+        <source>Keep the tool down in toolpath</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="79"/>
+        <source>Keep the Tool Down in toolpath</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="85"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="213"/>
+        <source>Length or radius of the approach</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="85"/>
+        <source>Length or Radius of the approach</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="91"/>
+        <source>Length or radius of the exit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="91"/>
+        <source>Length or Radius of the exit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="97"/>
+        <source>The Style of motion into the toolpath</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="104"/>
+        <source>The Style of motion out of the toolpath</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="111"/>
+        <source>Extends lead in distance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="111"/>
+        <source>Extends LeadIn distance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="117"/>
+        <source>Extends lead out distance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="117"/>
+        <source>Extends LeadOut distance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="129"/>
+        <source>Apply Lead in/out to layers within an operation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/LeadInOut.py" line="129"/>
+        <source>Apply LeadInOut to layers within an operation</source>
+        <translation>將 LeadInOut 套用於操作中的圖層</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/Bit.py" line="144"/>
+        <source>Shape for bit shape</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2168,6 +2168,11 @@ Use property KeepToolDown to change this</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/toolbit/ui/editor.py" line="60"/>
+        <source>Tool Bit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/toolbit/ui/editor.py" line="71"/>
         <source>Toolbit</source>
         <translation type="unfinished"></translation>
@@ -2298,6 +2303,11 @@ This will not delete the toolbits contained within it.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/toolbit/models/bullnose.py" line="48"/>
+        <source>{diameter} {flutes}-flute bullnose, {cutting_edge_height} cutting edge, {flat_radius} flat radius</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/toolbit/models/bullnose.py" line="49"/>
         <source>{diameter} {flutes}-flute bullnose, {cutting_edge_height} cutting edge, {corner_radius} corner radius</source>
         <translation type="unfinished"></translation>
@@ -2343,6 +2353,11 @@ This will not delete the toolbits contained within it.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/toolbit/models/tap.py" line="46"/>
+        <source>{diameter} tap, {flutes}-flute, {cutting_edge_length} cutting edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/toolbit/models/tap.py" line="75"/>
         <source>{diameter} {pitch} {rotation} tap, {flutes}-flute, {cutting_edge_length} cutting edge</source>
         <translation type="unfinished"></translation>
@@ -2380,21 +2395,6 @@ This will not delete the toolbits contained within it.</source>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/toolbit/models/taperedballnose.py" line="43"/>
         <source>{diameter} tip, {taper_angle} taper, {flutes}-flute tapered ball nose, {cutting_edge_height} cutting edge</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/toolbit/ui/editor.py" line="60"/>
-        <source>Tool Bit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/toolbit/models/bullnose.py" line="48"/>
-        <source>{diameter} {flutes}-flute bullnose, {cutting_edge_height} cutting edge, {flat_radius} flat radius</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/toolbit/models/tap.py" line="46"/>
-        <source>{diameter} tap, {flutes}-flute, {cutting_edge_length} cutting edge</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2677,13 +2677,6 @@ with identical tool controllers and without coolant</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/ZCorrect.py" line="353"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/AxisMap.py" line="272"/>
-        <source>Please select one toolpath object
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/ZCorrect.py" line="358"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/AxisMap.py" line="277"/>
         <source>The selected object is not a toolpath
@@ -2700,6 +2693,13 @@ with identical tool controllers and without coolant</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/AxisMap.py" line="278"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/ZCorrect.py" line="361"/>
         <source>Select a toolpath object</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/ZCorrect.py" line="353"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Dressup/Gui/AxisMap.py" line="272"/>
+        <source>Please select one toolpath object
+</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3635,26 +3635,6 @@ with identical tool controllers and without coolant</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Main/Gui/JobDlg.py" line="69"/>
-        <source>The currently selected unit schema:
-     &apos;{}&apos; for this document
- Does not use &apos;minutes&apos; for velocity values.
-
-CNC machines require feed rate to be expressed in
-unit/minute. To ensure correct G-code:
-Select a minute-based schema in preferences.
-For example:
-    &apos;Metric, Small Parts &amp; CNC&apos;
-    &apos;US Customary&apos;
-    &apos;Imperial Decimal&apos;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Main/Gui/JobDlg.py" line="75"/>
-        <source>Don&apos;t Show This Anymore</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Main/Gui/JobDlg.py" line="84"/>
         <source>Solids</source>
         <translation>固體</translation>
@@ -3839,6 +3819,26 @@ For example:
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Main/Gui/Job.py" line="1654"/>
         <source>This job has no tool.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Main/Gui/JobDlg.py" line="69"/>
+        <source>The currently selected unit schema:
+     &apos;{}&apos; for this document
+ Does not use &apos;minutes&apos; for velocity values.
+
+CNC machines require feed rate to be expressed in
+unit/minute. To ensure correct G-code:
+Select a minute-based schema in preferences.
+For example:
+    &apos;Metric, Small Parts &amp; CNC&apos;
+    &apos;US Customary&apos;
+    &apos;Imperial Decimal&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Main/Gui/JobDlg.py" line="75"/>
+        <source>Don&apos;t Show This Anymore</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5251,6 +5251,11 @@ Allowed selection only from one model:
 <context>
     <name>CAM_ToolBit</name>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/library/ui/dock.py" line="58"/>
+        <source>Tool Selector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/library/ui/dock.py" line="59"/>
         <source>Toolbit Selector</source>
         <translation type="unfinished"></translation>
@@ -5278,16 +5283,6 @@ Allowed selection only from one model:
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/library/ui/dock.py" line="152"/>
         <source>Please create a Job first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/library/ui/editor.py" line="558"/>
-        <source>Error Saving Library</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/library/ui/dock.py" line="58"/>
-        <source>Tool Selector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5327,6 +5322,11 @@ Allowed selection only from one model:
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/library/ui/editor.py" line="476"/>
         <source>Enter a name for the new library:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/library/ui/editor.py" line="558"/>
+        <source>Error Saving Library</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5438,6 +5438,11 @@ Allowed selection only from one model:
 <context>
     <name>CAM_ToolBitLibraryOpen</name>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/library/ui/cmd.py" line="76"/>
+        <source>Toolbit Library Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/library/ui/cmd.py" line="78"/>
         <source>Toolbit Library Manager</source>
         <translation type="unfinished"></translation>
@@ -5445,11 +5450,6 @@ Allowed selection only from one model:
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/library/ui/cmd.py" line="79"/>
         <source>Opens an editor to manage toolbit libraries</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Path/Tool/library/ui/cmd.py" line="76"/>
-        <source>Toolbit Library Editor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6955,26 +6955,43 @@ If the radius is bigger than that which the tag shape itself supports, the resul
         <translation>所有物體都將使用相同的操作屬性進行處理.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="22"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="31"/>
+        <source>Sorting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="39"/>
+        <source>Automatic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="44"/>
+        <source>Manual</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="62"/>
+        <source>Select All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="72"/>
+        <source>Filter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="84"/>
         <source>Table of hole features and the determined radius of the associated hole.
 
 Add features for processing by selecting them and then pressing &apos;Add&apos;. If a feature is accidentally added to the list, it can be removed through &apos;Remove&apos; and will no longer be processed.
 
-Reset deletes all current items from the list and fills the list with all circular holes eligible for the operation from the model. Refine the list afterwards by enabling/disabling, removing and adding features.</source>
+Reset deletes all current items from the list and fills the list with all circular holes eligible for the operation from the model. You can again refine the list afterwards by enabling/disabling, removing and adding features.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="22"/>
-        <source>Table of hole features and the determined radius of the associated hole.
-
-You can add feature for processing by selecting them and then pressing Add. If a feature is accidentally added to the list it can be removed through Remove and will no longer be processed.
-
-Reset deletes all current items from the list and fills the list with all circular holes eligible for the operation from the model. You can again refine the list afterwards by enabling/disabling, removing and adding features.</source>
-        <translation>孔特徵表和相關孔的確定半徑.
-
-您可以透過選擇它們然後按新增來新增要處理的功能. 如果某個功能意外新增到清​​單中，則可以透過「刪除」將其刪除，並且將不再對其進行處理.
-
-重置將從清單中刪除所有當前項目，並用適合模型操作的所有圓孔填充清單. 之後您可以透過啟用/停用、刪除和新增功能來再次細化清單.</translation>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="119"/>
+        <source># </source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="33"/>
@@ -7011,6 +7028,21 @@ Reset deletes all current items from the list and fills the list with all circul
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="69"/>
         <source>Reset</source>
         <translation>重設</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="163"/>
+        <source>Remove all list items and auto-fill list with all eligible features from the job&apos;s base object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="166"/>
+        <source>Auto-select</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="173"/>
+        <source>Clear All</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageBaseGeometryEdit.ui" line="99"/>
@@ -7210,11 +7242,6 @@ Reset deletes all current items from the list and fills the list with all circul
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageHeightsEdit.ui" line="24"/>
-        <source>Safe Height</source>
-        <translation>安全高度</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageHeightsEdit.ui" line="47"/>
         <source>Clearance height</source>
         <translation>淨空高度</translation>
@@ -7238,6 +7265,26 @@ Reset deletes all current items from the list and fills the list with all circul
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageHeightsEdit.ui" line="31"/>
         <source>The height above which it is safe to move the tool bit with rapid movements. Below this height all lateral and downward movements are performed with feed rate speeds.</source>
         <translation>在該高度以上，快速移動刀頭是安全的. 低於此高度時，所有橫向和向下運動均以進料速率速度進行.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="35"/>
+        <source>Strategy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="42"/>
+        <source>Hole-making strategy: Drilling, Tapping, etc.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="46"/>
+        <source>Drilling</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpDrillingEdit.ui" line="51"/>
+        <source>Tapping</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpAdaptiveEdit.ui" line="23"/>
@@ -7585,87 +7632,6 @@ Larger values (further to the right) will calculate faster; smaller values (furt
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="63"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="79"/>
-        <source>Bounding Box</source>
-        <translation>邊界區塊</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="70"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="91"/>
-        <source>Select the overall boundary for the operation.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="77"/>
-        <source>Scan Type</source>
-        <translation>掃描類型</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="84"/>
-        <source>Planar: Flat, 3D surface scan.  Rotational: 4th-axis rotational scan.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="98"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="110"/>
-        <source>Complete the operation in a single pass at depth, or multiple passes to final depth.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="105"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="117"/>
-        <source>Cut Pattern</source>
-        <translation>切割圖案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="112"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="129"/>
-        <source>Set the geometric clearing pattern to use for the operation.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="119"/>
-        <source>Profile Edges</source>
-        <translation>輪廓邊緣</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="126"/>
-        <source>Profile the edges of the selection.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="133"/>
-        <source>Avoid Last X Faces</source>
-        <translation>回避最後 X 個平面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="140"/>
-        <source>Avoid cutting the last &apos;N&apos; faces in the Base Geometry list of selected faces.</source>
-        <translation>避免切割選取面的「基本幾何體」清單中的最後 &apos;N&apos; 個面.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="162"/>
-        <source>Additional offset to the selected bounding box along the X axis.</source>
-        <translation>沿 X 軸對所選邊界框的附加偏移.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="172"/>
-        <source>Additional offset to the selected bounding box along the Y axis.</source>
-        <translation>沿 Y 軸對選取邊界框的附加偏移.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="184"/>
-        <source>Drop Cutter Direction</source>
-        <translation>落刀方向</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="205"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="149"/>
-        <source>Set the Z-axis depth offset from the target surface.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="215"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="159"/>
         <source>Step over</source>
@@ -7994,16 +7960,6 @@ The latter can be used to face of the entire stock area to ensure uniform height
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpDeburrEdit.ui" line="222"/>
         <source>h = </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="63"/>
-        <source>Cut Side</source>
-        <translation>切邊</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="70"/>
-        <source>Specify if the profile should be performed inside or outside the base geometry features. This only matters if Use Compensation is checked (the default)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9509,13 +9465,8 @@ Default: &quot;5mm&quot;</source>
         <translation>2x 敲擊尖</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpTappingEdit.ui" line="45"/>
-        <source>Tap tip</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpTappingEdit.ui" line="50"/>
-        <source>2x tap tip</source>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/Resources/panels/PageOpTappingEdit.ui" line="23"/>
+        <source>⚠ DEPRECATED: The Tapping operation is deprecated and will be removed in a future release. Please use the Drilling operation with Strategy set to &apos;Tapping&apos; instead. Existing Tapping operations will continue to work but you cannot create new ones.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9528,6 +9479,16 @@ Default: &quot;5mm&quot;</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpTappingEdit.ui" line="103"/>
         <source>ToolController</source>
         <translation>工具控制</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpTappingEdit.ui" line="45"/>
+        <source>Tap tip</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpTappingEdit.ui" line="50"/>
+        <source>2x tap tip</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpEngraveEdit.ui" line="63"/>
@@ -9547,6 +9508,124 @@ Default: &quot;5mm&quot;</source>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpEngraveEdit.ui" line="70"/>
         <source>Specify the vertex number of the underlying shape string at which engraving should start.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="22"/>
+        <source>Table of hole features and the determined radius of the associated hole.
+
+Add features for processing by selecting them and then pressing &apos;Add&apos;. If a feature is accidentally added to the list, it can be removed through &apos;Remove&apos; and will no longer be processed.
+
+Reset deletes all current items from the list and fills the list with all circular holes eligible for the operation from the model. Refine the list afterwards by enabling/disabling, removing and adding features.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageBaseHoleGeometryEdit.ui" line="22"/>
+        <source>Table of hole features and the determined radius of the associated hole.
+
+You can add feature for processing by selecting them and then pressing Add. If a feature is accidentally added to the list it can be removed through Remove and will no longer be processed.
+
+Reset deletes all current items from the list and fills the list with all circular holes eligible for the operation from the model. You can again refine the list afterwards by enabling/disabling, removing and adding features.</source>
+        <translation>孔特徵表和相關孔的確定半徑.
+
+您可以透過選擇它們然後按新增來新增要處理的功能. 如果某個功能意外新增到清​​單中，則可以透過「刪除」將其刪除，並且將不再對其進行處理.
+
+重置將從清單中刪除所有當前項目，並用適合模型操作的所有圓孔填充清單. 之後您可以透過啟用/停用、刪除和新增功能來再次細化清單.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageHeightsEdit.ui" line="24"/>
+        <source>Safe Height</source>
+        <translation>安全高度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="63"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="79"/>
+        <source>Bounding Box</source>
+        <translation>邊界區塊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="70"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="91"/>
+        <source>Select the overall boundary for the operation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="77"/>
+        <source>Scan Type</source>
+        <translation>掃描類型</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="84"/>
+        <source>Planar: Flat, 3D surface scan.  Rotational: 4th-axis rotational scan.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="98"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="110"/>
+        <source>Complete the operation in a single pass at depth, or multiple passes to final depth.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="105"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="117"/>
+        <source>Cut Pattern</source>
+        <translation>切割圖案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="112"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="129"/>
+        <source>Set the geometric clearing pattern to use for the operation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="119"/>
+        <source>Profile Edges</source>
+        <translation>輪廓邊緣</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="126"/>
+        <source>Profile the edges of the selection.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="133"/>
+        <source>Avoid Last X Faces</source>
+        <translation>回避最後 X 個平面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="140"/>
+        <source>Avoid cutting the last &apos;N&apos; faces in the Base Geometry list of selected faces.</source>
+        <translation>避免切割選取面的「基本幾何體」清單中的最後 &apos;N&apos; 個面.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="162"/>
+        <source>Additional offset to the selected bounding box along the X axis.</source>
+        <translation>沿 X 軸對所選邊界框的附加偏移.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="172"/>
+        <source>Additional offset to the selected bounding box along the Y axis.</source>
+        <translation>沿 Y 軸對選取邊界框的附加偏移.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="184"/>
+        <source>Drop Cutter Direction</source>
+        <translation>落刀方向</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpSurfaceEdit.ui" line="205"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpWaterlineEdit.ui" line="149"/>
+        <source>Set the Z-axis depth offset from the target surface.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="63"/>
+        <source>Cut Side</source>
+        <translation>切邊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/Resources/panels/PageOpProfileFullEdit.ui" line="70"/>
+        <source>Specify if the profile should be performed inside or outside the base geometry features. This only matters if Use Compensation is checked (the default)</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -10529,13 +10608,23 @@ See the file save policy below on how to deal with name conflicts.</source>
         <translation>多功能面板 - 反轉</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="411"/>
+        <source>Hide the initial rapid move in path visualization by setting the start index to the first feed move</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="404"/>
         <source>Hide first rapid move</source>
         <translation>隱藏首次快速移動</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="411"/>
-        <source>Hide the initial rapid move in path visualization by setting the start index to the first feed move</source>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="420"/>
+        <source>Pop up the G-code editor for review and editing before writing the output file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/CAM/Gui/DlgSettingsPathColor.ui" line="423"/>
+        <source>Show editor before writing G-code</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

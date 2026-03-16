@@ -363,6 +363,22 @@
         <source>Close the measurement task.</source>
         <translation>關閉測量工作.</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="571"/>
+        <source>%1 start new measurement, %2 toggle auto-save</source>
+        <translation>%1 開始新測量，%2 切換自動儲存</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="576"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="790"/>
+        <source>%1 add to measurement, %2 toggle auto-save</source>
+        <translation>%1 新增至測量，%2 切換自動儲存</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="785"/>
+        <source>%1 new measurement, %2 toggle auto-save</source>
+        <translation>%1 新增測量，%2 切換自動儲存</translation>
+    </message>
 </context>
 <context>
     <name>QObject</name>

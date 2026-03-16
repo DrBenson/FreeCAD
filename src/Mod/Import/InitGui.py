@@ -33,11 +33,9 @@
 
 
 # Registered in Part's Init.py file
-FreeCAD.changeImportModule("IGES format (*.iges *.IGES *.igs *.IGS)", "Part", "ImportGui")
-FreeCAD.changeExportModule("IGES format (*.iges *.igs)", "Part", "ImportGui")
-FreeCAD.changeImportModule("STEP with colors (*.step *.STEP *.stp *.STP)", "Import", "ImportGui")
-FreeCAD.changeExportModule("STEP with colors (*.step *.stp)", "Import", "ImportGui")
-FreeCAD.changeExportModule("glTF (*.gltf *.glb)", "Import", "ImportGui")
+FreeCAD.changeImportModule(FreeCAD.Qt.translate("QObject", "STEP with colors (*.step *.STEP *.stp *.STP)"), "Import", "ImportGui")
+FreeCAD.changeExportModule(FreeCAD.Qt.translate("QObject", "STEP with colors (*.step *.stp)"), "Import", "ImportGui")
+FreeCAD.changeExportModule(FreeCAD.Qt.translate("QObject", "glTF (*.gltf *.glb)"), "Import", "ImportGui")
 
 App.__unit_test__ += ["TestImportGui"]
 

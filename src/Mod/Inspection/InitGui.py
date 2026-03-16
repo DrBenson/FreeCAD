@@ -28,7 +28,6 @@
 # Gathering all the information to start FreeCAD
 # This is the second one of three init scripts, the third one
 # runs when the gui is up
-
 import InspectionGui
 FreeCADGui.addLanguagePath(":/translations")
 FreeCADGui.addIconPath(":/icons")

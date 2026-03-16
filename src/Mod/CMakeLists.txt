@@ -22,6 +22,10 @@ if(BUILD_DRAFT)
   add_subdirectory(Draft)
 endif(BUILD_DRAFT)
 
+if(BUILD_DRAWING)
+  add_subdirectory(Drawing)
+endif(BUILD_DRAWING)
+
 if(BUILD_FEM)
     add_subdirectory(Fem)
 endif(BUILD_FEM)
@@ -130,7 +134,9 @@ if(BUILD_TECHDRAW)
     add_subdirectory(TechDraw)
 endif(BUILD_TECHDRAW)
 
-#add_subdirectory(TemplatePyMod)
+if(BUILD_TEMPLATEPY)
+    add_subdirectory(TemplatePyMod)
+endif(BUILD_TEMPLATEPY)
 
 if(BUILD_TEST)
   add_subdirectory(Test)

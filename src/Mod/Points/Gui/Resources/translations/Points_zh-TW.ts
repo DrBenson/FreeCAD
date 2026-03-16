@@ -232,6 +232,14 @@
     </message>
 </context>
 <context>
+    <name>FileFormat</name>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Points/Init.py" line="35"/>
+        <source>Point formats</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>PointsGui::DlgPointsRead</name>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Points/Gui/DlgPointsRead.ui" line="14"/>

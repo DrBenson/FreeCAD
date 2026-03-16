@@ -1,12 +1,23 @@
 
+IF (BUILD_GUI)
+    PYSIDE_WRAP_RC(_TEMPLATEPY__QRC_SRCS Resources/TemplatePyMod.qrc)
+ENDIF (BUILD_GUI)
 
-fc_copy_to_mod_path("TemplatePyMod"
+set(TemplatePyModScripts
     InitGui.py
     Init.py
     Commands.py
     PythonQt.py
     Tests.py
     DocumentObject.py
+)
+
+INSTALL(
+    FILES
+        ${TemplatePyModScripts}
+        ${_TEMPLATEPY__QRC_SRCS}
+    DESTINATION
+        Mod/TemplatePyMod
 )
 
 INSTALL(

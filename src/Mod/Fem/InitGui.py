@@ -49,7 +49,7 @@ from FreeCADGui import Workbench
 # needed imports
 from femguiutils.migrate_gui import FemMigrateGui
 import FemGui
-
+ 
 FreeCADGui.addLanguagePath(":/translations")
 FreeCADGui.addIconPath(":/icons")
 FreeCADGui.updateLocale()
@@ -74,6 +74,7 @@ class FemWorkbench(Workbench):
 
     def Initialize(self):
         # load the module
+        FreeCADGui.addIconPath(":/icons")
         import Fem
         import FemGui
         import femcommands.commands

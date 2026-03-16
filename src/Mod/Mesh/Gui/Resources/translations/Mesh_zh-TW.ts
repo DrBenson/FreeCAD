@@ -1131,6 +1131,31 @@
     </message>
 </context>
 <context>
+    <name>FileFormat</name>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Init.py" line="19"/>
+        <source>STL Mesh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Init.py" line="20"/>
+        <source>Binary Mesh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Init.py" line="23"/>
+        <source>Alias Mesh</source>
+        <extracomment>Translation note: &quot;Alias&quot; in this case is a product/format name and should not be translated</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Init.py" line="27"/>
+        <source>Object File Format Mesh</source>
+        <extracomment>Translation note: &quot;Object File Format&quot; is the official name and should not be translated</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MeshGui::DlgDecimating</name>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgDecimating.ui" line="14"/>

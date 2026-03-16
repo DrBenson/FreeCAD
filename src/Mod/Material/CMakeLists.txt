@@ -109,6 +109,7 @@ SET(MaterialLib_Files
     Resources/Materials/Standard/Metal/Steel/Steel-S275JO.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-S275JR.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-S275N.FCMat
+    Resources/Materials/Standard/Metal/Steel/Steel-S304.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-S335JO.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-S335JR.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-S335N.FCMat
@@ -136,6 +137,7 @@ SET(MaterialLib_Files
     Resources/Materials/Standard/Metal/Steel/Steel-X5CrNiMo17-12-2.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-X6CrNiTi18-10.FCMat
     Resources/Materials/Standard/Metal/Titanium/Ti-6Al-4V.FCMat
+    Resources/Materials/Standard/Thermoplast/ABS-FR-V-0.FCMat
     Resources/Materials/Standard/Thermoplast/ABS-Generic.FCMat
     Resources/Materials/Standard/Thermoplast/Acrylic-Glass-Generic.FCMat
     Resources/Materials/Standard/Thermoplast/PA6-Generic.FCMat
@@ -146,9 +148,11 @@ SET(MaterialLib_Files
     Resources/Materials/Standard/Thermoplast/POM-Homopolymer-Generic.FCMat
     Resources/Materials/Standard/Thermoplast/POM-Copolymer-Generic.FCMat
     Resources/Materials/Standard/Thermoplast/PP-Generic.FCMat
+    "Resources/Materials/Standard/Thermoplast/PDMS Silicone.FCMat"
     Resources/Materials/Standard/Thermoplast/PTFE-Generic.FCMat
     Resources/Materials/Standard/Thermoplast/PVC-Generic.FCMat
     Resources/Materials/Standard/Thermoplast/PC-Molded.FCMat
+    Resources/Materials/Standard/Wood/Mahogany-Wood.FCMat
     Resources/Materials/Standard/Wood/Wood-Generic.FCMat
 )
 

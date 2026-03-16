@@ -43,7 +43,6 @@ Measure.makeMeasureCOM = makeMeasureCOM
 import FreeCAD
 from PySide.QtCore import QT_TRANSLATE_NOOP
 
-
 FreeCAD.MeasureManager.addMeasureType(
     "CENTEROFMASS",
     QT_TRANSLATE_NOOP("TaskMeasure", "Center of mass"),
