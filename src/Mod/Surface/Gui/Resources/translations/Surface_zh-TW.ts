@@ -205,6 +205,11 @@ vertices that are not on the boundary.</source>
 <context>
     <name>CmdSurfaceSections</name>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/Command.cpp" line="325"/>
+        <source>Sections…</source>
+        <translation>剖面...</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/Command.cpp" line="329"/>
         <source>Surface</source>
         <translation>外型</translation>
@@ -223,11 +228,6 @@ vertices that are not on the boundary.</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/Command.cpp" line="325"/>
         <source>Sections</source>
         <translation>剖面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/Command.cpp" line="325"/>
-        <source>Sections…</source>
-        <translation>剖面...</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/Command.cpp" line="326"/>
@@ -273,25 +273,25 @@ vertices that are not on the boundary.</source>
         <translation>編輯 %1</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/TaskFilling.cpp" line="63"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/TaskGeomFillSurface.cpp" line="61"/>
-        <source>Edit filling</source>
-        <translation>編輯填充</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/TaskFilling.cpp" line="65"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/TaskGeomFillSurface.cpp" line="63"/>
         <source>Edit Filling</source>
         <translation>編輯填充</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/TaskSections.cpp" line="57"/>
-        <source>Edit sections</source>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/TaskSections.cpp" line="60"/>
+        <source>Edit Sections</source>
         <translation>編輯剖面</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/TaskSections.cpp" line="60"/>
-        <source>Edit Sections</source>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/TaskFilling.cpp" line="63"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/TaskGeomFillSurface.cpp" line="61"/>
+        <source>Edit filling</source>
+        <translation>編輯填充</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/TaskSections.cpp" line="57"/>
+        <source>Edit sections</source>
         <translation>編輯剖面</translation>
     </message>
 </context>

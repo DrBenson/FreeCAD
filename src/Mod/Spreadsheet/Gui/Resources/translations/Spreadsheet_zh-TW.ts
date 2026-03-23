@@ -17,32 +17,32 @@
 <context>
     <name>CmdCreateSpreadsheet</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="892"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="892"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="893"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="893"/>
         <source>Create spreadsheet</source>
         <translation>建立試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="894"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="894"/>
         <source>Create a new spreadsheet</source>
         <translation>建立一個新的試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="947"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="947"/>
         <source>&amp;New Spreadsheet</source>
         <translation>新增試算表(&amp;N)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="948"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="948"/>
         <source>Creates a new spreadsheet</source>
         <translation>建立新試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="948"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="948"/>
         <source>&amp;Create spreadsheet</source>
         <translation>建立試算表(&amp;C)</translation>
     </message>
@@ -50,32 +50,32 @@
 <context>
     <name>CmdSpreadsheetAlignBottom</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="503"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="503"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="504"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="504"/>
         <source>Align bottom</source>
         <translation>向下對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="505"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="505"/>
         <source>Bottom-align contents of selected cells</source>
         <translation>所選儲存格之內容向下對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="510"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="510"/>
         <source>Align &amp;Bottom</source>
         <translation>向下對齊(&amp;B)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="511"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="511"/>
         <source>Aligns cell contents to the bottom</source>
         <translation>所選儲存格之內容向下對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="511"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="511"/>
         <source>Align &amp;bottom</source>
         <translation>向下對齊(&amp;b)</translation>
     </message>
@@ -83,32 +83,32 @@
 <context>
     <name>CmdSpreadsheetAlignCenter</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="347"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="347"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="348"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="348"/>
         <source>Align center</source>
         <translation>水平置中對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="349"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="349"/>
         <source>Center-align contents of selected cells</source>
         <translation>所選單元之儲存格水平置中對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="339"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="339"/>
         <source>Align Horizontal &amp;Center</source>
         <translation>水平居中對齊(&amp;C)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="340"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="340"/>
         <source>Aligns cell contents to the horizontal center</source>
         <translation>所選單元之儲存格水平置中對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="340"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="340"/>
         <source>Align &amp;center</source>
         <translation>水平置中對齊(&amp;c)</translation>
     </message>
@@ -116,32 +116,32 @@
 <context>
     <name>CmdSpreadsheetAlignLeft</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="295"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="295"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="296"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="296"/>
         <source>Align left</source>
         <translation>向左對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="297"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="297"/>
         <source>Left-align contents of selected cells</source>
         <translation>所選儲存格之內容向左對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="282"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="282"/>
         <source>Align &amp;Left</source>
         <translation>向左對齊(&amp;L)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="283"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="283"/>
         <source>Aligns cell contents to the left</source>
         <translation>所選儲存格之內容向左對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="283"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="283"/>
         <source>Align &amp;left</source>
         <translation>向左對齊(&amp;l)</translation>
     </message>
@@ -149,32 +149,32 @@
 <context>
     <name>CmdSpreadsheetAlignRight</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="399"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="399"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="400"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="400"/>
         <source>Align right</source>
         <translation>向右對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="401"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="401"/>
         <source>Right-align contents of selected cells</source>
         <translation>所選儲存格之內容以向右對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="396"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="396"/>
         <source>Align &amp;Right</source>
         <translation>向右對齊(&amp;R)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="397"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="397"/>
         <source>Aligns cell contents to the right</source>
         <translation>所選儲存格之內容以向右對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="397"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="397"/>
         <source>Align &amp;right</source>
         <translation>向右對齊(&amp;r)</translation>
     </message>
@@ -182,32 +182,32 @@
 <context>
     <name>CmdSpreadsheetAlignTop</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="451"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="451"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="452"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="452"/>
         <source>Align top</source>
         <translation>向上對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="453"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="453"/>
         <source>Top-align contents of selected cells</source>
         <translation>所選儲存格之內容向上對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="453"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="453"/>
         <source>Align &amp;Top</source>
         <translation>向上對齊(&amp;T)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="454"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="454"/>
         <source>Aligns cell contents to the top</source>
         <translation>所選儲存格之內容向上對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="454"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="454"/>
         <source>Align &amp;top</source>
         <translation>向上對齊(&amp;t)</translation>
     </message>
@@ -215,32 +215,32 @@
 <context>
     <name>CmdSpreadsheetAlignVCenter</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="555"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="555"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="556"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="556"/>
         <source>Vertically center-align</source>
         <translation>垂直置中對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="557"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="557"/>
         <source>Vertically center-align contents of selected cells</source>
         <translation>所選儲存格之內容垂直置中對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="567"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="567"/>
         <source>Align &amp;Vertical Center</source>
         <translation>垂直居中對齊(&amp;V)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="568"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="568"/>
         <source>Aligns cell contents to the vertical center</source>
         <translation>所選單元之儲存格水平置中對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="568"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="568"/>
         <source>&amp;Vertically center-align</source>
         <translation>垂直置中對齊(&amp;V)</translation>
     </message>
@@ -248,32 +248,32 @@
 <context>
     <name>CmdSpreadsheetExport</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="234"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="234"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="235"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="235"/>
         <source>Export spreadsheet</source>
         <translation>匯出試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="236"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="236"/>
         <source>Export spreadsheet to CSV file</source>
         <translation>匯出試算表為CSV格式</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="236"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="236"/>
         <source>&amp;Export Spreadsheet</source>
         <translation>匯出試算表(&amp;E)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="237"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="237"/>
         <source>Exports the spreadsheet to a CSV file</source>
         <translation>匯出試算表為CSV格式</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="237"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="237"/>
         <source>&amp;Export spreadsheet</source>
         <translation>匯出試算表(&amp;E)</translation>
     </message>
@@ -281,32 +281,32 @@
 <context>
     <name>CmdSpreadsheetImport</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="184"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="184"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="185"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="185"/>
         <source>Import spreadsheet</source>
         <translation>匯入試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="186"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="186"/>
         <source>Import CSV file into spreadsheet</source>
         <translation>將CSV檔匯入至試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="184"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="184"/>
         <source>&amp;Import Spreadsheet</source>
         <translation>匯入試算表(&amp;I)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="184"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="184"/>
         <source>&amp;Import spreadsheet</source>
         <translation>匯入試算表(&amp;I)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="185"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="185"/>
         <source>Imports a CSV file into a new spreadsheet</source>
         <translation>將CSV檔匯入至試算表</translation>
     </message>
@@ -314,32 +314,32 @@
 <context>
     <name>CmdSpreadsheetMergeCells</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="70"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="70"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="71"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="71"/>
         <source>Merge cells</source>
         <translation>合併儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="72"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="72"/>
         <source>Merge selected cells</source>
         <translation>合併選取的儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="61"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="61"/>
         <source>&amp;Merge Cells</source>
         <translation>合併儲存格(&amp;M)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="61"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="61"/>
         <source>&amp;Merge cells</source>
         <translation>合併儲存格(&amp;M)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="62"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="62"/>
         <source>Merges the selected cells</source>
         <translation>合併選取的儲存格</translation>
     </message>
@@ -347,27 +347,27 @@
 <context>
     <name>CmdSpreadsheetSetAlias</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="828"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="828"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="829"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="829"/>
         <source>Set alias</source>
         <translation>設定別名</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="830"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="830"/>
         <source>Set alias for selected cell</source>
         <translation>對所選之儲存格設定別名</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="876"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="876"/>
         <source>Set Alias</source>
         <translation>設定別名</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="877"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="877"/>
         <source>Sets an alias for the selected cell</source>
         <translation>對所選之儲存格設定別名</translation>
     </message>
@@ -375,32 +375,32 @@
 <context>
     <name>CmdSpreadsheetSplitCell</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="125"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="125"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="126"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="126"/>
         <source>Split cell</source>
         <translation>分割儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="127"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="127"/>
         <source>Split previously merged cells</source>
         <translation>分割前面合併的儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="122"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="122"/>
         <source>Sp&amp;lit Cell</source>
         <translation>分割儲存格(&amp;l)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="122"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="122"/>
         <source>Sp&amp;lit cell</source>
         <translation>分割儲存格(&amp;l)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="123"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="123"/>
         <source>Splits a previously merged cell</source>
         <translation>分割前面合併的儲存格</translation>
     </message>
@@ -408,32 +408,32 @@
 <context>
     <name>CmdSpreadsheetStyleBold</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="607"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="607"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="608"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="608"/>
         <source>Bold text</source>
         <translation>粗體</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="609"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="609"/>
         <source>Set text in selected cells bold</source>
         <translation>設定選取的儲存格為粗體字</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="624"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="624"/>
         <source>&amp;Bold Text</source>
         <translation>粗體(&amp;B)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="625"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="625"/>
         <source>Sets the text in the selected cells bold</source>
         <translation>設定選取的儲存格為粗體字</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="625"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="625"/>
         <source>&amp;Bold text</source>
         <translation>粗體(&amp;B)</translation>
     </message>
@@ -441,37 +441,37 @@
 <context>
     <name>CmdSpreadsheetStyleItalic</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="681"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="681"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="682"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="682"/>
         <source>Italic text</source>
         <translation>斜體</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="683"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="683"/>
         <source>Set text in selected cells italic</source>
         <translation>設定選取的儲存格為斜體字</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="708"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="708"/>
         <source>&amp;Italic Text</source>
         <translation>斜體(&amp;I)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="708"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="708"/>
         <source>&amp;Italic Iext</source>
         <translation>斜體(&amp;I)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="709"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="709"/>
         <source>Sets the text in the selected cells italic</source>
         <translation>設定選取的儲存格為斜體字</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="709"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="709"/>
         <source>&amp;Italic text</source>
         <translation>斜體(&amp;I)</translation>
     </message>
@@ -479,32 +479,32 @@
 <context>
     <name>CmdSpreadsheetStyleUnderline</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="755"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="755"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="756"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="756"/>
         <source>Underline text</source>
         <translation>底線</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="757"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="757"/>
         <source>Underline text in selected cells</source>
         <translation>設定選取的儲存格中文字下底線</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="792"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="792"/>
         <source>&amp;Underline Text</source>
         <translation>底線(&amp;U)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="793"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="793"/>
         <source>Underlines the text in the selected cells</source>
         <translation>設定選取的儲存格中文字下底線</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="793"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="793"/>
         <source>&amp;Underline text</source>
         <translation>底線(&amp;U)</translation>
     </message>
@@ -512,7 +512,7 @@
 <context>
     <name>ColorPickerPopup</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="915"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="915"/>
         <source>Custom Color</source>
         <translation>自定顏色</translation>
     </message>
@@ -520,105 +520,115 @@
 <context>
     <name>Command</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="91"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="91"/>
         <source>Merge cells</source>
         <translation>合併儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="146"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="146"/>
         <source>Split cell</source>
         <translation>分割儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="143"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="143"/>
         <source>Sp&amp;lit cell</source>
         <translation>分割儲存格(&amp;l)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="317"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="317"/>
         <source>Left-align cell</source>
         <translation>儲存格左邊對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="369"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="369"/>
         <source>Center cell</source>
         <translation>儲存格置中</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="421"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="421"/>
         <source>Right-align cell</source>
         <translation>儲存格右邊對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="473"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="473"/>
         <source>Top-align cell</source>
         <translation>儲存格向上對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="525"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="525"/>
         <source>Bottom-align cell</source>
         <translation>儲存格向下對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="577"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="577"/>
         <source>Vertically center cells</source>
         <translation>儲存格垂直對齊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="646"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="646"/>
         <source>Set bold text</source>
         <translation>設定粗體樣式</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="720"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="720"/>
         <source>Set italic text</source>
         <translation>設定斜體字</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="794"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="794"/>
         <source>Set underline text</source>
         <translation>設定文字下底線</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="905"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="905"/>
         <source>Create Spreadsheet</source>
         <translation>建立試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.cpp" line="228"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.cpp" line="228"/>
         <source>Set cell properties</source>
         <translation>設定儲存格屬性</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetModel.cpp" line="471"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetModel.cpp" line="471"/>
         <source>Edit cell</source>
         <translation>編輯儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="142"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="142"/>
         <source>Set text color</source>
         <translation>設定文字顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="158"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="131"/>
+        <source>Set foreground color</source>
+        <translation>設定前景顏色</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="158"/>
         <source>Set background color</source>
         <translation>設定背景顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="354"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="387"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="223"/>
+        <source>Recompute Cells</source>
+        <translation>重新計算儲存格</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="354"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="387"/>
         <source>Insert Rows</source>
         <translation>插入列</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="429"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="462"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="429"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="462"/>
         <source>Insert Columns</source>
         <translation>插入欄</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="407"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="485"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="407"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="485"/>
         <source>Remove Rows</source>
         <translation>刪除列</translation>
     </message>
@@ -628,37 +638,52 @@
         <translation>刪除欄</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="689"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SpreadsheetView.cpp" line="192"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="689"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SpreadsheetView.cpp" line="192"/>
         <source>Clear Cells</source>
         <translation>清除儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="131"/>
-        <source>Set foreground color</source>
-        <translation>設定前景顏色</translation>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/DlgBindSheet.cpp" line="243"/>
+        <source>Bind cells</source>
+        <translation>綁定儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="276"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="308"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/DlgBindSheet.cpp" line="297"/>
+        <source>Unbind cells</source>
+        <translation>解除綁定儲存格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/DlgSheetConf.cpp" line="204"/>
+        <source>Setup conf table</source>
+        <translation>設定參數設定面板</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/DlgSheetConf.cpp" line="309"/>
+        <source>Unsetup conf table</source>
+        <translation>取消設定參數設定面板</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="276"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="308"/>
         <source>Insert rows</source>
         <translation>插入列</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="327"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="400"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="327"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="400"/>
         <source>Remove rows</source>
         <translation>刪除列</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="348"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="381"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="348"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="381"/>
         <source>Insert columns</source>
         <translation>插入欄</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSpreadsheetView.cpp" line="167"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="557"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSpreadsheetView.cpp" line="167"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="557"/>
         <source>Clear cell(s)</source>
         <translation>清除儲存格</translation>
     </message>
@@ -666,22 +691,22 @@
 <context>
     <name>DlgBindSheet</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="14"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="14"/>
         <source>Bind Spreadsheet Cells</source>
         <translation>綁定試算表儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="36"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="36"/>
         <source>Bind cells:</source>
         <translation>綁定儲存格:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="69"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="69"/>
         <source>To cells:</source>
         <translation>到儲存格:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="97"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="97"/>
         <source>End cell address to bind to.
 Type &apos;=&apos; if you want to use an expression.
 The expression must evaluate to a string of some cell address.</source>
@@ -690,42 +715,42 @@ The expression must evaluate to a string of some cell address.</source>
 該表達式的計算結果必須是某個儲存格位址的字串.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="117"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="117"/>
         <source>Sheet:</source>
         <translation>工作表:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="22"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="22"/>
         <source>First cell in range</source>
         <translation>範圍內的第一個儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="29"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="29"/>
         <source>Last cell in range</source>
         <translation>範圍內的最後一個儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgBindSheet.ui" line="36"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgBindSheet.ui" line="36"/>
         <source>Bind cells</source>
         <translation>綁定儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="49"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="49"/>
         <source>Start cell address</source>
         <translation>開始儲存格位址</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="62"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="62"/>
         <source>End cell address</source>
         <translation>結束儲存格位址</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgBindSheet.ui" line="69"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgBindSheet.ui" line="69"/>
         <source>To cells</source>
         <translation>到儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="82"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="82"/>
         <source>Start cell address to bind to.
 Type &apos;=&apos; if you want to use an expression.
 The expression must evaluate to a string of some cell address.</source>
@@ -734,7 +759,7 @@ The expression must evaluate to a string of some cell address.</source>
 該表達式的計算結果必須是一些儲存格位址的字串.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgBindSheet.ui" line="97"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgBindSheet.ui" line="97"/>
         <source>End cell address to bind to.
 Type &apos;=&apos; to use an expression.
 The expression must evaluate to a string of some cell address.</source>
@@ -743,17 +768,17 @@ The expression must evaluate to a string of some cell address.</source>
 該表達式的計算結果必須是某個儲存格位址的字串.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="110"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="110"/>
         <source>Which spread sheet to bind to</source>
         <translation>要綁定到哪個試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgBindSheet.ui" line="117"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgBindSheet.ui" line="117"/>
         <source>Sheet</source>
         <translation>工作表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="126"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="126"/>
         <source>The dependency with the referenced spreadsheet will
 be hidden to the dependency checking.
 Useful to avoid cyclic dependencies, but use with caution!</source>
@@ -761,22 +786,22 @@ Useful to avoid cyclic dependencies, but use with caution!</source>
 有助於避免循環依賴，但要謹慎使用!</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="131"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="131"/>
         <source>Hide dependency of binding</source>
         <translation>隱藏綁定的依賴</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="140"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="140"/>
         <source>Unbind</source>
         <translation>解除綁定</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="147"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="147"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="154"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.ui" line="154"/>
         <source>OK</source>
         <translation>確定</translation>
     </message>
@@ -784,37 +809,37 @@ Useful to avoid cyclic dependencies, but use with caution!</source>
 <context>
     <name>DlgSheetConf</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="14"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="14"/>
         <source>Setup Configuration Table</source>
         <translation>設定參數設定面板</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="20"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="20"/>
         <source>Cell range:</source>
         <translation>儲存格範圍:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="57"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="57"/>
         <source>Property:</source>
         <translation>屬性:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="72"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="72"/>
         <source>Group:</source>
         <translation>群組:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="79"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="79"/>
         <source>Optional property group name.</source>
         <translation>可選屬性組名稱.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSheetConf.ui" line="20"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSheetConf.ui" line="20"/>
         <source>Cell range</source>
         <translation>儲存格範圍</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="27"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="27"/>
         <source>Starting cell address.
 
 The first column of the range is assumed to contain a list of configuration
@@ -832,7 +857,7 @@ by that property.
 </translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="42"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="42"/>
         <source>Ending cell address.
 
 The first column of the range is assumed to contain a list of configuration
@@ -850,38 +875,38 @@ by that property.
 </translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSheetConf.ui" line="57"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSheetConf.ui" line="57"/>
         <source>Property</source>
         <translation>屬性</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="64"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="64"/>
         <source>Type in an expression to specify the object and property name to dynamically
 switch the design configuration. The property will be created if not exist.</source>
         <translation>輸入表達式以指定對象和屬性名稱以動態切換設計屬性參數. 如果不存在，將建立該屬性.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSheetConf.ui" line="72"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSheetConf.ui" line="72"/>
         <source>Group</source>
         <translation>群組</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSheetConf.ui" line="79"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSheetConf.ui" line="79"/>
         <source>Optional property group name</source>
         <translation>可選屬性組名稱</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="88"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="88"/>
         <source>Unsetup</source>
         <translation>取消設定</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="95"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="95"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="102"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSheetConf.ui" line="102"/>
         <source>OK</source>
         <translation>確定</translation>
     </message>
@@ -889,121 +914,121 @@ switch the design configuration. The property will be created if not exist.</sou
 <context>
     <name>PropertiesDialog</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/PropertiesDialog.ui" line="14"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/PropertiesDialog.ui" line="14"/>
         <source>Cell Properties</source>
         <translation>儲存格屬性</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="14"/>
-        <source>Cell properties</source>
-        <translation>儲存格屬性</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="27"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="27"/>
         <source>&amp;Color</source>
         <translation>顏色(&amp;C)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="33"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="33"/>
         <source>Text</source>
         <translation>文字</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="43"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="43"/>
         <source>Background</source>
         <translation>背景</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="80"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="80"/>
         <source>&amp;Alignment</source>
         <translation>對齊(&amp;A)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="88"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="88"/>
         <source>Horizontal</source>
         <translation>水平</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="95"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="95"/>
         <source>Left</source>
         <translation>左</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="102"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="155"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="102"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="155"/>
         <source>Center</source>
         <translation>中心</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="109"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="109"/>
         <source>Right</source>
         <translation>右</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="141"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="141"/>
         <source>Vertical</source>
         <translation>垂直</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="148"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="148"/>
         <source>Top</source>
         <translation>上</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="162"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="162"/>
         <source>Bottom</source>
         <translation>底</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="188"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="188"/>
         <source>&amp;Style</source>
         <translation>樣式(&amp;S)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="196"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="196"/>
         <source>Bold</source>
         <translation>粗體</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="203"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="203"/>
         <source>Italic</source>
         <translation>斜體</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="210"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="210"/>
         <source>Underline</source>
         <translation>底線</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="233"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="233"/>
         <source>&amp;Display unit</source>
         <translation>顯示單位(&amp;D)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="239"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="239"/>
         <source>Unit string</source>
         <translation>單位字串</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/PropertiesDialog.ui" line="239"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/PropertiesDialog.ui" line="239"/>
         <source>Text for the unit</source>
         <translation>單位的文字</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="263"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="263"/>
         <source>A&amp;lias</source>
         <translation>別名(&amp;L)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="269"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="269"/>
         <source>Alias for this cell</source>
         <translation>儲存格之別名</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiPropertiesDialog.ui" line="14"/>
+        <source>Cell properties</source>
+        <translation>儲存格屬性</translation>
     </message>
 </context>
 <context>
     <name>Py</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiAppSpreadsheetGui.cpp" line="80"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiAppSpreadsheetGui.cpp" line="80"/>
         <source>Unnamed</source>
         <translation>未命名</translation>
     </message>
@@ -1011,126 +1036,126 @@ switch the design configuration. The property will be created if not exist.</sou
 <context>
     <name>QObject</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiAppSpreadsheetGui.cpp" line="121"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiAppSpreadsheetGui.cpp" line="121"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="194"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Command.cpp" line="254"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="194"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="254"/>
         <source>CSV (*.csv *.CSV);;All (*)</source>
         <translation>CSV (*.csv *.CSV);;全部 (*)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="198"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="196"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="252"/>
+        <source>All (*)</source>
+        <translation>全部(*)</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="198"/>
         <source>Import file</source>
         <translation>匯入檔案</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="254"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="254"/>
         <source>Export file</source>
         <translation>匯出檔案</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSpreadsheetView.cpp" line="434"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSpreadsheetView.cpp" line="434"/>
         <source>Alias contains invalid characters!</source>
         <translation>別名包含無效字元!</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSpreadsheetView.cpp" line="440"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSpreadsheetView.cpp" line="440"/>
         <source>Refer to cell by alias, for example
 Spreadsheet.my_alias_name instead of Spreadsheet.B1</source>
         <translation>參照儲存格使用別名,例如
 Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/ViewProviderSpreadsheet.cpp" line="109"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/ViewProviderSpreadsheet.cpp" line="109"/>
         <source>Export File</source>
         <translation>匯出檔案</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/ViewProviderSpreadsheet.cpp" line="134"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/ViewProviderSpreadsheet.cpp" line="134"/>
         <source>Show Spreadsheet</source>
         <translation>顯示試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="94"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="94"/>
         <source>Sets the text color of cells</source>
         <translation>設定儲存格文字顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="94"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="96"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="94"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="96"/>
         <source>Set cell(s) text color</source>
         <translation>設定儲存格文字顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="95"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="96"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="95"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="96"/>
         <source>Sets the text color of spreadsheet cells</source>
         <translation>設定試算表儲存格文字顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="95"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="95"/>
         <source>Sets the Spreadsheet cell(s) text color</source>
         <translation>設定試算表儲存格文字顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="114"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="117"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="114"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="117"/>
         <source>Sets the background color of cells</source>
         <translation>設定儲存格的背景顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="116"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Workbench.cpp" line="116"/>
         <source>Sets the spreadsheet cells background color</source>
         <translation>設定試算表儲存格的背景顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="816"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="816"/>
         <source>Copy &amp; Paste Failed</source>
         <translation>複製及貼上失敗</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="196"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiCommand.cpp" line="252"/>
-        <source>All (*)</source>
-        <translation>全部(*)</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/InitGui.py" line="58"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/InitGui.py" line="58"/>
         <source>Spreadsheet formats (*.csv *.CSV)</source>
         <translation>試算表格式  (*.csv *.CSV)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="677"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="677"/>
         <source>Copy &amp; Paste failed</source>
         <translation>複製及貼上失敗</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiViewProviderSpreadsheet.cpp" line="141"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiViewProviderSpreadsheet.cpp" line="141"/>
         <source>Show spreadsheet</source>
         <translation>顯示試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="90"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="92"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="90"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="92"/>
         <source>Set cell(s) foreground color</source>
         <translation>設定儲存格的前景顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="91"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="91"/>
         <source>Sets the Spreadsheet cell(s) foreground color</source>
         <translation>設定試算表儲存格的前景顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="105"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="107"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="105"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="107"/>
         <source>Set cell(s) background color</source>
         <translation>設定儲存格的背景顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="106"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="106"/>
         <source>Sets the Spreadsheet cell(s) background color</source>
         <translation>設定試算表儲存格的背景顏色</translation>
     </message>
@@ -1138,110 +1163,110 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
 <context>
     <name>QtColorPicker</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="283"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="410"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="520"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="283"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="410"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="520"/>
         <source>Black</source>
         <translation>黑色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="411"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="521"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="411"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="521"/>
         <source>White</source>
         <translation>白色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="412"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="522"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="412"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="522"/>
         <source>Red</source>
         <translation>紅色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="413"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="523"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="413"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="523"/>
         <source>Dark red</source>
         <translation>暗紅色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="414"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="524"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="414"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="524"/>
         <source>Green</source>
         <translation>綠色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="415"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="525"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="415"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="525"/>
         <source>Dark green</source>
         <translation>深綠色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="416"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="526"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="416"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="526"/>
         <source>Blue</source>
         <translation>藍色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="417"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="527"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="417"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="527"/>
         <source>Dark blue</source>
         <translation>深藍色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="418"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="528"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="418"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="528"/>
         <source>Cyan</source>
         <translation>青色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="419"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="529"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="419"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="529"/>
         <source>Dark cyan</source>
         <translation>深青色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="420"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="530"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="420"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="530"/>
         <source>Magenta</source>
         <translation>洋紅色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="421"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="531"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="421"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="531"/>
         <source>Dark magenta</source>
         <translation>深洋红</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="422"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="532"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="422"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="532"/>
         <source>Yellow</source>
         <translation>黃色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="423"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="533"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="423"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="533"/>
         <source>Dark yellow</source>
         <translation>深黃色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="424"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="534"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="424"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="534"/>
         <source>Gray</source>
         <translation>灰色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="425"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="535"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="425"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="535"/>
         <source>Dark gray</source>
         <translation>深灰色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="426"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="536"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="426"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="536"/>
         <source>Light gray</source>
         <translation>淺灰色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="448"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Guiqtcolorpicker.cpp" line="448"/>
         <source>Custom Color</source>
         <translation>自定顏色</translation>
     </message>
@@ -1249,109 +1274,109 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
 <context>
     <name>Sheet</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Sheet.ui" line="22"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Sheet.ui" line="22"/>
         <source>&amp;Content</source>
         <translation>內容(&amp;C)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Sheet.ui" line="39"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Sheet.ui" line="39"/>
         <source>&amp;Alias</source>
         <translation>別名(&amp;A)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheet.ui" line="52"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheet.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheet.ui" line="22"/>
+        <source>&amp;Content:</source>
+        <translation>內容(&amp;C):</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheet.ui" line="39"/>
+        <source>&amp;Alias:</source>
+        <translation>別名(&amp;A):</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheet.ui" line="52"/>
         <source>Refer to cell by alias, for example
 Spreadsheet.my_alias_name instead of Spreadsheet.B1</source>
         <translation>參照儲存格使用別名,例如
 Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Sheet.ui" line="131"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Sheet.ui" line="131"/>
         <source>Zoom</source>
         <translation>縮放</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Sheet.ui" line="147"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Sheet.ui" line="147"/>
         <source>-</source>
         <translation>-</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/Sheet.ui" line="197"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Sheet.ui" line="197"/>
         <source>+</source>
         <translation>+</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheet.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheet.ui" line="22"/>
-        <source>&amp;Content:</source>
-        <translation>內容(&amp;C):</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheet.ui" line="39"/>
-        <source>&amp;Alias:</source>
-        <translation>別名(&amp;A):</translation>
     </message>
 </context>
 <context>
     <name>Spreadsheet</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="739"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="739"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="748"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="874"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="748"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="874"/>
         <source>Cell</source>
         <translation>儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="751"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="751"/>
         <source>Apply</source>
         <translation>套用</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="753"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="753"/>
         <source>Apply the changes to the current cell</source>
         <translation>將更改套用到目前儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="755"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="755"/>
         <source>Delete</source>
         <translation>刪除</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="757"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="757"/>
         <source>Deletes the contents of the current cell</source>
         <translation>刪除目前儲存格的內容</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="759"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="759"/>
         <source>Compute</source>
         <translation>計算</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="761"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="761"/>
         <source>Updates the values handled by controllers</source>
         <translation>更新控制器處理的值</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="907"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="907"/>
         <source>Create Spreadsheet</source>
         <translation>建立試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="933"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="933"/>
         <source>Add controller</source>
         <translation>新增控制器</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="959"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="973"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="959"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="973"/>
         <source>Add property controller</source>
         <translation>新增屬性控制器</translation>
     </message>
@@ -1359,12 +1384,12 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
 <context>
     <name>SpreadsheetGui::DlgBindSheet</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgBindSheet.cpp" line="223"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgBindSheet.cpp" line="223"/>
         <source>Bind Cells</source>
         <translation>綁定儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgBindSheet.cpp" line="224"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgBindSheet.cpp" line="224"/>
         <source>Source and target cell count mismatch. Partial binding may still work.
 
 Continue?</source>
@@ -1373,12 +1398,29 @@ Continue?</source>
 繼續?</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.cpp" line="194"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.cpp" line="222"/>
+        <source>Bind Spreadsheet Cells</source>
+        <translation>綁定試算表儲存格</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.cpp" line="276"/>
+        <source>Error:
+</source>
+        <translation>錯誤:
+</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgBindSheet.cpp" line="300"/>
+        <source>Unbind Cells</source>
+        <translation>解除綁定儲存格</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.cpp" line="194"/>
         <source>Bind cells</source>
         <translation>綁定儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.cpp" line="195"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.cpp" line="195"/>
         <source>Source and target cell count mismatch. Partial binding may still work.
 
 Do you want to continue?</source>
@@ -1387,144 +1429,127 @@ Do you want to continue?</source>
 你想繼續嗎?</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.cpp" line="222"/>
-        <source>Bind Spreadsheet Cells</source>
-        <translation>綁定試算表儲存格</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.cpp" line="222"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.cpp" line="222"/>
         <source>Error: 
 </source>
         <translation>錯誤: 
 </translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.cpp" line="240"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgBindSheet.cpp" line="240"/>
         <source>Unbind cells</source>
-        <translation>解除綁定儲存格</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgBindSheet.cpp" line="276"/>
-        <source>Error:
-</source>
-        <translation>錯誤:
-</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgBindSheet.cpp" line="300"/>
-        <source>Unbind Cells</source>
         <translation>解除綁定儲存格</translation>
     </message>
 </context>
 <context>
     <name>SpreadsheetGui::DlgSettings</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="20"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="20"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="26"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="26"/>
         <source>Display Settings</source>
         <translation>顯示設定</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="32"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="32"/>
         <source>If checked, use the custom presentation to display cell string.</source>
         <translation>如果選中，則使用自定義範例文稿顯示單元格字串.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="38"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="38"/>
         <source>Delimiter Character: </source>
         <translation>分隔字元: </translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="98"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="98"/>
         <source>Quote Character: </source>
         <translation>引用字元: </translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="130"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="130"/>
         <source>Escape Character: </source>
         <translation>跳脫字元: </translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="32"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="32"/>
         <source>Uses the custom presentation to display cell string</source>
         <translation>使用自定義範例文稿顯示單元格字串</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="48"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="48"/>
         <source>Set a zoom level for table view from 60% to 160%.</source>
         <translation>將表格檢視的縮放等級設定為 60% 到 160%.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="76"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="76"/>
         <source>Default zoom level:</source>
         <translation>預設縮放等級:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="90"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="90"/>
         <source>%V = %A</source>
         <translation>%V = %A</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="96"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="96"/>
         <source>Delimiter Character:</source>
         <translation>分隔字元:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="156"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="156"/>
         <source>Quote Character:</source>
         <translation>引用字元:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="172"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="172"/>
         <source>;</source>
         <translation>;</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="177"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="177"/>
         <source>,</source>
         <translation>,</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="188"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="188"/>
         <source>Escape Character:</source>
         <translation>跳脫字元:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="204"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="204"/>
         <source>&quot;</source>
         <translation>&quot;</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="233"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="233"/>
         <source>\</source>
         <translation>\</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="35"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="35"/>
         <source>Show alias in cell with format</source>
         <translation>使用格式在單元格中顯示別名</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="48"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="48"/>
         <source>Defines a default zoom level for table view from 60% to 160%</source>
         <translation>將表格檢視的縮放等級設定為 60% 到 160%</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="51"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="51"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="76"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="76"/>
         <source>Default zoom level</source>
         <translation>預設縮放等級</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="64"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="64"/>
         <source>The format of the custom cell string presentation.
 Defaults to: %V = %A
 
@@ -1537,42 +1562,42 @@ Defaults to: %V = %A
 %V - 單元格值</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="26"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="26"/>
         <source>Import/Export Settings</source>
         <translation>匯入/匯出 設定</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="131"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="131"/>
         <source>Delimiter character</source>
         <translation>分隔字元</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="58"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="58"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character to use as field delimiter.  Default is tab, but also commonly used are commas (,) and semicolons (;). Select from the list or enter your own in the field. Must be a single character or the words &lt;span style=&quot; font-style:italic;&quot;&gt;tab&lt;/span&gt;, &lt;span style=&quot; font-style:italic;&quot;&gt;comma&lt;/span&gt;, or &lt;span style=&quot; font-style:italic;&quot;&gt;semicolon&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;用作欄位分隔的字元. 預設是定位字元，但也常用的是逗號(,)和分號(;). 從列表中選擇或在欄位中輸入您自己的. 必須是單個字元或字詞 &lt;span style=&quot; font-style:italic;&quot;&gt;定位&lt;/span&gt;、&lt;span style=&quot; font-style:italic;&quot;&gt;逗號&lt;/span&gt; 或 &lt;span style =&quot; font-style:italic;&quot;&gt;分號&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="74"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="74"/>
         <source>tab</source>
         <translation>tab</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="191"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="191"/>
         <source>Quote character</source>
         <translation>引用字元</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="105"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="105"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character used to delimit strings, typically is single quote (&apos;) or double quote (&amp;quot;). Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;用於分隔字串的字元，通常是單引號 (&apos;) 或雙引號 (&amp;quot;). 必須是單個字元.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="223"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSettings.ui" line="223"/>
         <source>Escape character</source>
         <translation>Esc跳脫字元</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="137"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSettings.ui" line="137"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Escape character, typically the backslash (\), used to indicate special unprintable characters, e.g. \t = tab. Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;跳脫字元，通常是反斜線 (\)，用於指示特殊的無法列印字元，例如 \t = 定位字元. 必須是單個字元.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
@@ -1580,22 +1605,22 @@ Defaults to: %V = %A
 <context>
     <name>SpreadsheetGui::DlgSheetConf</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSheetConf.cpp" line="280"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSheetConf.cpp" line="280"/>
         <source>Setup Configuration Table</source>
         <translation>設定參數設定面板</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/DlgSheetConf.cpp" line="338"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/DlgSheetConf.cpp" line="338"/>
         <source>Unsetup Configuration Table</source>
         <translation>取消設定參數設定面板</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSheetConf.cpp" line="245"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSheetConf.cpp" line="245"/>
         <source>Setup configuration table</source>
         <translation>設定參數設定面板</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiDlgSheetConf.cpp" line="292"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiDlgSheetConf.cpp" line="292"/>
         <source>Unsetup configuration table</source>
         <translation>取消設定參數設定面板</translation>
     </message>
@@ -1603,7 +1628,7 @@ Defaults to: %V = %A
 <context>
     <name>SpreadsheetGui::Module</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiAppSpreadsheetGui.cpp" line="88"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiAppSpreadsheetGui.cpp" line="88"/>
         <source>Unnamed</source>
         <translation>未命名</translation>
     </message>
@@ -1625,57 +1650,43 @@ Defaults to: %V = %A
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="142"/>
-        <source>Insert %n Row(s) Above</source>
-        <translation>
-            <numerusform>在上面插入 %n 行</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="147"/>
-        <source>Insert %n Row(s) Below</source>
-        <translation>
-            <numerusform>在下面插入 %n 行</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="152"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="152"/>
         <source>Insert %n Non-Contiguous Rows</source>
         <translation>
             <numerusform>插入 %n 個不連續的行</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="155"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="155"/>
         <source>Remove Rows</source>
         <translation>
             <numerusform>刪除列</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="169"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="169"/>
         <source>Insert %n Column(s) Left</source>
         <translation>
             <numerusform>在左方插入 %n 行</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="174"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="174"/>
         <source>Insert %n Column(s) Right</source>
         <translation>
             <numerusform>在右方插入 %n 行</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="186"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="186"/>
         <source>Remove Column(s)</source>
         <translation>
             <numerusform>刪除欄</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="221"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="674"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="221"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="674"/>
         <source>Split Cells</source>
         <translation>分割儲存格</translation>
     </message>
@@ -1694,7 +1705,7 @@ Defaults to: %V = %A
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="183"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="183"/>
         <source>Insert %n Non-Contiguous Columns</source>
         <translation>
             <numerusform>插入 %n 個不連續的欄位</numerusform>
@@ -1706,161 +1717,175 @@ Defaults to: %V = %A
         <translation>刪除欄</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="194"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="194"/>
         <source>Properties</source>
         <translation>屬性</translation>
     </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="182"/>
-        <source>Recompute</source>
-        <translation>重新計算</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="207"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="679"/>
-        <source>Bind…</source>
-        <translation>綁定…</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="199"/>
-        <source>Configuration Table</source>
-        <translation>參數設定面板</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="219"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="673"/>
-        <source>Merge Cells</source>
-        <translation>合併儲存格</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="210"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="668"/>
-        <source>Split Cell</source>
-        <translation>分割儲存格</translation>
-    </message>
     <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="129"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="129"/>
         <source>Insert %n row(s) above</source>
         <translation>
             <numerusform>在上面插入 %n 行</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="133"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="133"/>
         <source>Insert %n row(s) below</source>
         <translation>
             <numerusform>在下面插入 %n 行</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="137"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="137"/>
         <source>Insert %n non-contiguous rows</source>
         <translation>
             <numerusform>插入 %n 個不連續的行</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="140"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="140"/>
         <source>Remove row(s)</source>
         <translation>
             <numerusform>刪除列</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="154"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="154"/>
         <source>Insert %n column(s) left</source>
         <translation>
             <numerusform>在左方插入 %n 行</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="158"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="158"/>
         <source>Insert %n column(s) right</source>
         <translation>
             <numerusform>在右方插入 %n 行</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="162"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="162"/>
         <source>Insert %n non-contiguous columns</source>
         <translation>
             <numerusform>插入 %n 個不連續的列</numerusform>
         </translation>
     </message>
     <message numerus="yes">
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="165"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="165"/>
         <source>Remove column(s)</source>
         <translation>
             <numerusform>刪除欄</numerusform>
         </translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="170"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="170"/>
         <source>Properties...</source>
         <translation>屬性...</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="186"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="182"/>
+        <source>Recompute</source>
+        <translation>重新計算</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="186"/>
         <source>Bind...</source>
         <translation>綁定...</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="190"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="190"/>
         <source>Configuration table...</source>
         <translation>參數設定面板...</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="198"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="198"/>
         <source>Merge cells</source>
         <translation>合併儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="200"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="200"/>
         <source>Split cells</source>
         <translation>分割儲存格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="204"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="207"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="679"/>
+        <source>Bind…</source>
+        <translation>綁定…</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="199"/>
+        <source>Configuration Table</source>
+        <translation>參數設定面板</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="219"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="673"/>
+        <source>Merge Cells</source>
+        <translation>合併儲存格</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="210"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="668"/>
+        <source>Split Cell</source>
+        <translation>分割儲存格</translation>
+    </message>
+    <message>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="204"/>
         <source>Cut</source>
         <translation>剪下</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="206"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="206"/>
         <source>Copy</source>
         <translation>複製</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="208"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="208"/>
         <source>Paste</source>
         <translation>貼上</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="210"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="210"/>
         <source>Delete</source>
         <translation>刪除</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="191"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="670"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="191"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="670"/>
         <source>Properties…</source>
         <translation>屬性…</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="211"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="672"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="211"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="672"/>
         <source>Configuration Table…</source>
         <translation>參數設定面板…</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="142"/>
+        <source>Insert %n Row(s) Above</source>
+        <translation>
+            <numerusform>在上面插入 %n 行</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="147"/>
+        <source>Insert %n Row(s) Below</source>
+        <translation>
+            <numerusform>在下面插入 %n 行</numerusform>
+        </translation>
     </message>
 </context>
 <context>
     <name>SpreadsheetGui::SheetView</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSpreadsheetView.cpp" line="262"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSpreadsheetView.cpp" line="262"/>
         <source>Export PDF</source>
         <translation>匯出 PDF</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiSpreadsheetView.cpp" line="263"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSpreadsheetView.cpp" line="263"/>
         <source>PDF file</source>
         <translation>PDF 檔</translation>
     </message>
@@ -1868,12 +1893,12 @@ Defaults to: %V = %A
 <context>
     <name>Spreadsheet_Controller</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="919"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="919"/>
         <source>Add controller</source>
         <translation>新增控制器</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="922"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="922"/>
         <source>Adds a cell controller to a selected spreadsheet</source>
         <translation>將儲存格控制器新增到選定的試算表</translation>
     </message>
@@ -1881,12 +1906,12 @@ Defaults to: %V = %A
 <context>
     <name>Spreadsheet_Create</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="902"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="902"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="905"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="905"/>
         <source>Adds a spreadsheet object to the active document</source>
         <translation>將試算表對象新增到啟用文件</translation>
     </message>
@@ -1894,12 +1919,12 @@ Defaults to: %V = %A
 <context>
     <name>Spreadsheet_PropertyController</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="944"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="944"/>
         <source>Add property controller</source>
         <translation>新增屬性控制器</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="947"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/App/Spreadsheet_legacy.py" line="947"/>
         <source>Adds a property controller to a selected spreadsheet</source>
         <translation>將屬性控制器新增到選定的試算表</translation>
     </message>
@@ -1907,27 +1932,27 @@ Defaults to: %V = %A
 <context>
     <name>Workbench</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="49"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="49"/>
         <source>Spreadsheet</source>
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="49"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="49"/>
         <source>Spreadsheet workbench</source>
         <translation>試算表工作台</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="50"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="50"/>
         <source>&amp;Spreadsheet</source>
         <translation>試算表(&amp;S)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="51"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="51"/>
         <source>&amp;Alignment</source>
         <translation>對齊(&amp;A)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="52"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiWorkbench.cpp" line="52"/>
         <source>&amp;Styles</source>
         <translation>樣式(&amp;S)</translation>
     </message>
@@ -1935,17 +1960,17 @@ Defaults to: %V = %A
 <context>
     <name>ZoomableView</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/ZoomableView.cpp" line="112"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/ZoomableView.cpp" line="112"/>
         <source>New zoom level:</source>
         <translation>新縮放等級:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/ZoomableView.cpp" line="112"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/ZoomableView.cpp" line="112"/>
         <source>Zoom level</source>
         <translation>縮放等級</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.00/src/Mod/Spreadsheet/Gui/ZoomableView.cpp" line="112"/>
+        <location filename="/media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/ZoomableView.cpp" line="112"/>
         <source>Zoom Level</source>
         <translation>縮放等級</translation>
     </message>

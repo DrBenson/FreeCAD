@@ -6,8 +6,6 @@ set(PathGui_LIBS
     FreeCADGui
 )
 
-PYSIDE_WRAP_RC(Path_QRC_SRCS Resources/Path.qrc)
-
 set (Path_TR_QRC ${CMAKE_CURRENT_BINARY_DIR}/Resources/Path_translation.qrc)
 qt_find_and_add_translation(QM_SRCS "Resources/translations/*_*.ts"
     ${CMAKE_CURRENT_BINARY_DIR}/Resources/translations)
@@ -65,7 +63,7 @@ SET(PathGuiIcon_SVG
     Resources/icons/CAMWorkbench.svg
 )
 
-add_library(PathGui SHARED ${PathGui_SRCS} ${PathGuiIcon_SVG})
+add_library(PathGui SHARED ${PathGui_SRCS} ${PathResource_SRCS} ${PathGuiIcon_SVG})
 
 if(FREECAD_USE_PCH)
     target_precompile_headers(PathGui PRIVATE
@@ -95,11 +93,12 @@ SET_PYTHON_PREFIX_SUFFIX(PathGui)
 
 fc_copy_sources(PathGui "${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_DATADIR}/Mod/CAM" ${PathGuiIcon_SVG})
 
-fc_target_copy_resource(PathGui
-    "${CMAKE_CURRENT_BINARY_DIR}"
-    "${CMAKE_BINARY_DIR}/Mod/CAM"
-    Path_rc.py)
-
+IF (BUILD_GUI)
+    fc_target_copy_resource(PathGui
+        "${CMAKE_CURRENT_BINARY_DIR}"
+        "${CMAKE_BINARY_DIR}/Mod/CAM"
+        Path_rc.py)
+ENDIF (BUILD_GUI)
 INSTALL(TARGETS PathGui DESTINATION ${CMAKE_INSTALL_LIBDIR})
 INSTALL(
     FILES
@@ -108,4 +107,3 @@ INSTALL(
         "${CMAKE_INSTALL_DATADIR}/Mod/CAM"
 )
 INSTALL(FILES ${PathGuiIcon_SVG} DESTINATION "${CMAKE_INSTALL_DATADIR}/Mod/CAM/Resources/icons")
-INSTALL(FILES ${Path_QRC_SRCS} DESTINATION Mod/CAM)
