@@ -59,6 +59,7 @@ ColumnNames = [
 ]
 
 
+
 class CommandCreateBom:
     def __init__(self):
         pass

@@ -17,16 +17,6 @@
 <context>
     <name>CmdRenderingOrder</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1800"/>
-        <source>Rendering Order</source>
-        <translation>算繪順序</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1801"/>
-        <source>Reorders items in the rendering order</source>
-        <translation>在渲染順序中重新排序物體</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1734"/>
         <source>Configure rendering order</source>
         <translation>設定渲染順序</translation>
@@ -35,6 +25,16 @@
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1735"/>
         <source>Reorder the items in the list to configure rendering order.</source>
         <translation>對清單中的項目重新排序以分配渲染順序.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1800"/>
+        <source>Rendering Order</source>
+        <translation>算繪順序</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1801"/>
+        <source>Reorders items in the rendering order</source>
+        <translation>在渲染順序中重新排序物體</translation>
     </message>
 </context>
 <context>
@@ -168,15 +168,6 @@
 <context>
     <name>CmdSketcherCarbonCopy</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1846"/>
-        <source>Carbon Copy</source>
-        <translation>製作複製體</translation>
-    </message>
-    <message>
-        <source>Copies the geometry of another sketch</source>
-        <translation>從其它草圖複製幾何圖元</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1658"/>
         <source>Create carbon copy</source>
         <translation>建立複製體</translation>
@@ -187,22 +178,21 @@
         <translation>從其它草圖複製幾何圖元</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1846"/>
+        <source>Carbon Copy</source>
+        <translation>製作複製體</translation>
+    </message>
+    <message>
+        <source>Copies the geometry of another sketch</source>
+        <translation>從其它草圖複製幾何圖元</translation>
+    </message>
+    <message>
         <source>Carbon copy</source>
         <translation>製作複製體</translation>
     </message>
 </context>
 <context>
     <name>CmdSketcherChangeDimensionConstraint</name>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9789"/>
-        <source>Change value</source>
-        <translation>變更值</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9790"/>
-        <source>Change the value of a dimensional constraint</source>
-        <translation>變更尺寸約束的值</translation>
-    </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="10086"/>
         <source>Edit Value</source>
@@ -212,6 +202,16 @@
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="10087"/>
         <source>Edits the value of a dimensional constraint</source>
         <translation>編輯尺寸約束的值</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9789"/>
+        <source>Change value</source>
+        <translation>變更值</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9790"/>
+        <source>Change the value of a dimensional constraint</source>
+        <translation>變更尺寸約束的值</translation>
     </message>
 </context>
 <context>
@@ -412,6 +412,11 @@
 <context>
     <name>CmdSketcherCompCreateBSpline</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1047"/>
+        <source>Create B-spline</source>
+        <translation>建立B雲形線</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1280"/>
         <source>B-Spline</source>
         <translation>B-雲形線</translation>
@@ -420,11 +425,6 @@
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1281"/>
         <source>Creates a B-spline curve defined by control points</source>
         <translation>建立以控制點定義的 B-雲形曲線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1047"/>
-        <source>Create B-spline</source>
-        <translation>建立B雲形線</translation>
     </message>
     <message>
         <source>Create a B-spline in the sketch</source>
@@ -523,14 +523,9 @@
 <context>
     <name>CmdSketcherCompCreateFillets</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1484"/>
-        <source>Create fillet or chamfer</source>
-        <translation>建立圓角或倒角</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1485"/>
-        <source>Create a fillet or chamfer between two lines</source>
-        <translation>在兩條線之間建立圓角或倒角</translation>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1431"/>
+        <source>Create fillet</source>
+        <translation>建立圓角</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1494"/>
@@ -548,9 +543,14 @@
         <translation>保留角落的草圖圓角</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1431"/>
-        <source>Create fillet</source>
-        <translation>建立圓角</translation>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1484"/>
+        <source>Create fillet or chamfer</source>
+        <translation>建立圓角或倒角</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1485"/>
+        <source>Create a fillet or chamfer between two lines</source>
+        <translation>在兩條線之間建立圓角或倒角</translation>
     </message>
     <message>
         <source>Create a fillet between two lines</source>
@@ -576,13 +576,13 @@
         <translation>矩形</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="698"/>
-        <source>Creates a rectangle</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="236"/>
+        <source>Create rectangle</source>
         <translation>建立矩形</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="236"/>
-        <source>Create rectangle</source>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="698"/>
+        <source>Creates a rectangle</source>
         <translation>建立矩形</translation>
     </message>
     <message>
@@ -695,16 +695,6 @@
 <context>
     <name>CmdSketcherCompExternal</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1447"/>
-        <source>Create external</source>
-        <translation>建立外部幾何圖形連結</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1448"/>
-        <source>Create external edges linked to external geometries.</source>
-        <translation>建立連結到外部幾何圖形的外部邊緣.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1717"/>
         <source>External Geometry</source>
         <translation>外部幾何圖形</translation>
@@ -714,9 +704,29 @@
         <source>Creates sketch elements linked to geometry defined outside the sketch</source>
         <translation>建立與草圖外部定義的幾何相連的草圖元素</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1447"/>
+        <source>Create external</source>
+        <translation>建立外部幾何圖形連結</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1448"/>
+        <source>Create external edges linked to external geometries.</source>
+        <translation>建立連結到外部幾何圖形的外部邊緣.</translation>
+    </message>
 </context>
 <context>
     <name>CmdSketcherCompHorizontalVertical</name>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3041"/>
+        <source>Horizontal/Vertical Constraint</source>
+        <translation>約束 水平/垂直</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3042"/>
+        <source>Constrains the selected elements either horizontally or vertically</source>
+        <translation>水平或垂直約束選取的元素</translation>
+    </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2605"/>
         <source>Horizontal/Vertical</source>
@@ -732,29 +742,9 @@
         <source>Constrain horizontal/vertical</source>
         <translation>約束 水平/垂直</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3041"/>
-        <source>Horizontal/Vertical Constraint</source>
-        <translation>約束 水平/垂直</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3042"/>
-        <source>Constrains the selected elements either horizontally or vertically</source>
-        <translation>水平或垂直約束選取的元素</translation>
-    </message>
 </context>
 <context>
     <name>CmdSketcherCompLine</name>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="115"/>
-        <source>Create polyline</source>
-        <translation>建立聚合線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="116"/>
-        <source>Create a polyline in the sketch. &apos;M&apos; Key cycles behaviour</source>
-        <translation>於草圖中建立聚合線,「M」鍵可循環切換</translation>
-    </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="145"/>
         <source>Polyline</source>
@@ -764,6 +754,16 @@
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="146"/>
         <source>Creates a continuous polyline</source>
         <translation>建立連續的多段線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="115"/>
+        <source>Create polyline</source>
+        <translation>建立聚合線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="116"/>
+        <source>Create a polyline in the sketch. &apos;M&apos; Key cycles behaviour</source>
+        <translation>於草圖中建立聚合線,「M」鍵可循環切換</translation>
     </message>
 </context>
 <context>
@@ -816,16 +816,6 @@
 <context>
     <name>CmdSketcherCompToggleConstraints</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="1308"/>
-        <source>Toggle constraints</source>
-        <translation>切換約束</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="1309"/>
-        <source>Toggle constrain tools.</source>
-        <translation>切換約束工具.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="1508"/>
         <source>Toggle Constraints</source>
         <translation>切換約束</translation>
@@ -834,6 +824,16 @@
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="1509"/>
         <source>Toggle constrain tools</source>
         <translation>切換約束工具</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="1308"/>
+        <source>Toggle constraints</source>
+        <translation>切換約束</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="1309"/>
+        <source>Toggle constrain tools.</source>
+        <translation>切換約束工具.</translation>
     </message>
 </context>
 <context>
@@ -876,6 +876,11 @@
 <context>
     <name>CmdSketcherConstrainBlock</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="1854"/>
+        <source>Block the selected edge from moving</source>
+        <translation>阻止所選邊緣移動</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3781"/>
         <source>Block Constraint</source>
         <translation>定位拘束</translation>
@@ -884,11 +889,6 @@
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3782"/>
         <source>Constrains the selected edges as fixed</source>
         <translation>約束選取的邊緣為固定</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="1854"/>
-        <source>Block the selected edge from moving</source>
-        <translation>阻止所選邊緣移動</translation>
     </message>
     <message>
         <source>Constrain block</source>
@@ -902,6 +902,11 @@
 <context>
     <name>CmdSketcherConstrainCoincident</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2182"/>
+        <source>Create a coincident constraint between points, or a concentric constraint between circles, arcs, and ellipses</source>
+        <translation>在點之間建立重合約束，或在圓、圓弧和橢圓之間建立同心約束</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4493"/>
         <source>Coincident Constraint</source>
         <translation>共點拘束</translation>
@@ -910,11 +915,6 @@
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4494"/>
         <source>Constrains the selected elements to be coincident</source>
         <translation>約束選取的元素重疊</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2182"/>
-        <source>Create a coincident constraint between points, or a concentric constraint between circles, arcs, and ellipses</source>
-        <translation>在點之間建立重合約束，或在圓、圓弧和橢圓之間建立同心約束</translation>
     </message>
     <message>
         <source>Constrain coincident</source>
@@ -928,16 +928,6 @@
 <context>
     <name>CmdSketcherConstrainCoincidentUnified</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3539"/>
-        <source>Constrain coincident</source>
-        <translation>約束重合</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3540"/>
-        <source>Create a coincident constraint between points, or fix a point on an edge, or a concentric constraint between circles, arcs, and ellipses</source>
-        <translation>建立點之間的重合約束，或固定邊緣上的點，或圓、圓弧和橢圓之間的同心約束</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3981"/>
         <source>Coincident Constraint</source>
         <translation>共點拘束</translation>
@@ -946,6 +936,16 @@
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3982"/>
         <source>Constrains the selected elements to be coincident</source>
         <translation>約束選取的元素重疊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3539"/>
+        <source>Constrain coincident</source>
+        <translation>約束重合</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3540"/>
+        <source>Create a coincident constraint between points, or fix a point on an edge, or a concentric constraint between circles, arcs, and ellipses</source>
+        <translation>建立點之間的重合約束，或固定邊緣上的點，或圓、圓弧和橢圓之間的同心約束</translation>
     </message>
 </context>
 <context>
@@ -972,6 +972,11 @@
 <context>
     <name>CmdSketcherConstrainDistance</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2469"/>
+        <source>Fix a length of a line or the distance between a line and a vertex or between two circles</source>
+        <translation>固定線長或線與頂點間距或兩個圓之間</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4595"/>
         <source>Distance Dimension</source>
         <translation>距離尺寸</translation>
@@ -980,11 +985,6 @@
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4596"/>
         <source>Constrains the vertical distance between two points, or from a point to the origin if one is selected</source>
         <translation>約束兩點間的垂直距離，或從點到原點的垂直距離(若已選取原點)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2469"/>
-        <source>Fix a length of a line or the distance between a line and a vertex or between two circles</source>
-        <translation>固定線長或線與頂點間距或兩個圓之間</translation>
     </message>
     <message>
         <source>Constrain distance</source>
@@ -1084,6 +1084,16 @@
 <context>
     <name>CmdSketcherConstrainHorVer</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3359"/>
+        <source>Horizontal/Vertical Constraint</source>
+        <translation>約束 水平/垂直</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3360"/>
+        <source>Constrains the selected elements either horizontally or vertically, based on their closest alignment</source>
+        <translation>根據最接近的對齊方式，在水平或垂直方向約束選取的元素</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="2914"/>
         <source>Horizontal/Vertical</source>
         <translation>水平/垂直</translation>
@@ -1098,24 +1108,9 @@
         <source>Constrain horizontal/vertical</source>
         <translation>約束 水平/垂直</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3359"/>
-        <source>Horizontal/Vertical Constraint</source>
-        <translation>約束 水平/垂直</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3360"/>
-        <source>Constrains the selected elements either horizontally or vertically, based on their closest alignment</source>
-        <translation>根據最接近的對齊方式，在水平或垂直方向約束選取的元素</translation>
-    </message>
 </context>
 <context>
     <name>CmdSketcherConstrainHorizontal</name>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3080"/>
-        <source>Constrain horizontal</source>
-        <translation>水平拘束</translation>
-    </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3405"/>
         <source>Horizontal Constraint</source>
@@ -1125,6 +1120,11 @@
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3406"/>
         <source>Constrains the selected elements horizontally</source>
         <translation>水平約束選取的元素</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3080"/>
+        <source>Constrain horizontal</source>
+        <translation>水平拘束</translation>
     </message>
     <message>
         <source>Create a horizontal constraint on the selected item</source>
@@ -1149,6 +1149,12 @@
 <context>
     <name>CmdSketcherConstrainLock</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="1587"/>
+        <source>Create both a horizontal and a vertical distance constraint
+on the selected vertex</source>
+        <translation>在選定頂點上建立水平和垂直距離約束</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3496"/>
         <source>Lock Position</source>
         <translation>鎖定位置</translation>
@@ -1157,12 +1163,6 @@
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3497"/>
         <source>Constrains the selected vertices by adding horizontal and vertical distance constraints</source>
         <translation>藉由加入水平與垂直距離的約束，來約束選取的頂點</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="1587"/>
-        <source>Create both a horizontal and a vertical distance constraint
-on the selected vertex</source>
-        <translation>在選定頂點上建立水平和垂直距離約束</translation>
     </message>
     <message>
         <source>Constrain lock</source>
@@ -1219,11 +1219,6 @@ on the selected vertex</source>
 <context>
     <name>CmdSketcherConstrainPointOnObject</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4223"/>
-        <source>Constrain point on object</source>
-        <translation>拘束點於物體上</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4543"/>
         <source>Point-On-Object Constraint</source>
         <translation>約束物體上的點</translation>
@@ -1232,6 +1227,11 @@ on the selected vertex</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4544"/>
         <source>Constrains the selected point onto the selected object</source>
         <translation>將選取點約束在選取物件上</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="4223"/>
+        <source>Constrain point on object</source>
+        <translation>拘束點於物體上</translation>
     </message>
     <message>
         <source>Fix a point onto an object</source>
@@ -1245,6 +1245,11 @@ on the selected vertex</source>
 <context>
     <name>CmdSketcherConstrainRadiam</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6388"/>
+        <source>Fix the diameter if a circle is chosen, or the radius if an arc/spline pole is chosen</source>
+        <translation>若選擇圓則固定直徑，若選擇圓弧/樣條極則固定半徑</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8323"/>
         <source>Radius/Diameter Dimension</source>
         <translation>半徑/直徑尺寸</translation>
@@ -1253,11 +1258,6 @@ on the selected vertex</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8324"/>
         <source>Constrains the radius of the selected arc or the diameter of the selected circle</source>
         <translation>約束選取弧的半徑或選取圓的直徑</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6388"/>
-        <source>Fix the diameter if a circle is chosen, or the radius if an arc/spline pole is chosen</source>
-        <translation>若選擇圓則固定直徑，若選擇圓弧/樣條極則固定半徑</translation>
     </message>
     <message>
         <source>Constrain auto radius/diameter</source>
@@ -1271,16 +1271,6 @@ on the selected vertex</source>
 <context>
     <name>CmdSketcherConstrainRadius</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7642"/>
-        <source>Radius Dimension</source>
-        <translation>半徑尺寸</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7643"/>
-        <source>Constrains the radius of the selected circle or arc</source>
-        <translation>限制選取圓或圓弧的半徑</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7294"/>
         <source>Constrain radius</source>
         <translation>半徑拘束</translation>
@@ -1289,6 +1279,16 @@ on the selected vertex</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7295"/>
         <source>Fix the radius of a circle or an arc</source>
         <translation>固定圓或弧之半徑</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7642"/>
+        <source>Radius Dimension</source>
+        <translation>半徑尺寸</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="7643"/>
+        <source>Constrains the radius of the selected circle or arc</source>
+        <translation>限制選取圓或圓弧的半徑</translation>
     </message>
     <message>
         <source>Constrain radius or weight</source>
@@ -1302,16 +1302,6 @@ on the selected vertex</source>
 <context>
     <name>CmdSketcherConstrainSnellsLaw</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9889"/>
-        <source>Refraction Constraint</source>
-        <translation>被動參考拘束</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9890"/>
-        <source>Constrains the selected elements based on the refraction law (Snell&apos;s Law)</source>
-        <translation>根據折射定律 (Snell&apos;s Law) 約束選取的元素</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="8152"/>
         <source>Constrain refraction (Snell&apos;s law)</source>
         <translation>折射拘束(司乃耳定律)</translation>
@@ -1321,6 +1311,16 @@ on the selected vertex</source>
         <source>Create a refraction law (Snell&apos;s law)constraint between two endpoints of rays
 and an edge as an interface.</source>
         <translation>建立一個以兩點作為光線方向，並以一邊做為交界面的折射拘束(司乃耳定律).</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9889"/>
+        <source>Refraction Constraint</source>
+        <translation>被動參考拘束</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9890"/>
+        <source>Constrains the selected elements based on the refraction law (Snell&apos;s Law)</source>
+        <translation>根據折射定律 (Snell&apos;s Law) 約束選取的元素</translation>
     </message>
     <message>
         <source>Constrain refraction (Snell&apos;s law&apos;)</source>
@@ -1335,11 +1335,6 @@ and an edge as an interface.</source>
 <context>
     <name>CmdSketcherConstrainSymmetric</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9233"/>
-        <source>Constrain symmetric</source>
-        <translation>拘束符號</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9546"/>
         <source>Symmetric Constraint</source>
         <translation>對稱拘束</translation>
@@ -1348,6 +1343,11 @@ and an edge as an interface.</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9547"/>
         <source>Constrains the selected elements to be symmetric</source>
         <translation>約束所選元素為對稱元素</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="9233"/>
+        <source>Constrain symmetric</source>
+        <translation>拘束符號</translation>
     </message>
     <message>
         <source>Create a symmetry constraint between two points
@@ -1361,6 +1361,16 @@ with respect to a line or a third point</source>
 </context>
 <context>
     <name>CmdSketcherConstrainTangent</name>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6767"/>
+        <source>Tangent/Collinear Constraint</source>
+        <translation>切線/共線約束</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6768"/>
+        <source>Constrains the selected elements to be tangent or collinear</source>
+        <translation>約束選取的元素相切或相交</translation>
+    </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6430"/>
         <source>Constrain tangent or collinear</source>
@@ -1382,16 +1392,6 @@ with respect to a line or a third point</source>
         <translation>在兩個實體之間建立相切或共線約束</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6767"/>
-        <source>Tangent/Collinear Constraint</source>
-        <translation>切線/共線約束</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="6768"/>
-        <source>Constrains the selected elements to be tangent or collinear</source>
-        <translation>約束選取的元素相切或相交</translation>
-    </message>
-    <message>
         <source>Constrain tangent</source>
         <translation>相切拘束</translation>
     </message>
@@ -1403,11 +1403,6 @@ with respect to a line or a third point</source>
 <context>
     <name>CmdSketcherConstrainVertical</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3125"/>
-        <source>Constrain vertical</source>
-        <translation>垂直拘束</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3450"/>
         <source>Vertical Constraint</source>
         <translation>垂直拘束</translation>
@@ -1416,6 +1411,11 @@ with respect to a line or a third point</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3451"/>
         <source>Constrains the selected elements vertically</source>
         <translation>垂直約束選取的元素</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="3125"/>
+        <source>Constrain vertical</source>
+        <translation>垂直拘束</translation>
     </message>
     <message>
         <source>Create a vertical constraint on the selected item</source>
@@ -1461,16 +1461,6 @@ with respect to a line or a third point</source>
 <context>
     <name>CmdSketcherCopyClipboard</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="215"/>
-        <source>C&amp;opy in sketcher</source>
-        <translation>在草圖中複製(&amp;o)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="216"/>
-        <source>Copy selected geometries and constraints to the clipboard</source>
-        <translation>將選取的幾何圖形和約束複製到剪貼簿</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="225"/>
         <source>C&amp;opy Elements</source>
         <translation>複製元件(&amp;o)</translation>
@@ -1478,6 +1468,16 @@ with respect to a line or a third point</source>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="226"/>
         <source>Copies the selected geometries and constraints to the clipboard</source>
+        <translation>將選取的幾何圖形和約束複製到剪貼簿</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="215"/>
+        <source>C&amp;opy in sketcher</source>
+        <translation>在草圖中複製(&amp;o)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="216"/>
+        <source>Copy selected geometries and constraints to the clipboard</source>
         <translation>將選取的幾何圖形和約束複製到剪貼簿</translation>
     </message>
 </context>
@@ -1658,6 +1658,11 @@ with respect to a line or a third point</source>
 <context>
     <name>CmdSketcherCreateBSpline</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="916"/>
+        <source>Create a B-spline by control points in the sketch.</source>
+        <translation>由草圖中的控制點建立 B雲形線.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1346"/>
         <source>B-Spline</source>
         <translation>B-雲形線</translation>
@@ -1666,11 +1671,6 @@ with respect to a line or a third point</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1347"/>
         <source>Creates a B-spline curve defined by control points</source>
         <translation>由草圖中的控制點建立 B雲形曲線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="916"/>
-        <source>Create a B-spline by control points in the sketch.</source>
-        <translation>由草圖中的控制點建立 B雲形線.</translation>
     </message>
     <message>
         <source>Create B-spline</source>
@@ -1684,16 +1684,6 @@ with respect to a line or a third point</source>
 <context>
     <name>CmdSketcherCreateBSplineByInterpolation</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1419"/>
-        <source>B-Spline From Knots</source>
-        <translation>透過節點建立 B 雲形曲線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1420"/>
-        <source>Creates a B-spline from knots, i.e. from interpolation</source>
-        <translation>透過插值在草圖中透過結建立 B 雲形線</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="979"/>
         <source>Create B-spline by knots</source>
         <translation>透過節點建立 B 雲形曲線</translation>
@@ -1703,9 +1693,29 @@ with respect to a line or a third point</source>
         <source>Create a B-spline by knots, i.e. by interpolation, in the sketch.</source>
         <translation>透過插值在草圖中透過結建立 B 雲形線.</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1419"/>
+        <source>B-Spline From Knots</source>
+        <translation>透過節點建立 B 雲形曲線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1420"/>
+        <source>Creates a B-spline from knots, i.e. from interpolation</source>
+        <translation>透過插值在草圖中透過結建立 B 雲形線</translation>
+    </message>
 </context>
 <context>
     <name>CmdSketcherCreateChamfer</name>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1559"/>
+        <source>Chamfer</source>
+        <translation>倒角</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1557"/>
+        <source>Creates a chamfer between 2 selected lines or at coincident points</source>
+        <translation>在兩條選取的線之間或重疊點上建立倒角</translation>
+    </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1453"/>
         <source>Create chamfer</source>
@@ -1717,19 +1727,9 @@ with respect to a line or a third point</source>
         <translation>在兩條線之間或重合點處建立圓角</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1559"/>
-        <source>Chamfer</source>
-        <translation>倒角</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1560"/>
         <source>Creates a chamfer between 2 selected lines or 1 coincident point</source>
         <translation>在兩條線之間或重合點處建立圓角</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1557"/>
-        <source>Creates a chamfer between 2 selected lines or at coincident points</source>
-        <translation>在兩條選取的線之間或重疊點上建立倒角</translation>
     </message>
 </context>
 <context>
@@ -1966,6 +1966,11 @@ with respect to a line or a third point</source>
 <context>
     <name>CmdSketcherCreatePeriodicBSpline</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="949"/>
+        <source>Create a periodic B-spline by control points in the sketch.</source>
+        <translation>從草圖中的控制點建立週期性B雲形線.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1383"/>
         <source>Periodic B-Spline</source>
         <translation>週期性B雲形線</translation>
@@ -1974,11 +1979,6 @@ with respect to a line or a third point</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1384"/>
         <source>Creates a periodic B-spline curve defined by control points</source>
         <translation>從草圖中的控制點建立週期性B雲形曲線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="949"/>
-        <source>Create a periodic B-spline by control points in the sketch.</source>
-        <translation>從草圖中的控制點建立週期性B雲形線.</translation>
     </message>
     <message>
         <source>Create periodic B-spline</source>
@@ -1992,16 +1992,6 @@ with respect to a line or a third point</source>
 <context>
     <name>CmdSketcherCreatePeriodicBSplineByInterpolation</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1456"/>
-        <source>Periodic B-Spline From Knots</source>
-        <translation>透過節點建立週期性 B 雲形線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1457"/>
-        <source>Creates a periodic B-spline defined by knots using interpolation</source>
-        <translation>使用內插建立由結定義的週期性 B 雲形線</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1011"/>
         <source>Create periodic B-spline by knots</source>
         <translation>透過節點建立週期性 B 雲形線</translation>
@@ -2010,6 +2000,16 @@ with respect to a line or a third point</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1013"/>
         <source>Create a periodic B-spline by knots, i.e. by interpolation, in the sketch.</source>
         <translation>在草圖中透過結(透過內插)建立週期性 B 雲形線.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1456"/>
+        <source>Periodic B-Spline From Knots</source>
+        <translation>透過節點建立週期性 B 雲形線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1457"/>
+        <source>Creates a periodic B-spline defined by knots using interpolation</source>
+        <translation>使用內插建立由結定義的週期性 B 雲形線</translation>
     </message>
 </context>
 <context>
@@ -2223,16 +2223,6 @@ Note: While the Text constraint is active, any constraints applied directly to t
 <context>
     <name>CmdSketcherCut</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="246"/>
-        <source>C&amp;ut in sketcher</source>
-        <translation>在草圖中剪下(&amp;u)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="247"/>
-        <source>Cut selected geometries and constraints to the clipboard</source>
-        <translation>將選取的幾何圖形和約束剪下到剪貼簿</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="256"/>
         <source>C&amp;ut Elements</source>
         <translation>切割元件(&amp;u)</translation>
@@ -2241,6 +2231,16 @@ Note: While the Text constraint is active, any constraints applied directly to t
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="257"/>
         <source>Cuts the selected geometries and constraints to the clipboard</source>
         <translation>剪下選取的幾何圖形和限制條件到剪貼簿</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="246"/>
+        <source>C&amp;ut in sketcher</source>
+        <translation>在草圖中剪下(&amp;u)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="247"/>
+        <source>Cut selected geometries and constraints to the clipboard</source>
+        <translation>將選取的幾何圖形和約束剪下到剪貼簿</translation>
     </message>
 </context>
 <context>
@@ -2400,16 +2400,6 @@ Left clicking on empty space will validate the current constraint. Right clickin
 <context>
     <name>CmdSketcherGrid</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1278"/>
-        <source>Toggle Grid</source>
-        <translation>切換格線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1280"/>
-        <source>Toggles the grid display in the active sketch</source>
-        <translation>切換作用中草圖的網格顯示</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1218"/>
         <source>Toggle grid</source>
         <translation>切換格線</translation>
@@ -2418,6 +2408,16 @@ Left clicking on empty space will validate the current constraint. Right clickin
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1220"/>
         <source>Toggle the grid in the sketch. In the menu you can change grid settings.</source>
         <translation>切換草圖中的網格. 在功能表中您可以變更網格設定.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1278"/>
+        <source>Toggle Grid</source>
+        <translation>切換格線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1280"/>
+        <source>Toggles the grid display in the active sketch</source>
+        <translation>切換作用中草圖的網格顯示</translation>
     </message>
     <message>
         <source>Activate Grid</source>
@@ -2485,6 +2485,16 @@ Left clicking on empty space will validate the current constraint. Right clickin
 <context>
     <name>CmdSketcherIntersection</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1809"/>
+        <source>External Intersection</source>
+        <translation>外部交集</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1811"/>
+        <source>Creates the intersection of external geometry with the sketch plane</source>
+        <translation>建立外部幾何與草圖平面的交點</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1535"/>
         <source>Create external intersection geometry</source>
         <translation>建立外部相交幾何圖形</translation>
@@ -2497,16 +2507,6 @@ You can use the toggle construction tool.</source>
         <translation>建立外部幾何體與草圖平面的相交邊緣.
 外部邊緣可以是定義幾何形狀或建構幾何形狀.
 您可以使用切換建構工具.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1809"/>
-        <source>External Intersection</source>
-        <translation>外部交集</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1811"/>
-        <source>Creates the intersection of external geometry with the sketch plane</source>
-        <translation>建立外部幾何與草圖平面的交點</translation>
     </message>
 </context>
 <context>
@@ -2556,6 +2556,20 @@ You can use the toggle construction tool.</source>
 <context>
     <name>CmdSketcherMapSketch</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="576"/>
+        <source>Attach Sketch</source>
+        <translation>附加草圖</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="577"/>
+        <source>Attaches a sketch to the selected geometry element</source>
+        <translation>附加草圖到選取的幾何元素</translation>
+    </message>
+    <message>
+        <source>Some of the selected objects depend on the sketch to be mapped. Circular dependencies are not allowed.</source>
+        <translation>部分選定的物體取決於要對映的草圖. 循環相依不允許.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="552"/>
         <source>Attach sketch...</source>
         <translation>附加草圖...</translation>
@@ -2571,22 +2585,8 @@ then call this command, then choose the desired sketch.</source>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="576"/>
-        <source>Attach Sketch</source>
-        <translation>附加草圖</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="576"/>
         <source>Attach Sketch…</source>
         <translation>附加草圖…</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="577"/>
-        <source>Attaches a sketch to the selected geometry element</source>
-        <translation>附加草圖到選取的幾何元素</translation>
-    </message>
-    <message>
-        <source>Some of the selected objects depend on the sketch to be mapped. Circular dependencies are not allowed.</source>
-        <translation>部分選定的物體取決於要對映的草圖. 循環相依不允許.</translation>
     </message>
     <message>
         <source>Map sketch to face...</source>
@@ -2638,13 +2638,6 @@ then call this command, then choose the desired sketch.</source>
 <context>
     <name>CmdSketcherMirrorSketch</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="827"/>
-        <source>Creates a new mirrored sketch for each selected sketch
-by using the X or Y axes, or the origin point,
-as mirroring reference.</source>
-        <translation>使用 X 或 Y 軸或原點作為鏡像參照，為每個選定草圖建立新的鏡像草圖.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="872"/>
         <source>Mirror Sketch</source>
         <translation>鏡射草圖</translation>
@@ -2660,6 +2653,13 @@ as mirroring reference</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="891"/>
         <source>Select at least 1 sketch</source>
         <translation>至少選擇 1 個草圖</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="827"/>
+        <source>Creates a new mirrored sketch for each selected sketch
+by using the X or Y axes, or the origin point,
+as mirroring reference.</source>
+        <translation>使用 X 或 Y 軸或原點作為鏡像參照，為每個選定草圖建立新的鏡像草圖.</translation>
     </message>
     <message>
         <source>Wrong selection</source>
@@ -2715,6 +2715,16 @@ as mirroring reference.</source>
 <context>
     <name>CmdSketcherOffset</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2326"/>
+        <source>Offset</source>
+        <translation>偏移</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2329"/>
+        <source>Adds an equidistant closed contour around selected geometry: positive values offset outward, negative values inward</source>
+        <translation>在選取的幾何形狀周圍新增等距閉合輪廓: 正值向外偏移，負值向內偏移</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2267"/>
         <source>Offset geometry</source>
         <translation>偏移幾何形狀</translation>
@@ -2730,33 +2740,13 @@ as mirroring reference.</source>
         <translation>偏移選取的幾何圖形. 正偏移長度使偏移向外，負長度向內偏移.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2326"/>
-        <source>Offset</source>
-        <translation>偏移</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2327"/>
         <source>Offsets the selected geometry: positive values offset outward, negative values inward</source>
         <translation>偏移選取的幾何圖形. 正偏移長度使偏移向外，負長度向內偏移</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2329"/>
-        <source>Adds an equidistant closed contour around selected geometry: positive values offset outward, negative values inward</source>
-        <translation>在選取的幾何形狀周圍新增等距閉合輪廓: 正值向外偏移，負值向內偏移</translation>
-    </message>
 </context>
 <context>
     <name>CmdSketcherPaste</name>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="286"/>
-        <source>P&amp;aste in sketcher</source>
-        <translation>在草圖中貼上(&amp;a)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="287"/>
-        <source>Paste selected geometries and constraints from the clipboard</source>
-        <translation>從剪貼簿貼上選定的幾何圖形和約束</translation>
-    </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="296"/>
         <source>P&amp;aste Elements</source>
@@ -2767,9 +2757,29 @@ as mirroring reference.</source>
         <source>Pastes the geometries and constraints from the clipboard into the sketch</source>
         <translation>將剪貼板中的幾何圖形和限制貼到草圖中</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="286"/>
+        <source>P&amp;aste in sketcher</source>
+        <translation>在草圖中貼上(&amp;a)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="287"/>
+        <source>Paste selected geometries and constraints from the clipboard</source>
+        <translation>從剪貼簿貼上選定的幾何圖形和約束</translation>
+    </message>
 </context>
 <context>
     <name>CmdSketcherProjection</name>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1774"/>
+        <source>External Projection</source>
+        <translation>外部投影</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1775"/>
+        <source>Creates the projection of external geometry in the sketch plane</source>
+        <translation>在草圖平面中建立外部幾何的投影</translation>
+    </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1502"/>
         <source>Create external projection geometry</source>
@@ -2783,16 +2793,6 @@ You can use the toggle construction tool.</source>
         <translation>建立外部幾何體的投影邊緣.
 外部邊緣可以是定義幾何形狀或建構幾何形狀.
 您也可以使用切換結構.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1774"/>
-        <source>External Projection</source>
-        <translation>外部投影</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandCreateGeo.cpp" line="1775"/>
-        <source>Creates the projection of external geometry in the sketch plane</source>
-        <translation>在草圖平面中建立外部幾何的投影</translation>
     </message>
 </context>
 <context>
@@ -2835,13 +2835,6 @@ You can use the toggle construction tool.</source>
 <context>
     <name>CmdSketcherReorientSketch</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="416"/>
-        <source>Place the selected sketch on one of the global coordinate planes.
-This will clear the &apos;AttachmentSupport&apos; property, if any.</source>
-        <translation>將選定的草圖放置在全域座標平面之一上.
-這將清除 &apos;AttachmentSupport&apos; 屬性 (如果有).</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="439"/>
         <source>Reorient Sketch</source>
         <translation>調整草圖方向</translation>
@@ -2857,6 +2850,13 @@ This will clear the &apos;AttachmentSupport&apos; property, if any.</source>
 This will clear the AttachmentSupport property.</source>
         <translation>將選定的草圖放置在全域座標平面之一上.
 這將清除 &apos;AttachmentSupport&apos; 屬性.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="416"/>
+        <source>Place the selected sketch on one of the global coordinate planes.
+This will clear the &apos;AttachmentSupport&apos; property, if any.</source>
+        <translation>將選定的草圖放置在全域座標平面之一上.
+這將清除 &apos;AttachmentSupport&apos; 屬性 (如果有).</translation>
     </message>
     <message>
         <source>Reorient sketch...</source>
@@ -2893,6 +2893,16 @@ This will clear the &apos;Support&apos; property, if any.</source>
 <context>
     <name>CmdSketcherRotate</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2409"/>
+        <source>Rotate / Polar Transform</source>
+        <translation>旋轉 / 極座標變換</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2410"/>
+        <source>Rotates the selected geometry by creating &apos;n&apos; copies, enabling circular pattern creation</source>
+        <translation>旋轉選取的幾何圖形，製作 n 個備份，從而能夠建立圓形圖案</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2382"/>
         <source>Polar transform</source>
         <translation>極座標變換</translation>
@@ -2909,18 +2919,8 @@ This will clear the &apos;Support&apos; property, if any.</source>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2409"/>
-        <source>Rotate / Polar Transform</source>
-        <translation>旋轉 / 極座標變換</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2409"/>
         <source>Rotate/Polar Transform</source>
         <translation>旋轉 / 極座標變換</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2410"/>
-        <source>Rotates the selected geometry by creating &apos;n&apos; copies, enabling circular pattern creation</source>
-        <translation>旋轉選取的幾何圖形，製作 n 個備份，從而能夠建立圓形圖案</translation>
     </message>
 </context>
 <context>
@@ -3008,11 +3008,6 @@ This will clear the &apos;Support&apos; property, if any.</source>
 <context>
     <name>CmdSketcherSelectElementsWithDoFs</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="890"/>
-        <source>Select under-constrained elements</source>
-        <translation>選擇約束不足的元素</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="900"/>
         <source>Select Under-Constrained Elements</source>
         <translation>選擇約束不足的元素</translation>
@@ -3021,6 +3016,11 @@ This will clear the &apos;Support&apos; property, if any.</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="901"/>
         <source>Selects geometrical elements where the solver still detects unconstrained degrees of freedom</source>
         <translation>選擇幾何元件其求解器仍然可以偵測沒被拘束到的自由度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="890"/>
+        <source>Select under-constrained elements</source>
+        <translation>選擇約束不足的元素</translation>
     </message>
     <message>
         <source>Select geometrical elements where the solver still detects unconstrained degrees of freedom.</source>
@@ -3148,16 +3148,6 @@ This will clear the &apos;Support&apos; property, if any.</source>
 <context>
     <name>CmdSketcherSnap</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1541"/>
-        <source>Toggle Snap</source>
-        <translation>切換貼齊捕捉方式</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1543"/>
-        <source>Toggles snapping</source>
-        <translation>切換貼齊捕捉方式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1474"/>
         <source>Toggle snap</source>
         <translation>切換貼齊捕捉方式</translation>
@@ -3166,6 +3156,16 @@ This will clear the &apos;Support&apos; property, if any.</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1476"/>
         <source>Toggle all snap functionality. In the menu you can toggle &apos;Snap to grid&apos; and &apos;Snap to objects&apos; individually, and change further snap settings.</source>
         <translation>切換所有捕捉功能. 在功能表中，您可以單獨切換&quot;對齊網格&quot;和&quot;對齊物體&quot;，並更改進一步的對齊設定.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1541"/>
+        <source>Toggle Snap</source>
+        <translation>切換貼齊捕捉方式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="1543"/>
+        <source>Toggles snapping</source>
+        <translation>切換貼齊捕捉方式</translation>
     </message>
 </context>
 <context>
@@ -3234,11 +3234,6 @@ This will clear the &apos;Support&apos; property, if any.</source>
 <context>
     <name>CmdSketcherSymmetry</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1096"/>
-        <source>Creates symmetric of selected geometry. After starting the tool select the reference line or point.</source>
-        <translation>建立選取幾何體的對稱. 啟動工具後選擇參考線或點.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1104"/>
         <source>Mirror</source>
         <translation>鏡像</translation>
@@ -3247,6 +3242,11 @@ This will clear the &apos;Support&apos; property, if any.</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1106"/>
         <source>Creates a mirrored copy of the selected geometry</source>
         <translation>建立選取幾何圖形的鏡射複製</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="1096"/>
+        <source>Creates symmetric of selected geometry. After starting the tool select the reference line or point.</source>
+        <translation>建立選取幾何體的對稱. 啟動工具後選擇參考線或點.</translation>
     </message>
     <message>
         <source>Symmetry</source>
@@ -3329,11 +3329,6 @@ into driving or reference mode</source>
 <context>
     <name>CmdSketcherTranslate</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2458"/>
-        <source>Move / Array transform</source>
-        <translation>移動/矩陣 平移</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2477"/>
         <source>Move / Array Transform</source>
         <translation>移動/矩陣 平移</translation>
@@ -3352,6 +3347,11 @@ into driving or reference mode</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2636"/>
         <source>Translate selected geometries. Enable creation of i * j copies.</source>
         <translation>移動選取的幾何圖形. 允許建立 i * j 個備份.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandSketcherTools.cpp" line="2458"/>
+        <source>Move / Array transform</source>
+        <translation>移動/矩陣 平移</translation>
     </message>
 </context>
 <context>
@@ -3378,13 +3378,6 @@ into driving or reference mode</source>
 <context>
     <name>CmdSketcherValidateSketch</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="787"/>
-        <source>Validates a sketch by looking at missing coincidences,
-invalid constraints, degenerated geometry, etc.</source>
-        <translation>通過檢視遺失的重合來驗證草圖，
-無效拘束、退化幾何等.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="832"/>
         <source>Validate Sketch</source>
         <translation>檢查草圖</translation>
@@ -3405,6 +3398,13 @@ invalid constraints, and degenerate geometry</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="850"/>
         <source>Select only 1 sketch.</source>
         <translation>只選擇一個草圖.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/Command.cpp" line="787"/>
+        <source>Validates a sketch by looking at missing coincidences,
+invalid constraints, degenerated geometry, etc.</source>
+        <translation>通過檢視遺失的重合來驗證草圖，
+無效拘束、退化幾何等.</translation>
     </message>
     <message>
         <source>Wrong selection</source>
@@ -3930,12 +3930,6 @@ invalid constraints, degenerated geometry, etc.</source>
         <translation>拖動拘束</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/ViewProviderSketch.cpp" line="1355"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/ViewProviderSketch.cpp" line="1389"/>
-        <source>Modify Text constraint</source>
-        <translation>修改文字拘束</translation>
-    </message>
-    <message>
         <source>Drag Point</source>
         <translation>拖曳點</translation>
     </message>
@@ -4032,6 +4026,12 @@ invalid constraints, degenerated geometry, etc.</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/EditTextDialog.cpp" line="105"/>
         <source>Modify sketch text constraint</source>
         <translation>修改草圖文字拘束</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/ViewProviderSketch.cpp" line="1355"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/ViewProviderSketch.cpp" line="1389"/>
+        <source>Modify Text constraint</source>
+        <translation>修改文字拘束</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherConstraints.cpp" line="1561"/>
@@ -4508,6 +4508,11 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
         <translation>新增橢圓弧失敗</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcOfHyperbola.h" line="254"/>
+        <source>Cannot create arc of hyperbola from invalid angles, try again!</source>
+        <translation>無法從無效角度建立雙曲線弧，請重試!</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcOfHyperbola.h" line="330"/>
         <source>Cannot create arc of hyperbola</source>
         <translation>無法建立雙曲線弧</translation>
@@ -4518,15 +4523,50 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
         <translation>無法建立拋物線弧</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSplineByInterpolation.h" line="124"/>
+        <source>Cannot add knot point</source>
+        <translation>無法新增結點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSplineByInterpolation.h" line="195"/>
+        <source>Cannot add internal alignment points</source>
+        <translation>無法新增內部對齊點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSplineByInterpolation.h" line="304"/>
+        <source>Error removing knot</source>
+        <translation>解結時出錯</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSplineByInterpolation.h" line="614"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="518"/>
         <source>Error creating B-spline</source>
         <translation>建立 B 雲形線時出錯</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="129"/>
+        <source>Error adding B-Spline pole</source>
+        <translation>新增 B 雲形線極點時出錯</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="206"/>
+        <source>Error creating B-spline pole</source>
+        <translation>建立 B 雲形線極點時出錯</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="306"/>
+        <source>Error deleting last pole</source>
+        <translation>刪除最後極點時出錯</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="600"/>
         <source>Error deleting last pole/knot</source>
         <translation>刪除最後極點時出錯</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="670"/>
+        <source>Error adding B-Spline pole/knot</source>
+        <translation>新增 B 雲形線極點時出錯</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="682"/>
@@ -4704,46 +4744,6 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
         <source>Failed to add text</source>
         <translation>新增文字失敗</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArcOfHyperbola.h" line="254"/>
-        <source>Cannot create arc of hyperbola from invalid angles, try again!</source>
-        <translation>無法從無效角度建立雙曲線弧，請重試!</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSplineByInterpolation.h" line="124"/>
-        <source>Cannot add knot point</source>
-        <translation>無法新增結點</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSplineByInterpolation.h" line="195"/>
-        <source>Cannot add internal alignment points</source>
-        <translation>無法新增內部對齊點</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSplineByInterpolation.h" line="304"/>
-        <source>Error removing knot</source>
-        <translation>解結時出錯</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="129"/>
-        <source>Error adding B-Spline pole</source>
-        <translation>新增 B 雲形線極點時出錯</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="206"/>
-        <source>Error creating B-spline pole</source>
-        <translation>建立 B 雲形線極點時出錯</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="306"/>
-        <source>Error deleting last pole</source>
-        <translation>刪除最後極點時出錯</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="670"/>
-        <source>Error adding B-Spline pole/knot</source>
-        <translation>新增 B 雲形線極點時出錯</translation>
-    </message>
 </context>
 <context>
     <name>QObject</name>
@@ -4812,11 +4812,6 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
     <message>
         <source>Cannot add a constraint between two fixed geometries. Fixed geometries include external geometry, blocked geometry, and special points such as B-spline knot points.</source>
         <translation>無法在兩個固定幾何之間新增拘束. 固定幾何包括外部幾何、區塊幾何和特殊點例如 B雲形線之結點.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="227"/>
-        <source>One or two point on object constraint(s) was/were deleted, since the latest constraint being applied internally applies point-on-object as well.</source>
-        <translation>刪除了物件約束上的一兩個點，因為內部應用的最新約束也應用了物件上的點.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="229"/>
@@ -5538,11 +5533,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation>文字屬性</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArc.h" line="347"/>
-        <source>Arc parameters</source>
-        <translation>弧參數</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArc.h" line="923"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="1219"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerCircle.h" line="732"/>
@@ -5601,6 +5591,16 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerText.h" line="748"/>
         <source>%1 pick bottom-right point</source>
         <translation>%1 選取右下角的點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="227"/>
+        <source>One or two point on object constraint(s) was/were deleted, since the latest constraint being applied internally applies point-on-object as well.</source>
+        <translation>刪除了物件約束上的一兩個點，因為內部應用的最新約束也應用了物件上的點.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerArc.h" line="347"/>
+        <source>Arc parameters</source>
+        <translation>弧參數</translation>
     </message>
     <message>
         <source>Select two points and a symmetry line, two points and a symmetry point or a line and a symmetry point from the sketch.</source>
@@ -7560,6 +7560,11 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
 <context>
     <name>SketcherGui::DrawSketchHandlerTranslate</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerTranslate.h" line="175"/>
+        <source>Translate parameters</source>
+        <translation>平移屬性</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerTranslate.h" line="185"/>
         <source>Translate Parameters</source>
         <translation>平移屬性</translation>
@@ -7581,11 +7586,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <source>%1 set second translation vector</source>
         <comment>Sketcher Translate: hint</comment>
         <translation>%1 設定第二個平移向量</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerTranslate.h" line="175"/>
-        <source>Translate parameters</source>
-        <translation>平移屬性</translation>
     </message>
 </context>
 <context>
@@ -7798,6 +7798,16 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
 <context>
     <name>SketcherGui::ElementView</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="61"/>
+        <source>Point Coincidence</source>
+        <translation>共點拘束</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="62"/>
+        <source>Point on Object</source>
+        <translation>物體上的點</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="64"/>
         <source>Coincident Constraint</source>
         <translation>共點拘束</translation>
@@ -7811,16 +7821,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="63"/>
         <source>Vertical Constraint</source>
         <translation>垂直拘束</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="61"/>
-        <source>Point Coincidence</source>
-        <translation>共點拘束</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="62"/>
-        <source>Point on Object</source>
-        <translation>物體上的點</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="64"/>
@@ -8553,6 +8553,17 @@ This setting is only for the toolbar. Whichever you chose, all tools are always 
         <translation>檢視參數:</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/SketcherSettings.ui" line="297"/>
+        <source>Select the mode of automatic geometry scaling upon first dimension:
+&apos;Always&apos;: Automatic scaling upon first dimension is always performed.
+&apos;Never&apos;: Automatic scaling upon first dimension is never performed.
+&apos;When no scale feature is visible&apos;: Automatic scaling upon first dimension is only performed if there are no visible objects in the 3D view.</source>
+        <translation>選擇第一維度時自動縮放幾何圖形的模式:
+&apos;永遠&apos;: 永遠執行第一維度自動縮放.
+&apos;永不&apos;: 不執行第一維度自動縮放.
+&apos;當沒有縮放特徵時&apos;: 只有在 3D 檢視中沒有可見物體時，才會執行第一維度自動縮放.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/SketcherSettings.ui" line="309"/>
         <source>Only if there is no visual scale indicator</source>
         <translation>僅當沒有視覺刻度指示時</translation>
@@ -8706,15 +8717,17 @@ This setting is only for the toolbar. Whichever you choose, all tools are always
         <translation>在第一個限制時調整比例</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/SketcherSettings.ui" line="297"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/SketcherSettings.ui" line="313"/>
         <source>Select the mode of automatic geometry scaling upon first dimension:
 &apos;Always&apos;: Automatic scaling upon first dimension is always performed.
 &apos;Never&apos;: Automatic scaling upon first dimension is never performed.
-&apos;When no scale feature is visible&apos;: Automatic scaling upon first dimension is only performed if there are no visible objects in the 3D view.</source>
+&apos;When no scale feature is visible&apos;: Automatic scaling upon first dimension is only performed if there are no visible objects in the 3D view.
+</source>
         <translation>選擇第一維度時自動縮放幾何圖形的模式:
 &apos;永遠&apos;: 永遠執行第一維度自動縮放.
 &apos;永不&apos;: 不執行第一維度自動縮放.
-&apos;當沒有縮放特徵時&apos;: 只有在 3D 檢視中沒有可見物體時，才會執行第一維度自動縮放.</translation>
+&apos;當沒有縮放特徵時&apos;: 只有在 3D 檢視中沒有可見物體時，才會執行第一維度自動縮放.
+</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/SketcherSettings.ui" line="224"/>
@@ -10947,6 +10960,11 @@ However, no constraints linking to the endpoints were found.</source>
 <context>
     <name>SketcherGui::TaskSketcherMessages</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherMessages.cpp" line="44"/>
+        <source>Solver Messages</source>
+        <translation>求解器訊息</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherMessages.cpp" line="46"/>
         <source>Sketch Edit</source>
         <translation>草圖編輯</translation>
@@ -11015,11 +11033,6 @@ However, no constraints linking to the endpoints were found.</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherMessages.cpp" line="99"/>
         <source>Auto-update</source>
         <translation>自動更新</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherMessages.cpp" line="44"/>
-        <source>Solver Messages</source>
-        <translation>求解器訊息</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherMessages.cpp" line="97"/>
@@ -11674,16 +11687,6 @@ This is purely based on topological shape of the sketch and not on its geometry/
 <context>
     <name>Sketcher_CreateBSpline</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="839"/>
-        <source>By control points</source>
-        <translation>從控制點</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="840"/>
-        <source>By knots</source>
-        <translation>從結點</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="911"/>
         <source>From control points</source>
         <translation>從控制點</translation>
@@ -11691,6 +11694,16 @@ This is purely based on topological shape of the sketch and not on its geometry/
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="912"/>
         <source>From knots</source>
+        <translation>從結點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="839"/>
+        <source>By control points</source>
+        <translation>從控制點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="840"/>
+        <source>By knots</source>
         <translation>從結點</translation>
     </message>
     <message>
@@ -12667,6 +12680,11 @@ Instead equal constraints are applied between the original objects and their cop
 <context>
     <name>TaskSketcherTool_c1_translate</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerTranslate.h" line="485"/>
+        <source>Clone constraints</source>
+        <translation>複製約束</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerTranslate.h" line="488"/>
         <source>Apply equal constraints</source>
         <translation>套用相等拘束</translation>
@@ -12682,11 +12700,6 @@ Instead equal constraints are applied between the original objects and their cop
 Instead equal constraints are applied between the original objects and their copies.</source>
         <translation>如果選擇此選項，則從操作中排除尺寸約束.
 相反，在原始物件及其複製品之間套用相等的約束.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerTranslate.h" line="485"/>
-        <source>Clone constraints</source>
-        <translation>複製約束</translation>
     </message>
 </context>
 <context>
@@ -12723,11 +12736,6 @@ Instead equal constraints are applied between the original objects and their cop
 <context>
     <name>TaskSketcherTool_c2_symmetry</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerSymmetry.h" line="263"/>
-        <source>Create Symmetry Constraints (J)</source>
-        <translation>建立對稱拘束 (J)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerSymmetry.h" line="276"/>
         <source>Create symmetry constraints (J)</source>
         <translation>建立對稱拘束 (J)</translation>
@@ -12736,6 +12744,11 @@ Instead equal constraints are applied between the original objects and their cop
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerSymmetry.h" line="297"/>
         <source>Create symmetry constraints between the original and mirrored geometries</source>
         <translation>在原始與鏡像幾何圖形之間建立對稱約束</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerSymmetry.h" line="263"/>
+        <source>Create Symmetry Constraints (J)</source>
+        <translation>建立對稱拘束 (J)</translation>
     </message>
 </context>
 <context>
@@ -12749,14 +12762,14 @@ Instead equal constraints are applied between the original objects and their cop
 <context>
     <name>TaskSketcherTool_p4_rotate</name>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRotate.h" line="512"/>
-        <source>Copies (+&apos;U&apos;/ -&apos;J&apos;)</source>
-        <translation>複製品 (+&apos;U&apos;/ -&apos;J&apos;)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRotate.h" line="511"/>
         <source>Copies &apos;U&apos;/&apos;J&apos;</source>
         <translation>複製品 &apos;U&apos;/&apos;J&apos;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerRotate.h" line="512"/>
+        <source>Copies (+&apos;U&apos;/ -&apos;J&apos;)</source>
+        <translation>複製品 (+&apos;U&apos;/ -&apos;J&apos;)</translation>
     </message>
 </context>
 <context>
@@ -12770,6 +12783,11 @@ Instead equal constraints are applied between the original objects and their cop
 <context>
     <name>ToolWidgetManager_p4</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerPolygon.h" line="301"/>
+        <source>Sides &apos;U&apos;/&apos;J&apos;</source>
+        <translation>側面 &apos;U&apos;/&apos;J&apos;</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerPolygon.h" line="307"/>
         <source>Sides (+&apos;U&apos;/ -&apos;J&apos;)</source>
         <translation>側面 (+&apos;U&apos;/ -&apos;J&apos;)</translation>
@@ -12778,11 +12796,6 @@ Instead equal constraints are applied between the original objects and their cop
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerBSpline.h" line="880"/>
         <source>Degree (+&apos;U&apos;/ -&apos;J&apos;)</source>
         <translation>度 (+&apos;U&apos;/-&apos;J&apos;)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/DrawSketchHandlerPolygon.h" line="301"/>
-        <source>Sides &apos;U&apos;/&apos;J&apos;</source>
-        <translation>側面 &apos;U&apos;/&apos;J&apos;</translation>
     </message>
 </context>
 <context>

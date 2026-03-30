@@ -554,36 +554,6 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
         <translation>BIM/建築</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="214"/>
-        <source>Creates an architectural project</source>
-        <translation>建立一個建築專案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="434"/>
-        <source>New File</source>
-        <translation>新增檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="435"/>
-        <source>Examples</source>
-        <translation>範例</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="436"/>
-        <source>Recent Files</source>
-        <translation>最近使用的檔案</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="458"/>
-        <source>Open First Start Setup</source>
-        <translation>打開首次啟動設定頁面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="460"/>
-        <source>Do not show this Start page again (start with blank screen)</source>
-        <translation>不要再次顯示此開始頁面 (使用空白頁面啟動)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="178"/>
         <source>Empty file</source>
         <translation>空白檔案</translation>
@@ -629,6 +599,26 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
         <translation>使用建立2D底圖繪製</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="214"/>
+        <source>Creates an architectural project</source>
+        <translation>建立一個建築專案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="434"/>
+        <source>New File</source>
+        <translation>新增檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="435"/>
+        <source>Examples</source>
+        <translation>範例</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="436"/>
+        <source>Recent Files</source>
+        <translation>最近使用的檔案</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="440"/>
         <source>Don&apos;t show this Start page again (start with blank screen)</source>
         <translation>不要再次顯示此開始頁面 (使用空白頁面啟動)</translation>
@@ -642,6 +632,16 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="447"/>
         <source>The file &apos;%1&apos; cannot be opened.</source>
         <translation>無法打開檔案&apos;%1&apos;.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="458"/>
+        <source>Open First Start Setup</source>
+        <translation>打開首次啟動設定頁面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="460"/>
+        <source>Do not show this Start page again (start with blank screen)</source>
+        <translation>不要再次顯示此開始頁面 (使用空白頁面啟動)</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="484"/>

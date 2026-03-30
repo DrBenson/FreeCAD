@@ -108,12 +108,6 @@ class BIMWorkbench(Workbench):
             "BIM_TDView",
         ]
 
-        self.create_2dviews = [
-            "BIM_DrawingView",
-            "BIM_Shape2DView",
-            "BIM_Shape2DCut",
-        ]
-
         self.bimtools = [
             "BIM_Project",
             "Arch_Site",
@@ -138,16 +132,6 @@ class BIMWorkbench(Workbench):
             "Arch_Truss",
             "Arch_Equipment",
             "Arch_Rebar",
-        ]
-
-        self.generictools = [
-            "Arch_Profile",
-            "BIM_Box",
-            "BIM_Builder",
-            "Draft_Facebinder",
-            "BIM_Library",
-            "Arch_Component",
-            "Arch_Reference",
         ]
 
         self.modify_gen = [
@@ -265,11 +249,16 @@ class BIMWorkbench(Workbench):
 
         # create generic tools command
         class BIM_GenericTools:
-            def __init__(self, tools):
-                self.tools = tools
-
             def GetCommands(self):
-                return self.tools
+                return (
+                    "Arch_Profile",
+                    "BIM_Box",
+                    "BIM_Builder",
+                    "Draft_Facebinder",
+                    "BIM_Library",
+                    "Arch_Component",
+                    "Arch_Reference",
+                )
 
             def GetResources(self):
                 t = QT_TRANSLATE_NOOP("BIM_GenericTools", "Generic 3D Tools")
@@ -284,11 +273,8 @@ class BIMWorkbench(Workbench):
 
         # create create 2D views command
         class BIM_Create2DViews:
-            def __init__(self, tools):
-                self.tools = tools
-
             def GetCommands(self):
-                return self.tools
+                return ("BIM_DrawingView", "BIM_Shape2DView", "BIM_Shape2DCut")
 
             def GetResources(self):
                 t = QT_TRANSLATE_NOOP("BIM_Create2DViews", "Create 2D Views")
@@ -307,7 +293,7 @@ class BIMWorkbench(Workbench):
         try:
             import RebarTools
         except ImportError:
-            pass
+            RebarGroupCommand = None  # for workaround for issue #26539 and #27984
         else:
             # create popup group for Rebar tools
             class RebarGroupCommand:
@@ -472,6 +458,25 @@ class BIMWorkbench(Workbench):
             self.appendMenu(t10, fasteners)
         self.appendMenu(t11, self.utils + ifctools)
         self.appendMenu([t11, t12], nudge)
+
+        # workaround for issue #26539 and #27984:
+        # create tool lists without grouped commands for TaskWatcher
+        # https://github.com/FreeCAD/FreeCAD/issues/26539
+        # https://github.com/FreeCAD/FreeCAD/issues/27984
+        chk = (
+            ("Arch_RebarTools", RebarGroupCommand),
+            ("BIM_Create2DViews", BIM_Create2DViews),
+            ("BIM_GenericTools", BIM_GenericTools),
+        )
+        for attr in ("draftingtools", "annotationtools", "bimtools", "modify"):
+            lst = getattr(self, attr)
+            for itm in chk:
+                if not itm[0] in lst:
+                    continue
+                idx = lst.index(itm[0])
+                cmds = list(itm[1].GetCommands(itm[1]))
+                lst = lst[:idx] + cmds + lst[idx + 1 :]
+            setattr(self, attr, lst)
 
     def loadPreferences(self):
         """Set up preferences pages"""

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -116,6 +116,54 @@
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Measure/Gui/TaskMeasure.cpp" line="196"/>
         <source>Closes the measurement task</source>
         <translation>關閉測量工作</translation>
+    </message>
+</context>
+<context>
+    <name>MassPropertiesGui::TaskMassProperties</name>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.cpp" line="279"/>
+        <source>Parameters</source>
+        <translation>屬性參數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.cpp" line="282"/>
+        <source>Physical Properties</source>
+        <translation>物理特性</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.cpp" line="285"/>
+        <source>Center of Gravity</source>
+        <translation type="unfinished">重心</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.cpp" line="286"/>
+        <source>Center of Volume</source>
+        <translation>體積中心</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.cpp" line="287"/>
+        <source>Inertia</source>
+        <translation type="unfinished">慣性</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.cpp" line="359"/>
+        <source>Close</source>
+        <translation>關閉</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.cpp" line="362"/>
+        <source>Save</source>
+        <translation>儲存</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.cpp" line="366"/>
+        <source>Reset</source>
+        <translation>重設</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.cpp" line="1126"/>
+        <source> (Average)</source>
+        <translation> (平均)</translation>
     </message>
 </context>
 <context>
@@ -397,6 +445,19 @@
     </message>
 </context>
 <context>
+    <name>StdCmdMassProperties</name>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/Command.cpp" line="97"/>
+        <source>Mass Properties</source>
+        <translation>質量特性</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/Command.cpp" line="98"/>
+        <source>Calculates mass properties of selected objects</source>
+        <translation>計算所選物體的質量特性</translation>
+    </message>
+</context>
+<context>
     <name>StdCmdMeasure</name>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Measure/Gui/Command.cpp" line="43"/>
@@ -422,6 +483,163 @@
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Measure/Gui/Command.cpp" line="96"/>
         <source>Toggle quick measure</source>
         <translation>切換快速測量</translation>
+    </message>
+</context>
+<context>
+    <name>TaskMassProperties</name>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="38"/>
+        <source>Objects to measure</source>
+        <translation>待量測的物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="58"/>
+        <source>Reference</source>
+        <translation>參考</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="83"/>
+        <source>Center of gravity</source>
+        <translation type="unfinished">重心</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="110"/>
+        <source>Custom</source>
+        <translation>自訂</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="124"/>
+        <source>Select…</source>
+        <translation>選擇   </translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="137"/>
+        <source>mm, kg, kg*mm^2</source>
+        <translation>mm, kg, kg*mm^2</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="142"/>
+        <source>m, kg, kg*m^2</source>
+        <translation>m, kg, kg*m^2</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="147"/>
+        <source>in, lb, lb*in^2</source>
+        <translation>in, lb, lb*in^2</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="152"/>
+        <source>ft, lb, lb*ft^2</source>
+        <translation>ft, lb, lb*ft^2</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="172"/>
+        <source>Volume</source>
+        <translation>體積</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="186"/>
+        <source>Mass</source>
+        <translation>重量</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="200"/>
+        <source>Density</source>
+        <translation>密度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="214"/>
+        <source>Surface area</source>
+        <translation>表面積</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="254"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="387"/>
+        <source>X</source>
+        <translation>X</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="281"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="414"/>
+        <source>Y</source>
+        <translation>Y</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="308"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="441"/>
+        <source>Z</source>
+        <translation>Z</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="339"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="472"/>
+        <source>Create Datum Point</source>
+        <translation>建立基準點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="503"/>
+        <source>Inertia Matrix</source>
+        <translation>慣性矩陣</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="531"/>
+        <source>Jox</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="545"/>
+        <source>Jxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="559"/>
+        <source>Jzx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="573"/>
+        <source>Joy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="587"/>
+        <source>Jzy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="601"/>
+        <source>Joz</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="625"/>
+        <source>Principal Moments of Inertia</source>
+        <translation type="unfinished">主要慣性矩</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="650"/>
+        <source>Jx</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="677"/>
+        <source>Jy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="704"/>
+        <source>Jz</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="749"/>
+        <source>Create Principal Axes LCS</source>
+        <translation>建立區域座標 主軸線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="790"/>
+        <source>Inertia around axis</source>
+        <translation>軸向慣性</translation>
     </message>
 </context>
 <context>
