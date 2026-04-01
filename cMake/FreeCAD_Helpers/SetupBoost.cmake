@@ -3,10 +3,9 @@ macro(SetupBoost)
 
     set(_boost_TEST_VERSIONS ${Boost_ADDITIONAL_VERSIONS})
 
-    set (BOOST_COMPONENTS program_options regex thread date_time)
+    set (BOOST_COMPONENTS program_options regex thread date_time filesystem serialization)
     find_package(Boost ${BOOST_MIN_VERSION}
         COMPONENTS ${BOOST_COMPONENTS} REQUIRED)
-
     if(UNIX AND NOT APPLE)
         # Boost.Thread 1.67+ headers reference pthread_condattr_*
         list(APPEND Boost_LIBRARIES pthread)
