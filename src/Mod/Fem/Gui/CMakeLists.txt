@@ -9,6 +9,7 @@ elseif(CMAKE_COMPILER_IS_GNUCXX)
     add_compile_options(-Wno-pedantic) # needed for vtk headers
 endif()
 
+set (FREECAD_QT_MAJOR_VERSION 6)
 if(BUILD_FEM_NETGEN)
     add_definitions(-DFCWithNetgen)
 endif(BUILD_FEM_NETGEN)
