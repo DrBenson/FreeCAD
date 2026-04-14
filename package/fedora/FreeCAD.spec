@@ -57,10 +57,10 @@
 %define ReleaseNum %{git rev-list --count HEAD}
 %define buildroot ~/rpmbuild/BUILDROOT
 Name:                   %{name}
-Epoch:                  2
+Epoch:                  4
 Version:                %{rpmbranch}
 # release=$(git rev-list --count HEAD)
-Release:                2_Qt6%{?dist}
+Release:                4%{?dist}
 Summary:                A general purpose 3D CAD modeler
 Group:                  Applications/Engineering
 
@@ -254,16 +254,26 @@ Development file for OndselSolver
 %global _enable_debug_packages 0
 %endif
 
-%prep
+%prep 1>>/dev/null 2>>/dev/null
 %autosetup -N -p1 -n FreeCAD-%{rpmbranch}
 # Remove bundled pycxx if we're not using it
 #rsync -altp /media/ERP/sources/FreeCAD/src ./
 #rsync -altp /media/ERP/sources/PRIVACY_POLICY.md ./
 #patch --binary --force -r ./pd0 -N -p0 </media/UserTemp/Sources/conda/media/1.1.0/patch/110src-app.patch
 #patch -r ./pd0 -N -p1 </media/UserTemp/Sources/conda/media/1.1.0/patch/110src-app.patch
-find . -name \*.orig -delete -print
 echo "patch Done..."
-
+rm -rf src/3rdParty/GSL src/3rdParty/OndselSolver src/3rdParty/tracy tests/lib src/Mod/AddonManager
+git submodule add --force https://github.com/Ondsel-Development/OndselSolver.git src/3rdParty/OndselSolver
+git submodule add --force https://github.com/google/googletest tests/lib
+git submodule add --force https://github.com/microsoft/GSL src/3rdParty/GSL
+#git submodule add --force https://github.com/wolfpld/tracy.git src/3rdParty/tracy
+git submodule add --branch 1.1.0 --force https://github.com/DrBenson/FreeCAD_AddonManager.git src/Mod/AddonManager
+#rsync -avltp /media/ERP/sources/FreeCAD/src .
+rsync -altp patch/src/ ./
+rsync -altp /media/UserTemp/Sources/conda/media/patch/src/ .
+rsync -altp patch/PRIVACY_POLICY.md .
+#rsync -altp /media/ERP/sources/FreeCAD/LICENSE.html src/Doc/
+find . -name \*.orig -delete -print
 %if ! %{bundled_pycxx}
 #rm -rf src/CXX
 %endif
@@ -366,120 +376,120 @@ QTv="6"
 %endif
 %endif
 %cmake \
-                -DCMAKE_INSTALL_PREFIX:FILEPATH='%{_libdir}/%{name}' \
-                -DCMAKE_INSTALL_DATADIR=%{_datadir}/%{name} \
-                -DCMAKE_INSTALL_DOCDIR=%{_docdir}/%{name} \
-                -DCMAKE_INSTALL_LIBDIR:PATH='%{_libdir}/%{name}/lib64' \
-                -DCMAKE_INSTALL_INCLUDEDIR=%{_includedir} \
-                -DLD_LIBRARY_PATH=/usr/lib64 \
-                -DDEFAULT_QT_PLUGINS_DIR:FILEPATH='/usr/lib64/qt6/plugins' \
-                -DDESIGNER_PLUGIN_LOCATION:FILEPATH='/usr/lib64/qt6/plugins/designer' \
+        -DCMAKE_INSTALL_PREFIX:FILEPATH='%{_libdir}/%{name}' \
+        -DCMAKE_INSTALL_DATADIR=%{_datadir}/%{name} \
+        -DCMAKE_INSTALL_DOCDIR=%{_docdir}/%{name} \
+        -DCMAKE_INSTALL_LIBDIR:PATH='%{_libdir}/%{name}/lib64' \
+        -DCMAKE_INSTALL_INCLUDEDIR=%{_includedir} \
+        -DLD_LIBRARY_PATH=/usr/lib64 \
+        -DDEFAULT_QT_PLUGINS_DIR:FILEPATH='/usr/lib64/qt6/plugins' \
+        -DDESIGNER_PLUGIN_LOCATION:FILEPATH='/usr/lib64/qt6/plugins/designer' \
         -DRESOURCEDIR=%{_datadir}/%{name} \
-                -DBLAS=ON \
-                -DBoost_DIR:PATH=/usr/lib64/cmake/Boost-1.83.0 \
-                -Dboost_headers_DIR:PATH=/usr/lib64/cmake/boost_headers-1.83.0 \
-                -DBoost_INCLUDE_DIR:PATH=/usr/include \
-                -DBoost_USE_DEBUG_RUNTIME=OFF \
-                -DBoost_USE_STATIC_LIBS=OFF \
-                -DBUILD_DESIGNER_PLUGIN=TRUE \
-                -DBUILD_FLAT_MESH=ON \
-                -DBUILD_QT5=OFF \
-                -DBUILD_QT6=ON \
-                -DBUILD_SHIP:BOOL=OFF \
-                -DBUILD_SMESH=OFF \
-                -DBUILD_WITH_CONDA:BOOL=ON \
-                -DBUILD_WITH_QT6=ON \
-                -DCOIN3D_DOC_FOUND:BOOL=YES \
-                -DCOIN3D_DOC_PATH=/usr/share/Coin4/html \
-                -DCOIN3D_INCLUDE_DIRS=/usr/include/Coin4 \
-                -DFORCE_LIMITED_API=1 \
-                -DFREECAD_CREATE_MAC_APP=OFF \
-                -DFREECAD_QT_MAJOR_VERSION=6 \
-                -DFREECAD_QT_VERSION=6 \
-                -DFREECAD_USE_3DCONNEXION=ON \
-                -DFREECAD_USE_CCACHE=ON \
-                -DFREECAD_USE_EXTERNAL_FMT:BOOL=ON \
-                -DFREECAD_USE_EXTERNAL_KDL=OFF \
-                -DFREECAD_USE_EXTERNAL_ONDSELSOLVER=OFF \
-                -DFREECAD_USE_EXTERNAL_PIVY=ON \
-                -DFREECAD_USE_EXTERNAL_SMESH=OFF \
-                -DFREECAD_USE_EXTERNAL_ZIPIOS=OFF \
-                -DFREECAD_USE_OCC_VARIANT='Official Version' \
-                -DFREECAD_USE_PCL=OFF \
-                -DFREECAD_USE_PYBIND11:BOOL=ON  \
-                -DFREETYPE_INCLUDE_DIR_freetype2:PATH=/usr/include/freetype2 \
-                -DFREETYPE_INCLUDE_DIR_ft2build:PATH=/usr/include/freetype2 \
-                -DFREETYPE_INCLUDE_DIRS=/usr/include/freetype2 \
-                -DFREETYPE_LIBRARY_RELEASE:FILEPATH=/usr/lib64/libfreetype.so \
-                -DGIT_DISCOVERY_ACROSS_FILESYSTEM=TRUE \
-                -DMEDFILE_INCLUDE_DIRS=%{MEDFILE_INCLUDE_DIRS} \
-                -DOCCT_CMAKE_FALLBACK:BOOL=OFF \
-                -DOpenGL_GL_PREFERENCE=GLVND \
-                -Dpkgcfg_lib_PKG_FONTCONFIG_freetype:FILEPATH=/usr/lib64/libfreetype.so \
-                -DPYSIDE_INCLUDE_DIR=/usr/include/PySide6 \
+        -DBLAS=ON \
+        -DBoost_DIR:PATH=/usr/lib64/cmake/Boost-1.83.0 \
+        -Dboost_headers_DIR:PATH=/usr/lib64/cmake/boost_headers-1.83.0 \
+        -DBoost_INCLUDE_DIR:PATH=/usr/include \
+        -DBoost_USE_DEBUG_RUNTIME=OFF \
+        -DBoost_USE_STATIC_LIBS=OFF \
+        -DBUILD_DESIGNER_PLUGIN=TRUE \
+        -DBUILD_FLAT_MESH=ON \
+        -DBUILD_QT5=OFF \
+        -DBUILD_QT6=ON \
+        -DBUILD_SHIP:BOOL=OFF \
+        -DBUILD_SMESH=OFF \
+        -DBUILD_WITH_CONDA:BOOL=ON \
+        -DBUILD_WITH_QT6=ON \
+        -DCOIN3D_DOC_FOUND:BOOL=YES \
+        -DCOIN3D_DOC_PATH=/usr/share/Coin4/html \
+        -DCOIN3D_INCLUDE_DIRS=/usr/include/Coin4 \
+        -DFORCE_LIMITED_API=1 \
+        -DFREECAD_CREATE_MAC_APP=OFF \
+        -DFREECAD_QT_MAJOR_VERSION=6 \
+        -DFREECAD_QT_VERSION=6 \
+        -DFREECAD_USE_3DCONNEXION=ON \
+        -DFREECAD_USE_CCACHE=ON \
+        -DFREECAD_USE_EXTERNAL_FMT:BOOL=ON \
+        -DFREECAD_USE_EXTERNAL_KDL=OFF \
+        -DFREECAD_USE_EXTERNAL_ONDSELSOLVER=OFF \
+        -DFREECAD_USE_EXTERNAL_PIVY=ON \
+        -DFREECAD_USE_EXTERNAL_SMESH=OFF \
+        -DFREECAD_USE_EXTERNAL_ZIPIOS=OFF \
+        -DFREECAD_USE_OCC_VARIANT='Official Version' \
+        -DFREECAD_USE_PCL=OFF \
+        -DFREECAD_USE_PYBIND11:BOOL=ON  \
+        -DFREETYPE_INCLUDE_DIR_freetype2:PATH=/usr/include/freetype2 \
+        -DFREETYPE_INCLUDE_DIR_ft2build:PATH=/usr/include/freetype2 \
+        -DFREETYPE_INCLUDE_DIRS=/usr/include/freetype2 \
+        -DFREETYPE_LIBRARY_RELEASE:FILEPATH=/usr/lib64/libfreetype.so \
+        -DGIT_DISCOVERY_ACROSS_FILESYSTEM=TRUE \
+        -DMEDFILE_INCLUDE_DIRS=%{MEDFILE_INCLUDE_DIRS} \
+        -DOCCT_CMAKE_FALLBACK:BOOL=OFF \
+        -DOpenGL_GL_PREFERENCE=GLVND \
+        -Dpkgcfg_lib_PKG_FONTCONFIG_freetype:FILEPATH=/usr/lib64/libfreetype.so \
+        -DPYSIDE_INCLUDE_DIR=/usr/include/PySide6 \
 %if ("%{py_suffix}" == "cpython-314-x86_64-linux-gnu")
-                -DPYSIDE_LIBRARY=/usr/lib64/libpyside6.cpython-314-x86_64-linux-gnu.so \
-                -DPySide6_LIBRARIES=/usr/lib64/libpyside6.cpython-314-x86_64-linux-gnu.so \
-                -DPYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3.14 \
-                -DPYTHON_EXECUTABLE=/usr/bin/python3.14 \
-                -DPYTHON_INCLUDE_DIR=/usr/include/python3.14 \
-                -DPYTHON_LIBRARY_DIRS='%{_libdir}/../lib64/python3.14' \
-                -DPYTHON_LIBRARY='%{_libdir}/../lib64/libpython3.14.so' \
-                -DPYTHON_MAIN_DIR:FILEPATH='%{_libdir}/../lib64/python3.14/site-packages' \
-                -DPYTHON_PACKAGES_PATH='%{_libdir}/../lib64/python3.14/site-packages' \
-                -DPYTHON_SUFFIX=.%{py_suffix} \
-                -DPYTHON_VERSION_STRING=3.14 \
-                -DPython3_EXECUTABLE:FILEPATH=/usr/bin/python3.14 \
-                -DPython3_EXECUTABLE=/usr/bin/python3.14 \
-                -DPython3_FIND_STRATEGY='%{_libdir}/../lib64/python3.14/site-packages' \
-                -DPYTHON3_INCLUDE_DIR=/usr/include/python3.14 \
-                -DPythonInterp=/usr/bin/python3.14 \
-                -DPYTHONINTERP=/usr/bin/python3.14 \
-                -DSHIBOKEN_LIBRARY=/usr/lib64/libshiboken6.cpython-314-x86_64-linux-gnu.so \
-                -DShiboken6_LIBRARIES=/usr/lib64/libshiboken6.cpython-314-x86_64-linux-gnu.so \
+        -DPYSIDE_LIBRARY=/usr/lib64/libpyside6.cpython-314-x86_64-linux-gnu.so \
+        -DPySide6_LIBRARIES=/usr/lib64/libpyside6.cpython-314-x86_64-linux-gnu.so \
+        -DPYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3.14 \
+        -DPYTHON_EXECUTABLE=/usr/bin/python3.14 \
+        -DPYTHON_INCLUDE_DIR=/usr/include/python3.14 \
+        -DPYTHON_LIBRARY_DIRS='%{_libdir}/../lib64/python3.14' \
+        -DPYTHON_LIBRARY='%{_libdir}/../lib64/libpython3.14.so' \
+        -DPYTHON_MAIN_DIR:FILEPATH='%{_libdir}/../lib64/python3.14/site-packages' \
+        -DPYTHON_PACKAGES_PATH='%{_libdir}/../lib64/python3.14/site-packages' \
+        -DPYTHON_SUFFIX=.%{py_suffix} \
+        -DPYTHON_VERSION_STRING=3.14 \
+        -DPython3_EXECUTABLE:FILEPATH=/usr/bin/python3.14 \
+        -DPython3_EXECUTABLE=/usr/bin/python3.14 \
+        -DPython3_FIND_STRATEGY='%{_libdir}/../lib64/python3.14/site-packages' \
+        -DPYTHON3_INCLUDE_DIR=/usr/include/python3.14 \
+        -DPythonInterp=/usr/bin/python3.14 \
+        -DPYTHONINTERP=/usr/bin/python3.14 \
+        -DSHIBOKEN_LIBRARY=/usr/lib64/libshiboken6.cpython-314-x86_64-linux-gnu.so \
+        -DShiboken6_LIBRARIES=/usr/lib64/libshiboken6.cpython-314-x86_64-linux-gnu.so \
 %else
 %if ("%{py_suffix}" == "cpython-313-x86_64-linux-gnu")
-                -DPYSIDE_LIBRARY=/usr/lib64/libpyside6.cpython-313-x86_64-linux-gnu.so \
-                -DPySide6_LIBRARIES=/usr/lib64/libpyside6.cpython-313-x86_64-linux-gnu.so \
-                -DPYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3.13 \
-                -DPYTHON_EXECUTABLE=/usr/bin/python3.13 \
-                -DPYTHON_INCLUDE_DIR=/usr/include/python3.13 \
-                -DPYTHON_LIBRARY_DIRS='%{_libdir}/../lib64/python3.13' \
-                -DPYTHON_LIBRARY='%{_libdir}/../lib64/libpython3.13.so' \
-                -DPYTHON_MAIN_DIR:FILEPATH='%{_libdir}/../lib64/python3.13/site-packages' \
-                -DPYTHON_PACKAGES_PATH='%{_libdir}/../lib64/python3.13/site-packages' \
-                -DPYTHON_SUFFIX=.%{py_suffix} \
-                -DPYTHON_VERSION_STRING=3.13 \
-                -DPython3_EXECUTABLE:FILEPATH=/usr/bin/python3.13 \
-                -DPython3_EXECUTABLE=/usr/bin/python3.13 \
-                -DPython3_FIND_STRATEGY='%{_libdir}/../lib64/python3.13/site-packages' \
-                -DPYTHON3_INCLUDE_DIR=/usr/include/python3.13 \
-                -DPythonInterp=/usr/bin/python3.13 \
-                -DPYTHONINTERP=/usr/bin/python3.13 \
-                -DSHIBOKEN_LIBRARY=/usr/lib64/libshiboken6.cpython-313-x86_64-linux-gnu.so \
-                -DShiboken6_LIBRARIES=/usr/lib64/libshiboken6.cpython-313-x86_64-linux-gnu.so \
+        -DPYSIDE_LIBRARY=/usr/lib64/libpyside6.cpython-313-x86_64-linux-gnu.so \
+        -DPySide6_LIBRARIES=/usr/lib64/libpyside6.cpython-313-x86_64-linux-gnu.so \
+        -DPYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3.13 \
+        -DPYTHON_EXECUTABLE=/usr/bin/python3.13 \
+        -DPYTHON_INCLUDE_DIR=/usr/include/python3.13 \
+        -DPYTHON_LIBRARY_DIRS='%{_libdir}/../lib64/python3.13' \
+        -DPYTHON_LIBRARY='%{_libdir}/../lib64/libpython3.13.so' \
+        -DPYTHON_MAIN_DIR:FILEPATH='%{_libdir}/../lib64/python3.13/site-packages' \
+        -DPYTHON_PACKAGES_PATH='%{_libdir}/../lib64/python3.13/site-packages' \
+        -DPYTHON_SUFFIX=.%{py_suffix} \
+        -DPYTHON_VERSION_STRING=3.13 \
+        -DPython3_EXECUTABLE:FILEPATH=/usr/bin/python3.13 \
+        -DPython3_EXECUTABLE=/usr/bin/python3.13 \
+        -DPython3_FIND_STRATEGY='%{_libdir}/../lib64/python3.13/site-packages' \
+        -DPYTHON3_INCLUDE_DIR=/usr/include/python3.13 \
+        -DPythonInterp=/usr/bin/python3.13 \
+        -DPYTHONINTERP=/usr/bin/python3.13 \
+        -DSHIBOKEN_LIBRARY=/usr/lib64/libshiboken6.cpython-313-x86_64-linux-gnu.so \
+        -DShiboken6_LIBRARIES=/usr/lib64/libshiboken6.cpython-313-x86_64-linux-gnu.so \
 %endif
 %endif
-                -DQT_DEFAULT_MAJOR_VERSION=6 \
-                -DSHIBOKEN_INCLUDE_DIR=/usr/include/shiboken6 \
-                -Dtiff_DIR=/usr/lib64 \
-                -Dtiff_DIRS=/usr/lib64 \
-                -Dtiff_INCLUDE_DIRS=/usr/include \
-                -DUSE_CUDA=ON \
-                -DUSE_OCC=ON \
-                -DUSE_OPENCV=ON \
+        -DQT_DEFAULT_MAJOR_VERSION=6 \
+        -DSHIBOKEN_INCLUDE_DIR=/usr/include/shiboken6 \
+        -Dtiff_DIR=/usr/lib64 \
+        -Dtiff_DIRS=/usr/lib64 \
+        -Dtiff_INCLUDE_DIRS=/usr/include \
+        -DUSE_CUDA=ON \
+        -DUSE_OCC=ON \
+        -DUSE_OPENCV=ON \
 %if ! %{bundled_smesh}
-                -DFREECAD_USE_EXTERNAL_SMESH=ON \
-                -DSMESH_FOUND=TRUE \
-                -DSMESH_INCLUDE_DIR=%{_includedir}/smesh \
-                -DSMESH_DIR=`pwd`/../cMake \
+        -DFREECAD_USE_EXTERNAL_SMESH=ON \
+        -DSMESH_FOUND=TRUE \
+        -DSMESH_INCLUDE_DIR=%{_includedir}/smesh \
+        -DSMESH_DIR=`pwd`/../cMake \
 %endif
 %if ! %{bundled_zipios}
-                -DFREECAD_USE_EXTERNAL_ZIPIOS=TRUE \
+        -DFREECAD_USE_EXTERNAL_ZIPIOS=TRUE \
 %endif
 %if ! %{bundled_pycxx}
-                -DPYCXX_INCLUDE_DIR=$(pkg-config --variable=includedir PyCXX) \
-                -DPYCXX_SOURCE_DIR=$(pkg-config --variable=srcdir PyCXX) \
+        -DPYCXX_INCLUDE_DIR=$(pkg-config --variable=includedir PyCXX) \
+        -DPYCXX_SOURCE_DIR=$(pkg-config --variable=srcdir PyCXX) \
 %endif
 %if %{with tests}
         -DENABLE_DEVELOPER_TESTS=TRUE \
@@ -492,73 +502,73 @@ QTv="6"
 %else
         -DENABLE_DEVELOPER_TESTS=FALSE \
 %endif
-                -DBUILD_ADDONMGR=ON \
-                -DBUILD_ASSEMBLY=ON \
-                -DBUILD_BIM=ON \
-                -DBUILD_BIM_WITH_LARK=ON \
-                -DBUILD_CAM=ON \
-                -DBUILD_CLOUD=OFF \
-                -DBUILD_DRAFT=ON \
-                -DBUILD_DRAWING=OFF \
-                -DBUILD_FEM=ON \
+        -DBUILD_ADDONMGR=ON \
+        -DBUILD_ASSEMBLY=ON \
+        -DBUILD_BIM=ON \
+        -DBUILD_BIM_WITH_LARK=ON \
+        -DBUILD_CAM=ON \
+        -DBUILD_CLOUD=OFF \
+        -DBUILD_DRAFT=ON \
+        -DBUILD_DRAWING=OFF \
+        -DBUILD_FEM=ON \
 %if %{bundled_fem_netgen}
-                -DNETGEN_INCLUDEDIR=/usr/include/netgen-mesher \
-                -DNETGEN_INCLUDE_DIRS=/usr/include/netgen-mesher \
-                -DNGLIB_INCLUDE_DIR=/usr/lib64/netgen-mesher \
-                -DNGLIB_INCLUDE_DIRS=/usr/lib64/netgen-mesher \
-                -DNETGEN_LIBDIR=/usr/lib64 \
-                -DNGLIB_LIBRARIES=/usr/lib64/libnglib.so \
-                -DBUILD_FEM_NETGEN=ON \
+        -DNETGEN_INCLUDEDIR=/usr/include/netgen-mesher \
+        -DNETGEN_INCLUDE_DIRS=/usr/include/netgen-mesher \
+        -DNGLIB_INCLUDE_DIR=/usr/lib64/netgen-mesher \
+        -DNGLIB_INCLUDE_DIRS=/usr/lib64/netgen-mesher \
+        -DNETGEN_LIBDIR=/usr/lib64 \
+        -DNGLIB_LIBRARIES=/usr/lib64/libnglib.so \
+        -DBUILD_FEM_NETGEN=ON \
 %endif
 %if %{bundled_fem_vtk}
-                -DNETGEN_INCLUDEDIR=/usr/include/netgen-mesher \
-                -DNETGEN_INCLUDE_DIRS=/usr/include/netgen-mesher \
-                -DNGLIB_INCLUDE_DIR=/usr/lib64/netgen-mesher \
-                -DNGLIB_INCLUDE_DIRS=/usr/lib64/netgen-mesher \
-                -DNETGEN_LIBDIR=/usr/lib64 \
-                -DNGLIB_LIBRARIES=/usr/lib64/libnglib.so \
-                -DBUILD_FEM_VTK=ON \
+        -DNETGEN_INCLUDEDIR=/usr/include/netgen-mesher \
+        -DNETGEN_INCLUDE_DIRS=/usr/include/netgen-mesher \
+        -DNGLIB_INCLUDE_DIR=/usr/lib64/netgen-mesher \
+        -DNGLIB_INCLUDE_DIRS=/usr/lib64/netgen-mesher \
+        -DNETGEN_LIBDIR=/usr/lib64 \
+        -DNGLIB_LIBRARIES=/usr/lib64/libnglib.so \
+        -DBUILD_FEM_VTK=ON \
 %endif
         -DONDSELSOLVER_BUILD_EXE=TRUE \
-                -DBUILD_HELP=ON \
-                -DBUILD_IDF=ON \
-                -DBUILD_IMPORT=ON \
-                -DBUILD_INSPECTION=ON \
-                -DBUILD_JTREADER=ON \
-                -DBUILD_MATERIAL=ON \
-                -DBUILD_MATERIAL_EXTERNAL=ON \
-                -DBUILD_MEASURE=ON \
-                -DBUILD_MESH_PART=ON \
-                -DBUILD_MESH=ON \
-                -DBUILD_OPENSCAD=ON \
-                -DBUILD_PART_DESIGN=ON \
-                -DBUILD_PART=ON \
-                -DBUILD_PATH=ON \
-                -DBUILD_PLOT=ON \
-                -DBUILD_POINTS=ON \
-                -DBUILD_REVERSEENGINEERING=ON \
-                -DBUILD_ROBOT=ON \
-                -DBUILD_SANDBOX=OFF \
-                -DBUILD_SHOW=ON \
-                -DBUILD_SKETCHER=ON \
-                -DBUILD_SPREADSHEET=ON \
-                -DBUILD_START=ON \
-                -DBUILD_SURFACE=ON \
-                -DBUILD_TECHDRAW=ON \
-                -DBUILD_TEMPLATE=ON \
-                -DBUILD_TEMPLATEPY=ON \
-                -DBUILD_TEST=OFF \
-                -DBUILD_TUX=ON \
-                -DBUILD_WEB=ON \
-                -DBUILD_GUI=ON \
-                -DCMAKE_BUILD_TYPE=Release \
-                -DENABLE_DEVELOPER_TESTS=OFF \
-                -DPACKAGE_VERSION_SUFFIX=' QT6' \
-                -DPACKAGE_WCREF='(Git: %{ReleaseNum})' \
-                -DPACKAGE_WCURL='git://github.com/DrBenson/FreeCAD.git' \
-                -DPACKAGE_VERSION_SUFFIX='_QT6 (Git:%{ReleaseNum})' \
-                -Wno-dev \
-                ../
+        -DBUILD_HELP=ON \
+        -DBUILD_IDF=ON \
+        -DBUILD_IMPORT=ON \
+        -DBUILD_INSPECTION=ON \
+        -DBUILD_JTREADER=ON \
+        -DBUILD_MATERIAL=ON \
+        -DBUILD_MATERIAL_EXTERNAL=ON \
+        -DBUILD_MEASURE=ON \
+        -DBUILD_MESH_PART=ON \
+        -DBUILD_MESH=ON \
+        -DBUILD_OPENSCAD=ON \
+        -DBUILD_PART_DESIGN=ON \
+        -DBUILD_PART=ON \
+        -DBUILD_PATH=ON \
+        -DBUILD_PLOT=ON \
+        -DBUILD_POINTS=ON \
+        -DBUILD_REVERSEENGINEERING=ON \
+        -DBUILD_ROBOT=ON \
+        -DBUILD_SANDBOX=OFF \
+        -DBUILD_SHOW=ON \
+        -DBUILD_SKETCHER=ON \
+        -DBUILD_SPREADSHEET=ON \
+        -DBUILD_START=ON \
+        -DBUILD_SURFACE=ON \
+        -DBUILD_TECHDRAW=ON \
+        -DBUILD_TEMPLATE=ON \
+        -DBUILD_TEMPLATEPY=OFF \
+        -DBUILD_TEST=OFF \
+        -DBUILD_TUX=ON \
+        -DBUILD_WEB=ON \
+        -DBUILD_GUI=ON \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DENABLE_DEVELOPER_TESTS=OFF \
+        -DPACKAGE_VERSION_SUFFIX=' QT6' \
+        -DPACKAGE_WCREF='(Git: %{ReleaseNum})' \
+        -DPACKAGE_WCURL='git://github.com/DrBenson/FreeCAD.git' \
+        -DPACKAGE_VERSION_SUFFIX='_QT6 (Git:%{ReleaseNum})' \
+        -Wno-dev \
+        ../
 #       cmake_build
 #        -G Ninja \
 
@@ -769,6 +779,14 @@ fi
     %{_includedir}/OndselSolver/*
 
 %changelog
+* Tue Mar 31 2026 DrBenson <Benson.Dr@GMail.com> - 1:1.1.0-4
+- Release-4
+- Update Tranditional Chinese translation.
+
+* Tue Mar 24 2026 DrBenson <Benson.Dr@GMail.com> - 1:1.1.0-3
+- Release RC3
+- Update Tranditional Chinese translation.
+
 * Mon Feb 02 2026 DrBenson <Benson.Dr@GMail.com> - 1:1.1.0-2
 - Building with Qt6 and PySide6 on Fedora
 - Update Tranditional Chinese translation.
