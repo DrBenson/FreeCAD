@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -54,7 +54,7 @@
     <message>
         <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="273"/>
         <source>Origin-Point</source>
-        <translation type="unfinished"></translation>
+        <translation>原點</translation>
     </message>
 </context>
 <context>

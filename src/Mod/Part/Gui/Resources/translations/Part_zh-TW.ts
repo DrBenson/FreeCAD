@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -1151,6 +1151,11 @@
         <translation>{} 不可附加. 您仍然可以使用附加依賴編輯器對話框來對齊對象，但附加依賴不會是參數化的.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.py" line="260"/>
+        <source>{} is not attachable. The attachment editor can still be used to align the object, but the attachment will not be parametric.</source>
+        <translation>{} 無法進行附加. 雖然仍可使用附加編輯器來對齊該物體，但該附加物體將不會是參數化的.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/AttachmentEditor/TaskAttachmentEditor.py" line="215"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/AttachmentEditor/TaskAttachmentEditor.py" line="228"/>
         <source>Attachment</source>
@@ -1200,6 +1205,11 @@
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/AttachmentEditor/TaskAttachmentEditor.py" line="558"/>
         <source>Selecting...</source>
+        <translation>選擇...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/AttachmentEditor/TaskAttachmentEditor.py" line="692"/>
+        <source>Selecting…</source>
         <translation>選擇...</translation>
     </message>
     <message>
@@ -4190,6 +4200,11 @@ it inside the Placement property.</source>
 而不是將其保留在 放置位置 屬性中.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExportStep.ui" line="14"/>
+        <source>STEP</source>
+        <translation>STEP</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExportStep.ui" line="20"/>
         <source>Export</source>
         <translation>匯出</translation>
@@ -4277,11 +4292,6 @@ it inside the placement property.</source>
 should be written into the STEP file. This parameter can be set to off in order to minimize
 the size of the resulting STEP file.</source>
         <translation>此參數指示是否將參數曲線(曲面參數空間中的曲線)寫入STEP檔案.為了最小化生成的STEP檔案大小，可以將此參數設置為關閉.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExportStep.ui" line="14"/>
-        <source>STEP</source>
-        <translation>STEP</translation>
     </message>
 </context>
 <context>
@@ -4595,11 +4605,6 @@ If both lengths are zero, magnitude of direction is used.</source>
 %1</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExtrusion.cpp" line="182"/>
-        <source>Selecting...</source>
-        <translation>選擇...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExtrusion.cpp" line="634"/>
         <source>Direction mode is to use an edge, but no edge is linked.</source>
         <translation>方向模式是使用一條邊，但沒有連結任何邊.</translation>
@@ -4622,6 +4627,11 @@ If both lengths are zero, magnitude of direction is used.</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExtrusion.cpp" line="678"/>
         <source>Total extrusion length is zero (length1 == -length2). It must be nonzero.</source>
         <translation>總拉伸長度為零 (長度1 == -長度2). 它必須為非零值.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgExtrusion.cpp" line="182"/>
+        <source>Selecting...</source>
+        <translation>選擇...</translation>
     </message>
 </context>
 <context>
@@ -4734,9 +4744,48 @@ If both lengths are zero, magnitude of direction is used.</source>
         <translation>可變半徑</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="266"/>
+        <source>Chamfer Parameter</source>
+        <translation>倒角參數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="267"/>
+        <source>Length:</source>
+        <translation>長度:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="268"/>
+        <source>Constant Length</source>
+        <translation>固定長度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="269"/>
+        <source>Variable Length</source>
+        <translation>可變長度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="273"/>
+        <source>End length</source>
+        <translation>長度2</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="835"/>
         <source>Radius</source>
         <translation>半徑</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="890"/>
+        <source>No valid shape is selected.
+Please select a valid shape in the drop-down box first.</source>
+        <translation>未選取有效之造型.
+請先於下拉選單中選取有效之造型.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="942"/>
+        <source>No edge entity is checked to fillet.
+Please check one or more edge entities first.</source>
+        <translation>未選擇實體之邊產生圓角,
+請先選擇一個或多個實體之邊.</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgFilletEdges.cpp" line="270"/>
@@ -4759,26 +4808,6 @@ If both lengths are zero, magnitude of direction is used.</source>
         <translation>同等距離</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="266"/>
-        <source>Chamfer Parameter</source>
-        <translation>倒角參數</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="267"/>
-        <source>Length:</source>
-        <translation>長度:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="268"/>
-        <source>Constant Length</source>
-        <translation>固定長度</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="269"/>
-        <source>Variable Length</source>
-        <translation>可變長度</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="271"/>
         <source>Two distances</source>
         <translation>兩個距離</translation>
@@ -4789,11 +4818,6 @@ If both lengths are zero, magnitude of direction is used.</source>
         <translation>要倒角的邊緣</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="273"/>
-        <source>End length</source>
-        <translation>長度2</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="275"/>
         <source>Size</source>
         <translation>尺寸</translation>
@@ -4802,20 +4826,6 @@ If both lengths are zero, magnitude of direction is used.</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="276"/>
         <source>Size2</source>
         <translation>大小2</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="890"/>
-        <source>No valid shape is selected.
-Please select a valid shape in the drop-down box first.</source>
-        <translation>未選取有效之造型.
-請先於下拉選單中選取有效之造型.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgFilletEdges.cpp" line="942"/>
-        <source>No edge entity is checked to fillet.
-Please check one or more edge entities first.</source>
-        <translation>未選擇實體之邊產生圓角,
-請先選擇一個或多個實體之邊.</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgFilletEdges.cpp" line="281"/>
@@ -5612,14 +5622,14 @@ during file reading (slower but higher details).</source>
 <context>
     <name>PartGui::DlgPartImportIgesImp</name>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgPartImportIgesImp.cpp" line="73"/>
-        <source>IGES</source>
-        <translation>IGES</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgPartImportIgesImp.cpp" line="74"/>
         <source>All Files</source>
         <translation>所有檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgPartImportIgesImp.cpp" line="73"/>
+        <source>IGES</source>
+        <translation>IGES</translation>
     </message>
 </context>
 <context>
@@ -6673,6 +6683,21 @@ during file reading (slower but higher details).</source>
         <translation>新增邊</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="56"/>
+        <source>Show all</source>
+        <translation>顯示全部</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="66"/>
+        <source>Show faces</source>
+        <translation>顯示面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgProjectionOnSurface.ui" line="76"/>
+        <source>Show edges</source>
+        <translation>顯示邊緣</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="14"/>
         <source>Projection on surface</source>
         <translation>投影在表面</translation>
@@ -6698,19 +6723,24 @@ during file reading (slower but higher details).</source>
         <translation>新增邊界</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="56"/>
-        <source>Show all</source>
-        <translation>顯示全部</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="66"/>
-        <source>Show faces</source>
-        <translation>顯示面</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="76"/>
         <source>Show Edges</source>
         <translation>顯示邊緣</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="92"/>
+        <source>Extrude height</source>
+        <translation>拉伸高度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="116"/>
+        <source>Solid depth</source>
+        <translation>實體深度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="141"/>
+        <source>Direction</source>
+        <translation>方向</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="147"/>
@@ -6731,26 +6761,6 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="213"/>
         <source>Z:</source>
         <translation>Z:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgProjectionOnSurface.ui" line="76"/>
-        <source>Show edges</source>
-        <translation>顯示邊緣</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="92"/>
-        <source>Extrude height</source>
-        <translation>拉伸高度</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="116"/>
-        <source>Solid depth</source>
-        <translation>實體深度</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgProjectionOnSurface.ui" line="141"/>
-        <source>Direction</source>
-        <translation>方向</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgProjectionOnSurface.ui" line="147"/>
@@ -7484,53 +7494,53 @@ during file reading (slower but higher details).</source>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="399"/>
         <source>Enable coarse snapping while dragging</source>
-        <translation type="unfinished"></translation>
+        <translation>在拖放時啟用粗略對齊</translation>
     </message>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="417"/>
         <source>Fine snap modifier</source>
-        <translation type="unfinished"></translation>
+        <translation>精細捕捉修飾因子</translation>
     </message>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="441"/>
         <source>Default coarse drag behavior</source>
-        <translation type="unfinished"></translation>
+        <translation>預設的粗調拖曳行為</translation>
     </message>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="448"/>
         <source>Determines whether the drag is coarse or fine without holding the modifier key</source>
-        <translation type="unfinished"></translation>
+        <translation>決定在不按住修飾鍵的情況下，拖曳動作是粗略還是精細</translation>
     </message>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="468"/>
         <source>Coarse movement multiplier</source>
-        <translation type="unfinished"></translation>
+        <translation>粗調倍率</translation>
     </message>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgSettingsGeneral.ui" line="498"/>
         <source>Coarse rotation step (degrees)</source>
-        <translation type="unfinished"></translation>
+        <translation>粗調旋轉步進 (度)</translation>
     </message>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgSettingsGeneral.cpp" line="53"/>
         <source>Shift</source>
-        <translation type="unfinished"></translation>
+        <translation>⇧Shift</translation>
     </message>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgSettingsGeneral.cpp" line="54"/>
         <source>Ctrl</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl</translation>
     </message>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgSettingsGeneral.cpp" line="57"/>
         <source>Coarse</source>
         <extracomment>Part/PartDesign settings: drag behavior mode when not holding the snap modifier key</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>粗糙</translation>
     </message>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/DlgSettingsGeneral.cpp" line="58"/>
         <source>Fine</source>
-        <translation type="unfinished"></translation>
+        <translation>細緻</translation>
     </message>
 </context>
 <context>
@@ -7602,16 +7612,6 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgSettingsObjectColor.ui" line="20"/>
         <source>Default Shape Appearance Properties</source>
         <translation>預設造形外觀屬性</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="14"/>
-        <source>Shape appearance</source>
-        <translation>造型外觀</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="20"/>
-        <source>Default Shape view properties</source>
-        <translation>預設造形檢視屬性</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="34"/>
@@ -7705,6 +7705,16 @@ during file reading (slower but higher details).</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/DlgSettingsObjectColor.ui" line="224"/>
         <source>The default shininess for new shapes</source>
         <translation>新造型的預設光澤度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="14"/>
+        <source>Shape appearance</source>
+        <translation>造型外觀</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="20"/>
+        <source>Default Shape view properties</source>
+        <translation>預設造形檢視屬性</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/DlgSettingsObjectColor.ui" line="83"/>
@@ -8227,13 +8237,13 @@ the sketch plane&apos;s normal vector will be used</source>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/PatternParametersWidget.cpp" line="70"/>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/PatternParametersWidget.cpp" line="72"/>
         <source>Total Angle</source>
-        <translation type="unfinished"></translation>
+        <translation>總角度</translation>
     </message>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/PatternParametersWidget.cpp" line="71"/>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/Gui/PatternParametersWidget.cpp" line="73"/>
         <source>Angular Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>角距</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/PatternParametersWidget.cpp" line="320"/>
@@ -8783,6 +8793,11 @@ of object being attached.</source>
         <translation>附加依賴模式</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/TaskAttacher.ui" line="101"/>
+        <source>Attachment mode</source>
+        <translation>附加依賴模式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/TaskAttacher.ui" line="124"/>
         <source>Attachment Offset in its Local Coordinate System</source>
         <translation>連結偏移-在區域坐標</translation>
@@ -9005,11 +9020,6 @@ of the object being attached.</source>
         <translation>格式</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/TaskAttacher.ui" line="101"/>
-        <source>Attachment mode</source>
-        <translation>附加依賴模式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/TaskAttacher.cpp" line="344"/>
         <source>Attachment offset (in its local coordinate system):</source>
         <translation>連結偏移 (在區域坐標):</translation>
@@ -9022,6 +9032,11 @@ of the object being attached.</source>
 </context>
 <context>
     <name>PartGui::TaskCheckGeometryDialog</name>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/TaskCheckGeometry.cpp" line="1015"/>
+        <source>Skip this settings page and run the geometry check automatically.</source>
+        <translation>跳過此設定頁面並自動執行幾何檢查.</translation>
+    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/TaskCheckGeometry.cpp" line="1023"/>
         <source>Shape Content</source>
@@ -9175,11 +9190,6 @@ Individual BOP Checks:</source>
 Individual boolean operation checks:</source>
         <translation>
 個別布林運算檢查:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/TaskCheckGeometry.cpp" line="1015"/>
-        <source>Skip this settings page and run the geometry check automatically.</source>
-        <translation>跳過此設定頁面並自動執行幾何檢查.</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/TaskCheckGeometry.cpp" line="1075"/>
@@ -9907,6 +9917,16 @@ in the 3D view for the sweep path.</source>
 <context>
     <name>Part_BooleanFragments</name>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/SplitFeatures.py" line="222"/>
+        <source>Boolean Fragments</source>
+        <translation>布林片段</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/SplitFeatures.py" line="224"/>
+        <source>Creates a boolean union which is sliced at the intersections of the selected shapes</source>
+        <translation>建立一個布林合集，並於選取的圖形交點處進行裁切</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="180"/>
         <source>Boolean fragments</source>
         <translation>布林片段</translation>
@@ -9938,14 +9958,29 @@ for collision or distance filtering.</source>
 如果選擇了第二個物體，它將用作參考，例如用於碰撞或距離過濾.</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/CompoundTools/_CommandCompoundFilter.py" line="71"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/CompoundTools/_CommandCompoundFilter.py" line="112"/>
+        <source>Bad selection</source>
+        <translation>錯誤選擇</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/CompoundTools/_CommandCompoundFilter.py" line="59"/>
+        <source>Filters out objects from the selected compound by characteristics like volume,
+area, or length, or by choosing specific items.
+If a second object is selected, it will be used as reference, for example,
+for collision or distance filtering.</source>
+        <translation>從所選組件中根據體積、面積、長度或選擇特定項目的特徵來過濾物體.
+如果選擇了第二個物體，它將用作參考，例如用於碰撞或距離過濾.</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/CompoundTools/_CommandCompoundFilter.py" line="70"/>
         <source>First select a shape that is a compound. If a second object is selected (optional) it will be treated as a stencil.</source>
         <translation>首先選擇一個組件的造型. 如果選擇了第二個物體(可選)，它將被視為模板.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/CompoundTools/_CommandCompoundFilter.py" line="71"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/CompoundTools/_CommandCompoundFilter.py" line="112"/>
-        <source>Bad selection</source>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/CompoundTools/_CommandCompoundFilter.py" line="88"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/CompoundTools/_CommandCompoundFilter.py" line="134"/>
+        <source>Bad Selection</source>
         <translation>錯誤選擇</translation>
     </message>
     <message>
@@ -9962,6 +9997,16 @@ for collision or distance filtering.</source>
 <context>
     <name>Part_EditAttachment</name>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/AttachmentEditor/Commands.py" line="90"/>
+        <source>Attachment</source>
+        <translation>附加依賴</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/AttachmentEditor/Commands.py" line="92"/>
+        <source>Opens the attachment editor to change the attachment of the selected object</source>
+        <translation>開啟附加依賴編輯器，以變更所選物件的附件</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/AttachmentEditor/Commands.py" line="79"/>
         <source>Attachment...</source>
         <translation>附加依賴...</translation>
@@ -9974,6 +10019,16 @@ for collision or distance filtering.</source>
 </context>
 <context>
     <name>Part_ExplodeCompound</name>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/CompoundTools/_CommandExplodeCompound.py" line="58"/>
+        <source>Explode Compound</source>
+        <translation>拆分複合體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/CompoundTools/_CommandExplodeCompound.py" line="60"/>
+        <source>Splits up a compound of shapes into separate objects, creating a compound filter for each shape</source>
+        <translation>將造型的組合拆分為單獨的物體.它將為每個造型建立一個&quot;複合過濾器&quot;</translation>
+    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/CompoundTools/_CommandExplodeCompound.py" line="50"/>
         <source>Explode compound</source>
@@ -9994,6 +10049,11 @@ It will create a &apos;Compound Filter&apos; for each shape.</source>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/CompoundTools/_CommandExplodeCompound.py" line="63"/>
         <source>Bad selection</source>
+        <translation>錯誤選擇</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/CompoundTools/_CommandExplodeCompound.py" line="75"/>
+        <source>Bad Selection</source>
         <translation>錯誤選擇</translation>
     </message>
 </context>
@@ -10043,6 +10103,16 @@ It will create a &apos;Compound Filter&apos; for each shape.</source>
 <context>
     <name>Part_JoinConnect</name>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/JoinFeatures.py" line="223"/>
+        <source>Connect Shapes</source>
+        <translation>連接造型</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/JoinFeatures.py" line="225"/>
+        <source>Fuses shapes, taking care to preserve voids</source>
+        <translation>融合物體，注意保留空洞</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/JoinFeatures.py" line="186"/>
         <source>Connect objects</source>
         <translation>連接物體</translation>
@@ -10056,6 +10126,16 @@ It will create a &apos;Compound Filter&apos; for each shape.</source>
 <context>
     <name>Part_JoinCutout</name>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/JoinFeatures.py" line="454"/>
+        <source>Cutout Shape</source>
+        <translation>切割造型</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/JoinFeatures.py" line="456"/>
+        <source>Creates a cutout in the selected shape to fit another shape</source>
+        <translation>在選取的圖形中建立一個切口，以容納另一個圖形</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/JoinFeatures.py" line="376"/>
         <source>Cutout for object</source>
         <translation>物體的切除部分</translation>
@@ -10068,6 +10148,16 @@ It will create a &apos;Compound Filter&apos; for each shape.</source>
 </context>
 <context>
     <name>Part_JoinEmbed</name>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/JoinFeatures.py" line="338"/>
+        <source>Embed Shapes</source>
+        <translation>嵌入造型</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/JoinFeatures.py" line="340"/>
+        <source>Fuses one shape into another, taking care to preserve voids</source>
+        <translation>將一種形狀融入另一種形狀，同時謹慎地保留空隙</translation>
+    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/JoinFeatures.py" line="282"/>
         <source>Embed object</source>
@@ -10100,6 +10190,14 @@ It will create a &apos;Compound Filter&apos; for each shape.</source>
         <translation>錯誤選擇</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/JoinFeatures.py" line="94"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/JoinFeatures.py" line="243"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/JoinFeatures.py" line="358"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/JoinFeatures.py" line="474"/>
+        <source>Bad Selection</source>
+        <translation>錯誤選擇</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/JoinFeatures.py" line="82"/>
         <source>Continue</source>
         <translation>繼續</translation>
@@ -10123,6 +10221,16 @@ It will create a &apos;Compound Filter&apos; for each shape.</source>
 <context>
     <name>Part_Slice</name>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/SplitFeatures.py" line="443"/>
+        <source>Slice to Compound</source>
+        <translation>切割成組件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/SplitFeatures.py" line="445"/>
+        <source>Slices the selected object by using other objects as cutting tools and storing the results in one compound</source>
+        <translation>利用其他物體作為切割工具來切片選取的物體，並將結果儲存於一個複合體中</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="337"/>
         <source>Slice to compound</source>
         <translation>切割成組件</translation>
@@ -10138,6 +10246,16 @@ A &apos;Compound Filter&apos; can be used to extract the individual slices.</sou
 <context>
     <name>Part_SliceApart</name>
     <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/SplitFeatures.py" line="482"/>
+        <source>Slice Apart</source>
+        <translation>分割成片</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/SplitFeatures.py" line="484"/>
+        <source>Slices the selected object by other objects, and splits it apart, creating a compound filter for each slide</source>
+        <translation>使用其他物體對所選物體進行切割，將其分割成多個部分.對於每個切片，將建立一個組件過濾器</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="369"/>
         <source>Slice apart</source>
         <translation>分割成片</translation>
@@ -10151,6 +10269,14 @@ It will create a &apos;Compound Filter&apos; for each slice.</source>
 </context>
 <context>
     <name>Part_SplitFeatures</name>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="159"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="302"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="496"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/CompoundTools/_CommandCompoundFilter.py" line="114"/>
+        <source>Continue</source>
+        <translation>繼續</translation>
+    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="155"/>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="298"/>
@@ -10177,14 +10303,6 @@ It will create a &apos;Compound Filter&apos; for each slice.</source>
         <translation>錯誤選擇</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="159"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="302"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="496"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/CompoundTools/_CommandCompoundFilter.py" line="114"/>
-        <source>Continue</source>
-        <translation>繼續</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="180"/>
         <source>Boolean fragments</source>
         <translation>布林片段</translation>
@@ -10201,12 +10319,6 @@ A &apos;Compound Filter&apos; can be used to extract the individual slices.</sou
 可以使用「組件過濾器」提取個別的切片.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="198"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="534"/>
-        <source>Select at least two objects, or one or more compounds. If only one compound is selected, the compounded shapes will be intersected between each other (otherwise, compounds with self-intersections are invalid).</source>
-        <translation>請選擇至少兩個物體，或者一個或多個組件. 如果只選擇一個組件，則組件中的造型將彼此交叉(否則，具有自我交叉的組件是無效的).</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="337"/>
         <source>Slice to compound</source>
         <translation>切割成組件</translation>
@@ -10219,12 +10331,6 @@ A &apos;Compound Filter&apos; can be used to extract the individual slices.</sou
         <translation>使用其他物體作為切割工具，將所選物體進行切割
 切割後的片段將被存儲在一個複合體中
 可以使用「組件過濾器」來提取單獨的切片.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="353"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="384"/>
-        <source>Select at least two objects. The first one is the object to be sliced; the rest are objects to slice with.</source>
-        <translation>請至少選擇兩個物體. 第一個物體是要切割的物體，其他物體則是用來切割的物體.</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="369"/>
@@ -10253,6 +10359,29 @@ A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</sour
 這意味著造型之間重疊的區域將被移除
 可以使用「組件過濾器」來提取剩餘的部分.</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/SplitFeatures.py" line="195"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/SplitFeatures.py" line="245"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/SplitFeatures.py" line="399"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/SplitFeatures.py" line="466"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/SplitFeatures.py" line="505"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/SplitFeatures.py" line="641"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/SplitFeatures.py" line="693"/>
+        <source>Bad Selection</source>
+        <translation>錯誤選擇</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="198"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="534"/>
+        <source>Select at least two objects, or one or more compounds. If only one compound is selected, the compounded shapes will be intersected between each other (otherwise, compounds with self-intersections are invalid).</source>
+        <translation>請選擇至少兩個物體，或者一個或多個組件. 如果只選擇一個組件，則組件中的造型將彼此交叉(否則，具有自我交叉的組件是無效的).</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="353"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BOPTools/SplitFeatures.py" line="384"/>
+        <source>Select at least two objects. The first one is the object to be sliced; the rest are objects to slice with.</source>
+        <translation>請至少選擇兩個物體. 第一個物體是要切割的物體，其他物體則是用來切割的物體.</translation>
+    </message>
 </context>
 <context>
     <name>Part_ToleranceFeatures</name>
@@ -10269,6 +10398,11 @@ A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</sour
     <message>
         <location filename="../../../BOPTools/ToleranceFeatures.py" line="72"/>
         <source>Bad selection</source>
+        <translation>錯誤選擇</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/ToleranceFeatures.py" line="88"/>
+        <source>Bad Selection</source>
         <translation>錯誤選擇</translation>
     </message>
     <message>
@@ -10290,18 +10424,33 @@ A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</sour
         <translation>設定選定物體的公差.</translation>
     </message>
     <message>
+        <location filename="../../../BOPTools/ToleranceFeatures.py" line="205"/>
+        <source>Bad selection</source>
+        <translation>錯誤選擇</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/ToleranceFeatures.py" line="234"/>
+        <source>Creates a parametric copy of the selected object with all contained tolerances set to at least a certain minimum value</source>
+        <translation>建立選取物件的參數化拷貝，並將其中所有公差值設定為不低於特定最小值</translation>
+    </message>
+    <message>
         <location filename="../../../BOPTools/ToleranceFeatures.py" line="204"/>
         <source>Select at least one object or compounds</source>
         <translation>選擇至少一個物體或組件</translation>
     </message>
     <message>
-        <location filename="../../../BOPTools/ToleranceFeatures.py" line="205"/>
-        <source>Bad selection</source>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/ToleranceFeatures.py" line="249"/>
+        <source>Bad Selection</source>
         <translation>錯誤選擇</translation>
     </message>
 </context>
 <context>
     <name>Part_Tube</name>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BasicShapes/CommandShapes.py" line="47"/>
+        <source>Tube</source>
+        <translation>管</translation>
+    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BasicShapes/CommandShapes.py" line="44"/>
         <source>Create tube</source>
@@ -10328,9 +10477,31 @@ This means the overlapping volumes of the shapes will be removed.
 A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</source>
         <translation>對於兩個或多個選定的物體，或者組件中的造型，執行「互斥或」布林運算.這意味著造型之間重疊的區域將被移除.可以使用「組件過濾器」來提取剩餘的部分.</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Part/BOPTools/SplitFeatures.py" line="670"/>
+        <source>Performs an &apos;exclusive OR&apos; boolean operation with two or more selected objects,
+or with the shapes inside a compound.
+Overlapping volumes of the shapes will be removed.</source>
+        <translation>對於兩個或多個選定的物體，或者組件中的造型，執行「互斥或」布林運算
+這意味著造型之間重疊的區域將被移除
+可以使用「組件過濾器」來提取剩餘的部分.</translation>
+    </message>
 </context>
 <context>
     <name>QObject</name>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BasicShapes/CommandShapes.py" line="52"/>
+        <source>Create tube</source>
+        <translation>建立管</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BasicShapes/ViewProviderShapes.py" line="47"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BasicShapes/ViewProviderShapes.py" line="54"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/ViewProviderPrimitive.cpp" line="66"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/ViewProvider.cpp" line="50"/>
+        <source>Edit %1</source>
+        <translation>編輯 %1</translation>
+    </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/AppPartGui.cpp" line="228"/>
         <source>Part and Part Design workbench</source>
@@ -11063,14 +11234,6 @@ Continue?</source>
         <translation>無效</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BasicShapes/ViewProviderShapes.py" line="47"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BasicShapes/ViewProviderShapes.py" line="54"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/ViewProviderPrimitive.cpp" line="66"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/ViewProvider.cpp" line="50"/>
-        <source>Edit %1</source>
-        <translation>編輯 %1</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Part/Gui/ViewProviderMirror.cpp" line="84"/>
         <source>Edit Mirror Plane</source>
         <translation>編輯鏡像平面</translation>
@@ -11215,11 +11378,6 @@ Continue?</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/ViewProviderAttachExtension.cpp" line="118"/>
         <source>Attachment editor</source>
         <translation>附加依賴編輯器</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/BasicShapes/CommandShapes.py" line="52"/>
-        <source>Create tube</source>
-        <translation>建立管</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/part/Gui/ViewProviderExt.cpp" line="864"/>

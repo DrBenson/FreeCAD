@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -419,17 +419,17 @@
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="577"/>
         <source>%1 auto-save</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 自動儲存</translation>
     </message>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="581"/>
         <source>%1 start new measurement</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 開始新測量</translation>
     </message>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="581"/>
         <source>%1 add to measurement</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 加入測量</translation>
     </message>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMeasure.cpp" line="785"/>
@@ -525,7 +525,7 @@
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="124"/>
         <source>Select…</source>
-        <translation>選擇   </translation>
+        <translation>選擇…</translation>
     </message>
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Measure/Gui/TaskMassProperties.ui" line="137"/>

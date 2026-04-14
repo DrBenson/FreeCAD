@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -1073,7 +1073,7 @@
     <message>
         <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="10476"/>
         <source>Group Constraint</source>
-        <translation type="unfinished"></translation>
+        <translation>群組拘束</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="10466"/>
@@ -4819,11 +4819,6 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
         <translation>無法在兩個固定幾何之間新增拘束. 固定幾何包括外部幾何、區塊幾何和特殊點例如 B雲形線之結點.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="227"/>
-        <source>One or two point on object constraint(s) was/were deleted, since the latest constraint being applied internally applies point-on-object as well.</source>
-        <translation>刪除了物件約束上的一兩個點，因為內部應用的最新約束也應用了物件上的點.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="229"/>
         <source>One or two point-on-object constraints were deleted, since the latest constraint being applied internally applies point-on-object as well.</source>
         <translation>刪除了一個或兩個物體的約束，因為內部套用的最新約束也套用了點對物體.</translation>
@@ -4853,6 +4848,11 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
     <message>
         <source>Error</source>
         <translation>錯誤</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="227"/>
+        <source>One or two point on object constraint(s) was/were deleted, since the latest constraint being applied internally applies point-on-object as well.</source>
+        <translation>刪除了物件約束上的一兩個點，因為內部應用的最新約束也應用了物件上的點.</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/CommandConstraints.cpp" line="787"/>
@@ -7818,16 +7818,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <translation>垂直拘束</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="61"/>
-        <source>Point Coincidence</source>
-        <translation>共點拘束</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="62"/>
-        <source>Point on Object</source>
-        <translation>物體上的點</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="64"/>
         <source>Horizontal Constraint</source>
         <translation>水平拘束</translation>
@@ -8030,6 +8020,16 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <source>Delete</source>
         <translation>刪除</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="61"/>
+        <source>Point Coincidence</source>
+        <translation>共點拘束</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherElements.cpp" line="62"/>
+        <source>Point on Object</source>
+        <translation>物體上的點</translation>
     </message>
 </context>
 <context>
@@ -11045,14 +11045,14 @@ However, no constraints linking to the endpoints were found.</source>
         <translation>自動更新</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherMessages.cpp" line="44"/>
-        <source>Solver Messages</source>
-        <translation>求解器訊息</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherMessages.cpp" line="97"/>
         <source>Executes a recomputation of active document after every sketch action</source>
         <translation>在活躍文件的每個草圖動作後執行重新計算</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Sketcher/Gui/TaskSketcherMessages.cpp" line="44"/>
+        <source>Solver Messages</source>
+        <translation>求解器訊息</translation>
     </message>
     <message>
         <source>Solver messages</source>

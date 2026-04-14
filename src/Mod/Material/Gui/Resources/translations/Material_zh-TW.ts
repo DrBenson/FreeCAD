@@ -1756,6 +1756,24 @@ If unchecked, they will be sorted by their name.</source>
 <context>
     <name>Material</name>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Material/MaterialEditor.py" line="264"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Material/MaterialEditor.py" line="331"/>
+        <source>The document has been modified.</source>
+        <translation>文件已被修改.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Material/MaterialEditor.py" line="265"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Material/MaterialEditor.py" line="332"/>
+        <source>Do you want to save your changes?</source>
+        <translation>您想儲存變更嗎?</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Material/MaterialEditor.py" line="267"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Material/MaterialEditor.py" line="351"/>
+        <source>Save changes?</source>
+        <translation>儲存變更?</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Material/Gui/MaterialEditor.py" line="275"/>
         <source>Product URL</source>
         <translation>產品頁面網址</translation>
@@ -1769,18 +1787,6 @@ If unchecked, they will be sorted by their name.</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Material/Gui/MaterialEditor.py" line="583"/>
         <source>Name</source>
         <translation>名稱</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Material/MaterialEditor.py" line="264"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Material/MaterialEditor.py" line="331"/>
-        <source>The document has been modified.</source>
-        <translation>文件已被修改.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Material/MaterialEditor.py" line="265"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Material/MaterialEditor.py" line="332"/>
-        <source>Do you want to save your changes?</source>
-        <translation>您想儲存變更嗎?</translation>
     </message>
 </context>
 <context>

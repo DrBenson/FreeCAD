@@ -1286,6 +1286,11 @@ so that self intersection is avoided.</source>
 <context>
     <name>Command</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/Command.cpp" line="298"/>
+        <source>Edit ShapeBinder</source>
+        <translation>編輯造型粘合</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/Command.cpp" line="300"/>
         <source>Edit Shape Binder</source>
         <translation>編輯造型粘合</translation>
@@ -1369,6 +1374,11 @@ so that self intersection is avoided.</source>
         <translation>增加一個實體</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/CommandBody.cpp" line="426"/>
+        <source>Migrate legacy part design features to Bodies</source>
+        <translation>將舊版零件設計特徵遷移到實體</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/CommandBody.cpp" line="432"/>
         <source>Migrate legacy Part Design features to bodies</source>
         <translation>將舊版零件設計特徵遷移到實體</translation>
@@ -1447,16 +1457,6 @@ so that self intersection is avoided.</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.cpp" line="386"/>
         <source>Scaled</source>
         <translation>縮放</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/Command.cpp" line="298"/>
-        <source>Edit ShapeBinder</source>
-        <translation>編輯造型粘合</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/CommandBody.cpp" line="426"/>
-        <source>Migrate legacy part design features to Bodies</source>
-        <translation>將舊版零件設計特徵遷移到實體</translation>
     </message>
 </context>
 <context>
@@ -1652,10 +1652,30 @@ so that self intersection is avoided.</source>
         <translation>無法觸及所選造型，請選擇面</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureGroove.cpp" line="78"/>
+        <source>Angle of groove too large</source>
+        <translation>槽角太大</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureGroove.cpp" line="82"/>
+        <source>Angle of groove too small</source>
+        <translation>槽角太小</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureGroove.cpp" line="101"/>
+        <source>Angles of groove nullify each other</source>
+        <translation>凹槽的角度相互抵消</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureGroove.cpp" line="118"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="118"/>
         <source>Creating a face from sketch failed</source>
         <translation>從草圖建立表面失敗</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureGroove.cpp" line="156"/>
+        <source>Cut out of base feature failed</source>
+        <translation>切割基礎特徵失敗</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureExtrude.cpp" line="516"/>
@@ -1758,51 +1778,6 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed.</sou
         <translation>圓角作業失敗. 選取的邊緣可能包含無法一起圓角的幾何圖形. 請嘗試單獨或以較小的半徑圓角邊緣.</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureGroove.cpp" line="78"/>
-        <source>Angle of groove too large</source>
-        <translation>槽角太大</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureGroove.cpp" line="82"/>
-        <source>Angle of groove too small</source>
-        <translation>槽角太小</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureGroove.cpp" line="156"/>
-        <source>Cut out of base feature failed</source>
-        <translation>切割基礎特徵失敗</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureGroove.cpp" line="101"/>
-        <source>Angles of groove nullify each other</source>
-        <translation>凹槽的角度相互抵消</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="133"/>
-        <source>Reference axis is invalid</source>
-        <translation>參考軸無效</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureGroove.cpp" line="140"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="140"/>
-        <source>Revolve axis intersects the sketch</source>
-        <translation>旋轉軸與草圖相交</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureGroove.cpp" line="173"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="165"/>
-        <source>Could not revolve the sketch!</source>
-        <translation>無法旋轉草圖!</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureGroove.cpp" line="180"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="172"/>
-        <source>Could not create face from sketch.
-Intersecting sketch entities in a sketch are not allowed.</source>
-        <translation>無法從草圖建立表面.
-草圖中不允許有相交的草圖實體.</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureHole.cpp" line="1375"/>
         <source>Thread type is invalid</source>
         <translation>螺紋類型無效</translation>
@@ -1879,6 +1854,11 @@ Intersecting sketch entities in a sketch are not allowed.</source>
         <translation>孔錯誤: 結果造型為空</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureHole.cpp" line="1880"/>
+        <source>Error: Adding the thread failed</source>
+        <translation>錯誤: 增加螺紋失敗</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureHole.cpp" line="2126"/>
         <source>Hole error: Finding axis failed</source>
         <translation>孔錯誤: 尋找軸心失敗</translation>
@@ -1888,6 +1868,11 @@ Intersecting sketch entities in a sketch are not allowed.</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureHole.cpp" line="1940"/>
         <source>Boolean operation failed on profile Edge</source>
         <translation>在輪廓邊緣上執行布林計算失敗</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureHole.cpp" line="1687"/>
+        <source>Hole error: Creating a face from sketch failed</source>
+        <translation>孔錯誤: 從草圖建立表面失敗</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureHole.cpp" line="1946"/>
@@ -1916,6 +1901,46 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed for m
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureHole.cpp" line="2120"/>
         <source>Error: Thread could not be built</source>
         <translation>錯誤: 無法構建螺紋</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureGroove.cpp" line="180"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="172"/>
+        <source>Could not create face from sketch.
+Intersecting sketch entities in a sketch are not allowed.</source>
+        <translation>無法從草圖建立表面.
+草圖中不允許有相交的草圖實體.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="77"/>
+        <source>Angle of revolution too large</source>
+        <translation>公轉角度太大</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="81"/>
+        <source>Angle of revolution too small</source>
+        <translation>公轉角度太小</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="104"/>
+        <source>Angles of revolution nullify each other</source>
+        <translation>旋轉角度相互抵消</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="133"/>
+        <source>Reference axis is invalid</source>
+        <translation>參考軸無效</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureGroove.cpp" line="140"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="140"/>
+        <source>Revolve axis intersects the sketch</source>
+        <translation>旋轉軸與草圖相交</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureGroove.cpp" line="173"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="165"/>
+        <source>Could not revolve the sketch!</source>
+        <translation>無法旋轉草圖!</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureHelix.cpp" line="128"/>
@@ -1994,11 +2019,6 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed for m
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureHole.cpp" line="2145"/>
         <source>Error: Result is not a solid</source>
         <translation>錯誤: 產生造型不是實體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureHelix.cpp" line="127"/>
-        <source>Error: Pitch too small</source>
-        <translation>錯誤: 間距太小</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureHelix.cpp" line="347"/>
@@ -2094,16 +2114,6 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed for m
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureLoft.cpp" line="475"/>
         <source>Loft: Failed to create shell</source>
         <translation>拉伸成形: 無法建立外殼</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeaturePrimitive.cpp" line="99"/>
-        <source>Adding the primitive failed</source>
-        <translation>增加原始特徵失敗</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeaturePrimitive.cpp" line="119"/>
-        <source>Subtracting the primitive failed</source>
-        <translation>減去原始特徵失敗</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeaturePrimitive.cpp" line="124"/>
@@ -2236,6 +2246,16 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed for m
         <translation>無法在沒有基本特徵的情況下減去原始特徵</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeaturePrimitive.cpp" line="99"/>
+        <source>Adding the primitive failed</source>
+        <translation>增加原始特徵失敗</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeaturePrimitive.cpp" line="119"/>
+        <source>Subtracting the primitive failed</source>
+        <translation>減去原始特徵失敗</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeaturePrimitive.cpp" line="199"/>
         <source>Length of box too small</source>
         <translation>立方體長度太小</translation>
@@ -2339,21 +2359,6 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed for m
         <translation>楔形的 delta x2 為負</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="77"/>
-        <source>Angle of revolution too large</source>
-        <translation>公轉角度太大</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="81"/>
-        <source>Angle of revolution too small</source>
-        <translation>公轉角度太小</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureRevolution.cpp" line="104"/>
-        <source>Angles of revolution nullify each other</source>
-        <translation>旋轉角度相互抵消</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureTransformed.cpp" line="94"/>
         <source>Transformation feature Linked object is not a Part object</source>
         <translation>轉換特徵連結物體不是零件物體</translation>
@@ -2404,16 +2409,6 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed for m
         <translation>無效的面參照</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureHole.cpp" line="1687"/>
-        <source>Hole error: Creating a face from sketch failed</source>
-        <translation>孔錯誤: 從草圖建立表面失敗</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureHole.cpp" line="1880"/>
-        <source>Error: Adding the thread failed</source>
-        <translation>錯誤: 增加螺紋失敗</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeaturePad.cpp" line="98"/>
         <source>Pad: Can&apos;t pad up to shape without base shape.</source>
         <translation>平面: 沒有基礎造型就無法將平面成為造型.</translation>
@@ -2437,6 +2432,11 @@ Intersecting sketch entities or multiple faces in a sketch are not allowed for m
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeaturePad.cpp" line="211"/>
         <source>Pad: Fusion with base feature failed</source>
         <translation>面板: 與基礎特徵融合失敗</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureHelix.cpp" line="127"/>
+        <source>Error: Pitch too small</source>
+        <translation>錯誤: 間距太小</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/App/FeatureDraft.cpp" line="315"/>
@@ -3509,6 +3509,11 @@ If zero, it is equal to Radius2</source>
 <context>
     <name>PartDesignGui::TaskChamferParameters</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskChamferParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskChamferParameters.ui" line="20"/>
         <source>Toggles between selection and preview mode</source>
         <translation>在選取和預覽模式之間切換</translation>
@@ -3597,11 +3602,6 @@ click again to end selection</source>
 </translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskChamferParameters.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskChamferParameters.cpp" line="180"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskChamferParameters.cpp" line="182"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskChamferParameters.cpp" line="257"/>
@@ -3656,6 +3656,11 @@ click again to end selection</source>
 <context>
     <name>PartDesignGui::TaskDlgFeatureParameters</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskFeatureParameters.cpp" line="133"/>
+        <source>Input error</source>
+        <translation>輸入錯誤</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskFeatureParameters.cpp" line="207"/>
         <source>The feature could not be created with the given parameters.
 The geometry may be invalid or the parameters may be incompatible.
@@ -3663,11 +3668,6 @@ Please adjust the parameters and try again.</source>
         <translation>無法使用給定的參數建立特徵.
 幾何可能無效或參數不相容.
 請調整參數後再試一次.</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskFeatureParameters.cpp" line="133"/>
-        <source>Input error</source>
-        <translation>輸入錯誤</translation>
     </message>
 </context>
 <context>
@@ -3714,6 +3714,11 @@ Please adjust the parameters and try again.</source>
 </context>
 <context>
     <name>PartDesignGui::TaskDraftParameters</name>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskDraftParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskDraftParameters.ui" line="20"/>
         <source>Toggles between selection and preview mode</source>
@@ -3783,11 +3788,6 @@ click again to end selection</source>
 </translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskDraftParameters.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskDraftParameters.cpp" line="282"/>
         <source>Empty draft created !
 </source>
@@ -3824,11 +3824,6 @@ click again to end selection</source>
         <translation>確認選擇</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskDressUpParameters.cpp" line="84"/>
-        <source>Preview</source>
-        <translation>預覽</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskDressUpParameters.cpp" line="294"/>
         <source>Add All Edges</source>
         <translation>增加所有邊線</translation>
@@ -3842,6 +3837,11 @@ click again to end selection</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskDressUpParameters.cpp" line="293"/>
         <source>Remove</source>
         <translation>移除</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskDressUpParameters.cpp" line="84"/>
+        <source>Preview</source>
+        <translation>預覽</translation>
     </message>
 </context>
 <context>
@@ -4051,6 +4051,11 @@ click again to end selection</source>
 <context>
     <name>PartDesignGui::TaskFilletParameters</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskFilletParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskFilletParameters.ui" line="20"/>
         <source>Toggles between selection and preview mode</source>
         <translation>在選取和預覽模式之間切換</translation>
@@ -4107,11 +4112,6 @@ click again to end selection</source>
 </source>
         <translation>建立空圓角!
 </translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskFilletParameters.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -4381,6 +4381,21 @@ click again to end selection</source>
 <context>
     <name>PartDesignGui::TaskHoleParameters</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="53"/>
+        <source>Hole Parameters</source>
+        <translation>圓孔參數</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="65"/>
+        <source>None</source>
+        <translation>無</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="64"/>
+        <source>ISO metric regular</source>
+        <translation>ISO 公制常規</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="47"/>
         <source>Counterbore</source>
         <translation>沉頭孔</translation>
@@ -4411,19 +4426,19 @@ click again to end selection</source>
         <translation>帶帽螺釘(已棄用)</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="53"/>
-        <source>Hole Parameters</source>
-        <translation>圓孔參數</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="55"/>
         <source>Hole parameters</source>
         <translation>圓孔參數</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="65"/>
-        <source>None</source>
-        <translation>無</translation>
+        <source>ISO metric fine</source>
+        <translation>ISO 公制細牙</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="66"/>
+        <source>UTS coarse</source>
+        <translation>UTS 統一英制粗牙</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="66"/>
@@ -4432,13 +4447,28 @@ click again to end selection</source>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="67"/>
+        <source>UTS fine</source>
+        <translation>UTS 統一英制細牙</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="67"/>
         <source>ISO metric fine profile</source>
         <translation>ISO 公制細牙</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="68"/>
+        <source>UTS extra fine</source>
+        <translation>UTS 統一英制特細牙</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="68"/>
         <source>UTS coarse profile</source>
         <translation>UTS 統一英制粗牙</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="69"/>
+        <source>ANSI pipes</source>
+        <translation>ANSI 美標管道</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="69"/>
@@ -4452,6 +4482,11 @@ click again to end selection</source>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="70"/>
+        <source>ISO/BSP pipes</source>
+        <translation>ISO/BSP 管道</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="70"/>
         <source>UTS extra fine profile</source>
         <translation>UTS 統一英制特細牙</translation>
     </message>
@@ -4462,57 +4497,22 @@ click again to end selection</source>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="71"/>
+        <source>BSW whitworth</source>
+        <translation>BSW 惠氏輪廓</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="71"/>
         <source>BSW whitworth profile</source>
         <translation>BSF 惠氏輪廓</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="72"/>
-        <source>BSF whitworth fine profile</source>
+        <source>BSF whitworth fine</source>
         <translation>BSF 惠氏細輪廓</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="64"/>
-        <source>ISO metric regular</source>
-        <translation>ISO 公制常規</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="65"/>
-        <source>ISO metric fine</source>
-        <translation>ISO 公制細牙</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="66"/>
-        <source>UTS coarse</source>
-        <translation>UTS 統一英制粗牙</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="67"/>
-        <source>UTS fine</source>
-        <translation>UTS 統一英制細牙</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="68"/>
-        <source>UTS extra fine</source>
-        <translation>UTS 統一英制特細牙</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="69"/>
-        <source>ANSI pipes</source>
-        <translation>ANSI 美標管道</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="70"/>
-        <source>ISO/BSP pipes</source>
-        <translation>ISO/BSP 管道</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="71"/>
-        <source>BSW whitworth</source>
-        <translation>BSW 惠氏輪廓</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskHoleParameters.cpp" line="72"/>
-        <source>BSF whitworth fine</source>
+        <source>BSF whitworth fine profile</source>
         <translation>BSF 惠氏細輪廓</translation>
     </message>
     <message>
@@ -4788,11 +4788,6 @@ click again to end selection</source>
         <translation>確定</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.cpp" line="73"/>
-        <source>Remove</source>
-        <translation>移除</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.cpp" line="86"/>
         <source>Edit</source>
         <translation>編輯</translation>
@@ -4841,6 +4836,11 @@ click again to end selection</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.cpp" line="83"/>
         <source>Add Mirror Transformation</source>
         <translation>加入鏡像效果</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.cpp" line="73"/>
+        <source>Remove</source>
+        <translation>移除</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskMultiTransformParameters.cpp" line="89"/>
@@ -5085,6 +5085,11 @@ click again to end selection</source>
         <translation>類型</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskPadPocketParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskPadPocketParameters.ui" line="30"/>
         <source>Dimension</source>
         <translation>標註</translation>
@@ -5237,11 +5242,6 @@ the sketch plane&apos;s normal vector will be used</source>
         <source>Recompute on change</source>
         <translation>變更時重新計算</translation>
     </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskPadPocketParameters.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
 </context>
 <context>
     <name>PartDesignGui::TaskPatternParameters</name>
@@ -5372,6 +5372,11 @@ the sketch plane&apos;s normal vector will be used</source>
 <context>
     <name>PartDesignGui::TaskPipeParameters</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskPipeParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskPipeParameters.ui" line="20"/>
         <source>Profile</source>
         <translation>輪廓特徵</translation>
@@ -5477,11 +5482,6 @@ the sketch plane&apos;s normal vector will be used</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskPipeParameters.cpp" line="425"/>
         <source>No active body</source>
         <translation>沒有啟用中的實體</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskPipeParameters.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -5805,6 +5805,11 @@ the sketch plane&apos;s normal vector will be used</source>
         <translation>軸座標</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskRevolutionParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskRevolutionParameters.ui" line="50"/>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskRevolutionParameters.cpp" line="235"/>
         <source>Base X-axis</source>
@@ -5911,11 +5916,6 @@ the sketch plane&apos;s normal vector will be used</source>
         <translation>無選定之面</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskRevolutionParameters.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskRevolutionParameters.cpp" line="49"/>
         <source>Revolution parameters</source>
         <translation>旋轉成形參數</translation>
@@ -6018,6 +6018,11 @@ the sketch plane&apos;s normal vector will be used</source>
 <context>
     <name>PartDesignGui::TaskThicknessParameters</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskThicknessParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskThicknessParameters.ui" line="20"/>
         <source>Toggles between selection and preview mode</source>
         <translation>在選取和預覽模式之間切換</translation>
@@ -6110,11 +6115,6 @@ click again to end selection</source>
 </translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskThicknessParameters.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskThicknessParameters.cpp" line="248"/>
         <source>Empty thickness created !
 </source>
@@ -6138,14 +6138,40 @@ click again to end selection</source>
 <context>
     <name>PartDesignGui::TaskTransformedParameters</name>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="22"/>
+        <source>Add feature</source>
+        <translation>加入特徵</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="32"/>
+        <source>Remove feature</source>
+        <translation>移除特徵</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="35"/>
         <source>Transform body</source>
         <translation>轉換實體</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="41"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="51"/>
+        <source>buttonGroupMode</source>
+        <translation>按鈕群組模式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="48"/>
         <source>Transform tool shapes</source>
         <translation>轉換工具造型</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="63"/>
+        <source>Update view</source>
+        <translation>更新檢視</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="78"/>
@@ -6166,11 +6192,6 @@ click again to end selection</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="122"/>
         <source>Recompute on change</source>
         <translation>變更時重新計算</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/PartDesign/Gui/TaskTransformedParameters.cpp" line="77"/>
-        <source></source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.cpp" line="104"/>
@@ -6284,32 +6305,6 @@ click again to end selection</source>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.cpp" line="458"/>
         <source>Base XZ-plane</source>
         <translation>物體原點的 XZ 平面</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="22"/>
-        <source>Add feature</source>
-        <translation>加入特徵</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="32"/>
-        <source>Remove feature</source>
-        <translation>移除特徵</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="41"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="51"/>
-        <source>buttonGroupMode</source>
-        <translation>按鈕群組模式</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/TaskTransformedParameters.ui" line="63"/>
-        <source>Update view</source>
-        <translation>更新檢視</translation>
     </message>
 </context>
 <context>
@@ -7295,14 +7290,6 @@ For legacy documents with Part Design objects lacking a body, use the migrate fu
 對於沒有正文的 零件設計 物體的舊文件，請使用 零件設計 中的移轉功能將它們放入實體中.</translation>
     </message>
     <message>
-        <location filename="../../Utils.cpp" line="122"/>
-        <source>In order to use PartDesign you need an active Body object in the document. Please make one active (double click) or create one.
-
-If you have a legacy document with PartDesign objects without Body, use the migrate function in PartDesign to put them into a Body.</source>
-        <translation>要使用零件設計物體，文件中必須有一個啟用的實體物體. 請雙擊啟用一個實體，或建立一個新的實體.
-如果您使用舊版文件其零件設計物體沒有實體的話，使用零件設計中之遷移功能將他們搬到一個實體中.</translation>
-    </message>
-    <message>
         <location filename="../../Utils.cpp" line="169"/>
         <source>Active Body Required</source>
         <translation>需要啟用的實體</translation>
@@ -7316,6 +7303,14 @@ If you have a legacy document with PartDesign objects without Body, use the migr
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/PartDesign/Gui/Utils.cpp" line="188"/>
         <source>To create a new Part Design object, an active body is required in the document. Activate an existing body (double-click) or create a new one.</source>
         <translation>要建立新的零件設計物體，文件中必須有一個啟用的實體物體. 請雙擊啟用一個實體，或建立一個新的實體.</translation>
+    </message>
+    <message>
+        <location filename="../../Utils.cpp" line="122"/>
+        <source>In order to use PartDesign you need an active Body object in the document. Please make one active (double click) or create one.
+
+If you have a legacy document with PartDesign objects without Body, use the migrate function in PartDesign to put them into a Body.</source>
+        <translation>要使用零件設計物體，文件中必須有一個啟用的實體物體. 請雙擊啟用一個實體，或建立一個新的實體.
+如果您使用舊版文件其零件設計物體沒有實體的話，使用零件設計中之遷移功能將他們搬到一個實體中.</translation>
     </message>
     <message>
         <location filename="../../Utils.cpp" line="205"/>

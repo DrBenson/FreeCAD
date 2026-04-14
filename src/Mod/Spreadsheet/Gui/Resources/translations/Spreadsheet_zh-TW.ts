@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -1041,10 +1041,16 @@ switch the design configuration. The property will be created if not exist.</sou
         <translation>試算表</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="194"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="254"/>
-        <source>CSV (*.csv *.CSV);;All (*)</source>
-        <translation>CSV (*.csv *.CSV);;全部 (*)</translation>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/Command.cpp" line="199"/>
+        <location filename="../../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/Spreadsheet/Gui/ViewProviderSpreadsheet.cpp" line="108"/>
+        <source>CSV (*.csv *.CSV)</source>
+        <translation>CSV (*.csv *.CSV)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="196"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="252"/>
+        <source>All (*)</source>
+        <translation>全部(*)</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="198"/>
@@ -1117,10 +1123,10 @@ Spreadsheet.my_alias_name取代Spreadsheet.B1</translation>
         <translation>複製及貼上失敗</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="196"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiCommand.cpp" line="252"/>
-        <source>All (*)</source>
-        <translation>全部(*)</translation>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="194"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/Command.cpp" line="254"/>
+        <source>CSV (*.csv *.CSV);;All (*)</source>
+        <translation>CSV (*.csv *.CSV);;全部 (*)</translation>
     </message>
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/InitGui.py" line="58"/>
@@ -1650,6 +1656,20 @@ Defaults to: %V = %A
         </translation>
     </message>
     <message numerus="yes">
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="142"/>
+        <source>Insert %n Row(s) Above</source>
+        <translation>
+            <numerusform>在上面插入 %n 行</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="147"/>
+        <source>Insert %n Row(s) Below</source>
+        <translation>
+            <numerusform>在下面插入 %n 行</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="152"/>
         <source>Insert %n Non-Contiguous Rows</source>
         <translation>
@@ -1721,6 +1741,34 @@ Defaults to: %V = %A
         <source>Properties</source>
         <translation>屬性</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="182"/>
+        <source>Recompute</source>
+        <translation>重新計算</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="207"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="679"/>
+        <source>Bind…</source>
+        <translation>綁定…</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="199"/>
+        <source>Configuration Table</source>
+        <translation>參數設定面板</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="219"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="673"/>
+        <source>Merge Cells</source>
+        <translation>合併儲存格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="210"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="668"/>
+        <source>Split Cell</source>
+        <translation>分割儲存格</translation>
+    </message>
     <message numerus="yes">
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="129"/>
         <source>Insert %n row(s) above</source>
@@ -1783,11 +1831,6 @@ Defaults to: %V = %A
         <translation>屬性...</translation>
     </message>
     <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="182"/>
-        <source>Recompute</source>
-        <translation>重新計算</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="186"/>
         <source>Bind...</source>
         <translation>綁定...</translation>
@@ -1805,29 +1848,6 @@ Defaults to: %V = %A
     <message>
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/GuiSheetTableView.cpp" line="200"/>
         <source>Split cells</source>
-        <translation>分割儲存格</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="207"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="679"/>
-        <source>Bind…</source>
-        <translation>綁定…</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="199"/>
-        <source>Configuration Table</source>
-        <translation>參數設定面板</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="219"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="673"/>
-        <source>Merge Cells</source>
-        <translation>合併儲存格</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="210"/>
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="668"/>
-        <source>Split Cell</source>
         <translation>分割儲存格</translation>
     </message>
     <message>
@@ -1861,20 +1881,6 @@ Defaults to: %V = %A
         <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="672"/>
         <source>Configuration Table…</source>
         <translation>參數設定面板…</translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="142"/>
-        <source>Insert %n Row(s) Above</source>
-        <translation>
-            <numerusform>在上面插入 %n 行</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Spreadsheet/Gui/SheetTableView.cpp" line="147"/>
-        <source>Insert %n Row(s) Below</source>
-        <translation>
-            <numerusform>在下面插入 %n 行</numerusform>
-        </translation>
     </message>
 </context>
 <context>

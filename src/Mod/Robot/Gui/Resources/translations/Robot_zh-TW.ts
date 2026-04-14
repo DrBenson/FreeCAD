@@ -1208,6 +1208,22 @@
         <translation>不要更改位置和方向</translation>
     </message>
     <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="55"/>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="92"/>
+        <source>Use</source>
+        <translation>使用</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="66"/>
+        <source>Acceleration</source>
+        <translation>加速度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="102"/>
+        <source>Do not change continuous mode</source>
+        <translation>不要變更連續模式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="20"/>
         <source>Speed &amp; Acceleration:</source>
         <translation>速度 &amp; 加速度:</translation>
@@ -1218,12 +1234,6 @@
         <translation>速度:</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="55"/>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="92"/>
-        <source>Use</source>
-        <translation>使用</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="66"/>
         <source>Accel:</source>
         <translation>加速:</translation>
@@ -1232,6 +1242,16 @@
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="102"/>
         <source>Don&apos;t change Cont</source>
         <translation>不要改變內容</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="107"/>
+        <source>Continues</source>
+        <translation>繼續</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="112"/>
+        <source>Discontinues</source>
+        <translation>中止</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="127"/>
@@ -1257,26 +1277,6 @@
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="174"/>
         <source>Add Orientation</source>
         <translation>增加方向</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="66"/>
-        <source>Acceleration</source>
-        <translation>加速度</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="102"/>
-        <source>Do not change continuous mode</source>
-        <translation>不要變更連續模式</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="107"/>
-        <source>Continues</source>
-        <translation>繼續</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/ReverseEngineering/Gui/TaskTrajectoryDressUpParameter.ui" line="112"/>
-        <source>Discontinues</source>
-        <translation>中止</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="128"/>

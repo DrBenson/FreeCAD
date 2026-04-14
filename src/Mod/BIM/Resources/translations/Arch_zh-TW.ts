@@ -3109,13 +3109,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Outside Diameter</source>
-        <translation>外部直徑</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchWindow.py" line="145"/>
         <source>The height of this window&apos;s sill</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Outside Diameter</source>
+        <translation>外部直徑</translation>
     </message>
     <message>
         <source>The type of winders in these stairs</source>
@@ -4197,6 +4197,22 @@ Floor creation aborted.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Structure</source>
+        <translation>結構</translation>
+    </message>
+    <message>
+        <source>Beam</source>
+        <translation>樑</translation>
+    </message>
+    <message>
+        <source>Column</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>StructuralSystem</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/Arch/ArchReference.py" line="108"/>
         <source>TransientReference property to ReferenceMode</source>
         <translation type="unfinished"></translation>
@@ -4502,18 +4518,6 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Beam</source>
-        <translation>樑</translation>
-    </message>
-    <message>
-        <source>Column</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>StructuralSystem</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Create Structures From Selection</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4674,16 +4678,16 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
         <translation>完成</translation>
     </message>
     <message>
-        <source>Cannot compute blocks for wall</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchWall.py" line="732"/>
         <source>Cannot create or update {obj.Label} as its length, height or width is zero, and there are no solids in its additions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Error: Unable to modify the base object of this wall</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot compute blocks for wall</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5620,13 +5624,13 @@ The ladybug or pysolar Python module is required.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Toggle Cutview</source>
-        <translation>切換剖視圖</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/ArchWall.py" line="243"/>
         <source>changed &apos;Normal&apos; to [0, 0, 1] to preserve extrusion direction</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Toggle Cutview</source>
+        <translation>切換剖視圖</translation>
     </message>
     <message>
         <source>Window elements</source>
@@ -5733,10 +5737,6 @@ The ladybug or pysolar Python module is required.</source>
     <message>
         <source>changed the type of properties &apos;RailingLeft&apos; and &apos;RailingRight&apos;</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Structure</source>
-        <translation>結構</translation>
     </message>
     <message>
         <source>Set working plane</source>
@@ -7374,12 +7374,6 @@ Do you want to proceed?</source>
 <context>
     <name>BIM</name>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="44"/>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="54"/>
-        <source>Custom...</source>
-        <translation>自訂...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="45"/>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="55"/>
         <source>Custom…</source>
@@ -7394,6 +7388,11 @@ Do you want to proceed?</source>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="137"/>
         <source>Toggle report panels on/off (Ctrl+0)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="152"/>
+        <source>Toggles the bottom dock panels on/off (Ctrl+0)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7414,14 +7413,15 @@ CTRL+PgUp to extend extrusionCTRL+PgDown to shrink extrusionCTRL+/ to switch bet
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="152"/>
-        <source>Toggles the bottom dock panels on/off (Ctrl+0)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="171"/>
         <source>Toggles the BIM Views Manager on/off (Ctrl+9)</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="44"/>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="54"/>
+        <source>Custom...</source>
+        <translation>自訂...</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/BimStatus.py" line="187"/>
@@ -9818,6 +9818,16 @@ Utils -&gt; Make IFC project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSpaces.ui" line="14"/>
+        <source>Spaces manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSpaces.ui" line="20"/>
+        <source>This screen will allow you to check the spaces configuration of your project and change some attributes.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSpaces.ui" line="92"/>
         <source>0</source>
         <translation>0</translation>
@@ -10414,16 +10424,6 @@ Utils -&gt; Make IFC project</source>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogClassification.ui" line="60"/>
         <source>Sort by:</source>
         <translation>排序依據:</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSpaces.ui" line="14"/>
-        <source>Spaces manager</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/Resources/ui/dialogSpaces.ui" line="20"/>
-        <source>This screen will allow you to check the spaces configuration of your project and change some attributes.</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>If this is enabled, additional lines will be filled with each object considered. If not, only the totals.</source>
@@ -14023,11 +14023,6 @@ IfcWallStandardCase 或 IfcBeamStandardCase.
         <translation>底圖貼齊</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="417"/>
-        <source>&amp;Fasteners</source>
-        <translation>緊固件(&amp;F)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="418"/>
         <source>3D/BIM Tools</source>
         <translation>3D BIM工具</translation>
@@ -14066,6 +14061,56 @@ IfcWallStandardCase 或 IfcBeamStandardCase.
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="408"/>
         <source>&amp;2D Drafting</source>
         <translation>2D草圖(&amp;2)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="409"/>
+        <source>&amp;3D/BIM</source>
+        <translation>3D/建築信息模組(&amp;3)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="531"/>
+        <source>&amp;Reinforcement Tools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="411"/>
+        <source>&amp;Annotation</source>
+        <translation>註釋(&amp;A)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="412"/>
+        <source>&amp;Snapping</source>
+        <translation>貼齊捕捉(&amp;S)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="534"/>
+        <source>M&amp;odify</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="535"/>
+        <source>Ma&amp;nage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="416"/>
+        <source>&amp;Flamingo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="538"/>
+        <source>Fas&amp;teners</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="418"/>
+        <source>&amp;Utils</source>
+        <translation>實用工具(&amp;U)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="423"/>
+        <source>Nudge</source>
+        <translation>輕推</translation>
     </message>
     <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="40"/>
@@ -14113,11 +14158,6 @@ IfcWallStandardCase 或 IfcBeamStandardCase.
         <translation>3D編修工具</translation>
     </message>
     <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="409"/>
-        <source>&amp;3D/BIM</source>
-        <translation>3D/建築信息模組(&amp;3)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="410"/>
         <source>Reinforcement tools</source>
         <translation>鋼筋結構工具</translation>
@@ -14133,54 +14173,14 @@ IfcWallStandardCase 或 IfcBeamStandardCase.
         <translation>管理(&amp;M)</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="417"/>
+        <source>&amp;Fasteners</source>
+        <translation>緊固件(&amp;F)</translation>
+    </message>
+    <message>
         <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="439"/>
         <source>Reinforcement Tools</source>
         <translation>鋼筋結構工具</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="531"/>
-        <source>&amp;Reinforcement Tools</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="411"/>
-        <source>&amp;Annotation</source>
-        <translation>註釋(&amp;A)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="412"/>
-        <source>&amp;Snapping</source>
-        <translation>貼齊捕捉(&amp;S)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="534"/>
-        <source>M&amp;odify</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="535"/>
-        <source>Ma&amp;nage</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="416"/>
-        <source>&amp;Flamingo</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Mod/BIM/InitGui.py" line="538"/>
-        <source>Fas&amp;teners</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="418"/>
-        <source>&amp;Utils</source>
-        <translation>實用工具(&amp;U)</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../FreeCAD-1.2.00/src/Mod/BIM/InitGui.py" line="423"/>
-        <source>Nudge</source>
-        <translation>輕推</translation>
     </message>
     <message>
         <source>Draft snap</source>

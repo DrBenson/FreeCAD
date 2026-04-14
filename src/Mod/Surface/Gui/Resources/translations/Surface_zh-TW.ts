@@ -205,11 +205,6 @@ vertices that are not on the boundary.</source>
 <context>
     <name>CmdSurfaceSections</name>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/Command.cpp" line="325"/>
-        <source>Sections…</source>
-        <translation>剖面...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/Command.cpp" line="329"/>
         <source>Surface</source>
         <translation>外型</translation>
@@ -228,6 +223,11 @@ vertices that are not on the boundary.</source>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/Command.cpp" line="325"/>
         <source>Sections</source>
         <translation>剖面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/Command.cpp" line="325"/>
+        <source>Sections…</source>
+        <translation>剖面...</translation>
     </message>
     <message>
         <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Surface/Gui/Command.cpp" line="326"/>
