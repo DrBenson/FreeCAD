@@ -17,11 +17,6 @@
 <context>
     <name>Angle</name>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Dialogs/DlgLocationAngle.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Dialogs/DlgLocationAngle.ui" line="22"/>
         <source>A</source>
         <translation>A</translation>
@@ -81,6 +76,11 @@
         <source>180 °</source>
         <translation>180 °</translation>
     </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Dialogs/DlgLocationAngle.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
 </context>
 <context>
     <name>App::Property</name>
@@ -120,65 +120,6 @@
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/propertyeditor/PropertyModel.cpp" line="250"/>
         <source>Base</source>
         <translation>基礎</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Assembly/JointObject.py" line="64"/>
-        <source># FreeCAD Privacy Policy
-
-The FreeCAD application does not collect, transmit, share or use any Personal Data.
-
-FreeCAD is community-developed Free Software. The community does not condone the unauthorized usage of private data, so our software does not gather or send personal data.
-
-The FreeCAD website is mostly static, it does not contain any trackers, neither ours nor third-party. The website uses cookies to remember logged in status, timezone and other data related to navigating the site. The website does not contain advertisements.
-
-The software does not contain advertisements or trackers either.
-
-## Caveats
-
-FreeCAD is able to load or save files to/from remote servers (for some protocols and platforms). If you choose to load or save a remote file, your IP or other private data might be shared as part of the normal connection flow for the given protocol. This is out of our control and it is up to you to decide whether you trust a remote host.
-
-The FreeCAD eco system includes user developed workbenches. These workbenches can be installed/updated using the Add-on Manager. The Add-on Manager retrieves workbenches from remote servers across the internet. Add-on workbenches are not checked for malicious content. It is your responsibility to decide whether you trust an add-on workbench.
-
-FreeCAD is meant to manipulate CAD files which may contain metadata. It is your responsibility to verify the metadata contained in your files before you share them with others. These files may contain local directory paths which could reveal user names if the user name forms part of the path - as in “C:\MrsCAD\Documents\myFreeCADFile.FCstd”.
-
-FreeCAD can also be used to create and run macros. These are Python scripts that can perform any action that the user can perform on a system. When running a macro from an outside source, it is your responsibility to ensure you trust the author.
-
-While running and for subsequent runs, FreeCAD uses local persistent storage for logs, configuration files, cache, thumbnails, recently accessed files and other information which may contain private data. This stays on local storage.
-
-When reading the online version of the User Manual within FreeCAD, manual contents is requested through HTTPS connections.
-
-FreeCAD is Free Software and therefore may be packaged by other people, who may include additional software or modify the source code. We do not vouch for these third-party packages and cannot tell you what they contain and what they do regarding your privacy. The official packages are explicitly listed in our download page.
-
-
-*The above privacy policy is based on the [GIMP privacy policy](https://www.gimp.org/about/privacy.html).*</source>
-        <translation># FreeCAD 隱私權政策
-
-FreeCAD 應用程式不會收集、傳輸、分享或使用任何個人資料。
-
-FreeCAD 是由社群開發的自由軟體。社群不容許未經授權使用私人數據，因此我們的軟體不會收集或發送個人資料。
-
-FreeCAD 網站基本上是靜態網站，不包含任何追蹤器，無論是我們自己的還是第三方的。網站使用 Cookie 來記住登入狀態、時區以及其他與網站瀏覽相關的資料。網站不包含任何廣告。
-
-該軟體也不包含任何廣告或追蹤器。
-
-## 注意事項
-
-FreeCAD 能夠從遠端伺服器載入或儲存檔案（適用於某些協定和平台）。如果您選擇載入或儲存遠端文件，您的 IP 位址或其他私人資料可能會作為該協定正常連線流程的一部分被共用。這超出我們的控制範圍，您需自行決定是否信任遠端主機。
-
-FreeCAD 生態系統包含使用者開發的工作台。這些工作台可以使用外掛程式管理器進行安裝/更新。外掛程式管理器會從網際網路上的遠端伺服器檢索工作台。插件工作台不會進行惡意內容檢查。您有責任決定是否信任插件工作台。
-
-FreeCAD 旨在處理可能包含元資料的 CAD 檔案。您有責任在與他人共享文件之前驗證其中包含的元資料。這些檔案可能包含本機目錄路徑，如果使用者名稱包含在路徑中，則可能會洩漏使用者名稱，例如「C:\MrsCAD\Documents\myFreeCADFile.FCstd」。
-
-FreeCAD 也可用於建立和執行巨集。巨集是 Python 腳本，可以執行使用者在系統上可以執行的任何操作。當您執行來自外部來源的巨集時，您有責任確保您信任其作者。
-
-FreeCAD 在運行期間以及後續運行中，會使用本地持久性儲存來保存日誌、設定檔、快取、縮圖、最近存取的檔案以及其他可能包含私人資料的資訊。這些資訊都保存在本地儲存中。
-
-在 FreeCAD 中閱讀線上使用手冊時，手冊內容透過 HTTPS 連線請求。
-
-FreeCAD 是自由軟體，因此可能由其他人打包，他們可能會添加其他軟體或修改原始程式碼。我們不對這些第三方軟體包負責，也無法告知您它們包含的內容以及它們對您的隱私有何影響。官方軟體包已明確列出在我們的下載頁面中。
-
-
-## *上述隱私權政策是基於[GIMP 隱私權政策](https://www.gimp.org/about/privacy.html).*</translation>
     </message>
     <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Assembly/JointObject.py" line="362"/>
@@ -3535,6 +3476,65 @@ msgstr &quot;脊柱切線&quot;</translatorcomment>
         <source>Constant</source>
         <translation>常數</translation>
     </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Assembly/JointObject.py" line="64"/>
+        <source># FreeCAD Privacy Policy
+
+The FreeCAD application does not collect, transmit, share or use any Personal Data.
+
+FreeCAD is community-developed Free Software. The community does not condone the unauthorized usage of private data, so our software does not gather or send personal data.
+
+The FreeCAD website is mostly static, it does not contain any trackers, neither ours nor third-party. The website uses cookies to remember logged in status, timezone and other data related to navigating the site. The website does not contain advertisements.
+
+The software does not contain advertisements or trackers either.
+
+## Caveats
+
+FreeCAD is able to load or save files to/from remote servers (for some protocols and platforms). If you choose to load or save a remote file, your IP or other private data might be shared as part of the normal connection flow for the given protocol. This is out of our control and it is up to you to decide whether you trust a remote host.
+
+The FreeCAD eco system includes user developed workbenches. These workbenches can be installed/updated using the Add-on Manager. The Add-on Manager retrieves workbenches from remote servers across the internet. Add-on workbenches are not checked for malicious content. It is your responsibility to decide whether you trust an add-on workbench.
+
+FreeCAD is meant to manipulate CAD files which may contain metadata. It is your responsibility to verify the metadata contained in your files before you share them with others. These files may contain local directory paths which could reveal user names if the user name forms part of the path - as in “C:\MrsCAD\Documents\myFreeCADFile.FCstd”.
+
+FreeCAD can also be used to create and run macros. These are Python scripts that can perform any action that the user can perform on a system. When running a macro from an outside source, it is your responsibility to ensure you trust the author.
+
+While running and for subsequent runs, FreeCAD uses local persistent storage for logs, configuration files, cache, thumbnails, recently accessed files and other information which may contain private data. This stays on local storage.
+
+When reading the online version of the User Manual within FreeCAD, manual contents is requested through HTTPS connections.
+
+FreeCAD is Free Software and therefore may be packaged by other people, who may include additional software or modify the source code. We do not vouch for these third-party packages and cannot tell you what they contain and what they do regarding your privacy. The official packages are explicitly listed in our download page.
+
+
+*The above privacy policy is based on the [GIMP privacy policy](https://www.gimp.org/about/privacy.html).*</source>
+        <translation># FreeCAD 隱私權政策
+
+FreeCAD 應用程式不會收集、傳輸、分享或使用任何個人資料。
+
+FreeCAD 是由社群開發的自由軟體。社群不容許未經授權使用私人數據，因此我們的軟體不會收集或發送個人資料。
+
+FreeCAD 網站基本上是靜態網站，不包含任何追蹤器，無論是我們自己的還是第三方的。網站使用 Cookie 來記住登入狀態、時區以及其他與網站瀏覽相關的資料。網站不包含任何廣告。
+
+該軟體也不包含任何廣告或追蹤器。
+
+## 注意事項
+
+FreeCAD 能夠從遠端伺服器載入或儲存檔案（適用於某些協定和平台）。如果您選擇載入或儲存遠端文件，您的 IP 位址或其他私人資料可能會作為該協定正常連線流程的一部分被共用。這超出我們的控制範圍，您需自行決定是否信任遠端主機。
+
+FreeCAD 生態系統包含使用者開發的工作台。這些工作台可以使用外掛程式管理器進行安裝/更新。外掛程式管理器會從網際網路上的遠端伺服器檢索工作台。插件工作台不會進行惡意內容檢查。您有責任決定是否信任插件工作台。
+
+FreeCAD 旨在處理可能包含元資料的 CAD 檔案。您有責任在與他人共享文件之前驗證其中包含的元資料。這些檔案可能包含本機目錄路徑，如果使用者名稱包含在路徑中，則可能會洩漏使用者名稱，例如「C:\MrsCAD\Documents\myFreeCADFile.FCstd」。
+
+FreeCAD 也可用於建立和執行巨集。巨集是 Python 腳本，可以執行使用者在系統上可以執行的任何操作。當您執行來自外部來源的巨集時，您有責任確保您信任其作者。
+
+FreeCAD 在運行期間以及後續運行中，會使用本地持久性儲存來保存日誌、設定檔、快取、縮圖、最近存取的檔案以及其他可能包含私人資料的資訊。這些資訊都保存在本地儲存中。
+
+在 FreeCAD 中閱讀線上使用手冊時，手冊內容透過 HTTPS 連線請求。
+
+FreeCAD 是自由軟體，因此可能由其他人打包，他們可能會添加其他軟體或修改原始程式碼。我們不對這些第三方軟體包負責，也無法告知您它們包含的內容以及它們對您的隱私有何影響。官方軟體包已明確列出在我們的下載頁面中。
+
+
+## *上述隱私權政策是基於[GIMP 隱私權政策](https://www.gimp.org/about/privacy.html).*</translation>
+    </message>
 </context>
 <context>
     <name>CmdTestConsoleOutput</name>
@@ -3880,11 +3880,6 @@ The property of this object will refer to the property of the Variable Set.</sou
 <context>
     <name>DownloadItem</name>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/DownloadItem.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/DownloadItem.ui" line="29"/>
         <source>Ico</source>
         <translation>Ico</translation>
@@ -3893,6 +3888,11 @@ The property of this object will refer to the property of the Variable Set.</sou
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/DownloadItem.ui" line="44"/>
         <source>Filename</source>
         <translation>檔案名稱</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/DownloadItem.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -6233,15 +6233,6 @@ Specify another directory.</source>
 <context>
     <name>Gui::Dialog::DlgPreferences</name>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Dialogs/DlgPreferences.ui" line="6"/>
-        <source>#sidebar { background-color: rgba(0, 0, 0, 25); }
-      #groupsTreeView { background-color: transparent; }
-      #groupsTreeView::item { padding: 6px 0px; }</source>
-        <translation>#sidebar { background-color: rgba(0, 0, 0, 25); }
-      #groupsTreeView { background-color: transparent; }
-      #groupsTreeView::item { padding: 6px 0px; }</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Dialogs/DlgPreferences.ui" line="25"/>
         <source>Preferences</source>
         <translation>偏好設定</translation>
@@ -6260,6 +6251,15 @@ Specify another directory.</source>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Dialogs/DlgPreferences.ui" line="233"/>
         <source>Search preferences...</source>
         <translation>搜尋偏好設定...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Dialogs/DlgPreferences.ui" line="6"/>
+        <source>#sidebar { background-color: rgba(0, 0, 0, 25); }
+      #groupsTreeView { background-color: transparent; }
+      #groupsTreeView::item { padding: 6px 0px; }</source>
+        <translation>#sidebar { background-color: rgba(0, 0, 0, 25); }
+      #groupsTreeView { background-color: transparent; }
+      #groupsTreeView::item { padding: 6px 0px; }</translation>
     </message>
 </context>
 <context>
@@ -14771,11 +14771,6 @@ the region are non-opaque.</source>
 <context>
     <name>Position</name>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Dialogs/DlgLocationPos.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Dialogs/DlgLocationPos.ui" line="22"/>
         <source>X</source>
         <translation>X</translation>
@@ -14864,6 +14859,11 @@ the region are non-opaque.</source>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Dialogs/DlgLocationPos.ui" line="162"/>
         <source>5 m</source>
         <translation>5 m</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Dialogs/DlgLocationPos.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -15030,6 +15030,18 @@ Check the report view for more details.</source>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Dialogs/DlgVersionMigrator.cpp" line="322"/>
         <source>Migrating configuration data and addons…</source>
         <translation>遷移設定資料與附加元件...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgVersionMigrator.cpp" line="488"/>
+        <source>Migration completed with warnings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Gui/Dialogs/DlgVersionMigrator.cpp" line="495"/>
+        <source>%n file(s) could not be copied and were skipped. A full list has been saved to %1 in your new configuration directory.</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+        </translation>
     </message>
     <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Dialogs/DlgVersionMigrator.cpp" line="336"/>
@@ -15754,6 +15766,11 @@ Choose &apos;Abort&apos; to abort</source>
         <translation>拆分</translation>
     </message>
     <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Navigation/NavigationStyle.cpp" line="2084"/>
+        <source>Navigation styles</source>
+        <translation>導航模式</translation>
+    </message>
+    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Navigation/NavigationStyle.cpp" line="2137"/>
         <source>Clarify Selection</source>
         <translation>明確選擇</translation>
@@ -16238,11 +16255,6 @@ the current copy will be lost.
         <translation>Technical Drawing 工程圖 (*.svg *.dxf *.pdf)</translation>
     </message>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/Navigation/NavigationStyle.cpp" line="2084"/>
-        <source>Navigation styles</source>
-        <translation>導航模式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/ViewProviderDragger.cpp" line="127"/>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/ViewProviderLink.cpp" line="3184"/>
         <source>Transform</source>
@@ -16568,11 +16580,6 @@ the current copy will be lost.
 <context>
     <name>StdCmdDlgCustomize</name>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandStd.cpp" line="460"/>
-        <source>Cu&amp;stomize…</source>
-        <translation>自訂(&amp;s)...</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandStd.cpp" line="462"/>
         <source>Cu&amp;stomize</source>
         <translation>自訂(&amp;S)</translation>
@@ -16581,6 +16588,11 @@ the current copy will be lost.
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandStd.cpp" line="463"/>
         <source>Opens a dialog to edit toolbars, shortcuts, and macros</source>
         <translation>開啟對話框以編輯工具列、捷徑和巨集</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandStd.cpp" line="460"/>
+        <source>Cu&amp;stomize…</source>
+        <translation>自訂(&amp;s)...</translation>
     </message>
 </context>
 <context>
@@ -17694,14 +17706,14 @@ This makes the docked panels stay transparent at all times.</source>
         <translation>儲存備份(&amp;y)…</translation>
     </message>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandDoc.cpp" line="798"/>
-        <source>Save Cop&amp;y</source>
-        <translation>儲存備份(&amp;y)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandDoc.cpp" line="800"/>
         <source>Saves a copy of the active document under a new file name</source>
         <translation>以新的檔案名稱儲存目前檔案的備份</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandDoc.cpp" line="798"/>
+        <source>Save Cop&amp;y</source>
+        <translation>儲存備份(&amp;y)</translation>
     </message>
 </context>
 <context>
@@ -18167,14 +18179,14 @@ This makes the docked panels stay transparent at all times.</source>
         <translation>底視圖</translation>
     </message>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1385"/>
-        <source>&amp;5 Bottom</source>
-        <translation>底視圖(&amp;5)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1386"/>
         <source>Sets the camera to the bottom view</source>
         <translation>設定為底部檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1385"/>
+        <source>&amp;5 Bottom</source>
+        <translation>底視圖(&amp;5)</translation>
     </message>
 </context>
 <context>
@@ -18276,14 +18288,14 @@ This makes the docked panels stay transparent at all times.</source>
         <translation>正視圖</translation>
     </message>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1409"/>
-        <source>&amp;1 Front</source>
-        <translation>正視圖(&amp;1)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1410"/>
         <source>Sets the camera to the front view</source>
         <translation>設定為正面檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1409"/>
+        <source>&amp;1 Front</source>
+        <translation>正視圖(&amp;1)</translation>
     </message>
 </context>
 <context>
@@ -18411,14 +18423,14 @@ This makes the docked panels stay transparent at all times.</source>
         <translation>左視圖</translation>
     </message>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1433"/>
-        <source>&amp;6 Left</source>
-        <translation>左視圖(&amp;6)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1434"/>
         <source>Sets the camera to the left view</source>
         <translation>設定為左面檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1433"/>
+        <source>&amp;6 Left</source>
+        <translation>左視圖(&amp;6)</translation>
     </message>
 </context>
 <context>
@@ -18429,14 +18441,14 @@ This makes the docked panels stay transparent at all times.</source>
         <translation>後視圖</translation>
     </message>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1457"/>
-        <source>&amp;4 Rear</source>
-        <translation>後視圖(&amp;4)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1458"/>
         <source>Sets the camera to the rear view</source>
         <translation>設定為背面檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1457"/>
+        <source>&amp;4 Rear</source>
+        <translation>後視圖(&amp;4)</translation>
     </message>
 </context>
 <context>
@@ -18460,14 +18472,14 @@ This makes the docked panels stay transparent at all times.</source>
         <translation>右視圖</translation>
     </message>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1481"/>
-        <source>&amp;3 Right</source>
-        <translation>右視圖(&amp;3)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1482"/>
         <source>Sets the camera to the right view</source>
         <translation>設定為右面檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1481"/>
+        <source>&amp;3 Right</source>
+        <translation>右視圖(&amp;3)</translation>
     </message>
 </context>
 <context>
@@ -18517,14 +18529,14 @@ This makes the docked panels stay transparent at all times.</source>
         <translation>上視圖</translation>
     </message>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1505"/>
-        <source>&amp;2 Top</source>
-        <translation>上視圖(&amp;2)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1506"/>
         <source>Sets the camera to the top view</source>
         <translation>設定為上面檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="1505"/>
+        <source>&amp;2 Top</source>
+        <translation>上視圖(&amp;2)</translation>
     </message>
 </context>
 <context>
@@ -18717,14 +18729,14 @@ This makes the docked panels stay transparent at all times.</source>
         <translation>預先選擇</translation>
     </message>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="3695"/>
-        <source>&amp;4 Preselection</source>
-        <translation>&amp;4 預先選擇</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="3696"/>
         <source>Preselects the object in 3D view when hovering the cursor over the tree item</source>
         <translation>將滑鼠游標懸停在樹項目上時在 3D 檢視中預選物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="3695"/>
+        <source>&amp;4 Preselection</source>
+        <translation>&amp;4 預先選擇</translation>
     </message>
 </context>
 <context>
@@ -18735,14 +18747,14 @@ This makes the docked panels stay transparent at all times.</source>
         <translation>記錄選取項目</translation>
     </message>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="3715"/>
-        <source>&amp;5 Record Selection</source>
-        <translation>記錄選取項目(&amp;5)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="3717"/>
         <source>Records the selection in the tree view in order to go back/forward using the navigation buttons</source>
         <translation>將樹狀圖中選取項目記錄下來，以便使用導航按鈕 返回/前進</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="3715"/>
+        <source>&amp;5 Record Selection</source>
+        <translation>記錄選取項目(&amp;5)</translation>
     </message>
 </context>
 <context>
@@ -18779,14 +18791,14 @@ This makes the docked panels stay transparent at all times.</source>
         <translation>同步放置位置</translation>
     </message>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="3676"/>
-        <source>&amp;3 Sync Placement</source>
-        <translation>同步放置位置(&amp;3)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="3678"/>
         <source>Adjusts the placement on drag-and-drop of objects across coordinate systems (e.g. in part containers)</source>
         <translation>調整物件在不同坐標系拖放的位置 (例如在零件容器中)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="3676"/>
+        <source>&amp;3 Sync Placement</source>
+        <translation>同步放置位置(&amp;3)</translation>
     </message>
 </context>
 <context>
@@ -18797,14 +18809,14 @@ This makes the docked panels stay transparent at all times.</source>
         <translation>同步選擇</translation>
     </message>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="3656"/>
-        <source>&amp;2 Sync Selection</source>
-        <translation>同步選擇(&amp;2)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="3657"/>
         <source>Expands the tree item when the corresponding object is selected in the 3D view</source>
         <translation>在 3D 檢視中選取對應物件時，會展開樹狀項目</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="3656"/>
+        <source>&amp;2 Sync Selection</source>
+        <translation>同步選擇(&amp;2)</translation>
     </message>
 </context>
 <context>
@@ -18815,14 +18827,14 @@ This makes the docked panels stay transparent at all times.</source>
         <translation>同步顯示</translation>
     </message>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="3636"/>
-        <source>&amp;1 Sync View</source>
-        <translation>同步顯示(&amp;1)</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="3637"/>
         <source>Switches to the 3D view containing the selected item from the tree view</source>
         <translation>從樹狀檢視切換到包含所選項目的 3D 檢視</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="3636"/>
+        <source>&amp;1 Sync View</source>
+        <translation>同步顯示(&amp;1)</translation>
     </message>
 </context>
 <context>
@@ -18981,64 +18993,9 @@ Continue?
         <translation>如同</translation>
     </message>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="779"/>
-        <source>&amp;1 As Is</source>
-        <translation>&amp;1 如同</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="779"/>
-        <source>&amp;1 As is</source>
-        <translation>&amp;1 如同</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="780"/>
         <source>Normal mode</source>
         <translation>正常模式</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="782"/>
-        <source>&amp;2 Points</source>
-        <translation>&amp;2 點</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="785"/>
-        <source>&amp;3 Wireframe</source>
-        <translation>&amp;3 線框</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="788"/>
-        <source>&amp;4 Hidden line</source>
-        <translation>&amp;4 隱藏線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="788"/>
-        <source>&amp;4 Hidden Line</source>
-        <translation>&amp;4 隱藏線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="791"/>
-        <source>&amp;5 No shading</source>
-        <translation>&amp;5 無上色</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="791"/>
-        <source>&amp;5 No Shading</source>
-        <translation>&amp;5 無上色</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="794"/>
-        <source>&amp;6 Shaded</source>
-        <translation>&amp;6 上色</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="797"/>
-        <source>&amp;7 Flat lines</source>
-        <translation>&amp;7 框線</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="797"/>
-        <source>&amp;7 Flat Lines</source>
-        <translation>&amp;7 框線</translation>
     </message>
     <message>
         <location filename="../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/Gui/CommandView.cpp" line="848"/>
@@ -19099,6 +19056,61 @@ Continue?
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="798"/>
         <source>Flat lines mode</source>
         <translation>框線模式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="779"/>
+        <source>&amp;1 As Is</source>
+        <translation>&amp;1 如同</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="779"/>
+        <source>&amp;1 As is</source>
+        <translation>&amp;1 如同</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="782"/>
+        <source>&amp;2 Points</source>
+        <translation>&amp;2 點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="785"/>
+        <source>&amp;3 Wireframe</source>
+        <translation>&amp;3 線框</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="788"/>
+        <source>&amp;4 Hidden line</source>
+        <translation>&amp;4 隱藏線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="788"/>
+        <source>&amp;4 Hidden Line</source>
+        <translation>&amp;4 隱藏線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="791"/>
+        <source>&amp;5 No shading</source>
+        <translation>&amp;5 無上色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="791"/>
+        <source>&amp;5 No Shading</source>
+        <translation>&amp;5 無上色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="794"/>
+        <source>&amp;6 Shaded</source>
+        <translation>&amp;6 上色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="797"/>
+        <source>&amp;7 Flat lines</source>
+        <translation>&amp;7 框線</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/CommandView.cpp" line="797"/>
+        <source>&amp;7 Flat Lines</source>
+        <translation>&amp;7 框線</translation>
     </message>
 </context>
 <context>
@@ -19164,11 +19176,6 @@ Proceed?</source>
 <context>
     <name>TaskSolverMessages</name>
     <message>
-        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/TaskView/TaskSolverMessages.ui" line="20"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
-    <message>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/TaskView/TaskSolverMessages.ui" line="26"/>
         <source>DOF</source>
         <translation>無拘束</translation>
@@ -19187,6 +19194,11 @@ Proceed?</source>
         <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/TaskView/TaskSolverMessages.ui" line="72"/>
         <source>Settings</source>
         <translation>設定</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Gui/TaskView/TaskSolverMessages.ui" line="20"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>

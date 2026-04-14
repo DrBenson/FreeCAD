@@ -51,6 +51,11 @@
         <source>Origin</source>
         <translation>原點</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/App/Datums.cpp" line="273"/>
+        <source>Origin-Point</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>App::Origin</name>
