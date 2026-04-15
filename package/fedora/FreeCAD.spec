@@ -52,15 +52,15 @@
 %global mod_plugins Mod/PartDesign
 %define name freecad
 %define github_name FreeCAD
-%define branch 1.1.0
-%define rpmbranch 1.1.0
+%define branch 1.1.1
+%define rpmbranch 1.1.1
 %define ReleaseNum %{git rev-list --count HEAD}
 %define buildroot ~/rpmbuild/BUILDROOT
 Name:                   %{name}
-Epoch:                  4
+Epoch:                  0
 Version:                %{rpmbranch}
 # release=$(git rev-list --count HEAD)
-Release:                4%{?dist}
+Release:                0%{?dist}
 Summary:                A general purpose 3D CAD modeler
 Group:                  Applications/Engineering
 
@@ -779,6 +779,10 @@ fi
     %{_includedir}/OndselSolver/*
 
 %changelog
+* Wed Apr 15 2026 DrBenson <Benson.Dr@GMail.com> - 1:1.1.1-0
+- Release-1.1.1
+- Update Tranditional Chinese translation.
+
 * Tue Mar 31 2026 DrBenson <Benson.Dr@GMail.com> - 1:1.1.0-4
 - Release-4
 - Update Tranditional Chinese translation.
