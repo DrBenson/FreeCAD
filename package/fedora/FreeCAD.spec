@@ -269,8 +269,8 @@ git submodule add --force https://github.com/microsoft/GSL src/3rdParty/GSL
 #git submodule add --force https://github.com/wolfpld/tracy.git src/3rdParty/tracy
 git submodule add --branch 1.1.0 --force https://github.com/DrBenson/FreeCAD_AddonManager.git src/Mod/AddonManager
 #rsync -avltp /media/ERP/sources/FreeCAD/src .
+#rsync -altp /media/UserTemp/Sources/conda/media/patch/src/ .
 rsync -altp patch/src/ ./
-rsync -altp /media/UserTemp/Sources/conda/media/patch/src/ .
 rsync -altp patch/PRIVACY_POLICY.md .
 #rsync -altp /media/ERP/sources/FreeCAD/LICENSE.html src/Doc/
 find . -name \*.orig -delete -print
