@@ -14,7 +14,7 @@
 #Sandbox Cloud CloudGui
 
 #
-#rm -rf build.log;QA_SKIP_RPATHS=1 QA_CHECK_RPATHS=0 QA_RPATHS=$(( 0x0001| 0x0010)) rpmbuild -bb --nodebuginfo --noclean  freecad110.spec 1>>build.log 2>>build.log
+#rm -rf build.log; rpmbuild -bb --nodebuginfo --noclean --with=fem_vtk FreeCAD.spec 1>>build.log 2>>build.log
 
 # Some configuration options for other environments
 # rpmbuild --with=bundled_zipios:  use bundled version of zipios++
@@ -48,6 +48,13 @@
 
 %global exported_libs libOndselSolver
 
+## RPMAUTOSPEC: autorelease, autochangelog
+%define autorelease(e:s:pb:n) %{?-p:0.}%{lua:
+    release_number = 0;
+    base_release_number = tonumber(rpm.expand("%{?-b*}%{!?-b:1}"));
+    print(release_number + base_release_number - 1);
+}%{?-e:.%{-e*}}%{?-s:.%{-s*}}%{!?-n:%{?dist}}
+## END: Set by rpmautospec
 # Some plugins go in the Mod folder instead of lib. Deal with those here:
 %global mod_plugins Mod/PartDesign
 %define name freecad
@@ -60,7 +67,8 @@ Name:                   %{name}
 Epoch:                  0
 Version:                %{rpmbranch}
 # release=$(git rev-list --count HEAD)
-Release:                0%{?dist}
+Release:                %autorelease
+#0{?dist}
 Summary:                A general purpose 3D CAD modeler
 Group:                  Applications/Engineering
 
@@ -779,12 +787,12 @@ fi
     %{_includedir}/OndselSolver/*
 
 %changelog
-* Wed Apr 15 2026 DrBenson <Benson.Dr@GMail.com> - 1:1.1.1-0
-- Release-1.1.1
+* Sat Apr 18 2026 DrBenson <Benson.Dr@GMail.com> - 1:1.1.1-0
+- First Release 1.1.1
 - Update Tranditional Chinese translation.
 
-* Tue Mar 31 2026 DrBenson <Benson.Dr@GMail.com> - 1:1.1.0-4
-- Release-4
+* Wed Apr 15 2026 DrBenson <Benson.Dr@GMail.com> - 1:1.1.0-5
+- Release
 - Update Tranditional Chinese translation.
 
 * Tue Mar 24 2026 DrBenson <Benson.Dr@GMail.com> - 1:1.1.0-3
