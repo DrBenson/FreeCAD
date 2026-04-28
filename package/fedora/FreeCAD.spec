@@ -303,11 +303,13 @@ find . -name \*.orig -delete -print
 %define Release %{git rev-list --count HEAD}
 #git submodule update --init --recursive
 #git restore src/Doc/CONTRIBUTORS
-sed -i 's/set(PACKAGE_VERSION_SUFFIX " RC1")/set(PACKAGE_VERSION_SUFFIX " QT6")/g' CMakeLists.txt
-sed -i 's/set(PACKAGE_VERSION_SUFFIX " dev")/set(PACKAGE_VERSION_SUFFIX " QT6")/g' CMakeLists.txt
-sed -i 's/set(PACKAGE_VERSION_SUFFIX "_QT6-dev")/set(PACKAGE_VERSION_SUFFIX " QT6")/g' CMakeLists.txt
-sed -i 's/set(PACKAGE_VERSION_SUFFIX " rc1")/set(PACKAGE_VERSION_SUFFIX " QT6")/g' CMakeLists.txt
-sed -i 's/set(PACKAGE_VERSION_SUFFIX " rc2")/set(PACKAGE_VERSION_SUFFIX " QT6")/g' CMakeLists.txt
+sed -i 's/set(PACKAGE_VERSION_SUFFIX "rc1")/set(PACKAGE_VERSION_SUFFIX " ")/g' CMakeLists.txt
+sed -i 's/set(PACKAGE_VERSION_SUFFIX "rc2")/set(PACKAGE_VERSION_SUFFIX " ")/g' CMakeLists.txt
+sed -i 's/set(PACKAGE_VERSION_SUFFIX " rc1")/set(PACKAGE_VERSION_SUFFIX " ")/g' CMakeLists.txt
+sed -i 's/set(PACKAGE_VERSION_SUFFIX " rc2")/set(PACKAGE_VERSION_SUFFIX " ")/g' CMakeLists.txt
+sed -i 's/set(PACKAGE_VERSION_SUFFIX " RC1")/set(PACKAGE_VERSION_SUFFIX " ")/g' CMakeLists.txt
+sed -i 's/set(PACKAGE_VERSION_SUFFIX " dev")/set(PACKAGE_VERSION_SUFFIX " ")/g' CMakeLists.txt
+sed -i 's/set(PACKAGE_VERSION_SUFFIX "_QT5-dev")/set(PACKAGE_VERSION_SUFFIX " ")/g' CMakeLists.txt
 #sed -i 's/Dion Moult (Moult)/Dion Moult (Moult)\n白鴻崇 (DrBenson)/g' src/Doc/CONTRIBUTORS
 # Disable Boost search on Fedora-41
 #sed -i 's/(BOOST_COMPONENTS program_options regex system thread date_time)/(BOOST_COMPONENTS filesystem program_options regex system thread date_time)/g' cMake/FreeCAD_Helpers/SetupBoost.cmake
@@ -786,8 +788,8 @@ fi
     %{_datadir}/pkgconfig/OndselSolver.pc
     %{_includedir}/OndselSolver/*
 
-%changelog
-* Sat Apr 18 2026 DrBenson <Benson.Dr@GMail.com> - 1:1.1.1-0
+%autochangelog
+* Tue Apr 28 2026 DrBenson <Benson.Dr@GMail.com> - 0:1.1.1-0
 - First Release 1.1.1
 - Update Tranditional Chinese translation.
 
