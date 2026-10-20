@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2012 Yorik van Havre <yorik@uncreated.net>              *
  *   Copyright (c) 2013 Luke Parry <l.parry@warwick.ac.uk>                 *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DrawViewAnnotation_h_
-#define DrawViewAnnotation_h_
+#pragma once
 
 #include <App/DocumentObject.h>
 #include <App/FeaturePython.h>
@@ -83,6 +84,3 @@ using DrawViewAnnotationPython = App::FeaturePythonT<DrawViewAnnotation>;
 
 
 } //namespace TechDraw
-
-
-#endif

@@ -27,8 +27,7 @@
  *plane placement.
  */
 
-#ifndef PARTATTACHER_H
-#define PARTATTACHER_H
+#pragma once
 
 #include <GProp_GProps.hxx>
 
@@ -115,6 +114,7 @@ enum eMapMode
 
     mmParallelPlane,
     mmMidpoint,
+    mmMidPlane,
 
     mmDummy_NumberOfModes  // a value useful to check the validity of mode value
 };  // see also eMapModeStrings[] definition in .cpp
@@ -261,8 +261,7 @@ public:  // methods
         const std::vector<App::DocumentObject*>& objs,
         const std::vector<std::string>& subs,
         const Base::Placement& origPlacement
-    ) const
-        = 0;
+    ) const = 0;
 
     void setReferences(const App::PropertyLinkSubList& references);
     void setReferences(const std::vector<App::SubObjectT>& references);
@@ -584,5 +583,3 @@ public:
 };
 
 }  // namespace Attacher
-
-#endif  // PARTATTACHER_H

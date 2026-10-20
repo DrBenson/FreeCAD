@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2025 Stefan Tröger <stefantroeger@gmx.net>              *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef GUI_TASKVIEW_TaskPostExtraction_H
-#define GUI_TASKVIEW_TaskPostExtraction_H
+#pragma once
 
 #include <Gui/DocumentObserver.h>
 #include <Gui/TaskView/TaskDialog.h>
@@ -64,5 +65,3 @@ private:
 
 
 }  // namespace FemGui
-
-#endif  // GUI_TASKVIEW_TaskPostExtraction_H

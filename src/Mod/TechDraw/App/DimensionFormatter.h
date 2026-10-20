@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2022 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DIMENSIONFORMATTER_H
-#define DIMENSIONFORMATTER_H
+#pragma once
 
 #include <QString>
 
@@ -67,4 +68,3 @@ private:
 };
 
 }  // end namespace TechDraw
-#endif

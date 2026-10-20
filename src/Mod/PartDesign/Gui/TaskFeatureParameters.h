@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TASKFEATUREPARAMETERS_H_NAHKE2YZ
-#define TASKFEATUREPARAMETERS_H_NAHKE2YZ
+#pragma once
 
 
 #include <type_traits>
@@ -59,7 +58,7 @@ private:
     );
 };
 
-/// Convenience class to collect common methods for all SketchBased features
+/// Common functionality for feature parameter panels
 class TaskFeatureParameters: public Gui::TaskView::TaskBox, public Gui::DocumentObserver
 {
     Q_OBJECT
@@ -71,7 +70,7 @@ public:
         const std::string& pixmapname,
         const QString& parname
     );
-    ~TaskFeatureParameters() override = default;
+    ~TaskFeatureParameters() override;
 
     /// save field history
     virtual void saveHistory()
@@ -86,6 +85,10 @@ public:
     {
         return blockUpdate;
     }
+
+protected:
+    void showDraggerHints();
+    void hideDraggerHints();
 
 protected Q_SLOTS:
     // TODO Add update view to all dialogs (2015-12-05, Fat-Zer)
@@ -184,6 +187,3 @@ private:
 };
 
 }  // namespace PartDesignGui
-
-
-#endif /* end of include guard: TASKFEATUREPARAMETERS_H_NAHKE2YZ */

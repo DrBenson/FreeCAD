@@ -23,12 +23,12 @@
  ***************************************************************************/
 
 
-#ifndef APP_PROPERTYSTANDARD_H
-#define APP_PROPERTYSTANDARD_H
+#pragma once
 
 #include <list>
 #include <memory>
 #include <string>
+#include <utility>
 #include <vector>
 #include <boost/dynamic_bitset.hpp>
 #include <Base/Uuid.h>
@@ -402,9 +402,27 @@ protected:
     long getPyValue(PyObject* item) const override;
 };
 
-/** Integer list properties
- *
- */
+/** A list of signed integer pairs, exposed to Python as a list of tuples. */
+class AppExport PropertyIntPairList: public PropertyListsT<std::pair<long, long>>
+{
+    TYPESYSTEM_HEADER_WITH_OVERRIDE();
+
+public:
+    using IntPair = std::pair<long, long>;
+
+    PyObject* getPyObject() override;
+    void setPyObject(PyObject* value) override;
+    void Save(Base::Writer& writer) const override;
+    void Restore(Base::XMLReader& reader) override;
+    Property* Copy() const override;
+    void Paste(const Property& from) override;
+    unsigned int getMemSize() const override;
+
+protected:
+    IntPair getPyValue(PyObject* item) const override;
+};
+
+/** Integer set property. */
 class AppExport PropertyIntegerSet: public Property
 {
     TYPESYSTEM_HEADER_WITH_OVERRIDE();
@@ -488,28 +506,41 @@ public:
 
     virtual int getSize() const;
 
-    /** Sets the property
+    /**
+     * Accessor methods to the whole map
      */
-    void setValue()
-    {}
+    const std::map<std::string, std::string>& getValue() const;
+    void setValue();
+    void setValue(const std::map<std::string, std::string>& map);
+    void setValue(std::map<std::string, std::string>&& map);
+
+    /**
+     * Accessor methods to particular items
+     */
+    std::string getValue(const std::string& key) const;
     void setValue(const std::string& key, const std::string& value);
-    void setValues(const std::map<std::string, std::string>&);
+    bool deleteValue(const std::string& key);
 
-    /// index operator
-    const std::string& operator[](const std::string& key) const;
+    /// Adds or updates entry for a non-null value, deletes entry for a null value
+    void setValue(const char* key, const char* value);
 
-    void set1Value(const std::string& key, const std::string& value)
+    /**
+     * Accessor aliases
+     */
+    const std::map<std::string, std::string>& getValues() const { return getValue(); }
+    void setValues(const std::map<std::string, std::string>& map) { setValue(map); }
+    void setValues(std::map<std::string, std::string>&& map) { setValue(map); }
+    void set1Value(const std::string& key, const std::string& value) { setValue(key, value); }
+
+    const boost::any getPathValue(const ObjectIdentifier& path) const override;
+    void setPathValue(const ObjectIdentifier& path, const boost::any& value) override;
+
+    ObjectIdentifier getItemPath(const std::string& key) const;
+
+    const char* getEditorName() const override
     {
-        _lValueList.operator[](key) = value;
+        return "Gui::PropertyEditor::PropertyMapItem";
     }
-
-    const std::map<std::string, std::string>& getValues() const
-    {
-        return _lValueList;
-    }
-
-    // virtual const char* getEditorName(void) const { return
-    // "Gui::PropertyEditor::PropertyStringListItem"; }
 
     PyObject* getPyObject() override;
     void setPyObject(PyObject* py) override;
@@ -1343,5 +1374,3 @@ protected:
 };
 
 }  // namespace App
-
-#endif  // APP_PROPERTYSTANDARD_H

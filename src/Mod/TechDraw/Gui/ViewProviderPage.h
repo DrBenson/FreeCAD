@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2004 Jürgen Riegel <juergen.riegel@web.de>              *
  *   Copyright (c) 2012 Luke Parry <l.parry@warwick.ac.uk>                 *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DRAWINGGUI_VIEWPROVIDERPAGE_H
-#define DRAWINGGUI_VIEWPROVIDERPAGE_H
+#pragma once
 
 #include <QObject>
 #include <QPointer>
@@ -143,6 +144,10 @@ public:
 
     void redrawPage() const;
 
+    // Called by MDIViewPage::closeEvent() instead of hide() to avoid re-entrantly
+    // calling removeWindow() on a QMdiSubWindow that is mid-closeEvent.
+    void onMDIViewClosed();
+
 protected:
     bool setEdit(int ModNum) override;
     void createMDIViewPage();
@@ -157,6 +162,3 @@ private:
 };
 
 }// namespace TechDrawGui
-
-
-#endif// DRAWINGGUI_VIEWPROVIDERPAGE_H

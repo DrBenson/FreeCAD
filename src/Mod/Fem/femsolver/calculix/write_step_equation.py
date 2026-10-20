@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2021 Bernd Hahnebach <bernd@bimstatik.org>              *
 # *                                                                         *
@@ -36,7 +38,7 @@ def write_step_equation(f, ccxwriter):
 
     # build STEP line
     step = "*STEP"
-    if ccxwriter.solver_obj.GeometricalNonlinearity == "nonlinear":
+    if ccxwriter.solver_obj.GeometricalNonlinearity:
         if ccxwriter.analysis_type in ["static", "thermomech"]:
             # https://www.comsol.com/blogs/what-is-geometric-nonlinearity
             step += ", NLGEOM"
@@ -59,6 +61,8 @@ def write_step_equation(f, ccxwriter):
         f.write("*CONTROLS, PARAMETERS=TIME INCREMENTATION\n")
         f.write(ccxwriter.solver_obj.IterationsControlParameterIter + "\n")
         f.write(ccxwriter.solver_obj.IterationsControlParameterCutb + "\n")
+        f.write("*CONTROLS, PARAMETERS=FIELD\n")
+        f.write(ccxwriter.solver_obj.IterationsControlParameterField + "\n")
 
     # ANALYSIS type line
     # analysis line --> analysis type

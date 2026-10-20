@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2021 Uwe Stöhr <uwestoehr@lyx.org>                      *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef GUI_TASKVIEW_TASKDIMENSION_H
-#define GUI_TASKVIEW_TASKDIMENSION_H
+#pragma once
 
 #include <Gui/DocumentObserver.h>
 #include <Gui/TaskView/TaskDialog.h>
@@ -114,5 +115,3 @@ private:
 };
 
 } //namespace TechDrawGui
-
-#endif // #ifndef GUI_TASKVIEW_TASKDIMENSION_H

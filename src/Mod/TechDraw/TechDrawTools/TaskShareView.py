@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2022 Wanderer Fan <wandererfan@gmail.com>               *
 # *                                                                         *
@@ -57,7 +59,7 @@ class TaskShareView:
 
         self.dialogOpen = False
 
-        App.setActiveTransaction("Share view")
+        App.ActiveDocument.openTransaction("Share view")
 
     def accept(self):
 #        print ("Accept")
@@ -66,12 +68,12 @@ class TaskShareView:
         toPage = App.ActiveDocument.getObject(self.toPageName)
         TDToolsMovers.moveView(view, fromPage, toPage, True)
 
-        App.closeActiveTransaction()
+        App.ActiveDocument.commitTransaction()
         return True
 
     def reject(self):
 #        print ("Reject")
-        App.closeActiveTransaction(True)
+        App.ActiveDocument.abortTransaction()
         return True
 
     def pickView(self):

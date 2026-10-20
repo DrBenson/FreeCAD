@@ -23,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef PARTDESIGN_DressUp_H
-#define PARTDESIGN_DressUp_H
+#pragma once
 
 #include "FeatureAddSub.h"
 
@@ -71,9 +70,11 @@ public:
 
 protected:
     void onChanged(const App::Property* prop) override;
+    void onBaseFeatureRerouted(
+        App::DocumentObject* oldBase,
+        App::DocumentObject* newBase,
+        BaseFeatureChange change
+    ) override;
 };
 
 }  // namespace PartDesign
-
-
-#endif  // PARTDESIGN_DressUp_H

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2024 Pierre-Louis Boyer <development@ondsel.com>        *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TechDrawGUI_TechDrawHandler_H
-#define TechDrawGUI_TechDrawHandler_H
+#pragma once
 
 #include <Gui/ToolHandler.h>
 
@@ -62,6 +63,3 @@ protected:
 
 
 }  // namespace TechDrawGui
-
-
-#endif  // TechDrawGUI_TechDrawHandler_H

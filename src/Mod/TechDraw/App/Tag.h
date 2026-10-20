@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2025 WandererFan <wandererfan@gmail.com>                *
  *   Copyright (c) 2025 Benjamin Bræstrup Sayoc <benj5378@outlook.com>     *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAW_TAG_H
-#define TECHDRAW_TAG_H
+#pragma once
 
 #include <string>
 #include <string_view>
@@ -62,5 +63,3 @@ private:
     boost::uuids::uuid tag{};
 };
 }
-
-#endif

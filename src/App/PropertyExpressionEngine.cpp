@@ -22,6 +22,10 @@
  *                                                                         *
  ***************************************************************************/
 
+#include <algorithm>
+#include <boost/graph/topological_sort.hpp>
+#include <boost/unordered/unordered_map.hpp>
+#include <boost_graph_adjacency_list.hpp>
 
 #include <App/Application.h>
 #include <App/Document.h>
@@ -56,6 +60,8 @@ PropertyExpressionContainer::PropertyExpressionContainer()
             PropertyExpressionContainer::slotRelabelDocument);
         GetApplication().signalRenameDynamicProperty.connect(
             PropertyExpressionContainer::slotRenameDynamicProperty);
+        GetApplication().signalMoveDynamicProperty.connect(
+            PropertyExpressionContainer::slotMoveDynamicProperty);
     }
     _ExprContainers.insert(this);
 }
@@ -85,19 +91,152 @@ void PropertyExpressionContainer::slotRenameDynamicProperty(const App::Property&
     }
 }
 
+void PropertyExpressionContainer::slotMoveDynamicProperty(const App::Property& prop,
+                                                          const App::DocumentObject& targetObj)
+{
+    for (auto container : _ExprContainers) {
+        container->onMoveDynamicProperty(prop, targetObj);
+    }
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////
 
+/* The cycle_detector struct is used by the boost graph routines to detect
+ * cycles in the graph. */
+struct cycle_detector: public boost::dfs_visitor<>
+{
+    cycle_detector(bool& has_cycle, int& src)
+        : _has_cycle(has_cycle)
+        , _src(src)
+    {}
+
+    template<class Edge, class Graph>
+    void back_edge(Edge e, Graph& g)
+    {
+        _has_cycle = true;
+        _src = source(e, g);
+    }
+
+protected:
+    bool& _has_cycle;
+    int& _src;
+};
+
+using DiGraph = boost::adjacency_list<boost::listS, boost::vecS, boost::directedS>;
 struct PropertyExpressionEngine::Private
 {
     // For some reason, MSVC has trouble with vector of scoped_connection if
     // defined in header, hence the private structure here.
     std::vector<fastsignals::scoped_connection> conns;
     std::unordered_map<std::string, std::vector<ObjectIdentifier>> propMap;
+
+    /**
+     * @brief Build a graph of all expressions in \a exprs.
+     * @param exprs Expressions to use in graph
+     * @param revNodes Map from int[nodeid] to ObjectIndentifer.
+     * @param g Graph to update. May contain additional nodes than in revNodes, because of outside
+     * dependencies.
+     */
+    static void buildGraph(const ExpressionMap& exprs,
+                    boost::unordered_map<int, App::ObjectIdentifier>& revNodes,
+                    DiGraph& g,
+                    ExecuteOption option = ExecuteAll)
+    {
+        boost::unordered_map<ObjectIdentifier, int> nodes;
+        std::vector<Edge> edges;
+
+        // Build data structure for graph
+        for (const auto& expr : exprs) {
+            if (option != ExecuteAll) {
+                auto prop = expr.first.getProperty();
+                if (!prop) {
+                    throw Base::RuntimeError("Path does not resolve to a property.");
+                }
+                bool is_output =
+                    prop->testStatus(App::Property::Output) || (prop->getType() & App::Prop_Output);
+                if ((is_output && option == ExecuteNonOutput)
+                    || (!is_output && option == ExecuteOutput)) {
+                    continue;
+                }
+                if (option == ExecuteOnRestore && !prop->testStatus(Property::Transient)
+                    && !(prop->getType() & Prop_Transient)
+                    && !prop->testStatus(Property::EvalOnRestore)) {
+                    continue;
+                }
+            }
+            buildGraphStructures(expr.first, expr.second.expression, nodes, revNodes, edges);
+        }
+
+        // Create graph.
+        g.clear();
+        for (std::size_t i = 0; i < nodes.size(); ++i) {
+            add_vertex(g);
+        }
+
+        // Add edges to graph
+        for (const auto& edge : edges) {
+            add_edge(edge.first, edge.second, g);
+        }
+
+        // Check for cycles
+        bool has_cycle = false;
+        int src = -1;
+        cycle_detector vis(has_cycle, src);
+        depth_first_search(g, visitor(vis));
+
+        if (has_cycle) {
+            std::string s = revNodes[src].toString() + " reference creates a cyclic dependency.";
+
+            throw Base::RuntimeError(s.c_str());
+        }
+    }
+
+    static void buildGraphStructures(
+    const ObjectIdentifier& path,
+    const std::shared_ptr<Expression> expression,
+    boost::unordered_map<ObjectIdentifier, int>& nodes,
+    boost::unordered_map<int, ObjectIdentifier>& revNodes,
+    std::vector<Edge>& edges)
+    {
+        /* Insert target property into nodes structure */
+        if (nodes.find(path) == nodes.end()) {
+            int s = nodes.size();
+
+            revNodes[s] = path;
+            nodes[path] = s;
+        }
+        else {
+            revNodes[nodes[path]] = path;
+        }
+
+        /* Insert dependencies into nodes structure */
+        ExpressionDeps deps;
+        if (expression) {
+            deps = expression->getDeps();
+        }
+
+        for (auto& dep : deps) {
+            for (auto& info : dep.second) {
+                if (info.first.empty()) {
+                    continue;
+                }
+                for (auto& oid : info.second) {
+                    ObjectIdentifier cPath(oid.canonicalPath());
+                    if (nodes.find(cPath) == nodes.end()) {
+                        int s = nodes.size();
+                        nodes[cPath] = s;
+                    }
+                    edges.emplace_back(nodes[path], nodes[cPath]);
+                }
+            }
+        }
+    }
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
 TYPESYSTEM_SOURCE(App::PropertyExpressionEngine, App::PropertyExpressionContainer)
+
 
 PropertyExpressionEngine::PropertyExpressionEngine()
     : validator(0)
@@ -130,7 +269,7 @@ Property* PropertyExpressionEngine::Copy() const
 
 void PropertyExpressionEngine::hasSetValue()
 {
-    App::DocumentObject* owner = dynamic_cast<App::DocumentObject*>(getContainer());
+    auto* owner = freecad_cast<App::DocumentObject*>(getContainer());
     if (!owner || !owner->isAttachedToDocument() || owner->isRestoring()
         || testFlag(LinkDetached)) {
         PropertyExpressionContainer::hasSetValue();
@@ -138,13 +277,14 @@ void PropertyExpressionEngine::hasSetValue()
     }
 
     std::map<App::DocumentObject*, bool> deps;
+    std::map<std::pair<std::string, App::DocumentObject*>, bool> propDeps;
     std::vector<std::string> labels;
     unregisterElementReference();
     UpdateElementReferenceExpressionVisitor<PropertyExpressionEngine> v(*this);
     for (auto& e : expressions) {
         auto expr = e.second.expression;
         if (expr) {
-            expr->getDepObjects(deps, &labels);
+            expr->getDepObjects(deps, &labels, &propDeps);
             if (!restoring) {
                 expr->visit(v);
             }
@@ -152,7 +292,7 @@ void PropertyExpressionEngine::hasSetValue()
     }
     registerLabelReferences(std::move(labels));
 
-    updateDeps(std::move(deps));
+    updateDeps(std::move(deps), &propDeps);
 
     if (pimpl) {
         pimpl->conns.clear();
@@ -345,47 +485,6 @@ void PropertyExpressionEngine::Restore(Base::XMLReader& reader)
     reader.readEndElement("ExpressionEngine");
 }
 
-void PropertyExpressionEngine::buildGraphStructures(
-    const ObjectIdentifier& path,
-    const std::shared_ptr<Expression> expression,
-    boost::unordered_map<ObjectIdentifier, int>& nodes,
-    boost::unordered_map<int, ObjectIdentifier>& revNodes,
-    std::vector<Edge>& edges) const
-{
-    /* Insert target property into nodes structure */
-    if (nodes.find(path) == nodes.end()) {
-        int s = nodes.size();
-
-        revNodes[s] = path;
-        nodes[path] = s;
-    }
-    else {
-        revNodes[nodes[path]] = path;
-    }
-
-    /* Insert dependencies into nodes structure */
-    ExpressionDeps deps;
-    if (expression) {
-        deps = expression->getDeps();
-    }
-
-    for (auto& dep : deps) {
-        for (auto& info : dep.second) {
-            if (info.first.empty()) {
-                continue;
-            }
-            for (auto& oid : info.second) {
-                ObjectIdentifier cPath(oid.canonicalPath());
-                if (nodes.find(cPath) == nodes.end()) {
-                    int s = nodes.size();
-                    nodes[cPath] = s;
-                }
-                edges.emplace_back(nodes[path], nodes[cPath]);
-            }
-        }
-    }
-}
-
 ObjectIdentifier PropertyExpressionEngine::canonicalPath(const ObjectIdentifier& oid) const
 {
     DocumentObject* docObj = freecad_cast<DocumentObject*>(getContainer());
@@ -525,79 +624,6 @@ void PropertyExpressionEngine::setValue(const ObjectIdentifier& path,
     }
 }
 
-
-/* The cycle_detector struct is used by the boost graph routines to detect
- * cycles in the graph. */
-struct cycle_detector: public boost::dfs_visitor<>
-{
-    cycle_detector(bool& has_cycle, int& src)
-        : _has_cycle(has_cycle)
-        , _src(src)
-    {}
-
-    template<class Edge, class Graph>
-    void back_edge(Edge e, Graph& g)
-    {
-        _has_cycle = true;
-        _src = source(e, g);
-    }
-
-protected:
-    bool& _has_cycle;
-    int& _src;
-};
-
-void PropertyExpressionEngine::buildGraph(const ExpressionMap& exprs,
-                                          boost::unordered_map<int, ObjectIdentifier>& revNodes,
-                                          DiGraph& g,
-                                          ExecuteOption option) const
-{
-    boost::unordered_map<ObjectIdentifier, int> nodes;
-    std::vector<Edge> edges;
-
-    // Build data structure for graph
-    for (const auto& expr : exprs) {
-        if (option != ExecuteAll) {
-            auto prop = expr.first.getProperty();
-            if (!prop) {
-                throw Base::RuntimeError("Path does not resolve to a property.");
-            }
-            bool is_output =
-                prop->testStatus(App::Property::Output) || (prop->getType() & App::Prop_Output);
-            if ((is_output && option == ExecuteNonOutput)
-                || (!is_output && option == ExecuteOutput)) {
-                continue;
-            }
-            if (option == ExecuteOnRestore && !prop->testStatus(Property::Transient)
-                && !(prop->getType() & Prop_Transient)
-                && !prop->testStatus(Property::EvalOnRestore)) {
-                continue;
-            }
-        }
-        buildGraphStructures(expr.first, expr.second.expression, nodes, revNodes, edges);
-    }
-
-    // Create graph
-    g = DiGraph(nodes.size());
-
-    // Add edges to graph
-    for (const auto& edge : edges) {
-        add_edge(edge.first, edge.second, g);
-    }
-
-    // Check for cycles
-    bool has_cycle = false;
-    int src = -1;
-    cycle_detector vis(has_cycle, src);
-    depth_first_search(g, visitor(vis));
-
-    if (has_cycle) {
-        std::string s = revNodes[src].toString() + " reference creates a cyclic dependency.";
-
-        throw Base::RuntimeError(s.c_str());
-    }
-}
-
 std::vector<App::ObjectIdentifier>
 PropertyExpressionEngine::computeEvaluationOrder(ExecuteOption option)
 {
@@ -605,7 +631,7 @@ PropertyExpressionEngine::computeEvaluationOrder(ExecuteOption option)
     boost::unordered_map<int, ObjectIdentifier> revNodes;
     DiGraph g;
 
-    buildGraph(expressions, revNodes, g, option);
+    Private::buildGraph(expressions, revNodes, g, option);
 
     /* Compute evaluation order for expressions */
     std::vector<int> c;
@@ -808,15 +834,36 @@ PropertyExpressionEngine::validateExpression(const ObjectIdentifier& path,
     DocumentObject* pathDocObj = usePath.getDocumentObject();
     assert(pathDocObj);
 
-    auto inList = pathDocObj->getInListEx(true);
-    for (auto& v : expr->getDepObjects()) {
-        auto docObj = v.first;
-        if (!v.second && inList.contains(docObj)) {
-            std::stringstream ss;
-            ss << "cyclic reference to " << docObj->getFullName();
-            return ss.str();
+    if (GetApplication().isFineGrainedRecomputeEnabled()) {
+        // Fully mimics the else part except for taking into account input properties.
+        auto inList = pathDocObj->getInListEx(true);
+
+        std::map<DocumentObject*, bool> depObjects;
+        std::map<std::pair<std::string, DocumentObject*>, bool> propDeps;
+        expr->getDepObjects(depObjects, nullptr, &propDeps);
+
+        for (const auto& [pair, hidden] : propDeps) {
+            auto* docObj = pair.second;
+            auto& propName = pair.first;
+            if (!hidden && inList.contains(docObj) && !docObj->isInputProperty(propName)) {
+                std::stringstream ss;
+                ss << "cyclic reference to " << docObj->getFullName() << "." << propName;
+                return ss.str();
+            }
         }
     }
+    else {
+        auto inList = pathDocObj->getInListEx(true);
+        for (auto& v : expr->getDepObjects()) {
+            auto docObj = v.first;
+            if (!v.second && inList.contains(docObj)) {
+                std::stringstream ss;
+                ss << "cyclic reference to " << docObj->getFullName();
+                return ss.str();
+            }
+        }
+    }
+
 
     // Check for internal document object dependencies
 
@@ -832,7 +879,7 @@ PropertyExpressionEngine::validateExpression(const ObjectIdentifier& path,
         boost::unordered_map<int, ObjectIdentifier> revNodes;
         DiGraph g;
 
-        buildGraph(newExpressions, revNodes, g);
+        Private::buildGraph(newExpressions, revNodes, g);
     }
     catch (const Base::Exception& e) {
         return e.what();
@@ -1140,6 +1187,18 @@ void PropertyExpressionEngine::onRenameDynamicProperty(const App::Property& prop
 {
     ObjectIdentifier oldNameId = ObjectIdentifier(prop.getContainer(), std::string(oldName));
     ObjectIdentifier newNameId = ObjectIdentifier(prop);
+    const std::map<ObjectIdentifier, ObjectIdentifier> paths = {
+        {oldNameId, newNameId},
+    };
+
+    renameObjectIdentifiers(paths);
+}
+
+void PropertyExpressionEngine::onMoveDynamicProperty(const App::Property& prop,
+                                                     const DocumentObject& targetObj)
+{
+    ObjectIdentifier oldNameId = ObjectIdentifier(prop);
+    ObjectIdentifier newNameId = ObjectIdentifier(&targetObj, std::string(prop.getName()));
     const std::map<ObjectIdentifier, ObjectIdentifier> paths = {
         {oldNameId, newNameId},
     };

@@ -20,6 +20,8 @@
  *                                                                         *
  ***************************************************************************/
 
+#include <boost/unordered_set.hpp>
+
 #include <QApplication>
 #include <QFont>
 
@@ -389,10 +391,10 @@ DocumentModel::DocumentModel(QObject* parent)
     static bool inittype = false;
     if (!inittype) {
         inittype = true;
-        DocumentModelIndex ::init();
-        ApplicationIndex ::init();
-        DocumentIndex ::init();
-        ViewProviderIndex ::init();
+        DocumentModelIndex::init();
+        ApplicationIndex::init();
+        DocumentIndex::init();
+        ViewProviderIndex::init();
     }
 
     // NOLINTBEGIN

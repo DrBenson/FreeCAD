@@ -28,10 +28,7 @@
 # Gathering all the information to start FreeCAD
 # This is the second one of three init scripts, the third one
 # runs when the gui is up
-import InspectionGui
-FreeCADGui.addLanguagePath(":/translations")
-FreeCADGui.addIconPath(":/icons")
-FreeCADGui.updateLocale()
+
 
 class InspectionWorkbench(Workbench):
     "Inspection workbench object"
@@ -40,8 +37,8 @@ class InspectionWorkbench(Workbench):
         self.__class__.Icon = (
             FreeCAD.getResourceDir() + "Mod/Inspection/Resources/icons/InspectionWorkbench.svg"
         )
-        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Inspection")
-        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Inspection workbench")
+        self.__class__.MenuText = "Inspection"
+        self.__class__.ToolTip = "Inspection workbench"
 
     def Initialize(self):
         # load the module

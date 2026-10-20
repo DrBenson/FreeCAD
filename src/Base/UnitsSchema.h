@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef BASE_UNITSSCHEMA_H
-#define BASE_UNITSSCHEMA_H
+#pragma once
 
 #include <string>
 #include <memory>
@@ -34,6 +33,7 @@
 namespace Base
 {
 class Quantity;
+struct NumericLocaleContext;
 
 /**
  * An individual schema object
@@ -53,10 +53,17 @@ public:
 
     std::string translate(const Quantity& quant) const;
     std::string translate(const Quantity& quant, double& factor, std::string& unitString) const;
+    std::string translate(
+        const Quantity& quant,
+        const NumericLocaleContext& formatting,
+        double& factor,
+        std::string& unitString
+    ) const;
 
 private:
     [[nodiscard]] static std::string toLocale(
         const Quantity& quant,
+        const NumericLocaleContext& formatting,
         double factor,
         const std::string& unitString
     );
@@ -66,4 +73,3 @@ private:
 
 
 }  // namespace Base
-#endif  // BASE_UNITSSCHEMA_H

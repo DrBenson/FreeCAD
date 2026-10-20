@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2019 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAW_CENTERLINE_H
-#define TECHDRAW_CENTERLINE_H
+#pragma once
 
 #include <App/FeaturePython.h>
 #include <Base/Persistence.h>
@@ -183,5 +184,3 @@ protected:
 };
 
 }  // namespace TechDraw
-
-#endif  // TECHDRAW_CENTERLINE_H

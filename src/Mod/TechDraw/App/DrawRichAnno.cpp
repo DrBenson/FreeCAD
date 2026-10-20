@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2019 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,7 +22,9 @@
  *                                                                         *
  ***************************************************************************/
 
+#include <Base/Reader.h>
 
+#include <App/FeaturePythonPyImp.h>
 #include "DrawRichAnno.h"
 #include "DrawRichAnnoPy.h"  // generated from DrawRichAnnoPy.xml
 
@@ -41,11 +45,21 @@ DrawRichAnno::DrawRichAnno()
                       "Object to which this annontation is attached");
     ADD_PROPERTY_TYPE(AnnoText, (""), group, App::Prop_None, "Annotation text");
     ADD_PROPERTY_TYPE(ShowFrame, (true), group, App::Prop_None, "Outline rectangle on/off");
+    // Necessary to support legacy files made before #24624.
+    ADD_PROPERTY_TYPE(OriginCentered, (false), group, App::Prop_None, "Center the annotation on it's origin.");
     ADD_PROPERTY_TYPE(MaxWidth, (-1.0), group, App::Prop_None, "Width limit before auto wrap");
     Caption.setStatus(App::Property::Hidden, true);
     Scale.setStatus(App::Property::Hidden, true);
     ScaleType.setStatus(App::Property::Hidden, true);
 
+}
+
+void DrawRichAnno::Restore(Base::XMLReader& reader)
+{
+    // Legacy documents lack OriginCentered. The base restores it when present,
+    // including dynamic properties and their status flags.
+    OriginCentered.setValue(true);
+    DrawView::Restore(reader);
 }
 
 void DrawRichAnno::onChanged(const App::Property* prop)
@@ -77,7 +91,7 @@ short DrawRichAnno::mustExecute() const
 
 App::DocumentObjectExecReturn *DrawRichAnno::execute()
 {
-//    Base::Console().message("DRA::execute() - @ (%.3f, %.3f)\n", X.getValue(), Y.getValue());
+//    Base::Console().message("DRA::execute() - @ ({:.3f}, {:.3f})\n", X.getValue(), Y.getValue());
     if (!keepUpdated()) {
         return App::DocumentObject::StdReturn;
     }
@@ -87,7 +101,7 @@ App::DocumentObjectExecReturn *DrawRichAnno::execute()
 
 DrawView* DrawRichAnno::getBaseView() const
 {
-//    Base::Console().message("DRA::getBaseView() - %s\n", getNameInDocument());
+//    Base::Console().message("DRA::getBaseView() - {}\n", getNameInDocument());
     return freecad_cast<DrawView*>(AnnoParent.getValue());
 }
 
@@ -125,6 +139,15 @@ namespace App {
 PROPERTY_SOURCE_TEMPLATE(TechDraw::DrawRichAnnoPython, TechDraw::DrawRichAnno)
 template<> const char* TechDraw::DrawRichAnnoPython::getViewProviderName() const {
     return "TechDrawGui::ViewProviderRichAnno";
+}
+template<>
+PyObject* TechDraw::DrawRichAnnoPython::getPyObject()
+{
+    if (PythonObject.is(Py::_None())) {
+        // ref counter is set to 1
+        PythonObject = Py::asObject(new FeaturePythonPyT<TechDraw::DrawRichAnnoPy>(this));
+    }
+    return Py::new_reference_to(PythonObject);
 }
 /// @endcond
 

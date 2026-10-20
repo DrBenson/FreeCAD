@@ -1,632 +1,155 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
+# SPDX-FileCopyrightText: 2026 Fae Corrigan
+# SPDX-FileNotice: Part of the FreeCAD project.
 
-# ***************************************************************************
-# *   Copyright (c) 2014 sliptonic <shopinthewoods@gmail.com>               *
-# *   Copyright (c) 2018, 2019 Gauthier Briere                              *
-# *   Copyright (c) 2019, 2020 Schildkroet                                  *
-# *   Copyright (c) 2022 Harald Hartmann                                    *
-# *                                                                         *
-# *   This file is part of the FreeCAD CAx development system.              *
-# *                                                                         *
-# *   This program is free software; you can redistribute it and/or modify  *
-# *   it under the terms of the GNU Lesser General Public License (LGPL)    *
-# *   as published by the Free Software Foundation; either version 2 of     *
-# *   the License, or (at your option) any later version.                   *
-# *   for detail see the LICENCE text file.                                 *
-# *                                                                         *
-# *   FreeCAD is distributed in the hope that it will be useful,            *
-# *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
-# *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the          *
-# *   GNU Lesser General Public License for more details.                   *
-# *                                                                         *
-# *   You should have received a copy of the GNU Library General Public     *
-# *   License along with FreeCAD; if not, write to the Free Software        *
-# *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
-# *   USA                                                                   *
-# *                                                                         *
-# ***************************************************************************
+################################################################################
+#                                                                              #
+#   FreeCAD is free software: you can redistribute it and/or modify            #
+#   it under the terms of the GNU Lesser General Public License as             #
+#   published by the Free Software Foundation, either version 2.1              #
+#   of the License, or (at your option) any later version.                     #
+#                                                                              #
+#   FreeCAD is distributed in the hope that it will be useful,                 #
+#   but WITHOUT ANY WARRANTY; without even the implied warranty                #
+#   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                    #
+#   See the GNU Lesser General Public License for more details.                #
+#                                                                              #
+#   You should have received a copy of the GNU Lesser General Public           #
+#   License along with FreeCAD. If not, see https://www.gnu.org/licenses       #
+#                                                                              #
+################################################################################
 
-import FreeCAD
-from FreeCAD import Units
-import Path
-import Path.Base.Util as PathUtil
-import Path.Post.Utils as PostUtils
-import PathScripts.PathUtils as PathUtils
-import argparse
-import datetime
-import shlex
-import re
-from builtins import open as pyopen
-
-
-TOOLTIP = """
-Generate G-code from a Path that is compatible with the Estlcam CNC controller.
-Have a look at https://www.estlcam.de/steuerung_cnc_programme_en.php
-
-This postprocessor, once placed in the appropriate PathScripts folder, can be
-used directly from inside FreeCAD, via the GUI importer or via python scripts
-with:
-
-import estlcam_post
-estlcam_post.export(object, "/path/to/file.nc")
+"""
+This post processor inherits from the base post processor class with the following changes:
+- Adds a Use Alternative Tool Change parameter that lets the user decide to use M0 instead of M6 for tool changes
+    for compatibility for some older machines
+- Converts M7 to M10 for mist coolant on
+- Converts M9 to M11 when mist coolant is being used
+- Strips G21 and G20 commands
 """
 
+from typing import Any
+from Path.Post.Processor import PostProcessor
+import Path
+import FreeCAD
+import Constants
 
-# ***************************************************************************
-# * Globals set customization preferences
-# ***************************************************************************
+Path.Log.setLevel(Path.Log.Level.INFO, Path.Log.thisModule())
 
-# Default values for command line arguments:
-OUTPUT_COMMENTS = True  # default output of comments in output gCode file
-OUTPUT_HEADER = True  # default output header in output gCode file
-OUTPUT_LINE_NUMBERS = False  # default doesn't output line numbers in output gCode file
+translate = FreeCAD.Qt.translate
 
-OUTPUT_TOOL_CHANGE = True  # default output tool change
-TOOL_CHANGE_USE_ALTCMD = False  # default doesn't use alternative command for tool change
+Values = dict[str, Any]
+Defaults = dict[str, bool]
 
-SHOW_EDITOR = True  # default show the resulting file dialog output in GUI
-PRECISION = 3  # Default precision for metric
-TRANSLATE_DRILL_CYCLES = True  # has to be true, G81, G82 & G83 are translated in G0/G1 moves
-
-PREAMBLE = """
-"""  # default preamble text will appear at the beginning of the gCode output file.
-
-PRE_OPERATION = """
-"""  # Pre operation text will be inserted before every operation
-
-POST_OPERATION = """
-"""  # Post operation text will be inserted after every operation
-
-POSTAMBLE = """M5
-"""  # default postamble text will appear following the last operation.
-
-# Customisation with no command line argument
-LINENR = 100  # line number starting value
-LINEINCR = 10  # line number increment
-
-DRILL_RETRACT_MODE = (
-    "G98"  # Default value of drill retractations (CURRENT_Z) other possible value is G99
-)
-
-MOTION_MODE = "G90"  # only G90 for absolute moves
-UNITS = "G21"  # G21 for metric, G20 for us standard
-UNIT_FORMAT = "mm"
-UNIT_SPEED_FORMAT = "mm/min"
-
-TOOL_CHANGE_ALTERNATIVE_CMD = (
-    "M0"  # alternative Tool Change command, only if TOOL_CHANGE_USE_ALTCMD is true
-)
-TOOL_CHANGE = """M5
-"""  # Tool Change commands will be inserted before a tool change
-
-# ***************************************************************************
-# * End of customization
-# ***************************************************************************
-
-# Parser arguments list & definition
-parser = argparse.ArgumentParser(prog="estlcam", add_help=False)
-parser.add_argument("--no-comments", action="store_true", help="suppress comment output")
-parser.add_argument("--no-header", action="store_true", help="suppress header output")
-parser.add_argument("--line-numbers", action="store_true", help="prefix with line numbers")
-parser.add_argument(
-    "--no-show-editor",
-    action="store_true",
-    help="don't pop up editor before writing output",
-)
-parser.add_argument(
-    "--preamble",
-    help='set commands to be issued before the first command, default="'
-    + PREAMBLE.replace("\n", "\\n")
-    + '"',
-)
-parser.add_argument(
-    "--postamble",
-    help='set commands to be issued after the last command, default="'
-    + POSTAMBLE.replace("\n", "\\n")
-    + '"',
-)
-parser.add_argument("--precision", default="3", help="number of digits of precision, default=3")
-parser.add_argument("--inches", action="store_true", help="convert output for US imperial mode")
-parser.add_argument("--no-tool-change", action="store_true", help="comment out tool changes")
-parser.add_argument(
-    "--tool-change-use-altcmd", action="store_true", help="use alternative command for tool change"
-)
-
-TOOLTIP_ARGS = parser.format_help()
+POST_TYPE = "machine"
 
 
-# ***************************************************************************
-# * Internal global variables
-# ***************************************************************************
-MOTION_COMMANDS = [
-    "G0",
-    "G00",
-    "G1",
-    "G01",
-    "G2",
-    "G02",
-    "G3",
-    "G03",
-]  # Motion gCode commands definition
-RAPID_MOVES = ["G0", "G00"]  # Rapid moves gCode commands definition
-SUPPRESS_COMMANDS = []  # These commands are ignored by commenting them out
-COMMAND_SPACE = " "
-# Global variables storing current position
-CURRENT_X = 0
-CURRENT_Y = 0
-CURRENT_Z = 0
+class Estlcam(PostProcessor):
+    coolant_End_Command = "M9"
 
+    @classmethod
+    def get_common_property_schema(cls):
+        common_props = super().get_common_property_schema()
 
-def processArguments(argstring):
+        for prop in common_props:
+            name = prop["name"]
+            if name == "file_extension":
+                prop["default"] = "nc"
+            if name == "ignored_commands":
+                prop["default"] = "G4\nG21\nG20\nG17\nG90\nG99\nG43\nG54\nG98\nG80"
+            elif name == "output_tool_length_offset":
+                prop["default"] = False
+            elif name == "translate_drill_cycles":
+                prop["default"] = True
+            elif name == "preamble":
+                prop["default"] = ""
+            elif name == "postamble":
+                prop["default"] = "M05\n"
+            elif name == "supported_commands":
+                prop["default"] = (
+                    "G0\nG00\nG1\nG01\nG2\nG02\nG3\nG03\nM0\nM00\nM1\nM01\nM3\nM03\nM4\nM04\nM5\nM05\nM6\nM06\nM7\nM07\nM8\nM08\nM9\nM09\nM10\nM11"
+                )
+        return common_props
 
-    global OUTPUT_HEADER
-    global OUTPUT_COMMENTS
-    global OUTPUT_LINE_NUMBERS
-    global SHOW_EDITOR
-    global PRECISION
-    global PREAMBLE
-    global POSTAMBLE
-    global UNITS
-    global UNIT_SPEED_FORMAT
-    global UNIT_FORMAT
-    global OUTPUT_TOOL_CHANGE
-    global TOOL_CHANGE_USE_ALTCMD
+    @classmethod
+    def get_property_schema(cls):
+        return [
+            {
+                "name": "TOOL_CHANGE_USE_ALTCMD",
+                "type": "bool",
+                "runtime": False,
+                "label": translate("CAM", "Use Alternative Tool Change"),
+                "default": False,
+                "help": translate("CAM", "Use M0 instead of M6 for tool changes"),
+            },
+        ]
 
-    try:
-        args = parser.parse_args(shlex.split(argstring))
-        if args.no_header:
-            OUTPUT_HEADER = False
-        if args.no_comments:
-            OUTPUT_COMMENTS = False
-        if args.line_numbers:
-            OUTPUT_LINE_NUMBERS = True
-        if args.no_show_editor:
-            SHOW_EDITOR = False
-        PRECISION = args.precision
-        if args.preamble is not None:
-            PREAMBLE = args.preamble.replace("\\n", "\n")
-        if args.postamble is not None:
-            POSTAMBLE = args.postamble.replace("\\n", "\n")
-        if args.inches:
-            UNITS = "G20"
-            UNIT_SPEED_FORMAT = "in/min"
-            UNIT_FORMAT = "in"
-            PRECISION = 4
-        if args.no_tool_change:
-            OUTPUT_TOOL_CHANGE = False
-        if args.tool_change_use_altcmd:
-            TOOL_CHANGE_USE_ALTCMD = True
+    def __init__(self, job):
+        super().__init__(
+            job=job,
+            tooltip=translate("CAM", "Estlcam post processor"),
+            tooltipargs=[],
+            units="Metric",
+        )
+        Path.Log.debug("Estlcam post processor initialized")
 
-    except Exception as e:
-        print(e)
-        return False
+    def init_values(self, values: Values) -> None:
+        """Initialize values that are used throughout the postprocessor"""
+        super().init_values(values)
 
-    return True
+        values["POSTPROCESSOR_FILE_NAME"] = __name__
+        values["MACHINE_NAME"] = "Estlcam"
 
-
-# For debug...
-def dump(obj):
-    for attr in dir(obj):
-        print("obj.%s = %s" % (attr, getattr(obj, attr)))
-
-
-def export(objectslist, filename, argstring):
-
-    if not processArguments(argstring):
-        return None
-
-    global UNITS
-    global UNIT_FORMAT
-    global UNIT_SPEED_FORMAT
-    global MOTION_MODE
-    global SUPPRESS_COMMANDS
-
-    print("Post Processor: " + __name__ + " postprocessing...")
-    gcode = ""
-
-    # write header
-    if OUTPUT_HEADER:
-        gcode += linenumber() + "(Exported by FreeCAD)\n"
-        gcode += linenumber() + "(Post Processor: " + __name__ + ")\n"
-        gcode += linenumber() + "(Output Time:" + str(datetime.datetime.now()) + ")\n"
-
-    # Check canned cycles for drilling
-    if TRANSLATE_DRILL_CYCLES:
-        if len(SUPPRESS_COMMANDS) == 0:
-            SUPPRESS_COMMANDS = ["G99", "G98", "G80"]
+        if self._machine and hasattr(self._machine, "postprocessor_properties"):
+            props = self._machine.postprocessor_properties
+            values["TOOL_CHANGE_USE_ALTCMD"] = props.get("TOOL_CHANGE_USE_ALTCMD", False)
         else:
-            SUPPRESS_COMMANDS += ["G99", "G98", "G80"]
+            values["TOOL_CHANGE_USE_ALTCMD"] = False
 
-    # Write the preamble
-    if OUTPUT_COMMENTS:
-        gcode += linenumber() + "(Begin preamble)\n"
-    for line in PREAMBLE.splitlines():
-        gcode += linenumber() + line + "\n"
-    # verify if PREAMBLE have changed UNITS
-    if "G21" in PREAMBLE:
-        UNITS = "G21"
-        UNIT_FORMAT = "mm"
-        UNIT_SPEED_FORMAT = "mm/min"
-    elif "G20" in PREAMBLE:
-        UNITS = "G20"
-        UNIT_FORMAT = "in"
-        UNIT_SPEED_FORMAT = "in/min"
+        self.coolant_End_Command = "M9"
 
-    for obj in objectslist:
-        # Debug...
-        # print("\n" + "*"*70)
-        # dump(obj)
-        # print("*"*70 + "\n")
-        if not hasattr(obj, "Path"):
-            print(
-                "The object " + obj.Name + " is not a path. Please select only path and Compounds."
-            )
-            return
+    def _merge_machine_config(self):
+        super()._merge_machine_config()
+        # Estlcam has no canned drill cycles, so always translate them to G0/G1
+        self.values["TRANSLATE_DRILL_CYCLES"] = True
 
-        # Skip G54 operation
-        if obj.Label == "G54":
-            continue
+    def _convert_coolant_command(self, command: Path.Command):
+        in_command = command.Name
 
-        # Skip inactive operations
-        if not PathUtil.activeForOp(obj):
-            continue
-
-        # do the pre_op
-        if OUTPUT_COMMENTS:
-            gcode += linenumber() + "(Begin operation: " + obj.Label + ")\n"
-        for line in PRE_OPERATION.splitlines(True):
-            gcode += linenumber() + line
-
-        # get coolant mode
-        coolantMode = PathUtil.coolantModeForOp(obj)
-
-        # turn coolant on if required
-        if OUTPUT_COMMENTS:
-            if not coolantMode == "None":
-                gcode += linenumber() + "(Coolant On:" + coolantMode + ")\n"
-        if coolantMode == "Flood":
-            gcode += linenumber() + "M8" + "\n"
-        if coolantMode == "Mist":
-            gcode += linenumber() + "M10" + "\n"
-
-        # Parse the op
-        gcode += parse(obj)
-
-        # do the post_op
-        if OUTPUT_COMMENTS:
-            gcode += linenumber() + "(Finish operation: " + obj.Label + ")\n"
-        for line in POST_OPERATION.splitlines(True):
-            gcode += linenumber() + line
-
-        # turn coolant off if required
-        if not coolantMode == "None":
-            if OUTPUT_COMMENTS:
-                gcode += linenumber() + "(Coolant Off:" + coolantMode + ")\n"
-            if coolantMode == "Flood":
-                gcode += linenumber() + "M9" + "\n"
-            if coolantMode == "Mist":
-                gcode += linenumber() + "M11" + "\n"
-
-    # do the post_amble
-    if OUTPUT_COMMENTS:
-        gcode += linenumber() + "(Begin postamble)\n"
-    for line in POSTAMBLE.splitlines():
-        gcode += linenumber() + line + "\n"
-
-    # show the gCode result dialog
-    if FreeCAD.GuiUp and SHOW_EDITOR:
-        dia = PostUtils.GCodeEditorDialog()
-        dia.editor.setPlainText(gcode)
-        result = dia.exec_()
-        if result:
-            final = dia.editor.toPlainText()
+        if in_command in Constants.MCODE_COOLANT_MIST:
+            self.coolant_End_Command = "M11"
+            new_command_name = "M10"
+        elif in_command in Constants.MCODE_COOLANT_FLOOD:
+            self.coolant_End_Command = "M9"
+            new_command_name = "M8"
+        elif in_command in Constants.MCODE_COOLANT_OFF:  # M9 for flood, M11 for mist
+            new_command_name = self.coolant_End_Command
         else:
-            final = gcode
-    else:
-        final = gcode
+            return super()._convert_coolant_command(command)
 
-    print("Done postprocessing.")
+        new_command = Path.Command(new_command_name, command.Parameters, command.Annotations)
+        return super()._convert_coolant_command(new_command)
 
-    if filename != "-":
-        with pyopen(filename, "w") as gfile:
-            gfile.write(final)
+    def _convert_tool_change(self, command: Path.Command):
+        gcode_return = super()._convert_tool_change(command)
+        if (
+            self._machine.postprocessor_properties.get("TOOL_CHANGE_USE_ALTCMD", False)
+            and gcode_return
+        ):
+            gcode_return = gcode_return.replace("M6", "M0")
+            gcode_return = gcode_return.replace("M06", "M0")
+        return gcode_return
 
-    return final
+    @property
+    def tooltip(self):
 
-
-def linenumber():
-    if not OUTPUT_LINE_NUMBERS:
-        return ""
-    global LINENR
-    global LINEINCR
-    s = "N" + str(LINENR) + " "
-    LINENR += LINEINCR
-    return s
-
-
-def format_outstring(strTable):
-    global COMMAND_SPACE
-    # construct the line for the final output
-    s = ""
-    for w in strTable:
-        s += w + COMMAND_SPACE
-    s = s.strip()
-    return s
-
-
-def parse(pathobj):
-
-    global DRILL_RETRACT_MODE
-    global MOTION_MODE
-    global CURRENT_X
-    global CURRENT_Y
-    global CURRENT_Z
-
-    out = ""
-    lastcommand = None
-    precision_string = "." + str(PRECISION) + "f"
-
-    params = [
-        "X",
-        "Y",
-        "Z",
-        "A",
-        "B",
-        "C",
-        "U",
-        "V",
-        "W",
-        "I",
-        "J",
-        "F",
-        "S",
-        "T",
-        "Q",
-        "R",
-        "L",
-        "P",
-    ]
-
-    if hasattr(pathobj, "Group"):  # We have a compound or project.
-        if OUTPUT_COMMENTS:
-            out += linenumber() + "(Compound: " + pathobj.Label + ")\n"
-        for p in pathobj.Group:
-            out += parse(p)
-        return out
-
-    else:  # parsing simple path
-        if not hasattr(pathobj, "Path"):  # groups might contain non-path things like stock.
-            return out
-
-        if OUTPUT_COMMENTS:
-            out += linenumber() + "(Path: " + pathobj.Label + ")\n"
-
-        for c in PathUtils.getPathWithPlacement(pathobj).Commands:
-            outstring = []
-            command = c.Name
-
-            outstring.append(command)
-
-            # Now add the remaining parameters in order
-            for param in params:
-                if param in c.Parameters:
-                    if param == "F":
-                        if command not in RAPID_MOVES:
-                            speed = Units.Quantity(c.Parameters["F"], FreeCAD.Units.Velocity)
-                            if speed.getValueAs(UNIT_SPEED_FORMAT) > 0.0:
-                                outstring.append(
-                                    param
-                                    + format(
-                                        float(speed.getValueAs(UNIT_SPEED_FORMAT)),
-                                        precision_string,
-                                    )
-                                )
-                    elif param in ["T", "H", "S"]:
-                        outstring.append(param + str(int(c.Parameters[param])))
-                    elif param in ["D", "P", "L"]:
-                        outstring.append(param + str(c.Parameters[param]))
-                    elif param in ["A", "B", "C"]:
-                        outstring.append(param + format(c.Parameters[param], precision_string))
-                    else:  # [X, Y, Z, U, V, W, I, J, K, R, Q] (Conversion eventuelle mm/inches)
-                        pos = Units.Quantity(c.Parameters[param], FreeCAD.Units.Length)
-                        outstring.append(
-                            param + format(float(pos.getValueAs(UNIT_FORMAT)), precision_string)
-                        )
-
-            # store the latest command
-            lastcommand = command
-
-            # Memorizes the current position for calculating the related movements and the withdrawal plan
-            if command in MOTION_COMMANDS:
-                if "X" in c.Parameters:
-                    CURRENT_X = Units.Quantity(c.Parameters["X"], FreeCAD.Units.Length)
-                if "Y" in c.Parameters:
-                    CURRENT_Y = Units.Quantity(c.Parameters["Y"], FreeCAD.Units.Length)
-                if "Z" in c.Parameters:
-                    CURRENT_Z = Units.Quantity(c.Parameters["Z"], FreeCAD.Units.Length)
-
-            if command in ("G98", "G99"):
-                DRILL_RETRACT_MODE = command
-
-            if command in ("G90"):
-                MOTION_MODE = command
-
-            if TRANSLATE_DRILL_CYCLES:
-                if command in ("G81", "G82", "G83"):
-                    out += drill_translate(outstring, command, c.Parameters)
-                    # Erase the line we just translated
-                    outstring = []
-
-            # Check for Tool Change:
-            if command in ("M6", "M06"):
-                if TOOL_CHANGE_USE_ALTCMD:
-                    outstring.pop(0)
-                    outstring.insert(0, TOOL_CHANGE_ALTERNATIVE_CMD)
-                if OUTPUT_COMMENTS:
-                    out += linenumber() + "(Begin toolchange)\n"
-                if not OUTPUT_TOOL_CHANGE:
-                    outstring.insert(0, "(")
-                    outstring.append(")")
-                else:
-                    for line in TOOL_CHANGE.splitlines(True):
-                        out += linenumber() + line
-
-            if command == "message":
-                if OUTPUT_COMMENTS is False:
-                    out = []
-                else:
-                    outstring.pop(0)  # remove the command
-
-            if command in SUPPRESS_COMMANDS:
-                outstring.insert(0, "(")
-                outstring.append(")")
-
-            # prepend a line number and append a newline
-            if len(outstring) >= 1:
-                out += linenumber() + format_outstring(outstring) + "\n"
-
-            # Check for comments containing machine-specific commands to pass literally to the controller
-            m = re.match(r"^\(MC_RUN_COMMAND: ([^)]+)\)$", command)
-            if m:
-                raw_command = m.group(1)
-                out += linenumber() + raw_command + "\n"
-
-    return out
-
-
-def drill_translate(outstring, cmd, params):
-    global DRILL_RETRACT_MODE
-    global MOTION_MODE
-    global CURRENT_X
-    global CURRENT_Y
-    global CURRENT_Z
-    global UNITS
-    global UNIT_FORMAT
-    global UNIT_SPEED_FORMAT
-
-    strFormat = "." + str(PRECISION) + "f"
-
-    trBuff = ""
-
-    if OUTPUT_COMMENTS:  # Comment the original command
-        outstring[0] = "(" + outstring[0]
-        outstring[-1] = outstring[-1] + ")"
-        trBuff += linenumber() + format_outstring(outstring) + "\n"
-
-    # cycle conversion
-    # currently only cycles in XY are provided (G17)
-    # other plains ZX (G18) and  YZ (G19) are not dealt with : Z drilling only.
-    drill_X = Units.Quantity(params["X"], FreeCAD.Units.Length)
-    drill_Y = Units.Quantity(params["Y"], FreeCAD.Units.Length)
-    drill_Z = Units.Quantity(params["Z"], FreeCAD.Units.Length)
-    RETRACT_Z = Units.Quantity(params["R"], FreeCAD.Units.Length)
-    # R less than Z is error
-    if RETRACT_Z < drill_Z:
-        trBuff += linenumber() + "(drill cycle error: R less than Z )\n"
-        return trBuff
-
-    if MOTION_MODE == "G91":  # G91 relative movements
-        drill_X += CURRENT_X
-        drill_Y += CURRENT_Y
-        drill_Z += CURRENT_Z
-        RETRACT_Z += CURRENT_Z
-
-    if DRILL_RETRACT_MODE == "G98" and CURRENT_Z >= RETRACT_Z:
-        RETRACT_Z = CURRENT_Z
-
-    # get the other parameters
-    drill_feedrate = Units.Quantity(params["F"], FreeCAD.Units.Velocity)
-    if cmd == "G83":
-        drill_Step = Units.Quantity(params["Q"], FreeCAD.Units.Length)
-        a_bit = (
-            drill_Step * 0.05
-        )  # NIST 3.5.16.4 G83 Cycle:  "current hole bottom, backed off a bit."
-    elif cmd == "G82":
-        drill_DwellTime = params["P"]
-
-    # wrap this block to ensure machine MOTION_MODE is restored in case of error
-    try:
-        strG0_RETRACT_Z = (
-            "G0 Z" + format(float(RETRACT_Z.getValueAs(UNIT_FORMAT)), strFormat) + "\n"
-        )
-        strF_Feedrate = (
-            " F" + format(float(drill_feedrate.getValueAs(UNIT_SPEED_FORMAT)), ".2f") + "\n"
-        )
-        print(strF_Feedrate)
-
-        # preliminary movement(s)
-        if CURRENT_Z < RETRACT_Z:
-            trBuff += linenumber() + strG0_RETRACT_Z
-        trBuff += (
-            linenumber()
-            + "G0 X"
-            + format(float(drill_X.getValueAs(UNIT_FORMAT)), strFormat)
-            + " Y"
-            + format(float(drill_Y.getValueAs(UNIT_FORMAT)), strFormat)
-            + "\n"
-        )
-        if CURRENT_Z > RETRACT_Z:
-            # NIST GCODE 3.5.16.1 Preliminary and In-Between Motion says G0 to RETRACT_Z. Here use G1 since retract height may be below surface !
-            trBuff += (
-                linenumber()
-                + "G1 Z"
-                + format(float(RETRACT_Z.getValueAs(UNIT_FORMAT)), strFormat)
-                + strF_Feedrate
-            )
-        last_Stop_Z = RETRACT_Z
-
-        # drill moves
-        if cmd in ("G81", "G82"):
-            trBuff += (
-                linenumber()
-                + "G1 Z"
-                + format(float(drill_Z.getValueAs(UNIT_FORMAT)), strFormat)
-                + strF_Feedrate
-            )
-            # pause where applicable
-            if cmd == "G82":
-                trBuff += linenumber() + "G4 P" + str(drill_DwellTime) + "\n"
-            trBuff += linenumber() + strG0_RETRACT_Z
-        else:  # 'G83'
-            if params["Q"] != 0:
-                while 1:
-                    if last_Stop_Z != RETRACT_Z:
-                        clearance_depth = (
-                            last_Stop_Z + a_bit
-                        )  # rapid move to just short of last drilling depth
-                        trBuff += (
-                            linenumber()
-                            + "G0 Z"
-                            + format(
-                                float(clearance_depth.getValueAs(UNIT_FORMAT)),
-                                strFormat,
-                            )
-                            + "\n"
-                        )
-                    next_Stop_Z = last_Stop_Z - drill_Step
-                    if next_Stop_Z > drill_Z:
-                        trBuff += (
-                            linenumber()
-                            + "G1 Z"
-                            + format(float(next_Stop_Z.getValueAs(UNIT_FORMAT)), strFormat)
-                            + strF_Feedrate
-                        )
-                        trBuff += linenumber() + strG0_RETRACT_Z
-                        last_Stop_Z = next_Stop_Z
-                    else:
-                        trBuff += (
-                            linenumber()
-                            + "G1 Z"
-                            + format(float(drill_Z.getValueAs(UNIT_FORMAT)), strFormat)
-                            + strF_Feedrate
-                        )
-                        trBuff += linenumber() + strG0_RETRACT_Z
-                        break
-
-    except Exception as e:
-        pass
-
-    return trBuff
-
-
-# print(__name__ + ": GCode postprocessor loaded.")
+        tooltip = """
+        Generate G-code from a Path that is compatible with the Estlcam CNC controller.
+        Have a look at https://www.estlcam.de/steuerung_cnc_programme_en.php
+        This post processor inherits from the base post processor class with the following changes:
+        - Adds a Use Alternative Tool Change parameter that lets the user decide to use M0 instead of M6 for tool changes for compatibility for some older machines
+        - Converts M7 to M10 for mist coolant on
+        - Converts M9 to M11 when mist coolant is being used
+        - Strips G21 and G20 commands
+        """
+        return tooltip

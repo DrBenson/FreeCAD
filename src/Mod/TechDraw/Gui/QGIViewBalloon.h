@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Luke Parry <l.parry@warwick.ac.uk>                 *
  *   Copyright (c) 2019 Franck Jullien <franck.jullien@gmail.com>          *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAWGUI_QGIVBALLOON_H
-#define TECHDRAWGUI_QGIVBALLOON_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -82,14 +83,14 @@ public:
 
     double getCenterX() const
     {
-        return mapToParent(m_labelText->boundingRect().center()).x();
+        return mapToParent(boundingRect().center()).x();
     }
     double getCenterY() const
     {
-        return mapToParent(m_labelText->boundingRect().center()).y();
+        return mapToParent(boundingRect().center()).y();
     }
 
-    void setFont(QFont font);
+    void setFont(const QFont& font);
     QFont getFont()
     {
         return m_labelText->font();
@@ -125,14 +126,17 @@ public:
     {
         verticalSep = sep;
     }
-    std::vector<int> getSeps() const
+    std::vector<double> getSeps() const
     {
         return seps;
     }
-    void setSeps(std::vector<int> newSeps)
+    void setSeps(std::vector<double> newSeps)
     {
         seps = newSeps;
     }
+
+    void buildCells(const QString& text, bool split, double shapeScale);
+
     QGCustomText* m_labelText;
 
 Q_SIGNALS:
@@ -153,7 +157,9 @@ private:
 
     QGIViewBalloon* parent;
     bool verticalSep;
-    std::vector<int> seps;
+    std::vector<double> seps;
+    std::vector<QGCustomText*> m_cellTexts;
+    QRectF m_customBoundingRect;
 
     QColor m_colNormal;
 
@@ -184,6 +190,8 @@ public:
     void paint(QPainter* painter, const QStyleOptionGraphicsItem* option,
                QWidget* widget = nullptr) override;
 
+    QPainterPath shape() const override;
+
     QString getLabelText();
     void placeBalloon(QPointF pos);
     void setPrettyPre();
@@ -201,6 +209,8 @@ public:
     QColor prefNormalColor();
     TechDraw::ArrowType prefDefaultArrow() const;
     bool prefOrthoPyramid() const;
+
+    void updatePositionFromFeatureXY() override;
 
     TechDraw::DrawViewBalloon* getBalloonFeat()
     {
@@ -232,6 +242,8 @@ protected:
                           bool isDragging,
                           Base::Vector3d& labelPos,
                           Base::Vector3d& arrowPos);
+    void hoverEnterEvent(QGraphicsSceneHoverEvent* event) override;
+    void hoverLeaveEvent(QGraphicsSceneHoverEvent* event) override;
 
 
 private:
@@ -253,5 +265,3 @@ private:
 };
 
 }// namespace TechDrawGui
-
-#endif// TECHDRAWGUI_QGIVBALLOON_H

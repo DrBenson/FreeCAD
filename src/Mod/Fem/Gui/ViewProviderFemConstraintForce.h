@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jan Rheinländer                                    *
  *                                   <jrheinlaender@users.sourceforge.net> *
@@ -22,8 +24,7 @@
  ***************************************************************************/
 
 
-#ifndef GUI_VIEWPROVIDERFEMCONSTRAINTFORCE_H
-#define GUI_VIEWPROVIDERFEMCONSTRAINTFORCE_H
+#pragma once
 
 #include "ViewProviderFemConstraintOnBoundary.h"
 
@@ -55,6 +56,3 @@ private:
 };
 
 }  // namespace FemGui
-
-
-#endif  // GUI_VIEWPROVIDERFEMCONSTRAINTFORCE_H

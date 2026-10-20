@@ -177,7 +177,7 @@ class _Wall(ArchComponent.Component):
                 "Wall",
                 QT_TRANSLATE_NOOP(
                     "App::Property",
-                    "The length of this wall. Read-only if this wall is not based on an unconstrained sketch with a single edge, or on a Draft Wire with a single edge. Refer to wiki for details how length is deduced.",
+                    "The length of this wall.\nEditable only if this wall's baseline is a Draft line, an unconstrained sketch with a single line, or none.",
                 ),
                 locked=True,
             )
@@ -188,7 +188,7 @@ class _Wall(ArchComponent.Component):
                 "Wall",
                 QT_TRANSLATE_NOOP(
                     "App::Property",
-                    "The width of this wall. Not used if this wall is based on a face. Disabled and ignored if Base object (ArchSketch) provides the information.",
+                    "The width of this wall.\nIgnored if this wall is based on a solid or a face.",
                 ),
                 locked=True,
             )
@@ -234,7 +234,7 @@ class _Wall(ArchComponent.Component):
                 "Wall",
                 QT_TRANSLATE_NOOP(
                     "App::Property",
-                    "The height of this wall. Keep 0 for automatic. Not used if this wall is based on a solid",
+                    "The height of this wall.\nKeep 0 to automatically match the height of the enclosing Level or Building.\nIgnored if this wall is based on a solid.",
                 ),
                 locked=True,
             )
@@ -256,7 +256,7 @@ class _Wall(ArchComponent.Component):
                 "Wall",
                 QT_TRANSLATE_NOOP(
                     "App::Property",
-                    "The alignment of this wall on its base object, if applicable. Disabled and ignored if Base object (ArchSketch) provides the information.",
+                    "The alignment of this wall on its base object, if applicable.",
                 ),
                 locked=True,
             )
@@ -605,105 +605,6 @@ class _Wall(ArchComponent.Component):
                         return
                 elif obj.Base.Shape.Solids:
                     base = Part.Shape(obj.Base.Shape)
-                # blocks calculation
-                elif hasattr(obj, "MakeBlocks") and hasattr(self, "basewires"):
-                    if obj.MakeBlocks and self.basewires and extdata and obj.Width and obj.Height:
-                        # print "calculating blocks"
-                        if len(self.basewires) == 1:
-                            blocks = []
-                            n = FreeCAD.Vector(extv)
-                            n.normalize()
-                            cuts1 = []
-                            cuts2 = []
-                            if obj.BlockLength.Value:
-                                for i in range(2):
-                                    if i == 0:
-                                        offset = obj.OffsetFirst.Value
-                                    else:
-                                        offset = obj.OffsetSecond.Value
-
-                                    # only 1 wire (first) is supported
-                                    # TODO - Can support multiple wires?
-
-                                    # self.basewires was list of list of edges,
-                                    # no matter Base is DWire, Sketch or else
-                                    # See discussion - https://forum.freecad.org/viewtopic.php?t=86365
-                                    baseEdges = self.basewires[0]
-
-                                    for edge in baseEdges:
-                                        while offset < (edge.Length - obj.Joint.Value):
-                                            if offset:
-                                                t = edge.tangentAt(offset)
-                                                p = t.cross(n)
-                                                p.multiply(1.1 * obj.Width.Value + obj.Offset.Value)
-                                                p1 = edge.valueAt(offset).add(p)
-                                                p2 = edge.valueAt(offset).add(p.negative())
-                                                sh = Part.LineSegment(p1, p2).toShape()
-                                                if obj.Joint.Value:
-                                                    sh = sh.extrude(-t.multiply(obj.Joint.Value))
-                                                sh = sh.extrude(n)
-                                                if i == 0:
-                                                    cuts1.append(sh)
-                                                else:
-                                                    cuts2.append(sh)
-                                            offset += obj.BlockLength.Value + obj.Joint.Value
-                                        offset -= edge.Length
-
-                            base_face = base_faces[0]
-                            if obj.BlockHeight.Value:
-                                fsize = obj.BlockHeight.Value + obj.Joint.Value
-                                bh = obj.BlockHeight.Value
-                            else:
-                                fsize = obj.Height.Value
-                                bh = obj.Height.Value
-                            bvec = FreeCAD.Vector(n)
-                            bvec.multiply(bh)
-                            svec = FreeCAD.Vector(n)
-                            svec.multiply(fsize)
-                            if cuts1:
-                                faces1 = base_face.cut(cuts1).Faces
-                            else:
-                                faces1 = base_face.Faces
-                            blocks1 = Part.makeCompound([f.extrude(bvec) for f in faces1])
-                            if cuts2:
-                                faces2 = base_face.cut(cuts2).Faces
-                            else:
-                                faces2 = base_face.Faces
-                            blocks2 = Part.makeCompound([f.extrude(bvec) for f in faces2])
-                            interval = extv.Length / (fsize)
-                            entire = int(interval)
-                            rest = interval - entire
-                            for i in range(entire):
-                                if i % 2:  # odd
-                                    b = Part.Shape(blocks2)
-                                else:
-                                    b = Part.Shape(blocks1)
-                                if i:
-                                    t = FreeCAD.Vector(svec)
-                                    t.multiply(i)
-                                    b.translate(t)
-                                blocks.append(b)
-                            if rest:
-                                rest = extv.Length - (entire * fsize)
-                                rvec = FreeCAD.Vector(n)
-                                rvec.multiply(rest)
-                                if entire % 2:
-                                    b = Part.makeCompound([f.extrude(rvec) for f in faces2])
-                                else:
-                                    b = Part.makeCompound([f.extrude(rvec) for f in faces1])
-                                t = FreeCAD.Vector(svec)
-                                t.multiply(entire)
-                                b.translate(t)
-                                blocks.append(b)
-                            if blocks:
-                                base = Part.makeCompound(blocks)
-
-                        else:
-                            FreeCAD.Console.PrintWarning(
-                                translate("Arch", "Cannot compute blocks for wall")
-                                + obj.Label
-                                + "\n"
-                            )
 
             elif obj.Base.isDerivedFrom("Mesh::Feature"):
                 if obj.Base.Mesh.isSolid():
@@ -716,6 +617,12 @@ class _Wall(ArchComponent.Component):
                                 translate("Arch", "This mesh is an invalid solid") + "\n"
                             )
                             obj.Base.ViewObject.show()
+        # Blocks calculation
+        if hasattr(obj, "MakeBlocks") and hasattr(self, "basewires"):
+            if obj.MakeBlocks and self.basewires and extdata and obj.Width and obj.Height:
+                blocks = self._make_blocks(obj, base_faces[0], extv)
+                if blocks is not None:
+                    base = blocks
         if not base:
             # FreeCAD.Console.PrintError(translate("Arch","Error: Invalid base object")+"\n")
             # return
@@ -751,41 +658,18 @@ class _Wall(ArchComponent.Component):
                     obj.CountBroken = 0
 
         # set the length property
-        if self.connectEdges:
+        if hasattr(self, "connectEdges") and self.connectEdges:
             l = float(0)
             for e in self.connectEdges:
                 l += e.Length
             l = l / 2
             if self.layersNum:
                 l = l / self.layersNum
-            if obj.Length.Value != l:
+            if not math.isclose(l, obj.Length.Value, rel_tol=0, abs_tol=1e-7):
                 obj.Length = l
-                self.oldLength = (
-                    None  # delete the stored value to prevent triggering base change below
-                )
 
         # set the Area property
         obj.Area = obj.Length.Value * obj.Height.Value
-
-    def onBeforeChange(self, obj, prop):
-        """Method called before the object has a property changed.
-
-        Specifically, this method is called before the value changes.
-
-        If "Length" has changed, record the old length so that .onChanged() can
-        be sure that the base needs to be changed.
-
-        Also call ArchComponent.Component.onBeforeChange().
-
-        Parameters
-        ----------
-        prop: string
-            The name of the property that has changed.
-        """
-
-        if prop == "Length":
-            self.oldLength = obj.Length.Value
-        ArchComponent.Component.onBeforeChange(self, obj, prop)
 
     def onChanged(self, obj, prop):
         """Method called when the object has a property changed.
@@ -804,43 +688,37 @@ class _Wall(ArchComponent.Component):
         """
 
         if prop == "Length":
-            if (
-                obj.Base
-                and obj.Length.Value
-                and hasattr(self, "oldLength")
-                and (self.oldLength is not None)
-                and (self.oldLength != obj.Length.Value)
-            ):
+            if obj.Base and obj.Length.Value:
                 if hasattr(obj.Base, "Shape"):
                     if len(obj.Base.Shape.Edges) == 1:
                         import DraftGeomUtils
 
                         e = obj.Base.Shape.Edges[0]
                         if DraftGeomUtils.geomType(e) == "Line":
-                            if e.Length != obj.Length.Value:
-                                v = e.Vertexes[-1].Point.sub(e.Vertexes[0].Point)
-                                v.normalize()
-                                v.multiply(obj.Length.Value)
-                                p2 = e.Vertexes[0].Point.add(v)
-                                if Draft.getType(obj.Base) == "Wire":
-                                    # print "modifying p2"
-                                    obj.Base.End = p2
-                                elif Draft.getType(obj.Base) in [
-                                    "Sketcher::SketchObject",
-                                    "ArchSketch",
-                                ]:
-                                    # obj.Base.recompute() # Fix for the 'GeoId index out range' error. Not required in V1.1.
-                                    obj.Base.moveGeometry(
-                                        0, 2, obj.Base.Placement.inverse().multVec(p2)
+                            if math.isclose(e.Length, obj.Length.Value, rel_tol=0, abs_tol=1e-7):
+                                return
+                            v = e.Vertexes[-1].Point.sub(e.Vertexes[0].Point)
+                            v.normalize()
+                            v.multiply(obj.Length.Value)
+                            p2 = e.Vertexes[0].Point.add(v)
+                            if Draft.getType(obj.Base) == "Wire":
+                                obj.Base.End = p2
+                            elif Draft.getType(obj.Base) in [
+                                "Sketcher::SketchObject",
+                                "ArchSketch",
+                            ]:
+                                # obj.Base.recompute() # Fix for the 'GeoId index out range' error. Not required in V1.1.
+                                obj.Base.moveGeometry(
+                                    0, 2, obj.Base.Placement.inverse().multVec(p2)
+                                )
+                            else:
+                                FreeCAD.Console.PrintError(
+                                    translate(
+                                        "Arch",
+                                        "Error: Unable to modify the base object of this wall",
                                     )
-                                else:
-                                    FreeCAD.Console.PrintError(
-                                        translate(
-                                            "Arch",
-                                            "Error: Unable to modify the base object of this wall",
-                                        )
-                                        + "\n"
-                                    )
+                                    + "\n"
+                                )
 
         if prop == "ArchSketchPropertySet" and Draft.getType(obj.Base) == "ArchSketch":
             baseProxy = obj.Base.Proxy
@@ -870,7 +748,10 @@ class _Wall(ArchComponent.Component):
                 obj.setEditorMode("ArchSketchPropertySet", 0)
         else:
             if hasattr(obj, "Width"):
-                obj.setEditorMode("Width", 0)
+                if hasattr(self, "multimaterialsWidth") and self.multimaterialsWidth:
+                    obj.setEditorMode("Width", ["ReadOnly"])
+                else:
+                    obj.setEditorMode("Width", 0)
             if hasattr(obj, "Align"):
                 obj.setEditorMode("Align", 0)
             if hasattr(obj, "Offset"):
@@ -1053,7 +934,7 @@ class _Wall(ArchComponent.Component):
             else:
                 aligns = [obj.Align]
 
-        # set 'default' align - for filling in any item in the list == 0 or None
+        # Set 'default' align - for filling in any item in the list == 0 or None
         align = obj.Align  # or aligns[0]
 
         # Get offset of each edge segment from Base Objects if they store it
@@ -1106,25 +987,25 @@ class _Wall(ArchComponent.Component):
         placement = None
         self.basewires = None
 
-        # build wall layers
-        layers = []
-        if hasattr(obj, "Material"):
-            if obj.Material:
-                if hasattr(obj.Material, "Materials"):
-                    thicknesses = [abs(t) for t in obj.Material.Thicknesses]
-                    # multimaterials
-                    varwidth = 0
-                    restwidth = width - sum(thicknesses)
-                    if restwidth > 0:
-                        varwidth = [t for t in thicknesses if t == 0]
-                        if varwidth:
-                            varwidth = restwidth / len(varwidth)
-                    for t in obj.Material.Thicknesses:
-                        if t:
-                            layers.append(t)
-                        elif varwidth:
-                            layers.append(varwidth)
-
+        # Check and build wall layers
+        self.multimaterialsWidth = False
+        layers = self.get_layers(obj)
+        # check total width and update Wall's Width
+        if layers:
+            total = sum(layers)
+            if obj.Width.Value != total:
+                obj.Width = total
+            # If there is no 0 (zero) in any of the layers, the total thickness
+            # is driven by the multi-materials itself.  Otherwise, user should
+            # be able in any time change the Width and drive the total thickness
+            # - in the latter case, Width property should not be changed to
+            # ready-only.
+            if not (0 in obj.Material.Thicknesses):
+                self.multimaterialsWidth = True
+        if self.multimaterialsWidth:
+            obj.setEditorMode("Width", ["ReadOnly"])
+        else:
+            obj.setEditorMode("Width", 0)
         # Check if there is obj.Base and its validity to proceed
         if self.ensureBase(obj):
             if hasattr(obj.Base, "Shape"):
@@ -1182,27 +1063,10 @@ class _Wall(ArchComponent.Component):
                     # in some corner case != getSortedClusters()
                     elif obj.Base.isDerivedFrom("Sketcher::SketchObject"):
                         self.basewires = []
-                        skGeom = obj.Base.GeometryFacadeList
-                        skGeomEdges = []
                         skPlacement = obj.Base.Placement  # Get Sketch's placement to restore later
-                        # Get ArchSketch edges to construct ArchWall
-                        # No need to test obj.ArchSketchData ...
-                        for ig, geom in enumerate(skGeom):
-                            # Construction mode edges should be ignored if
-                            # ArchSketchEdges, otherwise, ArchSketchEdges data
-                            # needs to take out those in Construction before
-                            # using as parameters.
-                            if (not obj.ArchSketchEdges and not geom.Construction) or str(
-                                ig
-                            ) in obj.ArchSketchEdges:
-                                # support Line, Arc, Circle, Ellipse for Sketch
-                                # as Base at the moment
-                                if isinstance(
-                                    geom.Geometry,
-                                    (Part.LineSegment, Part.Circle, Part.ArcOfCircle, Part.Ellipse),
-                                ):
-                                    skGeomEdgesI = geom.Geometry.toShape()
-                                    skGeomEdges.append(skGeomEdgesI)
+                        skGeomEdges = ArchSketchObject.getSketchDefiningEdges(
+                            obj.Base, obj.ArchSketchEdges
+                        )
                         for cluster in Part.getSortedClusters(skGeomEdges):
                             clusterTransformed = []
                             for edge in cluster:
@@ -1232,7 +1096,16 @@ class _Wall(ArchComponent.Component):
                         #
                         # Now, adopt approach same as for Sketch
                         self.basewires = []
-                        clusters = Part.getSortedClusters(obj.Base.Shape.Edges)
+                        shpEdges = obj.Base.Shape.Edges
+                        baseEdges = []
+                        for edge in shpEdges:
+                            if (
+                                isinstance(edge.Curve, (Part.Line, Part.Circle))
+                                or isinstance(edge.Curve, Part.Ellipse)
+                                and edge.isClosed()
+                            ):
+                                baseEdges.append(edge)
+                        clusters = Part.getSortedClusters(baseEdges)
                         self.basewires = clusters
                         # Previously :
                         # Found case that after sorting below, direction of
@@ -1546,6 +1419,15 @@ class _Wall(ArchComponent.Component):
                         if baseface:
                             base, placement = self.rebase(baseface)
 
+                    elif not (base and placement):
+                        FreeCAD.Console.PrintWarning(
+                            translate(
+                                "Arch",
+                                f"No supported edges in Base object of {obj.Label} (line, circle, arc, ellipse)",
+                            )
+                            + "\n"
+                        )
+
         # Build Wall from scratch if there is no obj.Base or even obj.Base is not valid
         else:
             base, placement = self.build_base_from_scratch(obj)
@@ -1667,7 +1549,11 @@ class _Wall(ArchComponent.Component):
                     )
         if not lwidths:
             if obj.OverrideWidth:
-                if obj.Base and obj.Base.isDerivedFrom("Sketcher::SketchObject"):
+                if (
+                    obj.Base
+                    and obj.Base.isDerivedFrom("Sketcher::SketchObject")
+                    and hasattr(ArchSketchObject, "sortSketchWidth")
+                ):
                     lwidths = ArchSketchObject.sortSketchWidth(
                         obj.Base, obj.OverrideWidth, obj.ArchSketchEdges
                     )
@@ -1699,6 +1585,124 @@ class _Wall(ArchComponent.Component):
                         elif varwidth:
                             layers.append(varwidth)
         return layers
+
+    def _make_blocks(self, obj, base_face, extv):
+        """Cut a wall's base face into block-sized pieces and stack them.
+
+        Uses self.basewires (a list of lists of edges representing the wall's centerline) to compute
+        vertical cutting planes at block boundaries. The base face is then cut and extruded in
+        alternating rows to produce a brick-like pattern.
+
+        Parameters
+        ----------
+        obj : FreeCAD.DocumentObject
+            The wall object. Its block properties (BlockLength, BlockHeight, Joint, OffsetFirst,
+            OffsetSecond) control the block layout.
+        base_face : Part.Face
+            The 2D cross-section face to be cut into blocks and extruded.
+        extv : FreeCAD.Vector
+            The extrusion vector (direction and magnitude of the wall height).
+
+        Returns
+        -------
+        Part.Compound or None
+            A compound of block solids, or None if blocks could not be computed.
+        """
+        import Part
+
+        if len(self.basewires) != 1:
+            FreeCAD.Console.PrintWarning(
+                translate("Arch", "Cannot compute blocks for wall") + obj.Label + "\n"
+            )
+            return None
+
+        n = FreeCAD.Vector(extv)
+        n.normalize()
+        cuts1 = []
+        cuts2 = []
+        if obj.BlockLength.Value:
+            for i in range(2):
+                if i == 0:
+                    offset = obj.OffsetFirst.Value
+                else:
+                    offset = obj.OffsetSecond.Value
+
+                # only 1 wire (first) is supported
+                # TODO - Can support multiple wires?
+
+                # self.basewires was list of list of edges,
+                # no matter Base is DWire, Sketch or else
+                # See discussion - https://forum.freecad.org/viewtopic.php?t=86365
+                baseEdges = self.basewires[0]
+
+                for edge in baseEdges:
+                    while offset < (edge.Length - obj.Joint.Value):
+                        if offset:
+                            t = edge.tangentAt(offset)
+                            p = t.cross(n)
+                            p.multiply(1.1 * obj.Width.Value + obj.Offset.Value)
+                            p1 = edge.valueAt(offset).add(p)
+                            p2 = edge.valueAt(offset).add(p.negative())
+                            sh = Part.LineSegment(p1, p2).toShape()
+                            if obj.Joint.Value:
+                                sh = sh.extrude(-t.multiply(obj.Joint.Value))
+                            sh = sh.extrude(n)
+                            if i == 0:
+                                cuts1.append(sh)
+                            else:
+                                cuts2.append(sh)
+                        offset += obj.BlockLength.Value + obj.Joint.Value
+                    offset -= edge.Length
+
+        blocks = []
+        if obj.BlockHeight.Value:
+            fsize = obj.BlockHeight.Value + obj.Joint.Value
+            bh = obj.BlockHeight.Value
+        else:
+            fsize = obj.Height.Value
+            bh = obj.Height.Value
+        bvec = FreeCAD.Vector(n)
+        bvec.multiply(bh)
+        svec = FreeCAD.Vector(n)
+        svec.multiply(fsize)
+        if cuts1:
+            faces1 = base_face.cut(cuts1).Faces
+        else:
+            faces1 = base_face.Faces
+        blocks1 = Part.makeCompound([f.extrude(bvec) for f in faces1])
+        if cuts2:
+            faces2 = base_face.cut(cuts2).Faces
+        else:
+            faces2 = base_face.Faces
+        blocks2 = Part.makeCompound([f.extrude(bvec) for f in faces2])
+        interval = extv.Length / (fsize)
+        entire = int(interval)
+        rest = interval - entire
+        for i in range(entire):
+            if i % 2:  # odd
+                b = Part.Shape(blocks2)
+            else:
+                b = Part.Shape(blocks1)
+            if i:
+                t = FreeCAD.Vector(svec)
+                t.multiply(i)
+                b.translate(t)
+            blocks.append(b)
+        if rest:
+            rest = extv.Length - (entire * fsize)
+            rvec = FreeCAD.Vector(n)
+            rvec.multiply(rest)
+            if entire % 2:
+                b = Part.makeCompound([f.extrude(rvec) for f in faces2])
+            else:
+                b = Part.makeCompound([f.extrude(rvec) for f in faces1])
+            t = FreeCAD.Vector(svec)
+            t.multiply(entire)
+            b.translate(t)
+            blocks.append(b)
+        if blocks:
+            return Part.makeCompound(blocks)
+        return None
 
     def build_base_from_scratch(self, obj):
         """Generate the 2D profile for extruding a baseless Arch Wall.
@@ -1740,6 +1744,7 @@ class _Wall(ArchComponent.Component):
         layers = self.get_layers(obj)
         width = self.get_width(obj, widths=False)
         align = obj.Align
+        wall_offset = obj.Offset.Value
 
         # Use a small default for zero dimensions to ensure a valid shape can be created.
         safe_length = obj.Length.Value or 0.5
@@ -1760,7 +1765,9 @@ class _Wall(ArchComponent.Component):
             offset = -totalwidth / 2
         elif align == "Left":
             # Per convention, 'Left' is on the geometric right (-Y direction).
-            offset = -totalwidth
+            offset = -totalwidth - wall_offset
+        elif align == "Right":
+            offset = wall_offset
 
         # Loop through all layers and create a face for each.
         for layer in layers:
@@ -1777,6 +1784,11 @@ class _Wall(ArchComponent.Component):
 
         placement = FreeCAD.Placement()
 
+        # Set basewires so blocks calculation can use the centerline edge.
+        p1 = Vector(-safe_length / 2, 0, 0)
+        p2 = Vector(safe_length / 2, 0, 0)
+        self.basewires = [[Part.LineSegment(p1, p2).toShape()]]
+
         return base_faces, placement
 
 
@@ -1790,26 +1802,43 @@ if FreeCAD.GuiUp:
             self.wallWidget.setWindowTitle(translate("Arch", "Wall Options"))
 
             layout = QtGui.QFormLayout(self.wallWidget)
+            loader = FreeCADGui.UiLoader()
 
-            self.length = FreeCADGui.UiLoader().createWidget("Gui::InputField")
-            self.length.setProperty("unit", "mm")
-            self.length.setText(obj.Length.UserString)
+            # Length
+            self.length = loader.createWidget("Gui::QuantitySpinBox")
+            FreeCADGui.ExpressionBinding(self.length).bind(self.obj, "Length")
+            self.length.setProperty("value", self.obj.Length)
+            self.length.setToolTip(
+                translate("App::Property", self.obj.getDocumentationOfProperty("Length"))
+            )
             layout.addRow(translate("Arch", "Length"), self.length)
 
-            self.width = FreeCADGui.UiLoader().createWidget("Gui::InputField")
-            self.width.setProperty("unit", "mm")
-            self.width.setText(obj.Width.UserString)
+            # Width
+            self.width = loader.createWidget("Gui::QuantitySpinBox")
+            FreeCADGui.ExpressionBinding(self.width).bind(self.obj, "Width")
+            self.width.setProperty("value", self.obj.Width)
+            self.width.setToolTip(
+                translate("App::Property", self.obj.getDocumentationOfProperty("Width"))
+            )
             layout.addRow(translate("Arch", "Width"), self.width)
 
-            self.height = FreeCADGui.UiLoader().createWidget("Gui::InputField")
-            self.height.setProperty("unit", "mm")
-            self.height.setText(obj.Height.UserString)
+            # Height
+            self.height = loader.createWidget("Gui::QuantitySpinBox")
+            FreeCADGui.ExpressionBinding(self.height).bind(self.obj, "Height")
+            self.height.setProperty("value", self.obj.Height)
+            self.height.setToolTip(
+                translate("App::Property", self.obj.getDocumentationOfProperty("Height"))
+            )
             layout.addRow(translate("Arch", "Height"), self.height)
 
+            alignTooltip = translate("App::Property", self.obj.getDocumentationOfProperty("Align"))
             self.alignLayout = QtGui.QHBoxLayout()
             self.alignLeft = QtGui.QRadioButton(translate("Arch", "Left"))
             self.alignCenter = QtGui.QRadioButton(translate("Arch", "Center"))
             self.alignRight = QtGui.QRadioButton(translate("Arch", "Right"))
+            self.alignLeft.setToolTip(alignTooltip)
+            self.alignCenter.setToolTip(alignTooltip)
+            self.alignRight.setToolTip(alignTooltip)
             self.alignLayout.addWidget(self.alignLeft)
             self.alignLayout.addWidget(self.alignCenter)
             self.alignLayout.addWidget(self.alignRight)
@@ -1843,9 +1872,9 @@ if FreeCAD.GuiUp:
             self.obj.recompute()
 
         def accept(self):
-            self.obj.Length = self.length.text()
-            self.obj.Width = self.width.text()
-            self.obj.Height = self.height.text()
+            self.obj.Length = self.length.property("value")
+            self.obj.Width = self.width.property("value")
+            self.obj.Height = self.height.property("value")
             return super().accept()
 
 

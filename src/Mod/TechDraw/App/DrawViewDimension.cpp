@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Luke Parry <l.parry@warwick.ac.uk>                 *
  *                 2022 WandererFan <wandererfan@gmail.com>                *
@@ -52,6 +54,7 @@
 #include <TopExp_Explorer.hxx>
 #include <TopoDS_Edge.hxx>
 #include <TopoDS_Shape.hxx>
+#include <TopTools_IndexedMapOfShape.hxx>
 
 #include <App/Application.h>
 #include <App/Document.h>
@@ -186,6 +189,12 @@ DrawViewDimension::DrawViewDimension()
                       App::Prop_Output,
                       "The dimensional value is displayed inverted");
 
+    ADD_PROPERTY_TYPE(ShowSupplementary, 
+                      (false), 
+                      "", 
+                      App::Prop_Output, 
+                      "Toggle supplementary angle\nAngle displayed is dependent on selection order");
+
     ADD_PROPERTY_TYPE(AngleOverride,
                       (false),
                       "Override",
@@ -193,6 +202,11 @@ DrawViewDimension::DrawViewDimension()
                       "User specified angles");
     ADD_PROPERTY_TYPE(LineAngle, (0.0), "Override", App::Prop_Output, "Dimension line angle");
     ADD_PROPERTY_TYPE(ExtensionAngle, (0.0), "Override", App::Prop_Output, "Extension line angle");
+
+    ADD_PROPERTY_TYPE(UseAreaLeaderPoint, (false), "Area", App::Prop_None,
+                  "If true, the area leader end pt uses user clicked pt instead of face center.");
+    ADD_PROPERTY_TYPE(AreaLeaderPoint, (Base::Vector3d(0,0,0)), "Area", App::Prop_None,
+                  "Area leader end point");
 
     ADD_PROPERTY_TYPE(SavedGeometry,
                       (),
@@ -478,7 +492,7 @@ App::DocumentObjectExecReturn* DrawViewDimension::execute()
     }
     if (!m_referencesCorrect) {
         // this test needs Phase 2 of auto correct to be useful
-        Base::Console().log("The references for %s have changed and autocorrect could not match the geometry\n", Label.getValue());
+        Base::Console().log("The references for {} have changed and autocorrect could not match the geometry\n", Label.getValue());
     }
 
     resetLinear();
@@ -565,7 +579,7 @@ bool DrawViewDimension::okToProceed()
     // is this check still relevant or is it replaced by the autocorrect and
     // validate methods?
     if (References3D.getValues().empty() && !checkReferences2D()) {
-        // Base::Console().warning("%s has invalid 2D References\n", getNameInDocument());
+        // Base::Console().warning("{} has invalid 2D References\n", getNameInDocument());
         return false;
     }
     return validateReferenceForm();
@@ -661,7 +675,7 @@ double DrawViewDimension::getDimValue()
     if (MeasureType.isValue("True")) {
         // True Values
         if (!measurement->has3DReferences()) {
-            Base::Console().warning("%s - True dimension has no 3D References\n",
+            Base::Console().warning("{} - True dimension has no 3D References\n",
                                     getNameInDocument());
             return result;
         }
@@ -670,7 +684,7 @@ double DrawViewDimension::getDimValue()
     else {
         // Projected Values
         if (!checkReferences2D()) {
-            Base::Console().warning("DVD::getDimValue - %s - 2D references are corrupt (5)\n",
+            Base::Console().warning("DVD::getDimValue - {} - 2D references are corrupt (5)\n",
                                     getNameInDocument());
             return result;
         }
@@ -678,6 +692,11 @@ double DrawViewDimension::getDimValue()
     }
 
     result = fabs(result);
+
+    if (ShowSupplementary.getValue() && (Type.isValue("Angle") || Type.isValue("Angle3Pt"))) {
+        result = CircleDegrees/2.0 - result;
+    }
+
     if (Inverted.getValue()) {
         if (Type.isValue("Angle") || Type.isValue("Angle3Pt")) {
             result = CircleDegrees - result;
@@ -846,6 +865,8 @@ pointPair DrawViewDimension::getPointsOneEdge(ReferenceVector references)
 
 pointPair DrawViewDimension::getPointsTwoEdges(ReferenceVector references)
 {
+    constexpr bool UseProjectionCS{true};
+    constexpr bool UsePaperCS{false};
     App::DocumentObject* refObject = references.front().getObject();
     int iSubelement0 = DrawUtil::getIndexFromName(references.at(0).getSubName());
     int iSubelement1 = DrawUtil::getIndexFromName(references.at(1).getSubName());
@@ -859,6 +880,9 @@ pointPair DrawViewDimension::getPointsTwoEdges(ReferenceVector references)
             ssMessage << getNameInDocument() << " can not find geometry for 2d reference (2)";
             throw Base::RuntimeError(ssMessage.str());
         }
+        if (isCircleSpecialCase(geom0->getOCCEdge(), geom1->getOCCEdge())) {
+            return getPointsTwoCircles(geom0->getOCCEdge(), geom1->getOCCEdge(), UsePaperCS);
+        }
         return closestPoints(geom0->getOCCEdge(), geom1->getOCCEdge());
     }
 
@@ -870,11 +894,93 @@ pointPair DrawViewDimension::getPointsTwoEdges(ReferenceVector references)
         throw Base::RuntimeError("Geometry for dimension reference is null.");
     }
 
+    TopoDS_Edge edge0 = TopoDS::Edge(geometry0);
+    TopoDS_Edge edge1 = TopoDS::Edge(geometry1);
     pointPair pts = closestPoints(geometry0, geometry1);
+    if (isCircleSpecialCase(edge0, edge1)) {
+        pts = getPointsTwoCircles(edge0, edge1, UseProjectionCS);
+    }
     pts.move(getViewPart()->getCurrentCentroid());
     pts.project(getViewPart());
     return pts;
 }
+
+
+//! true if this is a circle to circle dimension that requires special handling
+bool DrawViewDimension::isCircleSpecialCase(const TopoDS_Edge& edge0, const TopoDS_Edge& edge1)
+{
+    BRepAdaptor_Curve adapt0(edge0);
+    BRepAdaptor_Curve adapt1(edge1);
+    if (adapt0.GetType() != GeomAbs_Circle ||
+        adapt1.GetType() != GeomAbs_Circle) {
+        return false;
+    }
+    return Type.isValue("DistanceX") || Type.isValue("DistanceY");
+}
+
+
+//! Specialization for circle to circle horizontal or vertical dimensions
+pointPair DrawViewDimension::getPointsTwoCircles(const TopoDS_Edge& edge0, const TopoDS_Edge& edge1, bool is3d)
+{
+    BRepAdaptor_Curve adapt0(edge0);
+    BRepAdaptor_Curve adapt1(edge1);
+
+    gp_Ax2 projectionCS = getViewPart()->getProjectionCS();
+    if (!is3d) {
+        // edges are on the XY plane already so use OXYZ as the projectionCS
+        projectionCS = gp_Ax2();
+    }
+
+    gp_Dir alignmentDir = projectionCS.XDirection();
+    if (Type.isValue("DistanceY")) {
+        alignmentDir = projectionCS.YDirection();
+    }
+
+    gp_Circ circle0 = adapt0.Circle();
+    gp_Pnt shift0 = alignmentDir.XYZ() * circle0.Radius();
+    gp_Pnt point0 = circle0.Location();
+
+    gp_Circ circle1 = adapt1.Circle();
+    gp_Pnt point1 = circle1.Location();
+    gp_Pnt shift1 = alignmentDir.XYZ() * circle1.Radius();
+
+    gp_Ax3 projectionCS3{projectionCS};
+    gp_Ax3 OXYZ;
+    gp_Trsf xToProjectionCS;
+    xToProjectionCS.SetTransformation(OXYZ, projectionCS3);
+
+    gp_Pnt center0Local = point0;
+    gp_Pnt center1Local = point1;
+    if (is3d) {
+        center0Local = point0.Transformed(xToProjectionCS);
+        center1Local = point1.Transformed(xToProjectionCS);
+    }
+
+    gp_Dir centerDir = center1Local.XYZ() - center0Local.XYZ();
+    double dot = centerDir.Dot(alignmentDir);
+
+    if (dot == 0) {
+        // dot == 0 means alignmentDir and centerDir are at 90* and the separation of the two circles along aligmentDir will
+        // be zero.  Dimension will have zero value until user changes DistanceX to DistanY, or vv.
+        Base::Console().log("DVD::getPointsTwoCircles - {} dot is zero\n", Label.getValue());
+        return closestPoints(edge0, edge1);
+    }
+
+    if (dot > 0) {
+        point0 = point0.XYZ() + shift0.XYZ();
+        point1 = point1.XYZ() - shift1.XYZ();
+    }
+
+    if (dot < 0) {
+        point0 = point0.XYZ() - shift0.XYZ();
+        point1 = point1.XYZ() + shift1.XYZ();
+    }
+
+    auto point0Out = Base::convertTo<Base::Vector3d>(point0);
+    auto point1Out = Base::convertTo<Base::Vector3d>(point1);
+    return {point0Out, point1Out};
+}
+
 
 pointPair DrawViewDimension::getPointsTwoVerts(ReferenceVector references)
 {
@@ -1088,7 +1194,7 @@ arcPoints DrawViewDimension::arcPointsFromBaseGeom(const TechDraw::BaseGeomPtr& 
         else {
             // fubar - can't have non-circular spline as target of Diameter dimension, but this is
             // already checked, so something has gone badly wrong.
-            Base::Console().error("%s: can not make a Circle from this B-spline edge\n",
+            Base::Console().error("{}: can not make a Circle from this B-spline edge\n",
                                   getNameInDocument());
             throw Base::RuntimeError("Bad B-spline geometry for arc dimension");
         }
@@ -1259,12 +1365,28 @@ anglePoints DrawViewDimension::getAnglePointsTwoEdges(ReferenceVector references
         || geometry1.ShapeType() != TopAbs_EDGE) {
         throw Base::RuntimeError("Geometry for dimension reference is null.");
     }
-    TopoDS_Edge edge0 = TopoDS::Edge(geometry0);
-    BRepAdaptor_Curve adapt0(edge0);
-    TopoDS_Edge edge1 = TopoDS::Edge(geometry1);
-    BRepAdaptor_Curve adapt1(edge1);
 
-    if (adapt0.GetType() != GeomAbs_Line || adapt1.GetType() != GeomAbs_Line) {
+    auto isLinear = [](const TopoDS_Edge& edge) {
+        BRepAdaptor_Curve adapt(edge);
+        if (adapt.GetType() == GeomAbs_Line) {
+            return true;
+        }
+        if (adapt.GetType() == GeomAbs_BezierCurve) {
+            Handle(Geom_BezierCurve) curve = adapt.Bezier();
+            return curve->Degree() == 1;
+        }
+        if (adapt.GetType() == GeomAbs_BSplineCurve) {
+            Handle(Geom_BSplineCurve) curve = adapt.BSpline();
+            return curve->Degree() == 1;
+        }
+
+        return false;
+    };
+
+    TopoDS_Edge edge0 = TopoDS::Edge(geometry0);
+    TopoDS_Edge edge1 = TopoDS::Edge(geometry1);
+
+    if (!isLinear(edge0) || !isLinear(edge1)) {
         throw Base::RuntimeError("Geometry for angle dimension must be lines.");
     }
     gp_Pnt gStart0 = BRep_Tool::Pnt(TopExp::FirstVertex(edge0));
@@ -1353,6 +1475,10 @@ areaPoint DrawViewDimension::getAreaParameters(ReferenceVector references)
     areaPoint pts;
 
     App::DocumentObject* refObject = references.front().getObject();
+    if (!refObject) {
+        throw Base::RuntimeError("Area dimension has no reference object");
+    }
+
     if (refObject->isDerivedFrom<DrawViewPart>() && !references[0].getSubName().empty()) {
         // this is a 2d object (a DVP + subelements)
         TechDraw::FacePtr face = getViewPart()->getFace(references[0].getSubName());
@@ -1363,8 +1489,8 @@ areaPoint DrawViewDimension::getAreaParameters(ReferenceVector references)
         }
         auto dvp = static_cast<DrawViewPart*>(refObject);
 
-        auto filteredFaces  = GeometryUtils::findHolesInFace(dvp, references.front().getSubName());
-        auto perforatedFace = GeometryUtils::makePerforatedFace(face, filteredFaces);
+        std::vector<FacePtr> holesInFace = GeometryUtils::findHolesInFace(dvp, references.front().getSubName());
+        TopoDS_Face perforatedFace = GeometryUtils::makePerforatedFace(face, holesInFace);
 
         // these areas are scaled because the source geometry is scaled, but it makes no sense to
         // report a scaled area.
@@ -1497,7 +1623,7 @@ RefType DrawViewDimension::getRefType() const
 
     if (subNames.empty()) {
         // something went wrong, there were no subNames.
-        Base::Console().message("DVD::getRefType - %s - there are no subNames.\n",
+        Base::Console().message("DVD::getRefType - {} - there are no subNames.\n",
                                 getNameInDocument());
         return RefType::invalidRef;
     }
@@ -1615,22 +1741,28 @@ void DrawViewDimension::updateSavedGeometry()
         return;
     }
     std::vector<TopoShape> newGeometry;
-    const std::vector<TopoShape> oldGeometry = SavedGeometry.getValues();
-    // need to clean up old saved geometry objects here?
+    // const std::vector<TopoShape> oldGeometry = SavedGeometry.getValues();
+    // need to clean up old saved geometry objects here? or does the property handle deletion?
 
     for (auto& entry : references) {
         if (entry.getSubName().empty()) {
-            // view only reference has no geometry.
+            // view only reference has no subelement. 3d references will be next.
             continue;
         }
         if (entry.hasGeometry()) {
             newGeometry.emplace_back(entry.asCanonicalTopoShape());
         }
         else {
-            // have to put something in the vector so SavedGeometry and references stay in sync.
-                newGeometry.emplace_back(Part::TopoShape());
+            // If we can't get a shape for a reference, we will just keep the existing
+            // SavedGeometry as the lesser evil.
+            Base::Console().error("Dimension reference to %s:%s has no geometry\n",
+                            entry.getObjectName(), entry.getSubName());
+            Base::Console().warning("SavedGeometry for %s was not updated\n",
+                                        Label.getValue());
+            return;
         }
     }
+
     if (!newGeometry.empty()) {
         SavedGeometry.setValues(newGeometry);
         saveFeatureBox();
@@ -1886,17 +2018,17 @@ void DrawViewDimension::clear3DMeasurements()
 
 void DrawViewDimension::dumpRefs2D(const char* text) const
 {
-    Base::Console().message("DUMP - %s\n", text);
+    Base::Console().message("DUMP - {}\n", text);
     const std::vector<App::DocumentObject*>& objects = References2D.getValues();
     const std::vector<std::string>& subElements = References2D.getSubValues();
     auto objIt = objects.begin();
     auto subIt = subElements.begin();
     int i = 0;
     for (; objIt != objects.end(); objIt++, subIt++, i++) {
-        Base::Console().message("DUMP - ref: %d object: %s subElement: %s\n",
+        Base::Console().message("DUMP - ref: {} object: {} subElement: {}\n",
                                 i,
                                 (*objIt)->getNameInDocument(),
-                                (*subIt).c_str());
+                                (*subIt));
     }
 }
 

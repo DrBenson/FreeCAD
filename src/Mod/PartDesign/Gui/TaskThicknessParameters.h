@@ -23,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef GUI_TASKVIEW_TaskThicknessParameters_H
-#define GUI_TASKVIEW_TaskThicknessParameters_H
+#pragma once
 
 #include <Gui/Inventor/Draggers/Gizmo.h>
 
@@ -80,6 +79,7 @@ private:
     void addContainerWidget();
     void initControls();
     void setupConnections();
+    void updateModeControls(int mode);
     PartDesign::Thickness* onBeforeChange();
     void onAfterChange(PartDesign::Thickness* obj);
 
@@ -107,5 +107,3 @@ public:
 };
 
 }  // namespace PartDesignGui
-
-#endif  // GUI_TASKVIEW_TASKAPPERANCE_H

@@ -311,6 +311,46 @@ class SpreadsheetAggregates(unittest.TestCase):
         self.assertEqual(self.sheet.C6, 0)
         self.assertEqual(self.sheet.C7, 1)
 
+    def test_address(self):
+        # Valid cases
+        self.sheet.set("A1", "=address(1;2)")
+        self.sheet.set("A2", "=address(1;2;1)")
+        self.sheet.set("A3", "=address(1;2;2)")
+        self.sheet.set("A4", "=address(1;2;3)")
+        self.sheet.set("A5", "=address(1;2;4)")
+        self.sheet.set("A6", "=address(1;1)")
+        self.sheet.set("A7", "=address(16384;702)")
+
+        # Invalid reference type
+        self.sheet.set("A8", "=address(1;2;0)")
+        self.sheet.set("A9", "=address(1;2;5)")
+
+        # Out of bounds
+        self.sheet.set("A10", "=address(0;0)")
+        self.sheet.set("A11", "=address(0;1)")
+        self.sheet.set("A12", "=address(1;0)")
+        self.sheet.set("A13", "=address(16384+1;1)")
+        self.sheet.set("A14", "=address(1;702+1)")
+
+        self.doc.recompute()
+
+        self.assertEqual(self.sheet.A1, "$B$1")
+        self.assertEqual(self.sheet.A2, "$B$1")
+        self.assertEqual(self.sheet.A3, "B$1")
+        self.assertEqual(self.sheet.A4, "$B1")
+        self.assertEqual(self.sheet.A5, "B1")
+        self.assertEqual(self.sheet.A6, "$A$1")
+        self.assertEqual(self.sheet.A7, "$ZZ$16384")
+
+        self.assertTrue(self.sheet.A8.startswith("ERR: Invalid reference type:"))
+        self.assertTrue(self.sheet.A9.startswith("ERR: Invalid reference type:"))
+
+        self.assertTrue(self.sheet.A10.startswith("ERR: Cell address out of bounds."))
+        self.assertTrue(self.sheet.A11.startswith("ERR: Cell address out of bounds."))
+        self.assertTrue(self.sheet.A12.startswith("ERR: Cell address out of bounds."))
+        self.assertTrue(self.sheet.A13.startswith("ERR: Cell address out of bounds."))
+        self.assertTrue(self.sheet.A14.startswith("ERR: Cell address out of bounds."))
+
 
 #############################################################################################
 class SpreadsheetFunction(unittest.TestCase):
@@ -1162,10 +1202,22 @@ class SpreadsheetCases(unittest.TestCase):
         sheet = self.doc.addObject("Spreadsheet::Sheet", "Calc")
         try:
             sheet.setAlias("A1", "mA")
-        except Exception:
+        except Exception as err:
+            self.assertIn("reserved unit token", str(err))
             self.assertEqual(sheet.getAlias("A1"), None)
         else:
             self.fail("A unit (reserved word) was used as alias which shouldn't be allowed")
+
+    def testSetInvalidAliasConstant(self):
+        """Try to use a constant (reserved word) as alias name"""
+        sheet = self.doc.addObject("Spreadsheet::Sheet", "Calc")
+        try:
+            sheet.setAlias("A1", "pi")
+        except Exception as err:
+            self.assertIn("reserved constant token", str(err))
+            self.assertEqual(sheet.getAlias("A1"), None)
+        else:
+            self.fail("A constant (reserved word) was used as alias which shouldn't be allowed")
 
     def testPlacementName(self):
         """Object name is equal to property name (bug #2389)"""
@@ -1558,7 +1610,6 @@ class SpreadsheetCases(unittest.TestCase):
         """Test deleted aliases by undo remains in database"""
         sheet = self.doc.addObject("Spreadsheet::Sheet", "Spreadsheet")
 
-        self.doc.UndoMode = 1
         self.doc.openTransaction("create alias")
         sheet.setAlias("B2", "test")
         self.doc.commitTransaction()
@@ -1671,7 +1722,6 @@ class SpreadsheetCases(unittest.TestCase):
         )
 
         self.doc.recompute()
-        self.doc.UndoMode = 0
         self.doc.removeObject("Body")
         sheet.clearAll()
 
@@ -1873,6 +1923,15 @@ class SpreadsheetCases(unittest.TestCase):
         self.assertEqual(sheet.getContents("A1"), "'36C")
         self.assertEqual(sheet.get("A1"), "36C")
 
+    def testDistantCell(self):
+        sheet = self.doc.addObject("Spreadsheet::Sheet", "Spreadsheet")
+        sheet.set("ZX12345", "5")
+        sheet.set("A1", "=ZX12345")
+
+        self.doc.recompute()
+
+        self.assertEqual(sheet.A1, 5)
+
     def testVectorFunctions(self):
         sheet = self.doc.addObject("Spreadsheet::Sheet", "Spreadsheet")
 
@@ -2018,3 +2077,52 @@ class SpreadsheetCases(unittest.TestCase):
         self.assertEqual(sheet.get("G8"), 10)
         self.assertEqual(sheet.get("G9"), 20)
         self.assertEqual(sheet.get("G10"), 10)
+
+    def testFineGrainedRecompute(self):
+        """Regression test for issue #32088.
+
+        With fine-grained recompute enabled, on reopening a file, the InList of
+        properties are defined before the spreadsheet has actually created the
+        properties that contain the values.  This causes the alias to be
+        registered as the property name of the dependency instead of the actual
+        property name.
+
+        This test case tests whether the dependency is correctly registered
+        after a document is reopened."""
+
+        NAME_DOC = "cube.FCStd"
+
+        # Turn on fine-grained recompute
+        ParamGroup = FreeCAD.ParamGet("User parameter:BaseApp/Preferences/General")
+        fineGrainedPref = ParamGroup.GetBool("FineGrainedRecompute")
+        ParamGroup.SetBool("FineGrainedRecompute", True)
+
+        sheet = self.doc.addObject("Spreadsheet::Sheet", "Spreadsheet")
+        sheet.set("A1", "=20")
+        sheet.setAlias("A1", "Length")
+        self.doc.recompute()
+
+        box = self.doc.addObject("Part::Box", "Box")
+        box.setExpression("Length", "Spreadsheet.Length")
+        self.doc.recompute()
+        self.assertEqual(box.Length, 20)
+
+        sheet.set("A1", "=30")
+        self.doc.recompute()
+        self.assertEqual(box.Length, 30)
+
+        self.doc.saveAs(self.TempPath + os.sep + NAME_DOC)
+        FreeCAD.closeDocument(self.doc.Name)
+
+        self.doc = FreeCAD.openDocument(self.TempPath + os.sep + NAME_DOC)
+        sheet = self.doc.Spreadsheet
+        box = self.doc.Box
+        self.assertEqual(box.Length, 30)
+
+        sheet.set("A1", "=40")
+        self.doc.recompute()
+        # this assert would fail before the fix of the above issue.
+        self.assertEqual(box.Length, 40)
+
+        # Restore the original fine-grained recompute preference
+        ParamGroup.SetBool("FineGrainedRecompute", fineGrainedPref)

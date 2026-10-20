@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2012-2014 Luke Parry <l.parry@warwick.ac.uk>            *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DRAWINGGUI_QGRAPHICSITEMSVGTEMPLATE_H
-#define DRAWINGGUI_QGRAPHICSITEMSVGTEMPLATE_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -77,5 +78,3 @@ private:
 };// class QGISVGTemplate
 
 }// namespace TechDrawGui
-
-#endif// DRAWINGGUI_QGRAPHICSITEMSVGTEMPLATE_H

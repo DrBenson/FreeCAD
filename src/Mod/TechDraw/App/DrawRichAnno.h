@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2019 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TechDraw_DrawRichAnno_h_
-#define TechDraw_DrawRichAnno_h_
+#pragma once
 
 #include <App/DocumentObject.h>
 #include <App/FeaturePython.h>
@@ -45,7 +46,9 @@ public:
     App::PropertyString       AnnoText;
     App::PropertyBool         ShowFrame;
     App::PropertyFloat        MaxWidth;
+    App::PropertyBool         OriginCentered;
 
+    void Restore(Base::XMLReader& reader) override;
     short mustExecute() const override;
     App::DocumentObjectExecReturn *execute() override;
 
@@ -68,4 +71,3 @@ private:
 using DrawRichAnnoPython = App::FeaturePythonT<DrawRichAnno>;
 
 } //namespace TechDraw
-#endif

@@ -31,10 +31,6 @@ __title__ = "FreeCAD Draft Workbench - Init file"
 __author__ = "Yorik van Havre <yorik@uncreated.net>"
 __url__ = "https://www.freecad.org"
 
-import Draft_rc
-FreeCADGui.addLanguagePath(":/translations")
-FreeCADGui.addIconPath(":/icons")
-FreeCADGui.updateLocale()
 
 class DraftWorkbench(FreeCADGui.Workbench):
     """The Draft Workbench definition."""
@@ -46,14 +42,14 @@ class DraftWorkbench(FreeCADGui.Workbench):
         __dirname__ = os.path.join(FreeCAD.getResourceDir(), "Mod", "Draft")
         _tooltip = "The Draft workbench is used for 2D drafting on a grid"
         self.__class__.Icon = os.path.join(__dirname__, "Resources", "icons", "DraftWorkbench.svg")
-        self.__class__.MenuText = FreeCAD.Qt.translate("draft", "Draft")
-        self.__class__.ToolTip = FreeCAD.Qt.translate("draft", _tooltip)
+        self.__class__.MenuText = QT_TRANSLATE_NOOP("draft", "Draft")
+        self.__class__.ToolTip = QT_TRANSLATE_NOOP("draft", _tooltip)
 
     def Initialize(self):
         """When the workbench is first loaded."""
 
         def QT_TRANSLATE_NOOP(context, text):
-            return FreeCAD.Qt.translate(context, text)
+            return text
 
         # Run self-tests
         dependencies_OK = False
@@ -101,50 +97,48 @@ class DraftWorkbench(FreeCADGui.Workbench):
                 "Draft will not work as expected.\n"
             )
 
-        # Set up command lists
-        import draftutils.init_tools as it
+        from draftutils import init_tools as it
 
-        self.drawing_commands = it.get_draft_drawing_commands()
-        self.annotation_commands = it.get_draft_annotation_commands()
-        self.modification_commands = it.get_draft_modification_commands()
-        self.utility_commands_menu = it.get_draft_utility_commands_menu()
-        self.utility_commands_toolbar = it.get_draft_utility_commands_toolbar()
-        self.context_commands = it.get_draft_context_commands()
+        # fmt: off
 
         # Set up toolbars
-        it.init_toolbar(
-            self, QT_TRANSLATE_NOOP("Workbench", "Draft Creation"), self.drawing_commands
+        self.appendToolbar(
+            QT_TRANSLATE_NOOP("Workbench", "Draft Creation"), it.get_draft_drawing_commands()
         )
-        it.init_toolbar(
-            self, QT_TRANSLATE_NOOP("Workbench", "Draft Annotation"), self.annotation_commands
+        self.appendToolbar(
+            QT_TRANSLATE_NOOP("Workbench", "Draft Annotation"), it.get_draft_annotation_commands()
         )
-        it.init_toolbar(
-            self, QT_TRANSLATE_NOOP("Workbench", "Draft Modification"), self.modification_commands
+        self.appendToolbar(
+            QT_TRANSLATE_NOOP("Workbench", "Draft Modification"), it.get_draft_modification_commands()
         )
-        it.init_toolbar(
-            self, QT_TRANSLATE_NOOP("Workbench", "Draft Utility"), self.utility_commands_toolbar
+        self.appendToolbar(
+            QT_TRANSLATE_NOOP("Workbench", "Draft Utility"), it.get_draft_utility_commands_toolbar()
         )
-        it.init_toolbar(
-            self, QT_TRANSLATE_NOOP("Workbench", "Draft Snap"), it.get_draft_snap_commands()
+        self.appendToolbar(
+            QT_TRANSLATE_NOOP("Workbench", "Draft Snap"), it.get_draft_snap_commands()
         )
 
         # Set up menus
-        it.init_menu(self, [QT_TRANSLATE_NOOP("Workbench", "&Drafting")], self.drawing_commands)
-        it.init_menu(
-            self, [QT_TRANSLATE_NOOP("Workbench", "&Annotation")], self.annotation_commands
+        self.appendMenu(
+            QT_TRANSLATE_NOOP("Workbench", "&Drafting"), it.get_draft_drawing_commands()
         )
-        it.init_menu(
-            self, [QT_TRANSLATE_NOOP("Workbench", "&Modification")], self.modification_commands
+        self.appendMenu(
+            QT_TRANSLATE_NOOP("Workbench", "&Annotation"), it.get_draft_annotation_commands()
         )
-        it.init_menu(
-            self, [QT_TRANSLATE_NOOP("Workbench", "&Utilities")], self.utility_commands_menu
+        self.appendMenu(
+            QT_TRANSLATE_NOOP("Workbench", "&Modification"), it.get_draft_modification_commands()
         )
+        self.appendMenu(
+            QT_TRANSLATE_NOOP("Workbench", "&Utilities"), it.get_draft_utility_commands_menu()
+        )
+
+        # fmt: on
 
         # Set up preferences pages
         if hasattr(FreeCADGui, "draftToolBar"):
             if not hasattr(FreeCADGui.draftToolBar, "loadedPreferences"):
                 from draftutils import params
-                FreeCADGui.addIconPath(":/icons")
+
                 params._param_observer_start()
                 FreeCADGui.addPreferencePage(
                     ":/ui/preferences-draft.ui", QT_TRANSLATE_NOOP("QObject", "Draft")
@@ -169,6 +163,10 @@ class DraftWorkbench(FreeCADGui.Workbench):
 
     def Activated(self):
         """When entering the workbench."""
+
+        import WorkingPlane
+        from draftutils import grid_observer
+
         if hasattr(FreeCADGui, "draftToolBar"):
             FreeCADGui.draftToolBar.Activated()
         if hasattr(FreeCADGui, "Snapper"):
@@ -176,16 +174,29 @@ class DraftWorkbench(FreeCADGui.Workbench):
             from draftutils import init_draft_statusbar
 
             init_draft_statusbar.show_draft_statusbar()
-        import WorkingPlane
+        if hasattr(WorkingPlane, "_view_observer_start"):
+            WorkingPlane._view_observer_start()  # Updates the draftToolBar when switching views.
+        else:
+            FreeCAD.Console.PrintWarning(
+                "Improper loading of WorkingPlane code. "
+                "The Draft Workbench will not work correctly.\n"
+            )
+        if hasattr(grid_observer, "_view_observer_setup"):
+            grid_observer._view_observer_setup()
+        else:
+            FreeCAD.Console.PrintWarning(
+                "Improper loading of grid_observer code. "
+                "The Draft Workbench will not work correctly.\n"
+            )
 
-        WorkingPlane._view_observer_start()  # Updates the draftToolBar when switching views.
-        from draftutils import grid_observer
-
-        grid_observer._view_observer_setup()
         FreeCAD.Console.PrintLog("Draft workbench activated.\n")
 
     def Deactivated(self):
         """When quitting the workbench."""
+
+        import WorkingPlane
+        from draftutils import grid_observer
+
         if hasattr(FreeCADGui, "draftToolBar"):
             FreeCADGui.draftToolBar.Deactivated()
         if hasattr(FreeCADGui, "Snapper"):
@@ -193,12 +204,11 @@ class DraftWorkbench(FreeCADGui.Workbench):
             from draftutils import init_draft_statusbar
 
             init_draft_statusbar.hide_draft_statusbar()
-        import WorkingPlane
+        if hasattr(WorkingPlane, "_view_observer_stop"):
+            WorkingPlane._view_observer_stop()
+        if hasattr(grid_observer, "_view_observer_setup"):
+            grid_observer._view_observer_setup()
 
-        WorkingPlane._view_observer_stop()
-        from draftutils import grid_observer
-
-        grid_observer._view_observer_setup()
         FreeCAD.Console.PrintLog("Draft workbench deactivated.\n")
 
     def ContextMenu(self, recipient):
@@ -222,7 +232,18 @@ class DraftWorkbench(FreeCADGui.Workbench):
             ]:
                 self.appendContextMenu("", ["Draft_Hyperlink"])
 
-        self.appendContextMenu("Utilities", self.context_commands)
+        if FreeCADGui.Selection.getSelection():
+            from draftutils import utils
+
+            for obj in FreeCADGui.Selection.getSelection():
+                if utils.get_type(obj) != "Shape2DView":
+                    break
+            else:
+                self.appendContextMenu("", ["Draft_UpdateShape2DView"])
+
+        from draftutils import init_tools as it
+
+        self.appendContextMenu("Utilities", it.get_draft_context_commands())
 
     def GetClassName(self):
         """Type of workbench."""
@@ -236,7 +257,6 @@ FreeCADGui.addWorkbench(DraftWorkbench)
 import Draft_rc
 from PySide.QtCore import QT_TRANSLATE_NOOP
 
-FreeCADGui.addIconPath(":/icons")
 FreeCADGui.addPreferencePage(
     ":/ui/preferences-dxf.ui", QT_TRANSLATE_NOOP("QObject", "Import-Export")
 )

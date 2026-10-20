@@ -23,10 +23,8 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef SKETCHER_SKETCHANALYSIS_H
-#define SKETCHER_SKETCHANALYSIS_H
+#pragma once
 
-#include <memory>
 #include <vector>
 
 #include <Precision.hxx>
@@ -42,11 +40,15 @@ namespace Sketcher
 class SketchObject;
 
 
-enum class Solver
+enum class SketchSolveStatus : int8_t
 {
-    RedundantConstraints = -2,
+    Success = 0,
+    Overconstrained = -4,
     ConflictingConstraints = -3,
-    OverConstrained = -4,
+    MalformedConstraints = -5,
+    SolverError = -1,
+    RedundantConstraints = -2,
+    InvalidGeometry = -6,
 };
 
 
@@ -183,7 +185,7 @@ public:
     /// solves the sketch and retrieves the error status, and the degrees of freedom.
     /// It enables to solve updating the geometry (so moving the geometry to match the constraints)
     /// or preserving the geometry.
-    void solvesketch(int& status, int& dofs, bool updategeo);
+    void solvesketch(SketchSolveStatus& status, int& dofs, bool updategeo);
 
     // third type of routines
     std::vector<Base::Vector3d> getOpenVertices() const;
@@ -211,5 +213,3 @@ private:
 };
 
 }  // namespace Sketcher
-
-#endif  // SKETCHER_SKETCHANALYSIS_H

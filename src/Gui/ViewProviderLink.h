@@ -20,8 +20,7 @@
  *                                                                          *
  ****************************************************************************/
 
-#ifndef SRC_GUI_VIEWPROVIDER_LINK_H_
-#define SRC_GUI_VIEWPROVIDER_LINK_H_
+#pragma once
 
 #include <App/Link.h>
 #include <unordered_map>
@@ -34,6 +33,7 @@
 #include "ViewProviderDocumentObject.h"
 #include "ViewProviderExtension.h"
 #include "ViewProviderFeaturePython.h"
+#include "ViewProviderSuppressibleExtension.h"
 
 
 class SoBase;
@@ -226,7 +226,7 @@ class GuiExport ViewProviderLink: public ViewProviderDragger
 
 public:
     App::PropertyBool OverrideMaterial;
-    App::PropertyMaterial ShapeMaterial;
+    App::PropertyMaterialList ShapeAppearance;
     App::PropertyEnumeration DrawStyle;
     App::PropertyFloatConstraint LineWidth;
     App::PropertyFloatConstraint PointSize;
@@ -288,6 +288,7 @@ public:
 
     ViewProvider* startEditing(int ModNum) override;
     bool doubleClicked() override;
+    std::optional<bool> doubleClickedOccurrence(const App::SubObjectT& reference) override;
 
     PyObject* getPyObject() override;
     PyObject* getPyLinkView();
@@ -296,6 +297,28 @@ public:
 
     std::map<std::string, Base::Color> getElementColors(const char* subname = nullptr) const override;
     void setElementColors(const std::map<std::string, Base::Color>& colors) override;
+
+    static std::map<std::string, Base::Color> getElementColorsFrom(
+        const ViewProviderDocumentObject* vp,
+        const char* subname,
+        const App::PropertyLinkSub& coloredElements,
+        const App::PropertyColorList& colorList,
+        bool overrideMaterial,
+        const App::Material* shapeMaterial,
+        int elementCount = 0
+    );
+
+    static void setElementColorsTo(
+        ViewProviderDocumentObject* vp,
+        const std::map<std::string, Base::Color>& colors,
+        App::PropertyLinkSub& coloredElements,
+        App::PropertyColorList& colorList,
+        App::PropertyBool* overrideMaterial,
+        App::PropertyMaterialList* shapeMaterial,
+        int elementCount = 0
+    );
+
+    static bool applyColorsTo(ViewProviderDocumentObject* vp, bool prevOverride);
 
     void setOverrideMode(const std::string& mode) override;
 
@@ -325,6 +348,14 @@ public:
     void setTransformation(const SbMatrix& rcMatrix) override;
 
 protected:
+    Base::BoundBox3d _getBoundingBox(
+        const char* subname = nullptr,
+        const Base::Matrix4D* mat = nullptr,
+        bool transform = true,
+        const View3DInventorViewer* view = nullptr,
+        int depth = 0
+    ) const override;
+
     bool setEdit(int ModNum) override;
     void setEditViewer(View3DInventorViewer*, int ModNum) override;
     void unsetEditViewer(View3DInventorViewer*) override;
@@ -361,6 +392,12 @@ protected:
     bool initDraggingPlacement();
     bool callDraggerProxy(const char* fname);
 
+    void handleChangedPropertyName(
+        Base::XMLReader& reader,
+        const char* TypeName,
+        const char* PropName
+    ) override;
+
 private:
     static void dragStartCallback(void* data, SoDragger* d);
     static void dragFinishCallback(void* data, SoDragger* d);
@@ -371,6 +408,7 @@ protected:
     LinkType linkType;
     bool hasSubName;
     bool hasSubElement;
+    bool prevColorOverride {false};
 
     struct DraggerContext
     {
@@ -387,11 +425,9 @@ protected:
 
 private:
     SoPickStyle* pcPickStyle {nullptr};
+    Gui::ViewProviderSuppressibleExtension suppressibleExt;
 };
 
 using ViewProviderLinkPython = ViewProviderFeaturePythonT<ViewProviderLink>;
 
 }  // namespace Gui
-
-
-#endif  // SRC_GUI_VIEWPROVIDER_LINK_H_

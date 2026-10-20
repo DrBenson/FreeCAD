@@ -23,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef GUI_DIALOG_DLGPREFERENCESIMP_H
-#define GUI_DIALOG_DLGPREFERENCESIMP_H
+#pragma once
 
 #include <QDialog>
 #include <QStandardItemModel>
@@ -147,6 +146,7 @@ private:
     int calculatePopupHeight(int popupWidth) const;
     void applyHighlightToWidget(QWidget* widget);
     static QString getHighlightStyleForWidget(QWidget* widget);
+    static QString toPlainText(const QString& text);
 
     // Search result navigation
     void selectNextSearchResult();
@@ -154,8 +154,6 @@ private:
 
     // Utility methods
     static QString findGroupBoxForWidget(QWidget* widget);
-    static bool fuzzyMatch(const QString& searchText, const QString& targetText, int& score);
-    static bool isExactMatch(const QString& searchText, const QString& targetText);
 
 private:
     DlgPreferencesImp* m_parentDialog;
@@ -374,5 +372,3 @@ private:
 };
 
 }  // namespace Gui::Dialog
-
-#endif  // GUI_DIALOG_DLGPREFERENCESIMP_H

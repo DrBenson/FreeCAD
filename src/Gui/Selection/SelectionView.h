@@ -21,8 +21,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef GUI_DOCKWND_SELECTIONVIEW_H
-#define GUI_DOCKWND_SELECTIONVIEW_H
+#pragma once
 
 #include "DockWindow.h"
 #include "Selection.h"
@@ -76,7 +75,7 @@ public:
 
     void leaveEvent(QEvent*) override;
 
-    bool onMsg(const char* pMsg, const char** ppReturn) override;
+    bool onMsg(const char* pMsg) override;
 
     const char* getName() const override
     {
@@ -116,13 +115,14 @@ protected:
     void hideEvent(QHideEvent*) override;
 
 private:
-    QString getModule(const char* type) const;
+    QString getModule(std::string_view type) const;
     QString getProperty(App::DocumentObject* obj) const;
     bool supportPart(App::DocumentObject* obj, const QString& part) const;
 
 private:
     float x, y, z;
-    std::vector<App::DocumentObject*> searchList;
+    // by name, as the objects may be deleted before the search is validated
+    std::vector<App::DocumentObjectT> searchList;
     bool openedAutomatically;
 };
 
@@ -170,7 +170,6 @@ private:
         const std::vector<PickData>& selections
     );
 
-    App::DocumentObject* getSubObject(const PickData& sel);
     std::string extractElementType(const PickData& sel);
     std::string createObjectKey(const PickData& sel);
     QIcon getOrCreateIcon(App::DocumentObject* sobj, std::map<App::DocumentObject*, QIcon>& icons);
@@ -208,5 +207,3 @@ private:
 };
 
 }  // namespace Gui
-
-#endif  // GUI_DOCKWND_SELECTIONVIEW_H

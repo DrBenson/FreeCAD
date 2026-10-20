@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
+    <extra-po-header-language>zh_TW</extra-po-header-language>
+    <extra-po-header-language_team></extra-po-header-language_team>
+    <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
+    <extra-po-header-po_revision_date></extra-po-header-po_revision_date>
+    <extra-po-header-pot_creation_date></extra-po-header-pot_creation_date>
+    <extra-po-header-project_id_version>FreeCAD Language Translations v1.1.0</extra-po-header-project_id_version>
+    <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
+    <extra-po-header_comment>#
+# Translators:
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
+#
+    </extra-po-header_comment>
+    <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>TestGui::UnitTest</name>
     <message>
-        <location filename="../../UnitTest.ui" line="17"/>
-        <source>FreeCAD UnitTest</source>
-        <translation>關於 FreeCAD 單位測試</translation>
+        <location filename="../../../../../../FreeCAD-0.22.0-git/src/Mod/Test/Gui/UnitTest.ui" line="17"/>
+        <source>FreeCAD Unit Test</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../UnitTest.ui" line="32"/>
@@ -19,6 +32,11 @@
         <translation>選擇測試名稱：</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-0.22.0-git/src/Mod/Test/Gui/UnitTest.ui" line="44"/>
+        <source>Select test name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../UnitTest.ui" line="96"/>
         <source>&amp;Start</source>
         <translation>開始(&amp;S)</translation>
@@ -27,6 +45,16 @@
         <location filename="../../UnitTest.ui" line="99"/>
         <source>Alt+S</source>
         <translation>Alt+S</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-0.22.0-git/src/Mod/Test/Gui/UnitTest.ui" line="128"/>
+        <source>&amp;Copy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-0.22.0-git/src/Mod/Test/Gui/UnitTest.ui" line="131"/>
+        <source>Ctrl+C</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../UnitTest.ui" line="128"/>
@@ -54,16 +82,6 @@
         <translation>關閉(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../../UnitTest.ui" line="157"/>
-        <source>Alt+C</source>
-        <translation>Alt+C</translation>
-    </message>
-    <message>
-        <location filename="../../UnitTest.ui" line="169"/>
-        <source>Progress</source>
-        <translation>進度</translation>
-    </message>
-    <message>
         <location filename="../../UnitTest.ui" line="188"/>
         <source>Run:</source>
         <translation>執行：</translation>
@@ -89,6 +107,46 @@
         <translation>失敗及錯誤</translation>
     </message>
     <message>
+        <location filename="../../../../../../FreeCAD-0.22.0-git/src/Mod/Test/Gui/UnitTest.ui" line="167"/>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../UnitTest.ui" line="157"/>
+        <source>Alt+C</source>
+        <translation>Alt+C</translation>
+    </message>
+    <message>
+        <location filename="../../UnitTest.ui" line="169"/>
+        <source>Progress</source>
+        <translation>進度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-0.22.0-git/src/Mod/Test/Gui/UnitTest.ui" line="201"/>
+        <source>Run</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-0.22.0-git/src/Mod/Test/Gui/UnitTest.ui" line="218"/>
+        <source>Failures</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-0.22.0-git/src/Mod/Test/Gui/UnitTest.ui" line="235"/>
+        <source>Errors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-0.22.0-git/src/Mod/Test/Gui/UnitTest.ui" line="252"/>
+        <source>Remaining</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-0.22.0-git/src/Mod/Test/Gui/UnitTest.ui" line="272"/>
+        <source>Failures and Errors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../UnitTest.ui" line="275"/>
         <source>Description</source>
         <translation>描述</translation>
@@ -97,6 +155,11 @@
         <location filename="../../UnitTest.ui" line="292"/>
         <source>Idle</source>
         <translation>閒置</translation>
+    </message>
+    <message>
+        <location filename="../../UnitTest.ui" line="17"/>
+        <source>FreeCAD UnitTest</source>
+        <translation>關於 FreeCAD 單位測試</translation>
     </message>
 </context>
 <context>
@@ -130,6 +193,11 @@ FreeCAD UnitTest is part of FreeCAD and supports writing Unit Tests for ones own
         <translation>版權所有 (c) Werner Mayer
 
 FreeCAD 單位測試為 FreeCAD 的一部分，支援測試自己的模組編寫單位。</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-0.22.0-git/src/Mod/Test/Gui/UnitTestImp.cpp" line="206"/>
+        <source>Errors copied to clipboard</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2016 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef GUI_TASKVIEW_TASKSECTIONVIEW_H
-#define GUI_TASKVIEW_TASKSECTIONVIEW_H
+#pragma once
 
 #include <Gui/TaskView/TaskDialog.h>
 #include <Gui/TaskView/TaskView.h>
@@ -94,7 +95,7 @@ protected Q_SLOTS:
 
 private:
     double requiredRotation(double inputAngle);
-    std::string makeSectionLabel(QString symbol);
+    std::string makeSectionLabel();
     bool directionChanged() const { return m_directionChanged; }
     void directionChanged(bool newState) { m_directionChanged = newState; }
 
@@ -167,5 +168,3 @@ private:
 };
 
 } //namespace TechDrawGui
-
-#endif // #ifndef GUI_TASKVIEW_TASKSECTIONVIEW_H

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2021 Bernd Hahnebach <bernd@bimstatik.org>              *
 # *                                                                         *
@@ -34,7 +36,6 @@ import subprocess
 
 import FreeCAD
 
-
 try:
     import hfcMystranNeuIn
 
@@ -50,7 +51,6 @@ from .. import settings
 from femmesh import meshsetsgetter
 from femtools import femutils
 from femtools import membertools
-
 
 _inputFileName = None
 

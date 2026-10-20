@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2015 Przemo Firszt <przemo@firszt.eu>                   *
 # *   Copyright (c) 2015 Bernd Hahnebach <bernd@bimstatik.org>              *
@@ -35,7 +37,6 @@ import os
 import FreeCAD
 from FreeCAD import Console
 from builtins import open as pyopen
-
 
 EIGENVALUE_OUTPUT_SECTION = "     E I G E N V A L U E   O U T P U T"
 

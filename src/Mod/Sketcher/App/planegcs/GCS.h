@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef PLANEGCS_GCS_H
-#define PLANEGCS_GCS_H
+#pragma once
 
 #include <Eigen/QR>
 
@@ -51,7 +50,7 @@ namespace GCS
 // Solver
 ///////////////////////////////////////
 
-enum SolveStatus
+enum class SolveStatus : uint8_t
 {
     Success = 0,                    // Found a solution zeroing the error function
     Converged = 1,                  // Found a solution minimizing the error function
@@ -60,11 +59,11 @@ enum SolveStatus
                                     // resulting geometry is OCE-invalid
 };
 
-enum Algorithm
+enum Algorithm : uint8_t
 {
-    BFGS = 0,
-    LevenbergMarquardt = 1,
-    DogLeg = 2
+    BFGS,
+    LevenbergMarquardt,
+    DogLeg,
 };
 
 enum DogLegGaussStep
@@ -120,6 +119,7 @@ private:
     std::vector<std::vector<double*>> pDependentParametersGroups;
 
     std::vector<Constraint*> clist;
+    std::vector<Constraint*> drivenConstraints;
     std::map<Constraint*, VEC_pD> c2p;                // constraint to parameter adjacency list
     std::map<double*, std::vector<Constraint*>> p2c;  // parameter to constraint adjacency list
 
@@ -127,8 +127,10 @@ private:
     void clearSubSystems();
 
     VEC_D reference;
-    void setReference();      // copies the current parameter values to reference
-    void resetToReference();  // reverts all parameter values to the stored reference
+    /// Copies the current parameter values to reference.
+    void saveReference();
+    /// Reverts all parameter values to the stored reference.
+    void restoreReference();
 
     std::vector<VEC_pD> plists;  // partitioned plist except equality constraints
     // partitioned clist except equality constraints
@@ -145,9 +147,9 @@ private:
 
     bool emptyDiagnoseMatrix;  // false only if there is at least one driving constraint.
 
-    int solve_BFGS(SubSystem* subsys, bool isFine = true, bool isRedundantsolving = false);
-    int solve_LM(SubSystem* subsys, bool isRedundantsolving = false);
-    int solve_DL(SubSystem* subsys, bool isRedundantsolving = false);
+    SolveStatus solve_BFGS(SubSystem* subsys, bool isRedundantsolving = false);
+    SolveStatus solve_LM(SubSystem* subsys, bool isRedundantsolving = false);
+    SolveStatus solve_DL(SubSystem* subsys, bool isRedundantsolving = false);
 
     void makeReducedJacobian(
         Eigen::MatrixXd& J,
@@ -300,7 +302,14 @@ public:
         bool driving = true
     );
     int addConstraintP2PAngle(Point& p1, Point& p2, double* angle, int tagId = 0, bool driving = true);
-    int addConstraintP2LDistance(Point& p, Line& l, double* distance, int tagId = 0, bool driving = true);
+    int addConstraintP2LDistance(
+        Point& p,
+        Line& l,
+        double* distance,
+        bool ccw,
+        int tagId = 0,
+        bool driving = true
+    );
     int addConstraintPointOnLine(Point& p, Line& l, int tagId = 0, bool driving = true);
     int addConstraintPointOnLine(Point& p, Point& lp1, Point& lp2, int tagId = 0, bool driving = true);
     int addConstraintPointOnPerpBisector(Point& p, Line& l, int tagId = 0, bool driving = true);
@@ -321,6 +330,7 @@ public:
         int tagId = 0,
         bool driving = true
     );
+    int addConstraintPerpendicular(Point& l1p1, Point& l1p2, Line& l2, int tagId = 0, bool driving = true);
     int addConstraintL2LAngle(Line& l1, Line& l2, double* angle, int tagId = 0, bool driving = true);
     int addConstraintL2LAngle(
         Point& l1p1,
@@ -442,9 +452,9 @@ public:
         int tagId = 0,
         bool driving = true
     );
-    int addConstraintTangent(Line& l, Circle& c, int tagId = 0, bool driving = true);
+    int addConstraintTangent(Line& l, Circle& c, bool ccw, int tagId = 0, bool driving = true);
     int addConstraintTangent(Line& l, Ellipse& e, int tagId = 0, bool driving = true);
-    int addConstraintTangent(Line& l, Arc& a, int tagId = 0, bool driving = true);
+    int addConstraintTangent(Line& l, Arc& a, bool ccw, int tagId = 0, bool driving = true);
     int addConstraintTangent(Circle& c1, Circle& c2, int tagId = 0, bool driving = true);
     int addConstraintTangent(Arc& a1, Arc& a2, int tagId = 0, bool driving = true);
     int addConstraintTangent(Circle& c, Arc& a, int tagId = 0, bool driving = true);
@@ -475,8 +485,23 @@ public:
         bool driving = true
     );
 
-    int addConstraintC2CDistance(Circle& c1, Circle& c2, double* dist, int tagId, bool driving = true);
-    int addConstraintC2LDistance(Circle& c, Line& l, double* dist, int tagId, bool driving = true);
+    int addConstraintC2CDistance(
+        Circle& c1,
+        Circle& c2,
+        double* dist,
+        std::optional<bool> c1bigger,
+        int tagId,
+        bool driving = true
+    );
+    int addConstraintC2LDistance(
+        Circle& c,
+        Line& l,
+        double* dist,
+        bool ccw,
+        bool internal,
+        int tagId,
+        bool driving = true
+    );
     int addConstraintP2CDistance(Point& p, Circle& c, double* distance, int tagId = 0, bool driving = true);
     int addConstraintArcLength(Arc& a, double* dist, int tagId, bool driving = true);
 
@@ -585,17 +610,14 @@ public:
     void declareDrivenParams(VEC_pD& params);
     void initSolution(Algorithm alg = DogLeg);
 
-    int solve(bool isFine = true, Algorithm alg = DogLeg, bool isRedundantsolving = false);
-    int solve(VEC_pD& params, bool isFine = true, Algorithm alg = DogLeg, bool isRedundantsolving = false);
-    int solve(
-        SubSystem* subsys,
-        bool isFine = true,
-        Algorithm alg = DogLeg,
-        bool isRedundantsolving = false
-    );
-    int solve(SubSystem* subsysA, SubSystem* subsysB, bool isFine = true, bool isRedundantsolving = false);
+    SolveStatus solve(Algorithm alg = DogLeg, bool isRedundantsolving = false);
+    SolveStatus solve(VEC_pD& params, Algorithm alg = DogLeg, bool isRedundantsolving = false);
+    SolveStatus solve(SubSystem* subsys, Algorithm alg = DogLeg, bool isRedundantsolving = false);
+    SolveStatus solve(SubSystem* subsysA, SubSystem* subsysB, bool isRedundantsolving = false);
 
     void applySolution();
+    void evaluateDrivenConstraints();
+
     void undoSolution();
     // FIXME: looks like XconvergenceFine is not the solver precision, at least in DogLeg
     // solver.
@@ -675,5 +697,3 @@ void deleteAllContent(std::vector<Constraint*>& constrvec);
 void deleteAllContent(std::vector<SubSystem*>& subsysvec);
 
 }  // namespace GCS
-
-#endif  // PLANEGCS_GCS_H

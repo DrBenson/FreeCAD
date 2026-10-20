@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -10,34 +10,34 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>CmdInspectElement</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/Command.cpp" line="74"/>
+        <location filename="../../Command.cpp" line="74"/>
         <source>Inspection</source>
         <translation>檢查</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/Command.cpp" line="75"/>
+        <location filename="../../Command.cpp" line="75"/>
         <source>Inspection...</source>
         <translation>檢查...</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/Command.cpp" line="76"/>
+        <location filename="../../Command.cpp" line="76"/>
         <source>Get distance information</source>
         <translation>取得距離訊息</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/Command.cpp" line="75"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Inspection/Gui/Command.cpp" line="75"/>
         <source>Inspection…</source>
         <translation>檢查…</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/Command.cpp" line="76"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Inspection/Gui/Command.cpp" line="76"/>
         <source>Inspects distance information</source>
         <translation>檢查距離資訊</translation>
     </message>
@@ -45,28 +45,33 @@
 <context>
     <name>CmdVisualInspection</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/Command.cpp" line="48"/>
+        <location filename="../../Command.cpp" line="48"/>
         <source>Inspection</source>
         <translation>檢查</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/Command.cpp" line="49"/>
+        <location filename="../../Command.cpp" line="49"/>
         <source>Visual inspection...</source>
         <translation>虛擬檢查...</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/Command.cpp" line="50"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/Command.cpp" line="51"/>
+        <location filename="../../Command.cpp" line="50"/>
+        <location filename="../../Command.cpp" line="51"/>
         <source>Visual inspection</source>
         <translation>虛擬檢查</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/Command.cpp" line="49"/>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Inspection/Gui/Command.cpp" line="50"/>
+        <source>Visual Inspection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Inspection/Gui/Command.cpp" line="49"/>
         <source>Visual Inspection…</source>
         <translation>虛擬檢查…</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/Command.cpp" line="50"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Inspection/Gui/Command.cpp" line="50"/>
         <source>Inspects the objects visually</source>
         <translation>目視檢查物件</translation>
     </message>
@@ -74,7 +79,7 @@
 <context>
     <name>Command</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/VisualInspection.cpp" line="230"/>
+        <location filename="../../VisualInspection.cpp" line="230"/>
         <source>Visual Inspection</source>
         <translation>虛擬檢查</translation>
     </message>
@@ -82,94 +87,94 @@
 <context>
     <name>InspectionGui::VisualInspection</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/VisualInspection.ui" line="14"/>
-        <source>Visual Inspection</source>
-        <translation>虛擬檢查</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/VisualInspection.ui" line="23"/>
+        <location filename="../../VisualInspection.ui" line="23"/>
         <source>Actual</source>
         <translation>實際</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/VisualInspection.ui" line="39"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/VisualInspection.ui" line="66"/>
+        <location filename="../../VisualInspection.ui" line="39"/>
+        <location filename="../../VisualInspection.ui" line="66"/>
         <source>Objects</source>
         <translation>物體</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/VisualInspection.ui" line="50"/>
+        <location filename="../../VisualInspection.ui" line="50"/>
         <source>Nominal</source>
         <translation>虛設名稱</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/VisualInspection.ui" line="77"/>
+        <location filename="../../VisualInspection.ui" line="77"/>
         <source>Parameter</source>
         <translation>參數</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/VisualInspection.ui" line="97"/>
+        <location filename="../../VisualInspection.ui" line="97"/>
         <source>Search distance</source>
         <translation>搜索距離</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/VisualInspection.ui" line="120"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/VisualInspection.ui" line="168"/>
-        <source>mm</source>
-        <translation>mm</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/VisualInspection.ui" line="129"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/VisualInspection.ui" line="174"/>
+        <location filename="../../VisualInspection.ui" line="129"/>
+        <location filename="../../VisualInspection.ui" line="174"/>
         <source> mm</source>
         <translation> mm</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/VisualInspection.ui" line="145"/>
+        <location filename="../../VisualInspection.ui" line="145"/>
         <source>Thickness</source>
         <translation>厚度</translation>
+    </message>
+    <message>
+        <location filename="../../VisualInspection.ui" line="14"/>
+        <source>Visual Inspection</source>
+        <translation>虛擬檢查</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/VisualInspection.ui" line="120"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/VisualInspection.ui" line="168"/>
+        <source>mm</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/ViewProviderInspection.cpp" line="455"/>
-        <source>Remove annotations</source>
-        <translation>刪除註釋</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/ViewProviderInspection.cpp" line="456"/>
-        <source>Do you want to remove all annotations?</source>
-        <translation>您確定要清除所有的註釋嗎?</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/ViewProviderInspection.cpp" line="508"/>
+        <location filename="../../ViewProviderInspection.cpp" line="508"/>
         <source>Annotation</source>
         <translation>注釋</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/ViewProviderInspection.cpp" line="511"/>
-        <source>Leave info mode</source>
-        <translation>離開訊息模式</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/ViewProviderInspection.cpp" line="564"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Inspection/Gui/ViewProviderInspection.cpp" line="564"/>
         <source>Leave Info Mode</source>
         <translation>離開訊息模式</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/ViewProviderInspection.cpp" line="632"/>
+        <location filename="../../ViewProviderInspection.cpp" line="455"/>
+        <source>Remove annotations</source>
+        <translation>刪除註釋</translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderInspection.cpp" line="456"/>
+        <source>Do you want to remove all annotations?</source>
+        <translation>您確定要清除所有的註釋嗎?</translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderInspection.cpp" line="511"/>
+        <source>Leave info mode</source>
+        <translation>離開訊息模式</translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderInspection.cpp" line="632"/>
         <source>Distance: &gt; %1</source>
         <translation>距離: &gt; %1</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/ViewProviderInspection.cpp" line="635"/>
+        <location filename="../../ViewProviderInspection.cpp" line="635"/>
         <source>Distance: &lt; %1</source>
         <translation>距離: &lt; %1</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/ViewProviderInspection.cpp" line="654"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/ViewProviderInspection.cpp" line="670"/>
+        <location filename="../../ViewProviderInspection.cpp" line="654"/>
+        <location filename="../../ViewProviderInspection.cpp" line="670"/>
         <source>Distance: %1</source>
         <translation>距離: %1</translation>
     </message>
@@ -177,12 +182,12 @@
 <context>
     <name>Workbench</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/InitGui.Py" line="38"/>
+        <location filename="../../InitGui.Py" line="38"/>
         <source>Inspection</source>
         <translation>檢查</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Inspection/Gui/InitGui.py" line="39"/>
+        <location filename="../../InitGui.py" line="39"/>
         <source>Inspection workbench</source>
         <translation>檢查工作台</translation>
     </message>

@@ -23,6 +23,7 @@
 # *                                                                         *
 # ***************************************************************************
 """Provides functions to create Arc objects by using 3 points."""
+
 ## @package make_arc_3points
 # \ingroup draftmake
 # \brief Provides functions to create Arc objects by using 3 points.
@@ -37,9 +38,10 @@ from draftmake import make_circle
 from draftutils import utils
 from draftutils.messages import _err
 from draftutils.translate import translate
+from freecad.deprecation import deprecated
 
 
-def make_arc_3points(points, placement=None, face=False, support=None, primitive=False):
+def make_arc_3_points(points, placement=None, face=False, support=None, primitive=False):
     """Draw a circular arc defined by three points on the circumference.
 
     Parameters
@@ -81,7 +83,7 @@ def make_arc_3points(points, placement=None, face=False, support=None, primitive
     None
         Returns `None` if there is a problem and the object cannot be created.
     """
-    _name = "make_arc_3points"
+    _name = "make_arc_3_points"
 
     try:
         utils.type_check([(points, (list, tuple))], name=_name)
@@ -123,6 +125,16 @@ def make_arc_3points(points, placement=None, face=False, support=None, primitive
         return obj
 
     return make_circle.make_circle(edge, placement=placement, face=face, support=support)
+
+
+@deprecated(
+    deprecated_in="26.3",
+    removed_in="28.3",
+    replacement="Draft.make_arc_3_points()",
+)
+def make_arc_3points(*args, **kwarg):
+    """DEPRECATED. Use 'make_arc_3_points'."""
+    return make_arc_3_points(*args, **kwarg)
 
 
 ## @}

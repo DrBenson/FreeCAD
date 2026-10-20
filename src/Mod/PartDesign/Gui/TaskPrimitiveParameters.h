@@ -23,19 +23,19 @@
  ***************************************************************************/
 
 
-#ifndef GUI_TASKVIEW_TaskPrimitiveParameters_H
-#define GUI_TASKVIEW_TaskPrimitiveParameters_H
+#pragma once
 
 #include <memory>
 #include <unordered_map>
 
-#include <Gui/DocumentObserver.h>
 #include <Gui/TaskView/TaskDialog.h>
 #include <Gui/TaskView/TaskView.h>
 
 #include "ViewProviderPrimitive.h"
 #include "TaskDatumParameters.h"
-#include "TaskFeatureParameters.h"
+#include "TaskFeatureAddSubParameters.h"
+
+class QGridLayout;
 
 namespace App
 {
@@ -52,7 +52,7 @@ class LinearGizmo;
 namespace PartDesignGui
 {
 class Ui_DlgPrimitives;
-class TaskBoxPrimitives: public Gui::TaskView::TaskBox, public Gui::DocumentObserver
+class TaskBoxPrimitives: public TaskFeatureAddSubParameters
 {
     Q_OBJECT
 
@@ -108,25 +108,15 @@ public Q_SLOTS:
 
     void onPlacementChanged();
 
+protected:
+    void changeEvent(QEvent* e) override;
+
 private:
-    /** Notifies when the object is about to be removed. */
-    void slotDeletedObject(const Gui::ViewProviderDocumentObject& Obj) override;
-
-    template<typename T = App::DocumentObject>
-    T* getObject() const
-    {
-        static_assert(std::is_base_of<App::DocumentObject, T>::value, "Wrong template argument");
-        if (vp) {
-            return vp->getObject<T>();
-        }
-
-        return nullptr;
-    }
+    void setupOperation(QGridLayout* grid);
 
 private:
     QWidget* proxy;
     std::unique_ptr<Ui_DlgPrimitives> ui;
-    ViewProviderPrimitive* vp;
 
     std::unique_ptr<Gui::GizmoContainer> gizmoContainer;
     Gui::LinearGizmo* lengthGizmo = nullptr;
@@ -158,5 +148,3 @@ private:
 };
 
 }  // namespace PartDesignGui
-
-#endif  // GUI_TASKVIEW_TASKAPPERANCE_H

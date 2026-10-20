@@ -10,8 +10,7 @@ from Base.PyObjectBase import PyObjectBase
     Include="ShapeFix_Root.hxx",
     Constructor=True,
 )
-@class_declarations(
-    """
+@class_declarations("""
 private:
     Handle(ShapeFix_Root) hRoot;
 
@@ -20,8 +19,7 @@ public:
         setTwinPointer(handle.get());
         hRoot = handle;
     }
-"""
-)
+""")
 class ShapeFix_Root(PyObjectBase):
     """
     Root class for fixing operations
@@ -40,7 +38,7 @@ class ShapeFix_Root(PyObjectBase):
     """Maximal allowed tolerance"""
 
     @constmethod
-    def limitTolerance(self) -> float:
+    def limitTolerance(self, tolerance: float, /) -> float:
         """
         Returns tolerance limited by [MinTolerance,MaxTolerance]
         """

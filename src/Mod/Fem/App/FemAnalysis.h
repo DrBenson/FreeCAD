@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jürgen Riegel <FreeCAD@juergen-riegel.net>         *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef Fem_FemAnalysis_H
-#define Fem_FemAnalysis_H
+#pragma once
 
 #include <App/DocumentObjectGroup.h>
 #include <App/FeaturePython.h>
@@ -102,6 +103,3 @@ using FeaturePython = App::FeaturePythonT<DocumentObject>;
 
 
 }  // namespace Fem
-
-
-#endif  // Fem_FemAnalysis_H

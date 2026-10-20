@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2015 Przemo Firszt <przemo@firszt.eu>                   *
 # *   Copyright (c) 2015 Bernd Hahnebach <bernd@bimstatik.org>              *
@@ -66,7 +68,6 @@ from . import write_step_equation
 from . import write_step_output
 from .. import writerbase
 from femtools import constants
-
 
 # Interesting forum topic: https://forum.freecad.org/viewtopic.php?&t=48451
 # TODO somehow set units at beginning and every time a value is retrieved use this identifier

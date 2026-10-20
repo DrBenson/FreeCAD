@@ -22,12 +22,13 @@
  **************************************************************************/
 
 
-#ifndef MEASUREAPP_MEASUREDISTANCE_H
-#define MEASUREAPP_MEASUREDISTANCE_H
+#pragma once
 
 #include <Mod/Measure/MeasureGlobal.h>
 
 #include <Geom_Circle.hxx>
+#include <Geom_Line.hxx>
+#include <Geom_Plane.hxx>
 #include <TopoDS_Shape.hxx>
 
 #include <App/PropertyGeo.h>
@@ -105,12 +106,37 @@ public:
 
 private:
     bool distanceCircleCircle(const TopoDS_Shape& shape1, const TopoDS_Shape& shape2);
+    bool distancePlanePlane(
+        const Handle(Geom_Plane) & plane1,
+        const Handle(Geom_Plane) & plane2,
+        const gp_Pnt& ref
+    );
+    bool distanceLineLine(
+        const Handle(Geom_Line) & line1,
+        const Handle(Geom_Line) & line2,
+        const gp_Pnt& ref
+    );
+    bool distancePlaneLine(
+        const Handle(Geom_Plane) & plane,
+        const Handle(Geom_Line) & line,
+        const gp_Pnt& ref
+    );
+    bool distanceInfiniteInfinite(
+        const App::DocumentObject& ob1,
+        const std::vector<std::string>& subs1,
+        const App::DocumentObject& ob2,
+        const std::vector<std::string>& subs2,
+        const TopoDS_Shape& shape1,
+        const TopoDS_Shape& shape2
+    );
     void distanceGeneric(const TopoDS_Shape& shape1, const TopoDS_Shape& shape2);
     void setValues(const gp_Pnt& p1, const gp_Pnt& p2);
     void onChanged(const App::Property* prop) override;
     Handle(Geom_Circle) asCircle(const TopoDS_Shape& shape) const;
     Handle(Geom_Circle) asCircle(const TopoDS_Edge& edge) const;
     Handle(Geom_Circle) asCircle(const TopoDS_Wire& wire) const;
+    Handle(Geom_Plane) asDatumPlane(const TopoDS_Shape& shape) const;
+    Handle(Geom_Line) asDatumLine(const TopoDS_Shape& shape) const;
 };
 
 
@@ -166,6 +192,3 @@ private:
 
 
 }  // namespace Measure
-
-
-#endif  // MEASUREAPP_MEASUREDISTANCE_H

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2025 WandererFan <wandererfan@gmail.com>                *
  *   Copyright (c) 2025 Benjamin Bræstrup Sayoc <benj5378@outlook.com>     *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAWGUI_USERTYPES_H
-#define TECHDRAWGUI_USERTYPES_H
+#pragma once
 
 #include <QGraphicsItem>
 
@@ -101,5 +102,3 @@ text 8
 simpletext 9
 group 10
 */
-
-#endif

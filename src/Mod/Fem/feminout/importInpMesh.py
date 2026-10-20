@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2016 Frantisek Loeffelmann <LoffF@email.cz>             *
 # *   Copyright (c) 2016 Bernd Hahnebach <bernd@bimstatik.org>              *
@@ -36,7 +38,6 @@ import os
 import FreeCAD
 from FreeCAD import Console
 from builtins import open as pyopen
-
 
 # ********* generic FreeCAD import and export methods *********
 

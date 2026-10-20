@@ -48,7 +48,7 @@ ConsoleObserverFile::ConsoleObserverFile(const char* sFileName)
     : cFileStream(Base::FileInfo(sFileName))  // can be in UTF8
 {
     if (!cFileStream.is_open()) {
-        Console().warning("Cannot open log file '%s'.\n", sFileName);
+        Console().warning("Cannot open log file '{}'.\n", sFileName);
     }
     // mark the file as a UTF-8 encoded file
     unsigned char bom[3] = {0xef, 0xbb, 0xbf};
@@ -272,7 +272,7 @@ int RedirectStdOutput::sync()
 {
     // Print as log as this might be verbose
     if (!buffer.empty() && buffer.back() == '\n') {
-        Base::Console().log("%s", buffer.c_str());
+        Base::Console().log("{}", buffer);
         buffer.clear();
     }
     return 0;
@@ -295,7 +295,7 @@ int RedirectStdLog::sync()
 {
     // Print as log as this might be verbose
     if (!buffer.empty() && buffer.back() == '\n') {
-        Base::Console().log("%s", buffer.c_str());
+        Base::Console().log("{}", buffer);
         buffer.clear();
     }
     return 0;
@@ -317,7 +317,7 @@ int RedirectStdError::overflow(int ch)
 int RedirectStdError::sync()
 {
     if (!buffer.empty() && buffer.back() == '\n') {
-        Base::Console().error("%s", buffer.c_str());
+        Base::Console().error("{}", buffer);
         buffer.clear();
     }
     return 0;
@@ -327,15 +327,15 @@ int RedirectStdError::sync()
 
 std::stringstream& LogLevel::prefix(std::stringstream& str, const char* src, int line)
 {
-    static FC_TIME_POINT s_tstart;
+    static std::chrono::high_resolution_clock::time_point s_tstart;
     static bool s_timing = false;
     if (print_time) {
         if (!s_timing) {
             s_timing = true;
-            _FC_TIME_INIT(s_tstart);
+            s_tstart = std::chrono::high_resolution_clock::now();
         }
-        auto tnow = std::chrono::FC_TIME_CLOCK::now();
-        auto dc = std::chrono::duration_cast<FC_DURATION>(tnow - s_tstart);
+        auto tnow = std::chrono::high_resolution_clock::now();
+        auto dc = std::chrono::duration_cast<std::chrono::duration<double>>(tnow - s_tstart);
         str << dc.count() << ' ';
     }
     if (print_tag) {

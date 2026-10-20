@@ -39,6 +39,7 @@
 
 #include "PythonWrapper.h"
 #include "SoFCDB.h"
+#include "SoFullPathHelper.h"
 
 // generated out of ViewProvider.pyi
 #include "ViewProviderPy.h"
@@ -48,6 +49,7 @@
 #include <Base/MatrixPy.h>
 #include <Base/PlacementPy.h>
 #include <App/DocumentObjectPy.h>
+#include <App/DocumentObserver.h>
 
 using namespace Gui;
 
@@ -147,7 +149,7 @@ PyObject* ViewProviderPy::supportedProperties(PyObject* args)
         auto data = static_cast<Base::BaseClass*>(it.createInstance());
         if (data) {
             delete data;
-            res.append(Py::String(it.getName()));
+            res.append(Base::toPyString(it.getName()));
         }
     }
     return Py::new_reference_to(res);
@@ -226,7 +228,9 @@ PyObject* ViewProviderPy::canDropObject(PyObject* args, PyObject* kw)
     PyObject* pyElements = Py_None;
     const char* subname = nullptr;
     static const std::array<const char*, 5> kwlist {"obj", "owner", "subname", "elem", nullptr};
-    if (!Base::Wrapped_ParseTupleAndKeywords(args, kw, "|OOsO", kwlist, &obj, &owner, &subname, &pyElements)) {
+    if (
+        !Base::Wrapped_ParseTupleAndKeywords(args, kw, "|OOsO", kwlist, &obj, &owner, &subname, &pyElements)
+    ) {
         return nullptr;
     }
 
@@ -636,7 +640,7 @@ PyObject* ViewProviderPy::getDetailPath(PyObject* args) const
         throw Base::TypeError("'path' must be a coin.SoPath");
     }
     SoDetail* det = nullptr;
-    if (!getViewProviderPtr()->getDetailPath(sub, static_cast<SoFullPath*>(pPath), append, det)) {
+    if (!getViewProviderPtr()->getDetailPath(sub, Gui::toFullPath(pPath), append, det)) {
         delete det;
         Py_Return;
     }
@@ -657,43 +661,66 @@ PyObject* ViewProviderPy::signalChangeIcon(PyObject* args) const
     Py_Return;
 }
 
-PyObject* ViewProviderPy::getBoundingBox(PyObject* args)
+PyObject* ViewProviderPy::getBoundingBox(PyObject* args, PyObject* kwd)
 {
     PyObject* transform = Py_True;
     PyObject* pyView = nullptr;
+    PyObject* pyMat = nullptr;
     const char* subname = nullptr;
-    if (!PyArg_ParseTuple(
+    int depth = 0;
+    static const char* kwlist[] = {"subname", "transform", "view", "mat", "depth", NULL};
+    if (!PyArg_ParseTupleAndKeywords(
             args,
-            "|sO!O!",
+            kwd,
+            "|sOO!O!i",
+            (char**)kwlist,
             &subname,
-            &PyBool_Type,
             &transform,
             View3DInventorPy::type_object(),
-            &pyView
+            &pyView,
+            &Base::MatrixPy::Type,
+            &pyMat,
+            &depth
         )) {
         return nullptr;
     }
-
     PY_TRY
     {
-        View3DInventor* view = nullptr;
+        View3DInventorViewer* viewer = nullptr;
         if (pyView) {
-            view = static_cast<View3DInventorPy*>(pyView)->getView3DInventorPtr();
+            viewer = static_cast<View3DInventorPy*>(pyView)->getView3DInventorPtr()->getViewer();
         }
-        auto bbox = getViewProviderPtr()->getBoundingBox(subname, Base::asBoolean(transform), view);
-        return new Base::BoundBoxPy(new Base::BoundBox3d(bbox));
+        const Base::Matrix4D* mat = nullptr;
+        if (pyMat) {
+            mat = static_cast<Base::MatrixPy*>(pyMat)->getMatrixPtr();
+        }
+        auto bbox = getViewProviderPtr()
+                        ->getBoundingBox(subname, mat, PyObject_IsTrue(transform), viewer, depth);
+        Py::Object ret(new Base::BoundBoxPy(new Base::BoundBox3d(bbox)));
+        return Py::new_reference_to(ret);
     }
     PY_CATCH;
 }
 
 PyObject* ViewProviderPy::doubleClicked(PyObject* args)
 {
-    if (!PyArg_ParseTuple(args, "")) {
+    PyObject* root = nullptr;
+    const char* subname = "";
+    if (!PyArg_ParseTuple(args, "|O!s", &App::DocumentObjectPy::Type, &root, &subname)) {
         return nullptr;
     }
 
     PY_TRY
     {
+        if (root) {
+            const App::SubObjectT reference(
+                static_cast<App::DocumentObjectPy*>(root)->getDocumentObjectPtr(),
+                subname
+            );
+            return Py::new_reference_to(
+                Py::Boolean(getViewProviderPtr()->doubleClickedObject(reference))
+            );
+        }
         return Py::new_reference_to(Py::Boolean(getViewProviderPtr()->doubleClicked()));
     }
     PY_CATCH;
@@ -735,7 +762,7 @@ int ViewProviderPy::setCustomAttributes(const char* attr, PyObject* value)
 Py::Object ViewProviderPy::getAnnotation() const
 {
     try {
-        auto node = getViewProviderPtr()->getAnnotation();
+        auto node = getViewProviderPtr()->getOrCreateAnnotation();
         PyObject* Ptr
             = Base::Interpreter().createSWIGPointerObj("pivy.coin", "_p_SoSeparator", node, 1);
         node->ref();

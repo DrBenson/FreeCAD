@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -10,48 +10,48 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>Form</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="14"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="14"/>
         <source>Help</source>
         <translation>求助說明</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="20"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="20"/>
         <source>Source</source>
         <translation>來源</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="29"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="29"/>
         <source>This will fetch the documentation from pages rendered on GitHub.
 This is currently not available...</source>
         <translation>這將從 GitHub 上呈現的頁面取得文件.
 目前不可用...</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="29"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="29"/>
         <source>This will fetch the documentation from pages rendered on github. This is currently not available...</source>
         <translation>這將從 github 上呈現的頁面取得文件. 目前不可用...</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="32"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="32"/>
         <source>Github (online)</source>
         <translation>Github (線上)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="45"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="80"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="45"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="80"/>
         <source>Set this to a custom URL or the folder where the help files are located. You can easily download the documentation for offline use by using the Addon Manager and installing the &quot;offline documentation&quot; addon. If this field is left blank, FreeCAD will automatically search for the help files at the default location ($USERAPPDATADIR/Mod/Documentation).</source>
         <translation>將其設定為自訂 URL 或說明文件所在的資料夾. 您可以使用附加元件管理器並安裝「離線文件」附加元件輕鬆下載文件以供離線使用. 如果此欄位留空，FreeCAD 將自動在預設位置($USERAPPDATADIR/Mod/Documentation)搜尋說明文件.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="46"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="86"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="46"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="86"/>
         <source>Set this to a custom URL or the folder where the help files are located.
 You can easily download the documentation for offline use by using the Addon
 Manager and installing the &quot;offline documentation&quot; addon. If this
@@ -63,69 +63,69 @@ the default location ($USERAPPDATADIR/Mod/Documentation).</source>
 FreeCAD 將自動在預設位置($USERAPPDATADIR/Mod/Documentation)搜尋說明文件.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="67"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="67"/>
         <source>A translation suffix to use, for example &quot;fr&quot; to get French translation of the documentation.</source>
         <translation>要使用的翻譯後綴，例如“fr”以獲取文件的法語翻譯.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="99"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="99"/>
         <source>    Translation suffix:</source>
         <translation>    翻譯字尾:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="106"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="106"/>
         <source>The documentation pages will be fetched from the official FreeCADwiki at https://wiki.freecad.org</source>
         <translation>文件頁面將從官方 FreeCADwiki 獲取，網址為 https://wiki.freecad.org</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="125"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="125"/>
         <source>The documentation pages will be fetched from an automatic markdown conversion of the FreeCAD wiki, hosted on FreeCAD&apos;s github account. This can be styled with a custom stylesheet below and can look nicer than the wiki option. The &apos;markdown&apos; or &apos;pandoc&apos; python module should be installed for optimal results.</source>
         <translation>文件頁面將從 FreeCAD wiki 的自動编辑器轉換中獲取，託管在 FreeCAD 的 github 帳戶上. 這可以使用下面的自訂樣式表進行樣式設定，並且看起來比 wiki 選項更好. 應該安裝“markdown”或“pandoc”python 模組以獲得最佳結果.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="153"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="153"/>
         <source>The documentation will open in a new tab inside the FreeCAD interface.</source>
         <translation>該文件將在 FreeCAD 介面內的新分頁中開啟.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="172"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="172"/>
         <source>The documentation will open in your default desktop browser.</source>
         <translation>該文件將在您的預設桌面瀏覽器中打開.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="175"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="175"/>
         <source>In your default web browser</source>
         <translation>在預設瀏覽器</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="186"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="186"/>
         <source>The documentation will open in your default web browser.</source>
         <translation>該文件將在您的預設網頁瀏覽器中開啟.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="191"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="191"/>
         <source>The documentation will open in a dockable dialog inside the FreeCAD window, which allows you to keep it open whlle working in the 3D view.</source>
         <translation>該文件將在 FreeCAD 視窗內的可停靠對話方塊中打開，這使您可以在 3D 檢視中工作時保持其開啟狀態.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="205"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="205"/>
         <source>The documentation will open in a dockable dialog inside the FreeCAD window,
 which allows you to keep it open whlle working in the 3D view.</source>
         <translation>該文件將在 FreeCAD 視窗內的可停靠對話方塊中打開，
 讓您在 3D 檢視中工作時保持其開啟狀態.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="218"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="218"/>
         <source>      Custom stylesheet:</source>
         <translation>      自訂樣式表:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="225"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="225"/>
         <source>You can here indicate the path to an alternative CSS file to be used to style the markdown pages. This will only work if you have selected the Markdown version above.</source>
         <translation>您可以在此指示用於設定 Markdown 頁面樣式的替代 CSS 檔案的路徑. 只有當您選擇了上面的 Markdown 版本時才有效.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="240"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="240"/>
         <source>You can here indicate the path to an alternative CSS file to be used
 to style the Markdown pages. This will only work if you have selected the
 Markdown version above.</source>
@@ -133,14 +133,14 @@ Markdown version above.</source>
 只有當您選擇了上面的 Markdown 版本時才有效.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="29"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Help/dlgPreferencesHelp.ui" line="29"/>
         <source>Fetches the documentation from pages rendered on GitHub.
 This is currently not available.</source>
         <translation>從 GitHub 上渲染的頁面擷取文件.
 目前尚未提供.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="33"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="33"/>
         <source>GitHub (online)</source>
         <translation>Github (線上)</translation>
     </message>
@@ -182,18 +182,18 @@ which allows you to keep it open while working in the 3D view. This requires the
 這使您可以在 3D 檢視中工作時保持其開啟. 這需要 PySide QtWebengineWidgets 元件</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="48"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="48"/>
         <source>Custom location</source>
         <translation>自訂位置</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="72"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="72"/>
         <source>A translation suffix to use, for example &quot;fr&quot;
 to get French translation of the documentation.</source>
         <translation>要使用的翻譯後綴，例如“fr”以獲取文件的法語翻譯.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="86"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Help/dlgPreferencesHelp.ui" line="86"/>
         <source>Set this to a custom URL or the folder where the help files are located.
 Documentation can be downloaded for offline use via the Addon Manager and installing the
 &quot;offline-documentation&quot; addon. If this field is left blank, FreeCAD will
@@ -205,24 +205,24 @@ automatically search for the help files at the default location
 ($USERAPPDATADIR/Mod/Documentation)中搜尋說明文件.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="112"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Help/dlgPreferencesHelp.ui" line="112"/>
         <source>Translation suffix</source>
         <translation>翻譯字尾</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="116"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="116"/>
         <source>The documentation pages will be fetched from the official
 FreeCADwiki at https://wiki.freecad.org</source>
         <translation>文件頁面將從官方 FreeCADwiki 獲取，
 其網址為 https://wiki.freecad.org</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="109"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="109"/>
         <source>FreeCAD Wiki (online)</source>
         <translation>FreeCAD Wiki (線上)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="136"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="136"/>
         <source>The documentation pages will be fetched from an automatic Markdown conversion
 of the FreeCAD wiki,hosted on FreeCAD&apos;s GitHub account. This can be styled with a
 custom stylesheet below and can look nicer than the wiki option. The &apos;Markdown&apos; or
@@ -233,64 +233,64 @@ custom stylesheet below and can look nicer than the wiki option. The &apos;Markd
 應該安裝“Markdown”或“Pandoc”Python 模組以獲得最佳結果.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="128"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="128"/>
         <source>Markdown version (online)</source>
         <translation>Markdown版本(線上)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="147"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="147"/>
         <source>Display</source>
         <translation>顯示</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="170"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Help/dlgPreferencesHelp.ui" line="170"/>
         <source>Note: if PySide Web components are not found on the system, help pages will open in the default web browser regardless of the options below.</source>
         <translation>注意: 如果在您的系統上找不到 PySide Web 元件，則無論以下選項如何，求助說明頁面都將在您的預設 Web 瀏覽器中打開.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="180"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Help/dlgPreferencesHelp.ui" line="180"/>
         <source>The documentation will open in the default web browser</source>
         <translation>該文件將在預設桌面瀏覽器中打開</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="183"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Help/dlgPreferencesHelp.ui" line="183"/>
         <source>In the default web browser</source>
         <translation>在預設瀏覽器</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="199"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Help/dlgPreferencesHelp.ui" line="199"/>
         <source>The documentation will open in a new tab inside the FreeCAD interface. This requires the PySide QtWebengineWidgets component.</source>
         <translation>該文件將在 FreeCAD 介面內的新分頁中開啟. 這需要 PySide QtWebengineWidgets 元件.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="156"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="156"/>
         <source>In a FreeCAD tab</source>
         <translation>在 FreeCAD 分頁</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="221"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Help/dlgPreferencesHelp.ui" line="221"/>
         <source>Documentation opens in a dockable dialog within FreeCAD, allowing simultaneous work in the 3D view.
 Requires the PySide QtWebengineWidgets component.</source>
         <translation>文件會在 FreeCAD 中的可停靠對話框中開啟，允許同時在 3D 檢視中工作。
 需要 PySide QtWebengineWidgets 元件.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="194"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="194"/>
         <source>In a separate, embeddable dialog</source>
         <translation>在單獨的可嵌入對話方塊中</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="210"/>
+        <location filename="../../dlgPreferencesHelp.ui" line="210"/>
         <source>Options</source>
         <translation>選項</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="249"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Help/dlgPreferencesHelp.ui" line="249"/>
         <source>Custom stylesheet</source>
         <translation>自訂樣式表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/dlgPreferencesHelp.ui" line="256"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Help/dlgPreferencesHelp.ui" line="256"/>
         <source>Specify the path to an alternative CSS file for styling Markdown pages.
 This only applies if Markdown is selected above.</source>
         <translation>指定另一個 CSS 檔案的路徑，以設定 Markdown 頁面的樣式.
@@ -359,22 +359,47 @@ to be used to style the markdown pages.</source>
 <context>
     <name>Help</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/Help.py" line="70"/>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Help/Help.py" line="75"/>
+        <source>Contents for this page could not be retrieved. Please check settings under menu Edit → Preferences → General → Help</source>
+        <translation>無法檢索此頁面的內容. 請檢查功能表下的設定 編輯 → 偏好設定 → 一般 → 説明</translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Help/Help.py" line="79"/>
+        <source>Help files location could not be determined. Please check settings under menu Edit → Preferences → General → Help</source>
+        <translation>無法確定説明檔案位置. 請檢查功能表下的設定 編輯 → 偏好設定 → 一般 → 説明</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Help/Help.py" line="78"/>
+        <source>PySide QtWebEngineWidgets module is not available. Help rendering is done with the system browser</source>
+        <translation>PySide QtWebEngineWidgets 模組不可用. 求助説明渲染是使用系統瀏覽器完成的</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Help/Help.py" line="84"/>
+        <source>There is no Markdown renderer installed on your system, so this help page is rendered as is. Please install the Markdown or Pandoc Python modules to improve the rendering of this page.</source>
+        <translation>您的系統上沒有安裝 Markdown 渲染器，因此此說明頁面按原樣渲染. 請安裝 markdown 或 pandoc python 模組以改善此頁面的渲染.</translation>
+    </message>
+    <message>
+        <location filename="../../Help.py" line="111"/>
+        <source>Help</source>
+        <translation>説明</translation>
+    </message>
+    <message>
+        <location filename="../../Help.py" line="70"/>
         <source>Contents for this page could not be retrieved. Please check settings under menu Edit -&gt; Preferences -&gt; General -&gt; Help</source>
         <translation>無法檢索此頁面的內容. 請檢查功能表下的設定 編輯 → 偏好設定 → 一般 → 説明</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/Help.py" line="74"/>
+        <location filename="../../Help.py" line="74"/>
         <source>Help files location could not be determined. Please check settings under menu Edit -&gt; Preferences -&gt; General -&gt; Help</source>
         <translation>無法確定説明檔案位置. 請檢查功能表下的設定 編輯 → 偏好設定 → 一般 → 説明</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/Help.py" line="78"/>
+        <location filename="../../Help.py" line="78"/>
         <source>PySide QtWebEngineWidgets module is not available. Help rendering is done with the Web module</source>
         <translation>PySide QtWebEngineWidgets 模組不可用. 求助説明渲染是使用 Web 模組完成的</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/Help.py" line="82"/>
+        <location filename="../../Help.py" line="82"/>
         <source>There is no markdown renderer installed on your system, so this help page is rendered as is. Please install the markdown or pandoc python modules to improve the rendering of this page.</source>
         <translation>您的系統上沒有安裝 Markdown 渲染器，因此此說明頁面按原樣渲染. 請安裝 markdown 或 pandoc python 模組以改善此頁面的渲染.</translation>
     </message>
@@ -419,11 +444,6 @@ to be used to style the markdown pages.</source>
         <translation>這是什麼?</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/Help.py" line="111"/>
-        <source>Help</source>
-        <translation>説明</translation>
-    </message>
-    <message>
         <location filename="Help.py" line="434"/>
         <source>On the web</source>
         <translation>在網路上</translation>
@@ -438,31 +458,11 @@ to be used to style the markdown pages.</source>
         <source>Shows the index page of the FreeCAD documentation</source>
         <translation>顯示 FreeCAD 文件的索引頁</translation>
     </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/Help.py" line="75"/>
-        <source>Contents for this page could not be retrieved. Please check settings under menu Edit → Preferences → General → Help</source>
-        <translation>無法檢索此頁面的內容. 請檢查功能表下的設定 編輯 → 偏好設定 → 一般 → 説明</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/Help.py" line="79"/>
-        <source>Help files location could not be determined. Please check settings under menu Edit → Preferences → General → Help</source>
-        <translation>無法確定説明檔案位置. 請檢查功能表下的設定 編輯 → 偏好設定 → 一般 → 説明</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Help/Help.py" line="78"/>
-        <source>PySide QtWebEngineWidgets module is not available. Help rendering is done with the system browser</source>
-        <translation>PySide QtWebEngineWidgets 模組不可用. 求助説明渲染是使用系統瀏覽器完成的</translation>
-    </message>
-    <message>
-        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Help/Help.py" line="84"/>
-        <source>There is no Markdown renderer installed on your system, so this help page is rendered as is. Please install the Markdown or Pandoc Python modules to improve the rendering of this page.</source>
-        <translation>您的系統上沒有安裝 Markdown 渲染器，因此此說明頁面按原樣渲染. 請安裝 markdown 或 pandoc python 模組以改善此頁面的渲染.</translation>
-    </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Help/Help.py" line="388"/>
+        <location filename="../../Help.py" line="388"/>
         <source>General</source>
         <translation>一般</translation>
     </message>

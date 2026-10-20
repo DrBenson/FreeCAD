@@ -2,10 +2,12 @@
 
 from __future__ import annotations
 
+from Base.Metadata import constmethod
 from PropertyContainer import PropertyContainer
 from DocumentObject import DocumentObject
-from typing import Final, Sequence
-
+from DocumentSettings import DocumentSettings
+from typing import Final, Literal, overload
+from collections.abc import Sequence
 
 class Document(PropertyContainer):
     """
@@ -102,6 +104,16 @@ class Document(PropertyContainer):
         """
         ...
 
+    def canWriteRecoverySnapshot(self) -> bool:
+        """
+        Return whether the document is in an App-side state that allows writing
+        a recovery snapshot.
+
+        This does not account for GUI-only constraints such as an active Gui
+        transaction.
+        """
+        ...
+
     def load(self, path: str, /) -> None:
         """
         Load the document from the given path.
@@ -133,6 +145,15 @@ class Document(PropertyContainer):
         """
         ...
 
+    @constmethod
+    def settings(self, namespace: str, /) -> DocumentSettings:
+        """
+        Return document-persisted settings for a namespace backed by this document's Meta map.
+
+        The namespace may contain dot-separated identifier segments.
+        """
+        ...
+
     def getUniqueObjectName(self, objName: str, /) -> str:
         """
         Return the same name, or the name made unique, for Example Box -> Box002 if there are conflicting name
@@ -152,7 +173,7 @@ class Document(PropertyContainer):
         """
         ...
 
-    def exportGraphviz(self, path: str = None, /) -> str | None:
+    def exportGraphviz(self, path: str = ..., /) -> str | None:
         """
         Export the dependencies of the objects as graph.
 
@@ -160,7 +181,7 @@ class Document(PropertyContainer):
         """
         ...
 
-    def openTransaction(self, name: str, /) -> None:
+    def openTransaction(self, name: str = ..., /) -> None:
         """
         Open a new Undo/Redo transaction.
 
@@ -187,17 +208,18 @@ class Document(PropertyContainer):
     def addObject(
         self,
         type: str,
-        name: str = None,
-        objProxy: object = None,
-        viewProxy: object = None,
+        name: str = ...,
+        objProxy: object | None = None,
+        viewProxy: object | None = None,
         attach: bool = False,
-        viewType: str = None,
+        viewType: str = ...,
     ) -> DocumentObject:
         """
         Add an object to document.
 
         Args:
             type: the type of the document object to create.
+                  Call method supportedTypes() to get a list of possible values.
             name: the optional name of the new object.
             objProxy: the Python binding object to attach to the new document object.
             viewProxy: the Python binding object to attach the view provider of this object.
@@ -238,7 +260,7 @@ class Document(PropertyContainer):
         """
         ...
 
-    def removeProperty(self, name: str, /) -> None:
+    def removeProperty(self, name: str, /) -> bool:
         """
         Remove a generic property.
 
@@ -246,19 +268,42 @@ class Document(PropertyContainer):
         """
         ...
 
-    def removeObject(self, name: str, /) -> None:
+    def removeObject(self, object: str | DocumentObject, /) -> None:
         """
         Remove an object from the document.
         """
         ...
 
+    @overload
+    def copyObject(
+        self,
+        object: Sequence[DocumentObject],
+        recursive: bool = False,
+        return_all: bool = False,
+    ) -> tuple[DocumentObject, ...]: ...
+
+    @overload
     def copyObject(
         self,
         object: DocumentObject,
-        *,
+        recursive: bool = False,
+        return_all: Literal[False] = False,
+    ) -> DocumentObject: ...
+
+    @overload
+    def copyObject(
+        self,
+        object: DocumentObject,
+        recursive: bool = False,
+        return_all: Literal[True] = True,
+    ) -> DocumentObject | tuple[DocumentObject, ...]: ...
+
+    def copyObject(
+        self,
+        object: DocumentObject | Sequence[DocumentObject],
         recursive: bool = False,
         return_all: bool = False,
-    ) -> tuple[DocumentObject, ...]:
+    ) -> DocumentObject | tuple[DocumentObject, ...]:
         """
         Copy an object or objects from another document to this document.
 
@@ -287,7 +332,7 @@ class Document(PropertyContainer):
 
     def importLinks(
         self,
-        object: DocumentObject = None,
+        source: DocumentObject | Sequence[DocumentObject] | None = None,
         /,
     ) -> tuple[DocumentObject, ...]:
         """
@@ -378,9 +423,9 @@ class Document(PropertyContainer):
         """
         ...
 
-    def getObject(self, name: str, /) -> DocumentObject:
+    def getObject(self, name: str | int, /) -> DocumentObject | None:
         """
-        Return the object with the given name
+        Return the object with the given name or ID, or None if it does not exist.
         """
         ...
 
@@ -394,9 +439,9 @@ class Document(PropertyContainer):
 
     def findObjects(
         self,
-        Type: str = None,
-        Name: str = None,
-        Label: str = None,
+        Type: str = ...,
+        Name: str = ...,
+        Label: str = ...,
     ) -> list[DocumentObject]:
         """
         Return a list of objects that match the specified type, name or label.
@@ -412,7 +457,7 @@ class Document(PropertyContainer):
 
     def getLinksTo(
         self,
-        obj: DocumentObject,
+        obj: DocumentObject | None = None,
         options: int = 0,
         maxCount: int = 0,
         /,
@@ -432,17 +477,27 @@ class Document(PropertyContainer):
         """
         ...
 
-    def getTempFileName(self) -> str:
+    def getTempFileName(self, name: str, /) -> str:
         """
-        Returns a file name with path in the temp directory of the document.
+        Returns a unique file name, based on the given name, with a path in the temp directory of
+        the document.
         """
         ...
 
-    def getDependentDocuments(self, sort: bool = True, /) -> list[DocumentObject]:
+    def getDependentDocuments(self, sort: bool = True, /) -> list[Document]:
         """
         Returns a list of documents that this document directly or indirectly links to including itself.
 
         Args:
             sort: whether to topologically sort the return list
+        """
+        ...
+
+    def getBookedTransactionID(self) -> int:
+        """
+        getBookedTransactionID() -> int
+
+        Returns the currently booked transaction id, which is the id of the current transaction OR the id
+        the next transaction will stick to if no change has occurred yet
         """
         ...

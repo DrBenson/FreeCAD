@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jan Rheinländer                                    *
  *                                   <jrheinlaender@users.sourceforge.net> *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef GUI_TASKVIEW_TaskFemConstraint_H
-#define GUI_TASKVIEW_TaskFemConstraint_H
+#pragma once
 
 #include <Gui/DocumentObserver.h>
 #include <Gui/Selection/Selection.h>
@@ -112,6 +113,7 @@ public:
     bool accept() override;
     /// is called by the framework if the dialog is rejected (Cancel)
     bool reject() override;
+
     bool isAllowedAlterDocument() const override
     {
         return false;
@@ -134,5 +136,3 @@ protected:
 };
 
 }  // namespace FemGui
-
-#endif  // GUI_TASKVIEW_TaskFemConstraint_H

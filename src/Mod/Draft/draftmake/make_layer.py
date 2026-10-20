@@ -24,6 +24,7 @@
 # *                                                                         *
 # ***************************************************************************
 """Provides functions to create Layer objects."""
+
 ## @package make_layer
 # \ingroup draftmake
 # \brief Provides functions to create Layer objects.
@@ -35,6 +36,7 @@ from draftobjects.layer import Layer, LayerContainer
 from draftutils import utils
 from draftutils.messages import _err
 from draftutils.translate import translate
+from freecad.deprecation import deprecated
 
 if App.GuiUp:
     from draftviewproviders.view_layer import ViewProviderLayer, ViewProviderLayerContainer
@@ -70,10 +72,13 @@ def get_layer_container():
     return obj
 
 
+@deprecated(
+    deprecated_in="26.3",
+    removed_in="28.3",
+    replacement="Draft.get_layer_container()",
+)
 def getLayerContainer():
-    """Get the Layer container. DEPRECATED. Use 'get_layer_container'."""
-    utils.use_instead("get_layer_container")
-
+    """DEPRECATED. Use 'get_layer_container'."""
     return get_layer_container()
 
 

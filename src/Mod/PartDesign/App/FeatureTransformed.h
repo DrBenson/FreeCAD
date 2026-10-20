@@ -23,10 +23,11 @@
  ******************************************************************************/
 
 
-#ifndef PARTDESIGN_FeatureTransformed_H
-#define PARTDESIGN_FeatureTransformed_H
+#pragma once
 
 #include <gp_Trsf.hxx>
+
+#include <list>
 
 #include <App/PropertyStandard.h>
 #include "FeatureRefine.h"
@@ -56,6 +57,7 @@ public:
      */
     App::PropertyLinkList Originals;
     App::PropertyEnumeration TransformMode;
+    App::PropertyIntegerList SuppressedIndices;
     App::PropertyBool Refine;
 
     /**
@@ -68,6 +70,10 @@ public:
     Part::Feature* getBaseObject(bool silent = false) const override;
 
     virtual std::vector<App::DocumentObject*> getOriginals() const;
+    /** Returns the list of original features sorted in chronological order of
+     *  the parent Body's history (retaining suppressed features).
+     */
+    std::vector<App::DocumentObject*> getSortedOriginals() const;
 
     /// Return the sketch of the first original
     App::DocumentObject* getSketchObject() const;
@@ -81,6 +87,22 @@ public:
     {
         return std::list<gp_Trsf>();  // Default method
     }
+
+    /// Whether the first transformation is already represented by the original support.
+    virtual bool hasOriginalTransformation() const
+    {
+        return true;
+    }
+    /// Whether the first transformation should be overwritten represented by the original support.
+    virtual bool deleteOriginalTransformation() const
+    {
+        return false;
+    }
+    virtual bool isTransformationSuppressed(int index) const;
+    virtual void setTransformationSuppressed(int index, bool suppressed);
+    const std::list<gp_Trsf> getFilteredTransformations(
+        const std::vector<App::DocumentObject*> originals
+    );
 
     /** @name methods override feature */
     //@{
@@ -119,6 +141,3 @@ private:
 };
 
 }  // namespace PartDesign
-
-
-#endif  // PARTDESIGN_FeatureTransformed_H

@@ -21,8 +21,7 @@
  ***************************************************************************/
 
 
-#ifndef GUI_COMMAND_T_H
-#define GUI_COMMAND_T_H
+#pragma once
 
 #include <App/Document.h>
 #include <App/DocumentObject.h>
@@ -80,6 +79,11 @@ public:
         return toStr(f % std::forward<T>(t), std::forward<Args>(args)...);
     }
 };
+
+inline const char* asString(bool value)
+{
+    return value ? "True" : "False";
+}
 
 /** @defgroup CommandFuncs Helper functions for running commands through Python interpreter */
 //@{
@@ -298,14 +302,14 @@ void cmdAppDocumentArgs(const App::Document* doc, const std::string& cmd, Args&&
         );
     }
     catch (const std::exception& e) {
-        Base::Console().developerError(doc->Label.getStrValue(), "%s: %s\n", e.what(), cmd.c_str());
+        Base::Console().developerError(doc->Label.getStrValue(), "{}: {}\n", e.what(), cmd);
     }
     catch (const Base::Exception&) {
         Base::Console().developerError(
             doc->Label.getStrValue(),
-            "App.getDocument('%s').%s\n",
+            "App.getDocument('{}').{}\n",
             doc->getName(),
-            _cmd.c_str()
+            _cmd
         );
         throw;
     }
@@ -448,15 +452,15 @@ void cmdAppObjectArgs(const App::DocumentObject* obj, const std::string& cmd, Ar
         );
     }
     catch (const std::exception& e) {
-        Base::Console().developerError(obj->getFullLabel(), "%s: %s\n", e.what(), cmd.c_str());
+        Base::Console().developerError(obj->getFullLabel(), "{}: {}\n", e.what(), cmd);
     }
     catch (const Base::Exception&) {
         Base::Console().developerError(
             obj->getFullLabel(),
-            "App.getDocument('%s').getObject('%s').%s\n",
+            "App.getDocument('{}').getObject('{}').{}\n",
             obj->getDocument()->getName(),
             obj->getNameInDocument(),
-            _cmd.c_str()
+            _cmd
         );
         throw;
     }
@@ -484,15 +488,15 @@ void cmdGuiObjectArgs(const App::DocumentObject* obj, const std::string& cmd, Ar
         );
     }
     catch (const std::exception& e) {
-        Base::Console().developerError(obj->getFullLabel(), "%s: %s\n", e.what(), cmd.c_str());
+        Base::Console().developerError(obj->getFullLabel(), "{}: {}\n", e.what(), cmd);
     }
     catch (const Base::Exception&) {
         Base::Console().developerError(
             obj->getFullLabel(),
-            "Gui.getDocument('%s').getObject('%s').%s\n",
+            "Gui.getDocument('{}').getObject('{}').{}\n",
             obj->getDocument()->getName(),
             obj->getNameInDocument(),
-            _cmd.c_str()
+            _cmd
         );
         throw;
     }
@@ -524,10 +528,10 @@ void doCommandT(Gui::Command::DoCmd_Type cmdType, const std::string& cmd, Args&&
         Gui::Command::doCommand(cmdType, "%s", _cmd.c_str());
     }
     catch (const std::exception& e) {
-        Base::Console().developerError("doCommandT", "%s: %s\n", e.what(), cmd.c_str());
+        Base::Console().developerError("doCommandT", "{}: {}\n", e.what(), cmd);
     }
     catch (const Base::Exception&) {
-        Base::Console().developerError("doCommandT", "%s\n", _cmd.c_str());
+        Base::Console().developerError("doCommandT", "{}\n", _cmd);
         throw;
     }
 }
@@ -544,5 +548,3 @@ void copyVisualT(Args&&... args)
 //@}
 
 };  // namespace Gui
-
-#endif  // GUI_COMMAND_T_H

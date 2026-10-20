@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2020 Bernd Hahnebach <bernd@bimstatik.org>              *
 # *                                                                         *
@@ -59,6 +61,7 @@ class FemMigrateGui:
             "femguiobjects._ViewProviderFemMeshResult",
             "femguiobjects._ViewProviderFemResultMechanical",
             "femguiobjects._ViewProviderFemSolverCalculix",
+            "femviewprovider.view_constraint_electrostaticpotential",
             "PyGui",
             "PyGui._ViewProviderFemConstraintBodyHeatSource",
             "PyGui._ViewProviderFemConstraintElectrostaticPotential",
@@ -117,10 +120,10 @@ class FemMigrateGui:
                 femviewprovider.view_constraint_bodyheatsource.VPConstraintBodyHeatSource
             )
         if module.__name__ == "femguiobjects._ViewProviderFemConstraintElectrostaticPotential":
-            import femviewprovider.view_constraint_electrostaticpotential
+            import femviewprovider.view_constraint_electromagnetic
 
             module.ViewProxy = (
-                femviewprovider.view_constraint_electrostaticpotential.VPConstraintElectroStaticPotential
+                femviewprovider.view_constraint_electromagnetic.VPConstraintElectromagnetic
             )
         if module.__name__ == "femguiobjects._ViewProviderFemConstraintFlowVelocity":
             import femviewprovider.view_constraint_flowvelocity
@@ -218,6 +221,12 @@ class FemMigrateGui:
             module._ViewProviderFemSolverCalculix = (
                 femviewprovider.view_solver_ccxtools.VPSolverCcxTools
             )
+        if module.__name__ == "femviewprovider.view_constraint_electrostaticpotential":
+            import femviewprovider.view_constraint_electromagnetic
+
+            module.VPConstraintElectroStaticPotential = (
+                femviewprovider.view_constraint_electromagnetic.VPConstraintElectromagnetic
+            )
 
         if module.__name__ == "PyGui":
             module.__path__ = "PyGui"
@@ -231,7 +240,7 @@ class FemMigrateGui:
             import femviewprovider.view_constraint_electrostaticpotential
 
             module.ViewProxy = (
-                femviewprovider.view_constraint_electrostaticpotential.VPConstraintElectroStaticPotential
+                femviewprovider.view_constraint_electromagnetic.VPConstraintElectromagnetic
             )
         if module.__name__ == "PyGui._ViewProviderFemConstraintFlowVelocity":
             import femviewprovider.view_constraint_flowvelocity

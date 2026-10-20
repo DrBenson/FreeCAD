@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Luke Parry <l.parry@warwick.ac.uk>                 *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAWGUI_QGRAPHICSITEMVIEWDATUMLABEL_H
-#define TECHDRAWGUI_QGRAPHICSITEMVIEWDATUMLABEL_H
+#pragma once
 
 #include <QGraphicsObject>
 
@@ -125,10 +126,9 @@ private:
     bool m_ctrl;
 
     DragState m_dragState;
+    bool m_inhibitSnapOnPosChange{false};
 
 private:
 };
 
 }  // namespace TechDrawGui
-
-#endif

@@ -29,7 +29,7 @@
     <message>
       <location filename="../../Command.cpp" line="142"/>
       <source>Plane</source>
-      <translation>Площини</translation>
+      <translation>Площина</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="143"/>
@@ -234,11 +234,11 @@
     <message>
       <location filename="../../FitBSplineSurface.cpp" line="160"/>
       <source>Placement</source>
-      <translation>Розташувати</translation>
+      <translation>Розміщення</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.cpp" line="242"/>
-      <location filename="../../FitBSplineCurve.cpp" line="138"/>
+      <location filename="../../FitBSplineCurve.cpp" line="152"/>
       <source>Fit B-spline</source>
       <translation>Розмістити B-сплайн</translation>
     </message>
@@ -338,13 +338,13 @@
     <message>
       <location filename="../../FitBSplineSurface.cpp" line="171"/>
       <location filename="../../FitBSplineSurface.cpp" line="249"/>
-      <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <source>Input Error</source>
+      <translation>Помилка введення</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.cpp" line="215"/>
       <source>Wrong selection</source>
-      <translation>Невірний вибір</translation>
+      <translation>Неправильний вибір</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.cpp" line="216"/>
@@ -381,8 +381,8 @@
     </message>
     <message>
       <location filename="../../Poisson.cpp" line="94"/>
-      <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <source>Input Error</source>
+      <translation>Помилка введення</translation>
     </message>
   </context>
   <context>
@@ -392,7 +392,7 @@
       <location filename="../../Command.cpp" line="120"/>
       <location filename="../../Command.cpp" line="612"/>
       <source>Wrong selection</source>
-      <translation>Невірний вибір</translation>
+      <translation>Неправильний вибір</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="82"/>
@@ -433,7 +433,7 @@
     <message>
       <location filename="../../Segmentation.ui" line="37"/>
       <source>Plane</source>
-      <translation>Площини</translation>
+      <translation>Площина</translation>
     </message>
     <message>
       <location filename="../../Segmentation.ui" line="46"/>
@@ -476,7 +476,7 @@
     <message>
       <location filename="../../SegmentationManual.ui" line="61"/>
       <source>All</source>
-      <translation>Всі</translation>
+      <translation>Усі</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="81"/>
@@ -511,7 +511,7 @@
     <message>
       <location filename="../../SegmentationManual.ui" line="122"/>
       <source>Plane</source>
-      <translation>Площини</translation>
+      <translation>Площина</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="128"/>
@@ -590,6 +590,26 @@
       <source>Reverse Engineering</source>
       <translation>Зворотнє проектування</translation>
     </message>
+    <message>
+      <location filename="../../Workbench.cpp" line="36"/>
+      <source>&amp;Reverse Engineering</source>
+      <translation type="unfinished">&amp;Reverse Engineering</translation>
+    </message>
+    <message>
+      <location filename="../../Workbench.cpp" line="37"/>
+      <source>Surface Reconstruction</source>
+      <translation type="unfinished">Surface Reconstruction</translation>
+    </message>
+    <message>
+      <location filename="../../Workbench.cpp" line="38"/>
+      <source>Segmentation</source>
+      <translation>Сегментація</translation>
+    </message>
+    <message>
+      <location filename="../../Workbench.cpp" line="39"/>
+      <source>Approximation</source>
+      <translation type="unfinished">Approximation</translation>
+    </message>
   </context>
   <context>
     <name>ReenGui::FitBSplineCurve</name>
@@ -620,8 +640,8 @@
     </message>
     <message>
       <location filename="../../FitBSplineCurve.ui" line="47"/>
-      <source>Iso-Parametric</source>
-      <translation>Ізопараметричний</translation>
+      <source>Equidistant</source>
+      <translation type="unfinished">Equidistant</translation>
     </message>
     <message>
       <location filename="../../FitBSplineCurve.ui" line="55"/>
@@ -720,9 +740,9 @@
   <context>
     <name>ReenGui::FitBSplineCurveWidget</name>
     <message>
-      <location filename="../../FitBSplineCurve.cpp" line="89"/>
-      <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <location filename="../../FitBSplineCurve.cpp" line="103"/>
+      <source>Input Error</source>
+      <translation>Помилка введення</translation>
     </message>
   </context>
 </TS>

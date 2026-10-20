@@ -22,8 +22,7 @@
  ***************************************************************************/
 
 
-#ifndef ASSEMBLY_AssemblyUtils_H
-#define ASSEMBLY_AssemblyUtils_H
+#pragma once
 
 #include <GeomAbs_CurveType.hxx>
 #include <GeomAbs_SurfaceType.hxx>
@@ -45,6 +44,9 @@ class Placement;
 
 namespace Assembly
 {
+
+/// Whether a generated link element is excluded from assembly operations.
+bool isSuppressedLinkElement(const App::DocumentObject* obj);
 
 // This enum has to be the same as the one in JointObject.py
 enum class JointType
@@ -189,8 +191,6 @@ AssemblyExport std::vector<std::string> getSubAsList(
     const char* propName
 );
 AssemblyExport void syncPlacements(App::DocumentObject* src, App::DocumentObject* to);
+AssemblyExport double getJointCurrentValue(App::DocumentObject* joint, bool isAngle);
 
 }  // namespace Assembly
-
-
-#endif  // ASSEMBLY_AssemblyUtils_H

@@ -28,6 +28,8 @@
 #include "PathPy.h"
 #include "PathPy.cpp"
 
+#include "Area.h"
+#include "AreaPy.h"
 #include "CommandPy.h"
 
 
@@ -194,9 +196,9 @@ PyObject* PathPy::deleteCommand(PyObject* args)
 
 PyObject* PathPy::getCycleTime(PyObject* args) const
 {
-    double hFeed, vFeed, hRapid, vRapid;
-    if (PyArg_ParseTuple(args, "dddd", &hFeed, &vFeed, &hRapid, &vRapid)) {
-        return PyFloat_FromDouble(getToolpathPtr()->getCycleTime(hFeed, vFeed, hRapid, vRapid));
+    double hFeed, vFeed, rapid;
+    if (PyArg_ParseTuple(args, "ddd", &hFeed, &vFeed, &rapid)) {
+        return PyFloat_FromDouble(getToolpathPtr()->getCycleTime(hFeed, vFeed, rapid));
     }
     return nullptr;
 }
@@ -234,4 +236,26 @@ PyObject* PathPy::getCustomAttributes(const char* /*attr*/) const
 int PathPy::setCustomAttributes(const char* /*attr*/, PyObject* /*obj*/)
 {
     return 0;
+}
+
+PyObject* PathPy::getClearedArea(PyObject* args)
+{
+    PY_TRY
+    {
+        PyObject* pyBbox;
+        double diameter, zmax;
+        if (!PyArg_ParseTuple(args, "ddO", &diameter, &zmax, &pyBbox)) {
+            return nullptr;
+        }
+        if (!PyObject_TypeCheck(pyBbox, &(Base::BoundBoxPy::Type))) {
+            PyErr_SetString(PyExc_TypeError, "bbox must be of type BoundBoxPy");
+            return nullptr;
+        }
+        const Py::BoundingBox bbox(pyBbox, false);
+        std::shared_ptr<Area> clearedArea
+            = Area::getClearedArea(getToolpathPtr(), diameter, zmax, bbox.getValue());
+        auto pyClearedArea = Py::asObject(new AreaPy(new Area(*clearedArea, true)));
+        return Py::new_reference_to(pyClearedArea);
+    }
+    PY_CATCH
 }

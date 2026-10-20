@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Luke Parry <l.parry@warwick.ac.uk>                 *
  *                                                                         *
@@ -37,7 +39,10 @@
 #include <Base/Parameter.h>
 #include <Base/Tools.h>
 #include <Base/UnitsApi.h>
+#include <Gui/Application.h>
 #include <Gui/Command.h>
+#include <Mod/TechDraw/App/DrawComplexSection.h>
+#include <Gui/Document.h>
 #include <Mod/TechDraw/App/DrawUtil.h>
 #include <Mod/TechDraw/App/DrawViewDimension.h>
 #include <Mod/TechDraw/App/DrawViewPart.h>
@@ -76,7 +81,7 @@ enum class SnapMode
 };
 
 
-QGIViewDimension::QGIViewDimension() : dvDimension(nullptr), hasHover(false), m_lineWidth(0.0)
+QGIViewDimension::QGIViewDimension() : dvDimension(nullptr), hasHover(false), m_lineWidth(0.0), isAreaLeaderPointDragged(false)
 {
     setHandlesChildEvents(false);
     setFlag(QGraphicsItem::ItemIsMovable, false);
@@ -87,7 +92,17 @@ QGIViewDimension::QGIViewDimension() : dvDimension(nullptr), hasHover(false), m_
     datumLabel = new QGIDatumLabel();
     datumLabel->setQDim(this);
 
+    // origin label for area dimensions
+    areaLeaderPointLabel = new QGIDatumLabel();
+    areaLeaderPointLabel->setQDim(this);
+
     addToGroup(datumLabel);
+    addToGroup(areaLeaderPointLabel);
+
+
+    // set frame to area dim origin label
+    // to enable better selection of label
+    areaLeaderPointLabel->setFramed(true);
 
     dimLines = new QGIDimLines();
     addToGroup(dimLines);
@@ -99,6 +114,7 @@ QGIViewDimension::QGIViewDimension() : dvDimension(nullptr), hasHover(false), m_
     addToGroup(aHead2);
 
     datumLabel->setZValue(ZVALUE::DIMENSION);
+    areaLeaderPointLabel->setZValue(ZVALUE::DIMENSION);
     aHead1->setZValue(ZVALUE::DIMENSION);
     aHead2->setZValue(ZVALUE::DIMENSION);
     dimLines->setZValue(ZVALUE::DIMENSION);
@@ -114,6 +130,15 @@ QGIViewDimension::QGIViewDimension() : dvDimension(nullptr), hasHover(false), m_
     QObject::connect(datumLabel, &QGIDatumLabel::hover, this, &QGIViewDimension::hover);
 
     QObject::connect(datumLabel, &QGIDatumLabel::setPretty, this, &QGIViewDimension::onPrettyChanged);
+
+    // connect area dim leader point signals
+    QObject::connect(areaLeaderPointLabel, &QGIDatumLabel::dragging, this, &QGIViewDimension::areaLeaderPointLabelDragged);
+
+    QObject::connect(areaLeaderPointLabel, &QGIDatumLabel::selected, this, &QGIViewDimension::select);
+
+    QObject::connect(areaLeaderPointLabel, &QGIDatumLabel::hover, this, &QGIViewDimension::hover);
+
+    // ---------
 
     setZValue(ZVALUE::DIMENSION);//note: this won't paint dimensions over another View if it stacks
                                  //above this Dimension's parent view.   need Layers?
@@ -157,7 +182,7 @@ bool QGIViewDimension::getGroupSelection()
 //Set selection state for this and its children
 void QGIViewDimension::setGroupSelection(bool isSelected)
 {
-    //    Base::Console().message("QGIVD::setGroupSelection(%d)\n", b);
+    //    Base::Console().message("QGIVD::setGroupSelection({})\n", b);
     setSelected(isSelected);
     datumLabel->setSelected(isSelected);
     dimLines->setSelected(isSelected);
@@ -184,7 +209,7 @@ void QGIViewDimension::setViewPartFeature(TechDraw::DrawViewDimension* obj)
     if (!obj) {
         return;
     }
-
+    
     setViewFeature(static_cast<TechDraw::DrawView*>(obj));
     dvDimension = obj;
 
@@ -210,7 +235,7 @@ void QGIViewDimension::setNormalColorAll()
 //and so mouse events need to be ignored.  Only the QGIDatumLabel mouse events are relevant.
 void QGIViewDimension::mousePressEvent(QGraphicsSceneMouseEvent* event)
 {
-    //    Base::Console().message("QGIVD::mousePressEvent() - %s\n", getViewName());
+    //    Base::Console().message("QGIVD::mousePressEvent() - {}\n", getViewName());
     QGraphicsItem::mousePressEvent(event);
 }
 
@@ -221,7 +246,7 @@ void QGIViewDimension::mouseMoveEvent(QGraphicsSceneMouseEvent* event)
 
 void QGIViewDimension::mouseReleaseEvent(QGraphicsSceneMouseEvent* event)
 {
-    //    Base::Console().message("QGIVDim::mouseReleaseEvent() - %s\n", getViewName());
+    //    Base::Console().message("QGIVDim::mouseReleaseEvent() - {}\n", getViewName());
     QGraphicsItem::mouseReleaseEvent(event);
 }
 
@@ -294,6 +319,13 @@ void QGIViewDimension::datumLabelDragged(bool ctrl)
     draw();
 }
 
+void QGIViewDimension::areaLeaderPointLabelDragged()
+{
+    if (!areaLeaderPointLabel->isSelected()) return;
+    if (!isAreaLeaderPointDragged) { isAreaLeaderPointDragged = true; }
+    draw();
+}
+
 void QGIViewDimension::datumLabelDragFinished()
 {
     auto dim(dynamic_cast<TechDraw::DrawViewDimension*>(getViewObject()));
@@ -303,12 +335,14 @@ void QGIViewDimension::datumLabelDragFinished()
     }
 
     double x = Rez::appX(datumLabel->X()), y = Rez::appX(datumLabel->Y());
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Drag Dimension"));
+
+    int tid = Gui::Command::openActiveDocumentCommand(QT_TRANSLATE_NOOP("Command", "Drag Dimension"));
+
     Gui::Command::doCommand(Gui::Command::Doc, "App.ActiveDocument.%s.X = %f",
                             dim->getNameInDocument(), x);
     Gui::Command::doCommand(Gui::Command::Doc, "App.ActiveDocument.%s.Y = %f",
                             dim->getNameInDocument(), -y);
-    Gui::Command::commitCommand();
+    Gui::Command::commitCommand(tid);
 }
 
 //this is for formatting and finding centers, not display
@@ -385,7 +419,7 @@ void QGIViewDimension::draw()
             drawArea(dim, vp);
         }
         else {
-            Base::Console().error("QGIVD::draw - this DimensionType is unknown: %s\n", dimType);
+            Base::Console().error("QGIVD::draw - this DimensionType is unknown: {}\n", dimType);
         }
     }
     else {
@@ -691,7 +725,7 @@ bool QGIViewDimension::constructDimensionLine(
     // The start position > 0 is not expected, the caller must handle this
     if (startPosition > 0.0) {
         Base::Console().error(
-            "QGIVD::constructDimLine - Start Position must not be positive! Received: %f\n",
+            "QGIVD::constructDimLine - Start Position must not be positive! Received: {:f}\n",
             startPosition);
         return false;
     }
@@ -763,7 +797,7 @@ bool QGIViewDimension::constructDimensionArc(
     // The start rotation > 0 is not expected, the caller must handle this
     if (startRotation > 0.0) {
         Base::Console().error(
-            "QGIVD::constructDimArc - Start Rotation must not be positive! Received: %f\n",
+            "QGIVD::constructDimArc - Start Rotation must not be positive! Received: {:f}\n",
             startRotation);
         return false;
     }
@@ -1246,7 +1280,7 @@ void QGIViewDimension::drawDistanceExecutive(const Base::Vector2d& startPoint,
     }
     else {
         Base::Console().error(
-            "QGIVD::drawDistanceExecutive - this Standard&Style is not supported: %d\n",
+            "QGIVD::drawDistanceExecutive - this Standard&Style is not supported: {}\n",
             standardStyle);
         arrowCount = 0;
     }
@@ -1457,7 +1491,7 @@ void QGIViewDimension::drawDistanceOverride(const Base::Vector2d& startPoint,
     }
     else {
         Base::Console().error(
-            "QGIVD::drawDistanceExecutive - this Standard&Style is not supported: %d\n",
+            "QGIVD::drawDistanceExecutive - this Standard&Style is not supported: {}\n",
             standardStyle);
         arrowCount = 0;
     }
@@ -1704,7 +1738,7 @@ void QGIViewDimension::drawRadiusExecutive(const Base::Vector2d& centerPoint,
     }
     else {
         Base::Console().error(
-            "QGIVD::drawRadiusExecutive - this Standard&Style is not supported: %d\n",
+            "QGIVD::drawRadiusExecutive - this Standard&Style is not supported: {}\n",
             standardStyle);
     }
 
@@ -1776,7 +1810,7 @@ void QGIViewDimension::drawAreaExecutive(const Base::Vector2d& centerPoint, doub
     }
     else {
         Base::Console().error(
-            "QGIVD::drawRadiusExecutive - this Standard&Style is not supported: %d\n",
+            "QGIVD::drawRadiusExecutive - this Standard&Style is not supported: {}\n",
             standardStyle);
     }
 
@@ -1977,7 +2011,7 @@ void QGIViewDimension::drawDiameter(TechDraw::DrawViewDimension* dimension,
                 labelRectangle, 2, standardStyle, flipArrows);
         }
         else {
-            Base::Console().error("QGIVD::drawRadius - this Standard&Style is not supported: %d\n",
+            Base::Console().error("QGIVD::drawRadius - this Standard&Style is not supported: {}\n",
                                   standardStyle);
         }
 
@@ -2038,6 +2072,12 @@ void QGIViewDimension::drawAngle(TechDraw::DrawViewDimension* dimension,
     Base::Vector2d angleVertex = fromQtApp(anglePoints.vertex());
     Base::Vector2d firstDimPoint = fromQtApp(anglePoints.first());
     Base::Vector2d secondDimPoint = fromQtApp(anglePoints.second());
+    
+    bool supplementary = dimension->ShowSupplementary.getValue();
+    if (supplementary) {
+        // flip the first point wrt. vertex to opposite side
+        firstDimPoint = angleVertex - (firstDimPoint - angleVertex);
+    }
 
     double endAngle = (secondDimPoint - angleVertex).Angle();
     double startAngle = (firstDimPoint - angleVertex).Angle();
@@ -2074,7 +2114,7 @@ void QGIViewDimension::drawAngle(TechDraw::DrawViewDimension* dimension,
             jointDirections[0] = getAsmeRefJointPoint(labelRectangle, false) - angleVertex;
             jointDirections[1] = getAsmeRefJointPoint(labelRectangle, true) - angleVertex;
         }
-
+         
         // Get radiuses of the angle dimension arcs
         double arcRadii[2];
         arcRadii[0] = jointDirections[0].Length();
@@ -2171,7 +2211,7 @@ void QGIViewDimension::drawAngle(TechDraw::DrawViewDimension* dimension,
                          flipArrows);
     }
     else {
-        Base::Console().error("QGIVD::drawAngle - this Standard&Style is not supported: %d\n",
+        Base::Console().error("QGIVD::drawAngle - this Standard&Style is not supported: {}\n",
                               standardStyle);
         arrowCount = 0;
     }
@@ -2202,7 +2242,7 @@ void QGIViewDimension::drawAngle(TechDraw::DrawViewDimension* dimension,
 
         if (arrowCount > 1) {
             extensionTarget = computeExtensionLinePoints(
-                firstDimPoint, angleVertex + Base::Vector2d::FromPolar(arcRadius, startAngle),
+                supplementary ? angleVertex : firstDimPoint, angleVertex + Base::Vector2d::FromPolar(arcRadius, startAngle),
                 startAngle, getDefaultExtensionLineOverhang(), gapSize, extensionOrigin);
             anglePath.moveTo(toQtGui(extensionOrigin));
             anglePath.lineTo(toQtGui(extensionTarget));
@@ -2221,9 +2261,51 @@ void QGIViewDimension::drawArea(TechDraw::DrawViewDimension* dimension,
         fromQtGui(mapRectFromItem(datumLabel, datumLabel->tightBoundingRect())));
     areaPoint areaPoint = dimension->getAreaPoint();
 
+    Base::Vector2d origin;
+    if (isAreaLeaderPointDragged) {
+        // if origin has been dragged, use the new coordinates
+        origin = Base::Vector2d(Rez::appX(areaLeaderPointLabel->X()), -Rez::appX(areaLeaderPointLabel->Y()));
+
+        // check if the origin falls inside the face
+        auto refs = dimension->getReferences2d();
+        if (refs.empty()) { return; }
+
+        auto face = dimension->getViewPart()->getFace(refs[0].getSubName());
+        if (!face) { return; }
+
+        TopoDS_Face occFace = face->toOccFace();
+        if (occFace.IsNull()) { return; }
+
+        Base::Vector3d testPt(origin.x, -origin.y, 0.0);
+        if (DrawComplexSection::pointOnFace(testPt, occFace)) {
+            // if point is on face : save location for later use
+            dimension->AreaLeaderPoint.setValue(Base::Vector3d(origin.x, -origin.y, 0.0));
+        }
+        else {
+            // if point is outside face : reset label to last valid location
+            origin = fromQtApp(dimension->AreaLeaderPoint.getValue());
+            areaLeaderPointLabel->blockSignals(true);
+            areaLeaderPointLabel->setPosFromCenter(toQtGui(origin).x(), toQtGui(origin).y());
+            areaLeaderPointLabel->blockSignals(false);
+        }
+        
+    } 
+    else {
+        // use clicked location or area center as default origin
+        origin = fromQtApp(
+            dimension->UseAreaLeaderPoint.getValue() ? dimension->AreaLeaderPoint.getValue()
+                                                     : areaPoint.center );
+    }
+
     drawAreaExecutive(
-        fromQtApp(areaPoint.center), areaPoint.area, labelRectangle, 0.0, viewProvider->StandardAndStyle.getValue(),
+        origin, areaPoint.area, labelRectangle, 0.0, viewProvider->StandardAndStyle.getValue(),
         viewProvider->RenderingExtent.getValue(), viewProvider->FlipArrowheads.getValue());
+
+    // update the origin label to dragged position
+    if (!isAreaLeaderPointDragged) {
+        const QPointF qp = toQtGui(origin);
+        areaLeaderPointLabel->setPosFromCenter(qp.x(), qp.y());
+    }
 }
 
 QColor QGIViewDimension::prefNormalColor()
@@ -2296,14 +2378,14 @@ Base::Vector3d QGIViewDimension::findIsoExt(Base::Vector3d dir) const
     }
 
     //tarfu
-    Base::Console().message("QGIVD::findIsoExt - %s - input is not iso axis\n",
+    Base::Console().message("QGIVD::findIsoExt - {} - input is not iso axis\n",
                             getViewObject()->getNameInDocument());
     return Base::Vector3d(1, 0, 0);
 }
 
 void QGIViewDimension::onPrettyChanged(int state)
 {
-    //    Base::Console().message("QGIVD::onPrettyChange(%d)\n", state);
+    //    Base::Console().message("QGIVD::onPrettyChange({})\n", state);
     if (state == NORMAL) {
         setPrettyNormal();
     }

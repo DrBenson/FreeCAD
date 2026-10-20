@@ -308,11 +308,7 @@ void ToolBarGrip::mouseMoveEvent(QMouseEvent* me)
         return;
     }
 
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    QPoint pos = me->globalPos();
-#else
     QPoint pos = me->globalPosition().toPoint();
-#endif
     QRect rect(toolbar->mapToGlobal(QPoint(0, 0)), toolbar->size());
 
     // if mouse did not leave the area of toolbar do not continue with undocking it
@@ -433,8 +429,17 @@ void ToolBarManager::setupStatusBar()
         sb->installEventFilter(this);
         statusBarAreaWidget
             = new ToolBarAreaWidget(sb, ToolBarArea::StatusBarToolBarArea, hStatusBar, connParam);
-        statusBarAreaWidget->setObjectName(QStringLiteral("StatusBarArea"));
-        sb->insertPermanentWidget(2, statusBarAreaWidget);
+        // Register through MainWindow's status-bar registry so ordering/layout is
+        // owned centrally. No title => not user-toggleable; it is an infrastructure
+        // host for toolbars the user drags into the status bar.
+        getMainWindow()->addStatusBarItem(
+            statusBarAreaWidget,
+            {.id = "StatusBarArea",
+             .title = {},
+             .slot = StatusBarSlot::Right,
+             .order = 500,
+             .persistentVisibility = false}
+        );
         statusBarAreaWidget->show();
     }
 }
@@ -628,8 +633,10 @@ int ToolBarManager::toolBarIconSize(QWidget* widget) const
                 s *= 0.6;
             }
         }
-        else if (widget->parentWidget() == menuBarLeftAreaWidget
-                 || widget->parentWidget() == menuBarRightAreaWidget) {
+        else if (
+            widget->parentWidget() == menuBarLeftAreaWidget
+            || widget->parentWidget() == menuBarRightAreaWidget
+        ) {
             if (_menuBarIconSize > 0) {
                 s = _menuBarIconSize;
             }
@@ -645,7 +652,7 @@ void ToolBarManager::setupToolBarIconSize()
 {
     int s = toolBarIconSize();
     getMainWindow()->setIconSize(QSize(s, s));
-    // Most of the the toolbar will have explicit icon size, so the above call
+    // Most of the toolbar will have explicit icon size, so the above call
     // to QMainWindow::setIconSize() will have no effect. We need to explicitly
     // change the icon size.
     QList<QToolBar*> bars = getMainWindow()->findChildren<QToolBar*>();
@@ -656,6 +663,13 @@ void ToolBarManager::setupToolBarIconSize()
 
 void ToolBarManager::setToolBarIconSize(QToolBar* toolbar)
 {
+    // Toolbars registered as status-bar items are direct children of QStatusBar,
+    // and own their icon size. Toolbars hosted in statusBarAreaWidget still use
+    // the StatusBarIconSize preference through toolBarIconSize().
+    if (toolbar->parentWidget() == getMainWindow()->statusBar()) {
+        return;
+    }
+
     int s = toolBarIconSize(toolbar);
     toolbar->setIconSize(QSize(s, s));
     if (toolbar->parentWidget() == menuBarLeftAreaWidget) {
@@ -704,6 +718,7 @@ void ToolBarManager::setup(ToolBarItem* toolBarItems)
             toolbar->setObjectName(name);
 
             getMainWindow()->addToolBar(toolbar);
+            setToolBarIconSize(toolbar);
 
             if (nameAsToolTip) {
                 auto tooltip = QChar::fromLatin1('[')
@@ -754,7 +769,8 @@ void ToolBarManager::setup(ToolBarItem* toolBarItems)
         }
 
         // try to add some breaks to avoid to have all toolbars in one line
-        if (toolbar_added) {
+        // only account for visible toolbars: hidden ones occupy no row space
+        if (toolbar_added && visible) {
             if (top_width > 0 && getMainWindow()->toolBarBreak(toolbar)) {
                 top_width = 0;
             }
@@ -841,21 +857,8 @@ void ToolBarManager::onTimer()
 void ToolBarManager::saveState() const
 {
     auto ignoreSave = [](QAction* action) {
-        // If the toggle action is invisible then it's controlled by the application.
-        // In this case the current state is not saved.
-        if (!action->isVisible()) {
-            return true;
-        }
-
-        QVariant property = action->property("DefaultVisibility");
-        if (property.isNull()) {
-            return false;
-        }
-
-        // If DefaultVisibility is Unavailable then never save the state because it's
-        // always controlled by the client code.
-        auto value = static_cast<ToolBarItem::DefaultVisibility>(property.toInt());
-        return value == ToolBarItem::DefaultVisibility::Unavailable;
+        // Only save state for toolbars whose toggle action is user-visible.
+        return !action->isVisible();
     };
 
     QList<ToolBar*> toolbars = toolBars();
@@ -1145,7 +1148,7 @@ void ToolBarManager::addToMenu(QLayout* layout, QWidget* area, QMenu* menu)
 
 void ToolBarManager::onToggleStatusBarWidget(QWidget* widget, bool visible)
 {
-    Base::ConnectionBlocker block(connParam);
+    fastsignals::shared_connection_block blocker(connParam);
     widget->setVisible(visible);
     hStatusBar->SetBool(widget->objectName().toUtf8().constData(), widget->isVisible());
 }
@@ -1338,7 +1341,8 @@ void ToolBarManager::setState(const QString& name, State state)
             tb->toggleViewAction()->setVisible(false);  // not visible in context menus
             tb->hide();                                 // toolbar not visible
         }
-        else if (state == State::SaveState) {
+        else if (state == State::SaveState && tb->toggleViewAction()->isVisible()) {
+            // Unavailable toolbars are hidden by the context, not by the user.
             auto show = tb->isVisible();
             saveVisibility(show, policy);
         }

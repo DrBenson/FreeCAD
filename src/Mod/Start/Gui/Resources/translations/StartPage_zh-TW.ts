@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -10,40 +10,40 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>CmdStart</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/Manipulator.cpp" line="47"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/Manipulator.cpp" line="48"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/Manipulator.cpp" line="47"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/Manipulator.cpp" line="48"/>
         <source>Start</source>
         <translation>開始頁面</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/Manipulator.cpp" line="48"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/Manipulator.cpp" line="48"/>
         <source>&amp;Start Page</source>
         <translation>開始頁面(&amp;S)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/Manipulator.cpp" line="48"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/Manipulator.cpp" line="48"/>
         <source>Start Page</source>
         <translation>開始頁面</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/Manipulator.cpp" line="49"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/Manipulator.cpp" line="49"/>
         <source>Displays the Start Page</source>
         <translation>顯示開始頁面</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/Manipulator.cpp" line="49"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/Manipulator.cpp" line="49"/>
         <source>Displays the Start in an MDI view</source>
         <translation>在主要顯示介面中(MDI)顯示開始頁面</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/Manipulator.cpp" line="49"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/Manipulator.cpp" line="49"/>
         <source>Displays the start page</source>
         <translation>顯示開始頁面</translation>
     </message>
@@ -69,328 +69,328 @@
 <context>
     <name>DlgStartPreferences</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="14"/>
+        <location filename="../../DlgStartPreferences.ui" line="14"/>
         <source>General</source>
         <translation>一般</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="14"/>
+        <location filename="../../DlgStartPreferences.ui" line="14"/>
         <source>Start page options</source>
         <translation>開始頁選項</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="20"/>
+        <location filename="../../DlgStartPreferences.ui" line="20"/>
         <source>Start page template</source>
         <translation>開始頁樣版</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="26"/>
+        <location filename="../../DlgStartPreferences.ui" line="26"/>
         <source>An optional HTML template that will be used instead of the default start page.</source>
         <translation>將使用可選的 HTML 模板，而不是預設的起始頁.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="33"/>
+        <location filename="../../DlgStartPreferences.ui" line="33"/>
         <source>Workbench to switch to after loading a file from the Start page, only used if Start is the start up workbench</source>
         <translation>從「開始」頁面載入檔案後切換到的工作台，僅在「開始」是啟動工作台時使用</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="42"/>
+        <location filename="../../DlgStartPreferences.ui" line="42"/>
         <source>Contents</source>
         <translation>內容</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="47"/>
-        <source>An optional custom folder to be displayed on the Start page.
-By using &quot;;;&quot; to separate paths, you can add several folders here.</source>
-        <translation>要顯示在起始頁上的可選自訂資料夾.
-透過使用 &quot;;;&quot; 來分隔路徑，您可以在此處新增多個資料夾.</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="48"/>
+        <location filename="../../DlgStartPreferences.ui" line="48"/>
         <source>Show forum</source>
         <translation>顯示論壇</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="55"/>
-        <source>An optional custom folder to be displayed on the Start page.</source>
-        <translation>要顯示在起始頁上的可選自訂資料夾.</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="62"/>
+        <location filename="../../DlgStartPreferences.ui" line="62"/>
         <source>Show additional folder</source>
         <translation>顯示額外的資料夾</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="69"/>
+        <location filename="../../DlgStartPreferences.ui" line="69"/>
         <source>If you want the examples to show on the first page</source>
         <translation>如果你要範例顯示在第一頁</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="85"/>
-        <source>If the additional folder contents should include only .FCStd files</source>
-        <translation>如果附加資料夾內容應僅包含 .FCStd 文件</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="91"/>
+        <location filename="../../DlgStartPreferences.ui" line="91"/>
         <source>If this is checked, the latest posts from the FreeCAD forum will be displayed on the Activity tab</source>
         <translation>如果這個被點取, 最後面貼在FreeCAD論壇討論, 將會顯示在活動的分頁</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="110"/>
+        <location filename="../../DlgStartPreferences.ui" line="110"/>
         <source>An optional custom folder to be displayed at the bottom of the first page.
 By using &quot;;;&quot; to separate paths, you can add several folders here</source>
         <translation>顯示在第一頁底部的可選自訂資料夾.
 透過使用&quot;;;&quot;分隔目錄路徑，您可以在此處新增多個資料夾</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="122"/>
+        <location filename="../../DlgStartPreferences.ui" line="122"/>
         <source>The size of file thumbnail icons in recent files and examples sections</source>
         <translation>最近文件和範例部分中文件縮圖圖示的大小</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="127"/>
+        <location filename="../../DlgStartPreferences.ui" line="127"/>
         <source>Show notepad</source>
         <translation>顯示記事本</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="134"/>
+        <location filename="../../DlgStartPreferences.ui" line="134"/>
         <source>Shows a notepad next to the file thumbnails, where you can keep notes across sessions</source>
         <translation>在文件縮圖旁邊顯示記事本，您可以在其中跨工作階段保存筆記</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="153"/>
+        <location filename="../../DlgStartPreferences.ui" line="153"/>
         <source>Show tips</source>
         <translation>顯示提示</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="163"/>
+        <location filename="../../DlgStartPreferences.ui" line="163"/>
         <source>Displays help tips in the Start workbench Documents tab</source>
         <translation>在「啟動工作台文件」分頁中顯示幫助提示</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="182"/>
+        <location filename="../../DlgStartPreferences.ui" line="182"/>
         <source>Show scrollbars</source>
         <translation>顯示捲軸</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="185"/>
+        <location filename="../../DlgStartPreferences.ui" line="185"/>
         <source>Fonts and colors</source>
         <translation>字型與顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="197"/>
+        <location filename="../../DlgStartPreferences.ui" line="197"/>
         <source>The background of the main start page area</source>
         <translation>主啟動頁面區域背景</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="217"/>
+        <location filename="../../DlgStartPreferences.ui" line="217"/>
         <source>Background color</source>
         <translation>背景顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="229"/>
+        <location filename="../../DlgStartPreferences.ui" line="229"/>
         <source>in FreeCAD</source>
         <translation>在FreeCAD中</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="248"/>
+        <location filename="../../DlgStartPreferences.ui" line="248"/>
         <source>In external browser</source>
         <translation>在外部瀏覽器</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="264"/>
+        <location filename="../../DlgStartPreferences.ui" line="264"/>
         <source>File thumbnail size</source>
         <translation>縮略圖檔案大小</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="266"/>
+        <location filename="../../DlgStartPreferences.ui" line="266"/>
         <source>Background color down gradient</source>
         <translation>背景顏色向下漸變</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="279"/>
+        <location filename="../../DlgStartPreferences.ui" line="279"/>
         <source>The color of the version text</source>
         <translation>版本文字的顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="297"/>
+        <location filename="../../DlgStartPreferences.ui" line="297"/>
         <source>Show file thumbnails</source>
         <translation>顯示檔案縮圖</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="299"/>
+        <location filename="../../DlgStartPreferences.ui" line="299"/>
         <source>Link color</source>
         <translation>連結顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="306"/>
+        <location filename="../../DlgStartPreferences.ui" line="306"/>
         <source>An optional image to display as background</source>
         <translation>作為背景顯示的可選圖像</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="319"/>
+        <location filename="../../DlgStartPreferences.ui" line="319"/>
         <source>If this is checked and a style sheet is specified in General preferences, it will be used and override the colors below</source>
         <translation>如果選取此項目並在一般偏好設定中指定樣式表，則將使用該樣式表並覆蓋下方的顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="338"/>
+        <location filename="../../DlgStartPreferences.ui" line="338"/>
         <source>Page background color</source>
         <translation>頁面背景顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="351"/>
+        <location filename="../../DlgStartPreferences.ui" line="351"/>
         <source>The color of the text on the main pages</source>
         <translation>主頁上文字的顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="371"/>
+        <location filename="../../DlgStartPreferences.ui" line="371"/>
         <source>Background image</source>
         <translation>背景圖片</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="378"/>
+        <location filename="../../DlgStartPreferences.ui" line="378"/>
         <source>Page text color</source>
         <translation>頁面文字顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="391"/>
+        <location filename="../../DlgStartPreferences.ui" line="391"/>
         <source>The color of the links</source>
         <translation>鏈結的顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="417"/>
+        <location filename="../../DlgStartPreferences.ui" line="417"/>
         <source>The background color of the boxes inside the pages</source>
         <translation>頁面內部框的背景色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="437"/>
+        <location filename="../../DlgStartPreferences.ui" line="437"/>
         <source>Box background color</source>
         <translation>框背景色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="450"/>
+        <location filename="../../DlgStartPreferences.ui" line="450"/>
         <source>The background color behind the panels</source>
         <translation>面板後面的背景色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="479"/>
+        <location filename="../../DlgStartPreferences.ui" line="479"/>
         <source>The down gradient for the background color (currently unsupported)</source>
         <translation>背景顏色向下漸層 (目前尚未支援)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="502"/>
+        <location filename="../../DlgStartPreferences.ui" line="502"/>
         <source>Open links</source>
         <translation>開啟鏈結</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="509"/>
+        <location filename="../../DlgStartPreferences.ui" line="509"/>
         <source>Background text color</source>
         <translation>背景文字顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="516"/>
+        <location filename="../../DlgStartPreferences.ui" line="516"/>
         <source>Use FreeCAD style sheet</source>
         <translation>使用FreeCAD樣式表</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="523"/>
+        <location filename="../../DlgStartPreferences.ui" line="523"/>
         <source>Font family</source>
         <translation>字型家族</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="532"/>
+        <location filename="../../DlgStartPreferences.ui" line="532"/>
         <source>The font family to use on the start page. Can be a font name or a comma-separated series of fallback fonts</source>
         <translation>在開始頁上使用的字體系列, 可以是字體名稱或逗號分隔的備用字型</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="538"/>
+        <location filename="../../DlgStartPreferences.ui" line="538"/>
         <source>Arial,Helvetica,sans</source>
         <translation>Arial,Helvetica,sans</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="551"/>
+        <location filename="../../DlgStartPreferences.ui" line="551"/>
         <source>The base font size to use for all texts of the Start page</source>
         <translation>開始頁的所有文字要使用的基本字體大小</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="554"/>
+        <location filename="../../DlgStartPreferences.ui" line="554"/>
         <source>px</source>
         <translation>px</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="572"/>
+        <location filename="../../DlgStartPreferences.ui" line="572"/>
         <source>Use gradient for New File icon</source>
         <translation>新的檔案圖示使用漸層</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="579"/>
+        <location filename="../../DlgStartPreferences.ui" line="579"/>
         <source>If this is selected, the &apos;New File&apos; icon shows a gradient icon instead of the normal icon</source>
         <translation>如果選擇此選項，「新檔案」圖示將顯示漸層圖示而不是普通圖示</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="607"/>
+        <location filename="../../DlgStartPreferences.ui" line="607"/>
         <source>Choose which workbench to switch to after the program launches</source>
         <translation>選擇程式啟動後要切換到的工作台</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="614"/>
+        <location filename="../../DlgStartPreferences.ui" line="614"/>
         <source>If checked, will automatically close the Start page when FreeCAD launches</source>
         <translation>如果選中，將在 FreeCAD 啟動時自動關閉起始頁</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="633"/>
+        <location filename="../../DlgStartPreferences.ui" line="633"/>
         <source>Switch workbench after loading</source>
         <translation>切換工作台在載入後</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="647"/>
+        <location filename="../../DlgStartPreferences.ui" line="647"/>
         <source>Close and switch on opening file</source>
         <translation>關閉並切換到開啟的文件</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="654"/>
+        <location filename="../../DlgStartPreferences.ui" line="654"/>
         <source>If application is started by opening a file, apply the two settings above</source>
         <translation>如果應用程式是透過開啟檔案啟動的，則套用上面的兩個設定</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="26"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="26"/>
         <source>Show only FreeCAD files in additional folder</source>
         <translation>僅顯示附加資料夾中的 FreeCAD 文件</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="55"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="47"/>
+        <source>An optional custom folder to be displayed on the Start page.
+By using &quot;;;&quot; to separate paths, you can add several folders here.</source>
+        <translation>要顯示在起始頁上的可選自訂資料夾.
+透過使用 &quot;;;&quot; 來分隔路徑，您可以在此處新增多個資料夾.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="55"/>
+        <source>An optional custom folder to be displayed on the Start page.</source>
+        <translation>要顯示在起始頁上的可選自訂資料夾.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="85"/>
+        <source>If the additional folder contents should include only .FCStd files</source>
+        <translation>如果附加資料夾內容應僅包含 .FCStd 文件</translation>
+    </message>
+    <message>
+        <location filename="../../DlgStartPreferences.ui" line="55"/>
         <source>Show examples folder contents</source>
         <translation>顯示範例的資料夾內容</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="26"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="26"/>
         <source>Show additional folder contents</source>
         <translation>顯示其他資料夾內容</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="47"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="47"/>
         <source>An optional custom folder to be displayed on the Start page.
 Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
         <translation>要顯示在起始頁上的可選自訂資料夾.
 多個資料夾透過使用 &quot;;;&quot; 來分隔路徑.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="64"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="64"/>
         <source>Shows example files on the start page</source>
         <translation>在起始頁顯示範例檔案</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="601"/>
+        <location filename="../../DlgStartPreferences.ui" line="601"/>
         <source>Options</source>
         <translation>選項</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="114"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="114"/>
         <source>The start page is closed automatically when FreeCAD launches</source>
         <translation>將在 FreeCAD 啟動時自動關閉起始頁</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferences.ui" line="640"/>
+        <location filename="../../DlgStartPreferences.ui" line="640"/>
         <source>Close start page after loading</source>
         <translation>關閉開始頁在載入後</translation>
     </message>
@@ -398,27 +398,27 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
 <context>
     <name>DlgStartPreferencesAdvanced</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferencesAdvanced.ui" line="14"/>
+        <location filename="../../DlgStartPreferencesAdvanced.ui" line="14"/>
         <source>Advanced</source>
         <translation>進階選項</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferencesAdvanced.ui" line="20"/>
+        <location filename="../../DlgStartPreferencesAdvanced.ui" line="20"/>
         <source>Custom HTML Template</source>
         <translation>自訂 HTML 模板</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferencesAdvanced.ui" line="26"/>
+        <location filename="../../DlgStartPreferencesAdvanced.ui" line="26"/>
         <source>An optional HTML template that will be used instead of the default start page.</source>
         <translation>將使用可選的 HTML 模板，而不是預設的起始頁.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferencesAdvanced.ui" line="42"/>
+        <location filename="../../DlgStartPreferencesAdvanced.ui" line="42"/>
         <source>Custom CSS</source>
         <translation>自訂CSS</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/DlgStartPreferencesAdvanced.ui" line="48"/>
+        <location filename="../../DlgStartPreferencesAdvanced.ui" line="48"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You can paste your custom CSS here and the Start Page will apply it for you. To learn more about how you can style the Start Page, take a look at the HTML and CSS sources:&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/FreeCAD/FreeCAD/blob/master/src/Mod/Start/StartPage/StartPage.html&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#1d99f3;&quot;&gt;https://github.com/FreeCAD/FreeCAD/blob/master/src/Mod/Start/StartPage/StartPage.html&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/FreeCAD/FreeCAD/blob/master/src/Mod/Start/StartPage/StartPage.css&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#1d99f3;&quot;&gt;https://github.com/FreeCAD/FreeCAD/blob/master/src/Mod/Start/StartPage/StartPage.css&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;您可以將自定義 CSS 貼到此處，起始頁將為您套用它. 要了解有關如何設定起始頁樣式的更多資訊，請檢視 HTML 和 CSS 原始碼:&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/FreeCAD/FreeCAD/blob/master/src/Mod/Start/StartPage/StartPage.html&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#1d99f3;&quot;&gt;https://github.com/FreeCAD/FreeCAD/blob/master/src/Mod/Start/StartPage/StartPage.html&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/FreeCAD/FreeCAD/blob/master/src/Mod/Start/StartPage/StartPage.css&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#1d99f3;&quot;&gt;https://github.com/FreeCAD/FreeCAD/blob/master/src/Mod/Start/StartPage/StartPage.css&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
@@ -433,34 +433,47 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
     </message>
 </context>
 <context>
+    <name>Start::DisplayedFilesModel</name>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Start/App/DisplayedFilesModel.cpp" line="131"/>
+        <source>Created at:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Start/App/DisplayedFilesModel.cpp" line="132"/>
+        <source>Modified at:</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>StartGui::FirstStartWidget</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="101"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="101"/>
         <source>Done</source>
         <translation>完成</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="103"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="103"/>
         <source>Welcome to %1</source>
         <translation>歡迎使用 %1</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="106"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="106"/>
         <source>To get started, set your basic configuration options below.</source>
         <translation>首先，請在下面設定基本參數設定選項.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="107"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="107"/>
         <source>These options (and many more) can be changed later in Preferences.</source>
         <translation>這些選項(以及更多選項)可以在稍後的&quot;偏好設定&quot;中更改.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="99"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="99"/>
         <source>Set your basic configuration options below.</source>
         <translation>請在下面設定基本參數設定選項.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="100"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/FirstStartWidget.cpp" line="100"/>
         <source>These options (and many more) can be changed later in the preferences.</source>
         <translation>這些選項(以及更多選項)可以在稍後的&quot;偏好設定&quot;中更改.</translation>
     </message>
@@ -468,17 +481,17 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
 <context>
     <name>StartGui::GeneralSettingsWidget</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/GeneralSettingsWidget.cpp" line="209"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/GeneralSettingsWidget.cpp" line="209"/>
         <source>Language</source>
         <translation>語系</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/GeneralSettingsWidget.cpp" line="210"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/GeneralSettingsWidget.cpp" line="210"/>
         <source>Unit System</source>
         <translation>單位系統</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/GeneralSettingsWidget.cpp" line="223"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/GeneralSettingsWidget.cpp" line="223"/>
         <source>Navigation Style</source>
         <translation>導覽風格</translation>
     </message>
@@ -486,262 +499,262 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
 <context>
     <name>StartGui::StartView</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="193"/>
-        <source>Empty File</source>
-        <translation>空檔案</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="194"/>
-        <source>Creates a new empty FreeCAD file</source>
-        <translation>建立一個新的空白FreeCAD檔案</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="181"/>
-        <source>Open File</source>
-        <translation>開啟檔案</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="198"/>
-        <source>Opens an existing CAD file or 3D model</source>
-        <translation>打開現有 CAD 或 3D 模型檔案</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="201"/>
-        <source>Parametric Body</source>
-        <translation>參數零件主體</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="202"/>
-        <source>Creates a body with the Part Design workbench</source>
-        <translation>使用零件設計工作台建立一個零件主體</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="187"/>
-        <source>Assembly</source>
-        <translation>零件組合</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="206"/>
-        <source>Creates an assembly project</source>
-        <translation>建立一個零件組合專案</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="190"/>
-        <source>2D Draft</source>
-        <translation>2D草稿</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="225"/>
-        <source>Creates a 2D Draft document</source>
-        <translation>使用建立2D底圖繪製</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="193"/>
-        <source>BIM/Architecture</source>
-        <translation>BIM/建築</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="178"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="178"/>
         <source>Empty file</source>
         <translation>空白檔案</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="179"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="179"/>
         <source>Create a new empty FreeCAD file</source>
         <translation>建立一個新的空白FreeCAD檔案</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="182"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="182"/>
         <source>Open an existing CAD file or 3D model</source>
         <translation>打開現有 CAD 或 3D 模型檔案</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="184"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="184"/>
         <source>Parametric Part</source>
         <translation>參數零件</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="185"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="185"/>
         <source>Create a part with the Part Design workbench</source>
         <translation>使用零件設計工作台建立一個零件</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="188"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="188"/>
         <source>Create an assembly project</source>
         <translation>建立一個零件組合專案</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="191"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="191"/>
         <source>Create a 2D Draft with the Draft workbench</source>
         <translation>使用底圖繪製工作台建立2D草圖</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="194"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="194"/>
         <source>Create an architectural project</source>
         <translation>建立一個建築專案</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="210"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="210"/>
         <source>Creates a 2D draft document</source>
         <translation>使用建立2D底圖繪製</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="214"/>
-        <source>Creates an architectural project</source>
-        <translation>建立一個建築專案</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="434"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="434"/>
         <source>New File</source>
         <translation>新增檔案</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="435"/>
-        <source>Examples</source>
-        <translation>範例</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="436"/>
-        <source>Recent Files</source>
-        <translation>最近使用的檔案</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="440"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="440"/>
         <source>Don&apos;t show this Start page again (start with blank screen)</source>
         <translation>不要再次顯示此開始頁面 (使用空白頁面啟動)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="446"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="446"/>
         <source>File not found</source>
         <translation>找不到檔案</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="447"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="447"/>
         <source>The file &apos;%1&apos; cannot be opened.</source>
         <translation>無法打開檔案&apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="458"/>
-        <source>Open First Start Setup</source>
-        <translation>打開首次啟動設定頁面</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="460"/>
-        <source>Do not show this Start page again (start with blank screen)</source>
-        <translation>不要再次顯示此開始頁面 (使用空白頁面啟動)</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="484"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="484"/>
         <source>Open first start setup</source>
         <translation>打開首次啟動設定頁面</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="575"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="575"/>
         <source>Custom Folder</source>
         <translation>自訂資料夾</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="193"/>
+        <source>Empty File</source>
+        <translation>空檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="194"/>
+        <source>Creates a new empty FreeCAD file</source>
+        <translation>建立一個新的空白FreeCAD檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="181"/>
+        <source>Open File</source>
+        <translation>開啟檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="198"/>
+        <source>Opens an existing CAD file or 3D model</source>
+        <translation>打開現有 CAD 或 3D 模型檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="201"/>
+        <source>Parametric Body</source>
+        <translation>參數零件主體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="202"/>
+        <source>Creates a body with the Part Design workbench</source>
+        <translation>使用零件設計工作台建立一個零件主體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="187"/>
+        <source>Assembly</source>
+        <translation>零件組合</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="206"/>
+        <source>Creates an assembly project</source>
+        <translation>建立一個零件組合專案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="190"/>
+        <source>2D Draft</source>
+        <translation>2D草稿</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Start/Gui/StartView.cpp" line="225"/>
+        <source>Creates a 2D Draft document</source>
+        <translation>使用建立2D底圖繪製</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="193"/>
+        <source>BIM/Architecture</source>
+        <translation>BIM/建築</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="214"/>
+        <source>Creates an architectural project</source>
+        <translation>建立一個建築專案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="435"/>
+        <source>Examples</source>
+        <translation>範例</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="436"/>
+        <source>Recent Files</source>
+        <translation>最近使用的檔案</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="458"/>
+        <source>Open First Start Setup</source>
+        <translation>打開首次啟動設定頁面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="460"/>
+        <source>Do not show this Start page again (start with blank screen)</source>
+        <translation>不要再次顯示此開始頁面 (使用空白頁面啟動)</translation>
     </message>
 </context>
 <context>
     <name>StartGui::ThemeSelectorWidget</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="58"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="58"/>
         <source>FreeCAD Classic</source>
         <translation>FreeCAD 經典</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="58"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="58"/>
         <source>Classic</source>
         <translation>經典</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="59"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="59"/>
         <source>FreeCAD Dark</source>
         <translation>FreeCAD 暗色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="59"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="59"/>
         <source>Dark theme</source>
         <translation>暗色主題</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="59"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="59"/>
         <source>Light</source>
         <translation>亮色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="60"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="60"/>
         <source>FreeCAD Light</source>
         <translation>FreeCAD 亮色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="60"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="60"/>
         <source>Light theme</source>
         <translation>亮色主題</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="60"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="60"/>
         <source>Dark</source>
         <translation>暗色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="137"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="137"/>
         <source>Theme</source>
         <translation>主題</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="138"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="138"/>
         <source>More themes are available online using the Addon Manager</source>
         <translation>更多主題請在附加元件管理員中</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="139"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="139"/>
         <source>Dark theme</source>
         <comment>Visual theme name</comment>
         <translation>暗色主題</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="139"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="139"/>
         <source>Classic</source>
         <comment>Visual theme name</comment>
         <translation>經典</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="140"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="140"/>
         <source>Light</source>
         <comment>Visual theme name</comment>
         <translation>亮色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="140"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="140"/>
         <source>Light theme</source>
         <comment>Visual theme name</comment>
         <translation>亮色主題</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="141"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="141"/>
         <source>Dark</source>
         <comment>Visual theme name</comment>
         <translation>暗色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="157"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="157"/>
         <source>Looking for more themes? You can obtain them using &lt;a href=&quot;freecad:Std_AddonMgr&quot;&gt;Addon Manager&lt;/a&gt;.</source>
         <translation>尋找更多主題風格? 您可以使用 &lt;a href=&quot;freecad:Std_AddonMgr&quot;&gt;附加元件管理器 取得它們&lt;/a&gt;.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="159"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="159"/>
         <source>FreeCAD Dark</source>
         <comment>Visual theme name</comment>
         <translation>FreeCAD 暗色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="160"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="160"/>
         <source>FreeCAD Light</source>
         <comment>Visual theme name</comment>
         <translation>FreeCAD 亮色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="161"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/ThemeSelectorWidget.cpp" line="161"/>
         <source>FreeCAD Classic</source>
         <comment>Visual theme name</comment>
         <translation>FreeCAD 經典</translation>
@@ -897,7 +910,7 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
     <message>
         <location filename="TranslationTexts.py" line="71"/>
         <source>See all commits on github</source>
-        <translation>檢視 Github 上的所有提交</translation>
+        <translation>查看 Github 上的所有提交</translation>
     </message>
     <message>
         <location filename="TranslationTexts.py" line="72"/>
@@ -1058,7 +1071,7 @@ Multiple folders can be added using &quot;;;&quot; to separate paths.</source>
 <context>
     <name>Workbench</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="428"/>
+        <location filename="../../../../../../../../../UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Start/Gui/StartView.cpp" line="428"/>
         <source>Start</source>
         <translation>開始</translation>
     </message>

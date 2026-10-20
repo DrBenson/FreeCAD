@@ -1,16 +1,14 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # _TEMPLATE_ gui init module
 # (c) 2001 Juergen Riegel LGPL
 
-import _TEMPLATE_Gui
-FreeCADGui.addLanguagePath(":/translations")
-FreeCADGui.addIconPath(":/icons")
-FreeCADGui.updateLocale()
 
 class _TEMPLATE_Workbench(Workbench):
     "_TEMPLATE_ workbench object"
 
-    MenuText = FreeCAD.Qt.translate("Workbench", "_TEMPLATE_")
-    ToolTip = FreeCAD.Qt.translate("Workbench", "_TEMPLATE_ workbench")
+    MenuText = "_TEMPLATE_"
+    ToolTip = "_TEMPLATE_ workbench"
 
     def Initialize(self):
         # load the module

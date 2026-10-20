@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2019 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -85,8 +87,7 @@ TaskLeaderLine::TaskLeaderLine(TechDrawGui::ViewProviderLeader* leadVP) :
 
     m_basePage = m_lineFeat->findParentPage();
     if (!m_basePage) {
-        Base::Console().error("TaskRichAnno - bad parameters (2).  Cannot proceed.\n");
-        return;
+        throw Base::RuntimeError("TaskLeaderLine - Parent page not found");
     }
     App::DocumentObject* obj = m_lineFeat->LeaderParent.getValue();
     if (obj) {
@@ -341,7 +342,7 @@ void TaskLeaderLine::createLeaderFeature(std::vector<Base::Vector3d> sceneDeltas
 
     std::string PageName = m_basePage->getNameInDocument();
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Create Leader"));
+    int tid = Gui::Command::openActiveDocumentCommand(QT_TRANSLATE_NOOP("Command", "Create Leader"));
     Command::doCommand(Command::Doc, "App.activeDocument().addObject('%s', '%s')",
                        m_leaderType.c_str(), m_leaderName.c_str());
     Command::doCommand(Command::Doc, "App.activeDocument().%s.translateLabel('DrawLeaderLine', 'LeaderLine', '%s')",
@@ -402,7 +403,7 @@ void TaskLeaderLine::createLeaderFeature(std::vector<Base::Vector3d> sceneDeltas
     }
 
     Gui::Command::updateActive();
-    Gui::Command::commitCommand();
+    Gui::Command::commitCommand(tid);
 
     //trigger claimChildren in tree
     if (m_baseFeat) {
@@ -418,17 +419,17 @@ void TaskLeaderLine::createLeaderFeature(std::vector<Base::Vector3d> sceneDeltas
 
 void TaskLeaderLine::dumpTrackerPoints(std::vector<Base::Vector3d>& tPoints) const
 {
-    Base::Console().message("TTL::dumpTrackerPoints(%d)\n", tPoints.size());
-    Base::Console().message("TTL::dumpTrackerPoints - attach point: %s\n", DU::formatVector(m_attachPoint).c_str());
+    Base::Console().message("TTL::dumpTrackerPoints({})\n", tPoints.size());
+    Base::Console().message("TTL::dumpTrackerPoints - attach point: {}\n", DU::formatVector(m_attachPoint));
     for (auto& point : tPoints) {
-        Base::Console().message("TTL::dumpTrackerPoints - a point: %s\n", DU::formatVector(point).c_str());
+        Base::Console().message("TTL::dumpTrackerPoints - a point: {}\n", DU::formatVector(point));
     }
 }
 
 void TaskLeaderLine::updateLeaderFeature()
 {
 //    Base::Console().message("TTL::updateLeaderFeature()\n");
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Edit Leader"));
+    int tid = Gui::Command::openActiveDocumentCommand(QT_TRANSLATE_NOOP("Command", "Edit Leader"));
     //waypoints & x, y are updated by QGILeaderLine (for edits only!)
     commonFeatureUpdate();
     Base::Color ac;
@@ -438,7 +439,7 @@ void TaskLeaderLine::updateLeaderFeature()
     m_lineVP->LineStyle.setValue(ui->cboxStyle->currentIndex());
 
     Gui::Command::updateActive();
-    Gui::Command::commitCommand();
+    Gui::Command::commitCommand(tid);
 
     if (m_baseFeat) {
         m_baseFeat->requestPaint();
@@ -622,7 +623,7 @@ void TaskLeaderLine::onTrackerFinished(std::vector<QPointF> trackerScenePoints, 
 {
     //in this case, we already know who the parent is.  We don't need QGTracker to tell us.
     (void) qgParent;
-    //    Base::Console().message("TTL::onTrackerFinished() - parent: %X\n", qgParent);
+    //    Base::Console().message("TTL::onTrackerFinished() - parent: {:X}\n", qgParent);
     if (trackerScenePoints.empty()) {
         Base::Console().error("TaskLeaderLine - no points available\n");
         return;
@@ -675,7 +676,7 @@ void TaskLeaderLine::removeTracker()
 void TaskLeaderLine::onCancelEditClicked(bool clicked)
 {
     Q_UNUSED(clicked);
-//    Base::Console().message("TTL::onCancelEditClicked() m_pbTrackerState: %d\n",
+//    Base::Console().message("TTL::onCancelEditClicked() m_pbTrackerState: {}\n",
 //                            m_pbTrackerState);
     abandonEditSession();
     if (m_lineFeat) {

@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef MEASURE_MEASUREMENT_H
-#define MEASURE_MEASUREMENT_H
+#pragma once
 
 #include <gp_Pnt.hxx>
 #include <TopAbs_ShapeEnum.hxx>
@@ -59,8 +58,10 @@ enum class MeasureType
     Cone,       // One Cone
     Sphere,     // One Sphere
     Torus,      // One Torus
-    Plane,      // One Plane
-    TwoPlanes,  // One Plane
+    Plane,      // One plane
+    TwoPlanes,  // Two parallel planar faces
+    Disc,       // One circular planar face
+    TwoDiscs,   // Two parallel circular planar faces
     Points,
     PointToPoint,  // Measure between TWO points
     PointToEdge,   // Measure between ONE point and ONE edge
@@ -102,6 +103,7 @@ public:
     double lineLineDistance() const;
     double circleCenterDistance() const;
     double planePlaneDistance() const;
+    double discAxisDistance() const;
     double cylinderAxisDistance() const;
 
     // Calculates the radius for an arc or circular edge
@@ -146,6 +148,3 @@ private:
 
 
 }  // namespace Measure
-
-
-#endif  // MEASURE_MEASUREMENT_H

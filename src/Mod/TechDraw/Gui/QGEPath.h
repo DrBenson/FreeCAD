@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2019 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAWGUI_EDITABLEPATH_H
-#define TECHDRAWGUI_EDITABLEPATH_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -124,7 +125,6 @@ protected:
     QVariant itemChange(GraphicsItemChange change, const QVariant &value) override;
     void hoverEnterEvent(QGraphicsSceneHoverEvent *event) override;
     void hoverLeaveEvent(QGraphicsSceneHoverEvent *event) override;
-    double getEdgeFuzz() const;
 
 private:
     std::vector<QPointF> m_ghostPoints;
@@ -140,5 +140,3 @@ private:
 };
 
 }
-
-#endif // TECHDRAWGUI_EDITABLEPATH_H

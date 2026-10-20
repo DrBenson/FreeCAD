@@ -1,4 +1,8 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
+include_directories(
+    SYSTEM
+    ${nlohmann_json_INCLUDE_DIRS}
+)
 
 add_library(Sketcher SHARED)
 
@@ -54,6 +58,8 @@ SOURCE_GROUP("Properties" FILES ${Properties_SRCS})
 SET(Features_SRCS
     SketchObjectSF.cpp
     SketchObjectSF.h
+    SketchGeometry.cpp
+    SketchGeometry.h
     SketchGeometryExtension.cpp
     SketchGeometryExtension.h
     ExternalGeometryExtension.cpp
@@ -62,6 +68,10 @@ SET(Features_SRCS
     SolverGeometryExtension.h
     SketchObject.cpp
     SketchObject.h
+    SketchObjectGeometry.cpp
+    SketchObjectExternal.cpp
+    SketchObjectConstraints.cpp
+    SketchObjectOperations.cpp
     SketchAnalysis.h
     SketchAnalysis.cpp
     Analyse.h
@@ -155,9 +165,7 @@ if (MSVC)
     target_compile_options(Sketcher PRIVATE /wd4251)
 endif()
 
-if (FREECAD_WARN_ERROR)
-    target_compile_warn_error(Sketcher)
-endif()
+target_compile_warn_error(Sketcher)
 
 if(FREECAD_USE_PCH)
     target_precompile_headers(Sketcher PRIVATE
@@ -175,7 +183,7 @@ if (EIGEN3_NO_DEPRECATED_COPY)
 endif ()
 
 
-SET_BIN_DIR(Sketcher Sketcher /Mod/Sketcher)
+SET_BIN_DIR(Sketcher)
 SET_PYTHON_PREFIX_SUFFIX(Sketcher)
 
 INSTALL(TARGETS Sketcher DESTINATION ${CMAKE_INSTALL_LIBDIR})

@@ -1,27 +1,23 @@
-# -*- coding: utf-8 -*-
 # SPDX-License-Identifier: LGPL-2.1-or-later
-# ***************************************************************************
-# *                                                                         *
-# *   Copyright (c) 2025 sliptonic sliptonic@freecad.org                    *
-# *                                                                         *
-# *   This file is part of FreeCAD.                                         *
-# *                                                                         *
-# *   FreeCAD is free software: you can redistribute it and/or modify it    *
-# *   under the terms of the GNU Lesser General Public License as           *
-# *   published by the Free Software Foundation, either version 2.1 of the  *
-# *   License, or (at your option) any later version.                       *
-# *                                                                         *
-# *   FreeCAD is distributed in the hope that it will be useful, but        *
-# *   WITHOUT ANY WARRANTY; without even the implied warranty of            *
-# *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      *
-# *   Lesser General Public License for more details.                       *
-# *                                                                         *
-# *   You should have received a copy of the GNU Lesser General Public      *
-# *   License along with FreeCAD. If not, see                               *
-# *   <https://www.gnu.org/licenses/>.                                      *
-# *                                                                         *
-# ***************************************************************************
+# SPDX-FileCopyrightText: 2025 sliptonic sliptonic@freecad.org
+# SPDX-FileNotice: Part of the FreeCAD project.
 
+################################################################################
+#                                                                              #
+#   FreeCAD is free software: you can redistribute it and/or modify            #
+#   it under the terms of the GNU Lesser General Public License as             #
+#   published by the Free Software Foundation, either version 2.1              #
+#   of the License, or (at your option) any later version.                     #
+#                                                                              #
+#   FreeCAD is distributed in the hope that it will be useful,                 #
+#   but WITHOUT ANY WARRANTY; without even the implied warranty                #
+#   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                    #
+#   See the GNU Lesser General Public License for more details.                #
+#                                                                              #
+#   You should have received a copy of the GNU Lesser General Public           #
+#   License along with FreeCAD. If not, see https://www.gnu.org/licenses       #
+#                                                                              #
+################################################################################
 """
 Common helper functions for facing toolpath generators.
 
@@ -38,6 +34,36 @@ if False:
     Path.Log.trackModule(Path.Log.thisModule())
 else:
     Path.Log.setLevel(Path.Log.Level.INFO, Path.Log.thisModule())
+
+
+def _wire_has_curves(wire):
+    """Check if a wire contains any non-linear (curved) edges."""
+    for edge in wire.Edges:
+        if len(edge.Vertexes) < 2:
+            return True
+        chord = edge.Vertexes[0].Point.distanceToPoint(edge.Vertexes[1].Point)
+        if edge.Length - chord > 1e-6:
+            return True
+    return False
+
+
+def ensure_polygon(wire, num_segments=64):
+    """Convert a wire with curved edges into a polygonal approximation.
+
+    If the wire already consists entirely of line segments, it is returned
+    unchanged.  Otherwise the wire is discretized into *num_segments*
+    straight segments so that downstream functions which iterate vertices
+    and treat edges as line segments produce correct results.
+    """
+    if not _wire_has_curves(wire):
+        return wire
+
+    Path.Log.debug("Discretizing curved wire into polygon")
+    points = wire.discretize(Number=num_segments + 1)
+    # Ensure the polygon is closed
+    if points[0].distanceToPoint(points[-1]) > 1e-6:
+        points.append(FreeCAD.Vector(points[0]))
+    return Part.makePolygon(points)
 
 
 def extract_polygon_geometry(polygon):
@@ -192,7 +218,7 @@ def get_angled_polygon(wire, angle):
     3. Rotating the bounding box back to the desired angle
 
     Args:
-        wire (Part.Wire): A closed wire to create the rotated bounding box for
+        wire (Part.Wire): A closed wire or list of wires to create the rotated bounding box for
         angle (float): Rotation angle in degrees (positive = counterclockwise)
 
     Returns:
@@ -201,7 +227,10 @@ def get_angled_polygon(wire, angle):
     Raises:
         ValueError: If the input wire is not closed
     """
-    if not wire.isClosed():
+    if isinstance(wire, (list, tuple)):
+        wire = Part.Compound(wire)
+
+    if any(not w.isClosed() for w in wire.Wires):
         raise ValueError("Wire must be closed")
 
     # Get the center point of the original wire for all rotations
@@ -234,15 +263,6 @@ def get_angled_polygon(wire, angle):
     bounding_wire.rotate(center, rotation_axis, angle)
 
     return bounding_wire
-
-
-def calculate_engagement_offset(tool_diameter, stepover_percent):
-    """Calculate the engagement offset for proper tool engagement.
-
-    For 50% stepover, engagement should be 50% of tool diameter.
-    engagement_offset is how much of the tool is NOT engaged.
-    """
-    return tool_diameter * (1.0 - stepover_percent / 100.0)
 
 
 def validate_inputs(
@@ -368,41 +388,55 @@ def unit_vectors_from_angle(angle_degrees):
 
 def project_bounds(wire, vec, origin):
     """Project all vertices of wire onto vec relative to origin and return (min_t, max_t)."""
+    wire = ensure_polygon(wire)
     ts = []
     for v in wire.Vertexes:
         ts.append(vec.dot(v.Point.sub(origin)))
     return (min(ts), max(ts))
 
 
-def generate_t_values(wire, step_vec, tool_diameter, stepover_percent, origin):
+def generate_t_values(wire, step_vec, tool_diameter, stepover_percent, origin, end_at_center=False):
     """Generate step positions along step_vec with engagement offset and stepover.
 
-    The first pass engages (100 - stepover_percent)% of the tool diameter.
-    For 50% stepover, first pass engages 50% of tool diameter.
-    Tool center is positioned so the engaged portion touches the polygon edge.
+    end_at_center uses for bidirectional pattern, passes starts at sides and ends near center
+
+    If only one pass created, place it at center
     """
-    tool_radius = tool_diameter / 2.0
-    stepover = tool_diameter * (stepover_percent / 100.0)
+    tool_radius = tool_diameter / 2
+    stepover = tool_diameter * (stepover_percent / 100)
     min_t, max_t = project_bounds(wire, step_vec, origin)
 
-    # Calculate how much of the tool should engage on first pass
-    # For 20% stepover: engage 20% of diameter
-    # For 50% stepover: engage 50% of diameter
-    engagement_amount = tool_diameter * (stepover_percent / 100.0)
-
-    # Start position: tool center positioned so engagement_amount reaches polygon edge
-    # Tool center at: min_t - tool_radius + engagement_amount
+    # Start position: tool center positioned so engagement amount reaches polygon edge
+    # Tool center at: min_t - tool_radius + stepover
     # This positions the engaged portion at the polygon edge
-    t = min_t - tool_radius + engagement_amount
-    t_end = max_t + tool_radius - engagement_amount
 
-    values = []
-    # Guard against zero/negative stepover
     if stepover <= 0:
-        return [t]
-    while t <= t_end + 1e-9:
-        values.append(t)
-        t += stepover
+        Path.Log.warning("Zero/negative stepover")
+        return []
+
+    if end_at_center:
+        t_left = min_t - tool_radius + stepover
+        t_right = max_t + tool_radius - stepover
+        values = [t_left, t_right]
+        while Path.Geom.isStrictlyGreater(t_right - tool_radius, t_left + tool_radius):
+            t_left += stepover
+            t_right -= stepover
+            values.append(t_left)
+            values.append(t_right)
+        if Path.Geom.isGreaterEqual(values[-2] + tool_radius, values[-1] - tool_radius + stepover):
+            # remove last pass, area already cleared by previous pass
+            del values[-1]
+        values.sort()
+    else:
+        t = min_t - tool_radius + stepover
+        values = [t]
+        while Path.Geom.isStrictlyLess(t + tool_radius, max_t):
+            t += stepover
+            values.append(t)
+
+    if len(values) == 1:  # single pass create at center
+        values = [(min_t + max_t) / 2]
+
     return values
 
 
@@ -413,10 +447,13 @@ def slice_wire_segments(wire, primary_vec, step_vec, t, origin):
     """
     import math
 
+    wire = ensure_polygon(wire)
+
     # For diagnostics
     bb = wire.BoundBox
     diag = math.hypot(bb.XLength, bb.YLength)
     s_debug_threshold = max(1.0, diag * 10.0)
+    Path.Log.debug(f"s_debug_threshold = {s_debug_threshold}")
 
     s_vals = []
     # Use scale-relative tolerance for near-parallel detection

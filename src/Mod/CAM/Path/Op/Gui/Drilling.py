@@ -1,25 +1,23 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
+# SPDX-FileCopyrightText: 2017 sliptonic <shopinthewoods@gmail.com>
+# SPDX-FileNotice: Part of the FreeCAD project.
 
-# ***************************************************************************
-# *   Copyright (c) 2017 sliptonic <shopinthewoods@gmail.com>               *
-# *                                                                         *
-# *   This program is free software; you can redistribute it and/or modify  *
-# *   it under the terms of the GNU Lesser General Public License (LGPL)    *
-# *   as published by the Free Software Foundation; either version 2 of     *
-# *   the License, or (at your option) any later version.                   *
-# *   for detail see the LICENCE text file.                                 *
-# *                                                                         *
-# *   This program is distributed in the hope that it will be useful,       *
-# *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
-# *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
-# *   GNU Library General Public License for more details.                  *
-# *                                                                         *
-# *   You should have received a copy of the GNU Library General Public     *
-# *   License along with this program; if not, write to the Free Software   *
-# *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
-# *   USA                                                                   *
-# *                                                                         *
-# ***************************************************************************
+################################################################################
+#                                                                              #
+#   FreeCAD is free software: you can redistribute it and/or modify            #
+#   it under the terms of the GNU Lesser General Public License as             #
+#   published by the Free Software Foundation, either version 2.1              #
+#   of the License, or (at your option) any later version.                     #
+#                                                                              #
+#   FreeCAD is distributed in the hope that it will be useful,                 #
+#   but WITHOUT ANY WARRANTY; without even the implied warranty                #
+#   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                    #
+#   See the GNU Lesser General Public License for more details.                #
+#                                                                              #
+#   You should have received a copy of the GNU Lesser General Public           #
+#   License along with FreeCAD. If not, see https://www.gnu.org/licenses       #
+#                                                                              #
+################################################################################
 
 import FreeCAD
 import FreeCADGui
@@ -28,7 +26,6 @@ import Path.Base.Gui.Util as PathGuiUtil
 import Path.Op.Drilling as PathDrilling
 import Path.Op.Gui.Base as PathOpGui
 import Path.Op.Gui.CircularHoleBase as PathCircularHoleBaseGui
-import PathGui
 
 from PySide import QtCore
 
@@ -37,6 +34,8 @@ __author__ = "sliptonic (Brad Collette)"
 __url__ = "https://www.freecad.org"
 __doc__ = "UI and Command for Drilling Operation."
 __contributors__ = "IMBack!"
+
+translate = FreeCAD.Qt.translate
 
 if False:
     Path.Log.setLevel(Path.Log.Level.DEBUG, Path.Log.thisModule())
@@ -49,17 +48,56 @@ class TaskPanelOpPage(PathCircularHoleBaseGui.TaskPanelOpPage):
     """Controller for the drilling operation's page"""
 
     def initPage(self, obj):
-        self.peckDepthSpinBox = PathGuiUtil.QuantitySpinBox(self.form.peckDepth, obj, "PeckDepth")
-        self.dwellTimeSpinBox = PathGuiUtil.QuantitySpinBox(self.form.dwellTime, obj, "DwellTime")
+        self.peckDepthSpinBox = PathGuiUtil.QuantitySpinBox(
+            self.form.peckDepth, obj, "PeckDepth", setToolTip=True
+        )
+        self.peckRetractSpinBox = PathGuiUtil.QuantitySpinBox(
+            self.form.peckRetract, obj, "PeckRetract", setToolTip=True
+        )
+        self.dwellTimeSpinBox = PathGuiUtil.QuantitySpinBox(
+            self.form.dwellTime, obj, "DwellTime", setToolTip=True
+        )
         self.form.chipBreakEnabled.setEnabled(False)
 
+        self.form.Strategy.setToolTip(
+            translate("App::Property", self.obj.getDocumentationOfProperty("Strategy"))
+        )
+        self.form.KeepToolDownEnabled.setToolTip(
+            translate("App::Property", self.obj.getDocumentationOfProperty("KeepToolDown"))
+        )
+        self.form.dwellEnabled.setToolTip(
+            translate("App::Property", self.obj.getDocumentationOfProperty("DwellEnabled"))
+        )
+        self.form.peckEnabled.setToolTip(
+            translate("App::Property", self.obj.getDocumentationOfProperty("PeckEnabled"))
+        )
+        self.form.feedRetractEnabled.setToolTip(
+            translate("App::Property", self.obj.getDocumentationOfProperty("FeedRetractEnabled"))
+        )
+        self.form.chipBreakEnabled.setToolTip(
+            translate("App::Property", self.obj.getDocumentationOfProperty("ChipBreakEnabled"))
+        )
+        self.form.ExtraOffset.setToolTip(
+            translate("App::Property", self.obj.getDocumentationOfProperty("ExtraOffset"))
+        )
+
     def registerSignalHandlers(self, obj):
+        # Strategy selector handler
+        if hasattr(self.form, "Strategy"):
+            self.form.Strategy.currentIndexChanged.connect(self.onStrategyChanged)
+
         self.form.peckEnabled.toggled.connect(self.form.peckDepth.setEnabled)
+        self.form.peckEnabled.toggled.connect(self.form.peckDepthLabel.setEnabled)
+        self.form.peckEnabled.toggled.connect(self.form.peckRetract.setEnabled)
+        self.form.peckEnabled.toggled.connect(self.form.peckRetractLabel.setEnabled)
         self.form.peckEnabled.toggled.connect(self.form.dwellEnabled.setDisabled)
         self.form.peckEnabled.toggled.connect(self.form.feedRetractEnabled.setDisabled)
         self.form.peckEnabled.toggled.connect(self.setChipBreakControl)
 
         self.form.feedRetractEnabled.toggled.connect(self.form.peckDepth.setDisabled)
+        self.form.feedRetractEnabled.toggled.connect(self.form.peckDepthLabel.setDisabled)
+        self.form.feedRetractEnabled.toggled.connect(self.form.peckRetract.setDisabled)
+        self.form.feedRetractEnabled.toggled.connect(self.form.peckRetractLabel.setDisabled)
         self.form.feedRetractEnabled.toggled.connect(self.form.peckEnabled.setDisabled)
         self.form.feedRetractEnabled.toggled.connect(self.form.dwellEnabled.setDisabled)
         self.form.feedRetractEnabled.toggled.connect(self.form.chipBreakEnabled.setDisabled)
@@ -77,6 +115,8 @@ class TaskPanelOpPage(PathCircularHoleBaseGui.TaskPanelOpPage):
             self.form.feedRetractEnabled.setEnabled(False)
             self.form.peckDepth.setEnabled(True)
             self.form.peckDepthLabel.setEnabled(True)
+            self.form.peckRetract.setEnabled(True)
+            self.form.peckRetractLabel.setEnabled(True)
             self.form.chipBreakEnabled.setEnabled(True)
         elif self.form.dwellEnabled.isChecked():
             self.form.feedRetractEnabled.setEnabled(False)
@@ -91,11 +131,61 @@ class TaskPanelOpPage(PathCircularHoleBaseGui.TaskPanelOpPage):
     def setChipBreakControl(self):
         self.form.chipBreakEnabled.setEnabled(self.form.peckEnabled.isChecked())
 
+    def onStrategyChanged(self):
+        """Handle strategy selector changes - update property visibility"""
+        if not hasattr(self.form, "Strategy"):
+            return
+
+        strategy = str(self.form.Strategy.currentData())
+        self.updateStrategyVisibility(None, strategy)
+
+        # Validate tool for tapping strategy
+        if strategy == "Tapping":
+            self.validateTappingTool()
+
+    def updateStrategyVisibility(self, obj, strategy=None):
+        """Show/hide properties based on selected strategy"""
+        if not hasattr(self.form, "Strategy"):
+            return
+
+        if strategy is None:
+            if obj and hasattr(obj, "Strategy"):
+                strategy = obj.Strategy
+            else:
+                strategy = str(self.form.Strategy.currentData())
+
+        # Drilling-specific controls
+        drilling_controls = [
+            self.form.peckEnabled,
+            self.form.peckDepth,
+            self.form.peckDepthLabel,
+            self.form.chipBreakEnabled,
+            self.form.feedRetractEnabled,
+            self.form.peckRetract,
+            self.form.peckRetractLabel,
+        ]
+
+        # Show/hide based on strategy
+        is_drilling = strategy == "Drilling"
+        for control in drilling_controls:
+            if hasattr(self.form, control.objectName()):
+                control.setVisible(is_drilling)
+
+        # Tapping note/info (if we add UI elements for it in future)
+        # For now, both strategies share: DwellEnabled, DwellTime, KeepToolDown, ExtraOffset
+
+    def validateTappingTool(self):
+        """Validate that selected tool is appropriate for tapping"""
+        # This will be called when strategy changes to Tapping
+        # Could show warning if tool doesn't have Pitch property
+        # For now, just log - actual validation happens at execution time
+        Path.Log.debug("Tapping strategy selected - tool will be validated at execution")
+
     def getForm(self):
         """getForm() ... return UI"""
         form = FreeCADGui.PySideUic.loadUi(":/panels/PageOpDrillingEdit.ui")
 
-        comboToPropertyMap = [("ExtraOffset", "ExtraOffset")]
+        comboToPropertyMap = [("Strategy", "Strategy"), ("ExtraOffset", "ExtraOffset")]
         enumTups = PathDrilling.ObjectDrilling.propertyEnumerations(dataType="raw")
         self.populateCombobox(form, enumTups, comboToPropertyMap)
 
@@ -103,13 +193,22 @@ class TaskPanelOpPage(PathCircularHoleBaseGui.TaskPanelOpPage):
 
     def updateQuantitySpinBoxes(self, index=None):
         self.peckDepthSpinBox.updateWidget()
+        self.peckRetractSpinBox.updateWidget()
         self.dwellTimeSpinBox.updateWidget()
 
     def getFields(self, obj):
         """setFields(obj) ... update obj's properties with values from the UI"""
         Path.Log.track()
         self.peckDepthSpinBox.updateProperty()
+        self.peckRetractSpinBox.updateProperty()
         self.dwellTimeSpinBox.updateProperty()
+
+        if (
+            hasattr(self.form, "Strategy")
+            and hasattr(obj, "Strategy")
+            and obj.Strategy != str(self.form.Strategy.currentData())
+        ):
+            obj.Strategy = str(self.form.Strategy.currentData())
 
         if obj.KeepToolDown != self.form.KeepToolDownEnabled.isChecked():
             obj.KeepToolDown = self.form.KeepToolDownEnabled.isChecked()
@@ -124,13 +223,15 @@ class TaskPanelOpPage(PathCircularHoleBaseGui.TaskPanelOpPage):
         if obj.ExtraOffset != str(self.form.ExtraOffset.currentData()):
             obj.ExtraOffset = str(self.form.ExtraOffset.currentData())
 
-        self.updateToolController(obj, self.form.toolController)
-        self.updateCoolant(obj, self.form.coolantController)
-
     def setFields(self, obj):
         """setFields(obj) ... update UI with obj properties' values"""
         Path.Log.track()
         self.updateQuantitySpinBoxes()
+
+        # Set Strategy selector
+        if hasattr(self.form, "Strategy") and hasattr(obj, "Strategy"):
+            self.selectInComboBox(obj.Strategy, self.form.Strategy)
+            self.updateStrategyVisibility(obj)
 
         if not hasattr(obj, "KeepToolDown"):
             obj.addProperty(
@@ -171,14 +272,15 @@ class TaskPanelOpPage(PathCircularHoleBaseGui.TaskPanelOpPage):
 
         self.selectInComboBox(obj.ExtraOffset, self.form.ExtraOffset)
 
-        self.setupToolController(obj, self.form.toolController)
-        self.setupCoolant(obj, self.form.coolantController)
-
     def getSignalsForUpdate(self, obj):
         """getSignalsForUpdate(obj) ... return list of signals which cause the receiver to update the model"""
         signals = []
 
+        if hasattr(self.form, "Strategy"):
+            signals.append(self.form.Strategy.currentIndexChanged)
+
         signals.append(self.form.peckDepth.editingFinished)
+        signals.append(self.form.peckRetract.editingFinished)
         signals.append(self.form.dwellTime.editingFinished)
         if hasattr(self.form.dwellEnabled, "checkStateChanged"):  # Qt version >= 6.7.0
             signals.append(self.form.dwellEnabled.checkStateChanged)
@@ -188,8 +290,6 @@ class TaskPanelOpPage(PathCircularHoleBaseGui.TaskPanelOpPage):
             signals.append(self.form.dwellEnabled.stateChanged)
             signals.append(self.form.peckEnabled.stateChanged)
             signals.append(self.form.chipBreakEnabled.stateChanged)
-        signals.append(self.form.toolController.currentIndexChanged)
-        signals.append(self.form.coolantController.currentIndexChanged)
         signals.append(self.form.ExtraOffset.currentIndexChanged)
         if hasattr(self.form.KeepToolDownEnabled, "checkStateChanged"):  # Qt version >= 6.7.0
             signals.append(self.form.KeepToolDownEnabled.checkStateChanged)
@@ -200,7 +300,7 @@ class TaskPanelOpPage(PathCircularHoleBaseGui.TaskPanelOpPage):
         return signals
 
     def updateData(self, obj, prop):
-        if prop in ["PeckDepth"] and not prop in ["Base", "Disabled"]:
+        if prop in ("PeckDepth", "PeckRetract"):
             self.updateQuantitySpinBoxes()
 
 

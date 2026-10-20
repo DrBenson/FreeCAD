@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2020 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAWGUI_QGIGHOSTHIGHLIGHT_H
-#define TECHDRAWGUI_QGIGHOSTHIGHLIGHT_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -64,5 +65,3 @@ private:
 };
 
 }
-
-#endif // TECHDRAWGUI_QGIGHOSTHIGHLIGHT_H

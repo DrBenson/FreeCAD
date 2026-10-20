@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2019 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DrawDimHelper_h_
-#define DrawDimHelper_h_
+#pragma once
 
 #include <string>
 #include <vector>
@@ -79,4 +80,3 @@ class TechDrawExport DrawDimHelper {
 };
 
 } //end namespace TechDraw
-#endif

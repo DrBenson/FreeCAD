@@ -23,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef GUI_DIALOG_DlgActivateWindowImp_H
-#define GUI_DIALOG_DlgActivateWindowImp_H
+#pragma once
 
 #include <QDialog>
 #include <memory>
@@ -41,7 +40,7 @@ class Ui_DlgUnitCalculator;
  * The DlgUnitsCalculator provides a unit conversion dialog
  * \author Juergen Riegel
  */
-class DlgUnitsCalculator: public QDialog
+class GuiExport DlgUnitsCalculator: public QDialog
 {
     Q_OBJECT
 
@@ -73,5 +72,3 @@ private:
 
 }  // namespace Dialog
 }  // namespace Gui
-
-#endif  // GUI_DIALOG_DlgActivateWindowImp_H

@@ -23,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef PARTDESIGN_Pipe_H
-#define PARTDESIGN_Pipe_H
+#pragma once
 
 #include "FeatureSketchBased.h"
 #include <BRepOffsetAPI_MakePipeShell.hxx>
@@ -78,7 +77,7 @@ protected:
     void buildPipePath(
         const Part::TopoShape& input,
         const std::vector<std::string>& edges,
-        TopoDS_Shape& result
+        Part::TopoShape& result
     );
     void setupAlgorithm(BRepOffsetAPI_MakePipeShell& mkPipeShell, const TopoDS_Shape& auxshape);
     /// handle changed property
@@ -119,6 +118,3 @@ public:
 };
 
 }  // namespace PartDesign
-
-
-#endif  // PARTDESIGN_Pipe_H

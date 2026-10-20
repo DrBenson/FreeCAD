@@ -23,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef BASE_BOUNDBOX_H
-#define BASE_BOUNDBOX_H
+#pragma once
 
 #include <array>
 #include <limits>
@@ -239,7 +238,7 @@ public:
     /** Transform the corners of this box with the given matrix and create a new bounding box.
      * @note It's up to the client programmer to make sure that this bounding box is valid.
      */
-    BoundBox3<Precision> Transformed(const Matrix4D& mat) const;
+    [[nodiscard]] BoundBox3<Precision> Transformed(const Matrix4D& mat) const;
 
     /** Returns the center of the box. */
     inline Vector3<Precision> GetCenter() const;
@@ -1173,5 +1172,3 @@ using BoundBox3f = BoundBox3<float>;
 using BoundBox3d = BoundBox3<double>;
 
 }  // namespace Base
-
-#endif  // BASE_BOUNDBOX_H

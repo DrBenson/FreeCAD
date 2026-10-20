@@ -31,8 +31,7 @@
  * 3rd party Xerces-C++ XML parser is used to parse and write the XML.
  */
 
-#ifndef BASE_PARAMETER_H
-#define BASE_PARAMETER_H
+#pragma once
 
 // Python stuff
 using PyObject = struct _object;
@@ -575,7 +574,12 @@ public:
     void SaveDocument(const char* sFileName) const;
     void SaveDocument(XERCES_CPP_NAMESPACE::XMLFormatTarget* pFormatTarget) const;
     void CreateDocument();
-    void CheckDocument() const;
+
+    /**
+     * Check the validity of the current parameter XML document against the .xsd schema.
+     * Return true on success, false on failure.
+     */
+    bool CheckDocument() const;
 
     /** @name Parameter serialization */
     //@{
@@ -629,6 +633,3 @@ public:
 /** python wrapper function
  */
 BaseExport PyObject* GetPyObject(const Base::Reference<ParameterGrp>& hcParamGrp);
-
-
-#endif  // BASE_PARAMETER_H

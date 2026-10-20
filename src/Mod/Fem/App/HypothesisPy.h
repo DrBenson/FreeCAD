@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2010 Werner Mayer <wmayer[at]users.sourceforge.net>     *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef FEM_HYPOTHESISPY_H
-#define FEM_HYPOTHESISPY_H
+#pragma once
 
 #include <CXX/Extensions.hxx>
 #include <SMESH_Version.h>  // needed for SMESH_VERSION_MAJOR
@@ -728,5 +729,3 @@ public:
 #endif
 
 }  // namespace Fem
-
-#endif  // FEM_HYPOTHESISPY_H

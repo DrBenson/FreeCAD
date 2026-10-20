@@ -22,8 +22,7 @@
  *                                                                            *
  ******************************************************************************/
 
-#ifndef GUI_TASKVIEW_TaskMultiTransformParameters_H
-#define GUI_TASKVIEW_TaskMultiTransformParameters_H
+#pragma once
 
 #include "TaskTransformedParameters.h"
 #include "ViewProviderMultiTransform.h"
@@ -78,6 +77,9 @@ private Q_SLOTS:
     void onTransformActivated(const QModelIndex& index);
     void onTransformAddMirrored();
     void onTransformAddLinearPattern();
+    void onTransformAddCircularPattern();
+    void onTransformAddPathPattern();
+    void onTransformAddPointPattern();
     void onTransformAddPolarPattern();
     void onTransformAddScaled();
     void onMoveUp();
@@ -120,5 +122,3 @@ public:
 };
 
 }  // namespace PartDesignGui
-
-#endif  // GUI_TASKVIEW_TASKAPPERANCE_H

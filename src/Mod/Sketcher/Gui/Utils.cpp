@@ -26,7 +26,7 @@
 #include <QLocale>
 #include <QRegularExpression>
 
-#include <App/Application.h>
+#include <App/Transactions.h>
 #include <Base/Quantity.h>
 #include <Base/UnitsApi.h>
 #include <Gui/CommandT.h>
@@ -161,6 +161,21 @@ void SketcherGui::tryAutoRecomputeIfNotSolve(Sketcher::SketchObject* obj)
         if (autoremoveredundants) {
             obj->autoRemoveRedundants();
         }
+    }
+}
+
+void SketcherGui::closeAndRecompute(int& tid, bool abort, Sketcher::SketchObject* Obj)
+{
+    if (tid == App::NullTransaction) {
+        tryAutoRecompute(Obj);
+    }
+    if (abort) {
+        Gui::Command::abortCommand(tid);
+        tryAutoRecompute(Obj);
+    }
+    else {
+        tryAutoRecompute(Obj);
+        Gui::Command::commitCommand(tid);
     }
 }
 
@@ -788,7 +803,7 @@ void SketcherGui::Constraint2LinesByAngle(int geoId1, int geoId2, double angle, 
     else {
         Gui::cmdAppObjectArgs(
             obj,
-            "addConstraint(Sketcher.Constraint('Angle',%d,%d,%f)) ",
+            "addConstraint(Sketcher.Constraint('Angle',%d, 2, %d, 1, %f)) ",
             geoId1,
             geoId2,
             angle

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2021 edi                                                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAWGUI_CommandExtensionDims_H
-#define TECHDRAWGUI_CommandExtensionDims_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -37,5 +38,3 @@ namespace TechDrawGui {
     std::vector<TechDraw::DrawViewDimension*> makeObliqueChainDimension(std::vector<TechDraw::ReferenceEntry> refs);
     std::vector<TechDraw::DrawViewDimension*> makeObliqueCoordDimension(std::vector<TechDraw::ReferenceEntry> refs);
 }
-
-#endif  // TECHDRAWGUI_CommandExtensionDims_H

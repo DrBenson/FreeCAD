@@ -1,32 +1,31 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
+# SPDX-FileCopyrightText: 2016 sliptonic <shopinthewoods@gmail.com>
+# SPDX-FileCopyrightText: 2021 Schildkroet
+# SPDX-FileNotice: Part of the FreeCAD project.
 
-# ***************************************************************************
-# *   Copyright (c) 2016 sliptonic <shopinthewoods@gmail.com>               *
-# *   Copyright (c) 2021 Schildkroet                                        *
-# *                                                                         *
-# *   This program is free software; you can redistribute it and/or modify  *
-# *   it under the terms of the GNU Lesser General Public License (LGPL)    *
-# *   as published by the Free Software Foundation; either version 2 of     *
-# *   the License, or (at your option) any later version.                   *
-# *   for detail see the LICENCE text file.                                 *
-# *                                                                         *
-# *   This program is distributed in the hope that it will be useful,       *
-# *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
-# *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
-# *   GNU Library General Public License for more details.                  *
-# *                                                                         *
-# *   You should have received a copy of the GNU Library General Public     *
-# *   License along with this program; if not, write to the Free Software   *
-# *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
-# *   USA                                                                   *
-# *                                                                         *
-# ***************************************************************************
+################################################################################
+#                                                                              #
+#   FreeCAD is free software: you can redistribute it and/or modify            #
+#   it under the terms of the GNU Lesser General Public License as             #
+#   published by the Free Software Foundation, either version 2.1              #
+#   of the License, or (at your option) any later version.                     #
+#                                                                              #
+#   FreeCAD is distributed in the hope that it will be useful,                 #
+#   but WITHOUT ANY WARRANTY; without even the implied warranty                #
+#   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                    #
+#   See the GNU Lesser General Public License for more details.                #
+#                                                                              #
+#   You should have received a copy of the GNU Lesser General Public           #
+#   License along with FreeCAD. If not, see https://www.gnu.org/licenses       #
+#                                                                              #
+################################################################################
 
 import FreeCAD
 import Path
 import math
 
 from FreeCAD import Vector
+import Constants
 
 # lazily loaded modules
 from lazy_loader.lazy_loader import LazyLoader
@@ -39,6 +38,7 @@ __url__ = "https://www.freecad.org"
 __doc__ = "Functions to extract and convert between Path.Command and Part.Edge and utility functions to reason about them."
 
 Tolerance = 0.000001
+Decimal = 6
 
 translate = FreeCAD.Qt.translate
 
@@ -82,14 +82,23 @@ class Side:
         return cls.Straight
 
 
-CmdMoveRapid = ["G0", "G00"]
-CmdMoveStraight = ["G1", "G01"]
-CmdMoveCW = ["G2", "G02"]
-CmdMoveCCW = ["G3", "G03"]
-CmdMoveDrill = ["G73", "G81", "G82", "G83", "G85"]
-CmdMoveArc = CmdMoveCW + CmdMoveCCW
-CmdMove = CmdMoveStraight + CmdMoveArc + CmdMoveDrill
-CmdMoveAll = CmdMove + CmdMoveRapid
+# Import G-code command constants from centralized CONSTANTS module
+CmdMoveRapid = Constants.GCODE_MOVE_RAPID
+CmdMoveStraight = Constants.GCODE_MOVE_STRAIGHT
+CmdMoveCW = Constants.GCODE_MOVE_CW
+CmdMoveCCW = Constants.GCODE_MOVE_CCW
+CmdMoveDrill = Constants.GCODE_MOVE_DRILL
+CmdMoveArc = Constants.GCODE_MOVE_ARC
+CmdMoveMill = Constants.GCODE_MOVE_MILL
+CmdMove = Constants.GCODE_MOVE
+CmdMoveTap = Constants.GCODE_MOVE_TAP
+CmdMoveAll = Constants.GCODE_MOVE_ALL
+
+
+def ceil(value, decimal=Decimal):
+    """ceil(value, [decimal=Decimal])
+    Rounding value to exclude precision error and returns ceiling result"""
+    return math.ceil(round(value, decimal))
 
 
 def isRoughly(float1, float2, error=Tolerance):
@@ -98,18 +107,38 @@ def isRoughly(float1, float2, error=Tolerance):
     return math.fabs(float1 - float2) <= error
 
 
+def isStrictlyGreater(float1, float2, error=Tolerance):
+    """isStrictlyGreater(float1, float2, [error=Tolerance])
+    Returns true if float1 is greater than float2 by more than a given error."""
+    return float1 > float2 and not isRoughly(float1, float2, error)
+
+
+def isStrictlyLess(float1, float2, error=Tolerance):
+    """isStrictlyLess(float1, float2, [error=Tolerance])
+    Returns true if float1 is less than float2 by more than a given error."""
+    return float1 < float2 and not isRoughly(float1, float2, error)
+
+
+def isLessEqual(float1, float2, error=Tolerance):
+    """isLessEqual(float1, float2, [error=Tolerance])
+    Returns true if float1 is less than float2 or the same within a given error."""
+    return float1 < float2 or isRoughly(float1, float2, error)
+
+
+def isGreaterEqual(float1, float2, error=Tolerance):
+    """isGreaterEqual(float1, float2, [error=Tolerance])
+    Returns true if float1 is greater than float2 or the same within a given error."""
+    return float1 > float2 or isRoughly(float1, float2, error)
+
+
 def pointsCoincide(p1, p2, error=Tolerance):
     """pointsCoincide(p1, p2, [error=Tolerance])
     Return True if two points are roughly identical (see also isRoughly)."""
-    return (
-        isRoughly(p1.x, p2.x, error)
-        and isRoughly(p1.y, p2.y, error)
-        and isRoughly(p1.z, p2.z, error)
-    )
+    return len(p1) == len(p2) and all(isRoughly(p1[i], p2[i], error) for i in range(len(p1)))
 
 
 def edgesMatch(e0, e1, error=Tolerance):
-    """edgesMatch(e0, e1, [error=Tolerance]
+    """edgesMatch(e0, e1, [error=Tolerance])
     Return true if the edges start and end at the same point and have the same type of curve."""
     if type(e0.Curve) is not type(e1.Curve) or len(e0.Vertexes) != len(e1.Vertexes):
         return False
@@ -159,6 +188,20 @@ def diffAngle(a1, a2, direction="CW"):
             a2 += 2 * math.pi
         a = a2 - a1
     return a
+
+
+def compareVecs(vec1, vec2, exact=False, error=Tolerance):
+    """compareVecs(vec1, vec2, [exact=False, error=Tolerance])
+    Returns True if two vectors are aligned within a given error.
+    If exact is True, vectors must match direction.
+    Otherwise, alignment can indicate the vectors are the same or exactly opposite.
+    """
+    angle = vec1.getAngle(vec2)
+    angle = 0 if math.isnan(angle) else angle
+    if exact:
+        return Path.Geom.isRoughly(angle, 0, error)
+    else:
+        return Path.Geom.isRoughly(angle, 0, error) or Path.Geom.isRoughly(angle, math.pi, error)
 
 
 def isVertical(obj):
@@ -267,8 +310,7 @@ def speedBetweenPoints(p0, p1, hSpeed, vSpeed):
     while pitch > 1:
         pitch = pitch - 1
     Path.Log.debug(
-        "  pitch = %g %g (%.2f, %.2f, %.2f) -> %.2f"
-        % (pitch, math.atan2(xy(d).Length, d.z), d.x, d.y, d.z, xy(d).Length)
+        f"  pitch = {pitch:g} {math.atan2(xy(d).Length, d.z):g} ({d.x:.2f}, {d.y:.2f}, {d.z:.2f}) -> {xy(d).Length:.2f}"
     )
     speed = vSpeed + pitch * (hSpeed - vSpeed)
     if speed > hSpeed and speed > vSpeed:
@@ -278,43 +320,92 @@ def speedBetweenPoints(p0, p1, hSpeed, vSpeed):
     return speed
 
 
-def cmdsForEdge(edge, flip=False, hSpeed=0, vSpeed=0, tol=0.01):
-    """cmdsForEdge(edge, flip=False) -> List(Path.Command)
+def cmdsForEdge(edge, flip=False, approximation=False, hSpeed=0, vSpeed=0, tol=0.01):
+    """cmdsForEdge(edge, flip=False, approximation=True) -> List(Path.Command)
     Returns a list of Path.Command representing the given edge.
-    If flip is True the edge is considered to be backwards.
-    Edge based on a Part.Line is results in G1 command.
-    Horizontal Edge based on a Part.Circle is results in G2 or G3 command.
-    Other edge has no direct Path.Command mapping
-    and will be approximated by straight segments."""
-    pt = edge.valueAt(edge.LastParameter) if not flip else edge.valueAt(edge.FirstParameter)
-    params = {"X": pt.x, "Y": pt.y, "Z": pt.z}
-    if isinstance(edge.Curve, (Part.Line, Part.LineSegment)):
-        if hSpeed > 0 and vSpeed > 0:
-            pt2 = (
-                edge.valueAt(edge.FirstParameter) if not flip else edge.valueAt(edge.LastParameter)
-            )
-            params.update({"F": speedBetweenPoints(pt, pt2, hSpeed, vSpeed)})
-        commands = [Path.Command("G1", params)]
-    else:
-        p1 = edge.valueAt(edge.FirstParameter) if not flip else edge.valueAt(edge.LastParameter)
-        p2 = edge.valueAt((edge.FirstParameter + edge.LastParameter) / 2)
-        p3 = pt
+
+    If 'flip' is True, the edge is considered to be backwards.
+
+    If 'approximation' is True:
+    - an edge based on BezierCurve, Ellipse, Hyperbola and Parabola
+      will be represented as BSplineCurve;
+    - an edge based on a BSplineCurve will be represented as arcs and lines;
+    - not horizontal edge based on circle will be divided by short arcs
+    - arc with curvature less than tolerance will be represented as simple line
+
+    If 'approximation' is False and edge has no direct Path.Command mapping,
+    edge will be represented as number of short straight segments."""
+
+    edges = []
+    if approximation:
+        # simplify complex shape
+        if isinstance(edge.Curve, (Part.Ellipse, Part.Hyperbola, Part.Parabola)):
+            # convert edge to B-Spline
+            shape = edge.toNurbs()
+            edge = shape.Edges[0]
+        elif isinstance(edge.Curve, Part.BezierCurve):
+            # convert BezierCurve to B-Spline
+            curve = edge.Curve.toBSpline()
+            edge = curve.toShape()
+
+        if isinstance(edge.Curve, Part.BSplineCurve):
+            # convert B-Spline to arcs and lines
+            curve = edge.Curve
+            trimmed_curve = curve.trim(*edge.ParameterRange)
+            curves = trimmed_curve.toBiArcs(tol)
+            for curve in curves:
+                edge = curve.toShape()
+                if isinstance(edge.Curve, Part.Circle) and not isVertical(edge.Curve.Axis):
+                    edges.extend(splitArcEdge(edge, tol))
+                else:
+                    edges.append(edge)
+        elif isinstance(edge.Curve, Part.Circle) and not isVertical(edge.Curve.Axis):
+            edges.extend(splitArcEdge(edge, tol))
+
+    if not edges:
+        # use original edge if list is empty
+        edges = [edge]
+
+    if flip:
+        edges.reverse()
+
+    commands = []
+    for edge in edges:
+        firstParameter, lastParameter = edge.FirstParameter, edge.LastParameter
+        if flip:
+            firstParameter, lastParameter = lastParameter, firstParameter
+        p1 = edge.valueAt(firstParameter)
+        p2 = edge.valueAt((firstParameter + lastParameter) / 2)
+        p3 = edge.valueAt(lastParameter)
+        params = {"X": p3.x, "Y": p3.y, "Z": p3.z}
 
         if (
-            hasattr(edge.Curve, "Axis")
+            approximation
             and isinstance(edge.Curve, Part.Circle)
-            and isRoughly(edge.Curve.Axis.x, 0)
-            and isRoughly(edge.Curve.Axis.y, 0)
+            and not edge.isClosed()
+            and p2.distanceToPoint(p1 + (p3 - p1) / 2) < tol
         ):
-            # This is an arc or a helix and it should be represented by a simple G2/G3 command
+            # convert arc with curvature less than tolerance to simple line
+            line = Part.LineSegment(p1, p2)
+            edge = line.toShape()
+
+        if isinstance(edge.Curve, (Part.Line, Part.LineSegment)):
+            # convert straight line to G1
+            if hSpeed > 0 and vSpeed > 0:
+                params.update({"F": speedBetweenPoints(p3, p1, hSpeed, vSpeed)})
+            cmd = Path.Command("G1", params)
+            commands.append(cmd)
+
+        elif isinstance(edge.Curve, Part.Circle) and (isVertical(edge.Curve.Axis) or approximation):
+            # convert arc to G2/G3
             if edge.Curve.Axis.z < 0:
-                cmd = "G2" if not flip else "G3"
+                cmdArc = "G2" if not flip else "G3"
             else:
-                cmd = "G3" if not flip else "G2"
+                cmdArc = "G3" if not flip else "G2"
 
             if pointsCoincide(p1, p3):
-                # A full circle
-                offset = edge.Curve.Center - pt
+                # A horizontal full circle
+                offset = edge.Curve.Center - p3
             else:
                 # pd = Part.Circle(xy(p1), xy(p2), xy(p3)).Center
                 # Path.Log.debug(
@@ -336,22 +427,22 @@ def cmdsForEdge(edge, flip=False, hSpeed=0, vSpeed=0, tol=0.01):
                 #    "**** (%.2f, %.2f, %.2f) - (%.2f, %.2f, %.2f)"
                 #    % (pb.x, pb.y, pb.z, pd.x, pd.y, pd.z)
                 # )
+
             # Path.Log.debug("**** (%.2f, %.2f, %.2f)" % (offset.x, offset.y, offset.z))
 
             params.update({"I": offset.x, "J": offset.y, "K": (p3.z - p1.z) / 2})
             # G2/G3 commands are always performed at hSpeed
             if hSpeed > 0:
                 params.update({"F": hSpeed})
-            commands = [Path.Command(cmd, params)]
+            cmd = Path.Command(cmdArc, params)
+            commands.append(cmd)
 
         else:
-            # We're dealing with a helix or a more complex shape and it has to get approximated
-            # by a number of straight segments
+            # shape will be converted to a number of short straight segments
             points = edge.discretize(Deflection=tol)
             if flip:
-                points = points[::-1]
+                points.reverse()
 
-            commands = []
             if points:
                 p0 = points[0]
                 for p in points[1:]:
@@ -362,7 +453,7 @@ def cmdsForEdge(edge, flip=False, hSpeed=0, vSpeed=0, tol=0.01):
                     # print("***** {}".format(cmd))
                     commands.append(cmd)
                     p0 = p
-    # print commands
+
     return commands
 
 
@@ -478,8 +569,9 @@ def wiresForPath(path, startPoint=Vector(0, 0, 0)):
         edges = []
         for cmd in path.Commands:
             if cmd.Name in CmdMove:
-                edges.append(edgeForCmd(cmd, startPoint))
-                startPoint = commandEndPoint(cmd, startPoint)
+                if edge := edgeForCmd(cmd, startPoint):
+                    edges.append(edge)
+                    startPoint = commandEndPoint(cmd, startPoint)
             elif cmd.Name in CmdMoveRapid:
                 if len(edges) > 0:
                     wires.append(Part.Wire(edges))
@@ -488,6 +580,44 @@ def wiresForPath(path, startPoint=Vector(0, 0, 0)):
         if edges:
             wires.append(Part.Wire(edges))
     return wires
+
+
+def edgesToPoints(edges, chord, startPoint=None, error=Tolerance):
+    """edgesToPoints(edges, chord, [startPoint=None, error=Tolerance])
+    Extract an ordered list of Vector waypoints from a sequence of connected edges
+    (e.g. wire.Edges, or a hand-ordered edge list).
+
+    Straight Line and LineSegment edges contribute only their two endpoints.
+    All other curve types (arcs, splines, etc.) are discretized at the given
+    chord spacing (mm) so their shape is preserved.
+
+    Each edge's samples are oriented to continue from the previous point, so the
+    edges need not share a consistent parametric direction (they only need to
+    connect end-to-end).  startPoint, when given, orients the first edge so its
+    nearest end leads.  Consecutive points closer than error are suppressed.
+
+    Returns a list of FreeCAD.Vector.
+    """
+    pts = []
+    for edge in edges:
+        if isinstance(edge.Curve, (Part.Line, Part.LineSegment)):
+            raw = [
+                edge.valueAt(edge.FirstParameter),
+                edge.valueAt(edge.LastParameter),
+            ]
+        else:
+            raw = edge.discretize(Distance=chord)
+        if not raw:
+            continue
+        # Orient this edge's samples to continue from the running end (or, for
+        # the first edge, from startPoint if supplied).
+        anchor = pts[-1] if pts else startPoint
+        if anchor is not None and anchor.distanceToPoint(raw[0]) > anchor.distanceToPoint(raw[-1]):
+            raw = list(reversed(raw))
+        for p in raw:
+            if not pts or not pointsCoincide(pts[-1], p, error):
+                pts.append(p)
+    return pts
 
 
 def arcToHelix(edge, z0, z1):
@@ -558,6 +688,46 @@ def splitEdgeAt(edge, pt):
         return [arcToHelix(aes[0], p1.z, p2.z), arcToHelix(aes[1], p2.z, p3.z)]
 
 
+def splitArcEdge(edge, tol=0.1):
+    """splitArcEdge(edge) -> List(Part.Edge)
+    Returns a list of arc edges, angle each of them not great than 'maxArcAngle'
+    Useful for approximation not horizontal arcs and circles
+    Return a list with original edge, if arc angle less or equal 'maxArcAngle'"""
+
+    def isPrecise(arc):
+        # compare z of several points of arc and G2 move
+        z0 = arc.StartPoint.z
+        z1 = arc.EndPoint.z
+        alpha = math.asin((z1 - z0) / arc.length())
+        points = 5  # check points 1, 2 and 3 (0---1---2---3---4)
+        step = arc.length() / (points - 1)
+        contolPoints = arc.discretize(5)
+        for i, p in enumerate(contolPoints[1:-1], 1):
+            zG = arc.StartPoint.z + i * step * math.sin(alpha)  # z of G2 move
+            if abs(p.z - zG) > 2 * tol:
+                return False
+        return True
+
+    arcAngle = edge.LastParameter - edge.FirstParameter
+    maxnr = 32
+    nr = 1
+    while nr <= maxnr:
+        edges = []
+        firstPar = edge.FirstParameter
+        step = arcAngle / nr
+        for i in range(nr):
+            lastPar = firstPar + step if (i + 1) < nr else edge.LastParameter
+            arc = Part.ArcOfCircle(edge.Curve, firstPar, lastPar)
+            edges.append(arc.toShape())
+            firstPar = lastPar
+            if not isPrecise(arc) and nr < maxnr:
+                nr *= 2
+                break
+        else:
+            break
+    return edges
+
+
 def combineConnectedShapes(shapes):
     done = False
     while not done:
@@ -565,14 +735,18 @@ def combineConnectedShapes(shapes):
         combined = []
         Path.Log.debug("shapes: {}".format(shapes))
         for shape in shapes:
-            connected = [f for f in combined if isRoughly(shape.distToShape(f)[0], 0.0)]
-            Path.Log.debug(
-                "  {}: connected: {} dist: {}".format(
-                    len(combined),
-                    connected,
-                    [shape.distToShape(f)[0] for f in combined],
-                )
-            )
+            connected = [
+                f
+                for f in combined
+                if shape.BoundBox.intersect(f.BoundBox) and isRoughly(shape.distToShape(f)[0], 0.0)
+            ]
+            # Path.Log.debug(
+            #     "  {}: connected: {} dist: {}".format(
+            #         len(combined),
+            #         connected,
+            #         [shape.distToShape(f)[0] for f in combined],
+            #     )
+            # )
             if connected:
                 combined = [f for f in combined if f not in connected]
                 connected.append(shape)
@@ -584,6 +758,21 @@ def combineConnectedShapes(shapes):
     return shapes
 
 
+def uncompound(shape):
+    """uncompound(shape)
+    Go through the compound and return list of shapes
+    Can be useful to process shape Compound1(shape1, Compound2(shape2, Compound3(...)))"""
+    if not isinstance(shape, Part.Compound):
+        return [shape]
+    result = []
+    for sh in shape.SubShapes:
+        if isinstance(sh, Part.Compound):
+            result.extend(uncompound(sh))
+        else:
+            result.append(sh)
+    return result
+
+
 def removeDuplicateEdges(wire):
     unique = []
     for e in wire.Edges:
@@ -592,17 +781,19 @@ def removeDuplicateEdges(wire):
     return Part.Wire(unique)
 
 
-def flipEdge(edge):
+def _flipEdge(edge):
     """flipEdge(edge)
     Flips given edge around so the new Vertexes[0] was the old Vertexes[-1] and vice versa, without changing the shape.
-    Currently only lines, line segments, circles and arcs are supported."""
+    Currently only lines, line segments, circles, arcs and ellipses are supported."""
 
     if isinstance(edge.Curve, Part.Line) and not edge.Vertexes:
         return Part.Edge(
             Part.Line(edge.valueAt(edge.LastParameter), edge.valueAt(edge.FirstParameter))
         )
     elif isinstance(edge.Curve, (Part.Line, Part.LineSegment)):
-        return Part.Edge(Part.LineSegment(edge.Vertexes[-1].Point, edge.Vertexes[0].Point))
+        return Part.Edge(
+            Part.LineSegment(edge.valueAt(edge.LastParameter), edge.valueAt(edge.FirstParameter))
+        )
     elif isinstance(edge.Curve, Part.Circle):
         # Create an inverted circle
         circle = Part.Circle(edge.Curve.Center, -edge.Curve.Axis, edge.Curve.Radius)
@@ -615,7 +806,29 @@ def flipEdge(edge):
             )
         )
         # Now the edge always starts at 0 and LastParameter is the value range
-        arc = Part.Edge(circle, 0, edge.LastParameter - edge.FirstParameter)
+        return Part.Edge(circle, 0, edge.LastParameter - edge.FirstParameter)
+    elif isinstance(edge.Curve, Part.Ellipse):
+        # Ellipse has no (center, normal, radii) constructor to build the
+        # inverted curve directly the way Circle does above, so build it
+        # from explicit points instead: keep the same center and major-axis
+        # point (S1), but mirror the minor-axis reference point (S2) to the
+        # other side of the major axis. That flips the sign of the plane
+        # normal implied by (Center, S1, S2), which works out to
+        # newpoint(t) = point(-t) -- the same points, reverse direction,
+        # with parameter 0 still at the same physical point as before.
+        #
+        # Unlike a circle, an ellipse is NOT rotationally symmetric, so
+        # rotating it to shift the start point (the Circle branch's trick)
+        # would tilt it into a different ellipse entirely. Instead, trim to
+        # the mirrored parameter range [-LastParameter, -FirstParameter]:
+        # newpoint(-LastParameter) = point(LastParameter) (old end, now the
+        # new start) and newpoint(-FirstParameter) = point(FirstParameter)
+        # (old start, now the new end).
+        c = edge.Curve
+        s1 = c.Center + c.XAxis * c.MajorRadius
+        s2 = c.Center - c.YAxis * c.MinorRadius
+        ellipse = Part.Ellipse(s1, s2, c.Center)
+        arc = Part.Edge(ellipse, -edge.LastParameter, -edge.FirstParameter)
         return arc
     elif isinstance(edge.Curve, (Part.BSplineCurve, Part.BezierCurve)):
         if isinstance(edge.Curve, Part.BSplineCurve):
@@ -648,6 +861,22 @@ def flipEdge(edge):
         return edge.reversed()
 
     Path.Log.warning(translate("PathGeom", "%s not supported for flipping") % type(edge.Curve))
+    return None
+
+
+def flipEdge(edge):
+    """flipEdge(edge)
+    Flips given edge around so the new Vertexes[0] was the old Vertexes[-1] and vice versa, without changing the shape.
+    """
+
+    flipped = _flipEdge(edge)
+
+    # Preserve vertex tolerances (reversed order)
+    if flipped and len(edge.Vertexes) >= 2 and len(flipped.Vertexes) >= 2:
+        flipped.Vertexes[0].Tolerance = edge.Vertexes[-1].Tolerance
+        flipped.Vertexes[-1].Tolerance = edge.Vertexes[0].Tolerance
+
+    return flipped
 
 
 def flipWire(wire):
@@ -675,7 +904,7 @@ def makeBoundBoxFace(bBox, offset=0.0, zHeight=0.0):
 
 
 # Method to combine faces if connected
-def combineHorizontalFaces(faces):
+def combineHorizontalFaces(faces, keepOrder=False, z=0, tol=0.01):
     """combineHorizontalFaces(faces)...
     This function successfully identifies and combines multiple connected faces and
     works on multiple independent faces with multiple connected faces within the list.
@@ -684,80 +913,45 @@ def combineHorizontalFaces(faces):
 
     Attempts to do the same shape connecting failed with TechDraw.findShapeOutline() and
     Path.Geom.combineConnectedShapes(), so this algorithm was created.
+
+    keepOrder: returns shapes with original order
+    z: returns faces at needed height
+    tol: set tolerance for fuzzy boolean operations
     """
-    horizontal = list()
+    horizontal = []
     offset = 10.0
-    topFace = None
-    innerFaces = list()
 
-    # Verify all incoming faces are at Z=0.0
-    for f in faces:
-        if f.BoundBox.ZMin != 0.0:
-            f.translate(FreeCAD.Vector(0.0, 0.0, 0.0 - f.BoundBox.ZMin))
+    for f in faces:  # translate all faces to z
+        f.translate(FreeCAD.Vector(0, 0, z - f.BoundBox.ZMin))
 
-    # Make offset compound boundbox solid and cut incoming face extrusions from it
+    # Make compound from incoming shapes
     allFaces = Part.makeCompound(faces)
-    if hasattr(allFaces, "Area") and isRoughly(allFaces.Area, 0.0):
-        msg = translate(
-            "PathGeom",
-            "Zero working area to process. Check your selection and settings.",
-        )
+
+    # Ckeck if incoming shapes have area
+    if isRoughly(allFaces.Area, 0):
+        msg = translate("PathGeom", "combineHorizontalFaces: Zero working area to process")
         Path.Log.info(msg)
         return horizontal
 
-    afbb = allFaces.BoundBox
-    bboxFace = makeBoundBoxFace(afbb, offset, -5.0)
-    bboxSolid = bboxFace.extrude(FreeCAD.Vector(0.0, 0.0, 10.0))
-    extrudedFaces = list()
-    for f in faces:
-        extrudedFaces.append(f.extrude(FreeCAD.Vector(0.0, 0.0, 6.0)))
+    # Make boundbox face with offset and cut incoming faces from it
+    bboxFace = makeBoundBoxFace(allFaces.BoundBox, offset, z)
+    cut = bboxFace.cut(faces, tol)
+    horizontal = Part.makeFace(cut.Wires[1:], "Part::FaceMakerBullseye").Faces
 
-    # Fuse all extruded faces together
-    allFacesSolid = extrudedFaces.pop()
-    for i in range(len(extrudedFaces)):
-        temp = extrudedFaces.pop().fuse(allFacesSolid)
-        allFacesSolid = temp
-    cut = bboxSolid.cut(allFacesSolid)
-
-    # Debug
-    # Part.show(cut)
-    # FreeCAD.ActiveDocument.ActiveObject.Label = "cut"
-
-    # Identify top face and floating inner faces that are the holes in incoming faces
-    for f in cut.Faces:
-        fbb = f.BoundBox
-        if isRoughly(fbb.ZMin, 5.0) and isRoughly(fbb.ZMax, 5.0):
-            if (
-                isRoughly(afbb.XMin - offset, fbb.XMin)
-                and isRoughly(afbb.XMax + offset, fbb.XMax)
-                and isRoughly(afbb.YMin - offset, fbb.YMin)
-                and isRoughly(afbb.YMax + offset, fbb.YMax)
-            ):
-                topFace = f
-            else:
-                innerFaces.append(f)
-
-    if not topFace:
-        return horizontal
-
-    outer = [Part.Face(w) for w in topFace.Wires[1:]]
-
-    if outer:
-        for f in outer:
-            f.translate(FreeCAD.Vector(0.0, 0.0, 0.0 - f.BoundBox.ZMin))
-
-        if innerFaces:
-            # inner = [Part.Face(f.Wire1) for f in innerFaces]
-            inner = innerFaces
-
-            for f in inner:
-                f.translate(FreeCAD.Vector(0.0, 0.0, 0.0 - f.BoundBox.ZMin))
-            innerComp = Part.makeCompound(inner)
-            outerComp = Part.makeCompound(outer)
-            cut = outerComp.cut(innerComp)
-            for f in cut.Faces:
-                horizontal.append(f)
+    # restore order
+    if keepOrder and len(horizontal) > 1:
+        ordered = [None] * len(faces)
+        for face in horizontal:
+            for i, f in enumerate(faces):
+                if face.BoundBox.intersect(f.BoundBox) and face.isInside(
+                    f.Vertexes[0].Point, Tolerance, False
+                ):
+                    ordered[i] = face
+                    break
+        ordered = [x for x in ordered if x]
+        if len(ordered) == len(horizontal):
+            horizontal = ordered
         else:
-            horizontal = outer
+            Path.Log.info(translate("PathGeom", "Can not restore order of faces."))
 
     return horizontal

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2017 Markus Hovorka <m.hovorka@live.de>                 *
 # *   Copyright (c) 2020 Bernd Hahnebach <bernd@bimstatik.org>              *
@@ -133,7 +135,7 @@ class Flowwriter:
     def handleFlowMaterial(self, bodies):
         tempObj = self.write.getSingleMember("Fem::ConstraintInitialTemperature")
         if tempObj is not None:
-            refTemp = float(tempObj.initialTemperature.getValueAs("K"))
+            refTemp = float(tempObj.InitialTemperature.getValueAs("K"))
             for name in bodies:
                 self.write.material(name, "Reference Temperature", refTemp)
         for obj in self.write.getMember("App::MaterialObject"):

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2020 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef ARROWENUMS_H_
-#define ARROWENUMS_H_
+#pragma once
 
 #include <string>
 #include <vector>
@@ -58,4 +59,3 @@ private:
 };
 
 } //end namespace TechDraw
-#endif

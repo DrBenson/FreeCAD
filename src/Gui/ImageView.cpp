@@ -46,6 +46,8 @@
 
 using namespace Gui;
 
+TYPESYSTEM_SOURCE_ABSTRACT(Gui::ImageView, Gui::MDIView)  // NOLINT
+
 ImageView::ImageView(QWidget* parent)
     : MDIView(nullptr, parent)
     , imageLabel(new QLabel)
@@ -311,9 +313,8 @@ void ImageView::print(QPrinter* printer)
     painter.drawPixmap(0, 0, pixmap);
 }
 
-bool ImageView::onMsg(const char* pMsg, const char** ppReturn)
+bool ImageView::onMsg(const char* pMsg)
 {
-    Q_UNUSED(ppReturn)
     if (strcmp("ViewFit", pMsg) == 0) {
         fitToWindow(true);
         return true;

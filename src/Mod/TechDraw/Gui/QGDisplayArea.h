@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2017 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DRAWINGGUI_QGDISPLAYAREA_H
-#define DRAWINGGUI_QGDISPLAYAREA_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -60,6 +61,3 @@ private:
 };
 
 }
-
-#endif // DRAWINGGUI_QGDISPLAYAREA_H
-

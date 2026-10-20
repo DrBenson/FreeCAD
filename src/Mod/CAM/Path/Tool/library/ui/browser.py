@@ -35,15 +35,15 @@ from ...toolbit import ToolBit
 from ...toolbit.ui import ToolBitEditor
 from ...toolbit.ui.util import natural_sort_key
 from ...toolbit.ui.browser import ToolBitBrowserWidget, ToolBitUriRole
+from ...toolbit.ui.typefilter import ToolBitTypeFilterMixin
 from ...toolbit.serializers import YamlToolBitSerializer
 from ..models.library import Library
-
 
 Path.Log.setLevel(Path.Log.Level.INFO, Path.Log.thisModule())
 Path.Log.trackModule(Path.Log.thisModule())
 
 
-class LibraryBrowserWidget(ToolBitBrowserWidget):
+class LibraryBrowserWidget(ToolBitBrowserWidget, ToolBitTypeFilterMixin):
     """
     A widget to browse, filter, and select Tool Library assets from the
     AssetManager, with sorting and batch insertion, using a current library.
@@ -57,6 +57,7 @@ class LibraryBrowserWidget(ToolBitBrowserWidget):
         store: str = "local",
         parent=None,
         compact=True,
+        show_all_tools=False,
     ):
         super().__init__(
             asset_manager=asset_manager,
@@ -67,6 +68,7 @@ class LibraryBrowserWidget(ToolBitBrowserWidget):
         )
         self.current_library: Optional[Library] = None
         self._selected_tool_type: Optional[str] = None
+        self._show_all_tools = show_all_tools
         self.layout().setContentsMargins(0, 0, 0, 0)
 
         # Add tool type filter combo box to the base widget
@@ -83,6 +85,15 @@ class LibraryBrowserWidget(ToolBitBrowserWidget):
     def setDragEnabled(self, enabled: bool = True):
         """Enable or disable drag-and-drop support for the tool list."""
         self._tool_list_widget.setDragEnabled(enabled)
+
+    def setSingleSelection(self, single: bool = True):
+        """Restricts the tool list to one selected toolbit at a time."""
+        mode = (
+            QtGui.QAbstractItemView.SingleSelection
+            if single
+            else QtGui.QAbstractItemView.ExtendedSelection
+        )
+        self._tool_list_widget.setSelectionMode(mode)
 
     def load_last_library(self):
         """Loads the last selected library from preferences."""
@@ -102,7 +113,10 @@ class LibraryBrowserWidget(ToolBitBrowserWidget):
 
     def set_sort_order(self, key: str):
         super().set_sort_order(key)
-        Path.Preferences.setLastToolLibrarySortKey(self._sort_key)
+        # The "All Tools" view forces sorting by label; that is not a choice
+        # the user made, so it must not overwrite their preferred order.
+        if self.current_library:
+            Path.Preferences.setLastToolLibrarySortKey(self._sort_key)
 
     def _get_state(self):
         """Gets the current library URI, selected toolbit URI, and scroll
@@ -166,7 +180,7 @@ class LibraryBrowserWidget(ToolBitBrowserWidget):
             except FileNotFoundError:
                 Path.Log.error(f"Library {library_uri} not found.")
                 self.current_library = None
-        self._update_tool_list()
+        self._reload_assets_from_library()
 
     def get_tool_no_from_current_library(self, toolbit):
         """
@@ -177,82 +191,65 @@ class LibraryBrowserWidget(ToolBitBrowserWidget):
         tool_no = self.current_library.get_bit_no_from_bit(toolbit)
         return tool_no
 
+    def _update_sort_combo(self):
+        """
+        Toolbit numbers are assigned by a library, so the "All Tools" view has
+        none. Sorting by label is the only option left there, so hide the combo
+        box entirely and restore the user's preferred order when a library is
+        selected again.
+        """
+        has_tool_nos = self.current_library is not None
+        self._sort_combo.setVisible(has_tool_nos)
+
+        key = Path.Preferences.getLastToolLibrarySortKey() if has_tool_nos else "label"
+        index = self._sort_combo.findData(key)
+        if index < 0:  # no preference stored yet, or the key is unavailable
+            index = 0
+
+        self._sort_combo.blockSignals(True)
+        try:
+            self._sort_combo.setCurrentIndex(index)
+            self._sort_key = self._sort_combo.itemData(index)
+        finally:
+            self._sort_combo.blockSignals(False)
+
     def set_current_library(self, library):
         """Sets the current library and updates the tool list."""
         self.current_library = library
-        self._update_tool_list()
+        self._reload_assets_from_library()
         self.current_library_changed.emit()
 
         # Save the selected library to preferences
         if library:
             Path.Preferences.setLastToolLibrary(str(library.get_uri()))
 
-    def _get_available_tool_types(self):
-        """Get all available tool types from the current assets."""
-        tool_types = set()
-        # Make sure we have assets to work with
-        if not hasattr(self, "_all_assets") or not self._all_assets:
-            return []
+    def _get_assets_for_type_filter(self):
+        """Returns the list of assets to use for type filtering."""
+        return getattr(self, "_all_assets", [])
 
-        for asset in self._all_assets:
-            # Use get_shape_name() method to get the tool type
-            if hasattr(asset, "get_shape_name"):
-                tool_type = asset.get_shape_name()
-                if tool_type:
-                    tool_types.add(tool_type)
+    def _on_type_filter_changed(self):
+        """Called when the type filter changes - updates the list."""
+        self._refresh_filtered_list(self._tool_list_widget, self._search_edit, self._all_assets)
 
-        return sorted(tool_types)
-
-    def _get_filtered_assets(self):
-        """Get assets filtered by tool type if a specific type is selected."""
-        if self._tool_type_combo.currentIndex() == 0:  # "All Toolbit Types"
-            return self._all_assets
-
-        filtered_assets = []
-        for asset in self._all_assets:
-            if hasattr(asset, "get_shape_name"):
-                tool_type = asset.get_shape_name()
-                if tool_type == self._selected_tool_type:
-                    filtered_assets.append(asset)
-        return filtered_assets
-
-    def _update_tool_list(self):
-        """Updates the tool list based on the current library."""
+    def _reload_assets_from_library(self):
+        """Reloads assets from the current library and refreshes the UI."""
+        self._update_sort_combo()
         if self.current_library:
             self._all_assets = [t for t in self.current_library]
         else:
-            # Fetch all toolbits
+            # Fetch all toolbits (when no library selected or "All Tools" selected)
             all_toolbits = self._asset_manager.fetch(asset_type="toolbit", depth=0)
             self._all_assets = cast(List[ToolBit], all_toolbits)
         self._sort_assets()
-        self._tool_list_widget.clear_list()
         # Update tool type combo after assets are loaded
         if hasattr(self, "_tool_type_combo"):
             self._update_tool_type_combo()
-        self._update_list()
+        self._refresh_filtered_list(self._tool_list_widget, self._search_edit, self._all_assets)
 
     def _update_list(self):
-        """Updates the list widget with filtered assets."""
-        self._tool_list_widget.clear_list()
-        filtered_assets = self._get_filtered_assets()
-
-        # Apply search filter if there is one
-        search_term = self._search_edit.text().lower()
-        if search_term:
-            search_filtered = []
-            for asset in filtered_assets:
-                if search_term in asset.label.lower():
-                    search_filtered.append(asset)
-                    continue
-                # Also search in tool type
-                if hasattr(asset, "get_shape_name"):
-                    tool_type = asset.get_shape_name()
-                    if tool_type and search_term in tool_type.lower():
-                        search_filtered.append(asset)
-            filtered_assets = search_filtered
-
-        for asset in filtered_assets:
-            self._tool_list_widget.add_toolbit(asset)
+        """Override base class to prevent search highlighting."""
+        super()._update_list()
+        # Remove any highlighting by passing empty string
 
     def _add_shortcuts(self):
         """Adds keyboard shortcuts for common actions."""
@@ -356,7 +353,6 @@ class LibraryBrowserWidget(ToolBitBrowserWidget):
 
         state = self._get_state()
         self.refresh()
-        self._update_list()
         self._set_state(state)
 
     def _on_cut_requested(self):
@@ -571,31 +567,6 @@ class LibraryBrowserWidget(ToolBitBrowserWidget):
             self._asset_manager.add(library)
             self.refresh()
 
-    def _update_tool_type_combo(self):
-        """Update the tool type combo box with available types."""
-        current_selection = self._tool_type_combo.currentText()
-        self._tool_type_combo.blockSignals(True)
-        try:
-            self._tool_type_combo.clear()
-            self._tool_type_combo.addItem(FreeCAD.Qt.translate("CAM", "All Toolbit Types"))
-
-            for tool_type in self._get_available_tool_types():
-                self._tool_type_combo.addItem(tool_type)
-
-            # Restore selection if it still exists
-            index = self._tool_type_combo.findText(current_selection)
-            if index >= 0:
-                self._tool_type_combo.setCurrentIndex(index)
-            else:
-                self._tool_type_combo.setCurrentIndex(0)
-        finally:
-            self._tool_type_combo.blockSignals(False)
-
-    def _on_tool_type_combo_changed(self, tool_type):
-        """Handle tool type filter selection change."""
-        self._selected_tool_type = tool_type
-        self._update_list()
-
 
 class LibraryBrowserWithCombo(LibraryBrowserWidget):
     """
@@ -608,6 +579,7 @@ class LibraryBrowserWithCombo(LibraryBrowserWidget):
         store: str = "local",
         parent=None,
         compact=True,
+        show_all_tools=False,
     ):
         super().__init__(
             asset_manager=asset_manager,
@@ -615,6 +587,8 @@ class LibraryBrowserWithCombo(LibraryBrowserWidget):
             parent=parent,
             compact=compact,
         )
+
+        self._show_all_tools = show_all_tools
 
         # Move search box into dedicated row to make space for the
         # library selection combo box
@@ -642,7 +616,10 @@ class LibraryBrowserWithCombo(LibraryBrowserWidget):
             return
 
         selected_library = cast(Library, self._library_combo.itemData(index))
+
+        # Handle "All Tools" selection (userData is None)
         if not selected_library:
+            self.set_current_library(None)
             return
 
         # Have to refetch the non-shallow library.
@@ -655,42 +632,53 @@ class LibraryBrowserWithCombo(LibraryBrowserWidget):
         if self.current_library:
             for i in range(self._library_combo.count()):
                 lib = self._library_combo.itemData(i)
-                if lib.get_uri() == self.current_library.get_uri():
+                if lib and lib.get_uri() == self.current_library.get_uri():
                     self._library_combo.setCurrentIndex(i)
                     return
             Path.Log.warning(
                 f"Current library {self.current_library.get_uri()} not found in combo box."
             )
+        else:
+            # current_library is None, select "All Tools" if available
+            if self._show_all_tools:
+                self._library_combo.setCurrentIndex(0)
+
+    def _index_of_current_library(self):
+        """
+        Returns the combo box index of the current library, or of the "All
+        Tools" entry when no library is selected. -1 if neither is available.
+        """
+        if not self.current_library:
+            return 0 if self._show_all_tools else -1
+
+        for i in range(self._library_combo.count()):
+            lib = self._library_combo.itemData(i)
+            if lib and lib.get_uri() == self.current_library.get_uri():
+                return i
+        return -1
 
     def refresh(self):
         """Reads available libraries and refreshes the combo box and toolbits."""
         Path.Log.debug("refresh(): Fetching and populating libraries and toolbits.")
         libraries = self._asset_manager.fetch("toolbitlibrary", store=self._store_name, depth=0)
+
         self._in_refresh = True
         try:
             self._library_combo.clear()
+
+            # Add "All Tools" option if requested
+            if self._show_all_tools:
+                self._library_combo.addItem(FreeCAD.Qt.translate("CAM", "All Tools"), userData=None)
+
             for library in sorted(libraries, key=lambda x: natural_sort_key(x.label)):
                 self._library_combo.addItem(library.label, userData=library)
+
+            super().refresh()
+
+            index = self._index_of_current_library()
+            self._library_combo.setCurrentIndex(max(index, 0))
         finally:
             self._in_refresh = False
 
-        super().refresh()
-
-        if not libraries:
-            return
-        if not self.current_library:
-            first_library = self._library_combo.itemData(0)
-            if first_library:
-                uri = first_library.get_uri()
-                library = self._asset_manager.get(uri, store=self._store_name, depth=1)
-                self.set_current_library(library)
-            self._library_combo.setCurrentIndex(0)
-            return
-
-        for i in range(self._library_combo.count()):
-            lib = self._library_combo.itemData(i)
-            if lib.get_uri() == self.current_library.get_uri():
-                self._library_combo.setCurrentIndex(i)
-                break
-        else:
-            self._library_combo.setCurrentIndex(0)
+        if index < 0 and self._library_combo.count():
+            self._on_library_combo_changed(self._library_combo.currentIndex())

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2016 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DrawViewImage_h_
-#define DrawViewImage_h_
+#pragma once
 
 #include <App/DocumentObject.h>
 #include <App/FeaturePython.h>
@@ -76,6 +77,3 @@ using DrawViewImagePython = App::FeaturePythonT<DrawViewImage>;
 
 
 } //namespace TechDraw
-
-
-#endif

@@ -23,13 +23,12 @@
 #include <array>
 #include <cmath>
 #include <cstring>
+#include <format>
 #include <limits>
 #include <ranges>
 #include <vector>
 
-#include <fmt/format.h>
-#include <fmt/ranges.h>
-
+#include "Tools.h"
 #include "Unit.h"
 
 using namespace Base;
@@ -77,6 +76,8 @@ constexpr auto unitSpecs = std::to_array<UnitSpec>({
     { "Force"                                 , {  1,  1, -2                     } },
     { "Frequency"                             , {  0,  0, -1                     } },
     { "HeatFlux"                              , {  0,  1, -3                     } },
+    { "MassMomentOfInertia"                   , {  2,  1                         } },
+    { "AreaMomentOfInertia"                   , {  4                             } },
     { "InverseArea"                           , { -2                             } },
     { "InverseLength"                         , { -1                             } },
     { "InverseVolume"                         , { -3                             } },
@@ -102,6 +103,7 @@ constexpr auto unitSpecs = std::to_array<UnitSpec>({
     { "VacuumPermittivity"                    , { -3, -1,  4,  2                 } },
     { "Velocity"                              , {  1,  0, -1                     } },
     { "Volume"                                , {  3                             } },
+    { "Concentration"                         , { -3,  0,  0,  0,  0,  1         } },
     { "VolumeChargeDensity"                   , { -3,  0,  1,  1                 } },
     { "VolumeFlowRate"                        , {  3,  0, -1                     } },
     { "VolumetricThermalExpansionCoefficient" , {  0,  0,  0,  0, -1             } },
@@ -241,14 +243,14 @@ std::string Unit::getString() const
         const auto absol {abs(_exps.at(index))};
 
         return absol <= 1 ? unitStrString
-                          : fmt::format("{}^{}", unitStrString, std::to_string(absol));
+                          : std::format("{}^{}", unitStrString, std::to_string(absol));
     };
 
     auto buildStr = [&](auto indexes) {
         std::vector<std::string> subStrings {};
         std::transform(indexes.begin(), indexes.end(), std::back_inserter(subStrings), buildSubStr);
 
-        return fmt::format("{}", fmt::join(subStrings, "*"));
+        return Base::Tools::joinFormatted(subStrings, "*");
     };
 
     //------------------------------------------------------------------------------
@@ -261,18 +263,18 @@ std::string Unit::getString() const
 
     auto denominatorStr = buildStr(negValIndexes);
 
-    return fmt::format(
+    return std::format(
         "{}/{}",
         numeratorStr.empty() ? "1" : numeratorStr,
-        negValIndexes.size() > 1 ? fmt::format("({})", denominatorStr) : denominatorStr
+        negValIndexes.size() > 1 ? std::format("({})", denominatorStr) : denominatorStr
     );
 }
 
 std::string Unit::representation() const
 {
     auto name = getTypeString();
-    auto inParen = fmt::format("Unit: {} ({})", getString(), fmt::join(_exps, ","));
-    return name.empty() ? inParen : fmt::format("{} [{}]", inParen, name);
+    auto inParen = std::format("Unit: {} ({})", getString(), Base::Tools::joinFormatted(_exps, ","));
+    return name.empty() ? inParen : std::format("{} [{}]", inParen, name);
 }
 
 std::string Unit::getTypeString() const
@@ -327,6 +329,7 @@ constexpr Unit Unit::Angle                                 = make("Angle"       
 constexpr Unit Unit::Acceleration                          = make("Acceleration"                );
 constexpr Unit Unit::AngleOfFriction                       = make("Angle"                       );
 constexpr Unit Unit::Area                                  = make("Area"                        );
+constexpr Unit Unit::Concentration                         = make("Concentration"               );
 constexpr Unit Unit::CompressiveStrength                   = make("Pressure"                    );
 constexpr Unit Unit::CurrentDensity                        = make("CurrentDensity"              );
 constexpr Unit Unit::Density                               = make("Density"                     );
@@ -343,6 +346,8 @@ constexpr Unit Unit::ElectromagneticPotential              = make("Electromagnet
 constexpr Unit Unit::Force                                 = make("Force"                       );
 constexpr Unit Unit::Frequency                             = make("Frequency"                   );
 constexpr Unit Unit::HeatFlux                              = make("HeatFlux"                    );
+constexpr Unit Unit::MassMomentOfInertia                   = make("MassMomentOfInertia"         );
+constexpr Unit Unit::AreaMomentOfInertia                   = make("AreaMomentOfInertia"         );
 constexpr Unit Unit::InverseArea                           = make("InverseArea"                 );
 constexpr Unit Unit::InverseLength                         = make("InverseLength"               );
 constexpr Unit Unit::InverseVolume                         = make("InverseVolume"               );

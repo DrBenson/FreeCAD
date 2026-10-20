@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jürgen Riegel <FreeCAD@juergen-riegel.net>         *
  *                                                                         *
@@ -21,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef FEM_ViewProviderFemMeshShape_H
-#define FEM_ViewProviderFemMeshShape_H
+#pragma once
 
 #include <Gui/ViewProviderFeaturePython.h>
 
@@ -61,6 +62,3 @@ using ViewProviderFemMeshShapeBasePython
     = Gui::ViewProviderFeaturePythonT<ViewProviderFemMeshShapeBase>;
 
 }  // namespace FemGui
-
-
-#endif  // FEM_ViewProviderFemMeshShape_H

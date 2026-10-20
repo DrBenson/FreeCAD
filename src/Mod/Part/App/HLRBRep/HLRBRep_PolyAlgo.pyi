@@ -13,8 +13,7 @@ from Part.TopoShapePy import TopoShape
     Include="HLRBRep_PolyAlgo.hxx",
     Constructor=True,
 )
-@class_declarations(
-    """
+@class_declarations("""
 private:
     Handle(HLRBRep_PolyAlgo) hAlgo;
 
@@ -22,8 +21,7 @@ public:
     Handle(HLRBRep_PolyAlgo) handle() {
         return hAlgo;
     }
-"""
-)
+""")
 class HLRBRep_PolyAlgo(PyObjectBase):
     """
     PolyAlgo() -> HLRBRep_PolyAlgo
@@ -137,7 +135,7 @@ class HLRBRep_PolyAlgo(PyObjectBase):
         """
         ...
 
-    def moreHide(self) -> None:
+    def moreHide(self) -> bool:
         """
         moreHide()
         """
@@ -155,7 +153,7 @@ class HLRBRep_PolyAlgo(PyObjectBase):
         """
         ...
 
-    def moreShow(self) -> None:
+    def moreShow(self) -> bool:
         """
         moreShow()
         """

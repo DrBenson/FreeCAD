@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef Element_Header_HEADER
-#define Element_Header_HEADER
+#pragma once
 
 #include <assert.h>
 #include <istream>
@@ -47,7 +46,7 @@ struct Element_Header
         read(cont, zLib);
     };
 
-    inline void read(Context& cont, bool zLib = false)
+    inline void read(Context& cont, [[maybe_unused]] bool zLib = false)
     {
         // only zip less implemented so far...
         assert(zLib == false);
@@ -61,6 +60,3 @@ struct Element_Header
     GUID Object_Type_ID;
     UChar Object_Base_Type;
 };
-
-
-#endif

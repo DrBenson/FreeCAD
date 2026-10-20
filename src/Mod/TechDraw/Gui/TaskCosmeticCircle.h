@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2023 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAWGUI_TASKCOSMETICCIRCLE_H
-#define TECHDRAWGUI_TASKCOSMETICCIRCLE_H
+#pragma once
 
 #include <Base/Vector3D.h>
 #include <Gui/TaskView/TaskDialog.h>
@@ -129,6 +130,3 @@ private:
 };
 
 } //namespace TechDrawGui
-
-#endif // #ifndef TECHDRAWGUI_TASKCOSMETICCIRCLE_H
-

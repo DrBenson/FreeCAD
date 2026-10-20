@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2015 Stefan Tröger <stefantroeger@gmx.net>              *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef FEM_VIEWPROVIDERFEMPOSTOBJECT_H
-#define FEM_VIEWPROVIDERFEMPOSTOBJECT_H
+#pragma once
 
 #include <Base/Observer.h>
 #include <Gui/ViewProviderGeometryObject.h>
@@ -85,6 +86,7 @@ public:
     App::PropertyPercent Transparency;
     App::PropertyBool PlainColorEdgeOnSurface;
     App::PropertyColor EdgeColor;
+    App::PropertyColor NoneFieldColor;
     App::PropertyFloatConstraint LineWidth;
     App::PropertyFloatConstraint PointSize;
 
@@ -171,6 +173,3 @@ private:
 };
 
 }  // namespace FemGui
-
-
-#endif  // FEM_VIEWPROVIDERFEMPOSTOBJECT_H

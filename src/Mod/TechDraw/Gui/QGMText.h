@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2019 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -23,8 +25,7 @@
 //QGMText.h
 //a movable, editable text item
 
-#ifndef TECHDRAWGUI_MOVABLETEXT_H
-#define TECHDRAWGUI_MOVABLETEXT_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -82,5 +83,3 @@ private:
 };
 
 }
-
-#endif // TECHDRAWGUI_MOVABLETEXT_H

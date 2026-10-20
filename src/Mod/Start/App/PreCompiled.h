@@ -21,14 +21,14 @@
  *                                                                          *
  ***************************************************************************/
 
-#ifndef START_PRECOMPILED_H
-#define START_PRECOMPILED_H
+#pragma once
 
 #include <FCConfig.h>
 
 // standard
 #include <cinttypes>
 #include <cmath>
+#include <format>
 #include <iomanip>
 #include <map>
 #include <sstream>
@@ -39,9 +39,6 @@
 // boost
 #include <boost/algorithm/string/predicate.hpp>
 
-// fmt
-#include <fmt/format.h>
-
 // Qt (should never include GUI files, only QtCore)
 #include <QByteArray>
 #include <QCryptographicHash>
@@ -49,6 +46,7 @@
 #include <QDir>
 #include <QFile>
 #include <QFileInfo>
+#include <QLocale>
 #include <QMetaObject>
 #include <QMutexLocker>
 #include <QObject>
@@ -59,5 +57,3 @@
 #include <QTimeZone>
 #include <QTimer>
 #include <QUrl>
-
-#endif  // START_PRECOMPILED_H

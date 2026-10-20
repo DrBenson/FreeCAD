@@ -21,8 +21,7 @@
  *                                                                          *
  ***************************************************************************/
 
-#ifndef GUI_INPUTHINT_H
-#define GUI_INPUTHINT_H
+#pragma once
 
 #include "FCGlobal.h"
 
@@ -69,10 +68,10 @@ struct InputHint
     enum class UserInput
     {
         // Modifier
-        ModifierShift = Qt::KeyboardModifier::ShiftModifier,
-        ModifierCtrl = Qt::KeyboardModifier::ControlModifier,
-        ModifierAlt = Qt::KeyboardModifier::AltModifier,
-        ModifierMeta = Qt::KeyboardModifier::MetaModifier,
+        ModifierShift = Qt::Key_Shift,
+        ModifierCtrl = Qt::Key_Control,
+        ModifierAlt = Qt::Key_Alt,
+        ModifierMeta = Qt::Key_Meta,
 
         // Keyboard Keys
         KeySpace = Qt::Key_Space,
@@ -235,6 +234,11 @@ struct InputHint
         MouseScroll = 5 << 16,
         MouseScrollUp = 6 << 16,
         MouseScrollDown = 7 << 16,
+        Mouse = 8 << 16,
+        MouseMoveLeft = 9 << 16,
+        MouseMoveMiddle = 10 << 16,
+        MouseMoveRight = 11 << 16,
+        MouseDoubleLeft = 12 << 16,
     };
 
     struct InputSequence
@@ -304,7 +308,7 @@ template<typename T>
 using HintTable = std::vector<StateHints<T>>;
 
 template<typename T>
-static std::list<InputHint> lookupHints(
+inline std::list<InputHint> lookupHints(
     T state,
     HintTable<T> table,
     const std::list<InputHint>& fallback = {}
@@ -322,5 +326,3 @@ static std::list<InputHint> lookupHints(
 }
 
 }  // namespace Gui
-
-#endif  // GUI_INPUTHINT_H

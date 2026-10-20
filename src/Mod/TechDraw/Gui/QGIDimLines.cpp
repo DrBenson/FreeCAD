@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2016 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -26,11 +28,9 @@
 # include <QPainterPathStroker>
 
 #include "QGIDimLines.h"
-#include "PreferencesGui.h"
 
 
 using namespace TechDrawGui;
-using namespace TechDraw;
 
 QGIDimLines::QGIDimLines()
 {
@@ -49,16 +49,10 @@ QPainterPath QGIDimLines::shape() const
 {
     QPainterPath outline;
     QPainterPathStroker stroker;
-    stroker.setWidth(getEdgeFuzz());
+    stroker.setWidth(this->m_edgeFuzz);
     outline = stroker.createStroke(path());
     return outline;
 }
-
-double QGIDimLines::getEdgeFuzz() const
-{
-    return PreferencesGui::edgeFuzz();
-}
-
 
 QRectF QGIDimLines::boundingRect() const
 {

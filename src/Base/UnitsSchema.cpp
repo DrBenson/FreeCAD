@@ -21,19 +21,17 @@
  *                                                                      *
  ************************************************************************/
 
-#include <iomanip>
-#include <sstream>
+#include <cmath>
+#include <algorithm>
+#include <format>
 #include <string>
 
-#include <QLocale>
-#include <QString>
-
 #include "Quantity.h"
+#include "NumericFormatting.h"
 #include "UnitsSchema.h"
 #include "UnitsSchemasData.h"
 #include "UnitsSchemasSpecs.h"
 #include "Exception.h"
-#include "Quantity.h"
 
 using Base::UnitsSchema;
 using Base::UnitsSchemaSpec;
@@ -52,22 +50,37 @@ std::string UnitsSchema::translate(const Quantity& quant) const
 
 std::string UnitsSchema::translate(const Quantity& quant, double& factor, std::string& unitString) const
 {
+    return translate(quant, currentNumericLocaleContext(), factor, unitString);
+}
+
+std::string UnitsSchema::translate(
+    const Quantity& quant,
+    const NumericLocaleContext& formatting,
+    double& factor,
+    std::string& unitString
+) const
+{
     // Use defaults without schema-level translation.
     factor = 1.0;
     unitString = quant.getUnit().getString();
 
     if (spec.translationSpecs.empty()) {
-        return toLocale(quant, factor, unitString);
+        return toLocale(quant, formatting, factor, unitString);
     }
 
     const auto unitName = quant.getUnit().getTypeString();
     if (!spec.translationSpecs.contains(unitName)) {
-        return toLocale(quant, factor, unitString);
+        return toLocale(quant, formatting, factor, unitString);
     }
 
     const auto value = quant.getValue();
+    const auto magnitude = std::abs(value);
     auto isSuitable = [&](const UnitTranslationSpec& row) {
-        return row.threshold > value || row.threshold == 0;  // zero indicates default
+        // Shrink threshold slightly so values at exact threshold boundaries
+        // (e.g. "1 S/m" = 1e-9 at threshold 1e-9) fall through to the next unit.
+        constexpr double relEps = 1e-12;
+        return row.threshold * (1.0 - relEps) > magnitude
+            || row.threshold == 0;  // zero indicates default
     };
 
     auto unitSpecs = spec.translationSpecs.at(unitName);
@@ -93,25 +106,27 @@ std::string UnitsSchema::translate(const Quantity& quant, double& factor, std::s
     factor = unitSpec->factor;
     unitString = unitSpec->unitString;
 
-    return toLocale(quant, factor, unitString);
+    return toLocale(quant, formatting, factor, unitString);
 }
 
-std::string UnitsSchema::toLocale(const Quantity& quant, const double factor, const std::string& unitString)
+std::string UnitsSchema::toLocale(
+    const Quantity& quant,
+    const NumericLocaleContext& formatting,
+    const double factor,
+    const std::string& unitString
+)
 {
-    QLocale Lc;
     const QuantityFormat& format = quant.getFormat();
-    if (format.option != QuantityFormat::None) {
-        Lc.setNumberOptions(static_cast<QLocale::NumberOptions>(format.option));
-    }
-
-    auto valueString = Lc.toString(quant.getValue() / factor, format.toFormat(), format.getPrecision())
-                           .toStdString();
+    const double v = quant.getValue() / factor;
+    const std::string valueString = std::isfinite(v)
+        ? Base::formatNumericValue(v, format, formatting)
+        : std::to_string(v);
 
     auto notUnit = [](auto s) {
         return s.empty() || s == "°" || s == "″" || s == "′" || s == "\"" || s == "'";
     };
 
-    return fmt::format("{}{}{}", valueString, notUnit(unitString) ? "" : " ", unitString);
+    return std::format("{}{}{}", valueString, notUnit(unitString) ? "" : " ", unitString);
 }
 
 bool UnitsSchema::isMultiUnitLength() const

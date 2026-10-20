@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef MESH_MESH_H
-#define MESH_MESH_H
+#pragma once
 
 #include <list>
 #include <map>
@@ -216,8 +215,13 @@ public:
         const MeshCore::Material* mat = nullptr,
         const char* objectname = nullptr
     ) const;
-    bool load(const char* file, MeshCore::Material* mat = nullptr);
-    bool load(std::istream&, MeshCore::MeshIO::Format f, MeshCore::Material* mat = nullptr);
+    bool load(const char* file, MeshCore::Material* mat = nullptr, std::string* name = nullptr);
+    bool load(
+        std::istream&,
+        MeshCore::MeshIO::Format f,
+        MeshCore::Material* mat = nullptr,
+        std::string* name = nullptr
+    );
     // Save and load in internal format
     void save(std::ostream&) const;
     void load(std::istream&);
@@ -500,6 +504,3 @@ private:
 };
 
 }  // namespace Mesh
-
-
-#endif  // MESH_MESH_H

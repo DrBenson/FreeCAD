@@ -24,8 +24,7 @@
  ***************************************************************************/
 
 
-#ifndef GUI_TASKVIEW_TaskAttacher_H
-#define GUI_TASKVIEW_TaskAttacher_H
+#pragma once
 
 #include <Gui/Selection/Selection.h>
 #include <Gui/DocumentObserver.h>
@@ -37,14 +36,25 @@
 
 #include <functional>
 
+#include <QPointer>
+
+#include <Inventor/SbLinear.h>
+#include <Inventor/SbTime.h>
+
 #include <Mod/Part/PartGlobal.h>
 
 class Ui_TaskAttacher;
 class QLineEdit;
+class SoEventCallback;
 
 namespace App
 {
 class Property;
+}
+
+namespace Gui
+{
+class View3DInventorViewer;
 }
 
 namespace Gui
@@ -77,6 +87,14 @@ public:
     ~TaskAttacher() override;
 
     bool getFlip() const;
+
+    /// Resolve a reference relative to the attaching object's coordinate-system container.
+    /// Set rootObj to nullptr if the reference points to a shared container itself.
+    static void resolveAttachmentSupportInContext(
+        App::DocumentObject* context,
+        App::DocumentObject*& rootObj,
+        std::string& sub
+    );
 
     /**
      * @brief getActiveMapMode returns either the default mode for selected
@@ -119,6 +137,7 @@ protected:
 private:
     void objectDeleted(const Gui::ViewProviderDocumentObject&);
     void documentDeleted(const Gui::Document&);
+    void forgetViewProvider();
     void onSelectionChanged(const Gui::SelectionChanges& msg) override;
     void updateReferencesUI();
 
@@ -135,6 +154,11 @@ private:
     void updateRefButton(int idx);
     void updateAttachmentOffsetUI();
 
+    void removeSketchFeatureNesting(
+        App::DocumentObject*& rootObj,
+        std::string& sub,
+        App::DocumentObject* supportObj
+    );
     void findCorrectObjAndSubInThisContext(App::DocumentObject*& obj, std::string& sub);
     void handleInitialSelection();
     struct SubAndObjName
@@ -156,6 +180,12 @@ private:
      */
     void selectMapMode(Attacher::eMapMode mmode);
 
+    /**
+     * @brief applyBoldMode Sets bold font on the enabled list item matching boldMode,
+     * clears bold on all others.
+     */
+    void applyBoldMode(Attacher::eMapMode boldMode);
+
     void showPlacementUtilities();
 
 protected:
@@ -176,6 +206,7 @@ private:
                                                   // into listOfModes widget.
     Attacher::SuggestResult lastSuggestResult;
     bool completed;
+    bool userSelectedMode;  // true when the user has explicitly clicked a mode in the list
 
     using Connection = fastsignals::connection;
     Connection connectDelObject;
@@ -215,7 +246,7 @@ public:
     bool accept() override;
     /// is called by the framework if the dialog is rejected (Cancel)
     bool reject() override;
-    /// is called by the framework if the user presses the help button
+
     bool isAllowedAlterDocument() const override
     {
         return false;
@@ -235,8 +266,15 @@ protected:
     std::function<void()> onAccept;
     std::function<void()> onReject;
     bool accepted;
+    int tid;
+
+private:
+    // Double-click accept
+    static void handleMouseButtonCB(void* userdata, SoEventCallback* cb);
+    QPointer<Gui::View3DInventorViewer> dblClickViewer;
+    fastsignals::scoped_connection connectDelObject;
+    SbTime lastClickTime;
+    SbVec2s lastClickPos = SbVec2s(-16000, -16000);
 };
 
 }  // namespace PartGui
-
-#endif  // GUI_TASKVIEW_TASKAPPERANCE_H

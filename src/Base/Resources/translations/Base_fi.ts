@@ -4,37 +4,37 @@
   <context>
     <name>UnitsApi</name>
     <message>
-      <location filename="../../UnitsSchemasData.h" line="90"/>
+      <location filename="../../UnitsSchemasData.h" line="94"/>
       <source>Standard (mm, kg, s, °)</source>
       <translation>Standardi (mm, kg, s, °)</translation>
     </message>
     <message>
-      <location filename="../../UnitsSchemasData.h" line="326"/>
+      <location filename="../../UnitsSchemasData.h" line="355"/>
       <source>MKS (m, kg, s, °)</source>
       <translation>MKS (m, kg, s, °)</translation>
     </message>
     <message>
-      <location filename="../../UnitsSchemasData.h" line="593"/>
+      <location filename="../../UnitsSchemasData.h" line="779"/>
       <source>US customary (in, lb)</source>
       <translation>USA:n yksikköjärjestelmä (tuumat/ paunat)</translation>
     </message>
     <message>
-      <location filename="../../UnitsSchemasData.h" line="642"/>
+      <location filename="../../UnitsSchemasData.h" line="839"/>
       <source>Imperial for Civil Eng (ft, lb, mph)</source>
       <translation>Brittiläinen, maa- ja vesirakentaminen (ft, lb, mph)</translation>
     </message>
     <message>
-      <location filename="../../UnitsSchemasData.h" line="75"/>
+      <location filename="../../UnitsSchemasData.h" line="77"/>
       <source>Imperial decimal (in, lb)</source>
       <translation>Englantilainen desimaaliluku (tuumat / paunat)</translation>
     </message>
     <message>
-      <location filename="../../UnitsSchemasData.h" line="554"/>
+      <location filename="../../UnitsSchemasData.h" line="594"/>
       <source>Building Euro (cm, m², m³)</source>
       <translation>Rakentaminen Euro (cm/m²/m³)</translation>
     </message>
     <message>
-      <location filename="../../UnitsSchemasData.h" line="631"/>
+      <location filename="../../UnitsSchemasData.h" line="826"/>
       <source>Building US (ft-in, sqft, cft)</source>
       <translation>Rakentaminen USA (ft-in, sqft, cft)</translation>
     </message>
@@ -44,7 +44,7 @@
       <translation>Metrinen, pienet osat &amp; CNC (mm, mm/min)</translation>
     </message>
     <message>
-      <location filename="../../UnitsSchemasData.h" line="581"/>
+      <location filename="../../UnitsSchemasData.h" line="627"/>
       <source>FEM (mm, N, s)</source>
       <translation>FEM (mm, N, s)</translation>
     </message>
@@ -52,6 +52,44 @@
       <location filename="../../UnitsSchemasData.h" line="62"/>
       <source>Meter decimal (m, m², m³)</source>
       <translation>Metrinen desimaaliluku (m, m2, m3)</translation>
+    </message>
+  </context>
+  <context>
+    <name>Exceptions</name>
+    <message>
+      <location filename="../../Exception.cpp" line="321"/>
+      <source>File not found</source>
+      <translation>Tiedostoa ei löydy</translation>
+    </message>
+    <message>
+      <location filename="../../Exception.cpp" line="323"/>
+      <source>No permission to read the file</source>
+      <translation>Ei oikeuksia tiedoston lukemiseen</translation>
+    </message>
+    <message>
+      <location filename="../../Exception.cpp" line="325"/>
+      <source>No write permission for the file or the file is read-only</source>
+      <translation>Tiedostolle ei ole kirjoitusoikeuksia tai tiedosto on vain luku -tiedosto</translation>
+    </message>
+    <message>
+      <location filename="../../Exception.cpp" line="326"/>
+      <source>File format not supported</source>
+      <translation>Tiedostomuotoa ei tueta</translation>
+    </message>
+    <message>
+      <location filename="../../Exception.cpp" line="327"/>
+      <source>Error reading from file</source>
+      <translation>Virhe luettaessa tiedostoa</translation>
+    </message>
+    <message>
+      <location filename="../../Exception.cpp" line="328"/>
+      <source>Error writing to file</source>
+      <translation>Virhe kirjoitettaessa tiedostoon</translation>
+    </message>
+    <message>
+      <location filename="../../Exception.cpp" line="330"/>
+      <source>Directory does not exist</source>
+      <translation>Hakemistoa ei ole olemassa</translation>
     </message>
   </context>
 </TS>

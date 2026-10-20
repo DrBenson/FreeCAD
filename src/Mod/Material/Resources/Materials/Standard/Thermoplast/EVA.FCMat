@@ -1,0 +1,27 @@
+﻿---
+# File created by FreeCAD 1.1.0 Revision: 44653 (Git)
+General:
+  UUID: "00f002f3-74ad-4eec-a6e9-1aa209054b11"
+  Name: "EVA"
+  Author: "Benson's Network Technology Company."
+  License: "All rights reserved"
+  SourceURL: "https://www.matweb.com/search/DataSheet.aspx?MatGUID=076d9f3e96a44a229bb01827b40dcc94&ckck=1"
+Models:
+  Father:
+    UUID: "9cdda8b6-b606-4778-8f13-3934d8668e67"
+    Father: "Thermoplast"
+  Linear Elastic:
+    UUID: "7b561d1d-fb9b-44f6-9da9-56a4f74d7536"
+    Density: "15 kg/m^3"
+  Costs:
+    UUID: "881df808-8726-4c2e-be38-688bb6cce466"
+    SpecificPrice: "15.3"
+AppearanceModels:
+  Basic Rendering:
+    UUID: "f006c7e4-35b7-43d5-bbf9-c5d572309e6e"
+    AmbientColor: "(0.333333,0.333333,0.333333,1)"
+    DiffuseColor: "(0.8,0.8,0.901961,1)"
+    EmissiveColor: "(0.133333,0.133333,0.133333,1)"
+    Shininess: "75"
+    SpecularColor: "(0.533333,0.533333,0.533333,1)"
+    Transparency: "0"

@@ -1,1143 +1,967 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
+# SPDX-FileCopyrightText: 2026 sliptonic <shopinthewoods@gmail.com>
+# SPDX-FileNotice: Part of the FreeCAD project.
 
-# ***************************************************************************
-# *   Copyright (C) 2020 Stefano Chiaro <stefano.chiaro@yahoo.com>          *
-# *                                                                         *
-# *   This library is free software; you can redistribute it and/or         *
-# *   modify it under the terms of the GNU Lesser General Public            *
-# *   License as published by the Free Software Foundation; either          *
-# *   version 2.1 of the License, or (at your option) any later version.    *
-# *                                                                         *
-# *   This library is distributed in the hope that it will be useful,       *
-# *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
-# *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU     *
-# *   Lesser General Public License for more details.                       *
-# *                                                                         *
-# *   You should have received a copy of the GNU Lesser General Public      *
-# *   License along with this library; if not, write to the Free Software   *
-# *   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA         *
-# *   02110-1301  USA                                                       *
-# ***************************************************************************
+################################################################################
+#                                                                              #
+#   FreeCAD is free software: you can redistribute it and/or modify            #
+#   it under the terms of the GNU Lesser General Public License as             #
+#   published by the Free Software Foundation, either version 2.1              #
+#   of the License, or (at your option) any later version.                     #
+#                                                                              #
+#   FreeCAD is distributed in the hope that it will be useful,                 #
+#   but WITHOUT ANY WARRANTY; without even the implied warranty                #
+#   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                    #
+#   See the GNU Lesser General Public License for more details.                #
+#                                                                              #
+#   You should have received a copy of the GNU Lesser General Public           #
+#   License along with FreeCAD. If not, see https://www.gnu.org/licenses       #
+#                                                                              #
+################################################################################
 
-# HEDENHAIN Post-Processor for FreeCAD
+"""
+Heidenhain Klartext (conversational) post processor, "machine" based.
 
-import argparse
-import Path.Post.Utils as PostUtils
-import PathScripts.PathUtils as PathUtils
-import Path
-import PathScripts
-import shlex
-import math
-from builtins import open as pyopen
+Klartext is not G-code.  Every Path.Command is translated into a Klartext
+block; nothing is passed through verbatim.  The dialect targeted is the one
+shared by the TNC 4xx, iTNC 530, TNC 620/640 and TNC7 families:
 
-# **************************************************************************#
-#                   USER  EDITABLE  STUFF  HERE                            #
-#                                                                          #
-#     THESE VALUES SHOULD BE CHANGED TO FIT MACHINE TYPE AND LANGUAGE      #
+    0 BEGIN PGM NAME MM
+    1 BLK FORM 0.1 Z X+0 Y+0 Z-10
+    2 BLK FORM 0.2 X+100 Y+100 Z+0
+    3 TOOL CALL 1 Z S8000
+    4 M3
+    5 L X+0 Y+0 Z+5 R0 FMAX
+    6 L Z-2 R0 F200
+    7 CC X+50 Y+50
+    8 C X+100 Y+50 DR- R0 F600
+    9 CYCL DEF 200 DRILLING ~
+        Q200=+2 ;SET-UP CLEARANCE ~
+        ...
+   10 L X+10 Y+10 R0 FMAX M99
+   11 M5
+   12 END PGM NAME MM
 
-MACHINE_SKIP_PARAMS = False  # Print R F M values
-# possible values:
-#                    'True'    Skip to print a parameter if already active
-#                    'False'   Print parameter on ALL line
-# Old machines need these values on every lines
+Block numbers are physical line numbers starting at 0 and are always
+emitted; a line ending in "~" continues the block on the next line.
 
-MACHINE_USE_FMAX = False  # Usage of FMAX
-# possible values:
-#                 'True'   Print FMAX
-#                 'False'  Print the value set on FEED_MAX_SPEED
-# Old machines don't accept FMAX and need a feed value
-
-FEED_MAX_SPEED = 8000  # Max machine speed for FMAX
-# possible values:
-# integer >= 0
-
-AXIS_DECIMALS = 3  # machine axis precision
-# possible values:
-# integer >= 0
-
-FEED_DECIMALS = 0  # machine feed precision
-# possible values:
-# integer >= 0
-
-SPINDLE_DECIMALS = 0  # machine spindle precision
-# possible values:
-# integer >= 0
-
-FIRST_LBL = 1  # first LBL number for LBLIZE function
-# possible values:
-# integer >= 0
-
-#                   TEMPLATES FOR CYCLE DEFINITION                         #
-
-MACHINE_CYCLE_DEF = {
-    1: "CYCL DEF 1.0 FORATURA PROF."
-    + "\n"
-    + "CYCL DEF 1.1 DIST"
-    + "{DIST}\n"
-    + "CYCL DEF 1.2 PROF"
-    + "{DEPTH}\n"
-    + "CYCL DEF 1.3 INCR"
-    + "{INCR}\n"
-    + "CYCL DEF 1.4 SOSTA"
-    + "{DWELL}\n"
-    + "CYCL DEF 1.5 F"
-    + "{FEED}",
-    2: "",
-    7: "",
-}
-
-#                      OPTIONAL COMPUTING                                  #
-
-SOLVE_COMPENSATION_ACTIVE = False  # Use the internal path compensation
-# possible values:
-#                          'True'   Try to solve compensation
-#                          'False'  Use original FreeCAD path
-# try to use RL and RR to get the real path where possible
-
-SHOW_EDITOR = True  # Open the editor
-# possible values:
-#            'True'   before the file is written it is shown for inspection
-#            'False'  the file is written directly
-
-SKIP_WARNS = False  # Skip post-processor warnings
-# possible values:
-#            'True'   never prompt warning from post-processing problems
-#            'False'  prompt active
-
-#            STANDARD HEIDENHAIN VALUES FOR POSTPROCESSOR                  #
-
-UNITS = "MM"  # post-processor units
-# possible values:
-#       'INCH'  for inches
-#       'MM'    for metric units
-# actually FreeCAD use only metric values
-
-LINENUMBERS = True  # line numbers
-# possible values:
-#            'True'   Add line numbers (Standard)
-#            'False'  No line numbers
-
-STARTLINENR = 0  # first line number used
-# possible values:
-# any integer value >= 0 (Standard is 0)
-
-LINENUMBER_INCREMENT = 1  # line number increment
-# possible values:
-# any integer value > 0 (Standard is 1)
-
-#                POSTPROCESSOR VARIABLES AND CODE                          #
-
-# **************************************************************************#
-#  don't edit the stuff below this line unless you know what you're doing  #
-# **************************************************************************#
-
-#                   GCODE VARIABLES AND FUNCTIONS                          #
-
-POSTGCODE = []  # Output string array
-G_FUNCTION_STORE = {
-    "G90": False,
-    "G91": False,
-    "G98": False,
-    "G99": False,
-    "G81": False,
-    "G82": False,
-    "G83": False,
-}
-
-#                     HEIDENHAIN MACHINE PARAMETERS                        #
-
-MACHINE_WORK_AXIS = 2  # 0=X ; 1=Y ; 2=Z usually Z
-MACHINE_SPINDLE_DIRECTION = 3  # CW = 3 ; CCW = 4
-MACHINE_LAST_POSITION = {  # axis initial values to overwrite
-    "X": 99999,
-    "Y": 99999,
-    "Z": 99999,
-    "A": 99999,
-    "B": 99999,
-    "C": 99999,
-}
-MACHINE_LAST_CENTER = {  # CC initial values to overwrite
-    "X": 99999,
-    "Y": 99999,
-    "Z": 99999,
-}
-MACHINE_TRASL_ROT = [0, 0, 0, 0]  # [X, Y, Z , Angle] !not implemented
-MACHINE_STORED_PARAMS = ["", -1, ""]  # Store R F M parameter to skip
-
-#                  POSTPROCESSOR VARIABLES STORAGE                         #
-
-STORED_COMPENSATED_OBJ = ()  # Store a copy of compensated path
-STORED_CANNED_PARAMS = {  # Store canned cycles for match
-    "DIST": 99999,
-    "DEPTH": 99999,
-    "INCR": 99999,
-    "DWELL": 99999,
-    "FEED": 99999,
-}
-STORED_LBL = []  # Store array of LBL for match
-
-#                  POSTPROCESSOR SPECIAL VARIABLES                         #
-
-COMPENSATION_DIFF_STATUS = [False, True]  # Check compensation, Check Diff
-LBLIZE_ACTIVE = False  # Check if search for LBL
-LBLIZE_STAUS = False  # Activated by path type
-LBLIZE_PATH_LEVEL = 99999  # Save milling level of actual LBL
-
-#                   END OF POSTPROCESSOR VARIABLES                         #
-# **************************************************************************#
-
-TOOLTIP = """
-This is a postprocessor file for the Path workbench. It is used to
-take a pseudo-gcode fragment outputted by a Path object, and output
-real GCode suitable for a heidenhain 3 axis mill. This postprocessor, once placed
-in the appropriate Path/Tool folder, can be used directly from inside
-FreeCAD, via the GUI importer or via python scripts with:
-
-import heidenhain_post
-heidenhain.export(object,"/path/to/file.ncc","")
+Legacy controls (TNC 355/4xx) that do not know the Q-parameter cycles can
+be served with the "legacy" cycle format, which emits CYCL DEF 1.x
+PECKING and CYCL DEF 17.x RIGID TAPPING.
 """
 
-parser = argparse.ArgumentParser(prog="heidenhain", add_help=False)
-parser.add_argument(
-    "--skip-params",
-    action="store_true",
-    help="suppress R F M parameters where already stored",
-)
-parser.add_argument(
-    "--use-fmax",
-    action="store_true",
-    help="suppress feedrate and use FMAX instead with rapid movements",
-)
-parser.add_argument(
-    "--fmax-value", default="8000", help="feedrate to use instead of FMAX, default=8000"
-)
-parser.add_argument(
-    "--axis-decimals", default="3", help="number of digits of axis precision, default=3"
-)
-parser.add_argument(
-    "--feed-decimals",
-    default="0",
-    help="number of digits of feedrate precision, default=0",
-)
-parser.add_argument(
-    "--spindle-decimals",
-    default="0",
-    help="number of digits of spindle precision, default=0",
-)
-parser.add_argument(
-    "--solve-comp",
-    action="store_true",
-    help="try to get RL or RR real path where compensation is active",
-)
-parser.add_argument(
-    "--solve-lbl",
-    action="store_true",
-    help="try to replace repetitive movements with LBL",
-)
-parser.add_argument("--first-lbl", default="1", help="change the first LBL number, default=1")
-parser.add_argument(
-    "--no-show-editor",
-    action="store_true",
-    help="don't pop up editor before writing output",
-)
-parser.add_argument("--no-warns", action="store_true", help="don't pop up post-processor warnings")
-
-TOOLTIP_ARGS = parser.format_help()
-
-
-def processArguments(argstring):
-    global MACHINE_SKIP_PARAMS
-    global MACHINE_USE_FMAX
-    global FEED_MAX_SPEED
-    global AXIS_DECIMALS
-    global FEED_DECIMALS
-    global SPINDLE_DECIMALS
-    global SOLVE_COMPENSATION_ACTIVE
-    global LBLIZE_ACTIVE
-    global FIRST_LBL
-    global SHOW_EDITOR
-    global SKIP_WARNS
-
-    try:
-        args = parser.parse_args(shlex.split(argstring))
-        if args.skip_params:
-            MACHINE_SKIP_PARAMS = True
-        if args.use_fmax:
-            MACHINE_USE_FMAX = True
-        if args.fmax_value:
-            FEED_MAX_SPEED = float(args.fmax_value)
-        if args.axis_decimals:
-            AXIS_DECIMALS = int(args.axis_decimals)
-        if args.feed_decimals:
-            FEED_DECIMALS = int(args.feed_decimals)
-        if args.spindle_decimals:
-            SPINDLE_DECIMALS = int(args.spindle_decimals)
-        if args.solve_comp:
-            SOLVE_COMPENSATION_ACTIVE = True
-        if args.solve_lbl:
-            LBLIZE_ACTIVE = True
-        if args.first_lbl:
-            FIRST_LBL = int(args.first_lbl)
-        if args.no_show_editor:
-            SHOW_EDITOR = False
-        if args.no_warns:
-            SKIP_WARNS = True
-    except Exception:
-        return False
-
-    return True
-
-
-def export(objectslist, filename, argstring):
-    if not processArguments(argstring):
-        return None
-    global UNITS
-    global POSTGCODE
-    global G_FUNCTION_STORE
-    global MACHINE_WORK_AXIS
-    global MACHINE_LAST_POSITION
-    global MACHINE_TRASL_ROT
-    global STORED_COMPENSATED_OBJ
-    global COMPENSATION_DIFF_STATUS
-    global LBLIZE_STAUS
-
-    Object_Kind = None
-    Feed = 0
-    Spindle_Active = False
-    Compensation = "0"
-    params = [
-        "X",
-        "Y",
-        "Z",
-        "A",
-        "B",
-        "C",
-        "I",
-        "J",
-        "K",
-        "F",
-        "H",
-        "S",
-        "T",
-        "Q",
-        "R",
-        "L",
-    ]
-
-    for obj in objectslist:
-        if not hasattr(obj, "Path"):
-            print(
-                "the object " + obj.Name + " is not a path. Please select only path and Compounds."
-            )
-            return
-
-    POSTGCODE.append(HEIDEN_Begin(objectslist))  # add header
-
-    for obj in objectslist:
-        Cmd_Count = 0  # command line number
-        LBLIZE_STAUS = False
-
-        if not hasattr(obj, "Proxy"):
-            continue
-        # useful to get idea of object kind
-        if isinstance(obj.Proxy, Path.Tool.Controller.ToolController):
-            Object_Kind = "TOOL"
-            # like we go to change tool position
-            MACHINE_LAST_POSITION["X"] = 99999
-            MACHINE_LAST_POSITION["Y"] = 99999
-            MACHINE_LAST_POSITION["Z"] = 99999
-        elif isinstance(obj.Proxy, Path.Op.ProfileEdges.ObjectProfile):
-            Object_Kind = "PROFILE"
-            if LBLIZE_ACTIVE:
-                LBLIZE_STAUS = True
-        elif isinstance(obj.Proxy, Path.Op.MillFace.ObjectFace):
-            Object_Kind = "FACE"
-            if LBLIZE_ACTIVE:
-                LBLIZE_STAUS = True
-        elif isinstance(obj.Proxy, Path.Op.Helix.ObjectHelix):
-            Object_Kind = "HELIX"
-
-        commands = PathUtils.getPathWithPlacement(obj).Commands
-
-        # If used compensated path, store, recompute and diff when asked
-        if not hasattr(obj, "UseComp") or not SOLVE_COMPENSATION_ACTIVE:
-            continue
-
-        if not obj.UseComp:
-            continue
-
-        if hasattr(obj.Path, "Commands") and Object_Kind == "PROFILE":
-            # Take a copy of compensated path
-            STORED_COMPENSATED_OBJ = commands
-        # Find mill compensation
-        if hasattr(obj, "Side") and hasattr(obj, "Direction"):
-            if obj.Side == "Outside" and obj.Direction == "CW":
-                Compensation = "L"
-            elif obj.Side == "Outside" and obj.Direction == "CCW":
-                Compensation = "R"
-            elif obj.Side != "Outside" and obj.Direction == "CW":
-                Compensation = "R"
-            else:
-                Compensation = "L"
-            # set obj.UseComp to false and recompute() to get uncompensated path
-            obj.UseComp = False
-            obj.recompute()
-            commands = PathUtils.getPathWithPlacement(obj).Commands
-            # small edges could be skipped and movements joints can add edges
-            NameStr = ""
-            if hasattr(obj, "Label"):
-                NameStr = str(obj.Label)
-            if len(commands) != len(STORED_COMPENSATED_OBJ):
-                # not same number of edges
-                obj.UseComp = True
-                obj.recompute()
-                commands = PathUtils.getPathWithPlacement(obj).Commands
-                POSTGCODE.append("; MISSING EDGES UNABLE TO GET COMPENSATION")
-                if not SKIP_WARNS:
-                    (
-                        PostUtils.editor(
-                            "--solve-comp command ACTIVE\n\n"
-                            + "UNABLE to solve "
-                            + NameStr
-                            + " compensation\n\n"
-                            + "Some edges are missing\n"
-                            + "try to change Join Type to Miter or Square\n"
-                            + "try to use a smaller Tool Diameter\n"
-                            + "Internal Path could have too small corners\n\n"
-                            + "use --no-warns to not prompt this message"
-                        )
-                    )
-            else:
-                if not SKIP_WARNS:
-                    (
-                        PostUtils.editor(
-                            "--solve-comp command ACTIVE\n\n"
-                            + "BE CAREFUL with solved "
-                            + NameStr
-                            + " compensation\n\n"
-                            + "USE AT YOUR OWN RISK\n"
-                            + "Simulate it before use\n"
-                            + "Offset Extra ignored use DR+ on TOOL CALL\n"
-                            + "Path could be different and/or give tool radius errors\n\n"
-                            + "use --no-warns to not prompt this message"
-                        )
-                    )
-                # we can try to solve compensation
-                POSTGCODE.append("; COMPENSATION ACTIVE")
-                COMPENSATION_DIFF_STATUS[0] = True
-
-        for c in commands:
-            Cmd_Count += 1
-            command = c.Name
-            if command != "G0":
-                command = command.replace("G0", "G")  # normalize: G01 -> G1
-
-            for param in params:
-                if param in c.Parameters:
-                    if param == "F":
-                        Feed = c.Parameters["F"]
-
-            if command == "G90":
-                G_FUNCTION_STORE["G90"] = True
-                G_FUNCTION_STORE["G91"] = False
-
-            if command == "G91":
-                G_FUNCTION_STORE["G91"] = True
-                G_FUNCTION_STORE["G90"] = False
-
-            if command == "G98":
-                G_FUNCTION_STORE["G98"] = True
-                G_FUNCTION_STORE["G99"] = False
-
-            if command == "G99":
-                G_FUNCTION_STORE["G99"] = True
-                G_FUNCTION_STORE["G98"] = False
-
-            # Rapid movement
-            if command == "G0":
-                Spindle_Status = ""
-                if Spindle_Active == False:  # At first rapid movement we turn on spindle
-                    Spindle_Status += str(MACHINE_SPINDLE_DIRECTION)  # Activate spindle
-                    Spindle_Active = True
-                else:  # At last rapid movement we turn off spindle
-                    if Cmd_Count == len(commands):
-                        Spindle_Status += "5"  # Deactivate spindle
-                        Spindle_Active = False
-                    else:
-                        Spindle_Status += ""  # Spindle still active
-                parsedElem = HEIDEN_Line(
-                    c.Parameters, Compensation, Feed, True, Spindle_Status, Cmd_Count
-                )
-                if parsedElem is not None:
-                    POSTGCODE.append(parsedElem)
-
-            # Linear movement
-            if command == "G1":
-                parsedElem = HEIDEN_Line(c.Parameters, Compensation, Feed, False, "", Cmd_Count)
-                if parsedElem is not None:
-                    POSTGCODE.append(parsedElem)
-
-            # Arc movement
-            if command == "G2" or command == "G3":
-                parsedElem = HEIDEN_Arc(
-                    c.Parameters, command, Compensation, Feed, False, "", Cmd_Count
-                )
-                if parsedElem is not None:
-                    POSTGCODE.extend(parsedElem)
-
-            if command == "G80":  # Reset Canned Cycles
-                G_FUNCTION_STORE["G81"] = False
-                G_FUNCTION_STORE["G82"] = False
-                G_FUNCTION_STORE["G83"] = False
-
-            # Drilling, Dwell Drilling, Peck Drilling
-            if command == "G81" or command == "G82" or command == "G83":
-                parsedElem = HEIDEN_Drill(obj, c.Parameters, command, Feed)
-                if parsedElem is not None:
-                    POSTGCODE.extend(parsedElem)
-
-            # Tool change
-            if command == "M6":
-                parsedElem = HEIDEN_ToolCall(obj)
-                if parsedElem is not None:
-                    POSTGCODE.append(parsedElem)
-
-        if COMPENSATION_DIFF_STATUS[0]:  # Restore the compensation if removed
-            obj.UseComp = True
-            obj.recompute()
-            COMPENSATION_DIFF_STATUS[0] = False
-
-        if LBLIZE_STAUS:
-            HEIDEN_LBL_Replace()
-            LBLIZE_STAUS = False
-
-    if LBLIZE_ACTIVE:
-        if not SKIP_WARNS:
-            (
-                PostUtils.editor(
-                    "--solve-lbl command ACTIVE\n\n"
-                    + "BE CAREFUL with LBL replacements\n\n"
-                    + "USE AT YOUR OWN RISK\n"
-                    + "Simulate it before use\n"
-                    + "Path could be different and/or give errors\n\n"
-                    + "use --no-warns to not prompt this message"
-                )
-            )
-    POSTGCODE.append(HEIDEN_End(objectslist))  # add footer
-    Program_Out = HEIDEN_Numberize(POSTGCODE)  # add line number
-
-    if SHOW_EDITOR:
-        PostUtils.editor(Program_Out)
-
-    gfile = pyopen(filename, "w")
-    gfile.write(Program_Out)
-    gfile.close()
-
-
-def HEIDEN_Begin(ActualJob):  # use Label for program name
-    global UNITS
-    # JobParent = PathUtils.findParentJob(ActualJob[0])
-    # if hasattr(JobParent, "Label"):
-    #     program_id = JobParent.Label
-    # else:
-    #     program_id = "NEW"
-    return "BEGIN PGM {}".format(UNITS)
-
-
-def HEIDEN_End(ActualJob):  # use Label for program name
-    global UNITS
-    # JobParent = PathUtils.findParentJob(ActualJob[0])
-    # if hasattr(JobParent, "Label"):
-    #     program_id = JobParent.Label
-    # else:
-    #     program_id = "NEW"
-    return "END PGM {}".format(UNITS)
-
-
-# def HEIDEN_ToolDef(tool_id, tool_length, tool_radius): # old machines don't have tool table, need tooldef list
-#    return "TOOL DEF  " + tool_id + " R" + "{:.3f}".format(tool_length) + " L" + "{:.3f}".format(tool_radius)
-
-
-def HEIDEN_ToolCall(tool_Params):
-    global MACHINE_SPINDLE_DIRECTION
-    global MACHINE_WORK_AXIS
-    H_Tool_Axis = ["X", "Y", "Z"]
-    H_Tool_ID = "0"
-    H_Tool_Speed = 0
-    H_Tool_Comment = ""
-
-    if hasattr(tool_Params, "Label"):  # use Label as tool comment
-        H_Tool_Comment = tool_Params.Label
-    if hasattr(tool_Params, "SpindleDir"):  # get spindle direction for this tool
-        if tool_Params.SpindleDir == "Forward":
-            MACHINE_SPINDLE_DIRECTION = 3
-        else:
-            MACHINE_SPINDLE_DIRECTION = 4
-    if hasattr(tool_Params, "SpindleSpeed"):  # get tool speed for spindle
-        H_Tool_Speed = tool_Params.SpindleSpeed
-    if hasattr(tool_Params, "ToolNumber"):  # use ToolNumber for tool id
-        H_Tool_ID = tool_Params.ToolNumber
-
-    if H_Tool_ID == "0" and H_Tool_Speed == 0 and H_Tool_Comment == "":
-        return None
-    else:
-        return (
-            "TOOL CALL "
-            + str(H_Tool_ID)
-            + " "
-            + H_Tool_Axis[MACHINE_WORK_AXIS]
-            + HEIDEN_Format(" S", H_Tool_Speed)
-            + " ;"
-            + str(H_Tool_Comment)
-        )
-
-
-# create a linear movement
-def HEIDEN_Line(line_Params, line_comp, line_feed, line_rapid, line_M_funct, Cmd_Number):
-    global FEED_MAX_SPEED
-    global COMPENSATION_DIFF_STATUS
-    global G_FUNCTION_STORE
-    global MACHINE_WORK_AXIS
-    global MACHINE_LAST_POSITION
-    global MACHINE_STORED_PARAMS
-    global MACHINE_SKIP_PARAMS
-    global MACHINE_USE_FMAX
-    H_Line_New = {  # axis initial values to overwrite
-        "X": 99999,
-        "Y": 99999,
-        "Z": 99999,
-        "A": 99999,
-        "B": 99999,
-        "C": 99999,
-    }
-    H_Line = "L"
-    H_Line_Params = [["X", "Y", "Z"], ["R0", line_feed, line_M_funct]]
-
-    # check and hide duplicated axis movements, not last, update with new ones
-    for i in H_Line_New:
-        if G_FUNCTION_STORE["G91"]:  # incremental
-            H_Line_New[i] = 0
-            if i in line_Params:
-                if line_Params[i] != 0 or line_M_funct != "":
-                    H_Line += " I" + HEIDEN_Format(i, line_Params[i])  # print incremental
-            # update to absolute position
-            H_Line_New[i] = MACHINE_LAST_POSITION[i] + H_Line_New[i]
-        else:  # absolute
-            H_Line_New[i] = MACHINE_LAST_POSITION[i]
-            if i in line_Params:
-                if line_Params[i] != H_Line_New[i] or line_M_funct != "":
-                    H_Line += " " + HEIDEN_Format(i, line_Params[i])
-                    H_Line_New[i] = line_Params[i]
-
-    if H_Line == "L":  # No movements no line
-        return None
-
-    if COMPENSATION_DIFF_STATUS[0]:  # Diff from compensated ad not compensated path
-        if COMPENSATION_DIFF_STATUS[1]:  # skip if already compensated, not active by now
-            Cmd_Number -= 1  # align
-            # initialize like true, set false if not same point compensated and not compensated
-            i = True
-            for j in H_Line_Params[0]:
-                if j in STORED_COMPENSATED_OBJ[Cmd_Number].Parameters and j in line_Params:
-                    if STORED_COMPENSATED_OBJ[Cmd_Number].Parameters[j] != line_Params[j]:
-                        i = False
-            if i == False:
-                H_Line_Params[1][0] = "R" + line_comp
-        #                   we can skip this control if already in compensation
-        #                   COMPENSATION_DIFF_STATUS[1] = False
-        else:
-            H_Line_Params[1][0] = "R" + line_comp  # not used by now
-
-    # check if we need to skip already active parameters
-    # R parameter
-    if MACHINE_SKIP_PARAMS == False or H_Line_Params[1][0] != MACHINE_STORED_PARAMS[0]:
-        MACHINE_STORED_PARAMS[0] = H_Line_Params[1][0]
-        H_Line += " " + H_Line_Params[1][0]
-
-    # F parameter (check rapid o feed)
-    if line_rapid:
-        H_Line_Params[1][1] = FEED_MAX_SPEED
-    if MACHINE_USE_FMAX and line_rapid:
-        H_Line += " FMAX"
-    else:
-        if MACHINE_SKIP_PARAMS == False or H_Line_Params[1][1] != MACHINE_STORED_PARAMS[1]:
-            MACHINE_STORED_PARAMS[1] = H_Line_Params[1][1]
-            H_Line += HEIDEN_Format(" F", H_Line_Params[1][1])
-
-    # M parameter
-    if MACHINE_SKIP_PARAMS == False or H_Line_Params[1][2] != MACHINE_STORED_PARAMS[2]:
-        MACHINE_STORED_PARAMS[2] = H_Line_Params[1][2]
-        H_Line += " M" + H_Line_Params[1][2]
-
-    # LBLIZE check and array creation
-    if LBLIZE_STAUS:
-        i = H_Line_Params[0][MACHINE_WORK_AXIS]
-        # to skip reposition movements rapid or not
-        if MACHINE_LAST_POSITION[i] == H_Line_New[i] and line_rapid == False:
-            HEIDEN_LBL_Get(MACHINE_LAST_POSITION, H_Line_New[i])
-        else:
-            HEIDEN_LBL_Get()
-
-    # update machine position with new values
-    for i in H_Line_New:
-        MACHINE_LAST_POSITION[i] = H_Line_New[i]
-
-    return H_Line
-
-
-# create a arc movement
-def HEIDEN_Arc(arc_Params, arc_direction, arc_comp, arc_feed, arc_rapid, arc_M_funct, Cmd_Number):
-    global FEED_MAX_SPEED
-    global COMPENSATION_DIFF_STATUS
-    global G_FUNCTION_STORE
-    global MACHINE_WORK_AXIS
-    global MACHINE_LAST_POSITION
-    global MACHINE_LAST_CENTER
-    global MACHINE_STORED_PARAMS
-    global MACHINE_SKIP_PARAMS
-    global MACHINE_USE_FMAX
-    Cmd_Number -= 1
-    H_ArcSameCenter = False
-    H_ArcIncr = ""
-    H_ArcCenter = "CC "
-    H_ArcPoint = "C"
-    H_Arc_Params = [["X", "Y", "Z"], ["R0", arc_feed, arc_M_funct], ["I", "J", "K"]]
-    H_Arc_CC = {"X": 99999, "Y": 99999, "Z": 99999}  # CC initial values to overwrite
-    H_Arc_P_NEW = {  # end point initial values to overwrite
-        "X": 99999,
-        "Y": 99999,
-        "Z": 99999,
-    }
-
-    # get command values
-    if G_FUNCTION_STORE["G91"]:  # incremental
-        H_ArcIncr = "I"
-        for i in range(0, 3):
-            a = H_Arc_Params[0][i]
-            b = H_Arc_Params[2][i]
-            # X Y Z
-            if a in arc_Params:
-                H_Arc_P_NEW[a] = arc_Params[a]
-            else:
-                H_Arc_P_NEW[a] = 0
-            # I J K skip update for machine work axis
-            if i != MACHINE_WORK_AXIS:
-                if b in arc_Params:
-                    H_Arc_CC[a] = arc_Params[b]
-                else:
-                    H_Arc_CC[a] = 0
-    else:  # absolute
-        for i in range(0, 3):
-            a = H_Arc_Params[0][i]
-            b = H_Arc_Params[2][i]
-            # X Y Z
-            H_Arc_P_NEW[a] = MACHINE_LAST_POSITION[a]
-            if a in arc_Params:
-                H_Arc_P_NEW[a] = arc_Params[a]
-            # I J K skip update for machine work axis
-            if i != MACHINE_WORK_AXIS:
-                H_Arc_CC[a] = MACHINE_LAST_POSITION[a]
-                if b in arc_Params:
-                    # to change if I J K are not always incremental
-                    H_Arc_CC[a] = H_Arc_CC[a] + arc_Params[b]
-
-    def Axis_Select(a, b, c, incr):
-        if a in arc_Params and b in arc_Params:
-            _H_ArcCenter = (
-                incr + HEIDEN_Format(a, H_Arc_CC[a]) + " " + incr + HEIDEN_Format(b, H_Arc_CC[b])
-            )
-            if c in arc_Params and arc_Params[c] != MACHINE_LAST_POSITION[c]:
-                # if there are 3 axis movements it need to be polar arc
-                _H_ArcPoint = HEIDEN_PolarArc(
-                    H_Arc_CC[a],
-                    H_Arc_CC[b],
-                    H_Arc_P_NEW[a],
-                    H_Arc_P_NEW[b],
-                    arc_Params[c],
-                    c,
-                    incr,
-                )
-            else:
-                _H_ArcPoint = (
-                    " "
-                    + incr
-                    + HEIDEN_Format(a, H_Arc_P_NEW[a])
-                    + " "
-                    + incr
-                    + HEIDEN_Format(b, H_Arc_P_NEW[b])
-                )
-            return [_H_ArcCenter, _H_ArcPoint]
-        else:
-            return ["", ""]
-
-    # set the right work plane based on tool direction
-    if MACHINE_WORK_AXIS == 0:  # tool on X axis
-        Axis_Result = Axis_Select("Y", "Z", "X", H_ArcIncr)
-    elif MACHINE_WORK_AXIS == 1:  # tool on Y axis
-        Axis_Result = Axis_Select("X", "Z", "Y", H_ArcIncr)
-    elif MACHINE_WORK_AXIS == 2:  # tool on Z axis
-        Axis_Result = Axis_Select("X", "Y", "Z", H_ArcIncr)
-    # and fill with values
-    H_ArcCenter += Axis_Result[0]
-    H_ArcPoint += Axis_Result[1]
-
-    if H_ArcCenter == "CC ":  # No movements no circle
-        return None
-
-    if arc_direction == "G2":  # set the right arc direction
-        H_ArcPoint += " DR-"
-    else:
-        H_ArcPoint += " DR+"
-
-    if COMPENSATION_DIFF_STATUS[0]:  # Diff from compensated ad not compensated path
-        if COMPENSATION_DIFF_STATUS[1]:  # skip if already compensated
-            Cmd_Number -= 1  # align
-            i = True
-            for j in H_Arc_Params[0]:
-                if j in STORED_COMPENSATED_OBJ[Cmd_Number].Parameters and j in arc_Params:
-                    if STORED_COMPENSATED_OBJ[Cmd_Number].Parameters[j] != arc_Params[j]:
-                        i = False
-            if i == False:
-                H_Arc_Params[1][0] = "R" + arc_comp
-        # COMPENSATION_DIFF_STATUS[1] = False # we can skip this control if already in compensation
-        else:
-            H_Arc_Params[1][0] = "R" + arc_comp  # not used by now
-
-    # check if we need to skip already active parameters
-
-    # R parameter
-    if MACHINE_SKIP_PARAMS == False or H_Arc_Params[1][0] != MACHINE_STORED_PARAMS[0]:
-        MACHINE_STORED_PARAMS[0] = H_Arc_Params[1][0]
-        H_ArcPoint += " " + H_Arc_Params[1][0]
-
-    # F parameter
-    if arc_rapid:
-        H_Arc_Params[1][1] = FEED_MAX_SPEED
-    if MACHINE_USE_FMAX and arc_rapid:
-        H_ArcPoint += " FMAX"
-    else:
-        if MACHINE_SKIP_PARAMS == False or H_Arc_Params[1][1] != MACHINE_STORED_PARAMS[1]:
-            MACHINE_STORED_PARAMS[1] = H_Arc_Params[1][1]
-            H_ArcPoint += HEIDEN_Format(" F", H_Arc_Params[1][1])
-
-    # M parameter
-    if MACHINE_SKIP_PARAMS == False or H_Arc_Params[1][2] != MACHINE_STORED_PARAMS[2]:
-        MACHINE_STORED_PARAMS[2] = H_Arc_Params[1][2]
-        H_ArcPoint += " M" + H_Arc_Params[1][2]
-
-    # update values to absolute if are incremental before store
-    if G_FUNCTION_STORE["G91"]:  # incremental
-        for i in H_Arc_Params[0]:
-            H_Arc_P_NEW[i] = MACHINE_LAST_POSITION[i] + H_Arc_P_NEW[i]
-            H_Arc_CC[i] = MACHINE_LAST_POSITION[i] + H_Arc_CC[i]
-
-    # check if we can skip CC print
-    if (
-        MACHINE_LAST_CENTER["X"] == H_Arc_CC["X"]
-        and MACHINE_LAST_CENTER["Y"] == H_Arc_CC["Y"]
-        and MACHINE_LAST_CENTER["Z"] == H_Arc_CC["Z"]
-    ):
-        H_ArcSameCenter = True
-
-    # LBLIZE check and array creation
-    if LBLIZE_STAUS:
-        i = H_Arc_Params[0][MACHINE_WORK_AXIS]
-        # to skip reposition movements
-        if MACHINE_LAST_POSITION[i] == H_Arc_P_NEW[i]:
-            if H_ArcSameCenter:
-                HEIDEN_LBL_Get(MACHINE_LAST_POSITION, H_Arc_P_NEW[i])
-            else:
-                HEIDEN_LBL_Get(MACHINE_LAST_POSITION, H_Arc_P_NEW[i], 1)
-        else:
-            HEIDEN_LBL_Get()
-
-    # update machine position with new values
-    for i in H_Arc_Params[0]:
-        MACHINE_LAST_CENTER[i] = H_Arc_CC[i]
-        MACHINE_LAST_POSITION[i] = H_Arc_P_NEW[i]
-
-    # if the circle center is already the same we don't need to print it
-    if H_ArcSameCenter:
-        return [H_ArcPoint]
-    else:
-        return [H_ArcCenter, H_ArcPoint]
-
-
-def HEIDEN_PolarArc(pol_cc_X, pol_cc_Y, pol_X, pol_Y, pol_Z, pol_Axis, pol_Incr):
-    pol_Angle = 0
-    pol_Result = ""
-
-    # get delta distance form point to circle center
-    delta_X = pol_X - pol_cc_X
-    delta_Y = pol_Y - pol_cc_Y
-    # prevent undefined result of atan
-    if delta_X != 0 or delta_Y != 0:
-        pol_Angle = math.degrees(math.atan2(delta_X, delta_Y))
-
-    # set the appropriate zero and direction of angle
-    # with X axis zero have the Y+ direction
-    if pol_Axis == "X":
-        pol_Angle = 90 - pol_Angle
-    # with Y axis zero have the Z+ direction
-    elif pol_Axis == "Y":
-        pass
-    # with Z axis zero have the X+ direction
-    elif pol_Axis == "Z":
-        pol_Angle = 90 - pol_Angle
-
-    # set inside +0° +360° range
-    if pol_Angle > 0:
-        if pol_Angle >= 360:
-            pol_Angle = pol_Angle - 360
-    elif pol_Angle < 0:
-        pol_Angle = pol_Angle + 360
-        if pol_Angle < 0:
-            pol_Angle = pol_Angle + 360
-
-    pol_Result = (
-        "P" + HEIDEN_Format(" PA+", pol_Angle) + " " + pol_Incr + HEIDEN_Format(pol_Axis, pol_Z)
+import math
+import re
+from typing import Any, Dict, List, Optional
+
+import FreeCAD
+import Path
+
+import Constants
+from Path.Post.Processor import PostProcessor, SCOPE_MACHINE, SCOPE_JOB
+from Path.Post.CAMErrors import CAMValueError
+from Machine.models.machine import OutputUnits
+
+translate = FreeCAD.Qt.translate
+
+DEBUG = False
+if DEBUG:
+    Path.Log.setLevel(Path.Log.Level.DEBUG, Path.Log.thisModule())
+    Path.Log.trackModule(Path.Log.thisModule())
+else:
+    Path.Log.setLevel(Path.Log.Level.INFO, Path.Log.thisModule())
+
+Values = Dict[str, Any]
+
+POST_TYPE = "machine"
+
+CYCLE_FORMAT_Q = "q_parameter"
+CYCLE_FORMAT_LEGACY = "legacy"
+
+FIXTURE_OUTPUT_PRESET = "preset"
+FIXTURE_OUTPUT_DATUM = "datum"
+FIXTURE_OUTPUT_NONE = "none"
+
+
+class HeidenhainPost(PostProcessor):
+    """Klartext post processor for Heidenhain TNC controls.
+
+    Every conversion hook is overridden, because no Klartext block looks
+    like the G-code it comes from.  Modal G-codes that have no Klartext
+    equivalent (G17, G20/G21, G80, G90, G94, G97, G98/G99) are accepted and
+    produce no output; G40/G41/G42 only update the RL/RR/R0 word that is
+    written on every subsequent contouring block.
+    """
+
+    # Commands accepted from the Path.  Anything else raises "Unsupported command".
+    GCodeSupported = (
+        Constants.GCODE_MOVE_RAPID
+        + Constants.GCODE_MOVE_STRAIGHT
+        + Constants.GCODE_MOVE_ARC
+        + Constants.GCODE_DWELL
+        + ["G73", "G81", "G82", "G83", "G85"]
+        + ["G74", "G84"]
+        + Constants.GCODE_CYCLE_CANCEL
+        + Constants.GCODE_ABSOLUTE
+        + Constants.GCODE_FEED_UNITS_PER_MIN
+        + Constants.GCODE_SPINDLE_RPM
+        + Constants.GCODE_RETURN_MODE
+        + Constants.GCODE_TOOL_LENGTH_OFFSET
+        + Constants.GCODE_CUTTER_COMPENSATION
+        + Constants.GCODE_UNITS
+        + ["G17"]
+        + Constants.GCODE_FIXTURES
+        + Constants.MCODE_STOP
+        + Constants.MCODE_OPTIONAL_STOP
+        + Constants.MCODE_END
+        + Constants.MCODE_END_RESET
+        + Constants.MCODE_SPINDLE_ON
+        + Constants.MCODE_SPINDLE_OFF
+        + Constants.MCODE_TOOL_CHANGE
+        + Constants.MCODE_COOLANT
     )
 
-    return pol_Result
+    # Accepted, tracked by MachineState or by this class, but never written.
+    GCodeSilent = set(
+        Constants.GCODE_CYCLE_CANCEL
+        + Constants.GCODE_ABSOLUTE
+        + Constants.GCODE_FEED_UNITS_PER_MIN
+        + Constants.GCODE_SPINDLE_RPM
+        + Constants.GCODE_RETURN_MODE
+        + Constants.GCODE_TOOL_LENGTH_OFFSET
+        + Constants.GCODE_UNITS
+        + ["G17"]
+    )
 
+    # G54 -> 1, G55 -> 2, ... G59.9 -> 15 (before FIXTURE_FIRST_NUMBER is applied)
+    FixtureIndex = {name: index + 1 for index, name in enumerate(Constants.GCODE_FIXTURES)}
 
-def HEIDEN_Drill(
-    drill_Obj, drill_Params, drill_Type, drill_feed
-):  # create a drill cycle and movement
-    global FEED_MAX_SPEED
-    global MACHINE_WORK_AXIS
-    global MACHINE_LAST_POSITION
-    global MACHINE_USE_FMAX
-    global G_FUNCTION_STORE
-    global STORED_CANNED_PARAMS
-    drill_Defs = {"DIST": 0, "DEPTH": 0, "INCR": 0, "DWELL": 0, "FEED": drill_feed}
-    drill_Output = []
-    drill_Surface = None
-    drill_SafePoint = 0
-    drill_StartPoint = 0
+    CompensationWord = {"G40": "R0", "G41": "RL", "G42": "RR"}
 
-    # try to get the distance from Clearance Height and Start Depth
-    if hasattr(drill_Obj, "StartDepth") and hasattr(drill_Obj.StartDepth, "Value"):
-        drill_Surface = drill_Obj.StartDepth.Value
+    # ------------------------------------------------------------------
+    # Property schema
+    # ------------------------------------------------------------------
 
-    # initialize
-    if "R" in drill_Params:
-        # SafePoint equals to R position
-        if G_FUNCTION_STORE["G91"]:  # incremental
-            drill_SafePoint = drill_Params["R"] + MACHINE_LAST_POSITION["Z"]
+    @classmethod
+    def get_common_property_schema(cls):
+        """Klartext-specific defaults for the common properties."""
+        common_props = super().get_common_property_schema()
+
+        for prop in common_props:
+            if prop["name"] == "file_extension":
+                prop["default"] = "h"
+            elif prop["name"] == "supports_tool_radius_compensation":
+                prop["default"] = True
+            elif prop["name"] == "supported_commands":
+                prop["default"] = "\n".join(cls.GCodeSupported)
+            elif prop["name"] == "drill_cycles_to_translate":
+                # Every drill cycle CAM emits has a native Klartext cycle.
+                prop["default"] = ""
+            elif prop["name"] == "output_tool_length_offset":
+                # TOOL CALL applies the length from the tool table; there is no G43.
+                prop["default"] = False
+            elif prop["name"] == "feed_precision":
+                prop["default"] = 0
+            elif prop["name"] == "spindle_decimals":
+                prop["default"] = 0
+            elif prop["name"] == "axis_precision":
+                prop["default"] = 3
+
+        return common_props
+
+    @classmethod
+    def get_property_schema(cls):
+        """Heidenhain-specific properties."""
+        return [
+            {
+                "name": "program_name",
+                "scope": SCOPE_JOB,
+                "type": "string",
+                "label": translate("CAM", "Program Name"),
+                "default": "",
+                "help": translate(
+                    "CAM",
+                    "Name written in the BEGIN PGM and END PGM blocks. "
+                    "Leave empty to derive it from the job label. "
+                    "Characters other than letters, digits and underscore are replaced.",
+                ),
+            },
+            {
+                "name": "tool_axis",
+                "scope": SCOPE_MACHINE,
+                "type": "choice",
+                "label": translate("CAM", "Tool Axis"),
+                "choices": ["X", "Y", "Z"],
+                "default": "Z",
+                "help": translate(
+                    "CAM",
+                    "Spindle axis written in TOOL CALL and BLK FORM. "
+                    "Arcs are always output in the XY plane.",
+                ),
+            },
+            {
+                "name": "rapid_feed_rate",
+                "scope": SCOPE_MACHINE,
+                "type": "float",
+                "label": translate("CAM", "Rapid Feed Rate (0 = FMAX)"),
+                "default": 0.0,
+                "min": 0.0,
+                "max": 999999.0,
+                "decimals": 0,
+                "help": translate(
+                    "CAM",
+                    "Feed rate in mm/min written on rapid blocks instead of FMAX. "
+                    "Older controls do not accept FMAX. 0 writes FMAX.",
+                ),
+            },
+            {
+                "name": "cycle_format",
+                "scope": SCOPE_MACHINE,
+                "type": "choice",
+                "label": translate("CAM", "Drill Cycle Format"),
+                "choices": [CYCLE_FORMAT_Q, CYCLE_FORMAT_LEGACY],
+                "default": CYCLE_FORMAT_Q,
+                "help": translate(
+                    "CAM",
+                    "q_parameter: CYCL DEF 200/202/203/207 with Q parameters "
+                    "(TNC 4xx and newer). "
+                    "legacy: CYCL DEF 1.x PECKING and 17.x RIGID TAPPING "
+                    "for controls without Q-parameter cycles.",
+                ),
+            },
+            {
+                "name": "drill_setup_clearance",
+                "scope": SCOPE_MACHINE,
+                "type": "float",
+                "label": translate("CAM", "Drill Cycle Set-Up Clearance"),
+                "default": 2.0,
+                "min": 0.0,
+                "max": 1000.0,
+                "decimals": 3,
+                "help": translate(
+                    "CAM",
+                    "Set-up clearance (Q200) in mm. The cycle's surface coordinate is "
+                    "placed this far below the operation's retract height so that "
+                    "feed motion starts at the retract height, as in the G-code cycle.",
+                ),
+            },
+            {
+                "name": "chip_break_retract",
+                "scope": SCOPE_MACHINE,
+                "type": "float",
+                "label": translate("CAM", "Chip Breaking Retract"),
+                "default": 0.5,
+                "min": 0.0,
+                "max": 100.0,
+                "decimals": 3,
+                "help": translate(
+                    "CAM",
+                    "Retraction distance (Q256) in mm used for G73 chip breaking "
+                    "in CYCL DEF 203.",
+                ),
+            },
+            {
+                "name": "fixture_output",
+                "scope": SCOPE_MACHINE,
+                "type": "choice",
+                "label": translate("CAM", "Fixture Output"),
+                "choices": [FIXTURE_OUTPUT_PRESET, FIXTURE_OUTPUT_DATUM, FIXTURE_OUTPUT_NONE],
+                "default": FIXTURE_OUTPUT_PRESET,
+                "help": translate(
+                    "CAM",
+                    "preset: CYCL DEF 247 PRESETTING selects a preset table entry. "
+                    "datum: CYCL DEF 7 DATUM SHIFT selects a datum table entry. "
+                    "none: fixture commands are not output.",
+                ),
+            },
+            {
+                "name": "fixture_first_number",
+                "scope": SCOPE_MACHINE,
+                "type": "int",
+                "label": translate("CAM", "Fixture Number for G54"),
+                "default": 1,
+                "min": 0,
+                "max": 9999,
+                "help": translate(
+                    "CAM",
+                    "Preset or datum number selected for G54. G55 selects the next one, and so on.",
+                ),
+            },
+            {
+                "name": "output_blk_form",
+                "scope": SCOPE_JOB,
+                "type": "bool",
+                "label": translate("CAM", "Output BLK FORM"),
+                "default": True,
+                "help": translate(
+                    "CAM",
+                    "Write the stock bounding box as BLK FORM 0.1 / 0.2 blocks "
+                    "after BEGIN PGM for graphic simulation on the control.",
+                ),
+            },
+        ]
+
+    # ------------------------------------------------------------------
+    # Setup
+    # ------------------------------------------------------------------
+
+    def __init__(
+        self,
+        job,
+        tooltip=translate("CAM", "Heidenhain Klartext post processor"),
+        tooltipargs=[],
+        units="Metric",
+    ) -> None:
+        super().__init__(job=job, tooltip=tooltip, tooltipargs=tooltipargs, units=units)
+        self._reset_section_state()
+        Path.Log.debug("Heidenhain post processor initialized.")
+
+    def init_values(self, values: Values) -> None:
+        super().init_values(values)
+        values["MACHINE_NAME"] = "Heidenhain"
+        values["POSTPROCESSOR_FILE_NAME"] = __name__
+
+    def _merge_machine_config(self):
+        """Force the values Klartext cannot do without."""
+        super()._merge_machine_config()
+
+        # Klartext comments are ";" blocks.
+        self.values["COMMENT_SYMBOL"] = ";"
+
+        # The block word (L, C, ...) carries the motion type, so a name-stripped
+        # command could not be converted.
+        self.values["OUTPUT_DUPLICATE_COMMANDS"] = True
+
+        # Block numbers are physical line numbers, added in _convert_job_sections().
+        self.values["OUTPUT_LINE_NUMBERS"] = False
+
+        schema = {x["name"]: x for x in self.get_common_property_schema()}
+        for property_name in ("supported_commands", "output_tool_length_offset"):
+            self.values[property_name.upper()] = schema[property_name]["default"]
+
+    def _reset_section_state(self):
+        """State that is only valid within one output file."""
+        self._compensation = "R0"
+        self._last_cc = None
+        self._last_cycle_def = None
+        self._tool_call_speed = None
+
+    def _convert_start_section(self, section_name, sublist):
+        self._reset_section_state()
+        super()._convert_start_section(section_name, sublist)
+
+    # ------------------------------------------------------------------
+    # Postable expansion
+    # ------------------------------------------------------------------
+
+    def _expand_postprocessor_commands(self, postables):
+        """Carry the spindle speed of the M3/M4 following an M6 onto the M6.
+
+        TOOL CALL takes the spindle speed, so the tool change needs to know it
+        before the spindle command is converted.  With tool changes suppressed
+        the M6 becomes a comment and the M3 alone sets the speed.
+        """
+        if not self.values.get("TOOL_CHANGE", True):
+            return
+        for section_name, sublist in postables:
+            for item in sublist:
+                if not item.path:
+                    continue
+                commands = list(item.path.Commands)
+                changed = False
+                for index, cmd in enumerate(commands):
+                    if cmd.Name not in Constants.MCODE_TOOL_CHANGE or "S" in cmd.Parameters:
+                        continue
+                    for later in commands[index + 1 :]:
+                        if later.Name in Constants.MCODE_TOOL_CHANGE:
+                            break
+                        if later.Name in Constants.MCODE_SPINDLE_ON and "S" in later.Parameters:
+                            params = dict(cmd.Parameters)
+                            params["S"] = later.Parameters["S"]
+                            commands[index] = Path.Command(cmd.Name, params, cmd.Annotations)
+                            changed = True
+                            break
+                if changed:
+                    item.path = Path.Path(commands)
+
+    def _expand_prefix(self, postables) -> None:
+        """BEGIN PGM must be block 0, ahead of the header comments."""
+        super()._expand_prefix(postables)
+
+        commands = [self._as_is(f"BEGIN PGM {self._program_name()} {self._units_word()}")]
+        commands.extend(self._blk_form_commands())
+
+        for _, section in postables:
+            section.insert(0, self._make_postable("Post: begin pgm", commands))
+
+    def _expand_trailing_lines(self, postables) -> None:
+        """END PGM must be the last block, after the postamble."""
+        super()._expand_trailing_lines(postables)
+
+        end = self._as_is(f"END PGM {self._program_name()} {self._units_word()}")
+        for _, section in postables:
+            section.append(self._make_postable("Post: end pgm", [end]))
+
+    def _collect_unit_command(self) -> list:
+        """Units are declared in BEGIN PGM; there is no G20/G21."""
+        return None
+
+    def _add_line_numbers(self, postables):
+        """Klartext block numbers are added on the finished text, see _convert_job_sections()."""
+        return
+
+    def _convert_job_sections(self, postables):
+        """Number every block from 0, leaving "~" continuation lines unnumbered."""
+        sections = super()._convert_job_sections(postables)
+        eol = self.values.get("END_OF_LINE_CHARS", "\n")
+
+        numbered_sections = []
+        for section_name, gcode in sections:
+            numbered = []
+            block_number = 0
+            continuation = False
+            for line in gcode.split(eol):
+                if line.strip() == "":
+                    continue
+                if continuation:
+                    numbered.append(line)
+                else:
+                    numbered.append(f"{block_number} {line}")
+                    block_number += 1
+                continuation = line.rstrip().endswith("~")
+            numbered_sections.append((section_name, eol.join(numbered)))
+
+        return numbered_sections
+
+    # ------------------------------------------------------------------
+    # Formatting helpers
+    # ------------------------------------------------------------------
+
+    @staticmethod
+    def _as_is(text: str) -> Path.Command:
+        return Path.Command("", {}, {Constants.ANNOT_AS_IS: text})
+
+    def _program_name(self) -> str:
+        name = self.values.get("PROGRAM_NAME", "") or ""
+        if not name and self._job is not None:
+            name = getattr(self._job, "Label", "") or ""
+        name = re.sub(r"[^A-Za-z0-9]+", "_", name).strip("_").upper()
+        return name or "FREECAD"
+
+    def _units_word(self) -> str:
+        return "INCH" if self.values["OUTPUT_UNITS"] == OutputUnits.IMPERIAL else "MM"
+
+    def _tool_axis(self) -> str:
+        return self.values.get("TOOL_AXIS", "Z") or "Z"
+
+    @staticmethod
+    def _signed(text: str) -> str:
+        """Klartext writes an explicit sign on every coordinate."""
+        if text.startswith("-"):
+            if float(text) == 0.0:
+                return "+" + text[1:]
+            return text
+        if text.startswith("+"):
+            return text
+        return "+" + text
+
+    def _axis(self, letter: str, value: float) -> str:
+        """A signed axis word, e.g. X+10.000.  Rotary axes are degrees, never converted."""
+        if letter in ("A", "B", "C"):
+            text = f"{value:.{self.values['AXIS_PRECISION']}f}"
         else:
-            drill_SafePoint = drill_Params["R"]
-        # Surface equals to theoric start point of drilling
-        if drill_Surface is not None and drill_SafePoint > drill_Surface:
-            drill_Defs["DIST"] = drill_Surface - drill_SafePoint
-            drill_StartPoint = drill_Surface
-        else:
-            drill_Defs["DIST"] = 0
-            drill_StartPoint = drill_SafePoint
+            text = self.format_parameter(letter, value)
+        return f"{letter}{self._signed(text)}"
 
-    if "Z" in drill_Params:
-        if G_FUNCTION_STORE["G91"]:  # incremental
-            drill_Defs["DEPTH"] = drill_SafePoint + drill_Params["Z"]
-        else:
-            drill_Defs["DEPTH"] = drill_Params["Z"] - drill_StartPoint
+    def _length(self, value: float) -> str:
+        """A signed length in output units, without an axis letter."""
+        return self._signed(self.format_parameter("X", value))
 
-    if drill_Defs["DEPTH"] > 0:
-        drill_Output.append("; WARNING START DEPTH LOWER THAN FINAL DEPTH")
+    def _feed_value(self, feed_mm_per_sec: float) -> str:
+        return self.format_parameter("F", feed_mm_per_sec)
 
-    drill_Defs["INCR"] = drill_Defs["DEPTH"]
-    # overwrite
-    if "P" in drill_Params:
-        drill_Defs["DWELL"] = drill_Params["P"]
-    if "Q" in drill_Params:
-        drill_Defs["INCR"] = drill_Params["Q"]
+    def _rapid_word(self) -> str:
+        rate = self.values.get("RAPID_FEED_RATE", 0) or 0
+        if rate > 0:
+            if self.values["OUTPUT_UNITS"] == OutputUnits.IMPERIAL:
+                rate = rate / 25.4
+            return f"F{rate:.{self.values['FEED_PRECISION']}f}"
+        return "FMAX"
 
-    # set the parameters for rapid movements
-    if MACHINE_USE_FMAX:
-        if MACHINE_SKIP_PARAMS:
-            drill_Rapid = " FMAX"
-        else:
-            drill_Rapid = " R0 FMAX M"
-    else:
-        if MACHINE_SKIP_PARAMS:
-            drill_Rapid = HEIDEN_Format(" F", FEED_MAX_SPEED)
-        else:
-            drill_Rapid = " R0" + HEIDEN_Format(" F", FEED_MAX_SPEED) + " M"
+    def _feed_word(self, command: Path.Command) -> Optional[str]:
+        """F word for a feed block: the command's F, or the last programmed F."""
+        feed = command.Parameters.get("F")
+        if feed is None and self.machine_state is not None:
+            feed = self.machine_state.F
+        if not feed:
+            return None
+        return f"F{self._feed_value(feed)}"
 
-    # move to drill location
-    drill_Movement = "L"
-    if G_FUNCTION_STORE["G91"]:  # incremental
-        # update Z value to R + actual_Z if first call
-        if G_FUNCTION_STORE[drill_Type] == False:
-            MACHINE_LAST_POSITION["Z"] = drill_Defs["DIST"] + MACHINE_LAST_POSITION["Z"]
-            drill_Movement = "L" + HEIDEN_Format(" Z", MACHINE_LAST_POSITION["Z"]) + drill_Rapid
-            drill_Output.append(drill_Movement)
+    def _block_delete(self, command: Path.Command) -> str:
+        return "/ " if command.Annotations.get("blockdelete") else ""
 
-        # update X and Y position
-        if "X" in drill_Params and drill_Params["X"] != 0:
-            MACHINE_LAST_POSITION["X"] = drill_Params["X"] + MACHINE_LAST_POSITION["X"]
-            drill_Movement += HEIDEN_Format(" X", MACHINE_LAST_POSITION["X"])
-        if "Y" in drill_Params and drill_Params["Y"] != 0:
-            MACHINE_LAST_POSITION["Y"] = drill_Params["Y"] + MACHINE_LAST_POSITION["Y"]
-            drill_Movement += HEIDEN_Format(" Y", MACHINE_LAST_POSITION["Y"])
-        if drill_Movement != "L":  # same location
-            drill_Output.append(drill_Movement + drill_Rapid)
-    else:  # not incremental
-        # check if R is higher than actual Z and move if needed
-        if drill_SafePoint > MACHINE_LAST_POSITION["Z"]:
-            drill_Movement = "L" + HEIDEN_Format(" Z", drill_SafePoint) + drill_Rapid
-            drill_Output.append(drill_Movement)
-            MACHINE_LAST_POSITION["Z"] = drill_SafePoint
-
-        # update X and Y position
-        if "X" in drill_Params and drill_Params["X"] != MACHINE_LAST_POSITION["X"]:
-            MACHINE_LAST_POSITION["X"] = drill_Params["X"]
-            drill_Movement += HEIDEN_Format(" X", MACHINE_LAST_POSITION["X"])
-        if "Y" in drill_Params and drill_Params["Y"] != MACHINE_LAST_POSITION["Y"]:
-            MACHINE_LAST_POSITION["Y"] = drill_Params["Y"]
-            drill_Movement += HEIDEN_Format(" Y", MACHINE_LAST_POSITION["Y"])
-        if drill_Movement != "L":  # same location
-            drill_Output.append(drill_Movement + drill_Rapid)
-
-        # check if R is not than actual Z and move if needed
-        if drill_SafePoint != MACHINE_LAST_POSITION["Z"]:
-            drill_Movement = "L" + HEIDEN_Format(" Z", drill_SafePoint) + drill_Rapid
-            drill_Output.append(drill_Movement)
-            MACHINE_LAST_POSITION["Z"] = drill_SafePoint
-
-    # check if cycle is already stored
-    i = True
-    for j in drill_Defs:
-        if drill_Defs[j] != STORED_CANNED_PARAMS[j]:
-            i = False
-
-    if i == False:  # not same cycle, update and print
-        for j in drill_Defs:
-            STORED_CANNED_PARAMS[j] = drill_Defs[j]
-
-        # get the DEF template and replace the strings
-        drill_CycleDef = MACHINE_CYCLE_DEF[1].format(
-            DIST=str("{:.3f}".format(drill_Defs["DIST"])),
-            DEPTH=str("{:.3f}".format(drill_Defs["DEPTH"])),
-            INCR=str("{:.3f}".format(drill_Defs["INCR"])),
-            DWELL=str("{:.0f}".format(drill_Defs["DWELL"])),
-            FEED=str("{:.0f}".format(drill_Defs["FEED"])),
+    def _error(self, message: str, command: Path.Command) -> CAMValueError:
+        return CAMValueError(
+            message,
+            job=self._job,
+            operation=self._operation,
+            command=command,
+            pp=self.values["MACHINE_NAME"],
         )
-        drill_Output.extend(drill_CycleDef.split("\n"))
 
-    # add the cycle call to do the drill
-    if MACHINE_SKIP_PARAMS:
-        drill_Output.append("CYCL CALL")
-    else:
-        drill_Output.append("CYCL CALL M")
+    def _current_position(self, command: Path.Command, letter: str, previous=False):
+        """Absolute coordinate after (or before) the command, from the tracked state."""
+        if previous:
+            return self.machine_state.previous.get(letter)
+        return getattr(self.machine_state, letter)
 
-    # set already active cycle,    to do: check changes and movements until G80
-    G_FUNCTION_STORE[drill_Type] = True
+    # ------------------------------------------------------------------
+    # BLK FORM
+    # ------------------------------------------------------------------
 
-    return drill_Output
+    def _blk_form_commands(self) -> List[Path.Command]:
+        if not self.values.get("OUTPUT_BLK_FORM", False):
+            return []
+        try:
+            box = self._job.Stock.Shape.BoundBox
+            corner_min = (box.XMin, box.YMin, box.ZMin)
+            corner_max = (box.XMax, box.YMax, box.ZMax)
+        except AttributeError:
+            Path.Log.debug("No stock bounding box; BLK FORM not written")
+            return []
 
+        def corner(values):
+            return " ".join(self._axis(letter, value) for letter, value in zip("XYZ", values))
 
-def HEIDEN_Format(formatType, formatValue):
-    global SPINDLE_DECIMALS
-    global FEED_DECIMALS
-    global AXIS_DECIMALS
-    returnString = ""
+        return [
+            self._as_is(f"BLK FORM 0.1 {self._tool_axis()} {corner(corner_min)}"),
+            self._as_is(f"BLK FORM 0.2 {corner(corner_max)}"),
+        ]
 
-    formatType = str(formatType)
-    if formatType == "S" or formatType == " S":
-        returnString = "%.*f" % (SPINDLE_DECIMALS, formatValue)
-    elif formatType == "F" or formatType == " F":
-        returnString = "%.*f" % (FEED_DECIMALS, formatValue)
-    else:
-        returnString = "%.*f" % (AXIS_DECIMALS, formatValue)
-    return formatType + str(returnString)
+    # ------------------------------------------------------------------
+    # Linear motion: L blocks
+    # ------------------------------------------------------------------
 
+    def _line_block(self, command: Path.Command, rapid: bool) -> Optional[str]:
+        params = command.Parameters
+        words = [self._axis(letter, params[letter]) for letter in "XYZABC" if letter in params]
+        if not words:
+            # every coordinate suppressed as a duplicate: nothing to do
+            return None
 
-def HEIDEN_Numberize(GCodeStrings):  # add line numbers and concatenation
-    global LINENUMBERS
-    global STARTLINENR
-    global LINENUMBER_INCREMENT
+        words.append(self._compensation)
+        feed = self._rapid_word() if rapid else self._feed_word(command)
+        if feed:
+            words.append(feed)
 
-    if LINENUMBERS:
-        linenr = STARTLINENR
-        result = ""
-        for s in GCodeStrings:
-            result += str(linenr) + " " + s + "\n"
-            linenr += LINENUMBER_INCREMENT
-        return result
-    else:
-        return "\n".join(GCodeStrings)
+        return f"{self._block_delete(command)}L {' '.join(words)}"
 
+    def _convert_rapid_move(self, command: Path.Command) -> str:
+        return self._line_block(command, rapid=True)
 
-def HEIDEN_LBL_Get(GetPoint=None, GetLevel=None, GetAddit=0):
-    global POSTGCODE
-    global STORED_LBL
-    global LBLIZE_PATH_LEVEL
+    def _convert_linear_move(self, command: Path.Command) -> str:
+        return self._line_block(command, rapid=False)
 
-    if GetPoint is not None:
-        if LBLIZE_PATH_LEVEL != GetLevel:
-            LBLIZE_PATH_LEVEL = GetLevel
-            if len(STORED_LBL) != 0 and len(STORED_LBL[-1][-1]) == 0:
-                STORED_LBL[-1].pop()
-            STORED_LBL.append([[len(POSTGCODE) + GetAddit, len(POSTGCODE) + GetAddit]])
+    # ------------------------------------------------------------------
+    # Circular motion: CC / C / CR / CP blocks
+    # ------------------------------------------------------------------
+
+    def _convert_arc_move(self, command: Path.Command) -> str:
+        params = command.Parameters
+        clockwise = command.Name in Constants.GCODE_MOVE_CW
+        direction = "DR-" if clockwise else "DR+"
+
+        start = tuple(self._current_position(command, letter, previous=True) for letter in "XYZ")
+        end = tuple(self._current_position(command, letter) for letter in "XYZ")
+        if any(value is None for value in start + end):
+            raise self._error(
+                "Arc requires a known start position; program a move before the arc", command
+            )
+
+        trailing = [direction, self._compensation]
+        if feed := self._feed_word(command):
+            trailing.append(feed)
+        prefix = self._block_delete(command)
+
+        # Radius format: CR block, sign of R selects the minor or major arc.
+        if "R" in params and "I" not in params and "J" not in params:
+            radius = params["R"]
+            if radius == 0:
+                raise self._error("Arc radius must not be zero", command)
+            radius_word = f"R{self._signed(self.format_parameter('R', radius))}"
+            words = [self._axis("X", end[0]), self._axis("Y", end[1]), radius_word] + trailing
+            return f"{prefix}CR {' '.join(words)}"
+
+        if "I" not in params and "J" not in params:
+            raise self._error("Arc requires I and J (or R)", command)
+
+        center = (start[0] + params.get("I", 0.0), start[1] + params.get("J", 0.0))
+        lines = []
+        if self._last_cc is None or any(abs(a - b) > 1e-9 for a, b in zip(center, self._last_cc)):
+            lines.append(f"{prefix}CC {self._axis('X', center[0])} {self._axis('Y', center[1])}")
+            self._last_cc = center
+
+        dz = end[2] - start[2]
+        if abs(dz) < 1e-9:
+            words = [self._axis("X", end[0]), self._axis("Y", end[1])] + trailing
+            lines.append(f"{prefix}C {' '.join(words)}")
         else:
-            if len(STORED_LBL[-1][-1]) == 0:
-                STORED_LBL[-1][-1][0] = len(POSTGCODE) + GetAddit
-            STORED_LBL[-1][-1][1] = len(POSTGCODE) + GetAddit
-    else:
-        if len(STORED_LBL) != 0 and len(STORED_LBL[-1][-1]) != 0:
-            STORED_LBL[-1].append([])
-    return
+            sweep = self._sweep_angle(center, start, end, clockwise)
+            angle = f"IPA+{sweep:.{self.values['AXIS_PRECISION']}f}"
+            words = [angle, f"IZ{self._length(dz)}"] + trailing
+            lines.append(f"{prefix}CP {' '.join(words)}")
+
+        return "\n".join(lines)
+
+    @staticmethod
+    def _sweep_angle(center, start, end, clockwise: bool) -> float:
+        """Degrees swept from start to end around center; a closed arc is 360."""
+        if abs(start[0] - end[0]) < 1e-6 and abs(start[1] - end[1]) < 1e-6:
+            return 360.0
+        start_angle = math.degrees(math.atan2(start[1] - center[1], start[0] - center[0]))
+        end_angle = math.degrees(math.atan2(end[1] - center[1], end[0] - center[0]))
+        sweep = (start_angle - end_angle) if clockwise else (end_angle - start_angle)
+        sweep = sweep % 360.0
+        if sweep < 1e-6:
+            sweep = 360.0
+        return sweep
+
+    # ------------------------------------------------------------------
+    # Drill cycles
+    # ------------------------------------------------------------------
+
+    def _convert_drill_cycle(self, command: Path.Command) -> str:
+        params = command.Parameters
+        name = command.Name
+        previous = self.machine_state.previous
+
+        retract = params.get("R")
+        bottom = params.get("Z")
+        if retract is None or bottom is None:
+            raise self._error(f"{name} requires R and Z", command)
+
+        x = params.get("X", previous.get("X"))
+        y = params.get("Y", previous.get("Y"))
+        if x is None or y is None:
+            raise self._error(f"{name} requires a known X and Y", command)
+
+        feed = params.get("F", previous.get("F"))
+        if not feed and name not in Constants.GCODE_MOVE_TAP:
+            raise self._error(f"{name} requires a feed rate", command)
+
+        setup = float(self.values.get("DRILL_SETUP_CLEARANCE", 2.0) or 0.0)
+        surface = retract - setup
+        depth = bottom - surface
+        if depth >= 0:
+            raise self._error(
+                f"{name} final depth Z{bottom} is not below the retract height R{retract}", command
+            )
+
+        initial_z = previous.get("Z")
+        second_clearance = 0.0
+        if self.machine_state.ReturnMode != "R" and initial_z is not None and initial_z > retract:
+            second_clearance = initial_z - retract
+
+        if self.values.get("CYCLE_FORMAT") == CYCLE_FORMAT_LEGACY:
+            definition = self._legacy_cycle_definition(command, setup, depth, feed)
+            return self._legacy_cycle_call(
+                command, definition, x, y, retract, initial_z, second_clearance
+            )
+
+        definition = self._q_cycle_definition(
+            command, setup, depth, surface, second_clearance, feed
+        )
+        lines = []
+        if definition != self._last_cycle_def:
+            lines.append(definition)
+            self._last_cycle_def = definition
+        lines.append(f"L {self._axis('X', x)} {self._axis('Y', y)} R0 {self._rapid_word()} M99")
+        return "\n".join(lines)
+
+    def _q_block(self, title: str, parameters: List[tuple]) -> str:
+        """A multi-line CYCL DEF with Q parameters and "~" continuation."""
+        lines = [f"CYCL DEF {title} ~"]
+        for index, (number, value, label) in enumerate(parameters):
+            end = "" if index == len(parameters) - 1 else " ~"
+            lines.append(f"    Q{number}={value} ;{label}{end}")
+        return "\n".join(lines)
+
+    def _q_cycle_definition(self, command, setup, depth, surface, second, feed) -> str:
+        name = command.Name
+        params = command.Parameters
+        dwell = params.get("P", 0.0)
+        time_precision = self.values["AXIS_PRECISION"]
+
+        def length(value):
+            return self._length(value)
+
+        def seconds(value):
+            return self._signed(f"{value:.{time_precision}f}")
+
+        if name in ("G81", "G82", "G83"):
+            plunge = params.get("Q", abs(depth)) if name == "G83" else abs(depth)
+            return self._q_block(
+                "200 DRILLING",
+                [
+                    (200, length(setup), "SET-UP CLEARANCE"),
+                    (201, length(depth), "DEPTH"),
+                    (206, self._feed_value(feed), "FEED RATE FOR PLNGNG"),
+                    (202, length(plunge), "PLUNGING DEPTH"),
+                    (210, seconds(0.0), "DWELL TIME AT TOP"),
+                    (203, length(surface), "SURFACE COORDINATE"),
+                    (204, length(second), "2ND SET-UP CLEARANCE"),
+                    (211, seconds(dwell), "DWELL TIME AT DEPTH"),
+                ],
+            )
+
+        if name == "G73":
+            plunge = params.get("Q", abs(depth))
+            breaks = max(1, math.ceil(abs(depth) / plunge)) if plunge > 0 else 1
+            return self._q_block(
+                "203 UNIVERSAL DRILLING",
+                [
+                    (200, length(setup), "SET-UP CLEARANCE"),
+                    (201, length(depth), "DEPTH"),
+                    (206, self._feed_value(feed), "FEED RATE FOR PLNGNG"),
+                    (202, length(plunge), "PLUNGING DEPTH"),
+                    (210, seconds(0.0), "DWELL TIME AT TOP"),
+                    (203, length(surface), "SURFACE COORDINATE"),
+                    (204, length(second), "2ND SET-UP CLEARANCE"),
+                    (212, length(0.0), "DECREMENT"),
+                    (213, f"+{breaks}", "NR OF CHIP BREAKS"),
+                    (205, length(0.0), "MIN. PLUNGING DEPTH"),
+                    (211, seconds(dwell), "DWELL TIME AT DEPTH"),
+                    (208, self._feed_value(0.0), "RETRACTION FEED RATE"),
+                    (
+                        256,
+                        length(self.values.get("CHIP_BREAK_RETRACT", 0.5)),
+                        "DIST FOR CHIP BRKNG",
+                    ),
+                    (395, "+0", "DEPTH REFERENCE"),
+                ],
+            )
+
+        if name in Constants.GCODE_MOVE_TAP:
+            pitch = self._tapping_pitch(command)
+            return self._q_block(
+                "207 RIGID TAPPING NEW",
+                [
+                    (200, length(setup), "SET-UP CLEARANCE"),
+                    (201, length(depth), "DEPTH OF THREAD"),
+                    (239, length(pitch), "PITCH OF THREAD"),
+                    (203, length(surface), "SURFACE COORDINATE"),
+                    (204, length(second), "2ND SET-UP CLEARANCE"),
+                ],
+            )
+
+        if name == "G85":
+            return self._q_block(
+                "202 BORING",
+                [
+                    (200, length(setup), "SET-UP CLEARANCE"),
+                    (201, length(depth), "DEPTH"),
+                    (206, self._feed_value(feed), "FEED RATE FOR PLNGNG"),
+                    (211, seconds(dwell), "DWELL TIME AT DEPTH"),
+                    (208, self._feed_value(feed), "RETRACTION FEED RATE"),
+                    (203, length(surface), "SURFACE COORDINATE"),
+                    (204, length(second), "2ND SET-UP CLEARANCE"),
+                    (214, "+0", "DISENGAGING DIRECTN"),
+                    (336, "+0", "ANGLE OF SPINDLE"),
+                ],
+            )
+
+        raise self._error(f"Unsupported drill cycle {name}", command)
+
+    def _tapping_pitch(self, command: Path.Command) -> float:
+        """Thread pitch in mm; negative for a left-hand thread (G74)."""
+        params = command.Parameters
+        feed = params.get("F")
+        if feed is None:
+            raise self._error(f"{command.Name} requires F (the thread pitch)", command)
+
+        if command.Annotations.get("operation", "") == "tapping":
+            # The tapping generator writes the pitch itself into F.
+            pitch = feed
+        else:
+            speed = params.get("S") or self.machine_state.previous.get("S")
+            if not speed:
+                raise self._error(
+                    f"{command.Name} needs a spindle speed to derive the pitch from F", command
+                )
+            pitch = feed * 60.0 / speed
+
+        if pitch <= 0:
+            raise self._error(f"{command.Name} pitch must be positive", command)
+        return -pitch if command.Name == "G74" else pitch
+
+    def _legacy_cycle_definition(self, command, setup, depth, feed) -> str:
+        name = command.Name
+        params = command.Parameters
+        precision = self.values["AXIS_PRECISION"]
+
+        def length(value):
+            return self.format_parameter("X", value)
+
+        if name in ("G81", "G82", "G83", "G73"):
+            plunge = params.get("Q", abs(depth)) if name in ("G83", "G73") else abs(depth)
+            dwell = params.get("P", 0.0)
+            return "\n".join(
+                [
+                    "CYCL DEF 1.0 PECKING",
+                    f"CYCL DEF 1.1 SET UP {length(setup)}",
+                    f"CYCL DEF 1.2 DEPTH {length(depth)}",
+                    f"CYCL DEF 1.3 PECKG {length(-abs(plunge))}",
+                    f"CYCL DEF 1.4 DWELL {dwell:.{precision}f}",
+                    f"CYCL DEF 1.5 F{self._feed_value(feed)}",
+                ]
+            )
+
+        if name in Constants.GCODE_MOVE_TAP:
+            pitch = self._tapping_pitch(command)
+            return "\n".join(
+                [
+                    "CYCL DEF 17.0 RIGID TAPPING",
+                    f"CYCL DEF 17.1 SET UP {length(setup)}",
+                    f"CYCL DEF 17.2 DEPTH {length(depth)}",
+                    f"CYCL DEF 17.3 PITCH {self._length(pitch)}",
+                ]
+            )
+
+        raise self._error(
+            f"{name} has no legacy Klartext cycle; use the q_parameter format", command
+        )
+
+    def _legacy_cycle_call(
+        self, command, definition, x, y, retract, initial_z, second_clearance
+    ) -> str:
+        """Legacy cycles start from wherever the tool is, so position it explicitly."""
+        lines = []
+        if definition != self._last_cycle_def:
+            lines.append(definition)
+            self._last_cycle_def = definition
+
+        previous = self.machine_state.previous
+        if previous.get("X") != x or previous.get("Y") != y:
+            lines.append(f"L {self._axis('X', x)} {self._axis('Y', y)} R0 {self._rapid_word()}")
+        if previous.get("Z") != retract:
+            lines.append(f"L {self._axis('Z', retract)} R0 {self._rapid_word()}")
+        lines.append("CYCL CALL")
+        if second_clearance > 0:
+            lines.append(f"L {self._axis('Z', initial_z)} R0 {self._rapid_word()}")
+        return "\n".join(lines)
+
+    # ------------------------------------------------------------------
+    # Dwell, tool change, spindle, coolant, program control, fixtures
+    # ------------------------------------------------------------------
+
+    def _convert_dwell(self, command: Path.Command) -> str:
+        seconds = command.Parameters.get("P", 0.0)
+        value = self.format_parameter("P", seconds, "G4")
+        return f"CYCL DEF 9.0 DWELL TIME\nCYCL DEF 9.1 DWELL {value}"
+
+    def _convert_tool_change(self, command: Path.Command) -> str:
+        params = command.Parameters
+        if "T" not in params:
+            raise self._error("Tool change requires T", command)
+        words = [f"TOOL CALL {int(params['T'])}", self._tool_axis()]
+
+        speed = params.get("S")
+        if speed:
+            words.append(f"S{self.format_parameter('S', speed)}")
+            self._tool_call_speed = speed
+
+        # The control's modal state is unknown after a tool change.
+        self.machine_state.setState(None)
+        self._compensation = "R0"
+        return " ".join(words)
+
+    def _convert_spindle_command(self, command: Path.Command) -> str:
+        if command.Name in Constants.MCODE_SPINDLE_OFF:
+            return "M5"
+
+        lines = []
+        speed = command.Parameters.get("S")
+        if speed and (self._tool_call_speed is None or abs(speed - self._tool_call_speed) > 1e-9):
+            # TOOL CALL without a tool number changes only the spindle speed.
+            lines.append(f"TOOL CALL S{self.format_parameter('S', speed)}")
+            self._tool_call_speed = speed
+
+        lines.append("M3" if command.Name in Constants.MCODE_SPINDLE_CW else "M4")
+        return "\n".join(lines)
+
+    @staticmethod
+    def _m_word(command: Path.Command) -> str:
+        """M08 -> M8"""
+        return f"M{int(command.Name[1:])}"
+
+    def _convert_coolant_command(self, command: Path.Command) -> str:
+        return self._m_word(command)
+
+    def _convert_program_control(self, command: Path.Command) -> str:
+        return self._m_word(command)
+
+    def _convert_fixture(self, command: Path.Command) -> str:
+        mode = self.values.get("FIXTURE_OUTPUT", FIXTURE_OUTPUT_PRESET)
+        if mode == FIXTURE_OUTPUT_NONE:
+            return None
+
+        first = int(self.values.get("FIXTURE_FIRST_NUMBER", 1))
+        number = self.FixtureIndex[command.Name] - 1 + first
+
+        if mode == FIXTURE_OUTPUT_DATUM:
+            return f"CYCL DEF 7.0 DATUM SHIFT\nCYCL DEF 7.1 #{number}"
+
+        return self._q_block("247 PRESETTING", [(339, f"+{number}", "PRESET NUMBER")])
+
+    # ------------------------------------------------------------------
+    # Modal state and everything else
+    # ------------------------------------------------------------------
+
+    def _convert_modal_command(self, command: Path.Command) -> str:
+        if command.Name in self.GCodeSilent:
+            return None
+        raise self._error(f"{command.Name} has no Klartext equivalent", command)
+
+    def _convert_generic_command(self, command: Path.Command) -> str:
+        name = command.Name
+
+        # The base dispatcher only routes the expandable and extended cycles.
+        if name in Constants.GCODE_MOVE_DRILL:
+            return self._convert_drill_cycle(command)
+
+        if name in self.CompensationWord:
+            self._compensation = self.CompensationWord[name]
+            return None
+
+        if name in self.GCodeSilent:
+            return None
+
+        if name in Constants.MCODE_END + Constants.MCODE_END_RESET:
+            return self._m_word(command)
+
+        # Early tool prep: a bare Tn pre-selects the next tool.
+        if name.startswith("T") and name[1:].isdigit():
+            return f"TOOL DEF {int(name[1:])}"
+
+        raise self._error(f"{name} has no Klartext equivalent", command)
+
+    @property
+    def tooltip(self):
+        return """
+        Heidenhain Klartext (conversational) post processor.
+
+        Writes a numbered .h program: BEGIN/END PGM, BLK FORM from the
+        stock, TOOL CALL, L/CC/C/CR/CP contour blocks with RL/RR/R0,
+        drilling and tapping cycles (CYCL DEF 200/202/203/207 or the
+        legacy CYCL DEF 1/17 format), dwell cycle 9 and preset or datum
+        selection for fixtures.
+        """
 
 
-def HEIDEN_LBL_Replace():
-    global POSTGCODE
-    global STORED_LBL
-    global FIRST_LBL
+# Class alias for PostProcessorFactory: it looks for the title-cased post name.
+Heidenhain = HeidenhainPost
 
-    Gcode_Lenght = len(POSTGCODE)
 
-    # this function look inside strings to find and replace it with LBL
-    # the array is bi-dimensional every "Z" step down create a column
-    # until the "Z" axis is moved or rapid movements are performed
-    # these "planar with feed movements" create a new row with
-    # the index of start and end POSTGCODE line
-    # to LBLize we need to diff with the first column backward
-    # from the last row in the last column of indexes
-    Cols = len(STORED_LBL) - 1
-    if Cols > 0:
-        FIRST_LBL += len(STORED_LBL[0])  # last LBL number to print
-        for Col in range(Cols, 0, -1):
-            LBL_Shift = 0  # LBL number iterator
-            Rows = len(STORED_LBL[0]) - 1
-            for Row in range(Rows, -1, -1):
-                LBL_Shift += 1
-                # get the indexes from actual column
-                CellStart = STORED_LBL[Col][Row][1]
-                CellStop = STORED_LBL[Col][Row][0] - 1
-                # get the indexes from first column
-                RefStart = STORED_LBL[0][Row][1]
-                i = 0
-                Remove = True  # initial value True, be False on error
-                for j in range(CellStart, CellStop, -1):
-                    # diff from actual to first index column/row
-                    if POSTGCODE[j] != POSTGCODE[RefStart - i]:
-                        Remove = False
-                        break
-                    i += 1
-                if Remove:
-                    # we can remove duplicate movements
-                    for j in range(CellStart, CellStop, -1):
-                        POSTGCODE.pop(j)
-                    # add the LBL calls
-                    POSTGCODE.insert(CellStop + 1, "CALL LBL " + str(FIRST_LBL - LBL_Shift))
-        if Gcode_Lenght != len(POSTGCODE):
-            LBL_Shift = 0
-            Rows = len(STORED_LBL[0]) - 1
-            for Row in range(Rows, -1, -1):
-                LBL_Shift += 1
-                RefEnd = STORED_LBL[0][Row][1] + 1
-                RefStart = STORED_LBL[0][Row][0]
-                POSTGCODE.insert(RefEnd, "LBL 0")
-                POSTGCODE.insert(RefStart, "LBL " + str(FIRST_LBL - LBL_Shift))
-    STORED_LBL.clear()
-    return
+def create(job, **kwargs):
+    """Factory function to create a Heidenhain postprocessor instance."""
+    return HeidenhainPost(job, **kwargs)

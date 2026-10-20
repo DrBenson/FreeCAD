@@ -24,8 +24,7 @@
  ***************************************************************************/
 
 
-#ifndef BASE_TIMEINFO_H
-#define BASE_TIMEINFO_H
+#pragma once
 
 #include <FCGlobal.h>
 
@@ -174,7 +173,7 @@ public:
     void checkpoint(const std::string& checkpoint = "")
     {
         Console().log(
-            "(%s) %s -> %s: %f (%f total)\n",
+            "({}) {} -> {}: {:f} ({:f} total)\n",
             name,
             lastCheckpoint,
             checkpoint,
@@ -200,5 +199,3 @@ private:
 };
 
 }  // namespace Base
-
-#endif  // BASE_TIMEINFO_H

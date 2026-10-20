@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2015 FreeCAD Developers                                 *
  *   Authors: Michael Hindley <hindlemp@eskom.co.za>                       *
@@ -85,9 +87,9 @@ TaskFemConstraintTemperature::TaskFemConstraintTemperature(
     ui->qsb_temperature->bind(pcConstraint->Temperature);
     ui->qsb_temperature->setUnit(pcConstraint->Temperature.getUnit());
 
-    ui->qsb_cflux->setValue(pcConstraint->CFlux.getQuantityValue());
-    ui->qsb_cflux->bind(pcConstraint->CFlux);
-    ui->qsb_cflux->setUnit(pcConstraint->CFlux.getUnit());
+    ui->qsb_cflux->setValue(pcConstraint->ConcentratedHeatFlux.getQuantityValue());
+    ui->qsb_cflux->bind(pcConstraint->ConcentratedHeatFlux);
+    ui->qsb_cflux->setUnit(pcConstraint->ConcentratedHeatFlux.getUnit());
 
     ui->lw_references->clear();
     for (std::size_t i = 0; i < Objects.size(); i++) {
@@ -165,7 +167,7 @@ void TaskFemConstraintTemperature::onCFluxChanged(double)
     std::string name = ConstraintView->getObject()->getNameInDocument();
     Gui::Command::doCommand(
         Gui::Command::Doc,
-        "App.ActiveDocument.%s.CFlux = \"%s\"",
+        "App.ActiveDocument.%s.ConcentratedHeatFlux = \"%s\"",
         name.c_str(),
         get_cflux().c_str()
     );
@@ -182,7 +184,7 @@ void TaskFemConstraintTemperature::onConstrTypeChanged(int item)
         ui->lbl_temperature->setVisible(true);
         ui->lbl_cflux->setVisible(false);
     }
-    else if (strcmp(type, "CFlux") == 0) {
+    else if (strcmp(type, "Flux") == 0) {
         ui->qsb_cflux->setVisible(true);
         ui->qsb_temperature->setVisible(false);
         ui->lbl_cflux->setVisible(true);
@@ -195,7 +197,7 @@ void TaskFemConstraintTemperature::addToSelection()
     std::vector<Gui::SelectionObject> selection
         = Gui::Selection().getSelectionEx();  // gets vector of selected objects of active document
     if (selection.empty()) {
-        QMessageBox::warning(this, tr("Selection error"), tr("Nothing selected!"));
+        QMessageBox::warning(this, tr("Selection Error"), tr("Nothing selected!"));
         return;
     }
     Fem::ConstraintTemperature* pcConstraint = ConstraintView->getObject<Fem::ConstraintTemperature>();
@@ -204,7 +206,7 @@ void TaskFemConstraintTemperature::addToSelection()
 
     for (auto& it : selection) {  // for every selected object
         if (!it.isObjectTypeOf(Part::Feature::getClassTypeId())) {
-            QMessageBox::warning(this, tr("Selection error"), tr("Selected object is not a part!"));
+            QMessageBox::warning(this, tr("Selection Error"), tr("Selected object is not a part!"));
             return;
         }
 
@@ -212,7 +214,7 @@ void TaskFemConstraintTemperature::addToSelection()
         if (obj->getDocument() != pcConstraint->getDocument()) {
             QMessageBox::warning(
                 this,
-                tr("Selection error"),
+                tr("Selection Error"),
                 tr("External object selection is not supported")
             );
             return;
@@ -253,7 +255,7 @@ void TaskFemConstraintTemperature::removeFromSelection()
     std::vector<Gui::SelectionObject> selection
         = Gui::Selection().getSelectionEx();  // gets vector of selected objects of active document
     if (selection.empty()) {
-        QMessageBox::warning(this, tr("Selection error"), tr("Nothing selected!"));
+        QMessageBox::warning(this, tr("Selection Error"), tr("Nothing selected!"));
         return;
     }
     Fem::ConstraintTemperature* pcConstraint = ConstraintView->getObject<Fem::ConstraintTemperature>();
@@ -262,7 +264,7 @@ void TaskFemConstraintTemperature::removeFromSelection()
     std::vector<size_t> itemsToDel;
     for (const auto& it : selection) {  // for every selected object
         if (!it.isObjectTypeOf(Part::Feature::getClassTypeId())) {
-            QMessageBox::warning(this, tr("Selection error"), tr("Selected object is not a part!"));
+            QMessageBox::warning(this, tr("Selection Error"), tr("Selected object is not a part!"));
             return;
         }
         const std::vector<std::string>& subNames = it.getSubNames();
@@ -393,17 +395,17 @@ bool TaskDlgFemConstraintTemperature::accept()
                 parameterTemperature->get_temperature().c_str()
             );
         }
-        else if (type == "CFlux") {
+        else if (type == "Flux") {
             Gui::Command::doCommand(
                 Gui::Command::Doc,
-                "App.ActiveDocument.%s.CFlux = \"%s\"",
+                "App.ActiveDocument.%s.ConcentratedHeatFlux = \"%s\"",
                 name.c_str(),
                 parameterTemperature->get_cflux().c_str()
             );
         }
     }
     catch (const Base::Exception& e) {
-        QMessageBox::warning(parameter, tr("Input error"), QString::fromLatin1(e.what()));
+        QMessageBox::warning(parameter, tr("Input Error"), QString::fromLatin1(e.what()));
         return false;
     }
 

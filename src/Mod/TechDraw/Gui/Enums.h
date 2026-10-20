@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2025 WandererFan <wandererfan@gmail.com>                *
  *   Copyright (c) 2025 Benjamin Bræstrup Sayoc <benj5378@outlook.com>     *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAW_ENUMS_H
-#define TECHDRAW_ENUMS_H
+#pragma once
 
 namespace TechDrawGui {
 
@@ -33,5 +34,3 @@ enum class DragState : int {
 };
 
 }
-
-#endif

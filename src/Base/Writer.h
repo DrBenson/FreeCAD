@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef SRC_BASE_WRITER_H_
-#define SRC_BASE_WRITER_H_
+#pragma once
 
 
 #include <set>
@@ -59,8 +58,8 @@ private:
     class UniqueFileNameManager: public UniqueNameManager
     {
     protected:
-        std::string::const_reverse_iterator getNameSuffixStartPosition(
-            const std::string& name
+        std::string_view::const_reverse_iterator getNameSuffixStartPosition(
+            std::string_view name
         ) const override
         {
             // This is an awkward way to do this, because the FileInfo class only yields pieces of
@@ -68,7 +67,7 @@ private:
             // both "xyz" and "xyz." would yield three; we need the length of the extension
             // *including its delimiter* so we use the length difference between the fileName and
             // fileNamePure.
-            FileInfo fi(name);
+            FileInfo fi(std::string {name});
             return name.rbegin() + (fi.fileName().size() - fi.fileNamePure().size());
         }
     };
@@ -330,6 +329,3 @@ protected:
 
 
 }  // namespace Base
-
-
-#endif  // SRC_BASE_WRITER_H_

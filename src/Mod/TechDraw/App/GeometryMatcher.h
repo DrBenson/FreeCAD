@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2023 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -21,8 +23,7 @@
  ***************************************************************************/
 // a class to handle changes to dimension reference geometry
 
-#ifndef GEOMETRYMATCHER_H
-#define GEOMETRYMATCHER_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -71,4 +72,3 @@ private:
 };
 
 }  // end namespace TechDraw
-#endif

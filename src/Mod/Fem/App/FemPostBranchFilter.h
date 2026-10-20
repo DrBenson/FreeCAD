@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2024 Stefan Tröger <stefantroeger@gmx.net>              *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef Fem_FemPostBranchFilter_H
-#define Fem_FemPostBranchFilter_H
+#pragma once
 
 
 #include "FemPostFilter.h"
@@ -71,6 +72,3 @@ private:
 };
 
 }  // namespace Fem
-
-
-#endif  // Fem_FemPostBranchFilter_H

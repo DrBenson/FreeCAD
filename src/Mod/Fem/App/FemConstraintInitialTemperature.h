@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2015 FreeCAD Developers                                 *
  *   Authors: Michael Hindley <hindlemp@eskom.co.za>                       *
@@ -24,8 +26,7 @@
  ***************************************************************************/
 
 
-#ifndef FEM_CONSTRAINTINITIALTEMPERATURE_H
-#define FEM_CONSTRAINTINITIALTEMPERATURE_H
+#pragma once
 
 #include "FemConstraint.h"
 
@@ -41,7 +42,7 @@ public:
     ConstraintInitialTemperature();
 
     // Temperature parameters
-    App::PropertyTemperature initialTemperature;
+    App::PropertyTemperature InitialTemperature;
     App::PropertyBool EnableFinalTemperature;
     App::PropertyTemperature FinalTemperature;
 
@@ -55,15 +56,12 @@ public:
     const char* getViewProviderName() const override;
 
 protected:
-    void handleChangedPropertyType(
+    void handleChangedPropertyName(
         Base::XMLReader& reader,
-        const char* TypeName,
-        App::Property* prop
+        const char* typeName,
+        const char* propName
     ) override;
     void onChanged(const App::Property* prop) override;
 };
 
 }  // namespace Fem
-
-
-#endif  // FEM_CONSTRAINTINITIALTEMPERATURE_H

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2015 Stefan Tröger <stefantroeger@gmx.net>              *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef FEM_VIEWPROVIDERFEMPOSTFILTER_H
-#define FEM_VIEWPROVIDERFEMPOSTFILTER_H
+#pragma once
 
 #include <Gui/ViewProviderFeaturePython.h>
 #include "ViewProviderFemPostObject.h"
@@ -198,6 +199,3 @@ protected:
 };
 
 }  // namespace FemGui
-
-
-#endif  // FEM_VIEWPROVIDERFEMPOSTFILTER_H

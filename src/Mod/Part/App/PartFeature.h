@@ -22,12 +22,10 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef PART_FEATURE_H
-#define PART_FEATURE_H
+#pragma once
 
 #include <App/FeaturePython.h>
 #include <App/GeoFeature.h>
-#include <App/PropertyUnits.h>
 #include <Mod/Material/App/PropertyMaterial.h>
 #include <Mod/Part/PartGlobal.h>
 #include <Base/Bitmask.h>
@@ -77,12 +75,6 @@ public:
 
     PropertyPartShape Shape;
     Materials::PropertyMaterial ShapeMaterial;
-
-    // Convenience properties set when material or shape changes
-    App::PropertyString MaterialName;
-    App::PropertyDensity Density;
-    App::PropertyMass Mass;
-    App::PropertyVolume Volume;
 
     /** @name methods override feature */
     //@{
@@ -207,6 +199,10 @@ public:
         Base::Vector3d& directionX,
         const char* subname
     ) const override;
+    bool getCameraAlignmentDirection(
+        Base::Vector3d& directionZ,
+        const std::vector<std::string>& subnames
+    ) const override;
 
     static void guessNewLink(std::string& replacementName, DocumentObject* base, const char* oldLink);
 
@@ -228,9 +224,6 @@ protected:
 
     void copyMaterial(Feature* feature);
     void copyMaterial(App::DocumentObject* link);
-
-    /// Update the mass and volume properties
-    void updatePhysicalProperties();
 
     void registerElementCache(const std::string& prefix, PropertyPartShape* prop);
 
@@ -308,19 +301,6 @@ public:
  * Find all faces cut by a line through the centre of gravity of a given face
  * Useful for the "up to face" options to pocket or pad
  */
-// TODO: Toponaming April 2024 Deprecated in favor of TopoShape method.  Remove when possible.
-struct cutFaces
-{
-    TopoDS_Face face;
-    double distsq;
-};
-
-// TODO: Toponaming April 2024 Deprecated in favor of TopoShape method.  Remove when possible.
-PartExport std::vector<cutFaces> findAllFacesCutBy(
-    const TopoDS_Shape& shape,
-    const TopoDS_Shape& face,
-    const gp_Dir& dir
-);
 struct cutTopoShapeFaces
 {
     TopoShape face;
@@ -331,6 +311,12 @@ PartExport std::vector<cutTopoShapeFaces> findAllFacesCutBy(
     const TopoShape& shape,
     const TopoShape& face,
     const gp_Dir& dir
+);
+
+PartExport std::vector<cutTopoShapeFaces> findAllFacesCutBy(
+    const TopoShape& shape,
+    const TopoShape& face,
+    const gp_Ax1& axis
 );
 
 /**
@@ -357,5 +343,3 @@ PartExport bool checkIntersection(
 }  // namespace Part
 
 ENABLE_BITMASK_OPERATORS(Part::ShapeOption)
-
-#endif  // PART_FEATURE_H

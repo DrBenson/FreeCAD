@@ -28,28 +28,30 @@
 # include <config.h>
 #endif  // HAVE_CONFIG_H
 
-#include <Build/Version.h>  // For FCCopyrightYear
+#include <Base/Version.h>
 
 #include <cstdio>
+#include <format>
 #include <ostream>
 #include <QString>
 
 // FreeCAD Base header
 #include <Base/Console.h>
+#include <Base/CrashReporter/WindowsCrashReporter.h>
 #include <Base/Exception.h>
 #include <Base/Interpreter.h>
 
 // FreeCAD doc header
 #include <App/Application.h>
-
+#include <App/ProgramInformation.h>
 
 using App::Application;
 using Base::Console;
 
-const auto sBanner = fmt::format(
+const auto sBanner = std::format(
     "(C) 2001-{} FreeCAD contributors\n"
     "FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.\n\n",
-    FCCopyrightYear
+    Base::FCVersionInfo::CopyrightYear()
 );
 
 int main(int argc, char** argv)
@@ -83,24 +85,29 @@ int main(int argc, char** argv)
 
         // Inits the Application
         App::Application::init(argc, argv);
+#ifdef _MSC_VER
+        Base::CrashReporter::WindowsCrashReporter::install(
+            App::Application::getUserAppDataDir() + "CrashReports"
+        );
+#endif
     }
     catch (const Base::UnknownProgramOption& e) {
         std::cerr << e.what();
         exit(1);
     }
     catch (const Base::ProgramInformation& e) {
-        if (std::strcmp(e.what(), App::Application::verboseVersionEmitMessage) == 0) {
-            QString data;
-            QTextStream str(&data);
+        if (std::strcmp(e.what(), App::ProgramInformation::verboseVersionEmitMessage) == 0) {
+            std::stringstream str;
             const std::map<std::string, std::string> config = App::Application::Config();
 
-            App::Application::getVerboseCommonInfo(str, config);
-            App::Application::getVerboseAddOnsInfo(str, config);
+            App::ProgramInformation::getVerboseCommonInfo(str, config);
+            App::ProgramInformation::getVerboseAddOnsInfo(str, config);
 
-            std::cout << data.toStdString();
-            exit(0);
+            std::cout << str.str();
         }
-        std::cout << e.what();
+        else {
+            std::cout << e.what();
+        }
         exit(0);
     }
     catch (const Base::Exception& e) {

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2014 Luke Parry <l.parry@warwick.ac.uk>                 *
  *                                                                         *
@@ -20,8 +22,9 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAW_DrawTemplate_h_
-#define TECHDRAW_DrawTemplate_h_
+#pragma once
+
+#include <QString>
 
 #include <App/DocumentObject.h>
 #include <App/FeaturePython.h>
@@ -58,7 +61,7 @@ public:
     virtual DrawPage* getParentPage() const;
     virtual std::pair<int, int> getPageNumbers() const;
 
-    virtual QString getAutofillValue(const QString &id) const;
+    virtual std::string getAutofillValue(const std::string& id) const;
 
     /// returns the type name of the ViewProvider
     const char* getViewProviderName(void) const override{
@@ -92,7 +95,3 @@ private:
 using DrawTemplatePython = App::FeaturePythonT<DrawTemplate>;
 
 } //namespace TechDraw
-
-
-
-#endif //TECHDRAW_DrawTemplate_h_

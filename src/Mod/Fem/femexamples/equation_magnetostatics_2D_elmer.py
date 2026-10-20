@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2023 Uwe Stöhr <uwestoehr@lyx.org>                      *
 # *                                                                         *
@@ -25,7 +27,6 @@ import sys
 import FreeCAD
 from FreeCAD import Vector
 
-import Draft
 import ObjectsFem
 import Part
 
@@ -33,6 +34,7 @@ from BOPTools import SplitFeatures
 from . import manager
 from .manager import get_meshname
 from .manager import init_doc
+from .meshes import generate_mesh
 
 
 def get_information():
@@ -79,9 +81,8 @@ def setup(doc=None, solvertype="elmer"):
     p2 = Vector(200.0, -200.0, 0.0)
     p3 = Vector(200.0, -100.0, 0.0)
     p4 = Vector(0.0, -100.0, 0.0)
-    Horseshoe_lower = Draft.make_wire([p1, p2, p3, p4], closed=True)
-    Horseshoe_lower.MakeFace = True
-    Horseshoe_lower.Label = "Lower_End"
+    Horseshoe_lower = doc.addObject("Part::Feature", "Lower_End")
+    Horseshoe_lower.Shape = Part.makeFace(Part.makePolygon([p1, p2, p3, p4, p1]))
     Horseshoe_lower.ViewObject.Visibility = False
 
     # wire defining the upper horse shoe end
@@ -89,9 +90,8 @@ def setup(doc=None, solvertype="elmer"):
     p2 = Vector(200.0, 100.0, 0.0)
     p3 = Vector(200.0, 200.0, 0.0)
     p4 = Vector(0.0, 200.0, 0.0)
-    Horseshoe_upper = Draft.make_wire([p1, p2, p3, p4], closed=True)
-    Horseshoe_upper.MakeFace = True
-    Horseshoe_upper.Label = "Upper_End"
+    Horseshoe_upper = doc.addObject("Part::Feature", "Upper_End")
+    Horseshoe_upper.Shape = Part.makeFace(Part.makePolygon([p1, p2, p3, p4, p1]))
     Horseshoe_upper.ViewObject.Visibility = False
 
     # the U-part of the horse shoe
@@ -148,6 +148,7 @@ def setup(doc=None, solvertype="elmer"):
     sedges = Part.__sortEdges__(edges)
     Horseshoe_U = doc.addObject("Part::Feature", "Horseshoe_U")
     Horseshoe_U.Shape = Part.Face(Part.Wire(sedges))
+    Horseshoe_U.ViewObject.Visibility = False
 
     # a circle defining later the air volume
     Air_Circle = doc.addObject("Part::Feature", "Air_Circle")
@@ -181,16 +182,18 @@ def setup(doc=None, solvertype="elmer"):
     Cut.Base = Air_Circle
     Cut.Tool = Fusion
     Cut.ViewObject.Visibility = False
+    Cut.recompute(True)
 
-    # BooleanFregments object to combine cut with rod
-    BooleanFragments = SplitFeatures.makeBooleanFragments(name="BooleanFragments")
-    BooleanFragments.Objects = [Horseshoe_lower, Horseshoe_upper, Horseshoe_U, Cut]
+    # shell object to combine cut with rod
+    Shape = Part.makeShell(Horseshoe_lower.Shape.Faces + Horseshoe_U.Shape.Faces + Horseshoe_upper.Shape.Faces + Cut.Shape.Faces)
+    Shell = doc.addObject("Part::Feature", "Shell")
+    Shell.Shape = Shape
 
     # set view
     doc.recompute()
     if FreeCAD.GuiUp:
-        BooleanFragments.ViewObject.Document.activeView().viewTop()
-        BooleanFragments.ViewObject.Document.activeView().fitAll()
+        Shell.ViewObject.Document.activeView().viewTop()
+        Shell.ViewObject.Document.activeView().fitAll()
 
     # analysis
     analysis = ObjectsFem.makeAnalysis(doc, "Analysis")
@@ -227,7 +230,7 @@ def setup(doc=None, solvertype="elmer"):
     mat["RelativePermeability"] = "1.0"
     mat["RelativePermittivity"] = "1.00059"
     material_obj.Material = mat
-    material_obj.References = [(BooleanFragments, "Face4")]
+    material_obj.References = [(Shell, "Face4")]
     analysis.addObject(material_obj)
 
     # iron of the horse shoe
@@ -238,29 +241,35 @@ def setup(doc=None, solvertype="elmer"):
     mat["RelativePermeability"] = "5000.0"
     material_obj.Material = mat
     material_obj.References = [
-        (BooleanFragments, "Face1"),
-        (BooleanFragments, "Face2"),
-        (BooleanFragments, "Face3"),
+        (Shell, "Face1"),
+        (Shell, "Face2"),
+        (Shell, "Face3"),
     ]
     analysis.addObject(material_obj)
 
     # magnetization lower
     Magnetization_lower = ObjectsFem.makeConstraintMagnetization(doc, "Magnetization_Lower_End")
-    Magnetization_lower.References = [(BooleanFragments, "Face1")]
+    Magnetization_lower.References = [(Shell, "Face1")]
     Magnetization_lower.Magnetization_re_1 = "-7500.0 A/m"
     Magnetization_lower.EnableMagnetization_1 = True
     analysis.addObject(Magnetization_lower)
 
     # magnetization upper
     Magnetization_upper = ObjectsFem.makeConstraintMagnetization(doc, "Magnetization_Upper_End")
-    Magnetization_upper.References = [(BooleanFragments, "Face2")]
+    Magnetization_upper.References = [(Shell, "Face3")]
     Magnetization_upper.Magnetization_re_1 = "7500.0 A/m"
     Magnetization_upper.EnableMagnetization_1 = True
     analysis.addObject(Magnetization_upper)
 
+    # far field
+    FarField = ObjectsFem.makeConstraintElectromagnetic(doc, "FarField")
+    FarField.References = [(Shell, "Edge15")]
+    FarField.FarField = True
+    analysis.addObject(FarField)
+
     # mesh
     femmesh_obj = analysis.addObject(ObjectsFem.makeMeshGmsh(doc, get_meshname()))[0]
-    femmesh_obj.Shape = BooleanFragments
+    femmesh_obj.Shape = Shell
     femmesh_obj.CharacteristicLengthMax = "100.0 mm"
     femmesh_obj.ViewObject.Visibility = False
 
@@ -268,21 +277,14 @@ def setup(doc=None, solvertype="elmer"):
     mesh_region = ObjectsFem.makeMeshRegion(doc, femmesh_obj, name="MeshRegion")
     mesh_region.CharacteristicLength = "6.5 mm"
     mesh_region.References = [
-        (BooleanFragments, "Face1"),
-        (BooleanFragments, "Face2"),
-        (BooleanFragments, "Face3"),
+        (Shell, "Face1"),
+        (Shell, "Face2"),
+        (Shell, "Face3"),
     ]
     mesh_region.ViewObject.Visibility = False
 
     # generate the mesh
-    from femmesh import gmshtools
-
-    gmsh_mesh = gmshtools.GmshTools(femmesh_obj, analysis)
-    try:
-        error = gmsh_mesh.create_mesh()
-    except Exception:
-        error = sys.exc_info()[1]
-        FreeCAD.Console.PrintError(f"Unexpected error when creating mesh: {error}\n")
+    generate_mesh.mesh_from_mesher(femmesh_obj, "gmsh")
 
     doc.recompute()
     return doc

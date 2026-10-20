@@ -39,6 +39,7 @@
 #include <Base/Exception.h>
 #include <Base/Reader.h>
 #include <Base/Tools.h>
+#include <Mod/Part/App/SignalException.h>
 #include <Mod/Part/App/TopoShape.h>
 
 #include "FeatureChamfer.h"
@@ -160,6 +161,7 @@ App::DocumentObjectExecReturn* Chamfer::execute()
     }
     try {
         TopoShape shape(0);
+        Part::SignalException sig;
         shape.makeElementChamfer(
             TopShape,
             edges,
@@ -204,6 +206,11 @@ App::DocumentObjectExecReturn* Chamfer::execute()
     catch (Standard_Failure& e) {
         return new App::DocumentObjectExecReturn(e.GetMessageString());
     }
+    catch (...) {
+        return new App::DocumentObjectExecReturn(
+            QT_TRANSLATE_NOOP("Exception", "Chamfer failed: OCC kernel error in chamfer computation")
+        );
+    }
 }
 
 void Chamfer::Restore(Base::XMLReader& reader)
@@ -216,7 +223,7 @@ void Chamfer::Restore(Base::XMLReader& reader)
 void Chamfer::handleChangedPropertyType(Base::XMLReader& reader, const char* TypeName, App::Property* prop)
 {
     if (prop && strcmp(TypeName, "App::PropertyFloatConstraint") == 0
-        && strcmp(prop->getTypeId().getName(), "App::PropertyQuantityConstraint") == 0) {
+        && prop->getTypeId().getName() == "App::PropertyQuantityConstraint") {
         App::PropertyFloatConstraint p;
         p.Restore(reader);
         static_cast<App::PropertyQuantityConstraint*>(prop)->setValue(p.getValue());
@@ -239,7 +246,7 @@ void Chamfer::migrateFlippedProperties(const Base::XMLReader& reader)
     }
 
     Base::Console().warning(
-        "The 'FlipDirection' property of the chamfer of %s is being adjusted to maintain"
+        "The 'FlipDirection' property of the chamfer of {} is being adjusted to maintain"
         "the same geometry in this FreeCAD version. If the re-saved file is later opened "
         "in FreeCAD 0.21.x the chamfer result may differ due to the changed parameter "
         "interpretation.\n",

@@ -23,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef SKETCHERGUI_DrawSketchControllableHandler_H
-#define SKETCHERGUI_DrawSketchControllableHandler_H
+#pragma once
 
 #include <type_traits>
 
@@ -84,19 +83,29 @@ public:
     void mouseMove(SnapManager::SnapHandle snapHandle) override
     {
         Base::Vector2d onSketchPos = snapHandle.compute();
+        if (!this->snapToTangentHint(onSketchPos)) {
+            this->snapToParallelPerpendicularHint(onSketchPos);
+        }
         toolWidgetManager.mouseMoved(onSketchPos);
 
-        toolWidgetManager.enforceControlParameters(onSketchPos);
+        if (!toolWidgetManager.enforceControlParameters(onSketchPos)) {
+            return;
+        }
         updateDataAndDrawToPosition(onSketchPos);
         toolWidgetManager.adaptParameters(onSketchPos);
     }
 
     bool pressButton(Base::Vector2d onSketchPos) override
     {
+        if (!this->snapToTangentHint(onSketchPos)) {
+            this->snapToParallelPerpendicularHint(onSketchPos);
+        }
         // ensure controller state is initialized even if no mouseMove occurred
         // ie. when a modal dialog blocks input before the first click
         toolWidgetManager.mouseMoved(onSketchPos);
-        toolWidgetManager.enforceControlParameters(onSketchPos);
+        if (!toolWidgetManager.enforceControlParameters(onSketchPos)) {
+            return false;
+        }
         updateDataAndDrawToPosition(onSketchPos);
         toolWidgetManager.adaptParameters(onSketchPos);
 
@@ -125,6 +134,11 @@ protected:
         return DrawSketchHandler::getCrosshairCursorSVGName();
     }
     //@}
+
+    void addStepControlConstraints()
+    {
+        toolWidgetManager.addStepConstraints();
+    }
 
 private:
     /** @name functions requiring specialisation */
@@ -181,6 +195,7 @@ private:
 
     void onConstructionMethodChanged() override
     {
+        DrawSketchHandler::updateHint();
         toolWidgetManager.onConstructionMethodChanged();
     }
 
@@ -215,6 +230,3 @@ protected:
 };
 
 }  // namespace SketcherGui
-
-
-#endif  // SKETCHERGUI_DrawSketchControllableHandler_H

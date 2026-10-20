@@ -62,7 +62,7 @@
         else { \
             str += "No OCCT Exception Message"; \
         } \
-        Base::Console().error(str.c_str()); \
+        Base::Console().error("{}", str); \
         PyErr_SetString(Part::PartExceptionOCCError, str.c_str()); \
     } \
     catch (Base::Exception & e) \
@@ -80,7 +80,7 @@
         str += "STL exception thrown ("; \
         str += e.what(); \
         str += ")"; \
-        Base::Console().error(str.c_str()); \
+        Base::Console().error("{}", str); \
         PyErr_SetString(Base::PyExc_FC_GeneralError, str.c_str()); \
     } \
     catch (const char* e) \
@@ -283,6 +283,18 @@ private:
 
     Py::Object fromShape(const Py::Tuple& args)
     {
+        if (!Base::warnDeprecatedPythonApi(
+                "Method",
+                "PathApp.fromShape",
+                Base::PythonApiDeprecation {
+                    .deprecatedIn = "26.3",
+                    .removedIn = "27.2",
+                    .replacement = "fromShapes",
+                }
+            )) {
+            throw Py::Exception();
+        }
+
         PyObject* pcObj;
         if (!PyArg_ParseTuple(args.ptr(), "O", &pcObj)) {
             throw Py::Exception();
@@ -400,8 +412,10 @@ private:
         if (PyObject_TypeCheck(pShapes, &(Part::TopoShapePy::Type))) {
             shapes.push_back(static_cast<Part::TopoShapePy*>(pShapes)->getTopoShapePtr()->getShape());
         }
-        else if (PyObject_TypeCheck(pShapes, &(PyList_Type))
-                 || PyObject_TypeCheck(pShapes, &(PyTuple_Type))) {
+        else if (
+            PyObject_TypeCheck(pShapes, &(PyList_Type))
+            || PyObject_TypeCheck(pShapes, &(PyTuple_Type))
+        ) {
             Py::Sequence shapeSeq(pShapes);
             for (Py::Sequence::iterator it = shapeSeq.begin(); it != shapeSeq.end(); ++it) {
                 PyObject* item = (*it).ptr();
@@ -474,8 +488,10 @@ private:
         if (PyObject_TypeCheck(pShapes, &(Part::TopoShapePy::Type))) {
             shapes.push_back(static_cast<Part::TopoShapePy*>(pShapes)->getTopoShapePtr()->getShape());
         }
-        else if (PyObject_TypeCheck(pShapes, &(PyList_Type))
-                 || PyObject_TypeCheck(pShapes, &(PyTuple_Type))) {
+        else if (
+            PyObject_TypeCheck(pShapes, &(PyList_Type))
+            || PyObject_TypeCheck(pShapes, &(PyTuple_Type))
+        ) {
             Py::Sequence shapeSeq(pShapes);
             for (Py::Sequence::iterator it = shapeSeq.begin(); it != shapeSeq.end(); ++it) {
                 PyObject* item = (*it).ptr();

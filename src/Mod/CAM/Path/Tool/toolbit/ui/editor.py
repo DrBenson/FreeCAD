@@ -27,7 +27,10 @@ from typing import Optional
 from PySide import QtGui, QtCore
 import FreeCAD
 import FreeCADGui
+import os
+from Path.Preferences import getAssetPath
 from ...shape.ui.shapewidget import ShapeWidget
+from ...shape.models.icon import highlight_color
 from ...docobject.ui import DocumentObjectEditorWidget
 from ..models.base import ToolBit
 from ..util import setToolBitSchema
@@ -59,12 +62,21 @@ class ToolBitPropertiesWidget(QtGui.QWidget):
 
         # UI Elements
         self._label_edit = QtGui.QLineEdit()
+        self._toolbit_type_container = QtGui.QWidget()
+        container_layout = QtGui.QHBoxLayout(self._toolbit_type_container)
+        container_layout.setContentsMargins(0, 0, 0, 0)
+        self._toolbit_type_edit = QtGui.QLineEdit()
+        self._toolbit_type_edit.setReadOnly(True)
+        self._toolbit_type_combo = QtGui.QComboBox()
+        container_layout.addWidget(self._toolbit_type_edit)
+        container_layout.addWidget(self._toolbit_type_combo)
         self._id_label = QtGui.QLabel()  # Read-only ID
         self._id_label.setTextInteractionFlags(QtCore.Qt.TextSelectableByMouse)
 
         theicon = toolbit.get_icon() if toolbit else None
         abbr = theicon.abbreviations if theicon else {}
         self._property_editor = DocumentObjectEditorWidget(property_suffixes=abbr)
+        self._property_editor.highlight_color = highlight_color().decode()
         self._property_editor.setSizePolicy(
             QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Expanding
         )
@@ -74,7 +86,7 @@ class ToolBitPropertiesWidget(QtGui.QWidget):
         toolbit_group_box = QtGui.QGroupBox(translate("CAM", "Toolbit"))
         form_layout = QtGui.QFormLayout(toolbit_group_box)
         form_layout.addRow(translate("CAM", "Label:"), self._label_edit)
-        # form_layout.addRow(translate("CAM", "ID:"), self._id_label)
+        form_layout.addRow(translate("CAM", "Toolbit Type:"), self._toolbit_type_container)
 
         # Optional tool number edit field.
         self._tool_no_edit = QtGui.QSpinBox()
@@ -112,6 +124,7 @@ class ToolBitPropertiesWidget(QtGui.QWidget):
         # Connections
         self._label_edit.editingFinished.connect(self._on_label_changed)
         self._tool_no_edit.valueChanged.connect(self._on_tool_no_changed)
+        self._toolbit_type_combo.currentIndexChanged.connect(self._on_toolbit_type_changed)
         self._property_editor.propertyChanged.connect(self.toolBitChanged)
 
         if toolbit:
@@ -130,6 +143,19 @@ class ToolBitPropertiesWidget(QtGui.QWidget):
         if self._tool_no != value:
             self._tool_no = value
             self.toolNoChanged.emit(value)
+
+    def _on_toolbit_type_changed(self, index):
+        """Update the toolbit's type when the combo changes."""
+        if not self._toolbit:
+            return
+        selected = self._toolbit_type_combo.itemData(index)
+        self._toolbit._shape_type = selected  # Save the user's selection
+        # The combo offers subtype aliases ("endmill", "downcut"); ShapeType is
+        # an enumeration of shape class names ("Endmill"), so most of them are
+        # not assignable to it and the alias alone records the choice.
+        if selected in self._toolbit.obj.getEnumerationsOfProperty("ShapeType"):
+            self._toolbit.obj.ShapeType = selected
+        self.toolBitChanged.emit()
 
     def load_toolbit(self, toolbit: ToolBit):
         """Load a ToolBit object into the editor."""
@@ -150,6 +176,10 @@ class ToolBitPropertiesWidget(QtGui.QWidget):
             # Clear or disable fields if toolbit is invalid
             self._label_edit.clear()
             self._label_edit.setEnabled(False)
+            self._toolbit_type_edit.clear()
+            self._toolbit_type_edit.hide()
+            self._toolbit_type_combo.clear()
+            self._toolbit_type_combo.hide()
             self._id_label.clear()
             self._tool_no_edit.clear()
             self._property_editor.setObject(None)
@@ -166,10 +196,74 @@ class ToolBitPropertiesWidget(QtGui.QWidget):
         self._label_edit.setEnabled(True)
         self._label_edit.setText(self._toolbit.obj.Label)
         self._id_label.setText(self._toolbit.get_id())
+
+        # Set toolbit type
+        shape_class = self._toolbit._tool_bit_shape.__class__
+        base = shape_class.name
+        subtypes = shape_class.subtypes
+        current_type = (
+            self._toolbit._shape_type
+            if hasattr(self._toolbit, "_shape_type")
+            else shape_class.name.lower()
+        )
+        shape_dir = os.path.join(getAssetPath(), "Tools", "Shape")
+
+        has_file = (
+            bool(current_type)
+            and current_type != base.lower()
+            and os.path.isfile(os.path.join(shape_dir, f"{current_type}.fcstd"))
+        )
+
+        editable_types = [base.lower()]
+        for subtype in subtypes:
+            if not os.path.isfile(os.path.join(shape_dir, f"{subtype}.fcstd")):
+                editable_types.append(subtype)
+
+        is_readonly = has_file or len(editable_types) <= 1
+
+        if is_readonly:
+            # Read-only
+            raw_text = current_type or base.lower()
+            display_text = raw_text.replace("_", " ").replace("-", " ").title()
+            self._toolbit_type_edit.setText(display_text)
+            self._toolbit_type_edit.show()
+            self._toolbit_type_combo.hide()
+        else:
+            # Editable - populate combo with aliases that don't have independent shape files
+            # Filling the combo is not the user choosing a type.
+            self._toolbit_type_combo.blockSignals(True)
+            self._toolbit_type_combo.clear()
+            for type_name in editable_types:
+                display = type_name.replace("_", " ").replace("-", " ").title()
+                self._toolbit_type_combo.addItem(display, type_name)
+
+            for i in range(self._toolbit_type_combo.count()):
+                if self._toolbit_type_combo.itemData(i) == current_type:
+                    self._toolbit_type_combo.setCurrentIndex(i)
+                    break
+            else:
+                # No match found - check if current_type is the base class name
+                if self._toolbit_type_combo.count() > 0:
+                    if current_type == base or current_type == base.lower():
+                        # It's using the class name (e.g., "Endmill") - keep it
+                        # Set to first item in combo for display but don't change _shape_type
+                        self._toolbit_type_combo.setCurrentIndex(0)
+                    else:
+                        # Unknown type - default to first item (class name)
+                        self._toolbit_type_combo.setCurrentIndex(0)
+                        self._toolbit._shape_type = editable_types[0] if editable_types else base
+            self._toolbit_type_combo.blockSignals(False)
+            self._toolbit_type_edit.hide()
+            self._toolbit_type_combo.show()
+
         self._tool_no_edit.setValue(int(self._tool_no or 1))
 
         # Get properties and suffixes
         props_to_show = self._toolbit._get_props(("Shape", "Attributes"))
+        # Derived parameters follow from the others, so there is nothing to type
+        # in and showing a field invites people to fight the geometry.
+        derived = self._toolbit._tool_bit_shape.derived_parameters()
+        props_to_show = [p for p in props_to_show if p not in derived]
         icon = self._toolbit._tool_bit_shape.get_icon()
         suffixes = icon.abbreviations if icon else {}
         self._property_editor.setObject(self._toolbit.obj)
@@ -182,10 +276,31 @@ class ToolBitPropertiesWidget(QtGui.QWidget):
             self._shape_widget = None
 
         if self._show_shape and self._toolbit._tool_bit_shape:
-            self._shape_widget = ShapeWidget(shape=self._toolbit._tool_bit_shape, parent=self)
-            self._shape_widget.setMinimumSize(200, 150)
+            self._shape_widget = ShapeWidget(
+                shape=self._toolbit._tool_bit_shape, parent=self, interactive=True
+            )
+            # No size is set here: the drawing is rendered at icon_size and is
+            # cropped rather than scaled by a smaller widget, so the widget's
+            # own minimumSizeHint is the only correct floor.
             # Insert into the middle slot of the HBox layout
             self._shape_display_layout.insertWidget(1, self._shape_widget)
+            self.link_shape_widget(self._shape_widget)
+
+    def link_shape_widget(self, shape_widget):
+        """
+        Cross-link a shape drawing with this widget's property form, so that
+        pointing at a dimension picks out its field and pointing at a field
+        picks out its dimension.
+
+        ToolBitEditor builds its own drawing rather than using the one this
+        widget can create, so it calls this with that drawing instead.
+        """
+        if shape_widget is None:
+            return
+        shape_widget.set_highlight("")  # a rebuilt form has nothing hovered yet
+        shape_widget.dimensionHovered.connect(self._property_editor.highlight_property)
+        shape_widget.dimensionClicked.connect(self._property_editor.focus_property)
+        self._property_editor.propertyHovered.connect(shape_widget.set_highlight)
 
     def save_toolbit(self):
         """
@@ -215,7 +330,7 @@ class ToolBitEditorPanel(QtGui.QWidget):
         super().__init__(parent)
 
         # Create the main editor widget
-        self._editor_widget = ToolBitPropertiesWidget(toolbit, self)
+        self._editor_widget = ToolBitPropertiesWidget(toolbit, parent=self)
 
         # Create the button box
         buttons = QtGui.QDialogButtonBox.Ok | QtGui.QDialogButtonBox.Cancel
@@ -268,10 +383,9 @@ class ToolBitEditor(QtGui.QWidget):
         self.tool_no = tool_no
         self.default_title = self.form.windowTitle()
 
-        # Store the original schema to restore on close
-        self._original_schema = FreeCAD.ParamGet("User parameter:BaseApp/Preferences/Units").GetInt(
-            "UserSchema", 6
-        )
+        # The schema in effect, not the raw preference, so a document on its
+        # own schema gets that back rather than the user default.
+        self._original_schema = FreeCAD.Units.getSchema()
         self._tab_closed = False
 
         # Get first tab from the form, add the shape widget to the right.
@@ -281,6 +395,7 @@ class ToolBitEditor(QtGui.QWidget):
         tab_content_layout = QtGui.QHBoxLayout()
 
         # Add tool properties editor to the left with stretch
+        self._shape_widget = None
         self._props = ToolBitPropertiesWidget(toolbit, tool_no, self, icon=icon)
         self._last_units_value = self._get_units_value(self._props)
         self._props.toolBitChanged.connect(self._on_toolbit_changed)
@@ -299,8 +414,9 @@ class ToolBitEditor(QtGui.QWidget):
         tab_content_layout.addWidget(scroll_area, 1)
 
         # Add shape widget to the right without stretch
-        widget = ShapeWidget(toolbit._tool_bit_shape)
-        tab_content_layout.addWidget(widget, 0)
+        self._shape_widget = ShapeWidget(toolbit._tool_bit_shape, interactive=True)
+        self._props.link_shape_widget(self._shape_widget)
+        tab_content_layout.addWidget(self._shape_widget, 0)
 
         # Add the horizontal layout to the tab layout
         tool_tab_layout.addLayout(tab_content_layout)
@@ -311,29 +427,13 @@ class ToolBitEditor(QtGui.QWidget):
         # Hide second tab (tool notes) for now.
         self.form.tabWidget.setTabVisible(1, False)
 
-        # Feeds & Speeds
-        self.feeds_tab_idx = None
-        """
-        TODO: disabled for now.
-        if tool.supports_feeds_and_speeds():
-            label = translate('CAM', 'Feeds && Speeds')
-            self.feeds = FeedsAndSpeedsWidget(db, serializer, tool, parent=self)
-            self.feeds_tab_idx = self.form.tabWidget.insertTab(1, self.feeds, label)
-        else:
-            self.feeds = None
-            self.feeds_tab_idx = None
+        # Feeds & Speeds presets tab.
+        from .presets_tab import PresetsTab
 
-        self.form.lineEditCoating.setText(toolbit.get_coating())
-        self.form.lineEditCoating.textChanged.connect(toolbit.set_coating)
-        self.form.lineEditHardness.setText(toolbit.get_hardness())
-        self.form.lineEditHardness.textChanged.connect(toolbit.set_hardness)
-        self.form.lineEditMaterials.setText(toolbit.get_materials())
-        self.form.lineEditMaterials.textChanged.connect(toolbit.set_materials)
-        self.form.lineEditSupplier.setText(toolbit.get_supplier())
-        self.form.lineEditSupplier.textChanged.connect(toolbit.set_supplier)
-        self.form.plainTextEditNotes.setPlainText(tool.get_notes())
-        self.form.plainTextEditNotes.textChanged.connect(self._on_notes_changed)
-        """
+        self.presets_tab = PresetsTab(toolbit.obj, parent=self)
+        self.feeds_tab_idx = self.form.tabWidget.addTab(
+            self.presets_tab, translate("CAM", "Feeds && Speeds")
+        )
 
         self._update()
 
@@ -384,6 +484,7 @@ class ToolBitEditor(QtGui.QWidget):
         self._props.toolBitChanged.connect(self._on_toolbit_changed)
         self._props.toolBitChanged.connect(self._update)
         self._props.toolNoChanged.connect(self._on_tool_no_changed)
+        self._props.link_shape_widget(self._shape_widget)
 
         # Set the new widget in the scroll area
         scroll_area.setWidget(self._props)
@@ -403,8 +504,13 @@ class ToolBitEditor(QtGui.QWidget):
         self.form.setWindowTitle(title)
 
     def _on_tab_switched(self, index):
-        if index == self.feeds_tab_idx:
-            self.feeds.update()
+        feeds_tab_idx = getattr(self, "feeds_tab_idx", None)
+        if (
+            feeds_tab_idx is not None
+            and index == feeds_tab_idx
+            and getattr(self, "presets_tab", None) is not None
+        ):
+            self.presets_tab.refresh()
 
     def _on_notes_changed(self):
         self.toolbit.set_notes(self.form.plainTextEditNotes.toPlainText())
@@ -416,4 +522,9 @@ class ToolBitEditor(QtGui.QWidget):
         return self.tool_no
 
     def show(self):
-        return self.form.exec_()
+        # load_toolbit switches the global schema to the bit's units, so it
+        # has to come back however the dialog is left.
+        try:
+            return self.form.exec_()
+        finally:
+            self._restore_original_schema()

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2019 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TechDraw_DrawWeldSymbol_h_
-#define TechDraw_DrawWeldSymbol_h_
+#pragma once
 
 #include <App/DocumentObject.h>
 #include <App/FeaturePython.h>
@@ -64,6 +65,8 @@ public:
 
     App::PropertyLink *getOwnerProperty() override { return &Leader; }
 
+    bool snapsToPosition() const override { return false; }
+
 protected:
     void onChanged(const App::Property* prop) override;
 
@@ -73,4 +76,3 @@ private:
 using DrawWeldSymbolPython = App::FeaturePythonT<DrawWeldSymbol>;
 
 } //namespace TechDraw
-#endif

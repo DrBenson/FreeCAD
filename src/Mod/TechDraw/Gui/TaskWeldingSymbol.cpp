@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2019 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -367,14 +369,14 @@ void TaskWeldingSymbol::onWeldingChanged()
 
 void TaskWeldingSymbol::onDirectorySelected(const QString& newDir)
 {
-//    Base::Console().message("TWS::onDirectorySelected(%s)\n", qPrintable(newDir));
+//    Base::Console().message("TWS::onDirectorySelected({})\n", qPrintable(newDir));
     m_currDir = newDir + QStringLiteral("/");
 }
 
 void TaskWeldingSymbol::onSymbolSelected(QString symbolPath,
                                          QString source)
 {
-//    Base::Console().message("TWS::onSymbolSelected(%s) - source: %s\n",
+//    Base::Console().message("TWS::onSymbolSelected({}) - source: {}\n",
 //                            qPrintable(symbolPath), qPrintable(source));
     QIcon targetIcon(symbolPath);
     QSize iconSize(32, 32);
@@ -555,15 +557,15 @@ bool TaskWeldingSymbol::accept()
 {
 //    Base::Console().message("TWS::accept()\n");
     if (m_createMode) {
-        Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Create Weld Symbol"));
+        int tid = Gui::Command::openActiveDocumentCommand(QT_TRANSLATE_NOOP("Command", "Create Weld Symbol"));
         m_weldFeat = createWeldingSymbol();
         updateTiles();
         Gui::Command::updateActive();
-        Gui::Command::commitCommand();
+        Gui::Command::commitCommand(tid);
         m_weldFeat->recomputeFeature();
     //    m_weldFeat->requestPaint();    //not a dv!
     } else {
-        Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Edit Weld Symbol"));
+        int tid = Gui::Command::openActiveDocumentCommand(QT_TRANSLATE_NOOP("Command", "Edit Weld Symbol"));
         try {
             updateWeldingSymbol();
             updateTiles();
@@ -573,7 +575,7 @@ bool TaskWeldingSymbol::accept()
         }
 
         Gui::Command::updateActive();
-        Gui::Command::commitCommand();
+        Gui::Command::commitCommand(tid);
         m_weldFeat->recomputeFeature();
     //    m_weldFeat->requestPaint();    //not a dv!
     }

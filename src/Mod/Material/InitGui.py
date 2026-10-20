@@ -25,11 +25,7 @@
 import FreeCAD as App
 import FreeCADGui as Gui
 import os
-import MatGui
 
-Gui.addLanguagePath(":/translations")
-Gui.addIconPath(":/icons")
-Gui.updateLocale()
 
 class MaterialWorkbench(Gui.Workbench):
     """Part workbench object."""
@@ -39,8 +35,8 @@ class MaterialWorkbench(Gui.Workbench):
                                            "Mod", "Material",
                                            "Resources", "icons",
                                            "MaterialWorkbench.svg")
-        self.__class__.MenuText = App.Qt.translate("Workbench", "Material")
-        self.__class__.ToolTip = App.Qt.translate("Workbench", "Material workbench")
+        self.__class__.MenuText = "Material"
+        self.__class__.ToolTip = "Material workbench"
 
     def Initialize(self):
         # load the module

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2019 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TechDraw_DrawViewDimExtent_h_
-#define TechDraw_DrawViewDimExtent_h_
+#pragma once
 
 #include <tuple>
 
@@ -63,4 +64,3 @@ private:
 };
 
 } //namespace TechDraw
-#endif

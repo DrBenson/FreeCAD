@@ -53,8 +53,11 @@ void PointsAlgos::Load(PointKernel& points, const char* FileName)
     Base::FileInfo File(FileName);
 
     // checking on the file
+    if (!File.exists()) {
+        throw Base::FileNotFoundException(FileName);
+    }
     if (!File.isReadable()) {
-        throw Base::FileException("File to load not existing or not readable", FileName);
+        throw Base::FileReadPermissionException(FileName);
     }
 
     if (File.hasExtension("asc")) {
@@ -1502,7 +1505,7 @@ private:
 
         for (int i = 0; i < prototype.childCount(); ++i) {
             e57::Node node(prototype.get(i));
-            if ((node.type() == e57::E57_FLOAT) || (node.type() == e57::E57_SCALED_INTEGER)) {
+            if ((node.type() == e57::TypeFloat) || (node.type() == e57::TypeScaledInteger)) {
                 if (readCartesian(node, proto)) {
                 }
                 else if (readNormal(node, proto)) {
@@ -1513,7 +1516,7 @@ private:
                     readOther(node, proto);
                 }
             }
-            else if (node.type() == e57::E57_INTEGER) {
+            else if (node.type() == e57::TypeInteger) {
                 if (readColor(node, proto)) {
                 }
                 else if (readCartesianInvalidState(node, proto)) {

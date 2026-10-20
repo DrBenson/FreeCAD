@@ -282,7 +282,7 @@ This command only works with a Mesh object, not a regular face or surface. To co
     <message>
       <location filename="../../Tessellation.ui" line="33"/>
       <source>Use the standard mesher</source>
-      <translation>使用标准网格</translation>
+      <translation>使用标准网格划分</translation>
     </message>
     <message>
       <location filename="../../Tessellation.ui" line="48"/>
@@ -331,7 +331,7 @@ this feature (e.g. the format OBJ).</source>
     <message>
       <location filename="../../Tessellation.ui" line="148"/>
       <source>Use the Mefisto mesher</source>
-      <translation>使用 MEFIFO 网格</translation>
+      <translation>使用 Mefisto 网格划分</translation>
     </message>
     <message>
       <location filename="../../Tessellation.ui" line="20"/>
@@ -379,12 +379,7 @@ The smallest value is 0.</source>
     <message>
       <location filename="../../Tessellation.ui" line="209"/>
       <source>Use the Netgen mesher</source>
-      <translation>使用 Netgen 网格</translation>
-    </message>
-    <message>
-      <location filename="../../Tessellation.ui" line="217"/>
-      <source>Fineness:</source>
-      <translation>精细度：</translation>
+      <translation>使用 Netgen 网格划分</translation>
     </message>
     <message>
       <location filename="../../Tessellation.ui" line="234"/>
@@ -439,6 +434,11 @@ A value in the range of 0.1-1.</source>
 介于 0.1-1 范围内的值。</translation>
     </message>
     <message>
+      <location filename="../../Tessellation.ui" line="217"/>
+      <source>Fineness</source>
+      <translation>精度</translation>
+    </message>
+    <message>
       <location filename="../../Tessellation.ui" line="312"/>
       <location filename="../../Tessellation.ui" line="345"/>
       <source>If this parameter is larger, the mesh becomes finer.
@@ -489,8 +489,8 @@ A value in the range of 0.2-10.</source>
     <message>
       <location filename="../../Tessellation.cpp" line="240"/>
       <location filename="../../Tessellation.cpp" line="246"/>
-      <source>No active document</source>
-      <translation>没有活动文档</translation>
+      <source>No Active Document</source>
+      <translation>无活动文档</translation>
     </message>
     <message>
       <location filename="../../Tessellation.cpp" line="280"/>

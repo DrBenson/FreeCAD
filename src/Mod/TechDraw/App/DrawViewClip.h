@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2012 Yorik van Havre <yorik@uncreated.net>              *
  *   Copyright (c) 2015 WandererFan <wandererfan@gmail.com>                *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DrawViewClip_h_
-#define DrawViewClip_h_
+#pragma once
 
 #include <App/DocumentObject.h>
 #include <App/FeaturePython.h>
@@ -81,6 +82,3 @@ protected:
 using DrawViewClipPython = App::FeaturePythonT<DrawViewClip>;
 
 } //namespace TechDraw
-
-
-#endif

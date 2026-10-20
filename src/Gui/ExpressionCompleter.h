@@ -20,8 +20,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef EXPRESSIONCOMPLETER_H
-#define EXPRESSIONCOMPLETER_H
+#pragma once
 
 #include <QCompleter>
 #include <QLineEdit>
@@ -98,6 +97,7 @@ Q_SIGNALS:
 
 private:
     void init();
+    void updateCompletionModel(const QString& completionPrefix);
     QString pathFromIndex(const QModelIndex& index) const override;
     QStringList splitPath(const QString& input) const override;
 
@@ -184,5 +184,3 @@ public:
 };
 
 }  // namespace Gui
-
-#endif  // EXPRESSIONCOMPLETER_H

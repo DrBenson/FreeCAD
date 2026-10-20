@@ -54,8 +54,10 @@ ButtonView::ButtonView(QWidget* parent)
 
 void ButtonView::selectButton(int number)
 {
-    this->selectionModel()->select(this->model()->index(number, 0), QItemSelectionModel::ClearAndSelect);
-    this->scrollTo(this->model()->index(number, 0), QAbstractItemView::EnsureVisible);
+    QModelIndex idx = this->model()->index(number, 0);
+    this->selectionModel()->select(idx, QItemSelectionModel::ClearAndSelect);
+    this->setCurrentIndex(idx);
+    this->scrollTo(idx, QAbstractItemView::EnsureVisible);
 }
 
 void ButtonView::goSelectionChanged(const QItemSelection& selected, const QItemSelection& deselected)
@@ -179,7 +181,7 @@ void ButtonModel::load3DConnexionButtons(const char* RequiredDeviceName)
     }
     catch (const std::exception& e) {
         // We don't mind not finding the file to be opened
-        Base::Console().warning("%s\n", e.what());
+        Base::Console().warning("{}\n", e.what());
     }
 }
 
@@ -299,11 +301,12 @@ QString ButtonModel::getLabel(const int& number) const
 
 void ButtonModel::loadConfig(const char* RequiredDeviceName)
 {
-    goClear();
-    if (!RequiredDeviceName) {
-        return;
+    beginResetModel();
+    spaceballButtonGroup()->Clear();
+    if (RequiredDeviceName) {
+        load3DConnexionButtons(RequiredDeviceName);
     }
-    load3DConnexionButtons(RequiredDeviceName);
+    endResetModel();
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -1001,7 +1004,7 @@ QStringList DlgCustomizeSpaceball::getModels()
     }
     catch (const std::exception& e) {
         // We don't mind not finding the file to be opened
-        Base::Console().warning("%s\n", e.what());
+        Base::Console().warning("{}\n", e.what());
     }
 
     return modelList;

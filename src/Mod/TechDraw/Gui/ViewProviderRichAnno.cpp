@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2004 Jürgen Riegel <juergen.riegel@web.de>              *
  *   Copyright (c) 2019 Wanderer Fan <wandererfan@gmail.com>               *
@@ -21,8 +23,11 @@
  *                                                                         *
  ***************************************************************************/
 
+#include <QAction>
+#include <QMenu>
 
 #include <App/DocumentObject.h>
+#include <Gui/ActionFunction.h>
 #include <Gui/Control.h>
 #include <Gui/Selection/Selection.h>
 
@@ -57,7 +62,7 @@ const char* ViewProviderRichAnno::LineStyleEnums[] = { "NoLine",
 
 ViewProviderRichAnno::ViewProviderRichAnno()
 {
-    sPixmap = "actions/TechDraw_RichTextAnnotation";
+    sPixmap = "actions/TechDraw_Annotation";
 
     static const char *group = "Frame Format";
 
@@ -70,11 +75,38 @@ ViewProviderRichAnno::ViewProviderRichAnno()
 }
 
 
+bool ViewProviderRichAnno::setEdit(int ModNum)
+{
+    if (ModNum != Gui::ViewProvider::Default) {
+        return Gui::ViewProviderDocumentObject::setEdit(ModNum);
+    }
+    if (Gui::Control().activeDialog()) {
+        return false;  // TaskPanel already open!
+    }
+
+    // clear the selection (convenience)
+    Gui::Selection().clearSelection();
+    Gui::Control().showDialog(new TaskDlgRichAnno(this));
+    return true;
+}
+
 bool ViewProviderRichAnno::doubleClicked()
 {
 //    Base::Console().message("VPRA::doubleClicked()\n");
     setEdit(ViewProvider::Default);
     return true;
+}
+
+void ViewProviderRichAnno::setupContextMenu(QMenu* menu, QObject* receiver, const char* member)
+{
+    Gui::ActionFunction* func = new Gui::ActionFunction(menu);
+    QAction* act = menu->addAction(QObject::tr("Edit %1").arg(QString::fromUtf8(getObject()->Label.getValue())));
+    act->setData(QVariant((int)ViewProvider::Default));
+    func->trigger(act, [this](){
+        this->startDefaultEditMode();
+    });
+
+    ViewProviderDrawingView::setupContextMenu(menu, receiver, member);
 }
 
 void ViewProviderRichAnno::updateData(const App::Property* prop)
@@ -200,4 +232,21 @@ std::vector<App::DocumentObject*> ViewProviderRichAnno::claimChildren() const
        }
    }
    return temp;
+}
+
+bool ViewProviderRichAnno::onDelete(const std::vector<std::string>& subs)
+{
+    Q_UNUSED(subs);
+
+    // Check if there is an active dialog
+    if (Gui::TaskView::TaskDialog* dlg = Gui::Control().activeDialog()) {
+        // Check if the active dialog is our RichAnno dialog
+        if (auto* richAnnoDlg = dynamic_cast<TaskDlgRichAnno*>(dlg)) {
+            // Check if the dialog is for THIS specific view provider
+            if (richAnnoDlg->isFor(this)) {
+                Gui::Control().closeDialog();  // Close the dialog gracefully
+            }
+        }
+    }
+    return true;  // Allow deletion to proceed
 }

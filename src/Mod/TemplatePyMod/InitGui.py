@@ -1,11 +1,9 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # TemplatePyMod gui init module  
 # (c) 2007 Juergen Riegel LGPL
 #
 
-import _TEMPLATEPY__rc
-FreeCADGui.addLanguagePath(":/translations")
-FreeCADGui.addIconPath(":/icons")
-FreeCADGui.updateLocale()
 
 class TemplatePyModWorkbench ( Workbench ):
 	"Test workbench object"
@@ -32,15 +30,15 @@ class TemplatePyModWorkbench ( Workbench ):
 			"................",
 			"................"};
 			"""
-	MenuText = FreeCAD.Qt.translate("Workbench", "Python sandbox")
-	ToolTip = FreeCAD.Qt.translate("Workbench", "Python template workbench")
+	MenuText = "Python sandbox"
+	ToolTip = "Python template workbench"
 	
 	def Initialize(self):
 		import Commands
 
 		self.appendToolbar("TemplateTools",["TemplatePyMod_Cmd1","TemplatePyMod_Cmd2","TemplatePyMod_Cmd3","TemplatePyMod_Cmd4","TemplatePyMod_Cmd5"])
 
-		menu = [FreeCAD.Qt.translate("TemplateTools", "ModulePy &Commands"), FreeCAD.Qt.translate("TemplateTools", "PyModuleCommands")]
+		menu = ["ModulePy &Commands","PyModuleCommands"]
 		list = ["TemplatePyMod_Cmd1","TemplatePyMod_Cmd2","TemplatePyMod_Cmd3","TemplatePyMod_Cmd5","TemplatePyMod_Cmd6"]
 		self.appendCommandbar("PyModuleCommands",list)
 		self.appendMenu(menu,list)

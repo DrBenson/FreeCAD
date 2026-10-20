@@ -8,13 +8,12 @@
 # resource file will NOT be regenerated automatically. To work around this,
 # use `touch` on the .qrc file to force regeneration.
 IF (BUILD_GUI)
-    PYSIDE_WRAP_RC(Arch_QRC_SRCS Resources/Arch.qrc)
+    PYSIDE_WRAP_RC(
+        RELATIVE Arch_QRC_SRCS_REL
+        ABSOLUTE Arch_QRC_SRCS
+        RESOURCES Resources/Arch.qrc
+    )
 ENDIF (BUILD_GUI)
-set (Arch_TR_QRC ${CMAKE_CURRENT_BINARY_DIR}/Resources/Arch_translation.qrc)
-qt_find_and_add_translation(QM_SRCS "Resources/translations/*_*.ts"
-    ${CMAKE_CURRENT_BINARY_DIR}/Resources/translations)
-qt_create_resource_file(${Arch_TR_QRC} ${QM_SRCS})
-qt_add_resources(ArchResource_SRCS Resources/Arch.qrc ${Arch_TR_QRC})
 
 SET(Arch_SRCS
     Init.py
@@ -29,6 +28,8 @@ SET(Arch_SRCS
     ArchSite.py
     ArchStructure.py
     ArchCommands.py
+    ArchCovering.py
+    ArchCoveringGui.py
     ArchSectionPlane.py
     ArchWindow.py
     ArchWindowPresets.py
@@ -40,6 +41,7 @@ SET(Arch_SRCS
     ArchStairs.py
     ArchSpace.py
     ArchRebar.py
+    ArchTessellation.py
     ArchFrame.py
     ArchPanel.py
     ArchEquipment.py
@@ -61,6 +63,8 @@ SET(Arch_SRCS
     BimStatus.py
     TestArch.py
     TestArchGui.py
+    ArchReport.py
+    ArchSql.py
 )
 
 SET(importers_SRCS
@@ -101,6 +105,11 @@ SET(Arch_presets
     Presets/ifc_contexts_IFC2X3.json
     Presets/ifc_contexts_IFC4.json
     Presets/properties_conversion.csv
+    Presets/ArchReport/QueryPresets/all_spaces.json
+    Presets/ArchReport/QueryPresets/all_walls.json
+    Presets/ArchReport/QueryPresets/count_by_ifc_class.json
+    Presets/ArchReport/ReportPresets/room_schedule.json
+    Presets/ArchReport/ReportPresets/wall_quantities.json
 )
 
 SET(bimcommands_SRCS
@@ -118,6 +127,7 @@ SET(bimcommands_SRCS
     bimcommands/BimCompound.py
     bimcommands/BimConvert.py
     bimcommands/BimCopy.py
+    bimcommands/BimCovering.py
     bimcommands/BimCurtainwall.py
     bimcommands/BimCutPlane.py
     bimcommands/BimCut.py
@@ -129,6 +139,7 @@ SET(bimcommands_SRCS
     bimcommands/BimEquipment.py
     bimcommands/BimExamples.py
     bimcommands/BimExtrude.py
+    bimcommands/BimExtrudeFace.py
     bimcommands/BimFence.py
     bimcommands/BimFrame.py
     bimcommands/BimFuse.py
@@ -142,6 +153,7 @@ SET(bimcommands_SRCS
     bimcommands/BimLayers.py
     bimcommands/BimLeader.py
     bimcommands/BimLibrary.py
+    bimcommands/BimLink.py
     bimcommands/BimMaterial.py
     bimcommands/BimMoveView.py
     bimcommands/BimNudge.py
@@ -172,8 +184,8 @@ SET(bimcommands_SRCS
     bimcommands/BimTDPage.py
     bimcommands/BimTDView.py
     bimcommands/BimText.py
-    bimcommands/BimTogglePanels.py
     bimcommands/BimTrash.py
+    bimcommands/BimTrimex.py
     bimcommands/BimTruss.py
     bimcommands/BimTutorial.py
     bimcommands/BimUnclone.py
@@ -184,6 +196,7 @@ SET(bimcommands_SRCS
     bimcommands/BimWindow.py
     bimcommands/BimWindows.py
     bimcommands/BimWPCommands.py
+    bimcommands/BimReport.py
     bimcommands/__init__.py
 )
 
@@ -217,18 +230,26 @@ SET(nativeifc_SRCS
 
 SET(bimtests_SRCS
     bimtests/TestArchAxis.py
+    bimtests/TestArchAxisGui.py
     bimtests/TestArchBase.py
     bimtests/TestArchBaseGui.py
+    bimtests/TestBimTrimexGui.py
     bimtests/TestArchComponent.py
+    bimtests/TestArchCovering.py
+    bimtests/TestArchCoveringGui.py
     bimtests/TestArchBuildingPart.py
     bimtests/TestArchRoof.py
+    bimtests/test_roof_subtraction.brep
     bimtests/TestArchSpace.py
     bimtests/TestArchWall.py
+    bimtests/TestArchWallGui.py
     bimtests/TestArchMaterial.py
     bimtests/TestArchPanel.py
     bimtests/TestArchWindow.py
+    bimtests/TestArchWindowGui.py
     bimtests/TestArchStairs.py
     bimtests/TestArchStructure.py
+    bimtests/test_structure_column_flip_v1_0_v1_1.FCStd
     bimtests/TestArchPipe.py
     bimtests/TestArchCurtainWall.py
     bimtests/TestArchProfile.py
@@ -247,10 +268,15 @@ SET(bimtests_SRCS
     bimtests/TestWebGLExportGui.py
     bimtests/TestArchImportersGui.py
     bimtests/TestArchBuildingPartGui.py
+    bimtests/TestArchStairsGui.py
+    bimtests/TestArchReport.py
+    bimtests/TestArchReportGui.py
 )
 
 set(bimtests_FIXTURES
     bimtests/fixtures/FC_site_simple-102.FCStd
+    bimtests/fixtures/__init__.py
+    bimtests/fixtures/BimFixtures.py
 )
 
 SET(BIMGuiIcon_SVG
@@ -264,6 +290,23 @@ SET(ImportersSample_Files
 # TODO:
 # - ImportersSample_Files should probably be merged into bimtests_FIXTURES
 # - BIM_templates should probably be merged into Arch_presets
+
+SET(ArchSql_resources
+    Resources/ArchSql.lark
+    Resources/ArchSqlParserGenerator.py
+)
+
+set(BIM_LARK_GRAMMAR ${CMAKE_CURRENT_SOURCE_DIR}/Resources/ArchSql.lark)
+set(BIM_PARSER_GENERATOR ${CMAKE_CURRENT_SOURCE_DIR}/Resources/ArchSqlParserGenerator.py)
+
+set(BIM_GENERATED_PARSER ${CMAKE_BINARY_DIR}/Mod/BIM/generated_sql_parser.py)
+
+add_custom_command(
+    OUTPUT ${BIM_GENERATED_PARSER}
+    COMMAND ${Python3_EXECUTABLE} ${BIM_PARSER_GENERATOR} ${BIM_LARK_GRAMMAR} ${BIM_GENERATED_PARSER}
+    DEPENDS ${BIM_LARK_GRAMMAR} ${BIM_PARSER_GENERATOR}
+    COMMENT "Generating Arch SQL parser..."
+)
 
 # ==============================================================================
 # Developer workflow
@@ -294,8 +337,8 @@ SET(ImportersSample_Files
 #   BIM target. Thus building the BIM target triggers populating the build tree
 #   with the workbench sources and resources, if needed.
 ADD_CUSTOM_TARGET(BIM ALL
+    DEPENDS ${Arch_QRC_SRCS}
     SOURCES ${Arch_SRCS}
-            ${Arch_QRC_SRCS}
             ${Dice3DS_SRCS}
             ${Arch_presets}
             ${ArchGuiIcon_SVG}
@@ -308,6 +351,8 @@ ADD_CUSTOM_TARGET(BIM ALL
             ${BIMGuiIcon_SVG}
             ${BIM_templates}
 )
+
+add_custom_target(ArchSqlParser ALL DEPENDS ${BIM_GENERATED_PARSER})
 
 # Populate the build tree with the BIM workbench sources and test data
 fc_copy_sources(BIM "${CMAKE_BINARY_DIR}/Mod/BIM" ${Arch_SRCS})
@@ -323,15 +368,16 @@ fc_copy_sources(BIM "${CMAKE_BINARY_DIR}/Mod/BIM" ${nativeifc_SRCS})
 fc_copy_sources(BIM "${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_DATADIR}/Mod/BIM" ${BIMGuiIcon_SVG})
 fc_copy_sources(BIM "${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_DATADIR}/Mod/BIM" ${Arch_presets})
 fc_copy_sources(BIM "${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_DATADIR}/Mod/BIM" ${BIM_templates})
+fc_copy_sources(BIM "${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_DATADIR}/Mod/BIM" ${ArchSql_resources})
 
 # For generated resources, we cannot rely on `fc_copy_sources` in case
 # INSTALL_PREFER_SYMLINKS=ON has been specified, since we're generating a new
 # file not present in the source tree and thus cannot create a symlink to it.
 IF (BUILD_GUI)
     fc_target_copy_resource(BIM
-        ${CMAKE_CURRENT_BINARY_DIR}
-        ${CMAKE_BINARY_DIR}/Mod/BIM
-        Arch_rc.py)
+        "${CMAKE_CURRENT_BINARY_DIR}"
+        "${CMAKE_BINARY_DIR}/Mod/BIM"
+        ${Arch_QRC_SRCS_REL})
 ENDIF (BUILD_GUI)
 
 # ==============================================================================
@@ -403,3 +449,10 @@ INSTALL(
     DESTINATION
         "${CMAKE_INSTALL_DATADIR}/Mod/BIM/Resources/templates"
     )
+
+INSTALL(
+    FILES
+        ${BIM_GENERATED_PARSER}
+    DESTINATION
+        Mod/BIM
+)

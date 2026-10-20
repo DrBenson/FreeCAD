@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2017 Markus Hovorka <m.hovorka@live.de>                 *
 # *                                                                         *
@@ -35,7 +37,6 @@ import FreeCADGui as Gui
 
 import femsolver.report
 import femsolver.run
-
 
 _UPDATE_INTERVAL = 50
 _REPORT_TITLE = "Run Report"

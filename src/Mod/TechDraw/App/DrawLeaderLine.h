@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2019 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TechDraw_DrawLeaderLine_h_
-#define TechDraw_DrawLeaderLine_h_
+#pragma once
 
 #include <App/DocumentObject.h>
 #include <App/FeaturePython.h>
@@ -103,4 +104,3 @@ private:
 using DrawLeaderLinePython = App::FeaturePythonT<DrawLeaderLine>;
 
 } //namespace TechDraw
-#endif

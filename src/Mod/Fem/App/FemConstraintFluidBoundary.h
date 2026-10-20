@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jan Rheinländer                                    *
  *                                   <jrheinlaender@users.sourceforge.net> *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef FEM_FLUIDBOUNDARY_H
-#define FEM_FLUIDBOUNDARY_H
+#pragma once
 
 #include "FemConstraint.h"
 
@@ -73,6 +74,3 @@ private:
 };
 
 }  // namespace Fem
-
-
-#endif  // FEM_FLUIDBOUNDARY_H

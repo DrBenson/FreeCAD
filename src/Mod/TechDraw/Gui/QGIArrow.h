@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Luke Parry <l.parry@warwick.ac.uk>                 *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DRAWINGGUI_QGRAPHICSITEMARROW_H
-#define DRAWINGGUI_QGRAPHICSITEMARROW_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 #include <Mod/TechDraw/App/ArrowPropEnum.h>
@@ -91,5 +92,3 @@ private:
 };
 
 }
-
-#endif // DRAWINGGUI_QGRAPHICSITEMARROW_H

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2023 Peter McB                                          *
  *                                                                         *
@@ -22,8 +24,7 @@
  ***************************************************************************/
 
 
-#ifndef FEM_ViewProviderSetElementNodes_H
-#define FEM_ViewProviderSetElementNodes_H
+#pragma once
 
 #include <Gui/ViewProviderGeometryObject.h>
 
@@ -43,6 +44,3 @@ protected:
 };
 
 }  // namespace FemGui
-
-
-#endif  // FEM_ViewProviderSetElementNodes_H

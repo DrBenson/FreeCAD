@@ -22,9 +22,13 @@
  ***************************************************************************/
 
 #include <boost/core/ignore_unused.hpp>
+#include <algorithm>
 #include <cmath>
+#include <algorithm>
 #include <vector>
 #include <unordered_map>
+#include <unordered_set>
+#include <ranges>
 
 
 #include <App/Application.h>
@@ -81,8 +85,7 @@
 #include "AssemblyObject.h"
 #include "AssemblyObjectPy.h"
 #include "AssemblyUtils.h"
-#include "JointGroup.h"
-#include "ViewGroup.h"
+#include "Groups.h"
 
 FC_LOG_LEVEL_INIT("Assembly", true, true, true)
 
@@ -91,6 +94,163 @@ using namespace MbD;
 
 
 namespace PartApp = Part;
+
+namespace
+{
+
+struct RotationJointSide
+{
+    App::DocumentObject* joint = nullptr;
+    const char* carrierRefName = nullptr;
+    const char* carrierPlcName = nullptr;
+};
+
+Base::Placement getJointSideGlobalPlacement(
+    App::DocumentObject* joint,
+    const char* refName,
+    const char* plcName
+)
+{
+    if (!joint) {
+        return {};
+    }
+
+    auto* ref = joint->getPropertyByName<App::PropertyXLinkSub>(refName);
+    if (!ref) {
+        return {};
+    }
+
+    return App::GeoFeature::getGlobalPlacement(nullptr, ref)
+        * App::GeoFeature::getPlacementFromProp(joint, plcName);
+}
+
+bool axesAreCoaxial(const Base::Placement& plc1, const Base::Placement& plc2)
+{
+    Base::Vector3d axis1 = plc1.getRotation().multVec(Base::Vector3d::UnitZ);
+    Base::Vector3d axis2 = plc2.getRotation().multVec(Base::Vector3d::UnitZ);
+    if (axis1.Length() <= Precision::Confusion() || axis2.Length() <= Precision::Confusion()) {
+        return false;
+    }
+    axis1.Normalize();
+    axis2.Normalize();
+
+    if (1.0 - std::abs(axis1 * axis2) > Precision::Confusion()) {
+        return false;
+    }
+
+    const Base::Vector3d delta = plc2.getPosition() - plc1.getPosition();
+    return delta.Cross(axis1).Length() <= Precision::Confusion();
+}
+
+bool gearJointNeedsCarrierMarker(App::DocumentObject* joint)
+{
+    const auto plc1 = getJointSideGlobalPlacement(joint, "Reference1", "Placement1");
+    const auto plc2 = getJointSideGlobalPlacement(joint, "Reference2", "Placement2");
+    return axesAreCoaxial(plc1, plc2);
+}
+
+bool isRotationCarrierJoint(JointType type)
+{
+    return type == JointType::Revolute || type == JointType::Cylindrical;
+}
+
+bool findRotationCarrierForGearSide(
+    AssemblyObject* assembly,
+    App::DocumentObject* gearJoint,
+    const char* gearRefName,
+    const char* gearPlcName,
+    RotationJointSide& carrierSide
+)
+{
+    auto* gearPart = getMovingPartFromRef(gearJoint, gearRefName);
+    if (!gearPart) {
+        return false;
+    }
+
+    const auto gearPlc = getJointSideGlobalPlacement(gearJoint, gearRefName, gearPlcName);
+    bool foundCarrier = false;
+    bool ambiguousCarrier = false;
+
+    for (auto* joint : assembly->getJoints(false, true)) {
+        if (!joint || joint == gearJoint || !getJointActivated(joint)) {
+            continue;
+        }
+        if (!isRotationCarrierJoint(getJointType(joint))) {
+            continue;
+        }
+
+        auto matchesSide = [&](const char* movingRefName,
+                               const char* movingPlcName,
+                               const char* carrierRefName,
+                               const char* carrierPlcName) {
+            if (getMovingPartFromRef(joint, movingRefName) != gearPart) {
+                return false;
+            }
+
+            const auto rotationPlc = getJointSideGlobalPlacement(joint, movingRefName, movingPlcName);
+            if (!axesAreCoaxial(gearPlc, rotationPlc)) {
+                return false;
+            }
+
+            if (foundCarrier) {
+                ambiguousCarrier = true;
+                return false;
+            }
+            foundCarrier = true;
+            carrierSide.joint = joint;
+            carrierSide.carrierRefName = carrierRefName;
+            carrierSide.carrierPlcName = carrierPlcName;
+            return true;
+        };
+
+        matchesSide("Reference1", "Placement1", "Reference2", "Placement2");
+        matchesSide("Reference2", "Placement2", "Reference1", "Placement1");
+    }
+
+    return foundCarrier && !ambiguousCarrier;
+}
+
+void setGearJointCarrierMarkerIfAvailable(
+    AssemblyObject* assembly,
+    App::DocumentObject* joint,
+    const std::shared_ptr<ASMTJoint>& mbdJoint
+)
+{
+    auto gearJoint = std::dynamic_pointer_cast<ASMTGearJoint>(mbdJoint);
+    if (!gearJoint) {
+        return;
+    }
+
+    RotationJointSide side1;
+    RotationJointSide side2;
+    const bool hasCarrier1
+        = findRotationCarrierForGearSide(assembly, joint, "Reference1", "Placement1", side1);
+    const bool hasCarrier2
+        = findRotationCarrierForGearSide(assembly, joint, "Reference2", "Placement2", side2);
+    if (!hasCarrier1 || !hasCarrier2) {
+        return;
+    }
+
+    auto* carrierPart1 = getMovingPartFromRef(side1.joint, side1.carrierRefName);
+    auto* carrierPart2 = getMovingPartFromRef(side2.joint, side2.carrierRefName);
+    if (!carrierPart1 || !carrierPart2
+        || assembly->getMbDPart(carrierPart1) != assembly->getMbDPart(carrierPart2)) {
+        return;
+    }
+
+    const std::string carrierMarkerName = joint->getFullName() + "-Carrier";
+    std::string fullMarkerNameK = assembly->handleOneSideOfJoint(
+        side1.joint,
+        side1.carrierRefName,
+        side1.carrierPlcName,
+        carrierMarkerName
+    );
+    if (!fullMarkerNameK.empty()) {
+        gearJoint->setMarkerK(fullMarkerNameK);
+    }
+}
+
+}  // namespace
 
 
 // ================================ Assembly Object ============================
@@ -132,7 +292,7 @@ App::DocumentObjectExecReturn* AssemblyObject::execute()
         "User parameter:BaseApp/Preferences/Mod/Assembly"
     );
     if (hGrp->GetBool("SolveOnRecompute", true)) {
-        solve(false, false);  // No need to update jcs since recompute updated them.
+        solve(false);
     }
     return ret;
 }
@@ -140,17 +300,29 @@ App::DocumentObjectExecReturn* AssemblyObject::execute()
 void AssemblyObject::onChanged(const App::Property* prop)
 {
     if (prop == &Group) {
+        for (auto* obj : getInList()) {
+            if (auto* assemblyLink = freecad_cast<AssemblyLink*>(obj)) {
+                assemblyLink->updateContents();
+            }
+        }
         updateSolveStatus();
     }
     App::Part::onChanged(prop);
 }
 
-int AssemblyObject::solve(bool enableRedo, bool updateJCS)
+int AssemblyObject::solve(bool enableRedo)
 {
+    // updateSolveStatus() solves on demand; suppress that while a solve is running.
+    Base::StateLocker lock(solveInProgress);
+
     ensureIdentityPlacements();
+
+    syncGroundedJoints();
 
     mbdAssembly = makeMbdAssembly();
     objectPartMap.clear();
+    rebuildRigidClusters();
+    syncActiveRigidGroupPlacements();
     motions.clear();
 
     auto groundedObjs = fixGroundedParts();
@@ -159,7 +331,7 @@ int AssemblyObject::solve(bool enableRedo, bool updateJCS)
         return -6;
     }
 
-    std::vector<App::DocumentObject*> joints = getJoints(updateJCS);
+    std::vector<App::DocumentObject*> joints = getJoints();
 
     removeUnconnectedJoints(joints, groundedObjs);
 
@@ -187,6 +359,7 @@ int AssemblyObject::solve(bool enableRedo, bool updateJCS)
     }
 
     setNewPlacements();
+    updateRigidPlacementCache();
 
     redrawJointPlacements(joints);
 
@@ -199,10 +372,26 @@ void AssemblyObject::updateSolveStatus()
 {
     lastRedundantJoints.clear();
     lastHasRedundancies = false;
-    //+1 because there's a grounded joint to origin
-    lastDoF = (1 + numberOfComponents()) * 6;
 
-    if (!mbdAssembly || !mbdAssembly->mbdSystem) {
+    int numberOfSolverBodies = numberOfComponents();
+    if (!objectPartMap.empty()) {
+        std::unordered_set<MbD::ASMTPart*> uniqueParts;
+        for (const auto& entry : objectPartMap) {
+            if (entry.second.part) {
+                uniqueParts.insert(entry.second.part.get());
+            }
+        }
+
+        const int bundledParts = static_cast<int>(objectPartMap.size() - uniqueParts.size());
+        numberOfSolverBodies -= bundledParts;
+    }
+
+    // +1 because the assembly origin is also represented by a solver body.
+    lastDoF = (1 + numberOfSolverBodies) * 6;
+
+    // Solve on demand when queried before the system is solved, but not from within
+    // a solve: solve() calls this, so a failed solve would recurse indefinitely.
+    if (!solveInProgress && (!mbdAssembly || !mbdAssembly->mbdSystem)) {
         solve();
     }
 
@@ -227,7 +416,7 @@ void AssemblyObject::updateSolveStatus()
         if (!jm) {
             return;
         }
-        // Base::Console().warning("jm->name %s\n", jm->name);
+        // Base::Console().warning("jm->name {}\n", jm->name);
         bool isJointRedundant = false;
 
         jm->constraintsDo([&](std::shared_ptr<MbD::Constraint> con) {
@@ -240,7 +429,7 @@ void AssemblyObject::updateSolveStatus()
             if (spec.rfind("Redundant", 0) == 0) {
                 isJointRedundant = true;
             }
-            // Base::Console().warning("    - %s\n", spec);
+            // Base::Console().warning("    - {}\n", spec);
             --lastDoF;
         });
 
@@ -320,7 +509,7 @@ std::vector<App::DocumentObject*> AssemblyObject::getMotionsFromSimulation(App::
     return prop->getValue();
 }
 
-int Assembly::AssemblyObject::updateForFrame(size_t index, bool updateJCS)
+int Assembly::AssemblyObject::updateForFrame(size_t index)
 {
     if (!mbdAssembly) {
         return -1;
@@ -333,7 +522,7 @@ int Assembly::AssemblyObject::updateForFrame(size_t index, bool updateJCS)
 
     mbdAssembly->updateForFrame(index);
     setNewPlacements();
-    auto jointDocs = getJoints(updateJCS);
+    auto jointDocs = getJoints();
     redrawJointPlacements(jointDocs);
     return 0;
 }
@@ -343,25 +532,53 @@ size_t Assembly::AssemblyObject::numberOfFrames()
     return mbdAssembly->numberOfFrames();
 }
 
+bool AssemblyObject::requiresRigidSolveForMove(const std::vector<App::DocumentObject*>& movedParts)
+{
+    rebuildRigidClusters();
+
+    return std::ranges::any_of(movedParts, [&](App::DocumentObject* part) {
+        return getRigidRepresentative(part) != nullptr;
+    });
+}
+
 void AssemblyObject::preDrag(std::vector<App::DocumentObject*> dragParts)
 {
     bundleFixed = true;
-    solve();
+    bool hasUnconnectedDragPart = std::ranges::any_of(dragParts, [this](App::DocumentObject* part) {
+        return part && !isPartConnected(part);
+    });
+
+    if (hasUnconnectedDragPart) {
+        prepareMbdForIslandDrag(dragParts);
+    }
+    else {
+        solve();
+    }
     bundleFixed = false;
 
     draggedParts.clear();
+
     for (auto part : dragParts) {
+        const bool isRigidClustered = getRigidRepresentative(part) != nullptr;
+
         // make sure no duplicate
         if (std::ranges::find(draggedParts, part) != draggedParts.end()) {
             continue;
         }
 
-        // Free-floating parts should not be added since they are ignored by the solver!
-        if (!isPartConnected(part)) {
+        // - Free-floating parts should not be added since they are ignored by the solver.
+        // During ungrounded island dragging, prepareMbdForIslandDrag seeds the MBD system from
+        // the dragged parts, so objectPartMap is the source of truth instead.
+        // - Active rigid-cluster members are solver-connected through the shared MbD part.
+        if (!isPartConnected(part) && (!objectPartMap.contains(part) || !isRigidClustered)) {
             continue;
         }
 
-        // Some objects have been bundled, we don't want to add these to dragged parts
+        // Rigid-cluster members stay draggable because they share one MbD part.
+        if (isRigidClustered) {
+            draggedParts.push_back(part);
+        }
+
         Base::Placement plc;
         for (auto& pair : objectPartMap) {
             App::DocumentObject* parti = pair.first;
@@ -381,10 +598,58 @@ void AssemblyObject::preDrag(std::vector<App::DocumentObject*> dragParts)
     }
 }
 
+void AssemblyObject::prepareMbdForIslandDrag(std::vector<App::DocumentObject*> dragParts)
+{
+    ensureIdentityPlacements();
+    syncGroundedJoints();
+
+    mbdAssembly = makeMbdAssembly();
+    objectPartMap.clear();
+    motions.clear();
+
+    auto seededParts = fixGroundedParts();
+    for (auto* part : dragParts) {
+        if (part) {
+            seededParts.insert(part);
+        }
+    }
+
+    std::vector<App::DocumentObject*> joints = getJoints();
+    removeUnconnectedJoints(joints, seededParts);
+    if (joints.empty()) {
+        objectPartMap.clear();
+        mbdAssembly.reset();
+        return;
+    }
+
+    jointParts(joints);
+
+    try {
+        mbdAssembly->runPreDrag();
+    }
+    catch (const std::exception& e) {
+        FC_ERR("Drag setup failed: " << e.what());
+        objectPartMap.clear();
+        mbdAssembly.reset();
+        return;
+    }
+    catch (...) {
+        FC_ERR("Drag setup failed: unhandled exception");
+        objectPartMap.clear();
+        mbdAssembly.reset();
+        return;
+    }
+}
+
 void AssemblyObject::doDragStep()
 {
+    if (!mbdAssembly || draggedParts.empty()) {
+        return;
+    }
+
     try {
         std::vector<std::shared_ptr<MbD::ASMTPart>> dragMbdParts;
+        std::unordered_set<ASMTPart*> seenMbdParts;
 
         for (auto& part : draggedParts) {
             if (!part) {
@@ -392,16 +657,26 @@ void AssemblyObject::doDragStep()
             }
 
             auto mbdPart = getMbDPart(part);
+            if (!mbdPart) {
+                continue;
+            }
+
+            if (!seenMbdParts.insert(mbdPart.get()).second) {
+                continue;
+            }
+
             dragMbdParts.push_back(mbdPart);
 
-            // Update the MBD part's position
             Base::Placement plc = getPlacementFromProp(part, "Placement");
+            if (auto it = objectPartMap.find(part);
+                it != objectPartMap.end() && !it->second.offsetPlc.isIdentity()) {
+                plc = plc * it->second.offsetPlc.inverse();
+            }
             Base::Vector3d pos = plc.getPosition();
             mbdPart->updateMbDFromPosition3D(
                 std::make_shared<FullColumn<double>>(ListD {pos.x, pos.y, pos.z})
             );
 
-            // Update the MBD part's rotation
             Base::Rotation rot = plc.getRotation();
             Base::Matrix4D mat;
             rot.getValue(mat);
@@ -418,8 +693,9 @@ void AssemblyObject::doDragStep()
         // Timing the validation and placement setting
         if (validateNewPlacements()) {
             setNewPlacements();
+            updateRigidPlacementCache();
 
-            auto joints = getJoints(false);
+            auto joints = getJoints();
             for (auto* joint : joints) {
                 if (joint->Visibility.getValue()) {
                     // redraw only the moving joint as its quite slow as its python code.
@@ -455,9 +731,7 @@ bool AssemblyObject::validateNewPlacements()
     // First we check if a grounded object has moved. It can happen that they flip.
     auto groundedParts = getGroundedParts();
     for (auto* obj : groundedParts) {
-        auto* propPlacement = dynamic_cast<App::PropertyPlacement*>(
-            obj->getPropertyByName("Placement")
-        );
+        auto* propPlacement = obj->getPlacementProperty();
         if (propPlacement) {
             Base::Placement oldPlc = propPlacement->getValue();
 
@@ -471,7 +745,7 @@ bool AssemblyObject::validateNewPlacements()
 
                 if (!oldPlc.isSame(newPlacement, Precision::Confusion())) {
                     Base::Console().warning(
-                        "Assembly : Ignoring bad solve, a grounded object (%s) moved.\n",
+                        "Assembly : Ignoring bad solve, a grounded object ({}) moved.\n",
                         obj->getFullLabel()
                     );
                     return false;
@@ -487,6 +761,10 @@ bool AssemblyObject::validateNewPlacements()
 
 void AssemblyObject::postDrag()
 {
+    if (!mbdAssembly) {
+        return;
+    }
+
     mbdAssembly->runPostDrag();  // Do this after last drag
     purgeTouched();
 }
@@ -505,7 +783,7 @@ void AssemblyObject::savePlacementsForUndo()
         savePair.first = obj;
 
         // Check if the object has a "Placement" property
-        auto* propPlc = dynamic_cast<App::PropertyPlacement*>(obj->getPropertyByName("Placement"));
+        auto* propPlc = obj->getPlacementProperty();
         if (!propPlc) {
             continue;
         }
@@ -528,9 +806,7 @@ void AssemblyObject::undoSolve()
         }
 
         // Check if the object has a "Placement" property
-        auto* propPlacement = dynamic_cast<App::PropertyPlacement*>(
-            obj->getPropertyByName("Placement")
-        );
+        auto* propPlacement = obj->getPlacementProperty();
         if (!propPlacement) {
             continue;
         }
@@ -540,7 +816,7 @@ void AssemblyObject::undoSolve()
     previousPositions.clear();
 
     // update joint placements:
-    getJoints(/*updateJCS*/ true, /*delBadJoints*/ false);
+    getJoints();
 }
 
 void AssemblyObject::clearUndo()
@@ -552,6 +828,7 @@ void AssemblyObject::exportAsASMT(std::string fileName)
 {
     mbdAssembly = makeMbdAssembly();
     objectPartMap.clear();
+    rebuildRigidClusters();
     fixGroundedParts();
 
     std::vector<App::DocumentObject*> joints = getJoints();
@@ -560,6 +837,226 @@ void AssemblyObject::exportAsASMT(std::string fileName)
 
     mbdAssembly->outputFile(fileName);
 }
+
+void AssemblyObject::rebuildRigidClusters()
+{
+    rigidRepByPart.clear();
+    rigidMembersByRep.clear();
+
+    std::unordered_map<App::DocumentObject*, App::DocumentObject*> parent;
+
+    auto findRoot = [&](App::DocumentObject* node, auto& self) -> App::DocumentObject* {
+        auto [it, inserted] = parent.emplace(node, node);
+        if (inserted || it->second == node) {
+            return it->second;
+        }
+
+        it->second = self(it->second, self);
+        return it->second;
+    };
+
+    auto unite = [&](App::DocumentObject* a, App::DocumentObject* b) {
+        if (!a || !b) {
+            return;
+        }
+
+        auto* const rootA = findRoot(a, findRoot);
+        auto* const rootB = findRoot(b, findRoot);
+
+        if (rootA != rootB) {
+            parent[rootB] = rootA;
+        }
+    };
+
+    for (auto* const rigidGroup : getRigidGroups()) {
+        if (!rigidGroup) {
+            continue;
+        }
+
+        auto* const prop = dynamic_cast<App::PropertyLinkList*>(
+            rigidGroup->getPropertyByName("ObjectsToRigidGroup")
+        );
+        if (!prop) {
+            continue;
+        }
+
+        const auto members = prop->getValues();
+        if (members.size() < 2) {
+            continue;
+        }
+
+        auto* const first = members.front();
+        for (auto* const member : members | std::views::drop(1)) {
+            unite(first, member);
+        }
+    }
+
+    std::unordered_map<App::DocumentObject*, std::vector<App::DocumentObject*>> clusters;
+
+    for (const auto& [node, _] : parent) {
+        boost::ignore_unused(_);
+        const auto root = findRoot(node, findRoot);
+        clusters[root].push_back(node);
+    }
+
+    for (auto& [_, members] : clusters) {
+        boost::ignore_unused(_);
+
+        if (members.size() < 2) {
+            continue;
+        }
+
+        const auto repIt = std::ranges::min_element(members, {}, [](App::DocumentObject* obj) {
+            return obj ? std::string(obj->getNameInDocument()) : std::string();
+        });
+
+        if (repIt == members.end() || !*repIt) {
+            continue;
+        }
+
+        auto* const rep = *repIt;
+
+        for (auto* const member : members) {
+            rigidRepByPart[member] = rep;
+        }
+
+        rigidMembersByRep[rep] = std::move(members);
+    }
+}
+
+App::DocumentObject* AssemblyObject::getRigidRepresentative(App::DocumentObject* part) const
+{
+    if (!part) {
+        return nullptr;
+    }
+
+    if (auto it = rigidRepByPart.find(part); it != rigidRepByPart.end()) {
+        return it->second;
+    }
+
+    return nullptr;
+}
+
+const std::vector<App::DocumentObject*>* AssemblyObject::getRigidMembers(App::DocumentObject* part) const
+{
+    if (auto* rep = getRigidRepresentative(part); rep) {
+        if (auto it = rigidMembersByRep.find(rep); it != rigidMembersByRep.end()) {
+            return &it->second;
+        }
+    }
+
+    return nullptr;
+}
+
+void AssemblyObject::syncActiveRigidGroupPlacements()
+{
+    for (const auto& [rep, members] : rigidMembersByRep) {
+        if (!rep || members.size() < 2) {
+            continue;
+        }
+
+        bool hasCompleteCache = true;
+        std::vector<App::DocumentObject*> movedMembers;
+
+        for (auto* member : members) {
+            if (!member) {
+                hasCompleteCache = false;
+                break;
+            }
+
+            auto cacheIt = rigidPlacementCache.find(member);
+            if (cacheIt == rigidPlacementCache.end()) {
+                hasCompleteCache = false;
+                break;
+            }
+
+            Base::Placement currentPlc = getPlacementFromProp(member, "Placement");
+            if (!cacheIt->second.isSame(currentPlc)) {
+                movedMembers.push_back(member);
+            }
+        }
+
+        if (!hasCompleteCache) {
+            for (auto* member : members) {
+                if (!member) {
+                    continue;
+                }
+                rigidPlacementCache[member] = getPlacementFromProp(member, "Placement");
+            }
+            continue;
+        }
+
+        if (movedMembers.empty()) {
+            continue;
+        }
+
+        App::DocumentObject* driver = movedMembers.front();
+        const Base::Placement oldDriverPlc = rigidPlacementCache.at(driver);
+        const Base::Placement newDriverPlc = getPlacementFromProp(driver, "Placement");
+        const Base::Placement delta = newDriverPlc * oldDriverPlc.inverse();
+
+        for (auto* member : members) {
+            if (!member || member == driver) {
+                continue;
+            }
+
+            if (auto cacheIt = rigidPlacementCache.find(member);
+                cacheIt != rigidPlacementCache.end()) {
+                Base::Placement targetPlc = delta * cacheIt->second;
+                auto* propPlacement = member->getPlacementProperty();
+                if (propPlacement && !propPlacement->getValue().isSame(targetPlc)) {
+                    propPlacement->setValue(targetPlc);
+                    member->purgeTouched();
+                }
+            }
+        }
+
+        for (auto* member : members) {
+            if (!member) {
+                continue;
+            }
+            rigidPlacementCache[member] = getPlacementFromProp(member, "Placement");
+        }
+    }
+}
+
+void AssemblyObject::updateRigidPlacementCache()
+{
+    std::unordered_set<App::DocumentObject*> activeMembers;
+
+    for (const auto& [rep, members] : rigidMembersByRep) {
+        boost::ignore_unused(rep);
+        for (auto* member : members) {
+            if (!member) {
+                continue;
+            }
+            activeMembers.insert(member);
+            rigidPlacementCache[member] = getPlacementFromProp(member, "Placement");
+        }
+    }
+
+    std::erase_if(rigidPlacementCache, [&](const auto& entry) {
+        return !activeMembers.contains(entry.first);
+    });
+}
+
+namespace
+{
+// A singular solve can return NaN or infinite placements. NaN coordinates defeat
+// the bounding-box rejection in SoRayPickAction, so writing one into the document
+// makes every ray pick hit everything; reject them at the solver/document boundary.
+bool isFinitePlacement(const Base::Placement& plc)
+{
+    const Base::Vector3d& pos = plc.getPosition();
+    double q0 {};
+    double q1 {};
+    double q2 {};
+    double q3 {};
+    plc.getRotation().getValue(q0, q1, q2, q3);
+    return std::isfinite(pos.x) && std::isfinite(pos.y) && std::isfinite(pos.z) && std::isfinite(q0)
+        && std::isfinite(q1) && std::isfinite(q2) && std::isfinite(q3);
+}
+}  // namespace
 
 void AssemblyObject::setNewPlacements()
 {
@@ -572,9 +1069,7 @@ void AssemblyObject::setNewPlacements()
         }
 
         // Check if the object has a "Placement" property
-        auto* propPlacement = dynamic_cast<App::PropertyPlacement*>(
-            obj->getPropertyByName("Placement")
-        );
+        auto* propPlacement = obj->getPlacementProperty();
         if (!propPlacement) {
             continue;
         }
@@ -583,6 +1078,14 @@ void AssemblyObject::setNewPlacements()
         Base::Placement newPlacement = getMbdPlacement(mbdPart);
         if (!pair.second.offsetPlc.isIdentity()) {
             newPlacement = newPlacement * pair.second.offsetPlc;
+        }
+        if (!isFinitePlacement(newPlacement)) {
+            Base::Console().warning(
+                "Assembly: solver returned a non-finite placement for '{}'; keeping its "
+                "previous position.\n",
+                obj->getFullName()
+            );
+            continue;
         }
         if (!propPlacement->getValue().isSame(newPlacement)) {
             propPlacement->setValue(newPlacement);
@@ -610,25 +1113,32 @@ void AssemblyObject::redrawJointPlacement(App::DocumentObject* joint)
 
     Base::PyGILStateLocker lock;
 
-    App::PropertyPythonObject* proxy = joint
-        ? dynamic_cast<App::PropertyPythonObject*>(joint->getPropertyByName("Proxy"))
-        : nullptr;
+    try {
+        auto* proxy = dynamic_cast<App::PropertyPythonObject*>(joint->getPropertyByName("Proxy"));
 
-    if (!proxy) {
-        return;
+        if (!proxy) {
+            return;
+        }
+
+        Py::Object jointPy = proxy->getValue();
+
+        if (!jointPy.hasAttr("redrawJointPlacements")) {
+            return;
+        }
+
+        Py::Object attr = jointPy.getAttr("redrawJointPlacements");
+        if (attr.ptr() && attr.isCallable()) {
+            Py::Tuple args(1);
+            args.setItem(0, Py::asObject(joint->getPyObject()));
+            Py::Callable(attr).apply(args);
+        }
     }
-
-    Py::Object jointPy = proxy->getValue();
-
-    if (!jointPy.hasAttr("redrawJointPlacements")) {
-        return;
-    }
-
-    Py::Object attr = jointPy.getAttr("redrawJointPlacements");
-    if (attr.ptr() && attr.isCallable()) {
-        Py::Tuple args(1);
-        args.setItem(0, Py::asObject(joint->getPyObject()));
-        Py::Callable(attr).apply(args);
+    catch (Py::Exception&) {
+        // Callers run inside Qt event handlers, which cannot propagate C++ exceptions
+        // out of the joint's Python callback. Report the error and keep redrawing the
+        // remaining joints.
+        Base::PyException e;
+        e.reportException();
     }
 }
 
@@ -685,6 +1195,48 @@ App::DocumentObject* AssemblyObject::getJointOfPartConnectingToGround(
     return nullptr;
 }
 
+App::DocumentObject* AssemblyObject::getJointOfPartForUngroundedDrag(
+    App::DocumentObject* part,
+    std::string& name
+)
+{
+    if (!part) {
+        return nullptr;
+    }
+
+    std::vector<App::DocumentObject*> joints = getJointsOfPart(part);
+    for (auto* joint : joints) {
+        if (!joint || !isJointTypeConnecting(joint)) {
+            continue;
+        }
+        if (getJointType(joint) == JointType::Fixed) {
+            continue;
+        }
+
+        App::DocumentObject* part1 = getMovingPartFromRef(joint, "Reference1");
+        App::DocumentObject* part2 = getMovingPartFromRef(joint, "Reference2");
+        if (!part1 || !part2) {
+            continue;
+        }
+
+        std::string refName;
+        if (part == part1) {
+            refName = "Reference1";
+        }
+        else if (part == part2) {
+            refName = "Reference2";
+        }
+        else {
+            continue;
+        }
+
+        name = refName;
+        return joint;
+    }
+
+    return nullptr;
+}
+
 template<typename T>
 T* AssemblyObject::getGroup()
 {
@@ -723,7 +1275,7 @@ ViewGroup* AssemblyObject::getExplodedViewGroup() const
     return nullptr;
 }
 
-std::vector<App::DocumentObject*> AssemblyObject::getJoints(bool updateJCS, bool delBadJoints, bool subJoints)
+std::vector<App::DocumentObject*> AssemblyObject::getJoints(bool delBadJoints, bool subJoints)
 {
     std::vector<App::DocumentObject*> joints = {};
 
@@ -799,13 +1351,75 @@ std::vector<App::DocumentObject*> AssemblyObject::getGroundedJoints()
     return joints;
 }
 
+std::vector<App::DocumentObject*> AssemblyObject::getRigidGroups()
+{
+    std::vector<App::DocumentObject*> rigid_groups {};
+
+    JointGroup* jointGroup = getJointGroup();
+    if (!jointGroup) {
+        return {};
+    }
+
+    Base::PyGILStateLocker lock;
+    for (auto const obj : jointGroup->getObjects()) {
+        if (!obj || obj->isError()) {
+            continue;
+        }
+
+        if (auto* prop = dynamic_cast<App::PropertyBool*>(obj->getPropertyByName("Suppressed"));
+            prop == nullptr || prop->getValue()) {
+            continue;
+        }
+
+        if (auto* prop
+            = dynamic_cast<App::PropertyLinkList*>(obj->getPropertyByName("ObjectsToRigidGroup"));
+            prop) {
+            const std::vector<App::DocumentObject*> rawMembers = prop->getValues();
+            std::vector<App::DocumentObject*> validMembers;
+            validMembers.reserve(rawMembers.size());
+            std::unordered_set<App::DocumentObject*> seen;
+
+            for (auto* const member : rawMembers) {
+                if (!member || member->isError()) {
+                    continue;
+                }
+
+                // Keep only parts that belong to this assembly and have placement.
+                if (!hasObject(member) || member->getPropertyByName("Placement") == nullptr) {
+                    continue;
+                }
+
+                // Ignore duplicates.
+                if (!seen.insert(member).second) {
+                    continue;
+                }
+
+                validMembers.push_back(member);
+            }
+
+            // Ignore entire rigid group if it has less than 2 members remaining.
+            if (validMembers.size() < 2) {
+                continue;
+            }
+
+            if (validMembers.size() != rawMembers.size()) {
+                prop->setValue(validMembers);
+            }
+
+            rigid_groups.emplace_back(obj);
+        }
+    }
+
+    return rigid_groups;
+}
+
 std::vector<App::DocumentObject*> AssemblyObject::getJointsOfObj(App::DocumentObject* obj)
 {
     if (!obj) {
         return {};
     }
 
-    std::vector<App::DocumentObject*> joints = getJoints(false);
+    std::vector<App::DocumentObject*> joints = getJoints();
     std::vector<App::DocumentObject*> jointsOf;
 
     for (auto joint : joints) {
@@ -825,7 +1439,7 @@ std::vector<App::DocumentObject*> AssemblyObject::getJointsOfPart(App::DocumentO
         return {};
     }
 
-    std::vector<App::DocumentObject*> joints = getJoints(false);
+    std::vector<App::DocumentObject*> joints = getJoints();
     std::vector<App::DocumentObject*> jointsOf;
 
     for (auto joint : joints) {
@@ -840,25 +1454,13 @@ std::vector<App::DocumentObject*> AssemblyObject::getJointsOfPart(App::DocumentO
 
 std::unordered_set<App::DocumentObject*> AssemblyObject::getGroundedParts()
 {
-    std::vector<App::DocumentObject*> groundedJoints = getGroundedJoints();
-
     std::unordered_set<App::DocumentObject*> groundedSet;
-    for (auto gJoint : groundedJoints) {
-        if (!gJoint) {
-            continue;
-        }
-
-        auto* propObj = dynamic_cast<App::PropertyLink*>(gJoint->getPropertyByName("ObjectToGround"));
-
-        if (propObj) {
-            App::DocumentObject* objToGround = propObj->getValue();
-            if (objToGround) {
-                if (auto* asmLink = dynamic_cast<AssemblyLink*>(objToGround)) {
-                    if (!asmLink->isRigid()) {
-                        continue;
-                    }
-                }
-                groundedSet.insert(objToGround);
+    std::vector<App::DocumentObject*> allParts = getAssemblyComponents(this);
+    for (auto part : allParts) {
+        if (part) {
+            auto propPlc = part->getPlacementProperty();
+            if (propPlc && propPlc->isReadOnly()) {
+                groundedSet.insert(part);
             }
         }
     }
@@ -882,6 +1484,22 @@ std::unordered_set<App::DocumentObject*> AssemblyObject::getGroundedParts()
 
     // Origin is not in Group so we add it separately
     groundedSet.insert(Origin.getValue());
+
+    // Propagate grounding through active rigid clusters.
+    std::vector<App::DocumentObject*> groundedSnapshot(groundedSet.begin(), groundedSet.end());
+    for (auto* groundedObj : groundedSnapshot) {
+        if (!groundedObj) {
+            continue;
+        }
+
+        if (const auto* members = getRigidMembers(groundedObj)) {
+            for (auto* member : *members) {
+                if (member) {
+                    groundedSet.insert(member);
+                }
+            }
+        }
+    }
 
     return groundedSet;
 }
@@ -1097,6 +1715,17 @@ std::vector<ObjRef> AssemblyObject::getConnectedParts(
             connectedParts.push_back({obj1, ref});
         }
     }
+
+    // Add rigid-cluster neighbors as fixed-like connectivity edges.
+    if (const auto* members = getRigidMembers(part)) {
+        for (auto* member : *members) {
+            if (!member || member == part || isObjInSetOfObjRefs(member, connectedParts)) {
+                continue;
+            }
+            connectedParts.push_back({member, nullptr});
+        }
+    }
+
     return connectedParts;
 }
 
@@ -1124,7 +1753,7 @@ bool AssemblyObject::isPartConnected(App::DocumentObject* obj)
     }
 
     auto groundedObjs = getGroundedParts();
-    std::vector<App::DocumentObject*> joints = getJoints(false);
+    std::vector<App::DocumentObject*> joints = getJoints();
 
     std::vector<ObjRef> connectedParts;
 
@@ -1433,6 +2062,10 @@ std::vector<std::shared_ptr<MbD::ASMTJoint>> AssemblyObject::makeMbdJoint(App::D
     if (!mbdJoint || !isMbDJointValid(joint)) {
         return {};
     }
+    if ((jointType == JointType::Gears || jointType == JointType::Belt)
+        && gearJointNeedsCarrierMarker(joint)) {
+        setGearJointCarrierMarkerIfAvailable(this, joint, mbdJoint);
+    }
 
     std::string fullMarkerNameI, fullMarkerNameJ;
     if (jointType == JointType::RackPinion) {
@@ -1557,6 +2190,24 @@ std::vector<std::shared_ptr<MbD::ASMTJoint>> AssemblyObject::makeMbdJoint(App::D
         }
     }
     std::vector<App::DocumentObject*> done;
+
+    auto replaceInitialValue =
+        [](std::string& form, App::DocumentObject* jnt, const std::string& mType) {
+            if (form.find("initialValue") != std::string::npos) {
+                double val = getJointCurrentValue(jnt, mType == "Angular");
+
+                std::ostringstream out;
+                out.precision(10);
+                out << val;
+                std::string valStr = out.str();
+
+                size_t pos;
+                while ((pos = form.find("initialValue")) != std::string::npos) {
+                    form.replace(pos, 12, valStr);
+                }
+            }
+        };
+
     // Add motions if needed
     for (auto* motion : motions) {
         if (std::ranges::find(done, motion) != done.end()) {
@@ -1582,6 +2233,8 @@ std::vector<std::shared_ptr<MbD::ASMTJoint>> AssemblyObject::makeMbdJoint(App::D
             continue;
         }
         std::string motionType = pType->getValueAsString();
+
+        replaceInitialValue(formula, joint, motionType);
 
         // check if there is a second motion as cylindrical can have both,
         // in which case the solver needs a general motion.
@@ -1610,6 +2263,8 @@ std::vector<std::shared_ptr<MbD::ASMTJoint>> AssemblyObject::makeMbdJoint(App::D
             if (motionType2 == motionType) {
                 continue;  // only if both motions are different. ie one angular and one linear.
             }
+
+            replaceInitialValue(formula2, joint, motionType2);
 
             auto ASMTmotion = CREATE<ASMTGeneralMotion>::With();
             ASMTmotion->setName(joint->getFullName() + "-ScrewMotion");
@@ -1646,7 +2301,8 @@ std::vector<std::shared_ptr<MbD::ASMTJoint>> AssemblyObject::makeMbdJoint(App::D
 std::string AssemblyObject::handleOneSideOfJoint(
     App::DocumentObject* joint,
     const char* propRefName,
-    const char* propPlcName
+    const char* propPlcName,
+    const std::string& markerName
 )
 {
     App::DocumentObject* part = getMovingPartFromRef(joint, propRefName);
@@ -1654,7 +2310,7 @@ std::string AssemblyObject::handleOneSideOfJoint(
 
     if (!part || !obj) {
         Base::Console()
-            .warning("The property %s of Joint %s is bad.\n", propRefName, joint->getFullName());
+            .warning("The property {} of Joint {} is bad.\n", propRefName, joint->getFullName());
         return "";
     }
 
@@ -1663,30 +2319,30 @@ std::string AssemblyObject::handleOneSideOfJoint(
     Base::Placement plc = getPlacementFromProp(joint, propPlcName);
     // Now we have plc which is the JCS placement, but its relative to the Object, not to the
     // containing Part.
-
-    if (obj->getNameInDocument() != part->getNameInDocument()) {
-
-        auto* ref = dynamic_cast<App::PropertyXLinkSub*>(joint->getPropertyByName(propRefName));
-        if (!ref) {
-            return "";
-        }
-
-        Base::Placement obj_global_plc = getGlobalPlacement(obj, ref);
-        plc = obj_global_plc * plc;
-
-        Base::Placement part_global_plc = getGlobalPlacement(part, ref);
-        plc = part_global_plc.inverse() * plc;
+    auto* ref = dynamic_cast<App::PropertyXLinkSub*>(joint->getPropertyByName(propRefName));
+    if (!ref) {
+        return "";
     }
+
+    // This plc adjustment should be necessary only if obj != part. But for some objects like
+    // draft links, we can have obj == part and still need to get global placement to adjust
+    // by the element placement.
+    Base::Placement obj_global_plc = getGlobalPlacement(nullptr, ref);
+    plc = obj_global_plc * plc;
+    // Note part is supposed to be root of ref, so we could use part.Placement directly.
+    Base::Placement part_global_plc = getGlobalPlacement(part, ref);
+    plc = part_global_plc.inverse() * plc;
+
     // check if we need to add an offset in case of bundled parts.
     if (!data.offsetPlc.isIdentity()) {
         plc = data.offsetPlc * plc;
     }
 
-    std::string markerName = joint->getFullName();
-    auto mbdMarker = makeMbdMarker(markerName, plc);
+    std::string markerNameCopy = markerName.empty() ? joint->getFullName() : markerName;
+    auto mbdMarker = makeMbdMarker(markerNameCopy, plc);
     mbdPart->addMarker(mbdMarker);
 
-    return "/OndselAssembly/" + mbdPart->name + "/" + markerName;
+    return "/OndselAssembly/" + mbdPart->name + "/" + markerNameCopy;
 }
 
 void AssemblyObject::getRackPinionMarkers(
@@ -1718,7 +2374,7 @@ void AssemblyObject::getRackPinionMarkers(
     Base::Placement plc2 = getPlacementFromProp(joint, "Placement2");
 
     if (!part1 || !obj1) {
-        Base::Console().warning("Reference1 of Joint %s is bad.\n", joint->getFullName());
+        Base::Console().warning("Reference1 of Joint {} is bad.\n", joint->getFullName());
         return;
     }
 
@@ -1758,7 +2414,7 @@ void AssemblyObject::getRackPinionMarkers(
     Base::Rotation yawRotation(currentZAxis, yawAdjustment);
 
     // Combine the initial rotation with the yaw adjustment
-    Base::Rotation adjustedRotation = rot * yawRotation;
+    Base::Rotation adjustedRotation = yawRotation * rot;
     plc1.setRotation(adjustedRotation);
 
     // Then end of processing similar to handleOneSideOfJoint :
@@ -1785,17 +2441,15 @@ void AssemblyObject::getRackPinionMarkers(
 int AssemblyObject::slidingPartIndex(App::DocumentObject* joint)
 {
     App::DocumentObject* part1 = getMovingPartFromRef(joint, "Reference1");
-    App::DocumentObject* obj1 = getObjFromJointRef(joint, "Reference1");
-    boost::ignore_unused(obj1);
-    Base::Placement plc1 = getPlacementFromProp(joint, "Placement1");
-
     App::DocumentObject* part2 = getMovingPartFromRef(joint, "Reference2");
-    App::DocumentObject* obj2 = getObjFromJointRef(joint, "Reference2");
-    boost::ignore_unused(obj2);
-    Base::Placement plc2 = getPlacementFromProp(joint, "Placement2");
+
+    // Compare the JCS in global coordinates: the slider and this joint may reference
+    // different sub-objects of the same part.
+    Base::Placement plc1 = getJointSideGlobalPlacement(joint, "Reference1", "Placement1");
+    Base::Placement plc2 = getJointSideGlobalPlacement(joint, "Reference2", "Placement2");
 
     int slidingFound = 0;
-    for (auto* jt : getJoints(false, false)) {
+    for (auto* jt : getJoints()) {
         if (getJointType(jt) == JointType::Slider) {
             App::DocumentObject* jpart1 = getMovingPartFromRef(jt, "Reference1");
             App::DocumentObject* jpart2 = getMovingPartFromRef(jt, "Reference2");
@@ -1804,21 +2458,22 @@ int AssemblyObject::slidingPartIndex(App::DocumentObject* joint)
             if (jpart1 == part1 || jpart1 == part2) {
                 found = (jpart1 == part1) ? 1 : 2;
                 plci = (jpart1 == part1) ? plc1 : plc2;
-                plcjt = getPlacementFromProp(jt, "Placement1");
+                plcjt = getJointSideGlobalPlacement(jt, "Reference1", "Placement1");
             }
             else if (jpart2 == part1 || jpart2 == part2) {
                 found = (jpart2 == part1) ? 1 : 2;
                 plci = (jpart2 == part1) ? plc1 : plc2;
-                plcjt = getPlacementFromProp(jt, "Placement2");
+                plcjt = getJointSideGlobalPlacement(jt, "Reference2", "Placement2");
             }
 
             if (found != 0) {
-                // check the placements plcjt and (jcs1 or jcs2 depending on found value) Z axis are
-                // colinear ie if their pitch and roll are the same.
-                double y1, p1, r1, y2, p2, r2;
-                plcjt.getRotation().getYawPitchRoll(y1, p1, r1);
-                plci.getRotation().getYawPitchRoll(y2, p2, r2);
-                if (fabs(p1 - p2) < Precision::Confusion() && fabs(r1 - r2) < Precision::Confusion()) {
+                // Check that the Z axes of plcjt and plci are parallel. Do not compare
+                // pitch/roll: a yaw offset on the slider JCS (e.g. to align the rack) rotates
+                // about its local Z axis, which keeps the axis but changes pitch and roll
+                // whenever that axis is not the global Z.
+                Base::Vector3d axisjt = plcjt.getRotation().multVec(Base::Vector3d(0, 0, 1));
+                Base::Vector3d axisi = plci.getRotation().multVec(Base::Vector3d(0, 0, 1));
+                if (axisjt.Cross(axisi).Length() < Precision::Confusion()) {
                     slidingFound = found;
                 }
             }
@@ -1841,7 +2496,7 @@ bool AssemblyObject::isMbDJointValid(App::DocumentObject* joint)
     // If this joint is self-referential it must be ignored.
     if (getMbDPart(part1) == getMbDPart(part2)) {
         Base::Console().warning(
-            "Assembly: Ignoring joint (%s) because its parts are connected by a fixed "
+            "Assembly: Ignoring joint ({}) because its parts are connected by a fixed "
             "joint bundle. This joint is a conflicting or redundant constraint.\n",
             joint->getFullLabel()
         );
@@ -1856,6 +2511,39 @@ AssemblyObject::MbDPartData AssemblyObject::getMbDData(App::DocumentObject* part
     if (it != objectPartMap.end()) {
         // part has been associated with an ASMTPart before
         return it->second;
+    }
+
+    // Associate objects that belong to an active rigid cluster.
+    if (auto* rep = getRigidRepresentative(part)) {
+        Base::Placement repPlc = getPlacementFromProp(rep, "Placement");
+
+        std::shared_ptr<ASMTPart> mbdPart;
+        const auto repMapped = objectPartMap.find(rep);
+        if (repMapped != objectPartMap.end()) {
+            mbdPart = repMapped->second.part;
+        }
+        else {
+            std::string repName = rep->getFullName();
+            mbdPart = makeMbdPart(repName, repPlc);
+            mbdAssembly->addPart(mbdPart);
+            objectPartMap[rep] = {mbdPart, Base::Placement()};
+        }
+
+        if (const auto* members = getRigidMembers(rep)) {
+            for (auto* member : *members) {
+                if (!member || objectPartMap.find(member) != objectPartMap.end()) {
+                    continue;
+                }
+
+                Base::Placement memberPlc = getPlacementFromProp(member, "Placement");
+                objectPartMap[member] = {mbdPart, repPlc.inverse() * memberPlc};
+            }
+        }
+
+        auto mapped = objectPartMap.find(part);
+        if (mapped != objectPartMap.end()) {
+            return mapped->second;
+        }
     }
 
     // part has not been associated with an ASMTPart before
@@ -1967,7 +2655,7 @@ std::vector<ObjRef> AssemblyObject::getDownstreamParts(
         setJointActivated(joint, false);
     }
 
-    std::vector<App::DocumentObject*> joints = getJoints(false);
+    std::vector<App::DocumentObject*> joints = getJoints();
 
     std::vector<ObjRef> connectedParts = {{part, nullptr}};
     traverseAndMarkConnectedParts(part, connectedParts, joints);
@@ -2054,7 +2742,7 @@ void AssemblyObject::ensureIdentityPlacements()
         // When used in assembly, link groups must have identity placements.
         if (obj->isLinkGroup()) {
             auto* link = dynamic_cast<App::Link*>(obj);
-            auto* pPlc = dynamic_cast<App::PropertyPlacement*>(obj->getPropertyByName("Placement"));
+            auto* pPlc = obj->getPlacementProperty();
             if (!pPlc || !link) {
                 continue;
             }
@@ -2070,10 +2758,82 @@ void AssemblyObject::ensureIdentityPlacements()
             // To keep the LinkElement positions, we apply plc to their placements
             std::vector<App::DocumentObject*> elts = link->ElementList.getValues();
             for (auto* elt : elts) {
-                pPlc = dynamic_cast<App::PropertyPlacement*>(elt->getPropertyByName("Placement"));
+                pPlc = elt->getPlacementProperty();
                 pPlc->setValue(plc * pPlc->getValue());
                 elt->purgeTouched();
             }
+        }
+    }
+}
+
+void AssemblyObject::syncGroundedJoints()
+{
+    if (App::GetApplication().isRestoring()) {
+        return;
+    }
+
+    std::vector<App::DocumentObject*> groundedJoints = getGroundedJoints();
+    std::map<App::DocumentObject*, App::DocumentObject*> groundedMap;
+    for (auto gJoint : groundedJoints) {
+        auto propObj = dynamic_cast<App::PropertyLink*>(gJoint->getPropertyByName("ObjectToGround"));
+        if (propObj && propObj->getValue()) {
+            groundedMap[propObj->getValue()] = gJoint;
+        }
+    }
+
+    std::vector<App::DocumentObject*> allParts = getAssemblyComponents(this);
+
+    for (auto part : allParts) {
+        if (!part) {
+            continue;
+        }
+        auto propPlc = part->getPlacementProperty();
+        if (!propPlc) {
+            continue;
+        }
+
+        bool isReadOnly = propPlc->isReadOnly();
+        auto it = groundedMap.find(part);
+        bool hasJoint = (it != groundedMap.end());
+
+        // Create grounding joint if placement is locked but no joint exists
+        if (isReadOnly && !hasJoint) {
+            Base::PyGILStateLocker lock;
+            try {
+                std::string docName = getDocument()->getName();
+                std::string asmName = getNameInDocument();
+                std::string partName = part->getNameInDocument();
+                std::string code = "import FreeCAD\n"
+                                   "try:\n"
+                                   "    import JointObject\n"
+                                   "    import UtilsAssembly\n"
+                                   "    doc = FreeCAD.getDocument('"
+                    + docName
+                    + "')\n"
+                      "    asm = doc.getObject('"
+                    + asmName
+                    + "')\n"
+                      "    part = doc.getObject('"
+                    + partName
+                    + "')\n"
+                      "    jg = UtilsAssembly.getJointGroup(asm)\n"
+                      "    if jg:\n"
+                      "        j = jg.newObject('App::FeaturePython', 'GroundedJoint')\n"
+                      "        JointObject.GroundedJoint(j, part)\n"
+                      "        if hasattr(JointObject, 'ViewProviderGroundedJoint') and getattr(j, "
+                      "'ViewObject', None):\n"
+                      "            JointObject.ViewProviderGroundedJoint(j.ViewObject)\n"
+                      "        j.recompute()\n"
+                      "except Exception as e:\n"
+                      "    FreeCAD.Console.PrintError(str(e) + '\\n')\n";
+                Base::Interpreter().runString(code.c_str());
+            }
+            catch (...) {
+            }
+        }
+        // Delete grounding joint if placement lock was lifted
+        else if (!isReadOnly && hasJoint) {
+            getDocument()->removeObject(it->second->getNameInDocument());
         }
     }
 }

@@ -22,13 +22,14 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef SKETCHER_CONSTRAINT_H
-#define SKETCHER_CONSTRAINT_H
+#pragma once
 
 #include <array>
 
 #include <Base/Persistence.h>
 #include <Base/Quantity.h>
+#include <Base/Bitmask.h>
+
 #include <boost/uuid/uuid.hpp>
 #include <boost/uuid/uuid_generators.hpp>
 
@@ -70,6 +71,8 @@ enum ConstraintType : int
     Block = 17,
     Diameter = 18,
     Weight = 19,
+    Group = 20,
+    Text = 21,
     NumConstraintTypes  // must be the last item!
 };
 
@@ -89,6 +92,15 @@ enum InternalAlignmentType
     ParabolaFocalAxis = 11,
     NumInternalAlignmentType  // must be the last item!
 };
+enum class ConstraintOrientations
+{
+    None = 0,
+    CounterClockwise = 1,
+    Clockwise = 2,
+    Internal = 4,
+    External = 8
+};
+using ConstraintOrientation = Base::Flags<ConstraintOrientations>;
 
 class SketcherExport Constraint: public Base::Persistence
 {
@@ -139,6 +151,7 @@ public:
     /// utility function to swap the index in elements of the provided constraint from the
     /// fromGeoId GeoId to toGeoId
     void substituteIndex(int fromGeoId, int toGeoId);
+
     /// utility function to swap the index and position in elements of the provided
     /// constraint from {fromGeoId, fromPosId} to {toGeoId, toPosId}.
     void substituteIndexAndPos(int fromGeoId, PointPos fromPosId, int toGeoId, PointPos toPosId);
@@ -148,6 +161,10 @@ public:
 
     /// utility function to check if (`geoId`, `posId`) is one of the points/curves
     bool involvesGeoIdAndPosId(int geoId, PointPos posId) const;
+
+    std::string toString() const;
+
+    std::string elementsToString() const;
 
     std::string typeToString() const
     {
@@ -190,7 +207,9 @@ private:
          "SnellsLaw",
          "Block",
          "Diameter",
-         "Weight"}};
+         "Weight",
+         "Group",
+         "Text"}};
     // clang-format on
 
     constexpr static std::array<const char*, InternalAlignmentType::NumInternalAlignmentType>
@@ -207,12 +226,15 @@ private:
              "BSplineControlPoint",
              "BSplineKnotPoint",
              "ParabolaFocalAxis"}
-        };
+    };
 
 public:
     ConstraintType Type {None};
     InternalAlignmentType AlignmentType {Undef};
+    ConstraintOrientation Orientation {ConstraintOrientations::None};
+
     std::string Name;
+    std::string MetaData;
     float LabelDistance {10.F};
     float LabelPosition {0.F};
     bool isDriving {true};
@@ -226,8 +248,27 @@ public:
 
     GeoElementId getElement(size_t index) const;
     void setElement(size_t index, GeoElementId element);
-    size_t getElementsSize() const;
     void addElement(GeoElementId element);
+    bool hasElement(size_t index) const;
+    size_t getElementsSize() const;
+    bool isElementsEmpty() const;
+    void truncateElements(size_t newSize);
+    int getGeoId(size_t index) const;
+    PointPos getPosId(size_t index) const;
+    int getPosIdAsInt(size_t index) const;
+    void setGeoId(size_t index, int geoId);
+    void setPosId(size_t index, PointPos pos);
+    void setPosId(size_t index, int pos);
+    void swapElements(size_t index1, size_t index2);
+    void ensureElementExists(size_t index);
+    size_t getElementIndexForGeoId(int geoId) const;
+
+    std::string getText() const;
+    void setText(const std::string& text);
+    std::string getFont() const;
+    void setFont(const std::string& font);
+    bool getIsTextHeight() const;
+    void setIsTextHeight(bool val);
 
 #ifdef SKETCHER_CONSTRAINT_USE_LEGACY_ELEMENTS
     // Deprecated, use getElement/setElement instead
@@ -241,7 +282,7 @@ public:
 
 private:
     // New way to access point ids and positions.
-    // While the old way is still supported, it is recommended to the getters and setters instead.
+    // While the old way is still supported, it is recommended to use the getters and setters instead.
     std::vector<GeoElementId> elements {GeoElementId(), GeoElementId(), GeoElementId()};
 
 protected:
@@ -250,5 +291,4 @@ protected:
 
 }  // namespace Sketcher
 
-
-#endif  // SKETCHER_CONSTRAINT_H
+ENABLE_BITMASK_OPERATORS(Sketcher::ConstraintOrientations);

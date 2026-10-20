@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef SKETCHER_SKETCH_H
-#define SKETCHER_SKETCH_H
+#pragma once
 
 #include <Base/Persistence.h>
 #include <CXX/Objects.hxx>
@@ -53,8 +52,10 @@ public:
     void Restore(Base::XMLReader& /*reader*/) override;
 
     /// solve the actual set up sketch
-    int solve();
-    /// resets the solver
+    GCS::SolveStatus solve();
+    /** Reset the solver.
+     * @return DoF degree count.
+     */
     int resetSolver();
     /// get standard (aka fine) solver precision
     double getSolverPrecision()
@@ -89,7 +90,11 @@ public:
     int addGeometry(const std::vector<Part::Geometry*>& geos, bool fixed = false);
     /// add unspecified geometry, where each element's "fixed" status is given by the
     /// blockedGeometry array
-    int addGeometry(const std::vector<Part::Geometry*>& geos, const std::vector<bool>& blockedGeometry);
+    int addGeometry(
+        const std::vector<Part::Geometry*>& geos,
+        const std::vector<bool>& blockedGeometry,
+        const std::set<int>& inGroupGeoIds
+    );
     /// get boolean list indicating whether the geometry is to be blocked or not
     void getBlockedGeometry(
         std::vector<bool>& blockedGeometry,
@@ -168,13 +173,13 @@ public:
     /** initializes a point (or curve) drag by setting the current
      * sketch status as a reference
      */
-    int initMove(const std::vector<GeoElementId>& geoEltIds, bool fine = true);
-    int initMove(int geoId, PointPos pos, bool fine = true);
+    int initMove(const std::vector<GeoElementId>& geoEltIds);
+    int initMove(int geoId, PointPos pos);
 
     /** Initializes a B-spline piece drag by setting the current
      * sketch status as a reference. Only moves piece around `firstPoint`.
      */
-    int initBSplinePieceMove(int geoId, PointPos pos, const Base::Vector3d& firstPoint, bool fine = true);
+    int initBSplinePieceMove(int geoId, PointPos pos, const Base::Vector3d& firstPoint);
 
     /** Resets the initialization of a point or curve drag
      */
@@ -189,12 +194,12 @@ public:
      * a condition for satisfying the new point location!
      * The relative flag permits moving relatively to the current position
      */
-    int moveGeometries(
+    GCS::SolveStatus moveGeometries(
         const std::vector<GeoElementId>& geoEltIds,
         Base::Vector3d toPoint,
         bool relative = false
     );
-    int moveGeometry(int geoId, PointPos pos, Base::Vector3d toPoint, bool relative = false);
+    GCS::SolveStatus moveGeometry(int geoId, PointPos pos, Base::Vector3d toPoint, bool relative = false);
 
     /**
      * Sets whether the initial solution should be recalculated while dragging after a certain
@@ -246,6 +251,12 @@ public:
     );
     /// add one constraint to the sketch
     int addConstraint(const Constraint* constraint);
+
+    /// Updates the internal constraints of the given indexes
+    bool updateConstraints(
+        const std::vector<int>& constrIds,
+        const std::vector<Constraint*>& ConstraintList
+    );
 
     /**
      *   add a fixed X coordinate constraint to a point
@@ -332,7 +343,14 @@ public:
      *   constraint value and already inserted into either the FixParameters or
      *   Parameters array, as the case may be.
      */
-    int addDistanceConstraint(int geoId1, PointPos pos1, int geoId2, double* value, bool driving = true);
+    int addDistanceConstraint(
+        int geoId1,
+        PointPos pos1,
+        int geoId2,
+        double* value,
+        ConstraintOrientation orientation,
+        bool driving = true
+    );
     /**
      *   add a length or distance constraint
      *
@@ -355,14 +373,22 @@ public:
      *   constraint value and already inserted into either the FixParameters or
      *   Parameters array, as the case may be.
      */
-    int addDistanceConstraint(int geoId1, int geoId2, double* value, bool driving = true);
+    int addDistanceConstraint(
+        int geoId1,
+        int geoId2,
+        double* value,
+        ConstraintOrientation orientation,
+        bool driving = true
+    );
 
     /// add a parallel constraint between two lines
     int addParallelConstraint(int geoId1, int geoId2);
     /// add a perpendicular constraint between two lines
     int addPerpendicularConstraint(int geoId1, int geoId2);
+    /// add a perpendicular constraint between two points and a line
+    int addPerpendicularConstraint(int geoId1, PointPos pos1, int geoId2, PointPos pos2, int geoId3);
     /// add a tangency constraint between two geometries
-    int addTangentConstraint(int geoId1, int geoId2);
+    int addTangentConstraint(int geoId1, int geoId2, ConstraintOrientation orientation);
     int addTangentLineAtBSplineKnotConstraint(
         int checkedlinegeoId,
         int checkedbsplinegeoId,
@@ -621,9 +647,36 @@ private:
     std::vector<GCS::BSpline> BSplines;
 
     bool isInitMove;
-    bool isFine;
     Base::Vector3d initToPoint;
     double moveStep;
+
+    // Group related things :
+    /// container to store information about groups
+    struct GroupLineState
+    {
+        Base::Vector3d startPoint;
+        Base::Vector3d endPoint;
+
+        // Convenience method to get the length (scale)
+        double getLength() const
+        {
+            return (endPoint - startPoint).Length();
+        }
+
+        // Convenience method to get the orientation vector
+        Base::Vector3d getVec() const
+        {
+            return endPoint - startPoint;
+        }
+    };
+    // This map stores the state of group lines just BEFORE a solve.
+    // We will use this to calculate the transformation AFTER the solve.
+    // Key: GeoId of the frame line.
+    // Value: it's initial position.
+    std::map<int, GroupLineState> preSolveGroupStates;
+    void captureGroupStates();
+    void applyGroupTransformations();
+    GroupLineState getGroupLineState(int geoId) const;
 
 public:
     GCS::Algorithm defaultSolver;
@@ -758,7 +811,7 @@ private:
 
     void buildInternalAlignmentGeometryMap(const std::vector<Constraint*>& constraintList);
 
-    int internalSolve(std::string& solvername, int level = 0);
+    GCS::SolveStatus internalSolve(std::string& solvername, int level = 0);
 
     /// checks if the index bounds and converts negative indices to positive
     int checkGeoId(int geoId) const;
@@ -844,6 +897,3 @@ private:
 };
 
 }  // namespace Sketcher
-
-
-#endif  // SKETCHER_SKETCH_H

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2023 Peter McB                                          *
  *   Copyright (c) 2013 Jürgen Riegel (FreeCAD@juergen-riegel.net)         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef FemGui_TaskCreateElementSet_H
-#define FemGui_TaskCreateElementSet_H
+#pragma once
 
 #include <Gui/TaskView/TaskView.h>
 #include <Mod/Fem/App/FemSetElementNodesObject.h>
@@ -88,5 +89,3 @@ private:
 };
 
 }  // namespace FemGui
-
-#endif  // FemGui_TaskCreateElementSet_H

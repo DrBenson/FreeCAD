@@ -6,11 +6,10 @@ set(SurfaceGui_LIBS
     FreeCADGui
 )
 
-set (Surface_TR_QRC ${CMAKE_CURRENT_BINARY_DIR}/Resources/Surface_translation.qrc)
-qt_find_and_add_translation(QM_SRCS "Resources/translations/*_*.ts"
-    ${CMAKE_CURRENT_BINARY_DIR}/Resources/translations)
-qt_create_resource_file(${Surface_TR_QRC} ${QM_SRCS})
-qt_add_resources(SurfaceGui_QRC_SRCS Resources/Surface.qrc ${Surface_TR_QRC})
+qt_add_resources(SurfaceGui_QRC_SRCS
+    Resources/Surface.qrc
+    OPTIONS ${FREECAD_RCC_OPTIONS}
+)
 
 SET(SurfaceGui_UIC_SRCS
     TaskFilling.ui
@@ -80,11 +79,9 @@ target_include_directories(
 
 target_link_directories(SurfaceGui PUBLIC ${OCC_LIBRARY_DIR})
 target_link_libraries(SurfaceGui ${SurfaceGui_LIBS})
-if (FREECAD_WARN_ERROR)
-    target_compile_warn_error(SurfaceGui)
-endif()
+target_compile_warn_error(SurfaceGui)
 
-SET_BIN_DIR(SurfaceGui SurfaceGui /Mod/Surface)
+SET_BIN_DIR(SurfaceGui)
 SET_PYTHON_PREFIX_SUFFIX(SurfaceGui)
 
 fc_copy_sources(SurfaceGui "${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_DATADIR}/Mod/Surface" ${SurfaceGuiIcon_SVG})

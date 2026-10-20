@@ -23,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef GUI_TASKVIEW_TaskDressUpParameters_H
-#define GUI_TASKVIEW_TaskDressUpParameters_H
+#pragma once
 
 #include <Gui/DocumentObserver.h>
 #include <Gui/TaskView/TaskView.h>
@@ -55,6 +54,8 @@ public:
         ViewProviderDressUp* DressUpView,
         bool selectEdges,
         bool selectFaces,
+        bool selectSolids = false,
+        bool solidNoSubShapes = true,
         QWidget* parent = nullptr
     );
     ~TaskDressUpParameters() override;
@@ -69,6 +70,8 @@ public:
         return transactionID;
     }
 
+    void setSelectionGate();
+
     bool event(QEvent* event) override;
 
 protected Q_SLOTS:
@@ -81,6 +84,7 @@ protected Q_SLOTS:
     void createAddAllEdgesAction(QListWidget* parentList);
 
 protected:
+    bool eventFilter(QObject* watched, QEvent* event) override;
     void referenceSelected(const Gui::SelectionChanges& msg, QListWidget* widget);
     bool wasDoubleClicked = false;
     void keyPressEvent(QKeyEvent* ke) override;
@@ -88,6 +92,22 @@ protected:
     void addAllEdges(QListWidget* listWidget);
     void deleteRef(QListWidget* listWidget);
     void updateFeature(PartDesign::DressUp* pcDressUp, const std::vector<std::string>& refs);
+
+    /// Convert individual face/edges selection to solid selection
+    void convertSelectionToSolids(QListWidget* widget, bool edgesEnabled, bool facesEnabled);
+    void convertSelectionToSolids(
+        std::vector<std::string>& refs,
+        bool edgesEnabled,
+        bool facesEnabled
+    ) const;
+
+    /// Selects ALL faces/edges from any selected solids
+    void convertSelectionToElements(QListWidget* widget, bool edgesEnabled, bool facesEnabled);
+    void convertSelectionToElements(
+        std::vector<std::string>& refs,
+        bool edgesEnabled,
+        bool facesEnabled
+    ) const;
 
 protected:
     enum selectionModes
@@ -112,7 +132,15 @@ protected:
     QAction* deleteAction;
     QAction* addAllEdgesAction;
 
-    bool allowFaces, allowEdges;
+    /// Allow face selection
+    bool allowFaces;
+    /// Allow edge selection
+    bool allowEdges;
+    /// Allow solid selection, will only take effect if a face is selected and allowFaces == false
+    /// or a edge is selected and allowEdges == false
+    bool allowSolids;
+    /// Removes faces/edges that were previously selected when selecting a solid to avoid duplicates
+    bool solidNoSubShapes;
     selectionModes selectionMode;
     int transactionID;
 
@@ -144,5 +172,3 @@ protected:
 };
 
 }  // namespace PartDesignGui
-
-#endif  // GUI_TASKVIEW_TaskDressUpParameters_H

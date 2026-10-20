@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jürgen Riegel <FreeCAD@juergen-riegel.net>         *
  *                                                                         *
@@ -21,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef FEM_ViewProviderResult_H
-#define FEM_ViewProviderResult_H
+#pragma once
 
 #include <Gui/ViewProviderDocumentObject.h>
 #include <Gui/ViewProviderFeaturePython.h>
@@ -45,13 +46,10 @@ public:
     // shows solid in the tree
     bool isShow() const override
     {
-        return true;
+        return Visibility.getValue();
     }
 };
 
 using ViewProviderResultPython = Gui::ViewProviderFeaturePythonT<ViewProviderResult>;
 
 }  // namespace FemGui
-
-
-#endif  // FEM_ViewProviderResult_H

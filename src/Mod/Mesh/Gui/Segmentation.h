@@ -22,16 +22,14 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef MESHGUI_SEGMENTATION_H
-#define MESHGUI_SEGMENTATION_H
+#pragma once
 
 #include <QWidget>
 
+#include <App/DocumentObserver.h>
 #include <Gui/TaskView/TaskDialog.h>
 #include <Gui/TaskView/TaskView.h>
-#ifndef MESH_GLOBAL_H
-# include <Mod/Mesh/MeshGlobal.h>
-#endif
+#include <Mod/Mesh/MeshGlobal.h>
 
 
 // forward declarations
@@ -60,7 +58,7 @@ protected:
 
 private:
     Ui_Segmentation* ui;
-    Mesh::Feature* myMesh;
+    App::WeakPtrT<Mesh::Feature> myMesh;
 
     Q_DISABLE_COPY_MOVE(Segmentation)
 };
@@ -86,5 +84,3 @@ private:
 };
 
 }  // namespace MeshGui
-
-#endif  // MESHGUI_SEGMENTATION_H

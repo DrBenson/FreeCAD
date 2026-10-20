@@ -21,8 +21,7 @@
  ***************************************************************************/
 
 
-#ifndef GUI_ACTION_H
-#define GUI_ACTION_H
+#pragma once
 
 #include <memory>
 #include <QAction>
@@ -244,7 +243,11 @@ class GuiExport RecentFilesAction: public ActionGroup
     Q_OBJECT
 
 public:
-    explicit RecentFilesAction(Command* pcCmd, QObject* parent = nullptr);
+    /**
+     * @param addOpen Whether to prepend an Open action and separator to the recent-files
+     * menu.
+     */
+    explicit RecentFilesAction(Command* pcCmd, QObject* parent = nullptr, bool addOpen = false);
     ~RecentFilesAction() override;
 
     void appendFile(const QString&);
@@ -265,6 +268,7 @@ private:
     int maximumItems; /**< Number of maximum items */
 
     QAction sep, clearRecentFilesListAction;
+    QList<QAction*> recentFileActions;
 
     class Private;
     friend class Private;
@@ -422,5 +426,3 @@ private:
 };
 
 }  // namespace Gui
-
-#endif  // GUI_ACTION_H

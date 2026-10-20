@@ -23,6 +23,7 @@
 # *                                                                         *
 # ***************************************************************************
 """Provides the viewprovider code for the WorkingPlaneProxy object."""
+
 ## @package view_wpproxy
 # \ingroup draftviewproviders
 # \brief Provides the viewprovider code for the WorkingPlaneProxy object.
@@ -36,7 +37,9 @@ from PySide.QtCore import QT_TRANSLATE_NOOP
 
 import FreeCAD as App
 import FreeCADGui as Gui
+from draftutils import gui_utils
 from draftutils import params
+from draftutils.translate import translate
 
 
 class ViewProviderWorkingPlaneProxy:
@@ -59,10 +62,12 @@ class ViewProviderWorkingPlaneProxy:
         vobj.addProperty("App::PropertyColor", "LineColor", "Base", "", locked=True)
 
         vobj.addProperty("App::PropertyFloatList", "ViewData", "Base", "", locked=True)
+        vobj.setPropertyStatus("ViewData", "Hidden")
 
         vobj.addProperty("App::PropertyBool", "RestoreView", "Base", "", locked=True)
 
         vobj.addProperty("App::PropertyMap", "VisibilityMap", "Base", "", locked=True)
+        vobj.setPropertyStatus("VisibilityMap", "Hidden")
 
         vobj.addProperty("App::PropertyBool", "RestoreState", "Base", "", locked=True)
 
@@ -88,7 +93,9 @@ class ViewProviderWorkingPlaneProxy:
 
     def setupContextMenu(self, vobj, menu):
         action1 = QtGui.QAction(
-            QtGui.QIcon(":/icons/Draft_SelectPlane.svg"), "Save Camera Position", menu
+            QtGui.QIcon(":/icons/Draft_SelectPlane.svg"),
+            translate("draft", "Save Camera View"),
+            menu,
         )
         QtCore.QObject.connect(action1, QtCore.SIGNAL("triggered()"), self.writeCamera)
         menu.addAction(action1)
@@ -129,6 +136,7 @@ class ViewProviderWorkingPlaneProxy:
 
     def attach(self, vobj):
         self.clip = None
+        self.main_transform = gui_utils.find_coin_node(vobj.RootNode, coin.SoTransform)
         self.mat1 = coin.SoMaterial()
         self.mat2 = coin.SoMaterial()
         self.fcoords = coin.SoCoordinate3()
@@ -202,42 +210,47 @@ class ViewProviderWorkingPlaneProxy:
                 l = vobj.DisplaySize.Value / 2
             else:
                 l = 1
-            verts = []
-            fverts = []
-            l1 = 0.1
             if hasattr(vobj, "ArrowSize"):
                 l1 = vobj.ArrowSize.Value if vobj.ArrowSize.Value > 0 else 0.1
+            else:
+                l1 = 0.1
             l2 = l1 / 3
-            pl = App.Placement(vobj.Object.Placement)
-            fverts.append(pl.multVec(App.Vector(-l, -l, 0)))
-            fverts.append(pl.multVec(App.Vector(l, -l, 0)))
-            fverts.append(pl.multVec(App.Vector(l, l, 0)))
-            fverts.append(pl.multVec(App.Vector(-l, l, 0)))
 
-            verts.append(pl.multVec(App.Vector(0, 0, 0)))
-            verts.append(pl.multVec(App.Vector(l - l1, 0, 0)))
-            verts.append(pl.multVec(App.Vector(l - l1, l2, 0)))
-            verts.append(pl.multVec(App.Vector(l, 0, 0)))
-            verts.append(pl.multVec(App.Vector(l - l1, -l2, 0)))
-            verts.append(pl.multVec(App.Vector(l - l1, l2, 0)))
+            pl = vobj.Object.Placement
+            self.main_transform.translation.setValue(pl.Base)
+            self.main_transform.rotation = coin.SbRotation(pl.Rotation.Q)
+            verts = []
+            fverts = []
 
-            verts.append(pl.multVec(App.Vector(0, 0, 0)))
-            verts.append(pl.multVec(App.Vector(0, l - l1, 0)))
-            verts.append(pl.multVec(App.Vector(-l2, l - l1, 0)))
-            verts.append(pl.multVec(App.Vector(0, l, 0)))
-            verts.append(pl.multVec(App.Vector(l2, l - l1, 0)))
-            verts.append(pl.multVec(App.Vector(-l2, l - l1, 0)))
+            fverts.append(App.Vector(-l, -l, 0))
+            fverts.append(App.Vector(l, -l, 0))
+            fverts.append(App.Vector(l, l, 0))
+            fverts.append(App.Vector(-l, l, 0))
 
-            verts.append(pl.multVec(App.Vector(0, 0, 0)))
-            verts.append(pl.multVec(App.Vector(0, 0, l - l1)))
-            verts.append(pl.multVec(App.Vector(-l2, 0, l - l1)))
-            verts.append(pl.multVec(App.Vector(0, 0, l)))
-            verts.append(pl.multVec(App.Vector(l2, 0, l - l1)))
-            verts.append(pl.multVec(App.Vector(-l2, 0, l - l1)))
-            verts.append(pl.multVec(App.Vector(0, -l2, l - l1)))
-            verts.append(pl.multVec(App.Vector(0, 0, l)))
-            verts.append(pl.multVec(App.Vector(0, l2, l - l1)))
-            verts.append(pl.multVec(App.Vector(0, -l2, l - l1)))
+            verts.append(App.Vector(0, 0, 0))
+            verts.append(App.Vector(l - l1, 0, 0))
+            verts.append(App.Vector(l - l1, l2, 0))
+            verts.append(App.Vector(l, 0, 0))
+            verts.append(App.Vector(l - l1, -l2, 0))
+            verts.append(App.Vector(l - l1, l2, 0))
+
+            verts.append(App.Vector(0, 0, 0))
+            verts.append(App.Vector(0, l - l1, 0))
+            verts.append(App.Vector(-l2, l - l1, 0))
+            verts.append(App.Vector(0, l, 0))
+            verts.append(App.Vector(l2, l - l1, 0))
+            verts.append(App.Vector(-l2, l - l1, 0))
+
+            verts.append(App.Vector(0, 0, 0))
+            verts.append(App.Vector(0, 0, l - l1))
+            verts.append(App.Vector(-l2, 0, l - l1))
+            verts.append(App.Vector(0, 0, l))
+            verts.append(App.Vector(l2, 0, l - l1))
+            verts.append(App.Vector(-l2, 0, l - l1))
+            verts.append(App.Vector(0, -l2, l - l1))
+            verts.append(App.Vector(0, 0, l))
+            verts.append(App.Vector(0, l2, l - l1))
+            verts.append(App.Vector(0, -l2, l - l1))
 
             self.lcoords.point.setValues(verts)
             self.fcoords.point.setValues(fverts)

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2017 Markus Hovorka <m.hovorka@live.de>                 *
 # *   Copyright (c) 2020 Bernd Hahnebach <bernd@bimstatik.org>              *
@@ -57,7 +59,6 @@ from .equations import magnetodynamic_writer as MgDyn_writer
 from .equations import magnetodynamic2D_writer as MgDyn2D_writer
 from .equations import staticcurrent_writer as SC_writer
 
-
 _STARTINFO_NAME = "ELMERSOLVER_STARTINFO"
 _SIF_NAME = "case.sif"
 _ELMERGRID_IFORMAT = "8"
@@ -69,6 +70,10 @@ _COORDS_NON_MAGNETO_2D = [
     "Cylindric",
     "Cylindric Symmetric",
 ]
+RESULT_FILENAME = "FreeCAD"
+RESULT_DIRECTORY = "Result"
+SCALARS_DIRECTORY = "Scalars"
+FRAMES_INFO = [None, Units.Unit(""), ""]
 
 
 def _getAllSubObjects(obj):
@@ -92,6 +97,12 @@ class Writer:
         self._handledObjects = set()
         self._handleUnits()
         self._handleConstants()
+        self.scanning_file = "scanning.dat"
+        # to set eigen analysis in result output block
+        self.eigen_analysis = False
+        # frames info: [mode, unit, description]. Set in solver writers
+        self.frames_info = FRAMES_INFO
+        self.frames_values_file = ""
 
     def getHandledConstraints(self):
         return self._handledObjects
@@ -109,6 +120,7 @@ class Writer:
         self._handleMagnetodynamic()
         self._handleMagnetodynamic2D()
         self._handleStaticCurrent()
+        self._handleMultiframeMode()
         self._addOutputSolver()
 
     def write_solver_input(self):
@@ -236,6 +248,9 @@ class Writer:
         # the solver that we have another scale
         self._simulation("Coordinate Scaling", 0.001)
         self._simulation("Simulation Type", self.solver.SimulationType)
+        param = ParamGet("User parameter:BaseApp/Preferences/Mod/Fem/Elmer")
+        out_level = 10 if self.testmode else param.GetInt("MaxOutputLevel", 10)
+        self._simulation("Max Output Level", out_level)
         if self.solver.SimulationType == "Steady State":
             self._simulation("Steady State Max Iterations", self.solver.SteadyStateMaxIterations)
             self._simulation("Steady State Min Iterations", self.solver.SteadyStateMinIterations)
@@ -257,8 +272,8 @@ class Writer:
 
     def _handleDeformation(self):
         DEFW = DEF_writer.DeformationWriter(self, self.solver)
-        activeIn = []
         for equation in self.solver.Group:
+            activeIn = []
             if femutils.is_of_type(equation, "Fem::EquationElmerDeformation"):
                 if not self._haveMaterialSolid():
                     raise WriteError(
@@ -273,20 +288,20 @@ class Writer:
                     if not self.isBodyMaterialFluid(body):
                         self._addSolver(body, solverSection)
                         DEFW.handleDeformationEquation(activeIn, equation)
-        if activeIn:
-            DEFW.handleDeformationConstants()
-            DEFW.handleDeformationBndConditions()
-            DEFW.handleDeformationInitial(activeIn)
-            DEFW.handleDeformationBodyForces(activeIn)
-            DEFW.handleDeformationMaterial(activeIn)
+                if activeIn:
+                    DEFW.handleDeformationConstants()
+                    DEFW.handleDeformationBndConditions()
+                    DEFW.handleDeformationInitial(activeIn)
+                    DEFW.handleDeformationBodyForces(activeIn)
+                    DEFW.handleDeformationMaterial(activeIn)
 
     # -------------------------------------------------------------------------------------------
     # Elasticity
 
     def _handleElasticity(self):
         ELW = EL_writer.ElasticityWriter(self, self.solver)
-        activeIn = []
         for equation in self.solver.Group:
+            activeIn = []
             if femutils.is_of_type(equation, "Fem::EquationElmerElasticity"):
                 if not self._haveMaterialSolid():
                     raise WriteError(
@@ -297,24 +312,27 @@ class Writer:
                 else:
                     activeIn = self.getAllBodies()
                 solverSection = ELW.getElasticitySolver(equation)
+                solverEigenSection = ELW.getEigenSolver(equation)
                 for body in activeIn:
                     if not self.isBodyMaterialFluid(body):
                         self._addSolver(body, solverSection)
                         ELW.handleElasticityEquation(activeIn, equation)
-        if activeIn:
-            ELW.handleElasticityConstants()
-            ELW.handleElasticityBndConditions()
-            ELW.handleElasticityInitial(activeIn)
-            ELW.handleElasticityBodyForces(activeIn)
-            ELW.handleElasticityMaterial(activeIn)
+                        if solverEigenSection is not None:
+                            self._addSolver(body, solverEigenSection)
+                if activeIn:
+                    ELW.handleElasticityConstants()
+                    ELW.handleElasticityBndConditions()
+                    ELW.handleElasticityInitial(activeIn)
+                    ELW.handleElasticityBodyForces(activeIn)
+                    ELW.handleElasticityMaterial(activeIn)
 
     # -------------------------------------------------------------------------------------------
     # Electrostatic
 
     def _handleElectrostatic(self):
         ESW = ES_writer.ESwriter(self, self.solver)
-        activeIn = []
         for equation in self.solver.Group:
+            activeIn = []
             if femutils.is_of_type(equation, "Fem::EquationElmerElectrostatic"):
                 if equation.References:
                     activeIn = equation.References[0][1]
@@ -323,19 +341,19 @@ class Writer:
                 solverSection = ESW.getElectrostaticSolver(equation)
                 for body in activeIn:
                     self._addSolver(body, solverSection)
-        if activeIn:
-            ESW.handleElectrostaticConstants()
-            ESW.handleElectrostaticBndConditions()
-            ESW.handleElectrostaticBodyForces()
-            ESW.handleElectrostaticMaterial(activeIn)
+                if activeIn:
+                    ESW.handleElectrostaticConstants()
+                    ESW.handleElectrostaticBndConditions()
+                    ESW.handleElectrostaticBodyForces()
+                    ESW.handleElectrostaticMaterial(activeIn)
 
     # -------------------------------------------------------------------------------------------
     # Electricforce
 
     def _handleElectricforce(self):
         EFW = EF_writer.EFwriter(self, self.solver)
-        activeIn = []
         for equation in self.solver.Group:
+            activeIn = []
             if femutils.is_of_type(equation, "Fem::EquationElmerElectricforce"):
                 if equation.References:
                     activeIn = equation.References[0][1]
@@ -350,8 +368,8 @@ class Writer:
 
     def _handleFlow(self):
         FlowW = flow_writer.Flowwriter(self, self.solver)
-        activeIn = []
         for equation in self.solver.Group:
+            activeIn = []
             if femutils.is_of_type(equation, "Fem::EquationElmerFlow"):
                 if not self._haveMaterialFluid():
                     raise WriteError(
@@ -366,20 +384,20 @@ class Writer:
                     if self.isBodyMaterialFluid(body):
                         self._addSolver(body, solverSection)
                         FlowW.handleFlowEquation(activeIn, equation)
-        if activeIn:
-            FlowW.handleFlowConstants()
-            FlowW.handleFlowBndConditions()
-            FlowW.handleFlowInitialPressure(activeIn)
-            FlowW.handleFlowInitialVelocity(activeIn)
-            FlowW.handleFlowMaterial(activeIn)
+                if activeIn:
+                    FlowW.handleFlowConstants()
+                    FlowW.handleFlowBndConditions()
+                    FlowW.handleFlowInitialPressure(activeIn)
+                    FlowW.handleFlowInitialVelocity(activeIn)
+                    FlowW.handleFlowMaterial(activeIn)
 
     # -------------------------------------------------------------------------------------------
     # Flux
 
     def _handleFlux(self):
         FluxW = flux_writer.Fluxwriter(self, self.solver)
-        activeIn = []
         for equation in self.solver.Group:
+            activeIn = []
             if femutils.is_of_type(equation, "Fem::EquationElmerFlux"):
                 if equation.References:
                     activeIn = equation.References[0][1]
@@ -394,8 +412,8 @@ class Writer:
 
     def _handleHeat(self):
         HeatW = heat_writer.Heatwriter(self, self.solver)
-        activeIn = []
         for equation in self.solver.Group:
+            activeIn = []
             if femutils.is_of_type(equation, "Fem::EquationElmerHeat"):
                 if equation.References:
                     activeIn = equation.References[0][1]
@@ -405,20 +423,20 @@ class Writer:
                 for body in activeIn:
                     self._addSolver(body, solverSection)
                 HeatW.handleHeatEquation(activeIn, equation)
-        if activeIn:
-            HeatW.handleHeatConstants()
-            HeatW.handleHeatBndConditions()
-            HeatW.handleHeatInitial(activeIn)
-            HeatW.handleHeatBodyForces(activeIn)
-            HeatW.handleHeatMaterial(activeIn)
+                if activeIn:
+                    HeatW.handleHeatConstants()
+                    HeatW.handleHeatBndConditions()
+                    HeatW.handleHeatInitial(activeIn)
+                    HeatW.handleHeatBodyForces(activeIn)
+                    HeatW.handleHeatMaterial(activeIn)
 
     # -------------------------------------------------------------------------------------------
     # Magnetodynamic
 
     def _handleMagnetodynamic(self):
         MgDyn = MgDyn_writer.MgDynwriter(self, self.solver)
-        activeIn = []
         for equation in self.solver.Group:
+            activeIn = []
             if femutils.is_of_type(equation, "Fem::EquationElmerMagnetodynamic"):
                 if equation.References:
                     activeIn = equation.References[0][1]
@@ -430,19 +448,19 @@ class Writer:
                 for body in activeIn:
                     self._addSolver(body, solverSection)
                     self._addSolver(body, solverPostSection)
-        if activeIn:
-            MgDyn.handleMagnetodynamicConstants()
-            MgDyn.handleMagnetodynamicBndConditions(equation)
-            MgDyn.handleMagnetodynamicBodyForces(activeIn, equation)
-            MgDyn.handleMagnetodynamicMaterial(activeIn)
+                if activeIn:
+                    MgDyn.handleMagnetodynamicConstants()
+                    MgDyn.handleMagnetodynamicBndConditions(equation)
+                    MgDyn.handleMagnetodynamicBodyForces(activeIn, equation)
+                    MgDyn.handleMagnetodynamicMaterial(activeIn)
 
     # -------------------------------------------------------------------------------------------
     # Magnetodynamic2D
 
     def _handleMagnetodynamic2D(self):
         MgDyn2D = MgDyn2D_writer.MgDyn2Dwriter(self, self.solver)
-        activeIn = []
         for equation in self.solver.Group:
+            activeIn = []
             if femutils.is_of_type(equation, "Fem::EquationElmerMagnetodynamic2D"):
                 if equation.References:
                     activeIn = equation.References[0][1]
@@ -464,19 +482,19 @@ class Writer:
                     self._addSolver(body, solverSection)
                     self._addSolver(body, solverPostSection)
                     MgDyn2D.handleMagnetodynamic2DEquation(activeIn, equation)
-        if activeIn:
-            MgDyn2D.handleMagnetodynamic2DConstants()
-            MgDyn2D.handleMagnetodynamic2DBndConditions(equation)
-            MgDyn2D.handleMagnetodynamic2DBodyForces(activeIn, equation)
-            MgDyn2D.handleMagnetodynamic2DMaterial(activeIn)
+                if activeIn:
+                    MgDyn2D.handleMagnetodynamic2DConstants()
+                    MgDyn2D.handleMagnetodynamic2DBndConditions(equation)
+                    MgDyn2D.handleMagnetodynamic2DBodyForces(activeIn, equation)
+                    MgDyn2D.handleMagnetodynamic2DMaterial(activeIn)
 
     # -------------------------------------------------------------------------------------------
     # StaticCurrent
 
     def _handleStaticCurrent(self):
         SCW = SC_writer.SCwriter(self, self.solver)
-        activeIn = []
         for equation in self.solver.Group:
+            activeIn = []
             if femutils.is_of_type(equation, "Fem::EquationElmerStaticCurrent"):
                 if equation.References:
                     activeIn = equation.References[0][1]
@@ -487,10 +505,10 @@ class Writer:
                     self._addSolver(body, solverSection)
                 SCW.handleStaticCurrentBodyForces(activeIn, equation)
 
-        if activeIn:
-            SCW.handleStaticCurrentConstants()
-            SCW.handleStaticCurrentBndConditions()
-            SCW.handleStaticCurrentMaterial(activeIn)
+                if activeIn:
+                    SCW.handleStaticCurrentConstants()
+                    SCW.handleStaticCurrentBndConditions()
+                    SCW.handleStaticCurrentMaterial(activeIn)
 
     # -------------------------------------------------------------------------------------------
     # Solver handling
@@ -614,8 +632,6 @@ class Writer:
 
     def getDensity(self, m):
         density = self.convert(m["Density"], "M/L^3")
-        if self.getMeshDimension() == 2:
-            density *= 1e3
         return density
 
     def _hasExpression(self, equation):
@@ -635,7 +651,9 @@ class Writer:
         return varName
 
     def getAllBodies(self):
-        obj = self.getSingleMember("Fem::FemMeshObject")
+        obj = self.getMesh()
+        if not obj.FemMesh.Groups:
+            raise RuntimeError(f"Mesh object '{obj.Label}' has no groups, please remesh\n")
         bodyCount = 0
         prefix = ""
         if obj.Shape.Shape.Solids:
@@ -650,7 +668,7 @@ class Writer:
         return [prefix + str(i + 1) for i in range(bodyCount)]
 
     def getMeshDimension(self):
-        obj = self.getSingleMember("Fem::FemMeshObject")
+        obj = self.getMesh()
         if obj.Shape.Shape.Solids:
             return 3
         if obj.Shape.Shape.Faces:
@@ -659,6 +677,23 @@ class Writer:
             return 1
         return None
 
+    def getMesh(self):
+        return membertools.get_mesh_to_solve(self.analysis)
+
+    def getCoordSystemDimension(self):
+        dim = 0
+        match self.solver.CoordinateSystem:
+            case "Cartesian":
+                # defined by the mesh
+                dim = self.getMeshDimension()
+            case "Cartesian 1D":
+                dim = 1
+            case "Cartesian 2D" | "Polar 2D" | "Cylindric Symmetric" | "Axi Symmetric":
+                dim = 2
+            case "Cartesian 3D" | "Polar 3D" | "Cylindric":
+                dim = 3
+        return dim
+
     def _addOutputSolver(self):
         s = sifio.createSection(sifio.SOLVER)
         # Since FreeCAD meshes are in mm we let Elmer scale it
@@ -666,26 +701,47 @@ class Writer:
         # To get it back in the original size we let Elmer scale it back
         s["Coordinate Scaling Revert"] = True
         s["Equation"] = "ResultOutput"
-        if self.solver.SimulationType == "Scanning" or self.solver.SimulationType == "Transient":
+        if self.solver.SimulationType in ["Transient", "Scanning"]:
             # we must execute the post solver every time we output a result
             # therefore we must use the same as self.solver.OutputIntervals
             s["Exec Intervals"] = self.solver.OutputIntervals
         else:
             s["Exec Solver"] = "After simulation"
         s["Procedure"] = sifio.FileAttr("ResultOutputSolve/ResultOutputSolver")
-        s["Output File Name"] = sifio.FileAttr("FreeCAD")
+        s["Output File Name"] = sifio.FileAttr(RESULT_FILENAME)
+        s["Output Directory"] = sifio.FileAttr(RESULT_DIRECTORY)
+        if self.eigen_analysis:
+            s["Eigen Analysis"] = True
         s["Vtu Format"] = True
         s["Binary Output"] = self.solver.BinaryOutput
         s["Save Geometry Ids"] = self.solver.SaveGeometryIndex
         s["Vtu Time Collection"] = True
-        if self.unit_schema == Units.Scheme.MKS:
-            s["Coordinate Scaling Revert"] = True
-            Console.PrintMessage(
-                "'Coordinate Scaling Revert = Logical True' was "
-                "inserted into the solver input file.\n"
-            )
+
         for name in self.getAllBodies():
             self._addSolver(name, s)
+
+    def _handleMultiframeMode(self):
+        # in steady state, the frames are generated by the solvers
+        # transient and scanning take precedence over other multiframe modes
+        if self.solver.SimulationType == "Scanning":
+            s = sifio.createSection(sifio.SOLVER)
+            s["Procedure"] = sifio.FileAttr("SaveData/SaveScalars")
+            s["Output Directory"] = sifio.FileAttr(SCALARS_DIRECTORY)
+            s["Parallel Reduce"] = True
+            s["Filename"] = sifio.FileAttr(self.scanning_file)
+            s["Variable 1"] = "Time"
+            # ignore scalars from solvers
+            s["Scalars Prefix"] = ""
+            self.frames_info = ["scanning", Units.Unit(""), "Scanning step"]
+            self.frames_values_file = self.scanning_file
+            self.eigen_analysis = False
+            for name in self.getAllBodies():
+                self._addSolver(name, s)
+        elif self.solver.SimulationType == "Transient":
+            # special case. No need set SaveScalars to collect multiframes
+            self.frames_info = [None, Units.Unit("s"), "Timestep"]
+            self.frames_values_file = ""
+            self.eigen_analysis = False
 
     def _writeSif(self):
         sifPath = os.path.join(self.directory, _SIF_NAME)

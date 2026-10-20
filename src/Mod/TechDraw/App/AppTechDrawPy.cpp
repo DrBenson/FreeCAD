@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2002 Jürgen Riegel <juergen.riegel@web.de>              *
  *   Copyright (c) 2016 WandererFan <wandererfan@gmail.com>                *
@@ -192,6 +194,14 @@ public:
         add_varargs_method("makeLeader", &Module::makeLeader,
             "makeLeader(parent - DrawViewPart, points - [Vector], startSymbol - int, endSymbol - int) - Creates a leader line attached to parent. Points are in page coordinates with (0, 0) at lowerleft.s"
         );
+        add_varargs_method("nearestFraction", &Module::nearestFraction,
+        "nearestFraction(float) - returns the numerator and denominator of the nearest fraction as a tuple."
+        );
+        add_varargs_method("scrubEdges", &Module::scrubEdges,
+            "scrubbedEdges = scrubEdges(edgeList) -- remove duplicate edges. Also converts partial overlaps into 3 edges as in: "
+             "scrubEdges([A, B]) = [a shortened A, an edge for overlap region, a shortened B]."
+        );
+
         initialize("This is a module for making drawings"); // register with Python
     }
     ~Module() override {}
@@ -209,7 +219,7 @@ private:
             str += " ";
             if (msg) {str += msg;}
             else     {str += "No OCCT Exception Message";}
-            Base::Console().error("%s\n", str.c_str());
+            Base::Console().error("{}\n", str);
             throw Py::Exception(Part::PartExceptionOCCError, str);
         }
         catch (const Base::Exception &e) {
@@ -225,7 +235,7 @@ private:
             str += "C++ exception thrown (";
             str += e.what();
             str += ")";
-            Base::Console().error("%s\n", str.c_str());
+            Base::Console().error("{}\n", str);
             throw Py::RuntimeError(str);
         }
     }
@@ -433,7 +443,7 @@ private:
                 dvp = static_cast<TechDraw::DrawViewPart*>(obj);
                 TechDraw::GeometryObjectPtr gObj = dvp->getGeometryObject();
                 if (!gObj) {
-                    Base::Console().message("TechDraw: %s has no geometry object!\n", dvp->Label.getValue());
+                    Base::Console().message("TechDraw: {} has no geometry object!\n", dvp->Label.getValue());
                     return Py::String();
                 }
                 TopoDS_Shape shape = ShapeUtils::mirrorShape(gObj->getVisHard());
@@ -496,7 +506,7 @@ private:
                 dvp = static_cast<TechDraw::DrawViewPart*>(obj);
                 TechDraw::GeometryObjectPtr gObj = dvp->getGeometryObject();
                 if (!gObj) {
-                    Base::Console().message("TechDraw: %s has no geometry object!\n", dvp->Label.getValue());
+                    Base::Console().message("TechDraw: {} has no geometry object!\n", dvp->Label.getValue());
                     return Py::String();
                 }
 
@@ -566,7 +576,7 @@ private:
         TechDraw::GeometryObjectPtr gObj = dvp->getGeometryObject();
         if (!gObj) {
             // this test might be redundant here since we already checked hasGeometry.
-            Base::Console().message("TechDraw: %s has no geometry object!\n", dvp->Label.getValue());
+            Base::Console().message("TechDraw: {} has no geometry object!\n", dvp->Label.getValue());
             return;
         }
         TopoDS_Shape shape = ShapeUtils::mirrorShape(gObj->getVisHard());
@@ -1023,7 +1033,7 @@ private:
         }
         Base::FileInfo fi(patFile);
         if (!fi.isReadable()) {
-            Base::Console().error(".pat File: %s is not readable\n", patFile.c_str());
+            Base::Console().error(".pat File: {} is not readable\n", patFile);
             return Py::None();
         }
         std::vector<TechDraw::PATLineSpec> specs = TechDraw::DrawGeomHatch::getDecodedSpecsFromFile(patFile, patName);
@@ -1347,6 +1357,61 @@ private:
         // return the new leader as DrawLeaderPy
         return Py::asObject(new DrawLeaderLinePy(newLeader));
    }
+
+    Py::Object nearestFraction(const Py::Tuple& args)
+    {
+        double valueWithDecimals{0.0};
+        if (!PyArg_ParseTuple(args.ptr(), "d", &valueWithDecimals)) {
+            throw Py::TypeError("expected (valueWithDecimals)");
+        }
+
+        std::pair<int, int> numAndDen = DrawUtil::nearestFraction(valueWithDecimals);
+        PyObject* pyNumAndDen = Py_BuildValue("(ii)", numAndDen.first, numAndDen.second);
+        return Py::asObject(pyNumAndDen);
+    }
+
+    Py::Object scrubEdges(const Py::Tuple& args)
+    {
+        PyObject *pcObj{nullptr};
+        if (!PyArg_ParseTuple(args.ptr(), "O!", &(PyList_Type), &pcObj)) {
+            throw Py::TypeError("expected listofedges");
+        }
+
+        std::vector<TopoDS_Edge> edgeList;
+
+        try {
+            Py::Sequence list(pcObj);
+            for (Py::Sequence::iterator it = list.begin(); it != list.end(); ++it) {
+                if (PyObject_TypeCheck((*it).ptr(), &(Part::TopoShapeEdgePy::Type))) {
+                    const TopoDS_Shape& shape = static_cast<TopoShapePy*>((*it).ptr())->
+                        getTopoShapePtr()->getShape();
+                    const TopoDS_Edge edge = TopoDS::Edge(shape);
+                    edgeList.push_back(edge);
+                }
+            }
+        }
+        catch (Standard_Failure& e) {
+            throw Py::Exception(Part::PartExceptionOCCError, e.GetMessageString());
+        }
+
+        if (edgeList.empty()) {
+            Base::Console().message("TechDraw::scrubEdges - list of edges is empty\n");
+            return Py::None();
+        }
+
+        std::vector<TopoDS_Edge> closedEdges;
+        edgeList = DrawProjectSplit::scrubEdges(edgeList, closedEdges);
+        // Need to also check closed edges, since that may be the outline
+        edgeList.insert( edgeList.end(), closedEdges.begin(), closedEdges.end() );
+
+        Py::List cleanEdgeList;
+        for (auto& edge: edgeList) {
+            PyObject* pyEdgePtr = new TopoShapeEdgePy(new TopoShape(edge));
+            cleanEdgeList.append(Py::asObject(pyEdgePtr));
+        }
+
+        return cleanEdgeList;
+    }
 
  };
 

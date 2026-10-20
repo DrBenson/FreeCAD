@@ -21,13 +21,11 @@
  *                                                                         *
  **************************************************************************/
 
-#ifndef MATGUI_MATERIALSEDITOR_H
-#define MATGUI_MATERIALSEDITOR_H
+#pragma once
 
 #include <memory>
 
 #include <QDialog>
-#include <QDir>
 #include <QIcon>
 #include <QPoint>
 #include <QStandardItem>
@@ -224,7 +222,7 @@ private:
     }
     void setIncludeEmptyLibraries(bool value)
     {
-        Base::Console().log("setIncludeEmptyLibraries(%s)\n", (value ? "true" : "false"));
+        Base::Console().log("setIncludeEmptyLibraries({})\n", (value ? "true" : "false"));
         _filterOptions.setIncludeEmptyLibraries(value);
     }
 
@@ -241,5 +239,3 @@ private:
 };
 
 }  // namespace MatGui
-
-#endif  // MATGUI_MATERIALSEDITOR_H

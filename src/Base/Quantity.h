@@ -23,24 +23,30 @@
  ***************************************************************************/
 
 
-#ifndef BASE_Quantity_H
-#define BASE_Quantity_H
+#pragma once
 
 #include "Unit.h"
+#include <cstdint>
 #include <string>
 
 namespace Base
 {
+struct NumericLocaleContext;
 class UnitsSchema;
 
 struct BaseExport QuantityFormat
 {
-    enum NumberOption
-    {
-        None = 0x00,
-        OmitGroupSeparator = 0x01,
-        RejectGroupSeparator = 0x02
-    };
+    // Base-owned number formatting flags.
+    //
+    // Note: values intentionally match Qt's QLocale::NumberOptions bit assignments for historical
+    // compatibility (e.g. persisted config values), but this type is independent of Qt.
+    using NumberOptions = std::uint32_t;
+    static constexpr NumberOptions None = 0x00;
+    static constexpr NumberOptions OmitGroupSeparator = 0x01;
+    static constexpr NumberOptions RejectGroupSeparator = 0x02;
+    // Reserved for future use (aligns with Qt values if/when needed):
+    static constexpr NumberOptions OmitLeadingZeroInExponent = 0x04;
+    static constexpr NumberOptions IncludeTrailingZeroesAfterDot = 0x08;
     enum NumberFormat
     {
         Default = 0,
@@ -48,7 +54,6 @@ struct BaseExport QuantityFormat
         Scientific = 2
     };
 
-    using NumberOptions = int;
     NumberOptions option;
     NumberFormat format;
 
@@ -159,6 +164,8 @@ public:
     std::string getSafeUserString() const;
 
     static Quantity parse(const std::string& string);
+    /** Parse quantity text using the supplied numeric-locale context. */
+    static Quantity parseUserInput(const std::string& string, const NumericLocaleContext& locale);
 
     /// returns the unit of the quantity
     const Unit& getUnit() const
@@ -225,6 +232,8 @@ public:
     static const Quantity Hour;
 
     static const Quantity Ampere;
+    static const Quantity NanoAmpere;
+    static const Quantity MicroAmpere;
     static const Quantity MilliAmpere;
     static const Quantity KiloAmpere;
     static const Quantity MegaAmpere;
@@ -233,6 +242,8 @@ public:
     static const Quantity MilliKelvin;
     static const Quantity MicroKelvin;
 
+    static const Quantity NanoMole;
+    static const Quantity MicroMole;
     static const Quantity MilliMole;
     static const Quantity Mole;
 
@@ -283,6 +294,8 @@ public:
     static const Quantity MPSI;
 
     static const Quantity Watt;
+    static const Quantity NanoWatt;
+    static const Quantity MicroWatt;
     static const Quantity MilliWatt;
     static const Quantity KiloWatt;
     static const Quantity VoltAmpere;
@@ -324,6 +337,7 @@ public:
     static const Quantity MilliJoule;
     static const Quantity KiloJoule;
     static const Quantity NewtonMeter;
+    static const Quantity NewtonMilliMeter;
     static const Quantity VoltAmpereSecond;
     static const Quantity WattSecond;
     static const Quantity KiloWattHour;
@@ -350,5 +364,3 @@ private:
 };
 
 }  // namespace Base
-
-#endif  // BASE_Quantity_H

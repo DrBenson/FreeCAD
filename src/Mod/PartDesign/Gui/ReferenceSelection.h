@@ -23,8 +23,7 @@
  ******************************************************************************/
 
 
-#ifndef GUI_ReferenceSelection_H
-#define GUI_ReferenceSelection_H
+#pragma once
 
 #include <Gui/Selection/SelectionFilter.h>
 #include <Mod/PartDesign/Gui/EnumFlags.h>
@@ -70,6 +69,7 @@ private:
     bool isEdge(App::DocumentObject* pObj, const char* sSubName) const;
     bool isFace(App::DocumentObject* pObj, const char* sSubName) const;
     bool isCircle(App::DocumentObject* pObj, const char* sSubName) const;
+    bool isSolid(App::DocumentObject* pObj, const char* sSubName) const;
 };
 
 class NoDependentsSelection: public Gui::SelectionFilterGate
@@ -128,5 +128,3 @@ std::string buildLinkSubListPythonStr(
     const std::vector<std::string>& subs
 );
 }  // namespace PartDesignGui
-
-#endif  // GUI_ReferenceSelection_H

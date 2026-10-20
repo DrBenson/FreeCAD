@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2023 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef STDLINEENUMS_H_
-#define STDLINEENUMS_H_
+#pragma once
 
 #include <string>
 #include <vector>
@@ -126,5 +127,3 @@ private:
 
 };
 } //end namespace TechDraw
-#endif
-

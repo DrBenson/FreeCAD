@@ -10,7 +10,7 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -22,15 +22,15 @@
         <translation>沙箱</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="1213"/>
-        <source>Menger Sponge</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../Command.cpp" line="1213"/>
         <location filename="../../Command.cpp" line="1214"/>
         <location filename="../../Command.cpp" line="1216"/>
         <source>Menger sponge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="1213"/>
+        <source>Menger Sponge</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -51,6 +51,16 @@
         <source>Add a tool shape to the robot</source>
         <translation>於機器人上增加工具造型</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandInsertRobot.cpp" line="47"/>
+        <source>Tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandInsertRobot.cpp" line="48"/>
+        <source>Adds a tool shape to the robot</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotConstraintAxle</name>
@@ -68,6 +78,16 @@
         <location filename="../../Command.cpp" line="156"/>
         <source>Place a robot (experimental!)</source>
         <translation>放置一個機器人(測試!)</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="203"/>
+        <source>Place Robot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="204"/>
+        <source>Places a robot in the scene</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -87,6 +107,16 @@
         <source>Create a new empty trajectory</source>
         <translation>建立新的空白軌跡</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="57"/>
+        <source>Trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="58"/>
+        <source>Creates a new empty trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotEdge2Trac</name>
@@ -104,6 +134,16 @@
         <location filename="../../CommandTrajectory.cpp" line="316"/>
         <source>Generate a Trajectory from a set of edges</source>
         <translation>由一組邊產生軌跡</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="383"/>
+        <source>Edge to Trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="384"/>
+        <source>Generates a trajectory from the selected edges</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -123,6 +163,16 @@
         <source>Export the trajectory as a compact KRL subroutine.</source>
         <translation>以精簡KRL子程式匯出軌跡.</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandExport.cpp" line="48"/>
+        <source>Kuka Compact Subroutine</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandExport.cpp" line="49"/>
+        <source>Exports the trajectory as a compact KRL subroutine</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotExportKukaFull</name>
@@ -140,6 +190,16 @@
         <location filename="../../CommandExport.cpp" line="110"/>
         <source>Export the trajectory as a full KRL subroutine.</source>
         <translation>以完整KRL子程式匯出軌跡.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandExport.cpp" line="131"/>
+        <source>Kuka Full Subroutine</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandExport.cpp" line="132"/>
+        <source>Exports the trajectory as a full KRL subroutine</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -231,6 +291,16 @@
         <source>Insert robot Tool location into trajectory</source>
         <translation>插入機器人工具位置至軌跡中</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="93"/>
+        <source>Insert in Trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="94"/>
+        <source>Inserts the robot tool location into the trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotInsertWaypointPreselect</name>
@@ -249,6 +319,16 @@
         <source>Insert preselection position into trajectory (W)</source>
         <translation>插入預選位置至軌跡(W)</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="166"/>
+        <source>Insert in Trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="167"/>
+        <source>Inserts the preselection position into the trajectory (W)</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotRestoreHomePos</name>
@@ -262,6 +342,16 @@
         <location filename="../../Command.cpp" line="102"/>
         <source>Move to home</source>
         <translation>移動至原點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="148"/>
+        <source>Move to Home</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="149"/>
+        <source>Moves to the home position</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -281,6 +371,16 @@
         <source>Set the default orientation for subsequent commands for waypoint creation</source>
         <translation>設定預設的方向為後續建立航點的命令</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="252"/>
+        <source>Set Default Orientation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="253"/>
+        <source>Sets the default orientation for subsequent commands for waypoint creation</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotSetDefaultValues</name>
@@ -299,6 +399,16 @@
         <source>Set the default values for speed, acceleration and continuity for subsequent commands of waypoint creation</source>
         <translation>設定預設值給速率, 加速度和連續性為了後續命令建立新航點</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="292"/>
+        <source>Set Default Values</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="293"/>
+        <source>Sets the default values for speed, acceleration, and continuity for subsequent commands of waypoint creation</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotSetHomePos</name>
@@ -312,6 +422,16 @@
         <location filename="../../Command.cpp" line="53"/>
         <source>Set the home position</source>
         <translation>設定原點位置</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="85"/>
+        <source>Set Home Position</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="86"/>
+        <source>Sets the home position</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -331,6 +451,16 @@
         <source>Run a simulation on a trajectory</source>
         <translation>於軌跡上進行模擬</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="248"/>
+        <source>Simulate Trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="249"/>
+        <source>Simulates robot movement along a selected trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotTrajectoryCompound</name>
@@ -349,6 +479,16 @@
         <source>Group and connect some trajectories to one</source>
         <translation>連結並群組數個軌跡成一個</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="510"/>
+        <source>Trajectory Compound</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="511"/>
+        <source>Groups and connects multiple trajectories into one</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CmdRobotTrajectoryDressUp</name>
@@ -366,6 +506,16 @@
         <location filename="../../CommandTrajectory.cpp" line="380"/>
         <source>Create a dress-up object which overrides some aspects of a trajectory</source>
         <translation>建立覆蓋軌跡部分設定的修改物件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="446"/>
+        <source>Dress-Up Trajectory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/CommandTrajectory.cpp" line="447"/>
+        <source>Creates a dress-up object that overrides aspects of a trajectory</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -387,14 +537,14 @@
         <translation>沙箱測試功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="211"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="211"/>
         <source>Thread and No Sequencer</source>
-        <translation>執行緒且無定序器</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="212"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="212"/>
         <source>Runs a sandbox test function</source>
-        <translation>執行沙箱測試功能</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -416,14 +566,14 @@
         <translation>沙箱測試功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="456"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="456"/>
         <source>Thread and Modal Dialog</source>
-        <translation>執行緒和模式對話框</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="457"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="457"/>
         <source>Runs a sandbox test function</source>
-        <translation>執行沙箱測試功能</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -445,14 +595,14 @@
         <translation>沙箱測試功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="483"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="483"/>
         <source>Thread and File Dialog</source>
-        <translation>執行緒及檔案對話框</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="484"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="484"/>
         <source>Runs a sandbox test function</source>
-        <translation>執行沙箱測試功能</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -474,14 +624,14 @@
         <translation>沙箱測試功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="172"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="172"/>
         <source>Thread and Sequencer</source>
-        <translation>執行緒及定序器</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="173"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="173"/>
         <source>Runs a sandbox test function</source>
-        <translation>執行沙箱測試功能</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -503,14 +653,14 @@
         <translation>沙箱測試功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="248"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="248"/>
         <source>GUI Thread</source>
-        <translation>圖形使用者介面執行緒</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="249"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="249"/>
         <source>Runs a sandbox test function</source>
-        <translation>執行沙箱測試功能</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -532,14 +682,14 @@
         <translation>沙箱儲存功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="144"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="144"/>
         <source>Save Thread</source>
-        <translation>儲存執行緒</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="145"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="145"/>
         <source>Runs a sandbox save function</source>
-        <translation>執行沙箱測試功能</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -561,14 +711,14 @@
         <translation>沙箱測試功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="120"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="120"/>
         <source>Test Thread</source>
-        <translation>測試執行緒</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="121"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="121"/>
         <source>Runs a sandbox test function</source>
-        <translation>執行沙箱測試功能</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -590,14 +740,14 @@
         <translation>沙箱測試功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="93"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="93"/>
         <source>Run Several Threads</source>
-        <translation>執行多個執行緒</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="94"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="94"/>
         <source>Runs a sandbox test function</source>
-        <translation>執行沙箱測試功能</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -619,14 +769,14 @@
         <translation>沙箱測試功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="521"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="521"/>
         <source>Local Event Loop</source>
-        <translation>本地事件循環</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="522"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="522"/>
         <source>Runs a sandbox test function</source>
-        <translation>執行沙箱測試功能</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -648,14 +798,14 @@
         <translation>沙箱測試功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="564"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="564"/>
         <source>Load Mesh in Thread</source>
-        <translation>在執行緒中載入網格</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="565"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="565"/>
         <source>Runs a sandbox test function</source>
-        <translation>執行沙箱測試功能</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -677,14 +827,14 @@
         <translation>沙箱測試功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="622"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="622"/>
         <source>Load Mesh in Boost-Thread</source>
-        <translation>在 boost 執行緒中載入網格</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="623"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="623"/>
         <source>Runs a sandbox test function</source>
-        <translation>執行沙箱測試功能</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -706,14 +856,14 @@
         <translation>沙箱測試功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="670"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="670"/>
         <source>Load Mesh in QFuture</source>
-        <translation>在 QFuture 中載入網格</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="671"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="671"/>
         <source>Runs a sandbox test function</source>
-        <translation>執行沙箱測試功能</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -735,14 +885,14 @@
         <translation>沙箱測試功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="785"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="785"/>
         <source>Test Mesh Job</source>
-        <translation>測試網格作業</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="786"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="786"/>
         <source>Runs a sandbox test function</source>
-        <translation>執行沙箱測試功能</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -764,14 +914,14 @@
         <translation>沙箱測試功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="880"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="880"/>
         <source>Test Mesh Reference</source>
-        <translation>測試網格參考</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="881"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="881"/>
         <source>Runs a sandbox test function</source>
-        <translation>執行沙箱測試功能</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -793,14 +943,14 @@
         <translation>使用PySide的執行緒模組</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="369"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="369"/>
         <source>PySide Threads</source>
-        <translation>Python執行緒</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="370"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="370"/>
         <source>Uses PySide&apos;s thread module</source>
-        <translation>使用PySide的執行緒模組</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -822,14 +972,14 @@
         <translation>使用Python的執行緒模組，每個執行緒都被鎖定</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="302"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="302"/>
         <source>Locked Python Threads</source>
-        <translation>鎖定的 Python 執行緒</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="303"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="303"/>
         <source>Uses Python&apos;s thread module where each thread is locked</source>
-        <translation>使用Python的執行緒模組，每個執行緒都被鎖定</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -851,14 +1001,14 @@
         <translation>在主執行緒中執行Python程式碼</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="430"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="430"/>
         <source>Python Main Thread</source>
-        <translation>Python主執行緒</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="431"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="431"/>
         <source>Runs Python code in the main thread</source>
-        <translation>在主執行緒中執行Python程式碼</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -880,14 +1030,14 @@
         <translation>使用Python的執行緒模組，其中每個執行緒都是解鎖的</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="337"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="337"/>
         <source>Unlocked Python Threads</source>
-        <translation>解鎖的 Python 執行緒</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="338"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="338"/>
         <source>Uses Python&apos;s thread module where each thread is unlocked</source>
-        <translation>使用Python的執行緒模組，其中每個執行緒都是解鎖的</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -909,14 +1059,14 @@
         <translation>使用類別 Python 執行緒 在其 run() 方法中執行 Python 程式碼</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="404"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="404"/>
         <source>Python Threads</source>
-        <translation>Python執行緒</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="405"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="405"/>
         <source>Uses class PythonThread running Python code in its run() method</source>
-        <translation>使用類別 Python 執行緒 在其 run() 方法中執行 Python 程式碼</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -938,14 +1088,14 @@
         <translation>沙箱測試功能</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="279"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="279"/>
         <source>Worker Thread</source>
-        <translation>工作執行緒</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="280"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="280"/>
         <source>Runs a sandbox test function</source>
-        <translation>執行沙箱測試功能</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -961,15 +1111,15 @@
         <translation>建立新的圖形檢視</translation>
     </message>
     <message>
-        <location filename="../../../../../../../FreeCAD-1.2.0/src/Mod/Sandbox/Gui/Command.cpp" line="1382"/>
-        <source>New Graphics View</source>
-        <translation>新的圖形檢視</translation>
-    </message>
-    <message>
         <location filename="../../Command.cpp" line="1383"/>
         <location filename="../../Command.cpp" line="1384"/>
         <source>Creates a new view window for the active document</source>
         <translation>透過啟用文件建立一個新視圖視窗</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Sandbox/Gui/Command.cpp" line="1382"/>
+        <source>New Graphics View</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1102,6 +1252,41 @@
 <context>
     <name>QObject</name>
     <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="55"/>
+        <source>Select VRML file for Robot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="57"/>
+        <source>VRML Files (*.wrl *.vrml)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="69"/>
+        <source>Select Kinematic CSV file for Robot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/Command.cpp" line="71"/>
+        <source>CSV Files (*.csv)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../CommandInsertRobot.cpp" line="229"/>
+        <location filename="../../CommandTrajectory.cpp" line="104"/>
+        <location filename="../../CommandTrajectory.cpp" line="160"/>
+        <location filename="../../CommandTrajectory.cpp" line="177"/>
+        <location filename="../../CommandTrajectory.cpp" line="406"/>
+        <location filename="../../Command.cpp" line="71"/>
+        <location filename="../../Command.cpp" line="120"/>
+        <location filename="../../Command.cpp" line="220"/>
+        <location filename="../../Command.cpp" line="249"/>
+        <location filename="../../CommandExport.cpp" line="61"/>
+        <location filename="../../CommandExport.cpp" line="123"/>
+        <source>Wrong selection</source>
+        <translation>錯誤的選取</translation>
+    </message>
+    <message>
         <location filename="../../Command.cpp" line="72"/>
         <source>Select one Robot to set home position</source>
         <translation>選擇要設置起始位置之機器人</translation>
@@ -1110,16 +1295,6 @@
         <location filename="../../Command.cpp" line="121"/>
         <source>Select one Robot</source>
         <translation>選取一機器人</translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="226"/>
-        <source>Trajectory not valid</source>
-        <translation>無效軌跡</translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="227"/>
-        <source>You need at least two waypoints in a trajectory to simulate.</source>
-        <translation>軌跡中至少需要兩個航路點才能進行模擬.</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="575"/>
@@ -1178,26 +1353,6 @@
         <translation>匯入網格</translation>
     </message>
     <message>
-        <location filename="../../CommandInsertRobot.cpp" line="229"/>
-        <location filename="../../CommandTrajectory.cpp" line="104"/>
-        <location filename="../../CommandTrajectory.cpp" line="160"/>
-        <location filename="../../CommandTrajectory.cpp" line="177"/>
-        <location filename="../../CommandTrajectory.cpp" line="406"/>
-        <location filename="../../Command.cpp" line="71"/>
-        <location filename="../../Command.cpp" line="120"/>
-        <location filename="../../Command.cpp" line="220"/>
-        <location filename="../../Command.cpp" line="249"/>
-        <location filename="../../CommandExport.cpp" line="61"/>
-        <location filename="../../CommandExport.cpp" line="123"/>
-        <source>Wrong selection</source>
-        <translation>錯誤的選取</translation>
-    </message>
-    <message>
-        <location filename="../../CommandInsertRobot.cpp" line="230"/>
-        <source>Select one robot and one shape or VRML object.</source>
-        <translation>選取一個機器人和一造型或VRML物件.</translation>
-    </message>
-    <message>
         <location filename="../../CommandTrajectory.cpp" line="105"/>
         <location filename="../../Command.cpp" line="221"/>
         <location filename="../../Command.cpp" line="250"/>
@@ -1205,6 +1360,39 @@
         <location filename="../../CommandExport.cpp" line="124"/>
         <source>Select one Robot and one Trajectory object.</source>
         <translation>選取一個機器人和一軌跡物體.</translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="226"/>
+        <source>Trajectory not valid</source>
+        <translation>無效軌跡</translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="227"/>
+        <source>You need at least two waypoints in a trajectory to simulate.</source>
+        <translation>軌跡中至少需要兩個航路點才能進行模擬.</translation>
+    </message>
+    <message>
+        <location filename="../../CommandExport.cpp" line="84"/>
+        <location filename="../../CommandExport.cpp" line="146"/>
+        <source>KRL file</source>
+        <translation>KRL 檔</translation>
+    </message>
+    <message>
+        <location filename="../../CommandExport.cpp" line="85"/>
+        <location filename="../../CommandExport.cpp" line="147"/>
+        <source>All Files</source>
+        <translation>所有檔案</translation>
+    </message>
+    <message>
+        <location filename="../../CommandExport.cpp" line="86"/>
+        <location filename="../../CommandExport.cpp" line="148"/>
+        <source>Export program</source>
+        <translation>匯出程式</translation>
+    </message>
+    <message>
+        <location filename="../../CommandInsertRobot.cpp" line="230"/>
+        <source>Select one robot and one shape or VRML object.</source>
+        <translation>選取一個機器人和一造型或VRML物件.</translation>
     </message>
     <message>
         <location filename="../../CommandTrajectory.cpp" line="161"/>
@@ -1256,24 +1444,6 @@
         <location filename="../../CommandTrajectory.cpp" line="407"/>
         <source>Select the Trajectory which you want to dress up.</source>
         <translation>選取您想要修改的軌跡.</translation>
-    </message>
-    <message>
-        <location filename="../../CommandExport.cpp" line="84"/>
-        <location filename="../../CommandExport.cpp" line="146"/>
-        <source>KRL file</source>
-        <translation>KRL 檔</translation>
-    </message>
-    <message>
-        <location filename="../../CommandExport.cpp" line="85"/>
-        <location filename="../../CommandExport.cpp" line="147"/>
-        <source>All Files</source>
-        <translation>所有檔案</translation>
-    </message>
-    <message>
-        <location filename="../../CommandExport.cpp" line="86"/>
-        <location filename="../../CommandExport.cpp" line="148"/>
-        <source>Export program</source>
-        <translation>匯出程式</translation>
     </message>
     <message>
         <location filename="../../ViewProviderTrajectory.cpp" line="149"/>
@@ -1367,6 +1537,11 @@
         <translation>群組：0</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="72"/>
+        <source>Sizing Value</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskEdge2TracParameter.ui" line="72"/>
         <source>Sizing Value:</source>
         <translation>尺寸值：</translation>
@@ -1377,6 +1552,11 @@
         <translation>使用邊之方向</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskEdge2TracParameter.ui" line="29"/>
+        <source>Hide/Show</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskEdge2TracParameter.cpp" line="42"/>
         <source>TaskEdge2TracParameter</source>
         <translation>工作任務邊緣到軌道參數</translation>
@@ -1384,11 +1564,6 @@
 </context>
 <context>
     <name>RobotGui::TaskRobot6Axis</name>
-    <message>
-        <location filename="../../TaskRobot6Axis.ui" line="14"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
     <message>
         <location filename="../../TaskRobot6Axis.ui" line="22"/>
         <source>A1</source>
@@ -1433,6 +1608,11 @@
         <location filename="../../TaskRobot6Axis.cpp" line="41"/>
         <source>TaskRobot6Axis</source>
         <translation>工作機器人6軸</translation>
+    </message>
+    <message>
+        <location filename="../../TaskRobot6Axis.ui" line="14"/>
+        <source>Form</source>
+        <translation>格式</translation>
     </message>
 </context>
 <context>
@@ -1561,6 +1741,11 @@
         <translation>清除</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskRobotMessages.ui" line="20"/>
+        <source>Clear</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskRobotMessages.cpp" line="35"/>
         <source>TaskRobotMessages</source>
         <translation>工作機器人訊息</translation>
@@ -1568,11 +1753,6 @@
 </context>
 <context>
     <name>RobotGui::TaskTrajectory</name>
-    <message>
-        <location filename="../../TaskTrajectory.ui" line="20"/>
-        <source>Form</source>
-        <translation>格式</translation>
-    </message>
     <message>
         <location filename="../../TaskTrajectory.ui" line="58"/>
         <source>|&lt;</source>
@@ -1658,6 +1838,11 @@
         <source>Trajectory</source>
         <translation>軌道</translation>
     </message>
+    <message>
+        <location filename="../../TaskTrajectory.ui" line="20"/>
+        <source>Form</source>
+        <translation>格式</translation>
+    </message>
 </context>
 <context>
     <name>RobotGui::TaskTrajectoryDressUpParameter</name>
@@ -1721,6 +1906,51 @@
         <location filename="../../TaskTrajectoryDressUpParameter.ui" line="174"/>
         <source>Add Orientation</source>
         <translation>增加方向</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="20"/>
+        <source>Speed &amp; acceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="29"/>
+        <source>Speed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="66"/>
+        <source>Acceleration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="102"/>
+        <source>Do not change continuous mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="128"/>
+        <source>Position and orientation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="160"/>
+        <source>Do not change position &amp; orientation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="165"/>
+        <source>Use orientation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="170"/>
+        <source>Add position</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Robot/Gui/TaskTrajectoryDressUpParameter.ui" line="175"/>
+        <source>Add orientation</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../TaskTrajectoryDressUpParameter.cpp" line="41"/>

@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAW_LINEFORMAT_H
-#define TECHDRAW_LINEFORMAT_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -46,6 +45,7 @@ public:
                const Base::Color& color,
                const bool visible,
                const int lineNumber);
+
    // TODO: phase out the old 4 parameter constructor
    LineFormat(const int style,
                const double weight,
@@ -63,7 +63,7 @@ public:
     Base::Color getColor() const { return m_color; }
     void setColor(Base::Color color) { m_color = color; }
     QColor getQColor() const { return m_color.asValue<QColor>(); }
-    void setQColor(QColor qColor) { m_color.set(qColor.redF(), qColor.greenF(), qColor.blueF(), 1.0 - qColor.alphaF()); }
+    void setQColor(const QColor& qColor) { m_color.setValue(qColor); }
 
     bool getVisible() const { return m_visible; }
     void setVisible(bool viz) { m_visible = viz; }
@@ -81,6 +81,7 @@ public:
     static void initCurrentLineFormat();
     static LineFormat& getCurrentLineFormat();
     static void setCurrentLineFormat(LineFormat& newformat);
+    static bool isEqual(const LineFormat& lf0, const LineFormat& lf1);
 
 private:
     int m_style;
@@ -91,6 +92,3 @@ private:
 };
 
 } //end namespace TechDraw
-
-#endif //TECHDRAW_LINEFORMAT_H
-

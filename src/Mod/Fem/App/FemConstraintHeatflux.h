@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2015 FreeCAD Developers                                 *
  *   Authors: Michael Hindley <hindlemp@eskom.co.za>                       *
@@ -24,8 +26,7 @@
  ***************************************************************************/
 
 
-#ifndef FEM_CONSTRAINTHEATFLUX_H
-#define FEM_CONSTRAINTHEATFLUX_H
+#pragma once
 
 #include "FemConstraint.h"
 
@@ -46,10 +47,11 @@ public:
     /*App::PropertyFloat FaceTemp;*/
     App::PropertyThermalTransferCoefficient FilmCoef;
     App::PropertyFloat Emissivity;
-    App::PropertyHeatFlux DFlux;
+    App::PropertyHeatFlux DistributedHeatFlux;
     App::PropertyEnumeration ConstraintType;
     App::PropertyBool CavityRadiation;
     App::PropertyString CavityName;
+    App::PropertyBool ClosedCavity;
 
     /// recalculate the object
     App::DocumentObjectExecReturn* execute() override;
@@ -63,9 +65,12 @@ protected:
         const char* typeName,
         App::Property* prop
     ) override;
+    void handleChangedPropertyName(
+        Base::XMLReader& reader,
+        const char* typeName,
+        const char* propName
+    ) override;
     void onChanged(const App::Property* prop) override;
 };
 
 }  // namespace Fem
-
-#endif  // FEM_CONSTRAINTHEATFLUX_H

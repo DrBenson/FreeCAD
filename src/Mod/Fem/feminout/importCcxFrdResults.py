@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2013 Joachim Zettler                                    *
 # *   Copyright (c) 2013 Juergen Riegel <FreeCAD@juergen-riegel.net>        *
@@ -37,7 +39,6 @@ import math
 import FreeCAD
 from FreeCAD import Console
 from builtins import open as pyopen
-
 
 # ********* generic FreeCAD import and export methods *********
 

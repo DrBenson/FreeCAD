@@ -226,7 +226,7 @@ QMap<QString, CallTip> CallTipsList::extractTips(const QString& context) const
     try {
         PyErr_Clear();
         Py::Module module("__main__");
-        if (module.ptr() == nullptr) {
+        if (!module.ptr()) {
             return tips;
         }
         Py::Dict dict = module.getDict();
@@ -292,7 +292,7 @@ QMap<QString, CallTip> CallTipsList::extractTips(const QString& context) const
             // Make sure it's not a type object
             PyObject* typetype = Base::getTypeAsObject(&PyType_Type);
             if (PyObject_IsInstance(obj.ptr(), typetype) != 1) {
-                // For wrapped objects with PySide2 use the object, not its type
+                // For wrapped objects with PySide use the object, not its type
                 // as otherwise attributes added at runtime won't be listed (e.g. MainWindowPy)
                 QString typestr(QLatin1String(Py_TYPE(obj.ptr())->tp_name));
 
@@ -419,7 +419,7 @@ void CallTipsList::extractTipsFromObject(Py::Object& obj, Py::List& list, QMap<Q
 
             Py::Object attr = getAttrWorkaround(obj, attrname);
             if (!attr.ptr()) {
-                Base::Console().log("Python attribute '%s' returns null!\n", name.c_str());
+                Base::Console().log("Python attribute '{}' returns null!\n", name);
                 continue;
             }
 
@@ -698,9 +698,10 @@ bool CallTipsList::eventFilter(QObject* watched, QEvent* event)
                 Q_EMIT itemActivated(currentItem());
                 return false;
             }
-            else if (ke->key() == Qt::Key_Shift || ke->key() == Qt::Key_Control
-                     || ke->key() == Qt::Key_Meta || ke->key() == Qt::Key_Alt
-                     || ke->key() == Qt::Key_AltGr) {
+            else if (
+                ke->key() == Qt::Key_Shift || ke->key() == Qt::Key_Control
+                || ke->key() == Qt::Key_Meta || ke->key() == Qt::Key_Alt || ke->key() == Qt::Key_AltGr
+            ) {
                 // filter these meta keys to avoid to call keyboardSearch()
                 return true;
             }

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2021 Bernd Hahnebach <bernd@bimstatik.org>              *
 # *                                                                         *
@@ -42,7 +44,6 @@ except Exception:
 from FreeCAD import Console
 
 from femmesh import meshtools
-
 
 # ************************************************************************************************
 # ********* generic FreeCAD export methods *******************************************************

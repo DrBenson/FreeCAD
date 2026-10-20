@@ -24,13 +24,17 @@
  ****************************************************************************/
 
 
-#ifndef EXPRESSION_PARSER_H
-#define EXPRESSION_PARSER_H
+#pragma once
 
 #include "Expression.h"
 #include <Base/Matrix.h>
 #include <Base/Quantity.h>
 #include <Base/Vector3D.h>
+
+namespace Base
+{
+struct NumericLocaleContext;
+}
 
 namespace App
 {
@@ -48,9 +52,9 @@ namespace App
 struct AppExport Expression::Component
 {
     ObjectIdentifier::Component comp;
-    Expression* e1;
-    Expression* e2;
-    Expression* e3;
+    ExpressionPtr e1;
+    ExpressionPtr e2;
+    ExpressionPtr e3;
 
     explicit Component(const std::string& n);
     Component(Expression* e1, Expression* e2, Expression* e3, bool isRange = false);
@@ -88,7 +92,7 @@ public:
 
     ~UnitExpression() override;
 
-    Expression* simplify() const override;
+    ExpressionPtr simplify() const override;
 
     void setUnit(const Base::Quantity& _quantity);
 
@@ -144,7 +148,7 @@ public:
     explicit NumberExpression(const App::DocumentObject* _owner = nullptr,
                               const Base::Quantity& quantity = Base::Quantity());
 
-    Expression* simplify() const override;
+    ExpressionPtr simplify() const override;
 
     /**
      * @brief Negate the stored value.
@@ -221,7 +225,7 @@ public:
 
     bool isTouched() const override;
 
-    Expression* simplify() const override;
+    ExpressionPtr simplify() const override;
 
     int priority() const override;
 
@@ -238,6 +242,24 @@ public:
     Expression* getRight() const
     {
         return right;
+    }
+
+    void setLeft(Expression* expression)
+    {
+        if (left == expression) {
+            return;
+        }
+        delete left;
+        left = expression;
+    }
+
+    void setRight(Expression* expression)
+    {
+        if (right == expression) {
+            return;
+        }
+        delete right;
+        right = expression;
     }
 
 protected:
@@ -274,7 +296,7 @@ public:
 
     bool isTouched() const override;
 
-    Expression* simplify() const override;
+    ExpressionPtr simplify() const override;
 
     int priority() const override;
 
@@ -370,6 +392,8 @@ public:
         TUPLE,         // Create Python tuple.
         VECTOR,        // Create vector object.
 
+        ADDRESS,    // Format a cell address string from row and column
+
         HIDDENREF,  // hidden reference that has no dependency check
         HREF,       // deprecated alias of HIDDENREF
 
@@ -403,7 +427,7 @@ public:
 
     bool isTouched() const override;
 
-    Expression* simplify() const override;
+    ExpressionPtr simplify() const override;
 
     static Py::Object
     evaluate(const Expression* owner, int type, const std::vector<Expression*>& args);
@@ -465,7 +489,7 @@ public:
 
     bool isTouched() const override;
 
-    Expression* simplify() const override;
+    ExpressionPtr simplify() const override;
 
     std::string name() const
     {
@@ -540,7 +564,7 @@ public:
 
     void setPyValue(Py::Object pyobj);
     void setPyValue(PyObject* pyobj, bool owned = false);
-    Expression* simplify() const override
+    ExpressionPtr simplify() const override
     {
         return copy();
     }
@@ -568,7 +592,7 @@ public:
                               const std::string& _text = std::string());
     ~StringExpression() override;
 
-    Expression* simplify() const override;
+    ExpressionPtr simplify() const override;
 
     virtual std::string getText() const
     {
@@ -602,7 +626,7 @@ public:
 
     bool isTouched() const override;
 
-    App::Expression* simplify() const override;
+    ExpressionPtr simplify() const override;
 
     Range getRange() const;
 
@@ -630,8 +654,14 @@ protected:
  */
 namespace ExpressionParser
 {
-AppExport Expression* parse(const App::DocumentObject* owner, const char* buffer);
-AppExport UnitExpression* parseUnit(const App::DocumentObject* owner, const char* buffer);
+AppExport ExpressionPtr parse(const App::DocumentObject* owner, const char* buffer);
+/// Parse user-entered expression text using the supplied numeric-locale context.
+AppExport ExpressionPtr parseUserInput(
+    const App::DocumentObject* owner,
+    const char* buffer,
+    const Base::NumericLocaleContext& locale
+);
+AppExport std::unique_ptr<UnitExpression> parseUnit(const App::DocumentObject* owner, const char* buffer);
 AppExport ObjectIdentifier parsePath(const App::DocumentObject* owner, const char* buffer);
 AppExport bool isTokenAnIndentifier(const std::string& str);
 AppExport bool isTokenAConstant(const std::string& str);
@@ -690,5 +720,3 @@ public:
 }  // namespace ExpressionParser
 
 }  // namespace App
-
-#endif  // EXPRESSION_PARSER_H

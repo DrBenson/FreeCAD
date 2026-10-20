@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2014 Luke Parry <l.parry@warwick.ac.uk>                 *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAW_DrawSVGTemplate_h_
-#define TECHDRAW_DrawSVGTemplate_h_
+#pragma once
 
 # include <QDomDocument>
 
@@ -62,7 +63,6 @@ public:
     QString processTemplate();
     void extractTemplateAttributes(QDomDocument& templateDocument);
     bool getTemplateDocument(std::string sourceFile, QDomDocument& templateDocument) const;
-    QString getAutofillByEditableName(QString nameToMatch);
 
     void translateLabel(std::string context, std::string baseName, std::string uniqueName);
 
@@ -82,5 +82,3 @@ private:
 using DrawSVGTemplatePython = App::FeaturePythonT<DrawSVGTemplate>;
 
 } //namespace TechDraw
-
-#endif //TECHDRAW_DrawSVGTemplate_h_

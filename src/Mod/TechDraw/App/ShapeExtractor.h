@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2019 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef ShapeExtractor_h_
-#define ShapeExtractor_h_
+#pragma once
 
 #include <TopoDS_Shape.hxx>
 
@@ -73,5 +74,3 @@ private:
 };
 
 } //namespace TechDraw
-
-#endif  // #ifndef ShapeExtractor_h_

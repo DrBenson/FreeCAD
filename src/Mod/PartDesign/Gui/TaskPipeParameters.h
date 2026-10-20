@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef GUI_TASKVIEW_TaskPipeParameters_H
-#define GUI_TASKVIEW_TaskPipeParameters_H
+#pragma once
 
 #include "TaskSketchBasedParameters.h"
 #include "ViewProviderPipe.h"
@@ -107,6 +106,7 @@ private Q_SLOTS:
     void onDeleteEdge();
 
 protected:
+    void changeEvent(QEvent* e) override;
     void removeFromListWidget(QListWidget* w, QString name);
     bool referenceSelected(const Gui::SelectionChanges& msg) const;
 
@@ -223,5 +223,3 @@ protected:
 };
 
 }  // namespace PartDesignGui
-
-#endif  // GUI_TASKVIEW_TASKAPPERANCE_H

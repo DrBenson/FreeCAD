@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef MESH_IO_H
-#define MESH_IO_H
+#pragma once
 
 #include <App/Material.h>
 #include <Base/Matrix.h>
@@ -120,6 +119,10 @@ public:
     {
         return _groupNames;
     }
+    const std::string& GetObjectName() const
+    {
+        return _objectName;
+    }
 
     /// Loads the file, decided by extension
     bool LoadAny(const char* FileName);
@@ -162,6 +165,7 @@ public:
 private:
     MeshKernel& _rclMesh; /**< reference to mesh data structure */
     Material* _material;
+    std::string _objectName;
     std::vector<std::string> _groupNames;
 };
 
@@ -348,5 +352,3 @@ private:
 
 
 }  // namespace MeshCore
-
-#endif  // MESH_IO_H

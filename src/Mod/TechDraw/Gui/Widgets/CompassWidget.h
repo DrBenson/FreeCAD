@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2022 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef COMPASSWIDGET_H
-#define COMPASSWIDGET_H
+#pragma once
 
 #include <QDoubleSpinBox>
 #include <QKeyEvent>
@@ -105,4 +106,3 @@ private:
 };
 
 }//namespace TechDrawGui
-#endif// COMPASSWIDGET_H

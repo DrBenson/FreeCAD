@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2017 qingfeng Xia <qingfeng.xia@gmail.coom>             *
 # *   Copyright (c) 2017 Bernd Hahnebach <bernd@bimstatik.org>              *
@@ -37,7 +39,6 @@ from FreeCAD import Console
 
 import Fem
 from builtins import open as pyopen
-
 
 # ********* generic FreeCAD import and export methods *********
 

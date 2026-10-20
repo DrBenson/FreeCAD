@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Luke Parry <l.parry@warwick.ac.uk>                 *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAW_FEATUREVIEWGROUP_H_
-#define TECHDRAW_FEATUREVIEWGROUP_H_
+#pragma once
 
 #include <QRectF>
 
@@ -209,5 +210,3 @@ protected:
 };
 
 } //namespace TechDraw
-
-#endif // TECHDRAW_FEATUREVIEWGROUP_H_

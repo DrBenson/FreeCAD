@@ -26,43 +26,44 @@
 
 #if defined(_MSC_VER)
 # include <windows.h>
-# include <dbghelp.h>
 #endif
 
 #if HAVE_CONFIG_H
 # include <config.h>
 #endif  // HAVE_CONFIG_H
 
-#include <Build/Version.h>  // For FCCopyrightYear
+#include <Base/Version.h>
 
 #include <cstdio>
+#include <format>
 #include <map>
 #include <stdexcept>
 
 #include <QApplication>
 #include <QLocale>
 #include <QMessageBox>
+#include <QStandardPaths>
 
 // FreeCAD header
 #include <App/Application.h>
+#include <App/ProgramInformation.h>
 #include <Base/ConsoleObserver.h>
+#include <Base/CrashReporter/WindowsCrashReporter.h>
 #include <Base/Interpreter.h>
 #include <Base/Parameter.h>
 #include <Base/Exception.h>
 #include <Gui/Application.h>
+#include <Gui/ProgramInformation.h>
 
 
 void PrintInitHelp();
 
-const auto sBanner = fmt::format(
+const auto sBanner = std::format(
     "(C) 2001-{} FreeCAD contributors\n"
     "FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.\n\n",
-    FCCopyrightYear
+    Base::FCVersionInfo::CopyrightYear()
 );
 
-#if defined(_MSC_VER)
-void InitMiniDumpWriter(const std::string&);
-#endif
 
 class Redirection
 {
@@ -101,19 +102,33 @@ static bool inGuiMode()
         || App::Application::Config()["RunMode"] == "Internal";
 }
 
-static void displayInfo(const QString& msg, bool preformatted = true)
+#if defined(FC_OS_LINUX) || defined(FC_OS_BSD)
+static bool desktopFileIsAvailable(const QString& desktopFileName)
+{
+    const QString desktopFile = desktopFileName + QStringLiteral(".desktop");
+    return !QStandardPaths::locate(QStandardPaths::ApplicationsLocation, desktopFile).isEmpty();
+}
+#else
+static bool desktopFileIsAvailable(const QString&)
+{
+    return true;
+}
+#endif
+
+static void displayInfo(const std::string& msg, bool preformatted = true)
 {
     if (inGuiMode()) {
+        QString qMsg = QString::fromStdString(msg);
         QString appName = QString::fromStdString(App::Application::getExecutableName());
         QMessageBox msgBox;
         msgBox.setIcon(QMessageBox::Information);
         msgBox.setWindowTitle(appName);
-        msgBox.setDetailedText(msg);
-        msgBox.setText(preformatted ? QStringLiteral("<pre>%1</pre>").arg(msg) : msg);
+        msgBox.setDetailedText(qMsg);
+        msgBox.setText(preformatted ? QStringLiteral("<pre>%1</pre>").arg(qMsg) : qMsg);
         msgBox.exec();
     }
     else {
-        std::cout << msg.toStdString();
+        std::cout << msg;
     }
 }
 
@@ -197,15 +212,12 @@ int main(int argc, char** argv)
     App::Application::Config()["CopyrightInfo"] = sBanner;
     App::Application::Config()["AppIcon"] = "freecad";
     App::Application::Config()["SplashScreen"] = "freecadsplash";
-    App::Application::Config()["AboutImage"] = App::Application::isDevelopmentVersion()
-        ? "freecadaboutdev"
-        : "freecadabout";
     App::Application::Config()["StartWorkbench"] = "PartDesignWorkbench";
     // App::Application::Config()["HiddenDockWindow"] = "Property editor";
     App::Application::Config()["SplashAlignment"] = "Bottom|Left";
     App::Application::Config()["SplashTextColor"] = "#418FDE";
     App::Application::Config()["SplashWarningColor"] = "#CA333B";
-    App::Application::Config()["SplashInfoColor"] = "#000000";
+    App::Application::Config()["SplashInfoColor"] = "#212529";
     App::Application::Config()["SplashInfoPosition"] = "6,75";
     App::Application::Config()["DesktopFileName"] = "org.freecad.FreeCAD";
 
@@ -219,20 +231,24 @@ int main(int argc, char** argv)
         // Inits the Application
 #if defined(FC_OS_WIN32)
         App::Application::init(argc_, argv_.data());
+# ifdef _MSC_VER
+        // *Not* installed on mingw, etc.
+        Base::CrashReporter::WindowsCrashReporter::install(
+            App::Application::getUserAppDataDir() + "CrashReports"
+        );
+# endif
 #else
         App::Application::init(argc, argv);
 #endif
-        // to set window icon on wayland, the desktop file has to be available to the compositor
-        QGuiApplication::setDesktopFileName(
-            QString::fromStdString(App::Application::Config()["DesktopFileName"])
+        // To set the window icon on Wayland, the desktop file has to be available to the
+        // compositor. Qt also uses the desktop file name to register with the portal registry.
+        const QString desktopFileName = QString::fromStdString(
+            App::Application::Config()["DesktopFileName"]
         );
+        if (desktopFileIsAvailable(desktopFileName)) {
+            QGuiApplication::setDesktopFileName(desktopFileName);
+        }
 
-#if defined(_MSC_VER)
-        // create a dump file when the application crashes
-        std::string dmpfile = App::Application::getUserAppDataDir();
-        dmpfile += "crash.dmp";
-        InitMiniDumpWriter(dmpfile);
-#endif
         std::map<std::string, std::string>::iterator it = App::Application::Config().find(
             "NavigationStyle"
         );
@@ -256,41 +272,33 @@ int main(int argc, char** argv)
         QApplication app(argc, argv);
         QString msg = QString::fromLatin1(e.what());
         displayCritical(msg);
-        exit(1);
+        return 1;
     }
     catch (const Base::ProgramInformation& e) {
         QApplication app(argc, argv);
-        QString msg = QString::fromUtf8(e.what());
-        if (msg == QLatin1String(App::Application::verboseVersionEmitMessage)) {
-            QString data;
-            QTextStream str(&data);
-            const std::map<std::string, std::string> config = App::Application::Config();
-
-            App::Application::getVerboseCommonInfo(str, config);
-            Gui::Application::getVerboseDPIStyleInfo(str);
-            App::Application::getVerboseAddOnsInfo(str, config);
-
-            msg = data;
+        if (std::strcmp(e.what(), App::ProgramInformation::verboseVersionEmitMessage) == 0) {
+            displayInfo(Gui::ProgramInformation::collect());
         }
-        displayInfo(msg);
-        exit(0);
+        else {
+            displayInfo(e.what());
+        }
+        return 0;
     }
     catch (const Base::Exception& e) {
         // Popup an own dialog box instead of that one of Windows
         QApplication app(argc, argv);
         QString appName = QString::fromStdString(App::Application::getExecutableName());
-        QString msg;
-        msg = QObject::tr(
-                  "While initializing %1 the following exception occurred: '%2'\n\n"
-                  "Python is searching for its files in the following directories:\n%3\n\n"
-                  "Python version information:\n%4\n"
-        )
-                  .arg(
-                      appName,
-                      QString::fromUtf8(e.what()),
-                      QString::fromStdString(Base::Interpreter().getPythonPath()),
-                      QString::fromLatin1(Py_GetVersion())
-                  );
+        QString msg = QObject::tr("While initializing %1 the following exception occurred: '%2'\n\n")
+                          .arg(appName, QString::fromUtf8(e.what()));
+        if (Py_IsInitialized()) {
+            msg += QObject::tr("Python is searching for its files in the following directories:\n%1\n\n")
+                       .arg(QString::fromStdString(Base::Interpreter().getPythonPath()));
+        }
+        else {
+            msg += QObject::tr("Python has not initialized yet.\n\n");
+        }
+        msg += QObject::tr("Python version information:\n%1\n")
+                   .arg(QString::fromLatin1(Py_GetVersion()));
         const char* pythonhome = getenv("PYTHONHOME");
         if (pythonhome) {
             msg += QObject::tr("\nThe environment variable PYTHONHOME is set to '%1'.")
@@ -307,7 +315,7 @@ int main(int argc, char** argv)
         }
 
         displayCritical(msg, false);
-        exit(100);
+        return 100;
     }
     catch (...) {
         // Popup an own dialog box instead of that one of Windows
@@ -319,7 +327,7 @@ int main(int argc, char** argv)
         )
                           .arg(appName);
         displayCritical(msg, false);
-        exit(101);
+        return 101;
     }
 
     // Run phase ===========================================================
@@ -346,7 +354,7 @@ int main(int argc, char** argv)
         exit(1);
     }
     catch (const std::exception& e) {
-        Base::Console().error("Application unexpectedly terminated: %s\n", e.what());
+        Base::Console().error("Application unexpectedly terminated: {}\n", e.what());
         exit(1);
     }
     catch (...) {
@@ -359,135 +367,12 @@ int main(int argc, char** argv)
     std::cerr.rdbuf(oldcerr);
 
     // Destruction phase ===========================================================
-    Base::Console().log("%s terminating...\n", App::Application::getExecutableName().c_str());
+    Base::Console().log("{} terminating...\n", App::Application::getExecutableName());
 
     // cleans up
     App::Application::destruct();
 
-    Base::Console().log("%s completely terminated\n", App::Application::getExecutableName().c_str());
+    Base::Console().log("{} completely terminated\n", App::Application::getExecutableName());
 
     return 0;
 }
-
-#if defined(_MSC_VER)
-
-typedef BOOL(__stdcall* tMDWD)(
-    IN HANDLE hProcess,
-    IN DWORD ProcessId,
-    IN HANDLE hFile,
-    IN MINIDUMP_TYPE DumpType,
-    IN CONST PMINIDUMP_EXCEPTION_INFORMATION ExceptionParam,
-    OPTIONAL IN CONST PMINIDUMP_USER_STREAM_INFORMATION UserStreamParam,
-    OPTIONAL IN CONST PMINIDUMP_CALLBACK_INFORMATION CallbackParam OPTIONAL
-);
-
-static tMDWD s_pMDWD;
-static HMODULE s_hDbgHelpMod;
-static MINIDUMP_TYPE s_dumpTyp = MiniDumpNormal;
-static std::wstring s_szMiniDumpFileName;  // initialize with whatever appropriate...
-
-# include <Base/StackWalker.h>
-class MyStackWalker: public StackWalker
-{
-    DWORD threadId;
-
-public:
-    MyStackWalker()
-        : StackWalker()
-        , threadId(GetCurrentThreadId())
-    {
-        std::string name = App::Application::Config()["UserAppData"] + "crash.log";
-        Base::Console().attachObserver(new Base::ConsoleObserverFile(name.c_str()));
-    }
-    MyStackWalker(DWORD dwProcessId, HANDLE hProcess)
-        : StackWalker(dwProcessId, hProcess)
-    {}
-    virtual void OnOutput(LPCSTR szText)
-    {
-        Base::Console().log("Id: %ld: %s", threadId, szText);
-        // StackWalker::OnOutput(szText);
-    }
-};
-
-static LONG __stdcall MyCrashHandlerExceptionFilter(EXCEPTION_POINTERS* pEx)
-{
-# ifdef _M_IX86
-    if (pEx->ExceptionRecord->ExceptionCode == EXCEPTION_STACK_OVERFLOW) {
-        // be sure that we have enough space...
-        static char MyStack[1024 * 128];
-        // it assumes that DS and SS are the same!!! (this is the case for Win32)
-        // change the stack only if the selectors are the same (this is the case for Win32)
-        //__asm push offset MyStack[1024*128];
-        //__asm pop esp;
-        __asm mov eax, offset MyStack[1024 * 128];
-        __asm mov esp, eax;
-    }
-# endif
-    MyStackWalker sw;
-    sw.ShowCallstack(GetCurrentThread(), pEx->ContextRecord);
-    Base::Console().log("*** Unhandled Exception!\n");
-    Base::Console().log("   ExpCode: 0x%8.8X\n", pEx->ExceptionRecord->ExceptionCode);
-    Base::Console().log("   ExpFlags: %d\n", pEx->ExceptionRecord->ExceptionFlags);
-    Base::Console().log("   ExpAddress: 0x%8.8X\n", pEx->ExceptionRecord->ExceptionAddress);
-
-    bool bFailed = true;
-    HANDLE hFile;
-    hFile = CreateFileW(
-        s_szMiniDumpFileName.c_str(),
-        GENERIC_WRITE,
-        0,
-        NULL,
-        CREATE_ALWAYS,
-        FILE_ATTRIBUTE_NORMAL,
-        NULL
-    );
-    if (hFile != INVALID_HANDLE_VALUE) {
-        MINIDUMP_EXCEPTION_INFORMATION stMDEI;
-        stMDEI.ThreadId = GetCurrentThreadId();
-        stMDEI.ExceptionPointers = pEx;
-        stMDEI.ClientPointers = true;
-        // try to create a miniDump:
-        if (s_pMDWD(GetCurrentProcess(), GetCurrentProcessId(), hFile, s_dumpTyp, &stMDEI, NULL, NULL)) {
-            bFailed = false;  // succeeded
-        }
-        CloseHandle(hFile);
-    }
-
-    if (bFailed) {
-        return EXCEPTION_CONTINUE_SEARCH;
-    }
-
-    // Optional display an error message
-    // FatalAppExit(-1, ("Application failed!"));
-
-
-    // or return one of the following:
-    // - EXCEPTION_CONTINUE_SEARCH
-    // - EXCEPTION_CONTINUE_EXECUTION
-    // - EXCEPTION_EXECUTE_HANDLER
-    return EXCEPTION_CONTINUE_SEARCH;  // this will trigger the "normal" OS error-dialog
-}
-
-void InitMiniDumpWriter(const std::string& filename)
-{
-    if (s_hDbgHelpMod != NULL) {
-        return;
-    }
-    Base::FileInfo fi(filename);
-    s_szMiniDumpFileName = fi.toStdWString();
-
-    // Initialize the member, so we do not load the dll after the exception has occurred
-    // which might be not possible anymore...
-    s_hDbgHelpMod = LoadLibraryA(("dbghelp.dll"));
-    if (s_hDbgHelpMod != NULL) {
-        s_pMDWD = (tMDWD)GetProcAddress(s_hDbgHelpMod, "MiniDumpWriteDump");
-    }
-
-    // Register Unhandled Exception-Filter:
-    SetUnhandledExceptionFilter(MyCrashHandlerExceptionFilter);
-
-    // Additional call "PreventSetUnhandledExceptionFilter"...
-    // See also: "SetUnhandledExceptionFilter" and VC8 (and later)
-    // http://blog.kalmbachnet.de/?postid=75
-}
-#endif

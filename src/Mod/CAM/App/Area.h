@@ -21,8 +21,7 @@
  *                                                                          *
  ****************************************************************************/
 
-#ifndef PATH_AREA_H
-#define PATH_AREA_H
+#pragma once
 
 #include <chrono>
 #include <list>
@@ -38,13 +37,19 @@
 #include "AreaParams.h"
 #include "Path.h"
 
-
+namespace heeks
+{
 class CArea;
 class CCurve;
+}  // namespace heeks
+
 class Bnd_Box;
 
 namespace Path
 {
+
+using heeks::CArea;
+using heeks::CCurve;
 
 /** Store libarea algorithm configuration */
 struct PathExport CAreaParams
@@ -97,11 +102,9 @@ struct PathExport CAreaConfig
     /** The constructor automatically saves current setting and apply user defined ones
      *
      * \arg \c p user defined configurations
-     * \arg \c noFitArgs if true, will override and disable arc fitting. Because
-     * arc unfiting and fitting is lossy. And repeatedly perform these operation
-     * may cause shape deformation. So it is best to delay arc fitting until the
-     * final step*/
-    explicit CAreaConfig(const CAreaParams& p, bool noFitArcs = true);
+     * \arg \c noFitArcs if true, will override and disable arc fitting.
+     **/
+    explicit CAreaConfig(const CAreaParams& p, bool noFitArcs = false);
 
     /** The destructor restores the setting, and thus exception safe.  */
     ~CAreaConfig();
@@ -166,6 +169,14 @@ protected:
         bool from_center = false
     );
 
+    /** Perform a single offset operation on myArea and return the result */
+    std::shared_ptr<CArea> performSingleOffset(double offset);
+
+    /** Check if there's a gap between two offset areas
+     *
+     * Returns true if there's uncovered area between prev and curr after
+     * accounting for tool coverage.
+     */
     /** Make a pocket of the combined shape
      *
      * User #AREA_PARAMS_POCKET setting in myParams.
@@ -187,7 +198,6 @@ public:
     ~Area() override;
 
     bool isBuilt() const;
-
     /** Set a working plane
      *
      * \arg \c shape: a shape defining a working plane.
@@ -260,7 +270,7 @@ public:
         const TopoDS_Shape& plane = TopoDS_Shape()
     );
 
-    std::shared_ptr<Area> getClearedArea(
+    static std::shared_ptr<Area> getClearedArea(
         const Toolpath* path,
         double diameter,
         double zmax,
@@ -446,5 +456,3 @@ public:
 };
 
 }  // namespace Path
-
-#endif  // PATH_AREA_H

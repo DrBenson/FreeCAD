@@ -22,8 +22,49 @@
 # *                                                                         *
 # ***************************************************************************
 
-import ArchWindow
 from PySide.QtCore import QT_TRANSLATE_NOOP
+
+
+def getSketchDefiningEdges(sketch, selected_edges=[], supported_geometry=None):
+    import Part
+    import Sketcher
+
+    if supported_geometry is None:
+        supported_geometry = (Part.LineSegment, Part.Circle, Part.ArcOfCircle, Part.Ellipse)
+
+    edges = []
+
+    for index, facade in enumerate(sketch.GeometryFacadeList):
+        if selected_edges:
+            if str(index) not in selected_edges:
+                continue
+        elif facade.Construction:
+            continue
+
+        if isinstance(facade.Geometry, supported_geometry):
+            edges.append(facade.Geometry.toShape())
+
+    external_geometry = sketch.ExternalGeo
+    for index, geometry in enumerate(external_geometry[2:], start=2):
+        facade = Sketcher.ExternalGeometryFacade(geometry)
+        geo_id = -index - 1
+
+        if not facade.Ref:
+            continue
+
+        if facade.testFlag("Missing"):
+            continue
+
+        if selected_edges:
+            if str(geo_id) not in selected_edges:
+                continue
+        elif not facade.testFlag("Defining"):
+            continue
+
+        if isinstance(facade.Geometry, supported_geometry):
+            edges.append(facade.Geometry.toShape())
+
+    return edges
 
 
 class ArchSketchObject:
@@ -34,30 +75,6 @@ class ArchSketchObject:
 class ArchSketch(ArchSketchObject):
     def __init__(self, obj):
         pass
-
-    def setPropertiesLinkCommon(self, orgFp, linkFp=None, mode=None):
-        if linkFp:
-            fp = linkFp
-        else:
-            fp = orgFp
-        prop = fp.PropertiesList
-        if not isinstance(fp.getLinkedObject().Proxy, ArchWindow._Window):
-            pass
-        else:
-            if "Hosts" not in prop:
-                # inherited properties of Link are not in PropertiesList:
-                old_hosts = getattr(fp, "Hosts", [])
-                fp.addProperty(
-                    "App::PropertyLinkList",
-                    "Hosts",
-                    "Window",
-                    QT_TRANSLATE_NOOP("App::Property", "The objects that host this window"),
-                    locked=True,
-                )
-                fp.Hosts = old_hosts
-                for host in old_hosts:
-                    host.touch()
-                # Arch Window's code
 
 
 # from ArchSketchObjectExt import ArchSketch  # Doesn't work

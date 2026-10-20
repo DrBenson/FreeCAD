@@ -38,7 +38,10 @@ import Path.Log
 import Path.Main.Sanity.ImageBuilder as ImageBuilder
 import Path.Main.Sanity.ReportGenerator as ReportGenerator
 import os
+import Path.Base.Util as PathUtil
 import Path.Dressup.Utils as PathDressup
+import Path.Op.Base as PathOp
+import PathScripts.PathUtils as PathUtils
 
 translate = FreeCAD.Qt.translate
 
@@ -176,7 +179,32 @@ class CAMSanity:
         data["Sequence"] = "{} of {}".format(n, m)
         data["JobType"] = "2.5D Milling"  # improve after job types added
 
+        data["squawkData"].extend(self._unitSchemaSquawks(obj.Document))
+
         return data
+
+    def _unitSchemaSquawks(self, doc):
+        """Warn when the document's unit schema expresses velocity per second.
+
+        G-code feed rates are per minute. Under a per-second schema the feed
+        the user sees in the UI is not the feed the post-processor emits, so
+        the job creation dialog marks such schemas unsafe. Repeat that here so
+        a job created or edited under one is caught before machining."""
+        schema = PathUtil.documentUnitSchema(doc)
+        if schema is None or PathUtil.schemaUsesMinutes(schema):
+            return []
+        return [
+            self.squawk(
+                "CAMSanity",
+                translate(
+                    "CAM_Sanity",
+                    "Document unit schema '{}' expresses velocity per second. "
+                    "Feed rates will not match what the G-code emits. "
+                    "Use a schema with velocity per minute.",
+                ).format(doc.UnitSystem),
+                squawkType="WARNING",
+            )
+        ]
 
     def _fixtureData(self):
         obj = self.job
@@ -221,6 +249,8 @@ class CAMSanity:
             if "Stop" in op.Name and hasattr(op, "Stop") and op.Stop is True:
                 data["optionalstops"] = "True"
 
+        data["squawkData"].extend(self._deprecationSquawks())
+
         if obj.LastPostProcessOutput == "":
             data["filesize"] = str(0.0)
             data["linecount"] = str(0)
@@ -233,7 +263,8 @@ class CAMSanity:
         else:
             if os.path.isfile(obj.LastPostProcessOutput):
                 data["filesize"] = str(os.path.getsize(obj.LastPostProcessOutput) / 1000)
-                data["linecount"] = str(sum(1 for line in open(obj.LastPostProcessOutput)))
+                with open(obj.LastPostProcessOutput) as gcode_file:
+                    data["linecount"] = str(sum(1 for _ in gcode_file))
             else:
                 data["filesize"] = str(0.0)
                 data["linecount"] = str(0)
@@ -249,6 +280,48 @@ class CAMSanity:
 
         return data
 
+    def _deprecationSquawks(self):
+        """One squawk per operation that carries a deprecation notice.
+
+        Ops declare notices through opDeprecationNotice(obj) on their proxy (see
+        Path.Op.Base). Dressups are unwrapped so a deprecated op inside one is
+        still reported. A deprecated op keeps working, so its squawk is a NOTE. A
+        deleted op (Path.Op.Base.RemovedOp) generates no toolpath, so the program is
+        missing its moves and the squawk is a CAUTION."""
+        squawks = []
+        for op in self.job.Operations.Group:
+            base_op = PathDressup.baseOp(op)
+            proxy = getattr(base_op, "Proxy", None)
+            if not hasattr(proxy, "opDeprecationNotice"):
+                continue
+            try:
+                notice = proxy.opDeprecationNotice(base_op)
+            except Exception as e:
+                Path.Log.debug(f"opDeprecationNotice failed for {base_op.Label}: {e}")
+                continue
+            if not isinstance(notice, str) or not notice:
+                continue
+            if isinstance(proxy, PathOp.RemovedOp):
+                squawks.append(
+                    self.squawk(
+                        "CAMSanity",
+                        translate(
+                            "CAM_Sanity", "Operation '{}' is missing from the output: {}"
+                        ).format(base_op.Label, notice),
+                        squawkType="CAUTION",
+                    )
+                )
+                continue
+            squawks.append(
+                self.squawk(
+                    "CAMSanity",
+                    translate("CAM_Sanity", "Operation '{}' is deprecated: {}").format(
+                        base_op.Label, notice
+                    ),
+                )
+            )
+        return squawks
+
     def _runData(self):
         obj = self.job
         data = {
@@ -261,12 +334,20 @@ class CAMSanity:
         }
 
         data["cycletotal"] = str(obj.CycleTime)
-        data["jobMinZ"] = FreeCAD.Units.Quantity(
-            obj.Path.BoundBox.ZMin, FreeCAD.Units.Length
-        ).UserString
-        data["jobMaxZ"] = FreeCAD.Units.Quantity(
-            obj.Path.BoundBox.ZMax, FreeCAD.Units.Length
-        ).UserString
+        # Z in Job coordinates: an operation on a work plane stores its path
+        # in the plane's frame, so the placed path is the one that says where
+        # the tool goes. The Job's own Path is empty; its range is its
+        # operations'.
+        placed = {}
+        for op in obj.Operations.Group:
+            path = PathUtils.getPathWithPlacement(op)
+            if path.BoundBox.isValid():
+                placed[op.Name] = path.BoundBox
+        if placed:
+            zmin = min(bb.ZMin for bb in placed.values())
+            zmax = max(bb.ZMax for bb in placed.values())
+            data["jobMinZ"] = FreeCAD.Units.Quantity(zmin, FreeCAD.Units.Length).UserString
+            data["jobMaxZ"] = FreeCAD.Units.Quantity(zmax, FreeCAD.Units.Length).UserString
         data["jobDescription"] = obj.Description
 
         data["operations"] = []
@@ -288,13 +369,9 @@ class CAMSanity:
                 oplabel = "{} (INACTIVE)".format(oplabel)
                 ctime = "00:00:00"
 
-            if op.Path.BoundBox.isValid():
-                zmin = FreeCAD.Units.Quantity(
-                    op.Path.BoundBox.ZMin, FreeCAD.Units.Length
-                ).UserString
-                zmax = FreeCAD.Units.Quantity(
-                    op.Path.BoundBox.ZMax, FreeCAD.Units.Length
-                ).UserString
+            if op.Name in placed:
+                zmin = FreeCAD.Units.Quantity(placed[op.Name].ZMin, FreeCAD.Units.Length).UserString
+                zmax = FreeCAD.Units.Quantity(placed[op.Name].ZMax, FreeCAD.Units.Length).UserString
             else:
                 zmin = ""
                 zmax = ""
@@ -383,7 +460,7 @@ class CAMSanity:
                 )
                 continue  # skip old-style tools
             tooldata = data.setdefault(str(TC.ToolNumber), {})
-            bitshape = tooldata.setdefault("ShapeType", "")
+            bitshape = tooldata.get("ShapeType", "")
             if bitshape not in ["", TC.Tool.ShapeType]:
                 data["squawkData"].append(
                     self.squawk(
@@ -394,6 +471,7 @@ class CAMSanity:
                         squawkType="CAUTION",
                     )
                 )
+            tooldata["ShapeType"] = TC.Tool.ShapeType
             tooldata["bitShape"] = TC.Tool.ShapeType
             tooldata["description"] = TC.Tool.Label
             tooldata["manufacturer"] = ""
@@ -505,6 +583,163 @@ class CAMSanity:
         Path.Log.debug("get_output_url")
 
         generator = ReportGenerator.ReportGenerator(self.data, embed_images=True)
-        html = generator.generate_html()
-        generator = None
-        return html
+        return generator.generate_html()
+
+    def get_all_squawks(self, overrides=None):
+        """Collect squawks from all validation sections without generating images or HTML.
+
+        Calls each _xxxData() method directly using the current image_builder (a
+        DummyImageBuilder when invoked via validate_job(), so no GUI or file I/O occurs).
+        Also runs _validate_job_structure() for structural checks.
+
+        Args:
+            overrides: Optional dict of postprocessor property overrides.
+                       Passed through to apply_configuration_bundle() so that
+                       callers (e.g. the dialog) can inject values without
+                       modifying the job.
+
+        Returns:
+            tuple: (all_squawks, critical_squawks) where critical = WARNING or CAUTION
+        """
+        all_squawks = []
+        for method in [
+            self._toolData,
+            self._outputData,
+            self._runData,
+            self._stockData,
+            self._fixtureData,
+            self._baseObjectData,
+            self._designData,
+        ]:
+            try:
+                all_squawks.extend(method().get("squawkData", []))
+            except Exception as e:
+                Path.Log.warning(f"get_all_squawks: {method.__name__} failed: {e}")
+        all_squawks.extend(self._validate_job_structure())
+
+        # Collect postprocessor-specific squawks
+        if hasattr(self.job, "Machine") and self.job.Machine:
+            try:
+                from Machine.models.machine import MachineFactory
+                from Path.Post.Processor import PostProcessorFactory
+
+                machine = MachineFactory.get_machine(self.job.Machine)
+                postprocessor_name = getattr(machine, "postprocessor_file_name", None)
+                if postprocessor_name:
+                    postprocessor = PostProcessorFactory.get_post_processor(
+                        self.job, postprocessor_name
+                    )
+                    if postprocessor and hasattr(postprocessor, "get_sanity_checks"):
+                        if hasattr(postprocessor, "apply_configuration_bundle"):
+                            postprocessor.apply_configuration_bundle(overrides=overrides)
+                        pp_squawks = postprocessor.get_sanity_checks(self.job)
+                        all_squawks.extend(pp_squawks)
+            except FileNotFoundError as e:
+                if "Available machines:" in str(e):
+                    # a missing machine means "don't do sanity"
+                    Path.Log.warning(f"Failed to get postprocessor sanity checks: {e}")
+                else:
+                    raise e
+
+        critical = [s for s in all_squawks if s["squawkType"] in ("WARNING", "CAUTION")]
+        Path.Log.debug(f"get_all_squawks: {len(all_squawks)} squawks, {len(critical)} critical")
+        Path.Log.debug(f"Critical squawks: {critical}")
+        return all_squawks, critical
+
+    @staticmethod
+    def validate_job(job, overrides=None):
+        """Lightweight job validation without generating images or HTML.
+
+        Bypasses __init__ entirely to avoid calling summarize() or any image-generation
+        code. Sets up only the attributes needed by the _xxxData() methods, uses
+        DummyImageBuilder unconditionally, and calls get_all_squawks().
+
+        Args:
+            job: FreeCAD CAM job object
+            overrides: Optional dict of postprocessor property overrides.
+                       When provided these are passed to the postprocessor's
+                       apply_configuration_bundle() instead of reading from the job.
+
+        Returns:
+            tuple: (all_squawks, critical_squawks) where critical = WARNING or CAUTION
+        """
+        import tempfile
+        import os as _os
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            sanity = object.__new__(CAMSanity)
+            sanity.job = job
+            sanity.output_file = _os.path.join(tmpdir, "dummy.html")
+            sanity.filelocation = tmpdir
+            sanity.image_builder = ImageBuilder.DummyImageBuilder(tmpdir)
+            sanity.data = {}
+            return sanity.get_all_squawks(overrides=overrides)
+
+    def validate_for_postprocessing(self):
+        """
+        Lightweight validation for post-processing without full report generation.
+
+        Returns:
+            tuple: (has_critical_issues, all_squawks, critical_squawks)
+        """
+        all_squawks = []
+
+        # Collect squawks from key validation methods
+        all_squawks.extend(self._toolData().get("squawkData", []))
+
+        # Add basic job structure validation
+        job_squawks = self._validate_job_structure()
+        all_squawks.extend(job_squawks)
+
+        # Identify critical squawks that should block post-processing
+        critical_squawks = []
+        for squawk in all_squawks:
+            if squawk["squawkType"] in ("WARNING", "CAUTION"):
+                note = squawk["Note"].lower()
+                # Critical issues for post-processing
+                if any(
+                    keyword in note
+                    for keyword in [
+                        "no feedrate",
+                        "no spindlespeed",
+                        "no tool controllers",
+                        "no operations",
+                        "no model",
+                        "no base",
+                    ]
+                ):
+                    critical_squawks.append(squawk)
+
+        has_critical = len(critical_squawks) > 0
+        return has_critical, all_squawks, critical_squawks
+
+    def _validate_job_structure(self):
+        """
+        Validate basic job structure for post-processing.
+
+        Returns:
+            list: List of squawk dictionaries for job structure issues
+        """
+        job_squawks = []
+
+        # Check if job has operations
+        if not hasattr(self.job, "Operations") or not self.job.Operations:
+            job_squawks.append(
+                self.squawk(
+                    "CAMSanity",
+                    translate("CAM_Sanity", "No operations found in job"),
+                    squawkType="WARNING",
+                )
+            )
+
+        # Check if job has model
+        if not hasattr(self.job, "Model") or not self.job.Model:
+            job_squawks.append(
+                self.squawk(
+                    "CAMSanity",
+                    translate("CAM_Sanity", "No model/base geometry found in job"),
+                    squawkType="WARNING",
+                )
+            )
+
+        return job_squawks

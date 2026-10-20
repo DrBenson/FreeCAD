@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2024 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAWGUI_QGIBREAKLINE_H
-#define TECHDRAWGUI_QGIBREAKLINE_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -90,6 +91,3 @@ private:
 };
 
 }
-
-#endif // TECHDRAWGUI_QGIBREAKLINE_H
-

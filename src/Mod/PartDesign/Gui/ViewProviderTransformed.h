@@ -23,12 +23,16 @@
  ******************************************************************************/
 
 
-#ifndef PARTGUI_ViewProviderTransformed_H
-#define PARTGUI_ViewProviderTransformed_H
+#pragma once
 
 #include "ViewProvider.h"
 
 #include <Inventor/nodes/SoMultipleCopy.h>
+
+namespace Gui
+{
+class View3DInventorViewer;
+}
 
 namespace PartDesign
 {
@@ -68,6 +72,8 @@ public:
         return diagMessage;
     }
 
+    Gui::View3DInventorViewer* getViewer();
+
 protected:
     bool setEdit(int ModNum) override;
 
@@ -83,6 +89,3 @@ protected:
 
 
 }  // namespace PartDesignGui
-
-
-#endif  // PARTGUI_ViewProviderTransformed_H

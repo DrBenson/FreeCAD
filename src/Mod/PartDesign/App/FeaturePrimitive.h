@@ -23,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef PARTDESIGN_FeaturePrimitive_H
-#define PARTDESIGN_FeaturePrimitive_H
+#pragma once
 
 #include "FeatureAddSub.h"
 #include <Mod/Part/App/AttachExtension.h>
@@ -100,7 +99,7 @@ class PartDesignExport AdditiveBox: public Box
 
     AdditiveBox()
     {
-        addSubType = FeatureAddSub::Additive;
+        defineAdditive();
     }
 };
 
@@ -110,7 +109,7 @@ class PartDesignExport SubtractiveBox: public Box
 
     SubtractiveBox()
     {
-        addSubType = FeatureAddSub::Subtractive;
+        defineSubtractive();
     }
 };
 
@@ -140,7 +139,7 @@ class PartDesignExport AdditiveCylinder: public Cylinder
 
     AdditiveCylinder()
     {
-        addSubType = FeatureAddSub::Additive;
+        defineAdditive();
     }
 };
 
@@ -150,7 +149,7 @@ class PartDesignExport SubtractiveCylinder: public Cylinder
 
     SubtractiveCylinder()
     {
-        addSubType = FeatureAddSub::Subtractive;
+        defineSubtractive();
     }
 };
 
@@ -183,7 +182,7 @@ class PartDesignExport AdditiveSphere: public Sphere
 
     AdditiveSphere()
     {
-        addSubType = FeatureAddSub::Additive;
+        defineAdditive();
     }
 };
 
@@ -193,7 +192,7 @@ class PartDesignExport SubtractiveSphere: public Sphere
 
     SubtractiveSphere()
     {
-        addSubType = FeatureAddSub::Subtractive;
+        defineSubtractive();
     }
 };
 
@@ -225,7 +224,7 @@ class PartDesignExport AdditiveCone: public Cone
 
     AdditiveCone()
     {
-        addSubType = FeatureAddSub::Additive;
+        defineAdditive();
     }
 };
 
@@ -235,7 +234,7 @@ class PartDesignExport SubtractiveCone: public Cone
 
     SubtractiveCone()
     {
-        addSubType = FeatureAddSub::Subtractive;
+        defineSubtractive();
     }
 };
 
@@ -270,7 +269,7 @@ class PartDesignExport AdditiveEllipsoid: public Ellipsoid
 
     AdditiveEllipsoid()
     {
-        addSubType = FeatureAddSub::Additive;
+        defineAdditive();
     }
 };
 
@@ -280,7 +279,7 @@ class PartDesignExport SubtractiveEllipsoid: public Ellipsoid
 
     SubtractiveEllipsoid()
     {
-        addSubType = FeatureAddSub::Subtractive;
+        defineSubtractive();
     }
 };
 
@@ -314,7 +313,7 @@ class PartDesignExport AdditiveTorus: public Torus
 
     AdditiveTorus()
     {
-        addSubType = FeatureAddSub::Additive;
+        defineAdditive();
     }
 };
 
@@ -324,7 +323,7 @@ class PartDesignExport SubtractiveTorus: public Torus
 
     SubtractiveTorus()
     {
-        addSubType = FeatureAddSub::Subtractive;
+        defineSubtractive();
     }
 };
 
@@ -354,7 +353,7 @@ class PartDesignExport AdditivePrism: public Prism
 
     AdditivePrism()
     {
-        addSubType = FeatureAddSub::Additive;
+        defineAdditive();
     }
 };
 
@@ -364,7 +363,7 @@ class PartDesignExport SubtractivePrism: public Prism
 
     SubtractivePrism()
     {
-        addSubType = FeatureAddSub::Subtractive;
+        defineSubtractive();
     }
 };
 
@@ -403,7 +402,7 @@ class PartDesignExport AdditiveWedge: public Wedge
 
     AdditiveWedge()
     {
-        addSubType = FeatureAddSub::Additive;
+        defineAdditive();
     }
 };
 
@@ -413,11 +412,8 @@ class PartDesignExport SubtractiveWedge: public Wedge
 
     SubtractiveWedge()
     {
-        addSubType = FeatureAddSub::Subtractive;
+        defineSubtractive();
     }
 };
 
 }  // namespace PartDesign
-
-
-#endif  // PARTDESIGN_FeaturePrimitive_H

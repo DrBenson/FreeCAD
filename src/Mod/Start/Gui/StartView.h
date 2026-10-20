@@ -21,8 +21,9 @@
  *                                                                          *
  ***************************************************************************/
 
-#ifndef FREECAD_STARTVIEW_H
-#define FREECAD_STARTVIEW_H
+#pragma once
+
+#include <fastsignals/signal.h>
 
 #include <Mod/Start/StartGlobal.h>
 #include <Base/Type.h>
@@ -51,6 +52,8 @@ class Document;
 namespace StartGui
 {
 
+class NewFileButton;
+
 class StartGuiExport StartView: public Gui::MDIView
 {
     Q_OBJECT
@@ -70,7 +73,8 @@ public:
     void openExistingFile();
     void newAssemblyFile();
     void newDraftFile();
-    void newArchFile();
+    void newBimFile();
+    void recentFileAdded(const QString& filename);
 
     bool onHasMsg(const char* pMsg) const override;
 
@@ -85,7 +89,7 @@ protected:
     void changeEvent(QEvent* e) override;
     void showEvent(QShowEvent* event) override;
 
-    void configureNewFileButtons(QLayout* layout) const;
+    void configureNewFileButtons(QLayout* layout);
     static void configureFileCardWidget(QListView* fileCardWidget);
     void configureRecentFilesListWidget(QListView* recentFilesListWidget, QLabel* recentFilesLabel);
     void configureExamplesListWidget(QListView* examplesListWidget);
@@ -108,6 +112,12 @@ private:
     void setListViewUpdatesEnabled(bool enabled);
 
     QStackedWidget* _contents = nullptr;
+    NewFileButton* _newEmptyFileButton;
+    NewFileButton* _openFileButton;
+    NewFileButton* _partDesignButton;
+    NewFileButton* _assemblyButton;
+    NewFileButton* _draftButton;
+    NewFileButton* _bimButton;
     Start::RecentFilesModel _recentFilesModel;
     Start::ExamplesModel _examplesModel;
     Start::CustomFolderModel _customFolderModel;
@@ -117,11 +127,10 @@ private:
     QLabel* _customFolderLabel;
     QPushButton* _openFirstStart;
     QCheckBox* _showOnStartupCheckBox;
+    fastsignals::scoped_connection _saveddoc;
 
     bool isInitialized = false;
 
 };  // namespace StartGui
 
 }  // namespace StartGui
-
-#endif  // FREECAD_STARTVIEW_H

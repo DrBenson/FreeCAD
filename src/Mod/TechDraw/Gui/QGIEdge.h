@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Luke Parry <l.parry@warwick.ac.uk>                 *
  *                                                                         *
@@ -20,19 +22,19 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DRAWINGGUI_QGRAPHICSITEMEDGE_H
-#define DRAWINGGUI_QGRAPHICSITEMEDGE_H
+#pragma once
 
 #include <Mod/TechDraw/App/Geometry.h>
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
 #include "QGIPrimPath.h"
 #include "QGIUserTypes.h"
+#include "ScreenScalable.h"
 
 namespace TechDrawGui
 {
 
-class TechDrawGuiExport QGIEdge : public QGIPrimPath
+class TechDrawGuiExport QGIEdge : public QGIPrimPath, public ScreenScalable
 {
 public:
     explicit QGIEdge(int index);
@@ -52,10 +54,10 @@ public:
     void setSmoothEdge(bool b) { isSmoothEdge = b; }
     bool getSmoothEdge() const { return(isSmoothEdge); }
     void setPrettyNormal() override;
-
-    double getEdgeFuzz() const;
-
     void setLinePen(const QPen& isoPen);
+
+    void setWidth(double width) override;
+    void setScreenScale(double scale) override;
 
     void setSource(TechDraw::SourceType source) { m_source = source; }
     TechDraw::SourceType getSource() const { return m_source;}
@@ -75,9 +77,9 @@ private:
     bool isHiddenEdge;
     bool isSmoothEdge;
 
+    double m_width = 1.0;
+
     TechDraw::SourceType m_source{TechDraw::SourceType::GEOMETRY};
 };
 
 }
-
-#endif // DRAWINGGUI_QGRAPHICSITEMEDGE_H

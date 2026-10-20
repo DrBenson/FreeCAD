@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2008 Jürgen Riegel <juergen.riegel@web.de>              *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef FEM_PRECOMPILED_H
-#define FEM_PRECOMPILED_H
+#pragma once
 
 #include <FCConfig.h>
 
@@ -208,6 +209,4 @@
 # include <NETGENPlugin_Hypothesis.hxx>
 # include <NETGENPlugin_Mesher.hxx>
 # include <NETGENPlugin_SimpleHypothesis_3D.hxx>
-#endif
-
 #endif

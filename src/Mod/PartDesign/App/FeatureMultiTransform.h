@@ -23,8 +23,7 @@
  ******************************************************************************/
 
 
-#ifndef PARTDESIGN_FeatureMultiTransform_H
-#define PARTDESIGN_FeatureMultiTransform_H
+#pragma once
 
 #include "FeatureTransformed.h"
 
@@ -40,6 +39,16 @@ public:
     MultiTransform();
 
     App::PropertyLinkList Transformations;
+
+    bool isTransformationSuppressed(int index) const override;
+    bool hasOriginalTransformation() const override
+    {
+        return originalTransformation;
+    }
+    bool deleteOriginalTransformation() const override
+    {
+        return suppressOriginalTransformation;
+    }
 
     /** @name methods override feature */
     //@{
@@ -63,9 +72,11 @@ public:
 
 protected:
     void positionBySupport() override;
+
+private:
+    std::vector<bool> generatedSuppression;
+    bool originalTransformation = true;
+    bool suppressOriginalTransformation = true;
 };
 
 }  // namespace PartDesign
-
-
-#endif  // PARTDESIGN_FeatureMultiTransform_H

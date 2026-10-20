@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2020 Bernd Hahnebach <bernd@bimstatik.org>              *
 # *                                                                         *
@@ -25,7 +27,6 @@
 This module contains natural constants for the Fem module.
 All constants are in SI units.
 """
-
 
 __title__ = "FEM collection of natural constants"
 __author__ = "Bernd Hahnebach"

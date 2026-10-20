@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2008 Jürgen Riegel <juergen.riegel@web.de>              *
  *                                                                         *
@@ -330,14 +332,9 @@ private:
         char* fileName = nullptr;
         PyObject* pcObj = nullptr;
 
-        if (!PyArg_ParseTuple(
-                args.ptr(),
-                "et|O!",
-                "utf-8",
-                &fileName,
-                &(App::DocumentObjectPy::Type),
-                &pcObj
-            )) {
+        if (
+            !PyArg_ParseTuple(args.ptr(), "et|O!", "utf-8", &fileName, &(App::DocumentObjectPy::Type), &pcObj)
+        ) {
             throw Py::Exception();
         }
         std::string EncodedName = std::string(fileName);

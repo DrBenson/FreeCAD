@@ -1,28 +1,27 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
+# SPDX-FileCopyrightText: 2019 Yorik van Havre
+# SPDX-FileNotice: Part of the FreeCAD project.
 
-# ***************************************************************************
-# *                                                                         *
-# *   Copyright (c) 2019 Yorik van Havre <yorik@uncreated.net>              *
-# *                                                                         *
-# *   This file is part of FreeCAD.                                         *
-# *                                                                         *
-# *   FreeCAD is free software: you can redistribute it and/or modify it    *
-# *   under the terms of the GNU Lesser General Public License as           *
-# *   published by the Free Software Foundation, either version 2.1 of the  *
-# *   License, or (at your option) any later version.                       *
-# *                                                                         *
-# *   FreeCAD is distributed in the hope that it will be useful, but        *
-# *   WITHOUT ANY WARRANTY; without even the implied warranty of            *
-# *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      *
-# *   Lesser General Public License for more details.                       *
-# *                                                                         *
-# *   You should have received a copy of the GNU Lesser General Public      *
-# *   License along with FreeCAD. If not, see                               *
-# *   <https://www.gnu.org/licenses/>.                                      *
-# *                                                                         *
-# ***************************************************************************
+################################################################################
+#                                                                              #
+#   FreeCAD is free software: you can redistribute it and/or modify            #
+#   it under the terms of the GNU Lesser General Public License as             #
+#   published by the Free Software Foundation, either version 2.1              #
+#   of the License, or (at your option) any later version.                     #
+#                                                                              #
+#   FreeCAD is distributed in the hope that it will be useful,                 #
+#   but WITHOUT ANY WARRANTY; without even the implied warranty                #
+#   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                    #
+#   See the GNU Lesser General Public License for more details.                #
+#                                                                              #
+#   You should have received a copy of the GNU Lesser General Public           #
+#   License along with FreeCAD. If not, see https://www.gnu.org/licenses       #
+#                                                                              #
+################################################################################
 
 """Layers manager for FreeCAD"""
+
+import ast
 
 import FreeCAD
 import FreeCADGui
@@ -579,16 +578,16 @@ if FreeCAD.GuiUp:
                     ["Solid", "Dashed", "Dotted", "Dashdot"][editor.currentIndex()],
                 )
             elif index.column() == 4:  # Line color
-                model.setData(index, eval(editor.text()), QtCore.Qt.UserRole)
-                model.itemFromIndex(index).setIcon(getColorIcon(eval(editor.text())))
+                model.setData(index, ast.literal_eval(editor.text()), QtCore.Qt.UserRole)
+                model.itemFromIndex(index).setIcon(getColorIcon(ast.literal_eval(editor.text())))
             elif index.column() == 5:  # Shape color
-                model.setData(index, eval(editor.text()), QtCore.Qt.UserRole)
-                model.itemFromIndex(index).setIcon(getColorIcon(eval(editor.text())))
+                model.setData(index, ast.literal_eval(editor.text()), QtCore.Qt.UserRole)
+                model.itemFromIndex(index).setIcon(getColorIcon(ast.literal_eval(editor.text())))
             elif index.column() == 6:  # Transparency
                 model.setData(index, editor.value())
             elif index.column() == 7:  # Line prin color
-                model.setData(index, eval(editor.text()), QtCore.Qt.UserRole)
-                model.itemFromIndex(index).setIcon(getColorIcon(eval(editor.text())))
+                model.setData(index, ast.literal_eval(editor.text()), QtCore.Qt.UserRole)
+                model.itemFromIndex(index).setIcon(getColorIcon(ast.literal_eval(editor.text())))
 
 
 FreeCADGui.addCommand("BIM_Layers", BIM_Layers())

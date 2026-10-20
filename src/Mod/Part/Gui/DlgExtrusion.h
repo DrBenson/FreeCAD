@@ -22,12 +22,13 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef PARTGUI_DLGEXTRUSION_H
-#define PARTGUI_DLGEXTRUSION_H
+#pragma once
 
 #include <QDialog>
 #include <string>
+#include <vector>
 
+#include <App/DocumentObserver.h>
 #include <Gui/TaskView/TaskDialog.h>
 #include <Gui/TaskView/TaskView.h>
 #include <Mod/Part/App/FeatureExtrusion.h>
@@ -47,7 +48,7 @@ public:
     DlgExtrusion(QWidget* parent = nullptr, Qt::WindowFlags fl = Qt::WindowFlags());
     ~DlgExtrusion() override;
     void accept() override;
-    void apply();
+    bool apply();
     void reject() override;
 
     Base::Vector3d getDir() const;
@@ -66,6 +67,16 @@ public:
 
     void writeParametersToFeature(App::DocumentObject& feature, App::DocumentObject* base) const;
 
+    Part::Extrusion* createFeatureFor(App::DocumentObject* sourceObj);
+    void updateFeatures();
+    void reconcileFeatures();
+    void refreshFeatures();
+    void updateBinding();
+    void applyBoundParameters();
+    void syncLinearParameters();
+
+    void setSelectionGate();
+
 protected:
     void findShapes();
     bool canExtrude(const TopoDS_Shape&) const;
@@ -83,6 +94,14 @@ private:
     void onButtonZClicked();
     void onCheckSymmetricToggled(bool on);
     void onTextLinkTextChanged(QString);
+    void onTreeSelectionChanged();
+    void onDeletedObject(const App::DocumentObject& obj);
+
+    bool applyInternal();
+    bool ensureTransaction();
+    void commitTransaction();
+    void abortTransaction();
+    void removeCreatedFeatures();
 
 private:
     /// updates enabling of controls
@@ -102,6 +121,13 @@ private:
     std::string document, label;
     class EdgeSelection;
     EdgeSelection* filter;
+    bool filterSelection;
+    std::vector<App::DocumentObjectWeakPtrT> extrusions;
+    App::DocumentObjectWeakPtrT boundFeature {nullptr};
+    fastsignals::scoped_connection deletedObjectConnection;
+    int transactionId {0};
+    bool transactionOpen {false};
+    bool ownsTransaction {false};
 };
 
 class TaskExtrusion: public Gui::TaskView::TaskDialog
@@ -126,5 +152,3 @@ private:
 };
 
 }  // namespace PartGui
-
-#endif  // PARTGUI_DLGEXTRUSION_H

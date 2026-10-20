@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2022 Ajinkya Dahale <dahale.a.p@gmail.com>              *
  *                                                                         *
@@ -21,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef GUI_VIEWPROVIDERFEMCONSTRAINTRIGIDBODY_H
-#define GUI_VIEWPROVIDERFEMCONSTRAINTRIGIDBODY_H
+#pragma once
 
 #include "ViewProviderFemConstraintOnBoundary.h"
 
@@ -48,6 +49,3 @@ protected:
 };
 
 }  // namespace FemGui
-
-
-#endif  // GUI_VIEWPROVIDERFEMCONSTRAINTRIGIDBODY_H

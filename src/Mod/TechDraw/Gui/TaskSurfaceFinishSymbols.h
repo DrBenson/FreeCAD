@@ -1,4 +1,6 @@
-﻿/***************************************************************************
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
+/***************************************************************************
  *   Copyright (c) 2022 edi                                                *
  *                                                                         *
  *   This file is part of the FreeCAD CAx development system.              *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAWGUI_TASKSURFACEFINISHSYMBOLS_H
-#define TECHDRAWGUI_TASKSURFACEFINISHSYMBOLS_H
+#pragma once
 
 #include <Gui/TaskView/TaskDialog.h>
 #include <Gui/TaskView/TaskView.h>
@@ -150,5 +151,3 @@ private:
 }; // class TaskDlgSurfaceFinishSymbols
 
 } // namespace TechDrawGui
-
-#endif // #ifndef TECHDRAWGUI_TASKSURFACEFINISHSYMBOLS_H

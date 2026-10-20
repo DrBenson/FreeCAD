@@ -23,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef APP_PATH_H
-#define APP_PATH_H
+#pragma once
 
 #include <bitset>
 #include <climits>
@@ -251,7 +250,7 @@ public:
          *                     FreeCAD quoting rules.
          * @return The string representation.
          */
-        std::string toString(bool toPython = false) const;
+        AppExport std::string toString(bool toPython = false) const;
 
         // Operators
 
@@ -1643,5 +1642,3 @@ struct hash<App::ObjectIdentifier>
     }
 };
 }  // namespace std
-
-#endif

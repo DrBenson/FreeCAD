@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2016 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DrawGuiUtil_h_
-#define DrawGuiUtil_h_
+#pragma once
 
 #include <string>
 #include <QCoreApplication>
@@ -88,6 +89,8 @@ class TechDrawGuiExport DrawGuiUtil {
 
     static double roundToDigits(double original, int digits);
 
+    static double screenWidth(double sceneWidth);
+
     static bool isSelectedInTree(QGraphicsItem* item);
     static void setSelectedTree(QGraphicsItem* item, bool selected);
     static bool isStyleSheetDark(std::string curStyleSheet);
@@ -111,4 +114,3 @@ class TechDrawGuiExport DrawGuiUtil {
 };
 
 } //end namespace TechDrawGui
-#endif

@@ -22,12 +22,12 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef MESHGUI_SEGMENTATIONBESTFIT_H
-#define MESHGUI_SEGMENTATIONBESTFIT_H
+#pragma once
 
 #include <list>
 #include <QDialog>
 
+#include <App/DocumentObserver.h>
 #include <Gui/TaskView/TaskDialog.h>
 #include <Gui/TaskView/TaskView.h>
 
@@ -91,7 +91,7 @@ private:
     std::vector<float>& values;
     FitParameter* fitParameter;
     ParameterList parameter;
-    Mesh::Feature* myMesh;
+    App::WeakPtrT<Mesh::Feature> myMesh;
     MeshSelection meshSel;
     std::vector<QDoubleSpinBox*> spinBoxes;
 
@@ -125,7 +125,7 @@ private:
     std::vector<float> cylinderParameter;
     std::vector<float> sphereParameter;
     Ui_SegmentationBestFit* ui;
-    Mesh::Feature* myMesh;
+    App::WeakPtrT<Mesh::Feature> myMesh;
     MeshSelection meshSel;
 
     Q_DISABLE_COPY_MOVE(SegmentationBestFit)
@@ -152,5 +152,3 @@ private:
 };
 
 }  // namespace MeshGui
-
-#endif  // MESHGUI_SEGMENTATIONBESTFIT_H

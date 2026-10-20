@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jürgen Riegel <FreeCAD@juergen-riegel.net>         *
  *                                                                         *
@@ -99,7 +101,6 @@ PROPERTY_SOURCE(FemGui::ViewProviderFemAnalysis, Gui::ViewProviderDocumentObject
 
 ViewProviderFemAnalysis::ViewProviderFemAnalysis()
 {
-    setToggleVisibility(ToggleVisibilityMode::NoToggleVisibility);
     sPixmap = "FEM_Analysis";
 }
 
@@ -146,6 +147,11 @@ bool ViewProviderFemAnalysis::doubleClicked()
 std::vector<App::DocumentObject*> ViewProviderFemAnalysis::claimChildren() const
 {
     return Gui::ViewProviderDocumentObjectGroup::claimChildren();
+}
+
+std::vector<std::string> ViewProviderFemAnalysis::getDisplayModes() const
+{
+    return {"Analysis"};
 }
 
 void ViewProviderFemAnalysis::hide()

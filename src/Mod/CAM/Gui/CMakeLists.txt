@@ -6,13 +6,15 @@ set(PathGui_LIBS
     FreeCADGui
 )
 
-PYSIDE_WRAP_RC(Path_QRC_SRCS Resources/Path.qrc)
-
 set (Path_TR_QRC ${CMAKE_CURRENT_BINARY_DIR}/Resources/Path_translation.qrc)
 qt_find_and_add_translation(QM_SRCS "Resources/translations/*_*.ts"
     ${CMAKE_CURRENT_BINARY_DIR}/Resources/translations)
 qt_create_resource_file(${Path_TR_QRC} ${QM_SRCS})
-qt_add_resources(PathResource_SRCS Resources/Path.qrc ${Path_TR_QRC})
+qt_add_resources(PathResource_SRCS
+    Resources/Path.qrc
+    ${Path_TR_QRC}
+    OPTIONS ${FREECAD_RCC_OPTIONS}
+)
 
 SOURCE_GROUP("Resources" FILES ${PathResource_SRCS})
 
@@ -37,7 +39,6 @@ SET(PathGui_SRCS_Module
     DlgProcessorChooser.ui
     DlgProcessorChooser.cpp
     DlgProcessorChooser.h
-    ${Path_QRC_SRCS}
 )
 
 SOURCE_GROUP("Module" FILES ${PathGui_SRCS_Module})
@@ -66,7 +67,7 @@ SET(PathGuiIcon_SVG
     Resources/icons/CAMWorkbench.svg
 )
 
-add_library(PathGui SHARED ${PathGui_SRCS} ${PathResource_SRCS} ${PathGuiIcon_SVG})
+add_library(PathGui SHARED ${PathGui_SRCS} ${PathGuiIcon_SVG})
 
 if(FREECAD_USE_PCH)
     target_precompile_headers(PathGui PRIVATE
@@ -87,20 +88,12 @@ if (MSVC)
     target_compile_options(PathGui PRIVATE /wd4273)
 endif()
 
-if (FREECAD_WARN_ERROR)
-    target_compile_warn_error(PathGui)
-endif()
+target_compile_warn_error(PathGui)
 
-SET_BIN_DIR(PathGui PathGui /Mod/CAM)
+SET_BIN_DIR(PathGui)
 SET_PYTHON_PREFIX_SUFFIX(PathGui)
 
 fc_copy_sources(PathGui "${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_DATADIR}/Mod/CAM" ${PathGuiIcon_SVG})
-fc_copy_sources(PathGui "${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_DATADIR}/Mod/CAM" ${Path_QRC_SRCS})
-fc_target_copy_resource(PathGui
-        ${CMAKE_CURRENT_BINARY_DIR}
-        ${CMAKE_BINARY_DIR}/Mod/CAM
-        Path_rc.py)
 
 INSTALL(TARGETS PathGui DESTINATION ${CMAKE_INSTALL_LIBDIR})
 INSTALL(FILES ${PathGuiIcon_SVG} DESTINATION "${CMAKE_INSTALL_DATADIR}/Mod/CAM/Resources/icons")
-INSTALL(FILES ${Path_QRC_SRCS} DESTINATION Mod/CAM)

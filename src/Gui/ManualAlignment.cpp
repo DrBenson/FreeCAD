@@ -843,7 +843,6 @@ void ManualAlignment::startAlignment(Base::Type mousemodel)
         return;
     }
 
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
     // save the current window state before opening the alignment viewer
     previousWindowState = Qt::WindowNoState;
     if (auto* activeDoc = Gui::Application::Instance->activeDocument()) {
@@ -853,7 +852,6 @@ void ManualAlignment::startAlignment(Base::Type mousemodel)
             }
         }
     }
-#endif
 
     // create a split window for picking the points
     myViewer = new AlignmentView(myDocument, Gui::getMainWindow());
@@ -947,8 +945,7 @@ void ManualAlignment::closeViewer()
     }
     myViewer = nullptr;
 
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
-    QTimer::singleShot(0, [this]() {
+    QTimer::singleShot(0, this, [this]() {
         auto* activeDoc = Gui::Application::Instance->activeDocument();
         if (!activeDoc) {
             return;
@@ -973,7 +970,6 @@ void ManualAlignment::closeViewer()
             }
         }
     });
-#endif
 }
 
 /**
@@ -1360,8 +1356,9 @@ void ManualAlignment::probePickedCallback(void* ud, SoEventCallback* n)
                 Gui::getMainWindow()->showMessage(tr("No point was picked"));
             }
         }
-        else if (mbe->getButton() == SoMouseButtonEvent::BUTTON2
-                 && mbe->getState() == SoButtonEvent::UP) {
+        else if (
+            mbe->getButton() == SoMouseButtonEvent::BUTTON2 && mbe->getState() == SoButtonEvent::UP
+        ) {
             ManualAlignment* self = ManualAlignment::instance();
             if (self->myAlignModel.isEmpty() || self->myFixedGroup.isEmpty()) {
                 return;

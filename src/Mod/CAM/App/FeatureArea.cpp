@@ -30,6 +30,7 @@
 #include <Base/Placement.h>
 
 #include "FeatureArea.h"
+#include "Base/TimeInfo.h"
 #include "FeatureAreaPy.h"
 
 
@@ -50,9 +51,7 @@ FeatureArea::FeatureArea()
     PARAM_PROP_ADD("Area", AREA_PARAMS_OPCODE);
     PARAM_PROP_ADD("Area", AREA_PARAMS_BASE);
     PARAM_PROP_ADD("Offset", AREA_PARAMS_OFFSET);
-    PARAM_PROP_ADD("Offset", AREA_PARAMS_OFFSET_CONF);
     PARAM_PROP_ADD("Pocket", AREA_PARAMS_POCKET);
-    PARAM_PROP_ADD("Pocket", AREA_PARAMS_POCKET_CONF);
     PARAM_PROP_ADD("Section", AREA_PARAMS_SECTION);
     PARAM_PROP_ADD("libarea", AREA_PARAMS_CAREA);
 
@@ -75,6 +74,8 @@ App::DocumentObjectExecReturn* FeatureArea::execute()
 {
     myInited = true;
 
+    Base::TimeTracker tracker("FeatureArea::execute");
+
     std::vector<App::DocumentObject*> links = Sources.getValues();
     if (links.empty()) {
         return new App::DocumentObjectExecReturn("No shapes linked");
@@ -92,11 +93,10 @@ App::DocumentObjectExecReturn* FeatureArea::execute()
         }
     }
 
-    FC_TIME_INIT(t);
-
     AreaParams params;
 
-#define AREA_PROP_GET(_param) params.PARAM_FNAME(_param) = PARAM_FNAME(_param).getValue();
+#define AREA_PROP_GET(_param) \
+    params.PARAM_FNAME(_param) = static_cast<PARAM_TYPE(_param)>(PARAM_FNAME(_param).getValue());
     PARAM_FOREACH(AREA_PROP_GET, AREA_PARAMS_CONF)
 
     myArea.clean(true);
@@ -142,8 +142,6 @@ App::DocumentObjectExecReturn* FeatureArea::execute()
         }
         Shape.setValue(compound);
     }
-
-    FC_TIME_LOG(t, "feature execute");
 
     if (!hasShape) {
         return new App::DocumentObjectExecReturn("no output shape");

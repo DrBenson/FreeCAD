@@ -564,6 +564,7 @@ class ObjectWaterline(PathOp.ObjectOp):
         obj.setEditorMode("CutPattern", C)
         obj.setEditorMode("SampleInterval", G)
         obj.setEditorMode("MinSampleInterval", D)
+        obj.setEditorMode("OptimizeLinearPaths", D)
         obj.setEditorMode("LinearDeflection", expMode)
         obj.setEditorMode("AngularDeflection", expMode)
 
@@ -575,6 +576,15 @@ class ObjectWaterline(PathOp.ObjectOp):
 
         if prop == "Active" and obj.ViewObject:
             obj.ViewObject.signalChangeIcon()
+
+    def opDeprecationNotice(self, obj):
+        return PathOp.deprecationNotice(
+            translate("CAM_Waterline", "The Waterline operation"),
+            translate(
+                "CAM_Waterline", "the Planar Surface operation with Strategy set to 'Waterline'"
+            ),
+            stage=PathOp.DeprecationStage.Warning,
+        )
 
     def opOnDocumentRestored(self, obj):
         self.propertiesReady = False
@@ -720,10 +730,15 @@ class ObjectWaterline(PathOp.ObjectOp):
 
     def opUpdateDepths(self, obj):
         if hasattr(obj, "Base") and obj.Base:
-            base, sublist = obj.Base[0]
+            # Read base geometry through baseShapes() rather than from obj.Base
+            # directly, so that an operation with a rotated workplane computes
+            # its depth in the frame its path is generated in. With no rotation
+            # active baseShapes() yields obj.Base unchanged.
+            baseShapes = list(self.baseShapes(obj))
+            base, sublist = baseShapes[0]
             fbb = base.Shape.getElement(sublist[0]).BoundBox
             zmin = fbb.ZMax
-            for base, sublist in obj.Base:
+            for base, sublist in baseShapes:
                 for sub in sublist:
                     try:
                         fbb = base.Shape.getElement(sub).BoundBox
@@ -845,8 +860,8 @@ class ObjectWaterline(PathOp.ObjectOp):
                 Path.Command(
                     "G0",
                     {
-                        "X": obj.StartPoint.x,
-                        "Y": obj.StartPoint.y,
+                        "X": self.startPoint(obj).x,
+                        "Y": self.startPoint(obj).y,
                         "F": self.horizRapid,
                     },
                 )
@@ -939,7 +954,7 @@ class ObjectWaterline(PathOp.ObjectOp):
         if pPM is False:
             Path.Log.error("Unable to pre-process obj.Base.")
         else:
-            (FACES, VOIDS) = pPM
+            FACES, VOIDS = pPM
             self.modelSTLs = PSF.modelSTLs
             self.profileShapes = PSF.profileShapes
 
@@ -1114,7 +1129,7 @@ class ObjectWaterline(PathOp.ObjectOp):
                     if SEG == "BRK":
                         stpOvr.append(SEG)
                     else:
-                        (A, B) = SEG  # format is ((p1, p2), (p3, p4))
+                        A, B = SEG  # format is ((p1, p2), (p3, p4))
                         P1 = FreeCAD.Vector(A[0], A[1], csHght)
                         P2 = FreeCAD.Vector(B[0], B[1], csHght)
                         stpOvr.append((P1, P2))
@@ -1125,7 +1140,7 @@ class ObjectWaterline(PathOp.ObjectOp):
             for so in range(0, len(PNTSET)):
                 stpOvr = list()
                 erFlg = False
-                (aTyp, dirFlg, ARCS) = PNTSET[so]
+                aTyp, dirFlg, ARCS = PNTSET[so]
 
                 if dirFlg == 1:  # 1
                     cMode = True  # Climb mode
@@ -1137,7 +1152,7 @@ class ObjectWaterline(PathOp.ObjectOp):
                     if Arc == "BRK":
                         stpOvr.append("BRK")
                     else:
-                        (sp, ep, cp) = Arc
+                        sp, ep, cp = Arc
                         S = FreeCAD.Vector(sp[0], sp[1], csHght)
                         E = FreeCAD.Vector(ep[0], ep[1], csHght)
                         C = FreeCAD.Vector(cp[0], cp[1], csHght)
@@ -1226,6 +1241,7 @@ class ObjectWaterline(PathOp.ObjectOp):
         bb = self.boundBoxes[mdlIdx]
         stl = self.modelSTLs[mdlIdx]
         depOfst = obj.DepthOffset.Value
+        optimizeLinear = obj.OptimizeLinearPaths
 
         # Prepare global holdpoint and layerEndPnt containers
         if self.holdPoint is None:
@@ -1284,6 +1300,8 @@ class ObjectWaterline(PathOp.ObjectOp):
             # Generate G-Code
             layTime = time.time()
             for loop in scanLines:
+                if optimizeLinear:
+                    loop = PathUtils.simplify3dLine(loop, tolerance=self.geoTlrnc)
                 # We pass '0.0' as layDep because Adaptive loops have their own Z embedded
                 cmds = self._loopToGcode(obj, 0.0, loop)
                 commands.extend(cmds)
@@ -1313,7 +1331,7 @@ class ObjectWaterline(PathOp.ObjectOp):
 
             # Determine bounding box length for the OCL scan
             bbLength = math.fabs(ymax - ymin)
-            numScanLines = int(math.ceil(bbLength / smplInt) + 1)
+            numScanLines = Path.Geom.ceil(bbLength / smplInt) + 1
 
             # Run Scan (Grid  based)
             fd = depthparams[-1]
@@ -1918,7 +1936,7 @@ class ObjectWaterline(PathOp.ObjectOp):
                 lastCsHght = csHght
 
                 # Clear layer as needed
-                (clrLyr, clearLastLayer) = self._clearLayer(obj, ca, lastCA, clearLastLayer)
+                clrLyr, clearLastLayer = self._clearLayer(obj, ca, lastCA, clearLastLayer)
                 if clrLyr == "Offset":
                     commands.extend(self._makeOffsetLayerPaths(obj, clearArea, csHght))
                 elif clrLyr:
@@ -1932,7 +1950,7 @@ class ObjectWaterline(PathOp.ObjectOp):
 
         if clearLastLayer and obj.ClearLastLayer != "Off":
             Path.Log.debug("... Clearning last layer")
-            (clrLyr, cLL) = self._clearLayer(obj, 1, 1, False)
+            clrLyr, cLL = self._clearLayer(obj, 1, 1, False)
             lastClearArea.translate(FreeCAD.Vector(0.0, 0.0, 0.0 - lastClearArea.BoundBox.ZMin))
             if clrLyr == "Offset":
                 commands.extend(self._makeOffsetLayerPaths(obj, lastClearArea, lastCsHght))
@@ -2020,7 +2038,7 @@ class ObjectWaterline(PathOp.ObjectOp):
             commands.append(
                 Path.Command("G0", {"X": startVect.x, "Y": startVect.y, "F": self.horizRapid})
             )
-            (cmds, endVect) = self._wireToPath(obj, wire, startVect)
+            cmds, endVect = self._wireToPath(obj, wire, startVect)
             commands.extend(cmds)
             commands.append(Path.Command("G0", {"Z": obj.SafeHeight.Value, "F": self.vertRapid}))
 
@@ -2315,7 +2333,7 @@ class ObjectWaterline(PathOp.ObjectOp):
         pathParams["preamble"] = False
         pathParams["start"] = startVect
 
-        (pp, end_vector) = Path.fromShapes(**pathParams)
+        pp, end_vector = Path.fromShapes(**pathParams)
         paths.extend(pp.Commands)
 
         self.endVector = end_vector

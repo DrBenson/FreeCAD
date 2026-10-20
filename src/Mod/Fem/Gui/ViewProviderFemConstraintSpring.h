@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2021 FreeCAD Developers                                 *
  *   Author: Preslav Aleksandrov <preslav.aleksandrov@protonmail.com>      *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef GUI_VIEWPROVIDERFEMCONSTRAINTSPRING_H
-#define GUI_VIEWPROVIDERFEMCONSTRAINTSPRING_H
+#pragma once
 
 #include "ViewProviderFemConstraintOnBoundary.h"
 
@@ -43,5 +44,3 @@ protected:
 };
 
 }  // namespace FemGui
-
-#endif  // GUI_VIEWPROVIDERFEMCONSTRAINTSPRING_H

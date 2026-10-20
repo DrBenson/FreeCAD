@@ -1,5 +1,6 @@
-#ifndef TECHDRAW_ZVALUE_
-#define TECHDRAW_ZVALUE_
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
+#pragma once
 namespace ZVALUE {
     const int BACKGROUND = -999999;
     const int TEMPLATE = -1000;
@@ -19,6 +20,6 @@ namespace ZVALUE {
     const int BALLOON = 120;
     const int ANNOTATION = 120;
     const int TRACKER = 125;
+    const int VIEWCAPTION = 150;
     const int LOCK = 200;
 }
-#endif

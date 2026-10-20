@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2021 FreeCAD Developers                                 *
  *   Author: Ajinkya Dahale <dahale.a.p@gmail.com>                         *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef GUI_TASKVIEW_TaskFemConstraintOnBoundary_H
-#define GUI_TASKVIEW_TaskFemConstraintOnBoundary_H
+#pragma once
 
 #include <QObject>
 
@@ -76,5 +77,3 @@ protected:
 };
 
 }  // namespace FemGui
-
-#endif  // GUI_TASKVIEW_TaskFemConstraintOnBoundary_H

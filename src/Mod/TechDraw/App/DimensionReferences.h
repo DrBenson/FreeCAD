@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2022 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAW_DIMENSIONREFERENCES_H
-#define TECHDRAW_DIMENSIONREFERENCES_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -102,5 +103,3 @@ private:
 using ReferenceVector = std::vector<ReferenceEntry>;
 
 } // end namespace
-
-#endif //TECHDRAW_DIMENSIONREFERENCES_H

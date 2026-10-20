@@ -24,11 +24,13 @@
 # *                                                                         *
 # ***************************************************************************
 """Provides general functions to work with topological shapes."""
+
 ## @package general
 # \ingroup draftgeoutils
 # \brief Provides general functions to work with topological shapes.
 
 import math
+import sys
 import lazy_loader.lazy_loader as lz
 
 import FreeCAD as App
@@ -301,7 +303,7 @@ def findClosest(base_point, point_list):
     if not point_list:
         return None
 
-    smallest = 1000000
+    smallest = sys.float_info.max
     for n in range(len(point_list)):
         new = base_point.sub(point_list[n]).Length
         if new < smallest:

@@ -23,6 +23,7 @@
 # *                                                                         *
 # ***************************************************************************
 """Provides functions to create Ellipse objects."""
+
 ## @package make_ellipse
 # \ingroup draftmake
 # \brief Provides functions to create Ellipse objects.
@@ -30,9 +31,9 @@
 ## \addtogroup draftmake
 # @{
 import FreeCAD as App
-import draftutils.gui_utils as gui_utils
-
 from draftobjects.ellipse import Ellipse
+from draftutils import gui_utils
+from freecad.deprecation import deprecated
 
 if App.GuiUp:
     from draftviewproviders.view_base import ViewProviderDraft
@@ -90,6 +91,14 @@ def make_ellipse(majradius, minradius, placement=None, face=None, support=None):
     return obj
 
 
-makeEllipse = make_ellipse
+@deprecated(
+    deprecated_in="26.3",
+    removed_in="28.3",
+    replacement="Draft.make_ellipse()",
+)
+def makeEllipse(*args, **kwarg):
+    """DEPRECATED. Use 'make_ellipse'."""
+    return make_ellipse(*args, **kwarg)
+
 
 ## @}

@@ -150,7 +150,8 @@ std::shared_ptr<App::Material> MaterialManager::defaultAppearance()
         color.a = 1.0;  // The default color sets fully transparent, not opaque
     };
     auto intRandom = [](int min, int max) -> int {
-        static std::mt19937 generator;
+        static std::random_device rd;
+        static std::mt19937 generator(rd());
         std::uniform_int_distribution<int> distribution(min, max);
         return distribution(generator);
     };
@@ -396,9 +397,10 @@ MaterialManager::getMaterialFolders(const std::shared_ptr<MaterialLibrary>& libr
 {
     if (library->isLocal()) {
         auto materialLibrary =
-            reinterpret_cast<const std::shared_ptr<Materials::MaterialLibraryLocal>&>(library);
-
-        return _localManager->getMaterialFolders(materialLibrary);
+            std::dynamic_pointer_cast<Materials::MaterialLibraryLocal>(library);
+        if (materialLibrary) {
+            return _localManager->getMaterialFolders(materialLibrary);
+        }
     }
 
     return std::make_shared<std::list<QString>>();
@@ -409,7 +411,7 @@ void MaterialManager::createFolder(const std::shared_ptr<MaterialLibrary>& libra
 {
     if (library->isLocal()) {
         auto materialLibrary =
-            reinterpret_cast<const std::shared_ptr<Materials::MaterialLibraryLocal>&>(library);
+            std::dynamic_pointer_cast<Materials::MaterialLibraryLocal>(library);
 
         _localManager->createFolder(materialLibrary, path);
     }
@@ -429,9 +431,10 @@ void MaterialManager::renameFolder(const std::shared_ptr<MaterialLibrary>& libra
 {
     if (library->isLocal()) {
         auto materialLibrary =
-            reinterpret_cast<const std::shared_ptr<Materials::MaterialLibraryLocal>&>(library);
-
-        _localManager->renameFolder(materialLibrary, oldPath, newPath);
+            std::dynamic_pointer_cast<Materials::MaterialLibraryLocal>(library);
+        if (materialLibrary) {
+            _localManager->renameFolder(materialLibrary, oldPath, newPath);
+        }
     }
 #if defined(BUILD_MATERIAL_EXTERNAL)
     else if (_useExternal) {
@@ -448,9 +451,10 @@ void MaterialManager::deleteRecursive(const std::shared_ptr<MaterialLibrary>& li
 {
     if (library->isLocal()) {
         auto materialLibrary =
-            reinterpret_cast<const std::shared_ptr<Materials::MaterialLibraryLocal>&>(library);
-
-        _localManager->deleteRecursive(materialLibrary, path);
+            std::dynamic_pointer_cast<Materials::MaterialLibraryLocal>(library);
+        if (materialLibrary) {
+            _localManager->deleteRecursive(materialLibrary, path);
+        }
     }
 #if defined(BUILD_MATERIAL_EXTERNAL)
     else if (_useExternal) {
@@ -573,7 +577,10 @@ void MaterialManager::saveMaterial(const std::shared_ptr<MaterialLibrary>& libra
                                    bool saveInherited) const
 {
     auto materialLibrary =
-        reinterpret_cast<const std::shared_ptr<Materials::MaterialLibraryLocal>&>(library);
+        std::dynamic_pointer_cast<Materials::MaterialLibraryLocal>(library);
+    if (!materialLibrary) {
+        return;
+    }
     _localManager
         ->saveMaterial(materialLibrary, material, path, overwrite, saveAsCopy, saveInherited);
 }
@@ -628,10 +635,10 @@ void MaterialManager::migrateToExternal(const std::shared_ptr<Materials::Materia
         auto uuid = it.getUUID();
         auto path = it.getPath();
         auto name = it.getName();
-        Base::Console().log("\t('%s', '%s', '%s')\n",
-                            uuid.toStdString().c_str(),
-                            path.toStdString().c_str(),
-                            name.toStdString().c_str());
+        Base::Console().log("\t('{}', '{}', '{}')\n",
+                            uuid.toStdString(),
+                            path.toStdString(),
+                            name.toStdString());
 
         auto material = _localManager->getMaterial(uuid);
         if (!material->isOldFormat()) {
@@ -648,10 +655,10 @@ void MaterialManager::validateMigration(const std::shared_ptr<Materials::Materia
         auto uuid = it.getUUID();
         auto path = it.getPath();
         auto name = it.getName();
-        Base::Console().log("\t('%s', '%s', '%s')\n",
-                            uuid.toStdString().c_str(),
-                            path.toStdString().c_str(),
-                            name.toStdString().c_str());
+        Base::Console().log("\t('{}', '{}', '{}')\n",
+                            uuid.toStdString(),
+                            path.toStdString(),
+                            name.toStdString());
 
         auto material = _localManager->getMaterial(uuid);
         if (!material->isOldFormat()) {

@@ -40,6 +40,21 @@ SET(MaterialLib_Files
     Resources/Materials/Standard/Metal/Aluminum/Aluminum-7075-T6.FCMat
     Resources/Materials/Standard/Metal/Aluminum/Aluminum-Generic.FCMat
     Resources/Materials/Standard/Metal/Aluminum/AlZn4-5Mg1F35.FCMat
+    Resources/Materials/Standard/Metal/Copper/Copper-102.FCMat
+    Resources/Materials/Standard/Metal/Copper/Copper-122a.FCMat
+    Resources/Materials/Standard/Metal/Copper/Copper-122b.FCMat
+    Resources/Materials/Standard/Metal/Copper/Copper-150.FCMat
+    Resources/Materials/Standard/Metal/Copper/Copper-220.FCMat
+    Resources/Materials/Standard/Metal/Copper/Copper-230.FCMat
+    Resources/Materials/Standard/Metal/Copper/Copper-443.FCMat
+    Resources/Materials/Standard/Metal/Copper/Copper-464.FCMat
+    Resources/Materials/Standard/Metal/Copper/Copper-510.FCMat
+    Resources/Materials/Standard/Metal/Copper/Copper-614.FCMat
+    Resources/Materials/Standard/Metal/Copper/Copper-647.FCMat
+    Resources/Materials/Standard/Metal/Copper/Copper-655.FCMat
+    Resources/Materials/Standard/Metal/Copper/Copper-706.FCMat
+    Resources/Materials/Standard/Metal/Copper/Copper-715.FCMat
+    Resources/Materials/Standard/Metal/Copper/Copper-955.FCMat
     Resources/Materials/Standard/Metal/Copper/Copper-Generic.FCMat
     Resources/Materials/Standard/Metal/Iron/Iron-Generic.FCMat
     Resources/Materials/Standard/Metal/Steel/CalculiX-Steel.FCMat
@@ -109,7 +124,6 @@ SET(MaterialLib_Files
     Resources/Materials/Standard/Metal/Steel/Steel-S275JO.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-S275JR.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-S275N.FCMat
-    Resources/Materials/Standard/Metal/Steel/Steel-S304.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-S335JO.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-S335JR.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-S335N.FCMat
@@ -137,7 +151,6 @@ SET(MaterialLib_Files
     Resources/Materials/Standard/Metal/Steel/Steel-X5CrNiMo17-12-2.FCMat
     Resources/Materials/Standard/Metal/Steel/Steel-X6CrNiTi18-10.FCMat
     Resources/Materials/Standard/Metal/Titanium/Ti-6Al-4V.FCMat
-    Resources/Materials/Standard/Thermoplast/ABS-FR-V-0.FCMat
     Resources/Materials/Standard/Thermoplast/ABS-Generic.FCMat
     Resources/Materials/Standard/Thermoplast/Acrylic-Glass-Generic.FCMat
     Resources/Materials/Standard/Thermoplast/PA6-Generic.FCMat
@@ -148,11 +161,9 @@ SET(MaterialLib_Files
     Resources/Materials/Standard/Thermoplast/POM-Homopolymer-Generic.FCMat
     Resources/Materials/Standard/Thermoplast/POM-Copolymer-Generic.FCMat
     Resources/Materials/Standard/Thermoplast/PP-Generic.FCMat
-    "Resources/Materials/Standard/Thermoplast/PDMS Silicone.FCMat"
     Resources/Materials/Standard/Thermoplast/PTFE-Generic.FCMat
     Resources/Materials/Standard/Thermoplast/PVC-Generic.FCMat
     Resources/Materials/Standard/Thermoplast/PC-Molded.FCMat
-    Resources/Materials/Standard/Wood/Mahogany-Wood.FCMat
     Resources/Materials/Standard/Wood/Wood-Generic.FCMat
 )
 
@@ -227,19 +238,12 @@ SET(PatternLib_Files
 )
 
 SET(MachiningLib_Files
-    Resources/Materials/Machining/AluminumCastAlloy.FCMat
-    Resources/Materials/Machining/AluminumWroughtAlloy.FCMat
-    Resources/Materials/Machining/AusteniticStainlessSteel.FCMat
-    Resources/Materials/Machining/BalsaWood.FCMat
-    Resources/Materials/Machining/GrayCastIron.FCMat
-    Resources/Materials/Machining/HardWood.FCMat
-    Resources/Materials/Machining/LowAlloySteel.FCMat
-    Resources/Materials/Machining/MalleableCastIron.FCMat
-    Resources/Materials/Machining/MildSteel.FCMat
-    Resources/Materials/Machining/MDF.FCMat
-    Resources/Materials/Machining/ParticleBoard.FCMat
-    Resources/Materials/Machining/SoftWood.FCMat
-    Resources/Materials/Machining/ToolSteel.FCMat
+    Resources/Materials/Machining/Aluminum-Generic.FCMat
+    Resources/Materials/Machining/Brass-Generic.FCMat
+    Resources/Materials/Machining/Copper-Generic.FCMat
+    Resources/Materials/Machining/Plastic-Generic.FCMat
+    Resources/Materials/Machining/Steel-Generic.FCMat
+    Resources/Materials/Machining/Wood-Generic.FCMat
 )
 
 SET(MaterialTestLib_Files
@@ -259,7 +263,9 @@ SET(MaterialModel_Files
     Resources/Models/Mechanical/Density.yml
     Resources/Models/Mechanical/Hardness.yml
     Resources/Models/Mechanical/IsotropicLinearElastic.yml
+    Resources/Models/Mechanical/IsotropicLinearElasticArrays.yml
     Resources/Models/Mechanical/LinearElastic.yml
+    Resources/Models/Mechanical/LinearElasticArrays.yml
     Resources/Models/Mechanical/MooneyRivlin.yml
     Resources/Models/Mechanical/NeoHooke.yml
     Resources/Models/Mechanical/OgdenN1.yml
@@ -273,6 +279,8 @@ SET(MaterialModel_Files
     Resources/Models/Mechanical/ReducedPolynomialN1.yml
     Resources/Models/Mechanical/ReducedPolynomialN2.yml
     Resources/Models/Mechanical/ReducedPolynomialN3.yml
+    Resources/Models/Mechanical/Toughness.yml
+    Resources/Models/Mechanical/ToughnessArrays.yml
     Resources/Models/Mechanical/Yeoh.yml
     Resources/Models/Patterns/PAT.yml
     "Resources/Models/Patterns/Pattern File.yml"

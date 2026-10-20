@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from Quantity import Quantity
 from Vector import Vector
 from Metadata import export, constmethod, class_declarations, no_args
 from PyObjectBase import PyObjectBase
@@ -22,14 +23,12 @@ class ScaleType(IntEnum):
     NumberProtocol=True,
     RichCompare=True,
 )
-@class_declarations(
-    """public:
+@class_declarations("""public:
       MatrixPy(const Matrix4D & mat, PyTypeObject *T = &Type)
       :PyObjectBase(new Matrix4D(mat),T){}
       Matrix4D value() const
       { return *(getMatrixPtr()); }
-    """
-)
+    """)
 class Matrix(PyObjectBase):
     """
     Base.Matrix class.
@@ -103,11 +102,15 @@ class Matrix(PyObjectBase):
     A44: float = 0.0
     """The (4,4) matrix element."""
 
-    A: Sequence[float] = []
-    """The matrix elements."""
+    @property
+    def A(self) -> tuple[float, ...]:
+        """The matrix elements."""
+        ...
 
+    @A.setter
+    def A(self, value: Sequence[float]) -> None: ...
     @overload
-    def move(self, vector: Vector, /) -> None: ...
+    def move(self, vector: Vector | tuple[float, float, float], /) -> None: ...
     @overload
     def move(self, x: float, y: float, z: float, /) -> None: ...
     def move(self, *args) -> None:
@@ -126,7 +129,7 @@ class Matrix(PyObjectBase):
         ...
 
     @overload
-    def scale(self, vector: Vector, /) -> None: ...
+    def scale(self, vector: Vector | tuple[float, float, float], /) -> None: ...
     @overload
     def scale(self, x: float, y: float, z: float, /) -> None: ...
     @overload
@@ -268,7 +271,7 @@ class Matrix(PyObjectBase):
         """
         ...
 
-    def rotateX(self, angle: float, /) -> None:
+    def rotateX(self, angle: float | Quantity, /) -> None:
         """
         Rotate around X axis.
 
@@ -277,7 +280,7 @@ class Matrix(PyObjectBase):
         """
         ...
 
-    def rotateY(self, angle: float, /) -> None:
+    def rotateY(self, angle: float | Quantity, /) -> None:
         """
         Rotate around Y axis.
 
@@ -286,7 +289,7 @@ class Matrix(PyObjectBase):
         """
         ...
 
-    def rotateZ(self, angle: float, /) -> None:
+    def rotateZ(self, angle: float | Quantity, /) -> None:
         """
         Rotate around Z axis.
 

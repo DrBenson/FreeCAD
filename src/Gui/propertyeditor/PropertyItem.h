@@ -22,8 +22,7 @@
  ***************************************************************************/
 
 
-#ifndef PROPERTYEDITORITEM_H
-#define PROPERTYEDITORITEM_H
+#pragma once
 
 #include <QItemEditorFactory>
 #include <QObject>
@@ -169,6 +168,10 @@ public:
     {
         return false;
     }
+    virtual bool commitOnEditorClose() const
+    {
+        return false;
+    }
 
     QWidget* createExpressionEditor(QWidget* parent, const std::function<void()>& method) const;
     void setExpressionEditorData(QWidget* editor, const QVariant& data) const;
@@ -275,6 +278,10 @@ class GuiExport PropertyStringItem: public PropertyItem
     void setEditorData(QWidget* editor, const QVariant& data) const override;
     QVariant editorData(QWidget* editor) const override;
     QVariant toolTip(const App::Property*) const override;
+    bool commitOnEditorClose() const override
+    {
+        return true;
+    }
 
 protected:
     QVariant value(const App::Property*) const override;
@@ -1414,6 +1421,31 @@ protected:
     PropertyLinkListItem();
 };
 
+/**
+ * Edit properties of string map type.
+ * \author Tomas Pavlicek
+ */
+class GuiExport PropertyMapItem: public PropertyItem
+{
+    Q_OBJECT
+    PROPERTYITEM_HEADER
+
+    QWidget* createEditor(
+        QWidget* parent,
+        const std::function<void()>& method,
+        FrameOption frameOption = FrameOption::NoFrame
+    ) const override;
+    void setEditorData(QWidget* editor, const QVariant& data) const override;
+    QVariant editorData(QWidget* editor) const override;
+
+protected:
+    PropertyMapItem();
+
+    QString toString(const QVariant&) const override;
+    QVariant value(const App::Property*) const override;
+    void setValue(const QVariant&) override;
+};
+
 class PropertyItemEditorFactory: public QItemEditorFactory
 {
 public:
@@ -1426,5 +1458,3 @@ public:
 
 }  // namespace PropertyEditor
 }  // namespace Gui
-
-#endif  // PROPERTYEDITORITEM_H

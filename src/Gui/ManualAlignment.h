@@ -21,8 +21,7 @@
  ***************************************************************************/
 
 
-#ifndef GUI_MANUALALIGNMENT_H
-#define GUI_MANUALALIGNMENT_H
+#pragma once
 
 #include <QObject>
 #include <QPointer>
@@ -274,15 +273,10 @@ private:
     int myPickPoints;
     Base::Placement myTransform;
 
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
     Qt::WindowStates previousWindowState;
-#endif
 
     class Private;
     Private* d;
 };
 
 }  // namespace Gui
-
-
-#endif  // GUI_MANUALALIGNMENT_H

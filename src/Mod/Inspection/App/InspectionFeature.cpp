@@ -32,6 +32,7 @@
 #include <BRepGProp_Face.hxx>
 #include <TopExp.hxx>
 #include <TopoDS.hxx>
+#include <TopTools_IndexedMapOfShape.hxx>
 #include <gp_Pnt.hxx>
 
 #include <QEventLoop>
@@ -40,7 +41,6 @@
 #include <QtConcurrentMap>
 
 #include <Base/Console.h>
-#include <Base/FutureWatcherProgress.h>
 #include <Base/Sequencer.h>
 #include <Base/Stream.h>
 
@@ -896,7 +896,7 @@ App::DocumentObjectExecReturn* Feature::execute()
         fRMS = sqrt(fRMS);
     }
 
-    Base::Console().message("RMS value for '%s' with search radius [%.4f,%.4f] is: %.4f\n",
+    Base::Console().message("RMS value for '{}' with search radius [{:.4f},{:.4f}] is: {:.4f}\n",
         this->Label.getValue(), -this->SearchRadius.getValue(), this->SearchRadius.getValue(), fRMS);
 #else
     unsigned long count = actual->countPoints();
@@ -939,13 +939,23 @@ App::DocumentObjectExecReturn* Feature::execute()
         QFuture<DistanceInspectionRMS> future
             = QtConcurrent::mappedReduced(index, fMap, &DistanceInspectionRMS::operator+=);
         // Setup progress bar
-        Base::FutureWatcherProgress progress("Inspecting...", actual->countPoints());
+        Base::SequencerLauncher seq("Inspecting...", 100);
+        unsigned int currentStep = 0;
+        const unsigned int steps = static_cast<unsigned int>(actual->countPoints());
         QFutureWatcher<DistanceInspectionRMS> watcher;
         QObject::connect(
             &watcher,
             &QFutureWatcher<DistanceInspectionRMS>::progressValueChanged,
-            &progress,
-            &Base::FutureWatcherProgress::progressValueChanged
+            [&](int value) {
+                if (steps == 0) {
+                    return;
+                }
+                const unsigned int step = (100U * static_cast<unsigned int>(value)) / steps;
+                if (step > currentStep) {
+                    currentStep = step;
+                    seq.next();
+                }
+            }
         );
         // Keep UI responsive during computation
         QEventLoop loop;
@@ -971,7 +981,7 @@ App::DocumentObjectExecReturn* Feature::execute()
     }
 
     Base::Console().message(
-        "RMS value for '%s' with search radius [%.4f,%.4f] is: %.4f\n",
+        "RMS value for '{}' with search radius [{:.4f},{:.4f}] is: {:.4f}\n",
         this->Label.getValue(),
         -this->SearchRadius.getValue(),
         this->SearchRadius.getValue(),

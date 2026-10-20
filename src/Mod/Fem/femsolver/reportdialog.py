@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2017 Markus Hovorka <m.hovorka@live.de>                 *
 # *                                                                         *
@@ -32,7 +34,6 @@ __url__ = "https://www.freecad.org"
 # thus no guard is needed
 from PySide import QtGui
 from femtools.femutils import getOutputWinColor
-
 
 ERROR_COLOR = "Error"
 WARNING_COLOR = "Warning"

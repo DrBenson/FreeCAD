@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /******************************************************************************
  *   Copyright (c) 2013 Jürgen Riegel (FreeCAD@juergen-riegel.net)            *
  *   This file is part of the FreeCAD CAx development system.                 *
@@ -20,8 +22,7 @@
  ******************************************************************************/
 
 
-#ifndef GUI_FemSelectionGate_H
-#define GUI_FemSelectionGate_H
+#pragma once
 
 #include <Gui/Selection/SelectionFilter.h>
 
@@ -51,5 +52,3 @@ public:
 };
 
 }  // namespace FemGui
-
-#endif  // GUI_FemSelectionGate_H

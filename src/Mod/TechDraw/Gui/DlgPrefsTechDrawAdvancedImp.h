@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
  /**************************************************************************
  *   Copyright (c) 2015 FreeCAD Developers                                 *
  *   Author: WandererFan <wandererfan@gmail.com>                           *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DRAWINGGUI_DLGPREFSTECHDRAWIMPADVANCED_H
-#define DRAWINGGUI_DLGPREFSTECHDRAWIMPADVANCED_H
+#pragma once
 
 #include <Gui/PropertyPage.h>
 #include <Mod/TechDraw/TechDrawGlobal.h>
@@ -57,11 +58,12 @@ protected:
     void slotBalloonBoxChecked();
     void enableBalloonOptions(bool newState);
 
+    void faceFinderVersionChanged(int index);
 
 private:
     std::unique_ptr<Ui_DlgPrefsTechDrawAdvancedImp> ui;
+
+    bool lastIdentifyVoids { false };
 };
 
 } // namespace TechDrawGui
-
-#endif // DRAWINGGUI_DLGPREFSTECHDRAWIMPADVANCED_H

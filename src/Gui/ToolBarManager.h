@@ -21,8 +21,7 @@
  ***************************************************************************/
 
 
-#ifndef GUI_TOOLBARMANAGER_H
-#define GUI_TOOLBARMANAGER_H
+#pragma once
 
 #include <string>
 #include <fastsignals/signal.h>
@@ -157,7 +156,7 @@ public:
         ForceHidden,     // Forces a toolbar to hide and hides the toggle action
         ForceAvailable,  // Forces a toolbar toggle action to show, visibility depends on user config
         RestoreDefault,  // Restores a toolbar toggle action default, visibility as user config
-        SaveState,       // Saves the state of the toolbars
+        SaveState,       // Saves visibility only for toolbars available to the user
     };
 
     /// The one and only instance.
@@ -174,6 +173,7 @@ public:
 
     void setState(const QList<QString>& names, State state);
     void setState(const QString& name, State state);
+
 
     int toolBarIconSize(QWidget* widget = nullptr) const;
     void setupToolBarIconSize();
@@ -243,6 +243,3 @@ private:
 };
 
 }  // namespace Gui
-
-
-#endif  // GUI_TOOLBARMANAGER_H

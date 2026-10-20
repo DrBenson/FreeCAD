@@ -4,12 +4,12 @@
 <context>
     <name>TemplateTools</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/TemplatePyMod/InitGui.py" line="43"/>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/TemplatePyMod/InitGui.py" line="43"/>
         <source>ModulePy &amp;Commands</source>
         <translation>Python模組指令 (&amp;C)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/TemplatePyMod/InitGui.py" line="44"/>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/TemplatePyMod/InitGui.py" line="44"/>
         <source>PyModuleCommands</source>
         <translation>Python模組指令</translation>
     </message>
@@ -17,22 +17,22 @@
 <context>
     <name>Workbench</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Tools/_TEMPLATEPY_/InitGui.py" line="13"/>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Tools/_TEMPLATEPY_/InitGui.py" line="13"/>
         <source>_TEMPLATEPY_</source>
         <translation>模板 Python模組</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Tools/_TEMPLATEPY_/InitGui.py" line="14"/>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Tools/_TEMPLATEPY_/InitGui.py" line="14"/>
         <source>_TEMPLATEPY_ workbench</source>
         <translation>模板 Python模組工作台</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/TemplatePyMod/InitGui.py" line="36"/>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/TemplatePyMod/InitGui.py" line="36"/>
         <source>Python sandbox</source>
         <translation>Python 沙箱</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/TemplatePyMod/InitGui.py" line="38"/>
+        <location filename="../../../../../../FreeCAD-1.2.0/src/Mod/TemplatePyMod/InitGui.py" line="38"/>
         <source>Python template workbench</source>
         <translation>Python 模板工作台</translation>
     </message>

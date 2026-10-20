@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2019 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAW_COSMETICEXTENSION_H
-#define TECHDRAW_COSMETICEXTENSION_H
+#pragma once
 
 #include <App/DocumentObjectExtension.h>
 #include <App/ExtensionPython.h>
@@ -96,6 +97,7 @@ public:
     virtual void            clearGeomFormats();
 
     void deleteCosmeticElements(std::vector<std::string> removables);
+    void refreshAllCosmetic();
 
     TechDraw::DrawViewPart* getOwner();
 
@@ -108,5 +110,3 @@ private:
 using CosmeticExtensionPython = App::ExtensionPythonT<CosmeticExtension>;
 
 } //end namespace TechDraw
-
-#endif //TECHDRAW_COSMETICEXTENSION_H

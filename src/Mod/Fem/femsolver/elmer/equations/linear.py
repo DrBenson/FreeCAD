@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2017 Markus Hovorka <m.hovorka@live.de>                 *
 # *   Copyright (c) 2022 Uwe Stöhr <uwestoehr@lyx.org>                      *
@@ -30,7 +32,6 @@ __url__ = "https://www.freecad.org"
 #  @{
 
 from . import equation
-
 
 # the linear equation object defines some attributes for some various elmer equations
 # these various elmer equations are based on the linear equation object

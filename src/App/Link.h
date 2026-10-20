@@ -22,8 +22,10 @@
  *                                                                          *
  ****************************************************************************/
 
-#ifndef APP_LINK_H
-#define APP_LINK_H
+#pragma once
+
+#include <boost/preprocessor/seq/for_each.hpp>
+#include <boost/algorithm/string/predicate.hpp>
 
 #include <unordered_set>
 #include <Base/Parameter.h>
@@ -33,6 +35,7 @@
 #include "FeaturePython.h"
 #include "GroupExtension.h"
 #include "PropertyLinks.h"
+#include "SuppressibleExtension.h"
 
 
 // FIXME: ISO C++11 requires at least one argument for the "..." in a variadic macro
@@ -703,7 +706,7 @@ protected:
     /**
      * @brief Update the link when a property changes.
      *
-     * It fullfills a role similar to DocumentObject::onChanged().
+     * It fulfills a role similar to DocumentObject::onChanged().
      *
      * @param[in] parent The parent document object.
      * @param[in] prop The property that changed.
@@ -1038,7 +1041,9 @@ using LinkPython = App::FeaturePythonT<Link>;
  * link pointing to the same linked object, but its element list will contain
  * references to the element links.
  */
-class AppExport LinkElement: public App::DocumentObject, public App::LinkBaseExtension
+class AppExport LinkElement: public App::DocumentObject,
+                             public App::LinkBaseExtension,
+                             public App::SuppressibleExtension
 {
     PROPERTY_HEADER_WITH_EXTENSIONS(App::LinkElement);
     using inherited = App::DocumentObject;
@@ -1089,6 +1094,9 @@ public:
     App::Link* getLinkGroup() const;
 
     Base::Placement getPlacementOf(const std::string& sub, DocumentObject* targetObj = nullptr) override;
+
+protected:
+    void onChanged(const Property* prop) override;
 };
 
 using LinkElementPython = App::FeaturePythonT<LinkElement>;
@@ -1211,5 +1219,3 @@ public:
 #if defined(__clang__)
 #pragma clang diagnostic pop
 #endif
-
-#endif  // APP_LINK_H

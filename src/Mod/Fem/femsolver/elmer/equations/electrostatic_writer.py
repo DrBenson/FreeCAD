@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2017 Markus Hovorka <m.hovorka@live.de>                 *
 # *   Copyright (c) 2020 Bernd Hahnebach <bernd@bimstatik.org>              *
@@ -123,7 +125,7 @@ class ESwriter:
                     )
 
     def handleElectrostaticBndConditions(self):
-        for obj in self.write.getMember("Fem::ConstraintElectrostaticPotential"):
+        for obj in self.write.getMember("Fem::ConstraintElectromagnetic"):
             if obj.References:
                 for name in obj.References[0][1]:
                     # output the FreeCAD label as comment

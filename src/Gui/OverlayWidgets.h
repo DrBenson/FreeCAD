@@ -20,8 +20,7 @@
  *                                                                          *
  ****************************************************************************/
 
-#ifndef FC_OVERLAYWIDGETS_H
-#define FC_OVERLAYWIDGETS_H
+#pragma once
 
 #include <QTabWidget>
 #include <QTimer>
@@ -89,6 +88,7 @@ public:
      * @param pos: docking position
      */
     OverlayTabWidget(QWidget* parent, Qt::DockWidgetArea pos);
+    ~OverlayTabWidget() override;
 
     /// Enable/disable overlay mode for this tab widget
     void setOverlayMode(bool enable);
@@ -205,8 +205,8 @@ public:
     void onAction(QAction*);
     /// Sync relevant actions status with the current auto mode
     void syncAutoMode();
-    // Establish if stylesheet is dark
-    static bool isStyleSheetDark(std::string curStyleSheet);
+    // Compare text to background color to determine Dark theme
+    bool isDarkTheme() const;
     // Rotate the AutoHide icon according to the dock area
     static QPixmap rotateAutoHideIcon(QPixmap pxAutoHide, Qt::DockWidgetArea dockArea);
 
@@ -359,11 +359,7 @@ public:
     static QLayoutItem* prepareTitleWidget(QWidget* widget, const QList<QAction*>& actions);
 
 protected:
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    void enterEvent(QEvent* ev) override;
-#else
     void enterEvent(QEnterEvent* ev) override;
-#endif
     void leaveEvent(QEvent* ev) override;
     void changeEvent(QEvent* ev) override;
     void resizeEvent(QResizeEvent* ev) override;
@@ -557,11 +553,7 @@ public:
     void endDrag();
 
 protected:
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    void enterEvent(QEvent* ev) override;
-#else
     void enterEvent(QEnterEvent* ev) override;
-#endif
     void showEvent(QShowEvent* ev) override;
     void leaveEvent(QEvent* ev) override;
     void paintEvent(QPaintEvent* ev) override;
@@ -646,11 +638,7 @@ public:
     void onMousePress();
 
 protected:
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    void enterEvent(QEvent* ev) override;
-#else
     void enterEvent(QEnterEvent* ev) override;
-#endif
     void hideEvent(QHideEvent* ev) override;
     void paintEvent(QPaintEvent* ev) override;
 
@@ -747,5 +735,3 @@ private:
 };
 
 }  // namespace Gui
-
-#endif  // FC_OVERLAYWIDGETS_H

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2015 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DrawUtil_h_
-#define DrawUtil_h_
+#pragma once
 
 #include <limits>
 #include <string>
@@ -275,4 +276,3 @@ public:
 //template<> std::string DrawUtil::formatVector<Base::Vector3d>(const Base::Vector3d &v);
 
 }//end namespace TechDraw
-#endif

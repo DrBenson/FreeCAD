@@ -37,16 +37,30 @@ __url__ = "https://www.freecad.org"
 #  elements that have a structural function, that is, that
 #  support other parts of the building.
 
+import enum
 import FreeCAD
 import ArchComponent
 import ArchCommands
 import ArchProfile
+import ArchSketchObject
 import Draft
 import DraftVecUtils
 
 from FreeCAD import Vector
 from draftutils import params
 from draftutils import gui_utils
+
+
+class StructureMode(enum.Enum):
+    """Placement mode for the interactive Structure command.
+
+    COLUMN: single-point placement, extrusion along the working plane normal.
+    BEAM:   two-point placement, extrusion along the edge between the two points.
+    """
+
+    COLUMN = "Column"
+    BEAM = "Beam"
+
 
 if FreeCAD.GuiUp:
     from PySide import QtCore, QtGui
@@ -72,127 +86,6 @@ Presets = ArchProfile.readPresets()
 for pre in Presets:
     if pre[1] not in Categories:
         Categories.append(pre[1])
-
-
-def makeStructure(baseobj=None, length=None, width=None, height=None, name=None):
-    """makeStructure([baseobj],[length],[width],[height],[name]): creates a
-    structure element based on the given profile object and the given
-    extrusion height. If no base object is given, you can also specify
-    length and width for a cubic object."""
-
-    if not FreeCAD.ActiveDocument:
-        FreeCAD.Console.PrintError("No active document. Aborting\n")
-        return
-    obj = FreeCAD.ActiveDocument.addObject("Part::FeaturePython", "Structure")
-    _Structure(obj)
-    if FreeCAD.GuiUp:
-        _ViewProviderStructure(obj.ViewObject)
-    if baseobj:
-        obj.Base = baseobj
-        if FreeCAD.GuiUp:
-            obj.Base.ViewObject.hide()
-    if width:
-        obj.Width = width
-    else:
-        obj.Width = params.get_param_arch("StructureWidth")
-    if height:
-        obj.Height = height
-    else:
-        if not length:
-            obj.Height = params.get_param_arch("StructureHeight")
-    if length:
-        obj.Length = length
-    else:
-        if not baseobj:
-            # don't set the length if we have a base object, otherwise the length X height calc
-            # gets wrong
-            obj.Length = params.get_param_arch("StructureLength")
-    if baseobj:
-        w = 0
-        h = 0
-        if hasattr(baseobj, "Width") and hasattr(baseobj, "Height"):
-            w = baseobj.Width.Value
-            h = baseobj.Height.Value
-        elif hasattr(baseobj, "Length") and hasattr(baseobj, "Width"):
-            w = baseobj.Length.Value
-            h = baseobj.Width.Value
-        elif hasattr(baseobj, "Length") and hasattr(baseobj, "Height"):
-            w = baseobj.Length.Value
-            h = baseobj.Height.Value
-        if w and h:
-            if length and not height:
-                obj.Width = w
-                obj.Height = h
-            elif height and not length:
-                obj.Width = w
-                obj.Length = h
-
-    if obj.Length > obj.Height:
-        obj.IfcType = "Beam"
-        obj.Label = name if name else translate("Arch", "Beam")
-    elif obj.Height > obj.Length:
-        obj.IfcType = "Column"
-        obj.Label = name if name else translate("Arch", "Column")
-    return obj
-
-
-def makeStructuralSystem(objects=[], axes=[], name=None):
-    """makeStructuralSystem([objects],[axes],[name]): makes a structural system
-    based on the given objects and axes"""
-
-    if not FreeCAD.ActiveDocument:
-        FreeCAD.Console.PrintError("No active document. Aborting\n")
-        return
-    result = []
-    if not axes:
-        print("At least one axis must be given")
-        return
-    if objects:
-        if not isinstance(objects, list):
-            objects = [objects]
-    else:
-        objects = [None]
-    for o in objects:
-        obj = FreeCAD.ActiveDocument.addObject("Part::FeaturePython", "StructuralSystem")
-        obj.Label = name if name else translate("Arch", "StructuralSystem")
-        _StructuralSystem(obj)
-        if FreeCAD.GuiUp:
-            _ViewProviderStructuralSystem(obj.ViewObject)
-        if o:
-            obj.Base = o
-        obj.Axes = axes
-        result.append(obj)
-        if FreeCAD.GuiUp and o:
-            o.ViewObject.hide()
-            Draft.formatObject(obj, o)
-    FreeCAD.ActiveDocument.recompute()
-    if len(result) == 1:
-        return result[0]
-    else:
-        return result
-
-
-def placeAlongEdge(p1, p2, horizontal=False):
-    """placeAlongEdge(p1,p2,[horizontal]): returns a Placement positioned at p1, with Z axis oriented towards p2.
-    If horizontal is True, then the X axis is oriented towards p2, not the Z axis"""
-
-    pl = FreeCAD.Placement()
-    pl.Base = p1
-    import WorkingPlane
-
-    up = WorkingPlane.get_working_plane(update=False).axis
-    zaxis = p2.sub(p1)
-    yaxis = up.cross(zaxis)
-    if yaxis.Length > 0:
-        xaxis = zaxis.cross(yaxis)
-        if horizontal:
-            pl.Rotation = FreeCAD.Rotation(zaxis, yaxis, xaxis, "ZXY")
-        else:
-            pl.Rotation = FreeCAD.Rotation(xaxis, yaxis, zaxis, "ZXY")
-            pl.Rotation = FreeCAD.Rotation(
-                pl.Rotation.multVec(FreeCAD.Vector(0, 0, 1)), 90
-            ).multiply(pl.Rotation)
-    return pl
 
 
 class CommandStructuresFromSelection:
@@ -320,39 +213,30 @@ class _CommandStructure:
 
     def __init__(self):
 
-        self.beammode = False
-
-    def GetResources(self):
-
-        return {
-            "Pixmap": "Arch_Structure",
-            "MenuText": QT_TRANSLATE_NOOP("Arch_Structure", "Structure"),
-            "Accel": "S, T",
-            "ToolTip": QT_TRANSLATE_NOOP(
-                "Arch_Structure",
-                "Creates a structure from scratch or from a selected object (sketch, wire, face or solid)",
-            ),
-        }
+        self.mode = StructureMode.COLUMN
 
     def IsActive(self):
 
         return not FreeCAD.ActiveDocument is None
 
+    def _loadDimensions(self):
+        """Load Width/Height/Length from mode-specific params.
+
+        Each mode persists its own set of dimensions so that switching between beam and column
+        doesn't pollute one mode's values with the other's.
+        """
+        prefix = "Beam" if self.mode == StructureMode.BEAM else "Column"
+        self.Width = params.get_param_arch(prefix + "Width")
+        self.Height = params.get_param_arch(prefix + "Height")
+        self.Length = params.get_param_arch(prefix + "Length")
+
     def Activated(self):
 
         self.doc = FreeCAD.ActiveDocument
-        self.Width = params.get_param_arch("StructureWidth")
-        if self.beammode:
-            self.Height = params.get_param_arch("StructureLength")
-            self.Length = params.get_param_arch("StructureHeight")
-        else:
-            self.Length = params.get_param_arch("StructureLength")
-            self.Height = params.get_param_arch("StructureHeight")
+        self._loadDimensions()
         self.Profile = None
         self.bpoint = None
-        self.bmode = False
         self.precastvalues = None
-        self.wp = None
         sel = FreeCADGui.Selection.getSelection()
         if sel:
             st = Draft.getObjectsOfType(sel, "Structure")
@@ -378,6 +262,7 @@ class _CommandStructure:
 
         FreeCAD.activeDraftCommand = self  # register as a Draft command for auto grid on/off
         self.wp = WorkingPlane.get_working_plane()
+        self.wp._save()
         self.points = []
         self.tracker = DraftTrackers.boxTracker()
         self.tracker.width(self.Width)
@@ -388,7 +273,7 @@ class _CommandStructure:
         self.precast = ArchPrecast._PrecastTaskPanel()
         self.dents = ArchPrecast._DentsTaskPanel()
         self.precast.Dents = self.dents
-        if self.beammode:
+        if self.mode == StructureMode.BEAM:
             title = translate("Arch", "First Point of Beam")
         else:
             title = translate("Arch", "Base Point of Column")
@@ -397,20 +282,44 @@ class _CommandStructure:
             movecallback=self.update,
             extradlg=[self.taskbox(), self.precast.form, self.dents.form],
             title=title,
+            hints=self.get_hints(),
         )
         FreeCADGui.draftToolBar.continueCmd.show()
+
+    def get_hints(self):
+        "returns status bar input hints for the current tool state"
+        from draftguitools import gui_tool_utils
+
+        if self.mode == StructureMode.BEAM and (self.bpoint is None):
+            label = translate("Arch", "%1 pick first point")
+        elif self.mode == StructureMode.BEAM:
+            label = translate("Arch", "%1 pick next point")
+        else:
+            label = translate("Arch", "%1 pick base point")
+        return (
+            [FreeCADGui.InputHint(label, FreeCADGui.UserInput.MouseLeft)]
+            + gui_tool_utils._get_hint_xyz_constrain()
+            + gui_tool_utils._get_hint_mod_constrain()
+            + gui_tool_utils._get_hint_mod_snap()
+        )
 
     def getPoint(self, point=None, obj=None):
         "this function is called by the snapper when it has a 3D point"
 
-        self.bmode = self.modeb.isChecked()
+        self.mode = StructureMode.BEAM if self.modeb.isChecked() else StructureMode.COLUMN
         if point is None:
+            self.wp._restore()
             FreeCAD.activeDraftCommand = None
             FreeCADGui.Snapper.off()
             self.tracker.finalize()
             return
-        if self.bmode and (self.bpoint is None):
+        if self.mode == StructureMode.BEAM and (self.bpoint is None):
             self.bpoint = point
+            # Recreate precast/dents task boxes. The getPoint() call below replaces the task panel,
+            # destroying the task boxes that were embedded via extradlg by the first call.
+            self.precast = ArchPrecast._PrecastTaskPanel()
+            self.dents = ArchPrecast._DentsTaskPanel()
+            self.precast.Dents = self.dents
             FreeCADGui.Snapper.getPoint(
                 last=point,
                 callback=self.getPoint,
@@ -418,8 +327,10 @@ class _CommandStructure:
                 extradlg=[self.taskbox(), self.precast.form, self.dents.form],
                 title=translate("Arch", "Next Point") + ":",
                 mode="line",
+                hints=self.get_hints(),
             )
             return
+        self.wp._restore()
         FreeCAD.activeDraftCommand = None
         FreeCADGui.Snapper.off()
         self.tracker.off()
@@ -427,9 +338,9 @@ class _CommandStructure:
         self.doc.openTransaction(translate("Arch", "Create Structure"))
         FreeCADGui.addModule("Arch")
         FreeCADGui.addModule("WorkingPlane")
-        if self.bmode:
+        if self.mode == StructureMode.BEAM:
             self.Length = point.sub(self.bpoint).Length
-            params.set_param_arch("StructureHeight", self.Length)
+            params.set_param_arch("BeamLength", self.Length)
         if self.Profile is not None:
             try:  # try to update latest precast values - fails if dialog has been destroyed already
                 self.precastvalues = self.precast.getValues()
@@ -443,7 +354,7 @@ class _CommandStructure:
                 self.precastvalues["Height"] = self.Height
                 argstring = ""
                 # fix for precast placement, since their (0,0) point is the lower left corner
-                if self.bmode:
+                if self.mode == StructureMode.BEAM:
                     delta = FreeCAD.Vector(0, 0 - self.Width / 2, 0)
                 else:
                     delta = FreeCAD.Vector(-self.Length / 2, -self.Width / 2, 0)
@@ -463,9 +374,7 @@ class _CommandStructure:
             else:
                 # metal profile
                 FreeCADGui.doCommand("p = Arch.makeProfile(" + str(self.Profile) + ")")
-                if (
-                    abs(self.Length - self.Profile[4]) >= 0.1
-                ) or self.bmode:  # forgive rounding errors
+                if self.mode == StructureMode.BEAM:
                     # horizontal
                     FreeCADGui.doCommand(
                         "s = Arch.makeStructure(p,length=" + str(self.Length) + ")"
@@ -476,9 +385,7 @@ class _CommandStructure:
                     FreeCADGui.doCommand(
                         "s = Arch.makeStructure(p,height=" + str(self.Height) + ")"
                     )
-                    # if not self.bmode:
-                    #    FreeCADGui.doCommand('s.Placement.Rotation = FreeCAD.Rotation(-0.5,0.5,-0.5,0.5)')
-                FreeCADGui.doCommand('s.Profile = "' + self.Profile[2] + '"')
+                FreeCADGui.doCommand("s.Profile = " + repr(self.Profile[2]))
         else:
             FreeCADGui.doCommand(
                 "s = Arch.makeStructure(length="
@@ -491,7 +398,7 @@ class _CommandStructure:
             )
 
         # calculate rotation
-        if self.bmode and self.bpoint:
+        if self.mode == StructureMode.BEAM and self.bpoint:
             FreeCADGui.doCommand(
                 "s.Placement = Arch.placeAlongEdge("
                 + DraftVecUtils.toString(self.bpoint)
@@ -542,7 +449,7 @@ class _CommandStructure:
         labelmode = QtGui.QLabel(translate("Arch", "Parameters of the structure") + ":")
         self.modeb = QtGui.QRadioButton(translate("Arch", "Beam"))
         self.modec = QtGui.QRadioButton(translate("Arch", "Column"))
-        if self.bpoint or self.beammode:
+        if self.bpoint or self.mode == StructureMode.BEAM:
             self.modeb.setChecked(True)
         else:
             self.modec.setChecked(True)
@@ -569,14 +476,7 @@ class _CommandStructure:
         # length
         label1 = QtGui.QLabel(translate("Arch", "Length"))
         self.vLength = ui.createWidget("Gui::InputField")
-        if self.modeb.isChecked():
-            self.vLength.setText(
-                FreeCAD.Units.Quantity(self.Height, FreeCAD.Units.Length).UserString
-            )
-        else:
-            self.vLength.setText(
-                FreeCAD.Units.Quantity(self.Length, FreeCAD.Units.Length).UserString
-            )
+        self.vLength.setText(FreeCAD.Units.Quantity(self.Length, FreeCAD.Units.Length).UserString)
         grid.addWidget(label1, 4, 0, 1, 1)
         grid.addWidget(self.vLength, 4, 1, 1, 1)
 
@@ -590,14 +490,7 @@ class _CommandStructure:
         # height
         label3 = QtGui.QLabel(translate("Arch", "Height"))
         self.vHeight = ui.createWidget("Gui::InputField")
-        if self.modeb.isChecked():
-            self.vHeight.setText(
-                FreeCAD.Units.Quantity(self.Length, FreeCAD.Units.Length).UserString
-            )
-        else:
-            self.vHeight.setText(
-                FreeCAD.Units.Quantity(self.Height, FreeCAD.Units.Length).UserString
-            )
+        self.vHeight.setText(FreeCAD.Units.Quantity(self.Height, FreeCAD.Units.Length).UserString)
         grid.addWidget(label3, 6, 0, 1, 1)
         grid.addWidget(self.vHeight, 6, 1, 1, 1)
 
@@ -652,7 +545,7 @@ class _CommandStructure:
             else:
                 delta = Vector(self.Length / 2, 0, 0)
             delta = self.wp.get_global_coords(delta, as_vector=True)
-            if self.modec.isChecked():
+            if self.mode == StructureMode.COLUMN:
                 self.tracker.pos(point.add(delta))
                 self.tracker.on()
             else:
@@ -666,29 +559,26 @@ class _CommandStructure:
                 else:
                     self.tracker.off()
 
+    def _paramPrefix(self):
+        return "Beam" if self.mode == StructureMode.BEAM else "Column"
+
     def setWidth(self, d):
 
         self.Width = d
         self.tracker.width(d)
-        params.set_param_arch("StructureWidth", d)
+        params.set_param_arch(self._paramPrefix() + "Width", d)
 
     def setHeight(self, d):
 
         self.Height = d
         self.tracker.height(d)
-        if self.modeb.isChecked():
-            params.set_param_arch("StructureLength", d)
-        else:
-            params.set_param_arch("StructureHeight", d)
+        params.set_param_arch(self._paramPrefix() + "Height", d)
 
     def setLength(self, d):
 
         self.Length = d
         self.tracker.length(d)
-        if self.modeb.isChecked():
-            params.set_param_arch("StructureHeight", d)
-        else:
-            params.set_param_arch("StructureLength", d)
+        params.set_param_arch(self._paramPrefix() + "Length", d)
 
     def setCategory(self, i):
 
@@ -726,26 +616,37 @@ class _CommandStructure:
                     self.dents.form.hide()
                 params.set_param_arch("StructurePreset", self.Profile)
             else:
-                self.vLength.setText(
-                    FreeCAD.Units.Quantity(float(elt[4]), FreeCAD.Units.Length).UserString
-                )
-                self.vWidth.setText(
-                    FreeCAD.Units.Quantity(float(elt[5]), FreeCAD.Units.Length).UserString
-                )
+                # elt[4] is the cross-section depth, elt[5] is the cross-section width.
+                # For beams the cross-section depth is Height; for columns it is Length.
+                depth = float(elt[4])
+                width = float(elt[5])
+                if self.mode == StructureMode.BEAM:
+                    self.vHeight.setText(
+                        FreeCAD.Units.Quantity(depth, FreeCAD.Units.Length).UserString
+                    )
+                    self.setHeight(depth)
+                else:
+                    self.vLength.setText(
+                        FreeCAD.Units.Quantity(depth, FreeCAD.Units.Length).UserString
+                    )
+                    self.setLength(depth)
+                self.vWidth.setText(FreeCAD.Units.Quantity(width, FreeCAD.Units.Length).UserString)
+                self.setWidth(width)
                 self.Profile = elt
                 params.set_param_arch("StructurePreset", ";".join([str(i) for i in self.Profile]))
 
-    def switchLH(self, bmode):
+    def switchLH(self, beam_toggled):
 
-        if bmode:
-            self.bmode = True
-            if self.Height > self.Length:
-                self.rotateLH()
-        else:
-            self.bmode = False
-            if self.Length > self.Height:
-                self.rotateLH()
-                self.tracker.setRotation(FreeCAD.Rotation())
+        self.mode = StructureMode.BEAM if beam_toggled else StructureMode.COLUMN
+        self._loadDimensions()
+        self.vWidth.setText(FreeCAD.Units.Quantity(self.Width, FreeCAD.Units.Length).UserString)
+        self.vHeight.setText(FreeCAD.Units.Quantity(self.Height, FreeCAD.Units.Length).UserString)
+        self.vLength.setText(FreeCAD.Units.Quantity(self.Length, FreeCAD.Units.Length).UserString)
+        self.tracker.width(self.Width)
+        self.tracker.height(self.Height)
+        self.tracker.length(self.Length)
+        if self.mode == StructureMode.COLUMN:
+            self.tracker.setRotation(FreeCAD.Rotation())
 
     def rotateLH(self):
 
@@ -896,7 +797,7 @@ class _Structure(ArchComponent.Component):
                 "Structure",
                 QT_TRANSLATE_NOOP(
                     "App::Property",
-                    "The height or extrusion depth of this element. Keep 0 for automatic",
+                    "The height or extrusion depth of this element.\nKeep 0 to automatically match the height of the enclosing Level or Building.",
                 ),
                 locked=True,
             )
@@ -1048,6 +949,26 @@ class _Structure(ArchComponent.Component):
                 obj.setEditorMode("ArchSketchEdges", 0)
             if hasattr(obj, "ArchSketchPropertySet"):
                 obj.setEditorMode("ArchSketchPropertySet", ["ReadOnly"])
+
+        if (
+            obj.Document.getProgramVersion().split()[0] < "1.1"
+            and obj.Base is not None
+            and obj.Base.isDerivedFrom("Sketcher::SketchObject")
+            and obj.Normal.Length == 0  # Automatic normal.
+            and obj.Length
+            == 0  # We should be dealing with columns, their obj.Length is normally 0.
+            # Can't compare distance of nodes with obj.Height as nodes may have beeen moved.
+            and len(obj.Nodes) == 2
+            and (obj.Nodes[1] - obj.Nodes[0]).Length > 1e-5
+        ):
+            obj.Normal = (obj.Nodes[1] - obj.Nodes[0]).normalize()
+            from draftutils.messages import _log
+
+            _log(
+                "v26.3, "
+                + obj.Name
+                + ", updated 'Normal' property based on 'Nodes' to prevent flipping"
+            )
 
         # set a flag to indicate onDocumentRestored() is run
 
@@ -1236,35 +1157,20 @@ class _Structure(ArchComponent.Component):
                                 baseShapeWires = structureBaseShapeWires.get("slabWires")
                                 faceMaker = structureBaseShapeWires.get("faceMaker")
                         elif obj.Base.isDerivedFrom("Sketcher::SketchObject"):
-                            skGeom = obj.Base.GeometryFacadeList
-                            skGeomEdges = []
                             skPlacement = (
                                 obj.Base.Placement
                             )  # Get Sketch's placement to restore later
-                            # Get ArchSketch edges to construct ArchStructure
-                            # No need to test obj.ArchSketchData ...
-                            for ig, geom in enumerate(skGeom):
-                                # Construction mode edges should be ignored if
-                                # ArchSketchEdges, otherwise, ArchSketchEdges data
-                                # needs to take out those in Construction before
-                                # using as parameters.
-                                if (not obj.ArchSketchEdges and not geom.Construction) or str(
-                                    ig
-                                ) in obj.ArchSketchEdges:
-                                    # support Line, Arc, Circle, Ellipse, BSplineCurve for Sketch
-                                    # as Base at the moment
-                                    if isinstance(
-                                        geom.Geometry,
-                                        (
-                                            Part.LineSegment,
-                                            Part.Circle,
-                                            Part.ArcOfCircle,
-                                            Part.Ellipse,
-                                            Part.BSplineCurve,
-                                        ),
-                                    ):
-                                        skGeomEdgesI = geom.Geometry.toShape()
-                                        skGeomEdges.append(skGeomEdgesI)
+                            skGeomEdges = ArchSketchObject.getSketchDefiningEdges(
+                                obj.Base,
+                                obj.ArchSketchEdges,
+                                (
+                                    Part.LineSegment,
+                                    Part.Circle,
+                                    Part.ArcOfCircle,
+                                    Part.Ellipse,
+                                    Part.BSplineCurve,
+                                ),
+                            )
                             clusterTransformed = []
                             for cluster in Part.getSortedClusters(skGeomEdges):
                                 edgesTransformed = []
@@ -1685,17 +1591,33 @@ class _ViewProviderStructure(ArchComponent.ViewProviderComponent):
             return None
 
         taskd = StructureTaskPanel(vobj.Object)
-        taskd.obj = self.Object
-        taskd.update()
         FreeCADGui.Control.showDialog(taskd)
         return True
 
 
-class StructureTaskPanel(ArchComponent.ComponentTaskPanel):
+class StructureTaskPanel(ArchComponent.ComponentOptionsTaskPanel):
+    """A task panel for Arch Structures that combines generic dimensions with node tools"""
 
     def __init__(self, obj):
+        # Define properties based on the IfcType
+        if getattr(obj, "IfcType", "Beam") == "Slab":
+            property_definitions = [
+                {"prop": "Height", "label": translate("Arch", "Thickness")},
+            ]
+        else:
+            # For Beams and Columns
+            property_definitions = [
+                {"prop": "Length", "label": translate("Arch", "Length")},
+                {"prop": "Width", "label": translate("Arch", "Width")},
+                {"prop": "Height", "label": translate("Arch", "Height")},
+            ]
 
-        ArchComponent.ComponentTaskPanel.__init__(self)
+        #  Initialize generic parent (creates self.options_widget and self.baseform)
+        super().__init__(obj, property_definitions)
+
+        # Alias for compatibility with node/tool methods
+        self.Object = self.obj
+
         self.nodes_widget = QtGui.QWidget()
         self.nodes_widget.setWindowTitle(QtGui.QApplication.translate("Arch", "Node Tools", None))
         lay = QtGui.QVBoxLayout(self.nodes_widget)
@@ -1703,15 +1625,14 @@ class StructureTaskPanel(ArchComponent.ComponentTaskPanel):
         self.resetButton = QtGui.QPushButton(self.nodes_widget)
         self.resetButton.setIcon(QtGui.QIcon(":/icons/edit-undo.svg"))
         self.resetButton.setText(QtGui.QApplication.translate("Arch", "Reset Nodes", None))
-
         lay.addWidget(self.resetButton)
-        QtCore.QObject.connect(self.resetButton, QtCore.SIGNAL("clicked()"), self.resetNodes)
+        self.resetButton.clicked.connect(self.resetNodes)
 
         self.editButton = QtGui.QPushButton(self.nodes_widget)
         self.editButton.setIcon(QtGui.QIcon(":/icons/Draft_Edit.svg"))
         self.editButton.setText(QtGui.QApplication.translate("Arch", "Edit Nodes", None))
         lay.addWidget(self.editButton)
-        QtCore.QObject.connect(self.editButton, QtCore.SIGNAL("clicked()"), self.editNodes)
+        self.editButton.clicked.connect(self.editNodes)
 
         self.extendButton = QtGui.QPushButton(self.nodes_widget)
         self.extendButton.setIcon(QtGui.QIcon(":/icons/Snap_Perpendicular.svg"))
@@ -1724,7 +1645,7 @@ class StructureTaskPanel(ArchComponent.ComponentTaskPanel):
             )
         )
         lay.addWidget(self.extendButton)
-        QtCore.QObject.connect(self.extendButton, QtCore.SIGNAL("clicked()"), self.extendNodes)
+        self.extendButton.clicked.connect(self.extendNodes)
 
         self.connectButton = QtGui.QPushButton(self.nodes_widget)
         self.connectButton.setIcon(QtGui.QIcon(":/icons/Snap_Intersection.svg"))
@@ -1735,7 +1656,7 @@ class StructureTaskPanel(ArchComponent.ComponentTaskPanel):
             )
         )
         lay.addWidget(self.connectButton)
-        QtCore.QObject.connect(self.connectButton, QtCore.SIGNAL("clicked()"), self.connectNodes)
+        self.connectButton.clicked.connect(self.connectNodes)
 
         self.toggleButton = QtGui.QPushButton(self.nodes_widget)
         self.toggleButton.setIcon(QtGui.QIcon(":/icons/dagViewVisible.svg"))
@@ -1746,7 +1667,7 @@ class StructureTaskPanel(ArchComponent.ComponentTaskPanel):
             )
         )
         lay.addWidget(self.toggleButton)
-        QtCore.QObject.connect(self.toggleButton, QtCore.SIGNAL("clicked()"), self.toggleNodes)
+        self.toggleButton.clicked.connect(self.toggleNodes)
 
         self.extrusion_widget = QtGui.QWidget()
         self.extrusion_widget.setWindowTitle(
@@ -1763,12 +1684,11 @@ class StructureTaskPanel(ArchComponent.ComponentTaskPanel):
             )
         )
         lay.addWidget(self.selectToolButton)
-        QtCore.QObject.connect(
-            self.selectToolButton, QtCore.SIGNAL("clicked()"), self.setSelectionFromTool
-        )
+        self.selectToolButton.clicked.connect(self.setSelectionFromTool)
 
-        self.form = [self.form, self.nodes_widget, self.extrusion_widget]
-        self.Object = obj
+        # Build the final form list: Options box, Node Tools box, Extrusion box, Components box
+        self.form = [self.options_widget, self.nodes_widget, self.extrusion_widget, self.baseform]
+
         self.observer = None
         self.nodevis = None
 
@@ -1961,14 +1881,13 @@ class StructureTaskPanel(ArchComponent.ComponentTaskPanel):
         self.selectToolButton.setText(QtGui.QApplication.translate("Arch", "Select Tool", None))
 
     def accept(self):
-
         if self.observer:
             FreeCADGui.Selection.removeObserver(self.observer)
         if self.nodevis:
             self.toggleNodes()
-        FreeCAD.ActiveDocument.recompute()
-        FreeCADGui.ActiveDocument.resetEdit()
-        return True
+
+        # Trigger the generic property-saving logic in ComponentOptionsTaskPanel
+        return super().accept()
 
 
 class StructSelectionObserver:
@@ -2124,14 +2043,13 @@ class _ViewProviderStructuralSystem(ArchComponent.ViewProviderComponent):
 
 
 if FreeCAD.GuiUp:
-    FreeCADGui.addCommand("Arch_Structure", _CommandStructure())
     FreeCADGui.addCommand("Arch_StructuralSystem", CommandStructuralSystem())
     FreeCADGui.addCommand("Arch_StructuresFromSelection", CommandStructuresFromSelection())
 
     class _ArchStructureGroupCommand:
 
         def GetCommands(self):
-            return ("Arch_Structure", "Arch_StructuralSystem", "Arch_StructuresFromSelection")
+            return ("Arch_StructuralSystem", "Arch_StructuresFromSelection")
 
         def GetResources(self):
             return {

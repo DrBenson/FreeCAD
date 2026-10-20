@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Luke Parry <l.parry@warwick.ac.uk>                 *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TechDraw_DrawViewDimension_h_
-#define TechDraw_DrawViewDimension_h_
+#pragma once
 
 #include <App/DocumentObject.h>
 #include <Base/UnitsApi.h>
@@ -81,6 +82,7 @@ public:
 
     App::PropertyBool TheoreticalExact;
     App::PropertyBool Inverted;
+    App::PropertyBool ShowSupplementary;
     App::PropertyString FormatSpec;
     App::PropertyString FormatSpecOverTolerance;
     App::PropertyString FormatSpecUnderTolerance;
@@ -97,6 +99,9 @@ public:
     Part::PropertyTopoShapeList SavedGeometry;
     App::PropertyVectorList BoxCorners;
     App::PropertyBool UseActualArea;
+
+    App::PropertyBool UseAreaLeaderPoint;
+    App::PropertyVector AreaLeaderPoint;
 
     App::PropertyBool ShowUnits;
 //NOLINTEND
@@ -247,6 +252,9 @@ protected:
 
     virtual areaPoint getAreaParameters(ReferenceVector references);
 
+    bool isCircleSpecialCase(const TopoDS_Edge& edge0, const TopoDS_Edge& edge1);
+    pointPair getPointsTwoCircles(const TopoDS_Edge& edge0, const TopoDS_Edge& edge1, bool is3d);
+
     double
     dist2Segs(Base::Vector3d s1, Base::Vector3d e1, Base::Vector3d s2, Base::Vector3d e2) const;
     pointPair closestPoints(const TopoDS_Shape& s1, const TopoDS_Shape& s2) const;
@@ -286,4 +294,3 @@ private:
 };
 
 }  // namespace TechDraw
-#endif

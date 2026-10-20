@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jan Rheinländer                                    *
  *                                   <jrheinlaender@users.sourceforge.net> *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef FEM_GUI_TOOLS_H
-#define FEM_GUI_TOOLS_H
+#pragma once
 
 #include <Inventor/SbVec3f.h>
 #include <Inventor/SbRotation.h>
@@ -70,6 +71,3 @@ void updateFixed(
 }  // namespace GuiTools
 
 }  // namespace FemGui
-
-
-#endif  // FEM_GUI_TOOLS_H

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jan Rheinländer                                    *
  *                                   <jrheinlaender@users.sourceforge.net> *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef FEM_CONSTRAINTFIXED_H
-#define FEM_CONSTRAINTFIXED_H
+#pragma once
 
 #include "FemConstraint.h"
 
@@ -52,6 +53,3 @@ protected:
 };
 
 }  // namespace Fem
-
-
-#endif  // FEM_CONSTRAINTFIXED_H

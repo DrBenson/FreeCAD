@@ -87,7 +87,7 @@ void CmdPartSimpleCylinder::activated(int iMsg)
         );
         commitCommand();
         updateActive();
-        doCommand(Gui, "Gui.SendMsgToActiveView(\"ViewFit\")");
+        doCommand(Gui, "Gui.ActiveDocument.ActiveView.sendMessage(\"ViewFit\")");
     }
 }
 
@@ -247,7 +247,8 @@ CmdPartSimpleCopy::CmdPartSimpleCopy()
 static void _copyShape(const char* cmdName, bool resolve, bool needElement = false, bool refine = false)
 {
     Gui::WaitCursor wc;
-    Gui::Command::openCommand(cmdName);
+
+    int tid = Gui::Command::openActiveDocumentCommand(cmdName);
     for (auto& sel : Gui::Selection().getSelectionEx(
              "*",
              App::DocumentObject::getClassTypeId(),
@@ -300,7 +301,7 @@ static void _copyShape(const char* cmdName, bool resolve, bool needElement = fal
             Gui::Command::copyVisual(newObj, "PointColor", v.second);
         }
     }
-    Gui::Command::commitCommand();
+    Gui::Command::commitCommand(tid);
     Gui::Command::updateActive();
 }
 
@@ -432,7 +433,7 @@ void CmdPartRefineShape::activated(int iMsg)
                 Gui::copyVisualT(newObj->getNameInDocument(), "PointColor", obj->getNameInDocument());
             }
             catch (const Base::Exception& e) {
-                Base::Console().warning("%s: %s\n", obj->Label.getValue(), e.what());
+                Base::Console().warning("{}: {}\n", obj->Label.getValue(), e.what());
             }
         });
         commitCommand();
@@ -506,7 +507,7 @@ void CmdPartDefeaturing::activated(int iMsg)
             );
         }
         catch (const Base::Exception& e) {
-            Base::Console().warning("%s: %s\n", it->getFeatName(), e.what());
+            Base::Console().warning("{}: {}\n", it->getFeatName(), e.what());
         }
     }
     commitCommand();

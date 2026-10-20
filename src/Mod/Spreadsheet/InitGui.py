@@ -29,10 +29,6 @@
 # This is the second one of three init scripts, the third one
 # runs when the gui is up
 
-import SpreadsheetGui
-FreeCADGui.addLanguagePath(":/translations")
-FreeCADGui.addIconPath(":/icons")
-FreeCADGui.updateLocale()
 
 class SpreadsheetWorkbench(Workbench):
     "Spreadsheet workbench object"
@@ -41,8 +37,8 @@ class SpreadsheetWorkbench(Workbench):
         self.__class__.Icon = (
             FreeCAD.getResourceDir() + "Mod/Spreadsheet/Resources/icons/SpreadsheetWorkbench.svg"
         )
-        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Spreadsheet")
-        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Spreadsheet workbench")
+        self.__class__.MenuText = "Spreadsheet"
+        self.__class__.ToolTip = "Spreadsheet workbench"
 
     def Initialize(self):
         # load the module
@@ -55,4 +51,4 @@ class SpreadsheetWorkbench(Workbench):
 Gui.addWorkbench(SpreadsheetWorkbench())
 
 # Append the open handler
-FreeCAD.addImportType(FreeCAD.Qt.translate("QObject", "Spreadsheet formats (*.csv *.CSV)"), "SpreadsheetGui")
+FreeCAD.addImportType("Spreadsheet formats (*.csv *.CSV)", "SpreadsheetGui")

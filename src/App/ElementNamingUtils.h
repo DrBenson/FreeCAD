@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: LGPL-2.1-or-later
 
-#ifndef ELEMENT_NAMING_UTILS_H
-#define ELEMENT_NAMING_UTILS_H
+#pragma once
 
 #include <string>
+#include <string_view>
 #include <utility>
 #include "FCGlobal.h"
 
@@ -76,9 +76,9 @@ constexpr const char* POSTFIX_CHILD                     = ";:C";
 
 /// Special postfix to mark the index of an array element
 constexpr const char* POSTFIX_INDEX                     = ";:I";
-/// Postfix to mark an element higher in the hierarcy.
+/// Postfix to mark an element higher in the hierarchy.
 constexpr const char* POSTFIX_UPPER                     = ";:U";
-/// Postfix to mark an element lower in the hierarcy.
+/// Postfix to mark an element lower in the hierarchy.
 constexpr const char* POSTFIX_LOWER                     = ";:L";
 /// Postfix to mark an element as being modified.
 constexpr const char* POSTFIX_MOD                       = ";:M";
@@ -120,7 +120,8 @@ AppExport const char *hasMappedElementName(const char *subname);
 
 AppExport const std::string indexSuffix(int index, const char *label=ELEMENT_MAP_INDEX);
 
+/// Given a string and a prefix, return the integer index that follows that prefix, or 0 if not found
+AppExport int indexOfElement(std::string_view s, std::string_view prefix);
+
 }  // namespace Data
 // clang-format on
-
-#endif  // ELEMENT_NAMING_UTILS_H

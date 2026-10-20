@@ -1,29 +1,28 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
+# SPDX-FileCopyrightText: 2016 sliptonic <shopinthewoods@gmail.com>
+# SPDX-FileNotice: Part of the FreeCAD project.
 
-# ***************************************************************************
-# *   Copyright (c) 2016 sliptonic <shopinthewoods@gmail.com>               *
-# *                                                                         *
-# *   This program is free software; you can redistribute it and/or modify  *
-# *   it under the terms of the GNU Lesser General Public License (LGPL)    *
-# *   as published by the Free Software Foundation; either version 2 of     *
-# *   the License, or (at your option) any later version.                   *
-# *   for detail see the LICENCE text file.                                 *
-# *                                                                         *
-# *   This program is distributed in the hope that it will be useful,       *
-# *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
-# *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
-# *   GNU Library General Public License for more details.                  *
-# *                                                                         *
-# *   You should have received a copy of the GNU Library General Public     *
-# *   License along with this program; if not, write to the Free Software   *
-# *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
-# *   USA                                                                   *
-# *                                                                         *
-# ***************************************************************************
+################################################################################
+#                                                                              #
+#   FreeCAD is free software: you can redistribute it and/or modify            #
+#   it under the terms of the GNU Lesser General Public License as             #
+#   published by the Free Software Foundation, either version 2.1              #
+#   of the License, or (at your option) any later version.                     #
+#                                                                              #
+#   FreeCAD is distributed in the hope that it will be useful,                 #
+#   but WITHOUT ANY WARRANTY; without even the implied warranty                #
+#   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                    #
+#   See the GNU Lesser General Public License for more details.                #
+#                                                                              #
+#   You should have received a copy of the GNU Lesser General Public           #
+#   License along with FreeCAD. If not, see https://www.gnu.org/licenses       #
+#                                                                              #
+################################################################################
 
 import Part
 import Path
 import math
+import Constants
 
 from FreeCAD import Vector
 from CAMTests.PathTestUtils import PathTestBase
@@ -229,36 +228,36 @@ class TestPathGeom(PathTestBase):
         self.assertFalse(Path.Geom.isHorizontal(yzPlane))
 
         # cylinders
-        xCylinder = [
+        xCylinder = next(
             f
             for f in Part.makeCylinder(1, 1, Vector(), Vector(1, 0, 0)).Faces
-            if type(f.Surface) == Part.Cylinder
-        ][0]
-        yCylinder = [
+            if isinstance(f.Surface, Part.Cylinder)
+        )
+        yCylinder = next(
             f
             for f in Part.makeCylinder(1, 1, Vector(), Vector(0, 1, 0)).Faces
-            if type(f.Surface) == Part.Cylinder
-        ][0]
-        zCylinder = [
+            if isinstance(f.Surface, Part.Cylinder)
+        )
+        zCylinder = next(
             f
             for f in Part.makeCylinder(1, 1, Vector(), Vector(0, 0, 1)).Faces
-            if type(f.Surface) == Part.Cylinder
-        ][0]
-        xyCylinder = [
+            if isinstance(f.Surface, Part.Cylinder)
+        )
+        xyCylinder = next(
             f
             for f in Part.makeCylinder(1, 1, Vector(), Vector(1, 1, 0)).Faces
-            if type(f.Surface) == Part.Cylinder
-        ][0]
-        xzCylinder = [
+            if isinstance(f.Surface, Part.Cylinder)
+        )
+        xzCylinder = next(
             f
             for f in Part.makeCylinder(1, 1, Vector(), Vector(1, 0, 1)).Faces
-            if type(f.Surface) == Part.Cylinder
-        ][0]
-        yzCylinder = [
+            if isinstance(f.Surface, Part.Cylinder)
+        )
+        yzCylinder = next(
             f
             for f in Part.makeCylinder(1, 1, Vector(), Vector(0, 1, 1)).Faces
-            if type(f.Surface) == Part.Cylinder
-        ][0]
+            if isinstance(f.Surface, Part.Cylinder)
+        )
 
         self.assertTrue(Path.Geom.isHorizontal(xCylinder))
         self.assertTrue(Path.Geom.isHorizontal(yCylinder))
@@ -266,6 +265,24 @@ class TestPathGeom(PathTestBase):
         self.assertTrue(Path.Geom.isHorizontal(xyCylinder))
         self.assertFalse(Path.Geom.isHorizontal(xzCylinder))
         self.assertFalse(Path.Geom.isHorizontal(yzCylinder))
+
+    def test05(self):
+        """Test CompareVecs"""
+
+        # Vec and origin
+        v1 = Vector(0, 0, 10)
+        v2 = Vector(0, 0, 0)
+        self.assertTrue(Path.Geom.compareVecs(v1, v2))
+
+        # two valid vectors
+        v1 = Vector(0, 10, 0)
+        v2 = Vector(0, 20, 0)
+        self.assertTrue(Path.Geom.compareVecs(v1, v2))
+
+        # two valid vectors not aligned
+        v1 = Vector(0, 10, 0)
+        v2 = Vector(10, 0, 0)
+        self.assertFalse(Path.Geom.compareVecs(v1, v2))
 
     def test07(self):
         """Verify speed interpolation works for different pitches"""
@@ -487,7 +504,7 @@ class TestPathGeom(PathTestBase):
         )
 
     def test40(self):
-        """Verify arc results in proper G2/3 command."""
+        """Verify arc results in proper G2/G3 command."""
         p1 = Vector(0, -10, 0)
         p2 = Vector(-10, 0, 0)
         p3 = Vector(0, +10, 0)
@@ -548,7 +565,52 @@ class TestPathGeom(PathTestBase):
         cmds = Path.Geom.cmdsForEdge(ellipse)
         # let's make sure all commands are G1 and there are more than 20 of those
         self.assertGreater(len(cmds), 20)
-        self.assertTrue(all([cmd.Name == "G1" for cmd in cmds]))
+        self.assertTrue(all(cmd.Name in Constants.GCODE_MOVE_STRAIGHT for cmd in cmds))
+
+    def test43(self):
+        """Verify ellipsis results with approximation."""
+        ellipse = Part.Edge(Part.Ellipse())
+        cmds = Path.Geom.cmdsForEdge(ellipse, approximation=True, tol=0.01)
+        # let's make sure all commands are G2 or G3 and there are less than 20 of those
+        self.assertTrue(cmds)
+        self.assertLess(len(cmds), 20)
+        self.assertTrue(all(cmd.Name in Constants.GCODE_MOVE_ARC for cmd in cmds))
+
+    def test44(self):
+        """Verify approximation deviation not horizontal arc."""
+        tol = 0.01
+        center = Vector()
+        normal = Vector(0, 0.3, 0.7)
+        radius = 10
+        circle = Part.Circle(center, normal, radius)
+        arc = Part.ArcOfCircle(circle, 0, 3.14)
+        partEdge = Part.Edge(arc)
+
+        # creates commands list and check that it is not empty
+        cmds = Path.Geom.cmdsForEdge(partEdge, approximation=True, tol=tol)
+        self.assertTrue(cmds)
+
+        # let's make sure all commands are G2 or G3 and there are less than 35 of those
+        self.assertLess(len(cmds), 35)
+        self.assertTrue(all(cmd.Name in Constants.GCODE_MOVE_ARC for cmd in cmds))
+
+        pathEdges = []
+        startPoint = partEdge.Vertexes[0].Point
+        for cmd in cmds:
+            pathEdges.append(Path.Geom.edgeForCmd(cmd, startPoint))
+            startPoint = Vector(cmd.x, cmd.y, cmd.z)
+
+        pathWire = Part.Wire(Part.__sortEdges__(pathEdges))
+
+        pathPoints = pathWire.discretize(Distance=1)
+        partPoints = partEdge.discretize(Distance=1)
+
+        # let's make sure amount of points is equal
+        self.assertEqual(len(pathPoints), len(partPoints))
+
+        for i in range(len(pathPoints)):
+            # deviation between original edge and approximated wire should be less than 2 * tol
+            self.assertLess(pathPoints[i].distanceToPoint(partPoints[i]), 2 * tol)
 
     def test50(self):
         """Verify proper wire(s) aggregation from a Path."""
@@ -557,8 +619,9 @@ class TestPathGeom(PathTestBase):
         commands.append(Path.Command("G1", {"Y": 1}))
         commands.append(Path.Command("G0", {"X": 0}))
         commands.append(Path.Command("G1", {"Y": 0}))
+        commands.append(Path.Command("G1", {"Y": 0}))  # test zero length move
 
-        wire, rapid, rapid_indexes = Path.Geom.wireForPath(Path.Path(commands))
+        wire, rapid, _ = Path.Geom.wireForPath(Path.Path(commands))
         self.assertEqual(len(wire.Edges), 4)
         self.assertLine(wire.Edges[0], Vector(0, 0, 0), Vector(1, 0, 0))
         self.assertLine(wire.Edges[1], Vector(1, 0, 0), Vector(1, 1, 0))
@@ -673,7 +736,6 @@ class TestPathGeom(PathTestBase):
         am = Vector(459.51, 372.61, 1)
         al = Vector(491.75, 351.75, 1)
         arc = Part.Edge(Part.ArcOfCircle(af, am, al))
-        ac = arc.Curve.Center
 
         s = Vector(434.54, 378.26, 1)
         head, tail = Path.Geom.splitEdgeAt(arc, s)
@@ -686,7 +748,7 @@ class TestPathGeom(PathTestBase):
         self.assertCoincide(s, tail.valueAt(tail.FirstParameter), 0.005)
         i = arc.valueAt(arc.LastParameter)
         j = tail.valueAt(tail.LastParameter)
-        print("(%.2f, %.2f, %.2f) vs. (%.2f, %.2f, %.2f)" % (i.x, i.y, i.z, j.x, j.y, j.z))
+        print(f"({i.x:.2f}, {i.y:.2f}, {i.z:.2f}) vs. ({j.x:.2f}, {j.y:.2f}, {j.z:.2f})")
         self.assertCoincide(arc.valueAt(arc.LastParameter), tail.valueAt(tail.LastParameter), 0.005)
 
         # make sure the radii match
@@ -799,3 +861,121 @@ class TestPathGeom(PathTestBase):
         # do some sanity checks
         self.assertTrue(w2.isValid())
         self.assertTrue(w2.isClosed())
+
+    def test77(self):
+        """Flip an elliptical arc"""
+        ellipse = Part.Ellipse(Vector(1, 3, 2), 5, 3)
+        edge = Part.Edge(ellipse, 0.3, 2.1)
+        self.assertEdgeShapesMatch(edge, Path.Geom.flipEdge(edge))
+
+        ellipse = Part.Ellipse(Vector(1, 3, 2), 5, 3)
+        ellipse.Axis = Vector(0, 0, -1)
+        edge = Part.Edge(ellipse, 1.0, 4.0)
+        self.assertEdgeShapesMatch(edge, Path.Geom.flipEdge(edge))
+
+    def test78(self):
+        """Flip a rotated elliptical arc"""
+        ellipse = Part.Ellipse(Vector(1, 3, 2), 5, 3)
+        edge = Part.Edge(ellipse, 0.3, 2.1)
+        edge.rotate(edge.Curve.Center, Vector(0, 0, 1), -40)
+        self.assertEdgeShapesMatch(edge, Path.Geom.flipEdge(edge))
+
+    def test80(self):
+        """combineHorizontalFaces"""
+        faces = []
+
+        # rectangle
+        face = Part.makePlane(100, 100, Vector())
+        face.translate(Vector(0, 0, 10.001))
+        faces.append(face)
+
+        # rectangle
+        face = Part.makePlane(100, 100, Vector(50, 50, 0))
+        face.translate(Vector(0, 0, -10.001))
+        faces.append(face)
+
+        # rectangle with circular island
+        s = 100
+        w1 = Part.makePolygon(
+            [Vector(), Vector(-s, 0, 0), Vector(-s, s, 0), Vector(0, s, 0), Vector()]
+        )
+        w2 = Part.Wire(Part.makeCircle(10, Vector(-20, 20, 0), Vector(0, 0, 1)))
+        face = Part.makeFace([w1, w2], "Part::FaceMakerBullseye").Faces[0]
+        faces.append(face)
+
+        # circle
+        circle = Part.makeCircle(50, Vector(30, 130, 0), Vector(0, 0, 1))
+        edge = Part.Edge(circle)
+        wire = Part.Wire(edge)
+        wire.translate(Vector(0, 0, 1.005))
+        face = Part.Face(wire)
+        faces.append(face)
+
+        # ellipse
+        ellipse = Part.Ellipse(Vector(150, 0, 0), 100, 60)
+        edge = Part.Edge(ellipse)
+        wire = Part.Wire(edge)
+        wire.translate(Vector(0, 0, 4.999))
+        face = Part.Face(wire)
+        faces.append(face)
+
+        # bspline
+        spline = Part.BSplineCurve()
+        points = [
+            Vector(14, -11, 0),
+            Vector(-26, 5, 0),
+            Vector(-3, 36, 0),
+            Vector(20, 19, 0),
+            Vector(39, -9, 0),
+            Vector(14, -11, 0),
+        ]
+        spline.interpolate(points)
+        edge = Part.Edge(spline)
+        wire = Part.Wire(edge)
+        wire.translate(Vector(0, 0, -1.00001))
+        face = Part.Face(wire)
+        faces.append(face)
+
+        z = 10
+        comb = Path.Geom.combineHorizontalFaces(faces, z=z)
+
+        # result only one shape
+        self.assertEqual(len(comb), 1)
+
+        # result shape contains only one face
+        self.assertEqual(len(comb[0].Faces), 1)
+
+        # check result face area
+        self.assertRoughly(comb[0].Area, 50166, 1)
+
+        # check face z
+        self.assertRoughly(comb[0].Faces[0].BoundBox.ZMax, z)
+
+    def test81(self):
+        """combineHorizontalFaces with keep order"""
+        faces = []
+
+        face = Part.makePlane(3, 3, Vector(0, 0, 0))  # face 0
+        faces.append(face)
+
+        face = Part.makePlane(6, 6, Vector(60, 50, 0))  # face 1
+        faces.append(face)
+
+        face = Part.makePlane(4, 4, Vector(10, 10, 0))  # face 2
+        faces.append(face)
+
+        face = Part.makePlane(5, 4, Vector(10, 10, 0))  # face 3
+        faces.append(face)
+
+        face = Part.makePlane(5, 5, Vector(50, 10, 0))  # face 4
+        faces.append(face)
+
+        comb = Path.Geom.combineHorizontalFaces(faces, keepOrder=True, z=10)
+
+        # result contains 4 faces
+        self.assertEqual(len(comb), 4)
+
+        self.assertRoughly(comb[0].Faces[0].Area, 9)
+        self.assertRoughly(comb[1].Faces[0].Area, 36)
+        self.assertRoughly(comb[2].Faces[0].Area, 20)  # face 2 absorbed by face 3
+        self.assertRoughly(comb[3].Faces[0].Area, 25)

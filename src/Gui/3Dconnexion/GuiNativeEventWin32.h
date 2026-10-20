@@ -20,8 +20,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef GUINATIVEEVENT_H
-#define GUINATIVEEVENT_H
+#pragma once
 
 #include "GuiAbstractNativeEvent.h"
 
@@ -64,11 +63,7 @@ public:
 
 private:
     bool InitializeRawInput(HWND hwndTarget);
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    static bool RawInputEventFilter(void* msg, long* result);
-#else
     static bool RawInputEventFilter(void* msg, qintptr* result);
-#endif
     void OnRawInput(UINT nInputCode, HRAWINPUT hRawInput);
     UINT GetRawInputBuffer(PRAWINPUT pData, PUINT pcbSize, UINT cbSizeHeader);
     bool TranslateRawInputData(UINT nInputCode, PRAWINPUT pRawInput);
@@ -109,5 +104,3 @@ private:
     static Gui::GuiNativeEvent* gMouseInput;
 };
 }  // namespace Gui
-
-#endif  // GUINATIVEEVENT_H

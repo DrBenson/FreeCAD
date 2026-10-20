@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jan Rheinländer                                    *
  *                                   <jrheinlaender@users.sourceforge.net> *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef GUI_TASKVIEW_TaskFemConstraintPulley_H
-#define GUI_TASKVIEW_TaskFemConstraintPulley_H
+#pragma once
 
 #include "TaskFemConstraintGear.h"
 #include "ViewProviderFemConstraintPulley.h"
@@ -69,5 +70,3 @@ public:
 };
 
 }  // namespace FemGui
-
-#endif  // GUI_TASKVIEW_TaskFemConstraintPulley_H

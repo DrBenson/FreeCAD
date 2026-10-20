@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef GUI_TASKVIEW_TaskHelixParameters_H
-#define GUI_TASKVIEW_TaskHelixParameters_H
+#pragma once
 
 #include <Gui/Inventor/Draggers/Gizmo.h>
 
@@ -86,7 +85,6 @@ private Q_SLOTS:
     void onLeftHandedChanged(bool);
     void onReversedChanged(bool);
     void onModeChanged(int);
-    void onOutsideChanged(bool);
 
 
 protected:
@@ -107,7 +105,6 @@ protected:
     App::PropertyAngle* propAngle;
     App::PropertyDistance* propGrowth;
     App::PropertyEnumeration* propMode;
-    App::PropertyBool* propOutside;
 
 
 private:
@@ -150,5 +147,3 @@ public:
 };
 
 }  // namespace PartDesignGui
-
-#endif  // GUI_TASKVIEW_TaskHelixParameters_H

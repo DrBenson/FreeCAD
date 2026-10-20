@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2007 Jürgen Riegel <juergen.riegel@web.de>              *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAWGUI_MDIVIEWPAGE_H
-#define TECHDRAWGUI_MDIVIEWPAGE_H
+#pragma once
 
 #include <QPrinter>
 
@@ -72,9 +73,11 @@ public:
     void selectQGIView(App::DocumentObject *obj, bool isSelected, const std::vector<std::string> &subNames);
     void clearSceneSelection();
     void blockSceneSelection(bool isBlocked);
+    void selectOnRightPress(QGraphicsItem* item);
 
-    bool onMsg(const char* pMsg, const char** ppReturn) override;
+    bool onMsg(const char* pMsg) override;
     bool onHasMsg(const char* pMsg) const override;
+    void onRelabel(Gui::Document* pDoc) override;
 
     void print() override;
     void print(QPrinter* printer) override;
@@ -89,7 +92,7 @@ public:
 
     void saveSVG(std::string fileName);
     void saveDXF(std::string fileName);
-    void savePDF(std::string fileName);
+    void savePDF(const std::string& fileName) const;
 
     void zoomIn();
     void zoomOut();
@@ -99,9 +102,10 @@ public:
 
     PyObject* getPyObject() override;
     TechDraw::DrawPage * getPage() { return m_vpPage->getDrawPage(); }
-    ViewProviderPage* getViewProviderPage() {return m_vpPage;}
+    ViewProviderPage* getViewProviderPage() const {return m_vpPage;}
 
     void setTabText(std::string tabText);
+    void closeWithoutSavePrompt();
 
     void contextMenuEvent(QContextMenuEvent *event) override;
 
@@ -111,12 +115,19 @@ public:
     void setDimensionsSelectability(bool val);
     void enableContextualMenu(bool val) { isContextualMenuEnabled = val; }
 
+    QString getPdfFileName() const;     // static?
+    static bool isFileWritable(const QString& filename);
+    void exportAsPdf() const;
+
+
 public Q_SLOTS:
     void viewAll() override;
     void saveSVG();
     void saveDXF();
-    void savePDF();
+    void slotContextExportPdf();
     void toggleFrame();
+    void toggleGrid();
+    void toggleScreenMode();
     void toggleKeepUpdated();
     void sceneSelectionChanged();
     void printAll();
@@ -136,10 +147,25 @@ protected:
     void sceneSelectionManager();
 
 private:
+    struct SelectionContext {
+        bool hasFace = false;
+        bool hasGeomEdge = false;
+        bool hasCosmeticEdge = false;
+        bool hasCircleEdge = false;
+    };
+
+    static SelectionContext getSelectionContext();
+
+    bool addSelectionGroups(QMenu& menu);
+    void addPageGroup(QMenu& menu);
+    int addCommandsByName(QMenu& menu, std::initializer_list<const char*> names);
+
     using Connection = fastsignals::connection;
     Connection connectDeletedObject;
 
     QAction *m_toggleFrameAction;
+    QAction *m_toggleGridAction;
+    QAction *m_toggleScreenModeAction;
     QAction *m_toggleKeepUpdatedAction;
     QAction *m_exportSVGAction;
     QAction *m_exportDXFAction;
@@ -159,7 +185,6 @@ private:
 
     QString defaultFileName();
 
-    bool m_previewState{false};
 };
 
 class MDIViewPagePy : public Py::PythonExtension<MDIViewPagePy>
@@ -184,5 +209,3 @@ protected:
 
 
 } // namespace MDIViewPageGui
-
-#endif // TECHDRAWGUI_MDIVIEWPAGE_H

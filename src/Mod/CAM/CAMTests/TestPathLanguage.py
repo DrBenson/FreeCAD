@@ -21,6 +21,7 @@
 # *                                                                         *
 # ***************************************************************************
 
+import Path
 import Path.Base.Language as PathLanguage
 import CAMTests.PathTestUtils as PathTestUtils
 import math
@@ -29,9 +30,8 @@ PI = math.pi
 
 
 def MNVR(gcode, begin=None):
-    # 'turns out the replace() isn't really necessary
-    # leave it here anyway for clarity
-    return PathLanguage.Maneuver.FromGCode(gcode.replace("/", "\n"), begin)
+    pp = Path.Path([Path.Command(x) for x in gcode.split("/") if x != ""])
+    return PathLanguage.Maneuver.FromPath(pp, begin)
 
 
 def INSTR(gcode, begin=None):
@@ -101,7 +101,6 @@ class TestPathLanguage(PathTestUtils.PathTestBase):
 
     def test50(self):
         """Verify tangents of moves."""
-
         self.assertTangents(INSTR("G1 X0  Y0"), (0, 0))  # by declaration
         self.assertTangents(INSTR("G1 X1  Y0"), (0, 0))
         self.assertTangents(INSTR("G1 X-1 Y0"), (PI, PI))
@@ -119,3 +118,21 @@ class TestPathLanguage(PathTestUtils.PathTestBase):
         self.assertTangents(INSTR("G3 X2  Y0  I1 J0"), (-PI / 2, PI / 2))
         self.assertTangents(INSTR("G3 X2  Y2  I1 J1"), (-PI / 4, 3 * PI / 4))
         self.assertTangents(INSTR("G3 X0  Y-2 I0 J-1"), (PI, 0))
+
+    def test60(self):
+        """Verify convert Maneuver to gcode."""
+        instr = INSTR("G1 X5  Y6")
+        self.assertEqual(instr.toCommand().toGCode(), "G1 X5.000000 Y6.000000")
+
+        mnvr = MNVR("G1 X3 Y4")
+        self.assertEqual(mnvr.toPath().toGCode().strip(), "G1 X3.000000 Y4.000000")
+
+    def test70(self):
+        """Verify annotations survive the conversion to instructions and back."""
+        cmd = Path.Command("G1", {"X": 5, "Y": 6})
+        cmd.Annotations = {"type": "linking"}
+        mnvr = PathLanguage.Maneuver.FromPath(Path.Path([cmd]))
+        instr = mnvr.instr[0]
+        self.assertTrue(instr.isLinking())
+        self.assertEqual(instr.toCommand().Annotations, {"type": "linking"})
+        self.assertFalse(INSTR("G1 X5 Y6").isLinking())

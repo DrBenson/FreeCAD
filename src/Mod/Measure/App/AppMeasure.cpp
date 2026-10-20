@@ -39,12 +39,14 @@
 #include "MeasureBasePy.h"
 
 #include "MeasureAngle.h"
+#include "MeasureCOM.h"
 #include "MeasureDistance.h"
 #include "MeasurePosition.h"
 #include "MeasureLength.h"
 #include "MeasureArea.h"
 #include "MeasureDiameter.h"
 #include "MeasureRadius.h"
+#include "MassPropertiesObject.h"
 
 namespace Measure
 {
@@ -95,20 +97,22 @@ PyMOD_INIT_FUNC(Measure)
     Base::Interpreter().addType(&Measure::MeasurementPy::Type, mod, "Measurement");
     Base::Interpreter().addType(&Measure::MeasureBasePy::Type, mod, "MeasureBase");
 
-    Measure::Measurement ::init();
+    Measure::Measurement::init();
 
     // umf classes
-    Measure::MeasureDistanceType ::init();
-    Measure::MeasureBase ::init();
-    Measure::MeasurePython ::init();
-    Measure::MeasureAngle ::init();
-    Measure::MeasureDistance ::init();
+    Measure::MeasureDistanceType::init();
+    Measure::MeasureBase::init();
+    Measure::MeasurePython::init();
+    Measure::MeasureAngle::init();
+    Measure::MeasureCOM::init();
+    Measure::MeasureDistance::init();
     Measure::MeasureDistanceDetached::init();
-    Measure::MeasurePosition ::init();
-    Measure::MeasureLength ::init();
-    Measure::MeasureArea ::init();
-    Measure::MeasureDiameter ::init();
-    Measure::MeasureRadius ::init();
+    Measure::MeasurePosition::init();
+    Measure::MeasureLength::init();
+    Measure::MeasureArea::init();
+    Measure::MeasureDiameter::init();
+    Measure::MeasureRadius::init();
+    Measure::Result::init();
 
     // Add fundamental umf Measure Types
 
@@ -162,7 +166,7 @@ PyMOD_INIT_FUNC(Measure)
 
     App::MeasureManager::addMeasureType(
         "DIAMETER",
-        "Diameter",
+        QT_TRANSLATE_NOOP("TaskMeasure", "Diameter"),
         "Measure::MeasureDiameter",
         MeasureDiameter::isValidSelection,
         MeasureDiameter::isPrioritizedSelection
@@ -174,6 +178,14 @@ PyMOD_INIT_FUNC(Measure)
         "Measure::MeasureRadius",
         MeasureRadius::isValidSelection,
         MeasureRadius::isPrioritizedSelection
+    );
+
+    App::MeasureManager::addMeasureType(
+        "CENTEROFMASS",
+        QT_TRANSLATE_NOOP("TaskMeasure", "Geometric Center"),
+        "Measure::MeasureCOM",
+        MeasureCOM::isValidSelection,
+        nullptr
     );
 
     // load measure callbacks from Part module
@@ -228,5 +240,5 @@ PyMOD_INIT_FUNC(Measure)
 // debug print for sketchsolv
 void debugprint(const std::string& text)
 {
-    Base::Console().log("%s", text.c_str());
+    Base::Console().log("{}", text);
 }

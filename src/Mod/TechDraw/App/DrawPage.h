@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2007 Jürgen Riegel <juergen.riegel@web.de>              *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DrawPage_h_
-#define DrawPage_h_
+#pragma once
 
 #include <fastsignals/signal.h>
 
@@ -132,6 +133,3 @@ private:
 using DrawPagePython = App::FeaturePythonT<DrawPage>;
 
 }//namespace TechDraw
-
-
-#endif

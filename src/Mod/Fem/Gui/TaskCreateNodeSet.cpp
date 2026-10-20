@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jürgen Riegel <FreeCAD@juergen-riegel.net>         *
  *                                                                         *
@@ -85,6 +87,16 @@ TaskCreateNodeSet::TaskCreateNodeSet(Fem::FemSetNodesObject* pcObject, QWidget* 
     ui->groupBox_AngleSearch->setEnabled(false);
 }
 
+void TaskCreateNodeSet::setSelectionGate()
+{
+    if (selectionMode == none) {
+        Gui::Selection().rmvSelectionGate();
+    }
+    else if (selectionMode == PickElement) {
+        Gui::Selection().addSelectionGate(new FemSelectionGate(FemSelectionGate::Element));
+    }
+}
+
 void TaskCreateNodeSet::Poly()
 {
     Gui::Document* doc = Gui::Application::Instance->activeDocument();
@@ -102,7 +114,7 @@ void TaskCreateNodeSet::Pick()
     if (selectionMode == none) {
         selectionMode = PickElement;
         Gui::Selection().clearSelection();
-        Gui::Selection().addSelectionGate(new FemSelectionGate(FemSelectionGate::Element));
+        setSelectionGate();
     }
 }
 
@@ -202,7 +214,7 @@ void TaskCreateNodeSet::onSelectionChanged(const Gui::SelectionChanges& msg)
 
         tempSet.clear();
 
-        Base::Console().message("Picked Element:%i Face:%i\n", elem, face);
+        Base::Console().message("Picked Element:{} Face:{}\n", elem, face);
 
 
         if (!ui->checkBox_Add->isChecked()) {
@@ -221,7 +233,7 @@ void TaskCreateNodeSet::onSelectionChanged(const Gui::SelectionChanges& msg)
         }
 
         selectionMode = none;
-        Gui::Selection().rmvSelectionGate();
+        setSelectionGate();
 
         MeshViewProvider->setHighlightNodes(tempSet);
     }

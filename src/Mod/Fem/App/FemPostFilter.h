@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2015 Stefan Tröger <stefantroeger@gmx.net>              *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef Fem_FemPostFilter_H
-#define Fem_FemPostFilter_H
+#pragma once
 
 #include <vtkArrayCalculator.h>
 #include <vtkContourFilter.h>
@@ -426,6 +427,3 @@ private:
 };
 
 }  // namespace Fem
-
-
-#endif  // Fem_FemPostFilter_H

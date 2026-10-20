@@ -1,33 +1,33 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
+# SPDX-FileCopyrightText: 2021 Russell Johnson (russ4262) <russ4262@gmail.com>
+# SPDX-FileNotice: Part of the FreeCAD project.
 
-# ***************************************************************************
-# *   Copyright (c) 2021 Russell Johnson (russ4262) <russ4262@gmail.com>    *
-# *                                                                         *
-# *   This file is part of the FreeCAD CAx development system.              *
-# *                                                                         *
-# *   This program is free software; you can redistribute it and/or modify  *
-# *   it under the terms of the GNU Lesser General Public License (LGPL)    *
-# *   as published by the Free Software Foundation; either version 2 of     *
-# *   the License, or (at your option) any later version.                   *
-# *   for detail see the LICENCE text file.                                 *
-# *                                                                         *
-# *   This program is distributed in the hope that it will be useful,       *
-# *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
-# *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
-# *   GNU Library General Public License for more details.                  *
-# *                                                                         *
-# *   You should have received a copy of the GNU Library General Public     *
-# *   License along with this program; if not, write to the Free Software   *
-# *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
-# *   USA                                                                   *
-# *                                                                         *
-# ***************************************************************************
+################################################################################
+#                                                                              #
+#   FreeCAD is free software: you can redistribute it and/or modify            #
+#   it under the terms of the GNU Lesser General Public License as             #
+#   published by the Free Software Foundation, either version 2.1              #
+#   of the License, or (at your option) any later version.                     #
+#                                                                              #
+#   FreeCAD is distributed in the hope that it will be useful,                 #
+#   but WITHOUT ANY WARRANTY; without even the implied warranty                #
+#   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                    #
+#   See the GNU Lesser General Public License for more details.                #
+#                                                                              #
+#   You should have received a copy of the GNU Lesser General Public           #
+#   License along with FreeCAD. If not, see https://www.gnu.org/licenses       #
+#                                                                              #
+################################################################################
 
+import Constants
 import FreeCAD
 import Part
 import Path.Op.Adaptive as PathAdaptive
 import Path.Main.Job as PathJob
 from CAMTests.PathTestUtils import PathTestBase
+import area
+import math
+import time
 
 if FreeCAD.GuiUp:
     import Path.Main.Gui.Job as PathJobGui
@@ -48,6 +48,7 @@ class TestPathAdaptive(PathTestBase):
         is able to call static methods within this same class.
         """
         cls.needsInit = True
+        cls.test_times = {}  # For tracking per-test execution time
 
     @classmethod
     def initClass(cls):
@@ -81,6 +82,23 @@ class TestPathAdaptive(PathTestBase):
         """
         # FreeCAD.Console.PrintMessage("TestPathAdaptive.tearDownClass()\n")
 
+        # Print test timing report
+        if cls.test_times:
+            print("\n" + "=" * 70)
+            print("Test Execution Times:")
+            print("=" * 70)
+
+            sorted_times = sorted(cls.test_times.items(), key=lambda x: x[1], reverse=True)
+            total_time = sum(cls.test_times.values())
+
+            for test_name, elapsed in sorted_times:
+                percentage = (elapsed / total_time * 100) if total_time > 0 else 0
+                print(f"{elapsed:7.3f}s ({percentage:5.1f}%)  {test_name}")
+
+            print("-" * 70)
+            print(f"Total: {total_time:.3f}s")
+            print("=" * 70)
+
         # Close geometry document without saving
         if not cls.needsInit:
             FreeCAD.closeDocument(cls.doc.Name)
@@ -94,14 +112,359 @@ class TestPathAdaptive(PathTestBase):
         if self.needsInit:
             self.initClass()
 
+        # Start timing this test
+        self._test_start_time = time.time()
+
     def tearDown(self):
         """tearDown()...
         This method is called after each test() method. Add cleanup instructions here.
         Such cleanup instructions will likely undo those in the setUp() method.
         """
-        pass
+        # Clean up scene graph visualization
+        PathAdaptive.sceneClean()
 
-    # Unit tests
+        # Record elapsed time for this test
+        elapsed = time.time() - self._test_start_time
+        test_name = self.id().split(".")[-1]  # Get just the test method name
+        self.__class__.test_times[test_name] = elapsed
+
+    def checkAdaptiveErrors(self, adaptiveOutput):
+        """Check error flags in C++ AdaptiveOutput object."""
+        self.assertFalse(
+            adaptiveOutput.StartPointNotFound, "Adaptive failed to find entry/start point"
+        )
+        self.assertFalse(
+            adaptiveOutput.LeadPathFailed,
+            "Adaptive failed to generate lead path - overtravel without reaching cleared area",
+        )
+        self.assertFalse(
+            adaptiveOutput.UnexpectedRotateIterations,
+            "Adaptive encountered unexpected number of rotation iterations",
+        )
+        self.assertFalse(
+            adaptiveOutput.TooManyFailedEngagements,
+            "Adaptive exceeded 10000 failed engagement attempts",
+        )
+        self.assertFalse(
+            adaptiveOutput.UnclearedAreaRemains, "Adaptive terminated with uncleared area remaining"
+        )
+        self.assertFalse(
+            adaptiveOutput.FailedToSetUpFinishingPass,
+            "Adaptive failed to set up finishing pass - uncut area would make finishing pass too heavy",
+        )
+        self.assertFalse(
+            adaptiveOutput.FinishingLeadInFailed,
+            "Adaptive failed to generate lead-in for finishing pass",
+        )
+
+    def _createRectangleGeometry(self, stock_width, stock_height, path_width, path_height):
+        """Create centered rectangular geometry for stock and path."""
+        # Stock boundary at origin
+        stock_x0 = 0.0
+        stock_y0 = 0.0
+        stock_x1 = stock_x0 + stock_width
+        stock_y1 = stock_y0 + stock_height
+        stockPath2d = [
+            [[stock_x0, stock_y0], [stock_x1, stock_y0], [stock_x1, stock_y1], [stock_x0, stock_y1]]
+        ]
+
+        # Path centered within stock
+        margin_x = (stock_width - path_width) / 2.0
+        margin_y = (stock_height - path_height) / 2.0
+        path_x0 = stock_x0 + margin_x
+        path_y0 = stock_y0 + margin_y
+        path_x1 = path_x0 + path_width
+        path_y1 = path_y0 + path_height
+        path2d = [[[path_x0, path_y0], [path_x1, path_y0], [path_x1, path_y1], [path_x0, path_y1]]]
+
+        dimensions = {
+            "stock_width": stock_width,
+            "stock_height": stock_height,
+            "path_width": path_width,
+            "path_height": path_height,
+            "stock_x0": stock_x0,
+            "stock_y0": stock_y0,
+            "stock_x1": stock_x1,
+            "stock_y1": stock_y1,
+            "path_x0": path_x0,
+            "path_y0": path_y0,
+            "path_x1": path_x1,
+            "path_y1": path_y1,
+        }
+
+        return stockPath2d, path2d, dimensions
+
+    def _executeAdaptive(self, opType, stockPath2d, path2d, clearedArea=None, **kwargs):
+        """Create, configure, execute Adaptive2d and return total cleared area."""
+        if clearedArea is None:
+            clearedArea = []
+
+        # Initialize scene graph for visualization if GUI is up
+        PathAdaptive.initSceneGraph(z=10)
+
+        # Create and configure Adaptive2d with defaults
+        a2d = area.Adaptive2d()
+        a2d.stepOverFactor = kwargs.get("stepOverFactor", 0.20)
+        a2d.toolDiameter = kwargs.get("toolDiameter", 5.0)
+        a2d.tolerance = kwargs.get("tolerance", 0.1)
+        a2d.forceInsideOut = kwargs.get("forceInsideOut", False)
+        a2d.finishingProfile = kwargs.get("finishingProfile", True)
+        a2d.keepToolDownDistRatio = kwargs.get("keepToolDownDistRatio", 3.0)
+        a2d.opType = opType
+
+        # Create progress callback for visualization
+        def progressFn(tpaths):
+            PathAdaptive.renderProgressCallback(tpaths)
+            return False  # Don't stop processing
+
+        # Execute
+        results = a2d.Execute(stockPath2d, path2d, clearedArea, progressFn)
+
+        # Validate
+        self.assertTrue(len(results) > 0, "Adaptive2d should return at least one result")
+        for result in results:
+            self.checkAdaptiveErrors(result)
+
+        # Return total cleared area, the configured instance, and raw results
+        total_cleared = sum(r.ClearedArea for r in results)
+        return total_cleared, a2d, results
+
+    def _calculateCornerUnclearableArea(self, tool_diameter):
+        """Calculate unclearable area in a single corner due to circular tool."""
+        tool_radius = tool_diameter / 2.0
+        return tool_radius**2 * (1 - math.pi / 4)
+
+    def testClearInside(self):
+        """testClearInside() Test C++ Adaptive2d clearing inside a simple rectangle."""
+        # Create geometry
+        stockPath2d, path2d, dims = self._createRectangleGeometry(50.0, 50.0, 40.0, 40.0)
+
+        # Execute adaptive clearing
+        total_cleared, a2d, results = self._executeAdaptive(
+            area.AdaptiveOperationType.ClearingInside, stockPath2d, path2d
+        )
+
+        # Verify cleared area
+        corner_unclearable_area = self._calculateCornerUnclearableArea(a2d.toolDiameter)
+        total_unclearable_area = 4 * corner_unclearable_area
+        expected_area = dims["path_width"] * dims["path_height"] - total_unclearable_area
+        # allowed perimeter_error = the area error from the perimeter being offset by 1 on each side
+        perimeter_error = (
+            (dims["path_width"] * 2 + dims["path_height"] * 2) * 2 / results[0].clipperScale
+        )
+        delta = corner_unclearable_area / 2.0 + perimeter_error
+        self.assertAlmostEqual(
+            total_cleared,
+            expected_area,
+            delta=delta,
+            msg=f"Total cleared area {total_cleared} should be within {delta} of {expected_area}",
+        )
+
+    def testClearInsideWithRestMachining(self):
+        """testClearInsideWithRestMachining() Test C++ Adaptive2d rest machining with pre-cleared area."""
+        # Create geometry
+        stockPath2d, path2d, dims = self._createRectangleGeometry(50.0, 50.0, 40.0, 40.0)
+
+        # Pre-cleared area: bottom-left and top-right quadrants of stock
+        quad_width = dims["stock_width"] / 2.0
+        quad_height = dims["stock_height"] / 2.0
+
+        # Bottom-left quadrant
+        bl_x0 = dims["stock_x0"]
+        bl_y0 = dims["stock_y0"]
+        bl_x1 = bl_x0 + quad_width
+        bl_y1 = bl_y0 + quad_height
+
+        # Top-right quadrant
+        tr_x0 = dims["stock_x0"] + quad_width
+        tr_y0 = dims["stock_y0"] + quad_height
+        tr_x1 = tr_x0 + quad_width
+        tr_y1 = tr_y0 + quad_height
+
+        clearedArea = [
+            [
+                [bl_x0, bl_y0],
+                [bl_x1, bl_y0],
+                [bl_x1, bl_y1],
+                [bl_x0, bl_y1],
+            ],
+            [
+                [tr_x0, tr_y0],
+                [tr_x1, tr_y0],
+                [tr_x1, tr_y1],
+                [tr_x0, tr_y1],
+            ],
+        ]
+
+        # Execute adaptive clearing with pre-cleared area
+        total_cleared, a2d, _ = self._executeAdaptive(
+            area.AdaptiveOperationType.ClearingInside, stockPath2d, path2d, clearedArea
+        )
+
+        # Account for unclearable area in corners due to circular tool
+        corner_unclearable_area = self._calculateCornerUnclearableArea(a2d.toolDiameter)
+        # only 2 corners are in the pre-cleared area
+        total_unclearable_area = 2 * corner_unclearable_area
+
+        # Calculate overlap between path and pre-cleared areas (both quadrants)
+        # Bottom-left quadrant overlap
+        bl_overlap_x0 = max(dims["path_x0"], bl_x0)
+        bl_overlap_y0 = max(dims["path_y0"], bl_y0)
+        bl_overlap_x1 = min(dims["path_x1"], bl_x1)
+        bl_overlap_y1 = min(dims["path_y1"], bl_y1)
+        bl_overlap_width = max(0, bl_overlap_x1 - bl_overlap_x0)
+        bl_overlap_height = max(0, bl_overlap_y1 - bl_overlap_y0)
+        bl_overlap_area = bl_overlap_width * bl_overlap_height
+
+        # Top-right quadrant overlap
+        tr_overlap_x0 = max(dims["path_x0"], tr_x0)
+        tr_overlap_y0 = max(dims["path_y0"], tr_y0)
+        tr_overlap_x1 = min(dims["path_x1"], tr_x1)
+        tr_overlap_y1 = min(dims["path_y1"], tr_y1)
+        tr_overlap_width = max(0, tr_overlap_x1 - tr_overlap_x0)
+        tr_overlap_height = max(0, tr_overlap_y1 - tr_overlap_y0)
+        tr_overlap_area = tr_overlap_width * tr_overlap_height
+
+        overlap_area = bl_overlap_area + tr_overlap_area
+
+        # Expected area: path area - corners - pre-cleared overlap
+        expected_area = (
+            dims["path_width"] * dims["path_height"] - total_unclearable_area - overlap_area
+        )
+        # Use half the corner area as tolerance
+        delta = corner_unclearable_area / 2.0
+        self.assertAlmostEqual(
+            total_cleared,
+            expected_area,
+            delta=delta,
+            msg=f"Total cleared area {total_cleared} should be within {delta} of {expected_area}",
+        )
+
+    def testClearOutside(self):
+        """testClearOutside() Test C++ Adaptive2d clearing outside a simple rectangle."""
+        # Create geometry
+        stockPath2d, path2d, dims = self._createRectangleGeometry(50.0, 50.0, 40.0, 40.0)
+
+        # Execute adaptive clearing outside
+        total_cleared, a2d, _ = self._executeAdaptive(
+            area.AdaptiveOperationType.ClearingOutside, stockPath2d, path2d
+        )
+
+        # Verify cleared area (stock minus path, no corner adjustment needed)
+        expected_area = (dims["stock_width"] * dims["stock_height"]) - (
+            dims["path_width"] * dims["path_height"]
+        )
+        corner_unclearable_area = self._calculateCornerUnclearableArea(a2d.toolDiameter)
+        delta = corner_unclearable_area / 2.0
+        self.assertAlmostEqual(
+            total_cleared,
+            expected_area,
+            delta=delta,
+            msg=f"Total cleared area {total_cleared} should be within {delta} of {expected_area}",
+        )
+
+    def testProfilingInside(self):
+        """testProfilingInside() Test C++ Adaptive2d profiling inside a rectangle."""
+        # Create geometry
+        stockPath2d, path2d, dims = self._createRectangleGeometry(50.0, 50.0, 40.0, 40.0)
+
+        # Execute adaptive profiling
+        total_cleared, a2d, _ = self._executeAdaptive(
+            area.AdaptiveOperationType.ProfilingInside, stockPath2d, path2d, stepOverFactor=0.5
+        )
+
+        # Verify cleared area is appropriate for profiling between 2-3 tool diameters
+        # Outer boundary is the path2d
+        outer_area = dims["path_width"] * dims["path_height"]
+
+        # Inner boundary at 2-3 tool diameters offset
+        offset_2_diameters = 2 * a2d.toolDiameter
+        inner_width_min = dims["path_width"] - 2 * offset_2_diameters
+        inner_height_min = dims["path_height"] - 2 * offset_2_diameters
+        inner_area_max = (
+            inner_width_min * inner_height_min
+            if inner_width_min > 0 and inner_height_min > 0
+            else 0
+        )
+
+        offset_3_diameters = 3 * a2d.toolDiameter
+        inner_width_max = dims["path_width"] - 2 * offset_3_diameters
+        inner_height_max = dims["path_height"] - 2 * offset_3_diameters
+        inner_area_min = (
+            inner_width_max * inner_height_max
+            if inner_width_max > 0 and inner_height_max > 0
+            else 0
+        )
+
+        # Expected area range
+        min_area = outer_area - inner_area_max  # 2 diameters deep
+        max_area = outer_area - inner_area_min  # 3 diameters deep
+
+        self.assertGreaterEqual(
+            total_cleared,
+            min_area,
+            msg=f"Profiling cleared area {total_cleared} should be at least {min_area} (2 tool diameters deep)",
+        )
+        self.assertLessEqual(
+            total_cleared,
+            max_area,
+            msg=f"Profiling cleared area {total_cleared} should be at most {max_area} (3 tool diameters deep)",
+        )
+
+    def testProfilingOutside(self):
+        """testProfilingOutside() Test C++ Adaptive2d profiling outside a rectangle."""
+        # Create geometry - use small inner path to allow full 2-3 diameter range
+        stockPath2d, path2d, dims = self._createRectangleGeometry(50.0, 50.0, 15.0, 15.0)
+
+        # Execute adaptive profiling
+        total_cleared, a2d, _ = self._executeAdaptive(
+            area.AdaptiveOperationType.ProfilingOutside, stockPath2d, path2d, stepOverFactor=0.5
+        )
+
+        # Calculate expected area range for a profile 2-3 tool diameters wide
+        # Inner boundary is the path2d
+        inner_area = dims["path_width"] * dims["path_height"]
+
+        # Outer boundary at 2 tool diameters offset (clamped to stock)
+        offset_2_diameters = 2 * a2d.toolDiameter
+        outer_width_min = min(dims["path_width"] + 2 * offset_2_diameters, dims["stock_width"])
+        outer_height_min = min(dims["path_height"] + 2 * offset_2_diameters, dims["stock_height"])
+        outer_area_min = outer_width_min * outer_height_min
+
+        # Account for rounded outer corners (tool follows circular arc, not sharp corner)
+        # Each outer corner: sharp corner = d², rounded = π*d²/4, difference = d²(4-π)/4
+        outer_corner_rounding_2d = offset_2_diameters**2 * (1 - math.pi / 4)
+        total_outer_rounding_2d = 4 * outer_corner_rounding_2d
+
+        # Outer boundary at 3 tool diameters offset (clamped to stock)
+        offset_3_diameters = 3 * a2d.toolDiameter
+        outer_width_max = min(dims["path_width"] + 2 * offset_3_diameters, dims["stock_width"])
+        outer_height_max = min(dims["path_height"] + 2 * offset_3_diameters, dims["stock_height"])
+        outer_area_max = outer_width_max * outer_height_max
+
+        outer_corner_rounding_3d = offset_3_diameters**2 * (1 - math.pi / 4)
+        total_outer_rounding_3d = 4 * outer_corner_rounding_3d
+
+        # Account for inner corners that can't be cleared from outside
+        tool_radius = a2d.toolDiameter / 2.0
+        inner_corner_unclearable = tool_radius**2 * (1 - math.pi / 4)
+        total_inner_unclearable = 4 * inner_corner_unclearable
+
+        # Expected area range
+        min_area = outer_area_min - inner_area - total_outer_rounding_2d - total_inner_unclearable
+        max_area = outer_area_max - inner_area - total_outer_rounding_3d
+
+        self.assertGreaterEqual(
+            total_cleared,
+            min_area,
+            msg=f"Profiling cleared area {total_cleared} should be at least {min_area} (2 tool diameters wide)",
+        )
+        self.assertLessEqual(
+            total_cleared,
+            max_area,
+            msg=f"Profiling cleared area {total_cleared} should be at most {max_area} (3 tool diameters wide)",
+        )
+
     def testFaceSingleSimple(self):
         """testFaceSingleSimple() Verify path generated on Face3."""
 
@@ -114,14 +477,13 @@ class TestPathAdaptive(PathTestBase):
         # Set additional operation properties
         # setDepthsAndHeights(adaptive)
         adaptive.FinishingProfile = False
-        adaptive.HelixAngle = 75.0
+        adaptive.HelixMaxRampAngle = 75.0
         adaptive.LiftDistance.Value = 1.0
-        adaptive.StepOver = 75
+        adaptive.StepOverPercent = 75
         adaptive.UseOutline = False
-        adaptive.setExpression("StepDown", None)
-        adaptive.StepDown.Value = (
-            20.0  # Have to set expression to None before numerical value assignment
-        )
+        # Have to clear expression before numerical value assignment
+        adaptive.clearExpression("StepDown")
+        adaptive.StepDown.Value = 20.0
 
         _addViewProvider(adaptive)
         self.doc.recompute()
@@ -147,14 +509,13 @@ class TestPathAdaptive(PathTestBase):
         # Set additional operation properties
         # setDepthsAndHeights(adaptive)
         adaptive.FinishingProfile = False
-        adaptive.HelixAngle = 75.0
+        adaptive.HelixMaxRampAngle = 75.0
         adaptive.LiftDistance.Value = 1.0
-        adaptive.StepOver = 75
+        adaptive.StepOverPercent = 75
         adaptive.UseOutline = False
-        adaptive.setExpression("StepDown", None)
-        adaptive.StepDown.Value = (
-            20.0  # Have to set expression to None before numerical value assignment
-        )
+        # Have to clear expression before numerical value assignment
+        adaptive.clearExpression("StepDown")
+        adaptive.StepDown.Value = 20.0
 
         _addViewProvider(adaptive)
         self.doc.recompute()
@@ -174,14 +535,13 @@ class TestPathAdaptive(PathTestBase):
         # Set additional operation properties
         # setDepthsAndHeights(adaptive)
         adaptive.FinishingProfile = False
-        adaptive.HelixAngle = 75.0
+        adaptive.HelixMaxRampAngle = 75.0
         adaptive.LiftDistance.Value = 1.0
-        adaptive.StepOver = 75
+        adaptive.StepOverPercent = 75
         adaptive.UseOutline = True
-        adaptive.setExpression("StepDown", None)
-        adaptive.StepDown.Value = (
-            20.0  # Have to set expression to None before numerical value assignment
-        )
+        # Have to clear expression before numerical value assignment
+        adaptive.clearExpression("StepDown")
+        adaptive.StepDown.Value = 20.0
 
         _addViewProvider(adaptive)
         self.doc.recompute()
@@ -214,14 +574,13 @@ class TestPathAdaptive(PathTestBase):
         # Set additional operation properties
         # setDepthsAndHeights(adaptive)
         adaptive.FinishingProfile = False
-        adaptive.HelixAngle = 75.0
+        adaptive.HelixMaxRampAngle = 75.0
         adaptive.LiftDistance.Value = 1.0
-        adaptive.StepOver = 75
+        adaptive.StepOverPercent = 75
         adaptive.UseOutline = False
-        adaptive.setExpression("StepDown", None)
-        adaptive.StepDown.Value = (
-            20.0  # Have to set expression to None before numerical value assignment
-        )
+        # Have to clear expression before numerical value assignment
+        adaptive.clearExpression("StepDown")
+        adaptive.StepDown.Value = 20.0
 
         _addViewProvider(adaptive)
         self.doc.recompute()
@@ -256,14 +615,13 @@ class TestPathAdaptive(PathTestBase):
         # Set additional operation properties
         # setDepthsAndHeights(adaptive)
         adaptive.FinishingProfile = False
-        adaptive.HelixAngle = 75.0
+        adaptive.HelixMaxRampAngle = 75.0
         adaptive.LiftDistance.Value = 1.0
-        adaptive.StepOver = 75
+        adaptive.StepOverPercent = 75
         adaptive.UseOutline = False
-        adaptive.setExpression("StepDown", None)
-        adaptive.StepDown.Value = (
-            20.0  # Have to set expression to None before numerical value assignment
-        )
+        # Have to clear expression before numerical value assignment
+        adaptive.clearExpression("StepDown")
+        adaptive.StepDown.Value = 20.0
 
         _addViewProvider(adaptive)
         self.doc.recompute()
@@ -298,14 +656,13 @@ class TestPathAdaptive(PathTestBase):
         # Set additional operation properties
         # setDepthsAndHeights(adaptive)
         adaptive.FinishingProfile = False
-        adaptive.HelixAngle = 75.0
+        adaptive.HelixMaxRampAngle = 75.0
         adaptive.LiftDistance.Value = 1.0
-        adaptive.StepOver = 75
+        adaptive.StepOverPercent = 75
         adaptive.UseOutline = False
-        adaptive.setExpression("StepDown", None)
-        adaptive.StepDown.Value = (
-            20.0  # Have to set expression to None before numerical value assignment
-        )
+        # Have to clear expression before numerical value assignment
+        adaptive.clearExpression("StepDown")
+        adaptive.StepDown.Value = 20.0
 
         _addViewProvider(adaptive)
         self.doc.recompute()
@@ -340,14 +697,13 @@ class TestPathAdaptive(PathTestBase):
         # Set additional operation properties
         # setDepthsAndHeights(adaptive)
         adaptive.FinishingProfile = False
-        adaptive.HelixAngle = 75.0
+        adaptive.HelixMaxRampAngle = 75.0
         adaptive.LiftDistance.Value = 1.0
-        adaptive.StepOver = 75
+        adaptive.StepOverPercent = 75
         adaptive.UseOutline = False
-        adaptive.setExpression("StepDown", None)
-        adaptive.StepDown.Value = (
-            20.0  # Have to set expression to None before numerical value assignment
-        )
+        # Have to clear expression before numerical value assignment
+        adaptive.clearExpression("StepDown")
+        adaptive.StepDown.Value = 20.0
 
         _addViewProvider(adaptive)
         self.doc.recompute()
@@ -400,19 +756,14 @@ class TestPathAdaptive(PathTestBase):
         # Set additional operation properties
         setDepthsAndHeights(adaptive, 15, 0)
         adaptive.FinishingProfile = False
-        adaptive.HelixAngle = 75.0
+        adaptive.HelixMaxRampAngle = 75.0
         adaptive.LiftDistance.Value = 1.0
-        adaptive.StepOver = 75
+        adaptive.StepOverPercent = 75
         adaptive.UseOutline = False
-        adaptive.setExpression("StepDown", None)
+        # Have to clear expression before numerical value assignment
+        adaptive.clearExpression("StepDown")
         adaptive.ModelAwareExperiment = True
-        adaptive.StepDown.Value = (
-            5.0  # Have to set expression to None before numerical value assignment
-        )
-        # Don't use helix entry- ensures helix moves are counted in the path
-        # boundary calculation. This should be unnecessary, as the helices are
-        # grown out of the cut area, and thus must be inside of it.
-        adaptive.UseHelixArcs = False
+        adaptive.StepDown.Value = 5.0
 
         _addViewProvider(adaptive)
         self.doc.recompute()
@@ -423,7 +774,7 @@ class TestPathAdaptive(PathTestBase):
         # - bounding box at Z=5 stays within Face10
         # - No toolpaths at Z=0
 
-        paths = [c for c in adaptive.Path.Commands if c.Name in ["G0", "G00", "G1", "G01"]]
+        paths = [c for c in adaptive.Path.Commands if c.Name in Constants.GCODE_MOVE_LINE]
         toolr = adaptive.OpToolDiameter.Value / 2
         tol = adaptive.Tolerance
 
@@ -469,16 +820,15 @@ class TestPathAdaptive(PathTestBase):
         # Set additional operation properties
         setDepthsAndHeights(adaptive, 15, 10)
         adaptive.FinishingProfile = False
-        adaptive.HelixAngle = 75.0
+        adaptive.HelixMaxRampAngle = 75.0
         adaptive.LiftDistance.Value = 1.0
-        adaptive.StepOver = 75
+        adaptive.StepOverPercent = 75
         adaptive.UseOutline = False
-        adaptive.setExpression("StepDown", None)
-        adaptive.StepDown.Value = (
-            5.0  # Have to set expression to None before numerical value assignment
-        )
+        # Have to clear expression before numerical value assignment
+        adaptive.clearExpression("StepDown")
+        adaptive.StepDown.Value = 5.0
         # Add some Z stock to leave so we avoid Face3 in this stepdown at Z=10
-        adaptive.setExpression("ZStockToLeave", None)
+        adaptive.clearExpression("ZStockToLeave")
         adaptive.ZStockToLeave.Value = 1
 
         _addViewProvider(adaptive)
@@ -502,7 +852,10 @@ class TestPathAdaptive(PathTestBase):
         foffset = self.doc.Fusion.Shape.getElement("Face3").makeOffset2D(moffset)
         # NOTE: Face3 is at Z=10, and the only feed moves will be at Z=10
         lastpt = FreeCAD.Vector(0, 0, 10)
-        for p in [c.Parameters for c in adaptive.Path.Commands if c.Name in ["G1", "G01"]]:
+        parameters = [
+            c.Parameters for c in adaptive.Path.Commands if c.Name in Constants.GCODE_MOVE_STRAIGHT
+        ]
+        for p in parameters:
             pt = FreeCAD.Vector(lastpt)
             if "X" in p:
                 pt.x = p.get("X")
@@ -530,19 +883,14 @@ class TestPathAdaptive(PathTestBase):
         # Set additional operation properties
         setDepthsAndHeights(adaptive, 15, 0)
         adaptive.FinishingProfile = False
-        adaptive.HelixAngle = 75.0
+        adaptive.HelixMaxRampAngle = 75.0
         adaptive.LiftDistance.Value = 1.0
-        adaptive.StepOver = 75
+        adaptive.StepOverPercent = 75
         adaptive.UseOutline = False
-        adaptive.setExpression("StepDown", None)
+        # Have to clear expression before numerical value assignment
+        adaptive.clearExpression("StepDown")
         adaptive.ModelAwareExperiment = True
-        adaptive.StepDown.Value = (
-            5.0  # Have to set expression to None before numerical value assignment
-        )
-        # Don't use helix entry- ensures helix moves are counted in the path
-        # boundary calculation. This should be unnecessary, as the helices are
-        # grown out of the cut area, and thus must be inside of it.
-        adaptive.UseHelixArcs = False
+        adaptive.StepDown.Value = 5.0
 
         _addViewProvider(adaptive)
         self.doc.recompute()
@@ -557,7 +905,7 @@ class TestPathAdaptive(PathTestBase):
         # - [Should maybe check] At least one move Z = [10,5] is within the model
         # - [Should maybe check] No moves at Z = 0 are within the model
 
-        paths = [c for c in adaptive.Path.Commands if c.Name in ["G0", "G00", "G1", "G01"]]
+        paths = [c for c in adaptive.Path.Commands if c.Name in Constants.GCODE_MOVE_LINE]
         toolr = adaptive.OpToolDiameter.Value / 2
         tol = adaptive.Tolerance
 
@@ -611,19 +959,14 @@ class TestPathAdaptive(PathTestBase):
         # Set additional operation properties
         setDepthsAndHeights(adaptive, 15, 5)
         adaptive.FinishingProfile = False
-        adaptive.HelixAngle = 75.0
+        adaptive.HelixMaxRampAngle = 75.0
         adaptive.LiftDistance.Value = 1.0
-        adaptive.StepOver = 75
+        adaptive.StepOverPercent = 75
         adaptive.UseOutline = False
-        adaptive.setExpression("StepDown", None)
+        # Have to clear expression before numerical value assignment
+        adaptive.clearExpression("StepDown")
         adaptive.ModelAwareExperiment = True
-        adaptive.StepDown.Value = (
-            5.0  # Have to set expression to None before numerical value assignment
-        )
-        # Don't use helix entry- ensures helix moves are counted in the path
-        # boundary calculation. This should be unnecessary, as the helices are
-        # grown out of the cut area, and thus must be inside of it.
-        adaptive.UseHelixArcs = False
+        adaptive.StepDown.Value = 5.0
 
         # Create and assign new stock that will create different bounds at
         # different stepdowns
@@ -636,10 +979,10 @@ class TestPathAdaptive(PathTestBase):
         adaptive.recompute()
 
         # Check:
-        # - Bounding box at Z=10 stays basically above "btall"
+        # - Bounding box at Z=10 does not cut the region to the right
         # - Bounding box at Z=5 and Z=0 are outside of stock
 
-        paths = [c for c in adaptive.Path.Commands if c.Name in ["G1", "G01"]]
+        paths = [c for c in adaptive.Path.Commands if c.Name in Constants.GCODE_MOVE_STRAIGHT]
         toolr = adaptive.OpToolDiameter.Value / 2
         tol = adaptive.Tolerance
 
@@ -648,6 +991,12 @@ class TestPathAdaptive(PathTestBase):
         # NOTE: ADD tol here, since we're effectively flipping our normal
         # comparison and want tolerance to make our check looser
         moffset = toolr + tol
+
+        # Update: I'm reducing the strictness of this check because adaptive
+        #  is allowed to move the tool where there is no stock if it's convenient,
+        #  and the original strictness caused problems. Still, it should not wander
+        #  exceptionally far from the stock.
+        moffset += toolr * 2
 
         zDict = getPathBoundaries(paths, [10, 5])
         sbb = adaptive.Document.Stock.Shape.BoundBox
@@ -721,18 +1070,23 @@ def getPathBoundaries(paths, zLevels):
     return zDict
 
 
-def setDepthsAndHeights(op, strDep=20.0, finDep=0.0):
+def setDepthsAndHeights(op, strDep=20.0, finDep=0.0, safHgt=None, clrHgt=None):
     """setDepthsAndHeights(op, strDep=20.0, finDep=0.0)... Sets default depths and heights for `op` passed to it"""
 
     # Set start and final depth in order to eliminate effects of stock (and its default values)
-    op.setExpression("StartDepth", None)
+    op.clearExpression("StartDepth")
     op.StartDepth.Value = strDep
-    op.setExpression("FinalDepth", None)
+    op.clearExpression("FinalDepth")
     op.FinalDepth.Value = finDep
 
     # Set step down so as to only produce one layer path
-    op.setExpression("StepDown", None)
+    op.clearExpression("StepDown")
     op.StepDown.Value = 20.0
+
+    op.clearExpression("SafeHeight")
+    op.SafeHeight = safHgt if safHgt is not None else op.StartDepth.Value + 1
+    op.clearExpression("ClearanceHeight")
+    op.ClearanceHeight = clrHgt if clrHgt is not None else op.SafeHeight.Value + 1
 
     # Set Heights
     # default values used
@@ -746,30 +1100,38 @@ def getGcodeMoves(cmdList, includeRapids=True, includeLines=True, includeArcs=Tr
     # NOTE: Can NOT just check "if p.get("X")" or similar- that chokes when X is
     # zero. That becomes especially obvious when Z=0, and moves end up on the
     # wrong depth
-    gcode_list = list()
+    def _round(value, decimals):
+        rval = round(value, decimals)
+        if rval == 0:
+            rval = 0.0  # exclude value -0.0
+        return rval
+
+    gcode_list = []
     last = FreeCAD.Vector(0.0, 0.0, 0.0)
     for c in cmdList:
         p = c.Parameters
         name = c.Name
-        if (includeRapids and name in ["G0", "G00"]) or (includeLines and name in ["G1", "G01"]):
+        if (includeRapids and name in Constants.GCODE_MOVE_RAPID) or (
+            includeLines and name in Constants.GCODE_MOVE_STRAIGHT
+        ):
             gcode = name
             x = last.x
             y = last.y
             z = last.z
             if "X" in p:
-                x = round(p["X"], 2)
+                x = _round(p["X"], 2)
             gcode += " X" + str(x)
             if "Y" in p:
-                y = round(p["Y"], 2)
+                y = _round(p["Y"], 2)
             gcode += " Y" + str(y)
             if "Z" in p:
-                z = round(p["Z"], 2)
+                z = _round(p["Z"], 2)
             gcode += " Z" + str(z)
             last.x = x
             last.y = y
             last.z = z
             gcode_list.append(gcode)
-        elif includeArcs and name in ["G2", "G3", "G02", "G03"]:
+        elif includeArcs and name in Constants.GCODE_MOVE_ARC:
             gcode = name
             x = last.x
             y = last.y
@@ -778,23 +1140,23 @@ def getGcodeMoves(cmdList, includeRapids=True, includeLines=True, includeArcs=Tr
             j = 0.0
             k = 0.0
             if "I" in p:
-                i = round(p["I"], 2)
+                i = _round(p["I"], 2)
             gcode += " I" + str(i)
             if "J" in p:
-                j = round(p["J"], 2)
+                j = _round(p["J"], 2)
             gcode += " J" + str(j)
             if "K" in p:
-                k = round(p["K"], 2)
+                k = _round(p["K"], 2)
             gcode += " K" + str(k)
 
             if "X" in p:
-                x = round(p["X"], 2)
+                x = _round(p["X"], 2)
             gcode += " X" + str(x)
             if "Y" in p:
-                y = round(p["Y"], 2)
+                y = _round(p["Y"], 2)
             gcode += " Y" + str(y)
             if "Z" in p:
-                z = round(p["Z"], 2)
+                z = _round(p["Z"], 2)
             gcode += " Z" + str(z)
 
             gcode_list.append(gcode)
@@ -807,12 +1169,11 @@ def getGcodeMoves(cmdList, includeRapids=True, includeLines=True, includeArcs=Tr
 def pathOriginatesInBox(cmd, minPoint, maxPoint):
     p = cmd.Parameters
     name = cmd.Name
-    if name in ["G0", "G00", "G1", "G01"]:
-        if "X" in p and "Y" in p:
-            x = p.get("X")
-            y = p.get("Y")
-            if x > minPoint.x and y > minPoint.y and x < maxPoint.x and y < maxPoint.y:
-                return True
+    if name in Constants.GCODE_MOVE_LINE and "X" in p and "Y" in p:
+        x = p.get("X")
+        y = p.get("Y")
+        if x > minPoint.x and y > minPoint.y and x < maxPoint.x and y < maxPoint.y:
+            return True
     return False
 
 

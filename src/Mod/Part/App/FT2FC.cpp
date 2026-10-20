@@ -204,7 +204,7 @@ PyObject* FT2FC(
         }
         catch (Py::Exception& e) {
             e.clear();
-            Base::Console().log("FT2FC char '0x%04x'/'%d' has no Wires!\n", currchar, currchar);
+            Base::Console().log("FT2FC char '0x{:04x}'/'{}' has no Wires!\n", currchar, currchar);
         }
 
         PenPos += cadv;
@@ -397,8 +397,7 @@ PyObject* getGlyphContours(
         else if ((ctx.wDir[wCount] == CLOCKWISE) && !isTTF) {  // ps inner wire. fill outside / right
             (*iWire).Orientation(TopAbs_REVERSED);
         }
-        else if ((ctx.wDir[wCount] == ANTICLOCKWISE)
-                 && isTTF) {  // ttf inner wire. fill outside / left
+        else if ((ctx.wDir[wCount] == ANTICLOCKWISE) && isTTF) {  // ttf inner wire. fill outside / left
             (*iWire).Orientation(TopAbs_REVERSED);
         }
         else if ((ctx.wDir[wCount] == ANTICLOCKWISE) && !isTTF) {  // ps outer wire. fill inside / left

@@ -23,14 +23,12 @@
 
 import FreeCAD
 import Path
-import Path_rc
 import Path.Main.Stock as PathStock
 from Path.Post.Processor import PostProcessor, PostProcessorFactory
 import json
 
 from FreeCAD import Units
 from PySide import QtCore, QtGui
-
 
 Path.Log.setLevel(Path.Log.Level.INFO, Path.Log.thisModule())
 
@@ -40,7 +38,7 @@ class JobPreferencesPage:
         import FreeCADGui
 
         self.form = FreeCADGui.PySideUic.loadUi(":preferences/PathJob.ui")
-        self.form.toolBox.setCurrentIndex(0)  # Take that qt designer!
+        self.form.tabWidget.setCurrentIndex(0)  # Take that qt designer!
 
         self.postProcessorDefaultTooltip = self.form.defaultPostProcessor.toolTip()
         self.postProcessorArgsDefaultTooltip = self.form.defaultPostProcessorArgs.toolTip()
@@ -48,8 +46,15 @@ class JobPreferencesPage:
 
     def saveSettings(self):
         jobTemplate = self.form.leDefaultJobTemplate.text()
-        geometryTolerance = Units.Quantity(self.form.geometryTolerance.text())
-        curveAccuracy = Units.Quantity(self.form.curveAccuracy.text())
+        geometryTolerance = self.form.geometryTolerance.property("rawValue")
+        curveAccuracy = self.form.curveAccuracy.property("rawValue")
+
+        if not geometryTolerance:
+            geometryTolerance = Path.Preferences.defaultGeometryTolerance()
+
+        if not curveAccuracy:
+            curveAccuracy = Path.Preferences.defaultLibAreaCurveAccuracy()
+
         Path.Preferences.setJobDefaults(jobTemplate, geometryTolerance, curveAccuracy)
 
         if curveAccuracy:
@@ -67,6 +72,10 @@ class JobPreferencesPage:
         path = str(self.form.leOutputFile.text())
         policy = str(self.form.cboOutputPolicy.currentText())
         Path.Preferences.setOutputFileDefaults(path, policy)
+
+        # Save CAM Sanity report output file path
+        Path.Preferences.setSanityReportOutputFile(self.form.leSanityReportOutputFile.text())
+
         self.saveStockSettings()
 
     def saveStockSettings(self):
@@ -150,7 +159,7 @@ class JobPreferencesPage:
         self.form.leDefaultJobTemplate.setText(Path.Preferences.defaultJobTemplate())
 
         blacklist = Path.Preferences.postProcessorBlacklist()
-        for processor in Path.Preferences.allAvailablePostProcessors():
+        for processor in Path.Preferences.allAvailableLegacyPostProcessors():
             item = QtGui.QListWidgetItem(processor)
             if processor in blacklist:
                 item.setCheckState(QtCore.Qt.CheckState.Unchecked)
@@ -166,14 +175,22 @@ class JobPreferencesPage:
 
         self.form.defaultPostProcessorArgs.setText(Path.Preferences.defaultPostProcessorArgs())
 
-        geomTol = Units.Quantity(Path.Preferences.defaultGeometryTolerance(), Units.Length)
-        self.form.geometryTolerance.setText(geomTol.UserString)
-        self.form.curveAccuracy.setText(
-            Units.Quantity(Path.Preferences.defaultLibAreaCurveAccuracy(), Units.Length).UserString
+        self.form.geometryTolerance.setProperty("unit", "mm")
+        self.form.curveAccuracy.setProperty("unit", "mm")
+        self.form.geometryTolerance.setProperty("decimals", 8)
+        self.form.curveAccuracy.setProperty("decimals", 8)
+        self.form.geometryTolerance.setProperty(
+            "rawValue", Path.Preferences.defaultGeometryTolerance()
+        )
+        self.form.curveAccuracy.setProperty(
+            "rawValue", Path.Preferences.defaultLibAreaCurveAccuracy()
         )
 
         self.form.leOutputFile.setText(Path.Preferences.defaultOutputFile())
         self.selectComboEntry(self.form.cboOutputPolicy, Path.Preferences.defaultOutputPolicy())
+
+        # Load CAM Sanity report output file path
+        self.form.leSanityReportOutputFile.setText(Path.Preferences.defaultSanityReportOutputFile())
 
         self.form.tbDefaultJobTemplate.clicked.connect(self.browseDefaultJobTemplate)
         self.form.postProcessorList.itemEntered.connect(self.setProcessorListTooltip)
@@ -183,7 +200,21 @@ class JobPreferencesPage:
         )
         self.form.tbOutputFile.clicked.connect(self.browseOutputFile)
 
+        # Connect CAM Sanity report output file browse button
+        self.form.tbSanityReportOutputFile.clicked.connect(self.browseSanityReportOutputFile)
+
         self.loadStockSettings()
+
+    def browseSanityReportOutputFile(self):
+        path = self.form.leSanityReportOutputFile.text()
+        selected_file = QtGui.QFileDialog.getSaveFileName(
+            QtGui.QApplication.activeWindow(),
+            "Path - Sanity Report Output File",
+            path,
+            "HTML files (*.html)",
+        )[0]
+        if selected_file:
+            self.form.leSanityReportOutputFile.setText(selected_file)
 
     def loadStockSettings(self):
         stock = Path.Preferences.defaultStockTemplate()
@@ -278,7 +309,7 @@ class JobPreferencesPage:
             self.form.stockCreateCylinder.hide()
 
     def getPostProcessor(self, name):
-        if not name in self.processor:
+        if name not in self.processor:
             processor = PostProcessorFactory.get_post_processor(None, name)
             self.processor[name] = processor
             return processor
@@ -320,16 +351,16 @@ class JobPreferencesPage:
         path = self.form.leDefaultJobTemplate.text()
         if not path:
             path = self.bestGuessForFilePath()
-        foo = QtGui.QFileDialog.getOpenFileName(
+        selected_file = QtGui.QFileDialog.getOpenFileName(
             QtGui.QApplication.activeWindow(), "Path - Job Template", path, "job_*.json"
         )[0]
-        if foo:
-            self.form.leDefaultJobTemplate.setText(foo)
+        if selected_file:
+            self.form.leDefaultJobTemplate.setText(selected_file)
 
     def browseOutputFile(self):
         path = self.form.leOutputFile.text()
-        foo = QtGui.QFileDialog.getExistingDirectory(
+        selected_dir = QtGui.QFileDialog.getExistingDirectory(
             QtGui.QApplication.activeWindow(), "Path - Output File/Directory", path
         )
-        if foo:
-            self.form.leOutputFile.setText(foo)
+        if selected_dir:
+            self.form.leOutputFile.setText(selected_dir)

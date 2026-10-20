@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from Metadata import export, constmethod, sequence_protocol, class_declarations
+from Metadata import export, constmethod, sequence_protocol, class_declarations, typing_only
 from PyObjectBase import PyObjectBase
 from typing import overload, Sequence
 
@@ -26,8 +26,7 @@ from typing import overload, Sequence
     sq_inplace_concat=False,
     sq_inplace_repeat=False,
 )
-@class_declarations(
-    """public:
+@class_declarations("""public:
     VectorPy(const Vector3d & vec, PyTypeObject *T = &Type)
     :PyObjectBase(new Vector3d(vec),T){}
     VectorPy(const Vector3f & vec, PyTypeObject *T = &Type)
@@ -36,8 +35,7 @@ from typing import overload, Sequence
     { return *(getVectorPtr()); }
 private:
     Py::List sequence;
-        """
-)
+        """)
 class Vector(PyObjectBase):
     """
     Base.Vector class.
@@ -85,6 +83,20 @@ class Vector(PyObjectBase):
     def __init__(self, seq: Sequence[float]) -> None: ...
     # fmt: on
 
+    @typing_only
+    def __add__(self, vector2: "Vector", /) -> "Vector": ...
+    @typing_only
+    def __sub__(self, vector2: "Vector", /) -> "Vector": ...
+    @typing_only
+    @overload
+    def __mul__(self, factor: float, /) -> "Vector": ...
+    @typing_only
+    @overload
+    def __mul__(self, vector2: "Vector", /) -> float: ...
+    @typing_only
+    def __rmul__(self, factor: float, /) -> "Vector": ...
+    @typing_only
+    def __truediv__(self, factor: float, /) -> "Vector": ...
     @constmethod
     def __reduce__(self) -> tuple:
         """
@@ -183,7 +195,7 @@ class Vector(PyObjectBase):
         ...
 
     @constmethod
-    def isEqual(self, vector2: "Vector", tol: float = 0, /) -> bool:
+    def isEqual(self, vector2: "Vector", tol: float, /) -> bool:
         """
         Checks if the distance between the points represented by this vector
         and `vector2` is less or equal to the given tolerance.
@@ -194,7 +206,7 @@ class Vector(PyObjectBase):
         ...
 
     @constmethod
-    def isParallel(self, vector2: "Vector", tol: float = 0, /) -> bool:
+    def isParallel(self, vector2: "Vector", tol: float, /) -> bool:
         """
         Checks if this vector and `vector2` are
         parallel less or equal to the given tolerance.
@@ -205,7 +217,7 @@ class Vector(PyObjectBase):
         ...
 
     @constmethod
-    def isNormal(self, vector2: "Vector", tol: float = 0, /) -> bool:
+    def isNormal(self, vector2: "Vector", tol: float, /) -> bool:
         """
         Checks if this vector and `vector2` are
         normal less or equal to the given tolerance.
@@ -243,8 +255,8 @@ class Vector(PyObjectBase):
     def distanceToPoint(self, point2: "Vector", /) -> float:
         """
         Returns the distance to another point represented by `point2`.
-        .
-        point : Base.Vector
+
+        point2 : Base.Vector
         """
         ...
 

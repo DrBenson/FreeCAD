@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2012-2013 Luke Parry <l.parry@warwick.ac.uk>            *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DRAWINGGUI_QGIProjGroup_H
-#define DRAWINGGUI_QGIProjGroup_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -84,5 +85,3 @@ private:
 };
 
 } // namespace MDIViewPageGui
-
-#endif // DRAWINGGUI_QGIProjGroup_H

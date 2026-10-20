@@ -21,11 +21,7 @@
  *                                                                          *
  ****************************************************************************/
 
-#ifndef PATH_AreaParams_H
-#define PATH_AreaParams_H
-
-// define this to enable offset algo selection
-// #define AREA_OFFSET_ALGO
+#pragma once
 
 /** \file
  * Parameters definition for Path::Area and its companion
@@ -33,26 +29,24 @@
  */
 
 #include "ParamsHelper.h"
+#include <clipper2/clipper.h>
 
 /** clipper fill type */
 #define AREA_CLIPPER_FILL_TYPE \
-    (NonZero)(EvenOdd)(Positive)(Negative), (ClipperLib::PolyFillType, ClipperLib::pft)
+    (Clipper2Lib::FillRule::NonZero)(Clipper2Lib::FillRule:: \
+                                         EvenOdd)(Clipper2Lib::FillRule:: \
+                                                      Positive)(Clipper2Lib::FillRule::Negative), \
+        Clipper2Lib::FillRule
 
 /** Parameters of clipper fill types */
 #define AREA_PARAMS_CLIPPER_FILL \
     ((enum2, \
       subject_fill, \
       SubjectFill, \
-      0, \
-      "ClipperLib subject fill type. \nSee https://goo.gl/5pYQQP", \
-      AREA_CLIPPER_FILL_TYPE))( \
-        (enum2, \
-         clip_fill, \
-         ClipFill, \
-         0, \
-         "ClipperLib clip fill type. \nSee https://goo.gl/5pYQQP", \
-         AREA_CLIPPER_FILL_TYPE) \
-    )
+      Clipper2Lib::FillRule::NonZero, \
+      "Clipper2 subject fill rule. \nSee " \
+      "http://www.angusj.com/clipper2/Docs/Units/Clipper/Types/FillRule.htm", \
+      AREA_CLIPPER_FILL_TYPE))
 
 /** Deflection parameter */
 #define AREA_PARAMS_DEFLECTION \
@@ -117,7 +111,7 @@
       Precision::Confusion(), \
       "Point coincidence tolerance", \
       App::PropertyPrecision)) \
-        AREA_PARAMS_FIT_ARCS((bool, clipper_simple, Simplify, false, "Simplify polygons after operation. See https://goo.gl/Mh9XK1"))((double, clipper_clean_distance, CleanDistance, 0.0, "Clean polygon smaller than this distance. See https://goo.gl/jox3JY", App::PropertyLength))((double, accuracy, Accuracy, 0.01, "Arc fitting accuracy", App::PropertyPrecision))((double, units, Unit, 1.0, "Scaling factor for conversion to inch", App::PropertyFloat))((short, min_arc_points, MinArcPoints, 4, "Minimum segments for arc discretization"))((short, max_arc_points, MaxArcPoints, 100, "Maximum segments for arc discretization (ignored currently)"))( \
+        AREA_PARAMS_FIT_ARCS((double, accuracy, Accuracy, 0.01, "Arc fitting accuracy", App::PropertyPrecision))( \
             (double, \
              clipper_scale, \
              ClipperScale, \
@@ -151,13 +145,6 @@
          0.0,                                                                                      \
          "Cutter diameter to step over on each pass. If =0, use ToolRadius.",                      \
          App::PropertyLength))(                                                                    \
-        (double,                                                                                   \
-         last_stepover,                                                                            \
-         PocketLastStepover,                                                                       \
-         0.0,                                                                                      \
-         "Cutter diameter to step over for the last loop when using offset pocket.\n"              \
-         "If =0, use 0.5*ToolRadius.",                                                             \
-         App::PropertyLength))(                                                                    \
         (bool, from_center, FromCenter, false, "Start pocketing from center"))(                    \
         (double, angle, Angle, 45, "Pattern angle in degree", App::PropertyAngle))(                \
         (double,                                                                                   \
@@ -175,10 +162,13 @@
                                "This gives a 3D pattern mainly for 3D printing. The shift only "   \
                                "applies to 'Offset', 'Grid'\n"                                     \
                                "and 'Triangle'",                                                   \
-                               App::PropertyDistance))
-
-#define AREA_PARAMS_POCKET_CONF \
-    ((bool, thicken, Thicken, false, "Thicken the resulting wires with ToolRadius"))
+                               App::PropertyDistance))(                                            \
+        (bool,                                                                                     \
+         force_max_stepover,                                                                       \
+         ForceMaxStepover,                                                                         \
+         false,                                                                                    \
+         "Force maximum stepover even if not all area is cleared. Without this flag set, the "     \
+         "stepover may be reduced (for large stepover, >50%) to ensure full area coverage"))
 
 /** Operation code */
 #define AREA_PARAMS_OPCODE \
@@ -187,7 +177,8 @@
       Operation, \
       0, \
       "Boolean operation.\n" \
-      "For the first four operations, see https://goo.gl/Gj8RUu.\n" \
+      "For the first four operations, see " \
+      "http://www.angusj.com/clipper2/Docs/Units/Clipper/Types/ClipType.htm.\n" \
       "'Compound' means no operation, normally used to do Area.sortWires().", \
       (Union)(Difference)(Intersection)(Xor)(Compound)))
 
@@ -198,14 +189,12 @@
       Offset, \
       0.0, \
       "Offset value, positive for expansion, negative for shrinking", \
-      App::PropertyDistance))((long, extra_pass, ExtraPass, 0, "Number of extra offset pass to generate."))((double, stepover, Stepover, 0.0, "Cutter diameter to step over on each pass. If =0, use Offset", App::PropertyLength))( \
+      App::PropertyDistance))((long, extra_pass, ExtraPass, 0, "Number of extra offset pass to generate."))( \
         (double, \
-         last_stepover, \
-         LastStepover, \
+         stepover, \
+         Stepover, \
          0.0, \
-         "Cutter diameter to step over for the last loop when shrinking " \
-         "with ExtraPass<0, i.e. for\n" \
-         "offset pocketing. If =0, use 0.5*Offset.", \
+         "Cutter diameter to step over on each pass. If =0, use Offset", \
          App::PropertyLength) \
     )
 
@@ -260,42 +249,6 @@
          "will be created. A small offset is usually required to avoid the tangential cut.",       \
          App::PropertyPrecision))AREA_PARAMS_SECTION_EXTRA
 
-#ifdef AREA_OFFSET_ALGO
-# define AREA_PARAMS_OFFSET_ALGO \
-     ((enum, algo, Algo, 0, "Offset algorithm type", (Clipper)(libarea)))
-#else
-# define AREA_PARAMS_OFFSET_ALGO
-#endif
-
-/** Offset configuration parameters */
-#define AREA_PARAMS_OFFSET_CONF \
-    AREA_PARAMS_OFFSET_ALGO( \
-        (enum2, \
-         join_type, \
-         JoinType, \
-         0, \
-         "ClipperOffset join type. \nSee https://goo.gl/4odfQh", \
-         (Round)(Square)(Miter), \
-         (ClipperLib::JoinType, ClipperLib::jt)) \
-    ) \
-    ((enum2, \
-      end_type, \
-      EndType, \
-      0, \
-      "\nClipperOffset end type. See https://goo.gl/tj7gkX", \
-      (OpenRound)(ClosedPolygon)(ClosedLine)(OpenSquare)(OpenButt), \
-      ( \
-          ClipperLib::EndType, \
-          ClipperLib::et \
-      )))((double, miter_limit, MiterLimit, 2.0, "Miter limit for joint type Miter. See https://goo.gl/K8xX9h", App::PropertyFloat))( \
-        (double, \
-         round_precision, \
-         RoundPrecision, \
-         0.0, \
-         "Round joint precision. If =0, it defaults to Accuracy. \n" \
-         "See https://goo.gl/4odfQh", \
-         App::PropertyPrecision) \
-    )
 
 #define AREA_PARAMS_MIN_DIST \
     ((double, \
@@ -421,9 +374,7 @@
 #define AREA_PARAMS_AREA \
     AREA_PARAMS_BASE \
     AREA_PARAMS_OFFSET \
-    AREA_PARAMS_OFFSET_CONF \
     AREA_PARAMS_POCKET \
-    AREA_PARAMS_POCKET_CONF \
     AREA_PARAMS_SECTION
 
 /** Group of all Area configuration parameters */
@@ -437,5 +388,3 @@
     AREA_PARAMS_OPCODE
 
 #define AREA_PARAMS_STATIC_CONF AREA_PARAMS_CONF
-
-#endif  // PATH_AreaParam_H

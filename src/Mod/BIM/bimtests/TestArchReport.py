@@ -1,8 +1,26 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
-#
-# Copyright (c) 2025 The FreeCAD Project
+# SPDX-FileCopyrightText: 2025 The FreeCAD Project
+# SPDX-FileNotice: Part of the FreeCAD project.
+
+################################################################################
+#                                                                              #
+#   FreeCAD is free software: you can redistribute it and/or modify            #
+#   it under the terms of the GNU Lesser General Public License as             #
+#   published by the Free Software Foundation, either version 2.1              #
+#   of the License, or (at your option) any later version.                     #
+#                                                                              #
+#   FreeCAD is distributed in the hope that it will be useful,                 #
+#   but WITHOUT ANY WARRANTY; without even the implied warranty                #
+#   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                    #
+#   See the GNU Lesser General Public License for more details.                #
+#                                                                              #
+#   You should have received a copy of the GNU Lesser General Public           #
+#   License along with FreeCAD. If not, see https://www.gnu.org/licenses       #
+#                                                                              #
+################################################################################
 
 """Unit tests for the ArchReport and ArchSql modules."""
+
 import FreeCAD
 import Arch
 import Draft
@@ -756,7 +774,7 @@ class TestArchReport(TestArchBase.TestArchBase):
         # 3. Child objects
         space1 = Arch.makeSpace(name="Living Room")
         space2 = Arch.makeSpace(name="Kitchen")
-        win_profile = Draft.makeRectangle(length=1000, height=1200)
+        win_profile = Draft.make_rectangle(length=1000, height=1200)
         window = Arch.makeWindow(baseobj=win_profile, name="Living Room Window")
 
         # 4. An intermediate generic group
@@ -1148,11 +1166,11 @@ class TestArchReport(TestArchBase.TestArchBase):
         building = Arch.makeBuilding(name="Test Building")
         floor = Arch.makeFloor(name="Test Floor")
         wall = Arch.makeWall(name="Test Wall")
-        win_profile = Draft.makeRectangle(1000, 1000)
+        win_profile = Draft.make_rectangle(1000, 1000)
         window = Arch.makeWindow(win_profile, name="Test Window")
 
         generic_group = self.doc.addObject("App::DocumentObjectGroup", "Test Generic Group")
-        space_profile = Draft.makeRectangle(2000, 2000)
+        space_profile = Draft.make_rectangle(2000, 2000)
         space = Arch.makeSpace(space_profile, name="Test Space")
 
         site.addObject(building)
@@ -1854,7 +1872,7 @@ class TestArchReport(TestArchBase.TestArchBase):
         # ARRANGE: Create a multi-level hierarchy (Floor -> Wall -> Window)
         floor = Arch.makeFloor(name="TraversalTestFloor")
         wall = Arch.makeWall(name="TraversalTestWall")
-        win_profile = Draft.makeRectangle(1000, 1000)
+        win_profile = Draft.make_rectangle(1000, 1000)
         window = Arch.makeWindow(win_profile, name="TraversalTestWindow")
 
         # Establish the relationships
@@ -1888,7 +1906,7 @@ class TestArchReport(TestArchBase.TestArchBase):
         # Floor -> Generic Group -> Space
         floor = Arch.makeFloor(name="GroupTestFloor")
         group = self.doc.addObject("App::DocumentObjectGroup", "GenericTestGroup")
-        space_profile = Draft.makeRectangle(500, 500)
+        space_profile = Draft.make_rectangle(500, 500)
         space = Arch.makeSpace(space_profile, name="GroupTestSpace")
 
         # Establish the relationships
@@ -1922,7 +1940,7 @@ class TestArchReport(TestArchBase.TestArchBase):
         # ARRANGE: Create a 3-level hierarchy (Floor -> Wall -> Window)
         floor = Arch.makeFloor(name="DepthTestFloor")
         wall = Arch.makeWall(name="DepthTestWall")
-        win_profile = Draft.makeRectangle(1000, 1000)
+        win_profile = Draft.make_rectangle(1000, 1000)
         window = Arch.makeWindow(win_profile, name="DepthTestWindow")
 
         floor.addObject(wall)
@@ -1972,7 +1990,7 @@ class TestArchReport(TestArchBase.TestArchBase):
         floor = Arch.makeFloor(name="SQLFuncTestFloor")
         group = self.doc.addObject("App::DocumentObjectGroup", "SQLFuncTestGroup")
         wall = Arch.makeWall(name="SQLFuncTestWall")
-        win_profile = Draft.makeRectangle(1000, 1000)
+        win_profile = Draft.make_rectangle(1000, 1000)
         window = Arch.makeWindow(win_profile, name="SQLFuncTestWindow")
 
         building.addObject(floor)
@@ -2111,3 +2129,45 @@ class TestArchReport(TestArchBase.TestArchBase):
         finally:
             # CLEANUP: Always restore the user's original schema.
             FreeCAD.Units.setSchema(original_schema_index)
+
+    def test_autoupdate_controls_spreadsheet_overwrite(self):
+        """AutoUpdate=False preserves user edits on recompute;
+        AutoUpdate=True overwrites them."""
+        report = Arch.makeReport()
+        report.Proxy.live_statements[0].query_string = "SELECT Label FROM document"
+        report.Proxy.commit_statements()
+        self.doc.recompute()
+
+        sp = report.Target
+        self.assertIsNotNone(sp, "Report should have a target spreadsheet.")
+        self.assertTrue(len(sp.getUsedCells()) > 0, "Spreadsheet should have data.")
+
+        with self.subTest(AutoUpdate=False):
+            report.AutoUpdate = False
+            sp.set("Z1", "USER_EDIT")
+            self.doc.recompute()
+            self.assertIn("USER_EDIT", sp.getContents("Z1"))
+
+        with self.subTest(AutoUpdate=True):
+            report.AutoUpdate = True
+            sp.set("Z1", "USER_EDIT")
+            self.doc.recompute()
+            self.assertEqual(sp.getContents("Z1"), "")
+
+    def test_column_widths_preserved_across_recompute(self):
+        """Column widths set by the user should survive a report recompute."""
+        report = Arch.makeReport()
+        report.Proxy.live_statements[0].query_string = "SELECT Label FROM document"
+        report.Proxy.commit_statements()
+        self.doc.recompute()
+
+        sp = report.Target
+        custom_width = 200
+        sp.setColumnWidth("A", custom_width)
+        self.doc.recompute()
+
+        self.assertEqual(
+            sp.getColumnWidth("A"),
+            custom_width,
+            "Column width should be preserved after recompute.",
+        )

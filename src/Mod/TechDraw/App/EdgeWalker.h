@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2016 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -25,8 +27,7 @@
 // http://www.boost.org/LICENSE_1_0.txt)
 //**************************************************************************
 
-#ifndef TECHDRAW_EDGEWALKER_H
-#define TECHDRAW_EDGEWALKER_H
+#pragma once
 
 #include <vector>
 
@@ -191,5 +192,3 @@ private:
 };
 
 }  //end namespace TechDraw
-
-#endif //TECHDRAW_EDGEWALKER_H

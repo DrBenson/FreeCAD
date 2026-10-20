@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2015 Werner Mayer <wmayer[at]users.sourceforge.net>     *
  *                                                                         *
@@ -21,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef FEM_TOOLS_H
-#define FEM_TOOLS_H
+#pragma once
 
 #include <Base/Placement.h>
 #include <Base/Vector3D.h>
@@ -109,6 +110,3 @@ public:
 };
 
 }  // namespace Fem
-
-
-#endif  // FEM_TOOLS_H

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2019 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAW_COSMETIC_VERTEX_H
-#define TECHDRAW_COSMETIC_VERTEX_H
+#pragma once
 
 #include <App/FeaturePython.h>
 #include <Base/Persistence.h>
@@ -81,5 +82,3 @@ protected:
 };
 
 } //end namespace TechDraw
-
-#endif  // TECHDRAW_COSMETIC_VERTEX_H

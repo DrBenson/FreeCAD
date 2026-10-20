@@ -97,8 +97,14 @@ def number_of_components_in(assembly):
         return 0
     i = 0
     for obj in assembly.Group:
+        if isLinkArray(obj):
+            i = i + 1
+            continue
+
         if isLinkGroup(obj):
-            i = i + obj.ElementCount
+            i += obj.ElementCount - sum(
+                1 for elt in obj.ElementList if isSuppressedLinkElement(elt)
+            )
             continue
 
         if obj.isDerivedFrom("Assembly::AssemblyObject") or obj.isDerivedFrom(
@@ -109,6 +115,9 @@ def number_of_components_in(assembly):
 
         if obj.isDerivedFrom("App::Link"):
             obj = obj.getLinkedObject()
+            if isLinkArray(obj):
+                i = i + 1
+                continue
 
         if not obj.isDerivedFrom("App::GeoFeature"):
             continue
@@ -127,8 +136,18 @@ def isLink(obj):
     return (obj.TypeId == "App::Link" and obj.ElementCount == 0) or obj.TypeId == "App::LinkElement"
 
 
+def isLinkArray(obj):
+    return obj is not None and obj.isDerivedFrom("Part::LinkArray")
+
+
 def isLinkGroup(obj):
     return obj.TypeId == "App::Link" and obj.ElementCount > 0
+
+
+def isSuppressedLinkElement(obj):
+    return (
+        obj is not None and obj.TypeId == "App::LinkElement" and getattr(obj, "Suppressed", False)
+    )
 
 
 def getObject(ref):
@@ -177,13 +196,14 @@ def getObject(ref):
                 if obj2 and obj2.isDerivedFrom("App::DatumElement"):
                     return obj2
 
-        elif obj.isDerivedFrom("App::DatumElement"):
-            return obj
-
         elif obj.TypeId == "PartDesign::Body":
             return process_body(obj, obj, names, i)
 
-        elif obj.isDerivedFrom("Part::Feature"):
+        elif (
+            isLinkArray(obj)
+            or obj.isDerivedFrom("App::DatumElement")
+            or obj.isDerivedFrom("Part::Feature")
+        ):
             # primitive, fastener, gear ...
             return obj
 
@@ -191,6 +211,8 @@ def getObject(ref):
             linked_obj = obj.getLinkedObject()
             if linked_obj.TypeId == "PartDesign::Body":
                 return process_body(linked_obj, obj, names, i)
+            elif isLinkArray(linked_obj):
+                return obj
             elif linked_obj.isDerivedFrom("Part::Feature"):
                 return obj
             else:
@@ -226,7 +248,7 @@ def process_body(body, returnObj, names, i):
 def isBodySubObject(obj):
     return (
         obj.isDerivedFrom("Sketcher::SketchObject")
-        or obj.isDerivedFrom("PartDesign::Datum")
+        or obj.isDerivedFrom("Part::Datum")
         or obj.isDerivedFrom("App::DatumElement")
         or obj.isDerivedFrom("App::LocalCoordinateSystem")
     )
@@ -364,11 +386,6 @@ def getGlobalPlacement(ref, targetObj=None):
     if not isRefValid(ref, 1):
         return App.Placement()
 
-    if targetObj is None:  # If no targetObj is given, we consider it's the getObject(ref)
-        targetObj = getObject(ref)
-        if targetObj is None:
-            return App.Placement()
-
     rootObj = ref[0]
     subName = ref[1][0]
     # ref[0] is no longer the root object. Now it's the moving part.
@@ -385,6 +402,9 @@ def getGlobalPlacement(ref, targetObj=None):
 
 
 def isThereOneRootAssembly():
+    if Gui.activeDocument() is None:
+        return False
+
     for part in Gui.activeDocument().TreeRootObjects:
         if part.TypeId == "Assembly::AssemblyObject":
             return True
@@ -689,6 +709,20 @@ def getSimulationGroup(assembly):
     return sim_group
 
 
+def getSnapshotGroup(assembly):
+    snapshot_group = None
+
+    for obj in assembly.OutList:
+        if obj.TypeId == "Assembly::SnapshotGroup":
+            snapshot_group = obj
+            break
+
+    if not snapshot_group:
+        snapshot_group = assembly.newObject("Assembly::SnapshotGroup", "Snapshots")
+
+    return snapshot_group
+
+
 def isAssemblyGrounded():
     assembly = activeAssembly()
     if not assembly:
@@ -746,7 +780,10 @@ def getMovablePartsWithin(group, partsAsSolid=False):
 
 
 def getSubMovingParts(obj, partsAsSolid):
-    if obj.isDerivedFrom("Part::Feature"):
+    if obj is None or isSuppressedLinkElement(obj):
+        return []
+
+    if isLinkArray(obj) or obj.isDerivedFrom("Part::Feature"):
         return [obj]
 
     elif obj.isDerivedFrom("App::Part"):
@@ -761,7 +798,11 @@ def getSubMovingParts(obj, partsAsSolid):
 
     if isLink(obj):
         linked_obj = obj.getLinkedObject()
-        if linked_obj.isDerivedFrom("App::Part") or linked_obj.isDerivedFrom("Part::Feature"):
+        if (
+            linked_obj.isDerivedFrom("App::Part")
+            or linked_obj.isDerivedFrom("Part::Feature")
+            or isLinkArray(linked_obj)
+        ):
             return [obj]
 
     return []
@@ -795,7 +836,7 @@ def getObjMassAndCom(obj, containingPart=None):
         obj = obj.getLinkedObject()
 
     if obj.TypeId == "PartDesign::Body":
-        part = part.Tip
+        obj = obj.Tip
 
     if obj.isDerivedFrom("Part::Feature"):
         mass = obj.Shape.Volume
@@ -834,6 +875,8 @@ def getObjMassAndCom(obj, containingPart=None):
             children = obj.Group
 
         for subObj in children:
+            if isSuppressedLinkElement(subObj):
+                continue
             mass, com = getObjMassAndCom(subObj, containingPart)
             total_mass += mass
             total_com += com
@@ -893,7 +936,7 @@ def findCylindersIntersection(obj, surface, edge, elt_index):
     return surface.Center
 
 
-def openEditingPlacementDialog(obj, propName):
+def openEditingPlacementDialog(obj, propName, onChanged=None):
     task_placement = Gui.TaskPlacement()
     dialog = task_placement.form
 
@@ -903,6 +946,9 @@ def openEditingPlacementDialog(obj, propName):
     task_placement.setPropertyName(propName)
     task_placement.bindObject()
     task_placement.setIgnoreTransactions(True)
+
+    if onChanged is not None:
+        dialog.accepted.connect(onChanged)
 
     dialog.findChild(QtWidgets.QPushButton, "selectedVertex").hide()
     dialog.exec_()
@@ -1098,9 +1144,9 @@ def findPlacement(ref, ignoreVertex=False):
         if hasattr(surface, "Rotation") and surface.Rotation is not None:
             plc.Rotation = App.Rotation(surface.Rotation)
 
-    # Now plc is the placement relative to the origin determined by the object placement.
-    # But it does not take into account Part placements. So if the solid is in a part and
-    # if the part has a placement then plc is wrong.
+    if hasattr(obj, "ExpandArray"):
+        # For draft arrays, the Shape has both the array placement and the base placement.
+        plc = obj.Base.Placement.inverse() * plc
 
     # change plc to be relative to the object placement.
     plc = obj.Placement.inverse() * plc
@@ -1113,13 +1159,6 @@ def findPlacement(ref, ignoreVertex=False):
         plane_origin = App.Vector(0, 0, 0)
         plane = Part.Plane(plane_origin, plane_normal)
         plc.Rotation = App.Rotation(plane.Rotation)
-
-    # change plc to be relative to the origin of the document.
-    # global_plc = getGlobalPlacement(obj, part)
-    # plc = global_plc * plc
-
-    # change plc to be relative to the assembly.
-    # plc = activeAssembly().Placement.inverse() * plc
 
     return plc
 
@@ -1234,6 +1273,12 @@ def getComponentReference(assembly, root_obj, sub_string):
 
     doc = assembly.Document
 
+    # We do not need the full TNP string like :"Part.Body.Pad.;#a:1;:G0;XTR;:Hc94:8,F.Face6"
+    # instead we need : "Part.Body.Pad.Face6"
+    resolved = root_obj.resolveSubElement(sub_string, True)
+    sub_string = resolved[2]
+    sub_string = fixBodyExtraFeatureInSub(doc.Name, sub_string)
+
     # 1. Reconstruct full path
     # e.g. ['Part', 'Assembly', 'Cylinder', 'Face1']
     names = [root_obj.Name] + sub_string.split(".")
@@ -1268,9 +1313,14 @@ def getComponentReference(assembly, root_obj, sub_string):
 
         if isLink(obj):
             linkedObj = obj.getLinkedObject()
-            if linkedObj and not linkedObj.isDerivedFrom("App::GeoFeature"):
+            if (
+                linkedObj
+                and not isLink(linkedObj)
+                and not linkedObj.isDerivedFrom("App::GeoFeature")
+                and not isLinkArray(linkedObj)
+            ):
                 continue
-        elif not obj.isDerivedFrom("App::GeoFeature"):
+        elif not obj.isDerivedFrom("App::GeoFeature") and not isLinkArray(obj):
             continue
 
         component = obj

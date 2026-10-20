@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2012-2013 Luke Parry <l.parry@warwick.ac.uk>            *
  *                                                                         *
@@ -61,7 +63,7 @@ bool QGIProjGroup::autoDistributeEnabled() const
 
 
 // note that we are not actually handling any of these events (ie we don't return true, and we don't
-// set the the event to ignore) here.
+// set the event to ignore) here.
 bool QGIProjGroup::sceneEventFilter(QGraphicsItem* watched, QEvent *event)
 {
     auto qvpart = dynamic_cast<QGIViewPart*>(watched);

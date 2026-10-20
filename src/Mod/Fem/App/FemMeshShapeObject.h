@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jürgen Riegel <FreeCAD@juergen-riegel.net>         *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef Fem_FemMeshShapeObject_H
-#define Fem_FemMeshShapeObject_H
+#pragma once
 
 #include "FemMeshObject.h"
 
@@ -75,6 +76,3 @@ protected:
 using FemMeshShapeBaseObjectPython = App::FeaturePythonT<FemMeshShapeBaseObject>;
 
 }  // namespace Fem
-
-
-#endif  // Fem_FemMeshShapeObject_H

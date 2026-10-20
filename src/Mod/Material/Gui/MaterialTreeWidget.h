@@ -21,8 +21,7 @@
  *                                                                         *
  **************************************************************************/
 
-#ifndef MATGUI_MATERIALTREEWIDGET_H
-#define MATGUI_MATERIALTREEWIDGET_H
+#pragma once
 
 #include <memory>
 
@@ -146,7 +145,7 @@ public:
     }
     void setIncludeEmptyLibraries(bool value)
     {
-        Base::Console().log("setIncludeEmptyLibraries(%s)\n", (value ? "true" : "false"));
+        Base::Console().log("setIncludeEmptyLibraries({})\n", (value ? "true" : "false"));
         _filterOptions.setIncludeEmptyLibraries(value);
     }
 
@@ -288,5 +287,3 @@ protected:
 };
 
 }  // namespace MatGui
-
-#endif  // MATGUI_MATERIALTREEWIDGET_H

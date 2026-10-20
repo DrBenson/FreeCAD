@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /**************************************************************************
  *   Copyright (c) 2016 FreeCAD Developers                                 *
  *   Author: Bernd Hahnebach <bernd@bimstatik.ch>                          *
@@ -22,8 +24,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef FEMGUI_DLGSETTINGSFEMZ88IMP_H
-#define FEMGUI_DLGSETTINGSFEMZ88IMP_H
+#pragma once
 
 #include <Gui/PropertyPage.h>
 #include <memory>
@@ -48,11 +49,10 @@ protected:
     void saveSettings() override;
     void loadSettings() override;
     void changeEvent(QEvent* e) override;
+    void populateSolverType();
 
 private:
     std::unique_ptr<Ui_DlgSettingsFemZ88Imp> ui;
 };
 
 }  // namespace FemGui
-
-#endif  // FEMGUI_DLGSETTINGSFEMZ88IMP_H

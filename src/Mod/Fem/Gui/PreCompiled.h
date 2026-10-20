@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2008 Jürgen Riegel <juergen.riegel@web.de>              *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef FEMGUI_PRECOMPILED_H
-#define FEMGUI_PRECOMPILED_H
+#pragma once
 
 #include <FCConfig.h>
 
@@ -156,5 +157,3 @@
 #include <vtkDoubleArray.h>
 #include <vtkLookupTable.h>
 #include <vtkPointData.h>
-
-#endif  // FEMGUI_PRECOMPILED_H

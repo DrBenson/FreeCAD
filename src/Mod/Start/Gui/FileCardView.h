@@ -21,8 +21,7 @@
  *                                                                          *
  ***************************************************************************/
 
-#ifndef FREECAD_START_FILECARDVIEW_H
-#define FREECAD_START_FILECARDVIEW_H
+#pragma once
 
 #include <QListView>
 
@@ -41,9 +40,9 @@ public:
     QSize sizeHint() const override;
 
 private:
+    int reservedScrollBarWidth() const;
+
     int m_cardSpacing;
 };
 
 }  // namespace StartGui
-
-#endif  // FREECAD_START_FILECARDVIEW_H

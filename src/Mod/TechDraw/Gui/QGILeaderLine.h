@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2019 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DRAWINGGUI_QGRAPHICSITEMLEADERLINE_H
-#define DRAWINGGUI_QGRAPHICSITEMLEADERLINE_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -35,7 +36,6 @@
 
 #include "QGIView.h"
 #include "QGIUserTypes.h"
-
 
 namespace TechDraw
 {
@@ -69,6 +69,7 @@ public:
     void paint(QPainter* painter, const QStyleOptionGraphicsItem* option,
                QWidget* widget = nullptr) override;
     QRectF boundingRect() const override;
+    QPainterPath shape() const override;
 
     void drawBorder() override;
     void updateView(bool update = false) override;
@@ -85,7 +86,6 @@ public:
     void closeEdit();
 
     double getLineWidth();
-    double getEdgeFuzz() const;
 
     void mousePressEvent(QGraphicsSceneMouseEvent* event) override;
     void mouseReleaseEvent(QGraphicsSceneMouseEvent* event) override;
@@ -145,5 +145,3 @@ private:
 };
 
 }// namespace TechDrawGui
-
-#endif// DRAWINGGUI_QGRAPHICSITEMLEADERLINE_H

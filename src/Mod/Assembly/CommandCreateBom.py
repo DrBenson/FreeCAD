@@ -66,7 +66,8 @@ class CommandCreateBom:
     def GetResources(self):
         return {
             "Pixmap": "Assembly_BillOfMaterials",
-            "MenuText": QT_TRANSLATE_NOOP("Assembly_CreateBom", "Bill of Materials")+"\t&O",
+            "MenuText": QT_TRANSLATE_NOOP("Assembly_CreateBom", "Bill of Materials"),
+            "Accel": "O",
             "ToolTip": QT_TRANSLATE_NOOP(
                 "Assembly_CreateBom",
                 "<p>Creates a bill of materials of the current assembly. If an assembly is active, it will be a BOM of this assembly. Else it will be a BOM of the whole document.</p>"
@@ -114,7 +115,7 @@ class TaskAssemblyCreateBom(QtCore.QObject):
         pref = Preferences.preferences()
 
         if bomObj:
-            App.setActiveTransaction("Edit Bill Of Materials")
+            Gui.ActiveDocument.openCommand("Edit Bill Of Materials")
 
             for name in bomObj.columnsNames:
                 if name in ColumnNames:
@@ -125,7 +126,7 @@ class TaskAssemblyCreateBom(QtCore.QObject):
 
             self.bomObj = bomObj
         else:
-            App.setActiveTransaction("Create Bill Of Materials")
+            Gui.ActiveDocument.openCommand("Create Bill Of Materials")
 
             # Add the columns
             for name in TranslatedColumnNames:
@@ -151,7 +152,7 @@ class TaskAssemblyCreateBom(QtCore.QObject):
 
     def accept(self):
         self.deactivate()
-        App.closeActiveTransaction()
+        Gui.ActiveDocument.commitCommand()
 
         self.bomObj.recompute()
 
@@ -161,7 +162,7 @@ class TaskAssemblyCreateBom(QtCore.QObject):
 
     def reject(self):
         self.deactivate()
-        App.closeActiveTransaction(True)
+        Gui.ActiveDocument.abortCommand()
         return True
 
     def deactivate(self):
@@ -356,6 +357,7 @@ class TaskAssemblyCreateBom(QtCore.QObject):
         help_dialog.setWindowFlags(QtCore.Qt.Popup)
         help_dialog.setWindowModality(QtCore.Qt.NonModal)
         help_dialog.setAttribute(QtCore.Qt.WA_DeleteOnClose)
+        help_dialog.setFixedWidth(500)
 
         layout = QtWidgets.QVBoxLayout()
         layout.setContentsMargins(10, 10, 10, 10)
@@ -412,9 +414,14 @@ class TaskAssemblyCreateBom(QtCore.QObject):
             + "\n"
         )
 
-        options_text.setWordWrap(True)
-        columns_text.setWordWrap(True)
-        export_text.setWordWrap(True)
+        layout_width = (
+            help_dialog.contentsRect().width()
+            - layout.contentsMargins().left()
+            - layout.contentsMargins().right()
+        )
+        for label in (options_text, columns_text, export_text):
+            label.setWordWrap(True)
+            label.setFixedWidth(layout_width)
 
         layout.addWidget(options_title)
         layout.addWidget(options_text)
@@ -424,7 +431,6 @@ class TaskAssemblyCreateBom(QtCore.QObject):
         layout.addWidget(export_text)
 
         help_dialog.setLayout(layout)
-        help_dialog.setFixedWidth(500)
 
         help_dialog.show()
 

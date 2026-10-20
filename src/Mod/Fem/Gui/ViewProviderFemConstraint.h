@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jan Rheinländer                                    *
  *                                   <jrheinlaender@users.sourceforge.net> *
@@ -22,8 +24,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef GUI_VIEWPROVIDERFEMCONSTRAINT_H
-#define GUI_VIEWPROVIDERFEMCONSTRAINT_H
+#pragma once
 
 #include <Gui/ViewProviderGeometryObject.h>
 #include <Gui/ViewProviderFeaturePython.h>
@@ -78,10 +79,11 @@ public:
      * copies at points on the surface and an optional separator with a symbol
      * excluded from multiple copies.
      */
-    void loadSymbol(const char* fileName);
+    void loadSymbol(const std::filesystem::path& ivFile);
 
     static std::string gethideMeshShowPartStr();
     static std::string gethideMeshShowPartStr(const std::string showConstr);
+    static const std::filesystem::path& getResourceSymbolDir();
 
 protected:
     void onChanged(const App::Property* prop) override;
@@ -110,9 +112,8 @@ protected:
     SoSeparator* pExtraSymbol;
     SoTransform* pExtraTrans;
     SoMultipleCopy* pMultCopy;
-    const char* ivFile;
 
-    static std::string resourceSymbolDir;
+    static std::filesystem::path resourceSymbolDir;
 };
 
 
@@ -140,6 +141,3 @@ using ViewProviderFemConstraintPython = Gui::ViewProviderFeaturePythonT<ViewProv
 
 
 }  // namespace FemGui
-
-
-#endif  // GUI_VIEWPROVIDERFEMCONSTRAINT_H

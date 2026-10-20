@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -10,77 +10,82 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
 <context>
     <name>App::LocalCoordinateSystem</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Datums.cpp" line="209"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Datums.cpp" line="209"/>
         <source>X-axis</source>
         <translation>X 軸</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Datums.cpp" line="210"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Datums.cpp" line="210"/>
         <source>Y-axis</source>
         <translation>Y 軸</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Datums.cpp" line="211"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Datums.cpp" line="211"/>
         <source>Z-axis</source>
         <translation>Z 軸</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Datums.cpp" line="212"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Datums.cpp" line="212"/>
         <source>XY-plane</source>
         <translation>XY 平面</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Datums.cpp" line="213"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Datums.cpp" line="213"/>
         <source>XZ-plane</source>
         <translation>XZ 平面</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Datums.cpp" line="214"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Datums.cpp" line="214"/>
         <source>YZ-plane</source>
         <translation>YZ 平面</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Datums.cpp" line="215"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Datums.cpp" line="215"/>
         <source>Origin</source>
         <translation>原點</translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Datums.cpp" line="273"/>
+        <source>Origin-Point</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>App::Origin</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Origin.cpp" line="140"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Origin.cpp" line="140"/>
         <source>X-axis</source>
         <translation>X-軸</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Origin.cpp" line="141"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Origin.cpp" line="141"/>
         <source>Y-axis</source>
         <translation>Y-軸</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Origin.cpp" line="142"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Origin.cpp" line="142"/>
         <source>Z-axis</source>
         <translation>Z-軸</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Origin.cpp" line="143"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Origin.cpp" line="143"/>
         <source>XY-plane</source>
         <translation>XY-平面</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Origin.cpp" line="144"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Origin.cpp" line="144"/>
         <source>XZ-plane</source>
         <translation>XZ-平面</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Origin.cpp" line="145"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Origin.cpp" line="145"/>
         <source>YZ-plane</source>
         <translation>YZ-平面</translation>
     </message>
@@ -88,7 +93,7 @@
 <context>
     <name>App::OriginGroupExtension</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/OriginGroupExtension.cpp" line="134"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/OriginGroupExtension.cpp" line="134"/>
         <source>Origin</source>
         <translation>原點</translation>
     </message>
@@ -96,17 +101,17 @@
 <context>
     <name>CmdWebBrowserBack</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="72"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="72"/>
         <source>Web</source>
         <translation>網頁</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="73"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="73"/>
         <source>Previous page</source>
         <translation>上一個頁面</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="74"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="74"/>
         <source>Go back to the previous page</source>
         <translation>回到上一個頁面</translation>
     </message>
@@ -114,17 +119,17 @@
 <context>
     <name>CmdWebBrowserNext</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="101"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="101"/>
         <source>Web</source>
         <translation>網頁</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="102"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="102"/>
         <source>Next page</source>
         <translation>下一個頁面</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="103"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="103"/>
         <source>Go to the next page</source>
         <translation>到下一個頁面</translation>
     </message>
@@ -132,13 +137,13 @@
 <context>
     <name>CmdWebBrowserRefresh</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="130"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="130"/>
         <source>Web</source>
         <translation>網頁</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="131"/>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="132"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="131"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="132"/>
         <source>Refresh web page</source>
         <translation>重新整理頁面</translation>
     </message>
@@ -146,13 +151,13 @@
 <context>
     <name>CmdWebBrowserSetURL</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="246"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="246"/>
         <source>Web</source>
         <translation>網頁</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="247"/>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="248"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="247"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="248"/>
         <source>Set URL</source>
         <translation>設定網址</translation>
     </message>
@@ -160,13 +165,13 @@
 <context>
     <name>CmdWebBrowserStop</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="158"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="158"/>
         <source>Web</source>
         <translation>網頁</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="159"/>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="160"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="159"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="160"/>
         <source>Stop loading</source>
         <translation>停止載入</translation>
     </message>
@@ -174,13 +179,13 @@
 <context>
     <name>CmdWebBrowserZoomIn</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="188"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="188"/>
         <source>Web</source>
         <translation>網頁</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="189"/>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="190"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="189"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="190"/>
         <source>Zoom in</source>
         <translation>放大</translation>
     </message>
@@ -188,13 +193,13 @@
 <context>
     <name>CmdWebBrowserZoomOut</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="217"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="217"/>
         <source>Web</source>
         <translation>網頁</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="218"/>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="219"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="218"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="219"/>
         <source>Zoom out</source>
         <translation>縮小</translation>
     </message>
@@ -202,17 +207,17 @@
 <context>
     <name>CmdWebOpenWebsite</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="46"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="46"/>
         <source>Web</source>
         <translation>網頁</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="47"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="47"/>
         <source>Open website...</source>
         <translation>開啟網站...</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Command.cpp" line="48"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Command.cpp" line="48"/>
         <source>Opens a website in FreeCAD</source>
         <translation>在FreeCAD中 開啟網站</translation>
     </message>
@@ -220,24 +225,23 @@
 <context>
     <name>LinkParams</name>
     <message>
-        <location filename="../../../../../../../UserTemp/Sources/FreeCAD-0.22.0-git/src/App/Link.cpp" line="119"/>
-        <source>Stores the last user choice of whether to apply CopyOnChange setup to all link
-that links to the same configurable object</source>
-        <translation>儲存使用者最後選擇是否要將 變更時複製(CopyOnChange) 設定
-套用到連結到相同設定物件的所有連結</translation>
-    </message>
-    <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Link.cpp" line="118"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Link.cpp" line="118"/>
         <source>Stores the last user choice of whether to apply CopyOnChange setup to all links
 that reference the same configurable object</source>
-        <translation>儲存最後的使用者選擇是否將 變更時複製(CopyOnChange) 設定套用至所有連結
+        <translation>儲存最後的使用者選擇是否將 &apos;變更時複製&apos; 設定套用至所有連結
 引用相同的可設定物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Link.cpp" line="131"/>
+        <source>Stores the last user choice of whether to apply CopyOnChange setup to all link
+that links to the same configurable object</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Notifications</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Document.cpp" line="1163"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Document.cpp" line="1163"/>
         <source>
 It is recommended that the user right-click the root of the document and select Mark to recompute.
 The user should then click the Refresh button in the main toolbar.
@@ -251,18 +255,33 @@ The user should then click the Refresh button in the main toolbar.
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/src/App/Application.cpp" line="444"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Application.cpp" line="444"/>
         <source>Unnamed</source>
         <translation>未命名</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/AppWebGui.cpp" line="91"/>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/BrowserView.cpp" line="865"/>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Expression.cpp" line="583"/>
+        <source>True</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Expression.cpp" line="583"/>
+        <source>False</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-0.22.0-git/src/App/Expression.cpp" line="601"/>
+        <source>Null</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/AppWebGui.cpp" line="91"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/BrowserView.cpp" line="865"/>
         <source>Browser</source>
         <translation>瀏覽器</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/BrowserView.cpp" line="668"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/BrowserView.cpp" line="668"/>
         <source>File does not exist!</source>
         <translation>檔案不存在!</translation>
     </message>
@@ -270,24 +289,24 @@ The user should then click the Refresh button in the main toolbar.
 <context>
     <name>WebGui::BrowserView</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/BrowserView.cpp" line="643"/>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/BrowserView.cpp" line="650"/>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/BrowserView.cpp" line="659"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/BrowserView.cpp" line="643"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/BrowserView.cpp" line="650"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/BrowserView.cpp" line="659"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/BrowserView.cpp" line="651"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/BrowserView.cpp" line="651"/>
         <source>There were errors while loading the file. Some data might have been modified or not recovered at all. Look in the report view for more specific information about the objects involved.</source>
         <translation>載入檔案時出錯. 某些資料可能已被修改或根本未恢復. 檢視報告來了解所涉及物體的更多具體資訊.</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/BrowserView.cpp" line="660"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/BrowserView.cpp" line="660"/>
         <source>There were serious errors while loading the file. Some data might have been modified or not recovered at all. Saving the project will most likely result in loss of data.</source>
         <translation>載入檔案時出現嚴重錯誤. 某些資料可能已被修改或根本未恢復. 儲存專案很可能會導致資料丟失.</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/BrowserView.cpp" line="833"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/BrowserView.cpp" line="833"/>
         <source>Loading %1...</source>
         <translation>%1 載入中 ...</translation>
     </message>
@@ -295,17 +314,17 @@ The user should then click the Refresh button in the main toolbar.
 <context>
     <name>WebGui::WebView</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/BrowserView.cpp" line="370"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/BrowserView.cpp" line="370"/>
         <source>Open in External Browser</source>
         <translation>於外部瀏覽器開啟</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/BrowserView.cpp" line="373"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/BrowserView.cpp" line="373"/>
         <source>Open in new window</source>
         <translation>於新視窗中開啟</translation>
     </message>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/BrowserView.cpp" line="431"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/BrowserView.cpp" line="431"/>
         <source>View source</source>
         <translation>檢視原始碼</translation>
     </message>
@@ -313,7 +332,7 @@ The user should then click the Refresh button in the main toolbar.
 <context>
     <name>Workbench</name>
     <message>
-        <location filename="../../../../../FreeCAD-1.2.0/Mod/Web/Gui/Workbench.cpp" line="36"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/App/Resources/src/Mod/Web/Gui/Workbench.cpp" line="36"/>
         <source>Navigation</source>
         <translation>導覽</translation>
     </message>

@@ -31,6 +31,7 @@
 #include <TopTools_IndexedMapOfShape.hxx>
 
 
+#include <SignalException.h>
 #include "FeatureChamfer.h"
 #include "TopoShapeOpCode.h"
 
@@ -87,7 +88,7 @@ App::DocumentObjectExecReturn* Chamfer::execute()
             //            try {
             //                edge = baseTopoShape.getSubShape(ref.c_str());
             //            }catch(...){}
-            auto id = Data::MappedName(ref.c_str()).toIndexedName().getIndex();
+            auto id = Data::IndexedName(Data::oldElementName(ref.c_str()).c_str()).getIndex();
             const TopoDS_Edge& edge = TopoDS::Edge(mapOfEdges.FindKey(id));
             if (edge.IsNull()) {
                 return new App::DocumentObjectExecReturn("Invalid edge link");
@@ -103,6 +104,7 @@ App::DocumentObjectExecReturn* Chamfer::execute()
         }
         Edges.setValues(edges);
 
+        Part::SignalException sig;
         TopoDS_Shape shape = mkChamfer.Shape();
         if (shape.IsNull()) {
             return new App::DocumentObjectExecReturn("Resulting shape is null");
@@ -114,5 +116,10 @@ App::DocumentObjectExecReturn* Chamfer::execute()
     }
     catch (Standard_Failure& e) {
         return new App::DocumentObjectExecReturn(e.GetMessageString());
+    }
+    catch (...) {
+        return new App::DocumentObjectExecReturn(
+            "Chamfer failed: OCC kernel error in chamfer computation"
+        );
     }
 }

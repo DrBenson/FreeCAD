@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2017 Markus Hovorka <m.hovorka@live.de>                 *
 # *                                                                         *
@@ -29,7 +31,6 @@ __url__ = "https://www.freecad.org"
 #  @{
 
 import FreeCAD as App
-
 
 INFO = 10
 WARNING = 20

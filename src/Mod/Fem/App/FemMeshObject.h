@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2008 Jürgen Riegel <juergen.riegel@web.de>              *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef Fem_FemMeshObject_H
-#define Fem_FemMeshObject_H
+#pragma once
 
 #include <App/FeaturePython.h>
 #include <App/GeoFeature.h>
@@ -73,6 +74,3 @@ using FemMeshObjectPython = App::FeaturePythonT<FemMeshObject>;
 
 
 }  // namespace Fem
-
-
-#endif  // Fem_FemMeshObject_H

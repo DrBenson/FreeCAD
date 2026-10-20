@@ -1,5 +1,4 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
-# -*- coding: utf-8 -*-
 # ***************************************************************************
 # *   Copyright (c) 2021 sliptonic <shopinthewoods@gmail.com>               *
 # *                                                                         *
@@ -23,7 +22,6 @@
 
 import FreeCADGui
 import Path
-import Path_rc
 
 if False:
     Path.Log.setLevel(Path.Log.Level.DEBUG, Path.Log.thisModule())
@@ -49,7 +47,6 @@ class AdvancedPreferencesPage:
             self.form.WarningSuppressRapidSpeeds.isChecked(),
             self.form.WarningSuppressSelectionMode.isChecked(),
             self.form.WarningSuppressOpenCamLib.isChecked(),
-            self.form.WarningSuppressVelocity.isChecked(),
         )
 
     def loadSettings(self):
@@ -65,7 +62,6 @@ class AdvancedPreferencesPage:
             Path.Preferences.advancedOCLFeaturesEnabled()
         )
         self.form.WarningSuppressOpenCamLib.setChecked(Path.Preferences.suppressOpenCamLibWarning())
-        self.form.WarningSuppressVelocity.setChecked(Path.Preferences.suppressVelocity())
         self.updateSelection()
 
     def updateSelection(self, state=None):

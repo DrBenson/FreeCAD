@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2020 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAWGUI_TASKDETAIL_H
-#define TECHDRAWGUI_TASKDETAIL_H
+#pragma once
 
 #include <Base/Vector3D.h>
 #include <Gui/TaskView/TaskDialog.h>
@@ -81,6 +82,8 @@ public Q_SLOTS:
 protected:
     void changeEvent(QEvent *event) override;
     void startDragger();
+
+    std::string makeCaption();
 
     void createDetail();
     void updateDetail();
@@ -161,5 +164,3 @@ private:
 };
 
 } //namespace TechDrawGui
-
-#endif // #ifndef TECHDRAWGUI_TASKDETAIL_H

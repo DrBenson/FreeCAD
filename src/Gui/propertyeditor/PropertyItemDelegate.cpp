@@ -148,7 +148,12 @@ void PropertyItemDelegate::paint(
             option.rect.right() - (checkboxOption.rect.right() + spacing),
             checkboxOption.rect.height()
         );
-        painter->setPen(palette.color(QPalette::Text));
+        if (readonly) {
+            painter->setPen(palette.color(QPalette::Disabled, QPalette::Text));
+        }
+        else {
+            painter->setPen(palette.color(QPalette::Text));
+        }
         painter->drawText(textRect, Qt::AlignVCenter | Qt::AlignLeft, labelText);
     }
     else {
@@ -262,7 +267,10 @@ bool PropertyItemDelegate::eventFilter(QObject* o, QEvent* ev)
             return false;
         }
     }
-    return QItemDelegate::eventFilter(o, ev);
+    QPointer<QObject> guardedObject(o);
+    const bool filtered = QItemDelegate::eventFilter(o, ev);
+    // Closing an editor can delete it while this event is being filtered.
+    return filtered || !guardedObject;
 }
 
 QWidget* PropertyItemDelegate::createEditor(
@@ -386,16 +394,23 @@ void PropertyItemDelegate::setModelData(
     const QModelIndex& index
 ) const
 {
-    if (!index.isValid() || !changed || userEditor) {
+    if (!index.isValid() || userEditor) {
         return;
     }
     auto childItem = static_cast<PropertyItem*>(index.internalPointer());
+    const bool commitOnClose = childItem->commitOnEditorClose();
+    if (!changed && !commitOnClose) {
+        return;
+    }
     QVariant data;
     if (expressionEditor == editor) {
         data = childItem->expressionEditorData(editor);
     }
     else {
         data = childItem->editorData(editor);
+    }
+    if (commitOnClose && !changed && data == index.data(Qt::EditRole)) {
+        return;
     }
     model->setData(index, data, Qt::EditRole);
 }

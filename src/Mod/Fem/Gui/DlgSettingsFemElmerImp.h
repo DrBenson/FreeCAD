@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /**************************************************************************
  *   Copyright (c) 2016 FreeCAD Developers                                 *
  *   Author: Bernd Hahnebach <bernd@bimstatik.ch>                          *
@@ -22,8 +24,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef FEMGUI_DLGSETTINGSFEMELMERIMP_H
-#define FEMGUI_DLGSETTINGSFEMELMERIMP_H
+#pragma once
 
 #include <Gui/PropertyPage.h>
 #include <memory>
@@ -53,5 +54,3 @@ private:
 };
 
 }  // namespace FemGui
-
-#endif  // FEMGUI_DLGSETTINGSFEMELMERIMP_H

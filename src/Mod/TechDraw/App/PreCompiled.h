@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2007 Jürgen Riegel <juergen.riegel@web.de>              *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAW_PRECOMPILED_H
-#define TECHDRAW_PRECOMPILED_H
+#pragma once
 
 #include <FCConfig.h>
 
@@ -61,5 +62,3 @@
 
 // OpenCasCade
 #include <Mod/Part/App/OpenCascadeAll.h>
-
-#endif

@@ -23,6 +23,8 @@
 #include <Inventor/SbSphere.h>
 #include <Inventor/actions/SoGetBoundingBoxAction.h>
 #include <Inventor/nodes/SoOrthographicCamera.h>
+#include <xercesc/util/XMLException.hpp>
+#include <xercesc/util/XMLString.hpp>
 #include <sstream>
 #include <QApplication>
 #include <QByteArray>
@@ -36,7 +38,7 @@
 
 #include <App/Document.h>
 #include <App/DocumentObject.h>
-#include <App/AutoTransaction.h>
+#include <App/Transactions.h>
 #include <Base/Console.h>
 #include <Base/Exception.h>
 #include <Base/Interpreter.h>
@@ -45,12 +47,15 @@
 
 #include "Command.h"
 #include "Action.h"
+#include "App/Application.h"
 #include "Application.h"
 #include "BitmapFactory.h"
 #include "Control.h"
 #include "Dialogs/DlgUndoRedo.h"
+#include "PreferencePages/DlgSettingsWorkbenchesImp.h"
 #include "Document.h"
 #include "frameobject.h"
+#include "GeneralParameter.h"
 #include "Macro.h"
 #include "MainWindow.h"
 #include "Python.h"
@@ -127,8 +132,8 @@ using namespace Gui::DockWnd;
  * protected:
  *   void activated(int)
  *   {
- *     QString filter ... // make a filter of all supported file formats
- *     QStringList FileList = QFileDialog::getOpenFileNames( filter,QString(), getMainWindow() );
+ *     QStringList filters ... // make a filter list of all supported file formats
+ *     QStringList FileList = QFileDialog::getOpenFileNames( filters, QString(), getMainWindow() );
  *     for ( QStringList::Iterator it = FileList.begin(); it != FileList.end(); ++it ) {
  *       getGuiApplication()->open((*it).latin1());
  *     }
@@ -242,6 +247,7 @@ Command::Command(const char* name)
     sAppModule = "FreeCAD";
     sGroup = "Standard";
     eType = AlterDoc | Alter3DView | AlterSelection;
+    eMaturity = Base::Maturity::Stable;
     bEnabled = true;
     bCanLog = true;
 }
@@ -261,6 +267,29 @@ QString Command::getShortcut() const
         return _pcAction->shortcut().toString();
     }
     return ShortcutManager::instance()->getShortcut(getName());
+}
+
+void Command::setMaturity(Base::Maturity m)
+{
+    eMaturity = m;
+}
+
+Base::Maturity Command::getMaturity() const
+{
+    return eMaturity;
+}
+
+bool Command::allowedByMaturity() const
+{
+    switch (eMaturity) {
+        case Base::Maturity::Stable:
+            return true;
+        case Base::Maturity::Experimental:
+            return GeneralParameter::instance()->getShowExperimentalFeatures();
+        case Base::Maturity::Development:
+            return GeneralParameter::instance()->getShowDevelopmentPreviewFeatures();
+    }
+    return false;  // Really just to shut the compiler up, should never hit
 }
 
 bool Command::isViewOfType(Base::Type t) const
@@ -290,7 +319,10 @@ void Command::initAction()
         //
         // printConflictingAccelerators();
 #endif
-        setShortcut(ShortcutManager::instance()->getShortcut(getName(), getAccel()));
+
+        if (allowedByMaturity()) {
+            setShortcut(ShortcutManager::instance()->getShortcut(getName(), getAccel()));
+        }
         testActive();
     }
 }
@@ -437,7 +469,7 @@ void Command::invoke(int i, TriggerSource trigger)
 
     // Do not query _pcAction since it isn't created necessarily
 #ifdef FC_LOGUSERACTION
-    Base::Console().log("CmdG: %s\n", sName);
+    Base::Console().log("CmdG: {}\n", sName);
 #endif
 
     _invoke(i, bCanLog && !_busy);
@@ -446,11 +478,6 @@ void Command::invoke(int i, TriggerSource trigger)
 void Command::_invoke(int id, bool disablelog)
 {
     try {
-        // Because Transaction now captures ViewObject changes, auto named
-        // transaction is disabled here to avoid too many unnecessary transactions.
-        //
-        App::AutoTransaction committer(nullptr, true);
-
         // set the application module type for the macro
         getGuiApplication()->macroManager()->setModule(sAppModule);
 
@@ -462,7 +489,6 @@ void Command::_invoke(int id, bool disablelog)
         // check if it really works NOW (could be a delay between click deactivation of the button)
         if (isActive()) {
             auto manager = getGuiApplication()->macroManager();
-            auto editDoc = getGuiApplication()->editDocument();
 
             if (!logdisabler) {
                 activated(id);
@@ -498,12 +524,10 @@ void Command::_invoke(int id, bool disablelog)
             }
 
             getMainWindow()->updateActions();
-
-            // If this command starts an editing, let the transaction persist
-            if (!editDoc && getGuiApplication()->editDocument()) {
-                committer.setEnable(false);
-            }
         }
+        // here we assume that the overridden activated() function
+        // committed, aborted or gave the transaction id to a dialog
+        currentTransactionID = App::NullTransaction;  // Get ready for next invoke
     }
     catch (const Base::SystemExitException&) {
         throw;
@@ -523,15 +547,20 @@ void Command::_invoke(int id, bool disablelog)
         // Pop-up a dialog for FreeCAD-specific exceptions
         QMessageBox::critical(Gui::getMainWindow(), QObject::tr("Exception"), QLatin1String(e.what()));
     }
+    catch (const XERCES_CPP_NAMESPACE::XMLException& e) {
+        char* message = XERCES_CPP_NAMESPACE::XMLString::transcode(e.getMessage());
+        Base::Console().error("XML exception thrown ({})\n", message);
+        XERCES_CPP_NAMESPACE::XMLString::release(&message);
+    }
     catch (std::exception& e) {
-        Base::Console().error("C++ exception thrown (%s)\n", e.what());
+        Base::Console().error("C++ exception thrown ({})\n", e.what());
     }
     catch (const char* e) {
-        Base::Console().error("%s\n", e);
+        Base::Console().error("{}\n", e);
     }
 #ifndef FC_DEBUG
     catch (...) {
-        Base::Console().error("Gui::Command::activated(%d): Unknown C++ exception thrown\n", id);
+        Base::Console().error("Gui::Command::activated({}): Unknown C++ exception thrown\n", id);
     }
 #endif
 }
@@ -549,9 +578,10 @@ void Command::testActive()
 
     if (!(eType & ForEdit)) {  // special case for commands which are only in some edit modes active
 
-        if ((!Gui::Control().isAllowedAlterDocument() && eType & AlterDoc)
-            || (!Gui::Control().isAllowedAlterView() && eType & Alter3DView)
-            || (!Gui::Control().isAllowedAlterSelection() && eType & AlterSelection)) {
+        App::Document* doc = getDocument();
+        if ((!Gui::Control().isAllowedAlterDocument(doc) && eType & AlterDoc)
+            || (!Gui::Control().isAllowedAlterView(doc) && eType & Alter3DView)
+            || (!Gui::Control().isAllowedAlterSelection(doc) && eType & AlterSelection)) {
             _pcAction->setEnabled(false);
             return;
         }
@@ -680,27 +710,68 @@ QString Command::translatedGroupName() const
  *  operation default is the Command name.
  *  @see CommitCommand(),AbortCommand()
  */
-void Command::openCommand(const char* sCmdName)
+int Command::openCommand(App::TransactionName name)
 {
-    if (!sCmdName) {
-        sCmdName = "Command";
+    currentTransactionID = openActiveDocumentCommand(name);
+    return currentTransactionID;
+}
+int Command::openCommand(std::string name)
+{
+    return openCommand(App::TransactionName {.name = name, .temporary = false});
+}
+int Command::openActiveDocumentCommand(App::TransactionName name, int tid)
+{
+    if (Gui::Document* guidoc = getGuiApplication()->activeDocument()) {
+        return guidoc->getDocument()->setActiveTransaction(name, tid);
     }
-    App::GetApplication().setActiveTransaction(sCmdName);
+    return 0;
+}
+int Command::openActiveDocumentCommand(std::string name, int tid)
+{
+    return openActiveDocumentCommand(App::TransactionName {.name = name, .temporary = false}, tid);
+}
+void Command::rename(const std::string& name)
+{
+    App::GetApplication().setTransactionName(
+        currentTransactionID,
+        App::TransactionName {.name = name, .temporary = false}
+    );
 }
 
 void Command::commitCommand()
 {
-    App::GetApplication().closeActiveTransaction();
+    commitCommand(currentTransactionID);
+    currentTransactionID = App::NullTransaction;
 }
-
+void Command::commitCommand(int tid)
+{
+    if (tid != App::NullTransaction) {
+        App::GetApplication().commitTransaction(tid);
+    }
+}
 void Command::abortCommand()
 {
-    App::GetApplication().closeActiveTransaction(true);
+    abortCommand(currentTransactionID);
+    currentTransactionID = App::NullTransaction;
 }
-
+void Command::abortCommand(int tid)
+{
+    if (tid != App::NullTransaction) {
+        App::GetApplication().abortTransaction(tid);
+    }
+}
+int Command::transactionID() const
+{
+    return currentTransactionID;
+}
+void Command::resetTransactionID()
+{
+    currentTransactionID = App::NullTransaction;
+}
 bool Command::hasPendingCommand()
 {
-    return !!App::GetApplication().getActiveTransaction();
+    App::Document* doc = App::GetApplication().getActiveDocument();
+    return doc && doc->getBookedTransactionID() != App::NullTransaction;
 }
 
 bool Command::_blockCmd = false;
@@ -723,7 +794,7 @@ void Command::_doCommand(const char* file, int line, DoCmd_Type eType, const cha
     QByteArray format = cmd.toUtf8();
 
 #ifdef FC_LOGUSERACTION
-    Base::Console().log("CmdC: %s\n", format.constData());
+    Base::Console().log("CmdC: {}\n", format.toStdString());
 #endif
 
     _runCommand(file, line, eType, format.constData());
@@ -821,8 +892,11 @@ std::string Command::_assureWorkbench(const char* file, int line, const char* sN
         return actName;
     }
 
-    // else - switch to new WB
-    _doCommand(file, line, Gui, "Gui.activateWorkbench('%s')", sName);
+    QStringList disabledWbNames = DlgSettingsWorkbenchesImp::getDisabledWorkbenches();
+    if (!disabledWbNames.contains(QString::fromUtf8(sName))) {
+        // else - switch to new WB
+        _doCommand(file, line, Gui, "Gui.activateWorkbench('%s')", sName);
+    }
 
     return actName;
 }
@@ -983,8 +1057,25 @@ const char* Command::endCmdHelp()
 
 void Command::applyCommandData(const char* context, Action* action)
 {
-    action->setText(QCoreApplication::translate(context, getMenuText()));
-    action->setToolTip(QCoreApplication::translate(context, getToolTipText()));
+    QString textSuffix;
+    QString toolTipPrefix;
+    if (eMaturity == Base::Maturity::Experimental) {
+        textSuffix = " (" + QCoreApplication::translate("Gui::Command", "Experimental") + ")";
+        toolTipPrefix
+            = QCoreApplication::translate("Gui::Command", "EXPERIMENTAL: this command may change.")
+            + " ";
+    }
+    else if (eMaturity == Base::Maturity::Development) {
+        textSuffix = " (" + QCoreApplication::translate("Gui::Command", "Development preview") + ")";
+        toolTipPrefix = QCoreApplication::translate(
+                            "Gui::Command",
+                            "DEVELOPMENT PREVIEW: this command may change or be removed."
+                        )
+            + " ";
+    }
+    action->setText(QCoreApplication::translate(context, getMenuText()) + textSuffix);
+    action->setToolTip(toolTipPrefix + QCoreApplication::translate(context, getToolTipText()));
+
     action->setWhatsThis(QCoreApplication::translate(context, getWhatsThis()));
     if (sStatusTip) {
         action->setStatusTip(QCoreApplication::translate(context, getStatusTip()));
@@ -1030,7 +1121,7 @@ void Command::printConflictingAccelerators() const
     auto cmd = Application::Instance->commandManager().checkAcceleratorForConflicts(sAccel, this);
     if (cmd) {
         Base::Console().warning(
-            "Accelerator conflict between %s (%s) and %s (%s)\n",
+            "Accelerator conflict between {} ({}) and {} ({})\n",
             sName,
             sAccel,
             cmd->sName,
@@ -1066,7 +1157,9 @@ void Command::updateAction(int)
 
 GroupCommand::GroupCommand(const char* name)
     : Command(name)
-{}
+{
+    eType = 0;
+}
 
 bool GroupCommand::isCheckable() const
 {
@@ -1175,7 +1268,7 @@ void GroupCommand::activated(int iMsg)
 
     Action* cmdAction = v.first->getAction();
     if (_pcAction && cmdAction) {
-        _pcAction->setProperty("defaultAction", QVariant((int)v.second));
+        _pcAction->setProperty("defaultAction", QVariant(doesRememberLast() ? (int)v.second : 0));
         setup(_pcAction);
     }
 }
@@ -1444,11 +1537,11 @@ void PythonCommand::activated(int iMsg)
             }
         }
         catch (const Base::PyException& e) {
-            Base::Console().error("Running the Python command '%s' failed:", sName);
+            Base::Console().error("Running the Python command '{}' failed:", sName);
             e.reportException();
         }
         catch (const Base::Exception&) {
-            Base::Console().error("Running the Python command '%s' failed, try to resume", sName);
+            Base::Console().error("Running the Python command '{}' failed, try to resume", sName);
         }
     }
     else {
@@ -1521,7 +1614,7 @@ Action* PythonCommand::createAction()
         }
     }
     catch (const Base::Exception& e) {
-        Base::Console().error("%s\n", e.what());
+        Base::Console().error("{}\n", e.what());
     }
 
     return pcAction;
@@ -1693,7 +1786,7 @@ void PythonGroupCommand::activated(int iMsg)
     catch (Py::Exception&) {
         Base::PyGILStateLocker lock;
         Base::PyException e;
-        Base::Console().error("Running the Python command '%s' failed:", sName);
+        Base::Console().error("Running the Python command '{}' failed:", sName);
         e.reportException();
     }
 }
@@ -1786,7 +1879,7 @@ Action* PythonGroupCommand::createAction()
     catch (Py::Exception&) {
         Base::PyGILStateLocker lock;
         Base::PyException e;
-        Base::Console().error("createAction() of the Python command '%s' failed:", sName);
+        Base::Console().error("createAction() of the Python command '{}' failed:", sName);
         e.reportException();
     }
 
@@ -2066,16 +2159,19 @@ bool CommandManager::addTo(const char* Name, QWidget* pcWidget)
         // the user
 #ifdef FC_DEBUG
         Base::Console().error(
-            "CommandManager::addTo() try to add an unknown command (%s) to a widget!\n",
+            "CommandManager::addTo() try to add an unknown command ({}) to a widget!\n",
             Name
         );
 #else
-        Base::Console().warning("Unknown command '%s'\n", Name);
+        Base::Console().warning("Unknown command '{}'\n", Name);
 #endif
         return false;
     }
     else {
         Command* pCom = _sCommands[Name];
+        if (!pCom->allowedByMaturity()) {
+            return false;
+        }
         pCom->addTo(pcWidget);
         return true;
     }

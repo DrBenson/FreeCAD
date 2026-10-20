@@ -21,8 +21,7 @@
  *                                                                          *
  ***************************************************************************/
 
-#ifndef STYLEPARAMETERS_PARSER_H
-#define STYLEPARAMETERS_PARSER_H
+#pragma once
 
 #include <memory>
 #include <string>
@@ -81,6 +80,17 @@ struct GuiExport Number: public Expr
     Value evaluate([[maybe_unused]] const EvaluationContext& context) const override;
 };
 
+struct GuiExport StringLiteral: public Expr
+{
+    std::string value;
+
+    explicit StringLiteral(std::string value)
+        : value(std::move(value))
+    {}
+
+    Value evaluate([[maybe_unused]] const EvaluationContext& context) const override;
+};
+
 struct GuiExport Color: public Expr
 {
     Base::Color color;
@@ -92,12 +102,25 @@ struct GuiExport Color: public Expr
     Value evaluate([[maybe_unused]] const EvaluationContext& context) const override;
 };
 
+struct GuiExport TupleLiteral: public Expr
+{
+    struct Element
+    {
+        std::optional<std::string> name;
+        std::unique_ptr<Expr> expression;
+    };
+
+    std::vector<Element> elements;
+
+    Value evaluate(const EvaluationContext& context) const override;
+};
+
 struct GuiExport FunctionCall: public Expr
 {
     std::string functionName;
-    std::vector<std::unique_ptr<Expr>> arguments;
+    TupleLiteral arguments;
 
-    FunctionCall(std::string functionName, std::vector<std::unique_ptr<Expr>> arguments)
+    FunctionCall(std::string functionName, TupleLiteral arguments)
         : functionName(std::move(functionName))
         , arguments(std::move(arguments))
     {}
@@ -132,6 +155,19 @@ struct GuiExport UnaryOp: public Expr
     Value evaluate(const EvaluationContext& context) const override;
 };
 
+struct GuiExport MemberAccess: public Expr
+{
+    std::unique_ptr<Expr> object;
+    std::string member;
+
+    MemberAccess(std::unique_ptr<Expr> object, std::string member)
+        : object(std::move(object))
+        , member(std::move(member))
+    {}
+
+    Value evaluate(const EvaluationContext& context) const override;
+};
+
 class GuiExport Parser
 {
     static constexpr auto rgbFunction = "rgb(";
@@ -156,15 +192,18 @@ private:
     std::unique_ptr<Expr> parseColor();
     bool peekParameter();
     std::unique_ptr<Expr> parseParameter();
-    bool peekFunction();
-    std::unique_ptr<Expr> parseFunctionCall();
+    bool peekIdentifier();
+    std::unique_ptr<Expr> parseIdentifier();
     int parseInt();
     std::unique_ptr<Expr> parseNumber();
     std::string parseUnit();
+    std::string parseMember();
+    bool peekNamedElement();
+    std::unique_ptr<TupleLiteral> parseTuple(
+        std::optional<TupleLiteral::Element> firstElement = std::nullopt
+    );
     bool match(char expected);
     void skipWhitespace();
 };
 
 }  // namespace Gui::StyleParameters
-
-#endif  // STYLEPARAMETERS_PARSER_H

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2015 Przemo Fiszt <przemo@firszt.eu>                    *
 # *   Copyright (c) 2016 Bernd Hahnebach <bernd@bimstatik.org>              *
@@ -405,6 +407,9 @@ class CommandManager:
         )
         FreeCADGui.doCommand(
             'FreeCAD.ActiveDocument.ActiveObject.ViewObject.SelectionStyle = "BoundBox"'
+        )
+        FreeCADGui.doCommand(
+            f"FreeCAD.ActiveDocument.ActiveObject.ViewObject.NoneFieldColor = {self.selobj.ViewObject.NoneFieldColor}"
         )
 
         # hide selected filter

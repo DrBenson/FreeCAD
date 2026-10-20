@@ -24,8 +24,7 @@
  ***************************************************************************/
 
 
-#ifndef PARTGUI_ViewProviderDressUp_H
-#define PARTGUI_ViewProviderDressUp_H
+#pragma once
 
 #include "ViewProvider.h"
 
@@ -64,12 +63,32 @@ public:
     std::string featureIcon() const;
     QString menuName;
 
+    inline bool getHighlightEdgesAsSolid() const
+    {
+        return highlightEdgesAsSolid;
+    }
+    inline void setHighlightEdgesAsSolid(bool b)
+    {
+        this->highlightEdgesAsSolid = b;
+    }
+
+    inline bool getHighlightFacesAsSolid() const
+    {
+        return highlightFacesAsSolid;
+    }
+    inline void setHighlightFacesAsSolid(bool b)
+    {
+        this->highlightFacesAsSolid = b;
+    }
+
 protected:
     bool setEdit(int ModNum) override;
+    void updatePreviewColor() override;
+
+private:
+    bool highlightEdgesAsSolid {false};
+    bool highlightFacesAsSolid {false};
 };
 
 
 }  // namespace PartDesignGui
-
-
-#endif  // PARTGUI_ViewProviderDressUp_H

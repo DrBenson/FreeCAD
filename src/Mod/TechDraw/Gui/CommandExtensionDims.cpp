@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2021 edi                                                *
  *                                                                         *
@@ -21,6 +23,8 @@
  ***************************************************************************/
 
 # include <QApplication>
+# include <QLabel>
+# include <QLineEdit>
 # include <QMessageBox>
 # include <cmath>
 # include <sstream>
@@ -51,7 +55,6 @@
 # include <Mod/TechDraw/App/Preferences.h>
 # include <Mod/TechDraw/App/LineGroup.h>
 
-#include "DlgTemplateField.h"
 #include "DrawGuiUtil.h"
 #include "TaskCustomizeFormat.h"
 #include "TaskSelectLineAttributes.h"
@@ -111,21 +114,36 @@ void execInsertPrefixChar(Gui::Command* cmd, const std::string& prefixFormat) {
     }
 
     std::string prefixText(prefixFormat);
-    if (prefixFormat.find("%s") != std::string::npos) {
-        DlgTemplateField ui(Gui::getMainWindow());
-        ui.setFieldName(QObject::tr("Repeat count").toStdString());
-        ui.setFieldContent("1");
-        if (ui.exec() != QDialog::Accepted) {
+    if (prefixFormat.find("%s") == 0) {
+        QDialog dialog(Gui::getMainWindow());
+        dialog.setWindowTitle(QObject::tr("Prefix Text"));
+
+        QLineEdit edit(&dialog);
+        edit.setAlignment(Qt::AlignRight);
+        QLabel label(QString::fromStdString(prefixFormat.c_str() + 2), &dialog);
+
+        auto hlayout = new QHBoxLayout();
+        hlayout->addWidget(&edit);
+        hlayout->addWidget(&label);
+
+        QDialogButtonBox box(&dialog);
+        box.setStandardButtons(QDialogButtonBox::Ok);
+
+        QVBoxLayout vlayout;
+        vlayout.addLayout(hlayout);
+        vlayout.addWidget(&box);
+        dialog.setLayout(&vlayout);
+
+        QObject::connect(&box, &QDialogButtonBox::accepted, &dialog, &QDialog::accept);
+        if (dialog.exec() != QDialog::Accepted) {
             return;
         }
 
-        QString numberFromDialog = ui.getFieldContent();
-        QString qPrefixText = QStringLiteral("%1× ").arg(numberFromDialog);
-        prefixText = qPrefixText.toStdString();
+        prefixText.replace(0, strlen("%s"), edit.text().toStdString());
     }
     size_t prefixSize = prefixText.capacity();
 
-    Gui::Command::openCommand(QObject::tr("Insert Prefix").toStdString().c_str());
+    cmd->openCommand(QObject::tr("Insert Prefix").toStdString().c_str());
     for (auto selected : selection) {
         auto object = selected.getObject();
         if (object->isDerivedFrom<TechDraw::DrawViewDimension>()) {
@@ -136,7 +154,7 @@ void execInsertPrefixChar(Gui::Command* cmd, const std::string& prefixFormat) {
             dim->FormatSpec.setValue(formatSpec);
         }
     }
-    Gui::Command::commitCommand();
+    cmd->commitCommand();
 }
 
 DEF_STD_CMD_A(CmdTechDrawExtensionInsertDiameter)
@@ -240,7 +258,7 @@ void execRemovePrefixChar(Gui::Command* cmd) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Remove Prefix"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Remove Prefix"));
     for (auto selected : selection)
     {
         auto object = selected.getObject();
@@ -255,7 +273,7 @@ void execRemovePrefixChar(Gui::Command* cmd) {
             }
         }
     }
-    Gui::Command::commitCommand();
+    cmd->commitCommand();
 }
 
 DEF_STD_CMD_A(CmdTechDrawExtensionRemovePrefixChar)
@@ -304,7 +322,7 @@ CmdTechDrawExtensionInsertPrefixGroup::CmdTechDrawExtensionInsertPrefixGroup()
 
 void CmdTechDrawExtensionInsertPrefixGroup::activated(int iMsg)
 {
-    //    Base::Console().message("CMD::ExtensionLinePPGroup - activated(%d)\n", iMsg);
+    //    Base::Console().message("CMD::ExtensionLinePPGroup - activated({})\n", iMsg);
     Gui::TaskView::TaskDialog* dlg = Gui::Control().activeDialog();
     if (dlg) {
         QMessageBox::warning(Gui::getMainWindow(), QObject::tr("Task in progress"),
@@ -328,7 +346,7 @@ void CmdTechDrawExtensionInsertPrefixGroup::activated(int iMsg)
         execRemovePrefixChar(this);
         break;
     default:
-        Base::Console().message("CMD::CVGrp - invalid iMsg: %d\n", iMsg);
+        Base::Console().message("CMD::CVGrp - invalid iMsg: {}\n", iMsg);
     };
 }
 
@@ -414,7 +432,7 @@ void execIncreaseDecreaseDecimal(Gui::Command* cmd, int delta) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Increase/Decrease Decimal"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Increase/Decrease Decimal"));
     std::string numStr;
     for (auto selected : selection) {
         auto object = selected.getObject();
@@ -433,7 +451,7 @@ void execIncreaseDecreaseDecimal(Gui::Command* cmd, int delta) {
             }
         }
     }
-    Gui::Command::commitCommand();
+    cmd->commitCommand();
 }
 
 DEF_STD_CMD_A(CmdTechDrawExtensionIncreaseDecimal)
@@ -513,7 +531,7 @@ CmdTechDrawExtensionIncreaseDecreaseGroup::CmdTechDrawExtensionIncreaseDecreaseG
 
 void CmdTechDrawExtensionIncreaseDecreaseGroup::activated(int iMsg)
 {
-    //    Base::Console().message("CMD::ExtensionIncreaseDecreaseGroup - activated(%d)\n", iMsg);
+    //    Base::Console().message("CMD::ExtensionIncreaseDecreaseGroup - activated({})\n", iMsg);
     Gui::TaskView::TaskDialog* dlg = Gui::Control().activeDialog();
     if (dlg) {
         QMessageBox::warning(Gui::getMainWindow(), QObject::tr("Task in progress"),
@@ -531,7 +549,7 @@ void CmdTechDrawExtensionIncreaseDecreaseGroup::activated(int iMsg)
         execIncreaseDecreaseDecimal(this, -1);
         break;
     default:
-        Base::Console().message("CMD::CVGrp - invalid iMsg: %d\n", iMsg);
+        Base::Console().message("CMD::CVGrp - invalid iMsg: {}\n", iMsg);
     };
 }
 
@@ -599,7 +617,7 @@ void execPosHorizChainDimension(Gui::Command* cmd) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Position Horizontal Chain Dimension"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Position Horizontal Chain Dimension"));
     std::vector<TechDraw::DrawViewDimension*> validDimension;
     validDimension = _getDimensions(selection, "DistanceX");
     if (validDimension.empty()) {
@@ -616,7 +634,7 @@ void execPosHorizChainDimension(Gui::Command* cmd) {
         Base::Vector3d p2 = pp.second();
         dim->X.setValue((p1.x + p2.x) / 2.0);
     }
-    Gui::Command::commitCommand();
+    cmd->commitCommand();
 }
 
 DEF_STD_CMD_A(CmdTechDrawExtensionPosHorizChainDimension)
@@ -660,7 +678,7 @@ void execPosVertChainDimension(Gui::Command* cmd) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Position Vert Chain Dimension"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Position Vert Chain Dimension"));
     std::vector<TechDraw::DrawViewDimension*> validDimension;
     validDimension = _getDimensions(selection, "DistanceY");
     if (validDimension.empty()) {
@@ -678,7 +696,7 @@ void execPosVertChainDimension(Gui::Command* cmd) {
         Base::Vector3d p2 = pp.second();
         dim->Y.setValue((p1.y + p2.y) / -2.0 + 0.5 * fontSize);
     }
-    Gui::Command::commitCommand();
+    cmd->commitCommand();
 }
 
 DEF_STD_CMD_A(CmdTechDrawExtensionPosVertChainDimension)
@@ -722,7 +740,7 @@ void execPosObliqueChainDimension(Gui::Command* cmd) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Position Oblique Chain Dimension"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Position Oblique Chain Dimension"));
     std::vector<TechDraw::DrawViewDimension*> validDimension;
     validDimension = _getDimensions(selection, "Distance");
     if (validDimension.empty()) {
@@ -745,7 +763,7 @@ void execPosObliqueChainDimension(Gui::Command* cmd) {
         dim->X.setValue(p3.x);
         dim->Y.setValue(p3.y);
     }
-    Gui::Command::commitCommand();
+    cmd->commitCommand();
 }
 
 DEF_STD_CMD_A(CmdTechDrawExtensionPosObliqueChainDimension)
@@ -801,7 +819,7 @@ CmdTechDrawExtensionPosChainDimensionGroup::CmdTechDrawExtensionPosChainDimensio
 
 void CmdTechDrawExtensionPosChainDimensionGroup::activated(int iMsg)
 {
-    //    Base::Console().message("CMD::ExtensionPosChainDimensionGroup - activated(%d)\n", iMsg);
+    //    Base::Console().message("CMD::ExtensionPosChainDimensionGroup - activated({})\n", iMsg);
     Gui::TaskView::TaskDialog* dlg = Gui::Control().activeDialog();
     if (dlg) {
         QMessageBox::warning(Gui::getMainWindow(), QObject::tr("Task in progress"),
@@ -822,7 +840,7 @@ void CmdTechDrawExtensionPosChainDimensionGroup::activated(int iMsg)
         execPosObliqueChainDimension(this);
         break;
     default:
-        Base::Console().message("CMD::CVGrp - invalid iMsg: %d\n", iMsg);
+        Base::Console().message("CMD::CVGrp - invalid iMsg: {}\n", iMsg);
     };
 }
 
@@ -908,7 +926,7 @@ void execCascadeHorizDimension(Gui::Command* cmd) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Cascade Horizontal Dimension"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Cascade Horizontal Dimension"));
     std::vector<TechDraw::DrawViewDimension*> validDimension;
     validDimension = _getDimensions(selection, "DistanceX");
     if (validDimension.empty()) {
@@ -929,7 +947,7 @@ void execCascadeHorizDimension(Gui::Command* cmd) {
         dim->X.setValue((p1.x + p2.x) / 2.0);
         yMaster = yMaster + dimDistance;
     }
-    Gui::Command::commitCommand();
+    cmd->commitCommand();
 }
 
 DEF_STD_CMD_A(CmdTechDrawExtensionCascadeHorizDimension)
@@ -974,7 +992,7 @@ void execCascadeVertDimension(Gui::Command* cmd) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Cascade Vertical Dimension"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Cascade Vertical Dimension"));
     std::vector<TechDraw::DrawViewDimension*> validDimension;
     validDimension = _getDimensions(selection, "DistanceY");
     if (validDimension.empty()) {
@@ -996,7 +1014,7 @@ void execCascadeVertDimension(Gui::Command* cmd) {
         dim->Y.setValue((p1.y + p2.y) / -2.0 + 0.5 * fontSize);
         xMaster = xMaster + dimDistance;
     }
-    Gui::Command::commitCommand();
+    cmd->commitCommand();
 }
 
 DEF_STD_CMD_A(CmdTechDrawExtensionCascadeVertDimension)
@@ -1041,7 +1059,7 @@ void execCascadeObliqueDimension(Gui::Command* cmd) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Cascade Oblique Dimension"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Cascade Oblique Dimension"));
     std::vector<TechDraw::DrawViewDimension*> validDimension;
     validDimension = _getDimensions(selection, "Distance");
     if (validDimension.empty()) {
@@ -1071,7 +1089,7 @@ void execCascadeObliqueDimension(Gui::Command* cmd) {
         dim->Y.setValue(p3.y);
         i = i + 1;
     }
-    Gui::Command::commitCommand();
+    cmd->commitCommand();
 }
 
 DEF_STD_CMD_A(CmdTechDrawExtensionCascadeObliqueDimension)
@@ -1129,7 +1147,7 @@ CmdTechDrawExtensionCascadeDimensionGroup::CmdTechDrawExtensionCascadeDimensionG
 
 void CmdTechDrawExtensionCascadeDimensionGroup::activated(int iMsg)
 {
-    //    Base::Console().message("CMD::ExtensionCascadeDimansionGroup - activated(%d)\n", iMsg);
+    //    Base::Console().message("CMD::ExtensionCascadeDimansionGroup - activated({})\n", iMsg);
     Gui::TaskView::TaskDialog* dlg = Gui::Control().activeDialog();
     if (dlg) {
         QMessageBox::warning(Gui::getMainWindow(), QObject::tr("Task in progress"),
@@ -1150,7 +1168,7 @@ void CmdTechDrawExtensionCascadeDimensionGroup::activated(int iMsg)
         execCascadeObliqueDimension(this);
         break;
     default:
-        Base::Console().message("CMD::CVGrp - invalid iMsg: %d\n", iMsg);
+        Base::Console().message("CMD::CVGrp - invalid iMsg: {}\n", iMsg);
     };
 }
 
@@ -1240,7 +1258,7 @@ void execCreateHorizChainDimension(Gui::Command* cmd) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Create Horizontal Chain Dimension"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Create Horizontal Chain Dimension"));
     const std::vector<std::string> subNames = selection[0].getSubNames();
     std::vector<dimVertex> allVertexes;
     allVertexes = _getVertexInfo(objFeat, subNames);
@@ -1261,7 +1279,7 @@ void execCreateHorizChainDimension(Gui::Command* cmd) {
     objFeat->refreshCEGeoms();
     objFeat->requestPaint();
     cmd->getSelection().clearSelection();
-    Gui::Command::commitCommand();
+    cmd->commitCommand();
 }
 
 DEF_STD_CMD_A(CmdTechDrawExtensionCreateHorizChainDimension)
@@ -1305,7 +1323,7 @@ void execCreateVertChainDimension(Gui::Command* cmd) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Create Vert Chain dimension"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Create Vert Chain dimension"));
     const std::vector<std::string> subNames = selection[0].getSubNames();
     std::vector<dimVertex> allVertexes;
     allVertexes = _getVertexInfo(objFeat, subNames);
@@ -1327,7 +1345,7 @@ void execCreateVertChainDimension(Gui::Command* cmd) {
     objFeat->refreshCEGeoms();
     objFeat->requestPaint();
     cmd->getSelection().clearSelection();
-    Gui::Command::commitCommand();
+    cmd->commitCommand();
 }
 
 DEF_STD_CMD_A(CmdTechDrawExtensionCreateVertChainDimension)
@@ -1370,7 +1388,7 @@ void execCreateObliqueChainDimension(Gui::Command* cmd) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Create oblique chain dimension"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Create oblique chain dimension"));
 
     std::vector<TechDraw::ReferenceEntry> refs;
     for (auto& subName : selection[0].getSubNames()) {
@@ -1379,13 +1397,13 @@ void execCreateObliqueChainDimension(Gui::Command* cmd) {
 
     auto dims = makeObliqueChainDimension(refs);
     if(dims.empty()){
-        Gui::Command::abortCommand();
+        cmd->abortCommand();
     }
     else {
         objFeat->refreshCEGeoms();
         objFeat->requestPaint();
         cmd->getSelection().clearSelection();
-        Gui::Command::commitCommand();
+        cmd->commitCommand();
     }
 }
 
@@ -1500,7 +1518,7 @@ CmdTechDrawExtensionCreateChainDimensionGroup::CmdTechDrawExtensionCreateChainDi
 
 void CmdTechDrawExtensionCreateChainDimensionGroup::activated(int iMsg)
 {
-    //    Base::Console().message("CMD::ExtensionCascadeDimansionGroup - activated(%d)\n", iMsg);
+    //    Base::Console().message("CMD::ExtensionCascadeDimansionGroup - activated({})\n", iMsg);
     Gui::TaskView::TaskDialog* dlg = Gui::Control().activeDialog();
     if (dlg) {
         QMessageBox::warning(Gui::getMainWindow(), QObject::tr("Task in progress"),
@@ -1521,7 +1539,7 @@ void CmdTechDrawExtensionCreateChainDimensionGroup::activated(int iMsg)
         execCreateObliqueChainDimension(this);
         break;
     default:
-        Base::Console().message("CMD::CVGrp - invalid iMsg: %d\n", iMsg);
+        Base::Console().message("CMD::CVGrp - invalid iMsg: {}\n", iMsg);
     };
 }
 
@@ -1599,7 +1617,7 @@ void execCreateHorizCoordDimension(Gui::Command* cmd) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Create Horizontal Coord Dimension"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Create Horizontal Coord Dimension"));
     const std::vector<std::string> subNames = selection[0].getSubNames();
     std::vector<dimVertex> allVertexes;
     allVertexes = _getVertexInfo(objFeat, subNames);
@@ -1626,7 +1644,7 @@ void execCreateHorizCoordDimension(Gui::Command* cmd) {
     objFeat->refreshCEGeoms();
     objFeat->requestPaint();
     cmd->getSelection().clearSelection();
-    Gui::Command::commitCommand();
+    cmd->commitCommand();
 }
 
 DEF_STD_CMD_A(CmdTechDrawExtensionCreateHorizCoordDimension)
@@ -1667,7 +1685,7 @@ void execCreateVertCoordDimension(Gui::Command* cmd) {
     if (!_checkSelObjAndSubs(cmd, selection, objFeat, QT_TRANSLATE_NOOP("QObject","TechDraw Create Vertical Coord dimension"))) {
         return;
     }
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Create vert coord dimension"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Create vert coord dimension"));
     const std::vector<std::string> subNames = selection[0].getSubNames();
     std::vector<dimVertex> allVertexes;
     allVertexes = _getVertexInfo(objFeat, subNames);
@@ -1695,7 +1713,7 @@ void execCreateVertCoordDimension(Gui::Command* cmd) {
     objFeat->refreshCEGeoms();
     objFeat->requestPaint();
     cmd->getSelection().clearSelection();
-    Gui::Command::commitCommand();
+    cmd->commitCommand();
 }
 
 DEF_STD_CMD_A(CmdTechDrawExtensionCreateVertCoordDimension)
@@ -1737,7 +1755,7 @@ void execCreateObliqueCoordDimension(Gui::Command* cmd) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Create oblique coord dimension"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Create oblique coord dimension"));
 
     std::vector<TechDraw::ReferenceEntry> refs;
     for (auto& subName : selection[0].getSubNames()) {
@@ -1746,13 +1764,13 @@ void execCreateObliqueCoordDimension(Gui::Command* cmd) {
 
     auto dims = makeObliqueCoordDimension(refs);
     if (dims.empty()) {
-        Gui::Command::abortCommand();
+        cmd->abortCommand();
     }
     else {
         objFeat->refreshCEGeoms();
         objFeat->requestPaint();
         cmd->getSelection().clearSelection();
-        Gui::Command::commitCommand();
+        cmd->commitCommand();
     }
 }
 
@@ -1869,7 +1887,7 @@ CmdTechDrawExtensionCreateCoordDimensionGroup::CmdTechDrawExtensionCreateCoordDi
 
 void CmdTechDrawExtensionCreateCoordDimensionGroup::activated(int iMsg)
 {
-    //    Base::Console().message("CMD::ExtensionCascadeDimansionGroup - activated(%d)\n", iMsg);
+    //    Base::Console().message("CMD::ExtensionCascadeDimansionGroup - activated({})\n", iMsg);
     Gui::TaskView::TaskDialog* dlg = Gui::Control().activeDialog();
     if (dlg) {
         QMessageBox::warning(Gui::getMainWindow(), QObject::tr("Task in progress"),
@@ -1890,7 +1908,7 @@ void CmdTechDrawExtensionCreateCoordDimensionGroup::activated(int iMsg)
         execCreateObliqueCoordDimension(this);
         break;
     default:
-        Base::Console().message("CMD::CVGrp - invalid iMsg: %d\n", iMsg);
+        Base::Console().message("CMD::CVGrp - invalid iMsg: {}\n", iMsg);
     };
 }
 
@@ -1968,7 +1986,7 @@ void execCreateHorizChamferDimension(Gui::Command* cmd) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Create Horizontal Chamfer Dimension"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Create Horizontal Chamfer Dimension"));
     const std::vector<std::string> subNames = selection[0].getSubNames();
     std::vector<dimVertex> allVertexes;
     allVertexes = _getVertexInfo(objFeat, subNames);
@@ -1984,7 +2002,7 @@ void execCreateHorizChamferDimension(Gui::Command* cmd) {
         dim->Y.setValue(-yMax);
         float dx = allVertexes[0].point.x - allVertexes[1].point.x;
         float dy = allVertexes[0].point.y - allVertexes[1].point.y;
-        float alpha = std::round(Base::toDegrees(std::abs<float>(std::atan(dy / dx))));
+        float alpha = std::round(Base::toDegrees(std::abs(std::atan(dy / dx))));
         std::string sAlpha = std::to_string((int)alpha);
         std::string formatSpec = dim->FormatSpec.getStrValue();
         formatSpec = formatSpec + " x" + sAlpha + "°";
@@ -1992,7 +2010,7 @@ void execCreateHorizChamferDimension(Gui::Command* cmd) {
         objFeat->requestPaint();
         cmd->getSelection().clearSelection();
     }
-    Gui::Command::commitCommand();
+    cmd->commitCommand();
 }
 
 DEF_STD_CMD_A(CmdTechDrawExtensionCreateHorizChamferDimension)
@@ -2034,7 +2052,7 @@ void execCreateVertChamferDimension(Gui::Command* cmd) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Create Vert Chamfer Dimension"));
+    cmd->openCommand(QT_TRANSLATE_NOOP("Command", "Create Vert Chamfer Dimension"));
     const std::vector<std::string> subNames = selection[0].getSubNames();
     std::vector<dimVertex> allVertexes;
     allVertexes = _getVertexInfo(objFeat, subNames);
@@ -2050,7 +2068,7 @@ void execCreateVertChamferDimension(Gui::Command* cmd) {
         dim->Y.setValue(-mid.y);
         float dx = allVertexes[0].point.x - allVertexes[1].point.x;
         float dy = allVertexes[0].point.y - allVertexes[1].point.y;
-        float alpha = std::round(Base::toDegrees(std::abs<float>(std::atan(dx / dy))));
+        float alpha = std::round(Base::toDegrees(std::abs(std::atan(dx / dy))));
         std::string sAlpha = std::to_string((int)alpha);
         std::string formatSpec = dim->FormatSpec.getStrValue();
         formatSpec = formatSpec + " x" + sAlpha + "°";
@@ -2058,7 +2076,7 @@ void execCreateVertChamferDimension(Gui::Command* cmd) {
         objFeat->requestPaint();
         cmd->getSelection().clearSelection();
     }
-    Gui::Command::commitCommand();
+    cmd->commitCommand();
 }
 
 DEF_STD_CMD_A(CmdTechDrawExtensionCreateVertChamferDimension)
@@ -2107,7 +2125,7 @@ CmdTechDrawExtensionChamferDimensionGroup::CmdTechDrawExtensionChamferDimensionG
 
 void CmdTechDrawExtensionChamferDimensionGroup::activated(int iMsg)
 {
-    //    Base::Console().message("CMD::ExtensionIncreaseDecreaseGroup - activated(%d)\n", iMsg);
+    //    Base::Console().message("CMD::ExtensionIncreaseDecreaseGroup - activated({})\n", iMsg);
     Gui::TaskView::TaskDialog* dlg = Gui::Control().activeDialog();
     if (dlg) {
         QMessageBox::warning(Gui::getMainWindow(), QObject::tr("Task in progress"),
@@ -2125,7 +2143,7 @@ void CmdTechDrawExtensionChamferDimensionGroup::activated(int iMsg)
         execCreateVertChamferDimension(this);
         break;
     default:
-        Base::Console().message("CMD::CVGrp - invalid iMsg: %d\n", iMsg);
+        Base::Console().message("CMD::CVGrp - invalid iMsg: {}\n", iMsg);
     };
 }
 
@@ -2209,7 +2227,7 @@ void CmdTechDrawExtensionCreateLengthArc::activated(int iMsg) {
         return;
     }
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Create Arc Length Dimension"));
+    openCommand(QT_TRANSLATE_NOOP("Command", "Create Arc Length Dimension"));
     ReferenceEntry ref(objFeat, selection[0].getSubNames()[0]);
 
     TechDraw::DrawViewDimension* dim = makeArcLengthDimension(ref);
@@ -2217,10 +2235,10 @@ void CmdTechDrawExtensionCreateLengthArc::activated(int iMsg) {
     if (dim) {
         objFeat->refreshCEGeoms();
         objFeat->requestPaint();
-        Gui::Command::commitCommand();
+        commitCommand();
     }
     else {
-        Gui::Command::abortCommand();
+        abortCommand();
     }
 }
 

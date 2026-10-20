@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2017 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -21,6 +23,7 @@
  ***************************************************************************/
 
 
+#include <cctype>
 #include <cmath>
 #include <iomanip>
 #include <sstream>
@@ -41,6 +44,21 @@
 
 
 using namespace TechDraw;
+
+namespace
+{
+void trimPatternLineEnd(std::string& line)
+{
+    while (!line.empty()) {
+        unsigned char ch = static_cast<unsigned char>(line.back());
+        if (std::isspace(ch) || std::iscntrl(ch)) {
+            line.pop_back();
+            continue;
+        }
+        break;
+    }
+}
+}
 
 double LineSet::getMinX()
 {
@@ -228,7 +246,7 @@ void PATLineSpec::load(std::string& lineSpec)
 {
     std::vector<double> values = split(lineSpec);
     if (values.size() < 5) {
-        Base::Console().message( "PATLineSpec::load(%s) invalid entry in pattern\n", lineSpec.c_str() );
+        Base::Console().message( "PATLineSpec::load({}) invalid entry in pattern\n", lineSpec );
         return;
     }
     m_angle    = values[0];
@@ -254,7 +272,7 @@ std::vector<double> PATLineSpec::split(std::string line)
             result.push_back(std::stod(cell));
         }
         catch (const std::invalid_argument& ia) {
-            Base::Console().warning("Invalid number in cell: %s (%s) \n", cell.c_str(), ia.what());
+            Base::Console().warning("Invalid number in cell: {} ({}) \n", cell, ia.what());
             result.push_back(0.0);
         }
     }
@@ -263,17 +281,17 @@ std::vector<double> PATLineSpec::split(std::string line)
 
 void PATLineSpec::dump(const char* title)
 {
-    Base::Console().message( "DUMP: %s\n", title);
-    Base::Console().message( "Angle: %.3f\n", m_angle);
-    Base::Console().message( "Origin: %s\n", DrawUtil::formatVector(m_origin).c_str());
-    Base::Console().message( "Offset: %.3f\n", m_offset);
-    Base::Console().message( "Interval: %.3f\n", m_interval);
+    Base::Console().message( "DUMP: {}\n", title);
+    Base::Console().message( "Angle: {:.3f}\n", m_angle);
+    Base::Console().message( "Origin: {}\n", DrawUtil::formatVector(m_origin));
+    Base::Console().message( "Offset: {:.3f}\n", m_offset);
+    Base::Console().message( "Interval: {:.3f}\n", m_interval);
 //    std::stringstream ss;
 //    for (auto& d: m_dashParms) {
 //        ss << d << ", ";
 //    }
 //    ss << "end";
-//    Base::Console().message( "DashSpec: %s\n", ss.str().c_str());
+//    Base::Console().message( "DashSpec: {}\n", ss.str());
     m_dashParms.dump("dashspec");
 }
 
@@ -307,7 +325,7 @@ std::vector<PATLineSpec> PATLineSpec::getSpecsForPattern(std::string& parmFile, 
 
 bool  PATLineSpec::findPatternStart(std::ifstream& inFile, std::string& parmName)
 {
-//    Base::Console().message("HL::findPatternStart() - parmName: %s\n", parmName.c_str());
+//    Base::Console().message("HL::findPatternStart() - parmName: {}\n", parmName);
     while (inFile.good() ){
          std::string line;
          std::getline(inFile, line);
@@ -338,9 +356,9 @@ bool  PATLineSpec::findPatternStart(std::ifstream& inFile, std::string& parmName
 std::vector<std::string> PATLineSpec::loadPatternDef(std::ifstream& inFile)
 {
     std::vector<std::string> result;
-    while ( inFile.good() ){
-        std::string line;
-        std::getline(inFile, line);
+    std::string line;
+    while (std::getline(inFile, line)) {
+        trimPatternLineEnd(line);
         std::string nameTag = line.substr(0, 1);
         if ((nameTag == ";")  ||
              (nameTag == " ") ||
@@ -455,10 +473,8 @@ void DashSpec::dump(const char* title)
     for (auto& p: m_parms) {
         ss << p << ", ";
     }
-    Base::Console().message("DUMP - DashSpec - %s\n", ss.str().c_str());
+    Base::Console().message("DUMP - DashSpec - {}\n", ss.str());
 }
-
-
 
 
 

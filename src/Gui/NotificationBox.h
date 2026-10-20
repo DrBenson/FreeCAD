@@ -20,10 +20,9 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef GUI_NOTIFICATIONBOX_H
-#define GUI_NOTIFICATIONBOX_H
+#pragma once
 
-#include <type_traits>
+#include <utility>
 
 #include <QFont>
 #include <QPoint>
@@ -114,20 +113,12 @@ public:
 
 inline NotificationBox::Options operator|(NotificationBox::Options lhs, NotificationBox::Options rhs)
 {
-    return static_cast<NotificationBox::Options>(
-        static_cast<std::underlying_type<NotificationBox::Options>::type>(lhs)
-        | static_cast<std::underlying_type<NotificationBox::Options>::type>(rhs)
-    );
+    return static_cast<NotificationBox::Options>(std::to_underlying(lhs) | std::to_underlying(rhs));
 }
 
 inline bool operator&(NotificationBox::Options lhs, NotificationBox::Options rhs)
 {
-    return (
-        static_cast<std::underlying_type<NotificationBox::Options>::type>(lhs)
-        & static_cast<std::underlying_type<NotificationBox::Options>::type>(rhs)
-    );
+    return (std::to_underlying(lhs) & std::to_underlying(rhs));
 }
 
 }  // namespace Gui
-
-#endif  // GUI_NOTIFICATIONBOX_H

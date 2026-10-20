@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2002,2003 Juergen Riegel <juergen.riegel@web.de>        *
 # *                                                                         *
@@ -27,10 +29,6 @@
 # This is the second one of three init scripts, the third one
 # runs when the gui is up
 
-import TechDrawGui
-FreeCADGui.addLanguagePath(":/translations")
-FreeCADGui.addIconPath(":/icons")
-FreeCADGui.updateLocale()
 
 class TechDrawWorkbench(Workbench):
     "Technical Drawing workbench object"
@@ -40,8 +38,8 @@ class TechDrawWorkbench(Workbench):
             FreeCAD.getResourceDir()
             + "Mod/TechDraw/Resources/icons/preferences-techdraw.svg"
         )
-        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "TechDraw")
-        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Technical Drawing workbench")
+        self.__class__.MenuText = "TechDraw"
+        self.__class__.ToolTip = "Technical Drawing workbench"
 
     def Initialize(self):
         # load the module
@@ -64,7 +62,7 @@ class TechDrawWorkbench(Workbench):
 Gui.addWorkbench(TechDrawWorkbench())
 
 # Append the export handler
-FreeCAD.addExportType(FreeCAD.Qt.translate("QObject", "Technical Drawing (*.svg *.dxf *.pdf)"), "TechDrawGui")
+FreeCAD.addExportType("Technical Drawing (*.svg *.dxf *.pdf)", "TechDrawGui")
 
 FreeCAD.__unit_test__ += ["TestTechDrawGui"]
 

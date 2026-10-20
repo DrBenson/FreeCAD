@@ -22,10 +22,11 @@
  ***************************************************************************/
 
 
-#ifndef ASSEMBLY_AssemblyObject_H
-#define ASSEMBLY_AssemblyObject_H
+#pragma once
 
 #include <boost/signals2.hpp>
+#include <unordered_map>
+#include <vector>
 
 #include <Mod/Assembly/AssemblyGlobal.h>
 
@@ -92,9 +93,9 @@ public:
     /* Solve the assembly. It will update first the joints, solve, update placements of the parts
     and redraw the joints Args : enableRedo : This store initial positions to enable undo while
     being in an active transaction (joint creation).*/
-    int solve(bool enableRedo = false, bool updateJCS = true);
+    int solve(bool enableRedo = false);
     int generateSimulation(App::DocumentObject* sim);
-    int updateForFrame(size_t index, bool updateJCS = true);
+    int updateForFrame(size_t index);
     size_t numberOfFrames();
     void preDrag(std::vector<App::DocumentObject*> dragParts);
     void doDragStep();
@@ -104,6 +105,7 @@ public:
     void clearUndo();
 
     void exportAsASMT(std::string fileName);
+    bool requiresRigidSolveForMove(const std::vector<App::DocumentObject*>& movedParts);
 
     Base::Placement getMbdPlacement(std::shared_ptr<MbD::ASMTPart> mbdPart);
     bool validateNewPlacements();
@@ -113,6 +115,8 @@ public:
 
     // This makes sure that LinkGroups or sub-assemblies have identity placements.
     void ensureIdentityPlacements();
+    // Make sure grounded joints reflect Placement read-only states
+    void syncGroundedJoints();
 
     // Ondsel Solver interface
     std::shared_ptr<MbD::ASMTAssembly> makeMbdAssembly();
@@ -140,7 +144,8 @@ public:
     std::string handleOneSideOfJoint(
         App::DocumentObject* joint,
         const char* propRefName,
-        const char* propPlcName
+        const char* propPlcName,
+        const std::string& markerName = std::string()
     );
     void getRackPinionMarkers(
         App::DocumentObject* joint,
@@ -155,12 +160,9 @@ public:
     template<typename T>
     T* getGroup();
 
-    std::vector<App::DocumentObject*> getJoints(
-        bool updateJCS = true,
-        bool delBadJoints = false,
-        bool subJoints = true
-    );
+    std::vector<App::DocumentObject*> getJoints(bool delBadJoints = false, bool subJoints = true);
     std::vector<App::DocumentObject*> getGroundedJoints();
+    std::vector<App::DocumentObject*> getRigidGroups();
     std::vector<App::DocumentObject*> getJointsOfObj(App::DocumentObject* obj);
     std::vector<App::DocumentObject*> getJointsOfPart(App::DocumentObject* part);
     App::DocumentObject* getJointOfPartConnectingToGround(
@@ -168,6 +170,7 @@ public:
         std::string& name,
         const std::vector<App::DocumentObject*>& excludeJoints = {}
     );
+    App::DocumentObject* getJointOfPartForUngroundedDrag(App::DocumentObject* part, std::string& name);
     std::unordered_set<App::DocumentObject*> getGroundedParts();
     std::unordered_set<App::DocumentObject*> fixGroundedParts();
     void fixGroundedPart(App::DocumentObject* obj, Base::Placement& plc, std::string& jointName);
@@ -259,9 +262,19 @@ public:
     fastsignals::signal<void()> signalSolverUpdate;
 
 private:
+    void rebuildRigidClusters();
+    App::DocumentObject* getRigidRepresentative(App::DocumentObject* part) const;
+    const std::vector<App::DocumentObject*>* getRigidMembers(App::DocumentObject* part) const;
+    void syncActiveRigidGroupPlacements();
+    void updateRigidPlacementCache();
+    void prepareMbdForIslandDrag(std::vector<App::DocumentObject*> dragParts);
+
     std::shared_ptr<MbD::ASMTAssembly> mbdAssembly;
 
     std::unordered_map<App::DocumentObject*, MbDPartData> objectPartMap;
+    std::unordered_map<App::DocumentObject*, App::DocumentObject*> rigidRepByPart;
+    std::unordered_map<App::DocumentObject*, std::vector<App::DocumentObject*>> rigidMembersByRep;
+    std::unordered_map<App::DocumentObject*, Base::Placement> rigidPlacementCache;
     std::vector<std::pair<App::DocumentObject*, double>> objMasses;
     std::vector<App::DocumentObject*> draggedParts;
     std::vector<App::DocumentObject*> motions;
@@ -269,6 +282,9 @@ private:
     std::vector<std::pair<App::DocumentObject*, Base::Placement>> previousPositions;
 
     bool bundleFixed;
+
+    // True while solve() is running; breaks the solve()/updateSolveStatus() cycle.
+    bool solveInProgress {false};
 
     int lastDoF;
     bool lastHasConflict;
@@ -284,6 +300,3 @@ private:
 };
 
 }  // namespace Assembly
-
-
-#endif  // ASSEMBLY_AssemblyObject_H

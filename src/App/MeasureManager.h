@@ -22,8 +22,7 @@
  *                                                                         *
  **************************************************************************/
 
-#ifndef MEASUREMANAGER_H
-#define MEASUREMANAGER_H
+#pragma once
 
 
 #include <vector>
@@ -51,10 +50,14 @@ enum class MeasureElementType
     CIRCLE,
     ARC,
     CURVE,  // Has a length but no radius or axis
+    DISC,
     PLANE,
     CYLINDER,
     VOLUME,
     SURFACE,
+    TORUS,
+    SPHERE,
+    CONE,
 };
 
 
@@ -119,7 +122,7 @@ public:
     static const std::vector<MeasureType*> getMeasureTypes();
     static Py::Tuple getSelectionPy(const App::MeasureSelection& selection);
     static std::vector<MeasureType*> getValidMeasureTypes(App::MeasureSelection selection,
-                                                          std::string mode);
+                                                          std::string modeIdentifier);
 
 
 private:
@@ -129,5 +132,3 @@ private:
 
 
 }  // namespace App
-
-#endif  // MEASUREMANAGER_H

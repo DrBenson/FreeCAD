@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2009 Juergen Riegel <juergen.riegel@web.de>             *
 # *   Copyright (c) 2020 Bernd Hahnebach <bernd@bimstatik.org>              *
@@ -48,11 +50,6 @@ from FreeCADGui import Workbench
 
 # needed imports
 from femguiutils.migrate_gui import FemMigrateGui
-import FemGui
- 
-FreeCADGui.addLanguagePath(":/translations")
-FreeCADGui.addIconPath(":/icons")
-FreeCADGui.updateLocale()
 
 # migrate old FEM Gui objects
 sys.meta_path.append(FemMigrateGui())
@@ -69,12 +66,11 @@ class FemWorkbench(Workbench):
 
     def __init__(self):
         self.__class__.Icon = FreeCAD.getResourceDir() + "Mod/Fem/Resources/icons/FemWorkbench.svg"
-        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "FEM")
-        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "FEM workbench")
+        self.__class__.MenuText = "FEM"
+        self.__class__.ToolTip = "FEM workbench"
 
     def Initialize(self):
         # load the module
-        FreeCADGui.addIconPath(":/icons")
         import Fem
         import FemGui
         import femcommands.commands

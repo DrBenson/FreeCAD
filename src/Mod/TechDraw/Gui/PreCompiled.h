@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2007 Jürgen Riegel <juergen.riegel@web.de>              *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DRAWINGGUI_PRECOMPILED_H
-#define DRAWINGGUI_PRECOMPILED_H
+#pragma once
 
 #include <FCConfig.h>
 
@@ -64,5 +65,3 @@
 
 // Open Inventor
 #include <Inventor/SbVec3f.h>
-
-#endif // DRAWINGGUI_PRECOMPILED_H

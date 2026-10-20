@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2016 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DRAWINGGUI_QGIPRIMPATH_H
-#define DRAWINGGUI_QGIPRIMPATH_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -58,6 +59,7 @@ public:
     virtual void setPrettySel();
     virtual void setWidth(double w);
     virtual double getWidth() { return m_pen.widthF();}
+    void setEdgeFuzzScale(double scale) { m_edgeFuzz = m_edgeFuzzBase * scale; }
     Qt::PenStyle getStyle() { return m_pen.style(); }
     void setStyle(Qt::PenStyle s);
     void setStyle(int s);
@@ -73,6 +75,8 @@ public:
     void resetFill();
     void setFillColor(QColor c);
     QColor getFillColor() { return getDefaultFillColor(); }
+
+    void setHighlightFill(bool on) { m_highlightFill = on; }
 
 protected:
     void hoverEnterEvent(QGraphicsSceneHoverEvent *event) override;
@@ -107,10 +111,9 @@ protected:
     QColor m_colNormalFill;                     //current Normal fill color def or plain fill
     Qt::BrushStyle m_fillNormal;               //current Normal fill style
 
-private:
-
+    double m_edgeFuzz;
+    double m_edgeFuzzBase;
+    bool m_highlightFill = true;
 };
 
 } // namespace MDIViewPageGui
-
-#endif // DRAWINGGUI_QGIPRIMPATH_H

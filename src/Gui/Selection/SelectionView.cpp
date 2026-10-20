@@ -129,6 +129,17 @@ void SelectionView::leaveEvent(QEvent*)
     Selection().rmvPreselect();
 }
 
+static QStringList makeSelectionData(const char* docName, const char* objName, const char* subName)
+{
+    QStringList list;
+    list << QString::fromUtf8(docName);
+    list << QString::fromUtf8(objName);
+    if (QString sub = QString::fromUtf8(subName); !sub.isEmpty()) {
+        list << sub;
+    }
+    return list;
+}
+
 /// @cond DOXERR
 void SelectionView::onSelectionChanged(const SelectionChanges& Reason)
 {
@@ -165,7 +176,7 @@ void SelectionView::onSelectionChanged(const SelectionChanges& Reason)
         str << QString::fromUtf8(docName);
         str << "#";
         str << QString::fromUtf8(objName);
-        if (subName != 0 && subName[0] != 0) {
+        if (!QString::fromUtf8(subName).isEmpty()) {
             str << ".";
             /* Original code doesn't take account of histories in subelement names and displays
              * them inadvertently.  Let's not do that.
@@ -192,15 +203,13 @@ void SelectionView::onSelectionChanged(const SelectionChanges& Reason)
 
     if (Reason.Type == SelectionChanges::AddSelection) {
         // save as user data
-        QStringList list;
-        list << QString::fromUtf8(Reason.pDocName);
-        list << QString::fromUtf8(Reason.pObjectName);
+        QStringList list = makeSelectionData(Reason.pDocName, Reason.pObjectName, Reason.pSubName);
         App::Document* doc = App::GetApplication().getDocument(Reason.pDocName);
         App::DocumentObject* obj = doc->getObject(Reason.pObjectName);
         getSelectionName(str, Reason.pDocName, Reason.pObjectName, Reason.pSubName, obj);
 
         // insert the selection as item
-        QListWidgetItem* item = new QListWidgetItem(selObject, selectionView);
+        auto* item = new QListWidgetItem(selObject, selectionView);
         item->setData(Qt::UserRole, list);
     }
     else if (Reason.Type == SelectionChanges::ClrSelection) {
@@ -236,14 +245,12 @@ void SelectionView::onSelectionChanged(const SelectionChanges& Reason)
             = Gui::Selection().getSelection(Reason.pDocName, ResolveMode::NoResolve);
         for (const auto& it : objs) {
             // save as user data
-            QStringList list;
-            list << QString::fromUtf8(it.DocName);
-            list << QString::fromUtf8(it.FeatName);
+            QStringList list = makeSelectionData(it.DocName, it.FeatName, it.SubName);
 
             App::Document* doc = App::GetApplication().getDocument(it.DocName);
             App::DocumentObject* obj = doc->getObject(it.FeatName);
             getSelectionName(str, it.DocName, it.FeatName, it.SubName, obj);
-            QListWidgetItem* item = new QListWidgetItem(selObject, selectionView);
+            auto* item = new QListWidgetItem(selObject, selectionView);
             item->setData(Qt::UserRole, list);
             selObject.clear();
         }
@@ -273,7 +280,9 @@ void SelectionView::onSelectionChanged(const SelectionChanges& Reason)
                 this->y = sel.y;
                 this->z = sel.z;
 
-                new QListWidgetItem(selObject, pickList);
+                QStringList list = makeSelectionData(sel.DocName, sel.FeatName, sel.SubName);
+                auto* item = new QListWidgetItem(selObject, pickList);
+                item->setData(Qt::UserRole, list);
             }
         }
     }
@@ -293,13 +302,12 @@ void SelectionView::search(const QString& text)
             for (auto it : objects) {
                 QString label = QString::fromUtf8(it->Label.getValue());
                 if (label.contains(text, Qt::CaseInsensitive)) {
-                    searchList.push_back(it);
+                    searchList.emplace_back(it);
                     // save as user data
                     QString selObject;
                     QTextStream str(&selObject);
-                    QStringList list;
-                    list << QString::fromUtf8(doc->getName());
-                    list << QString::fromUtf8(it->getNameInDocument());
+                    QStringList list
+                        = makeSelectionData(doc->getName(), it->getNameInDocument(), nullptr);
                     // build name
                     str << QString::fromUtf8(doc->Label.getValue());
                     str << "#";
@@ -307,7 +315,7 @@ void SelectionView::search(const QString& text)
                     str << " (";
                     str << label;
                     str << ")";
-                    QListWidgetItem* item = new QListWidgetItem(selObject, selectionView);
+                    auto* item = new QListWidgetItem(selObject, selectionView);
                     item->setData(Qt::UserRole, list);
                 }
             }
@@ -319,11 +327,11 @@ void SelectionView::search(const QString& text)
 void SelectionView::validateSearch()
 {
     if (!searchList.empty()) {
-        App::Document* doc = App::GetApplication().getActiveDocument();
-        if (doc) {
-            Gui::Selection().clearSelection();
-            for (auto it : searchList) {
-                Gui::Selection().addSelection(doc->getName(), it->getNameInDocument(), nullptr);
+        Gui::Selection().clearSelection();
+        for (const auto& it : searchList) {
+            if (it.getObject()) {  // skip objects deleted since the search
+                Gui::Selection()
+                    .addSelection(it.getDocumentName().c_str(), it.getObjectName().c_str(), nullptr);
             }
         }
     }
@@ -386,27 +394,13 @@ void SelectionView::toggleSelect(QListWidgetItem* item)
     if (!item) {
         return;
     }
-    std::string name = item->text().toUtf8().constData();
-    char* docname = &name.at(0);
-    char* objname = std::strchr(docname, '#');
-    if (!objname) {
+    QStringList elements = item->data(Qt::UserRole).toStringList();
+    if (elements.size() < 2) {
         return;
     }
-    *objname++ = 0;
-    char* subname = std::strchr(objname, '.');
-    if (subname) {
-        *subname++ = 0;
-        char* end = std::strchr(subname, ' ');
-        if (end) {
-            *end = 0;
-        }
-    }
-    else {
-        char* end = std::strchr(objname, ' ');
-        if (end) {
-            *end = 0;
-        }
-    }
+    QByteArray docname = elements[0].toUtf8();
+    QByteArray objname = elements[1].toUtf8();
+    QByteArray subname = elements.size() > 2 ? elements[2].toUtf8() : QByteArray();
     QString cmd;
     if (Gui::Selection().isSelected(docname, objname, subname)) {
         cmd = QString::fromUtf8(
@@ -442,27 +436,13 @@ void SelectionView::preselect(QListWidgetItem* item)
     if (!item) {
         return;
     }
-    std::string name = item->text().toUtf8().constData();
-    char* docname = &name.at(0);
-    char* objname = std::strchr(docname, '#');
-    if (!objname) {
+    QStringList elements = item->data(Qt::UserRole).toStringList();
+    if (elements.size() < 2) {
         return;
     }
-    *objname++ = 0;
-    char* subname = std::strchr(objname, '.');
-    if (subname) {
-        *subname++ = 0;
-        char* end = std::strchr(subname, ' ');
-        if (end) {
-            *end = 0;
-        }
-    }
-    else {
-        char* end = std::strchr(objname, ' ');
-        if (end) {
-            *end = 0;
-        }
-    }
+    QByteArray docname = elements[0].toUtf8();
+    QByteArray objname = elements[1].toUtf8();
+    QByteArray subname = elements.size() > 2 ? elements[2].toUtf8() : QByteArray();
     QString cmd
         = QString::fromUtf8(
               "Gui.Selection.setPreselection("
@@ -481,7 +461,10 @@ void SelectionView::zoom()
 {
     select();
     try {
-        Gui::Command::runCommand(Gui::Command::Gui, "Gui.SendMsgToActiveView(\"ViewSelection\")");
+        Gui::Command::runCommand(
+            Gui::Command::Gui,
+            "Gui.getMainWindow().getActiveWindow().sendMessage(\"ViewSelection\")"
+        );
     }
     catch (Base::Exception& e) {
         e.reportException();
@@ -583,20 +566,20 @@ void SelectionView::showPart()
     }
 }
 
-QString SelectionView::getModule(const char* type) const
+QString SelectionView::getModule(std::string_view type) const
 {
     // go up the inheritance tree and find the module name of the first
     // sub-class that has not the prefix "App::"
-    std::string prefix;
+    std::string_view prefix;
     Base::Type typeId = Base::Type::fromName(type);
 
     while (!typeId.isBad()) {
-        std::string temp(typeId.getName());
-        std::string::size_type pos = temp.find_first_of("::");
+        const auto typeName = typeId.getName();
+        const auto pos = typeName.find_first_of("::");
 
-        std::string module;
+        std::string_view module;
         if (pos != std::string::npos) {
-            module = std::string(temp, 0, pos);
+            module = typeName.substr(0, pos);
         }
         if (module != "App") {
             prefix = module;
@@ -607,7 +590,7 @@ QString SelectionView::getModule(const char* type) const
         typeId = typeId.getParent();
     }
 
-    return QString::fromStdString(prefix);
+    return QString::fromUtf8(prefix.data(), prefix.size());
 }
 
 QString SelectionView::getProperty(App::DocumentObject* obj) const
@@ -687,7 +670,7 @@ void SelectionView::onItemContextMenu(const QPoint& point)
 void SelectionView::onUpdate()
 {}
 
-bool SelectionView::onMsg(const char* /*pMsg*/, const char** /*ppReturn*/)
+bool SelectionView::onMsg(const char* /*pMsg*/)
 {
     return false;
 }
@@ -760,11 +743,23 @@ void SelectionMenu::processSelections(
     for (int i = 0; i < (int)selections.size(); ++i) {
         const auto& sel = selections[i];
 
-        App::DocumentObject* sobj = getSubObject(sel);
+        App::DocumentObject* sobj = sel.obj;
+        bool usedFallback = false;
+        if (!sel.subName.empty()) {
+            App::DocumentObject* resolved = sel.obj->getSubObject(sel.subName.c_str());
+            if (resolved) {
+                sobj = resolved;
+            }
+            else {
+                usedFallback = true;
+            }
+        }
         std::string elementType = extractElementType(sel);
-        std::string objKey = createObjectKey(sel);
+        // When sub-path resolution failed, all picks share the same container object.
+        // Collapse them to a single menu entry so the container does not appear as duplicates.
+        std::string objKey = usedFallback ? std::string(sel.objName) : createObjectKey(sel);
         std::string itemId = elementType + "|" + std::string(sobj->Label.getValue()) + "|"
-            + sel.subName;
+            + (usedFallback ? sel.objName : sel.subName);
 
         if (processedItems.find(itemId) != processedItems.end()) {
             continue;
@@ -902,17 +897,6 @@ void SelectionMenu::leaveEvent(QEvent* e)
     QMenu::leaveEvent(e);
 }
 
-App::DocumentObject* SelectionMenu::getSubObject(const PickData& sel)
-{
-    App::DocumentObject* sobj = sel.obj;
-    if (!sel.subName.empty()) {
-        sobj = sel.obj->getSubObject(sel.subName.c_str());
-        if (!sobj) {
-            sobj = sel.obj;
-        }
-    }
-    return sobj;
-}
 
 std::string SelectionMenu::extractElementType(const PickData& sel)
 {
@@ -1025,7 +1009,7 @@ void SelectionMenu::addWholeObjectSelection(
     if (sobj) {
         if (sobj != sel.obj) {
             // sub-objects
-            std::string typeName = sobj->getTypeId().getName();
+            const auto typeName = sobj->getTypeId().getName();
             if (typeName == "App::Part" || typeName == "PartDesign::Body") {
                 shouldAdd = true;
             }
@@ -1074,7 +1058,12 @@ void SelectionMenu::addWholeObjectSelection(
 
                 if (!subObjName.empty()) {
                     wholeObjKey = std::string(sel.objName) + "." + subObjName + ".";
-                    wholeObjSubName = subObjName + ".";
+                    // use the full sub-object path up to and including the
+                    // last dot, not just the final segment. this preserves
+                    // the correct chain ie. "Cone001.Cone." instead of
+                    // just "Cone.") for objects inside assembly links.
+                    // see github issue: https://github.com/freecad/freecad/issues/29024
+                    wholeObjSubName = subNameStr.substr(0, lastDot + 1);
                 }
             }
         }

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jürgen Riegel <FreeCAD@juergen-riegel.net>         *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef FEM_VIEWPROVIDERFEMMESH_H
-#define FEM_VIEWPROVIDERFEMMESH_H
+#pragma once
 
 #include <Gui/ViewProviderBuilder.h>
 #include <Gui/ViewProviderGeometryObject.h>
@@ -143,6 +144,11 @@ public:
         return vFaceElementIdx;
     }
 
+    const std::vector<unsigned long>& getVisibleNodes() const
+    {
+        return vNodeElementIdx;
+    }
+
     PyObject* getPyObject() override;
 
 private:
@@ -196,6 +202,3 @@ using ViewProviderFemMeshPython = Gui::ViewProviderFeaturePythonT<ViewProviderFe
 
 
 }  // namespace FemGui
-
-
-#endif  // FEM_VIEWPROVIDERFEMMESH_H

@@ -23,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef SKETCHERGUI_DrawSketchHandlerScale_H
-#define SKETCHERGUI_DrawSketchHandlerScale_H
+#pragma once
 
 #include <QApplication>
 
@@ -40,7 +39,6 @@
 #include "DrawSketchControllableHandler.h"
 #include "SketcherTransformationExpressionHelper.h"
 
-#include "GeometryCreationMode.h"
 #include "Utils.h"
 
 #include <memory>
@@ -49,8 +47,6 @@ using namespace Sketcher;
 
 namespace SketcherGui
 {
-
-extern GeometryCreationMode geometryCreationMode;  // defined in CommandCreateGeo.cpp
 
 class DrawSketchHandlerScale;
 
@@ -61,7 +57,8 @@ using DSHScaleController = DrawSketchDefaultWidgetController<
     /*OnViewParametersT =*/OnViewParameters<3>,
     /*WidgetParametersT =*/WidgetParameters<0>,
     /*WidgetCheckboxesT =*/WidgetCheckboxes<1>,
-    /*WidgetComboboxesT =*/WidgetComboboxes<0>>;
+    /*WidgetComboboxesT =*/WidgetComboboxes<0>,
+    /*WidgetLineEditsT =*/WidgetLineEdits<0>>;
 
 using DSHScaleControllerBase = DSHScaleController::ControllerBase;
 
@@ -128,22 +125,24 @@ public:
         }
 
         try {
-            Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Scale geometries"));
+            openCommand(QT_TRANSLATE_NOOP("Command", "Scale geometries"));
 
             createShape(false);
 
             if (deleteOriginal) {
                 deleteOriginalGeos();
             }
+            int initialConstraintCount = sketchgui->getSketchObject()->Constraints.getSize();
 
             commandAddShapeGeometryAndConstraints();
 
             if (deleteOriginal) {
+                reassignConstraintNames(initialConstraintCount);
                 reassignFacadeIds();
             }
 
-            scaleLabels();
-            Gui::Command::commitCommand();
+            scaleLabels(initialConstraintCount);
+            commitCommand();
         }
         catch (const Base::Exception& e) {
             e.reportException();
@@ -154,7 +153,7 @@ public:
             );
 
             if (abortOnFail) {
-                Gui::Command::abortCommand();
+                abortCommand();
             }
             THROWM(
                 Base::RuntimeError,
@@ -275,6 +274,28 @@ private:
         }
     }
 
+    void reassignConstraintNames(int startIndex) const
+    {
+        int i = 0;
+        for (const auto& constraint : ShapeConstraints) {
+            if (!constraint->Name.empty()) {
+                std::string escaped = Base::Tools::escapedUnicodeFromUtf8(constraint->Name.c_str());
+                try {
+                    Gui::cmdAppObjectArgs(
+                        sketchgui->getObject(),
+                        "renameConstraint(%d, u'%s')",
+                        startIndex + i,
+                        escaped
+                    );
+                }
+                catch (const Base::Exception& e) {
+                    Base::Console().error("{}\n", e.what());
+                }
+            }
+            ++i;
+        }
+    }
+
 private:
     struct LabelToScale
     {
@@ -306,7 +327,7 @@ private:
                 Gui::cmdAppObjectArgs(sketchgui->getObject(), "deleteAllGeometry(True)");
             }
             catch (const Base::Exception& e) {
-                Base::Console().error("%s\n", e.what());
+                Base::Console().error("{}\n", e.what());
             }
         }
         else {
@@ -323,7 +344,7 @@ private:
                 );
             }
             catch (const Base::Exception& e) {
-                Base::Console().error("%s\n", e.what());
+                Base::Console().error("{}\n", e.what());
             }
         }
     }
@@ -344,25 +365,27 @@ private:
             Gui::cmdAppObjectArgs(sketchgui->getObject(), "setGeometryIds([%s])", stream.str().c_str());
         }
         catch (const Base::Exception& e) {
-            Base::Console().error("%s\n", e.what());
+            Base::Console().error("{}\n", e.what());
         }
     }
-    void scaleLabels()
+    void scaleLabels(int constraintIndexOffset)
     {
         SketchObject* sketch = sketchgui->getSketchObject();
 
         for (auto toScale : listOfLabelsToScale) {
-            sketch->setLabelDistance(toScale.constrId, toScale.distance * scaleFactor);
+            int constrId = toScale.constrId + constraintIndexOffset;
 
-            // Label position or radii and diameters represent an angle, so
+            sketch->setLabelDistance(constrId, toScale.distance * static_cast<float>(scaleFactor));
+
+            // Label position or radii anddiameters represent an angle, so
             // they should not be scaled
-            Sketcher::ConstraintType type = sketch->Constraints[toScale.constrId]->Type;
+            Sketcher::ConstraintType type = sketch->Constraints[constrId]->Type;
             if (type == Sketcher::ConstraintType::Radius
                 || type == Sketcher::ConstraintType::Diameter) {
-                sketch->setLabelPosition(toScale.constrId, toScale.position);
+                sketch->setLabelPosition(constrId, toScale.position);
             }
             else {
-                sketch->setLabelPosition(toScale.constrId, toScale.position * scaleFactor);
+                sketch->setLabelPosition(constrId, toScale.position * static_cast<float>(scaleFactor));
             }
         }
     }
@@ -496,9 +519,8 @@ private:
             }
 
             const std::vector<Constraint*>& vals = Obj->Constraints.getValues();
-
-            for (size_t i = 0; i < vals.size(); ++i) {
-                auto cstr = vals[i];
+            int cstrIndex = 0;
+            for (auto cstr : vals) {
                 if (skipConstraint(cstr)) {
                     continue;
                 }
@@ -512,7 +534,7 @@ private:
                 if (firstIndex != GeoEnum::GeoUndef) {
                     listOfLabelsToScale.push_back(
                         LabelToScale {
-                            .constrId = static_cast<int>(i),
+                            .constrId = cstrIndex,
                             .position = cstr->LabelPosition,
                             .distance = cstr->LabelDistance
                         }
@@ -527,42 +549,54 @@ private:
                     newConstr->Second = secondIndex;
                     newConstr->Third = thirdIndex;
                 }
-                else if ((cstr->Type == Coincident || cstr->Type == Tangent
-                          || cstr->Type == Symmetric || cstr->Type == Perpendicular
-                          || cstr->Type == Parallel || cstr->Type == Equal || cstr->Type == Angle
-                          || cstr->Type == PointOnObject || cstr->Type == InternalAlignment)
-                         && firstIndex != GeoEnum::GeoUndef && secondIndex != GeoEnum::GeoUndef
-                         && thirdIndex == GeoEnum::GeoUndef) {
+                else if (
+                    (cstr->Type == Coincident || cstr->Type == Tangent || cstr->Type == Symmetric
+                     || cstr->Type == Perpendicular || cstr->Type == Parallel || cstr->Type == Equal
+                     || cstr->Type == Angle || cstr->Type == PointOnObject
+                     || cstr->Type == InternalAlignment)
+                    && firstIndex != GeoEnum::GeoUndef && secondIndex != GeoEnum::GeoUndef
+                    && thirdIndex == GeoEnum::GeoUndef
+                ) {
                     newConstr->First = firstIndex;
                     newConstr->Second = secondIndex;
                 }
-                else if (cstr->Type == Angle && firstIndex != GeoEnum::GeoUndef
-                         && secondIndex == GeoEnum::GeoUndef && thirdIndex == GeoEnum::GeoUndef) {
+                else if (
+                    cstr->Type == Angle && firstIndex != GeoEnum::GeoUndef
+                    && secondIndex == GeoEnum::GeoUndef && thirdIndex == GeoEnum::GeoUndef
+                ) {
                     newConstr->First = firstIndex;
                 }
-                else if ((cstr->Type == Radius || cstr->Type == Diameter)
-                         && firstIndex != GeoEnum::GeoUndef) {
+                else if (
+                    (cstr->Type == Radius || cstr->Type == Diameter) && firstIndex != GeoEnum::GeoUndef
+                ) {
                     newConstr->First = firstIndex;
                     newConstr->setValue(newConstr->getValue() * scaleFactor);
                 }
-                else if ((cstr->Type == Distance || cstr->Type == DistanceX || cstr->Type == DistanceY)
-                         && firstIndex != GeoEnum::GeoUndef && secondIndex != GeoEnum::GeoUndef) {
+                else if (
+                    (cstr->Type == Distance || cstr->Type == DistanceX || cstr->Type == DistanceY)
+                    && firstIndex != GeoEnum::GeoUndef && secondIndex != GeoEnum::GeoUndef
+                ) {
                     newConstr->First = firstIndex;
                     newConstr->Second = secondIndex;
                     newConstr->setValue(newConstr->getValue() * scaleFactor);
                 }
-                else if ((cstr->Type == Distance || cstr->Type == DistanceX || cstr->Type == DistanceY)
-                         && firstIndex != GeoEnum::GeoUndef && cstr->Second == GeoEnum::GeoUndef) {
+                else if (
+                    (cstr->Type == Distance || cstr->Type == DistanceX || cstr->Type == DistanceY)
+                    && firstIndex != GeoEnum::GeoUndef && cstr->Second == GeoEnum::GeoUndef
+                ) {
                     newConstr->First = firstIndex;
                     newConstr->setValue(newConstr->getValue() * scaleFactor);
                 }
-                else if ((cstr->Type == Block || cstr->Type == Weight)
-                         && firstIndex != GeoEnum::GeoUndef) {
+                else if (
+                    (cstr->Type == Block || cstr->Type == Weight) && firstIndex != GeoEnum::GeoUndef
+                ) {
                     newConstr->First = firstIndex;
                 }
-                else if ((cstr->Type == Vertical || cstr->Type == Horizontal)
-                         && (firstIndex != GeoEnum::GeoUndef
-                             && (cstr->Second == GeoEnum::GeoUndef || secondIndex != GeoUndef))) {
+                else if (
+                    (cstr->Type == Vertical || cstr->Type == Horizontal)
+                    && (firstIndex != GeoEnum::GeoUndef
+                        && (cstr->Second == GeoEnum::GeoUndef || secondIndex != GeoUndef))
+                ) {
                     newConstr->First = firstIndex;
                     newConstr->Second = secondIndex;
                 }
@@ -571,6 +605,7 @@ private:
                 }
 
                 ShapeConstraints.push_back(std::move(newConstr));
+                cstrIndex++;
             }
         }
     }
@@ -769,6 +804,3 @@ void DSHScaleController::computeNextDrawSketchHandlerMode()
 
 
 }  // namespace SketcherGui
-
-
-#endif  // SKETCHERGUI_DrawSketchHandlerScale_H

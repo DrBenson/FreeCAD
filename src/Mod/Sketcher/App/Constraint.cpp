@@ -26,13 +26,16 @@
 #include <boost/random.hpp>
 #include <algorithm>
 #include <cmath>
+#include <format>
 #include <ranges>
 #include <stdexcept>
 #include <string>
 #include <vector>
 
-#include <fmt/ranges.h>
+#include "nlohmann/json.hpp"
 
+#include <Base/Console.h>
+#include <Base/FileInfo.h>
 #include <Base/Reader.h>
 #include <Base/Tools.h>
 #include <Base/Writer.h>
@@ -40,6 +43,7 @@
 #include <boost/thread/mutex.hpp>
 #include <boost/thread/thread.hpp>
 #include "Constraint.h"
+
 #include "ConstraintPy.h"
 
 
@@ -80,6 +84,7 @@ Constraint* Constraint::copy() const
     temp->Value = this->Value;
     temp->Type = this->Type;
     temp->AlignmentType = this->AlignmentType;
+    temp->Orientation = this->Orientation;
     temp->Name = this->Name;
     temp->LabelDistance = this->LabelDistance;
     temp->LabelPosition = this->LabelPosition;
@@ -90,6 +95,7 @@ Constraint* Constraint::copy() const
     temp->isActive = this->isActive;
     temp->elements = this->elements;
     // Do not copy tag, otherwise it is considered a clone, and a "rename" by the expression engine.
+    temp->MetaData = this->MetaData;
 
 #if SKETCHER_CONSTRAINT_USE_LEGACY_ELEMENTS
     temp->First = this->First;
@@ -149,13 +155,16 @@ unsigned int Constraint::getMemSize() const
 void Constraint::Save(Writer& writer) const
 {
     std::string encodeName = encodeAttribute(Name);
+    std::string encodeMetaData = encodeAttribute(MetaData);
     writer.Stream() << writer.ind() << "<Constrain "
                     << "Name=\"" << encodeName << "\" "
+                    << "MetaData=\"" << encodeMetaData << "\" "
                     << "Type=\"" << (int)Type << "\" ";
     if (this->Type == InternalAlignment) {
         writer.Stream() << "InternalAlignmentType=\"" << (int)AlignmentType << "\" "
                         << "InternalAlignmentIndex=\"" << InternalAlignmentIndex << "\" ";
     }
+    writer.Stream() << "Orientation=\"" << Orientation.toUnderlyingType() << "\" ";
     writer.Stream() << "Value=\"" << Value << "\" "
                     << "LabelDistance=\"" << LabelDistance << "\" "
                     << "LabelPosition=\"" << LabelPosition << "\" "
@@ -181,11 +190,19 @@ void Constraint::Save(Writer& writer) const
         auto posIds = elements
             | std::views::transform([](const GeoElementId& e) { return e.posIdAsInt(); });
 
-        const std::string ids = fmt::format("{}", fmt::join(geoIds, " "));
-        const std::string positions = fmt::format("{}", fmt::join(posIds, " "));
+        auto writeOut = [&](const auto& name, const auto& ids) {
+            if (!ids.empty()) {
+                auto id = ids.begin();
+                writer.Stream() << name << "=\"" << *id;
+                while (ids.end() != ++id) {
+                    writer.Stream() << " " << *id;
+                }
+                writer.Stream() << "\" ";
+            }
+        };
 
-        writer.Stream() << "ElementIds=\"" << ids << "\" "
-                        << "ElementPositions=\"" << positions << "\" ";
+        writeOut("ElementIds", geoIds);
+        writeOut("ElementPositions", posIds);
     }
 
     writer.Stream() << "/>\n";
@@ -195,6 +212,7 @@ void Constraint::Restore(XMLReader& reader)
 {
     reader.readElement("Constrain");
     Name = reader.getAttribute<const char*>("Name");
+    MetaData = reader.hasAttribute("MetaData") ? reader.getAttribute<const char*>("MetaData") : "";
     Type = reader.getAttribute<ConstraintType>("Type");
     Value = reader.getAttribute<double>("Value");
 
@@ -207,6 +225,12 @@ void Constraint::Restore(XMLReader& reader)
     }
     else {
         AlignmentType = Undef;
+    }
+    if (reader.hasAttribute("Orientation")) {
+        Orientation = reader.getAttribute<ConstraintOrientations>("Orientation");
+    }
+    else {
+        Orientation = ConstraintOrientations::None;
     }
 
     // Read the distance a constraint label has been moved
@@ -262,7 +286,7 @@ void Constraint::Restore(XMLReader& reader)
 
         if (ids.size() != positions.size()) {
             throw Base::ParserError(
-                fmt::format(
+                std::format(
                     "ElementIds and ElementPositions do not match in "
                     "size. Got {} ids and {} positions.",
                     ids.size(),
@@ -341,6 +365,32 @@ void Constraint::substituteIndexAndPos(int fromGeoId, PointPos fromPosId, int to
 #endif
 }
 
+std::string Constraint::toString() const
+{
+    return std::format(
+        "Type={}, IntAlignType={}, Elements={}",
+        this->typeToString(),
+        this->internalAlignmentTypeToString(),
+        this->elementsToString()
+    );
+}
+
+std::string Constraint::elementsToString() const
+{
+#if SKETCHER_CONSTRAINT_USE_LEGACY_ELEMENTS
+    auto elements = std::views::iota(size_t {0}, this->elements.size())
+        | std::views::transform([&](size_t i) { return getElement(i); });
+#endif
+
+    return std::format(
+        "[{}]",
+        Base::Tools::joinFormatted(
+            elements | std::views::transform([](const auto& element) { return element.toString(); }),
+            ", "
+        )
+    );
+}
+
 std::string Constraint::typeToString(ConstraintType type)
 {
     return type2str[type];
@@ -378,43 +428,37 @@ GeoElementId Constraint::getElement(size_t index) const
     }
 
 #if SKETCHER_CONSTRAINT_USE_LEGACY_ELEMENTS
-    if (index < 3) {
-        switch (index) {
-            case 0:
-                return GeoElementId(First, FirstPos);
-            case 1:
-                return GeoElementId(Second, SecondPos);
-            case 2:
-                return GeoElementId(Third, ThirdPos);
-        }
+    switch (index) {
+        case 0:
+            return GeoElementId(First, FirstPos);
+        case 1:
+            return GeoElementId(Second, SecondPos);
+        case 2:
+            return GeoElementId(Third, ThirdPos);
     }
 #endif
     return elements[index];
 }
+
 void Constraint::setElement(size_t index, GeoElementId element)
 {
-    if (index >= elements.size()) {
-        throw Base::IndexError("Constraint::getElement index out of range");
-    }
-
+    ensureElementExists(index);
     elements[index] = element;
 
 #if SKETCHER_CONSTRAINT_USE_LEGACY_ELEMENTS
-    if (index < 3) {
-        switch (index) {
-            case 0:
-                First = element.GeoId;
-                FirstPos = element.Pos;
-                break;
-            case 1:
-                Second = element.GeoId;
-                SecondPos = element.Pos;
-                break;
-            case 2:
-                Third = element.GeoId;
-                ThirdPos = element.Pos;
-                break;
-        }
+    switch (index) {
+        case 0:
+            First = element.GeoId;
+            FirstPos = element.Pos;
+            break;
+        case 1:
+            Second = element.GeoId;
+            SecondPos = element.Pos;
+            break;
+        case 2:
+            Third = element.GeoId;
+            ThirdPos = element.Pos;
+            break;
     }
 #endif
 }
@@ -433,4 +477,254 @@ void Constraint::addElement(GeoElementId element)
 #else
     elements.push_back(element);
 #endif
+}
+
+int Constraint::getGeoId(size_t index) const
+{
+#if SKETCHER_CONSTRAINT_USE_LEGACY_ELEMENTS
+    switch (index) {
+        case 0:
+            return First;
+        case 1:
+            return Second;
+        case 2:
+            return Third;
+    }
+#endif
+    return hasElement(index) ? elements[index].GeoId : GeoEnum::GeoUndef;
+}
+
+PointPos Constraint::getPosId(size_t index) const
+{
+#if SKETCHER_CONSTRAINT_USE_LEGACY_ELEMENTS
+    switch (index) {
+        case 0:
+            return FirstPos;
+        case 1:
+            return SecondPos;
+        case 2:
+            return ThirdPos;
+    }
+#endif
+    return hasElement(index) ? elements[index].Pos : PointPos::none;
+}
+
+int Constraint::getPosIdAsInt(size_t index) const
+{
+#if SKETCHER_CONSTRAINT_USE_LEGACY_ELEMENTS
+    switch (index) {
+        case 0:
+            return (int)FirstPos;
+        case 1:
+            return (int)SecondPos;
+        case 2:
+            return (int)ThirdPos;
+    }
+#endif
+    return hasElement(index) ? elements[index].posIdAsInt() : 0;
+}
+
+bool Constraint::hasElement(size_t index) const
+{
+    return static_cast<decltype(elements)::size_type>(index) < elements.size();
+}
+
+size_t Constraint::getElementIndexForGeoId(int geoId) const
+{
+#if SKETCHER_CONSTRAINT_USE_LEGACY_ELEMENTS
+    for (size_t i = 0; i < this->elements.size(); ++i) {
+        if (getElement(i).GeoId == geoId) {
+            return i;
+        }
+    }
+#else
+    for (size_t i = 0; i < elements.size(); ++i) {
+        if (elements[i].GeoId == geoId) {
+            return i;
+        }
+    }
+#endif
+
+    return -1;
+}
+
+void Constraint::setGeoId(size_t index, int geoId)
+{
+#if SKETCHER_CONSTRAINT_USE_LEGACY_ELEMENTS
+    switch (index) {
+        case 0:
+            First = geoId;
+            break;
+        case 1:
+            Second = geoId;
+            break;
+        case 2:
+            Third = geoId;
+            break;
+    }
+#endif
+    ensureElementExists(index);
+    elements[index].GeoId = geoId;
+}
+
+void Constraint::setPosId(size_t index, PointPos pos)
+{
+#if SKETCHER_CONSTRAINT_USE_LEGACY_ELEMENTS
+    switch (index) {
+        case 0:
+            FirstPos = pos;
+            break;
+        case 1:
+            SecondPos = pos;
+            break;
+        case 2:
+            ThirdPos = pos;
+            break;
+    }
+#endif
+    ensureElementExists(index);
+    elements[index].Pos = pos;
+}
+
+void Constraint::setPosId(size_t index, int pos)
+{
+#if SKETCHER_CONSTRAINT_USE_LEGACY_ELEMENTS
+    switch (index) {
+        case 0:
+            FirstPos = static_cast<PointPos>(pos);
+            break;
+        case 1:
+            SecondPos = static_cast<PointPos>(pos);
+            break;
+        case 2:
+            ThirdPos = static_cast<PointPos>(pos);
+            break;
+    }
+#endif
+    ensureElementExists(index);
+    elements[index].Pos = static_cast<PointPos>(pos);
+}
+
+void Constraint::ensureElementExists(size_t index)
+{
+    if (static_cast<decltype(elements)::size_type>(index) >= elements.size()) {
+        elements.resize(index + 1);
+    }
+}
+
+void Constraint::swapElements(size_t index1, size_t index2)
+{
+    if (index1 == index2) {
+        return;
+    }
+    ensureElementExists(index1);
+    ensureElementExists(index2);
+    std::swap(elements[index1], elements[index2]);
+}
+
+bool Constraint::isElementsEmpty() const
+{
+    return elements.empty();
+}
+
+void Constraint::truncateElements(size_t newSize)
+{
+    if (newSize < elements.size()) {
+        elements.resize(newSize);
+    }
+}
+
+std::string Constraint::getText() const
+{
+    if (MetaData.empty()) {
+        return {};
+    }
+    try {
+        auto j = nlohmann::json::parse(MetaData);
+        if (j.contains("text")) {
+            return j["text"].get<std::string>();
+        }
+    }
+    catch (...) {
+        // Handle JSON parsing errors or type mismatches silently
+    }
+    return {};
+}
+
+void Constraint::setText(const std::string& text)
+{
+    nlohmann::json j;
+    if (!MetaData.empty()) {
+        try {
+            j = nlohmann::json::parse(MetaData);
+        }
+        catch (...) {
+        }
+    }
+    j["text"] = text;
+    MetaData = j.dump();
+}
+
+std::string Constraint::getFont() const
+{
+    if (MetaData.empty()) {
+        return {};
+    }
+    try {
+        auto j = nlohmann::json::parse(MetaData);
+        if (j.contains("font")) {
+            Base::FileInfo fi(j["font"].get<std::string>());
+            return fi.fileNamePure();
+        }
+    }
+    catch (...) {
+    }
+    return {};
+}
+
+void Constraint::setFont(const std::string& font)
+{
+    Base::FileInfo fi(font);
+    std::string fontName = fi.fileNamePure();
+
+    nlohmann::json j;
+    if (!MetaData.empty()) {
+        try {
+            j = nlohmann::json::parse(MetaData);
+        }
+        catch (...) {
+        }
+    }
+    j["font"] = fontName;
+    MetaData = j.dump();
+}
+
+bool Constraint::getIsTextHeight() const
+{
+    if (MetaData.empty()) {
+        return true;  // Default value
+    }
+    try {
+        auto j = nlohmann::json::parse(MetaData);
+        if (j.contains("isTextHeight")) {
+            return j["isTextHeight"].get<bool>();
+        }
+    }
+    catch (...) {
+    }
+    return true;  // Default value
+}
+
+void Constraint::setIsTextHeight(bool isHeight)
+{
+    nlohmann::json j;
+    if (!MetaData.empty()) {
+        try {
+            j = nlohmann::json::parse(MetaData);
+        }
+        catch (...) {
+        }
+    }
+    j["isTextHeight"] = isHeight;
+    MetaData = j.dump();
 }

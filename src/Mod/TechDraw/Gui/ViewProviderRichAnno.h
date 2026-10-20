@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2004 Jürgen Riegel <juergen.riegel@web.de>              *
  *   Copyright (c) 2019 Wanderer Fan <wandererfan@gmail.com>               *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAWGUI_VIEWPROVIDERRICHANNO_H
-#define TECHDRAWGUI_VIEWPROVIDERRICHANNO_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -55,8 +56,11 @@ public:
     bool useNewSelectionModel() const override {return false;}
     void updateData(const App::Property* prop) override;
     void onChanged(const App::Property* prop) override;
+    bool onDelete(const std::vector<std::string>&) override;
     bool doubleClicked() override;
+    void setupContextMenu(QMenu*, QObject*, const char*) override;
     bool canDelete(App::DocumentObject* obj) const override;
+    bool setEdit(int ModNum) override;
 
     static const char* LineStyleEnums[];
 
@@ -82,5 +86,3 @@ private:
 };
 
 } // namespace TechDrawGui
-
-#endif // TECHDRAWGUI_VIEWPROVIDERRICHANNO_H

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jürgen Riegel <FreeCAD@juergen-riegel.net>         *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef Fem_FemMeshShapeNetgenObject_H
-#define Fem_FemMeshShapeNetgenObject_H
+#pragma once
 
 #include "FemMeshShapeObject.h"
 #include <App/PropertyStandard.h>
@@ -65,6 +66,3 @@ protected:
 };
 
 }  // namespace Fem
-
-
-#endif  // Fem_FemMeshShapeNetgenObject_H

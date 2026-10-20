@@ -23,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef PARTDESIGN_FeatureBase_H
-#define PARTDESIGN_FeatureBase_H
+#pragma once
 
 #include "Feature.h"
 
@@ -38,6 +37,12 @@ class PartDesignExport FeatureBase: public PartDesign::Feature
 
 public:
     FeatureBase();
+
+    /**
+     * Compatibility property to preserve restored files that relied on the source
+     * object's placement being applied inside FeatureBase.
+     */
+    App::PropertyBool UseLegacyBaseFeaturePlacement;
 
     short int mustExecute() const override;
 
@@ -57,6 +62,3 @@ private:
 };
 
 }  // namespace PartDesign
-
-
-#endif  // PARTDESIGN_FeatureBase_H

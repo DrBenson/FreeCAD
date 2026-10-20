@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef PART_PROPERTYTOPOSHAPE_H
-#define PART_PROPERTYTOPOSHAPE_H
+#pragma once
 
 #include <map>
 #include <vector>
@@ -102,6 +101,10 @@ public:
 
     /// Get valid paths for this property; used by auto completer
     void getPaths(std::vector<App::ObjectIdentifier>& paths) const override;
+    void getPathsForCompletion(
+        std::vector<App::ObjectIdentifier>& paths,
+        const std::string& subPath
+    ) const override;
 
     std::string getElementMapVersion(bool restored) const override;
     void resetElementMapVersion()
@@ -314,6 +317,3 @@ private:
 };
 
 }  // namespace Part
-
-
-#endif  // PART_PROPERTYTOPOSHAPE_H

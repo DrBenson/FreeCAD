@@ -30,8 +30,6 @@
 #include <QFileInfo>
 #include <QLocale>
 #include <QProcessEnvironment>
-#include <QRegularExpression>
-#include <QRegularExpressionMatch>
 #include <QScreen>
 #include <QSettings>
 #include <QSysInfo>
@@ -41,6 +39,8 @@
 #include <Inventor/C/basic.h>
 
 #include <App/Application.h>
+#include <App/ProgramInformation.h>
+#include <Gui/ProgramInformation.h>
 #include <App/Metadata.h>
 #include <Base/Console.h>
 #include <Base/Interpreter.h>
@@ -60,6 +60,8 @@
 using namespace Gui;
 using namespace Gui::Dialog;
 namespace fs = std::filesystem;
+
+TYPESYSTEM_SOURCE_ABSTRACT(Gui::Dialog::LicenseView, Gui::MDIView)  // NOLINT
 
 // ------------------------------------------------------------------------------
 
@@ -116,9 +118,9 @@ AboutDialog::AboutDialog(QWidget* parent)
     // See if we have a custom About screen image set
     QPixmap image = aboutImage();
 
-    // Fallback to the splashscreen image
+    // Fallback to the static splash screen image
     if (image.isNull()) {
-        image = SplashScreen::splashImage();
+        image = SplashScreen::defaultSplashImage();
     }
 
     // Make sure the image is not too big
@@ -246,7 +248,10 @@ void AboutDialog::setupLabels()
     ui->labelBuildDate->setText(date);
 
     QString os = ui->labelBuildOS->text();
-    os.replace(QStringLiteral("Unknown"), App::Application::prettyProductInfoWrapper());
+    os.replace(
+        QStringLiteral("Unknown"),
+        QString::fromStdString(App::ProgramInformation::prettyProductInfoWrapper())
+    );
     ui->labelBuildOS->setText(os);
 
     QString architecture = ui->labelBuildRunArchitecture->text();
@@ -334,9 +339,6 @@ void AboutDialog::showCredits()
               .arg(tr("Individuals", "Header for the list of individual people in the Credits list."));
 
     QTextStream stream(&creditsFile);
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    stream.setCodec("UTF-8");
-#endif
     QString line;
     while (stream.readLineInto(&line)) {
         if (!line.isEmpty()) {
@@ -477,12 +479,7 @@ void AboutDialog::linkActivated(const QUrl& link)
 
 void AboutDialog::copyToClipboard()
 {
-    QString data;
-    QTextStream str(&data);
-    std::map<std::string, std::string>& config = App::Application::Config();
-    App::Application::getVerboseCommonInfo(str, config);
-    Gui::Application::getVerboseDPIStyleInfo(str);
-    App::Application::getVerboseAddOnsInfo(str, config);
+    QString data = QString::fromStdString(Gui::ProgramInformation::collect());
 
     QClipboard* cb = QApplication::clipboard();
     cb->setText(data);

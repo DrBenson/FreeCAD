@@ -30,10 +30,6 @@
 # *                                                                         *
 # ***************************************************************************/
 
-import MeshPartGui
-FreeCADGui.addLanguagePath(":/translations")
-FreeCADGui.addIconPath(":/icons")
-FreeCADGui.updateLocale()
 
 class MeshPartWorkbench(Workbench):
     "MeshPart workbench object"
@@ -62,8 +58,8 @@ class MeshPartWorkbench(Workbench):
             ".########.......",
             "................"};
             """
-    MenuText = FreeCAD.Qt.translate("Workbench", "MeshPart")
-    ToolTip = FreeCAD.Qt.translate("Workbench", "MeshPart workbench")
+    MenuText = "MeshPart"
+    ToolTip = "MeshPart workbench"
 
     def Initialize(self):
         # load the module

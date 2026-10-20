@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef APP_PRECOMPILED_H
-#define APP_PRECOMPILED_H
+#pragma once
 
 #include <FCConfig.h>
 
@@ -32,6 +31,7 @@
 #include <csignal>
 #include <cstdio>
 #include <ctime>
+#include <format>
 
 #ifdef FC_OS_WIN32
 #include <crtdbg.h>
@@ -85,12 +85,8 @@
 #include <boost/date_time/posix_time/posix_time.hpp>
 #include <boost/scope_exit.hpp>
 
-#include <fmt/format.h>
-
 // Qt -- only QtCore
 #include <QDir>
 #include <QProcessEnvironment>
 #include <QStandardPaths>
 #include <QString>
-
-#endif  // APP_PRECOMPILED_H

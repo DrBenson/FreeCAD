@@ -41,12 +41,11 @@ from ..doc import (
 )
 from .icon import ToolBitShapeIcon
 
-
 if False:
     Path.Log.setLevel(Path.Log.Level.DEBUG, Path.Log.thisModule())
     Path.Log.trackModule(Path.Log.thisModule())
 else:
-    Path.Log.setLevel(Path.Log.Level.INFO, Path.Log.thisModule())
+    Path.Log.setLevel(Path.Log.Level.ERROR, Path.Log.thisModule())
 
 
 class ToolBitShape(Asset):
@@ -67,6 +66,11 @@ class ToolBitShape(Asset):
     # be found, then we can attempt to find a shape class from the string
     # "v-bit", "vbit", etc.
     aliases: Tuple[str, ...] = tuple()
+
+    # Subtypes are shape variants (e.g., "roughing" for endmill).
+    # Unlike aliases, subtypes preserve their identity and don't normalize.
+    # NOTE: Subtypes are set dynamically from the shape_aliases.json file.
+    subtypes: Tuple[str, ...] = tuple()
 
     def __init__(self, id: str, **kwargs: Any):
         """
@@ -501,7 +505,8 @@ class ToolBitShape(Asset):
         cls, name: str, default: Optional[Type["ToolBitShape"]] = None
     ) -> Optional[Type["ToolBitShape"]]:
         """
-        Retrieves a ToolBitShape class by its name or alias.
+        Retrieves a ToolBitShape class by its name, alias, or subtype.
+        Note: Both aliases and subtypes return the parent class.
         """
         name = name.lower()
         for thecls in cls.__subclasses__():
@@ -509,6 +514,7 @@ class ToolBitShape(Asset):
                 thecls.name.lower() == name
                 or thecls.__name__.lower() == name
                 or name in thecls.aliases
+                or name in thecls.subtypes
             ):
                 return thecls
         return default
@@ -518,7 +524,7 @@ class ToolBitShape(Asset):
         cls, name: str, default: Optional[Type["ToolBitShape"]] = None
     ) -> Optional[Type["ToolBitShape"]]:
         """
-        Retrieves a ToolBitShape class by its name or alias.
+        Retrieves a ToolBitShape class by its name, alias, or subtype.
         """
         name = name.lower()
         for thecls in cls.__subclasses__():
@@ -526,6 +532,9 @@ class ToolBitShape(Asset):
                 return thecls
             for alias in thecls.aliases:
                 if alias.lower() in name:
+                    return thecls
+            for subtype in thecls.subtypes:
+                if subtype.lower() in name:
                     return thecls
         return default
 
@@ -548,6 +557,53 @@ class ToolBitShape(Asset):
         return AssetUri.build(
             asset_type="toolbitshape",
             asset_id=asset_name,
+        )
+
+    @classmethod
+    def resolve_asset(cls, identifier: str, assets=None) -> "ToolBitShape":
+        """
+        Resolves an identifier (name, filename, or URI) to a loaded
+        ToolBitShape asset.
+
+        Some built-in shapes have an asset filename that doesn't match their
+        class name, even case-insensitively (e.g. the "ThreadMill" class is
+        stored as "thread-mill.fcstd"). If the identifier doesn't resolve
+        directly, retry using the identified shape class's own canonical
+        name and its known aliases (see Tools/Shape/shape_aliases.json)
+        before giving up, so callers only need to fall back to an empty
+        placeholder shape when the shape genuinely isn't a known/available
+        asset. This doesn't rely on case-insensitive filename matching, so
+        it works the same regardless of the underlying asset store.
+
+        Args:
+            identifier: a shape name, filename, alias, or asset URI.
+            assets: the AssetManager to resolve against. Defaults to the
+                global cam_assets (accepts an injectable manager so tests
+                can use an isolated asset store).
+
+        Raises FileNotFoundError if no candidate identifier resolves.
+        """
+        if assets is None:
+            assets = cam_assets
+
+        uri = cls.resolve_name(identifier)
+        try:
+            return cast("ToolBitShape", assets.get(uri))
+        except FileNotFoundError:
+            pass
+
+        shape_class = cls.get_subclass_by_name(uri.asset_id)
+        if shape_class:
+            candidates = [shape_class.name.lower(), *shape_class.aliases]
+            for candidate in candidates:
+                try:
+                    return cast("ToolBitShape", assets.get(cls.resolve_name(candidate)))
+                except FileNotFoundError:
+                    continue
+
+        raise FileNotFoundError(
+            f"No shape asset found for '{identifier}' (tried canonical name "
+            f"and aliases of {shape_class.__name__ if shape_class else 'unknown class'})"
         )
 
     @classmethod
@@ -615,6 +671,10 @@ class ToolBitShape(Asset):
         """
         prop_type = self.get_parameter_property_type(name)
         if prop_type in ("App::PropertyDistance", "App::PropertyLength", "App::PropertyAngle"):
+            if isinstance(value, (int, float)) and not isinstance(value, bool):
+                # Quantity() leaves a bare number dimensionless.
+                unit = "deg" if prop_type == "App::PropertyAngle" else "mm"
+                return FreeCAD.Units.Quantity(float(value), unit)
             return FreeCAD.Units.Quantity(value)
         elif prop_type == "App::PropertyInteger":
             return int(value)
@@ -627,6 +687,35 @@ class ToolBitShape(Asset):
                 return False
             return bool(value)
         return str(value)
+
+    @classmethod
+    def derived_parameters(cls) -> Mapping[str, Any]:
+        """
+        Parameters that are a consequence of the shape rather than an input to
+        it, as a mapping of name to a function of the other parameters.
+
+        They stay real properties, because the operations and the tool library
+        format read them, but they are computed rather than typed in and are
+        kept out of the editor.
+        """
+        return {}
+
+    def apply_derived_parameters(self) -> Dict[str, Any]:
+        """
+        Recompute this shape's derived parameters from its current values and
+        store them. Returns what changed, as {name: value}.
+        """
+        changed = {}
+        for name, compute in self.derived_parameters().items():
+            try:
+                value = compute(self.get_parameters())
+            except (KeyError, TypeError, ValueError, ZeroDivisionError) as exc:
+                Path.Log.warning(f"Could not derive '{name}' for shape '{self.name}': {exc}\n")
+                continue
+            if self._params.get(name) != value:
+                self.set_parameter(name, value)
+                changed[name] = self.get_parameter(name)
+        return changed
 
     def get_parameters(self) -> Dict[str, Any]:
         """

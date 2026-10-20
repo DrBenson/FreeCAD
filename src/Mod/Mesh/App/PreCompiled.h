@@ -23,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef MESH_PRECOMPILED_H
-#define MESH_PRECOMPILED_H
+#pragma once
 
 #include <FCConfig.h>
 
@@ -43,6 +42,7 @@
 #include <list>
 #include <limits>
 #include <map>
+#include <numeric>
 #include <queue>
 #include <set>
 #include <sstream>
@@ -73,5 +73,3 @@
 #include <xercesc/util/XMLUni.hpp>
 #include <xercesc/util/XMLUniDefs.hpp>
 #include <xercesc/util/XercesVersion.hpp>
-
-#endif

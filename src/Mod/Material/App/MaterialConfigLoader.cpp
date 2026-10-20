@@ -40,6 +40,7 @@
 #include "Exceptions.h"
 #include "MaterialConfigLoader.h"
 #include "MaterialLoader.h"
+#include "MaterialLibrary.h"
 #include "Model.h"
 #include "ModelUuids.h"
 
@@ -81,9 +82,6 @@ bool MaterialConfigLoader::readFile(const QString& path, QMap<QString, QString>&
     QFile infile(path);
     if (infile.open(QIODevice::ReadOnly)) {
         QTextStream in(&infile);
-#if QT_VERSION < QT_VERSION_CHECK(6,0,0)
-        in.setCodec("UTF-8");
-#endif
         QString line;
         QString prefix;
         while (!in.atEnd()) {
@@ -1041,7 +1039,7 @@ MaterialConfigLoader::getMaterialFromPath(const std::shared_ptr<MaterialLibraryL
 
     QMap<QString, QString> fcmat;
     if (!readFile(path, fcmat)) {
-        Base::Console().log("Error reading '%s'\n", path.toStdString().c_str());
+        Base::Console().log("Error reading '{}'\n", path.toStdString());
         throw MaterialReadError();
     }
 
@@ -1056,8 +1054,7 @@ MaterialConfigLoader::getMaterialFromPath(const std::shared_ptr<MaterialLibraryL
     QString sourceReference = value(fcmat, "ReferenceSource", "");
     QString sourceURL = value(fcmat, "SourceURL", "");
 
-    auto baseLibrary =
-        reinterpret_cast<const std::shared_ptr<Materials::MaterialLibrary>&>(library);
+    auto baseLibrary = std::static_pointer_cast<Materials::MaterialLibrary>(library);
     std::shared_ptr<Material> finalModel =
         std::make_shared<Material>(baseLibrary, path, uuid, name);
     finalModel->setOldFormat(true);

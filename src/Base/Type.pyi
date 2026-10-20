@@ -11,12 +11,10 @@ from typing import List, Final
     TwinPointer="BaseType",
     Delete=True,
 )
-@forward_declarations(
-    """
+@forward_declarations("""
 namespace Base {
     using BaseType = Type;
-}"""
-)
+}""")
 class Type(PyObjectBase):
     """
     BaseTypePy class.
@@ -69,7 +67,7 @@ class Type(PyObjectBase):
         ...
 
     @staticmethod
-    def getAllDerivedFrom(type: str, /) -> List[str]:
+    def getAllDerivedFrom(type: str | "Type", /) -> List["Type"]:
         """
         Returns all descendants from the given type id.
 
@@ -92,7 +90,7 @@ class Type(PyObjectBase):
         ...
 
     @constmethod
-    def isDerivedFrom(self, type: str, /) -> bool:
+    def isDerivedFrom(self, type: str | "Type", /) -> bool:
         """
         Returns true if given type id is a father of this type id.
 
@@ -114,7 +112,7 @@ class Type(PyObjectBase):
         ...
 
     @staticmethod
-    def createInstanceByName(name: str, load: bool = False, /) -> object:
+    def createInstanceByName(name: str, load: bool = False, /) -> object | None:
         """
         Creates an instance of the named type id.
 

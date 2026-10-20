@@ -40,6 +40,7 @@
 #include "FileInfo.h"
 #include "Exception.h"
 #include "TimeInfo.h"
+#include "Tools.h"
 
 using namespace Base;
 namespace fs = std::filesystem;
@@ -50,13 +51,7 @@ namespace fs = std::filesystem;
 #ifdef FC_OS_WIN32
 std::string ConvertFromWideString(const std::wstring& string)
 {
-    int neededSize = WideCharToMultiByte(CP_UTF8, 0, string.c_str(), -1, 0, 0, 0, 0);
-    char* CharString = new char[static_cast<size_t>(neededSize)];
-    WideCharToMultiByte(CP_UTF8, 0, string.c_str(), -1, CharString, neededSize, 0, 0);
-    std::string String(CharString);
-    delete[] CharString;
-    CharString = NULL;
-    return String;
+    return Tools::wstringToString(string);
 }
 
 std::wstring ConvertToWideString(const std::string& string)
@@ -76,14 +71,9 @@ std::wstring ConvertToWideString(const std::string& string)
 // FileInfo
 
 
-FileInfo::FileInfo(const char* fileName)
+FileInfo::FileInfo(std::string fileName)
 {
-    setFile(fileName);
-}
-
-FileInfo::FileInfo(const std::string& fileName)
-{
-    setFile(fileName.c_str());
+    setFile(std::move(fileName));
 }
 
 const std::string& FileInfo::getTempPath()
@@ -190,14 +180,14 @@ std::string FileInfo::pathToString(const fs::path& path)
 #endif
 }
 
-void FileInfo::setFile(const char* name)
+void FileInfo::setFile(std::string name)
 {
-    if (!name) {
+    if (name.empty()) {
         FileName.clear();
         return;
     }
 
-    FileName = name;
+    FileName = std::move(name);
 
     // keep the UNC paths intact
     if (FileName.substr(0, 2) == std::string("\\\\")) {
@@ -340,7 +330,8 @@ bool FileInfo::isWritable() const
     // convert filename from UTF-8 to windows WSTRING
     std::wstring fileNameWstring = toStdWString();
     // requires import of <windows.h>
-    DWORD attributes = GetFileAttributes(fileNameWstring.c_str());
+    // Use explicit wide API: FreeCAD does not rely on the UNICODE macro being set.
+    DWORD attributes = GetFileAttributesW(fileNameWstring.c_str());
     if (attributes == INVALID_FILE_ATTRIBUTES) {
         // Log the error?
         std::clog << "GetFileAttributes failed for file: " << FileName << '\n';
@@ -575,6 +566,40 @@ std::vector<Base::FileInfo> FileInfo::getDirectoryContent() const
     }
 
     return list;
+}
+
+std::optional<std::string> FileInfo::safeArchiveEntryPath(const std::string& entryName)
+{
+    if (entryName.find(':') != std::string::npos) {
+        return std::nullopt;
+    }
+
+    // A backslash is only a separator to fs::path on Windows, but setFile() converts it into a
+    // forward slash on every platform, so the separators must be unified before decomposition.
+    std::string normalized = entryName;
+    std::ranges::replace(normalized, '\\', '/');
+
+    // Leading separators are stripped rather than rejected: the FEM code this was written to
+    // address starts *every* path with a slash. They have to go before fs::path sees the
+    // name.
+    normalized.erase(0, normalized.find_first_not_of('/'));
+
+    fs::path result;
+    for (const fs::path& component : fs::path(normalized).relative_path()) {
+        if (component == "..") {
+            return std::nullopt;
+        }
+        if (component.empty() || component == ".") {
+            continue;
+        }
+        result /= component;
+    }
+
+    if (result.empty()) {
+        return std::nullopt;
+    }
+
+    return result.generic_string();
 }
 
 std::optional<std::string> FileInfo::getSymlinkTarget()

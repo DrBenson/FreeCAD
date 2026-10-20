@@ -23,10 +23,6 @@
 
 # Test gui init module
 
-import TestGui
-FreeCADGui.addLanguagePath(":/translations")
-FreeCADGui.addIconPath(":/icons")
-FreeCADGui.updateLocale()
 
 class TestWorkbench(Workbench):
     "Test workbench object"
@@ -35,8 +31,8 @@ class TestWorkbench(Workbench):
         self.__class__.Icon = (
             FreeCAD.getResourceDir() + "Mod/Test/Resources/icons/TestWorkbench.svg"
         )
-        self.__class__.MenuText = FreeCAD.Qt.translate("Workbench", "Test Framework")
-        self.__class__.ToolTip = FreeCAD.Qt.translate("Workbench", "Test Framework")
+        self.__class__.MenuText = "Test Framework"
+        self.__class__.ToolTip = "Test Framework"
 
     def Initialize(self):
         import TestGui
@@ -44,7 +40,7 @@ class TestWorkbench(Workbench):
         list = ["Test_Test", "Test_TestAll", "Test_TestDoc", "Test_TestBase"]
         self.appendToolbar("TestTools", list)
 
-        menu = [FreeCAD.Qt.translate("TestTools", "Test &Commands"), FreeCAD.Qt.translate("TestTools", "TestToolsGui")]
+        menu = ["Test &Commands", "TestToolsGui"]
         list = [
             "Std_TestQM",
             "Std_TestReloadQM",
@@ -56,22 +52,22 @@ class TestWorkbench(Workbench):
         self.appendCommandbar("TestToolsGui", list)
         self.appendMenu(menu, list)
 
-        menu = [FreeCAD.Qt.translate("TestTools", "Test &Commands"), FreeCAD.Qt.translate("TestTools", "TestToolsText")]
+        menu = ["Test &Commands", "TestToolsText"]
         list = ["Test_TestAllText", "Test_TestDocText", "Test_TestBaseText"]
         self.appendCommandbar("TestToolsText", list)
         self.appendMenu(menu, list)
 
-        menu = [FreeCAD.Qt.translate("TestTools", "Test &Commands"), FreeCAD.Qt.translate("TestTools", "TestToolsMenu")]
+        menu = ["Test &Commands", "TestToolsMenu"]
         list = ["Test_TestCreateMenu", "Test_TestDeleteMenu", "Test_TestWork"]
         self.appendCommandbar("TestToolsMenu", list)
         self.appendMenu(menu, list)
 
-        menu = [FreeCAD.Qt.translate("TestTools", "Test &Commands"), FreeCAD.Qt.translate("TestTools", "TestFeatureMenu")]
+        menu = ["Test &Commands", "TestFeatureMenu"]
         list = ["Test_InsertFeature"]
         self.appendCommandbar("TestFeature", list)
         self.appendMenu(menu, list)
 
-        menu = [FreeCAD.Qt.translate("TestTools", "Test &Commands"), FreeCAD.Qt.translate("TestTools", "Progress bar")]
+        menu = ["Test &Commands", "Progress bar"]
         list = [
             "Std_TestProgress1",
             "Std_TestProgress2",
@@ -81,16 +77,16 @@ class TestWorkbench(Workbench):
         ]
         self.appendMenu(menu, list)
 
-        menu = [FreeCAD.Qt.translate("TestTools", "Test &Commands"), FreeCAD.Qt.translate("TestTools", "Console")]
+        menu = ["Test &Commands", "Console"]
         list = ["Std_TestConsoleOutput"]
         self.appendMenu(menu, list)
 
-        menu = [FreeCAD.Qt.translate("TestTools", "Test &Commands"), FreeCAD.Qt.translate("TestTools", "MDI")]
+        menu = ["Test &Commands", "MDI"]
         list = ["Std_MDITest1", "Std_MDITest2", "Std_MDITest3"]
         self.appendMenu(menu, list)
 
         list = ["Std_ViewExample1", "Std_ViewExample2", "Std_ViewExample3"]
-        self.appendMenu(FreeCAD.Qt.translate("TestTools", "Inventor View"), list)
+        self.appendMenu("Inventor View", list)
 
 
 Gui.addWorkbench(TestWorkbench())
@@ -99,7 +95,12 @@ Gui.addWorkbench(TestWorkbench())
 FreeCAD.__unit_test__ += [
     "Workbench",
     "Menu",
-    "Menu.MenuDeleteCases",
-    "Menu.MenuCreateCases",
     "GuiDocument",
+    "TestGraphicsViewWrapping",
+    "TestMDIView",
+    "TestRubberbandSelection",
+    "TestSelectionVisual",
+    "TestCornerAxisCrossVisual",
+    "TestCoinNodeSnapshots",
+    "TestViewProviderLink",
 ]

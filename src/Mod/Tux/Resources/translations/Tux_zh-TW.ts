@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -10,7 +10,7 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -107,20 +107,14 @@
         <translation>軌跡球</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Tux/NavigationIndicatorGui.py" line="615"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Tux/NavigationIndicatorGui.py" line="615"/>
         <source>Trackball Classic</source>
-        <translation>傳統軌跡球</translation>
+        <translation>軌跡球 經典</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Tux/NavigationIndicatorGui.py" line="616"/>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Tux/NavigationIndicatorGui.py" line="616"/>
         <source>Rounded Arcball</source>
         <translation>圓弧球</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Tux/NavigationIndicatorGui.py" line="627"/>
-        <source>Navigation indicator</source>
-        <comment>A context menu action used to show or hide the &apos;Navigation indicator&apos; toolbar widget</comment>
-        <translation>導航指示器</translation>
     </message>
     <message>
         <location filename="../../NavigationIndicatorGui.py" line="337"/>
@@ -128,8 +122,20 @@
         <translation>未定義</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Tux/NavigationIndicatorGui.py" line="674"/>
+        <location filename="../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Tux/NavigationIndicatorGui.py" line="670"/>
+        <source>Navigation Styles</source>
+        <comment>A context menu action used to show or hide the &apos;Navigation indicator&apos; toolbar widget</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../FreeCAD-1.1.0/src/Mod/Tux/NavigationIndicatorGui.py" line="674"/>
         <source>Navigation Indicator</source>
+        <comment>A context menu action used to show or hide the &apos;Navigation indicator&apos; toolbar widget</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Tux/NavigationIndicatorGui.py" line="627"/>
+        <source>Navigation indicator</source>
         <comment>A context menu action used to show or hide the &apos;Navigation indicator&apos; toolbar widget</comment>
         <translation>導航指示器</translation>
     </message>

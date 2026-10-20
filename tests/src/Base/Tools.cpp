@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include <Base/Tools.h>
 #include <bitset>
+#include <regex>
 #include <vector>
 
 // NOLINTBEGIN(cppcoreguidelines-*,readability-*)
@@ -12,17 +13,6 @@ TEST(Tools, TestIota)
     std::generate(vec.begin(), vec.end(), iota);
     std::vector<int> out = {1, 2, 3, 4, 5};
     EXPECT_EQ(vec, out);
-}
-
-TEST(Tools, TestClamp)
-{
-    EXPECT_EQ(Base::clamp<int>(2, 1, 3), 2);
-    EXPECT_EQ(Base::clamp<int>(4, 1, 3), 3);
-    EXPECT_EQ(Base::clamp<int>(0, 1, 3), 1);
-
-    EXPECT_DOUBLE_EQ(Base::clamp<double>(2, 1.5, 3.1), 2.0);
-    EXPECT_DOUBLE_EQ(Base::clamp<double>(4, 1.5, 3.1), 3.1);
-    EXPECT_DOUBLE_EQ(Base::clamp<double>(0, 1.5, 3.1), 1.5);
 }
 
 TEST(Tools, TestSignum)
@@ -112,6 +102,31 @@ TEST(BaseToolsSuite, TestEscapeQuotesFromString)
     EXPECT_EQ(Base::Tools::escapeQuotesFromString("\'"), "\\\'");
     EXPECT_EQ(Base::Tools::escapeQuotesFromString("\""), "\\\"");
     EXPECT_EQ(Base::Tools::escapeQuotesFromString("\\"), "\\");
+}
+
+TEST(BaseToolsSuite, TestEscapeEncodeString)
+{
+    EXPECT_EQ(Base::Tools::escapeEncodeString("a\\b"), "a\\\\b");
+    EXPECT_EQ(Base::Tools::escapeEncodeString("a\"b"), "a\\\"b");
+    EXPECT_EQ(Base::Tools::escapeEncodeString("a'b"), "a\\\'b");
+    EXPECT_EQ(Base::Tools::escapeEncodeString("a\nb"), "a\\nb");
+    EXPECT_EQ(Base::Tools::escapeEncodeString("a\rb"), "a\\rb");
+    EXPECT_EQ(Base::Tools::escapeEncodeString("plain"), "plain");
+}
+
+TEST(BaseToolsSuite, TestEscapeEncodeFilename)
+{
+    EXPECT_EQ(Base::Tools::escapeEncodeFilename("a\"b"), "a\\\"b");
+    EXPECT_EQ(Base::Tools::escapeEncodeFilename("a'b"), "a\\\'b");
+    EXPECT_EQ(Base::Tools::escapeEncodeFilename("plain"), "plain");
+    EXPECT_EQ(Base::Tools::escapeEncodeFilename("a\\b"), "a\\b");
+}
+
+TEST(BaseToolsSuite, TestCurrentDateTimeStringUtcIso)
+{
+    const std::string s = Base::Tools::currentDateTimeString();
+    static const std::regex re("^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$");
+    EXPECT_TRUE(std::regex_match(s, re));
 }
 TEST(BaseToolsSuite, TestGetIdentifier)
 {

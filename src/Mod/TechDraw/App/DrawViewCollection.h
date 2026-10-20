@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2007 Jürgen Riegel <juergen.riegel@web.de>              *
  *   Copyright (c) 2013 Luke Parry <l.parry@warwick.ac.uk>                 *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAW_FEATUREVIEWCOLLECTION_h_
-#define TECHDRAW_FEATUREVIEWCOLLECTION_h_
+#pragma once
 
 #include <App/DocumentObject.h>
 #include <App/PropertyLinks.h>
@@ -73,5 +74,3 @@ protected:
 };
 
 } //namespace TechDraw
-
-#endif // TECHDRAW_FEATUREVIEWCOLLECTION_h_

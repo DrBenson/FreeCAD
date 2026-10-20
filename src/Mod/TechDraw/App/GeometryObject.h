@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Luke Parry <l.parry@warwick.ac.uk>                 *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAW_GEOMETRYOBJECT_H
-#define TECHDRAW_GEOMETRYOBJECT_H
+#pragma once
 
 //! a class to the projection of shapes, removal/identifying hidden lines and
 //  converting the output for OCC HLR into the BaseGeom intermediate representation.
@@ -33,6 +34,7 @@
 #include <string>
 #include <vector>
 
+#include <HLRAlgo_Projector.hxx>
 #include <TopoDS_Shape.hxx>
 #include <gp_Ax2.hxx>
 #include <gp_Pnt.hxx>
@@ -80,6 +82,7 @@ public:
     void setVertexGeometry(std::vector<VertexPtr> newVerts) { vertexGeom = newVerts; }
     void setEdgeGeometry(BaseGeomPtrVector newGeoms) { edgeGeom = newGeoms; }
 
+    HLRAlgo_Projector getProjector(const gp_Ax2& viewAxis) const;
     void projectShape(const TopoDS_Shape& input, const gp_Ax2& viewAxis);
     void projectShapeWithPolygonAlgo(const TopoDS_Shape& input, const gp_Ax2& viewAxis);
     static TopoDS_Shape projectSimpleShape(const TopoDS_Shape& shape, const gp_Ax2& CS, bool invertYRequired = true);
@@ -170,6 +173,3 @@ protected:
 using GeometryObjectPtr = std::shared_ptr<GeometryObject>;
 
 }//namespace TechDraw
-
-#endif
-

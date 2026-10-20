@@ -22,18 +22,18 @@
   <context>
     <name>CmdPointsExport</name>
     <message>
-      <location filename="../../Command.cpp" line="151"/>
+      <location filename="../../Command.cpp" line="150"/>
       <source>Points</source>
       <translation>Punts</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="152"/>
+      <location filename="../../Command.cpp" line="151"/>
       <source>Export Points…</source>
       <translation>Exportar punts…</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="153"/>
-      <location filename="../../Command.cpp" line="155"/>
+      <location filename="../../Command.cpp" line="152"/>
+      <location filename="../../Command.cpp" line="154"/>
       <source>Exports a point cloud</source>
       <translation>Exporta un núvol de punts</translation>
     </message>
@@ -48,7 +48,7 @@
     <message>
       <location filename="../../Command.cpp" line="69"/>
       <source>Import Points…</source>
-      <translation>Importa els punts…</translation>
+      <translation>Importar punts…</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="70"/>
@@ -66,7 +66,7 @@
     <message>
       <location filename="../../Command.cpp" line="342"/>
       <source>Merge Point Clouds</source>
-      <translation>Fusiona els núvols de punts</translation>
+      <translation>Fusiona núvols de punts</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="343"/>
@@ -113,9 +113,9 @@
   <context>
     <name>Command</name>
     <message>
-      <location filename="../../Command.cpp" line="94"/>
+      <location filename="../../Command.cpp" line="93"/>
       <source>Import points</source>
-      <translation>Importa els punts</translation>
+      <translation>Importar punts</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="238"/>
@@ -126,7 +126,7 @@
       <location filename="../../ViewProvider.cpp" line="487"/>
       <location filename="../../ViewProvider.cpp" line="655"/>
       <source>Cut points</source>
-      <translation>Talla els punts</translation>
+      <translation>Tallar punts</translation>
     </message>
   </context>
   <context>
@@ -134,12 +134,12 @@
     <message>
       <location filename="../../DlgPointsRead.ui" line="70"/>
       <source>Ignore</source>
-      <translation>Ignora</translation>
+      <translation>Ignorar</translation>
     </message>
     <message>
       <location filename="../../DlgPointsRead.ui" line="80"/>
       <source>Number of points</source>
-      <translation>Nombre de Punts</translation>
+      <translation>Nombre de punts</translation>
     </message>
     <message>
       <location filename="../../DlgPointsRead.ui" line="167"/>
@@ -154,12 +154,12 @@
     <message>
       <location filename="../../DlgPointsRead.ui" line="188"/>
       <source>X,Y,Z</source>
-      <translation>X, Y, Z</translation>
+      <translation>X,Y,Z</translation>
     </message>
     <message>
       <location filename="../../DlgPointsRead.ui" line="193"/>
       <source>X,Y</source>
-      <translation>X, Y</translation>
+      <translation>X,Y</translation>
     </message>
     <message>
       <location filename="../../DlgPointsRead.ui" line="14"/>
@@ -184,12 +184,12 @@
     <message>
       <location filename="../../DlgPointsRead.ui" line="101"/>
       <source>Cluster by lines starting with</source>
-      <translation>Agrupa les línies que comencen amb</translation>
+      <translation>Agrupa les línies que comencen per</translation>
     </message>
     <message>
       <location filename="../../DlgPointsRead.ui" line="111"/>
       <source>Ignore lines starting with</source>
-      <translation>Ignorar les línies que comencin amb</translation>
+      <translation>Ignora les línies que comencin per</translation>
     </message>
     <message>
       <location filename="../../DlgPointsRead.ui" line="126"/>
@@ -199,7 +199,7 @@
     <message>
       <location filename="../../DlgPointsRead.ui" line="146"/>
       <source>Number separator</source>
-      <translation>Número separador</translation>
+      <translation>Separador de números</translation>
     </message>
     <message>
       <location filename="../../DlgPointsRead.ui" line="180"/>
@@ -225,21 +225,21 @@
       <location filename="../../DlgPointsRead.ui" line="250"/>
       <location filename="../../DlgPointsRead.ui" line="286"/>
       <source>I,J,K (normal vector)</source>
-      <translation>M, J, K (vector normal)</translation>
+      <translation>I,J,K (vector normal)</translation>
     </message>
     <message>
       <location filename="../../DlgPointsRead.ui" line="219"/>
       <location filename="../../DlgPointsRead.ui" line="255"/>
       <location filename="../../DlgPointsRead.ui" line="291"/>
       <source>I,K (normal vector 2D)</source>
-      <translation>I, K (vector normal 2D)</translation>
+      <translation>I,K (vector normal 2D)</translation>
     </message>
     <message>
       <location filename="../../DlgPointsRead.ui" line="224"/>
       <location filename="../../DlgPointsRead.ui" line="260"/>
       <location filename="../../DlgPointsRead.ui" line="296"/>
       <source>R,G,B (color)</source>
-      <translation>R, G, B (color)</translation>
+      <translation>R,G,B (color)</translation>
     </message>
     <message>
       <location filename="../../DlgPointsRead.ui" line="229"/>
@@ -262,24 +262,18 @@
   <context>
     <name>QObject</name>
     <message>
-      <location filename="../../Command.cpp" line="85"/>
-      <location filename="../../Command.cpp" line="173"/>
+      <location filename="../../Command.cpp" line="81"/>
+      <location filename="../../Command.cpp" line="168"/>
       <source>Point formats</source>
       <translation>Formats de punt</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="85"/>
-      <location filename="../../Command.cpp" line="173"/>
-      <source>All Files</source>
-      <translation>Tots els fitxers</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="114"/>
+      <location filename="../../Command.cpp" line="113"/>
       <source>Points not at Origin</source>
       <translation>Els punts no estan a l'origen</translation>
     </message>
     <message>
-      <location filename="../../Command.cpp" line="116"/>
+      <location filename="../../Command.cpp" line="115"/>
       <source>The bounding box of the imported points does not contain the origin. Translate it to the origin?</source>
       <translation>La caixa delimitadora dels punts importats no conté l'origen. Vols moure'l a l'origen?</translation>
     </message>
@@ -305,6 +299,14 @@
       <location filename="../../Workbench.cpp" line="36"/>
       <source>&amp;Points</source>
       <translation>&amp;Punts</translation>
+    </message>
+  </context>
+  <context>
+    <name>FileFormat</name>
+    <message>
+      <location filename="../../../Init.py" line="35"/>
+      <source>Point formats</source>
+      <translation>Formats de punt</translation>
     </message>
   </context>
 </TS>

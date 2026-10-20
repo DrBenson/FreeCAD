@@ -23,8 +23,7 @@
  ***************************************************************************/
 
 
-#ifndef PARTDESIGNGUI_ENUMFLAGS_H
-#define PARTDESIGNGUI_ENUMFLAGS_H
+#pragma once
 
 namespace PartDesignGui
 {
@@ -42,12 +41,12 @@ enum class AllowSelection
     CIRCLE = 1 << 3,    /**< Allow picking circular edges (incl arcs) */
     POINT = 1 << 4,     /**< Allow picking datum points */
     OTHERBODY = 1 << 5, /**< Allow picking objects from another body in the same part */
-    WHOLE = 1 << 6      /**< Allow whole object selection */
+    WHOLE = 1 << 6,     /**< Allow whole object selection */
+    SOLID = 1 << 7      /**< Allow whole solid selection, will only take effect if
+                           FACE/OTHERBODY/WHOLEBODY isn't enabled as well */
 };
 Q_DECLARE_FLAGS(AllowSelectionFlags, AllowSelection)
 
 }  // namespace PartDesignGui
 
 Q_DECLARE_OPERATORS_FOR_FLAGS(PartDesignGui::AllowSelectionFlags)
-
-#endif  // PARTDESIGNGUI_ENUMFLAGS_H

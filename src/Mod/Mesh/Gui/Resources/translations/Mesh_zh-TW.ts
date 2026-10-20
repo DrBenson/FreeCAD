@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW" sourcelanguage="en_US">
+<TS version="2.1" language="zh_TW" sourcelanguage="en_US">
     <extra-po-header-language>zh_TW</extra-po-header-language>
     <extra-po-header-language_team></extra-po-header-language_team>
     <extra-po-header-last_translator>DrBenson &lt;Benson.Dr@GMail.com&gt;</extra-po-header-last_translator>
@@ -10,7 +10,7 @@
     <extra-po-header-x_generator>Poedit 3.6</extra-po-header-x_generator>
     <extra-po-header_comment>#
 # Translators:
-# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2026
+# DrBenson &lt;Benson.Dr@GMail.com&gt;, 2025
 #
     </extra-po-header_comment>
     <extra-po-headers>Project-Id-Version,POT-Creation-Date,PO-Revision-Date,Last-Translator,Language-Team,Language,MIME-Version,Content-Type,Content-Transfer-Encoding,Plural-Forms,X-Language,X-Source-Language,X-Qt-Contexts,X-Generator</extra-po-headers>
@@ -21,17 +21,17 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="715"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="715"/>
         <source>Add Triangle</source>
         <translation>加入三角形</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="718"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="718"/>
         <source>Triangle</source>
         <translation>三角形</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="719"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="719"/>
         <source>Adds a triangle manually to a mesh</source>
         <translation>手動於網格中加入三角形</translation>
     </message>
@@ -51,24 +51,19 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1432"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1432"/>
         <source>Bounding Box Info</source>
         <translation>邊界區塊資訊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1433"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1433"/>
         <source>Shows the bounding box coordinates of the selected mesh</source>
         <translation>顯示所選網格邊界區塊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1435"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1435"/>
         <source>Boundings Info</source>
         <translation>邊界區塊資訊</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1435"/>
-        <source>Boundings Info…</source>
-        <translation>邊界區塊資訊…</translation>
     </message>
     <message>
         <source>Boundings info...</source>
@@ -78,6 +73,11 @@
         <source>Shows the boundings of the selected mesh</source>
         <translation>顯示所選網格邊界區塊</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1435"/>
+        <source>Boundings Info…</source>
+        <translation>邊界區塊資訊…</translation>
+    </message>
 </context>
 <context>
     <name>CmdMeshBuildRegularSolid</name>
@@ -86,14 +86,9 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1487"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1487"/>
         <source>Regular Solid</source>
         <translation>矩形實體</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1487"/>
-        <source>Regular Solid…</source>
-        <translation>標準實體…</translation>
     </message>
     <message>
         <source>Builds a regular solid</source>
@@ -103,6 +98,11 @@
         <source>Regular solid...</source>
         <translation>標準實體...</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1487"/>
+        <source>Regular Solid…</source>
+        <translation>標準實體…</translation>
+    </message>
 </context>
 <context>
     <name>CmdMeshCrossSections</name>
@@ -111,19 +111,19 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="955"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="955"/>
         <source>Cross-Sections</source>
         <translation>剖面</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="955"/>
-        <source>Cross-Sections…</source>
-        <translation>剖面…</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="956"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="956"/>
         <source>Creates cross-sections of the mesh</source>
         <translation>建立網格的截面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="955"/>
+        <source>Cross-Sections…</source>
+        <translation>剖面…</translation>
     </message>
     <message>
         <source>Cross-sections...</source>
@@ -141,14 +141,9 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1331"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1331"/>
         <source>Decimate</source>
         <translation>十進制</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1331"/>
-        <source>Decimate…</source>
-        <translation>十進制…</translation>
     </message>
     <message>
         <source>Decimates a mesh</source>
@@ -157,6 +152,11 @@
     <message>
         <source>Decimation...</source>
         <translation>十進制...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1331"/>
+        <source>Decimate…</source>
+        <translation>十進制…</translation>
     </message>
 </context>
 <context>
@@ -181,7 +181,7 @@
         <translation>差集</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="166"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="166"/>
         <source>Creates a boolean difference of the selected meshes</source>
         <translation>建立選取網格的布林差異值</translation>
     </message>
@@ -193,12 +193,12 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1086"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1086"/>
         <source>Face Info</source>
         <translation>平面資訊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1087"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1087"/>
         <source>Displays information about the selected faces</source>
         <translation>顯示平面之資訊</translation>
     </message>
@@ -218,7 +218,7 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1261"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1261"/>
         <source>Evaluate Solid</source>
         <translation>計算實體</translation>
     </message>
@@ -238,14 +238,9 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1042"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1042"/>
         <source>Evaluate and Repair</source>
         <translation>評估和修復</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1042"/>
-        <source>Evaluate and Repair…</source>
-        <translation>評估和修復網格…</translation>
     </message>
     <message>
         <source>Opens a dialog to analyze and repair a mesh</source>
@@ -255,6 +250,11 @@
         <source>Evaluate and repair mesh...</source>
         <translation>評估及修復網格...</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1042"/>
+        <source>Evaluate and Repair…</source>
+        <translation>評估和修復網格…</translation>
+    </message>
 </context>
 <context>
     <name>CmdMeshExport</name>
@@ -263,12 +263,12 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="376"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="376"/>
         <source>Export Mesh…</source>
         <translation>匯出網格…</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="377"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="377"/>
         <source>Exports a mesh to a file</source>
         <translation>匯出網格至檔案</translation>
     </message>
@@ -288,23 +288,13 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1567"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1567"/>
         <source>Close Hole</source>
         <translation>封閉孔洞</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1568"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1568"/>
         <source>Closes a hole interactively in the mesh</source>
-        <translation>以交集封閉孔洞</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1570"/>
-        <source>Close Holes</source>
-        <translation>封閉孔洞</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1571"/>
-        <source>Closes holes interactively in the mesh</source>
         <translation>以交集封閉孔洞</translation>
     </message>
     <message>
@@ -315,6 +305,16 @@
         <source>Close holes interactively</source>
         <translation>以交集封閉孔洞</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1570"/>
+        <source>Close Holes</source>
+        <translation>封閉孔洞</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1571"/>
+        <source>Closes holes interactively in the mesh</source>
+        <translation>以交集封閉孔洞</translation>
+    </message>
 </context>
 <context>
     <name>CmdMeshFillupHoles</name>
@@ -323,19 +323,19 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1519"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1519"/>
         <source>Fill Holes</source>
         <translation>填充孔洞</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1519"/>
-        <source>Fill Holes…</source>
-        <translation>填充孔洞…</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1520"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1520"/>
         <source>Fills holes in the mesh</source>
         <translation>充填網格孔洞</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1519"/>
+        <source>Fill Holes…</source>
+        <translation>填充孔洞…</translation>
     </message>
     <message>
         <source>Fill holes...</source>
@@ -353,12 +353,12 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1399"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1399"/>
         <source>Flip Normals</source>
         <translation>翻轉法線</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1400"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1400"/>
         <source>Flips the normals of the selected mesh</source>
         <translation>翻轉網格法線</translation>
     </message>
@@ -378,19 +378,19 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="459"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="459"/>
         <source>Mesh From Geometry</source>
         <translation>網格來自幾何圖形</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="459"/>
-        <source>Mesh From Geometry…</source>
-        <translation>網格來自幾何圖形…</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="460"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="460"/>
         <source>Creates a mesh from the selected geometry</source>
         <translation>從選取的幾何圖形建立網格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="459"/>
+        <source>Mesh From Geometry…</source>
+        <translation>網格來自幾何圖形…</translation>
     </message>
     <message>
         <source>Create mesh from geometry...</source>
@@ -408,19 +408,19 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="530"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="530"/>
         <source>Mesh From Shape</source>
         <translation>由造型建立的網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="530"/>
-        <source>Mesh From Shape…</source>
-        <translation>由造型建立的網格…</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="531"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="531"/>
         <source>Tessellates the selected shape to a mesh</source>
         <translation>將選取的形狀分割為網格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="530"/>
+        <source>Mesh From Shape…</source>
+        <translation>由造型建立的網格…</translation>
     </message>
     <message>
         <source>Create mesh from shape...</source>
@@ -438,7 +438,7 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1363"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1363"/>
         <source>Harmonize Normals</source>
         <translation>統一法線</translation>
     </message>
@@ -458,12 +458,12 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="323"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="323"/>
         <source>Import Mesh…</source>
         <translation>匯入網格…</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="324"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="324"/>
         <source>Imports a mesh from a file</source>
         <translation>從檔案中匯入網格</translation>
     </message>
@@ -487,7 +487,7 @@
         <translation>交集</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="245"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="245"/>
         <source>Creates a boolean intersection from the selected meshes</source>
         <translation>從選取的網格建立布林交集</translation>
     </message>
@@ -514,12 +514,12 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="767"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="767"/>
         <source>Cut</source>
         <translation>切割</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="768"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="768"/>
         <source>Cuts the mesh with a selected polygon</source>
         <translation>以選取之多邊形切割網格</translation>
     </message>
@@ -539,7 +539,7 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="659"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="659"/>
         <source>Segment</source>
         <translation>分割片段</translation>
     </message>
@@ -574,12 +574,12 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="984"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="984"/>
         <source>Split</source>
         <translation>拆分</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="985"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="985"/>
         <source>Splits a mesh into 2 meshes</source>
         <translation>分割為兩個網格</translation>
     </message>
@@ -599,12 +599,12 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="832"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="832"/>
         <source>Trim</source>
         <translation>修剪</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="833"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="833"/>
         <source>Trims a mesh with a selected polygon</source>
         <translation>依選定之多邊形修剪網格</translation>
     </message>
@@ -624,19 +624,19 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1180"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1180"/>
         <source>Refinement</source>
         <translation>細緻化</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1180"/>
-        <source>Refinement…</source>
-        <translation>細緻化…</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1181"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1181"/>
         <source>Refines an existing mesh</source>
         <translation>細緻化既有網格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1180"/>
+        <source>Refinement…</source>
+        <translation>細緻化…</translation>
     </message>
     <message>
         <source>Refinement...</source>
@@ -654,19 +654,19 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1214"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1214"/>
         <source>Remove Components Manually</source>
         <translation>手動刪除元件</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1214"/>
-        <source>Remove Components Manually…</source>
-        <translation>手動刪除元件…</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1215"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1215"/>
         <source>Marks a component to remove it from the mesh</source>
         <translation>使元件由網格中移出</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1214"/>
+        <source>Remove Components Manually…</source>
+        <translation>手動刪除元件…</translation>
     </message>
     <message>
         <source>Remove components by hand...</source>
@@ -684,19 +684,19 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1132"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1132"/>
         <source>Remove Components</source>
         <translation>刪除元件</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1132"/>
-        <source>Remove Components…</source>
-        <translation>刪除元件…</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1133"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1133"/>
         <source>Removes topologically independent components from the mesh</source>
         <translation>自網格移除拓樸獨立元件</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1132"/>
+        <source>Remove Components…</source>
+        <translation>刪除元件…</translation>
     </message>
     <message>
         <source>Remove components...</source>
@@ -714,19 +714,19 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1782"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1782"/>
         <source>Scale</source>
         <translation>縮放</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1782"/>
-        <source>Scale…</source>
-        <translation>縮放…</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1783"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1783"/>
         <source>Scales the selected mesh objects</source>
         <translation>縮放所選網格物體</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1782"/>
+        <source>Scale…</source>
+        <translation>縮放…</translation>
     </message>
     <message>
         <source>Scale...</source>
@@ -744,12 +744,12 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="926"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="926"/>
         <source>Section From Plane</source>
         <translation>平面的截面</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="927"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="927"/>
         <source>Sections the mesh with the selected plane</source>
         <translation>由網格和平面的截面</translation>
     </message>
@@ -769,19 +769,19 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1617"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1617"/>
         <source>Segmentation</source>
         <translation>片段分割</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1617"/>
-        <source>Segmentation…</source>
-        <translation>片段分割…</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1618"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1618"/>
         <source>Creates new mesh segments from the mesh</source>
         <translation>從網格建立新的網格片段</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1617"/>
+        <source>Segmentation…</source>
+        <translation>片段分割…</translation>
     </message>
     <message>
         <source>Create mesh segments...</source>
@@ -799,19 +799,19 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1653"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1653"/>
         <source>Segmentation From Best-Fit Surfaces</source>
         <translation>從最適合的表面進行分割</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1653"/>
-        <source>Segmentation From Best-Fit Surfaces…</source>
-        <translation>從最適合的表面進行分割…</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1654"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1654"/>
         <source>Creates new mesh segments from the best-fit surfaces</source>
         <translation>從最適合的曲面建立新的網格區段</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1653"/>
+        <source>Segmentation From Best-Fit Surfaces…</source>
+        <translation>從最適合的表面進行分割…</translation>
     </message>
     <message>
         <source>Create mesh segments from best-fit surfaces...</source>
@@ -829,19 +829,19 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1302"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1302"/>
         <source>Smooth</source>
         <translation>平滑</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1302"/>
-        <source>Smooth…</source>
-        <translation>平滑…</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1303"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1303"/>
         <source>Smoothes the selected meshes</source>
         <translation>平滑化所選網格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1302"/>
+        <source>Smooth…</source>
+        <translation>平滑…</translation>
     </message>
     <message>
         <source>Smooth...</source>
@@ -859,12 +859,12 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1734"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1734"/>
         <source>Split by Components</source>
         <translation>依元件分割</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1735"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1735"/>
         <source>Splits the selected mesh into its components</source>
         <translation>將選定的網格拆分為其組件</translation>
     </message>
@@ -914,12 +914,12 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="897"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="897"/>
         <source>Trim With Plane</source>
         <translation>以平面修剪</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="898"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="898"/>
         <source>Trims a mesh by removing faces on one side of a selected plane</source>
         <translation>透過移除選取平面一側的面來修剪網格</translation>
     </message>
@@ -943,12 +943,12 @@
         <translation>聯集</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="87"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="87"/>
         <source>Unifies the selected meshes</source>
         <translation>整合選取的網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="87"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="87"/>
         <source>Unites the selected meshes</source>
         <translation>整合選取的網格</translation>
     </message>
@@ -960,7 +960,7 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="556"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="556"/>
         <source>Curvature Plot</source>
         <translation>曲率圖</translation>
     </message>
@@ -980,12 +980,12 @@
         <translation>網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="611"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="611"/>
         <source>Curvature Info</source>
         <translation>曲率資訊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="612"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="612"/>
         <source>Displays information about the curvature</source>
         <translation>顯示曲率資訊</translation>
     </message>
@@ -1081,7 +1081,7 @@
         <translation>移除折疊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMeshImp.cpp" line="1179"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgEvaluateMeshImp.cpp" line="1179"/>
         <source>Repair Mesh</source>
         <translation>修復網格</translation>
     </message>
@@ -1131,39 +1131,59 @@
     </message>
 </context>
 <context>
+    <name>FileFormat</name>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Init.py" line="19"/>
+        <source>STL Mesh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Init.py" line="20"/>
+        <source>Binary Mesh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Init.py" line="23"/>
+        <source>Alias Mesh</source>
+        <extracomment>Translation note: &quot;Alias&quot; in this case is a product/format name and should not be translated</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Init.py" line="27"/>
+        <source>Object File Format Mesh</source>
+        <extracomment>Translation note: &quot;Object File Format&quot; is the official name and should not be translated</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MeshGui::DlgDecimating</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgDecimating.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgDecimating.ui" line="14"/>
         <source>Decimating</source>
         <translation>十進制</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgDecimating.ui" line="20"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgDecimating.ui" line="20"/>
         <source>Reduction</source>
         <translation>減少</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgDecimating.ui" line="28"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgDecimating.ui" line="28"/>
         <source>None</source>
         <translation>無</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgDecimating.ui" line="57"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgDecimating.ui" line="57"/>
         <source>Full</source>
         <translation>飽滿</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgDecimating.ui" line="66"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgDecimating.ui" line="66"/>
         <source>Absolute number</source>
         <translation>絕對值</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgDecimating.ui" line="86"/>
-        <source>%</source>
-        <translation>%</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgDecimating.ui" line="102"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgDecimating.ui" line="102"/>
         <source>Tolerance</source>
         <translation>公差</translation>
     </message>
@@ -1171,152 +1191,157 @@
         <source>Absolute number (Maximum: %1)</source>
         <translation>絕對值 (最大值: %1)</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgDecimating.ui" line="86"/>
+        <source>%</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MeshGui::DlgEvaluateMesh</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="14"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="14"/>
         <source>Evaluate and Repair Mesh</source>
         <translation>評估及修復網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="14"/>
-        <source>Evaluate &amp; Repair Mesh</source>
-        <translation>評估和修復網格</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="23"/>
-        <source>Mesh information</source>
-        <translation>網格資訊</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="46"/>
-        <source>Number of faces:</source>
-        <translation>面數:</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="79"/>
-        <source>Number of edges:</source>
-        <translation>邊之數目:</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="112"/>
-        <source>Number of points:</source>
-        <translation>點的數目:</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="187"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="187"/>
         <source>Orientation</source>
         <translation>定位</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="69"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="102"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="135"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="211"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="291"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="371"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="451"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="531"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="611"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="691"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="753"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="69"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="102"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="135"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="211"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="291"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="371"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="451"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="531"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="611"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="691"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="753"/>
         <source>No information</source>
         <translation>沒有資訊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="234"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="314"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="394"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="474"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="554"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="634"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="714"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="773"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="853"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="14"/>
+        <source>Evaluate &amp; Repair Mesh</source>
+        <translation>評估和修復網格</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="23"/>
+        <source>Mesh information</source>
+        <translation>網格資訊</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="46"/>
+        <source>Number of faces:</source>
+        <translation>面數:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="79"/>
+        <source>Number of edges:</source>
+        <translation>邊之數目:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="112"/>
+        <source>Number of points:</source>
+        <translation>點的數目:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="234"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="314"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="394"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="474"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="554"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="634"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="714"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="773"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="853"/>
         <source>Analyze</source>
         <translation>分析</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="244"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="324"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="404"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="484"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="564"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="644"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="724"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="783"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="863"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="244"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="324"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="404"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="484"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="564"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="644"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="724"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="783"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="863"/>
         <source>Repair</source>
         <translation>修復</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="267"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="267"/>
         <source>Duplicated faces</source>
         <translation>複製之面</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="347"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="347"/>
         <source>Duplicated points</source>
         <translation>複製之點</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="427"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="427"/>
         <source>Non-manifolds</source>
         <translation>非重疊網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="507"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="507"/>
         <source>Degenerated faces</source>
         <translation>簡化面</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="587"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="587"/>
         <source>Face indices</source>
         <translation>面索引</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="667"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="667"/>
         <source>Self-intersections</source>
         <translation>自我交錯</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="735"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="735"/>
         <source>Folds on surface</source>
         <translation>於面上有重疊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="806"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="806"/>
         <source>All above tests together</source>
         <translation>所有上述測試一起</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="830"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="830"/>
         <source>Repetitive repair</source>
         <translation>重複修復</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="23"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="23"/>
         <source>Mesh Information</source>
         <translation>網格資訊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="147"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="147"/>
         <source>Refresh</source>
         <translation>重新整理</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="46"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="46"/>
         <source>Number of faces</source>
         <translation>平面數量</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="79"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="79"/>
         <source>Number of edges</source>
         <translation>邊緣數量</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="112"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgEvaluateMesh.ui" line="112"/>
         <source>Number of points</source>
         <translation>點的數量</translation>
     </message>
@@ -1324,14 +1349,9 @@
 <context>
     <name>MeshGui::DlgEvaluateMeshImp</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMeshImp.cpp" line="141"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgEvaluateMeshImp.cpp" line="141"/>
         <source>Settings</source>
         <translation>設定</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateMeshImp.cpp" line="141"/>
-        <source>Settings…</source>
-        <translation>設定…</translation>
     </message>
     <message>
         <source>No selection</source>
@@ -1414,16 +1434,19 @@
         <translation>%1重疊面</translation>
     </message>
     <message>
-        <source>Duplicated faces</source>
-        <translation>複製之面</translation>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMeshImp.cpp" line="927"/>
+        <source>Duplicated Faces</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No duplicated points</source>
         <translation>無重疊點</translation>
     </message>
     <message>
-        <source>Duplicated points</source>
-        <translation>複製之點</translation>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMeshImp.cpp" line="969"/>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMeshImp.cpp" line="997"/>
+        <source>Duplicated Points</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No self-intersections</source>
@@ -1446,12 +1469,31 @@
         <translation>折疊</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMeshImp.cpp" line="1295"/>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateMeshImp.cpp" line="1298"/>
+        <source>Mesh Repair</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duplicated faces</source>
+        <translation>複製之面</translation>
+    </message>
+    <message>
+        <source>Duplicated points</source>
+        <translation>複製之點</translation>
+    </message>
+    <message>
         <source>Mesh repair</source>
         <translation>修復網格</translation>
     </message>
     <message>
         <source>Settings...</source>
         <translation>設定...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgEvaluateMeshImp.cpp" line="141"/>
+        <source>Settings…</source>
+        <translation>設定…</translation>
     </message>
     <message>
         <source>Flipped normals found</source>
@@ -1466,236 +1508,236 @@ Please run the command to repair folds first</source>
 <context>
     <name>MeshGui::DlgEvaluateSettings</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="14"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="14"/>
         <source>Evaluation Settings</source>
         <translation>計算設定</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="14"/>
-        <source>Evaluation settings</source>
-        <translation>計算設定</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="20"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="20"/>
         <source>Settings</source>
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="26"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="26"/>
         <source>Check for non-manifold points</source>
         <translation>檢查非流形點</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="33"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="33"/>
         <source>Enable check for folds on surface</source>
         <translation>啟用表面折疊檢查</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="40"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="40"/>
         <source>Only consider zero area faces as degenerated</source>
         <translation>只將零面積面視為退化面</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgEvaluateSettings.ui" line="14"/>
+        <source>Evaluation settings</source>
+        <translation>計算設定</translation>
     </message>
 </context>
 <context>
     <name>MeshGui::DlgRegularSolid</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="14"/>
         <source>Regular Solid</source>
         <translation>矩形實體</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="29"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="29"/>
         <source>Solid:</source>
         <translation>實體:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="29"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="29"/>
         <source>Solid</source>
         <translation>實體</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="42"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="42"/>
         <source>Cube</source>
         <translation>立方體</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="51"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="51"/>
         <source>Cylinder</source>
         <translation>圓柱</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="60"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="60"/>
         <source>Cone</source>
         <translation>錐體</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="69"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="69"/>
         <source>Sphere</source>
         <translation>球體</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="78"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="78"/>
         <source>Ellipsoid</source>
         <translation>橢球體</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="87"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="87"/>
         <source>Torus</source>
         <translation>圓環</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="120"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="236"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="387"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="120"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="236"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="387"/>
         <source>Length:</source>
         <translation>長度:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="127"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="150"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="170"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="226"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="243"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="280"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="360"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="377"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="394"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="431"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="508"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="595"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="612"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="699"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="716"/>
-        <source>mm</source>
-        <translation>mm</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="143"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="143"/>
         <source>Width:</source>
         <translation>寬度:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="163"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="163"/>
         <source>Height:</source>
         <translation>高度:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="219"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="501"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="219"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="501"/>
         <source>Radius:</source>
         <translation>半徑:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="273"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="424"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="273"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="424"/>
         <source>Edge length:</source>
         <translation>邊長:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="293"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="441"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="538"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="642"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="746"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="293"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="441"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="538"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="642"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="746"/>
         <source>Sampling:</source>
         <translation>採樣:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="353"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="588"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="692"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="353"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="588"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="692"/>
         <source>Radius 1:</source>
         <translation>半徑 1:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="370"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="605"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="709"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="370"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="605"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="709"/>
         <source>Radius 2:</source>
         <translation>半徑 2:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="825"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="825"/>
         <source>Cl&amp;ose</source>
         <translation>&amp;關閉</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="828"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="828"/>
         <source>Alt+O</source>
         <translation>Alt+O</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="120"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="236"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="387"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="120"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="236"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="387"/>
         <source>Length</source>
         <translation>長度</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="143"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="143"/>
         <source>Width</source>
         <translation>寬度</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="163"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="163"/>
         <source>Height</source>
         <translation>高度</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="219"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="501"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="219"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="501"/>
         <source>Radius</source>
         <translation>半徑</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="273"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="424"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="273"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="424"/>
         <source>Edge length</source>
         <translation>邊緣長度</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="293"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="441"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="538"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="642"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="746"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="293"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="441"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="538"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="642"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="746"/>
         <source>Sampling</source>
         <translation>採樣數</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="307"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="455"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="307"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="455"/>
         <source>Closed</source>
         <translation>關閉</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="353"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="588"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="692"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="353"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="588"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="692"/>
         <source>Radius 1</source>
         <translation>半徑 1</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="370"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="605"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="709"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="370"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="605"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="709"/>
         <source>Radius 2</source>
         <translation>半徑 2</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="809"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="809"/>
         <source>&amp;Create</source>
         <translation>&amp;建立</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="812"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="812"/>
         <source>Alt+C</source>
         <translation>Alt+C</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="825"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="825"/>
         <source>Close</source>
         <translation>關閉</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="127"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="150"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="170"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="226"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="243"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="280"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="360"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="377"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="394"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="431"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="508"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="595"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="612"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="699"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgRegularSolid.ui" line="716"/>
+        <source>mm</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1705,6 +1747,11 @@ Please run the command to repair folds first</source>
         <translation>建立%1</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgRegularSolidImp.cpp" line="123"/>
+        <source>No Active Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>No active document</source>
         <translation>未選擇文件</translation>
     </message>
@@ -1712,82 +1759,72 @@ Please run the command to repair folds first</source>
 <context>
     <name>MeshGui::DlgSettingsImportExport</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="14"/>
         <source>Mesh Formats</source>
         <translation>網格格式</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="20"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="20"/>
         <source>Export</source>
         <translation>匯出</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="28"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="28"/>
         <source>Deviation of tessellation to the actual surface</source>
         <translation>鑲嵌與實際表面的偏差</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="31"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="31"/>
         <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tessellation&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Defines the maximum deviation of the tessellated mesh to the surface. The smaller the value is the slower the render speed which results in increased detail/resolution.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tessellation&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;定義細分網格相對於曲面的最大偏差. 該值越小，渲染速度越慢，從而提高細節/解析度..&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="34"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="34"/>
         <source>Maximum mesh deviation</source>
         <translation>網格最大偏差</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="41"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="41"/>
         <source>Maximal deviation between mesh and object</source>
         <translation>網格和物體之間的最大偏差</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="44"/>
-        <source>mm</source>
-        <translation>mm</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="95"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="95"/>
         <source>Width:</source>
         <translation>寬度:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="106"/>
-        <source>Asymptote</source>
-        <translation>漸近線</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="119"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="119"/>
         <source>Height:</source>
         <translation>高度:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="63"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="63"/>
         <source>ZIP compression is used when writing a mesh file in AMF format</source>
         <translation>以 AMF 格式寫入網格檔案時使用 ZIP 壓縮</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="66"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="66"/>
         <source>Export AMF files using compression</source>
         <translation>匯出 AMF 文件時使用壓縮</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="82"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="82"/>
         <source>Always export mesh as model type in 3MF format even if not a solid</source>
         <translation>即使不是實體, 也始​​終匯出網格為 3MF 格式的模型類型</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="85"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="85"/>
         <source>Export 3MF files as model type</source>
         <translation>匯出 3MF 檔案為模型類型</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="114"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="114"/>
         <source>Width</source>
         <translation>寬度</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="138"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="138"/>
         <source>Height</source>
         <translation>高度</translation>
     </message>
@@ -1796,52 +1833,66 @@ Please run the command to repair folds first</source>
 is used when writing a file in AMF format</source>
         <translation>此參數表示寫入AMF格式的檔案時是否使用ZIP壓縮</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="44"/>
+        <source>mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsImportExport.ui" line="106"/>
+        <source>Asymptote</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MeshGui::DlgSettingsMeshView</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="14"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="14"/>
         <source>Mesh View</source>
         <translation>網格檢視</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="14"/>
-        <source>Mesh view</source>
-        <translation>網格視圖</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="35"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="35"/>
         <source>Default Appearance for New Meshes</source>
         <translation>新網格的預設外觀</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="35"/>
-        <source>Default appearance for new meshes</source>
-        <translation>新網格的預設外觀</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="73"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="73"/>
         <source>Default mesh color</source>
         <translation>預設網格顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="80"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="80"/>
         <source>Default color for new meshes</source>
         <translation>新網格的預設顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="116"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="116"/>
         <source>Mesh transparency</source>
         <translation>網格透明度</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="123"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="192"/>
-        <source>%</source>
-        <translation>%</translation>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="142"/>
+        <source>Default line color</source>
+        <translation>預設線條顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="251"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="149"/>
+        <source>Default line color for new meshes</source>
+        <translation>新網格的預設線條顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="185"/>
+        <source>Line transparency</source>
+        <translation>線條透明度</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="211"/>
+        <source>Backface color</source>
+        <translation>背面顏色</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="251"/>
         <source>The bottom side of surface will be rendered the same way than top side.
 If not checked, it depends on the option &quot;Enable backlight color&quot;
 (preferences section Display -&gt; 3D View). Either the backlight color
@@ -1852,7 +1903,7 @@ will be used or black.</source>
 背光顏色將被使用或黑色.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="334"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="334"/>
         <source>If this option is set Phong shading is used, otherwise flat shading.
 Shading defines the appearance of surfaces.
 
@@ -1868,27 +1919,7 @@ to a smoother appearance.
 </translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="142"/>
-        <source>Default line color</source>
-        <translation>預設線條顏色</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="149"/>
-        <source>Default line color for new meshes</source>
-        <translation>新網格的預設線條顏色</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="185"/>
-        <source>Line transparency</source>
-        <translation>線條透明度</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="211"/>
-        <source>Backface color</source>
-        <translation>背面顏色</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="251"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="251"/>
         <source>The bottom side of the surface will be rendered the same way as the top side.
 If not checked, it depends on the option &quot;Enable backlight color&quot;
 (preferences section Display -&gt; 3D View). Either the backlight color
@@ -1899,27 +1930,27 @@ will be used or black.</source>
 背光顏色將被使用或黑色.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="257"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="257"/>
         <source>Two-side rendering</source>
         <translation>雙面渲染</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="273"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="273"/>
         <source>A bounding box will be displayed</source>
         <translation>將顯示一個邊界框</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="276"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="276"/>
         <source>Show bounding-box for highlighted or selected meshes</source>
         <translation>顯示突出或選定的網格邊界框</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="313"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="313"/>
         <source>Smoothing</source>
         <translation>平滑</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="334"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="334"/>
         <source>If this option is set Phong shading is used, otherwise flat shading.
 Shading defines the appearance of surfaces.
 
@@ -1935,22 +1966,22 @@ to a smoother appearance.
 </translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="343"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="343"/>
         <source>Define normal per vertex</source>
         <translation>定義每個頂點法線</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="356"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="356"/>
         <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;This is the smallest angle between two faces where normals get calculated to do flat shading.&lt;/p&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;If the angle between the normals of two neighbouring faces is less than the crease angle, the faces will be smoothshaded around their common edge.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;這是計算法線以進行平面著色的兩個面之間的最小角度.&lt;/p&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;如果兩個相鄰面的法線之間的角度小於摺痕角，則這些面將在其公共邊緣周圍進行平滑著色.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="359"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="359"/>
         <source>Crease angle</source>
         <translation>消除摺角</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="369"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="369"/>
         <source>Crease angle is a threshold angle between two faces.
 
  If face angle ≥ crease angle, facet shading is used
@@ -1961,9 +1992,25 @@ to a smoother appearance.
  若平面角 &lt; 摺痕角, 則使用平滑陰影</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="404"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="404"/>
         <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hint&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;Defining the normals per vertex is also called &lt;span style=&quot; font-style:italic;&quot;&gt;Phong shading&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;&quot;&gt;&lt;span style=&quot; font-style:normal;&quot;&gt;while defining the normals per face is called &lt;/span&gt;Flat shading&lt;span style=&quot; font-style:normal;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;提示:&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;定義每個頂點的常態也稱為 &lt;span style=&quot; font-style:italic;&quot;&gt;馮式陰影&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;&quot;&gt;&lt;span style=&quot; font-style:normal;&quot;&gt;在定義每張臉的正常時稱為 &lt;/span&gt;平面陰影&lt;span style=&quot; font-style:normal;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="14"/>
+        <source>Mesh view</source>
+        <translation>網格視圖</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="35"/>
+        <source>Default appearance for new meshes</source>
+        <translation>新網格的預設外觀</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="123"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSettingsMeshView.ui" line="192"/>
+        <source>%</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source> °</source>
@@ -1977,62 +2024,62 @@ to a smoother appearance.
 <context>
     <name>MeshGui::DlgSmoothing</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="14"/>
         <source>Smoothing</source>
         <translation>平滑</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="23"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="23"/>
         <source>Method</source>
         <translation>方法</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="29"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="29"/>
         <source>Taubin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="39"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="39"/>
         <source>Laplace</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="49"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="49"/>
         <source>Parameter</source>
         <translation>參數</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="55"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="55"/>
         <source>Iterations:</source>
         <translation>迭代:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="72"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="72"/>
         <source>Lambda:</source>
         <translation>Lambda:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="95"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="95"/>
         <source>Mu:</source>
         <translation>Mu:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="55"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="55"/>
         <source>Iterations</source>
         <translation>重復</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="72"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="72"/>
         <source>Lambda</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="95"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="95"/>
         <source>Mu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="118"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/DlgSmoothing.ui" line="118"/>
         <source>Only selection</source>
         <translation>僅有選取部份</translation>
     </message>
@@ -2052,37 +2099,32 @@ to a smoother appearance.
         <translation>正面</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.cpp" line="104"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/RemeshGmsh.cpp" line="104"/>
         <source>Frontal quad</source>
         <translation>正面四邊形</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.cpp" line="106"/>
-        <source>Quasi-structured Quad</source>
-        <translation>準結構四邊形</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.cpp" line="241"/>
-        <source>Running Gmsh...</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Parallelograms</source>
         <translation>平行四邊形</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.cpp" line="106"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/RemeshGmsh.cpp" line="106"/>
         <source>Quasi-structured quad</source>
         <translation>準結構四邊形</translation>
     </message>
     <message>
-        <source>Time:</source>
-        <translation>時間:</translation>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.cpp" line="201"/>
+        <source>Time</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.cpp" line="243"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/RemeshGmsh.cpp" line="243"/>
         <source>Running Gmsh…</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Time:</source>
+        <translation>時間:</translation>
     </message>
     <message>
         <source>Failed to start</source>
@@ -2097,6 +2139,16 @@ to a smoother appearance.
         <translation>正面四邊形</translation>
     </message>
     <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.cpp" line="106"/>
+        <source>Quasi-structured Quad</source>
+        <translation>準結構四邊形</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.cpp" line="241"/>
+        <source>Running Gmsh...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Running gmsh...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2104,12 +2156,17 @@ to a smoother appearance.
 <context>
     <name>MeshGui::MeshFaceAddition</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/MeshEditor.cpp" line="396"/>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/MeshEditor.cpp" line="255"/>
+        <source>Cannot add triangle to avoid non-manifolds.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/MeshEditor.cpp" line="396"/>
         <source>Add Triangle</source>
         <translation>加入三角形</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/MeshEditor.cpp" line="397"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/MeshEditor.cpp" line="397"/>
         <source>Flip Normal</source>
         <translation>翻轉正常面</translation>
     </message>
@@ -2140,7 +2197,7 @@ to a smoother appearance.
 <context>
     <name>MeshGui::ParametersDialog</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.cpp" line="173"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/SegmentationBestFit.cpp" line="173"/>
         <source>Surface Fit</source>
         <translation>表面貼合</translation>
     </message>
@@ -2184,359 +2241,354 @@ to a smoother appearance.
 <context>
     <name>MeshGui::RemeshGmsh</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="14"/>
         <source>Remesh by Gmsh</source>
         <translation>用Gmsh重建網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="26"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="26"/>
         <source>Remeshing Parameter</source>
         <translation>重新劃分參數</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="32"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="32"/>
         <source>Meshing:</source>
         <translation>建立網格:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="42"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="42"/>
         <source>Max element size (0.0 = Auto):</source>
         <translation>最大元素大小 (0.0 = 自動):</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="49"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="75"/>
-        <source>mm</source>
-        <translation>mm</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="68"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="68"/>
         <source>Min element size (0.0 = Auto):</source>
         <translation>最小元素大小 (0.0 = 自動):</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="94"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="94"/>
         <source>Angle:</source>
         <translation>角度:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="101"/>
-        <source>deg</source>
-        <translation>度</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="181"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="181"/>
         <source>Time:</source>
         <translation>時間:</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="32"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="32"/>
         <source>Meshing</source>
         <translation>建立網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="42"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="42"/>
         <source>Max element size (0.0 = Auto)</source>
         <translation>最大元素大小 (0.0 = 自動)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="68"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="68"/>
         <source>Min element size (0.0 = Auto)</source>
         <translation>最小元素大小 (0.0 = 自動)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="94"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="94"/>
         <source>Angle</source>
         <translation>角度</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="126"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="126"/>
         <source>Gmsh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="134"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="134"/>
         <source>Path</source>
         <translation>路徑</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="141"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="141"/>
         <source>Leave empty to use default gmsh executable</source>
         <translation>留空以使用預設的 gmsh 可執行檔</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="154"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="154"/>
         <source>Kill</source>
         <translation>強制終止</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="181"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="181"/>
         <source>Time</source>
         <translation>時間</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="188"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="188"/>
         <source>Clear</source>
         <translation>清除</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="49"/>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="75"/>
+        <source>mm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/UserTemp/Sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemeshGmsh.ui" line="101"/>
+        <source>deg</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MeshGui::RemoveComponents</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="14"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="14"/>
         <source>Remove Components</source>
         <translation>刪除元件</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="14"/>
-        <source>Remove components</source>
-        <translation>移除組件</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="20"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="20"/>
         <source>Select</source>
         <translation>選擇</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="32"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="118"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="32"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="118"/>
         <source>Region</source>
         <translation>面域</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="52"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="138"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="52"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="138"/>
         <source>All</source>
         <translation>所有</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="72"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="158"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="72"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="158"/>
         <source>Components</source>
         <translation>組件</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="79"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="79"/>
         <source>&lt; faces than</source>
         <translation>&lt;面數</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="89"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="175"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="89"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="175"/>
         <source>Pick triangle</source>
         <translation>選取三角形</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="192"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="192"/>
         <source>Region options</source>
         <translation>面域選項</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="208"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="208"/>
         <source>Respect only triangles with normals facing screen</source>
         <translation>僅就法線正對畫面的三角形</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="89"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="175"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="89"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="175"/>
         <source>Pick Triangle</source>
         <translation>選取三角形</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="96"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="96"/>
         <source>Select whole component</source>
         <translation>選擇整個組件</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="106"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="106"/>
         <source>Deselect</source>
         <translation>取消選擇</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="165"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="165"/>
         <source>&gt; faces than</source>
         <translation>&gt;面數</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="182"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="182"/>
         <source>Deselect whole component</source>
         <translation>取消選擇整個組件</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="192"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="192"/>
         <source>Region Options</source>
         <translation>面域選項</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="198"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="198"/>
         <source>Respect only visible triangles</source>
         <translation>僅就可見的三角形</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="208"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/RemoveComponents.ui" line="208"/>
         <source>Respect only triangles with screen-facing normals</source>
         <translation>僅就法線正對畫面的三角形</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/RemoveComponents.ui" line="14"/>
+        <source>Remove components</source>
+        <translation>移除組件</translation>
     </message>
 </context>
 <context>
     <name>MeshGui::Segmentation</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="14"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Segmentation.ui" line="14"/>
         <source>Mesh Segmentation</source>
         <translation>網格片段分割</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="14"/>
-        <source>Mesh segmentation</source>
-        <translation>網格分割</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="20"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="20"/>
         <source>Smooth mesh</source>
         <translation>平滑化網格</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="37"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="37"/>
         <source>Plane</source>
         <translation>平面</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="46"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="189"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="252"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="286"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="46"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="189"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="252"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="286"/>
         <source>Tolerance</source>
         <translation>公差</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="63"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="143"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="206"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="303"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="63"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="143"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="206"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="303"/>
         <source>Minimum number of faces</source>
         <translation>面之最小數量</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="83"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="83"/>
         <source>Cylinder</source>
         <translation>圓柱</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="92"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="172"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="92"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="172"/>
         <source>Curvature</source>
         <translation>曲率</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="109"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="109"/>
         <source>Tolerance (Flat)</source>
         <translation>誤差(平面)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="126"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="126"/>
         <source>Tolerance (Curved)</source>
         <translation>誤差(曲面)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="235"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="235"/>
         <source>Max. Curvature</source>
         <translation>最大曲率</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="269"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="269"/>
         <source>Min. Curvature</source>
         <translation>最小曲率</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="109"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Segmentation.ui" line="109"/>
         <source>Tolerance (flat)</source>
         <translation>公差 (平面)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="126"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Segmentation.ui" line="126"/>
         <source>Tolerance (curved)</source>
         <translation>公差 (曲面)</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="163"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="163"/>
         <source>Sphere</source>
         <translation>球體</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="226"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="226"/>
         <source>Freeform</source>
         <translation>自由形式</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="235"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Segmentation.ui" line="235"/>
         <source>Maximum curvature</source>
         <translation>最大曲率</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Segmentation.ui" line="269"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Segmentation.ui" line="269"/>
         <source>Minimum curvature</source>
         <translation>最小曲率</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Segmentation.ui" line="14"/>
+        <source>Mesh segmentation</source>
+        <translation>網格分割</translation>
     </message>
 </context>
 <context>
     <name>MeshGui::SegmentationBestFit</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="14"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="14"/>
         <source>Mesh Segmentation</source>
         <translation>網格分割</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="14"/>
-        <source>Mesh segmentation</source>
-        <translation>網格分割</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="29"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="82"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="135"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="29"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="82"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="135"/>
         <source>Parameters…</source>
         <translation>參數…</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="29"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="82"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="135"/>
-        <source>Parameters...</source>
-        <translation>參數...</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="20"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="20"/>
         <source>Plane</source>
         <translation>平面</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="29"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="82"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="135"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="29"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="82"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="135"/>
+        <source>Parameters...</source>
+        <translation>參數...</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="29"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="82"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="135"/>
         <source>Parameters</source>
         <translation>參數</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="36"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="89"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="142"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="36"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="89"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="142"/>
         <source>Tolerance</source>
         <translation>公差</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="53"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="106"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="159"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="53"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="106"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="159"/>
         <source>Minimum number of faces</source>
         <translation>面之最小數量</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="73"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="73"/>
         <source>Cylinder</source>
         <translation>圓柱</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="126"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="126"/>
         <source>Sphere</source>
         <translation>球體</translation>
     </message>
@@ -2560,47 +2612,47 @@ to a smoother appearance.
         <source>Center</source>
         <translation>中心</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/SegmentationBestFit.ui" line="14"/>
+        <source>Mesh segmentation</source>
+        <translation>網格分割</translation>
+    </message>
 </context>
 <context>
     <name>MeshGui::Selection</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Selection.ui" line="14"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Selection.ui" line="20"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Selection.ui" line="14"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Selection.ui" line="20"/>
         <source>Selection</source>
         <translation>選擇</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Selection.ui" line="39"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Selection.ui" line="39"/>
         <source>Add</source>
         <translation>新增</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Selection.ui" line="46"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Selection.ui" line="46"/>
         <source>Clear</source>
         <translation>清除</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Selection.ui" line="53"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Selection.ui" line="53"/>
         <source>Respect only visible triangles</source>
         <translation>僅就可見的三角形</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Selection.ui" line="63"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Selection.ui" line="63"/>
         <source>Respect only triangles with normals facing screen</source>
         <translation>僅就法線正對畫面的三角形</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Selection.ui" line="63"/>
-        <source>Respect only triangles with screen-facing normals</source>
-        <translation>僅就法線正對畫面的三角形</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Selection.ui" line="53"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Selection.ui" line="53"/>
         <source>Accept only visible triangles</source>
         <translation>僅接受可見三角形</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Selection.ui" line="63"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Selection.ui" line="63"/>
         <source>Accept only triangles with screen-facing normals</source>
         <translation>僅接受面對螢幕法線的三角形</translation>
     </message>
@@ -2611,6 +2663,11 @@ to a smoother appearance.
     <message>
         <source>Clears completely the selected area</source>
         <translation>完全清除所有範圍</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Selection.ui" line="63"/>
+        <source>Respect only triangles with screen-facing normals</source>
+        <translation>僅就法線正對畫面的三角形</translation>
     </message>
 </context>
 <context>
@@ -2673,28 +2730,28 @@ to a smoother appearance.
         <translation>執行 OpenSCAD 時發生未知錯誤.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="143"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="221"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="299"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="143"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="221"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="299"/>
         <source>OpenSCAD cannot be found on the system.
 Visit https://openscad.org/ to install it.</source>
         <translation>於您的系統上未發現OpenSCAD
 檢視http://www.openscad.org/來安裝.</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="144"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="223"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="302"/>
-        <source>OpenSCAD cannot be found on the system.
-Visit http://www.openscad.org/index.html to install it.</source>
-        <translation>於您的系統上未發現OpenSCAD
-檢視http://www.openscad.org/index.html來安裝.</translation>
-    </message>
-    <message>
         <source>OpenSCAD cannot be found on your system.
 Please visit http://www.openscad.org/index.html to install it.</source>
         <translation>於您的系統上未發現OpenSCAD
 請至http://www.openscad.org/index.html來安裝.</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="144"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="223"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="302"/>
+        <source>OpenSCAD cannot be found on the system.
+Visit http://www.openscad.org/index.html to install it.</source>
+        <translation>於您的系統上未發現OpenSCAD
+檢視http://www.openscad.org/index.html來安裝.</translation>
     </message>
 </context>
 <context>
@@ -2707,7 +2764,7 @@ Please visit http://www.openscad.org/index.html to install it.</source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/AppMeshGui.cpp" line="157"/>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/AppMeshGui.cpp" line="157"/>
         <source>Display</source>
         <translation>顯示</translation>
     </message>
@@ -2748,15 +2805,11 @@ Please visit http://www.openscad.org/index.html to install it.</source>
         <translation>Stanford Polygon</translation>
     </message>
     <message>
-        <source>NASTRAN</source>
-        <translation type="unfinished"></translation>
+        <source>3D Manufacturing Format</source>
+        <translation>3D 製造格式</translation>
     </message>
     <message>
-        <source>All Files</source>
-        <translation>所有檔案</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="348"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="348"/>
         <source>Import Mesh</source>
         <translation>匯入網格</translation>
     </message>
@@ -2789,10 +2842,6 @@ Please visit http://www.openscad.org/index.html to install it.</source>
         <translation>壓縮之 VRML 2.0</translation>
     </message>
     <message>
-        <source>Nastran</source>
-        <translation>Nastran</translation>
-    </message>
-    <message>
         <source>Python module def</source>
         <translation>Python模組設定</translation>
     </message>
@@ -2801,11 +2850,7 @@ Please visit http://www.openscad.org/index.html to install it.</source>
         <translation>漸近線格式</translation>
     </message>
     <message>
-        <source>3D Manufacturing Format</source>
-        <translation>3D 製造格式</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="423"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="423"/>
         <source>Export Mesh</source>
         <translation>匯出網格</translation>
     </message>
@@ -2834,12 +2879,12 @@ Please visit http://www.openscad.org/index.html to install it.</source>
         <translation>範圍</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1530"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1530"/>
         <source>Fill Holes</source>
         <translation>填充孔</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Command.cpp" line="1531"/>
+        <location filename="../../../../../../FreeCAD-1.1.0/src/Mod/Mesh/Gui/Command.cpp" line="1531"/>
         <source>Fill holes with maximum number of edges</source>
         <translation>填充開口藉由最多邊之數量</translation>
     </message>
@@ -2856,47 +2901,67 @@ Please visit http://www.openscad.org/index.html to install it.</source>
         <translation>[點:%1, 線:%2, 面:%3]</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="795"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="795"/>
         <source>Display Components</source>
         <translation>顯示元件</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="803"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="803"/>
         <source>Display Segments</source>
         <translation>顯示片段</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="811"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="811"/>
         <source>Display Colors</source>
         <translation>顯示顏色</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="1681"/>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/ViewProviderCurvature.cpp" line="540"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="1681"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/ViewProviderCurvature.cpp" line="540"/>
         <source>Leave Info Mode</source>
         <translation>離開訊息模式</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/ViewProvider.cpp" line="1745"/>
+        <source>Mesh: %1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Index: %1</source>
         <translation>索引:%1</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="1774"/>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/ViewProvider.cpp" line="1751"/>
+        <source>Points: &lt;%1, %2, %3&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/ViewProvider.cpp" line="1758"/>
+        <source>Neighbours: &lt;%1, %2, %3&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../media/Extend/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/ViewProvider.cpp" line="1764"/>
+        <source>Triangle:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="1774"/>
         <source>Leave Hole-Filling Mode</source>
         <translation>離開填充孔模式</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="1822"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="1822"/>
         <source>Leave Removal Mode</source>
         <translation>離開移除模式</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="1823"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="1823"/>
         <source>Delete Selected Faces</source>
         <translation>刪除選定面</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="1824"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/ViewProvider.cpp" line="1824"/>
         <source>Clear Selected Faces</source>
         <translation>清除所選面</translation>
     </message>
@@ -2905,64 +2970,46 @@ Please visit http://www.openscad.org/index.html to install it.</source>
         <translation>注釋</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="69"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Workbench.cpp" line="69"/>
         <source>Number of points</source>
         <translation>點的數量</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="69"/>
-        <source>Number of points:</source>
-        <translation>點的數量:</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="72"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Workbench.cpp" line="72"/>
         <source>Number of facets</source>
         <translation>平面數量</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="72"/>
-        <source>Number of facets:</source>
-        <translation>平面數量:</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="78"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Workbench.cpp" line="78"/>
         <source>Minimum bound</source>
         <translation>最小界限</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="78"/>
-        <source>Minimum bound:</source>
-        <translation>最小界限:</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="81"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Workbench.cpp" line="81"/>
         <source>Maximum bound</source>
         <translation>最大界限</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="81"/>
-        <source>Maximum bound:</source>
-        <translation>最大界限:</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="88"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Workbench.cpp" line="88"/>
         <source>Mesh Info Box</source>
         <translation>網格資訊框</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="88"/>
-        <source>Mesh info box</source>
-        <translation>網格資訊框</translation>
-    </message>
-    <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="89"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Workbench.cpp" line="89"/>
         <source>Mesh Info</source>
         <translation>網格資訊</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="89"/>
-        <source>Mesh info</source>
-        <translation>網格資訊</translation>
+        <source>NASTRAN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>All Files</source>
+        <translation>所有檔案</translation>
+    </message>
+    <message>
+        <source>Nastran</source>
+        <translation>Nastran</translation>
     </message>
     <message>
         <source>Fill holes</source>
@@ -3012,17 +3059,39 @@ Please visit http://www.openscad.org/index.html to install it.</source>
         <source>Leave info mode</source>
         <translation>離開訊息模式</translation>
     </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Workbench.cpp" line="69"/>
+        <source>Number of points:</source>
+        <translation>點的數量:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Workbench.cpp" line="72"/>
+        <source>Number of facets:</source>
+        <translation>平面數量:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Workbench.cpp" line="78"/>
+        <source>Minimum bound:</source>
+        <translation>最小界限:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Workbench.cpp" line="81"/>
+        <source>Maximum bound:</source>
+        <translation>最大界限:</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Workbench.cpp" line="88"/>
+        <source>Mesh info box</source>
+        <translation>網格資訊框</translation>
+    </message>
+    <message>
+        <location filename="../../../../../../../../../Benson/sources/FreeCAD-0.22.0-git/src/Mod/Mesh/Gui/Workbench.cpp" line="89"/>
+        <source>Mesh info</source>
+        <translation>網格資訊</translation>
+    </message>
 </context>
 <context>
     <name>Workbench</name>
-    <message>
-        <source>Mesh</source>
-        <translation>網面工具</translation>
-    </message>
-    <message>
-        <source>Mesh workbench</source>
-        <translation>網面工作台</translation>
-    </message>
     <message>
         <source>Analyze</source>
         <translation>分析</translation>
@@ -3040,32 +3109,32 @@ Please visit http://www.openscad.org/index.html to install it.</source>
         <translation>切割</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="48"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Workbench.cpp" line="48"/>
         <source>Mesh Tools</source>
         <translation>網面工具</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="49"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Workbench.cpp" line="49"/>
         <source>Mesh Modify</source>
         <translation>網格修改</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="50"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Workbench.cpp" line="50"/>
         <source>Mesh Boolean</source>
         <translation>網格布林運算</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="51"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Workbench.cpp" line="51"/>
         <source>Mesh Cutting</source>
         <translation>網格切割</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="52"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Workbench.cpp" line="52"/>
         <source>Mesh Segmentation</source>
         <translation>網格分割</translation>
     </message>
     <message>
-        <location filename="/media/ERP/sources/FreeCAD-1.2.0/src/Mod/Mesh/Gui/Workbench.cpp" line="53"/>
+        <location filename="../../../../../../../../Benson/sources/FreeCAD-1.1.0/src/Mod/Mesh/Gui/Workbench.cpp" line="53"/>
         <source>Mesh Analyze</source>
         <translation>網格分析</translation>
     </message>
@@ -3092,6 +3161,14 @@ Please visit http://www.openscad.org/index.html to install it.</source>
     <message>
         <source>Mesh analyze</source>
         <translation>網格分析</translation>
+    </message>
+    <message>
+        <source>Mesh</source>
+        <translation>網面工具</translation>
+    </message>
+    <message>
+        <source>Mesh workbench</source>
+        <translation>網面工作台</translation>
     </message>
 </context>
 </TS>

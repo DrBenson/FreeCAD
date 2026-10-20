@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2011 Joe Dowsett <j-dowsett[at]users.sourceforge.net>   *
  *   Copyright (c) 2014 Luke Parry <l.parry@warwick.ac.uk>                 *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef GUI_TASKVIEW_TASKVIEWGROUP_H
-#define GUI_TASKVIEW_TASKVIEWGROUP_H
+#pragma once
 
 #include <QString>
 #include <QDialog>
@@ -202,5 +203,3 @@ private:
 };
 
 } //namespace TechDrawGui
-
-#endif // #ifndef GUI_TASKVIEW_TASKVIEWGROUP_H

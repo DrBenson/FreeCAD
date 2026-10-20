@@ -23,8 +23,7 @@
  ******************************************************************************/
 
 
-#ifndef PARTDESIGN_FeatureBoolean_H
-#define PARTDESIGN_FeatureBoolean_H
+#pragma once
 
 #include <App/GeoFeatureGroupExtension.h>
 #include <App/PropertyStandard.h>
@@ -47,6 +46,11 @@ public:
 
     /// The type of the boolean operation
     App::PropertyEnumeration Type;
+    /**
+     * Compatibility property to preserve the historic transformed-body Boolean behavior
+     * in restored documents. New Boolean features use Body-local linked geometry.
+     */
+    App::PropertyBool UseLegacyBodyPlacement;
 
     /** @name methods override feature */
     //@{
@@ -54,6 +58,12 @@ public:
     App::DocumentObjectExecReturn* execute() override;
     void updatePreviewShape() override;
     short mustExecute() const override;
+    std::vector<App::DocumentObject*> addObject(App::DocumentObject* object) override;
+    std::vector<App::DocumentObject*> addObjects(std::vector<App::DocumentObject*> objects) override;
+    std::vector<App::DocumentObject*> setObjects(std::vector<App::DocumentObject*> objects) override;
+    std::vector<App::DocumentObject*> removeObject(App::DocumentObject* object) override;
+    std::vector<App::DocumentObject*> removeObjects(std::vector<App::DocumentObject*> objects) override;
+    bool hasObject(const App::DocumentObject* object, bool recursive = false) const override;
     /// returns the type name of the view provider
     const char* getViewProviderName() const override
     {
@@ -71,10 +81,9 @@ protected:
 
 
 private:
+    Part::TopoShape getBooleanTopoShape(const App::DocumentObject* object) const;
+
     static const char* TypeEnums[];
 };
 
 }  // namespace PartDesign
-
-
-#endif  // PARTDESIGN_FeatureBoolean_H

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jürgen Riegel <FreeCAD@juergen-riegel.net>         *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef FEM_ViewProviderAnalysis_H
-#define FEM_ViewProviderAnalysis_H
+#pragma once
 
 #include <Gui/ViewProviderDocumentObjectGroup.h>
 #include <Gui/ViewProviderFeaturePython.h>
@@ -77,6 +78,8 @@ public:
 
     void setupContextMenu(QMenu*, QObject*, const char*) override;
 
+    /// list of all possible display modes
+    std::vector<std::string> getDisplayModes() const override;
     /// shows solid in the tree
     bool isShow() const override
     {
@@ -118,6 +121,3 @@ private:
 using ViewProviderFemAnalysisPython = Gui::ViewProviderFeaturePythonT<ViewProviderFemAnalysis>;
 
 }  // namespace FemGui
-
-
-#endif  // FEM_ViewProviderAnalysis_H

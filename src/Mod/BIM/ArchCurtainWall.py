@@ -55,6 +55,7 @@ import math
 import FreeCAD
 import ArchCommands
 import ArchComponent
+import ArchSketchObject
 import DraftVecUtils
 
 from draftutils import params
@@ -78,6 +79,11 @@ ANGLETOLERANCE = 0.67  # vectors with angles below this are considered going in 
 
 class CurtainWall(ArchComponent.Component):
     "The curtain wall object"
+
+    # Configure App::Link shadowing, so that linked curtain walls can have independent Host
+    # properties without triggering a deep copy of the geometry. See
+    # ArchComponent.Component.appLinkExecute()
+    LinkOverrideProperties = ["Host"]
 
     def __init__(self, obj):
 
@@ -419,20 +425,12 @@ class CurtainWall(ArchComponent.Component):
             ):  # would be false (none) if SketchArch Add-on is not installed, or base ArchSketch does not have the edges stored / input by user
                 curtainWallEdges = curtainWallBaseShapeEdges.get("curtainWallEdges")
             elif obj.Base.isDerivedFrom("Sketcher::SketchObject"):
-                skGeom = obj.Base.GeometryFacadeList
-                skGeomEdges = []
                 skPlacement = obj.Base.Placement  # Get Sketch's placement to restore later
-                for ig, geom in enumerate(skGeom):
-                    if (not obj.OverrideEdges and not geom.Construction) or str(
-                        ig
-                    ) in obj.OverrideEdges:
-                        # support Line, Arc, Circle, Ellipse for Sketch
-                        # as Base at the moment
-                        if isinstance(
-                            geom.Geometry, (Part.LineSegment, Part.Circle, Part.ArcOfCircle)
-                        ):
-                            skGeomEdgesI = geom.Geometry.toShape()
-                            skGeomEdges.append(skGeomEdgesI)
+                skGeomEdges = ArchSketchObject.getSketchDefiningEdges(
+                    obj.Base,
+                    obj.OverrideEdges,
+                    (Part.LineSegment, Part.Circle, Part.ArcOfCircle),
+                )
                 curtainWallEdges = []
                 for edge in skGeomEdges:
                     edge.Placement = edge.Placement.multiply(skPlacement)
@@ -719,6 +717,32 @@ class CurtainWall(ArchComponent.Component):
             return -proj.Length
 
 
+class CurtainWallTaskPanel(ArchComponent.ComponentOptionsTaskPanel):
+    """A task panel for Curtain Walls using the generic options box"""
+
+    def __init__(self, obj):
+        property_definitions = [
+            {"prop": "VerticalSections", "label": translate("Arch", "Vertical Sections")},
+            {"prop": "HorizontalSections", "label": translate("Arch", "Horizontal Sections")},
+            {"prop": "VerticalMullionWidth", "label": translate("Arch", "Vertical Mullion Width")},
+            {
+                "prop": "VerticalMullionHeight",
+                "label": translate("Arch", "Vertical Mullion Height"),
+            },
+            {
+                "prop": "HorizontalMullionWidth",
+                "label": translate("Arch", "Horizontal Mullion Width"),
+            },
+            {
+                "prop": "HorizontalMullionHeight",
+                "label": translate("Arch", "Horizontal Mullion Height"),
+            },
+            {"prop": "PanelThickness", "label": translate("Arch", "Panel Thickness")},
+            {"prop": "Refine", "label": translate("Arch", "Refine")},
+        ]
+        super().__init__(obj, property_definitions)
+
+
 class ViewProviderCurtainWall(ArchComponent.ViewProviderComponent):
     "A View Provider for the CurtainWall object"
 
@@ -793,3 +817,11 @@ class ViewProviderCurtainWall(ArchComponent.ViewProviderComponent):
                     colors.append(panelcolor)
         if self.areDifferentColors(colors, obj.ViewObject.DiffuseColor) or force:
             obj.ViewObject.DiffuseColor = colors
+
+    def setEdit(self, vobj, mode):
+        if mode != 0:
+            return None
+
+        taskd = CurtainWallTaskPanel(vobj.Object)
+        FreeCADGui.Control.showDialog(taskd)
+        return True

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
  /**************************************************************************
  *   Copyright (c) 2015 FreeCAD Developers                                 *
  *   Author: WandererFan <wandererfan@gmail.com>                           *
@@ -21,8 +23,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DRAWINGGUI_DLGPREFSTECHDRAWIMPDIMENSIONS_H
-#define DRAWINGGUI_DLGPREFSTECHDRAWIMPDIMENSIONS_H
+#pragma once
 
 #include <memory>
 
@@ -59,5 +60,3 @@ private:
 };
 
 } // namespace TechDrawGui
-
-#endif // DRAWINGGUI_DLGPREFSTECHDRAWIMPDIMENSIONS_H

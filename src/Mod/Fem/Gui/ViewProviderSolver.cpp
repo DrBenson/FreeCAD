@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2013 Jürgen Riegel <FreeCAD@juergen-riegel.net>         *
  *                                                                         *
@@ -44,6 +46,11 @@ ViewProviderSolver::ViewProviderSolver()
 }
 
 ViewProviderSolver::~ViewProviderSolver() = default;
+
+std::vector<std::string> ViewProviderSolver::getDisplayModes() const
+{
+    return {"Solver"};
+}
 
 bool ViewProviderSolver::onDelete(const std::vector<std::string>&)
 {

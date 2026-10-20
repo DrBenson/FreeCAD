@@ -24,14 +24,15 @@
 
 #include <array>
 #include <cmath>
+#include <format>
 #include <limits>
 #include <numbers>
 #include <sstream>
 #include <string>
 
-#include <fmt/format.h>
-
 #include "Exception.h"
+#include "NumericFormatting.h"
+#include "NumericInput.h"
 #include "Quantity.h"
 #include "Tools.h"
 #include "UnitsApi.h"
@@ -254,7 +255,7 @@ Quantity Quantity::operator-() const
 
 std::string Quantity::toString(const QuantityFormat& format) const
 {
-    return fmt::format("'{} {}'", toNumber(format), myUnit.getString());
+    return std::format("'{} {}'", toNumber(format), myUnit.getString());
 }
 
 std::string Quantity::toNumber(const QuantityFormat& format) const
@@ -296,9 +297,18 @@ std::string Quantity::getUserString(UnitsSchema* schema, double& factor, std::st
 std::string Quantity::getSafeUserString() const
 {
     auto userStr = getUserString();
-    if (myValue != 0.0 && parse(userStr).getValue() == 0) {
-        auto unitStr = getUnit().getString();
-        userStr = fmt::format("{}{}{}", myValue, unitStr.empty() ? "" : " ", unitStr);
+    if (myValue != 0.0) {
+        bool useFallback {false};
+        try {
+            useFallback = (parseUserInput(userStr, currentNumericLocaleContext()).getValue() == 0);
+        }
+        catch (const Base::ParserError&) {
+            useFallback = true;
+        }
+        if (useFallback) {
+            auto unitStr = getUnit().getString();
+            userStr = std::format("{}{}{}", myValue, unitStr.empty() ? "" : " ", unitStr);
+        }
     }
 
     return Tools::escapeQuotesFromString(userStr);
@@ -359,6 +369,8 @@ const Quantity Quantity::Minute                 ( 60.0                  , Unit::
 const Quantity Quantity::Hour                   ( 3600.0                , Unit::TimeSpan                );
 
 const Quantity Quantity::Ampere                 ( 1.0                   , Unit::ElectricCurrent         );
+const Quantity Quantity::NanoAmpere             ( 1.0e-9                , Unit::ElectricCurrent         );
+const Quantity Quantity::MicroAmpere            ( 1.0e-6                , Unit::ElectricCurrent         );
 const Quantity Quantity::MilliAmpere            ( 0.001                 , Unit::ElectricCurrent         );
 const Quantity Quantity::KiloAmpere             ( 1000.0                , Unit::ElectricCurrent         );
 const Quantity Quantity::MegaAmpere             ( 1.0e6                 , Unit::ElectricCurrent         );
@@ -367,6 +379,8 @@ const Quantity Quantity::Kelvin                 ( 1.0                   , Unit::
 const Quantity Quantity::MilliKelvin            ( 0.001                 , Unit::Temperature             );
 const Quantity Quantity::MicroKelvin            ( 0.000001              , Unit::Temperature             );
 
+const Quantity Quantity::NanoMole               ( 1e-9                  , Unit::AmountOfSubstance       );
+const Quantity Quantity::MicroMole              ( 1e-6                  , Unit::AmountOfSubstance       );
 const Quantity Quantity::MilliMole              ( 0.001                 , Unit::AmountOfSubstance       );
 const Quantity Quantity::Mole                   ( 1.0                   , Unit::AmountOfSubstance       );
 
@@ -417,6 +431,8 @@ const Quantity Quantity::KSI                    ( psi * 1000            , Unit::
 const Quantity Quantity::MPSI                   ( psi * 1000000         , Unit::Pressure                );
 
 const Quantity Quantity::Watt                   ( 1e+6                  , Unit::Power                   );  // Watt (kg*m^2/s^3)
+const Quantity Quantity::NanoWatt               ( 1e-3                  , Unit::Power                   );
+const Quantity Quantity::MicroWatt              ( 1.0                   , Unit::Power                   );
 const Quantity Quantity::MilliWatt              ( 1e+3                  , Unit::Power                   );
 const Quantity Quantity::KiloWatt               ( 1e+9                  , Unit::Power                   );
 const Quantity Quantity::VoltAmpere             ( 1e+6                  , Unit::Power                   );  // VoltAmpere (kg*m^2/s^3)
@@ -466,6 +482,7 @@ const Quantity Quantity::MegaElectronVolt       ( 1.602176634e-7        , Unit::
 const Quantity Quantity::Calorie                ( 4.1868e+6             , Unit::Work                    );  // 1 cal = 4.1868 J
 const Quantity Quantity::KiloCalorie            ( 4.1868e+9             , Unit::Work                    );
 const Quantity Quantity::NewtonMeter            ( 1e+6                  , Unit::Moment                  );  // Joule (kg*m^2/s^2)
+const Quantity Quantity::NewtonMilliMeter       ( 1e+3                  , Unit::Moment                  );
 
 const Quantity Quantity::KMH                    ( 1e+6 / 3600           , Unit::Velocity                );  // km/h
 const Quantity Quantity::MPH                    ( mi / 3600             , Unit::Velocity                );  // Mile/h
@@ -572,6 +589,7 @@ public:
     {
         // free the scan buffer
         yy_delete_buffer(my_string_buffer);
+        BEGIN(INITIAL);
     }
 
     StringBufferCleaner(const StringBufferCleaner&) = delete;
@@ -590,6 +608,103 @@ private:
 #elif defined(__GNUC__)
 # pragma GCC diagnostic pop
 #endif
+
+namespace
+{
+bool startsAt(std::string_view input, std::size_t position, std::string_view value)
+{
+    return !value.empty() && position + value.size() <= input.size()
+        && input.substr(position, value.size()) == value;
+}
+
+bool startsNumericToken(
+    std::string_view input,
+    const std::size_t position,
+    const Base::NumericLocaleContext& locale
+)
+{
+    if (position >= input.size()) {
+        return false;
+    }
+
+    int digit = 0;
+    std::size_t digitLength = 0;
+    if (Base::localizedDigitAt(input, position, locale, digit, digitLength)) {
+        return true;
+    }
+
+    const auto digitAfter = [&](const std::size_t offset) {
+        int nextDigit = 0;
+        std::size_t nextDigitLength = 0;
+        return Base::localizedDigitAt(input, offset, locale, nextDigit, nextDigitLength);
+    };
+
+    if (input[position] == '.') {
+        return digitAfter(position + 1);
+    }
+    if (startsAt(input, position, locale.decimalSeparator)) {
+        return digitAfter(position + locale.decimalSeparator.size());
+    }
+    const std::string_view positiveSign {locale.positiveSign.data(), locale.positiveSign.size()};
+    const std::string_view negativeSign {locale.negativeSign.data(), locale.negativeSign.size()};
+    for (const auto sign :
+         {std::string_view {"+"}, std::string_view {"-"}, positiveSign, negativeSign}) {
+        if (startsAt(input, position, sign)) {
+            const auto next = position + sign.size();
+            return digitAfter(next) || (next < input.size() && input[next] == '.')
+                || startsAt(input, next, locale.decimalSeparator);
+        }
+    }
+    return false;
+}
+
+std::string normalizeQuantityInput(std::string_view input, const Base::NumericLocaleContext& locale)
+{
+    std::string normalized;
+    normalized.reserve(input.size());
+
+    std::size_t position = 0;
+    while (position < input.size()) {
+        // The quantity lexer treats bracketed comments as opaque. Copy the source bytes without
+        // scanning them, including malformed-looking localized numbers.
+        if (input[position] == '[') {
+            const auto end = input.find(']', position + 1);
+            if (end == std::string_view::npos) {
+                normalized.append(input.substr(position));
+                break;
+            }
+            const auto length = end + 1 - position;
+            normalized.append(input.substr(position, length));
+            position += length;
+            continue;
+        }
+
+        if (!startsNumericToken(input, position, locale)) {
+            normalized.push_back(input[position++]);
+            continue;
+        }
+
+        const auto result = scanLocalizedNumber(
+            input.substr(position),
+            locale,
+            Base::NumericSyntaxContext::Standalone
+        );
+        if (result.status != Base::LocalizedNumberResult::Status::Complete) {
+            throw Base::ParserError("Invalid localized number");
+        }
+
+        normalized += result.canonicalText;
+        position += result.consumedBytes;
+    }
+
+    return normalized;
+}
+}  // namespace
+
+Quantity Quantity::parseUserInput(const std::string& string, const NumericLocaleContext& locale)
+{
+    return Quantity::parse(normalizeQuantityInput(string, locale));
+}
 
 Quantity Quantity::parse(const std::string& string)
 {

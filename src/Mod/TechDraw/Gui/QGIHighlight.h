@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2016 WandererFan <wandererfan@gmail.com>                *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef TECHDRAWGUI_QGIHIGHLIGHT_H
-#define TECHDRAWGUI_QGIHIGHLIGHT_H
+#pragma once
 
 #include <Mod/TechDraw/TechDrawGlobal.h>
 
@@ -65,9 +66,11 @@ public:
     void onDragFinished() override;
 
     void setLinePen(QPen isoPen);
+    QColor getHighlightColor();
+    void setHighlightColor(QColor newColor);
 
 protected:
-    QColor getHighlightColor();
+
     void makeHighlight();
     void makeReference();
     void setTools();
@@ -88,5 +91,3 @@ private:
 };
 
 }
-
-#endif // TECHDRAWGUI_QGIHIGHLIGHT_H

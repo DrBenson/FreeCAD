@@ -35,11 +35,13 @@
 #include <boost/core/ignore_unused.hpp>
 #include <cmath>
 #include <cstring>
+#include <format>
 #include <limits>
 
 #include <App/Application.h>
 #include <App/Document.h>
 #include <App/Expression.h>
+#include <Base/Tools.h>
 #include <Gui/Application.h>
 #include <Gui/BitmapFactory.h>
 #include <Gui/CommandT.h>
@@ -52,6 +54,7 @@
 #include <Mod/Sketcher/App/SketchObject.h>
 
 #include "EditDatumDialog.h"
+#include "EditTextDialog.h"
 #include "TaskSketcherConstraints.h"
 #include "Utils.h"
 #include "ViewProviderSketch.h"
@@ -75,14 +78,19 @@ QT_TRANSLATE_NOOP("SketcherGui::ConstraintView", "Select Elements");
 /// FUNC is the name of the member function to be executed on selection of the menu item
 /// ACTSONSELECTION is a true/false value to activate the command only if a selection is made
 #define CONTEXT_ITEM(ICONSTR, NAMESTR, CMDSTR, FUNC, ACTSONSELECTION)                              \
-    QIcon icon_##FUNC(Gui::BitmapFactory().pixmap(ICONSTR));                                       \
-    QAction* constr_##FUNC = menu.addAction(icon_##FUNC, tr(NAMESTR), this, SLOT(FUNC()));         \
-    constr_##FUNC->setShortcut(QKeySequence(QString::fromUtf8(                                     \
-        Gui::Application::Instance->commandManager().getCommandByName(CMDSTR)->getAccel())));      \
-    if (ACTSONSELECTION)                                                                           \
-        constr_##FUNC->setEnabled(!items.isEmpty());                                               \
-    else                                                                                           \
-        constr_##FUNC->setEnabled(true);
+    if (auto* cmd_##FUNC = Gui::Application::Instance->commandManager().getCommandByName(CMDSTR);  \
+        cmd_##FUNC && cmd_##FUNC->allowedByMaturity()) {                                           \
+        QIcon icon_##FUNC(Gui::BitmapFactory().pixmap(ICONSTR));                                   \
+        QAction* constr_##FUNC = menu.addAction(icon_##FUNC, tr(NAMESTR), this, SLOT(FUNC()));     \
+        constr_##FUNC->setShortcut(QKeySequence(QString::fromUtf8(cmd_##FUNC->getAccel())));       \
+        if (ACTSONSELECTION) {                                                                     \
+            constr_##FUNC->setEnabled(!items.isEmpty());                                           \
+        }                                                                                          \
+        else {                                                                                     \
+            constr_##FUNC->setEnabled(true);                                                       \
+        }                                                                                          \
+    }
+
 /// Defines the member function corresponding to the CONTEXT_ITEM macro
 #define CONTEXT_MEMBER_DEF(CMDSTR, FUNC)                                                           \
     void ConstraintView::FUNC()                                                                    \
@@ -318,6 +326,8 @@ public:
             // Gui::BitmapFactory().iconFromTheme("Constraint_Ellipse_Axis_Angle") );
             static QIcon equal(Gui::BitmapFactory().iconFromTheme("Constraint_EqualLength"));
             static QIcon pntoo(Gui::BitmapFactory().iconFromTheme("Constraint_PointOnObject"));
+            static QIcon group(Gui::BitmapFactory().iconFromTheme("Constraint_Group"));
+            static QIcon text(Gui::BitmapFactory().iconFromTheme("Constraint_Text"));
             static QIcon symm(Gui::BitmapFactory().iconFromTheme("Constraint_Symmetric"));
             static QIcon snell(Gui::BitmapFactory().iconFromTheme("Constraint_SnellsLaw"));
             static QIcon iaellipseminoraxis(Gui::BitmapFactory().iconFromTheme(
@@ -349,7 +359,7 @@ public:
             auto selicon = [this](const Sketcher::Constraint* constr,
                               const QIcon& normal,
                               const QIcon& driven) -> QIcon {
-                if (!constr->isActive) {
+                if (!sketch->isConstraintActiveInSketch(constr)) {
                     QIcon darkIcon;
                     int w = listWidget()->style()->pixelMetric(QStyle::PM_ListViewIconSize);
                     darkIcon.addPixmap(normal.pixmap(w, w, QIcon::Disabled, QIcon::Off),
@@ -378,6 +388,10 @@ public:
                     return selicon(constraint, block, block);
                 case Sketcher::PointOnObject:
                     return selicon(constraint, pntoo, pntoo);
+                case Sketcher::Group:
+                    return selicon(constraint, group, group);
+                case Sketcher::Text:
+                    return selicon(constraint, text, text);
                 case Sketcher::Parallel:
                     return selicon(constraint, para, para);
                 case Sketcher::Perpendicular:
@@ -461,6 +475,8 @@ public:
             case Sketcher::Tangent:
             case Sketcher::Equal:
             case Sketcher::Symmetric:
+            case Sketcher::Group:
+            case Sketcher::Text:
                 return true;
             case Sketcher::Distance:
             case Sketcher::DistanceX:
@@ -642,7 +658,7 @@ void ConstraintView::contextMenuEvent(QContextMenuEvent* event)
 
     // This does the same as a double-click and thus it should be the first action and with bold
     // text
-    QAction* change = menu.addAction(tr("Change Value"), this, &ConstraintView::modifyCurrentItem);
+    QAction* change = menu.addAction(tr("Edit Value"), this, &ConstraintView::modifyCurrentItem);
     change->setEnabled(isQuantity);
     menu.setDefaultAction(change);
 
@@ -680,6 +696,9 @@ void ConstraintView::contextMenuEvent(QContextMenuEvent* event)
     QAction* remove = menu.addAction(tr("Delete"), this, &ConstraintView::deleteSelectedItems);
     remove->setShortcut(QKeySequence(QKeySequence::Delete));
     remove->setEnabled(!items.isEmpty());
+
+    menu.addAction(tr("Delete All"), this, &ConstraintView::deleteAllItems);
+    menu.addAction(tr("Delete by Filter"), this, &ConstraintView::deleteFilterItems);
 
     QAction* swap = menu.addAction(
         tr("Swap Constraint Names"), this, &ConstraintView::swapNamedOfSelectedItems);
@@ -755,6 +774,23 @@ void ConstraintView::deleteSelectedItems()
     doc->commitTransaction();
 }
 
+void ConstraintView::deleteAllItems()
+{
+    Q_EMIT emitDeleteAllConstraints();
+}
+
+void ConstraintView::deleteFilterItems()
+{
+    QList<int> ids;
+    for (int index = 0; index < count(); index++) {
+        auto cit = static_cast<ConstraintItem*>(item(index));
+        if (!cit->isHidden()) {
+            ids.push_back(cit->ConstraintNbr);
+        }
+    }
+    Q_EMIT emitDeleteConstraints(ids);
+}
+
 void ConstraintView::swapNamedOfSelectedItems()
 {
     QList<QListWidgetItem*> items = selectedItems();
@@ -787,14 +823,16 @@ void ConstraintView::swapNamedOfSelectedItems()
     ss << "DummyConstraint" << rand();
     std::string tmpname = ss.str();
 
-    Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Swap constraint names"));
+
+
+    item1->sketch->getDocument()->openTransaction(QT_TRANSLATE_NOOP("Command", "Swap constraint names"));
     Gui::cmdAppObjectArgs(
         item1->sketch, "renameConstraint(%d, u'%s')", item1->ConstraintNbr, tmpname.c_str());
     Gui::cmdAppObjectArgs(
         item2->sketch, "renameConstraint(%d, u'%s')", item2->ConstraintNbr, escapedstr1.c_str());
     Gui::cmdAppObjectArgs(
         item1->sketch, "renameConstraint(%d, u'%s')", item1->ConstraintNbr, escapedstr2.c_str());
-    Gui::Command::commitCommand();
+    item1->sketch->getDocument()->commitTransaction();
 }
 
 /* Filter constraints list widget ----------------------*/
@@ -825,6 +863,10 @@ ConstraintFilterList::ConstraintFilterList(QWidget* parent)
         it->setCheckState(isChecked ? Qt::Checked : Qt::Unchecked);
         filterState = filterState >> 1;// shift right to get rid of the used bit.
     }
+
+    // Text constraint filter is hidden from the user
+    item(static_cast<int>(ConstraintFilter::FilterValue::Text))->setHidden(true);
+
     languageChange();
 
     setPartiallyChecked();
@@ -912,6 +954,14 @@ TaskSketcherConstraints::TaskSketcherConstraints(ViewProviderSketch* sketchView)
     // we need a separate container widget to add all controls to
     proxy = new QWidget(this);
     ui->setupUi(proxy);
+
+    // External theme override for Sketcher Constraints task-panel icons
+    ui->filterButton->setIcon(
+        Gui::BitmapFactory().iconFromTheme("view-filter", ui->filterButton->icon()));
+    ui->showHideButton->setIcon(
+        Gui::BitmapFactory().iconFromTheme("Std_ToggleVisibility", ui->showHideButton->icon()));
+    ui->settingsButton->setIcon(
+        Gui::BitmapFactory().iconFromTheme("Sketcher_Settings", ui->settingsButton->icon()));
     ui->listWidgetConstraints->setSelectionMode(QAbstractItemView::ExtendedSelection);
     ui->listWidgetConstraints->setEditTriggers(QListWidget::EditKeyPressed);
 
@@ -997,6 +1047,14 @@ TaskSketcherConstraints::TaskSketcherConstraints(ViewProviderSketch* sketchView)
         &ConstraintView::emitShowSelection3DVisibility,
         this,
         &TaskSketcherConstraints::onListWidgetConstraintsEmitShowSelection3DVisibility);
+    QObject::connect(ui->listWidgetConstraints,
+                     &ConstraintView::emitDeleteAllConstraints,
+                     this,
+                     &TaskSketcherConstraints::onDeleteAllConstraints);
+    QObject::connect(ui->listWidgetConstraints,
+                     &ConstraintView::emitDeleteConstraints,
+                     this,
+                     &TaskSketcherConstraints::onDeleteConstraints);
 #if QT_VERSION >= QT_VERSION_CHECK(6,7,0)
     QObject::connect(ui->filterBox,
                      &QCheckBox::checkStateChanged,
@@ -1119,7 +1177,7 @@ void TaskSketcherConstraints::onSettingsAutoConstraintsChanged(bool value)
     ParameterGrp::handle hGrp = App::GetApplication().GetParameterGroupByPath(
         "User parameter:BaseApp/Preferences/Mod/Sketcher");
 
-    Base::ConnectionBlocker block(changedSketchView);
+    fastsignals::shared_connection_block blocker(changedSketchView);
     sketchView->Autoconstraints.setValue(value);
 }
 
@@ -1179,6 +1237,37 @@ void TaskSketcherConstraints::onListWidgetConstraintsEmitHideSelection3DVisibili
 void TaskSketcherConstraints::onListWidgetConstraintsEmitShowSelection3DVisibility()
 {
     changeFilteredVisibility(true, ActionTarget::Selected);
+}
+
+void TaskSketcherConstraints::onDeleteAllConstraints()
+{
+    const Sketcher::SketchObject* sketch = sketchView->getSketchObject();
+    sketchView->getDocument()->openCommand(QT_TRANSLATE_NOOP("Command", "Delete all constraints"));
+    try {
+        Gui::cmdAppObjectArgs(sketch, "deleteAllConstraints()");
+        sketchView->getDocument()->commitCommand();
+    }
+    catch (const Base::Exception&) {
+        sketchView->getDocument()->abortCommand();
+    }
+}
+
+void TaskSketcherConstraints::onDeleteConstraints(const QList<int>& ids)
+{
+    if (ids.isEmpty()) {
+        return;
+    }
+
+    const Sketcher::SketchObject* sketch = sketchView->getSketchObject();
+    const std::string idList = std::format("[{}]", Base::Tools::joinFormatted(ids, ", "));
+    sketchView->getDocument()->openCommand(QT_TRANSLATE_NOOP("Command", "Delete constraints"));
+    try {
+        Gui::cmdAppObjectArgs(sketch, "delConstraints(%s)", idList.c_str());
+        sketchView->getDocument()->commitCommand();
+    }
+    catch (const Base::Exception&) {
+        sketchView->getDocument()->abortCommand();
+    }
 }
 
 void TaskSketcherConstraints::changeFilteredVisibility(bool show, ActionTarget target)
@@ -1257,9 +1346,19 @@ void TaskSketcherConstraints::onListWidgetConstraintsItemActivated(QListWidgetIt
 
     // if its the right constraint
     if (it->isDimensional()) {
-        EditDatumDialog* editDatumDialog = new EditDatumDialog(this->sketchView, it->ConstraintNbr);
-        editDatumDialog->exec(false);
-        delete editDatumDialog;
+        int tid = this->sketchView->getDocument()->openCommand(
+                    QT_TRANSLATE_NOOP("Command", "Modify sketch constraints"));
+        EditDatumDialog(tid, this->sketchView, it->ConstraintNbr).exec(false);
+    }
+    else if (it->constraintType() == Sketcher::Text) {
+        auto* editDialog = new EditTextDialog(this->sketchView, it->ConstraintNbr);
+        editDialog->exec();
+        delete editDialog;
+    }
+    // For all other constraints (geometric: e.g., Parallel, Perpendicular, Coincident),
+    // double-click triggers the rename functionality.
+    else {
+        ui->listWidgetConstraints->editItem(item);
     }
 }
 
@@ -1278,29 +1377,17 @@ void TaskSketcherConstraints::onListWidgetConstraintsItemChanged(QListWidgetItem
     const Sketcher::Constraint* v = vals[it->ConstraintNbr];
     const std::string currConstraintName = v->Name;
 
-    const std::string basename = it->data(Qt::EditRole).toString().toStdString();
+    const std::string newName = it->data(Qt::EditRole).toString().trimmed().toStdString();
 
-    std::string newName(
-        Sketcher::PropertyConstraintList::getConstraintName(basename, it->ConstraintNbr));
-
-    // we only start a rename if we are really sure the name has changed, which is:
-    // a) that the name generated by the constraints is different from the text in the widget item
-    // b) that the text in the widget item, basename, is not ""
-    // otherwise a checkbox change will trigger a rename on the first execution, bloating the
-    // constraint icons with the default constraint name "constraint1, constraint2"
-    if (newName != currConstraintName && !basename.empty()) {
-        if (!SketcherGui::checkConstraintName(sketch, newName)) {
-            newName = currConstraintName;
-        }
-
-        Gui::Command::openCommand(QT_TRANSLATE_NOOP("Command", "Rename sketch constraint"));
+    if (newName != currConstraintName && SketcherGui::checkConstraintName(sketch, newName)) {
+        sketchView->getDocument()->openCommand(QT_TRANSLATE_NOOP("Command", "Rename sketch constraint"));
         try {
             Gui::cmdAppObjectArgs(
                 sketch, "renameConstraint(%d, u'%s')", it->ConstraintNbr, newName.c_str());
-            Gui::Command::commitCommand();
+            sketchView->getDocument()->commitCommand();
         }
         catch (const Base::Exception& e) {
-            Gui::Command::abortCommand();
+            sketchView->getDocument()->abortCommand();
 
             Gui::NotifyUserError(
                 sketch, QT_TRANSLATE_NOOP("Notifications", "Value Error"), e.what());
@@ -1382,6 +1469,7 @@ void TaskSketcherConstraints::updateList()
 void TaskSketcherConstraints::onSelectionChanged(const Gui::SelectionChanges& msg)
 {
     assert(sketchView);
+    assert(sketchView->getSketchObject());
 
     std::string temp;
     if (msg.Type == Gui::SelectionChanges::ClrSelection) {
@@ -1576,7 +1664,11 @@ void TaskSketcherConstraints::onListWidgetConstraintsItemSelectionChanged()
     this->blockSelection(block);
 
     // it seems that addSelections gives back the focus to the view, and not immediately.
-    QTimer::singleShot(200, [this]() {
+    QTimer::singleShot(200, this, [this]() {
+        QWidget* fw = QApplication::focusWidget();
+        if (fw && ui->listWidgetConstraints->viewport()->isAncestorOf(fw)) {
+            return; // Do NOT steal focus if the editor is active
+        }
         ui->listWidgetConstraints->setFocus();
     });
 }
@@ -1638,17 +1730,16 @@ bool TaskSketcherConstraints::doSetVirtualSpace(const std::vector<int>& constrId
 
     std::string constrIdList = stream.str();
 
-    Gui::Command::openCommand(
-            QT_TRANSLATE_NOOP("Command", "Update constraint's virtual space"));
+    sketchView->getDocument()->openCommand(QT_TRANSLATE_NOOP("Command", "Update constraint's virtual space"));
     try {
         Gui::cmdAppObjectArgs(sketch,
             "setVirtualSpace(%s, %s)",
             constrIdList,
             isvirtualspace ? "True" : "False");
-        Gui::Command::commitCommand();
-    }
+            sketchView->getDocument()->commitCommand();
+        }
     catch (const Base::Exception& e) {
-        Gui::Command::abortCommand();
+        sketchView->getDocument()->abortCommand();
 
         Gui::TranslatedUserError(
             sketch, tr("Error"), tr("Impossible to update visibility tracking:") + QLatin1String(" ") + QLatin1String(e.what()));
@@ -1694,6 +1785,10 @@ bool TaskSketcherConstraints::isConstraintFiltered(QListWidgetItem* item)
     ConstraintItem* it = static_cast<ConstraintItem*>(item);
     const Sketcher::Constraint* constraint = vals[it->ConstraintNbr];
 
+    // Text constraint is hidden from the list widget.
+    if (constraint->Type == Sketcher::Text) {
+        return true;
+    }
 
     ParameterGrp::handle hGrp = App::GetApplication().GetParameterGroupByPath(
         "User parameter:BaseApp/Preferences/Mod/Sketcher");
@@ -1715,6 +1810,12 @@ bool TaskSketcherConstraints::isConstraintFiltered(QListWidgetItem* item)
                 break;
             case Sketcher::PointOnObject:
                 visible = checkFilterBitset(multiFilterStatus, FilterValue::PointOnObject);
+                break;
+            case Sketcher::Group:
+                visible = checkFilterBitset(multiFilterStatus, FilterValue::Group);
+                break;
+            case Sketcher::Text:
+                visible = checkFilterBitset(multiFilterStatus, FilterValue::Text);
                 break;
             case Sketcher::Parallel:
                 visible = checkFilterBitset(multiFilterStatus, FilterValue::Parallel);

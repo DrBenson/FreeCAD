@@ -20,20 +20,20 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef SOTOUCHEVENTS_H
-#define SOTOUCHEVENTS_H
+#pragma once
 
 #include <QGesture>
 #include <Quarter/devices/InputDevice.h>
 #include <Inventor/SbLinear.h>
 #include <Inventor/events/SoEvent.h>
 #include <Inventor/events/SoSubEvent.h>
+#include <FCGlobal.h>
 
 class QWidget;
 
 namespace Quarter = SIM::Coin3D::Quarter;
 
-class SoGestureEvent: public SoEvent
+class GuiExport SoGestureEvent: public SoEvent
 {
     SO_EVENT_HEADER();
 
@@ -75,7 +75,7 @@ public:
     SbVec2f totalOffset;
 };
 
-class SoGesturePinchEvent: public SoGestureEvent
+class GuiExport SoGesturePinchEvent: public SoGestureEvent
 {
     SO_EVENT_HEADER();
 
@@ -101,8 +101,28 @@ public:
     double totalZoom;  // zoom factor accumulated since start of gesture.
     double deltaAngle;
     double totalAngle;
+    bool fromNativeGesture {false};
 
     static double unbranchAngle(double ang);
+};
+
+class GuiExport NativeGesturePinch
+{
+public:
+    bool update(Qt::NativeGestureType type, double value, const SbVec2s& glPos);
+    const SoGesturePinchEvent& event() const
+    {
+        return pinch;
+    }
+    bool isActive() const
+    {
+        return active;
+    }
+
+private:
+    SoGesturePinchEvent pinch;
+    SbVec2f beginCenter {0.0F, 0.0F};
+    bool active {false};
 };
 
 class SoGestureSwipeEvent: public SoGestureEvent
@@ -140,6 +160,7 @@ public:
 
 protected:
     QWidget* widget;
-};
 
-#endif  // SOTOUCHEVENTS_H
+private:
+    NativeGesturePinch nativePinch;
+};

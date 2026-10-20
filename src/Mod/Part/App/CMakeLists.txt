@@ -41,6 +41,8 @@ if(FREETYPE_FOUND)
         ${Part_LIBS}
         ${FREETYPE_LIBRARIES}
     )
+
+    set(Part_LIBS ${Part_LIBS} harfbuzz::harfbuzz)
 endif(FREETYPE_FOUND)
 
 generate_from_py(Arc)
@@ -85,6 +87,7 @@ generate_from_py(SurfaceOfExtrusion)
 generate_from_py(SurfaceOfRevolution)
 generate_from_py(PartFeature)
 generate_from_py(AttachExtension)
+generate_from_py(PreviewExtension)
 generate_from_py(Part2DObject)
 generate_from_py(AttachEngine)
 generate_from_py(TopoShape)
@@ -210,6 +213,32 @@ SET(Features_SRCS
     FeatureRevolution.h
     FeatureOffset.cpp
     FeatureOffset.h
+    CircularPatternExtension.cpp
+    CircularPatternExtension.h
+    LinearPatternExtension.cpp
+    LinearPatternExtension.h
+    LinkArray.cpp
+    LinkArray.h
+    LinkArrayCircular.cpp
+    LinkArrayCircular.h
+    LinkArrayLinear.cpp
+    LinkArrayLinear.h
+    LinkArrayPath.cpp
+    LinkArrayPath.h
+    LinkArrayPolar.cpp
+    LinkArrayPolar.h
+    LinkArrayPoint.cpp
+    LinkArrayPoint.h
+    PointPatternExtension.cpp
+    PointPatternExtension.h
+    PolarPatternExtension.cpp
+    PolarPatternExtension.h
+    PathPatternExtension.cpp
+    PathPatternExtension.h
+    PatternConstants.cpp
+    PatternConstants.h
+    OCCTMessagePrinter.cpp
+    OCCTMessagePrinter.h
     PartFeatures.cpp
     PartFeatures.h
     PartFeature.cpp
@@ -350,6 +379,8 @@ SET(Python_SRCS
     PartFeaturePyImp.cpp
     AttachExtension.pyi
     AttachExtensionPyImp.cpp
+    PreviewExtension.pyi
+    PreviewExtensionPyImp.cpp
     Part2DObject.pyi
     Part2DObjectPyImp.cpp
     AttachEngine.pyi
@@ -540,6 +571,8 @@ SET(Part_SRCS
     BRepMesh.h
     BRepOffsetAPI_MakeOffsetFix.cpp
     BRepOffsetAPI_MakeOffsetFix.h
+    ShapeAnalysis_FreeBoundsFix.cpp
+    ShapeAnalysis_FreeBoundsFix.h
     BSplineCurveBiArcs.cpp
     BSplineCurveBiArcs.h
     CrossSection.cpp
@@ -567,8 +600,12 @@ SET(Part_SRCS
     Interface.cpp
     Interface.h
     PreCompiled.h
+    ProgressIndicator.cpp
+    ProgressIndicator.h
     Services.cpp
     Services.h
+    SignalException.cpp
+    SignalException.h
     TopoShape.cpp
     TopoShape.h
     TopoShapeCache.cpp
@@ -584,6 +621,8 @@ SET(Part_SRCS
     MeasureInfo.h
     modelRefine.cpp
     modelRefine.h
+    PyException.cpp
+    PyException.h
     Tools.cpp
     Tools.h
     encodeFilename.h
@@ -596,6 +635,10 @@ SET(Part_SRCS
     FaceMakerCheese.h
     FaceMakerBullseye.cpp
     FaceMakerBullseye.h
+    FaceMakerBuildFace.cpp
+    FaceMakerBuildFace.h
+    FaceMakerUnified.cpp
+    FaceMakerUnified.h
     WireJoiner.cpp
     WireJoiner.h
 )
@@ -622,11 +665,9 @@ if (MSVC)
     target_compile_options(Part PRIVATE /wd4251 /wd4275)
 endif()
 
-if (FREECAD_WARN_ERROR)
-    target_compile_warn_error(Part)
-endif()
+target_compile_warn_error(Part)
 
-SET_BIN_DIR(Part Part /Mod/Part)
+SET_BIN_DIR(Part)
 SET_PYTHON_PREFIX_SUFFIX(Part)
 
 INSTALL(TARGETS Part DESTINATION ${CMAKE_INSTALL_LIBDIR})

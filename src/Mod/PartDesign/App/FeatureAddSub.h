@@ -23,12 +23,11 @@
  ***************************************************************************/
 
 
-#ifndef PARTDESIGN_FeatureAdditive_H
-#define PARTDESIGN_FeatureAdditive_H
+#pragma once
 
 #include "FeatureRefine.h"
 
-#include <QtCore>
+#include <QCoreApplication>
 
 /// Base class of all additive features in PartDesign
 namespace PartDesign
@@ -40,16 +39,26 @@ class PartDesignExport FeatureAddSub: public PartDesign::FeatureRefine
     PROPERTY_HEADER_WITH_OVERRIDE(PartDesign::FeatureAddSub);
 
 public:
-    enum Type
+    enum class Type
     {
         Additive = 0,
         Subtractive
     };
 
+    enum class BooleanOperation
+    {
+        Union = 0,
+        Subtraction,
+        Common
+    };
+
     FeatureAddSub();
 
     void onChanged(const App::Property*) override;
+
     Type getAddSubType();
+    BooleanOperation getBooleanOperation();
+    const char* getBooleanMaker() const;
 
     short mustExecute() const override;
 
@@ -59,9 +68,13 @@ public:
 
     Part::PropertyPartShape AddSubShape;
 
+    App::PropertyEnumeration Operation;
 
 protected:
-    Type addSubType {Additive};
+    Type addSubType {Type::Additive};
+    BooleanOperation booleanOperation {BooleanOperation::Union};
+    void defineAdditive();
+    void defineSubtractive();
 };
 
 using FeatureAddSubPython = App::FeaturePythonT<FeatureAddSub>;
@@ -85,6 +98,3 @@ public:
 };
 
 }  // namespace PartDesign
-
-
-#endif  // PARTDESIGN_FeatureAdditive_H

@@ -31,7 +31,6 @@ import datetime
 import shlex
 import Path.Base.Util as PathUtil
 import Path.Post.Utils as PostUtils
-import PathScripts.PathUtils as PathUtils
 from builtins import open as pyopen
 
 TOOLTIP = """
@@ -156,7 +155,7 @@ def processArguments(argstring):
             OUTPUT_LINE_NUMBERS = True
         if args.no_show_editor:
             SHOW_EDITOR = False
-        print("Show editor = %d" % SHOW_EDITOR)
+        # print("Show editor = %d" % SHOW_EDITOR)  # Commented to reduce test noise
         PRECISION = args.precision
         if args.preamble is not None:
             PREAMBLE = args.preamble.replace("\\n", "\n")
@@ -197,7 +196,7 @@ def export(objectslist, filename, argstring):
             )
             return None
 
-    print("postprocessing...")
+    # print("postprocessing...")  # Commented to reduce test noise
     gcode = ""
 
     # write header
@@ -271,7 +270,7 @@ def export(objectslist, filename, argstring):
     else:
         final = gcode
 
-    print("done postprocessing.")
+    # print("done postprocessing.")  # Commented to reduce test noise
 
     if not filename == "-":
         gfile = pyopen(filename, "w")
@@ -346,7 +345,8 @@ def parse(pathobj):
         # change here until we can figure out what it going on.
         #
         # for c in PathUtils.getPathWithPlacement(pathobj).Commands:
-        for c in pathobj.Path.Commands:
+        # No placement here (see above); still need G98/G99 made literal.
+        for c in PostUtils.cannedCycleTerminator(pathobj.Path).Commands:
             outstring = []
             command = c.Name
             outstring.append(command)

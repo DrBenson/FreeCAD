@@ -21,8 +21,7 @@
  ***************************************************************************/
 
 
-#ifndef TESTGUI_UNITTESTPY_H
-#define TESTGUI_UNITTESTPY_H
+#pragma once
 
 #include <Base/PyObjectBase.h>
 #include <CXX/Extensions.hxx>
@@ -60,12 +59,9 @@ public:
     Py::Object clearUnitTests(const Py::Tuple&);
 
 private:
-    using method_varargs_handler = PyObject* (*)(PyObject * _self, PyObject* _args);
+    using method_varargs_handler = PyObject* (*)(PyObject* _self, PyObject* _args);
     static method_varargs_handler pycxx_handler;
     static PyObject* method_varargs_ext_handler(PyObject* _self, PyObject* _args);
 };
 
 }  // namespace TestGui
-
-
-#endif

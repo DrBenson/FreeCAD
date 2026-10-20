@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: LGPL-2.1-or-later
+
 /***************************************************************************
  *   Copyright (c) 2007 Jürgen Riegel <juergen.riegel@web.de>              *
  *                                                                         *
@@ -20,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef DrawView_h_
-#define DrawView_h_
+#pragma once
 
 #include <fastsignals/signal.h>
 #include <QCoreApplication>
@@ -62,12 +63,15 @@ public:
     App::PropertyEnumeration ScaleType;
     App::PropertyAngle Rotation;
     App::PropertyString Caption;
+    App::PropertyVector CaptionLocation;
+    App::PropertyEnumeration CaptionSnap;
 
     /** @name methods override Feature */
     //@{
     App::DocumentObjectExecReturn* recompute() override;
     /// recalculate the Feature
     App::DocumentObjectExecReturn *execute() override;
+    bool canRecomputeOnWorker() const override { return false; }
     void onDocumentRestored() override;
     short mustExecute() const override;
     //@}
@@ -144,6 +148,7 @@ protected:
 
 private:
     static const char* ScaleTypeEnums[];
+    static const char* CaptionSnapEnums[];
     static App::PropertyFloatConstraint::Constraints scaleRange;
 
     bool m_overrideKeepUpdated;
@@ -152,5 +157,3 @@ private:
 using DrawViewPython = App::FeaturePythonT<DrawView>;
 
 } //namespace TechDraw
-
-#endif

@@ -22,8 +22,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#ifndef EXPRESSION_H
-#define EXPRESSION_H
+#pragma once
 
 #include <deque>
 #include <set>
@@ -69,6 +68,16 @@ AppExport bool isAnyEqual(const App::any& v1, const App::any& v2);
  * @throw Base::TypeError if the value cannot be converted to a Base::Quantity.
  */
 AppExport Base::Quantity anyToQuantity(const App::any &value, const char *errmsg = nullptr);
+
+/**
+ * @brief Convert an App::any value to a std::string.
+ *
+ * @param[in] value The value to convert.
+ *
+ * @return The converted std::string.
+ * @throw Base::ExpressionError if the value has an unknown type.
+ */
+AppExport std::string anyToString(const App::any& value);
 
 // clang-format off
 /// Map of depending objects to a map of depending property name to the full referencing object identifier
@@ -332,7 +341,7 @@ public:
      *
      * @return The evaluated expression.
      */
-    Expression* eval() const;
+    ExpressionPtr eval() const;
 
     /**
      * @brief Convert the expression to a string.
@@ -363,10 +372,10 @@ public:
      *
      * @return The parsed expression.
      */
-    static Expression* parse(const App::DocumentObject * owner, const std::string& buffer);
+    static ExpressionPtr parse(const App::DocumentObject* owner, const std::string& buffer);
 
     /// Copy an expression.
-    Expression * copy() const;
+    ExpressionPtr copy() const;
 
     /**
      * @brief Get the operator priority.
@@ -434,8 +443,14 @@ public:
      * @param[in,out] deps The map to fill with dependent document objects to a
      * boolean indicating whether they are hidden (`href` references).
      * @param[in,out] labels Optional vector to fill with labels of dependent objects.
+     * @param[in,out] propDeps Optional mapping with property names. The boolean
+     * indicates whether this is a hidden reference.
      */
-    void getDepObjects(std::map<App::DocumentObject*,bool>& deps, std::vector<std::string> *labels=nullptr) const;
+    void getDepObjects(
+        std::map<App::DocumentObject*, bool>& deps,
+        std::vector<std::string>* labels = nullptr,
+        std::map<std::pair<std::string, DocumentObject*>, bool>* propDeps = nullptr
+    ) const;
 
     /**
      * @brief Import sub-names in the expression after importing external objects.
@@ -487,7 +502,7 @@ public:
      *
      * @return The simplified expression.
      */
-    virtual Expression * simplify() const = 0;
+    virtual ExpressionPtr simplify() const = 0;
 
     /// Visit the expression with a visitor.
     void visit(ExpressionVisitor & v);
@@ -581,5 +596,3 @@ public:
 };
 
 }
-
-#endif // EXPRESSION_H

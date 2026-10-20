@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+
 # ***************************************************************************
 # *   Copyright (c) 2013 Juergen Riegel <FreeCAD@juergen-riegel.net>        *
 # *   Copyright (c) 2016 Bernd Hahnebach <bernd@bimstatik.org>              *
@@ -56,3 +58,10 @@ class VPMaterialCommon(view_base_femmaterial.VPBaseFemMaterial):
 
     def setEdit(self, vobj, mode=0):
         return super().setEdit(vobj, mode, task_material_common._TaskPanel)
+
+    def claimChildren(self):
+        nonlin = self.Object.Nonlinear
+        if nonlin:
+            return [nonlin]
+        else:
+            return []

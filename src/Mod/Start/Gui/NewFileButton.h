@@ -21,8 +21,7 @@
  *                                                                          *
  ***************************************************************************/
 
-#ifndef FREECAD_NEWFILEBUTTON_H
-#define FREECAD_NEWFILEBUTTON_H
+#pragma once
 
 #include <QLabel>
 #include <QString>
@@ -35,17 +34,13 @@
 namespace StartGui
 {
 
-struct NewButton
-{
-    QString heading;
-    QString description;
-    QString iconPath;
-};
-
 class NewFileButton: public QPushButton
 {
 public:
-    explicit NewFileButton(const NewButton& newButton);
+    explicit NewFileButton(QWidget* parent, const QString& iconPath);
+
+    void setHeadingText(const QString&);
+    void setDescriptionText(const QString&);
 
 private:
     int iconSize;
@@ -60,5 +55,3 @@ protected:
 };
 
 }  // namespace StartGui
-
-#endif  // FREECAD_NEWFILEBUTTON_H
